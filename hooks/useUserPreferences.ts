@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useSession } from 'next-auth/react';
-import { logger } from '@/lib/logger';
-import { apiFetch } from '@/lib/apiFetch';
-import { getBootstrappedAppearance, type AppearancePreferences } from '@/lib/appearance';
-import { PREFERENCES_STORAGE_KEY } from '@/lib/storageKeys';
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useSession } from "next-auth/react";
+import { logger } from "@/lib/logger";
+import { apiFetch } from "@/lib/apiFetch";
+import { getBootstrappedAppearance, type AppearancePreferences } from "@/lib/appearance";
+import { PREFERENCES_STORAGE_KEY } from "@/lib/storageKeys";
 
 const STORAGE_KEY = PREFERENCES_STORAGE_KEY;
 
@@ -31,7 +31,7 @@ const DEFAULT_PREFERENCES: UserPreferences = {
 
 async function fetchPreferencesFromServer(): Promise<UserPreferences | null> {
   try {
-    const res = await fetch('/api/user/preferences');
+    const res = await fetch("/api/user/preferences");
     if (!res.ok) return null;
     const data = await res.json();
     return {
@@ -50,13 +50,13 @@ async function fetchPreferencesFromServer(): Promise<UserPreferences | null> {
 
 async function syncPreferencesToServer(preferences: UserPreferences): Promise<void> {
   try {
-    await apiFetch('/api/user/preferences', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    await apiFetch("/api/user/preferences", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(preferences),
     });
   } catch (err) {
-    logger.warn('useUserPreferences', 'Failed to sync to server', err);
+    logger.warn("useUserPreferences", "Failed to sync to server", err);
   }
 }
 
@@ -65,7 +65,7 @@ function readLocalPreferences(): UserPreferences | null {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return null;
     const parsed = JSON.parse(raw) as Partial<UserPreferences>;
-    if (!parsed || typeof parsed !== 'object') return null;
+    if (!parsed || typeof parsed !== "object") return null;
     return { ...DEFAULT_PREFERENCES, ...parsed };
   } catch {
     return null;
@@ -74,8 +74,8 @@ function readLocalPreferences(): UserPreferences | null {
 
 export function useUserPreferences() {
   const { data: session, status } = useSession();
-  const isLoggedIn = status === 'authenticated';
-  const isLoggedOut = status === 'unauthenticated';
+  const isLoggedIn = status === "authenticated";
+  const isLoggedOut = status === "unauthenticated";
 
   const [serverPreferences, setServerPreferences] = useState<UserPreferences | null>(null);
   const [localPreferences, setLocalPreferences] = useState<UserPreferences | null>(null);
@@ -93,7 +93,7 @@ export function useUserPreferences() {
   // server copy (signed in) or the localStorage copy (signed out) has been
   // read. Until then the provider applies the bootstrapped cookie values.
   useEffect(() => {
-    if (status === 'loading') return;
+    if (status === "loading") return;
 
     if (!isLoggedIn) {
       // Drop any previous account's server copy so a later sign-in cannot

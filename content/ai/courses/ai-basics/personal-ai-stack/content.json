@@ -7,21 +7,14 @@
   "difficulty": "beginner",
   "estimatedHours": 2,
   "icon": "🎒",
-  "tags": [
-    "personal-toolkit",
-    "ai-stack",
-    "workflow-design",
-    "capstone"
-  ],
+  "tags": ["personal-toolkit", "ai-stack", "workflow-design", "capstone"],
   "lessonSlugs": [
     "building-your-ai-stack",
     "ai-roadmap-by-role",
     "ai-project-portfolio-and-capstone-assessments"
   ],
   "isOptional": false,
-  "prerequisites": [
-    "automation-basics"
-  ],
+  "prerequisites": ["automation-basics"],
   "whatYouLearn": [
     "How to evaluate AI tools for your specific needs",
     "Building a personal AI toolkit that fits your work",

@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Given a string containing only `(`, `)`, `{`, `}`, `[`, and `]`, determine whether the brackets are balanced: every opening bracket is closed by the matching type, and brackets close in the correct order."}
+        "text": "Given a string containing only `(`, `)`, `{`, `}`, `[`, and `]`, determine whether the brackets are balanced: every opening bracket is closed by the matching type, and brackets close in the correct order."
+      }
     },
     {
       "type": "heading",
@@ -36,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Repeatedly remove the substrings `()`, `[]`, and `{}` until none remain. If the string is empty, it was balanced. Correct, but O(n²) and allocation-heavy."}
+        "text": "Repeatedly remove the substrings `()`, `[]`, and `{}` until none remain. If the string is empty, it was balanced. Correct, but O(n²) and allocation-heavy."
+      }
     },
     {
       "type": "example",
@@ -54,7 +56,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Push every opening bracket. On a closing bracket, the top of the stack must be its matching opener — anything else is invalid. At the end the stack must be empty, otherwise some bracket was never closed."}
+        "text": "Push every opening bracket. On a closing bracket, the top of the stack must be its matching opener — anything else is invalid. At the end the stack must be empty, otherwise some bracket was never closed."
+      }
     },
     {
       "type": "example",
@@ -88,7 +91,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "If `*` can mean `(`, `)`, or nothing, a single stack is not enough. Track the range of possible open-bracket counts with two counters — the fewest and the most open brackets the string could currently have."}
+        "text": "If `*` can mean `(`, `)`, or nothing, a single stack is not enough. Track the range of possible open-bracket counts with two counters — the fewest and the most open brackets the string could currently have."
+      }
     },
     {
       "type": "example",

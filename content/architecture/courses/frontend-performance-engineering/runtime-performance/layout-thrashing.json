@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "reflow",
-    "forced-layout",
-    "dom",
-    "devtools"
-  ],
+  "tags": ["reflow", "forced-layout", "dom", "devtools"],
   "blocks": [
     {
       "type": "paragraph",
@@ -180,11 +175,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "painting-and-compositing",
-    "js-engine-optimization",
-    "debugging-performance"
-  ],
+  "relatedLessons": ["painting-and-compositing", "js-engine-optimization", "debugging-performance"],
   "furtherReading": [
     {
       "title": "Avoid Layout Thrashing",

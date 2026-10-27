@@ -10,18 +10,8 @@
   "estimatedHours": 5,
   "icon": "🔄",
   "prerequisites": ["docker-fundamentals"],
-  "tags": [
-    "ci-cd",
-    "jenkins",
-    "continuous-integration",
-    "continuous-delivery",
-    "devops"
-  ],
-  "lessonSlugs": [
-    "01-ci-cd-concepts",
-    "02-jenkins-basics",
-    "03-jenkins-pipelines"
-  ],
+  "tags": ["ci-cd", "jenkins", "continuous-integration", "continuous-delivery", "devops"],
+  "lessonSlugs": ["01-ci-cd-concepts", "02-jenkins-basics", "03-jenkins-pipelines"],
   "whatYouLearn": [
     "Understand CI/CD principles and pipeline stages",
     "Set up Jenkins and configure jobs",

@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "consul",
-    "service-discovery",
-    "hashicorp"
-  ],
+  "tags": ["consul", "service-discovery", "hashicorp"],
   "blocks": [
     {
       "type": "paragraph",

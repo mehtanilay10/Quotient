@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "kafka",
-    "configuration",
-    "tuning",
-    "brokers",
-    "operations"
-  ],
+  "tags": ["kafka", "configuration", "tuning", "brokers", "operations"],
   "blocks": [
     {
       "type": "paragraph",
@@ -38,12 +32,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Property",
-          "Default",
-          "Recommended",
-          "Description"
-        ],
+        "headers": ["Property", "Default", "Recommended", "Description"],
         "rows": [
           [
             "log.dirs",

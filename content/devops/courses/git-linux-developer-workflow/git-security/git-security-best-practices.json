@@ -189,6 +189,10 @@
   ],
   "relatedLessons": ["security-fundamentals", "gpg-commit-signing", "verifying-signatures"],
   "furtherReading": [
-    { "title": "GitHub Security Best Practices", "url": "https://docs.github.com/en/code-security", "type": "article" }
+    {
+      "title": "GitHub Security Best Practices",
+      "url": "https://docs.github.com/en/code-security",
+      "type": "article"
+    }
   ]
 }

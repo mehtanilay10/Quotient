@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "redis",
-    "sorted-sets",
-    "leaderboards",
-    "gaming",
-    "rankings"
-  ],
+  "tags": ["redis", "sorted-sets", "leaderboards", "gaming", "rankings"],
   "blocks": [
     {
       "type": "paragraph",

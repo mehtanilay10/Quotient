@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "medium",
   "estimatedMinutes": 14,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "strings",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "strings", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "DP Rolling",
             "description": "Track dp[i-1] and dp[i-2]",
-            "pros": [
-              "O(1) space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) space"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

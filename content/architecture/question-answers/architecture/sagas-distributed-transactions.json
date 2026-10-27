@@ -6,12 +6,7 @@
   "description": "Sagas: local transactions with compensating actions, choreography vs orchestration, and why two-phase commit usually loses.",
   "order": 15,
   "difficulty": "advanced",
-  "tags": [
-    "architecture",
-    "microservices",
-    "transactions",
-    "advanced"
-  ],
+  "tags": ["architecture", "microservices", "transactions", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

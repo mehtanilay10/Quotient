@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 26,
-  "tags": [
-    "autogen",
-    "multi-agent",
-    "csharp",
-    "orchestration"
-  ],
+  "tags": ["autogen", "multi-agent", "csharp", "orchestration"],
   "blocks": [
     {
       "type": "paragraph",
@@ -61,10 +56,7 @@
       "expectedOutcome": "You should have a clear agent map, communication contract, and evaluation criteria."
     }
   ],
-  "relatedLessons": [
-    "agent-architecture-patterns",
-    "human-in-the-loop-and-approval-flows"
-  ],
+  "relatedLessons": ["agent-architecture-patterns", "human-in-the-loop-and-approval-flows"],
   "technology": null,
   "furtherReading": [
     {

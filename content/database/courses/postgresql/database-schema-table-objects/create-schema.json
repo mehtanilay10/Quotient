@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "schemas",
-    "search-path",
-    "multi-tenancy",
-    "namespaces"
-  ],
+  "tags": ["schemas", "search-path", "multi-tenancy", "namespaces"],
   "blocks": [
     {
       "type": "paragraph",
@@ -121,22 +116,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Factor",
-          "Schema per tenant",
-          "`tenant_id` column + RLS"
-        ],
+        "headers": ["Factor", "Schema per tenant", "`tenant_id` column + RLS"],
         "rows": [
-          [
-            "Isolation",
-            "Strong — mistakes must cross schemas",
-            "Logical — enforced by policy"
-          ],
-          [
-            "Migrations",
-            "Must loop over every schema",
-            "One migration for all tenants"
-          ],
+          ["Isolation", "Strong — mistakes must cross schemas", "Logical — enforced by policy"],
+          ["Migrations", "Must loop over every schema", "One migration for all tenants"],
           [
             "Connection pool",
             "One pool per tenant or a `search_path` switch",
@@ -184,8 +167,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "create-database",
-    "create-table"
-  ]
+  "relatedLessons": ["create-database", "create-table"]
 }

@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "json",
-    "system-text-json",
-    "serialization",
-    "built-in"
-  ],
+  "tags": ["json", "system-text-json", "serialization", "built-in"],
   "blocks": [
     {
       "type": "heading",

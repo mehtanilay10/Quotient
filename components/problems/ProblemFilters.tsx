@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useMemo, useState } from 'react';
-import { ModuleCard } from '@/components/course/ModuleCard';
-import type { Module, LessonNavItem } from '@/types';
+import { useMemo, useState } from "react";
+import { ModuleCard } from "@/components/course/ModuleCard";
+import type { Module, LessonNavItem } from "@/types";
 
 export function ProblemFilters({
   modules,
@@ -15,16 +15,16 @@ export function ProblemFilters({
   courseSlug: string;
   basePrefix?: string;
 }) {
-  const [difficulty, setDifficulty] = useState<string>('all');
-  const [searchQuery, setSearchQuery] = useState('');
+  const [difficulty, setDifficulty] = useState<string>("all");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const filteredModules = useMemo(() => {
-    if (difficulty === 'all' && !searchQuery.trim()) return modules;
+    if (difficulty === "all" && !searchQuery.trim()) return modules;
 
     return modules.filter((mod) => {
       const moduleLessons = lessons.filter((l) => l.moduleSlug === mod.slug);
       const matchesDifficulty =
-        difficulty === 'all' || moduleLessons.some((l) => l.difficulty === difficulty);
+        difficulty === "all" || moduleLessons.some((l) => l.difficulty === difficulty);
       const matchesSearch =
         !searchQuery.trim() ||
         mod.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -38,7 +38,7 @@ export function ProblemFilters({
     });
   }, [modules, lessons, difficulty, searchQuery]);
 
-  const difficulties = ['all', 'beginner', 'intermediate', 'advanced'];
+  const difficulties = ["all", "beginner", "intermediate", "advanced"];
 
   return (
     <>
@@ -50,11 +50,11 @@ export function ProblemFilters({
               onClick={() => setDifficulty(d)}
               className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
                 difficulty === d
-                  ? 'bg-accent-fg text-canvas'
-                  : 'border border-border bg-canvas text-fg-muted hover:bg-canvas-subtle'
+                  ? "bg-accent-fg text-canvas"
+                  : "border border-border bg-canvas text-fg-muted hover:bg-canvas-subtle"
               }`}
             >
-              {d === 'all' ? 'All Levels' : d.charAt(0).toUpperCase() + d.slice(1)}
+              {d === "all" ? "All Levels" : d.charAt(0).toUpperCase() + d.slice(1)}
             </button>
           ))}
         </div>
@@ -69,7 +69,9 @@ export function ProblemFilters({
       </div>
 
       {filteredModules.length === 0 ? (
-        <p className="text-sm text-fg-muted">No modules match your filters. Try adjusting your criteria.</p>
+        <p className="text-sm text-fg-muted">
+          No modules match your filters. Try adjusting your criteria.
+        </p>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {filteredModules.map((mod) => (

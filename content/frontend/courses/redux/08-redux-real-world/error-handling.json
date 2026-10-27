@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "error-handling",
-    "resilience",
-    "middleware"
-  ],
+  "tags": ["redux", "error-handling", "resilience", "middleware"],
   "blocks": [
     {
       "type": "paragraph",
@@ -89,37 +84,20 @@
           {
             "title": "try/catch in thunk",
             "description": "Wrap your `fetch` in `try/catch` and return `rejectWithValue`.",
-            "pros": [
-              "Full control over per-request logic",
-              "Easily attaches context"
-            ],
-            "cons": [
-              "Easy to forget",
-              "Duplicated across thunks"
-            ]
+            "pros": ["Full control over per-request logic", "Easily attaches context"],
+            "cons": ["Easy to forget", "Duplicated across thunks"]
           },
           {
             "title": "Rejected action types",
             "description": "Use `builder.addCase(thunk.rejected)` in the slice.",
-            "pros": [
-              "First-class state for UI",
-              "Predictable and testable"
-            ],
-            "cons": [
-              "Doesn't run if the thunk never dispatched"
-            ]
+            "pros": ["First-class state for UI", "Predictable and testable"],
+            "cons": ["Doesn't run if the thunk never dispatched"]
           },
           {
             "title": "Global middleware",
             "description": "A single middleware inspects every action for `/rejected`.",
-            "pros": [
-              "One place to log or alert",
-              "Catches things slices miss"
-            ],
-            "cons": [
-              "No UI-specific error state",
-              "Hard to attach context"
-            ]
+            "pros": ["One place to log or alert", "Catches things slices miss"],
+            "cons": ["No UI-specific error state", "Hard to attach context"]
           }
         ]
       }
@@ -135,42 +113,14 @@
       "type": "table",
       "data": {
         "title": "Patterns by failure type",
-        "headers": [
-          "Failure",
-          "Pattern",
-          "Where it lives"
-        ],
+        "headers": ["Failure", "Pattern", "Where it lives"],
         "rows": [
-          [
-            "Network error",
-            "try/catch → rejectWithValue",
-            "Inside createAsyncThunk"
-          ],
-          [
-            "Validation error",
-            "Rejected action → state.error",
-            "Slice extraReducers"
-          ],
-          [
-            "Crash in component",
-            "React error boundary",
-            "React tree"
-          ],
-          [
-            "Repeated failures",
-            "Exponential backoff retry",
-            "Thunk or RTK Query"
-          ],
-          [
-            "Server 500",
-            "Global middleware + logging",
-            "Middleware"
-          ],
-          [
-            "Permission denied (401/403)",
-            "Auth middleware → redirect",
-            "Auth slice/middleware"
-          ]
+          ["Network error", "try/catch → rejectWithValue", "Inside createAsyncThunk"],
+          ["Validation error", "Rejected action → state.error", "Slice extraReducers"],
+          ["Crash in component", "React error boundary", "React tree"],
+          ["Repeated failures", "Exponential backoff retry", "Thunk or RTK Query"],
+          ["Server 500", "Global middleware + logging", "Middleware"],
+          ["Permission denied (401/403)", "Auth middleware → redirect", "Auth slice/middleware"]
         ]
       }
     },

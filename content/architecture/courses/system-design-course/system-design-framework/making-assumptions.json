@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "system-design",
-    "assumptions",
-    "requirements"
-  ],
+  "tags": ["system-design", "assumptions", "requirements"],
   "blocks": [
     {
       "type": "heading",

@@ -9,13 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 3,
   "icon": "📨",
-  "tags": [
-    "messaging",
-    "events",
-    "masstransit",
-    "rabbitmq",
-    "background-jobs"
-  ],
+  "tags": ["messaging", "events", "masstransit", "rabbitmq", "background-jobs"],
   "lessonSlugs": [
     "masstransit",
     "rabbitmq-client",

@@ -8,12 +8,7 @@
   "order": 9,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "legacy",
-    "modernization",
-    "migration",
-    "csharp"
-  ],
+  "tags": ["legacy", "modernization", "migration", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -164,10 +159,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "incremental-migration-vs-rewrite",
-    "managing-technical-debt"
-  ],
+  "relatedLessons": ["incremental-migration-vs-rewrite", "managing-technical-debt"],
   "furtherReading": [
     {
       "title": "The Strangler Fig Pattern",

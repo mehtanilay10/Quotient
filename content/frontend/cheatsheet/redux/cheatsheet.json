@@ -8,7 +8,18 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": ["redux", "redux-toolkit", "actions", "reducers", "middleware", "thunks", "selectors", "react-redux", "cheatsheet", "quick-reference"],
+  "tags": [
+    "redux",
+    "redux-toolkit",
+    "actions",
+    "reducers",
+    "middleware",
+    "thunks",
+    "selectors",
+    "react-redux",
+    "cheatsheet",
+    "quick-reference"
+  ],
   "blocks": [
     {
       "type": "example",

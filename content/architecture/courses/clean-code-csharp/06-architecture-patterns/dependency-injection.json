@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 8,
-  "tags": [
-    "dependency-injection",
-    "architecture",
-    "csharp"
-  ],
+  "tags": ["dependency-injection", "architecture", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,9 +36,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "cqrs-pattern"
-  ],
+  "relatedLessons": ["cqrs-pattern"],
   "furtherReading": [],
   "courseSlug": "clean-code-csharp"
 }

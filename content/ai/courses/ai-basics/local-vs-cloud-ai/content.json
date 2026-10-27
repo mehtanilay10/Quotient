@@ -7,21 +7,11 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "☁️",
-  "tags": [
-    "local-ai",
-    "cloud-ai",
-    "privacy",
-    "open-weights",
-    "ollama"
-  ],
-  "lessonSlugs": [
-    "local-ai-options"
-  ],
+  "tags": ["local-ai", "cloud-ai", "privacy", "open-weights", "ollama"],
+  "lessonSlugs": ["local-ai-options"],
   "isOptional": true,
   "skipLabel": "Skip if privacy-first local AI is not a priority for you right now",
-  "prerequisites": [
-    "privacy-and-data"
-  ],
+  "prerequisites": ["privacy-and-data"],
   "whatYouLearn": [
     "Why someone would run AI locally instead of using cloud services",
     "Tools like Ollama, LM Studio, and open-weights models",

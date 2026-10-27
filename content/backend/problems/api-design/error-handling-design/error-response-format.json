@@ -148,10 +148,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "http-status-code-selection",
-    "validation-errors"
-  ],
+  "relatedLessons": ["http-status-code-selection", "validation-errors"],
   "furtherReading": [
     {
       "title": "RFC 7807: Problem Details for HTTP APIs",

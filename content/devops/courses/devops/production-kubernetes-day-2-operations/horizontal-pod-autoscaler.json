@@ -8,14 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "kubernetes",
-    "hpa",
-    "autoscaling",
-    "metrics",
-    "cpu",
-    "memory"
-  ],
+  "tags": ["kubernetes", "hpa", "autoscaling", "metrics", "cpu", "memory"],
   "blocks": [
     {
       "type": "heading",
@@ -131,23 +124,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Behavior Setting",
-          "Purpose"
-        ],
+        "headers": ["Behavior Setting", "Purpose"],
         "rows": [
           [
             "stabilizationWindowSeconds",
             "Prevents flapping by using the highest desired scale from a recent window"
           ],
-          [
-            "scaleUp.policies",
-            "Controls how fast replicas can increase"
-          ],
-          [
-            "scaleDown.policies",
-            "Controls how fast replicas can decrease"
-          ]
+          ["scaleUp.policies", "Controls how fast replicas can increase"],
+          ["scaleDown.policies", "Controls how fast replicas can decrease"]
         ]
       }
     },

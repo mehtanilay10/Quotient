@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "github-actions",
-    "ci-cd",
-    "workflows",
-    "devops"
-  ],
+  "tags": ["github-actions", "ci-cd", "workflows", "devops"],
   "blocks": [
     {
       "type": "heading",
@@ -62,47 +57,23 @@
           {
             "title": "Workflow",
             "description": "A collection of jobs triggered by an event. Defined in a YAML file.",
-            "tags": [
-              "YAML",
-              "Event-driven"
-            ],
-            "pros": [
-              "Version-controlled",
-              "Complete pipeline view"
-            ],
-            "cons": [
-              "One per repository"
-            ]
+            "tags": ["YAML", "Event-driven"],
+            "pros": ["Version-controlled", "Complete pipeline view"],
+            "cons": ["One per repository"]
           },
           {
             "title": "Job",
             "description": "A set of steps that execute on the same runner.",
-            "tags": [
-              "Parallel",
-              "Runner-scoped"
-            ],
-            "pros": [
-              "Independent execution",
-              "Can run in parallel"
-            ],
-            "cons": [
-              "Limited to one runner"
-            ]
+            "tags": ["Parallel", "Runner-scoped"],
+            "pros": ["Independent execution", "Can run in parallel"],
+            "cons": ["Limited to one runner"]
           },
           {
             "title": "Step",
             "description": "An individual task within a job — either a command or an action.",
-            "tags": [
-              "Atomic",
-              "Reusable"
-            ],
-            "pros": [
-              "Can use marketplace actions",
-              "Can run scripts"
-            ],
-            "cons": [
-              "Depends on previous steps"
-            ]
+            "tags": ["Atomic", "Reusable"],
+            "pros": ["Can use marketplace actions", "Can run scripts"],
+            "cons": ["Depends on previous steps"]
           }
         ]
       }
@@ -192,35 +163,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Action",
-          "Purpose"
-        ],
+        "headers": ["Action", "Purpose"],
         "rows": [
-          [
-            "actions/checkout",
-            "Clone your repository into the runner"
-          ],
-          [
-            "actions/setup-node",
-            "Install Node.js and cache npm dependencies"
-          ],
-          [
-            "actions/setup-dotnet",
-            "Install the .NET SDK for C# projects"
-          ],
-          [
-            "actions/upload-artifact",
-            "Save build output for later jobs"
-          ],
-          [
-            "actions/cache",
-            "Cache dependencies between workflow runs"
-          ],
-          [
-            "actions/download-artifact",
-            "Retrieve saved build artifacts"
-          ]
+          ["actions/checkout", "Clone your repository into the runner"],
+          ["actions/setup-node", "Install Node.js and cache npm dependencies"],
+          ["actions/setup-dotnet", "Install the .NET SDK for C# projects"],
+          ["actions/upload-artifact", "Save build output for later jobs"],
+          ["actions/cache", "Cache dependencies between workflow runs"],
+          ["actions/download-artifact", "Retrieve saved build artifacts"]
         ]
       }
     },

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { createContext, useContext, useState, useCallback, ReactNode } from 'react';
-import { NotesModal } from './NotesModal';
+import { createContext, useContext, useState, useCallback, ReactNode } from "react";
+import { NotesModal } from "./NotesModal";
 
 interface NotesModalContextValue {
   openNotes: () => void;
@@ -18,7 +18,12 @@ interface NotesModalProviderProps {
   lessonSlug: string;
 }
 
-export function NotesModalProvider({ children, courseSlug, moduleSlug, lessonSlug }: NotesModalProviderProps) {
+export function NotesModalProvider({
+  children,
+  courseSlug,
+  moduleSlug,
+  lessonSlug,
+}: NotesModalProviderProps) {
   const [isNotesOpen, setIsNotesOpen] = useState(false);
   const openNotes = useCallback(() => setIsNotesOpen(true), []);
   const closeNotes = useCallback(() => setIsNotesOpen(false), []);

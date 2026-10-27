@@ -83,37 +83,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model Size",
-          "4-bit VRAM",
-          "CPU Possible?",
-          "Approx. Performance"
-        ],
+        "headers": ["Model Size", "4-bit VRAM", "CPU Possible?", "Approx. Performance"],
         "rows": [
-          [
-            "7B parameters",
-            "~5 GB",
-            "Yes (slow)",
-            "Good for simple tasks"
-          ],
-          [
-            "13B parameters",
-            "~9 GB",
-            "Yes (very slow)",
-            "Solid for most tasks"
-          ],
-          [
-            "34B parameters",
-            "~20 GB",
-            "Rarely",
-            "Near SOTA on many tasks"
-          ],
-          [
-            "70B parameters",
-            "~40 GB",
-            "No",
-            "Approaches GPT-4 quality"
-          ]
+          ["7B parameters", "~5 GB", "Yes (slow)", "Good for simple tasks"],
+          ["13B parameters", "~9 GB", "Yes (very slow)", "Solid for most tasks"],
+          ["34B parameters", "~20 GB", "Rarely", "Near SOTA on many tasks"],
+          ["70B parameters", "~40 GB", "No", "Approaches GPT-4 quality"]
         ]
       }
     },
@@ -140,43 +115,22 @@
           {
             "title": "FP16 (Full Precision)",
             "description": "Original model weights with no quantization. Largest file size, slowest inference.",
-            "pros": [
-              "No quality loss",
-              "Full compatibility"
-            ],
-            "cons": [
-              "2x larger files",
-              "Requires most VRAM",
-              "Slowest inference"
-            ],
+            "pros": ["No quality loss", "Full compatibility"],
+            "cons": ["2x larger files", "Requires most VRAM", "Slowest inference"],
             "tags": ["reference", "training"]
           },
           {
             "title": "8-bit Quantization",
             "description": "Half the precision. Good balance of quality and efficiency for most uses.",
-            "pros": [
-              "Near-original quality",
-              "2x smaller files",
-              "Faster inference"
-            ],
-            "cons": [
-              "Still VRAM-heavy",
-              "Modest speed gain"
-            ],
+            "pros": ["Near-original quality", "2x smaller files", "Faster inference"],
+            "cons": ["Still VRAM-heavy", "Modest speed gain"],
             "tags": ["recommended", "balanced"]
           },
           {
             "title": "4-bit Quantization (GPTQ/AWQ)",
             "description": "Aggressive compression using optimized quantization. Popular for consumer hardware.",
-            "pros": [
-              "4x smaller files",
-              "Significantly faster",
-              "Runs on consumer GPUs"
-            ],
-            "cons": [
-              "Minor quality loss on hard tasks",
-              "Requires quantization-aware setup"
-            ],
+            "pros": ["4x smaller files", "Significantly faster", "Runs on consumer GPUs"],
+            "cons": ["Minor quality loss on hard tasks", "Requires quantization-aware setup"],
             "tags": ["consumer", "efficient"]
           }
         ]

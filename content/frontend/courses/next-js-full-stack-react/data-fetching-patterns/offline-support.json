@@ -125,9 +125,19 @@
       }
     }
   ],
-  "relatedLessons": ["error-handling-in-data-fetching", "loading-states", "client-side-data-fetching"],
+  "relatedLessons": [
+    "error-handling-in-data-fetching",
+    "loading-states",
+    "client-side-data-fetching"
+  ],
   "furtherReading": [
-    { "title": "Next.js PWA Documentation", "url": "https://nextjs.org/docs/app/guides/progressive-web-apps" },
-    { "title": "MDN Service Worker Guide", "url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API" }
+    {
+      "title": "Next.js PWA Documentation",
+      "url": "https://nextjs.org/docs/app/guides/progressive-web-apps"
+    },
+    {
+      "title": "MDN Service Worker Guide",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API"
+    }
   ]
 }

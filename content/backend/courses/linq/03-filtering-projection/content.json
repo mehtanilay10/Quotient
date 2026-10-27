@@ -10,11 +10,7 @@
   "estimatedHours": 1.5,
   "icon": "🔍",
   "tags": ["linq", "filtering", "where", "select", "projection"],
-  "lessonSlugs": [
-    "filtering-operator-where",
-    "oftype-filtering-operator",
-    "projection-operators"
-  ],
+  "lessonSlugs": ["filtering-operator-where", "oftype-filtering-operator", "projection-operators"],
   "whatYouLearn": [
     "Filter collections using the Where operator",
     "Filter by type using OfType",

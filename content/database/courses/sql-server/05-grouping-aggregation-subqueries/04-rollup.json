@@ -7,9 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "rollup"
-  ],
+  "tags": ["rollup"],
   "blocks": [
     {
       "type": "heading",

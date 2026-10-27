@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "mvc",
-    "controllers",
-    "api"
-  ],
+  "tags": ["aspnet-core", "mvc", "controllers", "api"],
   "blocks": [
     {
       "type": "heading",

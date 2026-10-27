@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "custom",
-    "middleware",
-    "dependency-injection"
-  ],
+  "tags": ["custom", "middleware", "dependency-injection"],
   "blocks": [
     {
       "type": "heading",

@@ -81,7 +81,11 @@
           {
             "title": "Route Handlers",
             "description": "Live in `app/`, use Web `Request`/`Response`, and are colocated with pages. Best for new App Router projects.",
-            "pros": ["Colocated with UI", "Uses standard Web APIs", "Supports caching and revalidation"],
+            "pros": [
+              "Colocated with UI",
+              "Uses standard Web APIs",
+              "Supports caching and revalidation"
+            ],
             "cons": ["App Router only", "Newer syntax to learn"]
           },
           {

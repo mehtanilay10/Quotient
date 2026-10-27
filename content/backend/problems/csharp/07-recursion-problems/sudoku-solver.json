@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Fill a partially completed 9×9 Sudoku grid so that every row, every column, and every 3×3 box contains the digits 1 through 9 exactly once. The puzzle is guaranteed to have a unique solution. Modify the board in place."}
+        "text": "Fill a partially completed 9×9 Sudoku grid so that every row, every column, and every 3×3 box contains the digits 1 through 9 exactly once. The puzzle is guaranteed to have a unique solution. Modify the board in place."
+      }
     },
     {
       "type": "heading",
@@ -26,7 +27,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "A board where row 0 is `[\"5\",\"3\",\".\",\".\",\"7\",\".\",\".\",\".\",\".\"]` and so on. The `.` characters mark empty cells to be filled."}
+        "text": "A board where row 0 is `[\"5\",\"3\",\".\",\".\",\"7\",\".\",\".\",\".\",\".\"]` and so on. The `.` characters mark empty cells to be filled."
+      }
     },
     {
       "type": "heading",
@@ -35,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "For each empty cell in order, try every digit and check validity by scanning the whole row, column, and box — nine cells each. That is work repeated constantly, and it is the difference between a solver that finishes instantly and one that times out."}
+        "text": "For each empty cell in order, try every digit and check validity by scanning the whole row, column, and box — nine cells each. That is work repeated constantly, and it is the difference between a solver that finishes instantly and one that times out."
+      }
     },
     {
       "type": "example",
@@ -53,7 +56,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Track which digits are already used in each row, column, and box as bitmasks. Checking whether a digit is allowed becomes a single bitwise `AND`, and placing or removing a digit is a bitwise OR or XOR. The box index for cell `(r, c)` is `(r / 3) * 3 + c / 3`."}
+        "text": "Track which digits are already used in each row, column, and box as bitmasks. Checking whether a digit is allowed becomes a single bitwise `AND`, and placing or removing a digit is a bitwise OR or XOR. The box index for cell `(r, c)` is `(r / 3) * 3 + c / 3`."
+      }
     },
     {
       "type": "example",
@@ -111,7 +115,12 @@
           {
             "title": "Constraint bitmasks",
             "description": "Three int[9] masks",
-            "pros": ["O(1) validity check", "Cheap undo", "Handles hard puzzles quickly", "Recommended"],
+            "pros": [
+              "O(1) validity check",
+              "Cheap undo",
+              "Handles hard puzzles quickly",
+              "Recommended"
+            ],
             "cons": ["Mask bookkeeping must be symmetric"],
             "tags": ["Exponential with small constant", "O(1) space", "Recommended"]
           }

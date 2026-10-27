@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "medium",
   "estimatedMinutes": 13,
-  "tags": [
-    "csharp",
-    "recursion",
-    "backtracking",
-    "medium"
-  ],
+  "tags": ["csharp", "recursion", "backtracking", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -86,39 +81,21 @@
           {
             "title": "Backtracking + Pruning",
             "description": "Choose, recurse, un-choose; break on overflow",
-            "pros": [
-              "Prunes dead branches",
-              "Finds every combination exactly once"
-            ],
-            "cons": [
-              "Exponential worst case"
-            ],
-            "tags": [
-              "O(target^min) time",
-              "O(target) space",
-              "Recommended"
-            ]
+            "pros": ["Prunes dead branches", "Finds every combination exactly once"],
+            "cons": ["Exponential worst case"],
+            "tags": ["O(target^min) time", "O(target) space", "Recommended"]
           },
           {
             "title": "Naive (no sort/prune)",
             "description": "Explore every candidate at every step",
-            "pros": [
-              "Simpler to write"
-            ],
-            "cons": [
-              "Explores hopeless branches"
-            ],
-            "tags": [
-              "Slower in practice"
-            ]
+            "pros": ["Simpler to write"],
+            "cons": ["Explores hopeless branches"],
+            "tags": ["Slower in practice"]
           }
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "subsets",
-    "power"
-  ],
+  "relatedLessons": ["subsets", "power"],
   "furtherReading": []
 }

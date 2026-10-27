@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "forms",
-    "controlled",
-    "inputs"
-  ],
+  "tags": ["react", "forms", "controlled", "inputs"],
   "blocks": [
     {
       "type": "paragraph",
@@ -47,28 +42,18 @@
               "Easy to disable, reset, or conditionally enable",
               "Predictable — React state and input are always in sync"
             ],
-            "cons": [
-              "Requires an onChange handler for every input",
-              "More code for simple forms"
-            ],
-            "tags": [
-              "recommended"
-            ]
+            "cons": ["Requires an onChange handler for every input", "More code for simple forms"],
+            "tags": ["recommended"]
           },
           {
             "title": "Uncontrolled",
             "description": "The DOM manages the input value; React reads it via a ref.",
-            "pros": [
-              "Less boilerplate for simple forms",
-              "Works naturally with file inputs"
-            ],
+            "pros": ["Less boilerplate for simple forms", "Works naturally with file inputs"],
             "cons": [
               "Harder to validate in real time",
               "Harder to programmatically reset or modify"
             ],
-            "tags": [
-              "use-for-file-inputs"
-            ]
+            "tags": ["use-for-file-inputs"]
           }
         ]
       }

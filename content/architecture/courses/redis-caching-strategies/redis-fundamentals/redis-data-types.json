@@ -8,15 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "redis",
-    "data-types",
-    "strings",
-    "hashes",
-    "lists",
-    "sets",
-    "sorted-sets"
-  ],
+  "tags": ["redis", "data-types", "strings", "hashes", "lists", "sets", "sorted-sets"],
   "blocks": [
     {
       "type": "paragraph",
@@ -89,37 +81,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Structure",
-          "Common Commands",
-          "Best For"
-        ],
+        "headers": ["Type", "Structure", "Common Commands", "Best For"],
         "rows": [
-          [
-            "String",
-            "key → value",
-            "GET, SET, INCR, EXPIRE",
-            "Caching, counters, session tokens"
-          ],
-          [
-            "Hash",
-            "key → {field: value}",
-            "HSET, HGET, HDEL",
-            "Objects, user profiles"
-          ],
-          [
-            "List",
-            "key → [a, b, c]",
-            "LPUSH, RPOP, LRANGE",
-            "Queues, timelines"
-          ],
-          [
-            "Set",
-            "key → {a, b, c}",
-            "SADD, SMEMBERS, SREM",
-            "Tags, unique visitors"
-          ],
+          ["String", "key → value", "GET, SET, INCR, EXPIRE", "Caching, counters, session tokens"],
+          ["Hash", "key → {field: value}", "HSET, HGET, HDEL", "Objects, user profiles"],
+          ["List", "key → [a, b, c]", "LPUSH, RPOP, LRANGE", "Queues, timelines"],
+          ["Set", "key → {a, b, c}", "SADD, SMEMBERS, SREM", "Tags, unique visitors"],
           [
             "Sorted Set",
             "key → {member: score}",
@@ -172,9 +139,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "redis-commands"
-  ],
+  "relatedLessons": ["redis-commands"],
   "furtherReading": [
     {
       "title": "Redis Data Types Overview",

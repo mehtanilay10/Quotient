@@ -53,10 +53,34 @@
       "data": {
         "headers": ["Structure", "Best lookup", "Best insert", "Best delete", "Notes"],
         "rows": [
-          ["Array", "O(1) by index", "O(1) at end", "O(n) middle", "Great for fixed-size, random-access workloads"],
-          ["Linked list", "O(n)", "O(1) at head", "O(1) at head", "Great for frequent front mutations"],
-          ["Hash table", "O(1) average", "O(1) average", "O(1) average", "Great for key-based dictionaries"],
-          ["Binary search tree", "O(log n)", "O(log n)", "O(log n)", "Great for ordered data with range queries"],
+          [
+            "Array",
+            "O(1) by index",
+            "O(1) at end",
+            "O(n) middle",
+            "Great for fixed-size, random-access workloads"
+          ],
+          [
+            "Linked list",
+            "O(n)",
+            "O(1) at head",
+            "O(1) at head",
+            "Great for frequent front mutations"
+          ],
+          [
+            "Hash table",
+            "O(1) average",
+            "O(1) average",
+            "O(1) average",
+            "Great for key-based dictionaries"
+          ],
+          [
+            "Binary search tree",
+            "O(log n)",
+            "O(log n)",
+            "O(log n)",
+            "Great for ordered data with range queries"
+          ],
           ["Heap", "O(1) min/max", "O(log n)", "O(log n)", "Great for priority-based access"]
         ]
       }

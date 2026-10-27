@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "claude",
-    "toolkit",
-    "prompts",
-    "workflows",
-    "best-practices"
-  ],
+  "tags": ["claude", "toolkit", "prompts", "workflows", "best-practices"],
   "blocks": [
     {
       "type": "heading",
@@ -132,51 +126,22 @@
               "Most nuanced writing",
               "Careful instruction-following"
             ],
-            "cons": [
-              "No image generation",
-              "Limited live web access"
-            ],
-            "tags": [
-              "long-docs",
-              "writing",
-              "analysis"
-            ]
+            "cons": ["No image generation", "Limited live web access"],
+            "tags": ["long-docs", "writing", "analysis"]
           },
           {
             "title": "Use ChatGPT When",
             "description": "ChatGPT is the better choice for these scenarios.",
-            "pros": [
-              "Code Interpreter",
-              "Image generation",
-              "Broadest plugin ecosystem"
-            ],
-            "cons": [
-              "Smaller context window",
-              "Less cautious tone"
-            ],
-            "tags": [
-              "coding",
-              "images",
-              "general-use"
-            ]
+            "pros": ["Code Interpreter", "Image generation", "Broadest plugin ecosystem"],
+            "cons": ["Smaller context window", "Less cautious tone"],
+            "tags": ["coding", "images", "general-use"]
           },
           {
             "title": "Use Perplexity When",
             "description": "Perplexity wins for research tasks.",
-            "pros": [
-              "Live web sources",
-              "Always cites sources",
-              "Best for factual queries"
-            ],
-            "cons": [
-              "Not for writing or coding",
-              "Limited creative tasks"
-            ],
-            "tags": [
-              "research",
-              "citations",
-              "facts"
-            ]
+            "pros": ["Live web sources", "Always cites sources", "Best for factual queries"],
+            "cons": ["Not for writing or coding", "Limited creative tasks"],
+            "tags": ["research", "citations", "facts"]
           }
         ]
       }
@@ -233,15 +198,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prompt-engineering-for-claude",
-    "claude-limitations"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model",
-    "system-prompt",
-    "temperature",
-    "api"
-  ],
+  "relatedLessons": ["prompt-engineering-for-claude", "claude-limitations"],
+  "relatedGlossaryTerms": ["large-language-model", "system-prompt", "temperature", "api"],
   "courseSlug": "claude"
 }

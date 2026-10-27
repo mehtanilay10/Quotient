@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "where",
-    "filtering",
-    "predicate"
-  ],
+  "tags": ["linq", "where", "filtering", "predicate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -178,9 +173,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "oftype-filtering-operator",
-    "projection-operators"
-  ],
+  "relatedLessons": ["oftype-filtering-operator", "projection-operators"],
   "courseSlug": "linq"
 }

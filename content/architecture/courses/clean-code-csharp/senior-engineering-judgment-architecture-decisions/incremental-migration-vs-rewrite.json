@@ -8,12 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "migration",
-    "rewrite",
-    "legacy",
-    "csharp"
-  ],
+  "tags": ["migration", "rewrite", "legacy", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -196,10 +191,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "legacy-modernization-strategies",
-    "architecture-decision-records"
-  ],
+  "relatedLessons": ["legacy-modernization-strategies", "architecture-decision-records"],
   "furtherReading": [
     {
       "title": "Working Effectively with Legacy Code",

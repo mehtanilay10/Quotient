@@ -8,12 +8,7 @@
   "order": 16,
   "difficulty": "advanced",
   "estimatedMinutes": 26,
-  "tags": [
-    "interview",
-    "system-design",
-    "distributed-systems",
-    "storage"
-  ],
+  "tags": ["interview", "system-design", "distributed-systems", "storage"],
   "technology": "System Design",
   "blocks": [
     {
@@ -105,11 +100,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Entity",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Entity", "Key Fields", "Description"],
         "rows": [
           [
             "UrlRecord",
@@ -121,11 +112,7 @@
             "url_hash, domain, priority, next_fetch_at, attempt",
             "Frontier entry; per-domain scheduling"
           ],
-          [
-            "PageBlob",
-            "content_hash, storage_key, size, fetched_at",
-            "Raw HTML in object storage"
-          ],
+          ["PageBlob", "content_hash, storage_key, size, fetched_at", "Raw HTML in object storage"],
           [
             "DomainState",
             "domain, robots_txt, crawl_delay, last_fetch_at, budget",

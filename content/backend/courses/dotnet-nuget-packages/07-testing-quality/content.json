@@ -8,13 +8,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3.5,
   "icon": "🧪",
-  "tags": [
-    "testing",
-    "xunit",
-    "nunit",
-    "fluentassertions",
-    "moq"
-  ],
+  "tags": ["testing", "xunit", "nunit", "fluentassertions", "moq"],
   "lessonSlugs": [
     "xunit",
     "nunit",

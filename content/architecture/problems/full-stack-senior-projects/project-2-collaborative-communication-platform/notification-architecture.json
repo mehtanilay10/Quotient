@@ -204,10 +204,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "websocket-connection-lifecycle",
-    "presence-and-typing-indicators"
-  ],
+  "relatedLessons": ["websocket-connection-lifecycle", "presence-and-typing-indicators"],
   "furtherReading": [
     {
       "title": "Web Push Protocol",

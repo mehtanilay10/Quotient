@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "authorization",
-    "openiddict",
-    "openid"
-  ],
+  "tags": ["authorization", "openiddict", "openid"],
   "blocks": [
     {
       "type": "heading",

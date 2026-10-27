@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "drop-table",
-    "cascade",
-    "restrict",
-    "ddl"
-  ],
+  "tags": ["drop-table", "cascade", "restrict", "ddl"],
   "blocks": [
     {
       "type": "paragraph",
@@ -62,35 +57,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Statement",
-          "Removes",
-          "Transactional?",
-          "Lock",
-          "Can be filtered?"
-        ],
+        "headers": ["Statement", "Removes", "Transactional?", "Lock", "Can be filtered?"],
         "rows": [
-          [
-            "`DELETE FROM t`",
-            "Rows matching `WHERE`",
-            "Yes, and fully logged",
-            "Row-level",
-            "Yes"
-          ],
-          [
-            "`TRUNCATE t`",
-            "All rows",
-            "Yes, but use with care",
-            "ACCESS EXCLUSIVE",
-            "No"
-          ],
-          [
-            "`DROP TABLE t`",
-            "The table, data, indexes, triggers",
-            "Yes",
-            "ACCESS EXCLUSIVE",
-            "n/a"
-          ]
+          ["`DELETE FROM t`", "Rows matching `WHERE`", "Yes, and fully logged", "Row-level", "Yes"],
+          ["`TRUNCATE t`", "All rows", "Yes, but use with care", "ACCESS EXCLUSIVE", "No"],
+          ["`DROP TABLE t`", "The table, data, indexes, triggers", "Yes", "ACCESS EXCLUSIVE", "n/a"]
         ]
       }
     },
@@ -150,8 +121,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "create-table",
-    "object-management"
-  ]
+  "relatedLessons": ["create-table", "object-management"]
 }

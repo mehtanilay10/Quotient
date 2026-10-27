@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "architecture",
-    "postmaster",
-    "processes",
-    "shared-memory",
-    "wal"
-  ],
+  "tags": ["architecture", "postmaster", "processes", "shared-memory", "wal"],
   "blocks": [
     {
       "type": "paragraph",
@@ -47,11 +41,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Process Name",
-          "Primary Role",
-          "Configuration Tuning Parameter"
-        ],
+        "headers": ["Process Name", "Primary Role", "Configuration Tuning Parameter"],
         "rows": [
           [
             "`postmaster`",
@@ -220,8 +210,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-postgresql",
-    "installation-setup"
-  ]
+  "relatedLessons": ["what-is-postgresql", "installation-setup"]
 }

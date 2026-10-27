@@ -66,19 +66,9 @@
           {
             "title": "Synchronous orchestration",
             "description": "The Order Service calls inventory, payment, and fulfillment in sequence inside a single database transaction.",
-            "pros": [
-              "Simple to reason about",
-              "Easy to test"
-            ],
-            "cons": [
-              "Tight coupling",
-              "Hard to scale",
-              "Single point of failure"
-            ],
-            "tags": [
-              "monolith",
-              "orchestration"
-            ]
+            "pros": ["Simple to reason about", "Easy to test"],
+            "cons": ["Tight coupling", "Hard to scale", "Single point of failure"],
+            "tags": ["monolith", "orchestration"]
           },
           {
             "title": "Event-driven choreography",
@@ -88,15 +78,8 @@
               "Resilient to partial failures",
               "Teams own their services"
             ],
-            "cons": [
-              "Eventual consistency",
-              "Harder to debug",
-              "Requires compensation logic"
-            ],
-            "tags": [
-              "microservices",
-              "events"
-            ]
+            "cons": ["Eventual consistency", "Harder to debug", "Requires compensation logic"],
+            "tags": ["microservices", "events"]
           }
         ]
       }

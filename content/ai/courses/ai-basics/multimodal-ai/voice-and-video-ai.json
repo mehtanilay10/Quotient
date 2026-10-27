@@ -7,14 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "voice",
-    "audio",
-    "video",
-    "transcription",
-    "synthesis",
-    "multimodal"
-  ],
+  "tags": ["voice", "audio", "video", "transcription", "synthesis", "multimodal"],
   "blocks": [
     {
       "type": "paragraph",
@@ -69,12 +62,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool",
-          "Best for",
-          "Free tier",
-          "Key feature"
-        ],
+        "headers": ["Tool", "Best for", "Free tier", "Key feature"],
         "rows": [
           [
             "Whisper (OpenAI)",
@@ -127,11 +115,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Factor",
-          "Effect on accuracy",
-          "How to improve it"
-        ],
+        "headers": ["Factor", "Effect on accuracy", "How to improve it"],
         "rows": [
           [
             "Microphone quality",
@@ -220,12 +204,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool",
-          "Quality",
-          "Best use case",
-          "Cost"
-        ],
+        "headers": ["Tool", "Quality", "Best use case", "Cost"],
         "rows": [
           [
             "ElevenLabs",
@@ -245,12 +224,7 @@
             "Explainer videos, presentations",
             "Subscription from $19/month"
           ],
-          [
-            "Speechify",
-            "Good",
-            "Listen to articles and documents",
-            "Freemium"
-          ]
+          ["Speechify", "Good", "Listen to articles and documents", "Freemium"]
         ]
       }
     },
@@ -288,12 +262,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Capability",
-          "Top tools",
-          "Maturity",
-          "Practical use"
-        ],
+        "headers": ["Capability", "Top tools", "Maturity", "Practical use"],
         "rows": [
           [
             "Auto-transcription and captions",
@@ -346,10 +315,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Text-to-video — good at",
-          "Text-to-video — not reliable yet"
-        ],
+        "headers": ["Text-to-video — good at", "Text-to-video — not reliable yet"],
         "rows": [
           [
             "Short atmospheric B-roll (landscapes, cityscapes, abstract motion)",
@@ -461,10 +427,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Question to ask",
-          "Why it matters"
-        ],
+        "headers": ["Question to ask", "Why it matters"],
         "rows": [
           [
             "Who is sharing this, and what is their track record?",
@@ -507,10 +470,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "images-and-ai",
-    "ai-writing-assistant"
-  ],
+  "relatedLessons": ["images-and-ai", "ai-writing-assistant"],
   "furtherReading": [
     {
       "title": "ElevenLabs Voice AI",

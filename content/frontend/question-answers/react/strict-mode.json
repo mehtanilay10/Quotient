@@ -6,11 +6,7 @@
   "description": "Development-only checks: double-invoked effects, double rendering, immutable-data warnings, and why StrictMode bugs are real bugs.",
   "order": 22,
   "difficulty": "intermediate",
-  "tags": [
-    "react",
-    "developer-experience",
-    "intermediate"
-  ],
+  "tags": ["react", "developer-experience", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "react-i02",
-    "custom-hooks",
-    "what-causes-hydration-mismatches"
-  ],
+  "relatedLessons": ["react-i02", "custom-hooks", "what-causes-hydration-mismatches"],
   "furtherReading": [
     {
       "title": "StrictMode reference",

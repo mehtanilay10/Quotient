@@ -10,11 +10,7 @@
   "estimatedHours": 1.5,
   "icon": "🔄",
   "tags": ["linq", "conversion", "generation", "cast", "toarray", "tolist"],
-  "lessonSlugs": [
-    "conversion-operators",
-    "generation-operators",
-    "defaultifempty-operator"
-  ],
+  "lessonSlugs": ["conversion-operators", "generation-operators", "defaultifempty-operator"],
   "whatYouLearn": [
     "Convert between collection types",
     "Force query execution with To operators",

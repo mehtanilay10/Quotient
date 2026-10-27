@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "debugging",
-    "diagnostics",
-    "visual-studio"
-  ],
+  "tags": ["debugging", "diagnostics", "visual-studio"],
   "blocks": [
     {
       "type": "paragraph",
@@ -198,9 +194,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "logging-and-monitoring"
-  ],
+  "relatedLessons": ["logging-and-monitoring"],
   "technology": null,
   "furtherReading": [
     {

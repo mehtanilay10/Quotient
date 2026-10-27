@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "principles",
-    "fundamentals",
-    "architecture"
-  ],
+  "tags": ["redux", "principles", "fundamentals", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -112,22 +107,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Principle",
-          "What It Means",
-          "Why It Matters"
-        ],
+        "headers": ["Principle", "What It Means", "Why It Matters"],
         "rows": [
           [
             "Single Source of Truth",
             "One store holds the entire state tree",
             "Easy debugging, persistence, and serialization"
           ],
-          [
-            "State is Read-Only",
-            "Only actions can change state",
-            "Traceable, predictable changes"
-          ],
+          ["State is Read-Only", "Only actions can change state", "Traceable, predictable changes"],
           [
             "Pure Reducers",
             "Reducers return new state without side effects",
@@ -174,30 +161,22 @@
           {
             "title": "Multiple stores (Bad)",
             "description": "Splitting state across multiple stores makes synchronizing data hard and breaks the single source of truth.",
-            "tags": [
-              "anti-pattern"
-            ]
+            "tags": ["anti-pattern"]
           },
           {
             "title": "Direct mutation (Bad)",
             "description": "Modifying state outside a reducer bypasses the action log and breaks time-travel debugging.",
-            "tags": [
-              "anti-pattern"
-            ]
+            "tags": ["anti-pattern"]
           },
           {
             "title": "Pure reducers (Good)",
             "description": "Reducers that only return new state without side effects keep the data flow predictable and testable.",
-            "tags": [
-              "best-practice"
-            ]
+            "tags": ["best-practice"]
           },
           {
             "title": "Action-driven updates (Good)",
             "description": "All state changes flow through dispatched actions, creating a clear audit trail of every update.",
-            "tags": [
-              "best-practice"
-            ]
+            "tags": ["best-practice"]
           }
         ]
       }

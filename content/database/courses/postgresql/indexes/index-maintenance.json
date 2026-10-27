@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "reindex",
-    "concurrently",
-    "index-bloat",
-    "maintenance",
-    "dba"
-  ],
+  "tags": ["reindex", "concurrently", "index-bloat", "maintenance", "dba"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,8 +74,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "index-fundamentals",
-    "vacuum-analyze"
-  ]
+  "relatedLessons": ["index-fundamentals", "vacuum-analyze"]
 }

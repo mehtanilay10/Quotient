@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import { Metadata } from "next";
 import {
   courses,
   modules,
@@ -7,14 +7,14 @@ import {
   getLessonsForCourse,
   getContentItemHref,
   isProblemCourseSlug,
-} from '@/lib/content';
-import { ProgressDashboardClient } from './ProgressDashboardClient';
-import type { ProgressCatalog, ProgressModuleCourse } from './ProgressDashboardClient';
-import { ProgressErrorBoundary } from '@/components/progress/ProgressErrorBoundary';
+} from "@/lib/content";
+import { ProgressDashboardClient } from "./ProgressDashboardClient";
+import type { ProgressCatalog, ProgressModuleCourse } from "./ProgressDashboardClient";
+import { ProgressErrorBoundary } from "@/components/progress/ProgressErrorBoundary";
 
 export const metadata: Metadata = {
-  title: 'Progress Dashboard | Quotient',
-  description: 'Track your learning progress across courses, problems, and question answers.',
+  title: "Progress Dashboard | Quotient",
+  description: "Track your learning progress across courses, problems, and question answers.",
 };
 
 /**
@@ -37,10 +37,10 @@ function buildProgressCatalog(): ProgressCatalog {
   const moduleCourse: Record<string, ProgressModuleCourse> = {};
   for (const mod of modules) {
     if (mod.slug in moduleCourse) continue;
-    if (mod.courseSlug === 'question-answers') {
+    if (mod.courseSlug === "question-answers") {
       moduleCourse[mod.slug] = {
-        courseSlug: 'question-answers',
-        courseTitle: 'Technical Question Answers',
+        courseSlug: "question-answers",
+        courseTitle: "Technical Question Answers",
       };
       continue;
     }
@@ -51,9 +51,9 @@ function buildProgressCatalog(): ProgressCatalog {
   }
 
   const counts = {
-    lessons: lessons.filter((lesson) => lesson.courseSlug !== 'question-answers').length,
+    lessons: lessons.filter((lesson) => lesson.courseSlug !== "question-answers").length,
     problems: lessons.filter((lesson) => isProblemCourseSlug(lesson.courseSlug)).length,
-    questions: lessons.filter((lesson) => lesson.courseSlug === 'question-answers').length,
+    questions: lessons.filter((lesson) => lesson.courseSlug === "question-answers").length,
   };
 
   return { courses: courseEntries, moduleCourse, counts };

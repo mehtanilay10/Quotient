@@ -7,12 +7,7 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "recovery-model",
-    "SIMPLE",
-    "FULL",
-    "BULK-LOGGED"
-  ],
+  "tags": ["recovery-model", "SIMPLE", "FULL", "BULK-LOGGED"],
   "blocks": [
     {
       "type": "heading",
@@ -37,12 +32,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Recovery Model",
-          "Description",
-          "Data Loss",
-          "Point-in-time Recovery"
-        ],
+        "headers": ["Recovery Model", "Description", "Data Loss", "Point-in-time Recovery"],
         "rows": [
           [
             "Simple",
@@ -50,12 +40,7 @@
             "Changes since most recent backup lost",
             "Only to end of backup"
           ],
-          [
-            "Full",
-            "Requires log backups",
-            "Typically none",
-            "Yes, to any point in time"
-          ],
+          ["Full", "Requires log backups", "Typically none", "Yes, to any point in time"],
           [
             "Bulk-Logged",
             "Requires log backups",

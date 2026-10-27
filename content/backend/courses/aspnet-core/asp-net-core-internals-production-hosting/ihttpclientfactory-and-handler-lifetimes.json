@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "httpclient",
-    "http",
-    "socket-exhaustion",
-    "resilience"
-  ],
+  "tags": ["httpclient", "http", "socket-exhaustion", "resilience"],
   "blocks": [
     {
       "type": "paragraph",

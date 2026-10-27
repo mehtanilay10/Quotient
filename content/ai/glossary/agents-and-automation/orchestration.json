@@ -6,11 +6,7 @@
   "fullDefinition": "Orchestration is the process of coordinating multiple AI components \u2014 agents, tools, models, and services \u2014 to execute complex, multi-step workflows. An orchestrator manages the sequence of operations, handles dependencies between steps, routes data between components, and ensures the overall process achieves its goals. In AI systems, orchestration frameworks like LangChain, CrewAI, and AutoGen provide primitives for defining agent roles, managing conversation flows, and handling error recovery. Good orchestration makes complex AI systems feel like single, coherent applications to end users, hiding the complexity of the underlying components.",
   "category": "agents-and-automation",
   "difficulty": "advanced",
-  "relatedTerms": [
-    "multi-agent-system",
-    "autonomous-agent",
-    "rag"
-  ],
+  "relatedTerms": ["multi-agent-system", "autonomous-agent", "rag"],
   "learnMoreSlug": "building-your-first-workflow",
   "examples": [
     "Orchestrating a research pipeline: search, read, summarize, and format",

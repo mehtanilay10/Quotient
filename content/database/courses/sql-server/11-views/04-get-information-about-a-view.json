@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "view-metadata",
-    "sys-sql_modules",
-    "sp_helptext"
-  ],
+  "tags": ["view-metadata", "sys-sql_modules", "sp_helptext"],
   "blocks": [
     {
       "type": "heading",

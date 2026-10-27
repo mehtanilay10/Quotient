@@ -78,37 +78,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Clustered index",
-          "Nonclustered index"
-        ],
+        "headers": ["Aspect", "Clustered index", "Nonclustered index"],
         "rows": [
-          [
-            "Physical order",
-            "Yes",
-            "No"
-          ],
-          [
-            "Leaf level contains",
-            "Data rows",
-            "Key columns + row locator"
-          ],
-          [
-            "One per table",
-            "Yes",
-            "Up to 999"
-          ],
-          [
-            "Impact on other indexes",
-            "Every nonclustered index stores the clustered key",
-            "None"
-          ],
-          [
-            "Range query speed",
-            "Very fast",
-            "Depends on lookup cost"
-          ],
+          ["Physical order", "Yes", "No"],
+          ["Leaf level contains", "Data rows", "Key columns + row locator"],
+          ["One per table", "Yes", "Up to 999"],
+          ["Impact on other indexes", "Every nonclustered index stores the clustered key", "None"],
+          ["Range query speed", "Very fast", "Depends on lookup cost"],
           [
             "Insert pattern",
             "Can cause page splits at the end of the range",

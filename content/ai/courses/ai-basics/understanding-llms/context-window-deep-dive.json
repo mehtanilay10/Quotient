@@ -7,16 +7,8 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "context-window",
-    "memory",
-    "long-context",
-    "limits"
-  ],
-  "relatedGlossaryTerms": [
-    "context-window",
-    "token"
-  ],
+  "tags": ["context-window", "memory", "long-context", "limits"],
+  "relatedGlossaryTerms": ["context-window", "token"],
   "blocks": [
     {
       "type": "paragraph",
@@ -58,12 +50,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model",
-          "Context size",
-          "Approx. words",
-          "Practical implication"
-        ],
+        "headers": ["Model", "Context size", "Approx. words", "Practical implication"],
         "rows": [
           [
             "GPT-6 family (OpenAI)",
@@ -127,22 +114,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Context window",
-          "Long-term memory (app feature)"
-        ],
+        "headers": ["Feature", "Context window", "Long-term memory (app feature)"],
         "rows": [
-          [
-            "Scope",
-            "Current session only",
-            "Persists across sessions"
-          ],
-          [
-            "How it works",
-            "Everything in one conversation",
-            "Key facts saved and retrieved later"
-          ],
+          ["Scope", "Current session only", "Persists across sessions"],
+          ["How it works", "Everything in one conversation", "Key facts saved and retrieved later"],
           [
             "Who provides it",
             "Built into every AI model",
@@ -200,40 +175,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Context segment",
-          "Priority",
-          "Handling strategy"
-        ],
+        "headers": ["Context segment", "Priority", "Handling strategy"],
         "rows": [
-          [
-            "Task instructions",
-            "Critical",
-            "Keep explicit and stable"
-          ],
-          [
-            "Grounding evidence",
-            "High",
-            "Include most relevant excerpts"
-          ],
-          [
-            "Background detail",
-            "Medium",
-            "Summarize before inclusion"
-          ],
-          [
-            "Historical chatter",
-            "Low",
-            "Drop or archive outside prompt"
-          ]
+          ["Task instructions", "Critical", "Keep explicit and stable"],
+          ["Grounding evidence", "High", "Include most relevant excerpts"],
+          ["Background detail", "Medium", "Summarize before inclusion"],
+          ["Historical chatter", "Low", "Drop or archive outside prompt"]
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "tokens-explained",
-    "ai-hallucination-deep-dive"
-  ],
+  "relatedLessons": ["tokens-explained", "ai-hallucination-deep-dive"],
   "furtherReading": [
     {
       "title": "Claude Model Overview",

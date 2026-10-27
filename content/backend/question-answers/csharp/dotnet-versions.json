@@ -6,10 +6,7 @@
   "description": "Understand the evolution of .NET platforms and when to use each.",
   "order": 25,
   "difficulty": "intermediate",
-  "tags": [
-    ".NET",
-    "intermediate"
-  ],
+  "tags": [".NET", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

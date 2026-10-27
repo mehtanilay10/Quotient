@@ -129,7 +129,10 @@
       }
     }
   ],
-  "relatedLessons": ["cpu-memory-and-disk-investigation", "building-a-repeatable-production-investigation-workflow"],
+  "relatedLessons": [
+    "cpu-memory-and-disk-investigation",
+    "building-a-repeatable-production-investigation-workflow"
+  ],
   "furtherReading": [
     {
       "type": "article",

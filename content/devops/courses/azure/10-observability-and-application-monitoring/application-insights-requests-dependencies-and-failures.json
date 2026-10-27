@@ -8,14 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "azure",
-    "azure",
-    "monitoring",
-    "observability",
-    "application-insights",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "monitoring", "observability", "application-insights", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -55,42 +48,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Telemetry Type",
-          "What It Tracks",
-          "Auto-Collected?"
-        ],
+        "headers": ["Telemetry Type", "What It Tracks", "Auto-Collected?"],
         "rows": [
-          [
-            "Request",
-            "Incoming HTTP/gRPC calls",
-            "Yes"
-          ],
-          [
-            "Dependency",
-            "Outgoing HTTP, SQL, Redis, blob calls",
-            "Yes"
-          ],
-          [
-            "Exception",
-            "Unhandled and tracked exceptions",
-            "Yes"
-          ],
-          [
-            "Event",
-            "Custom business events",
-            "No - manual"
-          ],
-          [
-            "Metric",
-            "Custom numeric measurements",
-            "No - manual"
-          ],
-          [
-            "Trace",
-            "Debug and diagnostic messages",
-            "No - manual"
-          ]
+          ["Request", "Incoming HTTP/gRPC calls", "Yes"],
+          ["Dependency", "Outgoing HTTP, SQL, Redis, blob calls", "Yes"],
+          ["Exception", "Unhandled and tracked exceptions", "Yes"],
+          ["Event", "Custom business events", "No - manual"],
+          ["Metric", "Custom numeric measurements", "No - manual"],
+          ["Trace", "Debug and diagnostic messages", "No - manual"]
         ]
       }
     },

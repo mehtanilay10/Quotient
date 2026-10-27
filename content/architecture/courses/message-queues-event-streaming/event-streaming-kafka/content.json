@@ -9,13 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 4,
   "icon": "🌊",
-  "tags": [
-    "kafka",
-    "event-streaming",
-    "producers",
-    "consumers",
-    "partitions"
-  ],
+  "tags": ["kafka", "event-streaming", "producers", "consumers", "partitions"],
   "lessonSlugs": [
     "kafka-fundamentals",
     "kafka-producers-consumers",

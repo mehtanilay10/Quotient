@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "interview",
-    "fullstack",
-    "offline",
-    "pwa"
-  ],
+  "tags": ["interview", "fullstack", "offline", "pwa"],
   "blocks": [
     {
       "type": "paragraph",

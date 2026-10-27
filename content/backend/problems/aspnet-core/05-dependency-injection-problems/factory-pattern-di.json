@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "dependency-injection",
-    "factory",
-    "design-patterns"
-  ],
+  "tags": ["aspnet-core", "dependency-injection", "factory", "design-patterns"],
   "blocks": [
     {
       "type": "heading",
@@ -70,20 +65,9 @@
           {
             "title": "Factory Pattern",
             "description": "Runtime service selection",
-            "pros": [
-              "Runtime flexibility",
-              "Single responsibility",
-              "Testable"
-            ],
-            "cons": [
-              "More interfaces",
-              "Factory must be maintained"
-            ],
-            "tags": [
-              "factory",
-              "IServiceProvider",
-              "GetRequiredService"
-            ]
+            "pros": ["Runtime flexibility", "Single responsibility", "Testable"],
+            "cons": ["More interfaces", "Factory must be maintained"],
+            "tags": ["factory", "IServiceProvider", "GetRequiredService"]
           }
         ]
       }

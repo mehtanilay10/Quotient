@@ -153,6 +153,10 @@
   ],
   "relatedLessons": ["github-flow", "branching-strategies"],
   "furtherReading": [
-    { "title": "Trunk-Based Development", "url": "https://trunkbaseddevelopment.com/", "type": "article" }
+    {
+      "title": "Trunk-Based Development",
+      "url": "https://trunkbaseddevelopment.com/",
+      "type": "article"
+    }
   ]
 }

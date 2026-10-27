@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "access-control",
-    "IDOR",
-    "BOLA",
-    "authorization",
-    "OWASP"
-  ],
+  "tags": ["access-control", "IDOR", "BOLA", "authorization", "OWASP"],
   "blocks": [
     {
       "type": "paragraph",

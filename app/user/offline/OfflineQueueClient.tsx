@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { CloudOff, Trash2 } from 'lucide-react';
-import { formatRelativeTime } from '@/lib/utils';
-import { logger } from '@/lib/logger';
-import { apiFetch } from '@/lib/apiFetch';
-import { getContentItemHref } from '@/lib/content-hrefs';
-import { EmptyState } from '@/components/ui/EmptyState';
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { CloudOff, Trash2 } from "lucide-react";
+import { formatRelativeTime } from "@/lib/utils";
+import { logger } from "@/lib/logger";
+import { apiFetch } from "@/lib/apiFetch";
+import { getContentItemHref } from "@/lib/content-hrefs";
+import { EmptyState } from "@/components/ui/EmptyState";
 
 interface QueueItem {
   courseSlug: string;
@@ -24,13 +24,13 @@ export function OfflineQueueClient() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/user/offline-queue');
+        const res = await fetch("/api/user/offline-queue");
         if (res.ok) {
           const data = await res.json();
           setQueue(data.queue || []);
         }
       } catch (err) {
-        logger.error('OfflineQueueClient', 'Failed to fetch offline queue:', err);
+        logger.error("OfflineQueueClient", "Failed to fetch offline queue:", err);
       } finally {
         setLoading(false);
       }
@@ -42,23 +42,28 @@ export function OfflineQueueClient() {
     const previous = queue;
     setQueue((prev) =>
       prev.filter(
-        (q) => !(q.courseSlug === item.courseSlug && q.moduleSlug === item.moduleSlug && q.lessonSlug === item.lessonSlug)
+        (q) =>
+          !(
+            q.courseSlug === item.courseSlug &&
+            q.moduleSlug === item.moduleSlug &&
+            q.lessonSlug === item.lessonSlug
+          )
       )
     );
     try {
       // apiFetch attaches the x-csrf-token header required by the API.
-      const res = await apiFetch('/api/user/offline-queue', {
-        method: 'DELETE',
-        headers: { 'Content-Type': 'application/json' },
+      const res = await apiFetch("/api/user/offline-queue", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           courseSlug: item.courseSlug,
           moduleSlug: item.moduleSlug,
           lessonSlug: item.lessonSlug,
         }),
       });
-      if (!res.ok) throw new Error('Failed to remove item');
+      if (!res.ok) throw new Error("Failed to remove item");
     } catch (err) {
-      logger.error('OfflineQueueClient', 'Failed to remove offline item:', err);
+      logger.error("OfflineQueueClient", "Failed to remove offline item:", err);
       setQueue(previous);
     }
   };

@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is System.Text.Json Source Generation?"}
+      "data": { "level": 2, "text": "What is System.Text.Json Source Generation?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`System.Text.Json` source generation moves JSON serialization logic to compile time. This eliminates reflection at runtime and dramatically improves serialization speed and startup time."}
+      "data": {
+        "text": "`System.Text.Json` source generation moves JSON serialization logic to compile time. This eliminates reflection at runtime and dramatically improves serialization speed and startup time."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Source-Generated Context"}
+      "data": { "level": 2, "text": "Source-Generated Context" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Define a partial class with `JsonSerializerContext` and mark it with `[JsonSerializable]` for each type you want to serialize."}
+      "data": {
+        "text": "Define a partial class with `JsonSerializerContext` and mark it with `[JsonSerializable]` for each type you want to serialize."
+      }
     },
     {
       "type": "example",
@@ -48,11 +52,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "AOT Compatibility"}
+      "data": { "level": 2, "text": "AOT Compatibility" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Source-generated serializers are required for Native AOT because reflection-based serializers cannot be trimmed."}
+      "data": {
+        "text": "Source-generated serializers are required for Native AOT because reflection-based serializers cannot be trimmed."
+      }
     },
     {
       "type": "example",

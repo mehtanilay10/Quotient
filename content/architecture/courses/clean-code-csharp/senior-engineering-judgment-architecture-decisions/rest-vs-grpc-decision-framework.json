@@ -8,12 +8,7 @@
   "order": 13,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "grpc",
-    "rest",
-    "api",
-    "csharp"
-  ],
+  "tags": ["grpc", "rest", "api", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,52 +32,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Criterion",
-          "REST",
-          "gRPC"
-        ],
+        "headers": ["Criterion", "REST", "gRPC"],
         "rows": [
- [
-            "Protocol",
-            "HTTP/1.1 (or HTTP/2)",
-            "HTTP/2 mandatory"
-          ],
- [
-            "Payload format",
-            "JSON (text, verbose)",
-            "Protocol Buffers (binary, compact)"
-          ],
- [
-            "Contract",
-            "OpenAPI / Swagger (optional)",
-            "Strongly typed .proto file (required)"
-          ],
- [
-            "Streaming",
-            "Limited (server-sent events)",
-            "Bidirectional streaming built-in"
-          ],
- [
-            "Browser support",
-            "Native",
-            "Requires gRPC-Web proxy"
-          ],
- [
-            "Performance",
-            "Good for typical APIs",
-            "Excellent for high-volume internal calls"
-          ],
- [
-            "Code generation",
-            "NSwag / Swashbuckle",
-            "Built into dotnet-gRPC"
-          ],
- [
-            "Debugging",
-            "Easy with curl, Postman, browser",
-            "Requires grpcurl or custom tools"
-          ]
+          ["Protocol", "HTTP/1.1 (or HTTP/2)", "HTTP/2 mandatory"],
+          ["Payload format", "JSON (text, verbose)", "Protocol Buffers (binary, compact)"],
+          ["Contract", "OpenAPI / Swagger (optional)", "Strongly typed .proto file (required)"],
+          ["Streaming", "Limited (server-sent events)", "Bidirectional streaming built-in"],
+          ["Browser support", "Native", "Requires gRPC-Web proxy"],
+          ["Performance", "Good for typical APIs", "Excellent for high-volume internal calls"],
+          ["Code generation", "NSwag / Swashbuckle", "Built into dotnet-gRPC"],
+          ["Debugging", "Easy with curl, Postman, browser", "Requires grpcurl or custom tools"]
         ]
       }
     },
@@ -193,7 +152,7 @@
             "text": "Is the team comfortable with Protocol Buffers and HTTP/2 debugging tools?",
             "hint": "If no, REST reduces operational risk."
           },
- {
+          {
             "text": "Are you deploying to an environment where gRPC is fully supported (ingress, service mesh, monitoring)?",
             "hint": "If no, REST avoids infrastructure complications."
           }
@@ -230,10 +189,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rest-vs-graphql-decision-framework",
-    "synchronous-vs-asynchronous-workflows"
-  ],
+  "relatedLessons": ["rest-vs-graphql-decision-framework", "synchronous-vs-asynchronous-workflows"],
   "furtherReading": [
     {
       "title": "gRPC for .NET",

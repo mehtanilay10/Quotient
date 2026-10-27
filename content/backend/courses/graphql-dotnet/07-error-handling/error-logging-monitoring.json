@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "graphql",
-    "error-handling",
-    "logging",
-    "monitoring",
-    "dotnet"
-  ],
+  "tags": ["graphql", "error-handling", "logging", "monitoring", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -165,9 +159,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "error-handling-basics",
-    "custom-exceptions"
-  ],
+  "relatedLessons": ["error-handling-basics", "custom-exceptions"],
   "courseSlug": "graphql-dotnet"
 }

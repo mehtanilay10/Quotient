@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "hangfire",
-    "background-jobs",
-    "scheduling",
-    "jobs"
-  ],
+  "tags": ["hangfire", "background-jobs", "scheduling", "jobs"],
   "blocks": [
     {
       "type": "heading",

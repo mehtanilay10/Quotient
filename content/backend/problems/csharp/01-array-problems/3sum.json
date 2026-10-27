@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "medium",
   "estimatedMinutes": 20,
-  "tags": [
-    "csharp",
-    "arrays",
-    "two-pointers",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "two-pointers", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -107,32 +102,16 @@
           {
             "title": "Brute Force",
             "description": "Three nested loops",
-            "pros": [
-              "No sorting"
-            ],
-            "cons": [
-              "O(n³) time"
-            ],
-            "tags": [
-              "O(n³) time",
-              "O(1) space"
-            ]
+            "pros": ["No sorting"],
+            "cons": ["O(n³) time"],
+            "tags": ["O(n³) time", "O(1) space"]
           },
           {
             "title": "Sort + Two Pointers",
             "description": "Fix one, sweep the rest with two pointers",
-            "pros": [
-              "O(n²) time",
-              "Handles duplicates"
-            ],
-            "cons": [
-              "O(n log n) for sort"
-            ],
-            "tags": [
-              "O(n²) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n²) time", "Handles duplicates"],
+            "cons": ["O(n log n) for sort"],
+            "tags": ["O(n²) time", "O(1) space", "Recommended"]
           }
         ]
       }

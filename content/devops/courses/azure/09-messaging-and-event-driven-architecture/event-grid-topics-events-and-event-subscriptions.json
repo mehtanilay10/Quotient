@@ -8,14 +8,7 @@
   "order": 9,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "azure",
-    "azure",
-    "messaging",
-    "events",
-    "event-grid",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "messaging", "events", "event-grid", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -87,32 +80,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Filter Type",
-          "Description",
-          "Example"
-        ],
+        "headers": ["Filter Type", "Description", "Example"],
         "rows": [
-          [
-            "Event Type",
-            "Match specific event types",
-            "Microsoft.Storage.BlobCreated"
-          ],
-          [
-            "Subject Prefix",
-            "Events whose subject starts with a string",
-            "uploads/images/"
-          ],
-          [
-            "Subject Suffix",
-            "Events whose subject ends with a string",
-            ".jpg"
-          ],
-          [
-            "Advanced (JSON)",
-            "Complex rules on data fields",
-            "data.contentType == image/jpeg"
-          ]
+          ["Event Type", "Match specific event types", "Microsoft.Storage.BlobCreated"],
+          ["Subject Prefix", "Events whose subject starts with a string", "uploads/images/"],
+          ["Subject Suffix", "Events whose subject ends with a string", ".jpg"],
+          ["Advanced (JSON)", "Complex rules on data fields", "data.contentType == image/jpeg"]
         ]
       }
     },

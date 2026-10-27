@@ -7,9 +7,7 @@
   "order": 7,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "common-table-expressions"
-  ],
+  "tags": ["common-table-expressions"],
   "blocks": [
     {
       "type": "heading",

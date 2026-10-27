@@ -9,13 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "⚖️",
-  "tags": [
-    "broker-selection",
-    "rabbitmq",
-    "kafka",
-    "sqs",
-    "evaluation"
-  ],
+  "tags": ["broker-selection", "rabbitmq", "kafka", "sqs", "evaluation"],
   "lessonSlugs": [
     "rabbitmq-vs-kafka-vs-sqs",
     "broker-decision-framework",

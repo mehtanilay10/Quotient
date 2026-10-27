@@ -1,5 +1,5 @@
-'use client';
+"use client";
 
-import { useBookmarks } from '@/components/bookmarks/BookmarkProvider';
+import { useBookmarks } from "@/components/bookmarks/BookmarkProvider";
 
 export { useBookmarks };

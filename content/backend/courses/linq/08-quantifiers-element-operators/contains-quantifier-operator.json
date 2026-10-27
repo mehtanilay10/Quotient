@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "contains",
-    "quantifiers"
-  ],
+  "tags": ["linq", "contains", "quantifiers"],
   "blocks": [
     {
       "type": "paragraph",
@@ -102,9 +98,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "quantifier-operators",
-    "elementat-elementatordefault"
-  ],
+  "relatedLessons": ["quantifier-operators", "elementat-elementatordefault"],
   "courseSlug": "linq"
 }

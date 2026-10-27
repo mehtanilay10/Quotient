@@ -6,12 +6,6 @@
   "fullDefinition": "Text-to-Speech (TTS) converts written text into natural-sounding spoken audio. Modern AI TTS systems produce highly realistic voices with natural intonation and emotion. Used in voice interfaces for AI assistants (ChatGPT voice, Claude voice), audiobook production, accessibility tools, and content creation. Leading TTS tools include ElevenLabs, OpenAI TTS, and Google Cloud TTS.",
   "category": "multimodal",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "multimodal",
-    "stt"
-  ],
-  "alsoKnownAs": [
-    "Voice Synthesis",
-    "Speech Synthesis"
-  ]
+  "relatedTerms": ["multimodal", "stt"],
+  "alsoKnownAs": ["Voice Synthesis", "Speech Synthesis"]
 }

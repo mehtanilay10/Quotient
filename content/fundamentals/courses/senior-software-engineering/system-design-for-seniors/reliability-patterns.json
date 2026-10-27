@@ -42,7 +42,11 @@
         "rows": [
           ["SLI", "The metric you measure", "HTTP request latency, error rate, throughput"],
           ["SLO", "The target value for the SLI", "99.9% of requests return in under 300ms"],
-          ["SLA", "The contract with consequences", "If uptime drops below 99.9%, customers receive a credit"]
+          [
+            "SLA",
+            "The contract with consequences",
+            "If uptime drops below 99.9%, customers receive a credit"
+          ]
         ]
       }
     },

@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "security",
-    "vulnerabilities",
-    "code-review",
-    "owasp"
-  ],
+  "tags": ["security", "vulnerabilities", "code-review", "owasp"],
   "blocks": [
     {
       "type": "heading",
@@ -68,11 +63,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "OWASP Risk",
-          "AI-Generated Pattern to Watch For",
-          "How to Mitigate"
-        ],
+        "headers": ["OWASP Risk", "AI-Generated Pattern to Watch For", "How to Mitigate"],
         "rows": [
           [
             "Injection",
@@ -89,11 +80,7 @@
             "Returning full objects in API responses",
             "Specify fields to return in prompt"
           ],
-          [
-            "XSS",
-            "Unescaped user input in HTML",
-            "Use template escaping; specify in prompt"
-          ],
+          ["XSS", "Unescaped user input in HTML", "Use template escaping; specify in prompt"],
           [
             "Security Misconfiguration",
             "Default credentials, debug mode on",
@@ -197,10 +184,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "testing-strategies",
-    "code-review-with-ai"
-  ],
+  "relatedLessons": ["testing-strategies", "code-review-with-ai"],
   "relatedGlossaryTerms": [],
   "courseSlug": "codex"
 }

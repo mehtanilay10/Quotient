@@ -7,16 +7,8 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "🔍",
-  "tags": [
-    "claude",
-    "research",
-    "analysis",
-    "documents"
-  ],
-  "lessonSlugs": [
-    "research-and-analysis",
-    "document-understanding"
-  ],
+  "tags": ["claude", "research", "analysis", "documents"],
+  "lessonSlugs": ["research-and-analysis", "document-understanding"],
   "whatYouLearn": [
     "How to conduct structured research with Claude",
     "Using Claude's 200K context window for long documents",

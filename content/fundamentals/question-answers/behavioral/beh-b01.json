@@ -6,10 +6,7 @@
   "description": "Learn systematic approach to production incident response.",
   "order": 7,
   "difficulty": "beginner",
-  "tags": [
-    "behavioral",
-    "beginner"
-  ],
+  "tags": ["behavioral", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

@@ -7,13 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "int",
-    "bigint",
-    "smallint",
-    "tinyint",
-    "integer"
-  ],
+  "tags": ["int", "bigint", "smallint", "tinyint", "integer"],
   "blocks": [
     {
       "type": "heading",
@@ -38,32 +32,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Data Type",
-          "Range",
-          "Storage"
-        ],
+        "headers": ["Data Type", "Range", "Storage"],
         "rows": [
-          [
-            "BIGINT",
-            "−2^63 to 2^63−1",
-            "8 Bytes"
-          ],
-          [
-            "INT",
-            "−2^31 to 2^31−1",
-            "4 Bytes"
-          ],
-          [
-            "SMALLINT",
-            "−2^15 to 2^15−1",
-            "2 Bytes"
-          ],
-          [
-            "TINYINT",
-            "0 to 255",
-            "1 Byte"
-          ]
+          ["BIGINT", "−2^63 to 2^63−1", "8 Bytes"],
+          ["INT", "−2^31 to 2^31−1", "4 Bytes"],
+          ["SMALLINT", "−2^15 to 2^15−1", "2 Bytes"],
+          ["TINYINT", "0 to 255", "1 Byte"]
         ]
       }
     },

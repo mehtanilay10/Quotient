@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is AWSSDK.Core?"}
+      "data": { "level": 2, "text": "What is AWSSDK.Core?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`AWSSDK.Core` provides shared configuration, logging, retry logic, and HTTP handlers used by other AWS SDK packages. You rarely add it directly, but understanding it helps when customizing AWS clients."}
+      "data": {
+        "text": "`AWSSDK.Core` provides shared configuration, logging, retry logic, and HTTP handlers used by other AWS SDK packages. You rarely add it directly, but understanding it helps when customizing AWS clients."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Customizing AWS Clients"}
+      "data": { "level": 2, "text": "Customizing AWS Clients" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "All AWS service clients share a common configuration pipeline. You can customize retry behavior, logging, and proxy settings via `AWSConfigs` or constructor options."}
+      "data": {
+        "text": "All AWS service clients share a common configuration pipeline. You can customize retry behavior, logging, and proxy settings via `AWSConfigs` or constructor options."
+      }
     },
     {
       "type": "example",
@@ -48,11 +52,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Credential Chain"}
+      "data": { "level": 2, "text": "Credential Chain" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "When you create an AWS client without explicit credentials, the SDK checks environment variables, shared credentials files, and IAM roles in order."}
+      "data": {
+        "text": "When you create an AWS client without explicit credentials, the SDK checks environment variables, shared credentials files, and IAM roles in order."
+      }
     },
     {
       "type": "example",

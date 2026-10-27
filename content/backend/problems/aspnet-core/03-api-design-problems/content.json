@@ -9,14 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 10,
   "icon": "🌐",
-  "tags": [
-    "aspnet-core",
-    "web-api",
-    "rest",
-    "swagger",
-    "versioning",
-    "caching"
-  ],
+  "tags": ["aspnet-core", "web-api", "rest", "swagger", "versioning", "caching"],
   "lessonSlugs": [
     "rest-api-design-principles",
     "api-versioning",

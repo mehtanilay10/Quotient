@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 28,
-  "tags": [
-    "react",
-    "compound",
-    "examples",
-    "patterns"
-  ],
+  "tags": ["react", "compound", "examples", "patterns"],
   "blocks": [
     {
       "type": "paragraph",

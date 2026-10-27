@@ -37,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Every approach starts by counting occurrences in a dictionary. That is O(n) and unavoidable."}
+        "text": "Every approach starts by counting occurrences in a dictionary. That is O(n) and unavoidable."
+      }
     },
     {
       "type": "example",
@@ -55,7 +56,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Sort the distinct values by count and take the first `k`. O(m log m) where `m` is the number of distinct values."}
+        "text": "Sort the distinct values by count and take the first `k`. O(m log m) where `m` is the number of distinct values."
+      }
     },
     {
       "type": "example",
@@ -73,7 +75,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "A frequency can only be between 1 and n, so create n+1 buckets and place each value in the bucket matching its count. Then read buckets from the highest frequency downwards. This is O(n) and dominates any sorting approach."}
+        "text": "A frequency can only be between 1 and n, so create n+1 buckets and place each value in the bucket matching its count. Then read buckets from the highest frequency downwards. This is O(n) and dominates any sorting approach."
+      }
     },
     {
       "type": "example",
@@ -91,7 +94,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Keep a min-heap of size k keyed on frequency. This is the right choice when the input is a *stream* and you cannot see all distinct values at once."}
+        "text": "Keep a min-heap of size k keyed on frequency. This is the right choice when the input is a *stream* and you cannot see all distinct values at once."
+      }
     },
     {
       "type": "example",

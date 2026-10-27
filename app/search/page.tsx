@@ -1,12 +1,12 @@
-import { Suspense } from 'react';
-import type { Metadata } from 'next';
-import { buildMetadata } from '@/lib/seo';
-import { SearchClient } from './SearchClient';
+import { Suspense } from "react";
+import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
+import { SearchClient } from "./SearchClient";
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Search',
-  description: 'Search across all courses, problems, cheat sheets, and question answers.',
-  path: '/search',
+  title: "Search",
+  description: "Search across all courses, problems, cheat sheets, and question answers.",
+  path: "/search",
 });
 
 function SearchFallback() {

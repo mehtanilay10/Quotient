@@ -214,42 +214,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Prefix",
-          "Purpose",
-          "Example"
-        ],
+        "headers": ["Prefix", "Purpose", "Example"],
         "rows": [
-          [
-            "feature/",
-            "New functionality",
-            "feature/482-refresh-token-rotation"
-          ],
-          [
-            "bugfix/",
-            "Bug fix",
-            "bugfix/511-login-redirect-loop"
-          ],
-          [
-            "hotfix/",
-            "Production emergency",
-            "hotfix/519-auth-header-missing"
-          ],
-          [
-            "release/",
-            "Release preparation",
-            "release/v2.4.0"
-          ],
-          [
-            "chore/",
-            "Maintenance",
-            "chore/update-dependencies"
-          ],
-          [
-            "docs/",
-            "Documentation",
-            "docs/api-authentication-guide"
-          ]
+          ["feature/", "New functionality", "feature/482-refresh-token-rotation"],
+          ["bugfix/", "Bug fix", "bugfix/511-login-redirect-loop"],
+          ["hotfix/", "Production emergency", "hotfix/519-auth-header-missing"],
+          ["release/", "Release preparation", "release/v2.4.0"],
+          ["chore/", "Maintenance", "chore/update-dependencies"],
+          ["docs/", "Documentation", "docs/api-authentication-guide"]
         ]
       }
     },
@@ -1031,32 +1003,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tag Type",
-          "Example",
-          "Purpose"
-        ],
+        "headers": ["Tag Type", "Example", "Purpose"],
         "rows": [
-          [
-            "Stable",
-            "v2.4.0",
-            "Production release"
-          ],
-          [
-            "Release Candidate",
-            "v2.4.0-rc.1",
-            "Pre-release testing"
-          ],
-          [
-            "Beta",
-            "v2.4.0-beta.1",
-            "Early feedback"
-          ],
-          [
-            "Alpha",
-            "v2.4.0-alpha.1",
-            "Internal testing"
-          ]
+          ["Stable", "v2.4.0", "Production release"],
+          ["Release Candidate", "v2.4.0-rc.1", "Pre-release testing"],
+          ["Beta", "v2.4.0-beta.1", "Early feedback"],
+          ["Alpha", "v2.4.0-alpha.1", "Internal testing"]
         ]
       }
     },

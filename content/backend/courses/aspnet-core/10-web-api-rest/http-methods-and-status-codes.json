@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "http",
-    "status-codes",
-    "rest"
-  ],
+  "tags": ["http", "status-codes", "rest"],
   "blocks": [
     {
       "type": "paragraph",
@@ -227,10 +223,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "rest-principles",
-    "api-controllers"
-  ],
+  "relatedLessons": ["rest-principles", "api-controllers"],
   "technology": null,
   "furtherReading": [
     {

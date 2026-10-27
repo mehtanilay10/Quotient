@@ -6,10 +6,7 @@
   "description": "Learn how the middleware pipeline processes HTTP requests.",
   "order": 3,
   "difficulty": "beginner",
-  "tags": [
-    "asp.net core",
-    "beginner"
-  ],
+  "tags": ["asp.net core", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

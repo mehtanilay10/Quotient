@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "system-design",
-    "framework",
-    "interview-strategy"
-  ],
+  "tags": ["system-design", "framework", "interview-strategy"],
   "blocks": [
     {
       "type": "heading",
@@ -50,47 +46,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Step",
-          "Focus Area",
-          "Typical Output"
-        ],
+        "headers": ["Step", "Focus Area", "Typical Output"],
         "rows": [
-          [
-            "1",
-            "Understand the problem",
-            "Clear problem statement and user goals"
-          ],
-          [
-            "2",
-            "Define requirements",
-            "Functional and non-functional requirements"
-          ],
-          [
-            "3",
-            "Estimate scale",
-            "QPS, storage, and bandwidth numbers"
-          ],
-          [
-            "4",
-            "Design core components",
-            "High-level architecture diagram"
-          ],
-          [
-            "5",
-            "Address bottlenecks",
-            "Caching, load balancing, and partitioning plan"
-          ],
-          [
-            "6",
-            "Discuss trade-offs",
-            "Comparison of alternatives and their costs"
-          ],
-          [
-            "7",
-            "Deep dive one area",
-            "Detailed design for the most interesting component"
-          ]
+          ["1", "Understand the problem", "Clear problem statement and user goals"],
+          ["2", "Define requirements", "Functional and non-functional requirements"],
+          ["3", "Estimate scale", "QPS, storage, and bandwidth numbers"],
+          ["4", "Design core components", "High-level architecture diagram"],
+          ["5", "Address bottlenecks", "Caching, load balancing, and partitioning plan"],
+          ["6", "Discuss trade-offs", "Comparison of alternatives and their costs"],
+          ["7", "Deep dive one area", "Detailed design for the most interesting component"]
         ]
       }
     },

@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "performance",
-    "memoization",
-    "optimization"
-  ],
+  "tags": ["redux", "performance", "memoization", "optimization"],
   "blocks": [
     {
       "type": "paragraph",
@@ -91,27 +86,15 @@
       "type": "table",
       "data": {
         "title": "Common Redux optimizations",
-        "headers": [
-          "Technique",
-          "What it solves",
-          "When to use"
-        ],
+        "headers": ["Technique", "What it solves", "When to use"],
         "rows": [
-          [
-            "createSelector",
-            "Recomputes on every call",
-            "Derived data, filtered lists, totals"
-          ],
+          ["createSelector", "Recomputes on every call", "Derived data, filtered lists, totals"],
           [
             "shallowEqual",
             "useSelector deep comparison overhead",
             "Selecting arrays/objects of primitives"
           ],
-          [
-            "React.memo",
-            "Re-renders with same props",
-            "Pure presentational components"
-          ],
+          ["React.memo", "Re-renders with same props", "Pure presentational components"],
           [
             "useCallback",
             "New function references on each render",
@@ -138,10 +121,7 @@
           {
             "title": "React.memo",
             "description": "HOC that skips re-render if props are shallow-equal.",
-            "pros": [
-              "One-line drop-in",
-              "Works for any component"
-            ],
+            "pros": ["One-line drop-in", "Works for any component"],
             "cons": [
               "Doesn't help with internal state or hooks",
               "Useless if you pass new object/function props"
@@ -150,22 +130,13 @@
           {
             "title": "useMemo",
             "description": "Hook that returns a cached value across renders.",
-            "pros": [
-              "Cache expensive JSX or computations",
-              "Per-render scoped"
-            ],
-            "cons": [
-              "Not a state library",
-              "Cache invalidates on every dep change"
-            ]
+            "pros": ["Cache expensive JSX or computations", "Per-render scoped"],
+            "cons": ["Not a state library", "Cache invalidates on every dep change"]
           },
           {
             "title": "createSelector",
             "description": "Memoized selector from Reselect/RTK.",
-            "pros": [
-              "Cache survives across components",
-              "Composes with other selectors"
-            ],
+            "pros": ["Cache survives across components", "Composes with other selectors"],
             "cons": [
               "Must be called outside render (module scope)",
               "Memory grows with selector instances"

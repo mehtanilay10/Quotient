@@ -7,15 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "linq",
-    "query",
-    "filtering",
-    "grouping",
-    "joining",
-    "deferred-execution"
-  ],
+  "tags": ["csharp", "linq", "query", "filtering", "grouping", "joining", "deferred-execution"],
   "blocks": [
     {
       "type": "paragraph",
@@ -176,10 +168,7 @@
               "Can become hard to read with many operators",
               "Nested lambdas reduce clarity"
             ],
-            "tags": [
-              "method-chain",
-              "lambda"
-            ]
+            "tags": ["method-chain", "lambda"]
           },
           {
             "title": "Query Syntax",
@@ -193,10 +182,7 @@
               "Not all LINQ operators are available (e.g., Take, Skip need method syntax)",
               "Slightly more verbose for simple filters"
             ],
-            "tags": [
-              "sql-like",
-              "declarative"
-            ]
+            "tags": ["sql-like", "declarative"]
           }
         ]
       }

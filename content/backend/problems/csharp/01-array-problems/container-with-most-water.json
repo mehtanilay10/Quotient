@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "arrays",
-    "two-pointers",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "two-pointers", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -99,33 +94,16 @@
           {
             "title": "Brute Force",
             "description": "Check every pair of lines",
-            "pros": [
-              "Straightforward"
-            ],
-            "cons": [
-              "O(n\u00b2) time"
-            ],
-            "tags": [
-              "O(n\u00b2) time",
-              "O(1) space"
-            ]
+            "pros": ["Straightforward"],
+            "cons": ["O(n\u00b2) time"],
+            "tags": ["O(n\u00b2) time", "O(1) space"]
           },
           {
             "title": "Two Pointers",
             "description": "Greedily move the shorter side",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
-            "cons": [
-              "Pointer reasoning"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
+            "cons": ["Pointer reasoning"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

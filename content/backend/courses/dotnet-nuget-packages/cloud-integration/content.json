@@ -9,14 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2.5,
   "icon": "☁️",
-  "tags": [
-    "cloud",
-    "azure",
-    "aws",
-    "storage",
-    "s3",
-    "blob"
-  ],
+  "tags": ["cloud", "azure", "aws", "storage", "s3", "blob"],
   "lessonSlugs": [
     "azure-storage-blobs",
     "amazon-s3",

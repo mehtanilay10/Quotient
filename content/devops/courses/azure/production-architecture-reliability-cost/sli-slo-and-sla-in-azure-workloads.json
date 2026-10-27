@@ -64,32 +64,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Azure Service",
-          "Typical SLA",
-          "Recovery objective context"
-        ],
+        "headers": ["Azure Service", "Typical SLA", "Recovery objective context"],
         "rows": [
-          [
-            "Azure App Service (single region)",
-            "99.95%",
-            "~4.38 hours downtime per year"
-          ],
-          [
-            "Azure SQL Database (single server)",
-            "99.99%",
-            "~52.56 minutes downtime per year"
-          ],
-          [
-            "Azure Storage (LRS)",
-            "99.9%",
-            "~8.76 hours downtime per year"
-          ],
-          [
-            "Azure Storage (GRS)",
-            "99.99%",
-            "~52.56 minutes downtime per year"
-          ]
+          ["Azure App Service (single region)", "99.95%", "~4.38 hours downtime per year"],
+          ["Azure SQL Database (single server)", "99.99%", "~52.56 minutes downtime per year"],
+          ["Azure Storage (LRS)", "99.9%", "~8.76 hours downtime per year"],
+          ["Azure Storage (GRS)", "99.99%", "~52.56 minutes downtime per year"]
         ]
       }
     },

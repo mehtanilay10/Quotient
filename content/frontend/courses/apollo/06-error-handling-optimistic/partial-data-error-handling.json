@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "partial-data",
-    "error-handling",
-    "graphql-errors",
-    "resilience"
-  ],
+  "tags": ["partial-data", "error-handling", "graphql-errors", "resilience"],
   "blocks": [
     {
       "type": "heading",
@@ -74,7 +69,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "error-policies"
-  ]
+  "prerequisites": ["error-policies"]
 }

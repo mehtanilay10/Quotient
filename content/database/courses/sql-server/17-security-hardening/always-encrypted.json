@@ -53,31 +53,19 @@
             "Can create indexes and primary keys",
             "Grouping and distinct operations work"
           ],
-          "cons": [
-            "Patterns may be detectable",
-            "Less secure against statistical attacks"
-          ],
-          "tags": [
-            "searchable",
-            "indexed"
-          ]
+          "cons": ["Patterns may be detectable", "Less secure against statistical attacks"],
+          "tags": ["searchable", "indexed"]
         },
         {
           "title": "Randomized",
           "description": "Same plaintext generates different ciphertext each time.",
-          "pros": [
-            "Stronger security guarantees",
-            "No pattern leakage across rows"
-          ],
+          "pros": ["Stronger security guarantees", "No pattern leakage across rows"],
           "cons": [
             "Cannot join or group on encrypted values",
             "No equality searches allowed",
             "Cannot use as index key"
           ],
-          "tags": [
-            "maximum-security",
-            "non-searchable"
-          ]
+          "tags": ["maximum-security", "non-searchable"]
         }
       ]
     },
@@ -208,7 +196,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "encryption-tde"
-  ]
+  "prerequisites": ["encryption-tde"]
 }

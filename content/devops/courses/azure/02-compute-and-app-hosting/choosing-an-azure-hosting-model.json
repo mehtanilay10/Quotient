@@ -37,10 +37,22 @@
           ["Does the app run continuously?", "App Service or VMs", "Consider Functions"],
           ["Is the app already containerized?", "Container Apps", "App Service or Functions"],
           ["Is it event-driven or triggered?", "Functions", "App Service"],
-          ["Do you need full OS control?", "Virtual Machine", "App Service, Functions, or Container Apps"],
-          ["Is cost the top priority and traffic is low?", "Functions (Consumption)", "App Service Basic"],
+          [
+            "Do you need full OS control?",
+            "Virtual Machine",
+            "App Service, Functions, or Container Apps"
+          ],
+          [
+            "Is cost the top priority and traffic is low?",
+            "Functions (Consumption)",
+            "App Service Basic"
+          ],
           ["Do you need microservices?", "Container Apps", "App Service"],
-          ["Do you need the simplest possible deployment?", "App Service", "Functions or Container Apps"]
+          [
+            "Do you need the simplest possible deployment?",
+            "App Service",
+            "Functions or Container Apps"
+          ]
         ]
       }
     },
@@ -175,12 +187,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Workload",
-          "Likely choice",
-          "What you pay for",
-          "Cost trap"
-        ],
+        "headers": ["Workload", "Likely choice", "What you pay for", "Cost trap"],
         "rows": [
           [
             "Internal API, 2 requests/minute, business hours",

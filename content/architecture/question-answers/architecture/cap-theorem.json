@@ -6,11 +6,7 @@
   "description": "Consistency, availability, partition tolerance: why networks force trade-offs, and how the real design axes are CP, AP, and partition handling.",
   "order": 12,
   "difficulty": "advanced",
-  "tags": [
-    "architecture",
-    "distributed-systems",
-    "advanced"
-  ],
+  "tags": ["architecture", "distributed-systems", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

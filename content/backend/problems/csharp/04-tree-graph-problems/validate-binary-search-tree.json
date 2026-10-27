@@ -8,13 +8,7 @@
   "order": 12,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "trees",
-    "bst",
-    "recursion",
-    "medium"
-  ],
+  "tags": ["csharp", "trees", "bst", "recursion", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -52,15 +46,8 @@
           {
             "title": "Range Check",
             "description": "Pass min/max bounds down",
-            "pros": [
-              "O(n) time",
-              "Handles edge cases"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(h) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "Handles edge cases"],
+            "tags": ["O(n) time", "O(h) space", "Recommended"]
           }
         ]
       }

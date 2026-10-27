@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "controlled",
-    "uncontrolled",
-    "forms",
-    "inputs"
-  ],
+  "tags": ["controlled", "uncontrolled", "forms", "inputs"],
   "prerequisites": [],
   "relatedLessons": [],
   "furtherReading": [],

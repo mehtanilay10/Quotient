@@ -6,10 +6,7 @@
   "description": "Understand the five principles of object-oriented design.",
   "order": 3,
   "difficulty": "intermediate",
-  "tags": [
-    "architecture",
-    "intermediate"
-  ],
+  "tags": ["architecture", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

@@ -98,7 +98,10 @@
       }
     }
   ],
-  "relatedLessons": ["idisposable-finalization-and-deterministic-cleanup", "managed-heap-and-allocation-lifecycle"],
+  "relatedLessons": [
+    "idisposable-finalization-and-deterministic-cleanup",
+    "managed-heap-and-allocation-lifecycle"
+  ],
   "furtherReading": [
     {
       "type": "article",

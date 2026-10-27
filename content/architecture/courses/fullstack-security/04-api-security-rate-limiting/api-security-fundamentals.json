@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "api",
-    "security",
-    "rate-limiting",
-    "keys"
-  ],
+  "tags": ["api", "security", "rate-limiting", "keys"],
   "blocks": [
     {
       "type": "paragraph",
@@ -50,32 +45,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Threat",
-          "Description",
-          "Defense"
-        ],
+        "headers": ["Threat", "Description", "Defense"],
         "rows": [
-          [
-            "Brute force",
-            "Repeated login attempts",
-            "Rate limiting, account lockout"
-          ],
-          [
-            "Data scraping",
-            "Excessive API calls",
-            "Rate limiting, pagination caps"
-          ],
-          [
-            "Injection",
-            "Malicious input in queries",
-            "Validation, parameterized queries"
-          ],
-          [
-            "Key leakage",
-            "Exposed API keys in client code",
-            "Backend proxies, short-lived keys"
-          ]
+          ["Brute force", "Repeated login attempts", "Rate limiting, account lockout"],
+          ["Data scraping", "Excessive API calls", "Rate limiting, pagination caps"],
+          ["Injection", "Malicious input in queries", "Validation, parameterized queries"],
+          ["Key leakage", "Exposed API keys in client code", "Backend proxies, short-lived keys"]
         ]
       }
     },

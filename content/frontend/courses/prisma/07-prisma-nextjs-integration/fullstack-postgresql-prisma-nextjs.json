@@ -8,14 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "prisma",
-    "capstone",
-    "fullstack",
-    "nextjs",
-    "postgresql",
-    "architecture"
-  ],
+  "tags": ["prisma", "capstone", "fullstack", "nextjs", "postgresql", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -99,8 +92,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-in-nextjs-app-router",
-    "prisma-with-server-actions"
-  ]
+  "relatedLessons": ["prisma-in-nextjs-app-router", "prisma-with-server-actions"]
 }

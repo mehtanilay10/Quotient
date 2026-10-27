@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Every index adds maintenance cost during writes. Understanding fragmentation, page splits, and rebuild strategies helps maintain performance without accumulating unused indexes." }
+      "data": {
+        "text": "Every index adds maintenance cost during writes. Understanding fragmentation, page splits, and rebuild strategies helps maintain performance without accumulating unused indexes."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,12 @@
       "type": "bullet-list",
       "data": {
         "title": "Cost components",
-        "items": ["INSERT: write to table and all indexes", "UPDATE: modify table and affected indexes", "DELETE: mark rows and clean indexes", "Page splits on B-tree inserts"]
+        "items": [
+          "INSERT: write to table and all indexes",
+          "UPDATE: modify table and affected indexes",
+          "DELETE: mark rows and clean indexes",
+          "Page splits on B-tree inserts"
+        ]
       }
     },
     {
@@ -52,16 +59,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "tip", "title": "Tip", "text": "Monitor index usage with DMVs or system views. Drop indexes with zero reads to reduce maintenance burden." }
+      "data": {
+        "variant": "tip",
+        "title": "Tip",
+        "text": "Monitor index usage with DMVs or system views. Drop indexes with zero reads to reduce maintenance burden."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "How often should I rebuild indexes?", "answer": "Depends on fragmentation. Rebuild when fragmentation exceeds 20-30 percent for large tables." },
-          { "question": "Does index maintenance slow production?", "answer": "Online or concurrent rebuilds minimize impact. Schedule heavy maintenance during low-traffic windows." },
-          { "question": "Should I index foreign keys?", "answer": "Yes. Unindexed foreign keys slow deletes and joins. Verify with database recommendations." }
+          {
+            "question": "How often should I rebuild indexes?",
+            "answer": "Depends on fragmentation. Rebuild when fragmentation exceeds 20-30 percent for large tables."
+          },
+          {
+            "question": "Does index maintenance slow production?",
+            "answer": "Online or concurrent rebuilds minimize impact. Schedule heavy maintenance during low-traffic windows."
+          },
+          {
+            "question": "Should I index foreign keys?",
+            "answer": "Yes. Unindexed foreign keys slow deletes and joins. Verify with database recommendations."
+          }
         ]
       }
     },
@@ -69,7 +89,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Indexes slow writes proportionally to their count", "Monitor fragmentation and usage regularly", "Drop unused indexes to reduce overhead", "Rebuild or reorganize based on fragmentation thresholds"],
+        "points": [
+          "Indexes slow writes proportionally to their count",
+          "Monitor fragmentation and usage regularly",
+          "Drop unused indexes to reduce overhead",
+          "Rebuild or reorganize based on fragmentation thresholds"
+        ],
         "takeaway": "Index maintenance is ongoing. Treat indexes as living objects that need monitoring, tuning, and cleanup."
       }
     }

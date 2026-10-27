@@ -1,9 +1,9 @@
-import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
-import { SectionHeader } from '@/components/sections/SectionHeader';
-import { QuestionTechnologyCard } from '@/components/question-answers/QuestionTechnologyCard';
-import { getCategoryMeta, getQuestionCategories, getQuestionTechnologies } from '@/lib/content';
-import { buildMetadata } from '@/lib/seo';
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { SectionHeader } from "@/components/sections/SectionHeader";
+import { QuestionTechnologyCard } from "@/components/question-answers/QuestionTechnologyCard";
+import { getCategoryMeta, getQuestionCategories, getQuestionTechnologies } from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
 
 interface Params {
   params: Promise<{ category: string }>;

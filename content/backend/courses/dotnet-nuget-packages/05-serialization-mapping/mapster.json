@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "mapster",
-    "source-generator",
-    "object-mapping",
-    "performance"
-  ],
+  "tags": ["mapster", "source-generator", "object-mapping", "performance"],
   "blocks": [
     {
       "type": "heading",

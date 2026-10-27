@@ -9,12 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 3,
   "icon": "🌐",
-  "tags": [
-    "redis",
-    "advanced",
-    "distributed",
-    "performance"
-  ],
+  "tags": ["redis", "advanced", "distributed", "performance"],
   "lessonSlugs": [
     "redis-cluster",
     "redis-sentinel",
@@ -23,10 +18,7 @@
     "failover-recovery",
     "multi-region-caching"
   ],
-  "prerequisites": [
-    "cache-invalidation",
-    "caching-patterns"
-  ],
+  "prerequisites": ["cache-invalidation", "caching-patterns"],
   "whatYouLearn": [
     "Deploy and configure Redis Cluster",
     "Use Redis Sentinel for high availability",

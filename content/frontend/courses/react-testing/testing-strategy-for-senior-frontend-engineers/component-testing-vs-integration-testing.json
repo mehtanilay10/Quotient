@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "testing",
-    "react",
-    "vitest",
-    "testing-library"
-  ],
+  "tags": ["testing", "react", "vitest", "testing-library"],
   "blocks": [
     {
       "type": "paragraph",
@@ -160,10 +155,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "test-doubles-mocks-stubs-and-fakes",
-    "when-not-to-mock"
-  ],
+  "relatedLessons": ["test-doubles-mocks-stubs-and-fakes", "when-not-to-mock"],
   "furtherReading": [
     {
       "type": "article",

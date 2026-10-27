@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "trees",
-    "bfs",
-    "medium"
-  ],
+  "tags": ["csharp", "trees", "bfs", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "BFS + Reverse",
             "description": "Normal BFS, reverse alternate",
-            "pros": [
-              "Simple"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(w) space",
-              "Recommended"
-            ]
+            "pros": ["Simple"],
+            "tags": ["O(n) time", "O(w) space", "Recommended"]
           }
         ]
       }

@@ -7,16 +7,8 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "hallucination",
-    "accuracy",
-    "reliability",
-    "safety"
-  ],
-  "relatedGlossaryTerms": [
-    "hallucination",
-    "large-language-model"
-  ],
+  "tags": ["hallucination", "accuracy", "reliability", "safety"],
+  "relatedGlossaryTerms": ["hallucination", "large-language-model"],
   "blocks": [
     {
       "type": "paragraph",
@@ -98,42 +90,26 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Example",
-          "Risk level"
-        ],
+        "headers": ["Type", "Example", "Risk level"],
         "rows": [
           [
             "Factual confabulation",
             "Inventing a book title or author name that sounds real",
             "High — easy to miss"
           ],
-          [
-            "Date errors",
-            "Getting a historical event wrong by a year or decade",
-            "Medium"
-          ],
+          ["Date errors", "Getting a historical event wrong by a year or decade", "Medium"],
           [
             "Citation fabrication",
             "Making up a scientific study with legitimate-sounding authors and journals",
             "Very high"
           ],
-          [
-            "Logical inconsistency",
-            "Contradicting itself within the same response",
-            "Medium"
-          ],
+          ["Logical inconsistency", "Contradicting itself within the same response", "Medium"],
           [
             "Subtle number distortion",
             "Getting a statistic 10-15% wrong",
             "Very high — nearly impossible to spot"
           ],
-          [
-            "URL invention",
-            "Providing a URL that looks real but does not exist",
-            "High"
-          ]
+          ["URL invention", "Providing a URL that looks real but does not exist", "High"]
         ]
       }
     },
@@ -216,12 +192,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Failure mode",
-          "Cause",
-          "Example",
-          "Fix"
-        ],
+        "headers": ["Failure mode", "Cause", "Example", "Fix"],
         "rows": [
           [
             "Knowledge cutoff",
@@ -416,11 +387,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "High-risk prompt pattern",
-          "Lower-risk alternative",
-          "Why it helps"
-        ],
+        "headers": ["High-risk prompt pattern", "Lower-risk alternative", "Why it helps"],
         "rows": [
           [
             "\"Cite three studies proving X\"",
@@ -488,10 +455,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "evaluating-ai-output",
-    "what-ai-can-and-cannot-do"
-  ],
+  "relatedLessons": ["evaluating-ai-output", "what-ai-can-and-cannot-do"],
   "furtherReading": [
     {
       "title": "Hallucination (Artificial Intelligence)",

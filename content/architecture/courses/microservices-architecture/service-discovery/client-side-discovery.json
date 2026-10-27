@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "client-side",
-    "discovery",
-    "eureka"
-  ],
+  "tags": ["client-side", "discovery", "eureka"],
   "blocks": [
     {
       "type": "paragraph",

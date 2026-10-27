@@ -10,5 +10,12 @@
   "estimatedHours": 3,
   "icon": "⚡",
   "tags": ["database", "query", "performance", "sql", "optimization"],
-  "lessonSlugs": ["reading-execution-plans", "n1-problem", "join-optimization", "subquery-vs-join", "pagination-optimization", "query-caching"]
+  "lessonSlugs": [
+    "reading-execution-plans",
+    "n1-problem",
+    "join-optimization",
+    "subquery-vs-join",
+    "pagination-optimization",
+    "query-caching"
+  ]
 }

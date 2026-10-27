@@ -128,7 +128,15 @@
   ],
   "relatedLessons": ["client-evaluation-and-translation-failures"],
   "furtherReading": [
-    { "title": "EF Core Query Types documentation", "url": "https://learn.microsoft.com/en-us/ef/core/querying/", "type": "article" },
-    { "title": "Client vs server evaluation in EF Core", "url": "https://learn.microsoft.com/en-us/ef/core/querying/client-eval", "type": "article" }
+    {
+      "title": "EF Core Query Types documentation",
+      "url": "https://learn.microsoft.com/en-us/ef/core/querying/",
+      "type": "article"
+    },
+    {
+      "title": "Client vs server evaluation in EF Core",
+      "url": "https://learn.microsoft.com/en-us/ef/core/querying/client-eval",
+      "type": "article"
+    }
   ]
 }

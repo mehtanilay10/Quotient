@@ -10,9 +10,5 @@
   "icon": "🔄",
   "tags": ["redux", "state-management", "cheatsheet", "quick-reference"],
   "lessonSlugs": ["cheatsheet"],
-  "whatYouLearn": [
-    "Store setup and configuration",
-    "Actions and reducers",
-    "Middleware patterns"
-  ]
+  "whatYouLearn": ["Store setup and configuration", "Actions and reducers", "Middleware patterns"]
 }

@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "error-policies",
-    "partial-data",
-    "graphql-errors",
-    "apollo-client"
-  ],
+  "tags": ["error-policies", "partial-data", "graphql-errors", "apollo-client"],
   "blocks": [
     {
       "type": "heading",
@@ -72,7 +67,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "error-handling-basics"
-  ]
+  "prerequisites": ["error-handling-basics"]
 }

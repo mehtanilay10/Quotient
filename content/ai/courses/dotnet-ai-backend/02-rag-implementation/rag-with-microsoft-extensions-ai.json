@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "intermediate",
   "estimatedMinutes": 26,
-  "tags": [
-    "microsoft-extensions-ai",
-    "rag",
-    "csharp",
-    "abstractions"
-  ],
+  "tags": ["microsoft-extensions-ai", "rag", "csharp", "abstractions"],
   "blocks": [
     {
       "type": "paragraph",
@@ -59,10 +54,7 @@
       "expectedOutcome": "You should confirm that provider-agnostic abstractions let you change models without rewriting retrieval or prompt composition."
     }
   ],
-  "relatedLessons": [
-    "rag-with-semantic-kernel",
-    "rag-with-llamaindex-dotnet"
-  ],
+  "relatedLessons": ["rag-with-semantic-kernel", "rag-with-llamaindex-dotnet"],
   "technology": null,
   "furtherReading": [
     {

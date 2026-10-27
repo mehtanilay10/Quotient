@@ -129,9 +129,19 @@
       }
     }
   ],
-  "relatedLessons": ["client-side-data-fetching", "error-handling-in-data-fetching", "offline-support"],
+  "relatedLessons": [
+    "client-side-data-fetching",
+    "error-handling-in-data-fetching",
+    "offline-support"
+  ],
   "furtherReading": [
-    { "title": "React useOptimistic Documentation", "url": "https://react.dev/reference/react/useOptimistic" },
-    { "title": "Next.js Mutations and Server Actions", "url": "https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations" }
+    {
+      "title": "React useOptimistic Documentation",
+      "url": "https://react.dev/reference/react/useOptimistic"
+    },
+    {
+      "title": "Next.js Mutations and Server Actions",
+      "url": "https://nextjs.org/docs/app/building-your-application/data-fetching/server-actions-and-mutations"
+    }
   ]
 }

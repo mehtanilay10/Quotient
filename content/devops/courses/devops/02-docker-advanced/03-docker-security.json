@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "docker-security",
-    "container-security",
-    "supply-chain",
-    "devops"
-  ],
+  "tags": ["docker-security", "container-security", "supply-chain", "devops"],
   "blocks": [
     {
       "type": "heading",
@@ -82,34 +77,16 @@
           {
             "title": "Full OS image (e.g., ubuntu)",
             "description": "Contains a full Linux distribution with package manager and many binaries.",
-            "tags": [
-              "Large",
-              "Familiar"
-            ],
-            "pros": [
-              "Easy to debug",
-              "Familiar tools available"
-            ],
-            "cons": [
-              "Large attack surface",
-              "More CVEs to fix"
-            ]
+            "tags": ["Large", "Familiar"],
+            "pros": ["Easy to debug", "Familiar tools available"],
+            "cons": ["Large attack surface", "More CVEs to fix"]
           },
           {
             "title": "Distroless (e.g., gcr.io/distroless)",
             "description": "Contains only your application — no shell, package manager, or OS tools.",
-            "tags": [
-              "Minimal",
-              "Secure"
-            ],
-            "pros": [
-              "Smallest attack surface",
-              "Hard to compromise"
-            ],
-            "cons": [
-              "Cannot debug inside container",
-              "Requires advanced troubleshooting"
-            ]
+            "tags": ["Minimal", "Secure"],
+            "pros": ["Smallest attack surface", "Hard to compromise"],
+            "cons": ["Cannot debug inside container", "Requires advanced troubleshooting"]
           }
         ]
       }
@@ -130,37 +107,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool",
-          "Integration",
-          "Best For"
-        ],
+        "headers": ["Tool", "Integration", "Best For"],
         "rows": [
-          [
-            "Trivy",
-            "CLI, CI/CD, Docker Scout",
-            "Open-source, comprehensive"
-          ],
-          [
-            "Clair",
-            "CI/CD, API",
-            "Container-native, API-driven"
-          ],
-          [
-            "Anchore",
-            "CI/CD, Enterprise",
-            "Policy enforcement, SBOM"
-          ],
-          [
-            "Docker Scout",
-            "Docker Hub, CLI",
-            "Integrated with Docker ecosystem"
-          ],
-          [
-            "Aqua Trivy",
-            "CI/CD, Kubernetes",
-            "Kubernetes-native, runtime protection"
-          ]
+          ["Trivy", "CLI, CI/CD, Docker Scout", "Open-source, comprehensive"],
+          ["Clair", "CI/CD, API", "Container-native, API-driven"],
+          ["Anchore", "CI/CD, Enterprise", "Policy enforcement, SBOM"],
+          ["Docker Scout", "Docker Hub, CLI", "Integrated with Docker ecosystem"],
+          ["Aqua Trivy", "CI/CD, Kubernetes", "Kubernetes-native, runtime protection"]
         ]
       }
     },

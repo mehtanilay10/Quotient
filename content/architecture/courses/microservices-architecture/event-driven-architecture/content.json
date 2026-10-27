@@ -9,12 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 5,
   "icon": "⚡",
-  "tags": [
-    "events",
-    "event-sourcing",
-    "cqrs",
-    "message-brokers"
-  ],
+  "tags": ["events", "event-sourcing", "cqrs", "message-brokers"],
   "lessonSlugs": [
     "event-driven-architecture-fundamentals",
     "event-sourcing-pattern",

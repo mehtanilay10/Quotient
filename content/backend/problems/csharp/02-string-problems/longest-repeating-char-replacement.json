@@ -8,12 +8,7 @@
   "order": 20,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "strings",
-    "sliding-window",
-    "medium"
-  ],
+  "tags": ["csharp", "strings", "sliding-window", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -87,33 +82,16 @@
           {
             "title": "Brute Force",
             "description": "Re-evaluate every window",
-            "pros": [
-              "Simple"
-            ],
-            "cons": [
-              "O(n^2)",
-              "Redundant work"
-            ],
-            "tags": [
-              "O(n^2) time",
-              "O(1) space"
-            ]
+            "pros": ["Simple"],
+            "cons": ["O(n^2)", "Redundant work"],
+            "tags": ["O(n^2) time", "O(1) space"]
           },
           {
             "title": "Sliding Window",
             "description": "Single pass with freq",
-            "pros": [
-              "O(n)",
-              "Shrinks only when needed"
-            ],
-            "cons": [
-              "Max freq can be stale"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n)", "Shrinks only when needed"],
+            "cons": ["Max freq can be stale"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

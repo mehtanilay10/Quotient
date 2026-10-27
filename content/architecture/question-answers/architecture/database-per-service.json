@@ -6,12 +6,7 @@
   "description": "Database-per-service ownership, why joining across services is a design smell, and the patterns for cross-service reads and writes.",
   "order": 13,
   "difficulty": "advanced",
-  "tags": [
-    "architecture",
-    "microservices",
-    "data",
-    "advanced"
-  ],
+  "tags": ["architecture", "microservices", "data", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

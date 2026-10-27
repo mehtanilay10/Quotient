@@ -35,11 +35,11 @@ flowchart LR
 
 Three persistence planes are separate:
 
-| Plane | Holds | Source of truth |
-| --- | --- | --- |
-| Build-time content | Courses, modules, lessons, problems, cheat sheets, questions, roadmaps, glossary, prompts | JSON under `content/` |
-| PostgreSQL | Users, Auth.js adapter rows, progress, bookmarks, notes, offline queue, preferences | `prisma/schema.prisma` |
-| Browser | Theme, appearance mirror, last path for signed-out visitors, recent searches, legacy migrations | `lib/storageKeys.ts` and feature hooks |
+| Plane              | Holds                                                                                           | Source of truth                        |
+| ------------------ | ----------------------------------------------------------------------------------------------- | -------------------------------------- |
+| Build-time content | Courses, modules, lessons, problems, cheat sheets, questions, roadmaps, glossary, prompts       | JSON under `content/`                  |
+| PostgreSQL         | Users, Auth.js adapter rows, progress, bookmarks, notes, offline queue, preferences             | `prisma/schema.prisma`                 |
+| Browser            | Theme, appearance mirror, last path for signed-out visitors, recent searches, legacy migrations | `lib/storageKeys.ts` and feature hooks |
 
 Content is never stored in PostgreSQL. User state is never written into the
 content tree.
@@ -48,18 +48,18 @@ content tree.
 
 ## 2. Runtime stack
 
-| Layer | Choice |
-| --- | --- |
-| Framework | Next.js 16 App Router (`next dev --webpack`, `next build --webpack`) |
-| UI | React 19 |
-| Language | TypeScript 6, strict mode |
-| Styling | Tailwind CSS 3 with semantic CSS-variable tokens |
-| Auth | NextAuth v5 / Auth.js with Google OAuth, email magic links, Prisma Adapter, JWT sessions |
-| Database | PostgreSQL via Prisma Client |
-| Code highlighting | `react-shiki` (Shiki) |
-| Diagrams | Mermaid, dynamically imported on the client |
-| PWA | `@ducanh2912/next-pwa` |
-| Search | In-process scoring over the bundled content graph |
+| Layer             | Choice                                                                                   |
+| ----------------- | ---------------------------------------------------------------------------------------- |
+| Framework         | Next.js 16 App Router (`next dev --webpack`, `next build --webpack`)                     |
+| UI                | React 19                                                                                 |
+| Language          | TypeScript 6, strict mode                                                                |
+| Styling           | Tailwind CSS 3 with semantic CSS-variable tokens                                         |
+| Auth              | NextAuth v5 / Auth.js with Google OAuth, email magic links, Prisma Adapter, JWT sessions |
+| Database          | PostgreSQL via Prisma Client                                                             |
+| Code highlighting | `react-shiki` (Shiki)                                                                    |
+| Diagrams          | Mermaid, dynamically imported on the client                                              |
+| PWA               | `@ducanh2912/next-pwa`                                                                   |
+| Search            | In-process scoring over the bundled content graph                                        |
 
 Next.js 16 requires Node.js `>=20.9.0`; the project uses Yarn 1.22.
 
@@ -67,17 +67,17 @@ Next.js 16 requires Node.js `>=20.9.0`; the project uses Yarn 1.22.
 
 ## 3. Repository layout
 
-| Path | Responsibility |
-| --- | --- |
-| `app/` | Routes, layouts, metadata, API route handlers, sitemap, robots |
+| Path          | Responsibility                                                                                            |
+| ------------- | --------------------------------------------------------------------------------------------------------- |
+| `app/`        | Routes, layouts, metadata, API route handlers, sitemap, robots                                            |
 | `components/` | UI grouped by feature (`layout`, `content`, `course`, `user`, `lesson`, `progress`, `bookmarks`, `ui`, …) |
-| `content/` | Category-first content tree plus generated indexes |
-| `hooks/` | Client-side state and browser behavior |
-| `lib/` | Content graph, href builders, auth, Prisma, validation, caching, SEO, appearance |
-| `types/` | Domain and content-block types |
-| `prisma/` | Database schema and migrations |
-| `scripts/` | Content generation, content tests, deployment build |
-| `agents/` | Reference and role documentation |
+| `content/`    | Category-first content tree plus generated indexes                                                        |
+| `hooks/`      | Client-side state and browser behavior                                                                    |
+| `lib/`        | Content graph, href builders, auth, Prisma, validation, caching, SEO, appearance                          |
+| `types/`      | Domain and content-block types                                                                            |
+| `prisma/`     | Database schema and migrations                                                                            |
+| `scripts/`    | Content generation, content tests, deployment build                                                       |
+| `agents/`     | Reference and role documentation                                                                          |
 
 `app/` may import from `components/`, `lib/`, and `content/`. The reverse is not
 allowed: components must not import from `app/`. `lib/content.ts` eagerly loads
@@ -106,31 +106,31 @@ or receive data as props.
 
 ### Route map
 
-| Route | Purpose |
-| --- | --- |
-| `/` | Landing page and section discovery |
-| `/[category]/courses` | Courses in one category |
-| `/[category]/courses/[courseSlug]` | Course overview |
-| `/[category]/courses/[courseSlug]/[moduleSlug]` | Module overview |
-| `/[category]/courses/[courseSlug]/[moduleSlug]/[lessonSlug]` | Lesson |
-| `/[category]/problems` | Problem sets in one category |
-| `/[category]/problems/[courseSlug]` | Problem course overview |
-| `/[category]/problems/[courseSlug]/[moduleSlug]` | Problem module |
-| `/[category]/problems/[courseSlug]/[moduleSlug]/[lessonSlug]` | Problem lesson |
-| `/[category]/cheatsheets` | Cheat-sheet list |
-| `/[category]/cheatsheets/[technology]` | One cheat sheet |
-| `/[category]/question-answers` | Technology list |
-| `/[category]/question-answers/[technology]` | Questions for one technology |
-| `/[category]/question-answers/[technology]/[slug]` | One question |
-| `/[category]/roadmap` | Curated learning path |
-| `/ai/glossary` | Searchable AI glossary |
-| `/ai/prompts` | Prompt template library |
-| `/search` | Public search page |
-| `/login` | Google and magic-link sign-in |
-| `/login/verify-request` | “Check your email” confirmation |
-| `/login/error` | Friendly sign-in error |
-| `/user/*` | Authenticated account area |
-| `/sitemap.xml`, `/robots.txt` | Generated metadata routes |
+| Route                                                         | Purpose                            |
+| ------------------------------------------------------------- | ---------------------------------- |
+| `/`                                                           | Landing page and section discovery |
+| `/[category]/courses`                                         | Courses in one category            |
+| `/[category]/courses/[courseSlug]`                            | Course overview                    |
+| `/[category]/courses/[courseSlug]/[moduleSlug]`               | Module overview                    |
+| `/[category]/courses/[courseSlug]/[moduleSlug]/[lessonSlug]`  | Lesson                             |
+| `/[category]/problems`                                        | Problem sets in one category       |
+| `/[category]/problems/[courseSlug]`                           | Problem course overview            |
+| `/[category]/problems/[courseSlug]/[moduleSlug]`              | Problem module                     |
+| `/[category]/problems/[courseSlug]/[moduleSlug]/[lessonSlug]` | Problem lesson                     |
+| `/[category]/cheatsheets`                                     | Cheat-sheet list                   |
+| `/[category]/cheatsheets/[technology]`                        | One cheat sheet                    |
+| `/[category]/question-answers`                                | Technology list                    |
+| `/[category]/question-answers/[technology]`                   | Questions for one technology       |
+| `/[category]/question-answers/[technology]/[slug]`            | One question                       |
+| `/[category]/roadmap`                                         | Curated learning path              |
+| `/ai/glossary`                                                | Searchable AI glossary             |
+| `/ai/prompts`                                                 | Prompt template library            |
+| `/search`                                                     | Public search page                 |
+| `/login`                                                      | Google and magic-link sign-in      |
+| `/login/verify-request`                                       | “Check your email” confirmation    |
+| `/login/error`                                                | Friendly sign-in error             |
+| `/user/*`                                                     | Authenticated account area         |
+| `/sitemap.xml`, `/robots.txt`                                 | Generated metadata routes          |
 
 Categories come from the content tree: `ai`, `architecture`, `backend`,
 `database`, `devops`, `frontend`, and `fundamentals`. `fundamentals` is
@@ -232,14 +232,14 @@ AuthProvider (SessionProvider)
                 Navbar, main, Footer, OfflineIndicator
 ```
 
-| Concern | Signed in | Signed out |
-| --- | --- | --- |
-| Progress, bookmarks | PostgreSQL through `/api/progress` and `/api/bookmarks`; gated by `SignInPrompt` | Not persisted; legacy `localStorage` data is migrated on sign-in |
-| Last path | `/api/last-path` | `localStorage` |
-| Theme | `/api/user/theme` + `localStorage` | `localStorage` via `next-themes` |
-| Appearance | `/api/user/preferences` + `localStorage` + cookie mirror | `localStorage` + cookie mirror |
-| Notes, offline queue | PostgreSQL APIs | Sign-in required |
-| Recent searches | `localStorage` | `localStorage` |
+| Concern              | Signed in                                                                        | Signed out                                                       |
+| -------------------- | -------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Progress, bookmarks  | PostgreSQL through `/api/progress` and `/api/bookmarks`; gated by `SignInPrompt` | Not persisted; legacy `localStorage` data is migrated on sign-in |
+| Last path            | `/api/last-path`                                                                 | `localStorage`                                                   |
+| Theme                | `/api/user/theme` + `localStorage`                                               | `localStorage` via `next-themes`                                 |
+| Appearance           | `/api/user/preferences` + `localStorage` + cookie mirror                         | `localStorage` + cookie mirror                                   |
+| Notes, offline queue | PostgreSQL APIs                                                                  | Sign-in required                                                 |
+| Recent searches      | `localStorage`                                                                   | `localStorage`                                                   |
 
 The appearance cookie is read by a blocking script in the root layout so font
 size and density apply before first paint.
@@ -283,12 +283,12 @@ account feature need `DATABASE_URL` plus Auth.js credentials.
 
 ## 10. Where to extend
 
-| Change | Primary files |
-| --- | --- |
-| Add a content block type | `types/index.ts`, `components/content/ContentBlockRenderer.tsx` |
-| Add a content category | `content/<category>/…`, `lib/content.ts` (`CATEGORY_META`, `CATEGORY_ORDER`) |
-| Add a route | `app/<route>/page.tsx`, navigation in `lib/content.ts`, `app/sitemap.ts`, `app/robots.ts` |
-| Add an API endpoint | `app/api/<name>/route.ts`, `lib/validators.ts`, perhaps `lib/cache.ts` |
-| Add an account page | `app/user/<page>/`, `components/user/UserNav.tsx`, Navbar user menu |
-| Change user persistence | `prisma/schema.prisma`, a migration, the relevant route handler, and the matching provider/hook |
+| Change                     | Primary files                                                                                                    |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Add a content block type   | `types/index.ts`, `components/content/ContentBlockRenderer.tsx`                                                  |
+| Add a content category     | `content/<category>/…`, `lib/content.ts` (`CATEGORY_META`, `CATEGORY_ORDER`)                                     |
+| Add a route                | `app/<route>/page.tsx`, navigation in `lib/content.ts`, `app/sitemap.ts`, `app/robots.ts`                        |
+| Add an API endpoint        | `app/api/<name>/route.ts`, `lib/validators.ts`, perhaps `lib/cache.ts`                                           |
+| Add an account page        | `app/user/<page>/`, `components/user/UserNav.tsx`, Navbar user menu                                              |
+| Change user persistence    | `prisma/schema.prisma`, a migration, the relevant route handler, and the matching provider/hook                  |
 | Change appearance behavior | `lib/appearance.ts`, `hooks/useUserPreferences.ts`, `components/user/PreferencesProvider.tsx`, `app/globals.css` |

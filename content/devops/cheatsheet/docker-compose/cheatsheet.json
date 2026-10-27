@@ -8,7 +8,17 @@
   "order": 7,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": ["docker", "docker-compose", "containers", "services", "networks", "volumes", "devops", "cheatsheet", "quick-reference"],
+  "tags": [
+    "docker",
+    "docker-compose",
+    "containers",
+    "services",
+    "networks",
+    "volumes",
+    "devops",
+    "cheatsheet",
+    "quick-reference"
+  ],
   "blocks": [
     {
       "type": "example",

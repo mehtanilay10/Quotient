@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "web-api",
-    "swagger",
-    "openapi"
-  ],
+  "tags": ["aspnet-core", "web-api", "swagger", "openapi"],
   "blocks": [
     {
       "type": "heading",
@@ -91,38 +86,16 @@
           {
             "title": "Swashbuckle Setup",
             "description": "Swagger with XML comments",
-            "pros": [
-              "Auto-generated docs",
-              "Interactive testing UI",
-              "Supports XML comments"
-            ],
-            "cons": [
-              "Adds build complexity",
-              "Must keep XML comments updated"
-            ],
-            "tags": [
-              "Swashbuckle",
-              "OpenApiInfo",
-              "UseSwaggerUI"
-            ]
+            "pros": ["Auto-generated docs", "Interactive testing UI", "Supports XML comments"],
+            "cons": ["Adds build complexity", "Must keep XML comments updated"],
+            "tags": ["Swashbuckle", "OpenApiInfo", "UseSwaggerUI"]
           },
           {
             "title": "Swagger with JWT",
             "description": "JWT auth in Swagger",
-            "pros": [
-              "Test secured endpoints",
-              "One-click auth",
-              "Shows 401 responses"
-            ],
-            "cons": [
-              "Token must be entered manually",
-              "Not for production exposure"
-            ],
-            "tags": [
-              "SecurityScheme",
-              "Bearer",
-              "Authorize"
-            ]
+            "pros": ["Test secured endpoints", "One-click auth", "Shows 401 responses"],
+            "cons": ["Token must be entered manually", "Not for production exposure"],
+            "tags": ["SecurityScheme", "Bearer", "Authorize"]
           }
         ]
       }

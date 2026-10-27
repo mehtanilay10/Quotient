@@ -8,20 +8,9 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "hoc",
-    "composition",
-    "patterns",
-    "advanced"
-  ],
-  "prerequisites": [
-    "hoc-examples"
-  ],
-  "relatedLessons": [
-    "hoc-examples",
-    "hoc-basics"
-  ],
+  "tags": ["react", "hoc", "composition", "patterns", "advanced"],
+  "prerequisites": ["hoc-examples"],
+  "relatedLessons": ["hoc-examples", "hoc-basics"],
   "furtherReading": [
     {
       "title": "Composition vs Inheritance in React",
@@ -113,27 +102,9 @@
             "Original component",
             "Forgetting to spread props"
           ],
-          [
-            "Inside-Out",
-            "withLoading",
-            "withLoading",
-            "withLogger",
-            "Overriding injected props"
-          ],
-          [
-            "Inside-Out",
-            "withAuth",
-            "withAuth",
-            "withLoading",
-            "Not handling redirect state"
-          ],
-          [
-            "Outside-In",
-            "withAuth",
-            "withAuth",
-            "Parent / Router",
-            "Breaking prop forwarding"
-          ]
+          ["Inside-Out", "withLoading", "withLoading", "withLogger", "Overriding injected props"],
+          ["Inside-Out", "withAuth", "withAuth", "withLoading", "Not handling redirect state"],
+          ["Outside-In", "withAuth", "withAuth", "Parent / Router", "Breaking prop forwarding"]
         ]
       }
     },
@@ -183,10 +154,7 @@
               "Props are injected implicitly",
               "Harder to trace data flow"
             ],
-            "tags": [
-              "declarative",
-              "wrapping"
-            ]
+            "tags": ["declarative", "wrapping"]
           },
           {
             "title": "Hooks Composition",
@@ -201,10 +169,7 @@
               "Cannot use hooks in loops or conditions",
               "Requires more explicit wiring"
             ],
-            "tags": [
-              "explicit",
-              "flat"
-            ]
+            "tags": ["explicit", "flat"]
           }
         ]
       }

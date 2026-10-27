@@ -6,10 +6,7 @@
   "description": "Streaming async sequences: pulling rows lazily with EF Core, implementing your own async iterators, and cancellation.",
   "order": 45,
   "difficulty": "advanced",
-  "tags": [
-    "C#",
-    "advanced"
-  ],
+  "tags": ["C#", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

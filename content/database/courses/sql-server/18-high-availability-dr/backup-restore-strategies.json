@@ -56,24 +56,14 @@
           "Typical Use Case"
         ],
         "rows": [
-          [
-            "FULL",
-            "Yes",
-            "Minimal (since last log backup)",
-            "Production OLTP databases"
-          ],
+          ["FULL", "Yes", "Minimal (since last log backup)", "Production OLTP databases"],
           [
             "BULK_LOGGED",
             "Yes",
             "Minimal (except bulk operations)",
             "Databases with large batch imports"
           ],
-          [
-            "SIMPLE",
-            "No",
-            "Changes since last full backup",
-            "Development or read-only reporting"
-          ]
+          ["SIMPLE", "No", "Changes since last full backup", "Development or read-only reporting"]
         ]
       }
     },

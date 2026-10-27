@@ -7,10 +7,7 @@
   "order": 9,
   "difficulty": "beginner",
   "estimatedMinutes": 22,
-  "tags": [
-    "time",
-    "data-type"
-  ],
+  "tags": ["time", "data-type"],
   "blocks": [
     {
       "type": "heading",

@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 22,
-  "tags": [
-    "cursor",
-    "ide",
-    "pair-programming"
-  ],
+  "tags": ["cursor", "ide", "pair-programming"],
   "blocks": [
     {
       "type": "heading",
@@ -168,13 +164,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "github-copilot-guide",
-    "claude-for-code"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model",
-    "autocomplete"
-  ],
+  "relatedLessons": ["github-copilot-guide", "claude-for-code"],
+  "relatedGlossaryTerms": ["large-language-model", "autocomplete"],
   "courseSlug": "codex"
 }

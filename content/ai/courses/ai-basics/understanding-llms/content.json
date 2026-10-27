@@ -7,20 +7,10 @@
   "difficulty": "beginner",
   "estimatedHours": 2,
   "icon": "🔬",
-  "tags": [
-    "llms",
-    "tokens",
-    "context-window",
-    "temperature"
-  ],
-  "lessonSlugs": [
-    "tokens-explained",
-    "context-window-deep-dive"
-  ],
+  "tags": ["llms", "tokens", "context-window", "temperature"],
+  "lessonSlugs": ["tokens-explained", "context-window-deep-dive"],
   "isOptional": false,
-  "prerequisites": [
-    "what-is-ai"
-  ],
+  "prerequisites": ["what-is-ai"],
   "whatYouLearn": [
     "What tokens are and why they matter for limits and costs",
     "How context windows affect AI memory and behavior",

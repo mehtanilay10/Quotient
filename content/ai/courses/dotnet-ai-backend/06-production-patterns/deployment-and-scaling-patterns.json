@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 24,
-  "tags": [
-    "deployment",
-    "scaling",
-    "aspnet-core",
-    "resilience"
-  ],
+  "tags": ["deployment", "scaling", "aspnet-core", "resilience"],
   "blocks": [
     {
       "type": "paragraph",
@@ -91,10 +86,7 @@
       "takeaway": "Production AI is an infrastructure problem as much as a model problem. Deploy for failure, not just for success."
     }
   ],
-  "relatedLessons": [
-    "observability-and-telemetry",
-    "capstone-backend-ai-project"
-  ],
+  "relatedLessons": ["observability-and-telemetry", "capstone-backend-ai-project"],
   "technology": null,
   "furtherReading": [
     {

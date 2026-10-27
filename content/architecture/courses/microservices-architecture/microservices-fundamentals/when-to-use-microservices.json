@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "microservices",
-    "decision-framework",
-    "readiness"
-  ],
+  "tags": ["microservices", "decision-framework", "readiness"],
   "blocks": [
     {
       "type": "paragraph",

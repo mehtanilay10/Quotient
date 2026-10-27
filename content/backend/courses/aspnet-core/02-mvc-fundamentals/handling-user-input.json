@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "forms",
-    "input",
-    "model-binding",
-    "validation"
-  ],
+  "tags": ["forms", "input", "model-binding", "validation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -208,9 +203,7 @@
       "takeaway": "Handling user input safely is one of the most critical skills in web development. ASP.NET Core's model binding and validation system provides a robust, declarative approach that protects both your application and your users."
     }
   ],
-  "relatedLessons": [
-    "models-and-viewdata"
-  ],
+  "relatedLessons": ["models-and-viewdata"],
   "technology": null,
   "furtherReading": [
     {

@@ -6,12 +6,7 @@
   "description": "Growing working set, GC diagnostics with dotMemory/PerfView, common leak sources (events, statics, caches), and disposal discipline.",
   "order": 5,
   "difficulty": "advanced",
-  "tags": [
-    "interview",
-    "performance",
-    "dotnet",
-    "memory"
-  ],
+  "tags": ["interview", "performance", "dotnet", "memory"],
   "blocks": [
     {
       "type": "paragraph",
@@ -121,10 +116,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "perf-q1",
-    "perf-q4"
-  ],
+  "relatedLessons": ["perf-q1", "perf-q4"],
   "furtherReading": [
     {
       "title": "Debug a memory leak in .NET",

@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "gin",
-    "gist",
-    "jsonb",
-    "full-text-search",
-    "postgis"
-  ],
+  "tags": ["gin", "gist", "jsonb", "full-text-search", "postgis"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,8 +74,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "jsonb-arrays",
-    "btree-indexes"
-  ]
+  "relatedLessons": ["jsonb-arrays", "btree-indexes"]
 }

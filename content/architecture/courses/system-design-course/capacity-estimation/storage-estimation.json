@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "capacity",
-    "storage",
-    "estimation",
-    "database"
-  ],
+  "tags": ["capacity", "storage", "estimation", "database"],
   "blocks": [
     {
       "type": "paragraph",
@@ -44,42 +39,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Field",
-          "Type",
-          "Size per Row"
-        ],
+        "headers": ["Field", "Type", "Size per Row"],
         "rows": [
-          [
-            "user_id",
-            "BIGINT",
-            "8 bytes"
-          ],
-          [
-            "email",
-            "VARCHAR(255)",
-            "255 bytes"
-          ],
-          [
-            "name",
-            "VARCHAR(100)",
-            "100 bytes"
-          ],
-          [
-            "created_at",
-            "TIMESTAMP",
-            "8 bytes"
-          ],
-          [
-            "is_active",
-            "BOOLEAN",
-            "1 byte"
-          ],
-          [
-            "metadata",
-            "JSONB",
-            "~500 bytes"
-          ]
+          ["user_id", "BIGINT", "8 bytes"],
+          ["email", "VARCHAR(255)", "255 bytes"],
+          ["name", "VARCHAR(100)", "100 bytes"],
+          ["created_at", "TIMESTAMP", "8 bytes"],
+          ["is_active", "BOOLEAN", "1 byte"],
+          ["metadata", "JSONB", "~500 bytes"]
         ]
       }
     },
@@ -113,37 +80,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Content Type",
-          "Avg Size",
-          "5 Year Volume",
-          "Total Storage"
-        ],
+        "headers": ["Content Type", "Avg Size", "5 Year Volume", "Total Storage"],
         "rows": [
-          [
-            "User avatars",
-            "50 KB",
-            "50 million",
-            "~2.4 TB"
-          ],
-          [
-            "Post images",
-            "200 KB",
-            "500 million",
-            "~95 TB"
-          ],
-          [
-            "Profile banners",
-            "500 KB",
-            "50 million",
-            "~24 TB"
-          ],
-          [
-            "Video thumbnails",
-            "100 KB",
-            "100 million",
-            "~9.5 TB"
-          ]
+          ["User avatars", "50 KB", "50 million", "~2.4 TB"],
+          ["Post images", "200 KB", "500 million", "~95 TB"],
+          ["Profile banners", "500 KB", "50 million", "~24 TB"],
+          ["Video thumbnails", "100 KB", "100 million", "~9.5 TB"]
         ]
       }
     },

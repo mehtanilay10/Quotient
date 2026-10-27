@@ -53,35 +53,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Chatbot",
-          "Agent"
-        ],
+        "headers": ["Chatbot", "Agent"],
         "rows": [
-          [
-            "Responds to one message at a time",
-            "Plans and executes a whole sequence of steps"
-          ],
-          [
-            "Produces text output only",
-            "Can use tools: search, code, APIs, files, email"
-          ],
-          [
-            "Waits for your next message",
-            "Acts autonomously until goal is achieved or stuck"
-          ],
-          [
-            "No persistent memory between sessions",
-            "May have persistent memory and task state"
-          ],
-          [
-            "You provide all context",
-            "Agent gathers additional context itself via tools"
-          ],
-          [
-            "Mistakes are contained to one message",
-            "Mistakes can cascade across multiple steps"
-          ]
+          ["Responds to one message at a time", "Plans and executes a whole sequence of steps"],
+          ["Produces text output only", "Can use tools: search, code, APIs, files, email"],
+          ["Waits for your next message", "Acts autonomously until goal is achieved or stuck"],
+          ["No persistent memory between sessions", "May have persistent memory and task state"],
+          ["You provide all context", "Agent gathers additional context itself via tools"],
+          ["Mistakes are contained to one message", "Mistakes can cascade across multiple steps"]
         ]
       }
     },
@@ -114,11 +93,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool type",
-          "What it does",
-          "Example"
-        ],
+        "headers": ["Tool type", "What it does", "Example"],
         "rows": [
           [
             "Web search",
@@ -130,11 +105,7 @@
             "Writes and runs Python/JavaScript code",
             "Analyze a CSV, run a calculation"
           ],
-          [
-            "File access",
-            "Reads, writes, and creates files",
-            "Read your PDF, create a report"
-          ],
+          ["File access", "Reads, writes, and creates files", "Read your PDF, create a report"],
           [
             "Browser automation",
             "Controls a web browser",
@@ -145,11 +116,7 @@
             "Reads and sends messages, creates events",
             "Draft a reply, schedule a meeting"
           ],
-          [
-            "API calls",
-            "Connects to external services",
-            "Post to Slack, create a Notion page"
-          ]
+          ["API calls", "Connects to external services", "Post to Slack, create a Notion page"]
         ]
       }
     },
@@ -185,11 +152,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Agent / tool",
-          "What it can do autonomously",
-          "Risk level"
-        ],
+        "headers": ["Agent / tool", "What it can do autonomously", "Risk level"],
         "rows": [
           [
             "ChatGPT (with tools)",
@@ -313,22 +276,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "Use agent?",
-          "Why"
-        ],
+        "headers": ["Scenario", "Use agent?", "Why"],
         "rows": [
           [
             "Multi-step workflows across tools",
             "Yes",
             "Agents reduce manual orchestration and save time"
           ],
-          [
-            "One-off factual question",
-            "No",
-            "A chatbot is faster and cheaper"
-          ],
+          ["One-off factual question", "No", "A chatbot is faster and cheaper"],
           [
             "Tasks requiring current web data",
             "Yes",
@@ -380,11 +335,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Template",
-          "Notes"
-        ],
+        "headers": ["Use case", "Template", "Notes"],
         "rows": [
           [
             "Research brief",
@@ -439,11 +390,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Failure mode",
-          "Symptoms",
-          "Mitigation"
-        ],
+        "headers": ["Failure mode", "Symptoms", "Mitigation"],
         "rows": [
           [
             "Tool misuse",
@@ -485,11 +432,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "What to check",
-          "Why it matters"
-        ],
+        "headers": ["Metric", "What to check", "Why it matters"],
         "rows": [
           [
             "Task success rate",
@@ -604,11 +547,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Template",
-          "When to use"
-        ],
+        "headers": ["Pattern", "Template", "When to use"],
         "rows": [
           [
             "Plan-then-act",
@@ -640,31 +579,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Item",
-          "Why it matters"
-        ],
+        "headers": ["Item", "Why it matters"],
         "rows": [
           [
             "Define success criteria and failure modes",
             "Ensures predictable stopping and recovery behavior"
           ],
-          [
-            "Limit tool permissions",
-            "Reduces blast radius of mistakes"
-          ],
-          [
-            "Implement verification for critical outputs",
-            "Prevents incorrect writes or decisions"
-          ],
-          [
-            "Enable audit logging",
-            "Supports debugging and compliance"
-          ],
-          [
-            "Run adversarial tests",
-            "Reveals brittle or unsafe behaviors before deployment"
-          ]
+          ["Limit tool permissions", "Reduces blast radius of mistakes"],
+          ["Implement verification for critical outputs", "Prevents incorrect writes or decisions"],
+          ["Enable audit logging", "Supports debugging and compliance"],
+          ["Run adversarial tests", "Reveals brittle or unsafe behaviors before deployment"]
         ]
       }
     },
@@ -686,11 +610,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "Type",
-          "Why it helps"
-        ],
+        "headers": ["Resource", "Type", "Why it helps"],
         "rows": [
           [
             "LLM-Powered Autonomous Agents (Lilian Weng)",
@@ -753,11 +673,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "how-agents-work",
-    "what-is-tool-calling",
-    "rag-explained"
-  ],
+  "relatedLessons": ["how-agents-work", "what-is-tool-calling", "rag-explained"],
   "furtherReading": [
     {
       "title": "LLM-Powered Autonomous Agents",

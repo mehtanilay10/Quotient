@@ -7,9 +7,7 @@
   "order": 10,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "subquery"
-  ],
+  "tags": ["subquery"],
   "blocks": [
     {
       "type": "heading",

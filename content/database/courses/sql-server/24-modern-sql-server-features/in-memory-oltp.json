@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 32,
-  "tags": [
-    "in-memory-oltp",
-    "memory-optimized",
-    "hash-index",
-    "natively-compiled",
-    "concurrency"
-  ],
+  "tags": ["in-memory-oltp", "memory-optimized", "hash-index", "natively-compiled", "concurrency"],
   "blocks": [
     {
       "type": "heading",
@@ -135,8 +129,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "locks-and-blocking",
-    "long-running-transactions"
-  ]
+  "relatedLessons": ["locks-and-blocking", "long-running-transactions"]
 }

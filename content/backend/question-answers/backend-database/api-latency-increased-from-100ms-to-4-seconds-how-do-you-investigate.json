@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "backend",
-    "latency",
-    "monitoring",
-    "production"
-  ],
+  "tags": ["backend", "latency", "monitoring", "production"],
   "blocks": [
     {
       "type": "paragraph",

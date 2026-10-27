@@ -7,12 +7,7 @@
   "order": 29,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "full-stack",
-    "delivery",
-    "scenarios"
-  ],
+  "tags": ["interview", "full-stack", "delivery", "scenarios"],
   "blocks": [
     {
       "type": "paragraph",
@@ -114,10 +109,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "scenario-q27",
-    "scenario-q26"
-  ],
+  "relatedLessons": ["scenario-q27", "scenario-q26"],
   "furtherReading": [
     {
       "title": "Feature flags — Martin Fowler",

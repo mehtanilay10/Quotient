@@ -7,19 +7,10 @@
   "difficulty": "beginner",
   "estimatedHours": 1,
   "icon": "📡",
-  "tags": [
-    "learning-mindset",
-    "staying-current",
-    "ai-news",
-    "habits"
-  ],
-  "lessonSlugs": [
-    "staying-current-in-ai"
-  ],
+  "tags": ["learning-mindset", "staying-current", "ai-news", "habits"],
+  "lessonSlugs": ["staying-current-in-ai"],
   "isOptional": false,
-  "prerequisites": [
-    "personal-ai-stack"
-  ],
+  "prerequisites": ["personal-ai-stack"],
   "whatYouLearn": [
     "The best sources for staying current with AI (without overwhelm)",
     "How to filter signal from noise in AI news",

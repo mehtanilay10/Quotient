@@ -6,12 +6,7 @@
   "description": "The query-per-row trap in ORMs and hand-written code: spotting it in logs and traces, fixing with joins/projection/batching, and when N+1 is fine.",
   "order": 7,
   "difficulty": "intermediate",
-  "tags": [
-    "interview",
-    "performance",
-    "orm",
-    "database"
-  ],
+  "tags": ["interview", "performance", "orm", "database"],
   "blocks": [
     {
       "type": "paragraph",
@@ -121,10 +116,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "perf-q2",
-    "perf-q1"
-  ],
+  "relatedLessons": ["perf-q2", "perf-q1"],
   "furtherReading": [
     {
       "title": "EF Core: loading related data",

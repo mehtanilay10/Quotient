@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "local-only-fields",
-    "client-directive",
-    "cache",
-    "apollo-client"
-  ],
+  "tags": ["local-only-fields", "client-directive", "cache", "apollo-client"],
   "blocks": [
     {
       "type": "heading",
@@ -74,7 +69,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "reactive-variables"
-  ]
+  "prerequisites": ["reactive-variables"]
 }

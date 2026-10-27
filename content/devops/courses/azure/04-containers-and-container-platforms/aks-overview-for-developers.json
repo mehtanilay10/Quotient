@@ -8,13 +8,7 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "azure",
-    "containers",
-    "docker",
-    "aks",
-    "developer"
-  ],
+  "tags": ["azure", "containers", "docker", "aks", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -98,10 +92,10 @@
     {
       "type": "mermaid",
       "data": {
-          "id": "mermaid-aks-overview",
-          "caption": "AKS cluster architecture overview",
-          "definition": "flowchart TD\n    subgraph CP[Control Plane - Managed by Azure]\n        API[API Server]\n        ETCD[etcd]\n        SCHED[Scheduler]\n    end\n    subgraph NP1[Node Pool 1: Linux]\n        N1[Node 1] --> P1[Pod A]\n        N1 --> P2[Pod B]\n        N2[Node 2] --> P3[Pod C]\n    end\n    subgraph NP2[Node Pool 2: Windows]\n        N3[Node 3] --> P4[Pod D]\n    end\n    API --> NP1\n    API --> NP2"
-        }
+        "id": "mermaid-aks-overview",
+        "caption": "AKS cluster architecture overview",
+        "definition": "flowchart TD\n    subgraph CP[Control Plane - Managed by Azure]\n        API[API Server]\n        ETCD[etcd]\n        SCHED[Scheduler]\n    end\n    subgraph NP1[Node Pool 1: Linux]\n        N1[Node 1] --> P1[Pod A]\n        N1 --> P2[Pod B]\n        N2[Node 2] --> P3[Pod C]\n    end\n    subgraph NP2[Node Pool 2: Windows]\n        N3[Node 3] --> P4[Pod D]\n    end\n    API --> NP1\n    API --> NP2"
+      }
     },
     {
       "type": "summary-box",

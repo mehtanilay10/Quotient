@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "deployment",
-    "hosting",
-    "kestrel",
-    "iis"
-  ],
+  "tags": ["deployment", "hosting", "kestrel", "iis"],
   "blocks": [
     {
       "type": "paragraph",
@@ -206,10 +201,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "docker-containerization",
-    "cloud-deployment"
-  ],
+  "relatedLessons": ["docker-containerization", "cloud-deployment"],
   "technology": null,
   "furtherReading": [
     {

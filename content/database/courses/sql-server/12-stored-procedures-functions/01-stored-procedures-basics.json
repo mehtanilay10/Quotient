@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "stored-procedure",
-    "create-procedure",
-    "execute",
-    "drop"
-  ],
+  "tags": ["stored-procedure", "create-procedure", "execute", "drop"],
   "blocks": [
     {
       "type": "heading",

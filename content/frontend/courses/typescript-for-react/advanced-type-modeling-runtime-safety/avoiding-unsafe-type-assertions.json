@@ -8,12 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "type-assertions",
-    "type-safety",
-    "react"
-  ],
+  "tags": ["typescript", "type-assertions", "type-safety", "react"],
   "blocks": [
     {
       "type": "paragraph",
@@ -119,10 +114,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "schema-validation-for-api-boundaries",
-    "unknown-vs-any"
-  ],
+  "relatedLessons": ["schema-validation-for-api-boundaries", "unknown-vs-any"],
   "furtherReading": [
     {
       "title": "TypeScript Handbook: Type Assertions",

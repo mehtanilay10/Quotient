@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "declaration-merging",
-    "module-augmentation",
-    "types"
-  ],
+  "tags": ["typescript", "declaration-merging", "module-augmentation", "types"],
   "blocks": [
     {
       "type": "paragraph",
@@ -120,10 +115,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "advanced-generics-for-reusable-apis",
-    "designing-type-safe-component-apis"
-  ],
+  "relatedLessons": ["advanced-generics-for-reusable-apis", "designing-type-safe-component-apis"],
   "furtherReading": [
     {
       "title": "TypeScript Handbook: Declaration Merging",

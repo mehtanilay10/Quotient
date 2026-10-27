@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "multi-file",
-    "refactoring",
-    "migration",
-    "codebase",
-    "agentic"
-  ],
+  "tags": ["multi-file", "refactoring", "migration", "codebase", "agentic"],
   "blocks": [
     {
       "type": "heading",
@@ -180,10 +174,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "agentic-coding-intro",
-    "building-ai-agents"
-  ],
+  "relatedLessons": ["agentic-coding-intro", "building-ai-agents"],
   "relatedGlossaryTerms": [],
   "courseSlug": "codex"
 }

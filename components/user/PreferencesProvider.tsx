@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React, { createContext, useContext, useEffect, useLayoutEffect, useMemo } from 'react';
-import { useUserPreferences, type UserPreferences } from '@/hooks/useUserPreferences';
+import React, { createContext, useContext, useEffect, useLayoutEffect, useMemo } from "react";
+import { useUserPreferences, type UserPreferences } from "@/hooks/useUserPreferences";
 import {
   applyAppearanceClasses,
   getAppearanceClasses,
   writeAppearanceCookie,
-} from '@/lib/appearance';
+} from "@/lib/appearance";
 
 interface PreferencesContextValue {
   preferences: UserPreferences;
@@ -21,8 +21,7 @@ const PreferencesContext = createContext<PreferencesContextValue | null>(null);
 // A layout effect applies the classes before the browser paints, so if React
 // rewrites <html class> during hydration the pre-paint script result is
 // restored without a visible flash. Falls back to useEffect on the server.
-const useIsomorphicLayoutEffect =
-  typeof window !== 'undefined' ? useLayoutEffect : useEffect;
+const useIsomorphicLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 /**
  * Applies appearance preferences (font size, code font size, density, reduced

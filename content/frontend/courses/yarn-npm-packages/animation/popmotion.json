@@ -6,13 +6,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "popmotion",
-    "animation",
-    "javascript",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["popmotion", "animation", "javascript", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -97,10 +91,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "Popmotion is low-level and composable.",
-          "Use Framer Motion for React apps."
-        ]
+        "points": ["Popmotion is low-level and composable.", "Use Framer Motion for React apps."]
       }
     }
   ],

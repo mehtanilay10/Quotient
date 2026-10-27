@@ -8,15 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "governance",
-    "cost",
-    "control-tower",
-    "cloudtrail",
-    "budgets",
-    "cost-explorer"
-  ],
+  "tags": ["aws", "governance", "cost", "control-tower", "cloudtrail", "budgets", "cost-explorer"],
   "blocks": [
     {
       "type": "heading",
@@ -41,37 +33,21 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Service",
-          "Purpose",
-          "Key Feature"
-        ],
+        "headers": ["Service", "Purpose", "Key Feature"],
         "rows": [
           [
             "AWS Control Tower",
             "Multi-account governance",
             "Automated guardrails and account provisioning"
           ],
-          [
-            "AWS Config",
-            "Configuration history",
-            "Tracks changes to AWS resource settings"
-          ],
-          [
-            "AWS CloudTrail",
-            "Audit and logging",
-            "Records API activity for security analysis"
-          ],
+          ["AWS Config", "Configuration history", "Tracks changes to AWS resource settings"],
+          ["AWS CloudTrail", "Audit and logging", "Records API activity for security analysis"],
           [
             "AWS Security Hub",
             "Security posture",
             "Aggregates security findings from AWS services"
           ],
-          [
-            "AWS GuardDuty",
-            "Threat detection",
-            "Intelligent threat detection using ML"
-          ]
+          ["AWS GuardDuty", "Threat detection", "Intelligent threat detection using ML"]
         ]
       }
     },

@@ -86,38 +86,21 @@
               "Auto-scaling (HPA/VPA)",
               "Service mesh support"
             ],
-            "cons": [
-              "Steeper learning curve",
-              "More configuration overhead"
-            ],
+            "cons": ["Steeper learning curve", "More configuration overhead"],
             "tags": ["Recommended for microservices"]
           },
           {
             "title": "Azure Container Apps",
             "description": "Serverless container platform",
-            "pros": [
-              "Serverless scaling",
-              "Simpler than AKS",
-              "KEDA integration"
-            ],
-            "cons": [
-              "Limited Kubernetes API",
-              "Newer service"
-            ],
+            "pros": ["Serverless scaling", "Simpler than AKS", "KEDA integration"],
+            "cons": ["Limited Kubernetes API", "Newer service"],
             "tags": ["Simpler workloads"]
           },
           {
             "title": "Azure Container Instances",
             "description": "On-demand container hosting",
-            "pros": [
-              "Fast startup",
-              "Per-second billing",
-              "No orchestration needed"
-            ],
-            "cons": [
-              "No orchestration",
-              "Single container only"
-            ],
+            "pros": ["Fast startup", "Per-second billing", "No orchestration needed"],
+            "cons": ["No orchestration", "Single container only"],
             "tags": ["Batch jobs", "Simple containers"]
           }
         ]

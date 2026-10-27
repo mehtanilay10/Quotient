@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -115,32 +109,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Environment",
-          "Credential source",
-          "Secret stored?"
-        ],
+        "headers": ["Environment", "Credential source", "Secret stored?"],
         "rows": [
-          [
-            "Local developer machine",
-            "Azure CLI or Visual Studio sign-in",
-            "No"
-          ],
-          [
-            "GitHub Actions or Azure DevOps",
-            "Workload identity federation (OIDC)",
-            "No"
-          ],
-          [
-            "AKS pod",
-            "Workload identity federation",
-            "No"
-          ],
-          [
-            "App Service, Functions, Container Apps, VM",
-            "Managed identity",
-            "No"
-          ],
+          ["Local developer machine", "Azure CLI or Visual Studio sign-in", "No"],
+          ["GitHub Actions or Azure DevOps", "Workload identity federation (OIDC)", "No"],
+          ["AKS pod", "Workload identity federation", "No"],
+          ["App Service, Functions, Container Apps, VM", "Managed identity", "No"],
           [
             "External system that cannot federate",
             "Service principal secret or certificate",

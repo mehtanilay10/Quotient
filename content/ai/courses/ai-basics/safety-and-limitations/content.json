@@ -7,12 +7,7 @@
   "difficulty": "beginner",
   "estimatedHours": 2,
   "icon": "⚠️",
-  "tags": [
-    "safety",
-    "limitations",
-    "fact-checking",
-    "responsible-ai"
-  ],
+  "tags": ["safety", "limitations", "fact-checking", "responsible-ai"],
   "lessonSlugs": [
     "ai-limitations",
     "critical-evaluation",
@@ -20,9 +15,7 @@
     "prompt-security-and-jailbreak-defense"
   ],
   "isOptional": false,
-  "prerequisites": [
-    "prompting-basics"
-  ],
+  "prerequisites": ["prompting-basics"],
   "whatYouLearn": [
     "All the key limitations of current AI beyond hallucination",
     "When AI is most likely to mislead you",

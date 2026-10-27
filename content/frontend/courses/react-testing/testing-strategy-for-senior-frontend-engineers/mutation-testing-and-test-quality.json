@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "testing",
-    "mutation",
-    "coverage",
-    "quality"
-  ],
+  "tags": ["testing", "mutation", "coverage", "quality"],
   "blocks": [
     {
       "type": "paragraph",
@@ -146,10 +141,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "flaky-test-diagnosis",
-    "test-doubles-mocks-stubs-and-fakes"
-  ],
+  "relatedLessons": ["flaky-test-diagnosis", "test-doubles-mocks-stubs-and-fakes"],
   "furtherReading": [
     {
       "type": "article",

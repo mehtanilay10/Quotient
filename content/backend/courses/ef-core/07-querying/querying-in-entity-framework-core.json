@@ -7,13 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "ef-core",
-    "linq",
-    "eager-loading",
-    "include",
-    "theninclude"
-  ],
+  "tags": ["ef-core", "linq", "eager-loading", "include", "theninclude"],
   "blocks": [
     {
       "type": "paragraph",
@@ -145,9 +139,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "execute-raw-sql-queries",
-    "execute-delete-in-entity-framework-core"
-  ],
+  "relatedLessons": ["execute-raw-sql-queries", "execute-delete-in-entity-framework-core"],
   "courseSlug": "ef-core"
 }

@@ -10,12 +10,7 @@
   "difficulty": "beginner",
   "estimatedHours": 2.5,
   "tags": ["react", "introduction", "setup", "beginner"],
-  "lessonSlugs": [
-    "what-is-react",
-    "setting-up-environment",
-    "jsx-basics",
-    "first-react-app"
-  ],
+  "lessonSlugs": ["what-is-react", "setting-up-environment", "jsx-basics", "first-react-app"],
   "prerequisites": [],
   "whatYouLearn": [
     "Understand what React is and why it was created",

@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "union",
-    "union-all",
-    "set-operations",
-    "performance"
-  ],
+  "tags": ["union", "union-all", "set-operations", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -31,12 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Operation",
-          "Duplicate Removal",
-          "Performance Cost",
-          "Default Choice"
-        ],
+        "headers": ["Operation", "Duplicate Removal", "Performance Cost", "Default Choice"],
         "rows": [
           [
             "`UNION`",
@@ -104,8 +94,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "intersect",
-    "except"
-  ]
+  "relatedLessons": ["intersect", "except"]
 }

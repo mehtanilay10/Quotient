@@ -8,12 +8,7 @@
   "order": 14,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "arrays",
-    "matrix",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "matrix", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -99,32 +94,16 @@
           {
             "title": "Boundary Tracking",
             "description": "Shrink four edges after each pass",
-            "pros": [
-              "No mutation of cells",
-              "O(1) extra"
-            ],
-            "cons": [
-              "Four loop bodies"
-            ],
-            "tags": [
-              "O(m\u00b7n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["No mutation of cells", "O(1) extra"],
+            "cons": ["Four loop bodies"],
+            "tags": ["O(m\u00b7n) time", "O(1) space", "Recommended"]
           },
           {
             "title": "Direction Vectors",
             "description": "Follow directions, turn on boundary",
-            "pros": [
-              "Single loop structure"
-            ],
-            "cons": [
-              "Marks cells as visited"
-            ],
-            "tags": [
-              "O(m\u00b7n) time",
-              "O(1) space"
-            ]
+            "pros": ["Single loop structure"],
+            "cons": ["Marks cells as visited"],
+            "tags": ["O(m\u00b7n) time", "O(1) space"]
           }
         ]
       }

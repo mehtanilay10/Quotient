@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef } from "react";
 
 export function useFocusTrap(containerRef: React.RefObject<HTMLElement | null>, isActive: boolean) {
   const previousFocusRef = useRef<HTMLElement | null>(null);
@@ -27,7 +27,7 @@ export function useFocusTrap(containerRef: React.RefObject<HTMLElement | null>, 
     firstElement.focus();
 
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key !== 'Tab') {
+      if (event.key !== "Tab") {
         return;
       }
 
@@ -45,10 +45,10 @@ export function useFocusTrap(containerRef: React.RefObject<HTMLElement | null>, 
       }
     };
 
-    container.addEventListener('keydown', handleKeyDown);
+    container.addEventListener("keydown", handleKeyDown);
 
     return () => {
-      container.removeEventListener('keydown', handleKeyDown);
+      container.removeEventListener("keydown", handleKeyDown);
       previousFocusRef.current?.focus();
     };
   }, [isActive, containerRef]);

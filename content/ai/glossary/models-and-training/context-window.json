@@ -6,17 +6,10 @@
   "fullDefinition": "The context window is the total amount of text (measured in tokens) that an LLM can 'see' and process in a single interaction. This includes your entire conversation history, any documents you've uploaded, the system prompt, and the current message. If a conversation exceeds the context window, older parts are forgotten.",
   "category": "models-and-training",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "token",
-    "large-language-model",
-    "rag"
-  ],
+  "relatedTerms": ["token", "large-language-model", "rag"],
   "examples": [
     "GPT-4 has a 128K token context window (~96,000 words)",
     "Claude 3.5 has a 200K token context window"
   ],
-  "alsoKnownAs": [
-    "Context Length",
-    "Context Limit"
-  ]
+  "alsoKnownAs": ["Context Length", "Context Limit"]
 }

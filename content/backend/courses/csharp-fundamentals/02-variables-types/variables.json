@@ -7,14 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "variables",
-    "declaration",
-    "assignment",
-    "naming",
-    "constants"
-  ],
+  "tags": ["csharp", "variables", "declaration", "assignment", "naming", "constants"],
   "blocks": [
     {
       "type": "paragraph",
@@ -144,32 +137,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Context",
-          "Convention",
-          "Example"
-        ],
+        "headers": ["Context", "Convention", "Example"],
         "rows": [
-          [
-            "Local variables & parameters",
-            "camelCase",
-            "`userName`, `totalPrice`, `itemCount`"
-          ],
+          ["Local variables & parameters", "camelCase", "`userName`, `totalPrice`, `itemCount`"],
           [
             "Public fields / methods / properties",
             "PascalCase",
             "`UserName`, `TotalPrice`, `ItemCount`"
           ],
-          [
-            "Private fields",
-            "_camelCase (leading underscore)",
-            "`_userName`, `_totalPrice`"
-          ],
-          [
-            "Constants",
-            "PascalCase",
-            "`MaxRetries`, `DefaultTimeout`"
-          ],
+          ["Private fields", "_camelCase (leading underscore)", "`_userName`, `_totalPrice`"],
+          ["Constants", "PascalCase", "`MaxRetries`, `DefaultTimeout`"],
           [
             "Avoid",
             "Abbreviations, single letters (except loop counters)",
@@ -231,10 +208,7 @@
               "Only works with primitive or string literals",
               "Value is baked into referencing assemblies"
             ],
-            "tags": [
-              "compile-time",
-              "static"
-            ]
+            "tags": ["compile-time", "static"]
           },
           {
             "title": "readonly",
@@ -244,14 +218,8 @@
               "Value set at runtime",
               "Per-instance values possible"
             ],
-            "cons": [
-              "Only for instance or static fields",
-              "Slight runtime cost vs const"
-            ],
-            "tags": [
-              "runtime",
-              "flexible"
-            ]
+            "cons": ["Only for instance or static fields", "Slight runtime cost vs const"],
+            "tags": ["runtime", "flexible"]
           }
         ]
       }

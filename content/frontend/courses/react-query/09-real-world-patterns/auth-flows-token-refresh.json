@@ -8,15 +8,8 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "authentication",
-    "token-refresh",
-    "auth-flow",
-    "interceptors"
-  ],
-  "prerequisites": [
-    "mutations"
-  ],
+  "tags": ["authentication", "token-refresh", "auth-flow", "interceptors"],
+  "prerequisites": ["mutations"],
   "blocks": [
     {
       "type": "paragraph",

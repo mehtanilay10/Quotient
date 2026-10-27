@@ -6,14 +6,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 10,
-  "tags": [
-    "di",
-    "inversify",
-    "patterns",
-    "typescript",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["di", "inversify", "patterns", "typescript", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

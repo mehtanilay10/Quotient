@@ -179,32 +179,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Lazy Loading",
-          "Prefetching"
-        ],
+        "headers": ["Aspect", "Lazy Loading", "Prefetching"],
         "rows": [
-          [
-            "Purpose",
-            "Delay loading until needed",
-            "Load proactively before needed"
-          ],
-          [
-            "Use Case",
-            "Below-fold content, modal dialogs",
-            "Next pages, likely user actions"
-          ],
-          [
-            "Benefit",
-            "Faster initial load, less bandwidth",
-            "Faster subsequent interactions"
-          ],
-          [
-            "Risk",
-            "Visible loading delay",
-            "Wasted bandwidth if unused"
-          ]
+          ["Purpose", "Delay loading until needed", "Load proactively before needed"],
+          ["Use Case", "Below-fold content, modal dialogs", "Next pages, likely user actions"],
+          ["Benefit", "Faster initial load, less bandwidth", "Faster subsequent interactions"],
+          ["Risk", "Visible loading delay", "Wasted bandwidth if unused"]
         ]
       }
     },

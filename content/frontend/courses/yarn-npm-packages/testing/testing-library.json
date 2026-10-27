@@ -6,14 +6,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "testing-library",
-    "testing",
-    "react",
-    "dom",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["testing-library", "testing", "react", "dom", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "redis",
-    "rate-limiting",
-    "api",
-    "security",
-    "performance"
-  ],
+  "tags": ["redis", "rate-limiting", "api", "security", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -38,31 +32,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Algorithm",
-          "Accuracy",
-          "Memory",
-          "Redis Cost"
-        ],
+        "headers": ["Algorithm", "Accuracy", "Memory", "Redis Cost"],
         "rows": [
-          [
-            "Fixed window",
-            "Low",
-            "Low",
-            "1 INCR + 1 EXPIRE"
-          ],
-          [
-            "Sliding window log",
-            "High",
-            "High",
-            "ZADD + ZREMRANGEBYSCORE + ZCARD"
-          ],
-          [
-            "Sliding window counter",
-            "Medium",
-            "Low",
-            "2 INCR + 1 EXPIRE"
-          ]
+          ["Fixed window", "Low", "Low", "1 INCR + 1 EXPIRE"],
+          ["Sliding window log", "High", "High", "ZADD + ZREMRANGEBYSCORE + ZCARD"],
+          ["Sliding window counter", "Medium", "Low", "2 INCR + 1 EXPIRE"]
         ]
       }
     },

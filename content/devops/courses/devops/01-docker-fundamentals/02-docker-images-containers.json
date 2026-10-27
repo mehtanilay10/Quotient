@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "docker",
-    "images",
-    "containers",
-    "cli"
-  ],
+  "tags": ["docker", "images", "containers", "cli"],
   "blocks": [
     {
       "type": "heading",
@@ -70,43 +65,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Command",
-          "Description"
-        ],
+        "headers": ["Command", "Description"],
         "rows": [
-          [
-            "docker run",
-            "Create and start a new container from an image"
-          ],
-          [
-            "docker start",
-            "Start a stopped container"
-          ],
-          [
-            "docker stop",
-            "Gracefully stop a running container"
-          ],
-          [
-            "docker restart",
-            "Stop and start a container"
-          ],
-          [
-            "docker rm",
-            "Remove a stopped container"
-          ],
-          [
-            "docker ps",
-            "List running containers (use `-a` for all)"
-          ],
-          [
-            "docker logs",
-            "View container output logs"
-          ],
-          [
-            "docker exec",
-            "Run a command inside a running container"
-          ]
+          ["docker run", "Create and start a new container from an image"],
+          ["docker start", "Start a stopped container"],
+          ["docker stop", "Gracefully stop a running container"],
+          ["docker restart", "Stop and start a container"],
+          ["docker rm", "Remove a stopped container"],
+          ["docker ps", "List running containers (use `-a` for all)"],
+          ["docker logs", "View container output logs"],
+          ["docker exec", "Run a command inside a running container"]
         ]
       }
     },
@@ -201,38 +169,24 @@
           {
             "title": "Images",
             "description": "Read-only templates that package application code and dependencies.",
-            "tags": [
-              "Static",
-              "Reusable",
-              "Layered"
-            ],
+            "tags": ["Static", "Reusable", "Layered"],
             "pros": [
               "Can be versioned and shared",
               "Fast to distribute via registries",
               "Immutable and reproducible"
             ],
-            "cons": [
-              "Cannot be modified directly",
-              "Require rebuild for changes"
-            ]
+            "cons": ["Cannot be modified directly", "Require rebuild for changes"]
           },
           {
             "title": "Containers",
             "description": "Running instances of images with an isolated, writable filesystem layer.",
-            "tags": [
-              "Ephemeral",
-              "Isolated",
-              "Runtime"
-            ],
+            "tags": ["Ephemeral", "Isolated", "Runtime"],
             "pros": [
               "Lightweight and fast to start",
               "Consistent across environments",
               "Easy to scale and manage"
             ],
-            "cons": [
-              "Changes are lost when removed",
-              "Data must be persisted via volumes"
-            ]
+            "cons": ["Changes are lost when removed", "Data must be persisted via volumes"]
           }
         ]
       }

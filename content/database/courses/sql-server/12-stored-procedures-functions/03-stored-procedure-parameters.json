@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "stored-procedure-parameters",
-    "input-parameters",
-    "optional-parameters"
-  ],
+  "tags": ["stored-procedure-parameters", "input-parameters", "optional-parameters"],
   "blocks": [
     {
       "type": "heading",

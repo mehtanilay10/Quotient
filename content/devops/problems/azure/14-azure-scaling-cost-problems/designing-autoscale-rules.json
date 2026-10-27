@@ -83,10 +83,7 @@
               "Works for API and worker workloads",
               "Composes with schedule floors"
             ],
-            "cons": [
-              "Threshold must be tuned per workload",
-              "Metric may lag a few minutes"
-            ],
+            "cons": ["Threshold must be tuned per workload", "Metric may lag a few minutes"],
             "tags": ["Recommended"]
           },
           {
@@ -97,18 +94,13 @@
               "Predictable cost",
               "No threshold tuning"
             ],
-            "cons": [
-              "Blind to unexpected traffic",
-              "Needs maintenance as usage patterns shift"
-            ],
+            "cons": ["Blind to unexpected traffic", "Needs maintenance as usage patterns shift"],
             "tags": ["Predictable business hours"]
           },
           {
             "title": "CPU / memory percentage",
             "description": "Classic resource trigger",
-            "pros": [
-              "Simple to understand"
-            ],
+            "pros": ["Simple to understand"],
             "cons": [
               "Lagging indicator",
               "Blocked-on-IO work never triggers it",

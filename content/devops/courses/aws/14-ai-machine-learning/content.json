@@ -9,14 +9,7 @@
   "difficulty": "beginner",
   "estimatedHours": 3,
   "icon": "🤖",
-  "tags": [
-    "aws",
-    "ai",
-    "machine-learning",
-    "bedrock",
-    "sagemaker",
-    "generative-ai"
-  ],
+  "tags": ["aws", "ai", "machine-learning", "bedrock", "sagemaker", "generative-ai"],
   "lessonSlugs": [
     "amazon-bedrock",
     "amazon-sagemaker",

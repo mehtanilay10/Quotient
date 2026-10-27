@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "csp",
-    "security-headers",
-    "hsts",
-    "x-frame-options",
-    "defense-in-depth"
-  ],
+  "tags": ["csp", "security-headers", "hsts", "x-frame-options", "defense-in-depth"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,37 +81,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Header",
-          "Recommended value",
-          "What it prevents"
-        ],
+        "headers": ["Header", "Recommended value", "What it prevents"],
         "rows": [
-          [
-            "X-Frame-Options",
-            "DENY",
-            "Clickjacking by blocking iframe embedding"
-          ],
-          [
-            "X-Content-Type-Options",
-            "nosniff",
-            "MIME-type confusion attacks"
-          ],
+          ["X-Frame-Options", "DENY", "Clickjacking by blocking iframe embedding"],
+          ["X-Content-Type-Options", "nosniff", "MIME-type confusion attacks"],
           [
             "Strict-Transport-Security",
             "max-age=31536000; includeSubDomains",
             "SSL stripping by enforcing HTTPS"
           ],
-          [
-            "Referrer-Policy",
-            "strict-origin-when-cross-origin",
-            "URL leakage to third parties"
-          ],
-          [
-            "Permissions-Policy",
-            "geolocation=(), microphone=()",
-            "Limits browser feature access"
-          ]
+          ["Referrer-Policy", "strict-origin-when-cross-origin", "URL leakage to third parties"],
+          ["Permissions-Policy", "geolocation=(), microphone=()", "Limits browser feature access"]
         ]
       }
     },

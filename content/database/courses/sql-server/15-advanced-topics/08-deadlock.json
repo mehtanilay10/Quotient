@@ -7,11 +7,7 @@
   "order": 8,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "deadlock",
-    "concurrency",
-    "locking"
-  ],
+  "tags": ["deadlock", "concurrency", "locking"],
   "blocks": [
     {
       "type": "heading",
@@ -55,35 +51,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Session 1",
-          "Session 2"
-        ],
+        "headers": ["Session 1", "Session 2"],
         "rows": [
-          [
-            "BEGIN TRAN",
-            ""
-          ],
-          [
-            "UPDATE invoices SET customer_id = 100 WHERE id = 1",
-            ""
-          ],
-          [
-            "",
-            "BEGIN TRAN"
-          ],
-          [
-            "",
-            "UPDATE invoice_items SET amount = 100 WHERE id = 10"
-          ],
+          ["BEGIN TRAN", ""],
+          ["UPDATE invoices SET customer_id = 100 WHERE id = 1", ""],
+          ["", "BEGIN TRAN"],
+          ["", "UPDATE invoice_items SET amount = 100 WHERE id = 10"],
           [
             "UPDATE invoice_items SET item_name = 'Cool Keyboard' WHERE id = 10 — Blocked",
             "UPDATE invoices SET total = ... WHERE id = 1 — Blocked"
           ],
-          [
-            "Deadlock victim (Process ID 65)",
-            "Deadlock victim (Process ID 65)"
-          ]
+          ["Deadlock victim (Process ID 65)", "Deadlock victim (Process ID 65)"]
         ]
       }
     },

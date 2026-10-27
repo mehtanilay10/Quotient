@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "yaml",
-    "yamldotnet",
-    "serialization",
-    "config"
-  ],
+  "tags": ["yaml", "yamldotnet", "serialization", "config"],
   "blocks": [
     {
       "type": "heading",

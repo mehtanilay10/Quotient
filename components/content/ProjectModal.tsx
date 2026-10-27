@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useEffect, useRef } from 'react';
-import { X, Clock, Wrench, Star } from 'lucide-react';
-import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
-import { useBodyScrollLock } from '@/hooks/useBodyScrollLock';
-import { useFocusTrap } from '@/hooks/useFocusTrap';
-import { formatHours } from '@/lib/utils';
-import type { MiniProject } from '@/types';
+import { useEffect, useRef } from "react";
+import { X, Clock, Wrench, Star } from "lucide-react";
+import { DifficultyBadge } from "@/components/ui/DifficultyBadge";
+import { useBodyScrollLock } from "@/hooks/useBodyScrollLock";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
+import { formatHours } from "@/lib/utils";
+import type { MiniProject } from "@/types";
 
 interface ProjectModalProps {
   project: MiniProject;
@@ -19,10 +19,10 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
   // Close on Escape key
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === "Escape") onClose();
     };
-    document.addEventListener('keydown', handleKey);
-    return () => document.removeEventListener('keydown', handleKey);
+    document.addEventListener("keydown", handleKey);
+    return () => document.removeEventListener("keydown", handleKey);
   }, [onClose]);
 
   // Lock body scroll while open (restores the previous value on close)
@@ -83,7 +83,9 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           {/* Skills + Tools */}
           <div className="flex flex-wrap gap-4">
             <div className="flex-1 min-w-48">
-              <p className="mb-2 text-xs font-semibold text-fg-subtle uppercase tracking-wider">Skills you&apos;ll practice</p>
+              <p className="mb-2 text-xs font-semibold text-fg-subtle uppercase tracking-wider">
+                Skills you&apos;ll practice
+              </p>
               <div className="flex flex-wrap gap-1.5">
                 {project.skills.map((skill) => (
                   <span
@@ -96,10 +98,12 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               </div>
             </div>
             <div>
-              <p className="mb-2 text-xs font-semibold text-fg-subtle uppercase tracking-wider">Tools needed</p>
+              <p className="mb-2 text-xs font-semibold text-fg-subtle uppercase tracking-wider">
+                Tools needed
+              </p>
               <div className="flex items-center gap-1.5 text-sm text-fg-muted">
                 <Wrench className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
-                {project.tools.join(', ')}
+                {project.tools.join(", ")}
               </div>
             </div>
           </div>

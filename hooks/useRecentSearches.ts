@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useCallback } from 'react';
-import { useLocalStorage } from '@/hooks/useLocalStorage';
+import { useCallback } from "react";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
 
-const STORAGE_KEY = 'quotient:recent-searches';
+const STORAGE_KEY = "quotient:recent-searches";
 const MAX_RECENT = 5;
 
 /**

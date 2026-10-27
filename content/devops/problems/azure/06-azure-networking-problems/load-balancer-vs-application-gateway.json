@@ -79,41 +79,21 @@
               "Session affinity",
               "Autoscaling (v2)"
             ],
-            "cons": [
-              "Higher cost",
-              "No UDP support"
-            ],
+            "cons": ["Higher cost", "No UDP support"],
             "tags": ["Recommended for web apps"]
           },
           {
             "title": "Azure Load Balancer",
             "description": "Layer 4 load balancer",
-            "pros": [
-              "High performance",
-              "TCP/UDP support",
-              "Low cost",
-              "Simple configuration"
-            ],
-            "cons": [
-              "No HTTP features",
-              "No WAF",
-              "No URL routing"
-            ],
+            "pros": ["High performance", "TCP/UDP support", "Low cost", "Simple configuration"],
+            "cons": ["No HTTP features", "No WAF", "No URL routing"],
             "tags": ["TCP/UDP", "High performance"]
           },
           {
             "title": "Azure Front Door",
             "description": "Global layer 7 load balancer",
-            "pros": [
-              "Global distribution",
-              "Anycast IP",
-              "Edge caching",
-              "WAF"
-            ],
-            "cons": [
-              "Higher latency for non-global apps",
-              "More complex"
-            ],
+            "pros": ["Global distribution", "Anycast IP", "Edge caching", "WAF"],
+            "cons": ["Higher latency for non-global apps", "More complex"],
             "tags": ["Global apps", "Multi-region"]
           }
         ]

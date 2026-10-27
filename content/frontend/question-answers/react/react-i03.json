@@ -6,10 +6,7 @@
   "description": "Understand React Context and its performance implications.",
   "order": 13,
   "difficulty": "intermediate",
-  "tags": [
-    "react",
-    "intermediate"
-  ],
+  "tags": ["react", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "if-else",
-    "control-flow",
-    "conditional"
-  ],
+  "tags": ["if-else", "control-flow", "conditional"],
   "blocks": [
     {
       "type": "heading",

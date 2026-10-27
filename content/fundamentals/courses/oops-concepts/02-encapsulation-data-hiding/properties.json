@@ -7,10 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 8,
-  "tags": [
-    "oop",
-    "properties"
-  ],
+  "tags": ["oop", "properties"],
   "blocks": [
     {
       "type": "paragraph",
@@ -39,9 +36,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "encapsulation-basics",
-    "auto-properties"
-  ],
+  "relatedLessons": ["encapsulation-basics", "auto-properties"],
   "courseSlug": "oops-concepts"
 }

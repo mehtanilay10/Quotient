@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "advanced",
-    "factories",
-    "decorators"
-  ],
+  "tags": ["advanced", "factories", "decorators"],
   "blocks": [
     {
       "type": "heading",
@@ -180,10 +176,7 @@
       "takeaway": "Advanced DI patterns give you the tools to handle complex scenarios while staying within the DI container. They are not required for every project, but knowing them prevents you from reinventing the wheel when you do need them."
     }
   ],
-  "relatedLessons": [
-    "configuring-services",
-    "service-lifetimes"
-  ],
+  "relatedLessons": ["configuring-services", "service-lifetimes"],
   "technology": null,
   "furtherReading": []
 }

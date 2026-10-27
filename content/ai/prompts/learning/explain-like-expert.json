@@ -7,12 +7,7 @@
   "difficulty": "beginner",
   "template": "Act as a knowledgeable teacher who is excellent at clear explanations.\n\nI have [YOUR BACKGROUND/ROLE, e.g. \"a marketing background with no technical knowledge\"].\n\nPlease explain [TOPIC] to me. Include:\n- What it is in plain language\n- Why it matters or where it shows up\n- One concrete real-world example\n- One analogy that makes it click\n- What I should know next if I want to go deeper",
   "example": "Act as a knowledgeable teacher who is excellent at clear explanations.\n\nI have a marketing background with no technical knowledge.\n\nPlease explain \"vector databases\" to me. Include:\n- What it is in plain language\n- Why it matters or where it shows up\n- One concrete real-world example\n- One analogy that makes it click\n- What I should know next if I want to go deeper",
-  "tags": [
-    "learning",
-    "explanation",
-    "beginner-friendly",
-    "education"
-  ],
+  "tags": ["learning", "explanation", "beginner-friendly", "education"],
   "tips": [
     "Replace [YOUR BACKGROUND/ROLE] with your actual background for much better analogies",
     "Try different backgrounds for the same topic — compare how explanations change",

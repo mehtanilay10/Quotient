@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "begin-end",
-    "statement-block",
-    "batch"
-  ],
+  "tags": ["begin-end", "statement-block", "batch"],
   "blocks": [
     {
       "type": "heading",

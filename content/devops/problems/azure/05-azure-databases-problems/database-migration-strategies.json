@@ -78,39 +78,21 @@
               "Cross-database queries",
               "VNet integration"
             ],
-            "cons": [
-              "Higher cost",
-              "Larger minimum SKU"
-            ],
+            "cons": ["Higher cost", "Larger minimum SKU"],
             "tags": ["Migration", "Complex apps"]
           },
           {
             "title": "Azure SQL Database",
             "description": "Single database PaaS",
-            "pros": [
-              "Lowest cost",
-              "Serverless option",
-              "Auto-scaling"
-            ],
-            "cons": [
-              "No SQL Agent",
-              "No cross-db queries",
-              "Limited compatibility"
-            ],
+            "pros": ["Lowest cost", "Serverless option", "Auto-scaling"],
+            "cons": ["No SQL Agent", "No cross-db queries", "Limited compatibility"],
             "tags": ["New apps", "Simple schema"]
           },
           {
             "title": "SQL Server on VM",
             "description": "IaaS SQL Server",
-            "pros": [
-              "Full SQL Server feature set",
-              "Full OS control"
-            ],
-            "cons": [
-              "Manual management",
-              "No auto-patching",
-              "Higher operational cost"
-            ],
+            "pros": ["Full SQL Server feature set", "Full OS control"],
+            "cons": ["Manual management", "No auto-patching", "Higher operational cost"],
             "tags": ["Legacy", "Custom requirements"]
           }
         ]

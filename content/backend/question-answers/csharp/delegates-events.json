@@ -6,10 +6,7 @@
   "description": "Understand the delegate and event pattern in C#.",
   "order": 15,
   "difficulty": "beginner",
-  "tags": [
-    "C#",
-    "beginner"
-  ],
+  "tags": ["C#", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

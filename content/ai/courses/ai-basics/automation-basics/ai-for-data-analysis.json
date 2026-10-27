@@ -61,11 +61,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Analysis type",
-          "Example question",
-          "What AI produces"
-        ],
+        "headers": ["Analysis type", "Example question", "What AI produces"],
         "rows": [
           [
             "Summary statistics",
@@ -137,10 +133,7 @@
               "Files reset after session — re-upload each time",
               "Very large files (100MB+) may fail"
             ],
-            "tags": [
-              "paid",
-              "best-overall"
-            ]
+            "tags": ["paid", "best-overall"]
           },
           {
             "title": "Claude (Pro tier)",
@@ -154,10 +147,7 @@
               "Code execution less seamless than ChatGPT",
               "Chart generation requires more setup"
             ],
-            "tags": [
-              "paid",
-              "great-for-interpretation"
-            ]
+            "tags": ["paid", "great-for-interpretation"]
           },
           {
             "title": "Gemini in Google Sheets",
@@ -171,10 +161,7 @@
               "Requires a Google AI Pro or Workspace plan",
               "Less powerful for complex multi-step analysis"
             ],
-            "tags": [
-              "paid",
-              "google-workspace"
-            ]
+            "tags": ["paid", "google-workspace"]
           }
         ]
       }
@@ -248,11 +235,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Check",
-          "How to run it",
-          "Why it matters"
-        ],
+        "headers": ["Check", "How to run it", "Why it matters"],
         "rows": [
           [
             "Row counts",
@@ -302,11 +285,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Limitation",
-          "What can go wrong",
-          "How to mitigate"
-        ],
+        "headers": ["Limitation", "What can go wrong", "How to mitigate"],
         "rows": [
           [
             "Calculation errors",
@@ -377,11 +356,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Risk",
-          "Mitigation",
-          "Implementation"
-        ],
+        "headers": ["Risk", "Mitigation", "Implementation"],
         "rows": [
           [
             "PII leakage",
@@ -433,11 +408,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Template",
-          "Notes"
-        ],
+        "headers": ["Use case", "Template", "Notes"],
         "rows": [
           [
             "Exploratory summary",

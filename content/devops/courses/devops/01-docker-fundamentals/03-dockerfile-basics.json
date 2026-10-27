@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "docker",
-    "dockerfile",
-    "best-practices"
-  ],
+  "tags": ["docker", "dockerfile", "best-practices"],
   "blocks": [
     {
       "type": "heading",
@@ -67,42 +63,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Instruction",
-          "Purpose",
-          "Example"
-        ],
+        "headers": ["Instruction", "Purpose", "Example"],
         "rows": [
-          [
-            "FROM",
-            "Set the base image",
-            "FROM node:20-alpine"
-          ],
-          [
-            "RUN",
-            "Execute a command at build time",
-            "RUN npm install"
-          ],
-          [
-            "WORKDIR",
-            "Set the working directory",
-            "WORKDIR /app"
-          ],
-          [
-            "COPY",
-            "Copy files into the image",
-            "COPY . ."
-          ],
-          [
-            "EXPOSE",
-            "Document which port the app listens on",
-            "EXPOSE 3000"
-          ],
-          [
-            "CMD",
-            "Default command to run at startup",
-            "CMD [\"npm\", \"start\"]"
-          ]
+          ["FROM", "Set the base image", "FROM node:20-alpine"],
+          ["RUN", "Execute a command at build time", "RUN npm install"],
+          ["WORKDIR", "Set the working directory", "WORKDIR /app"],
+          ["COPY", "Copy files into the image", "COPY . ."],
+          ["EXPOSE", "Document which port the app listens on", "EXPOSE 3000"],
+          ["CMD", "Default command to run at startup", "CMD [\"npm\", \"start\"]"]
         ]
       }
     },
@@ -143,8 +111,7 @@
     },
     {
       "type": "example",
-      "data":
-      {
+      "data": {
         "title": "Multi-stage build for a TypeScript app",
         "content": "The first stage installs dependencies and builds the TypeScript code. The second stage copies only the compiled output, leaving behind all build tools.",
         "code": "FROM node:20-alpine AS builder\n\nWORKDIR /app\nCOPY package*.json ./\nRUN npm install\nCOPY . .\nRUN npm run build\n\nFROM node:20-alpine AS runtime\n\nWORKDIR /app\nCOPY --from=builder /app/dist ./dist\nCOPY --from=builder /app/package*.json ./\nRUN npm ci --only=production\n\nEXPOSE 3000\nCMD [\"node\", \"dist/index.js\"]",
@@ -167,33 +134,16 @@
           {
             "title": "COPY",
             "description": "Copies files and directories from the host into the image filesystem.",
-            "tags": [
-              "Simple",
-              "Recommended"
-            ],
-            "pros": [
-              "Transparent and predictable",
-              "No hidden behavior"
-            ],
-            "cons": [
-              "No URL fetching or extraction"
-            ]
+            "tags": ["Simple", "Recommended"],
+            "pros": ["Transparent and predictable", "No hidden behavior"],
+            "cons": ["No URL fetching or extraction"]
           },
           {
             "title": "ADD",
             "description": "Like COPY, but also supports URL fetching and automatic tar extraction.",
-            "tags": [
-              "Advanced",
-              "Auto-extract"
-            ],
-            "pros": [
-              "Can fetch remote URLs",
-              "Automatically extracts tar archives"
-            ],
-            "cons": [
-              "Hidden behavior can surprise you",
-              "Not needed in most cases"
-            ]
+            "tags": ["Advanced", "Auto-extract"],
+            "pros": ["Can fetch remote URLs", "Automatically extracts tar archives"],
+            "cons": ["Hidden behavior can surprise you", "Not needed in most cases"]
           }
         ]
       }

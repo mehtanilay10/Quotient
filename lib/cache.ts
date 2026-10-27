@@ -1,4 +1,4 @@
-import { getRedis, isRedisAvailable } from './redis';
+import { getRedis, isRedisAvailable } from "./redis";
 
 // Fallback in-memory cache for local development when Redis is not available
 type CacheEntry<T> = {
@@ -54,7 +54,7 @@ export async function clearCache(key?: string): Promise<void> {
       await redis.del(key);
     } else {
       // Clear all keys with a specific prefix to avoid deleting system keys
-      const keys = await redis.keys('cache:*');
+      const keys = await redis.keys("cache:*");
       if (keys.length > 0) {
         await redis.del(...keys);
       }
@@ -73,12 +73,15 @@ export async function clearCache(key?: string): Promise<void> {
 /**
  * Redis-based cache operations.
  */
-async function getCachedFromRedis<T>(redis: NonNullable<ReturnType<typeof getRedis>>, key: string): Promise<T | null> {
+async function getCachedFromRedis<T>(
+  redis: NonNullable<ReturnType<typeof getRedis>>,
+  key: string
+): Promise<T | null> {
   try {
     const value = await redis.get<T>(key);
     return value;
   } catch (error) {
-    console.error('Redis cache get error:', error);
+    console.error("Redis cache get error:", error);
     return null;
   }
 }
@@ -92,7 +95,7 @@ async function setCacheInRedis<T>(
   try {
     await redis.set(key, value, { px: ttlMs });
   } catch (error) {
-    console.error('Redis cache set error:', error);
+    console.error("Redis cache set error:", error);
   }
 }
 

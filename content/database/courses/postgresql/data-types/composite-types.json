@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "composite-types",
-    "create-type",
-    "domains",
-    "custom-types"
-  ],
+  "tags": ["composite-types", "create-type", "domains", "custom-types"],
   "blocks": [
     {
       "type": "paragraph",
@@ -84,11 +79,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Approach",
-          "Add a value",
-          "Good for"
-        ],
+        "headers": ["Approach", "Add a value", "Good for"],
         "rows": [
           [
             "`ENUM` type",
@@ -105,11 +96,7 @@
             "`INSERT` a row",
             "Sets that carry attributes, need ordering, or change often"
           ],
-          [
-            "Domain",
-            "`ALTER DOMAIN`",
-            "Reusable scalar validation rules"
-          ]
+          ["Domain", "`ALTER DOMAIN`", "Reusable scalar validation rules"]
         ]
       }
     },
@@ -153,8 +140,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "numeric-types",
-    "text-types"
-  ]
+  "relatedLessons": ["numeric-types", "text-types"]
 }

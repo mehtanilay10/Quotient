@@ -9,12 +9,7 @@
   "estimatedHours": 2,
   "icon": "⚡",
   "tags": ["graphql", "performance", "dataloader", "caching", "hotchocolate"],
-  "lessonSlugs": [
-    "dataloader",
-    "caching",
-    "query-complexity",
-    "persisted-queries"
-  ],
+  "lessonSlugs": ["dataloader", "caching", "query-complexity", "persisted-queries"],
   "longDescription": "Performance is what separates a demo from a production API. This module covers DataLoader for eliminating N+1 queries, field and query caching, query complexity analysis to prevent abuse, and persisted queries for bandwidth optimization.",
   "prerequisites": ["03-queries-mutations", "04-filtering-pagination"],
   "whatYouLearn": [

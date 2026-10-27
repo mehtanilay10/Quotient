@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { memo, useState, useMemo } from 'react';
-import { CheckCircle2, RotateCcw } from 'lucide-react';
-import { cn, safePercent } from '@/lib/utils';
-import { useProgress } from '@/hooks/useProgress';
-import { SignInPrompt } from '@/components/auth/SignInPrompt';
-import type { ProgressCategory } from '@/types';
+import { memo, useState, useMemo } from "react";
+import { CheckCircle2, RotateCcw } from "lucide-react";
+import { cn, safePercent } from "@/lib/utils";
+import { useProgress } from "@/hooks/useProgress";
+import { SignInPrompt } from "@/components/auth/SignInPrompt";
+import type { ProgressCategory } from "@/types";
 
 interface ProgressTrackerProps {
   lessonSlug: string;
@@ -26,7 +26,7 @@ export const ProgressTracker = memo(function ProgressTracker({
   moduleSlug,
   allModuleLessonSlugs,
   allCourseLessonSlugs = [],
-  category = 'lessons',
+  category = "lessons",
   className,
 }: ProgressTrackerProps) {
   const { toggleComplete, isCompleted, isLoggedOut } = useProgress();
@@ -54,12 +54,14 @@ export const ProgressTracker = memo(function ProgressTracker({
   };
 
   return (
-    <div className={cn('rounded-xl border border-border bg-canvas-subtle', className)}>
+    <div className={cn("rounded-xl border border-border bg-canvas-subtle", className)}>
       {total > 0 && (
         <div className="px-4 pt-4 pb-2">
           <div className="mb-1.5 flex items-center justify-between text-xs text-fg-muted">
             <span>Module progress</span>
-            <span className="font-medium">{completed}/{total} lessons</span>
+            <span className="font-medium">
+              {completed}/{total} lessons
+            </span>
           </div>
           <div className="h-2 w-full overflow-hidden rounded-full bg-canvas-inset">
             <div
@@ -79,7 +81,9 @@ export const ProgressTracker = memo(function ProgressTracker({
         <div className="px-4 pb-2">
           <div className="mb-1.5 flex items-center justify-between text-xs text-fg-muted">
             <span>Course progress</span>
-            <span className="font-medium">{courseCompleted}/{courseTotal} lessons</span>
+            <span className="font-medium">
+              {courseCompleted}/{courseTotal} lessons
+            </span>
           </div>
           <div className="h-2 w-full overflow-hidden rounded-full bg-canvas-inset">
             <div
@@ -100,10 +104,10 @@ export const ProgressTracker = memo(function ProgressTracker({
           type="button"
           onClick={handleToggle}
           className={cn(
-            'flex w-full items-center justify-center gap-2 rounded-lg border px-4 py-2.5 text-sm font-medium transition-all',
+            "flex w-full items-center justify-center gap-2 rounded-lg border px-4 py-2.5 text-sm font-medium transition-all",
             done
-              ? 'border-success-muted bg-success-subtle text-success-fg hover:opacity-80'
-              : 'border-border bg-canvas text-fg-default hover:border-success-emphasis hover:bg-success-subtle hover:text-success-fg'
+              ? "border-success-muted bg-success-subtle text-success-fg hover:opacity-80"
+              : "border-border bg-canvas text-fg-default hover:border-success-emphasis hover:bg-success-subtle hover:text-success-fg"
           )}
           aria-pressed={done}
         >
@@ -122,7 +126,7 @@ export const ProgressTracker = memo(function ProgressTracker({
         </button>
       </div>
       <div aria-live="polite" className="sr-only">
-        {done ? 'Lesson marked as complete' : 'Lesson marked as incomplete'}
+        {done ? "Lesson marked as complete" : "Lesson marked as incomplete"}
       </div>
       {showSignIn && <SignInPrompt onDismiss={() => setShowSignIn(false)} />}
     </div>

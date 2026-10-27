@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "stale-time",
-    "garbage-collection",
-    "cache-lifecycle",
-    "memory-management"
-  ],
+  "tags": ["stale-time", "garbage-collection", "cache-lifecycle", "memory-management"],
   "blocks": [
     {
       "type": "heading",
@@ -177,7 +172,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "cache-configuration"
-  ]
+  "prerequisites": ["cache-configuration"]
 }

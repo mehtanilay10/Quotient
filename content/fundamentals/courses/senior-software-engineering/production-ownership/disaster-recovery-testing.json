@@ -311,32 +311,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "System Criticality",
-          "Test Frequency",
-          "Test Type"
-        ],
+        "headers": ["System Criticality", "Test Frequency", "Test Type"],
         "rows": [
-          [
-            "Critical (payment, auth)",
-            "Quarterly",
-            "Simulation or full interruption"
-          ],
-          [
-            "High (checkout, search)",
-            "Semi-annually",
-            "Simulation"
-          ],
-          [
-            "Medium (analytics, reporting)",
-            "Annually",
-            "Simulation"
-          ],
-          [
-            "Low (internal tools)",
-            "Annually",
-            "Tabletop"
-          ]
+          ["Critical (payment, auth)", "Quarterly", "Simulation or full interruption"],
+          ["High (checkout, search)", "Semi-annually", "Simulation"],
+          ["Medium (analytics, reporting)", "Annually", "Simulation"],
+          ["Low (internal tools)", "Annually", "Tabletop"]
         ]
       }
     },

@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "testing",
-    "principles",
-    "react"
-  ],
+  "tags": ["testing", "principles", "react"],
   "blocks": [
     {
       "type": "paragraph",
@@ -47,18 +43,11 @@
       "data": {
         "title": "Mock an API Call",
         "description": "Write a test for a component that fetches data, mocking the API.",
-        "steps": [
-          "Mock fetch with jest.spyOn",
-          "Render loading state",
-          "Render data state"
-        ],
+        "steps": ["Mock fetch with jest.spyOn", "Render loading state", "Render data state"],
         "expectedOutcome": "Test covering loading and data states."
       }
     }
   ],
-  "relatedLessons": [
-    "testing-types",
-    "test-structure"
-  ],
+  "relatedLessons": ["testing-types", "test-structure"],
   "courseSlug": "react-testing"
 }

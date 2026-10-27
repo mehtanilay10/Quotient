@@ -8,13 +8,7 @@
   "order": 9,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "azure",
-    "containers",
-    "docker",
-    "aks",
-    "developer"
-  ],
+  "tags": ["azure", "containers", "docker", "aks", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -76,35 +70,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "Recommendation"
-        ],
+        "headers": ["Scenario", "Recommendation"],
         "rows": [
-          [
-            "Simple microservices, no Kubernetes expertise",
-            "Container Apps"
-          ],
-          [
-            "Existing Kubernetes manifests to migrate",
-            "AKS"
-          ],
-          [
-            "Need advanced networking (CNI, network policies)",
-            "AKS"
-          ],
-          [
-            "Scale to zero to save costs",
-            "Container Apps"
-          ],
-          [
-            "Complex Helm charts and operators",
-            "AKS"
-          ],
-          [
-            "Event-driven scaling from multiple sources",
-            "Container Apps"
-          ]
+          ["Simple microservices, no Kubernetes expertise", "Container Apps"],
+          ["Existing Kubernetes manifests to migrate", "AKS"],
+          ["Need advanced networking (CNI, network policies)", "AKS"],
+          ["Scale to zero to save costs", "Container Apps"],
+          ["Complex Helm charts and operators", "AKS"],
+          ["Event-driven scaling from multiple sources", "Container Apps"]
         ]
       }
     },
@@ -119,10 +92,10 @@
     {
       "type": "mermaid",
       "data": {
-          "id": "mermaid-container-platform-decision",
-          "caption": "Decision tree for choosing a container platform",
-          "definition": "flowchart TD\n    Q1{Need Kubernetes API?} -->|No| CA[Container Apps]\n    Q1 -->|Yes| Q2{Have K8s expertise?}\n    Q2 -->|Yes| AKS[AKS]\n    Q2 -->|No| Q3{Can you learn K8s?}\n    Q3 -->|Yes| AKS\n    Q3 -->|No| CA"
-        }
+        "id": "mermaid-container-platform-decision",
+        "caption": "Decision tree for choosing a container platform",
+        "definition": "flowchart TD\n    Q1{Need Kubernetes API?} -->|No| CA[Container Apps]\n    Q1 -->|Yes| Q2{Have K8s expertise?}\n    Q2 -->|Yes| AKS[AKS]\n    Q2 -->|No| Q3{Can you learn K8s?}\n    Q3 -->|Yes| AKS\n    Q3 -->|No| CA"
+      }
     },
     {
       "type": "heading",

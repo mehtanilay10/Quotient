@@ -1,5 +1,5 @@
-import { getRedis, isRedisAvailable } from './redis';
-import type { Redis } from '@upstash/redis';
+import { getRedis, isRedisAvailable } from "./redis";
+import type { Redis } from "@upstash/redis";
 
 // Fallback in-memory rate limiter for local development when Redis is not available
 type SlidingWindowEntry = {
@@ -25,13 +25,13 @@ function sweepExpired(now: number): void {
 }
 
 export function getClientIp(request: Request): string {
-  const forwarded = request.headers.get('x-forwarded-for');
-  const realIp = request.headers.get('x-real-ip');
+  const forwarded = request.headers.get("x-forwarded-for");
+  const realIp = request.headers.get("x-real-ip");
   // Use the LAST entry of x-forwarded-for: with an appending proxy (nginx
   // `$proxy_add_x_forwarded_for`, Vercel overwriting with the real client IP)
   // the final value is added by the trusted proxy and cannot be forged by the
   // client. Earlier entries are client-controlled and must not be trusted.
-  const ip = forwarded?.split(',').pop()?.trim() || realIp || 'unknown';
+  const ip = forwarded?.split(",").pop()?.trim() || realIp || "unknown";
   return ip;
 }
 

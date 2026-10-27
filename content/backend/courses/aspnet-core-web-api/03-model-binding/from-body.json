@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "from-body",
-    "json",
-    "binding"
-  ],
+  "tags": ["web-api", "from-body", "json", "binding"],
   "blocks": [
     {
       "type": "paragraph",
@@ -89,32 +84,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Content-Type",
-          "Formatter",
-          "Use Case"
-        ],
+        "headers": ["Content-Type", "Formatter", "Use Case"],
         "rows": [
-          [
-            "application/json",
-            "System.Text.Json",
-            "Default for REST APIs"
-          ],
-          [
-            "application/xml",
-            "XmlSerializer",
-            "Legacy SOAP or XML clients"
-          ],
-          [
-            "text/json",
-            "System.Text.Json",
-            "Some JavaScript clients"
-          ],
-          [
-            "application/octet-stream",
-            "Custom formatter",
-            "Binary payloads"
-          ]
+          ["application/json", "System.Text.Json", "Default for REST APIs"],
+          ["application/xml", "XmlSerializer", "Legacy SOAP or XML clients"],
+          ["text/json", "System.Text.Json", "Some JavaScript clients"],
+          ["application/octet-stream", "Custom formatter", "Binary payloads"]
         ]
       }
     },
@@ -139,33 +114,19 @@
               "Supports complex types",
               "Works with JSON, XML, and custom formatters"
             ],
-            "cons": [
-              "Only one parameter per action by default",
-              "Requires a readable body stream"
-            ],
-            "tags": [
-              "recommended"
-            ]
+            "cons": ["Only one parameter per action by default", "Requires a readable body stream"],
+            "tags": ["recommended"]
           },
           {
             "title": "[FromForm] Attribute",
             "description": "Binds from form data, typically used in MVC views or file uploads.",
-            "pros": [
-              "Supports multipart/form-data",
-              "Good for file uploads"
-            ],
-            "cons": [
-              "Not intended for JSON APIs",
-              "Requires form-urlencoded or multipart content"
-            ]
+            "pros": ["Supports multipart/form-data", "Good for file uploads"],
+            "cons": ["Not intended for JSON APIs", "Requires form-urlencoded or multipart content"]
           },
           {
             "title": "[ApiController] Auto-Binding",
             "description": "In API controllers, complex parameters are inferred as [FromBody] without the attribute.",
-            "pros": [
-              "Reduces boilerplate",
-              "Consistent with REST conventions"
-            ],
+            "pros": ["Reduces boilerplate", "Consistent with REST conventions"],
             "cons": [
               "Implicit behavior can confuse beginners",
               "Still limited to one complex parameter"

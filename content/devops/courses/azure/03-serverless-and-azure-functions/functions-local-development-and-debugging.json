@@ -8,12 +8,7 @@
   "order": 11,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "azure",
-    "serverless",
-    "functions",
-    "developer"
-  ],
+  "tags": ["azure", "serverless", "functions", "developer"],
   "blocks": [
     {
       "type": "heading",

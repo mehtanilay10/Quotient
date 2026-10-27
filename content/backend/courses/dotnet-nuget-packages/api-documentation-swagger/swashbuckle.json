@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is Swashbuckle.AspNetCore?"}
+      "data": { "level": 2, "text": "What is Swashbuckle.AspNetCore?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`Swashbuckle.AspNetCore` is the most popular package for adding Swagger UI and OpenAPI specifications to ASP.NET Core APIs. It auto-generates documentation from your controllers, models, and XML comments."}
+      "data": {
+        "text": "`Swashbuckle.AspNetCore` is the most popular package for adding Swagger UI and OpenAPI specifications to ASP.NET Core APIs. It auto-generates documentation from your controllers, models, and XML comments."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Configuration"}
+      "data": { "level": 2, "text": "Configuration" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Register Swagger in `Program.cs` and optionally enable XML comments for richer descriptions."}
+      "data": {
+        "text": "Register Swagger in `Program.cs` and optionally enable XML comments for richer descriptions."
+      }
     },
     {
       "type": "example",
@@ -48,11 +52,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "XML Comments"}
+      "data": { "level": 2, "text": "XML Comments" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Enable XML documentation in the project file and pass the path to `SwaggerGen` to include summary and remarks in the OpenAPI document."}
+      "data": {
+        "text": "Enable XML documentation in the project file and pass the path to `SwaggerGen` to include summary and remarks in the OpenAPI document."
+      }
     },
     {
       "type": "example",

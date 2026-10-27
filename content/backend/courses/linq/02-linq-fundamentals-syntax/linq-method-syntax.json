@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "method syntax",
-    "fluent syntax",
-    "extension methods"
-  ],
+  "tags": ["linq", "method syntax", "fluent syntax", "extension methods"],
   "blocks": [
     {
       "type": "paragraph",
@@ -146,31 +141,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Query Syntax",
-          "Method Syntax"
-        ],
+        "headers": ["Query Syntax", "Method Syntax"],
         "rows": [
-          [
-            "SQL-like syntax",
-            "Fluent syntax with extension methods"
-          ],
-          [
-            "Starts with 'from'",
-            "Starts with collection name"
-          ],
-          [
-            "Ends with 'select'",
-            "Ends with result method like ToList()"
-          ],
-          [
-            "Good for complex queries",
-            "Good for simple queries and chaining"
-          ],
-          [
-            "Some operators not supported",
-            "Supports all LINQ operators"
-          ]
+          ["SQL-like syntax", "Fluent syntax with extension methods"],
+          ["Starts with 'from'", "Starts with collection name"],
+          ["Ends with 'select'", "Ends with result method like ToList()"],
+          ["Good for complex queries", "Good for simple queries and chaining"],
+          ["Some operators not supported", "Supports all LINQ operators"]
         ]
       }
     },
@@ -188,9 +165,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "linq-query-syntax",
-    "anatomy-of-lambda-expression"
-  ],
+  "relatedLessons": ["linq-query-syntax", "anatomy-of-lambda-expression"],
   "courseSlug": "linq"
 }

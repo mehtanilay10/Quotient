@@ -5,10 +5,7 @@
   "title": "Querying Data",
   "description": "Learn to query data with EF Core.",
   "order": 5,
-  "tags": [
-    "ef-core",
-    "querying"
-  ],
+  "tags": ["ef-core", "querying"],
   "blocks": [
     {
       "type": "paragraph",
@@ -20,11 +17,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "Understand querying data",
-          "Apply best practices",
-          "Build practical skills"
-        ],
+        "points": ["Understand querying data", "Apply best practices", "Build practical skills"],
         "takeaway": "Continue to the next lesson to deepen your understanding."
       }
     }

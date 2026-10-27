@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "strings",
-    "sliding-window",
-    "medium"
-  ],
+  "tags": ["csharp", "strings", "sliding-window", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -95,33 +90,16 @@
           {
             "title": "Brute Force",
             "description": "Check every substring",
-            "pros": [
-              "Simple concept"
-            ],
-            "cons": [
-              "O(n^3) time",
-              "Redundant checks"
-            ],
-            "tags": [
-              "O(n^3) time",
-              "O(n) space"
-            ]
+            "pros": ["Simple concept"],
+            "cons": ["O(n^3) time", "Redundant checks"],
+            "tags": ["O(n^3) time", "O(n) space"]
           },
           {
             "title": "Sliding Window",
             "description": "Grow and shrink window",
-            "pros": [
-              "O(n) time",
-              "Early exit on dupes"
-            ],
-            "cons": [
-              "Requires careful pointer management"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(min(n,m)) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "Early exit on dupes"],
+            "cons": ["Requires careful pointer management"],
+            "tags": ["O(n) time", "O(min(n,m)) space", "Recommended"]
           }
         ]
       }

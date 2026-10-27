@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "cursor",
-    "row-by-row",
-    "FETCH",
-    "DEALLOCATE"
-  ],
+  "tags": ["cursor", "row-by-row", "FETCH", "DEALLOCATE"],
   "blocks": [
     {
       "type": "heading",

@@ -9,12 +9,7 @@
   "estimatedHours": 0.5,
   "icon": "🔒",
   "tags": ["oop", "encapsulation"],
-  "lessonSlugs": [
-    "encapsulation-basics",
-    "properties",
-    "auto-properties",
-    "read-only-fields"
-  ],
+  "lessonSlugs": ["encapsulation-basics", "properties", "auto-properties", "read-only-fields"],
   "whatYouLearn": [
     "Understand encapsulation principles",
     "Use properties for controlled access",

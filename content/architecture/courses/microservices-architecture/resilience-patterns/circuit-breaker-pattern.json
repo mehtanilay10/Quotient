@@ -8,10 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "circuit-breaker",
-    "resilience"
-  ],
+  "tags": ["circuit-breaker", "resilience"],
   "blocks": [
     {
       "type": "paragraph",
@@ -59,27 +56,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "State",
-          "Behavior",
-          "Transition"
-        ],
+        "headers": ["State", "Behavior", "Transition"],
         "rows": [
-          [
-            "Closed",
-            "Requests flow, count failures",
-            "Open after threshold"
-          ],
-          [
-            "Open",
-            "Fail fast, no calls",
-            "Half-open after timeout"
-          ],
-          [
-            "Half-Open",
-            "Trial requests",
-            "Closed if success, Open if fail"
-          ]
+          ["Closed", "Requests flow, count failures", "Open after threshold"],
+          ["Open", "Fail fast, no calls", "Half-open after timeout"],
+          ["Half-Open", "Trial requests", "Closed if success, Open if fail"]
         ]
       }
     },

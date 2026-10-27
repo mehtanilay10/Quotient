@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "redis",
-    "cluster",
-    "distributed",
-    "sharding"
-  ],
+  "tags": ["redis", "cluster", "distributed", "sharding"],
   "blocks": [
     {
       "type": "paragraph",

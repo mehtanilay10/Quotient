@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "structure",
-    "program",
-    "configuration"
-  ],
+  "tags": ["web-api", "structure", "program", "configuration"],
   "blocks": [
     {
       "type": "paragraph",
@@ -79,11 +74,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Line",
-          "What it does",
-          "Why it matters"
-        ],
+        "headers": ["Line", "What it does", "Why it matters"],
         "rows": [
           [
             "WebApplication.CreateBuilder(args)",
@@ -183,11 +174,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Folder",
-          "Holds",
-          "Rule of thumb"
-        ],
+        "headers": ["Folder", "Holds", "Rule of thumb"],
         "rows": [
           [
             "Controllers/",
@@ -244,27 +231,18 @@
           {
             "title": "Controllers",
             "description": "Classes with attributes that handle HTTP requests. Default in the `--use-controllers` template.",
-            "tags": [
-              "MVC",
-              "Attribute routing"
-            ],
+            "tags": ["MVC", "Attribute routing"],
             "pros": [
               "Familiar structure for larger teams",
               "Filters, model binding, and validation all 'just work'",
               "Easy to organize dozens of endpoints"
             ],
-            "cons": [
-              "More files and folders",
-              "Slight learning curve for attribute conventions"
-            ]
+            "cons": ["More files and folders", "Slight learning curve for attribute conventions"]
           },
           {
             "title": "Minimal APIs",
             "description": "Endpoints defined inline in `Program.cs` with `app.MapGet(...)` and friends.",
-            "tags": [
-              "Lightweight",
-              "Lambda-friendly"
-            ],
+            "tags": ["Lightweight", "Lambda-friendly"],
             "pros": [
               "Single file for tiny services",
               "Great for prototypes and serverless",

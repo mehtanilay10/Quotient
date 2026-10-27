@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 24,
-  "tags": [
-    "prompts",
-    "composition",
-    "csharp",
-    "safety"
-  ],
+  "tags": ["prompts", "composition", "csharp", "safety"],
   "blocks": [
     {
       "type": "paragraph",
@@ -86,10 +81,7 @@
       "takeaway": "Build prompt composition as a first-class service in your backend, not an afterthought in the controller."
     }
   ],
-  "relatedLessons": [
-    "retrieval-and-ranking",
-    "rag-with-semantic-kernel"
-  ],
+  "relatedLessons": ["retrieval-and-ranking", "rag-with-semantic-kernel"],
   "technology": null,
   "furtherReading": [
     {

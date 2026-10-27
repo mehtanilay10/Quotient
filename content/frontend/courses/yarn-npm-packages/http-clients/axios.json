@@ -6,13 +6,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "axios",
-    "http",
-    "api",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["axios", "http", "api", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

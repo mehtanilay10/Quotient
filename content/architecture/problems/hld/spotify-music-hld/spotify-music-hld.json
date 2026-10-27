@@ -159,13 +159,7 @@
             "~11 MB / hour",
             "Data saver mode & weak cellular signals"
           ],
-          [
-            "Normal",
-            "Ogg Vorbis / AAC",
-            "96 kbps",
-            "~43 MB / hour",
-            "Standard mobile default"
-          ],
+          ["Normal", "Ogg Vorbis / AAC", "96 kbps", "~43 MB / hour", "Standard mobile default"],
           [
             "High",
             "Ogg Vorbis / AAC",
@@ -180,13 +174,7 @@
             "~144 MB / hour",
             "Audiophile & premium HiFi default"
           ],
-          [
-            "Lossless",
-            "FLAC",
-            "1411 kbps",
-            "~635 MB / hour",
-            "Uncompressed studio master quality"
-          ]
+          ["Lossless", "FLAC", "1411 kbps", "~635 MB / hour", "Uncompressed studio master quality"]
         ]
       }
     },
@@ -235,11 +223,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "youtube-streaming",
-    "video-streaming-hld",
-    "notification-system"
-  ],
+  "relatedLessons": ["youtube-streaming", "video-streaming-hld", "notification-system"],
   "furtherReading": [
     {
       "title": "Spotify Engineering: Discover Weekly Explained",

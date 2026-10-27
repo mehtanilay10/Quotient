@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "window-functions",
-    "over",
-    "partition-by",
-    "row-number",
-    "lead-lag"
-  ],
+  "tags": ["window-functions", "over", "partition-by", "row-number", "lead-lag"],
   "blocks": [
     {
       "type": "paragraph",
@@ -50,11 +44,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Function",
-          "Description",
-          "Tie Handling"
-        ],
+        "headers": ["Function", "Description", "Tie Handling"],
         "rows": [
           [
             "`ROW_NUMBER()`",
@@ -105,8 +95,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "group-by",
-    "ctes"
-  ]
+  "relatedLessons": ["group-by", "ctes"]
 }

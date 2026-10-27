@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Second Normal Form applies to tables with composite keys. A partial dependency occurs when a non-key column depends on only part of the composite key." }
+      "data": {
+        "text": "Second Normal Form applies to tables with composite keys. A partial dependency occurs when a non-key column depends on only part of the composite key."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,11 @@
       "type": "bullet-list",
       "data": {
         "title": "2NF violations",
-        "items": ["Student course grade table with student_name", "Order items table with product_name", "Enrollment table with course_description"]
+        "items": [
+          "Student course grade table with student_name",
+          "Order items table with product_name",
+          "Enrollment table with course_description"
+        ]
       }
     },
     {
@@ -63,9 +69,18 @@
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "Does 2NF apply to single-column keys?", "answer": "No. 2NF only matters when the primary key is composite." },
-          { "question": "What if I have a surrogate key plus natural columns?", "answer": "Check for partial dependencies on any candidate key, not just the surrogate." },
-          { "question": "Is 2NF enough by itself?", "answer": "No. Tables in 2NF may still have transitive dependencies. Continue to 3NF." }
+          {
+            "question": "Does 2NF apply to single-column keys?",
+            "answer": "No. 2NF only matters when the primary key is composite."
+          },
+          {
+            "question": "What if I have a surrogate key plus natural columns?",
+            "answer": "Check for partial dependencies on any candidate key, not just the surrogate."
+          },
+          {
+            "question": "Is 2NF enough by itself?",
+            "answer": "No. Tables in 2NF may still have transitive dependencies. Continue to 3NF."
+          }
         ]
       }
     },
@@ -73,7 +88,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Identify composite keys", "Move columns depending on part of the key to their own tables", "Keep only full-key dependencies in junction tables", "Repeat for every composite-key table"],
+        "points": [
+          "Identify composite keys",
+          "Move columns depending on part of the key to their own tables",
+          "Keep only full-key dependencies in junction tables",
+          "Repeat for every composite-key table"
+        ],
         "takeaway": "2NF eliminates redundancy caused by partial dependencies, reducing update anomalies in junction-heavy schemas."
       }
     }

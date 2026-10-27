@@ -126,7 +126,11 @@
       }
     }
   ],
-  "relatedLessons": ["assembly-loading-and-metadata", "jit-compilation-and-tiered-compilation", "readytorun-and-native-aot"],
+  "relatedLessons": [
+    "assembly-loading-and-metadata",
+    "jit-compilation-and-tiered-compilation",
+    "readytorun-and-native-aot"
+  ],
   "furtherReading": [
     {
       "type": "article",

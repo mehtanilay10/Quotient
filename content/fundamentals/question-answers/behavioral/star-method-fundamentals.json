@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "behavioral",
-    "star-method",
-    "interview",
-    "soft-skills"
-  ],
+  "tags": ["behavioral", "star-method", "interview", "soft-skills"],
   "technology": "Behavioral",
   "blocks": [
     {
@@ -173,10 +168,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "team-conflict-questions",
-    "common-behavioral-traps"
-  ],
+  "relatedLessons": ["team-conflict-questions", "common-behavioral-traps"],
   "furtherReading": [
     {
       "title": "The STAR Method: How to Nail Your Next Interview",

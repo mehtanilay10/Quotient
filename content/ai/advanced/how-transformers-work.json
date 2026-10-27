@@ -134,11 +134,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Component",
-          "Purpose",
-          "Key Detail"
-        ],
+        "headers": ["Component", "Purpose", "Key Detail"],
         "rows": [
           [
             "Self-Attention",
@@ -213,10 +209,7 @@
               "Great for classification, NER",
               "Used by BERT family"
             ],
-            "cons": [
-              "Not designed for text generation",
-              "Slower inference for some tasks"
-            ],
+            "cons": ["Not designed for text generation", "Slower inference for some tasks"],
             "tags": ["BERT", "RoBERTa", "understanding"]
           },
           {
@@ -227,10 +220,7 @@
               "Simple, unified architecture",
               "Powers GPT, LLaMA, Mistral"
             ],
-            "cons": [
-              "Can't see future tokens",
-              "Sometimes weaker on understanding"
-            ],
+            "cons": ["Can't see future tokens", "Sometimes weaker on understanding"],
             "tags": ["GPT", "LLaMA", "Mistral", "generation"]
           },
           {
@@ -241,10 +231,7 @@
               "Clear separation of concerns",
               "Powers T5, BART, original Transformer"
             ],
-            "cons": [
-              "Larger, more complex",
-              "Less common in modern LLMs"
-            ],
+            "cons": ["Larger, more complex", "Less common in modern LLMs"],
             "tags": ["T5", "BART", "translation"]
           }
         ]

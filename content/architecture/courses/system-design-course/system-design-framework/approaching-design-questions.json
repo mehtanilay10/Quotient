@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 11,
-  "tags": [
-    "system-design",
-    "interview-strategy",
-    "mindset"
-  ],
+  "tags": ["system-design", "interview-strategy", "mindset"],
   "blocks": [
     {
       "type": "heading",

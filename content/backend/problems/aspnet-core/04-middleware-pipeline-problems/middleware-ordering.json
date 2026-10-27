@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "middleware",
-    "pipeline",
-    "ordering"
-  ],
+  "tags": ["aspnet-core", "middleware", "pipeline", "ordering"],
   "blocks": [
     {
       "type": "heading",
@@ -91,38 +86,16 @@
           {
             "title": "Correct Middleware Order",
             "description": "Request pipeline sequence",
-            "pros": [
-              "Follows official guidance",
-              "Prevents auth bypass",
-              "Correct error handling"
-            ],
-            "cons": [
-              "Order is strict",
-              "Must remember sequence"
-            ],
-            "tags": [
-              "UseRouting",
-              "UseAuthorization",
-              "UseAuthentication"
-            ]
+            "pros": ["Follows official guidance", "Prevents auth bypass", "Correct error handling"],
+            "cons": ["Order is strict", "Must remember sequence"],
+            "tags": ["UseRouting", "UseAuthorization", "UseAuthentication"]
           },
           {
             "title": "Terminal Middleware",
             "description": "Short-circuiting middleware",
-            "pros": [
-              "Clean branching",
-              "Performance optimization",
-              "Separate pipelines"
-            ],
-            "cons": [
-              "Can become complex",
-              "Must manage auth per branch"
-            ],
-            "tags": [
-              "MapGet",
-              "MapWhen",
-              "UseEndpoints"
-            ]
+            "pros": ["Clean branching", "Performance optimization", "Separate pipelines"],
+            "cons": ["Can become complex", "Must manage auth per branch"],
+            "tags": ["MapGet", "MapWhen", "UseEndpoints"]
           }
         ]
       }

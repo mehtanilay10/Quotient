@@ -6,10 +6,7 @@
   "description": "Compiler-null-safety annotations: how NRT changes the contract, ? and !, nullability warnings, and migrating legacy code.",
   "order": 47,
   "difficulty": "intermediate",
-  "tags": [
-    "C#",
-    "intermediate"
-  ],
+  "tags": ["C#", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,11 +122,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "beginner-q13",
-    "records-vs-classes",
-    "pattern-matching-switch-expressions"
-  ],
+  "relatedLessons": ["beginner-q13", "records-vs-classes", "pattern-matching-switch-expressions"],
   "furtherReading": [
     {
       "title": "Nullable reference types (C# docs)",

@@ -166,6 +166,10 @@
   ],
   "relatedLessons": ["security-fundamentals", "ssh-key-management"],
   "furtherReading": [
-    { "title": "GitHub PAT Documentation", "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token", "type": "article" }
+    {
+      "title": "GitHub PAT Documentation",
+      "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token",
+      "type": "article"
+    }
   ]
 }

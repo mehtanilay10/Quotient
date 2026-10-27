@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 32,
-  "tags": [
-    "performance",
-    "async",
-    "optimization",
-    "tracking"
-  ],
+  "tags": ["performance", "async", "optimization", "tracking"],
   "blocks": [
     {
       "type": "heading",

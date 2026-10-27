@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "fetch",
-    "api",
-    "data",
-    "async"
-  ],
+  "tags": ["react", "fetch", "api", "data", "async"],
   "blocks": [
     {
       "type": "paragraph",

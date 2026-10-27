@@ -8,13 +8,7 @@
   "order": 37,
   "difficulty": "advanced",
   "estimatedMinutes": 27,
-  "tags": [
-    "valuetask",
-    "task",
-    "allocations",
-    "async",
-    "performance"
-  ],
+  "tags": ["valuetask", "task", "allocations", "async", "performance"],
   "blocks": [
     {
       "type": "paragraph",

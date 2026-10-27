@@ -9,15 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 1,
   "icon": "☁️",
-  "tags": [
-    "azure",
-    "azure-sql",
-    "managed-instance",
-    "elastic-pools",
-    "cloud",
-    "paas",
-    "iaas"
-  ],
+  "tags": ["azure", "azure-sql", "managed-instance", "elastic-pools", "cloud", "paas", "iaas"],
   "lessonSlugs": ["azure-sql-database", "azure-sql-managed-instance"],
   "whatYouLearn": [
     "Deploy Azure SQL Database single databases and elastic pools",

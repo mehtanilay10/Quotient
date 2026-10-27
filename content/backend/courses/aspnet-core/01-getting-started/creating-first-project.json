@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "project",
-    "cli",
-    "scaffolding"
-  ],
+  "tags": ["project", "cli", "scaffolding"],
   "blocks": [
     {
       "type": "paragraph",
@@ -192,10 +188,7 @@
       "takeaway": "Creating an ASP.NET Core project is a single CLI command away. The real work begins after the project is scaffolded, as you customize controllers, views, and models to build your application."
     }
   ],
-  "relatedLessons": [
-    "what-is-aspnet-core",
-    "understanding-project-structure"
-  ],
+  "relatedLessons": ["what-is-aspnet-core", "understanding-project-structure"],
   "technology": null,
   "furtherReading": [
     {

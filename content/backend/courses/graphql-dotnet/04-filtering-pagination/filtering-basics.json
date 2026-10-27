@@ -7,10 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "graphql",
-    "filtering"
-  ],
+  "tags": ["graphql", "filtering"],
   "blocks": [
     {
       "type": "paragraph",
@@ -131,9 +128,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "pagination-basics",
-    "complex-filters"
-  ],
+  "relatedLessons": ["pagination-basics", "complex-filters"],
   "courseSlug": "graphql-dotnet"
 }

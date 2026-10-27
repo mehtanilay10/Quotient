@@ -53,10 +53,26 @@
       "data": {
         "headers": ["Symptom", "Likely cause", "How to verify"],
         "rows": [
-          ["Latency increases under load", "ThreadPool starvation", "High `threadpool.queue.length` in trace"],
-          ["High CPU, low throughput", "Lock contention or busy-wait loops", "PerfView CPU samples stuck in Monitor.Enter"],
-          ["Frequent Gen2 GC", "Excessive async allocations", "GC Stats in PerfView or `dotnet-counters`"],
-          ["Requests timeout randomly", "Sync-over-async blocking threads", "Thread stacks showing blocked on Task.Wait()"]
+          [
+            "Latency increases under load",
+            "ThreadPool starvation",
+            "High `threadpool.queue.length` in trace"
+          ],
+          [
+            "High CPU, low throughput",
+            "Lock contention or busy-wait loops",
+            "PerfView CPU samples stuck in Monitor.Enter"
+          ],
+          [
+            "Frequent Gen2 GC",
+            "Excessive async allocations",
+            "GC Stats in PerfView or `dotnet-counters`"
+          ],
+          [
+            "Requests timeout randomly",
+            "Sync-over-async blocking threads",
+            "Thread stacks showing blocked on Task.Wait()"
+          ]
         ]
       }
     },
@@ -95,7 +111,13 @@
     "valuetask-and-when-it-is-appropriate"
   ],
   "furtherReading": [
-    { "title": "dotnet-trace (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/core/diagnostics/dotnet-trace" },
-    { "title": "PerfView Tutorial (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/framework/perfview/perfview-tutorial" }
+    {
+      "title": "dotnet-trace (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/core/diagnostics/dotnet-trace"
+    },
+    {
+      "title": "PerfView Tutorial (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/framework/perfview/perfview-tutorial"
+    }
   ]
 }

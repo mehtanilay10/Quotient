@@ -9,16 +9,7 @@
   "difficulty": "beginner",
   "estimatedHours": 5,
   "icon": "📘",
-  "tags": [
-    "sql",
-    "sql-server",
-    "interview",
-    "beginner",
-    "select",
-    "where",
-    "group-by",
-    "joins"
-  ],
+  "tags": ["sql", "sql-server", "interview", "beginner", "select", "where", "group-by", "joins"],
   "lessonSlugs": [
     "01-select-all-employees",
     "02-filter-employees-by-department",

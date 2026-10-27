@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "prisma",
-    "env",
-    "secrets",
-    "security",
-    "deployment"
-  ],
+  "tags": ["prisma", "env", "secrets", "security", "deployment"],
   "blocks": [
     {
       "type": "paragraph",
@@ -61,8 +55,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "installing-prisma-in-nextjs",
-    "prisma-security-best-practices"
-  ]
+  "relatedLessons": ["installing-prisma-in-nextjs", "prisma-security-best-practices"]
 }

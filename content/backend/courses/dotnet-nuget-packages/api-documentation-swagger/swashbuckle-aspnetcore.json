@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "swagger",
-    "openapi",
-    "aspnet",
-    "api"
-  ],
+  "tags": ["swagger", "openapi", "aspnet", "api"],
   "blocks": [
     {
       "type": "heading",

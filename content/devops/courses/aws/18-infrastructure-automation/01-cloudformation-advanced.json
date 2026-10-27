@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "cloudformation",
-    "iac",
-    "stacks",
-    "nested-stacks",
-    "drift"
-  ],
+  "tags": ["aws", "cloudformation", "iac", "stacks", "nested-stacks", "drift"],
   "blocks": [
     {
       "type": "paragraph",

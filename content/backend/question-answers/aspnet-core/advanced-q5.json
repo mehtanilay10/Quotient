@@ -7,10 +7,7 @@
   "order": 12,
   "difficulty": "advanced",
   "estimatedMinutes": 23,
-  "tags": [
-    "interview",
-    "advanced"
-  ],
+  "tags": ["interview", "advanced"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,11 +79,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "Client-side evaluation",
-          "Not using AsNoTracking",
-          "N+1 queries"
-        ]
+        "items": ["Client-side evaluation", "Not using AsNoTracking", "N+1 queries"]
       }
     },
     {

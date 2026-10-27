@@ -6,11 +6,7 @@
   "fullDefinition": "Chain-of-thought prompting encourages language models to decompose complex problems into intermediate reasoning steps, similar to how a person would think through a problem aloud. By including phrases like 'Let's think step by step' or by providing examples that show reasoning, models produce more accurate answers to math, logic, and multi-step problems. The technique was discovered to emerge naturally in large enough models and has become a standard technique for improving reasoning performance. It works because it gives the model more 'thinking space' and makes errors easier to identify and correct.",
   "category": "prompting",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "few-shot-prompting",
-    "prompt",
-    "zero-shot-prompting"
-  ],
+  "relatedTerms": ["few-shot-prompting", "prompt", "zero-shot-prompting"],
   "learnMoreSlug": "chain-of-thought-prompting",
   "examples": [
     "Asking 'What is 17 x 24? Let's think step by step'",

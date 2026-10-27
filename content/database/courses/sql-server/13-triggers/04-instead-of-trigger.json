@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "INSTEAD-OF",
-    "view-trigger",
-    "DML"
-  ],
+  "tags": ["INSTEAD-OF", "view-trigger", "DML"],
   "blocks": [
     {
       "type": "heading",

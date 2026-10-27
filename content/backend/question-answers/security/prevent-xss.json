@@ -6,10 +6,7 @@
   "description": "Contextual output encoding, safe rich-HTML handling, CSP headers, and what React/Razor do for you.",
   "order": 5,
   "difficulty": "intermediate",
-  "tags": [
-    "security",
-    "intermediate"
-  ],
+  "tags": ["security", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -116,11 +113,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prevent-sql-injection",
-    "csrf-antiforgery",
-    "cors-configuration"
-  ],
+  "relatedLessons": ["prevent-sql-injection", "csrf-antiforgery", "cors-configuration"],
   "furtherReading": [
     {
       "title": "Cross-site scripting (XSS) — OWASP Prevention Cheat Sheet",

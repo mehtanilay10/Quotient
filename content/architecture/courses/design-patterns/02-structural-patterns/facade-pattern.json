@@ -6,11 +6,7 @@
   "description": "Provide a simplified interface to complex subsystems.",
   "order": 3,
   "difficulty": "beginner",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture"],
   "blocks": [
     {
       "type": "paragraph",

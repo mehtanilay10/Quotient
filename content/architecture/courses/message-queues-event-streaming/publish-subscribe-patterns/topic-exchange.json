@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "rabbitmq",
-    "topic-exchange",
-    "wildcards",
-    "routing",
-    "messaging"
-  ],
+  "tags": ["rabbitmq", "topic-exchange", "wildcards", "routing", "messaging"],
   "blocks": [
     {
       "type": "paragraph",
@@ -99,34 +93,10 @@
           "Pattern `#`"
         ],
         "rows": [
-          [
-            "order.created.us",
-            "matches",
-            "matches",
-            "matches",
-            "matches"
-          ],
-          [
-            "user.signup",
-            "matches",
-            "no match",
-            "no match",
-            "matches"
-          ],
-          [
-            "payment.failed.global",
-            "matches",
-            "no match",
-            "matches",
-            "matches"
-          ],
-          [
-            "order.created",
-            "matches",
-            "matches",
-            "no match",
-            "matches"
-          ]
+          ["order.created.us", "matches", "matches", "matches", "matches"],
+          ["user.signup", "matches", "no match", "no match", "matches"],
+          ["payment.failed.global", "matches", "no match", "matches", "matches"],
+          ["order.created", "matches", "matches", "no match", "matches"]
         ]
       }
     },

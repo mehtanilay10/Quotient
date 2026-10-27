@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "clean-code",
-    "organization",
-    "csharp"
-  ],
+  "tags": ["clean-code", "organization", "csharp"],
   "blocks": [
     {
       "type": "paragraph",

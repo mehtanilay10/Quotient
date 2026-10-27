@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "arrays",
-    "hashmap",
-    "easy"
-  ],
+  "tags": ["csharp", "arrays", "hashmap", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -133,48 +128,23 @@
           {
             "title": "Brute Force",
             "description": "Nested loops",
-            "pros": [
-              "No extra space"
-            ],
-            "cons": [
-              "O(n²) time"
-            ],
-            "tags": [
-              "O(n²) time",
-              "O(1) space"
-            ]
+            "pros": ["No extra space"],
+            "cons": ["O(n²) time"],
+            "tags": ["O(n²) time", "O(1) space"]
           },
           {
             "title": "Hash Map",
             "description": "Dictionary lookup",
-            "pros": [
-              "O(n) time",
-              "Single pass"
-            ],
-            "cons": [
-              "O(n) space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "Single pass"],
+            "cons": ["O(n) space"],
+            "tags": ["O(n) time", "O(n) space", "Recommended"]
           },
           {
             "title": "Sorted Two-Pointer",
             "description": "Sort then scan from both ends",
-            "pros": [
-              "O(n log n) time",
-              "Intuitive two-pointer logic"
-            ],
-            "cons": [
-              "O(n) extra space for sorted copy",
-              "Need to track original indices"
-            ],
-            "tags": [
-              "O(n log n) time",
-              "O(n) space"
-            ]
+            "pros": ["O(n log n) time", "Intuitive two-pointer logic"],
+            "cons": ["O(n) extra space for sorted copy", "Need to track original indices"],
+            "tags": ["O(n log n) time", "O(n) space"]
           }
         ]
       }

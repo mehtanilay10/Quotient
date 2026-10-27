@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "optimistic-updates",
-    "react-query",
-    "ux",
-    "rollback"
-  ],
+  "tags": ["optimistic-updates", "react-query", "ux", "rollback"],
   "blocks": [
     {
       "type": "paragraph",

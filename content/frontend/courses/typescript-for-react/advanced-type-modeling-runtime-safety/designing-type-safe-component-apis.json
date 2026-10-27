@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "typescript",
-    "react",
-    "component-apis",
-    "prop-types"
-  ],
+  "tags": ["typescript", "react", "component-apis", "prop-types"],
   "blocks": [
     {
       "type": "paragraph",

@@ -102,14 +102,16 @@
       }
     }
   ],
-  "relatedLessons": [
-    "git-internals",
-    "backup-and-recovery",
-    "enterprise-git"
-  ],
+  "relatedLessons": ["git-internals", "backup-and-recovery", "enterprise-git"],
   "furtherReading": [
     { "title": "Git svn documentation (git-scm.com)", "url": "https://git-scm.com/docs/git-svn" },
-    { "title": "Git fast-import documentation (git-scm.com)", "url": "https://git-scm.com/docs/git-fast-import" },
-    { "title": "Pro Git: migrating to Git", "url": "https://git-scm.com/book/en/v2/Git-and-Other-Systems-Migrating-to-Git" }
+    {
+      "title": "Git fast-import documentation (git-scm.com)",
+      "url": "https://git-scm.com/docs/git-fast-import"
+    },
+    {
+      "title": "Pro Git: migrating to Git",
+      "url": "https://git-scm.com/book/en/v2/Git-and-Other-Systems-Migrating-to-Git"
+    }
   ]
 }

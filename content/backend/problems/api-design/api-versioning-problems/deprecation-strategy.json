@@ -152,10 +152,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "breaking-changes",
-    "url-versioning"
-  ],
+  "relatedLessons": ["breaking-changes", "url-versioning"],
   "furtherReading": [
     {
       "title": "RFC 8594: Sunset Header",

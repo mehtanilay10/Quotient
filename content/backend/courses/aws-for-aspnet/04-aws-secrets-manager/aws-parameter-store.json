@@ -61,18 +61,10 @@
       "data": {
         "headers": ["Feature", "Parameter Store", "Secrets Manager"],
         "rows": [
-          [
-            "Cost",
-            "Free for standard parameters",
-            "Paid per secret and API call"
-          ],
+          ["Cost", "Free for standard parameters", "Paid per secret and API call"],
           ["Encryption", "KMS for SecureString", "Built-in encryption"],
           ["Rotation", "Manual", "Built-in automatic rotation"],
-          [
-            "Best for",
-            "Configuration and non-sensitive values",
-            "Passwords, keys, certificates"
-          ]
+          ["Best for", "Configuration and non-sensitive values", "Passwords, keys, certificates"]
         ]
       }
     },

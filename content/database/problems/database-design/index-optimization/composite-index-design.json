@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Composite indexes cover queries with multiple predicates or sorts. Column order matters: the index supports leftmost prefixes, so putting high-selectivity columns first is critical." }
+      "data": {
+        "text": "Composite indexes cover queries with multiple predicates or sorts. Column order matters: the index supports leftmost prefixes, so putting high-selectivity columns first is critical."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,12 @@
       "type": "bullet-list",
       "data": {
         "title": "Key principles",
-        "items": ["Index on (a, b, c) supports queries on a", "Also supports (a, b) and (a, b, c)", "Does not support (b, c) or (c) alone", "Order columns by selectivity and query frequency"]
+        "items": [
+          "Index on (a, b, c) supports queries on a",
+          "Also supports (a, b) and (a, b, c)",
+          "Does not support (b, c) or (c) alone",
+          "Order columns by selectivity and query frequency"
+        ]
       }
     },
     {
@@ -52,16 +59,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "warning", "title": "Warning", "text": "Adding too many composite indexes increases write cost. Focus on the most frequent and selective query patterns." }
+      "data": {
+        "variant": "warning",
+        "title": "Warning",
+        "text": "Adding too many composite indexes increases write cost. Focus on the most frequent and selective query patterns."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "Should I create separate single-column indexes instead?", "answer": "No. The database usually cannot combine them efficiently for multi-column filters." },
-          { "question": "Does index order affect performance?", "answer": "Yes. Higher-selectivity columns first reduces the index scan range." },
-          { "question": "Can I include non-filtered columns?", "answer": "Use INCLUDE columns for covering indexes rather than adding them to the key." }
+          {
+            "question": "Should I create separate single-column indexes instead?",
+            "answer": "No. The database usually cannot combine them efficiently for multi-column filters."
+          },
+          {
+            "question": "Does index order affect performance?",
+            "answer": "Yes. Higher-selectivity columns first reduces the index scan range."
+          },
+          {
+            "question": "Can I include non-filtered columns?",
+            "answer": "Use INCLUDE columns for covering indexes rather than adding them to the key."
+          }
         ]
       }
     },
@@ -69,7 +89,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Use leftmost prefix to match query predicates", "Put high-selectivity columns first", "Include sort columns for ordered results", "Avoid redundant single-column indexes"],
+        "points": [
+          "Use leftmost prefix to match query predicates",
+          "Put high-selectivity columns first",
+          "Include sort columns for ordered results",
+          "Avoid redundant single-column indexes"
+        ],
         "takeaway": "Composite index design is about matching the exact query shape, not just filtering columns."
       }
     }

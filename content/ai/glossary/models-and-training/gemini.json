@@ -6,14 +6,6 @@
   "fullDefinition": "Gemini is the family of multimodal AI models developed by Google DeepMind. Originally launched as Bard before rebranding to Gemini. The Gemini models (Flash, Pro, Ultra) power Google's AI assistants, Google Workspace features, and the Android on-device AI. Gemini 1.5 Pro has a 1 million token context window. Deeply integrated with Google Search, Gmail, Docs, and other Google services.",
   "category": "models-and-training",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "large-language-model",
-    "multimodal",
-    "google"
-  ],
-  "alsoKnownAs": [
-    "Gemini Pro",
-    "Gemini Ultra",
-    "Google Gemini"
-  ]
+  "relatedTerms": ["large-language-model", "multimodal", "google"],
+  "alsoKnownAs": ["Gemini Pro", "Gemini Ultra", "Google Gemini"]
 }

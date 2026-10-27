@@ -7,10 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "oop",
-    "polymorphism"
-  ],
+  "tags": ["oop", "polymorphism"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,8 +37,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "compile-time-polymorphism"
-  ],
+  "relatedLessons": ["compile-time-polymorphism"],
   "courseSlug": "oops-concepts"
 }

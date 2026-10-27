@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 22,
-  "tags": [
-    "mcp",
-    "tools",
-    "csharp",
-    "schemas"
-  ],
+  "tags": ["mcp", "tools", "csharp", "schemas"],
   "blocks": [
     {
       "type": "paragraph",
@@ -77,10 +72,7 @@
       "takeaway": "Treat tool metadata as seriously as REST documentation. The model and client depend on it to use your backend correctly."
     }
   ],
-  "relatedLessons": [
-    "mcp-server-lifecycle",
-    "error-handling-and-validation"
-  ],
+  "relatedLessons": ["mcp-server-lifecycle", "error-handling-and-validation"],
   "technology": null,
   "furtherReading": [
     {

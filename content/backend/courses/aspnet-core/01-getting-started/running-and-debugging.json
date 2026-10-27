@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "debug",
-    "runtime",
-    "breakpoints"
-  ],
+  "tags": ["debug", "runtime", "breakpoints"],
   "blocks": [
     {
       "type": "paragraph",
@@ -220,9 +216,7 @@
       "takeaway": "Debugging is not just about fixing errors — it is your primary tool for understanding how your ASP.NET Core application processes requests. Master breakpoints and logging early, and they will serve you throughout your entire career."
     }
   ],
-  "relatedLessons": [
-    "understanding-project-structure"
-  ],
+  "relatedLessons": ["understanding-project-structure"],
   "technology": null,
   "furtherReading": [
     {

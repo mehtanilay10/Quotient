@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "ef-core",
-    "stored-procedures",
-    "fromsql",
-    "executesqlcommand"
-  ],
+  "tags": ["ef-core", "stored-procedures", "fromsql", "executesqlcommand"],
   "blocks": [
     {
       "type": "paragraph",

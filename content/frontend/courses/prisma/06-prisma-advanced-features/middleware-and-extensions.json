@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "prisma",
-    "extensions",
-    "middleware",
-    "soft-delete",
-    "computed-fields"
-  ],
+  "tags": ["prisma", "extensions", "middleware", "soft-delete", "computed-fields"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,17 +26,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Extension Component",
-          "Purpose",
-          "Example Application"
-        ],
+        "headers": ["Extension Component", "Purpose", "Example Application"],
         "rows": [
-          [
-            "`model`",
-            "Adds custom methods to specific models",
-            "`prisma.user.signUp(...)`"
-          ],
+          ["`model`", "Adds custom methods to specific models", "`prisma.user.signUp(...)`"],
           [
             "`client`",
             "Adds global methods to the entire Prisma Client",
@@ -89,8 +75,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "transactions-and-interactive-transactions",
-    "query-logging-and-performance"
-  ]
+  "relatedLessons": ["transactions-and-interactive-transactions", "query-logging-and-performance"]
 }

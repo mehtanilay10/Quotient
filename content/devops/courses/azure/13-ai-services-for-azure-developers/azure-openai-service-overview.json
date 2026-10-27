@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "ai",
-    "openai",
-    "developer"
-  ],
+  "tags": ["azure", "ai", "openai", "developer"],
   "blocks": [
     {
       "type": "paragraph",
@@ -31,47 +26,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model Family",
-          "Use Case",
-          "Context Length"
-        ],
+        "headers": ["Model Family", "Use Case", "Context Length"],
         "rows": [
-          [
-            "GPT-4o",
-            "General-purpose chat and completions",
-            "128K tokens"
-          ],
-          [
-            "GPT-4o mini",
-            "Cost-effective chat for high-volume apps",
-            "128K tokens"
-          ],
-          [
-            "o1",
-            "Advanced reasoning and complex problem-solving",
-            "200K tokens"
-          ],
-          [
-            "DALL-E 3",
-            "Image generation from text descriptions",
-            "N/A"
-          ],
-          [
-            "Whisper",
-            "Speech-to-text transcription and translation",
-            "25MB audio"
-          ],
-          [
-            "text-embedding-3-large",
-            "High-quality embeddings for RAG",
-            "3072 dimensions"
-          ],
-          [
-            "text-embedding-3-small",
-            "Cost-effective embeddings",
-            "1536 dimensions"
-          ]
+          ["GPT-4o", "General-purpose chat and completions", "128K tokens"],
+          ["GPT-4o mini", "Cost-effective chat for high-volume apps", "128K tokens"],
+          ["o1", "Advanced reasoning and complex problem-solving", "200K tokens"],
+          ["DALL-E 3", "Image generation from text descriptions", "N/A"],
+          ["Whisper", "Speech-to-text transcription and translation", "25MB audio"],
+          ["text-embedding-3-large", "High-quality embeddings for RAG", "3072 dimensions"],
+          ["text-embedding-3-small", "Cost-effective embeddings", "1536 dimensions"]
         ]
       }
     },

@@ -7,12 +7,7 @@
   "order": 27,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "interview",
-    "full-stack",
-    "migrations",
-    "scenarios"
-  ],
+  "tags": ["interview", "full-stack", "migrations", "scenarios"],
   "blocks": [
     {
       "type": "paragraph",
@@ -114,10 +109,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "scenario-q25",
-    "scenario-q26"
-  ],
+  "relatedLessons": ["scenario-q25", "scenario-q26"],
   "furtherReading": [
     {
       "title": "Safe, gradual database migrations — Stripe",

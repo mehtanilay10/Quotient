@@ -7,11 +7,7 @@
   "order": 8,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "list-triggers",
-    "sys-triggers",
-    "system-catalog"
-  ],
+  "tags": ["list-triggers", "sys-triggers", "system-catalog"],
   "blocks": [
     {
       "type": "heading",

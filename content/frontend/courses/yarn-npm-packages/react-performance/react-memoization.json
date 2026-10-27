@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "React.memo",
-    "useMemo",
-    "useCallback",
-    "performance"
-  ],
+  "tags": ["React.memo", "useMemo", "useCallback", "performance"],
   "prerequisites": [],
   "relatedLessons": [],
   "furtherReading": [],

@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "ci-cd",
-    "continuous-integration",
-    "continuous-delivery",
-    "devops"
-  ],
+  "tags": ["ci-cd", "continuous-integration", "continuous-delivery", "devops"],
   "blocks": [
     {
       "type": "heading",
@@ -103,32 +98,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Platform",
-          "Best For",
-          "Key Strength"
-        ],
+        "headers": ["Platform", "Best For", "Key Strength"],
         "rows": [
-          [
-            "GitHub Actions",
-            "GitHub projects",
-            "Native GitHub integration"
-          ],
-          [
-            "GitLab CI/CD",
-            "GitLab projects",
-            "All-in-one platform"
-          ],
-          [
-            "Jenkins",
-            "Complex enterprise needs",
-            "1,800+ plugins"
-          ],
-          [
-            "CircleCI",
-            "Fast parallel builds",
-            "Performance"
-          ]
+          ["GitHub Actions", "GitHub projects", "Native GitHub integration"],
+          ["GitLab CI/CD", "GitLab projects", "All-in-one platform"],
+          ["Jenkins", "Complex enterprise needs", "1,800+ plugins"],
+          ["CircleCI", "Fast parallel builds", "Performance"]
         ]
       }
     },
@@ -147,14 +122,8 @@
           {
             "title": "Manual Deployment",
             "description": "A human builds, tests, and deploys each release by hand.",
-            "tags": [
-              "Slow",
-              "Error-prone",
-              "Human-dependent"
-            ],
-            "pros": [
-              "Full human control at every step"
-            ],
+            "tags": ["Slow", "Error-prone", "Human-dependent"],
+            "pros": ["Full human control at every step"],
             "cons": [
               "Deployments are risky and slow",
               "Hard to reproduce environments",
@@ -164,21 +133,14 @@
           {
             "title": "CI/CD Pipeline",
             "description": "Automated testing and deployment on every code change.",
-            "tags": [
-              "Fast",
-              "Consistent",
-              "Automated"
-            ],
+            "tags": ["Fast", "Consistent", "Automated"],
             "pros": [
               "Fast, frequent releases",
               "Consistent and reproducible",
               "Early bug detection",
               "Rollbacks are trivial"
             ],
-            "cons": [
-              "Initial setup investment",
-              "Requires test coverage"
-            ]
+            "cons": ["Initial setup investment", "Requires test coverage"]
           }
         ]
       }

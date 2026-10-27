@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "installation",
-    "docker",
-    "pghba",
-    "scram",
-    "security"
-  ],
+  "tags": ["installation", "docker", "pghba", "scram", "security"],
   "blocks": [
     {
       "type": "paragraph",
@@ -116,31 +110,19 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Path",
-          "Contents"
-        ],
+        "headers": ["Path", "Contents"],
         "rows": [
           [
             "`/var/lib/postgresql/16/main` (`PGDATA`)",
             "The data directory: heap files, `pg_wal`, `pg_xact`. This is what you back up."
           ],
-          [
-            "`/etc/postgresql/16/main/postgresql.conf`",
-            "Main server configuration."
-          ],
+          ["`/etc/postgresql/16/main/postgresql.conf`", "Main server configuration."],
           [
             "`/etc/postgresql/16/main/pg_hba.conf`",
             "Client authentication rules, evaluated top-down."
           ],
-          [
-            "`/var/log/postgresql/`",
-            "Server logs; the first place to look when startup fails."
-          ],
-          [
-            "`~/.psqlrc`",
-            "Per-user `psql` defaults (prompt, timing, pager)."
-          ]
+          ["`/var/log/postgresql/`", "Server logs; the first place to look when startup fails."],
+          ["`~/.psqlrc`", "Per-user `psql` defaults (prompt, timing, pager)."]
         ]
       }
     },
@@ -236,8 +218,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "psql-basics",
-    "architecture-overview"
-  ]
+  "relatedLessons": ["psql-basics", "architecture-overview"]
 }

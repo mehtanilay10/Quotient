@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import { ArrowRight, BookOpen, Clock } from 'lucide-react';
-import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
-import { cn, formatHours } from '@/lib/utils';
-import type { Difficulty } from '@/types';
+import Link from "next/link";
+import { ArrowRight, BookOpen, Clock } from "lucide-react";
+import { DifficultyBadge } from "@/components/ui/DifficultyBadge";
+import { cn, formatHours } from "@/lib/utils";
+import type { Difficulty } from "@/types";
 
 interface QuestionTechnologyCardProps {
   /** Module slug — identical to the URL technology segment. */
@@ -32,9 +32,9 @@ export function QuestionTechnologyCard({
     <Link
       href={`/${category}/question-answers/${slug}`}
       className={cn(
-        'group flex flex-col rounded-xl border border-border bg-canvas p-5',
-        'transition-all hover:border-accent-fg hover:shadow-md dark:bg-canvas-subtle',
-        'animate-fade-in',
+        "group flex flex-col rounded-xl border border-border bg-canvas p-5",
+        "transition-all hover:border-accent-fg hover:shadow-md dark:bg-canvas-subtle",
+        "animate-fade-in",
         className
       )}
     >
@@ -48,7 +48,9 @@ export function QuestionTechnologyCard({
       <h3 className="mb-1 font-semibold text-fg-default transition-colors group-hover:text-accent-fg">
         {title}
       </h3>
-      <p className="mb-4 flex-1 text-sm leading-relaxed text-fg-muted line-clamp-3">{description}</p>
+      <p className="mb-4 flex-1 text-sm leading-relaxed text-fg-muted line-clamp-3">
+        {description}
+      </p>
 
       <div className="mt-auto flex items-center justify-between text-xs text-fg-muted">
         <div className="flex items-center gap-3">
@@ -61,7 +63,10 @@ export function QuestionTechnologyCard({
             {formatHours(estimatedHours)}
           </span>
         </div>
-        <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+        <ArrowRight
+          className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
+          aria-hidden="true"
+        />
       </div>
     </Link>
   );

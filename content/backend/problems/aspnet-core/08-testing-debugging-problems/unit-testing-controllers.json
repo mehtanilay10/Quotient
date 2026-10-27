@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "testing",
-    "unit-testing",
-    "xunit"
-  ],
+  "tags": ["aspnet-core", "testing", "unit-testing", "xunit"],
   "blocks": [
     {
       "type": "heading",
@@ -91,22 +86,9 @@
           {
             "title": "Controller Unit Tests with Moq",
             "description": "Moq + xUnit controller tests",
-            "pros": [
-              "Fast tests",
-              "No HTTP layer",
-              "Tests logic only"
-            ],
-            "cons": [
-              "Must mock dependencies",
-              "Doesn't test pipeline",
-              "Can miss routing issues"
-            ],
-            "tags": [
-              "Moq",
-              "xUnit",
-              "Mock<T>",
-              "Assert.IsType"
-            ]
+            "pros": ["Fast tests", "No HTTP layer", "Tests logic only"],
+            "cons": ["Must mock dependencies", "Doesn't test pipeline", "Can miss routing issues"],
+            "tags": ["Moq", "xUnit", "Mock<T>", "Assert.IsType"]
           },
           {
             "title": "Testing ActionResult<T>",
@@ -116,15 +98,8 @@
               "Verifies action name and route values",
               "Clear test intent"
             ],
-            "cons": [
-              "Must know ActionResult types",
-              "Verbose assertions"
-            ],
-            "tags": [
-              "CreatedAtActionResult",
-              "ActionResult<T>",
-              "xUnit"
-            ]
+            "cons": ["Must know ActionResult types", "Verbose assertions"],
+            "tags": ["CreatedAtActionResult", "ActionResult<T>", "xUnit"]
           }
         ]
       }

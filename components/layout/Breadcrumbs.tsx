@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { ChevronRight, Home } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import type { BreadcrumbItem } from '@/types';
+import Link from "next/link";
+import { ChevronRight, Home } from "lucide-react";
+import { cn } from "@/lib/utils";
+import type { BreadcrumbItem } from "@/types";
 
 interface BreadcrumbsProps {
   items: BreadcrumbItem[];
@@ -15,7 +15,7 @@ export function Breadcrumbs({ items, className }: BreadcrumbsProps) {
   return (
     <nav
       aria-label="Breadcrumb"
-      className={cn('flex min-w-0 flex-wrap items-center gap-1 text-xs text-fg-muted', className)}
+      className={cn("flex min-w-0 flex-wrap items-center gap-1 text-xs text-fg-muted", className)}
     >
       <Link
         href="/"
@@ -29,10 +29,7 @@ export function Breadcrumbs({ items, className }: BreadcrumbsProps) {
         <span key={idx} className="flex items-center gap-1">
           <ChevronRight className="h-3 w-3 shrink-0 text-fg-subtle" aria-hidden="true" />
           {item.href ? (
-            <Link
-              href={item.href}
-              className="transition-colors hover:text-fg-default"
-            >
+            <Link href={item.href} className="transition-colors hover:text-fg-default">
               {item.label}
             </Link>
           ) : (
@@ -46,10 +43,7 @@ export function Breadcrumbs({ items, className }: BreadcrumbsProps) {
         <span className="flex items-center gap-1">
           <ChevronRight className="h-3 w-3 shrink-0 text-fg-subtle" aria-hidden="true" />
           {lastItem.href ? (
-            <Link
-              href={lastItem.href}
-              className="truncate transition-colors hover:text-fg-default"
-            >
+            <Link href={lastItem.href} className="truncate transition-colors hover:text-fg-default">
               {lastItem.label}
             </Link>
           ) : (

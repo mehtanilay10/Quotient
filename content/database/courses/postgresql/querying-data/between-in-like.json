@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "between",
-    "in",
-    "any",
-    "like",
-    "pattern-matching"
-  ],
+  "tags": ["between", "in", "any", "like", "pattern-matching"],
   "blocks": [
     {
       "type": "paragraph",
@@ -69,8 +63,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "where-clause",
-    "null-handling"
-  ]
+  "relatedLessons": ["where-clause", "null-handling"]
 }

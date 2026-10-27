@@ -7,10 +7,7 @@
   "order": 13,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "intermediate"
-  ],
+  "tags": ["interview", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -116,11 +113,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "scenario-q3",
-    "common-behavioral-traps",
-    "failure-stories"
-  ],
+  "relatedLessons": ["scenario-q3", "common-behavioral-traps", "failure-stories"],
   "furtherReading": [
     {
       "title": "Characterization test",

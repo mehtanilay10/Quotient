@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Design a least-recently-used cache with a fixed capacity. `Get(key)` returns the value and marks the key as most recently used, or `-1` if absent. `Put(key, value)` inserts or updates a key and evicts the least recently used entry when capacity is exceeded. Both operations must run in O(1) average time."}
+        "text": "Design a least-recently-used cache with a fixed capacity. `Get(key)` returns the value and marks the key as most recently used, or `-1` if absent. `Put(key, value)` inserts or updates a key and evicts the least recently used entry when capacity is exceeded. Both operations must run in O(1) average time."
+      }
     },
     {
       "type": "heading",
@@ -36,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "The map gives O(1) lookup by key, but a plain map cannot tell you *which* key is least recently used without a scan. The linked list encodes recency as position: the head is most recent, the tail is least recent, and moving a node is O(1) when you already hold a reference to it. The map stores that reference, which is what makes both operations constant time."}
+        "text": "The map gives O(1) lookup by key, but a plain map cannot tell you *which* key is least recently used without a scan. The linked list encodes recency as position: the head is most recent, the tail is least recent, and moving a node is O(1) when you already hold a reference to it. The map stores that reference, which is what makes both operations constant time."
+      }
     },
     {
       "type": "heading",

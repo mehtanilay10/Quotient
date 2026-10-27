@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "dlq",
-    "error-handling",
-    "transient-errors",
-    "poison-message",
-    "classification"
-  ],
+  "tags": ["dlq", "error-handling", "transient-errors", "poison-message", "classification"],
   "blocks": [
     {
       "type": "paragraph",
@@ -38,37 +32,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Error Type",
-          "Examples",
-          "Action"
-        ],
+        "headers": ["Error Type", "Examples", "Action"],
         "rows": [
-          [
-            "Transient",
-            "HTTP 503, timeout, deadlock, rate limit",
-            "Retry with backoff"
-          ],
-          [
-            "Transient",
-            "Database connection pool exhaustion",
-            "Retry with backoff"
-          ],
-          [
-            "Permanent",
-            "HTTP 400, malformed JSON, schema mismatch",
-            "Send to DLQ immediately"
-          ],
+          ["Transient", "HTTP 503, timeout, deadlock, rate limit", "Retry with backoff"],
+          ["Transient", "Database connection pool exhaustion", "Retry with backoff"],
+          ["Permanent", "HTTP 400, malformed JSON, schema mismatch", "Send to DLQ immediately"],
           [
             "Permanent",
             "Missing required field, invalid business state",
             "Send to DLQ immediately"
           ],
-          [
-            "Permanent",
-            "Unauthorized or forbidden resource access",
-            "Send to DLQ immediately"
-          ]
+          ["Permanent", "Unauthorized or forbidden resource access", "Send to DLQ immediately"]
         ]
       }
     },

@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "aspnet-core",
-    "authentication",
-    "jwt",
-    "bearer"
-  ],
+  "tags": ["aspnet-core", "authentication", "jwt", "bearer"],
   "blocks": [
     {
       "type": "heading",
@@ -91,39 +86,20 @@
           {
             "title": "JWT Setup in Program.cs",
             "description": "JWT authentication configuration",
-            "pros": [
-              "Stateless",
-              "Works across services",
-              "Industry standard"
-            ],
+            "pros": ["Stateless", "Works across services", "Industry standard"],
             "cons": [
               "Token revocation is hard",
               "Key management is critical",
               "Tokens can be stolen"
             ],
-            "tags": [
-              "JwtBearer",
-              "TokenValidationParameters",
-              "SymmetricSecurityKey"
-            ]
+            "tags": ["JwtBearer", "TokenValidationParameters", "SymmetricSecurityKey"]
           },
           {
             "title": "Token Generation and Validation",
             "description": "Full JWT login flow",
-            "pros": [
-              "Complete auth flow",
-              "Role-based access",
-              "Token expiration"
-            ],
-            "cons": [
-              "Secret must be stored securely",
-              "Refresh tokens add complexity"
-            ],
-            "tags": [
-              "JwtSecurityToken",
-              "SigningCredentials",
-              "[Authorize]"
-            ]
+            "pros": ["Complete auth flow", "Role-based access", "Token expiration"],
+            "cons": ["Secret must be stored securely", "Refresh tokens add complexity"],
+            "tags": ["JwtSecurityToken", "SigningCredentials", "[Authorize]"]
           }
         ]
       }

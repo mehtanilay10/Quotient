@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "DevTools",
-    "Profiler",
-    "debugging",
-    "performance"
-  ],
+  "tags": ["DevTools", "Profiler", "debugging", "performance"],
   "prerequisites": [],
   "relatedLessons": [],
   "furtherReading": [],

@@ -198,6 +198,10 @@
   ],
   "relatedLessons": ["git-flow", "trunk-based-development", "choosing-a-workflow"],
   "furtherReading": [
-    { "title": "Branching Strategies Comparison", "url": "https://www.atlassian.com/git/tutorials/comparing-workflows", "type": "article" }
+    {
+      "title": "Branching Strategies Comparison",
+      "url": "https://www.atlassian.com/git/tutorials/comparing-workflows",
+      "type": "article"
+    }
   ]
 }

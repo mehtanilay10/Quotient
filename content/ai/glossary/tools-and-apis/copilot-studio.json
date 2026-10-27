@@ -6,9 +6,5 @@
   "fullDefinition": "Copilot Studio (formerly Power Virtual Agents) is Microsoft's platform for building custom AI-powered chatbots and agents without writing code. It allows businesses to create custom assistants connected to their data, integrated with Microsoft 365 and other systems, and deployed within Teams and other channels. It is the primary tool for enterprises building on Microsoft's AI stack.",
   "category": "tools-and-apis",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "copilot",
-    "agent",
-    "mcp"
-  ]
+  "relatedTerms": ["copilot", "agent", "mcp"]
 }

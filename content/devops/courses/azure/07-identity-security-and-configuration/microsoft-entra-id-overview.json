@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -114,27 +108,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Concept",
-          "On-premises AD DS",
-          "Microsoft Entra ID"
-        ],
+        "headers": ["Concept", "On-premises AD DS", "Microsoft Entra ID"],
         "rows": [
           [
             "Structure",
             "Forests, domains, organizational units",
             "Flat directory of users, groups, and applications"
           ],
-          [
-            "Protocols",
-            "Kerberos, LDAP, NTLM",
-            "OAuth 2.0, OpenID Connect, SAML"
-          ],
-          [
-            "Policy",
-            "Group Policy objects",
-            "Conditional Access and Entra ID policies"
-          ],
+          ["Protocols", "Kerberos, LDAP, NTLM", "OAuth 2.0, OpenID Connect, SAML"],
+          ["Policy", "Group Policy objects", "Conditional Access and Entra ID policies"],
           [
             "Machine identity",
             "Domain-joined computer account",

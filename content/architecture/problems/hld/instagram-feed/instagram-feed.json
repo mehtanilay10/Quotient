@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "social-media",
-    "feed",
-    "cdn",
-    "fan-out"
-  ],
+  "tags": ["hld", "system-design", "social-media", "feed", "cdn", "fan-out"],
   "blocks": [
     {
       "type": "heading",
@@ -135,12 +128,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "When Post Created",
-          "When Feed Loaded",
-          "Best For"
-        ],
+        "headers": ["Strategy", "When Post Created", "When Feed Loaded", "Best For"],
         "rows": [
           [
             "Push (fan-out on write)",
@@ -197,10 +185,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "twitter-social-hld",
-    "youtube-streaming"
-  ],
+  "relatedLessons": ["twitter-social-hld", "youtube-streaming"],
   "furtherReading": [
     {
       "title": "Instagram Engineering Blog",

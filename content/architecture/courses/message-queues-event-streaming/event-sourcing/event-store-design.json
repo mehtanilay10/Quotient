@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "event-store",
-    "event-sourcing",
-    "database-design",
-    "append-only"
-  ],
+  "tags": ["event-store", "event-sourcing", "database-design", "append-only"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,42 +32,18 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Column",
-          "Purpose",
-          "Notes"
-        ],
+        "headers": ["Column", "Purpose", "Notes"],
         "rows": [
-          [
-            "StreamId",
-            "Groups events by aggregate",
-            "e.g., GUID of the order entity"
-          ],
+          ["StreamId", "Groups events by aggregate", "e.g., GUID of the order entity"],
           [
             "GlobalPosition",
             "Uniquely orders all events",
             "Monotonically increasing; never reused"
           ],
-          [
-            "EventType",
-            "Identifies the event kind",
-            "e.g., OrderPlaced, PaymentReceived"
-          ],
-          [
-            "Payload",
-            "Serialized event data",
-            "JSON, Avro, or Protobuf"
-          ],
-          [
-            "Timestamp",
-            "When the event occurred",
-            "UTC datetime from the producer"
-          ],
-          [
-            "CorrelationId",
-            "Traces a single command",
-            "Links all events from one operation"
-          ]
+          ["EventType", "Identifies the event kind", "e.g., OrderPlaced, PaymentReceived"],
+          ["Payload", "Serialized event data", "JSON, Avro, or Protobuf"],
+          ["Timestamp", "When the event occurred", "UTC datetime from the producer"],
+          ["CorrelationId", "Traces a single command", "Links all events from one operation"]
         ]
       }
     },
@@ -150,10 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "event-sourcing-fundamentals",
-    "snapshots-replay"
-  ],
+  "relatedLessons": ["event-sourcing-fundamentals", "snapshots-replay"],
   "furtherReading": [
     {
       "title": "EventStoreDB Getting Started",

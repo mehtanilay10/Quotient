@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "devops",
-    "deployment",
-    "developer"
-  ],
+  "tags": ["azure", "devops", "deployment", "developer"],
   "blocks": [
     {
       "type": "paragraph",

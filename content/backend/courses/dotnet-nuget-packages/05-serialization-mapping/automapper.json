@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "automapper",
-    "object-mapping",
-    "dto",
-    "mapping"
-  ],
+  "tags": ["automapper", "object-mapping", "dto", "mapping"],
   "blocks": [
     {
       "type": "heading",

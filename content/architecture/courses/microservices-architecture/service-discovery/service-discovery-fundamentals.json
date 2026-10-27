@@ -8,10 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "service-discovery",
-    "fundamentals"
-  ],
+  "tags": ["service-discovery", "fundamentals"],
   "blocks": [
     {
       "type": "paragraph",
@@ -95,27 +92,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Description",
-          "Example"
-        ],
+        "headers": ["Pattern", "Description", "Example"],
         "rows": [
-          [
-            "Client-side",
-            "Client queries registry directly",
-            "Netflix Eureka, Consul"
-          ],
-          [
-            "Server-side",
-            "Load balancer queries registry",
-            "AWS ALB, Kubernetes"
-          ],
-          [
-            "DNS-based",
-            "Client uses DNS to discover",
-            "Kubernetes DNS, Consul DNS"
-          ]
+          ["Client-side", "Client queries registry directly", "Netflix Eureka, Consul"],
+          ["Server-side", "Load balancer queries registry", "AWS ALB, Kubernetes"],
+          ["DNS-based", "Client uses DNS to discover", "Kubernetes DNS, Consul DNS"]
         ]
       }
     },

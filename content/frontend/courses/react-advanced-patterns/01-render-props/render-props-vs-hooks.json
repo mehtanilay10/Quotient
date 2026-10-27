@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 23,
-  "tags": [
-    "react",
-    "render-props",
-    "hooks",
-    "comparison"
-  ],
+  "tags": ["react", "render-props", "hooks", "comparison"],
   "blocks": [
     {
       "type": "paragraph",

@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "create-index",
-    "non-clustered",
-    "index-creation"
-  ],
+  "tags": ["create-index", "non-clustered", "index-creation"],
   "blocks": [
     {
       "type": "heading",

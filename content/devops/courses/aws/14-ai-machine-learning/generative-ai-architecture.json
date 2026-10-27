@@ -8,15 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "ai",
-    "bedrock",
-    "generative-ai",
-    "rag",
-    "architecture",
-    "responsible-ai"
-  ],
+  "tags": ["aws", "ai", "bedrock", "generative-ai", "rag", "architecture", "responsible-ai"],
   "blocks": [
     {
       "type": "paragraph",

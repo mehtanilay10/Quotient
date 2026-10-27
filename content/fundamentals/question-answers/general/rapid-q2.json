@@ -7,10 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 23,
-  "tags": [
-    "interview",
-    "beginner"
-  ],
+  "tags": ["interview", "beginner"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,10 +79,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "Not knowing strategies",
-          "Not handling invalidation"
-        ]
+        "items": ["Not knowing strategies", "Not handling invalidation"]
       }
     },
     {
@@ -98,21 +92,14 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "What is cache invalidation?",
-          "When to use Redis?"
-        ]
+        "items": ["What is cache invalidation?", "When to use Redis?"]
       }
     },
     {
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "Caching improves performance",
-          "Choose right strategy",
-          "Handle invalidation"
-        ],
+        "points": ["Caching improves performance", "Choose right strategy", "Handle invalidation"],
         "takeaway": "Handle invalidation"
       }
     }

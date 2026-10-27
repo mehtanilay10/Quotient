@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { signOut } from 'next-auth/react';
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { signOut } from "next-auth/react";
 import {
   User,
   Mail,
@@ -14,9 +14,9 @@ import {
   StickyNote,
   CheckCircle2,
   CloudOff,
-} from 'lucide-react';
-import { logger } from '@/lib/logger';
-import { StatCard } from '@/components/user/StatCard';
+} from "lucide-react";
+import { logger } from "@/lib/logger";
+import { StatCard } from "@/components/user/StatCard";
 
 interface ProfileClientProps {
   user: {
@@ -34,15 +34,23 @@ interface AccountSummary {
 }
 
 function formatDate(iso: string | null): string {
-  if (!iso) return '—';
+  if (!iso) return "—";
   return new Date(iso).toLocaleDateString(undefined, {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
+    year: "numeric",
+    month: "long",
+    day: "numeric",
   });
 }
 
-function InfoRow({ icon: Icon, label, value }: { icon: React.ElementType; label: string; value: React.ReactNode }) {
+function InfoRow({
+  icon: Icon,
+  label,
+  value,
+}: {
+  icon: React.ElementType;
+  label: string;
+  value: React.ReactNode;
+}) {
   return (
     <div className="flex items-center gap-3 rounded-lg border border-border bg-canvas-subtle px-4 py-3">
       <Icon className="h-4 w-4 shrink-0 text-fg-muted" aria-hidden="true" />
@@ -61,12 +69,12 @@ export function ProfileClient({ user }: ProfileClientProps) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/user/account-summary');
+        const res = await fetch("/api/user/account-summary");
         if (res.ok) {
           setSummary(await res.json());
         }
       } catch (err) {
-        logger.error('ProfileClient', 'Failed to fetch account summary:', err);
+        logger.error("ProfileClient", "Failed to fetch account summary:", err);
       } finally {
         setLoading(false);
       }
@@ -93,7 +101,7 @@ export function ProfileClient({ user }: ProfileClientProps) {
             </div>
           )}
           <div className="min-w-0">
-            <h2 className="text-xl font-semibold text-fg-default">{user.name || 'Unnamed user'}</h2>
+            <h2 className="text-xl font-semibold text-fg-default">{user.name || "Unnamed user"}</h2>
             <p className="text-sm text-fg-muted">{user.email}</p>
             <p className="mt-1 flex items-center justify-center gap-1.5 text-xs text-fg-subtle sm:justify-start">
               <Shield className="h-3.5 w-3.5" aria-hidden="true" />
@@ -106,17 +114,17 @@ export function ProfileClient({ user }: ProfileClientProps) {
       <section>
         <h3 className="mb-3 text-sm font-semibold text-fg-default">Account details</h3>
         <div className="grid gap-3 sm:grid-cols-2">
-          <InfoRow icon={User} label="Name" value={user.name || '—'} />
-          <InfoRow icon={Mail} label="Email" value={user.email || '—'} />
+          <InfoRow icon={User} label="Name" value={user.name || "—"} />
+          <InfoRow icon={Mail} label="Email" value={user.email || "—"} />
           <InfoRow
             icon={CalendarDays}
             label="Member since"
-            value={loading ? 'Loading…' : formatDate(summary?.createdAt ?? null)}
+            value={loading ? "Loading…" : formatDate(summary?.createdAt ?? null)}
           />
           <InfoRow
             icon={Shield}
             label="Email verified"
-            value={loading ? 'Loading…' : summary?.emailVerified ? 'Verified' : 'Google account'}
+            value={loading ? "Loading…" : summary?.emailVerified ? "Verified" : "Google account"}
           />
         </div>
       </section>
@@ -131,20 +139,49 @@ export function ProfileClient({ user }: ProfileClientProps) {
           </div>
         ) : (
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <StatCard label="Completed Items" value={summary?.counts.progress ?? 0} icon={CheckCircle2} tone="success" />
-            <StatCard label="Bookmarks" value={summary?.counts.bookmarks ?? 0} icon={Bookmark} tone="accent" />
-            <StatCard label="Notes" value={summary?.counts.notes ?? 0} icon={StickyNote} tone="done" />
-            <StatCard label="Saved Offline" value={summary?.counts.offlineQueue ?? 0} icon={CloudOff} tone="attention" />
+            <StatCard
+              label="Completed Items"
+              value={summary?.counts.progress ?? 0}
+              icon={CheckCircle2}
+              tone="success"
+            />
+            <StatCard
+              label="Bookmarks"
+              value={summary?.counts.bookmarks ?? 0}
+              icon={Bookmark}
+              tone="accent"
+            />
+            <StatCard
+              label="Notes"
+              value={summary?.counts.notes ?? 0}
+              icon={StickyNote}
+              tone="done"
+            />
+            <StatCard
+              label="Saved Offline"
+              value={summary?.counts.offlineQueue ?? 0}
+              icon={CloudOff}
+              tone="attention"
+            />
           </div>
         )}
         <div className="mt-3 flex flex-wrap gap-2">
-          <Link href="/user/progress" className="rounded-lg border border-border bg-canvas px-3 py-1.5 text-sm font-medium text-fg-muted transition-colors hover:border-accent-fg hover:text-fg-default">
+          <Link
+            href="/user/progress"
+            className="rounded-lg border border-border bg-canvas px-3 py-1.5 text-sm font-medium text-fg-muted transition-colors hover:border-accent-fg hover:text-fg-default"
+          >
             View progress
           </Link>
-          <Link href="/user/bookmarks" className="rounded-lg border border-border bg-canvas px-3 py-1.5 text-sm font-medium text-fg-muted transition-colors hover:border-accent-fg hover:text-fg-default">
+          <Link
+            href="/user/bookmarks"
+            className="rounded-lg border border-border bg-canvas px-3 py-1.5 text-sm font-medium text-fg-muted transition-colors hover:border-accent-fg hover:text-fg-default"
+          >
             View bookmarks
           </Link>
-          <Link href="/user/notes" className="rounded-lg border border-border bg-canvas px-3 py-1.5 text-sm font-medium text-fg-muted transition-colors hover:border-accent-fg hover:text-fg-default">
+          <Link
+            href="/user/notes"
+            className="rounded-lg border border-border bg-canvas px-3 py-1.5 text-sm font-medium text-fg-muted transition-colors hover:border-accent-fg hover:text-fg-default"
+          >
             View notes
           </Link>
         </div>
@@ -157,7 +194,7 @@ export function ProfileClient({ user }: ProfileClientProps) {
         </p>
         <button
           type="button"
-          onClick={() => signOut({ callbackUrl: '/' })}
+          onClick={() => signOut({ callbackUrl: "/" })}
           className="mt-4 flex items-center gap-2 rounded-lg border border-border bg-canvas px-4 py-2 text-sm font-medium text-fg-default transition-colors hover:border-danger-fg hover:text-danger-fg"
         >
           <LogOut className="h-4 w-4" aria-hidden="true" />

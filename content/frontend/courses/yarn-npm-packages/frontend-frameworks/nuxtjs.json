@@ -6,14 +6,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "nuxt",
-    "vue",
-    "frontend",
-    "frameworks",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["nuxt", "vue", "frontend", "frameworks", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -41,31 +34,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Module",
-          "Adds"
-        ],
+        "headers": ["Module", "Adds"],
         "rows": [
-          [
-            "@nuxt/ui",
-            "Component library built on Tailwind and Reka UI"
-          ],
-          [
-            "@nuxt/image",
-            "Responsive image optimisation"
-          ],
-          [
-            "@nuxt/content",
-            "Markdown/MDX-driven content collections"
-          ],
-          [
-            "@nuxtjs/tailwindcss",
-            "Tailwind CSS integration"
-          ],
-          [
-            "@nuxtjs/sitemap",
-            "Generated sitemaps for SEO"
-          ]
+          ["@nuxt/ui", "Component library built on Tailwind and Reka UI"],
+          ["@nuxt/image", "Responsive image optimisation"],
+          ["@nuxt/content", "Markdown/MDX-driven content collections"],
+          ["@nuxtjs/tailwindcss", "Tailwind CSS integration"],
+          ["@nuxtjs/sitemap", "Generated sitemaps for SEO"]
         ]
       }
     },

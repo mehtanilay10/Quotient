@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 22,
-  "tags": [
-    "mcp",
-    "architecture",
-    "transports",
-    "stdio",
-    "http"
-  ],
+  "tags": ["mcp", "architecture", "transports", "stdio", "http"],
   "blocks": [
     {
       "type": "paragraph",
@@ -53,26 +47,14 @@
         {
           "title": "stdio",
           "description": "Standard input/output transport for local child processes.",
-          "pros": [
-            "Simple local deployment",
-            "Used by many IDE integrations"
-          ],
-          "cons": [
-            "Not suitable for remote access",
-            "Process lifecycle management required"
-          ]
+          "pros": ["Simple local deployment", "Used by many IDE integrations"],
+          "cons": ["Not suitable for remote access", "Process lifecycle management required"]
         },
         {
           "title": "HTTP + SSE",
           "description": "Remote transport using HTTP for requests and server-sent events for responses.",
-          "pros": [
-            "Works across machines",
-            "Fits web deployment models"
-          ],
-          "cons": [
-            "More infrastructure",
-            "Connection management required"
-          ]
+          "pros": ["Works across machines", "Fits web deployment models"],
+          "cons": ["More infrastructure", "Connection management required"]
         },
         {
           "title": "Streamable HTTP",
@@ -81,10 +63,7 @@
             "Simpler than separate HTTP and SSE endpoints",
             "Better suited for web backends"
           ],
-          "cons": [
-            "Newer ecosystem",
-            "Fewer production examples"
-          ]
+          "cons": ["Newer ecosystem", "Fewer production examples"]
         }
       ]
     },
@@ -131,10 +110,7 @@
       "takeaway": "Choose your transport based on deployment topology. For learning, stdio is faster; for production, HTTP/SSE is more flexible."
     }
   ],
-  "relatedLessons": [
-    "what-is-model-context-protocol",
-    "mcp-resources-prompts-and-tools"
-  ],
+  "relatedLessons": ["what-is-model-context-protocol", "mcp-resources-prompts-and-tools"],
   "technology": null,
   "furtherReading": [
     {

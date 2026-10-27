@@ -6,10 +6,7 @@
   "description": "Learn INNER, LEFT, RIGHT, FULL, and CROSS joins.",
   "order": 2,
   "difficulty": "beginner",
-  "tags": [
-    "sql server",
-    "beginner"
-  ],
+  "tags": ["sql server", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

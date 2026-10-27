@@ -8,14 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "@xstate-react",
-    "useMachine",
-    "useSelector",
-    "actor",
-    "react-integration",
-    "testing"
-  ],
+  "tags": ["@xstate-react", "useMachine", "useSelector", "actor", "react-integration", "testing"],
   "blocks": [
     {
       "type": "heading",
@@ -122,7 +115,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "state-reducer-basics"
-  ]
+  "prerequisites": ["state-reducer-basics"]
 }

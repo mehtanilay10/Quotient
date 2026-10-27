@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "linq",
-    "except",
-    "set operator",
-    "difference"
-  ],
+  "tags": ["linq", "except", "set operator", "difference"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,10 +68,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "distinct-set-operator",
-    "intersect-set-operator",
-    "union-set-operator"
-  ],
+  "relatedLessons": ["distinct-set-operator", "intersect-set-operator", "union-set-operator"],
   "courseSlug": "linq"
 }

@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { Printer } from 'lucide-react';
+import { Printer } from "lucide-react";
 
-export function PrintButton({ label = 'Print / PDF' }: { label?: string }) {
+export function PrintButton({ label = "Print / PDF" }: { label?: string }) {
   return (
     <button
       onClick={() => window.print()}

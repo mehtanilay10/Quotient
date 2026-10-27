@@ -1,149 +1,149 @@
 {
-    "id":  "roadmap-architecture",
-    "slug":  "roadmap",
-    "category":  "architecture",
-    "title":  "Software Architecture Roadmap",
-    "description":  "A curated, stage-by-stage path from design patterns and clean code through caching, messaging, microservices, security, and system design interviews.",
-    "icon":  "🏗️",
-    "audience":  "Mid-level developers moving toward senior roles, where design decisions — not just working code — are the job.",
-    "estimatedTotal":  "4–6 months at 6–10 hours per week",
-    "intro":  "Architecture is judgement built on experience. This roadmap front-loads the principles that transfer everywhere, then applies them to increasingly realistic systems and interview scenarios.",
-    "stages":  [
-                   {
-                       "id":  "stage-fundamentals",
-                       "title":  "Patterns \u0026 Clean Code",
-                       "description":  "Start with the shared vocabulary of design and the discipline of writing code that other people can change. Everything later leans on these two.",
-                       "level":  "intermediate",
-                       "duration":  "4–5 weeks",
-                       "milestone":  "You can recognize the classic creational, structural, and behavioral patterns in real code — and explain when NOT to use one.",
-                       "steps":  [
-                                     {
-                                         "kind":  "course",
-                                         "ref":  "design-patterns",
-                                         "note":  "Focus on recognizing patterns in the wild, not memorizing the GoF catalogue."
-                                     },
-                                     {
-                                         "kind":  "course",
-                                         "ref":  "clean-code-csharp",
-                                         "note":  "The senior-judgment modules are the most valuable part — read them twice."
-                                     }
-                                 ]
-                   },
-                   {
-                       "id":  "stage-performance-data",
-                       "title":  "Caching \u0026 Messaging",
-                       "description":  "Two of the most common architectural moves: making reads fast with caches, and decoupling services with queues and event streams.",
-                       "level":  "intermediate",
-                       "duration":  "3–4 weeks",
-                       "milestone":  "You can choose between cache patterns and messaging patterns for a given problem, and state the consistency trade-offs each one accepts.",
-                       "steps":  [
-                                     {
-                                         "kind":  "course",
-                                         "ref":  "redis-caching-strategies",
-                                         "note":  "Pay special attention to invalidation strategies — that is where caches go wrong."
-                                     },
-                                     {
-                                         "kind":  "course",
-                                         "ref":  "message-queues-event-streaming",
-                                         "note":  "Learn when a queue is enough and when an event log earns its complexity."
-                                     }
-                                 ]
-                   },
-                   {
-                       "id":  "stage-system-architecture",
-                       "title":  "Microservices \u0026 Security",
-                       "description":  "Distributed systems solve scaling problems and create new ones. Learn the microservice boundaries, communication patterns, and the security model that must wrap all of it.",
-                       "level":  "advanced",
-                       "duration":  "4–5 weeks",
-                       "milestone":  "You can draw a service boundary for a realistic product, pick sync vs. async communication per interaction, and name the security controls each hop needs.",
-                       "steps":  [
-                                     {
-                                         "kind":  "course",
-                                         "ref":  "microservices-architecture",
-                                         "note":  "The hardest stage of this roadmap — give it the time it needs."
-                                     },
-                                     {
-                                         "kind":  "course",
-                                         "ref":  "fullstack-security",
-                                         "note":  "Security questions appear in every senior interview; treat this as non-optional."
-                                     }
-                                 ]
-                   },
-                   {
-                       "id":  "stage-frontend-architecture",
-                       "title":  "Frontend Performance",
-                       "description":  "Architecture is not only servers. Modern senior roles expect you to reason about render performance, bundle size, and Core Web Vitals as system design.",
-                       "level":  "advanced",
-                       "duration":  "2–3 weeks",
-                       "milestone":  "You can diagnose a slow front end with real metrics and pick fixes — code splitting, rendering strategy, caching — based on evidence.",
-                       "steps":  [
-                                     {
-                                         "kind":  "course",
-                                         "ref":  "frontend-performance-engineering",
-                                         "note":  "Even backend-leaning architects benefit — front ends are where most users feel performance."
-                                     }
-                                 ]
-                   },
-                   {
-                       "id":  "stage-design-interviews",
-                       "title":  "System Design Preparation",
-                       "description":  "Turn principles into interview performance: structured requirements, high-level design, deep dives, and the trade-off conversation interviewers are listening for.",
-                       "level":  "advanced",
-                       "duration":  "4–6 weeks",
-                       "milestone":  "You can walk through a design in 45 minutes: clarify requirements, sketch components, pick a data model, and defend the trade-offs out loud.",
-                       "steps":  [
-                                     {
-                                         "kind":  "course",
-                                         "ref":  "system-design-course",
-                                         "note":  "The method matters more than the examples — practice it on designs you have never seen."
-                                     },
-                                     {
-                                         "kind":  "problems",
-                                         "ref":  "system-design",
-                                         "note":  "Do one design per sitting, timed, before reading any solution."
-                                     },
-                                     {
-                                         "kind":  "problems",
-                                         "ref":  "hld-problems",
-                                         "note":  "Focus on the trade-off reasoning, not the specific technologies named."
-                                     },
-                                     {
-                                         "kind":  "problems",
-                                         "ref":  "lld-problems",
-                                         "note":  "Low-level design rounds test class modeling — take these after HLD feels comfortable."
-                                     },
-                                     {
-                                         "kind": "questionAnswer",
-                                         "ref":  "system-design"
-                                     },
-                                     {
-                                         "kind": "questionAnswer",
-                                         "ref":  "architecture"
-                                     }
-                                 ]
-                   },
-                   {
-                       "id":  "stage-senior-projects",
-                       "title":  "Capstone Projects",
-                       "description":  "Put everything together on realistic end-to-end projects that force architecture, implementation, and trade-off documentation at once.",
-                       "level":  "advanced",
-                       "duration":  "3–4 weeks",
-                       "milestone":  "You have shipped a complete project you could present in a senior interview, with the decisions and compromises written down and defensible.",
-                       "steps":  [
-                                     {
-                                         "kind":  "problems",
-                                         "ref":  "full-stack-senior-projects",
-                                         "note":  "Treat each phase like a real sprint — the documentation phases are the ones that matter most."
-                                     },
-                                     {
-                                         "kind": "questionAnswer",
-                                         "ref":  "performance-optimization"
-                                     },
-                                     {
-                                         "kind": "questionAnswer",
-                                         "ref":  "fullstack-scenarios"
-                                     }
-                                 ]
-                   }
-               ]
+  "id": "roadmap-architecture",
+  "slug": "roadmap",
+  "category": "architecture",
+  "title": "Software Architecture Roadmap",
+  "description": "A curated, stage-by-stage path from design patterns and clean code through caching, messaging, microservices, security, and system design interviews.",
+  "icon": "🏗️",
+  "audience": "Mid-level developers moving toward senior roles, where design decisions — not just working code — are the job.",
+  "estimatedTotal": "4–6 months at 6–10 hours per week",
+  "intro": "Architecture is judgement built on experience. This roadmap front-loads the principles that transfer everywhere, then applies them to increasingly realistic systems and interview scenarios.",
+  "stages": [
+    {
+      "id": "stage-fundamentals",
+      "title": "Patterns \u0026 Clean Code",
+      "description": "Start with the shared vocabulary of design and the discipline of writing code that other people can change. Everything later leans on these two.",
+      "level": "intermediate",
+      "duration": "4–5 weeks",
+      "milestone": "You can recognize the classic creational, structural, and behavioral patterns in real code — and explain when NOT to use one.",
+      "steps": [
+        {
+          "kind": "course",
+          "ref": "design-patterns",
+          "note": "Focus on recognizing patterns in the wild, not memorizing the GoF catalogue."
+        },
+        {
+          "kind": "course",
+          "ref": "clean-code-csharp",
+          "note": "The senior-judgment modules are the most valuable part — read them twice."
+        }
+      ]
+    },
+    {
+      "id": "stage-performance-data",
+      "title": "Caching \u0026 Messaging",
+      "description": "Two of the most common architectural moves: making reads fast with caches, and decoupling services with queues and event streams.",
+      "level": "intermediate",
+      "duration": "3–4 weeks",
+      "milestone": "You can choose between cache patterns and messaging patterns for a given problem, and state the consistency trade-offs each one accepts.",
+      "steps": [
+        {
+          "kind": "course",
+          "ref": "redis-caching-strategies",
+          "note": "Pay special attention to invalidation strategies — that is where caches go wrong."
+        },
+        {
+          "kind": "course",
+          "ref": "message-queues-event-streaming",
+          "note": "Learn when a queue is enough and when an event log earns its complexity."
+        }
+      ]
+    },
+    {
+      "id": "stage-system-architecture",
+      "title": "Microservices \u0026 Security",
+      "description": "Distributed systems solve scaling problems and create new ones. Learn the microservice boundaries, communication patterns, and the security model that must wrap all of it.",
+      "level": "advanced",
+      "duration": "4–5 weeks",
+      "milestone": "You can draw a service boundary for a realistic product, pick sync vs. async communication per interaction, and name the security controls each hop needs.",
+      "steps": [
+        {
+          "kind": "course",
+          "ref": "microservices-architecture",
+          "note": "The hardest stage of this roadmap — give it the time it needs."
+        },
+        {
+          "kind": "course",
+          "ref": "fullstack-security",
+          "note": "Security questions appear in every senior interview; treat this as non-optional."
+        }
+      ]
+    },
+    {
+      "id": "stage-frontend-architecture",
+      "title": "Frontend Performance",
+      "description": "Architecture is not only servers. Modern senior roles expect you to reason about render performance, bundle size, and Core Web Vitals as system design.",
+      "level": "advanced",
+      "duration": "2–3 weeks",
+      "milestone": "You can diagnose a slow front end with real metrics and pick fixes — code splitting, rendering strategy, caching — based on evidence.",
+      "steps": [
+        {
+          "kind": "course",
+          "ref": "frontend-performance-engineering",
+          "note": "Even backend-leaning architects benefit — front ends are where most users feel performance."
+        }
+      ]
+    },
+    {
+      "id": "stage-design-interviews",
+      "title": "System Design Preparation",
+      "description": "Turn principles into interview performance: structured requirements, high-level design, deep dives, and the trade-off conversation interviewers are listening for.",
+      "level": "advanced",
+      "duration": "4–6 weeks",
+      "milestone": "You can walk through a design in 45 minutes: clarify requirements, sketch components, pick a data model, and defend the trade-offs out loud.",
+      "steps": [
+        {
+          "kind": "course",
+          "ref": "system-design-course",
+          "note": "The method matters more than the examples — practice it on designs you have never seen."
+        },
+        {
+          "kind": "problems",
+          "ref": "system-design",
+          "note": "Do one design per sitting, timed, before reading any solution."
+        },
+        {
+          "kind": "problems",
+          "ref": "hld-problems",
+          "note": "Focus on the trade-off reasoning, not the specific technologies named."
+        },
+        {
+          "kind": "problems",
+          "ref": "lld-problems",
+          "note": "Low-level design rounds test class modeling — take these after HLD feels comfortable."
+        },
+        {
+          "kind": "questionAnswer",
+          "ref": "system-design"
+        },
+        {
+          "kind": "questionAnswer",
+          "ref": "architecture"
+        }
+      ]
+    },
+    {
+      "id": "stage-senior-projects",
+      "title": "Capstone Projects",
+      "description": "Put everything together on realistic end-to-end projects that force architecture, implementation, and trade-off documentation at once.",
+      "level": "advanced",
+      "duration": "3–4 weeks",
+      "milestone": "You have shipped a complete project you could present in a senior interview, with the decisions and compromises written down and defensible.",
+      "steps": [
+        {
+          "kind": "problems",
+          "ref": "full-stack-senior-projects",
+          "note": "Treat each phase like a real sprint — the documentation phases are the ones that matter most."
+        },
+        {
+          "kind": "questionAnswer",
+          "ref": "performance-optimization"
+        },
+        {
+          "kind": "questionAnswer",
+          "ref": "fullstack-scenarios"
+        }
+      ]
+    }
+  ]
 }

@@ -8,12 +8,7 @@
   "order": 25,
   "difficulty": "medium",
   "estimatedMinutes": 14,
-  "tags": [
-    "csharp",
-    "trees",
-    "binary-search",
-    "medium"
-  ],
+  "tags": ["csharp", "trees", "binary-search", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "Binary Search Height",
             "description": "Check last level with binary search",
-            "pros": [
-              "O(log\u00b2n)"
-            ],
-            "tags": [
-              "O(log\u00b2n) time",
-              "O(log n) space",
-              "Recommended"
-            ]
+            "pros": ["O(log\u00b2n)"],
+            "tags": ["O(log\u00b2n) time", "O(log n) space", "Recommended"]
           }
         ]
       }

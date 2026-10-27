@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "azure",
-    "devops",
-    "deployment",
-    "developer"
-  ],
+  "tags": ["azure", "devops", "deployment", "developer"],
   "blocks": [
     {
       "type": "paragraph",
@@ -94,41 +89,20 @@
           {
             "title": "Blue/Green",
             "description": "Two full environments; switch traffic instantly.",
-            "pros": [
-              "Zero downtime",
-              "Instant rollback",
-              "Full test before release"
-            ],
-            "cons": [
-              "Double infrastructure cost",
-              "Database migrations need care"
-            ]
+            "pros": ["Zero downtime", "Instant rollback", "Full test before release"],
+            "cons": ["Double infrastructure cost", "Database migrations need care"]
           },
           {
             "title": "Canary",
             "description": "Gradually route traffic to new version.",
-            "pros": [
-              "Real user feedback",
-              "Low blast radius",
-              "Data-driven decisions"
-            ],
-            "cons": [
-              "Requires monitoring",
-              "Longer release time"
-            ]
+            "pros": ["Real user feedback", "Low blast radius", "Data-driven decisions"],
+            "cons": ["Requires monitoring", "Longer release time"]
           },
           {
             "title": "Rolling",
             "description": "Update instances one at a time.",
-            "pros": [
-              "No extra environments",
-              "Works at scale",
-              "Built into Kubernetes"
-            ],
-            "cons": [
-              "Slower rollout",
-              "Multiple versions run simultaneously"
-            ]
+            "pros": ["No extra environments", "Works at scale", "Built into Kubernetes"],
+            "cons": ["Slower rollout", "Multiple versions run simultaneously"]
           }
         ]
       }

@@ -8,13 +8,7 @@
   "order": 9,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "blocks": [
     {
       "type": "heading",

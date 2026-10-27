@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "analytics",
-    "redshift",
-    "data-warehouse",
-    "sql",
-    "big-data"
-  ],
+  "tags": ["aws", "analytics", "redshift", "data-warehouse", "sql", "big-data"],
   "blocks": [
     {
       "type": "paragraph",

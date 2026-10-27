@@ -133,7 +133,13 @@
   ],
   "relatedLessons": ["server-components-data-fetching", "streaming-and-suspense", "loading-states"],
   "furtherReading": [
-    { "title": "Next.js Parallel Routes Documentation", "url": "https://nextjs.org/docs/app/building-your-application/routing/parallel-routes" },
-    { "title": "Next.js Data Fetching Documentation", "url": "https://nextjs.org/docs/app/building-your-application/data-fetching" }
+    {
+      "title": "Next.js Parallel Routes Documentation",
+      "url": "https://nextjs.org/docs/app/building-your-application/routing/parallel-routes"
+    },
+    {
+      "title": "Next.js Data Fetching Documentation",
+      "url": "https://nextjs.org/docs/app/building-your-application/data-fetching"
+    }
   ]
 }

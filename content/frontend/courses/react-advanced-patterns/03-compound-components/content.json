@@ -9,18 +9,8 @@
   "difficulty": "beginner",
   "estimatedHours": 1.5,
   "icon": "🧩",
-  "tags": [
-    "react",
-    "compound-components",
-    "context",
-    "composition",
-    "patterns"
-  ],
-  "lessonSlugs": [
-    "compound-basics",
-    "compound-examples",
-    "compound-with-context"
-  ],
+  "tags": ["react", "compound-components", "context", "composition", "patterns"],
+  "lessonSlugs": ["compound-basics", "compound-examples", "compound-with-context"],
   "prerequisites": ["hoc-composition"],
   "whatYouLearn": [
     "Understand what compound components are and why they enable flexible APIs",

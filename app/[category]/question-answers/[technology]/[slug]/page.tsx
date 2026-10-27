@@ -1,22 +1,22 @@
-import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import {
   getCategoryMeta,
   getQuestionCategories,
   getQuestionAnswers,
   getQuestionTechnologies,
   getLessonBySlug,
-} from '@/lib/content';
-import { buildLessonMetadata } from '@/lib/seo';
-import { ContentBlockRenderer } from '@/components/content/ContentBlockRenderer';
-import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
-import { ReadingTimeBadge } from '@/components/ui/ReadingTimeBadge';
-import { LessonActions } from '@/components/progress/LessonActions';
-import { LessonNotesButton } from '@/components/lesson/LessonNotesButton';
-import { NotesModalProvider } from '@/components/lesson/NotesModalContext';
-import { OfflineSaveButton } from '@/components/lesson/OfflineSaveButton';
+} from "@/lib/content";
+import { buildLessonMetadata } from "@/lib/seo";
+import { ContentBlockRenderer } from "@/components/content/ContentBlockRenderer";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { ReadingTimeBadge } from "@/components/ui/ReadingTimeBadge";
+import { LessonActions } from "@/components/progress/LessonActions";
+import { LessonNotesButton } from "@/components/lesson/LessonNotesButton";
+import { NotesModalProvider } from "@/components/lesson/NotesModalContext";
+import { OfflineSaveButton } from "@/components/lesson/OfflineSaveButton";
 
 interface Params {
   params: Promise<{ category: string; technology: string; slug: string }>;
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const tech = getQuestionTechnologies(category).find((t) => t.slug === technology);
   if (!tech) return {};
   // Scope by module (technology): a question slug could repeat across topics.
-  const lesson = getLessonBySlug(slug, 'question-answers', technology);
+  const lesson = getLessonBySlug(slug, "question-answers", technology);
   if (!lesson) return {};
   return buildLessonMetadata({
     title: lesson.title,
@@ -59,7 +59,7 @@ export default async function QuestionAnswerPage({ params }: Params) {
   const tech = getQuestionTechnologies(category).find((t) => t.slug === technology);
   if (!tech) notFound();
 
-  const lesson = getLessonBySlug(slug, 'question-answers', technology);
+  const lesson = getLessonBySlug(slug, "question-answers", technology);
   if (!lesson) notFound();
 
   const allQuestions = getQuestionAnswers(technology, category);
@@ -70,11 +70,18 @@ export default async function QuestionAnswerPage({ params }: Params) {
   const categoryMeta = getCategoryMeta(category);
 
   return (
-    <NotesModalProvider courseSlug="question-answers" moduleSlug={technology} lessonSlug={lesson.slug}>
+    <NotesModalProvider
+      courseSlug="question-answers"
+      moduleSlug={technology}
+      lessonSlug={lesson.slug}
+    >
       <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
         <Breadcrumbs
           items={[
-            { label: `${categoryMeta.label} Question Answers`, href: `/${category}/question-answers` },
+            {
+              label: `${categoryMeta.label} Question Answers`,
+              href: `/${category}/question-answers`,
+            },
             { label: tech.title, href: `/${category}/question-answers/${technology}` },
             { label: lesson.title },
           ]}
@@ -95,8 +102,17 @@ export default async function QuestionAnswerPage({ params }: Params) {
             moduleSlug={technology}
             category="questionAnswers"
           >
-            <LessonNotesButton courseSlug="question-answers" moduleSlug={technology} lessonSlug={lesson.slug} />
-            <OfflineSaveButton courseSlug="question-answers" moduleSlug={technology} lessonSlug={lesson.slug} title={lesson.title} />
+            <LessonNotesButton
+              courseSlug="question-answers"
+              moduleSlug={technology}
+              lessonSlug={lesson.slug}
+            />
+            <OfflineSaveButton
+              courseSlug="question-answers"
+              moduleSlug={technology}
+              lessonSlug={lesson.slug}
+              title={lesson.title}
+            />
           </LessonActions>
           <h1 className="mb-2 text-2xl font-bold leading-snug text-fg-default sm:text-3xl">
             {lesson.title}

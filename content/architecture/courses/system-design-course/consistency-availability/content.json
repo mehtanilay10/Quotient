@@ -8,10 +8,7 @@
   "difficulty": "advanced",
   "estimatedHours": 3,
   "icon": "🔄",
-  "tags": [
-    "consistency",
-    "availability"
-  ],
+  "tags": ["consistency", "availability"],
   "lessonSlugs": [
     "cap-theorem",
     "pacelc",

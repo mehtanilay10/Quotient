@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "stubs",
-    "fakes",
-    "dotnet"
-  ],
+  "tags": ["stubs", "fakes", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -42,10 +38,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "moq-framework",
-    "verification"
-  ],
+  "relatedLessons": ["moq-framework", "verification"],
   "furtherReading": [],
   "courseSlug": "unit-testing-dotnet"
 }

@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 22,
-  "tags": [
-    "agents",
-    "building",
-    "tools",
-    "memory",
-    "workflows"
-  ],
+  "tags": ["agents", "building", "tools", "memory", "workflows"],
   "blocks": [
     {
       "type": "heading",
@@ -186,13 +180,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "agentic-coding-intro",
-    "multi-file-workflows"
-  ],
-  "relatedGlossaryTerms": [
-    "agent",
-    "large-language-model"
-  ],
+  "relatedLessons": ["agentic-coding-intro", "multi-file-workflows"],
+  "relatedGlossaryTerms": ["agent", "large-language-model"],
   "courseSlug": "codex"
 }

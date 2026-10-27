@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "transactions",
-    "acid",
-    "begin",
-    "commit",
-    "savepoints"
-  ],
+  "tags": ["transactions", "acid", "begin", "commit", "savepoints"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "isolation-levels",
-    "locking-rows"
-  ]
+  "relatedLessons": ["isolation-levels", "locking-rows"]
 }

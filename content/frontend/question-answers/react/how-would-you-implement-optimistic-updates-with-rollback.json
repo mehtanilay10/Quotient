@@ -8,13 +8,7 @@
   "order": 16,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "React",
-    "React Query",
-    "UX",
-    "Optimistic Updates",
-    "Error Handling"
-  ],
+  "tags": ["React", "React Query", "UX", "Optimistic Updates", "Error Handling"],
   "blocks": [
     {
       "type": "paragraph",

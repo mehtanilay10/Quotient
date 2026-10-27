@@ -6,13 +6,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 8,
-  "tags": [
-    "immer",
-    "immutability",
-    "state",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["immer", "immutability", "state", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

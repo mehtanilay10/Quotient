@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "exactly-once",
-    "at-least-once",
-    "at-most-once",
-    "semantics",
-    "distributed-systems"
-  ],
+  "tags": ["exactly-once", "at-least-once", "at-most-once", "semantics", "distributed-systems"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,12 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Guarantee",
-          "Meaning",
-          "Failure Behavior",
-          "Example"
-        ],
+        "headers": ["Guarantee", "Meaning", "Failure Behavior", "Example"],
         "rows": [
           [
             "At-most-once",
@@ -134,7 +123,10 @@
             "title": "At-most-once",
             "description": "Send and forget. No retries, no acks.",
             "pros": ["Lowest latency", "Simplest implementation"],
-            "cons": ["Messages can be lost on failure", "Unacceptable for financial or critical workflows"]
+            "cons": [
+              "Messages can be lost on failure",
+              "Unacceptable for financial or critical workflows"
+            ]
           },
           {
             "title": "At-least-once",

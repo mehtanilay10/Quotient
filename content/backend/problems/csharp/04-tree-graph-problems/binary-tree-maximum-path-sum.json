@@ -8,12 +8,7 @@
   "order": 11,
   "difficulty": "hard",
   "estimatedMinutes": 22,
-  "tags": [
-    "csharp",
-    "trees",
-    "dfs",
-    "hard"
-  ],
+  "tags": ["csharp", "trees", "dfs", "hard"],
   "blocks": [
     {
       "type": "heading",
@@ -59,15 +54,8 @@
           {
             "title": "Post-order DFS",
             "description": "Compute max branch + update global",
-            "pros": [
-              "O(n) time",
-              "O(h) space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(h) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "O(h) space"],
+            "tags": ["O(n) time", "O(h) space", "Recommended"]
           }
         ]
       }

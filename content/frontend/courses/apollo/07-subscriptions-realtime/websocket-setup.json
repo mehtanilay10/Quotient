@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "websocket",
-    "graphql-ws",
-    "apollo-client",
-    "setup",
-    "links"
-  ],
+  "tags": ["websocket", "graphql-ws", "apollo-client", "setup", "links"],
   "blocks": [
     {
       "type": "paragraph",
@@ -144,7 +138,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "subscriptions-basics"
-  ]
+  "prerequisites": ["subscriptions-basics"]
 }

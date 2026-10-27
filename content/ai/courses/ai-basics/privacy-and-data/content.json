@@ -7,12 +7,7 @@
   "difficulty": "beginner",
   "estimatedHours": 1.5,
   "icon": "🔒",
-  "tags": [
-    "privacy",
-    "data",
-    "security",
-    "enterprise"
-  ],
+  "tags": ["privacy", "data", "security", "enterprise"],
   "lessonSlugs": [
     "protecting-your-data",
     "ai-and-copyright",
@@ -20,9 +15,7 @@
     "enterprise-ai-implementation-playbook"
   ],
   "isOptional": false,
-  "prerequisites": [
-    "safety-and-limitations"
-  ],
+  "prerequisites": ["safety-and-limitations"],
   "whatYouLearn": [
     "What data AI tools collect and how it is used",
     "What you should never paste into a chatbot",

@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 28,
-  "tags": [
-    "graphql",
-    "hotchocolate",
-    "dotnet",
-    "architecture"
-  ],
+  "tags": ["graphql", "hotchocolate", "dotnet", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,9 +120,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "introduction-to-graphql",
-    "creating-first-graphql-server"
-  ],
+  "relatedLessons": ["introduction-to-graphql", "creating-first-graphql-server"],
   "courseSlug": "graphql-dotnet"
 }

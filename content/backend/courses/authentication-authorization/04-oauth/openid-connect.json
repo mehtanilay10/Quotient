@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "openid-connect",
-    "oidc",
-    "authentication",
-    "identity"
-  ],
+  "tags": ["openid-connect", "oidc", "authentication", "identity"],
   "blocks": [
     {
       "type": "paragraph",
@@ -30,27 +25,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "OAuth 2.0",
-          "OpenID Connect"
-        ],
+        "headers": ["OAuth 2.0", "OpenID Connect"],
         "rows": [
-          [
-            "Authorization framework",
-            "Authentication layer"
-          ],
-          [
-            "Access tokens",
-            "ID tokens + Access tokens"
-          ],
-          [
-            "API access",
-            "User authentication"
-          ],
-          [
-            "No user info",
-            "User profile claims"
-          ]
+          ["Authorization framework", "Authentication layer"],
+          ["Access tokens", "ID tokens + Access tokens"],
+          ["API access", "User authentication"],
+          ["No user info", "User profile claims"]
         ]
       }
     },

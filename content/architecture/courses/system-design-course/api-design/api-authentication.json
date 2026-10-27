@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "api",
-    "authentication",
-    "security",
-    "oauth",
-    "jwt"
-  ],
+  "tags": ["api", "authentication", "security", "oauth", "jwt"],
   "blocks": [
     {
       "type": "paragraph",
@@ -94,37 +88,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "Best For",
-          "Revocation",
-          "Complexity"
-        ],
+        "headers": ["Method", "Best For", "Revocation", "Complexity"],
         "rows": [
-          [
-            "API Key",
-            "Service integrations",
-            "Hard",
-            "Low"
-          ],
-          [
-            "Basic Auth",
-            "Simple internal APIs",
-            "Easy",
-            "Low"
-          ],
-          [
-            "OAuth 2.0",
-            "Third-party access",
-            "Strong",
-            "High"
-          ],
-          [
-            "JWT",
-            "Scalable session tokens",
-            "Hard",
-            "Medium"
-          ]
+          ["API Key", "Service integrations", "Hard", "Low"],
+          ["Basic Auth", "Simple internal APIs", "Easy", "Low"],
+          ["OAuth 2.0", "Third-party access", "Strong", "High"],
+          ["JWT", "Scalable session tokens", "Hard", "Medium"]
         ]
       }
     },

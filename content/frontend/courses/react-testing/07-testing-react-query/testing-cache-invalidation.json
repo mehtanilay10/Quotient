@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "testing",
-    "react-query",
-    "cache"
-  ],
+  "tags": ["testing", "react-query", "cache"],
   "blocks": [
     {
       "type": "paragraph",
@@ -48,8 +44,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "testing-mutations"
-  ],
+  "relatedLessons": ["testing-mutations"],
   "courseSlug": "react-testing"
 }

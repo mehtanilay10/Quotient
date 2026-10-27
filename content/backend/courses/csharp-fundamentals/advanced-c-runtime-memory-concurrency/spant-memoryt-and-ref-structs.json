@@ -127,7 +127,11 @@
       }
     }
   ],
-  "relatedLessons": ["boxing-and-hidden-allocations", "arraypoolt-and-memorypoolt", "idisposable-finalization-and-deterministic-cleanup"],
+  "relatedLessons": [
+    "boxing-and-hidden-allocations",
+    "arraypoolt-and-memorypoolt",
+    "idisposable-finalization-and-deterministic-cleanup"
+  ],
   "furtherReading": [
     {
       "type": "article",

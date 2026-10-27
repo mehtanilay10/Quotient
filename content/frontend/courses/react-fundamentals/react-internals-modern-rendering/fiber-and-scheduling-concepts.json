@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "react",
-    "fiber",
-    "scheduler",
-    "internals"
-  ],
+  "tags": ["react", "fiber", "scheduler", "internals"],
   "blocks": [
     {
       "type": "paragraph",
@@ -61,37 +56,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Priority",
-          "Use case",
-          "Behavior"
-        ],
+        "headers": ["Priority", "Use case", "Behavior"],
         "rows": [
-          [
-            "Immediate",
-            "User input that blocks display",
-            "Runs synchronously"
-          ],
-          [
-            "User-blocking",
-            "Click, scroll, or keyboard event",
-            "High priority; yields to input"
-          ],
-          [
-            "Normal",
-            "Standard setState updates",
-            "Default priority; can be interrupted"
-          ],
-          [
-            "Low",
-            "Non-urgent data prefetch",
-            "Runs when idle"
-          ],
-          [
-            "Idle",
-            "Offscreen logging, prefetch",
-            "Runs only when browser is free"
-          ]
+          ["Immediate", "User input that blocks display", "Runs synchronously"],
+          ["User-blocking", "Click, scroll, or keyboard event", "High priority; yields to input"],
+          ["Normal", "Standard setState updates", "Default priority; can be interrupted"],
+          ["Low", "Non-urgent data prefetch", "Runs when idle"],
+          ["Idle", "Offscreen logging, prefetch", "Runs only when browser is free"]
         ]
       }
     },
@@ -147,10 +118,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "render-phase-vs-commit-phase",
-    "concurrent-rendering"
-  ],
+  "relatedLessons": ["render-phase-vs-commit-phase", "concurrent-rendering"],
   "furtherReading": [
     {
       "title": "React Fiber Architecture",

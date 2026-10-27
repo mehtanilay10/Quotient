@@ -7,16 +7,8 @@
   "difficulty": "beginner",
   "estimatedHours": 2,
   "icon": "💡",
-  "tags": [
-    "ai-coding",
-    "copilot",
-    "introduction"
-  ],
-  "lessonSlugs": [
-    "what-is-ai-coding",
-    "history-of-ai-coding",
-    "setting-up-ai-coding-environment"
-  ],
+  "tags": ["ai-coding", "copilot", "introduction"],
+  "lessonSlugs": ["what-is-ai-coding", "history-of-ai-coding", "setting-up-ai-coding-environment"],
   "whatYouLearn": [
     "What AI coding assistants actually do under the hood",
     "The difference between code completion, chat, and agentic coding",

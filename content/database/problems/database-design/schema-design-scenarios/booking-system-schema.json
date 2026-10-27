@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Booking systems must enforce availability, handle cancellations, and track resource utilization. The schema needs to prevent double-booking while keeping historical records accurate." }
+      "data": {
+        "text": "Booking systems must enforce availability, handle cancellations, and track resource utilization. The schema needs to prevent double-booking while keeping historical records accurate."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,13 @@
       "type": "bullet-list",
       "data": {
         "title": "Essential tables",
-        "items": ["Resource: rooms, equipment, or slots", "Booking: reservation header", "BookingSlot: time ranges per booking", "User: customer or staff", "Payment: transaction records"]
+        "items": [
+          "Resource: rooms, equipment, or slots",
+          "Booking: reservation header",
+          "BookingSlot: time ranges per booking",
+          "User: customer or staff",
+          "Payment: transaction records"
+        ]
       }
     },
     {
@@ -51,16 +59,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "important", "title": "Important", "text": "Use EXCLUDE constraints or application-level locking to prevent overlapping bookings on the same resource." }
+      "data": {
+        "variant": "important",
+        "title": "Important",
+        "text": "Use EXCLUDE constraints or application-level locking to prevent overlapping bookings on the same resource."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "How do I prevent double-booking?", "answer": "Use unique exclusion constraints or check for overlaps in application code with serializable isolation." },
-          { "question": "Should I store start_time and end_time or use slots?", "answer": "Use both. Store range times on bookings and generate granular slots for availability grids." },
-          { "question": "How do I handle time zones?", "answer": "Store all times in UTC and convert to local time only at the presentation layer." }
+          {
+            "question": "How do I prevent double-booking?",
+            "answer": "Use unique exclusion constraints or check for overlaps in application code with serializable isolation."
+          },
+          {
+            "question": "Should I store start_time and end_time or use slots?",
+            "answer": "Use both. Store range times on bookings and generate granular slots for availability grids."
+          },
+          {
+            "question": "How do I handle time zones?",
+            "answer": "Store all times in UTC and convert to local time only at the presentation layer."
+          }
         ]
       }
     },
@@ -68,7 +89,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Use resources and bookings with time ranges", "Generate granular booking_slots for availability", "Prevent overlaps with constraints or locking", "Store times in UTC for global support"],
+        "points": [
+          "Use resources and bookings with time ranges",
+          "Generate granular booking_slots for availability",
+          "Prevent overlaps with constraints or locking",
+          "Store times in UTC for global support"
+        ],
         "takeaway": "Booking schemas must enforce non-overlapping reservations while supporting flexible time-range queries."
       }
     }

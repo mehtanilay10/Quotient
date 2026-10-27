@@ -146,7 +146,15 @@
   ],
   "relatedLessons": ["ef-core-vs-dapper-vs-raw-sql", "bulk-operations-and-large-data-changes"],
   "furtherReading": [
-    { "title": "EF Core raw SQL queries", "url": "https://learn.microsoft.com/en-us/ef/core/querying/raw-sql", "type": "article" },
-    { "title": "EFCore.BulkExtensions", "url": "https://github.com/borisdj/EFCore.BulkExtensions", "type": "article" }
+    {
+      "title": "EF Core raw SQL queries",
+      "url": "https://learn.microsoft.com/en-us/ef/core/querying/raw-sql",
+      "type": "article"
+    },
+    {
+      "title": "EFCore.BulkExtensions",
+      "url": "https://github.com/borisdj/EFCore.BulkExtensions",
+      "type": "article"
+    }
   ]
 }

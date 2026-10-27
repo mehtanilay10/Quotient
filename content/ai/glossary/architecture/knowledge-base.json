@@ -6,11 +6,7 @@
   "fullDefinition": "A knowledge base in the context of AI is a curated collection of documents, text, data, or structured information that serves as the retrieval source for a RAG system. When an AI assistant is 'connected to your knowledge base', it means it can search this collection before answering. Building a good knowledge base — choosing what to include, how to structure it — is as important as the AI system itself.",
   "category": "architecture",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "rag",
-    "embedding",
-    "vector-database"
-  ],
+  "relatedTerms": ["rag", "embedding", "vector-database"],
   "examples": [
     "A company knowledge base with all internal documentation",
     "A personal knowledge base with research notes and saved articles"

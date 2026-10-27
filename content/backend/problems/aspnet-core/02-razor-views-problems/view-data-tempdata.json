@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "razor",
-    "viewdata",
-    "tempdata"
-  ],
+  "tags": ["aspnet-core", "razor", "viewdata", "tempdata"],
   "blocks": [
     {
       "type": "heading",
@@ -91,21 +86,13 @@
           {
             "title": "ViewData and ViewBag",
             "description": "Same-request data passing",
-            "pros": [
-              "Simple to use",
-              "No model changes needed",
-              "Supports any type"
-            ],
+            "pros": ["Simple to use", "No model changes needed", "Supports any type"],
             "cons": [
               "No compile-time checking",
               "String keys prone to typos",
               "ViewBag is dynamic"
             ],
-            "tags": [
-              "ViewData",
-              "ViewBag",
-              "same request"
-            ]
+            "tags": ["ViewData", "ViewBag", "same request"]
           },
           {
             "title": "TempData for Redirects",
@@ -120,11 +107,7 @@
               "Data is consumed after read",
               "Not for large data"
             ],
-            "tags": [
-              "TempData",
-              "RedirectToAction",
-              "flash messages"
-            ]
+            "tags": ["TempData", "RedirectToAction", "flash messages"]
           }
         ]
       }

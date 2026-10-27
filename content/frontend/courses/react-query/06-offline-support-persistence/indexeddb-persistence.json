@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "indexedDB",
-    "persistence",
-    "large-data",
-    "offline",
-    "storage"
-  ],
+  "tags": ["indexedDB", "persistence", "large-data", "offline", "storage"],
   "blocks": [
     {
       "type": "heading",
@@ -37,25 +31,13 @@
           {
             "title": "localStorage",
             "description": "Simple synchronous key-value store built into all browsers.",
-            "pros": [
-              "Simple API",
-              "Synchronous â€” no async handling",
-              "Works everywhere"
-            ],
-            "cons": [
-              "~5â€“10 MB limit",
-              "Blocks main thread",
-              "Stores strings only"
-            ]
+            "pros": ["Simple API", "Synchronous â€” no async handling", "Works everywhere"],
+            "cons": ["~5â€“10 MB limit", "Blocks main thread", "Stores strings only"]
           },
           {
             "title": "IndexedDB",
             "description": "Asynchronous transactional database with indexes and large capacity.",
-            "pros": [
-              "Huge capacity",
-              "Fully async â€” no blocking",
-              "Stores complex objects"
-            ],
+            "pros": ["Huge capacity", "Fully async â€” no blocking", "Stores complex objects"],
             "cons": [
               "Verbose API",
               "Older browser polyfills needed",
@@ -190,7 +172,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "persistence-basics"
-  ]
+  "prerequisites": ["persistence-basics"]
 }

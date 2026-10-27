@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "partitioning",
-    "declarative-partitioning",
-    "partition-pruning",
-    "big-data"
-  ],
+  "tags": ["partitioning", "declarative-partitioning", "partition-pruning", "big-data"],
   "blocks": [
     {
       "type": "paragraph",
@@ -85,8 +80,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "toast-mvcc",
-    "timescaledb-time-series"
-  ]
+  "relatedLessons": ["toast-mvcc", "timescaledb-time-series"]
 }

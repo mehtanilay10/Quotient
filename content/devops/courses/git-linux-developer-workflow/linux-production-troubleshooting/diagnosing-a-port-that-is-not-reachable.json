@@ -130,7 +130,10 @@
       }
     }
   ],
-  "relatedLessons": ["dns-and-network-troubleshooting-from-linux", "ps-top-ss-lsof-and-curl-for-diagnosis"],
+  "relatedLessons": [
+    "dns-and-network-troubleshooting-from-linux",
+    "ps-top-ss-lsof-and-curl-for-diagnosis"
+  ],
   "furtherReading": [
     {
       "type": "article",

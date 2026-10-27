@@ -1,12 +1,20 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useRef, useCallback, forwardRef, useImperativeHandle, useId } from 'react';
-import { useRouter } from 'next/navigation';
-import { Search, X, ArrowRight, Clock, Trash2 } from 'lucide-react';
-import { getSearchResultHref } from '@/lib/content-hrefs';
-import { useRecentSearches } from '@/hooks/useRecentSearches';
-import type { SearchResult } from '@/types';
-import { cn } from '@/lib/utils';
+import {
+  useState,
+  useEffect,
+  useRef,
+  useCallback,
+  forwardRef,
+  useImperativeHandle,
+  useId,
+} from "react";
+import { useRouter } from "next/navigation";
+import { Search, X, ArrowRight, Clock, Trash2 } from "lucide-react";
+import { getSearchResultHref } from "@/lib/content-hrefs";
+import { useRecentSearches } from "@/hooks/useRecentSearches";
+import type { SearchResult } from "@/types";
+import { cn } from "@/lib/utils";
 
 export interface SearchSuggestionsHandle {
   focus: () => void;
@@ -19,14 +27,14 @@ interface SearchSuggestionsProps {
   placeholder?: string;
   className?: string;
   autoFocus?: boolean;
-  size?: 'sm' | 'md';
+  size?: "sm" | "md";
 }
 
 const TYPE_LABEL: Record<string, string> = {
-  lesson: 'Lesson',
-  module: 'Module',
-  course: 'Course',
-  cheatsheet: 'Cheatsheet',
+  lesson: "Lesson",
+  module: "Module",
+  course: "Course",
+  cheatsheet: "Cheatsheet",
 };
 
 /**
@@ -38,8 +46,8 @@ const TYPE_LABEL: Record<string, string> = {
 function highlightText(text: string, query: string): React.ReactNode {
   const tokens = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
   if (tokens.length === 0) return text;
-  const escaped = tokens.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-  const regex = new RegExp(`(${escaped.join('|')})`, 'gi');
+  const escaped = tokens.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const regex = new RegExp(`(${escaped.join("|")})`, "gi");
   const parts = text.split(regex);
   return parts.map((part, i) =>
     regex.test(part) ? (
@@ -58,10 +66,10 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
       value,
       onChange,
       onSearch,
-      placeholder = 'Search…',
+      placeholder = "Search…",
       className,
       autoFocus = false,
-      size = 'md',
+      size = "md",
     },
     ref
   ) {
@@ -113,7 +121,7 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
 
       fetch(url)
         .then((res) => {
-          if (!res.ok) throw new Error('Search failed');
+          if (!res.ok) throw new Error("Search failed");
           return res.json();
         })
         .then((data) => {
@@ -147,14 +155,14 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
         }
       };
 
-      document.addEventListener('mousedown', handleClickOutside);
-      return () => document.removeEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
 
     useEffect(() => {
       if (selectedIndex >= 0 && listRef.current) {
         const items = listRef.current.querySelectorAll('[role="option"]');
-        items[selectedIndex]?.scrollIntoView({ block: 'nearest' });
+        items[selectedIndex]?.scrollIntoView({ block: "nearest" });
       }
     }, [selectedIndex]);
 
@@ -164,7 +172,7 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
         // Navigating to a result is still a "search", so the current query is
         // worth remembering even though it is then cleared.
         addRecent(value);
-        onChange('');
+        onChange("");
         setIsOpen(false);
         setSelectedIndex(-1);
         router.push(href);
@@ -179,7 +187,7 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
         const trimmed = query.trim();
         if (!trimmed) return;
         addRecent(trimmed);
-        onChange('');
+        onChange("");
         setIsOpen(false);
         setSelectedIndex(-1);
         onSearch?.(trimmed);
@@ -190,7 +198,7 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
     const handleKeyDown = useCallback(
       (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (!isOpen || suggestions.length === 0) {
-          if (e.key === 'Enter') {
+          if (e.key === "Enter") {
             e.preventDefault();
             submitQuery(value);
           }
@@ -201,20 +209,20 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
         // "View all results" action, which lives at index `suggestions.length`.
         const lastIndex = value.trim() && !loading ? suggestions.length : suggestions.length - 1;
 
-        if (e.key === 'ArrowDown') {
+        if (e.key === "ArrowDown") {
           e.preventDefault();
           setSelectedIndex((prev) => (prev < lastIndex ? prev + 1 : 0));
-        } else if (e.key === 'ArrowUp') {
+        } else if (e.key === "ArrowUp") {
           e.preventDefault();
           setSelectedIndex((prev) => (prev > 0 ? prev - 1 : lastIndex));
-        } else if (e.key === 'Enter') {
+        } else if (e.key === "Enter") {
           e.preventDefault();
           if (selectedIndex >= 0 && selectedIndex < suggestions.length) {
             navigateToResult(suggestions[selectedIndex]);
           } else {
             submitQuery(value);
           }
-        } else if (e.key === 'Escape') {
+        } else if (e.key === "Escape") {
           setIsOpen(false);
           setSelectedIndex(-1);
           inputRef.current?.blur();
@@ -224,19 +232,19 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
     );
 
     const handleClear = useCallback(() => {
-      onChange('');
+      onChange("");
       setIsOpen(false);
       setSelectedIndex(-1);
       inputRef.current?.focus();
     }, [onChange]);
 
     return (
-      <div ref={containerRef} className={cn('relative', className)}>
+      <div ref={containerRef} className={cn("relative", className)}>
         <div className="relative">
           <Search
             className={cn(
-              'pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-fg-muted',
-              size === 'sm' ? 'h-3.5 w-3.5' : 'h-4 w-4'
+              "pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-fg-muted",
+              size === "sm" ? "h-3.5 w-3.5" : "h-4 w-4"
             )}
             aria-hidden="true"
           />
@@ -262,10 +270,10 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
             aria-controls={listId}
             aria-autocomplete="list"
             className={cn(
-              'w-full rounded-lg border border-border bg-canvas text-fg-default placeholder:text-fg-subtle',
-              'transition-colors focus:border-accent-fg focus:outline-none focus:ring-2 focus:ring-accent-fg/20',
-              size === 'sm' ? 'py-1.5 pl-9 pr-8 text-sm' : 'py-2 pl-10 pr-10 text-sm',
-              'dark:bg-canvas-subtle'
+              "w-full rounded-lg border border-border bg-canvas text-fg-default placeholder:text-fg-subtle",
+              "transition-colors focus:border-accent-fg focus:outline-none focus:ring-2 focus:ring-accent-fg/20",
+              size === "sm" ? "py-1.5 pl-9 pr-8 text-sm" : "py-2 pl-10 pr-10 text-sm",
+              "dark:bg-canvas-subtle"
             )}
             aria-label={placeholder}
           />
@@ -274,11 +282,11 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
               type="button"
               onClick={handleClear}
               className={cn(
-                'absolute right-3 top-1/2 -translate-y-1/2 text-fg-muted transition-colors hover:text-fg-default'
+                "absolute right-3 top-1/2 -translate-y-1/2 text-fg-muted transition-colors hover:text-fg-default"
               )}
               aria-label="Clear search"
             >
-              <X className={size === 'sm' ? 'h-3.5 w-3.5' : 'h-4 w-4'} />
+              <X className={size === "sm" ? "h-3.5 w-3.5" : "h-4 w-4"} />
             </button>
           )}
         </div>
@@ -303,8 +311,8 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
                   role="option"
                   aria-selected={isSelected}
                   className={cn(
-                    'flex items-center gap-3 px-3 py-2.5 cursor-pointer transition-colors',
-                    isSelected ? 'bg-accent-subtle' : 'hover:bg-canvas-subtle'
+                    "flex items-center gap-3 px-3 py-2.5 cursor-pointer transition-colors",
+                    isSelected ? "bg-accent-subtle" : "hover:bg-canvas-subtle"
                   )}
                   onMouseDown={(e) => {
                     e.preventDefault();
@@ -314,8 +322,8 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
                 >
                   <span
                     className={cn(
-                      'shrink-0 rounded-md border border-border bg-canvas-subtle px-2 py-0.5 text-xs font-medium',
-                      'text-fg-subtle'
+                      "shrink-0 rounded-md border border-border bg-canvas-subtle px-2 py-0.5 text-xs font-medium",
+                      "text-fg-subtle"
                     )}
                   >
                     {label}
@@ -339,8 +347,10 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
                 role="option"
                 aria-selected={selectedIndex === suggestions.length}
                 className={cn(
-                  'flex items-center gap-2 px-3 py-2 cursor-pointer transition-colors border-t border-border',
-                  selectedIndex === suggestions.length ? 'bg-accent-subtle' : 'hover:bg-canvas-subtle'
+                  "flex items-center gap-2 px-3 py-2 cursor-pointer transition-colors border-t border-border",
+                  selectedIndex === suggestions.length
+                    ? "bg-accent-subtle"
+                    : "hover:bg-canvas-subtle"
                 )}
                 onMouseDown={(e) => {
                   e.preventDefault();
@@ -348,7 +358,9 @@ export const SearchSuggestions = forwardRef<SearchSuggestionsHandle, SearchSugge
                 }}
                 onMouseEnter={() => setSelectedIndex(suggestions.length)}
               >
-                <span className="text-xs text-fg-muted">View all results for &ldquo;{value.trim()}&rdquo;</span>
+                <span className="text-xs text-fg-muted">
+                  View all results for &ldquo;{value.trim()}&rdquo;
+                </span>
                 <ArrowRight className="h-3 w-3 text-fg-subtle" aria-hidden="true" />
               </li>
             )}

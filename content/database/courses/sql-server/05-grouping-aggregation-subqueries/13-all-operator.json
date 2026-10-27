@@ -7,9 +7,7 @@
   "order": 13,
   "difficulty": "intermediate",
   "estimatedMinutes": 33,
-  "tags": [
-    "all-operator"
-  ],
+  "tags": ["all-operator"],
   "blocks": [
     {
       "type": "heading",

@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "linq",
-    "concat",
-    "concatenation",
-    "append"
-  ],
+  "tags": ["linq", "concat", "concatenation", "append"],
   "blocks": [
     {
       "type": "paragraph",
@@ -59,9 +54,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "distinct-set-operator",
-    "union-set-operator"
-  ],
+  "relatedLessons": ["distinct-set-operator", "union-set-operator"],
   "courseSlug": "linq"
 }

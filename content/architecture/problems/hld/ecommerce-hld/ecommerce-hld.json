@@ -223,11 +223,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "amazon-ecommerce-hld",
-    "payment-gateway-hld",
-    "ticket-booking-hld"
-  ],
+  "relatedLessons": ["amazon-ecommerce-hld", "payment-gateway-hld", "ticket-booking-hld"],
   "furtherReading": [
     {
       "title": "Shopify Engineering: How Shopify Scales for Black Friday",

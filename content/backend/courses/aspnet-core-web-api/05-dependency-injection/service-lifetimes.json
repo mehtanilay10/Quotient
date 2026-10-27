@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "lifetime",
-    "scoped",
-    "singleton",
-    "transient"
-  ],
+  "tags": ["web-api", "lifetime", "scoped", "singleton", "transient"],
   "blocks": [
     {
       "type": "paragraph",
@@ -42,27 +36,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Lifetime",
-          "Created",
-          "Use Case"
-        ],
+        "headers": ["Lifetime", "Created", "Use Case"],
         "rows": [
-          [
-            "Transient",
-            "Every request",
-            "Lightweight, stateless services"
-          ],
-          [
-            "Scoped",
-            "Per HTTP request",
-            "DbContext, business services"
-          ],
-          [
-            "Singleton",
-            "Once at startup",
-            "Configuration, caching"
-          ]
+          ["Transient", "Every request", "Lightweight, stateless services"],
+          ["Scoped", "Per HTTP request", "DbContext, business services"],
+          ["Singleton", "Once at startup", "Configuration, caching"]
         ]
       }
     },
@@ -188,23 +166,17 @@
           {
             "title": "Transient",
             "description": "Best for lightweight, stateless services.",
-            "tags": [
-              "New each request"
-            ]
+            "tags": ["New each request"]
           },
           {
             "title": "Scoped",
             "description": "Best for services tied to a single request.",
-            "tags": [
-              "One per request"
-            ]
+            "tags": ["One per request"]
           },
           {
             "title": "Singleton",
             "description": "Best for shared, long-lived resources.",
-            "tags": [
-              "One for app lifetime"
-            ]
+            "tags": ["One for app lifetime"]
           }
         ]
       }

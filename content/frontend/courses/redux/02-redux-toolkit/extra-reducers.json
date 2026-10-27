@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "toolkit",
-    "extra-reducers",
-    "slices"
-  ],
+  "tags": ["redux", "toolkit", "extra-reducers", "slices"],
   "blocks": [
     {
       "type": "paragraph",
@@ -88,37 +83,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "Use regular reducers?",
-          "Use extraReducers?"
-        ],
+        "headers": ["Scenario", "Use regular reducers?", "Use extraReducers?"],
         "rows": [
-          [
-            "Your slice creates the action",
-            "Yes",
-            "No"
-          ],
-          [
-            "Another slice creates the action",
-            "No",
-            "Yes"
-          ],
-          [
-            "createAsyncThunk lifecycle action",
-            "No",
-            "Yes"
-          ],
-          [
-            "Third-party library action",
-            "No",
-            "Yes"
-          ],
-          [
-            "Multiple slices need to react",
-            "Varies",
-            "Yes (in each reacting slice)"
-          ]
+          ["Your slice creates the action", "Yes", "No"],
+          ["Another slice creates the action", "No", "Yes"],
+          ["createAsyncThunk lifecycle action", "No", "Yes"],
+          ["Third-party library action", "No", "Yes"],
+          ["Multiple slices need to react", "Varies", "Yes (in each reacting slice)"]
         ]
       }
     },

@@ -105,7 +105,13 @@
     "diagnosing-async-performance-problems"
   ],
   "furtherReading": [
-    { "title": "ValueTask<T> Struct (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.valuetask-1" },
-    { "title": "Should I expose ValueTask? (Stephen Toub)", "url": "https://devblogs.microsoft.com/dotnet/value-task-should-i-expose-value-task/" }
+    {
+      "title": "ValueTask<T> Struct (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.valuetask-1"
+    },
+    {
+      "title": "Should I expose ValueTask? (Stephen Toub)",
+      "url": "https://devblogs.microsoft.com/dotnet/value-task-should-i-expose-value-task/"
+    }
   ]
 }

@@ -6,11 +6,7 @@
   "description": "Syntactic sugar over promises: how await suspends without blocking, error propagation, concurrency with Promise.all, and common pitfalls.",
   "order": 12,
   "difficulty": "intermediate",
-  "tags": [
-    "javascript",
-    "async",
-    "intermediate"
-  ],
+  "tags": ["javascript", "async", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "js-i03",
-    "promises-js",
-    "js-i05"
-  ],
+  "relatedLessons": ["js-i03", "promises-js", "js-i05"],
   "furtherReading": [
     {
       "title": "Async functions — MDN",

@@ -8,11 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "writing",
-    "proposals",
-    "decision-making"
-  ],
+  "tags": ["writing", "proposals", "decision-making"],
   "blocks": [
     {
       "type": "paragraph",
@@ -97,10 +93,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "architecture-reviews",
-    "communicating-technical-risk"
-  ],
+  "relatedLessons": ["architecture-reviews", "communicating-technical-risk"],
   "furtherReading": [
     {
       "type": "article",

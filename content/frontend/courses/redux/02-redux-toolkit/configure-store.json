@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "toolkit",
-    "store",
-    "configure"
-  ],
+  "tags": ["redux", "toolkit", "store", "configure"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,11 +55,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Option",
-          "Type",
-          "Description"
-        ],
+        "headers": ["Option", "Type", "Description"],
         "rows": [
           [
             "reducer",
@@ -76,26 +67,10 @@
             "Function",
             "Custom middleware array or function. Defaults to DevTools, thunk, and immutable checks."
           ],
-          [
-            "devTools",
-            "boolean",
-            "Enable/disable Redux DevTools. Auto-detected in development."
-          ],
-          [
-            "preloadedState",
-            "Object",
-            "Initial state for the store, useful for SSR or hydration."
-          ],
-          [
-            "enhancers",
-            "Array",
-            "Store enhancers. Rarely needed with configureStore."
-          ],
-          [
-            "reducerManagement",
-            "Object",
-            "Advanced options for reducer injection and replacement."
-          ]
+          ["devTools", "boolean", "Enable/disable Redux DevTools. Auto-detected in development."],
+          ["preloadedState", "Object", "Initial state for the store, useful for SSR or hydration."],
+          ["enhancers", "Array", "Store enhancers. Rarely needed with configureStore."],
+          ["reducerManagement", "Object", "Advanced options for reducer injection and replacement."]
         ]
       }
     },
@@ -203,10 +178,7 @@
           {
             "title": "createStore (Legacy)",
             "description": "The original Redux store creator. Requires manual middleware application, DevTools setup, and reducer combination. Deprecated and will be removed in future Redux versions.",
-            "pros": [
-              "Works with older Redux patterns",
-              "Fully customizable from scratch"
-            ],
+            "pros": ["Works with older Redux patterns", "Fully customizable from scratch"],
             "cons": [
               "Boilerplate-heavy",
               "Easy to misconfigure",
@@ -223,10 +195,7 @@
               "Built-in best practices",
               "TypeScript inference support"
             ],
-            "cons": [
-              "Less low-level control",
-              "May need customization for edge cases"
-            ]
+            "cons": ["Less low-level control", "May need customization for edge cases"]
           }
         ]
       }

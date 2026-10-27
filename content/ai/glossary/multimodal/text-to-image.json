@@ -6,11 +6,7 @@
   "fullDefinition": "Text-to-image generation is a type of generative AI that creates images from natural language descriptions. Modern systems like DALL-E, Midjourney, and Stable Diffusion use diffusion models or autoregressive transformers trained on vast collections of image-text pairs. The model learns to associate visual concepts with their textual descriptions, enabling it to compose novel images that match prompts. The quality of generated images has improved dramatically, with modern models producing photorealistic and artistically coherent results. Users can guide the output through detailed prompts, style references, and image editing tools. This technology is used in design, advertising, concept art, and creative exploration.",
   "category": "multimodal",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "multimodal-ai",
-    "diffusion-model",
-    "generative-ai"
-  ],
+  "relatedTerms": ["multimodal-ai", "diffusion-model", "generative-ai"],
   "learnMoreSlug": "images-and-ai",
   "examples": [
     "Generating product mockups from a simple description",

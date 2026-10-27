@@ -8,12 +8,7 @@
   "order": 16,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "arrays",
-    "hashset",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "hashset", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -107,32 +102,16 @@
           {
             "title": "Sort + Scan",
             "description": "Sort, then count runs",
-            "pros": [
-              "O(1) extra space"
-            ],
-            "cons": [
-              "O(n log n) time"
-            ],
-            "tags": [
-              "O(n log n) time",
-              "O(1) space"
-            ]
+            "pros": ["O(1) extra space"],
+            "cons": ["O(n log n) time"],
+            "tags": ["O(n log n) time", "O(1) space"]
           },
           {
             "title": "HashSet",
             "description": "Only start counting from sequence beginnings",
-            "pros": [
-              "O(n) time",
-              "Recommended"
-            ],
-            "cons": [
-              "O(n) extra space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "Recommended"],
+            "cons": ["O(n) extra space"],
+            "tags": ["O(n) time", "O(n) space", "Recommended"]
           }
         ]
       }

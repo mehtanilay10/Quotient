@@ -7,10 +7,7 @@
   "order": 9,
   "difficulty": "intermediate",
   "estimatedMinutes": 23,
-  "tags": [
-    "interview",
-    "intermediate"
-  ],
+  "tags": ["interview", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

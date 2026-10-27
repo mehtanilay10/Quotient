@@ -7,15 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "automation",
-    "workflows",
-    "productivity",
-    "no-code",
-    "rpa",
-    "agents",
-    "verification"
-  ],
+  "tags": ["automation", "workflows", "productivity", "no-code", "rpa", "agents", "verification"],
   "blocks": [
     {
       "type": "paragraph",
@@ -43,15 +35,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Traditional automation",
-          "AI automation"
-        ],
+        "headers": ["Traditional automation", "AI automation"],
         "rows": [
-          [
-            "Rule-based: \"if X, do Y\"",
-            "Judgment-based: \"understand X, decide what to do\""
-          ],
+          ["Rule-based: \"if X, do Y\"", "Judgment-based: \"understand X, decide what to do\""],
           [
             "Breaks when input format changes",
             "Handles variation, ambiguity, and natural language"
@@ -100,11 +86,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Task",
-          "Why AI automation works",
-          "Time saved"
-        ],
+        "headers": ["Task", "Why AI automation works", "Time saved"],
         "rows": [
           [
             "Classifying incoming support tickets",
@@ -121,11 +103,7 @@
             "AI extracts structure from free text",
             "30-60 min/week"
           ],
-          [
-            "Weekly report compilation",
-            "AI synthesizes from multiple sources",
-            "1-3 hours/week"
-          ],
+          ["Weekly report compilation", "AI synthesizes from multiple sources", "1-3 hours/week"],
           [
             "Summarizing long email threads",
             "AI reads full context, extracts essence",
@@ -235,11 +213,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Risk",
-          "What can go wrong",
-          "Practical safeguard"
-        ],
+        "headers": ["Risk", "What can go wrong", "Practical safeguard"],
         "rows": [
           [
             "Incorrect action",
@@ -304,11 +278,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Template",
-          "Notes"
-        ],
+        "headers": ["Use case", "Template", "Notes"],
         "rows": [
           [
             "Email classification",
@@ -361,11 +331,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "What to track",
-          "Why it matters"
-        ],
+        "headers": ["Metric", "What to track", "Why it matters"],
         "rows": [
           [
             "Accuracy",
@@ -377,11 +343,7 @@
             "How often humans correct outputs",
             "Shows where prompts or models need improvement"
           ],
-          [
-            "Time saved",
-            "Average minutes saved per run",
-            "Quantifies productivity impact"
-          ],
+          ["Time saved", "Average minutes saved per run", "Quantifies productivity impact"],
           [
             "Cost per action",
             "AI calls and platform costs per successful automation",
@@ -419,10 +381,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "no-code-automation-tools",
-    "building-your-first-workflow"
-  ],
+  "relatedLessons": ["no-code-automation-tools", "building-your-first-workflow"],
   "furtherReading": [
     {
       "title": "What Is AI Automation?",

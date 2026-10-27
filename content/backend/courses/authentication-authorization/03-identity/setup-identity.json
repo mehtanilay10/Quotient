@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "identity",
-    "setup",
-    "configuration",
-    "aspnet-core"
-  ],
+  "tags": ["identity", "setup", "configuration", "aspnet-core"],
   "blocks": [
     {
       "type": "paragraph",

@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "ef-core",
-    "bulk-operations",
-    "entity-framework-extensions",
-    "performance"
-  ],
+  "tags": ["ef-core", "bulk-operations", "entity-framework-extensions", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -112,8 +107,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "best-ways-bulk-inserts-entity-framework"
-  ],
+  "relatedLessons": ["best-ways-bulk-inserts-entity-framework"],
   "courseSlug": "ef-core"
 }

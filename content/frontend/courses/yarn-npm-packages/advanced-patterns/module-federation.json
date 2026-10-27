@@ -6,13 +6,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 10,
-  "tags": [
-    "module-federation",
-    "micro-frontends",
-    "webpack",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["module-federation", "micro-frontends", "webpack", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

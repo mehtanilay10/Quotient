@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "prompting",
-    "chain-of-thought",
-    "few-shot",
-    "patterns"
-  ],
+  "tags": ["prompting", "chain-of-thought", "few-shot", "patterns"],
   "blocks": [
     {
       "type": "heading",
@@ -178,13 +173,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "basic-prompting-for-code",
-    "prompting-for-debugging"
-  ],
-  "relatedGlossaryTerms": [
-    "prompt",
-    "large-language-model"
-  ],
+  "relatedLessons": ["basic-prompting-for-code", "prompting-for-debugging"],
+  "relatedGlossaryTerms": ["prompt", "large-language-model"],
   "courseSlug": "codex"
 }

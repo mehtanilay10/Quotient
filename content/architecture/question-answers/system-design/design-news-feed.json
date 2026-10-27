@@ -8,12 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "interview",
-    "system-design",
-    "feed",
-    "social"
-  ],
+  "tags": ["interview", "system-design", "feed", "social"],
   "technology": "System Design",
   "blocks": [
     {
@@ -95,37 +90,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Table",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Table", "Key Fields", "Description"],
         "rows": [
-          [
-            "Users",
-            "user_id, username, created_at",
-            "User profiles"
-          ],
+          ["Users", "user_id, username, created_at", "User profiles"],
           [
             "Posts",
             "post_id, user_id, content, media_url, created_at, engagement_score",
             "Individual posts"
           ],
-          [
-            "Follows",
-            "follower_id, followee_id, created_at",
-            "Social graph"
-          ],
-          [
-            "FeedCache",
-            "user_id, post_ids[], last_updated",
-            "Precomputed feed per user"
-          ],
-          [
-            "Engagements",
-            "post_id, user_id, type, created_at",
-            "Likes, comments, shares"
-          ]
+          ["Follows", "follower_id, followee_id, created_at", "Social graph"],
+          ["FeedCache", "user_id, post_ids[], last_updated", "Precomputed feed per user"],
+          ["Engagements", "post_id, user_id, type, created_at", "Likes, comments, shares"]
         ]
       }
     },
@@ -165,26 +140,14 @@
           {
             "title": "Fanout on Write (Push)",
             "description": "Precompute feeds when posts are created. Write-intensive, read-optimized.",
-            "pros": [
-              "Fast feed reads",
-              "Simple read path"
-            ],
-            "cons": [
-              "Slow for celebrities",
-              "High write amplification"
-            ]
+            "pros": ["Fast feed reads", "Simple read path"],
+            "cons": ["Slow for celebrities", "High write amplification"]
           },
           {
             "title": "Fanout on Read (Pull)",
             "description": "Generate feeds at read time by querying followed users. Read-intensive, write-optimized.",
-            "pros": [
-              "Scales for celebrities",
-              "Always fresh"
-            ],
-            "cons": [
-              "Slow feed reads",
-              "High read cost"
-            ]
+            "pros": ["Scales for celebrities", "Always fresh"],
+            "cons": ["Slow feed reads", "High read cost"]
           }
         ]
       }

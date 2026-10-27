@@ -8,13 +8,7 @@
   "order": 17,
   "difficulty": "medium",
   "estimatedMinutes": 16,
-  "tags": [
-    "csharp",
-    "graphs",
-    "bfs",
-    "dfs",
-    "medium"
-  ],
+  "tags": ["csharp", "graphs", "bfs", "dfs", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -52,15 +46,8 @@
           {
             "title": "BFS from Border",
             "description": "Mark safe 'O's, flip rest",
-            "pros": [
-              "O(m\u00b7n) time",
-              "In-place"
-            ],
-            "tags": [
-              "O(m\u00b7n) time",
-              "O(m\u00b7n) space",
-              "Recommended"
-            ]
+            "pros": ["O(m\u00b7n) time", "In-place"],
+            "tags": ["O(m\u00b7n) time", "O(m\u00b7n) space", "Recommended"]
           }
         ]
       }

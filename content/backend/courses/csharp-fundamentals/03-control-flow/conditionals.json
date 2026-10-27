@@ -7,15 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "if",
-    "else",
-    "ternary",
-    "conditionals",
-    "boolean",
-    "logical-operators"
-  ],
+  "tags": ["csharp", "if", "else", "ternary", "conditionals", "boolean", "logical-operators"],
   "blocks": [
     {
       "type": "paragraph",
@@ -123,49 +115,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Operator",
-          "Meaning",
-          "Example",
-          "Result"
-        ],
+        "headers": ["Operator", "Meaning", "Example", "Result"],
         "rows": [
-          [
-            "==",
-            "Equal to",
-            "5 == 5",
-            "true"
-          ],
-          [
-            "!=",
-            "Not equal to",
-            "5 != 3",
-            "true"
-          ],
-          [
-            ">",
-            "Greater than",
-            "5 > 3",
-            "true"
-          ],
-          [
-            "<",
-            "Less than",
-            "5 < 3",
-            "false"
-          ],
-          [
-            ">=",
-            "Greater than or equal to",
-            "5 >= 5",
-            "true"
-          ],
-          [
-            "<=",
-            "Less than or equal to",
-            "5 <= 3",
-            "false"
-          ]
+          ["==", "Equal to", "5 == 5", "true"],
+          ["!=", "Not equal to", "5 != 3", "true"],
+          [">", "Greater than", "5 > 3", "true"],
+          ["<", "Less than", "5 < 3", "false"],
+          [">=", "Greater than or equal to", "5 >= 5", "true"],
+          ["<=", "Less than or equal to", "5 <= 3", "false"]
         ]
       }
     },
@@ -205,23 +162,17 @@
           {
             "title": "if",
             "description": "Starts a conditional block. Always checked first. You can use it standalone or as the first in a chain.",
-            "tags": [
-              "required"
-            ]
+            "tags": ["required"]
           },
           {
             "title": "else if",
             "description": "Adds an additional condition to check. Only evaluated if all previous conditions were false. Optional and repeatable.",
-            "tags": [
-              "optional"
-            ]
+            "tags": ["optional"]
           },
           {
             "title": "else",
             "description": "The default fallback block. Runs when every preceding condition is false. Has no condition of its own. Optional but recommended for exhaustive handling.",
-            "tags": [
-              "optional"
-            ]
+            "tags": ["optional"]
           }
         ]
       }
@@ -423,10 +374,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "loops",
-    "switch-statements"
-  ],
+  "relatedLessons": ["loops", "switch-statements"],
   "furtherReading": [],
   "courseSlug": "csharp-fundamentals"
 }

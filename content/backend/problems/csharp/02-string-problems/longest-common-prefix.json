@@ -8,11 +8,7 @@
   "order": 7,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "strings",
-    "easy"
-  ],
+  "tags": ["csharp", "strings", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -86,33 +82,16 @@
           {
             "title": "Vertical Scan",
             "description": "Compare column by column",
-            "pros": [
-              "No sorting needed",
-              "Stops early"
-            ],
-            "cons": [
-              "O(n * m) in worst case"
-            ],
-            "tags": [
-              "O(n * m) time",
-              "O(1) space"
-            ]
+            "pros": ["No sorting needed", "Stops early"],
+            "cons": ["O(n * m) in worst case"],
+            "tags": ["O(n * m) time", "O(1) space"]
           },
           {
             "title": "Sort + Ends",
             "description": "Compare first and last only",
-            "pros": [
-              "Very concise",
-              "Leverages sorting"
-            ],
-            "cons": [
-              "O(n log n) from sort"
-            ],
-            "tags": [
-              "O(n log n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["Very concise", "Leverages sorting"],
+            "cons": ["O(n log n) from sort"],
+            "tags": ["O(n log n) time", "O(1) space", "Recommended"]
           }
         ]
       }

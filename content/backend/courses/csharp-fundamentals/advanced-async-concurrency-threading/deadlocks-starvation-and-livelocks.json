@@ -109,7 +109,13 @@
     "semaphoreslim-and-bounded-concurrency"
   ],
   "furtherReading": [
-    { "title": "Avoiding deadlocks (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices" },
-    { "title": "Detecting thread pool starvation (devblogs.microsoft.com)", "url": "https://devblogs.microsoft.com/dotnet/threadpool-starvation-and-how-to-avoid-it/" }
+    {
+      "title": "Avoiding deadlocks (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices"
+    },
+    {
+      "title": "Detecting thread pool starvation (devblogs.microsoft.com)",
+      "url": "https://devblogs.microsoft.com/dotnet/threadpool-starvation-and-how-to-avoid-it/"
+    }
   ]
 }

@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "kubernetes",
-    "helm",
-    "charts",
-    "devops"
-  ],
+  "tags": ["kubernetes", "helm", "charts", "devops"],
   "blocks": [
     {
       "type": "heading",
@@ -75,35 +70,20 @@
           {
             "title": "Raw YAML",
             "description": "Static manifests applied with kubectl.",
-            "tags": [
-              "Simple",
-              "No extra tooling"
-            ],
-            "pros": [
-              "No learning curve",
-              "Direct inspection"
-            ],
-            "cons": [
-              "Duplicated files per environment",
-              "Manual updates"
-            ]
+            "tags": ["Simple", "No extra tooling"],
+            "pros": ["No learning curve", "Direct inspection"],
+            "cons": ["Duplicated files per environment", "Manual updates"]
           },
           {
             "title": "Helm",
             "description": "Parameterized charts with values files.",
-            "tags": [
-              "Reusable",
-              "Versioned"
-            ],
+            "tags": ["Reusable", "Versioned"],
             "pros": [
               "One chart, many environments",
               "Versioning and rollbacks",
               "Dependency management"
             ],
-            "cons": [
-              "Additional tooling to learn",
-              "Debugging template rendering"
-            ]
+            "cons": ["Additional tooling to learn", "Debugging template rendering"]
           }
         ]
       }
@@ -205,35 +185,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Command",
-          "Purpose"
-        ],
+        "headers": ["Command", "Purpose"],
         "rows": [
-          [
-            "helm install",
-            "Deploy a new release"
-          ],
-          [
-            "helm upgrade",
-            "Update an existing release"
-          ],
-          [
-            "helm upgrade --install",
-            "Install or upgrade idempotently"
-          ],
-          [
-            "helm rollback",
-            "Rollback to a previous revision"
-          ],
-          [
-            "helm list",
-            "List all releases in the namespace"
-          ],
-          [
-            "helm uninstall",
-            "Delete a release"
-          ]
+          ["helm install", "Deploy a new release"],
+          ["helm upgrade", "Update an existing release"],
+          ["helm upgrade --install", "Install or upgrade idempotently"],
+          ["helm rollback", "Rollback to a previous revision"],
+          ["helm list", "List all releases in the namespace"],
+          ["helm uninstall", "Delete a release"]
         ]
       }
     },

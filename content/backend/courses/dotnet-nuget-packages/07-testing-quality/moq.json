@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "testing",
-    "moq",
-    "mocking"
-  ],
+  "tags": ["testing", "moq", "mocking"],
   "blocks": [
     {
       "type": "heading",
@@ -150,8 +146,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "xunit",
-    "nsubstitute"
-  ]
+  "relatedLessons": ["xunit", "nsubstitute"]
 }

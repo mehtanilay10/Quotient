@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "structure",
-    "folders",
-    "program-cs"
-  ],
+  "tags": ["structure", "folders", "program-cs"],
   "blocks": [
     {
       "type": "paragraph",
@@ -135,43 +131,16 @@
     },
     {
       "type": "table",
-      "headers": [
-        "File / Folder",
-        "Purpose"
-      ],
+      "headers": ["File / Folder", "Purpose"],
       "rows": [
-        [
-          "Program.cs",
-          "Application entry point; configures services and middleware"
-        ],
-        [
-          "appsettings.json",
-          "Configuration settings (JSON)"
-        ],
-        [
-          "MyFirstApp.csproj",
-          "Project file; lists dependencies and build settings"
-        ],
-        [
-          "Controllers/",
-          "C# classes that handle HTTP requests"
-        ],
-        [
-          "Views/",
-          "Razor view files (.cshtml) for generating HTML"
-        ],
-        [
-          "Models/",
-          "Data model classes"
-        ],
-        [
-          "wwwroot/",
-          "Static files (CSS, JS, images, fonts)"
-        ],
-        [
-          "Data/",
-          "Database context and EF Core migrations"
-        ]
+        ["Program.cs", "Application entry point; configures services and middleware"],
+        ["appsettings.json", "Configuration settings (JSON)"],
+        ["MyFirstApp.csproj", "Project file; lists dependencies and build settings"],
+        ["Controllers/", "C# classes that handle HTTP requests"],
+        ["Views/", "Razor view files (.cshtml) for generating HTML"],
+        ["Models/", "Data model classes"],
+        ["wwwroot/", "Static files (CSS, JS, images, fonts)"],
+        ["Data/", "Database context and EF Core migrations"]
       ]
     },
     {
@@ -245,10 +214,7 @@
       "takeaway": "The MVC project template creates a logical, convention-based folder structure. Understanding this structure is essential — it tells you exactly where to add new controllers, views, models, and static files as your application grows."
     }
   ],
-  "relatedLessons": [
-    "creating-first-project",
-    "running-and-debugging"
-  ],
+  "relatedLessons": ["creating-first-project", "running-and-debugging"],
   "technology": null,
   "furtherReading": [
     {

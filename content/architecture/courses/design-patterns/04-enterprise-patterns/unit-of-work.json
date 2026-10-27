@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "design-patterns",
-    "unit-of-work",
-    "csharp",
-    "transactions"
-  ],
+  "tags": ["design-patterns", "unit-of-work", "csharp", "transactions"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "server-side",
-    "discovery",
-    "load-balancer"
-  ],
+  "tags": ["server-side", "discovery", "load-balancer"],
   "blocks": [
     {
       "type": "paragraph",

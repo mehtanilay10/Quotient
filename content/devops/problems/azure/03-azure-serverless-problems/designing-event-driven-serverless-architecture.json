@@ -80,43 +80,22 @@
           {
             "title": "Service Bus + Functions",
             "description": "Reliable message processing",
-            "pros": [
-              "Guaranteed delivery",
-              "Dead-letter queues",
-              "Auto-scaling functions"
-            ],
-            "cons": [
-              "More moving parts",
-              "Requires message schema"
-            ],
+            "pros": ["Guaranteed delivery", "Dead-letter queues", "Auto-scaling functions"],
+            "cons": ["More moving parts", "Requires message schema"],
             "tags": ["Recommended", "Enterprise"]
           },
           {
             "title": "Event Grid + Functions",
             "description": "Event routing for Azure services",
-            "pros": [
-              "Native Azure integration",
-              "Low latency",
-              "Push-based delivery"
-            ],
-            "cons": [
-              "Limited retry options",
-              "No guaranteed ordering"
-            ],
+            "pros": ["Native Azure integration", "Low latency", "Push-based delivery"],
+            "cons": ["Limited retry options", "No guaranteed ordering"],
             "tags": ["Event routing"]
           },
           {
             "title": "Logic Apps Only",
             "description": "Low-code orchestration",
-            "pros": [
-              "Visual designer",
-              "400+ connectors",
-              "Built-in retry policies"
-            ],
-            "cons": [
-              "Less code control",
-              "Can be expensive at scale"
-            ],
+            "pros": ["Visual designer", "400+ connectors", "Built-in retry policies"],
+            "cons": ["Less code control", "Can be expensive at scale"],
             "tags": ["Low-code", "Integration"]
           }
         ]

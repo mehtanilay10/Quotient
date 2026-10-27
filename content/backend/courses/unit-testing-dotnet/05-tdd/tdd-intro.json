@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 5,
-  "tags": [
-    "tdd",
-    "fundamentals",
-    "dotnet"
-  ],
+  "tags": ["tdd", "fundamentals", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,9 +28,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "red-green-refactor"
-  ],
+  "relatedLessons": ["red-green-refactor"],
   "furtherReading": [],
   "courseSlug": "unit-testing-dotnet"
 }

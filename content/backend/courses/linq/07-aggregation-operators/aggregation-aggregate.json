@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "aggregate",
-    "aggregation",
-    "custom"
-  ],
+  "tags": ["linq", "aggregate", "aggregation", "custom"],
   "blocks": [
     {
       "type": "paragraph",

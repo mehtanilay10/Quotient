@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "ef-core",
-    "cli",
-    "dotnet-ef",
-    "migrations"
-  ],
+  "tags": ["ef-core", "cli", "dotnet-ef", "migrations"],
   "blocks": [
     {
       "type": "paragraph",
@@ -46,27 +41,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Command",
-          "Sub-commands",
-          "Usage"
-        ],
+        "headers": ["Command", "Sub-commands", "Usage"],
         "rows": [
-          [
-            "database",
-            "drop, update",
-            "Manage database"
-          ],
-          [
-            "dbcontext",
-            "info, list, scaffold",
-            "Manage DbContext types"
-          ],
-          [
-            "migrations",
-            "add, list, remove, script",
-            "Manage migrations"
-          ]
+          ["database", "drop, update", "Manage database"],
+          ["dbcontext", "info, list, scaffold", "Manage DbContext types"],
+          ["migrations", "add, list, remove, script", "Manage migrations"]
         ]
       }
     },
@@ -100,9 +79,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "migrations-in-entity-framework-core",
-    "pmc-powershell-commands-migrations"
-  ],
+  "relatedLessons": ["migrations-in-entity-framework-core", "pmc-powershell-commands-migrations"],
   "courseSlug": "ef-core"
 }

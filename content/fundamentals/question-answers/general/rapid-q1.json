@@ -7,10 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 23,
-  "tags": [
-    "interview",
-    "beginner"
-  ],
+  "tags": ["interview", "beginner"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,10 +79,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "Not knowing prevention",
-          "Confusing with livelock"
-        ]
+        "items": ["Not knowing prevention", "Confusing with livelock"]
       }
     },
     {
@@ -98,10 +92,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "How to detect deadlocks?",
-          "What is a livelock?"
-        ]
+        "items": ["How to detect deadlocks?", "What is a livelock?"]
       }
     },
     {

@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "roadmap",
-    "learning path",
-    "tutorials"
-  ],
+  "tags": ["linq", "roadmap", "learning path", "tutorials"],
   "blocks": [
     {
       "type": "paragraph",
@@ -148,10 +143,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "**Select** — Transform elements",
-          "**SelectMany** — Flatten nested collections"
-        ]
+        "items": ["**Select** — Transform elements", "**SelectMany** — Flatten nested collections"]
       }
     },
     {
@@ -237,10 +229,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "**Skip / SkipWhile** — Skip elements",
-          "**Take / TakeWhile** — Take elements"
-        ]
+        "items": ["**Skip / SkipWhile** — Skip elements", "**Take / TakeWhile** — Take elements"]
       }
     },
     {
@@ -293,10 +282,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-linq",
-    "why-linq",
-    "linq-api-in-net"
-  ],
+  "relatedLessons": ["what-is-linq", "why-linq", "linq-api-in-net"],
   "courseSlug": "linq"
 }

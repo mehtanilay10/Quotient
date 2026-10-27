@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "strings",
-    "hashmap",
-    "easy"
-  ],
+  "tags": ["csharp", "strings", "hashmap", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -87,33 +82,16 @@
           {
             "title": "Two Maps",
             "description": "Bidirectional mapping",
-            "pros": [
-              "Clear bidirectional check"
-            ],
-            "cons": [
-              "Extra dictionary",
-              "Slightly redundant"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Clear bidirectional check"],
+            "cons": ["Extra dictionary", "Slightly redundant"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Map + Seen",
             "description": "Forward map with used set",
-            "pros": [
-              "Fewer lookups",
-              "Cleaner logic"
-            ],
-            "cons": [
-              "Still O(n) space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["Fewer lookups", "Cleaner logic"],
+            "cons": ["Still O(n) space"],
+            "tags": ["O(n) time", "O(n) space", "Recommended"]
           }
         ]
       }

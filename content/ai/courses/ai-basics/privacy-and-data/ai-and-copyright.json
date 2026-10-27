@@ -7,14 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "copyright",
-    "ownership",
-    "legal",
-    "content",
-    "IP",
-    "ethics"
-  ],
+  "tags": ["copyright", "ownership", "legal", "content", "IP", "ethics"],
   "blocks": [
     {
       "type": "paragraph",
@@ -57,12 +50,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool",
-          "Commercial use?",
-          "Ownership",
-          "Key restriction"
-        ],
+        "headers": ["Tool", "Commercial use?", "Ownership", "Key restriction"],
         "rows": [
           [
             "ChatGPT (OpenAI)",
@@ -149,10 +137,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Situation",
-          "Recommended practice"
-        ],
+        "headers": ["Situation", "Recommended practice"],
         "rows": [
           [
             "Creating content for a client",
@@ -201,11 +186,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Claim type",
-          "What strengthens your position",
-          "What weakens your position"
-        ],
+        "headers": ["Claim type", "What strengthens your position", "What weakens your position"],
         "rows": [
           [
             "Authorship claim",
@@ -253,10 +234,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "protecting-your-data",
-    "ai-limitations"
-  ],
+  "relatedLessons": ["protecting-your-data", "ai-limitations"],
   "furtherReading": [
     {
       "title": "Copyright and Artificial Intelligence",

@@ -10,7 +10,17 @@
   "estimatedHours": 3.2,
   "icon": "🔍",
   "tags": ["csharp", "binary-search", "sorting", "divide-and-conquer"],
-  "lessonSlugs": ["binary-search", "powx-n", "first-and-last-position", "search-2d-matrix", "kth-smallest-element-in-sorted-matrix", "sort-an-array-merge-sort", "quick-sort", "heap-sort", "count-inversions"],
+  "lessonSlugs": [
+    "binary-search",
+    "powx-n",
+    "first-and-last-position",
+    "search-2d-matrix",
+    "kth-smallest-element-in-sorted-matrix",
+    "sort-an-array-merge-sort",
+    "quick-sort",
+    "heap-sort",
+    "count-inversions"
+  ],
   "whatYouLearn": [
     "Classic binary search invariant",
     "Searching in rotated sorted arrays",

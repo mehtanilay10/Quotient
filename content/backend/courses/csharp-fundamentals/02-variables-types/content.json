@@ -8,20 +8,8 @@
   "difficulty": "beginner",
   "estimatedHours": 2.5,
   "icon": "📦",
-  "tags": [
-    "csharp",
-    "variables",
-    "data-types",
-    "value-types",
-    "reference-types",
-    "conversion"
-  ],
-  "lessonSlugs": [
-    "variables",
-    "value-types",
-    "reference-types",
-    "type-conversion"
-  ],
+  "tags": ["csharp", "variables", "data-types", "value-types", "reference-types", "conversion"],
+  "lessonSlugs": ["variables", "value-types", "reference-types", "type-conversion"],
   "longDescription": "Before you can write meaningful C# programs, you need to understand how the language stores and manages data. This module introduces the core type system that underpins every C# application. You will learn how to declare and initialize variables, when to use the `var` keyword, and why naming conventions matter. You will then explore the two fundamental categories of C# types — value types (stored directly on the stack) and reference types (stored on the heap with pointer indirection) — and see how their different memory behavior affects assignment, method calls, and comparison. Finally, you will learn how to safely convert between types using implicit conversions, explicit casts, `Parse`/`TryParse`, and the `Convert` class, with attention to common pitfalls like truncation and overflow.",
   "prerequisites": [],
   "whatYouLearn": [

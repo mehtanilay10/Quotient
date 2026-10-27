@@ -9,13 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 4,
   "icon": "📜",
-  "tags": [
-    "event-sourcing",
-    "cqrs",
-    "event-store",
-    "snapshots",
-    "replay"
-  ],
+  "tags": ["event-sourcing", "cqrs", "event-store", "snapshots", "replay"],
   "lessonSlugs": [
     "event-sourcing-fundamentals",
     "event-store-design",

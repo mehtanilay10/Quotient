@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "easy",
   "estimatedMinutes": 8,
-  "tags": [
-    "csharp",
-    "linked-list",
-    "two-pointers",
-    "easy"
-  ],
+  "tags": ["csharp", "linked-list", "two-pointers", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -74,34 +69,16 @@
           {
             "title": "Count Then Walk",
             "description": "Count nodes, then advance to midpoint",
-            "pros": [
-              "Very explicit",
-              "Easy to explain"
-            ],
-            "cons": [
-              "Requires two traversals",
-              "Extra counter variable"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space"
-            ]
+            "pros": ["Very explicit", "Easy to explain"],
+            "cons": ["Requires two traversals", "Extra counter variable"],
+            "tags": ["O(n) time", "O(1) space"]
           },
           {
             "title": "Slow-Fast Pointer",
             "description": "Fast moves twice as fast as slow",
-            "pros": [
-              "Single traversal",
-              "Elegant and reusable pattern"
-            ],
-            "cons": [
-              "Pointer logic takes practice"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["Single traversal", "Elegant and reusable pattern"],
+            "cons": ["Pointer logic takes practice"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

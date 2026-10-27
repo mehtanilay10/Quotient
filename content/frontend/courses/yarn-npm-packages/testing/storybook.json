@@ -6,13 +6,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "storybook",
-    "testing",
-    "components",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["storybook", "testing", "components", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

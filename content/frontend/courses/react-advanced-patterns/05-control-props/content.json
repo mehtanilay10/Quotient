@@ -10,11 +10,7 @@
   "estimatedHours": 1.5,
   "icon": "🎛️",
   "tags": ["control-props", "controlled", "uncontrolled", "patterns", "forms"],
-  "lessonSlugs": [
-    "control-props-basics",
-    "control-props-examples",
-    "control-props-with-forms"
-  ],
+  "lessonSlugs": ["control-props-basics", "control-props-examples", "control-props-with-forms"],
   "prerequisites": ["state-reducer-composition"],
   "whatYouLearn": [
     "Understand the control props pattern and the controlled vs uncontrolled distinction",

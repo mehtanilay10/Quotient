@@ -35,9 +35,24 @@
       "data": {
         "headers": ["Type", "Use Case", "Performance", "Cost"],
         "rows": [
-          ["gp3", "General purpose workloads", "3,000 IOPS, 125 MB/s baseline", "Low cost, predictable performance"],
-          ["gp2", "Previous generation general purpose", "Bursts to 3,000 IOPS", "Slightly higher than gp3"],
-          ["io1/io2", "Mission-critical workloads", "Up to 64,000 IOPS, 1,000 MB/s", "Premium, highest performance"],
+          [
+            "gp3",
+            "General purpose workloads",
+            "3,000 IOPS, 125 MB/s baseline",
+            "Low cost, predictable performance"
+          ],
+          [
+            "gp2",
+            "Previous generation general purpose",
+            "Bursts to 3,000 IOPS",
+            "Slightly higher than gp3"
+          ],
+          [
+            "io1/io2",
+            "Mission-critical workloads",
+            "Up to 64,000 IOPS, 1,000 MB/s",
+            "Premium, highest performance"
+          ],
           ["st1", "Throughput-intensive big data", "Throughput-optimized HDD", "Low cost per GB"],
           ["sc1", "Infrequently accessed data", "Cold HDD", "Lowest cost per GB"]
         ]

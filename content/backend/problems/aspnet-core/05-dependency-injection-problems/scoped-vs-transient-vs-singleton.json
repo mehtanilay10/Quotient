@@ -8,14 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "dependency-injection",
-    "lifetime",
-    "scoped",
-    "singleton",
-    "transient"
-  ],
+  "tags": ["aspnet-core", "dependency-injection", "lifetime", "scoped", "singleton", "transient"],
   "blocks": [
     {
       "type": "heading",
@@ -77,15 +70,8 @@
               "Prevents common bugs",
               "Performance considerations"
             ],
-            "cons": [
-              "Must understand threading",
-              "Scoped in background tasks is tricky"
-            ],
-            "tags": [
-              "AddScoped",
-              "AddTransient",
-              "AddSingleton"
-            ]
+            "cons": ["Must understand threading", "Scoped in background tasks is tricky"],
+            "tags": ["AddScoped", "AddTransient", "AddSingleton"]
           }
         ]
       }

@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "apollo",
-    "query",
-    "useQuery",
-    "graphql"
-  ],
+  "tags": ["apollo", "query", "useQuery", "graphql"],
   "blocks": [
     {
       "type": "paragraph",

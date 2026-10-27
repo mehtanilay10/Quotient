@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 8,
-  "tags": [
-    "chain-of-responsibility",
-    "behavioral",
-    "csharp"
-  ],
+  "tags": ["chain-of-responsibility", "behavioral", "csharp"],
   "blocks": [
     {
       "type": "paragraph",

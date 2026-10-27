@@ -7,14 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "joins",
-    "visualization",
-    "inner-join",
-    "left-join",
-    "right-join",
-    "full-outer"
-  ],
+  "tags": ["joins", "visualization", "inner-join", "left-join", "right-join", "full-outer"],
   "blocks": [
     {
       "type": "heading",

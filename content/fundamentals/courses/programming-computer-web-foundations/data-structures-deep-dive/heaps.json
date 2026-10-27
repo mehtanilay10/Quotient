@@ -107,7 +107,11 @@
       }
     }
   ],
-  "relatedLessons": ["stacks-and-queues", "choosing-the-right-structure", "data-structure-problems"],
+  "relatedLessons": [
+    "stacks-and-queues",
+    "choosing-the-right-structure",
+    "data-structure-problems"
+  ],
   "furtherReading": [
     {
       "title": "Heap Data Structure",

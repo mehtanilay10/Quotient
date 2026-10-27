@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "booking",
-    "distributed-locks",
-    "search",
-    "availability"
-  ],
+  "tags": ["hld", "system-design", "booking", "distributed-locks", "search", "availability"],
   "blocks": [
     {
       "type": "heading",
@@ -159,10 +152,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ticket-booking-hld",
-    "payment-gateway-hld"
-  ],
+  "relatedLessons": ["ticket-booking-hld", "payment-gateway-hld"],
   "furtherReading": [
     {
       "title": "Airbnb Engineering Blog",

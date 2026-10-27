@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "api",
-    "design",
-    "security",
-    "rest"
-  ],
+  "tags": ["api", "design", "security", "rest"],
   "blocks": [
     {
       "type": "paragraph",

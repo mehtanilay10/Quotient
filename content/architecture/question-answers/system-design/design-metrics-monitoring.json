@@ -8,12 +8,7 @@
   "order": 20,
   "difficulty": "advanced",
   "estimatedMinutes": 24,
-  "tags": [
-    "interview",
-    "system-design",
-    "observability",
-    "storage"
-  ],
+  "tags": ["interview", "system-design", "observability", "storage"],
   "technology": "System Design",
   "blocks": [
     {
@@ -104,27 +99,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Entity",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Entity", "Key Fields", "Description"],
         "rows": [
           [
             "Series",
             "metric_name, label_hash, label_set",
             "One time stream; identity = name + labels"
           ],
-          [
-            "Sample",
-            "series_id, timestamp_ms, value",
-            "Atomic point; append-only"
-          ],
-          [
-            "Chunk",
-            "series_id, t_min, t_max, encoding",
-            "Compressed block of samples (~2h)"
-          ],
+          ["Sample", "series_id, timestamp_ms, value", "Atomic point; append-only"],
+          ["Chunk", "series_id, t_min, t_max, encoding", "Compressed block of samples (~2h)"],
           [
             "AlertRule",
             "expr, for_duration, severity, labels",
@@ -191,11 +174,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "design-distributed-cache",
-    "design-message-queue",
-    "design-web-crawler"
-  ],
+  "relatedLessons": ["design-distributed-cache", "design-message-queue", "design-web-crawler"],
   "furtherReading": [
     {
       "title": "Prometheus documentation — Concepts",

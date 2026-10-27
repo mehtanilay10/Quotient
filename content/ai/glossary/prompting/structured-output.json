@@ -6,11 +6,7 @@
   "fullDefinition": "Structured output is when an AI model produces a response in a specific format rather than free-form prose — such as JSON, CSV, Markdown tables, or a custom template. This is essential for AI integration with other systems (the downstream system needs predictable input) and for building automations where you need to parse AI output programmatically. Modern APIs support structured output modes that guarantee format compliance.",
   "category": "prompting",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "api",
-    "workflow",
-    "prompt"
-  ],
+  "relatedTerms": ["api", "workflow", "prompt"],
   "examples": [
     "Asking AI to return a JSON object",
     "Instructing AI to always respond with a Markdown table"

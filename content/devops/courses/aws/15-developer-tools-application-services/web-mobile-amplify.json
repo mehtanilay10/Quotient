@@ -8,15 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "amplify",
-    "cognito",
-    "mobile",
-    "web",
-    "hosting",
-    "fullstack"
-  ],
+  "tags": ["aws", "amplify", "cognito", "mobile", "web", "hosting", "fullstack"],
   "blocks": [
     {
       "type": "paragraph",

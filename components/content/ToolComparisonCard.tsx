@@ -1,7 +1,7 @@
-import { ExternalLink, Check, X, Minus } from 'lucide-react';
-import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
-import { cn } from '@/lib/utils';
-import type { ToolEntry } from '@/types';
+import { ExternalLink, Check, X, Minus } from "lucide-react";
+import { DifficultyBadge } from "@/components/ui/DifficultyBadge";
+import { cn } from "@/lib/utils";
+import type { ToolEntry } from "@/types";
 
 interface ToolComparisonCardProps {
   tool: ToolEntry;
@@ -9,18 +9,21 @@ interface ToolComparisonCardProps {
 }
 
 const pricingBadge: Record<string, { label: string; classes: string }> = {
-  free:         { label: 'Free',        classes: 'bg-success-subtle text-success-fg border-success-muted' },
-  freemium:     { label: 'Freemium',    classes: 'bg-attention-subtle text-attention-fg border-attention-muted' },
-  paid:         { label: 'Paid',        classes: 'bg-danger-subtle text-danger-fg border-danger-muted' },
-  'open-source':{ label: 'Open Source', classes: 'bg-done-muted text-done-fg border-done-fg' },
+  free: { label: "Free", classes: "bg-success-subtle text-success-fg border-success-muted" },
+  freemium: {
+    label: "Freemium",
+    classes: "bg-attention-subtle text-attention-fg border-attention-muted",
+  },
+  paid: { label: "Paid", classes: "bg-danger-subtle text-danger-fg border-danger-muted" },
+  "open-source": { label: "Open Source", classes: "bg-done-muted text-done-fg border-done-fg" },
 };
 
-function FeatureIcon({ supported }: { supported: boolean | 'partial' | 'unknown' }) {
+function FeatureIcon({ supported }: { supported: boolean | "partial" | "unknown" }) {
   if (supported === true)
     return <Check className="h-3.5 w-3.5 text-success-fg" aria-label="Supported" />;
   if (supported === false)
     return <X className="h-3.5 w-3.5 text-danger-fg" aria-label="Not supported" />;
-  if (supported === 'partial')
+  if (supported === "partial")
     return <Minus className="h-3.5 w-3.5 text-attention-fg" aria-label="Partial support" />;
   return <Minus className="h-3.5 w-3.5 text-fg-subtle" aria-label="Unknown" />;
 }
@@ -31,8 +34,8 @@ export function ToolComparisonCard({ tool, className }: ToolComparisonCardProps)
   return (
     <div
       className={cn(
-        'flex flex-col rounded-xl border border-border bg-canvas p-5 dark:bg-canvas-subtle',
-        tool.isPopular && 'ring-2 ring-accent-fg/30',
+        "flex flex-col rounded-xl border border-border bg-canvas p-5 dark:bg-canvas-subtle",
+        tool.isPopular && "ring-2 ring-accent-fg/30",
         className
       )}
     >
@@ -40,7 +43,9 @@ export function ToolComparisonCard({ tool, className }: ToolComparisonCardProps)
       <div className="mb-3 flex items-start justify-between gap-3">
         <div className="flex items-center gap-2">
           {tool.logoEmoji && (
-            <span className="text-2xl leading-none" aria-hidden="true">{tool.logoEmoji}</span>
+            <span className="text-2xl leading-none" aria-hidden="true">
+              {tool.logoEmoji}
+            </span>
           )}
           <div>
             <div className="flex items-center gap-2">
@@ -59,7 +64,7 @@ export function ToolComparisonCard({ tool, className }: ToolComparisonCardProps)
             <div className="mt-1 flex items-center gap-2">
               <span
                 className={cn(
-                  'rounded-full border px-2 py-0 text-xs font-medium',
+                  "rounded-full border px-2 py-0 text-xs font-medium",
                   pricing?.classes
                 )}
               >
@@ -112,9 +117,7 @@ export function ToolComparisonCard({ tool, className }: ToolComparisonCardProps)
                 <span className="text-fg-muted">{feat.name}</span>
                 <div className="flex items-center gap-1">
                   <FeatureIcon supported={feat.supported} />
-                  {feat.note && (
-                    <span className="text-fg-subtle italic">{feat.note}</span>
-                  )}
+                  {feat.note && <span className="text-fg-subtle italic">{feat.note}</span>}
                 </div>
               </div>
             ))}

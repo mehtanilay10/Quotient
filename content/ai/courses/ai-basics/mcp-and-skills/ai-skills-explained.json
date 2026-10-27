@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "skills",
-    "plugins",
-    "tool-calling",
-    "copilot"
-  ],
+  "tags": ["skills", "plugins", "tool-calling", "copilot"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,12 +32,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Term",
-          "Platform",
-          "What it means",
-          "Example"
-        ],
+        "headers": ["Term", "Platform", "What it means", "Example"],
         "rows": [
           [
             "Tool",
@@ -137,12 +127,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool type",
-          "Examples",
-          "Risk level",
-          "What to look for"
-        ],
+        "headers": ["Tool type", "Examples", "Risk level", "What to look for"],
         "rows": [
           [
             "Read-only",
@@ -197,15 +182,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "When you see or do this...",
-          "What's actually happening"
-        ],
+        "headers": ["When you see or do this...", "What's actually happening"],
         "rows": [
-          [
-            "ChatGPT searches the web for you",
-            "Tool call: web_search() is invoked"
-          ],
+          ["ChatGPT searches the web for you", "Tool call: web_search() is invoked"],
           [
             "ChatGPT runs Python code on your data",
             "Tool call: code_interpreter() runs in a sandbox"
@@ -214,10 +193,7 @@
             "Microsoft 365 Copilot reads your calendar",
             "Skill invocation: Calendar skill queries Graph API"
           ],
-          [
-            "Claude Desktop reads a local file",
-            "MCP Server: filesystem MCP handles the request"
-          ],
+          ["Claude Desktop reads a local file", "MCP Server: filesystem MCP handles the request"],
           [
             "A custom GPT calls your company API",
             "Action invocation: configured HTTP POST request"
@@ -276,12 +252,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Platform",
-          "Built-in tools",
-          "Extensibility",
-          "Notable limitations"
-        ],
+        "headers": ["Platform", "Built-in tools", "Extensibility", "Notable limitations"],
         "rows": [
           [
             "ChatGPT (Plus/Team)",
@@ -407,10 +378,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-mcp",
-    "what-are-agents"
-  ],
+  "relatedLessons": ["what-is-mcp", "what-are-agents"],
   "furtherReading": [
     {
       "title": "Function Calling Guide",

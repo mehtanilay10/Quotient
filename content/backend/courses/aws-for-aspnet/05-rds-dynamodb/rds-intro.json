@@ -39,16 +39,8 @@
       "data": {
         "headers": ["Engine", "License", "Best For"],
         "rows": [
-          [
-            "SQL Server",
-            "Commercial",
-            "Existing .NET apps familiar with SQL Server"
-          ],
-          [
-            "PostgreSQL",
-            "Open source",
-            "Modern .NET apps with EF Core or Dapper"
-          ],
+          ["SQL Server", "Commercial", "Existing .NET apps familiar with SQL Server"],
+          ["PostgreSQL", "Open source", "Modern .NET apps with EF Core or Dapper"],
           ["MySQL", "Open source", "WordPress, LAMP-style workloads"],
           ["Aurora", "AWS proprietary", "High-scale, cloud-native applications"]
         ]

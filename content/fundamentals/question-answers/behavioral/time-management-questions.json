@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "behavioral",
-    "time-management",
-    "prioritization",
-    "soft-skills"
-  ],
+  "tags": ["behavioral", "time-management", "prioritization", "soft-skills"],
   "technology": "Behavioral",
   "blocks": [
     {
@@ -134,10 +129,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "communication-questions",
-    "star-method-fundamentals"
-  ],
+  "relatedLessons": ["communication-questions", "star-method-fundamentals"],
   "furtherReading": [
     {
       "title": "Deep Work: Rules for Focused Success in a Distracted World",

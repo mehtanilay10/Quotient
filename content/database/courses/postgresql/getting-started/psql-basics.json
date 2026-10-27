@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "psql",
-    "cli",
-    "meta-commands",
-    "dba",
-    "scripting"
-  ],
+  "tags": ["psql", "cli", "meta-commands", "dba", "scripting"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,22 +26,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Meta-Command",
-          "Description",
-          "SQL Catalog Query Equivalent"
-        ],
+        "headers": ["Meta-Command", "Description", "SQL Catalog Query Equivalent"],
         "rows": [
           [
             "`\\l` or `\\l+`",
             "List all databases with sizes, collations, and owners",
             "`SELECT datname, pg_size_pretty(pg_database_size(datname)) FROM pg_database;`"
           ],
-          [
-            "`\\c dbname`",
-            "Connect to a different database",
-            "Switches database session context"
-          ],
+          ["`\\c dbname`", "Connect to a different database", "Switches database session context"],
           [
             "`\\dt` or `\\dt+`",
             "List all tables in current schema with disk sizes",
@@ -58,16 +44,8 @@
             "Describe table columns, indexes, foreign keys, and triggers",
             "Inspects `pg_attribute` and `pg_class`"
           ],
-          [
-            "`\\dn`",
-            "List all schemas within the database",
-            "`SELECT nspname FROM pg_namespace;`"
-          ],
-          [
-            "`\\di`",
-            "List all indexes",
-            "`SELECT indexname FROM pg_indexes;`"
-          ],
+          ["`\\dn`", "List all schemas within the database", "`SELECT nspname FROM pg_namespace;`"],
+          ["`\\di`", "List all indexes", "`SELECT indexname FROM pg_indexes;`"],
           [
             "`\\x`",
             "Toggle expanded display (vertical column output, great for wide tables)",
@@ -78,11 +56,7 @@
             "Toggle query timing (prints millisecond duration for every query)",
             "Enables execution timing"
           ],
-          [
-            "`\\q`",
-            "Quit psql session",
-            "Closes connection"
-          ]
+          ["`\\q`", "Quit psql session", "Closes connection"]
         ]
       }
     },
@@ -162,39 +136,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Question",
-          "Command"
-        ],
+        "headers": ["Question", "Command"],
         "rows": [
-          [
-            "What tables are here?",
-            "`\\dt` (add `+` for sizes and descriptions)"
-          ],
-          [
-            "What is the definition of this table?",
-            "`\\d+ users`"
-          ],
-          [
-            "Which function or type is that?",
-            "`\\df+ lower`, `\\dT+ jsonb`"
-          ],
-          [
-            "What is this view or sequence?",
-            "`\\dv`, `\\ds`"
-          ],
-          [
-            "Who is connected and what are they running?",
-            "`SELECT * FROM pg_stat_activity;`"
-          ],
-          [
-            "What privileges does role `app` have?",
-            "`\\du+ app`"
-          ],
-          [
-            "Where does `psql` keep history?",
-            "`~/.psql_history`"
-          ]
+          ["What tables are here?", "`\\dt` (add `+` for sizes and descriptions)"],
+          ["What is the definition of this table?", "`\\d+ users`"],
+          ["Which function or type is that?", "`\\df+ lower`, `\\dT+ jsonb`"],
+          ["What is this view or sequence?", "`\\dv`, `\\ds`"],
+          ["Who is connected and what are they running?", "`SELECT * FROM pg_stat_activity;`"],
+          ["What privileges does role `app` have?", "`\\du+ app`"],
+          ["Where does `psql` keep history?", "`~/.psql_history`"]
         ]
       }
     },
@@ -243,8 +193,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "installation-setup",
-    "select-statement"
-  ]
+  "relatedLessons": ["installation-setup", "select-statement"]
 }

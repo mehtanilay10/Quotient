@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "logging",
-    "microsoft-extensions",
-    "structured-logging"
-  ],
+  "tags": ["logging", "microsoft-extensions", "structured-logging"],
   "blocks": [
     {
       "type": "heading",

@@ -9,15 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2.5,
   "icon": "🎯",
-  "tags": [
-    "linq",
-    "quantifiers",
-    "element",
-    "first",
-    "last",
-    "single",
-    "contains"
-  ],
+  "tags": ["linq", "quantifiers", "element", "first", "last", "single", "contains"],
   "lessonSlugs": [
     "quantifier-operators",
     "contains-quantifier-operator",

@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "azure",
-    "azure-sql-database",
-    "elastic-pools",
-    "paas",
-    "cloud-database"
-  ],
+  "tags": ["azure", "azure-sql-database", "elastic-pools", "paas", "cloud-database"],
   "blocks": [
     {
       "type": "heading",

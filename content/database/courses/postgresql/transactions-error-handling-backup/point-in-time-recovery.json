@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "pitr",
-    "wal-archiving",
-    "disaster-recovery",
-    "pg-basebackup"
-  ],
+  "tags": ["pitr", "wal-archiving", "disaster-recovery", "pg-basebackup"],
   "blocks": [
     {
       "type": "paragraph",
@@ -71,8 +66,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "pg-dump-restore",
-    "architecture-overview"
-  ]
+  "relatedLessons": ["pg-dump-restore", "architecture-overview"]
 }

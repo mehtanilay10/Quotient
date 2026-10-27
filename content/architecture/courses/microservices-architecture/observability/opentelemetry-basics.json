@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "opentelemetry",
-    "otel",
-    "observability"
-  ],
+  "tags": ["opentelemetry", "otel", "observability"],
   "blocks": [
     {
       "type": "paragraph",

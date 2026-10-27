@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "ef-core",
-    "fluent-api",
-    "modelbuilder",
-    "configuration"
-  ],
+  "tags": ["ef-core", "fluent-api", "modelbuilder", "configuration"],
   "blocks": [
     {
       "type": "paragraph",
@@ -53,17 +48,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Configuration",
-          "Methods",
-          "Usage"
-        ],
+        "headers": ["Configuration", "Methods", "Usage"],
         "rows": [
-          [
-            "Model",
-            "HasDefaultSchema(), HasDbFunction()",
-            "Configure schema and functions"
-          ],
+          ["Model", "HasDefaultSchema(), HasDbFunction()", "Configure schema and functions"],
           [
             "Entity",
             "HasKey(), HasIndex(), HasOne(), HasMany(), ToTable()",

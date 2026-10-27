@@ -8,11 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 7.5,
   "icon": "🧬",
-  "tags": [
-    "interview",
-    "oop",
-    "fundamentals"
-  ],
+  "tags": ["interview", "oop", "fundamentals"],
   "lessonSlugs": [
     "trap-q1",
     "beginner-q6",

@@ -8,12 +8,7 @@
   "order": 19,
   "difficulty": "advanced",
   "estimatedMinutes": 26,
-  "tags": [
-    "interview",
-    "system-design",
-    "messaging",
-    "distributed-systems"
-  ],
+  "tags": ["interview", "system-design", "messaging", "distributed-systems"],
   "technology": "System Design",
   "blocks": [
     {
@@ -106,17 +101,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Entity",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Entity", "Key Fields", "Description"],
         "rows": [
-          [
-            "Topic",
-            "topic, partitions, retention_ms, min_isr",
-            "Named stream with policy"
-          ],
+          ["Topic", "topic, partitions, retention_ms, min_isr", "Named stream with policy"],
           [
             "Segment",
             "topic, partition, base_offset, log file",

@@ -94,27 +94,15 @@
           {
             "title": "Migrate then deploy",
             "description": "Schema first, then app code",
-            "pros": [
-              "Single release per change",
-              "Simple to reason about"
-            ],
-            "cons": [
-              "Breaks during the coexistence window",
-              "Rollback is not symmetric"
-            ],
+            "pros": ["Single release per change", "Simple to reason about"],
+            "cons": ["Breaks during the coexistence window", "Rollback is not symmetric"],
             "tags": ["Single-instance or maintenance window"]
           },
           {
             "title": "App-managed migrations at startup",
             "description": "Each instance migrates on boot",
-            "pros": [
-              "No pipeline step to forget"
-            ],
-            "cons": [
-              "Concurrent instances race",
-              "Startup fails under load",
-              "Slows cold start"
-            ],
+            "pros": ["No pipeline step to forget"],
+            "cons": ["Concurrent instances race", "Startup fails under load", "Slows cold start"],
             "tags": ["Local development only"]
           }
         ]

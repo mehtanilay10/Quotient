@@ -6,11 +6,7 @@
   "fullDefinition": "An AI benchmark is a standardized dataset and evaluation protocol used to measure and compare model capabilities. Benchmarks test specific skills including reading comprehension (MMLU), coding (HumanEval), mathematical reasoning (MATH), and general knowledge. They provide objective metrics that help researchers and practitioners understand model strengths and weaknesses, track progress over time, and make informed decisions about model selection. However, benchmark scores can be misleading \u2014 models optimized for benchmarks may not perform better in real-world tasks. The AI community continues to develop more robust evaluation methods including human preference assessments and real-world deployment metrics.",
   "category": "evaluation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "evaluation",
-    "human-evaluation",
-    "large-language-model"
-  ],
+  "relatedTerms": ["evaluation", "human-evaluation", "large-language-model"],
   "learnMoreSlug": "ai-evaluation-metrics",
   "examples": [
     "MMLU: a test of broad knowledge across 57 academic subjects",

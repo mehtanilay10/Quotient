@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 12,
-  "tags": [
-    "quartz",
-    "scheduling",
-    "jobs",
-    "cron"
-  ],
+  "tags": ["quartz", "scheduling", "jobs", "cron"],
   "blocks": [
     {
       "type": "heading",

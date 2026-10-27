@@ -7,21 +7,10 @@
   "difficulty": "beginner",
   "estimatedHours": 1.5,
   "icon": "🛠️",
-  "tags": [
-    "tools",
-    "chatgpt",
-    "claude",
-    "gemini",
-    "comparison"
-  ],
-  "lessonSlugs": [
-    "chatbot-landscape",
-    "choosing-the-right-tool"
-  ],
+  "tags": ["tools", "chatgpt", "claude", "gemini", "comparison"],
+  "lessonSlugs": ["chatbot-landscape", "choosing-the-right-tool"],
   "isOptional": false,
-  "prerequisites": [
-    "what-is-ai"
-  ],
+  "prerequisites": ["what-is-ai"],
   "whatYouLearn": [
     "Overview of the major AI chatbots and what makes each unique",
     "Image, audio, video, and code-generation tools",

@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "insert",
-    "select",
-    "dml",
-    "copy-data"
-  ],
+  "tags": ["insert", "select", "dml", "copy-data"],
   "blocks": [
     {
       "type": "heading",

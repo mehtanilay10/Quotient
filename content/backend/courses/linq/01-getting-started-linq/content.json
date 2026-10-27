@@ -10,12 +10,7 @@
   "estimatedHours": 2.5,
   "icon": "🚀",
   "tags": ["linq", "introduction", "fundamentals"],
-  "lessonSlugs": [
-    "what-is-linq",
-    "why-linq",
-    "linq-api-in-net",
-    "learn-linq-step-by-step"
-  ],
+  "lessonSlugs": ["what-is-linq", "why-linq", "linq-api-in-net", "learn-linq-step-by-step"],
   "whatYouLearn": [
     "Understand what LINQ is and its purpose in .NET",
     "Learn the advantages of LINQ over traditional data querying",

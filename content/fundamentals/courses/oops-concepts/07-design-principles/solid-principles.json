@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "oop",
-    "solid",
-    "design"
-  ],
+  "tags": ["oop", "solid", "design"],
   "blocks": [
     {
       "type": "paragraph",

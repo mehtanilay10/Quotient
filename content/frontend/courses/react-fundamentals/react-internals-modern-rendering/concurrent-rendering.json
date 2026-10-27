@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "react",
-    "concurrent",
-    "scheduler",
-    "ux"
-  ],
+  "tags": ["react", "concurrent", "scheduler", "ux"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,24 +55,13 @@
           {
             "title": "Legacy rendering",
             "description": "The default behavior before React 18. Updates block the main thread until completion.",
-            "pros": [
-              "Predictable execution order",
-              "No hidden re-renders"
-            ],
-            "cons": [
-              "Large updates freeze the UI",
-              "Animations stutter",
-              "Input feels laggy"
-            ]
+            "pros": ["Predictable execution order", "No hidden re-renders"],
+            "cons": ["Large updates freeze the UI", "Animations stutter", "Input feels laggy"]
           },
           {
             "title": "Concurrent rendering",
             "description": "React 18+ default for features like transitions and Suspense. Updates are interruptible.",
-            "pros": [
-              "UI stays responsive",
-              "Smooth animations",
-              "Better perceived performance"
-            ],
+            "pros": ["UI stays responsive", "Smooth animations", "Better perceived performance"],
             "cons": [
               "Components may render multiple times",
               "Effects run more often",
@@ -141,10 +125,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "fiber-and-scheduling-concepts",
-    "suspense-and-asynchronous-ui"
-  ],
+  "relatedLessons": ["fiber-and-scheduling-concepts", "suspense-and-asynchronous-ui"],
   "furtherReading": [
     {
       "title": "React Docs: Concurrent Rendering",

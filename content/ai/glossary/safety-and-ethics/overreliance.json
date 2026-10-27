@@ -6,8 +6,5 @@
   "fullDefinition": "Overreliance on AI is the failure mode where a user accepts AI output uncritically, without applying their own expertise, judgment, or verification. It leads to accepting hallucinations, using low-quality drafts, and atrophying one's own skills. The antidote is cultivating a habit of critical evaluation and treating AI as a starting point, not a final authority.",
   "category": "safety-and-ethics",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "hallucination",
-    "guardrails"
-  ]
+  "relatedTerms": ["hallucination", "guardrails"]
 }

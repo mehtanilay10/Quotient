@@ -8,15 +8,7 @@
   "order": 15,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "scopes",
-    "claims",
-    "roles",
-    "policies",
-    "authorization",
-    "rbac",
-    "asp.net-core"
-  ],
+  "tags": ["scopes", "claims", "roles", "policies", "authorization", "rbac", "asp.net-core"],
   "blocks": [
     {
       "type": "paragraph",

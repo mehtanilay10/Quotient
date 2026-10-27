@@ -8,11 +8,7 @@
   "order": 20,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -50,14 +46,8 @@
           {
             "title": "DP Tabulation",
             "description": "dp[i] = sum(dp[i - num])",
-            "pros": [
-              "O(target\u00b7n) time"
-            ],
-            "tags": [
-              "O(target\u00b7n) time",
-              "O(target) space",
-              "Recommended"
-            ]
+            "pros": ["O(target\u00b7n) time"],
+            "tags": ["O(target\u00b7n) time", "O(target) space", "Recommended"]
           }
         ]
       }

@@ -8,16 +8,8 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "optimistic",
-    "updates",
-    "ux",
-    "rollback"
-  ],
-  "prerequisites": [
-    "use-mutation"
-  ],
+  "tags": ["react-query", "optimistic", "updates", "ux", "rollback"],
+  "prerequisites": ["use-mutation"],
   "blocks": [
     {
       "type": "heading",
@@ -150,13 +142,8 @@
               "Simpler to implement",
               "No rollback logic needed"
             ],
-            "cons": [
-              "User waits for network round-trip",
-              "Can feel sluggish on slow connections"
-            ],
-            "tags": [
-              "no onMutate"
-            ]
+            "cons": ["User waits for network round-trip", "Can feel sluggish on slow connections"],
+            "tags": ["no onMutate"]
           },
           {
             "title": "Optimistic Update",
@@ -171,9 +158,7 @@
               "Requires careful rollback handling",
               "UI can flicker briefly on failure"
             ],
-            "tags": [
-              "onMutate + onError"
-            ]
+            "tags": ["onMutate + onError"]
           }
         ]
       }

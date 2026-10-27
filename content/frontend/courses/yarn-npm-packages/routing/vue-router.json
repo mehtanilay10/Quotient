@@ -6,13 +6,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "vue-router",
-    "routing",
-    "vue",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["vue-router", "routing", "vue", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

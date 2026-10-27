@@ -48,8 +48,16 @@
         "headers": ["Tier", "Description", "Use Case"],
         "rows": [
           ["Basic", "Single node, no SLA, no persistence", "Dev/test, non-critical caching"],
-          ["Standard", "Two-node primary/replica with SLA", "Production caching with high availability"],
-          ["Premium", "Redis cluster, persistence, VNet, geo-replication", "Mission-critical workloads"]
+          [
+            "Standard",
+            "Two-node primary/replica with SLA",
+            "Production caching with high availability"
+          ],
+          [
+            "Premium",
+            "Redis cluster, persistence, VNet, geo-replication",
+            "Mission-critical workloads"
+          ]
         ]
       }
     },

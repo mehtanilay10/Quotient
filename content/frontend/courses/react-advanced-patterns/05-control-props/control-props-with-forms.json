@@ -8,20 +8,9 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "control-props",
-    "forms",
-    "react-hook-form",
-    "zod",
-    "validation"
-  ],
-  "prerequisites": [
-    "control-props-examples"
-  ],
-  "relatedLessons": [
-    "control-props-examples",
-    "reducer-hooks-patterns"
-  ],
+  "tags": ["control-props", "forms", "react-hook-form", "zod", "validation"],
+  "prerequisites": ["control-props-examples"],
+  "relatedLessons": ["control-props-examples", "reducer-hooks-patterns"],
   "furtherReading": [
     {
       "title": "React Hook Form Documentation",
@@ -120,11 +109,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "State",
-          "What the User Sees",
-          "Key Prop(s)"
-        ],
+        "headers": ["State", "What the User Sees", "Key Prop(s)"],
         "rows": [
           [
             "Idle",
@@ -141,16 +126,8 @@
             "Error messages appear next to each field",
             "errors.email, errors.password, etc."
           ],
-          [
-            "Submitting",
-            "Button shows 'Submitting...', form is locked",
-            "isSubmitting = true"
-          ],
-          [
-            "Error (server)",
-            "A server error message appears above the form",
-            "serverError string"
-          ],
+          ["Submitting", "Button shows 'Submitting...', form is locked", "isSubmitting = true"],
+          ["Error (server)", "A server error message appears above the form", "serverError string"],
           [
             "Success",
             "A success confirmation appears, button resets",
@@ -213,19 +190,9 @@
           {
             "title": "register()",
             "description": "Attaches a native HTML input to React Hook Form using refs. Best for simple inputs.",
-            "pros": [
-              "Minimal boilerplate",
-              "No extra re-renders",
-              "Works with all native inputs"
-            ],
-            "cons": [
-              "Cannot be used with custom components",
-              "No imperative get/set access"
-            ],
-            "tags": [
-              "simple",
-              "native"
-            ]
+            "pros": ["Minimal boilerplate", "No extra re-renders", "Works with all native inputs"],
+            "cons": ["Cannot be used with custom components", "No imperative get/set access"],
+            "tags": ["simple", "native"]
           },
           {
             "title": "Controller",
@@ -235,14 +202,8 @@
               "Full control over rendering",
               "Supports valueAsNumber, valueAsDate, etc."
             ],
-            "cons": [
-              "More verbose",
-              "Slight performance overhead"
-            ],
-            "tags": [
-              "flexible",
-              "custom"
-            ]
+            "cons": ["More verbose", "Slight performance overhead"],
+            "tags": ["flexible", "custom"]
           }
         ]
       }

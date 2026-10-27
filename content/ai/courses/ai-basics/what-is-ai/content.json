@@ -8,11 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 2,
   "icon": "🤖",
-  "tags": [
-    "foundations",
-    "ai-basics",
-    "mental-models"
-  ],
+  "tags": ["foundations", "ai-basics", "mental-models"],
   "lessonSlugs": [
     "ai-vs-ml-vs-generative-ai",
     "how-llms-work-simply",

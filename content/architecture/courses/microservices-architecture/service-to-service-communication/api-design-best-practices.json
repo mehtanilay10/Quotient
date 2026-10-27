@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 19,
-  "tags": [
-    "api",
-    "design",
-    "rest",
-    "versioning"
-  ],
+  "tags": ["api", "design", "rest", "versioning"],
   "blocks": [
     {
       "type": "paragraph",
@@ -79,37 +74,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "Operation",
-          "Idempotent"
-        ],
+        "headers": ["Method", "Operation", "Idempotent"],
         "rows": [
-          [
-            "GET",
-            "Read",
-            "Yes"
-          ],
-          [
-            "POST",
-            "Create",
-            "No"
-          ],
-          [
-            "PUT",
-            "Replace",
-            "Yes"
-          ],
-          [
-            "PATCH",
-            "Partial update",
-            "No"
-          ],
-          [
-            "DELETE",
-            "Delete",
-            "Yes"
-          ]
+          ["GET", "Read", "Yes"],
+          ["POST", "Create", "No"],
+          ["PUT", "Replace", "Yes"],
+          ["PATCH", "Partial update", "No"],
+          ["DELETE", "Delete", "Yes"]
         ]
       }
     },

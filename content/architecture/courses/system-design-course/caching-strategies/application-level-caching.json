@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "caching",
-    "redis",
-    "memcached",
-    "latency",
-    "performance"
-  ],
+  "tags": ["caching", "redis", "memcached", "latency", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,27 +67,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Factor",
-          "Redis",
-          "Memcached"
-        ],
+        "headers": ["Factor", "Redis", "Memcached"],
         "rows": [
           [
             "Data structures",
             "Strings, hashes, lists, sets, sorted sets",
             "Flat byte strings only"
           ],
-          [
-            "Persistence",
-            "RDB and AOF available",
-            "Not persistent by design"
-          ],
-          [
-            "Replication",
-            "Native primary-replica support",
-            "No built-in replication"
-          ],
+          ["Persistence", "RDB and AOF available", "Not persistent by design"],
+          ["Replication", "Native primary-replica support", "No built-in replication"],
           [
             "Best for",
             "Session data, leaderboards, rate limiting",

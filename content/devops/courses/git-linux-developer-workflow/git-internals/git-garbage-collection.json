@@ -142,6 +142,10 @@
   ],
   "relatedLessons": ["git-pack-files", "git-refs-and-head"],
   "furtherReading": [
-    { "title": "Git Maintenance and Garbage Collection", "url": "https://git-scm.com/docs/git-gc", "type": "article" }
+    {
+      "title": "Git Maintenance and Garbage Collection",
+      "url": "https://git-scm.com/docs/git-gc",
+      "type": "article"
+    }
   ]
 }

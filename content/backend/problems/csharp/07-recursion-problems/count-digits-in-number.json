@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "recursion",
-    "easy"
-  ],
+  "tags": ["csharp", "recursion", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -122,46 +118,23 @@
           {
             "title": "Recursive",
             "description": "Divide by 10 recursively",
-            "pros": [
-              "Elegant",
-              "O(log n) time"
-            ],
-            "cons": [
-              "O(log n) stack"
-            ],
-            "tags": [
-              "O(log n) time",
-              "O(log n) space"
-            ]
+            "pros": ["Elegant", "O(log n) time"],
+            "cons": ["O(log n) stack"],
+            "tags": ["O(log n) time", "O(log n) space"]
           },
           {
             "title": "Iterative",
             "description": "Loop dividing by 10",
-            "pros": [
-              "O(log n) time",
-              "O(1) space",
-              "Recommended"
-            ],
+            "pros": ["O(log n) time", "O(1) space", "Recommended"],
             "cons": [],
-            "tags": [
-              "O(log n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "tags": ["O(log n) time", "O(1) space", "Recommended"]
           },
           {
             "title": "String Conversion",
             "description": "Convert and get length",
-            "pros": [
-              "Very concise"
-            ],
-            "cons": [
-              "O(log n) extra space"
-            ],
-            "tags": [
-              "O(log n) time",
-              "O(log n) space"
-            ]
+            "pros": ["Very concise"],
+            "cons": ["O(log n) extra space"],
+            "tags": ["O(log n) time", "O(log n) space"]
           }
         ]
       }

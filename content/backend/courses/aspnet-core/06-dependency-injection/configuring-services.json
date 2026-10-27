@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "services",
-    "configuration",
-    "options"
-  ],
+  "tags": ["services", "configuration", "options"],
   "blocks": [
     {
       "type": "heading",
@@ -170,10 +166,7 @@
       "takeaway": "Good service registration makes your application's dependency graph visible and your configuration type-safe. A well-structured Program.cs is the foundation of a healthy ASP.NET Core app."
     }
   ],
-  "relatedLessons": [
-    "service-lifetimes",
-    "advanced-di-patterns"
-  ],
+  "relatedLessons": ["service-lifetimes", "advanced-di-patterns"],
   "technology": null,
   "furtherReading": []
 }

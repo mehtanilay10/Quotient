@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "validation",
-    "attributes",
-    "data-annotations"
-  ],
+  "tags": ["validation", "attributes", "data-annotations"],
   "blocks": [
     {
       "type": "heading",
@@ -182,10 +178,7 @@
       "takeaway": "Data annotations give you a declarative, maintainable way to enforce rules at the model layer without writing repetitive controller code."
     }
   ],
-  "relatedLessons": [
-    "model-binding-overview",
-    "custom-validation"
-  ],
+  "relatedLessons": ["model-binding-overview", "custom-validation"],
   "technology": null,
   "furtherReading": []
 }

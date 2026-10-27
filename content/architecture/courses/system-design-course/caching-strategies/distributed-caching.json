@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "distributed",
-    "redis",
-    "cluster",
-    "partitioning",
-    "replication"
-  ],
+  "tags": ["distributed", "redis", "cluster", "partitioning", "replication"],
   "blocks": [
     {
       "type": "paragraph",
@@ -85,22 +79,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Concern",
-          "Approach",
-          "Trade-off"
-        ],
+        "headers": ["Concern", "Approach", "Trade-off"],
         "rows": [
           [
             "Partitioning",
             "Consistent hashing or range partitioning",
             "Hashing balances load; ranges simplify range queries"
           ],
-          [
-            "Replication",
-            "Synchronous or asynchronous",
-            "Synchronous is safer but slower"
-          ],
+          ["Replication", "Synchronous or asynchronous", "Synchronous is safer but slower"],
           [
             "Failure detection",
             "Gossip or centralized monitor",

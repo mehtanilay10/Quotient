@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 45,
-  "tags": [
-    "lld",
-    "object-oriented",
-    "design-patterns",
-    "youtube_video"
-  ],
+  "tags": ["lld", "object-oriented", "design-patterns", "youtube_video"],
   "blocks": [
     {
       "type": "heading",

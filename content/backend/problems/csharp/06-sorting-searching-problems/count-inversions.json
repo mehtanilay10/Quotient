@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "An inversion is a pair of indices `(i, j)` with `i < j` but `nums[i] > nums[j]`. Count the number of inversions in the array. The count can be large, so return a `long`."}
+        "text": "An inversion is a pair of indices `(i, j)` with `i < j` but `nums[i] > nums[j]`. Count the number of inversions in the array. The count can be large, so return a `long`."
+      }
     },
     {
       "type": "heading",
@@ -36,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Check every pair with `i < j`, which is O(n²) and unusable for arrays of realistic size."}
+        "text": "Check every pair with `i < j`, which is O(n²) and unusable for arrays of realistic size."
+      }
     },
     {
       "type": "example",
@@ -54,7 +56,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Merge sort already compares elements from the two halves as it merges. When the element from the right half is smaller than the element from the left half, it is smaller than **every remaining element in the left half** — and each of those forms an inversion. Counting them in bulk during the merge is what turns O(n²) into O(n log n)."}
+        "text": "Merge sort already compares elements from the two halves as it merges. When the element from the right half is smaller than the element from the left half, it is smaller than **every remaining element in the left half** — and each of those forms an inversion. Counting them in bulk during the merge is what turns O(n²) into O(n log n)."
+      }
     },
     {
       "type": "example",

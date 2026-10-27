@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "prisma",
-    "pagination",
-    "cursor",
-    "offset",
-    "performance"
-  ],
+  "tags": ["prisma", "pagination", "cursor", "offset", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,12 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Prisma Arguments",
-          "Performance",
-          "Best Used For"
-        ],
+        "headers": ["Strategy", "Prisma Arguments", "Performance", "Best Used For"],
         "rows": [
           [
             "Offset Pagination",
@@ -96,8 +85,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "filtering-and-sorting",
-    "select-and-include"
-  ]
+  "relatedLessons": ["filtering-and-sorting", "select-and-include"]
 }

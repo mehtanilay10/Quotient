@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "networking",
-    "vnet",
-    "api-management",
-    "developer"
-  ],
+  "tags": ["azure", "networking", "vnet", "api-management", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -37,20 +31,13 @@
           {
             "title": "Public Endpoint",
             "description": "Default access over the internet with IP restrictions or firewalls.",
-            "pros": [
-              "Easy to set up",
-              "Works from anywhere",
-              "No VNet required"
-            ],
+            "pros": ["Easy to set up", "Works from anywhere", "No VNet required"],
             "cons": [
               "Exposed to the internet",
               "Requires careful firewall rules",
               "Higher attack surface"
             ],
-            "tags": [
-              "internet",
-              "default"
-            ]
+            "tags": ["internet", "default"]
           },
           {
             "title": "Private Endpoint",
@@ -60,14 +47,8 @@
               "Traffic on Microsoft backbone",
               "Works with ExpressRoute and VPN"
             ],
-            "cons": [
-              "Requires VNet and DNS setup",
-              "Slightly more complex"
-            ],
-            "tags": [
-              "private",
-              "vnet"
-            ]
+            "cons": ["Requires VNet and DNS setup", "Slightly more complex"],
+            "tags": ["private", "vnet"]
           }
         ]
       }
@@ -75,37 +56,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Factor",
-          "Public Endpoint",
-          "Private Endpoint"
-        ],
+        "headers": ["Factor", "Public Endpoint", "Private Endpoint"],
         "rows": [
-          [
-            "IP address",
-            "Public",
-            "Private (from VNet range)"
-          ],
-          [
-            "Internet access",
-            "Yes (with firewall)",
-            "No"
-          ],
-          [
-            "On-prem access",
-            "Difficult",
-            "Easy via ExpressRoute/VPN"
-          ],
-          [
-            "Data exfiltration risk",
-            "Higher",
-            "Lower"
-          ],
-          [
-            "DNS",
-            "Service FQDN",
-            "Private DNS zone"
-          ]
+          ["IP address", "Public", "Private (from VNet range)"],
+          ["Internet access", "Yes (with firewall)", "No"],
+          ["On-prem access", "Difficult", "Easy via ExpressRoute/VPN"],
+          ["Data exfiltration risk", "Higher", "Lower"],
+          ["DNS", "Service FQDN", "Private DNS zone"]
         ]
       }
     },

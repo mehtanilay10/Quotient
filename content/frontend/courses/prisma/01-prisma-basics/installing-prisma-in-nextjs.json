@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "prisma",
-    "nextjs",
-    "setup",
-    "installation",
-    "app-router"
-  ],
+  "tags": ["prisma", "nextjs", "setup", "installation", "app-router"],
   "blocks": [
     {
       "type": "paragraph",
@@ -145,8 +139,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "setting-up-prisma-client",
-    "what-is-prisma"
-  ]
+  "relatedLessons": ["setting-up-prisma-client", "what-is-prisma"]
 }

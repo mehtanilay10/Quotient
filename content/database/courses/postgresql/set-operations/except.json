@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "except",
-    "set-difference",
-    "minus",
-    "anti-join"
-  ],
+  "tags": ["except", "set-difference", "minus", "anti-join"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "union",
-    "intersect"
-  ]
+  "relatedLessons": ["union", "intersect"]
 }

@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -42,29 +36,15 @@
               "Contains redirect URIs and secrets",
               "Same across all tenants"
             ],
-            "cons": [
-              "Not used directly at runtime"
-            ],
-            "tags": [
-              "definition",
-              "global"
-            ]
+            "cons": ["Not used directly at runtime"],
+            "tags": ["definition", "global"]
           },
           {
             "title": "Service Principal",
             "description": "The security principal used by your app in one tenant.",
-            "pros": [
-              "Created per tenant",
-              "Holds role assignments",
-              "The runtime identity"
-            ],
-            "cons": [
-              "Managed separately per tenant"
-            ],
-            "tags": [
-              "runtime",
-              "tenant-specific"
-            ]
+            "pros": ["Created per tenant", "Holds role assignments", "The runtime identity"],
+            "cons": ["Managed separately per tenant"],
+            "tags": ["runtime", "tenant-specific"]
           }
         ]
       }
@@ -103,12 +83,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Object",
-          "Scope",
-          "What it holds",
-          "How you use it"
-        ],
+        "headers": ["Object", "Scope", "What it holds", "How you use it"],
         "rows": [
           [
             "Application (app registration)",

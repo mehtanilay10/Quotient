@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "event-sourcing",
-    "versioning",
-    "schema-evolution",
-    "compatibility"
-  ],
+  "tags": ["event-sourcing", "versioning", "schema-evolution", "compatibility"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,43 +32,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Safe?",
-          "Effort",
-          "Use Case"
-        ],
+        "headers": ["Strategy", "Safe?", "Effort", "Use Case"],
         "rows": [
-          [
-            "Add optional fields",
-            "Yes",
-            "Low",
-            "Most common; new fields have defaults"
-          ],
-          [
-            "Deprecate then remove",
-            "Yes",
-            "Medium",
-            "Phased field removal over multiple releases"
-          ],
-          [
-            "Rename with alias",
-            "Yes",
-            "Medium",
-            "Renaming without breaking old consumers"
-          ],
-          [
-            "New event type (V2)",
-            "Yes",
-            "High",
-            "Breaking changes that cannot be avoided"
-          ],
-          [
-            "Inline rewrite",
-            "Risky",
-            "Low",
-            "One-time migration with full replay"
-          ]
+          ["Add optional fields", "Yes", "Low", "Most common; new fields have defaults"],
+          ["Deprecate then remove", "Yes", "Medium", "Phased field removal over multiple releases"],
+          ["Rename with alias", "Yes", "Medium", "Renaming without breaking old consumers"],
+          ["New event type (V2)", "Yes", "High", "Breaking changes that cannot be avoided"],
+          ["Inline rewrite", "Risky", "Low", "One-time migration with full replay"]
         ]
       }
     },
@@ -142,10 +107,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "event-sourcing-fundamentals",
-    "cqrs-with-event-sourcing"
-  ],
+  "relatedLessons": ["event-sourcing-fundamentals", "cqrs-with-event-sourcing"],
   "furtherReading": [
     {
       "title": "Versioning in an Event Sourced System - Greg Young",

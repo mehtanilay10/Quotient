@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "availability",
-    "redundancy",
-    "failover",
-    "load balancing",
-    "distributed systems"
-  ],
+  "tags": ["availability", "redundancy", "failover", "load balancing", "distributed systems"],
   "blocks": [
     {
       "type": "heading",
@@ -87,26 +81,14 @@
           {
             "title": "Active-Passive",
             "description": "One primary handles all writes; standby is idle until failover.",
-            "pros": [
-              "Simple mental model",
-              "No write conflicts during normal operation"
-            ],
-            "cons": [
-              "Standby resources are underutilized",
-              "Failover causes brief downtime"
-            ]
+            "pros": ["Simple mental model", "No write conflicts during normal operation"],
+            "cons": ["Standby resources are underutilized", "Failover causes brief downtime"]
           },
           {
             "title": "Active-Active",
             "description": "Multiple primaries accept writes and serve reads simultaneously.",
-            "pros": [
-              "Better resource utilization",
-              "Near-instant failover"
-            ],
-            "cons": [
-              "Conflict resolution required",
-              "More complex replication logic"
-            ]
+            "pros": ["Better resource utilization", "Near-instant failover"],
+            "cons": ["Conflict resolution required", "More complex replication logic"]
           }
         ]
       }

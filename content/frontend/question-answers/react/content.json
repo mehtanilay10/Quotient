@@ -8,11 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 9.2,
   "icon": "⚛️",
-  "tags": [
-    "interview",
-    "react",
-    "frontend"
-  ],
+  "tags": ["interview", "react", "frontend"],
   "lessonSlugs": [
     "react-b01",
     "react-b02",

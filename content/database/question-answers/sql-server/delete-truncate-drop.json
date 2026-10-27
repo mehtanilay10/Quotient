@@ -6,11 +6,7 @@
   "description": "Row removal vs table removal, transaction-log behavior, identity reset, trigger firing, and permission differences.",
   "order": 12,
   "difficulty": "beginner",
-  "tags": [
-    "sql server",
-    "basics",
-    "beginner"
-  ],
+  "tags": ["sql server", "basics", "beginner"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sql-b03",
-    "sql-i03",
-    "sql-a02"
-  ],
+  "relatedLessons": ["sql-b03", "sql-i03", "sql-a02"],
   "furtherReading": [
     {
       "title": "DELETE (Transact-SQL) — Microsoft Learn",

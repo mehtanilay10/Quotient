@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "claude",
-    "writing",
-    "drafting",
-    "content"
-  ],
+  "tags": ["claude", "writing", "drafting", "content"],
   "blocks": [
     {
       "type": "heading",
@@ -65,44 +60,20 @@
           {
             "title": "Professional Writing",
             "description": "Emails, reports, proposals, and business documents that need to sound polished and credible.",
-            "pros": [
-              "Natural tone",
-              "Good structure",
-              "Follows formal conventions"
-            ],
-            "tags": [
-              "email",
-              "report",
-              "proposal"
-            ]
+            "pros": ["Natural tone", "Good structure", "Follows formal conventions"],
+            "tags": ["email", "report", "proposal"]
           },
           {
             "title": "Long-Form Content",
             "description": "Essays, articles, blog posts, and documentation that require sustained coherence.",
-            "pros": [
-              "Maintains consistency",
-              "Handles long context well",
-              "Logical flow"
-            ],
-            "tags": [
-              "essay",
-              "article",
-              "blog"
-            ]
+            "pros": ["Maintains consistency", "Handles long context well", "Logical flow"],
+            "tags": ["essay", "article", "blog"]
           },
           {
             "title": "Creative Writing",
             "description": "Stories, scripts, marketing copy, and creative content with personality.",
-            "pros": [
-              "Original angles",
-              "Varied vocabulary",
-              "Adapts to style"
-            ],
-            "tags": [
-              "creative",
-              "story",
-              "copy"
-            ]
+            "pros": ["Original angles", "Varied vocabulary", "Adapts to style"],
+            "tags": ["creative", "story", "copy"]
           }
         ]
       }
@@ -201,13 +172,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "editing-and-polishing",
-    "tone-and-style"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model",
-    "system-prompt"
-  ],
+  "relatedLessons": ["editing-and-polishing", "tone-and-style"],
+  "relatedGlossaryTerms": ["large-language-model", "system-prompt"],
   "courseSlug": "claude"
 }

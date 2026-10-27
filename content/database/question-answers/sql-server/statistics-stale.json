@@ -6,12 +6,7 @@
   "description": "How the optimizer estimates cardinality from histograms, the auto-update thresholds, and the operations that leave stats behind your data.",
   "order": 19,
   "difficulty": "advanced",
-  "tags": [
-    "sql server",
-    "performance",
-    "tuning",
-    "advanced"
-  ],
+  "tags": ["sql server", "performance", "tuning", "advanced"],
   "blocks": [
     {
       "type": "paragraph",
@@ -58,7 +53,7 @@
       "data": {
         "variant": "tip",
         "title": "Estimates vs actuals is the health check",
-      "text": "Every plan regression worth investigating shows up as a gap between estimated and actual rows at some operator. Find the first operator where the gap explodes, look at which statistic backs its predicate, and you've located the stale stats (or the bad estimation assumption) causing the whole plan to go wrong."
+        "text": "Every plan regression worth investigating shows up as a gap between estimated and actual rows at some operator. Find the first operator where the gap explodes, look at which statistic backs its predicate, and you've located the stale stats (or the bad estimation assumption) causing the whole plan to go wrong."
       }
     },
     {
@@ -126,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sql-a01",
-    "sql-i01",
-    "covering-index"
-  ],
+  "relatedLessons": ["sql-a01", "sql-i01", "covering-index"],
   "furtherReading": [
     {
       "title": "Statistics (SQL Server) — Microsoft Learn",

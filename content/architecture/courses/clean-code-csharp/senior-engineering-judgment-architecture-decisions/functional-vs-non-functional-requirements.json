@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "requirements",
-    "architecture",
-    "performance",
-    "csharp"
-  ],
+  "tags": ["requirements", "architecture", "performance", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -153,10 +148,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "clarifying-ambiguous-requirements",
-    "making-technical-trade-offs-explicit"
-  ],
+  "relatedLessons": ["clarifying-ambiguous-requirements", "making-technical-trade-offs-explicit"],
   "furtherReading": [
     {
       "title": "ISO/IEC 25010 Quality Model",

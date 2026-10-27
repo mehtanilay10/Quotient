@@ -7,11 +7,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 23,
-  "tags": [
-    "COALESCE",
-    "NULL",
-    "expression"
-  ],
+  "tags": ["COALESCE", "NULL", "expression"],
   "blocks": [
     {
       "type": "heading",

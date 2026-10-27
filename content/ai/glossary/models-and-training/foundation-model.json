@@ -6,19 +6,12 @@
   "fullDefinition": "Foundation models are large-scale neural networks trained on massive, diverse datasets using self-supervised learning. The term, coined by Stanford researchers, describes models like GPT, Claude, and Llama that serve as a 'foundation' for many specialized applications. Unlike traditional models trained for a single task, foundation models develop general capabilities in language, reasoning, and pattern recognition that can be applied to many tasks through prompting, fine-tuning, or tool use. Their scale and generality make them powerful platforms for AI development, though they also raise concerns about control, bias, and environmental impact.",
   "category": "models-and-training",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "large-language-model",
-    "fine-tuning",
-    "transformer"
-  ],
+  "relatedTerms": ["large-language-model", "fine-tuning", "transformer"],
   "learnMoreSlug": "how-llms-work-simply",
   "examples": [
     "GPT-4 as a foundation for custom chatbots and writing assistants",
     "Stable Diffusion as a foundation for specialized image generation tools",
     "Whisper as a foundation for custom speech recognition applications"
   ],
-  "alsoKnownAs": [
-    "Base Model",
-    "Pre-trained Model"
-  ]
+  "alsoKnownAs": ["Base Model", "Pre-trained Model"]
 }

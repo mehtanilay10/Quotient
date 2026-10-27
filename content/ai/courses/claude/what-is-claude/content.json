@@ -7,17 +7,8 @@
   "difficulty": "beginner",
   "estimatedHours": 2,
   "icon": "🧠",
-  "tags": [
-    "claude",
-    "introduction",
-    "anthropic",
-    "overview"
-  ],
-  "lessonSlugs": [
-    "what-is-claude",
-    "claude-vs-other-chatbots",
-    "claude-philosophy-and-safety"
-  ],
+  "tags": ["claude", "introduction", "anthropic", "overview"],
+  "lessonSlugs": ["what-is-claude", "claude-vs-other-chatbots", "claude-philosophy-and-safety"],
   "whatYouLearn": [
     "What Claude is and who built it",
     "How Claude differs from ChatGPT, Gemini, and other assistants",

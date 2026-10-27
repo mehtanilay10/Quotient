@@ -176,16 +176,16 @@
         "text": "Trade-offs"
       }
     },
-      {
-        "type": "bullet-list",
-        "data": {
-          "items": [
-            "Orchestration: More control, more complexity in coordinator",
-            "Choreography: Less control, complexity distributed across services",
-            "Orchestration: Easier to reason about, single point of failure",
-            "Choreography: Harder to reason about, more resilient"
-          ]
-        }
+    {
+      "type": "bullet-list",
+      "data": {
+        "items": [
+          "Orchestration: More control, more complexity in coordinator",
+          "Choreography: Less control, complexity distributed across services",
+          "Orchestration: Easier to reason about, single point of failure",
+          "Choreography: Harder to reason about, more resilient"
+        ]
+      }
     }
   ],
   "relatedLessons": [],

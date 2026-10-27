@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "backend",
-    "database",
-    "sql-server",
-    "query-performance"
-  ],
+  "tags": ["backend", "database", "sql-server", "query-performance"],
   "blocks": [
     {
       "type": "paragraph",

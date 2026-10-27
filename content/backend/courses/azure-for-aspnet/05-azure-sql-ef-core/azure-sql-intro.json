@@ -28,11 +28,7 @@
       "data": {
         "headers": ["Model", "Description", "Best For"],
         "rows": [
-          [
-            "Single database",
-            "Fully managed database with its own resources",
-            "New cloud apps"
-          ],
+          ["Single database", "Fully managed database with its own resources", "New cloud apps"],
           [
             "Elastic pool",
             "Shared compute across multiple databases",

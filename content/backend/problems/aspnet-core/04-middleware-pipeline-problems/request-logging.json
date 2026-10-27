@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "middleware",
-    "logging",
-    "monitoring"
-  ],
+  "tags": ["aspnet-core", "middleware", "logging", "monitoring"],
   "blocks": [
     {
       "type": "heading",
@@ -91,38 +86,16 @@
           {
             "title": "Serilog Request Logging",
             "description": "Structured logging with Serilog",
-            "pros": [
-              "Structured JSON logs",
-              "Enriched with context",
-              "File and console sinks"
-            ],
-            "cons": [
-              "Requires Serilog package",
-              "More configuration"
-            ],
-            "tags": [
-              "Serilog",
-              "ILogger",
-              "Enrich"
-            ]
+            "pros": ["Structured JSON logs", "Enriched with context", "File and console sinks"],
+            "cons": ["Requires Serilog package", "More configuration"],
+            "tags": ["Serilog", "ILogger", "Enrich"]
           },
           {
             "title": "Built-in Logging Scopes",
             "description": "Correlated log entries",
-            "pros": [
-              "Groups related logs",
-              "Built-in ILogger",
-              "No extra packages"
-            ],
-            "cons": [
-              "Manual scope management",
-              "Less structured than Serilog"
-            ],
-            "tags": [
-              "BeginScope",
-              "ILogger",
-              "correlation"
-            ]
+            "pros": ["Groups related logs", "Built-in ILogger", "No extra packages"],
+            "cons": ["Manual scope management", "Less structured than Serilog"],
+            "tags": ["BeginScope", "ILogger", "correlation"]
           }
         ]
       }

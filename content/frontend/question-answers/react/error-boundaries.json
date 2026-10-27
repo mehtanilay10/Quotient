@@ -6,11 +6,7 @@
   "description": "Containing render-time crashes, class-based getDerivedStateFromError, Suspense fallbacks, and what error boundaries cannot catch.",
   "order": 21,
   "difficulty": "intermediate",
-  "tags": [
-    "react",
-    "error-handling",
-    "intermediate"
-  ],
+  "tags": ["react", "error-handling", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

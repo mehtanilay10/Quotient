@@ -126,7 +126,10 @@
   ],
   "relatedLessons": ["parallel-data-loading", "loading-states", "error-handling-in-data-fetching"],
   "furtherReading": [
-    { "title": "Next.js Streaming Documentation", "url": "https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming" },
+    {
+      "title": "Next.js Streaming Documentation",
+      "url": "https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming"
+    },
     { "title": "React Suspense Documentation", "url": "https://react.dev/reference/react/Suspense" }
   ]
 }

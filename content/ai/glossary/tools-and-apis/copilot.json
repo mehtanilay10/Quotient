@@ -6,11 +6,7 @@
   "fullDefinition": "A 'copilot' refers to an AI assistant that is integrated into a specific application or workflow to augment (not replace) human work. Microsoft Copilot (embedded in Office 365) and GitHub Copilot (embedded in code editors) popularized this term. Copilots typically have access to the context of the tool they are in — your emails, documents, code — and use that for more relevant assistance.",
   "category": "tools-and-apis",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "agent",
-    "large-language-model",
-    "mcp"
-  ],
+  "relatedTerms": ["agent", "large-language-model", "mcp"],
   "examples": [
     "Microsoft 365 Copilot — AI in Word, Excel, Outlook, Teams",
     "GitHub Copilot — AI code suggestions in your editor"

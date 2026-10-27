@@ -8,13 +8,7 @@
   "order": 33,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "concurrency",
-    "race-condition",
-    "threading",
-    "debugging",
-    "reliability"
-  ],
+  "tags": ["concurrency", "race-condition", "threading", "debugging", "reliability"],
   "blocks": [
     {
       "type": "paragraph",

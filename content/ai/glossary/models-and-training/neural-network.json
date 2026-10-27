@@ -6,13 +6,6 @@
   "fullDefinition": "A neural network is a machine learning model consisting of layers of interconnected mathematical functions ('neurons') that transform input data into output predictions. Modern deep learning uses many layers (hence 'deep'), enabling the representation of complex patterns. LLMs are built on transformer neural networks trained on text. Neural networks are the foundational technology behind virtually all modern AI capabilities.",
   "category": "models-and-training",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "machine-learning",
-    "transformer",
-    "large-language-model"
-  ],
-  "alsoKnownAs": [
-    "Deep Neural Network",
-    "DNN"
-  ]
+  "relatedTerms": ["machine-learning", "transformer", "large-language-model"],
+  "alsoKnownAs": ["Deep Neural Network", "DNN"]
 }

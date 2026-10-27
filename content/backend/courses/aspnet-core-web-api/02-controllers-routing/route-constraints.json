@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "web-api",
-    "constraints",
-    "routing",
-    "validation"
-  ],
+  "tags": ["web-api", "constraints", "routing", "validation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -45,42 +40,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Constraint",
-          "Matches",
-          "Example"
-        ],
+        "headers": ["Constraint", "Matches", "Example"],
         "rows": [
-          [
-            "int",
-            "Integer values",
-            "{id:int}"
-          ],
-          [
-            "alpha",
-            "Letters only",
-            "{name:alpha}"
-          ],
-          [
-            "bool",
-            "true or false",
-            "{flag:bool}"
-          ],
-          [
-            "min(1)",
-            "Minimum value",
-            "{id:int:min(1)}"
-          ],
-          [
-            "max(100)",
-            "Maximum value",
-            "{id:int:max(100)}"
-          ],
-          [
-            "regex(...)",
-            "Regular expression",
-            "{id:regex(^\\\\d{3}$)}"
-          ]
+          ["int", "Integer values", "{id:int}"],
+          ["alpha", "Letters only", "{name:alpha}"],
+          ["bool", "true or false", "{flag:bool}"],
+          ["min(1)", "Minimum value", "{id:int:min(1)}"],
+          ["max(100)", "Maximum value", "{id:int:max(100)}"],
+          ["regex(...)", "Regular expression", "{id:regex(^\\\\d{3}$)}"]
         ]
       }
     },
@@ -171,9 +138,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "routing-basics",
-    "attribute-routing"
-  ],
+  "relatedLessons": ["routing-basics", "attribute-routing"],
   "courseSlug": "aspnet-core-web-api"
 }

@@ -7,10 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "oop",
-    "overriding"
-  ],
+  "tags": ["oop", "overriding"],
   "blocks": [
     {
       "type": "paragraph",
@@ -48,9 +45,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "inheritance-basics",
-    "sealed-classes"
-  ],
+  "relatedLessons": ["inheritance-basics", "sealed-classes"],
   "courseSlug": "oops-concepts"
 }

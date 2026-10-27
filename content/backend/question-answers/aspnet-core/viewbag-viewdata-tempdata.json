@@ -6,10 +6,7 @@
   "description": "Understand the different ways to pass data in ASP.NET Core MVC.",
   "order": 4,
   "difficulty": "beginner",
-  "tags": [
-    "ASP.NET Core",
-    "beginner"
-  ],
+  "tags": ["ASP.NET Core", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

@@ -105,13 +105,21 @@
           {
             "title": "Narrative postmortem",
             "description": "A chronological story of the incident with context and analysis.",
-            "pros": ["Easy to read for non-technical stakeholders", "Preserves context", "Good for communication"],
+            "pros": [
+              "Easy to read for non-technical stakeholders",
+              "Preserves context",
+              "Good for communication"
+            ],
             "cons": ["Harder to scan for action items", "Length can obscure key findings"]
           },
           {
             "title": "Template-based postmortem",
             "description": "A structured document with predefined sections for timeline, impact, root cause, and action items.",
-            "pros": ["Consistent across incidents", "Easy to compare across teams", "Ensures action items are captured"],
+            "pros": [
+              "Consistent across incidents",
+              "Easy to compare across teams",
+              "Ensures action items are captured"
+            ],
             "cons": ["Can feel bureaucratic", "May encourage box-checking over deep analysis"]
           },
           {

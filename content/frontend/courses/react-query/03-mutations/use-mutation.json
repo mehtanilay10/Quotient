@@ -8,17 +8,8 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "mutation",
-    "usemutation",
-    "create",
-    "update",
-    "delete"
-  ],
-  "prerequisites": [
-    "query-hooks"
-  ],
+  "tags": ["react-query", "mutation", "usemutation", "create", "update", "delete"],
+  "prerequisites": ["query-hooks"],
   "blocks": [
     {
       "type": "heading",
@@ -72,11 +63,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "State",
-          "Meaning",
-          "UI Use"
-        ],
+        "headers": ["State", "Meaning", "UI Use"],
         "rows": [
           [
             "isPending",
@@ -88,11 +75,7 @@
             "The mutation completed without errors",
             "Show a success message or toast notification"
           ],
-          [
-            "isError",
-            "The mutation threw an error",
-            "Display an error message and retry option"
-          ],
+          ["isError", "The mutation threw an error", "Display an error message and retry option"],
           [
             "isIdle",
             "The mutation has not been called yet, or has been reset",

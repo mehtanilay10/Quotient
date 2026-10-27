@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "mentoring",
-    "team-growth",
-    "coaching"
-  ],
+  "tags": ["mentoring", "team-growth", "coaching"],
   "blocks": [
     {
       "type": "paragraph",
@@ -106,10 +102,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "effective-code-reviews",
-    "working-with-product-and-qa"
-  ],
+  "relatedLessons": ["effective-code-reviews", "working-with-product-and-qa"],
   "furtherReading": [
     {
       "type": "article",

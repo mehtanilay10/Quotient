@@ -9,14 +9,7 @@
   "difficulty": "beginner",
   "estimatedHours": 2.5,
   "icon": "⚡",
-  "tags": [
-    "triggers",
-    "DML",
-    "DDL",
-    "INSTEAD-OF",
-    "disable-trigger",
-    "enable-trigger"
-  ],
+  "tags": ["triggers", "DML", "DDL", "INSTEAD-OF", "disable-trigger", "enable-trigger"],
   "lessonSlugs": [
     "01-triggers-tutorial",
     "02-create-trigger",

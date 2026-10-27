@@ -7,13 +7,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "typescript",
-    "hoc",
-    "generics",
-    "patterns"
-  ],
+  "tags": ["react", "typescript", "hoc", "generics", "patterns"],
   "blocks": [
     {
       "type": "paragraph",
@@ -127,44 +121,21 @@
               "Prop name collisions possible",
               "Wrapper components in DevTools"
             ],
-            "tags": [
-              "composable",
-              "class-compatible"
-            ]
+            "tags": ["composable", "class-compatible"]
           },
           {
             "title": "Custom Hook",
             "description": "Function that encapsulates reusable stateful logic",
-            "pros": [
-              "Simpler typing",
-              "No wrapper in tree",
-              "Composable with other hooks"
-            ],
-            "cons": [
-              "Only works in function components",
-              "Cannot modify rendered output"
-            ],
-            "tags": [
-              "modern",
-              "simple"
-            ]
+            "pros": ["Simpler typing", "No wrapper in tree", "Composable with other hooks"],
+            "cons": ["Only works in function components", "Cannot modify rendered output"],
+            "tags": ["modern", "simple"]
           },
           {
             "title": "Render Props",
             "description": "Component accepts a function that returns JSX",
-            "pros": [
-              "Full control over rendering",
-              "Explicit data flow",
-              "Easy to type"
-            ],
-            "cons": [
-              "Callback nesting (wrapper hell)",
-              "Can cause re-render overhead"
-            ],
-            "tags": [
-              "explicit",
-              "flexible"
-            ]
+            "pros": ["Full control over rendering", "Explicit data flow", "Easy to type"],
+            "cons": ["Callback nesting (wrapper hell)", "Can cause re-render overhead"],
+            "tags": ["explicit", "flexible"]
           }
         ]
       }

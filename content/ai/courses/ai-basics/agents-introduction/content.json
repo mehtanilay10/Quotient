@@ -7,20 +7,10 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "🤖",
-  "tags": [
-    "agents",
-    "agentic-ai",
-    "tool-calling",
-    "autonomy"
-  ],
-  "lessonSlugs": [
-    "what-are-agents",
-    "how-agents-work"
-  ],
+  "tags": ["agents", "agentic-ai", "tool-calling", "autonomy"],
+  "lessonSlugs": ["what-are-agents", "how-agents-work"],
   "isOptional": false,
-  "prerequisites": [
-    "automation-basics"
-  ],
+  "prerequisites": ["automation-basics"],
   "whatYouLearn": [
     "What an AI agent is versus a simple chatbot",
     "How agents use tools, memory, and planning",

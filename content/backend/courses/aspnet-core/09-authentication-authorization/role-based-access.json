@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 28,
-  "tags": [
-    "roles",
-    "authorization",
-    "access-control"
-  ],
+  "tags": ["roles", "authorization", "access-control"],
   "blocks": [
     {
       "type": "heading",

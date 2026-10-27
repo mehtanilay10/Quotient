@@ -6,11 +6,7 @@
   "fullDefinition": "Grounding refers to the practice of anchoring AI outputs to verified external information. A grounded response is one where claims are linked to specific source documents, database records, or real-world data — making it auditable and verifiable. RAG is a grounding technique. Search-augmented AI (like Perplexity) is another form of grounding.",
   "category": "architecture",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "rag",
-    "hallucination",
-    "retrieval"
-  ],
+  "relatedTerms": ["rag", "hallucination", "retrieval"],
   "examples": [
     "Perplexity grounds every answer with citations to source web pages",
     "Microsoft Copilot grounds responses in your actual organizational data"

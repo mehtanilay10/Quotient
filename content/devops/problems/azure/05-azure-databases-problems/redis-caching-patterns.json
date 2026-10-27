@@ -78,39 +78,21 @@
               "Pub/Sub support",
               "PaaS - no management"
             ],
-            "cons": [
-              "Memory cost",
-              "Data is ephemeral"
-            ],
+            "cons": ["Memory cost", "Data is ephemeral"],
             "tags": ["Recommended", "Production"]
           },
           {
             "title": "In-Memory Cache (IMemoryCache)",
             "description": "In-process memory cache",
-            "pros": [
-              "Fastest access",
-              "No network latency",
-              "Built into .NET"
-            ],
-            "cons": [
-              "Per-instance only",
-              "Memory pressure",
-              "Lost on restart"
-            ],
+            "pros": ["Fastest access", "No network latency", "Built into .NET"],
+            "cons": ["Per-instance only", "Memory pressure", "Lost on restart"],
             "tags": ["Single instance", "Dev/Test"]
           },
           {
             "title": "Distributed Cache (Custom)",
             "description": "Self-managed distributed cache",
-            "pros": [
-              "Full control",
-              "Custom eviction policies"
-            ],
-            "cons": [
-              "Infrastructure overhead",
-              "Complex scaling",
-              "Operational burden"
-            ],
+            "pros": ["Full control", "Custom eviction policies"],
+            "cons": ["Infrastructure overhead", "Complex scaling", "Operational burden"],
             "tags": ["Not recommended"]
           }
         ]

@@ -8,11 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "testing",
-    "nsubstitute",
-    "mocking"
-  ],
+  "tags": ["testing", "nsubstitute", "mocking"],
   "blocks": [
     {
       "type": "heading",
@@ -121,9 +117,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "moq",
-    "fluent-assertions"
-  ],
+  "relatedLessons": ["moq", "fluent-assertions"],
   "courseSlug": "dotnet-nuget-packages"
 }

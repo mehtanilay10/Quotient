@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 /**
  * Locks body scrolling while `isActive` is true, restoring the previous value
@@ -20,7 +20,7 @@ export function useBodyScrollLock(isActive: boolean) {
     // Compensate for the removed scrollbar so the layout doesn't shift.
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
 
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
     if (scrollbarWidth > 0) {
       document.body.style.paddingRight = `${scrollbarWidth}px`;
     }

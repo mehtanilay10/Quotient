@@ -8,56 +8,264 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": ["graphql", "hotchocolate", "dotnet", "schemas", "queries", "mutations", "subscriptions", "dataloader", "cheatsheet", "quick-reference"],
+  "tags": [
+    "graphql",
+    "hotchocolate",
+    "dotnet",
+    "schemas",
+    "queries",
+    "mutations",
+    "subscriptions",
+    "dataloader",
+    "cheatsheet",
+    "quick-reference"
+  ],
   "blocks": [
     { "type": "heading", "data": { "level": 2, "text": "GraphQL Quick Reference" } },
-    { "type": "paragraph", "data": { "text": "GraphQL is a query language for APIs. It lets clients request exactly the data they need in a single request." } },
+    {
+      "type": "paragraph",
+      "data": {
+        "text": "GraphQL is a query language for APIs. It lets clients request exactly the data they need in a single request."
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Schema Definition (SDL)" } },
-    { "type": "example", "data": { "title": "SDL Schema", "content": "Schema Definition Language example.", "language": "graphql", "code": "type Query {\n  \"Get a user by ID\"\n  user(id: ID!): User\n\n  \"Get all users\"\n  users(limit: Int = 10): [User!]!\n}\n\ntype Mutation {\n  createUser(input: CreateUserInput!): User!\n  updateUser(id: ID!, input: UpdateUserInput!): User\n  deleteUser(id: ID!): Boolean!\n}\n\ntype User {\n  id: ID!\n  name: String!\n  email: String!\n  posts: [Post!]!\n}\n\ntype Post {\n  id: ID!\n  title: String!\n  content: String\n  author: User!\n}\n\ninput CreateUserInput {\n  name: String!\n  email: String!\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "SDL Schema",
+        "content": "Schema Definition Language example.",
+        "language": "graphql",
+        "code": "type Query {\n  \"Get a user by ID\"\n  user(id: ID!): User\n\n  \"Get all users\"\n  users(limit: Int = 10): [User!]!\n}\n\ntype Mutation {\n  createUser(input: CreateUserInput!): User!\n  updateUser(id: ID!, input: UpdateUserInput!): User\n  deleteUser(id: ID!): Boolean!\n}\n\ntype User {\n  id: ID!\n  name: String!\n  email: String!\n  posts: [Post!]!\n}\n\ntype Post {\n  id: ID!\n  title: String!\n  content: String\n  author: User!\n}\n\ninput CreateUserInput {\n  name: String!\n  email: String!\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Queries" } },
-    { "type": "example", "data": { "title": "Basic Query", "content": "Simple GraphQL query.", "language": "graphql", "code": "query GetUser {\n  user(id: \"1\") {\n    id\n    name\n    email\n  }\n}\n\n# Response\n{\n  \"data\": {\n    \"user\": {\n      \"id\": \"1\",\n      \"name\": \"John\",\n      \"email\": \"john@example.com\"\n    }\n  }\n}" } },
-    { "type": "example", "data": { "title": "Query with Variables", "content": "Using variables in queries.", "language": "graphql", "code": "query GetUser($id: ID!) {\n  user(id: $id) {\n    id\n    name\n    email\n    posts {\n      title\n    }\n  }\n}\n\n# Variables\n{\n  \"id\": \"1\"\n}" } },
-    { "type": "example", "data": { "title": "Fragments", "content": "Reusable query fragments.", "language": "graphql", "code": "fragment UserFields on User {\n  id\n  name\n  email\n}\n\nquery GetUsers {\n  users {\n    ...UserFields\n  }\n}\n\nquery GetUser($id: ID!) {\n  user(id: $id) {\n    ...UserFields\n  }\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Basic Query",
+        "content": "Simple GraphQL query.",
+        "language": "graphql",
+        "code": "query GetUser {\n  user(id: \"1\") {\n    id\n    name\n    email\n  }\n}\n\n# Response\n{\n  \"data\": {\n    \"user\": {\n      \"id\": \"1\",\n      \"name\": \"John\",\n      \"email\": \"john@example.com\"\n    }\n  }\n}"
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "title": "Query with Variables",
+        "content": "Using variables in queries.",
+        "language": "graphql",
+        "code": "query GetUser($id: ID!) {\n  user(id: $id) {\n    id\n    name\n    email\n    posts {\n      title\n    }\n  }\n}\n\n# Variables\n{\n  \"id\": \"1\"\n}"
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "title": "Fragments",
+        "content": "Reusable query fragments.",
+        "language": "graphql",
+        "code": "fragment UserFields on User {\n  id\n  name\n  email\n}\n\nquery GetUsers {\n  users {\n    ...UserFields\n  }\n}\n\nquery GetUser($id: ID!) {\n  user(id: $id) {\n    ...UserFields\n  }\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Mutations" } },
-    { "type": "example", "data": { "title": "Basic Mutation", "content": "Creating data with mutations.", "language": "graphql", "code": "mutation CreateUser {\n  createUser(input: {\n    name: \"Jane\"\n    email: \"jane@example.com\"\n  }) {\n    id\n    name\n    email\n  }\n}\n\n# With variables\nmutation CreateUser($input: CreateUserInput!) {\n  createUser(input: $input) {\n    id\n    name\n  }\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Basic Mutation",
+        "content": "Creating data with mutations.",
+        "language": "graphql",
+        "code": "mutation CreateUser {\n  createUser(input: {\n    name: \"Jane\"\n    email: \"jane@example.com\"\n  }) {\n    id\n    name\n    email\n  }\n}\n\n# With variables\nmutation CreateUser($input: CreateUserInput!) {\n  createUser(input: $input) {\n    id\n    name\n  }\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Input Types" } },
-    { "type": "example", "data": { "title": "Input Types", "content": "Structured input for mutations.", "language": "graphql", "code": "input CreateUserInput {\n  name: String!\n  email: String!\n  age: Int\n}\n\ninput UpdateUserInput {\n  name: String\n  email: String\n}\n\nmutation UpdateUser($id: ID!, $input: UpdateUserInput!) {\n  updateUser(id: $id, input: $input) {\n    id\n    name\n  }\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Input Types",
+        "content": "Structured input for mutations.",
+        "language": "graphql",
+        "code": "input CreateUserInput {\n  name: String!\n  email: String!\n  age: Int\n}\n\ninput UpdateUserInput {\n  name: String\n  email: String\n}\n\nmutation UpdateUser($id: ID!, $input: UpdateUserInput!) {\n  updateUser(id: $id, input: $input) {\n    id\n    name\n  }\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Interfaces & Unions" } },
-    { "type": "example", "data": { "title": "Interface & Union", "content": "Abstract types in GraphQL.", "language": "graphql", "code": "# Interface\ninterface Node {\n  id: ID!\n}\n\ntype User implements Node {\n  id: ID!\n  name: String!\n}\n\ntype Post implements Node {\n  id: ID!\n  title: String!\n}\n\n# Query using interface\nquery {\n  node(id: \"1\") {\n    id\n    ... on User { name }\n    ... on Post { title }\n  }\n}\n\n# Union\nunion SearchResult = User | Post\n\ntype Query {\n  search(query: String!): [SearchResult!]!\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Interface & Union",
+        "content": "Abstract types in GraphQL.",
+        "language": "graphql",
+        "code": "# Interface\ninterface Node {\n  id: ID!\n}\n\ntype User implements Node {\n  id: ID!\n  name: String!\n}\n\ntype Post implements Node {\n  id: ID!\n  title: String!\n}\n\n# Query using interface\nquery {\n  node(id: \"1\") {\n    id\n    ... on User { name }\n    ... on Post { title }\n  }\n}\n\n# Union\nunion SearchResult = User | Post\n\ntype Query {\n  search(query: String!): [SearchResult!]!\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Enums & Scalars" } },
-    { "type": "example", "data": { "title": "Enums", "content": "Enumeration types.", "language": "graphql", "code": "enum Role {\n  ADMIN\n  USER\n  GUEST\n}\n\ntype User {\n  id: ID!\n  name: String!\n  role: Role!\n}\n\nquery {\n  users {\n    name\n    role\n  }\n}\n\n# Response: role is ADMIN, USER, or GUEST" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Enums",
+        "content": "Enumeration types.",
+        "language": "graphql",
+        "code": "enum Role {\n  ADMIN\n  USER\n  GUEST\n}\n\ntype User {\n  id: ID!\n  name: String!\n  role: Role!\n}\n\nquery {\n  users {\n    name\n    role\n  }\n}\n\n# Response: role is ADMIN, USER, or GUEST"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Variables" } },
-    { "type": "example", "data": { "title": "Query Variables", "content": "Variable usage patterns.", "language": "graphql", "code": "query GetUsers($limit: Int = 10, $search: String) {\n  users(limit: $limit, search: $search) {\n    id\n    name\n  }\n}\n\n# Variables with defaults\n{\n  \"limit\": 20\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Query Variables",
+        "content": "Variable usage patterns.",
+        "language": "graphql",
+        "code": "query GetUsers($limit: Int = 10, $search: String) {\n  users(limit: $limit, search: $search) {\n    id\n    name\n  }\n}\n\n# Variables with defaults\n{\n  \"limit\": 20\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Directives" } },
-    { "type": "example", "data": { "title": "Directives", "content": "Built-in directives.", "language": "graphql", "code": "query GetUser($includeEmail: Boolean!) {\n  user(id: \"1\") {\n    name\n    email @include(if: $includeEmail)\n    posts @skip(if: false) {\n      title\n    }\n  }\n}\n\n# Deprecated field\ntype User {\n  name: String!\n  ssn: String! @deprecated(reason: \"Use id instead\")\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Directives",
+        "content": "Built-in directives.",
+        "language": "graphql",
+        "code": "query GetUser($includeEmail: Boolean!) {\n  user(id: \"1\") {\n    name\n    email @include(if: $includeEmail)\n    posts @skip(if: false) {\n      title\n    }\n  }\n}\n\n# Deprecated field\ntype User {\n  name: String!\n  ssn: String! @deprecated(reason: \"Use id instead\")\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Subscriptions" } },
-    { "type": "example", "data": { "title": "Subscription", "content": "Real-time data with subscriptions.", "language": "graphql", "code": "type Subscription {\n  postCreated: Post!\n  userUpdated(id: ID!): User!\n}\n\nsubscription OnPostCreated {\n  postCreated {\n    id\n    title\n    author {\n      name\n    }\n  }\n}\n\nsubscription OnUserUpdated($id: ID!) {\n  userUpdated(id: $id) {\n    id\n    name\n  }\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Subscription",
+        "content": "Real-time data with subscriptions.",
+        "language": "graphql",
+        "code": "type Subscription {\n  postCreated: Post!\n  userUpdated(id: ID!): User!\n}\n\nsubscription OnPostCreated {\n  postCreated {\n    id\n    title\n    author {\n      name\n    }\n  }\n}\n\nsubscription OnUserUpdated($id: ID!) {\n  userUpdated(id: $id) {\n    id\n    name\n  }\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Hot Chocolate Setup" } },
-    { "type": "example", "data": { "title": "Hot Chocolate Setup", "content": "Setting up Hot Chocolate server.", "language": "csharp", "code": "// Program.cs\nvar builder = WebApplication.CreateBuilder(args);\n\nbuilder.Services\n  .AddGraphQLServer()\n  .AddQueryType<Query>()\n  .AddMutationType<Mutation>()\n  .AddSubscriptionType<Subscription>()\n  .AddInMemorySubscriptions();\n\nvar app = builder.Build();\napp.MapGraphQL();\napp.Run();" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Hot Chocolate Setup",
+        "content": "Setting up Hot Chocolate server.",
+        "language": "csharp",
+        "code": "// Program.cs\nvar builder = WebApplication.CreateBuilder(args);\n\nbuilder.Services\n  .AddGraphQLServer()\n  .AddQueryType<Query>()\n  .AddMutationType<Mutation>()\n  .AddSubscriptionType<Subscription>()\n  .AddInMemorySubscriptions();\n\nvar app = builder.Build();\napp.MapGraphQL();\napp.Run();"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Hot Chocolate Code-First" } },
-    { "type": "example", "data": { "title": "Code-First Attributes", "content": "Using attributes to configure schema.", "language": "csharp", "code": "public class Query\n{\n  [UsePaging]\n  [UseFiltering]\n  [UseSorting]\n  public IQueryable<User> GetUsers([Service] AppDbContext db) {\n    return db.Users;\n  }\n\n  public User GetUser(int id, [Service] AppDbContext db) {\n    return db.Users.Find(id);\n  }\n}\n\npublic class Mutation\n{\n  public async Task<User> CreateUser(\n    CreateUserInput input,\n    [Service] AppDbContext db\n  ) {\n    var user = new User { Name = input.Name };\n    db.Users.Add(user);\n    await db.SaveChangesAsync();\n    return user;\n  }\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Code-First Attributes",
+        "content": "Using attributes to configure schema.",
+        "language": "csharp",
+        "code": "public class Query\n{\n  [UsePaging]\n  [UseFiltering]\n  [UseSorting]\n  public IQueryable<User> GetUsers([Service] AppDbContext db) {\n    return db.Users;\n  }\n\n  public User GetUser(int id, [Service] AppDbContext db) {\n    return db.Users.Find(id);\n  }\n}\n\npublic class Mutation\n{\n  public async Task<User> CreateUser(\n    CreateUserInput input,\n    [Service] AppDbContext db\n  ) {\n    var user = new User { Name = input.Name };\n    db.Users.Add(user);\n    await db.SaveChangesAsync();\n    return user;\n  }\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Filtering & Pagination" } },
-    { "type": "example", "data": { "title": "Filtering & Pagination", "content": "UseFiltering and UsePaging.", "language": "csharp", "code": "public class Query\n{\n  [UsePaging]\n  [UseFiltering]\n  [UseSorting]\n  public IQueryable<Product> GetProducts(\n    [Service] AppDbContext db\n  ) {\n    return db.Products;\n  }\n}\n\n# Query with filtering\nquery {\n  products(\n    where: { name: { contains: \"phone\" } }\n    first: 10\n  ) {\n    edges { node { id name } }\n    pageInfo { hasNextPage endCursor }\n  }\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Filtering & Pagination",
+        "content": "UseFiltering and UsePaging.",
+        "language": "csharp",
+        "code": "public class Query\n{\n  [UsePaging]\n  [UseFiltering]\n  [UseSorting]\n  public IQueryable<Product> GetProducts(\n    [Service] AppDbContext db\n  ) {\n    return db.Products;\n  }\n}\n\n# Query with filtering\nquery {\n  products(\n    where: { name: { contains: \"phone\" } }\n    first: 10\n  ) {\n    edges { node { id name } }\n    pageInfo { hasNextPage endCursor }\n  }\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "DataLoader" } },
-    { "type": "example", "data": { "title": "DataLoader Pattern", "content": "Batching and caching with DataLoader.", "language": "csharp", "code": "public class UserByIdDataLoader : BatchDataLoader<int, User>\n{\n  private readonly AppDbContext _db;\n\n  public UserByIdDataLoader(\n    IBatchScheduler scheduler,\n    AppDbContext db\n  ) : base(scheduler) {\n    _db = db;\n  }\n\n  protected override async Task<IReadOnlyDictionary<int, User>>\n    LoadBatchAsync(\n      IReadOnlyList<int> keys,\n      CancellationToken ct\n    ) {\n    return await _db.Users\n      .Where(u => keys.Contains(u.Id))\n      .ToDictionaryAsync(u => u.Id, ct);\n  }\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "DataLoader Pattern",
+        "content": "Batching and caching with DataLoader.",
+        "language": "csharp",
+        "code": "public class UserByIdDataLoader : BatchDataLoader<int, User>\n{\n  private readonly AppDbContext _db;\n\n  public UserByIdDataLoader(\n    IBatchScheduler scheduler,\n    AppDbContext db\n  ) : base(scheduler) {\n    _db = db;\n  }\n\n  protected override async Task<IReadOnlyDictionary<int, User>>\n    LoadBatchAsync(\n      IReadOnlyList<int> keys,\n      CancellationToken ct\n    ) {\n    return await _db.Users\n      .Where(u => keys.Contains(u.Id))\n      .ToDictionaryAsync(u => u.Id, ct);\n  }\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Error Handling" } },
-    { "type": "example", "data": { "title": "GraphQL Errors", "content": "Error handling patterns.", "language": "graphql", "code": "type Query {\n  user(id: ID!): User\n}\n\n# Successful response with partial data\n{\n  \"data\": {\n    \"user\": {\n      \"id\": \"1\",\n      \"name\": \"John\"\n    }\n  },\n  \"errors\": [\n    {\n      \"message\": \"Could not load email\",\n      \"path\": [\"user\", \"email\"],\n      \"extensions\": { \"code\": \"DATABASE_ERROR\" }\n    }\n  ]\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "GraphQL Errors",
+        "content": "Error handling patterns.",
+        "language": "graphql",
+        "code": "type Query {\n  user(id: ID!): User\n}\n\n# Successful response with partial data\n{\n  \"data\": {\n    \"user\": {\n      \"id\": \"1\",\n      \"name\": \"John\"\n    }\n  },\n  \"errors\": [\n    {\n      \"message\": \"Could not load email\",\n      \"path\": [\"user\", \"email\"],\n      \"extensions\": { \"code\": \"DATABASE_ERROR\" }\n    }\n  ]\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Authentication" } },
-    { "type": "example", "data": { "title": "Authorization", "content": "Auth in Hot Chocolate.", "language": "csharp", "code": "public class Query\n{\n  [Authorize]\n  public User GetCurrentUser([Service] IHttpContextAccessor ctx) {\n    return GetUserFromToken(ctx.HttpContext);\n  }\n\n  [Authorize(Roles = new[] { \"Admin\" })]\n  public IQueryable<User> GetAllUsers([Service] AppDbContext db) {\n    return db.Users;\n  }\n}\n\n// Policy-based\nservices.AddAuthorization(options => {\n  options.AddPolicy(\"AdminOnly\", policy =>\n    policy.RequireRole(\"Admin\"));\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Authorization",
+        "content": "Auth in Hot Chocolate.",
+        "language": "csharp",
+        "code": "public class Query\n{\n  [Authorize]\n  public User GetCurrentUser([Service] IHttpContextAccessor ctx) {\n    return GetUserFromToken(ctx.HttpContext);\n  }\n\n  [Authorize(Roles = new[] { \"Admin\" })]\n  public IQueryable<User> GetAllUsers([Service] AppDbContext db) {\n    return db.Users;\n  }\n}\n\n// Policy-based\nservices.AddAuthorization(options => {\n  options.AddPolicy(\"AdminOnly\", policy =>\n    policy.RequireRole(\"Admin\"));\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Federation" } },
-    { "type": "example", "data": { "title": "Federation", "content": "Apollo Federation concepts.", "language": "graphql", "code": "# Users service\nextend type User @key(fields: \"id\") {\n  id: ID! @external\n  email: String!\n}\n\n# Gateway schema\nschema {\n  query: Query\n}\n\ntype Query {\n  user(id: ID!): User\n}\n\ntype User @key(fields: \"id\") {\n  id: ID!\n  name: String!\n  email: String\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Federation",
+        "content": "Apollo Federation concepts.",
+        "language": "graphql",
+        "code": "# Users service\nextend type User @key(fields: \"id\") {\n  id: ID! @external\n  email: String!\n}\n\n# Gateway schema\nschema {\n  query: Query\n}\n\ntype Query {\n  user(id: ID!): User\n}\n\ntype User @key(fields: \"id\") {\n  id: ID!\n  name: String!\n  email: String\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "File Uploads" } },
-    { "type": "example", "data": { "title": "File Upload", "content": "Uploading files with GraphQL.", "language": "graphql", "code": "scalar Upload\n\ntype Mutation {\n  uploadFile(file: Upload!): File!\n}\n\n# Query\nmutation Upload($file: Upload!) {\n  uploadFile(file: $file) {\n    id\n    filename\n    url\n  }\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "File Upload",
+        "content": "Uploading files with GraphQL.",
+        "language": "graphql",
+        "code": "scalar Upload\n\ntype Mutation {\n  uploadFile(file: Upload!): File!\n}\n\n# Query\nmutation Upload($file: Upload!) {\n  uploadFile(file: $file) {\n    id\n    filename\n    url\n  }\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Advanced Query Patterns" } },
-    { "type": "example", "data": { "title": "Aliases & Multiple Queries", "content": "Aliasing and multiple root fields.", "language": "graphql", "code": "# Aliases (same field with different names)\nquery GetHeroAndVillain {\n  luke: hero(episode: NEWHOPE) { name }\n  vader: villain(episode: NEWHOPE) { name }\n}\n\n# Multiple root fields in one request\nquery GetData {\n  user(id: \"1\") { name email }\n  posts(limit: 5) { title }\n  stats { totalUsers totalPosts }\n}\n\n# Deeply nested query\nquery {\n  user(id: \"1\") {\n    name\n    posts {\n      title\n      comments {\n        text\n        author { name }\n      }\n    }\n  }\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Aliases & Multiple Queries",
+        "content": "Aliasing and multiple root fields.",
+        "language": "graphql",
+        "code": "# Aliases (same field with different names)\nquery GetHeroAndVillain {\n  luke: hero(episode: NEWHOPE) { name }\n  vader: villain(episode: NEWHOPE) { name }\n}\n\n# Multiple root fields in one request\nquery GetData {\n  user(id: \"1\") { name email }\n  posts(limit: 5) { title }\n  stats { totalUsers totalPosts }\n}\n\n# Deeply nested query\nquery {\n  user(id: \"1\") {\n    name\n    posts {\n      title\n      comments {\n        text\n        author { name }\n      }\n    }\n  }\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Hot Chocolate Relay Pagination" } },
-    { "type": "example", "data": { "title": "Relay Connections", "content": "Cursor-based pagination.", "language": "csharp", "code": "public class Query\n{\n  [UsePaging]\n  public IQueryable<Product> GetProducts(\n    [Service] AppDbContext db\n  ) {\n    return db.Products.OrderBy(p => p.Id);\n  }\n}\n\n# Query with Relay pagination\nquery {\n  products(first: 10, after: \"cursor_here\") {\n    edges {\n      node { id name price }\n      cursor\n    }\n    pageInfo {\n      hasNextPage\n      hasPreviousPage\n      startCursor\n      endCursor\n    }\n    totalCount\n  }\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Relay Connections",
+        "content": "Cursor-based pagination.",
+        "language": "csharp",
+        "code": "public class Query\n{\n  [UsePaging]\n  public IQueryable<Product> GetProducts(\n    [Service] AppDbContext db\n  ) {\n    return db.Products.OrderBy(p => p.Id);\n  }\n}\n\n# Query with Relay pagination\nquery {\n  products(first: 10, after: \"cursor_here\") {\n    edges {\n      node { id name price }\n      cursor\n    }\n    pageInfo {\n      hasNextPage\n      hasPreviousPage\n      startCursor\n      endCursor\n    }\n    totalCount\n  }\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Hot Chocolate Schema-First" } },
-    { "type": "example", "data": { "title": "SDL First", "content": "Schema-first approach.", "language": "graphql", "code": "# schema.graphql\ntype Query {\n  \"Get a product by ID\"\n  product(id: ID!): Product\n\n  \"List all products with optional filtering\"\n  products(filter: ProductFilterInput): [Product!]!\n}\n\ntype Product {\n  id: ID!\n  name: String!\n  price: Float!\n  category: Category!\n}\n\ntype Category {\n  id: ID!\n  name: String!\n}\n\ninput ProductFilterInput {\n  name: String\n  minPrice: Float\n  maxPrice: Float\n  categoryId: ID\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "SDL First",
+        "content": "Schema-first approach.",
+        "language": "graphql",
+        "code": "# schema.graphql\ntype Query {\n  \"Get a product by ID\"\n  product(id: ID!): Product\n\n  \"List all products with optional filtering\"\n  products(filter: ProductFilterInput): [Product!]!\n}\n\ntype Product {\n  id: ID!\n  name: String!\n  price: Float!\n  category: Category!\n}\n\ntype Category {\n  id: ID!\n  name: String!\n}\n\ninput ProductFilterInput {\n  name: String\n  minPrice: Float\n  maxPrice: Float\n  categoryId: ID\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Batching & Performance" } },
-    { "type": "example", "data": { "title": "DataLoader Batch", "content": "Solving N+1 problem.", "language": "csharp", "code": "public class Query\n{\n  public async Task<IEnumerable<User>> GetUsers(\n    [Service] AppDbContext db,\n    UserByIdDataLoader loader\n  ) {\n    var userIds = await db.Users.Select(u => u.Id).ToListAsync();\n    return await loader.LoadAsync(userIds);\n  }\n}\n\n// In resolver (per-user level)\npublic class UserType : ObjectType<User>\n{\n  protected override void Configure(IObjectTypeDescriptor<User> d) {\n    d.Field(u => u.Posts)\n      .Resolver(async ctx => {\n        var userId = ctx.Parent<User>().Id;\n        // DataLoader batches these calls\n        return await ctx\n          .DataLoader<PostByUserIdDataLoader>()\n          .LoadAsync(userId);\n      });\n  }\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "DataLoader Batch",
+        "content": "Solving N+1 problem.",
+        "language": "csharp",
+        "code": "public class Query\n{\n  public async Task<IEnumerable<User>> GetUsers(\n    [Service] AppDbContext db,\n    UserByIdDataLoader loader\n  ) {\n    var userIds = await db.Users.Select(u => u.Id).ToListAsync();\n    return await loader.LoadAsync(userIds);\n  }\n}\n\n// In resolver (per-user level)\npublic class UserType : ObjectType<User>\n{\n  protected override void Configure(IObjectTypeDescriptor<User> d) {\n    d.Field(u => u.Posts)\n      .Resolver(async ctx => {\n        var userId = ctx.Parent<User>().Id;\n        // DataLoader batches these calls\n        return await ctx\n          .DataLoader<PostByUserIdDataLoader>()\n          .LoadAsync(userId);\n      });\n  }\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Custom Scalars" } },
-    { "type": "example", "data": { "title": "Custom Scalar Types", "content": "Creating custom scalar types.", "language": "csharp", "code": "public class DateType : ScalarType<DateOnly>\n{\n  public DateType() : base(\"Date\") { }\n\n  public override IQueryableParser? Parser => null;\n\n  public override bool IsInstance(object? value) {\n    return value is DateOnly;\n  }\n\n  public override object? ParseResult(object? resultValue) {\n    return resultValue is DateOnly d ? d.ToShortDateString() : null;\n  }\n}\n\n// Register in Program.cs\nservices\n  .AddGraphQLServer()\n  .AddScalarType<DateType>();" } }
+    {
+      "type": "example",
+      "data": {
+        "title": "Custom Scalar Types",
+        "content": "Creating custom scalar types.",
+        "language": "csharp",
+        "code": "public class DateType : ScalarType<DateOnly>\n{\n  public DateType() : base(\"Date\") { }\n\n  public override IQueryableParser? Parser => null;\n\n  public override bool IsInstance(object? value) {\n    return value is DateOnly;\n  }\n\n  public override object? ParseResult(object? resultValue) {\n    return resultValue is DateOnly d ? d.ToShortDateString() : null;\n  }\n}\n\n// Register in Program.cs\nservices\n  .AddGraphQLServer()\n  .AddScalarType<DateType>();"
+      }
+    }
   ],
   "relatedLessons": [],
   "furtherReading": []

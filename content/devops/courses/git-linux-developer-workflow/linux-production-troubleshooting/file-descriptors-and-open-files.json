@@ -14,27 +14,31 @@
       "type": "paragraph",
       "data": {
         "text": "A file descriptor is a number that the Linux kernel uses to keep track of an open file or resource. Every time a process opens a file, creates a network connection, or starts a pipe, the kernel gives it a file descriptor. These numbers are not just for regular files: they also represent sockets, pipes, and devices."
-      }      },
-    
+      }
+    },
+
     {
       "type": "paragraph",
       "data": {
         "text": "If your application suddenly cannot start new connections or says too many files are open, the problem is almost always file descriptors. Understanding how to inspect and manage them is a core Linux troubleshooting skill."
-      }      },
-    
+      }
+    },
+
     {
       "type": "heading",
       "data": {
         "level": 2,
         "text": "What is a file descriptor?"
-      }      },
-    
+      }
+    },
+
     {
       "type": "paragraph",
       "data": {
         "text": "When a process starts, it automatically gets three file descriptors: stdin (0), stdout (1), and stderr (2). Every additional open file, socket, or pipe gets the next available number. The maximum number of file descriptors a process can have is controlled by the soft limit and hard limit, which you can see with ulimit."
-      }      },
-    
+      }
+    },
+
     {
       "type": "example",
       "data": {
@@ -47,14 +51,16 @@
       "data": {
         "level": 2,
         "text": "Inspecting open files with lsof"
-      }      },
-    
+      }
+    },
+
     {
       "type": "paragraph",
       "data": {
         "text": "The lsof command lists open files for a process or the entire system. It shows which files, sockets, and pipes are open, and which process is using them. This is invaluable when a process will not shut down cleanly or when you need to know why a file cannot be deleted."
-      }      },
-    
+      }
+    },
+
     {
       "type": "example",
       "data": {
@@ -68,15 +74,17 @@
         "variant": "tip",
         "title": "The +L1 trick",
         "text": "A file that is deleted but still held open by a process will not free disk space until the process closes it. Use lsof +L1 to find these files. Restarting the process usually releases them."
-      }      },
-    
+      }
+    },
+
     {
       "type": "heading",
       "data": {
         "level": 2,
         "text": "Common file descriptor problems"
-      }      },
-    
+      }
+    },
+
     {
       "type": "bullet-list",
       "data": {
@@ -93,14 +101,16 @@
       "data": {
         "level": 2,
         "text": "Reading /proc/[pid]/fd"
-      }      },
-    
+      }
+    },
+
     {
       "type": "paragraph",
       "data": {
         "text": "The /proc filesystem provides a view into every process. The /proc/[pid]/fd directory contains symbolic links to all open file descriptors. Reading this directory gives you a direct snapshot of what a process has open, without needing lsof."
-      }      },
-    
+      }
+    },
+
     {
       "type": "example",
       "data": {
@@ -136,4 +146,3 @@
     }
   ]
 }
-

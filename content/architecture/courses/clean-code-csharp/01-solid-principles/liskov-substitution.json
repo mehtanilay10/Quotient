@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "solid",
-    "lsp",
-    "csharp"
-  ],
+  "tags": ["solid", "lsp", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -68,10 +64,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "open-closed",
-    "interface-segregation"
-  ],
+  "relatedLessons": ["open-closed", "interface-segregation"],
   "furtherReading": [],
   "courseSlug": "clean-code-csharp"
 }

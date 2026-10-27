@@ -42,26 +42,10 @@
         "rows": [
           ["Host a web app", "App Service", "Azure.ResourceManager.AppService"],
           ["Store uploaded files", "Blob Storage", "Azure.Storage.Blobs"],
-          [
-            "Run background jobs",
-            "Queue Storage or WebJobs",
-            "Azure.Storage.Queues"
-          ],
-          [
-            "Relational database",
-            "Azure SQL Database",
-            "Microsoft.Data.SqlClient"
-          ],
-          [
-            "Cache frequently used data",
-            "Azure Cache for Redis",
-            "StackExchange.Redis"
-          ],
-          [
-            "Store secrets",
-            "Azure Key Vault",
-            "Azure.Security.KeyVault.Secrets"
-          ]
+          ["Run background jobs", "Queue Storage or WebJobs", "Azure.Storage.Queues"],
+          ["Relational database", "Azure SQL Database", "Microsoft.Data.SqlClient"],
+          ["Cache frequently used data", "Azure Cache for Redis", "StackExchange.Redis"],
+          ["Store secrets", "Azure Key Vault", "Azure.Security.KeyVault.Secrets"]
         ]
       }
     },

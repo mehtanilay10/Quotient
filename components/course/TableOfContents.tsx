@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { cn } from '@/lib/utils';
-import type { TocEntry } from '@/types';
+import { useEffect, useState } from "react";
+import { cn } from "@/lib/utils";
+import type { TocEntry } from "@/types";
 
 interface TableOfContentsProps {
   entries: TocEntry[];
@@ -10,7 +10,7 @@ interface TableOfContentsProps {
 }
 
 export function TableOfContents({ entries, className }: TableOfContentsProps) {
-  const [activeAnchor, setActiveAnchor] = useState<string>('');
+  const [activeAnchor, setActiveAnchor] = useState<string>("");
 
   useEffect(() => {
     if (entries.length === 0) return;
@@ -23,7 +23,7 @@ export function TableOfContents({ entries, className }: TableOfContentsProps) {
           }
         }
       },
-      { rootMargin: '0px 0px -70% 0px', threshold: 0 }
+      { rootMargin: "0px 0px -70% 0px", threshold: 0 }
     );
 
     for (const e of entries) {
@@ -37,28 +37,22 @@ export function TableOfContents({ entries, className }: TableOfContentsProps) {
   if (entries.length === 0) return null;
 
   return (
-    <nav
-      aria-label="Table of contents"
-      className={cn('text-sm', className)}
-    >
+    <nav aria-label="Table of contents" className={cn("text-sm", className)}>
       <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-fg-subtle">
         On this page
       </p>
       <ul className="space-y-1">
         {entries.map((entry) => (
-          <li
-            key={entry.anchor}
-            style={{ paddingLeft: `${(entry.level - 2) * 12}px` }}
-          >
+          <li key={entry.anchor} style={{ paddingLeft: `${(entry.level - 2) * 12}px` }}>
             <a
               href={`#${entry.anchor}`}
               className={cn(
-                'block rounded py-0.5 text-xs leading-snug transition-colors',
+                "block rounded py-0.5 text-xs leading-snug transition-colors",
                 activeAnchor === entry.anchor
-                  ? 'font-medium text-accent-fg'
-                  : 'text-fg-muted hover:text-fg-default'
+                  ? "font-medium text-accent-fg"
+                  : "text-fg-muted hover:text-fg-default"
               )}
-              aria-current={activeAnchor === entry.anchor ? 'location' : undefined}
+              aria-current={activeAnchor === entry.anchor ? "location" : undefined}
             >
               {entry.text}
             </a>

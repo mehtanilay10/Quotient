@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "observability",
-    "pillars",
-    "fundamentals"
-  ],
+  "tags": ["observability", "pillars", "fundamentals"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,27 +56,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pillar",
-          "Description",
-          "Best For"
-        ],
+        "headers": ["Pillar", "Description", "Best For"],
         "rows": [
-          [
-            "Logs",
-            "Discrete events",
-            "Debugging, audit"
-          ],
-          [
-            "Metrics",
-            "Aggregated numbers",
-            "Alerting, trends"
-          ],
-          [
-            "Traces",
-            "Request paths",
-            "Latency analysis"
-          ]
+          ["Logs", "Discrete events", "Debugging, audit"],
+          ["Metrics", "Aggregated numbers", "Alerting, trends"],
+          ["Traces", "Request paths", "Latency analysis"]
         ]
       }
     },

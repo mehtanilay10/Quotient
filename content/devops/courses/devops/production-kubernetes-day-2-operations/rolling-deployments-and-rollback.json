@@ -8,13 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "kubernetes",
-    "deployments",
-    "rolling-updates",
-    "rollback",
-    "zero-downtime"
-  ],
+  "tags": ["kubernetes", "deployments", "rolling-updates", "rollback", "zero-downtime"],
   "blocks": [
     {
       "type": "heading",

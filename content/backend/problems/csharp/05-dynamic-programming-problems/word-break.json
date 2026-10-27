@@ -8,12 +8,7 @@
   "order": 13,
   "difficulty": "medium",
   "estimatedMinutes": 14,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "strings",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "strings", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "DP + MaxLen",
             "description": "dp[i] = any(dp[j] && s[j..i] in dict)",
-            "pros": [
-              "O(n\u00b2\u00b7L)"
-            ],
-            "tags": [
-              "O(n\u00b2\u00b7L) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["O(n\u00b2\u00b7L)"],
+            "tags": ["O(n\u00b2\u00b7L) time", "O(n) space", "Recommended"]
           }
         ]
       }

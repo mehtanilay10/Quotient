@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "react",
-    "rendering",
-    "fiber",
-    "internals"
-  ],
+  "tags": ["react", "rendering", "fiber", "internals"],
   "blocks": [
     {
       "type": "paragraph",
@@ -138,10 +133,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "reconciliation-and-component-identity",
-    "fiber-and-scheduling-concepts"
-  ],
+  "relatedLessons": ["reconciliation-and-component-identity", "fiber-and-scheduling-concepts"],
   "furtherReading": [
     {
       "title": "React Docs: Render and Commit",

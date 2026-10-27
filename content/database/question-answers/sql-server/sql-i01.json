@@ -6,10 +6,7 @@
   "description": "Learn about clustered, non-clustered, and covering indexes.",
   "order": 6,
   "difficulty": "intermediate",
-  "tags": [
-    "sql server",
-    "intermediate"
-  ],
+  "tags": ["sql server", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

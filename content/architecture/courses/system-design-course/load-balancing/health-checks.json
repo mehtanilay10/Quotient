@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 11,
-  "tags": [
-    "load-balancing",
-    "reliability",
-    "health-checks",
-    "failover"
-  ],
+  "tags": ["load-balancing", "reliability", "health-checks", "failover"],
   "blocks": [
     {
       "type": "paragraph",
@@ -113,10 +108,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "l4-vs-l7-load-balancing",
-    "session-persistence"
-  ],
+  "relatedLessons": ["l4-vs-l7-load-balancing", "session-persistence"],
   "furtherReading": [
     {
       "title": "Kubernetes Probes",

@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "xss",
-    "csrf",
-    "security",
-    "attacks"
-  ],
+  "tags": ["xss", "csrf", "security", "attacks"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,18 +68,12 @@
           {
             "title": "XSS",
             "description": "Attacker injects code into the page. Runs in the user's browser.",
-            "tags": [
-              "client-side",
-              "code injection"
-            ]
+            "tags": ["client-side", "code injection"]
           },
           {
             "title": "CSRF",
             "description": "Attacker tricks the user's browser into making a request. Exploits trusted cookies.",
-            "tags": [
-              "server-side",
-              "forced request"
-            ]
+            "tags": ["server-side", "forced request"]
           }
         ]
       }

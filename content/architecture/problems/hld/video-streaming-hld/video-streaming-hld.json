@@ -145,12 +145,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Component",
-          "Technology / Standard",
-          "Target Platform",
-          "Key Advantage"
-        ],
+        "headers": ["Component", "Technology / Standard", "Target Platform", "Key Advantage"],
         "rows": [
           [
             "DASH (Dynamic Adaptive Streaming)",
@@ -230,11 +225,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "youtube-streaming",
-    "spotify-music-hld",
-    "video-streaming-hld"
-  ],
+  "relatedLessons": ["youtube-streaming", "spotify-music-hld", "video-streaming-hld"],
   "furtherReading": [
     {
       "title": "Open Connect Overview — Netflix Technology Blog",

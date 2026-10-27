@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "serverless",
-    "functions",
-    "developer"
-  ],
+  "tags": ["azure", "serverless", "functions", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -85,10 +80,10 @@
     {
       "type": "mermaid",
       "data": {
-          "id": "mermaid-http-api-flow",
-          "caption": "HTTP request lifecycle in an Azure Functions API",
-          "definition": "sequenceDiagram\n    participant C as Client\n    participant F as Azure Function\n    participant D as Data Store\n    C->>F: GET /orders/123\n    F->>D: Query order 123\n    D-->>F: Order data\n    F-->>C: 200 OK + JSON body"
-        }
+        "id": "mermaid-http-api-flow",
+        "caption": "HTTP request lifecycle in an Azure Functions API",
+        "definition": "sequenceDiagram\n    participant C as Client\n    participant F as Azure Function\n    participant D as Data Store\n    C->>F: GET /orders/123\n    F->>D: Query order 123\n    D-->>F: Order data\n    F-->>C: 200 OK + JSON body"
+      }
     },
     {
       "type": "exercise",

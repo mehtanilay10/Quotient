@@ -7,11 +7,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "nchar",
-    "unicode",
-    "char"
-  ],
+  "tags": ["nchar", "unicode", "char"],
   "blocks": [
     {
       "type": "heading",
@@ -58,27 +54,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "CHAR",
-          "NCHAR"
-        ],
+        "headers": ["CHAR", "NCHAR"],
         "rows": [
-          [
-            "Store only non-Unicode characters",
-            "Store Unicode characters (UNICODE UCS-2)"
-          ],
-          [
-            "Need 1 byte per character",
-            "Need 2 bytes per character"
-          ],
-          [
-            "Storage equals the size specified",
-            "Storage equals double the size specified"
-          ],
-          [
-            "Store up to 8000 characters",
-            "Store up to 4000 characters"
-          ]
+          ["Store only non-Unicode characters", "Store Unicode characters (UNICODE UCS-2)"],
+          ["Need 1 byte per character", "Need 2 bytes per character"],
+          ["Storage equals the size specified", "Storage equals double the size specified"],
+          ["Store up to 8000 characters", "Store up to 4000 characters"]
         ]
       }
     },

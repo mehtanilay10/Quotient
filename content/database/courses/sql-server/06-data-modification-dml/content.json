@@ -9,15 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 5,
   "icon": "✏️",
-  "tags": [
-    "dml",
-    "insert",
-    "update",
-    "delete",
-    "merge",
-    "truncate",
-    "select-into"
-  ],
+  "tags": ["dml", "insert", "update", "delete", "merge", "truncate", "select-into"],
   "lessonSlugs": [
     "01-insert-add-row",
     "02-insert-into-select",

@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "load-balancing",
-    "DNS",
-    "traffic-routing",
-    "anycast"
-  ],
+  "tags": ["load-balancing", "DNS", "traffic-routing", "anycast"],
   "blocks": [
     {
       "type": "paragraph",
@@ -104,15 +99,8 @@
           {
             "title": "Local Load Balancing",
             "description": "Routes each request or connection actively. Better health visibility but adds infrastructure complexity.",
-            "pros": [
-              "Real-time health checks",
-              "Fine-grained routing",
-              "TLS termination support"
-            ],
-            "cons": [
-              "Requires proxy infrastructure",
-              "Slightly higher latency"
-            ]
+            "pros": ["Real-time health checks", "Fine-grained routing", "TLS termination support"],
+            "cons": ["Requires proxy infrastructure", "Slightly higher latency"]
           }
         ]
       }
@@ -130,10 +118,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "global-load-balancing",
-    "health-checks"
-  ],
+  "relatedLessons": ["global-load-balancing", "health-checks"],
   "furtherReading": [
     {
       "title": "Cloudflare Load Balancing Overview",

@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "middleware",
-    "compression",
-    "performance"
-  ],
+  "tags": ["aspnet-core", "middleware", "compression", "performance"],
   "blocks": [
     {
       "type": "heading",
@@ -70,21 +65,13 @@
           {
             "title": "Enable Response Compression",
             "description": "Gzip and Brotli compression",
-            "pros": [
-              "Reduces bandwidth",
-              "Improves load times",
-              "Supports modern algorithms"
-            ],
+            "pros": ["Reduces bandwidth", "Improves load times", "Supports modern algorithms"],
             "cons": [
               "CPU overhead",
               "Must be tested with clients",
               "HTTPS support requires config"
             ],
-            "tags": [
-              "AddResponseCompression",
-              "BrotliCompressionProvider",
-              "Accept-Encoding"
-            ]
+            "tags": ["AddResponseCompression", "BrotliCompressionProvider", "Accept-Encoding"]
           }
         ]
       }

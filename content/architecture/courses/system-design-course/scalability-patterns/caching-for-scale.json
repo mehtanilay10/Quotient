@@ -52,10 +52,30 @@
       "data": {
         "headers": ["Strategy", "Description", "Best For", "Risk"],
         "rows": [
-          ["Cache Aside", "App reads cache, falls back to DB, then writes cache", "General purpose", "Stale data on write"],
-          ["Write Through", "Writes go to cache and DB together", "Consistent reads needed", "Write penalty"],
-          ["Write Back", "Writes hit cache only; DB updates later", "Write-heavy workloads", "Data loss on crash"],
-          ["Refresh Ahead", "Proactively refreshes hot entries", "Predictable hot data", "Wasted refresh work"]
+          [
+            "Cache Aside",
+            "App reads cache, falls back to DB, then writes cache",
+            "General purpose",
+            "Stale data on write"
+          ],
+          [
+            "Write Through",
+            "Writes go to cache and DB together",
+            "Consistent reads needed",
+            "Write penalty"
+          ],
+          [
+            "Write Back",
+            "Writes hit cache only; DB updates later",
+            "Write-heavy workloads",
+            "Data loss on crash"
+          ],
+          [
+            "Refresh Ahead",
+            "Proactively refreshes hot entries",
+            "Predictable hot data",
+            "Wasted refresh work"
+          ]
         ]
       }
     },

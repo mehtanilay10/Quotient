@@ -7,11 +7,7 @@
   "order": 9,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "alter-schema",
-    "schema",
-    "transfer"
-  ],
+  "tags": ["alter-schema", "schema", "transfer"],
   "blocks": [
     {
       "type": "heading",

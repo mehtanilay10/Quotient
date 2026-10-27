@@ -7,10 +7,7 @@
   "order": 12,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "system-databases",
-    "database"
-  ],
+  "tags": ["system-databases", "database"],
   "blocks": [
     {
       "type": "heading",

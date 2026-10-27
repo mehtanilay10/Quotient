@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "devops",
-    "deployment",
-    "developer"
-  ],
+  "tags": ["azure", "devops", "deployment", "developer"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,32 +77,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Property",
-          "Production Slot",
-          "Staging Slot"
-        ],
+        "headers": ["Property", "Production Slot", "Staging Slot"],
         "rows": [
-          [
-            "Hostname",
-            "myapp.azurewebsites.net",
-            "myapp-staging.azurewebsites.net"
-          ],
-          [
-            "Auto-swap",
-            "Configurable",
-            "Configurable"
-          ],
-          [
-            "Custom domains",
-            "Yes",
-            "Yes"
-          ],
-          [
-            "SSL bindings",
-            "Yes",
-            "Yes"
-          ]
+          ["Hostname", "myapp.azurewebsites.net", "myapp-staging.azurewebsites.net"],
+          ["Auto-swap", "Configurable", "Configurable"],
+          ["Custom domains", "Yes", "Yes"],
+          ["SSL bindings", "Yes", "Yes"]
         ]
       }
     },

@@ -8,14 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "trade-offs",
-    "CAP",
-    "PACELC",
-    "system design",
-    "consistency",
-    "availability"
-  ],
+  "tags": ["trade-offs", "CAP", "PACELC", "system design", "consistency", "availability"],
   "blocks": [
     {
       "type": "heading",
@@ -69,12 +62,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "System",
-          "Consistency",
-          "Availability",
-          "Rationale"
-        ],
+        "headers": ["System", "Consistency", "Availability", "Rationale"],
         "rows": [
           [
             "Banking Ledger",
@@ -88,12 +76,7 @@
             "Very high",
             "Stale posts are acceptable; downtime is not."
           ],
-          [
-            "Shopping Cart",
-            "Causal",
-            "High",
-            "User must see their own items; conflict is rare."
-          ],
+          ["Shopping Cart", "Causal", "High", "User must see their own items; conflict is rare."],
           [
             "DNS",
             "Eventual",

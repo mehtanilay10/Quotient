@@ -9,12 +9,7 @@
   "estimatedHours": 0.5,
   "icon": "🔬",
   "tags": ["xunit", "testing", "dotnet"],
-  "lessonSlugs": [
-    "getting-started-xunit",
-    "assertions",
-    "test-fixtures",
-    "data-driven-tests"
-  ],
+  "lessonSlugs": ["getting-started-xunit", "assertions", "test-fixtures", "data-driven-tests"],
   "whatYouLearn": [
     "Set up xUnit test projects",
     "Use various assertion methods",

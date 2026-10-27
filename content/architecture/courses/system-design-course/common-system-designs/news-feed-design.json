@@ -37,7 +37,10 @@
           {
             "title": "Push Fanout",
             "pros": ["Fast read times", "Simple read path", "Supports ranking at write time"],
-            "cons": ["Expensive for users with millions of followers", "Wastes storage on inactive users"]
+            "cons": [
+              "Expensive for users with millions of followers",
+              "Wastes storage on inactive users"
+            ]
           },
           {
             "title": "Pull Fanout",

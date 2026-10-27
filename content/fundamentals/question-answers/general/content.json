@@ -8,10 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 14.9,
   "icon": "📚",
-  "tags": [
-    "interview",
-    "general"
-  ],
+  "tags": ["interview", "general"],
   "lessonSlugs": [
     "rapid-q1",
     "rapid-q2",

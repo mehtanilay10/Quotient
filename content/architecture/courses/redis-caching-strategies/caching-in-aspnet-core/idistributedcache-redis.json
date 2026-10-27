@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "asp.net core",
-    "idistributedcache",
-    "redis",
-    "distributed-caching"
-  ],
+  "tags": ["asp.net core", "idistributedcache", "redis", "distributed-caching"],
   "blocks": [
     {
       "type": "heading",
@@ -123,16 +118,8 @@
           {
             "title": "IMemoryCache",
             "description": "Stores data in the local process heap. Extremely fast with no network overhead. Data is lost when the app restarts.",
-            "pros": [
-              "Sub-microsecond access",
-              "No network dependency",
-              "Built-in size limits"
-            ],
-            "cons": [
-              "Not shared across instances",
-              "Lost on restart",
-              "Consumes server RAM"
-            ]
+            "pros": ["Sub-microsecond access", "No network dependency", "Built-in size limits"],
+            "cons": ["Not shared across instances", "Lost on restart", "Consumes server RAM"]
           },
           {
             "title": "IDistributedCache with Redis",

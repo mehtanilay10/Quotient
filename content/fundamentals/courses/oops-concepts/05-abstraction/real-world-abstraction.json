@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "oop",
-    "abstraction",
-    "real-world"
-  ],
+  "tags": ["oop", "abstraction", "real-world"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,8 +36,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "abstract-vs-interface"
-  ],
+  "relatedLessons": ["abstract-vs-interface"],
   "courseSlug": "oops-concepts"
 }

@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "messaging-patterns",
-    "point-to-point",
-    "pub-sub",
-    "architecture",
-    "design-patterns"
-  ],
+  "tags": ["messaging-patterns", "point-to-point", "pub-sub", "architecture", "design-patterns"],
   "blocks": [
     {
       "type": "paragraph",
@@ -66,11 +60,7 @@
               "Tight coupling to queue name",
               "No built-in fan-out"
             ],
-            "tags": [
-              "queue",
-              "work-item",
-              "command"
-            ]
+            "tags": ["queue", "work-item", "command"]
           },
           {
             "title": "Publish-Subscribe",
@@ -85,11 +75,7 @@
               "Requires topic abstraction",
               "Ordering is harder across subscriptions"
             ],
-            "tags": [
-              "topic",
-              "event",
-              "broadcast"
-            ]
+            "tags": ["topic", "event", "broadcast"]
           }
         ]
       }

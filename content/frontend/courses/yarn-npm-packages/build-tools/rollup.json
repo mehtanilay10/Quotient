@@ -6,13 +6,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "rollup",
-    "build",
-    "bundler",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["rollup", "build", "bundler", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -90,27 +84,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Recommended bundler"
-        ],
+        "headers": ["Use case", "Recommended bundler"],
         "rows": [
-          [
-            "Application with HTML entry",
-            "Vite or Webpack"
-          ],
-          [
-            "Publishable npm library",
-            "Rollup or tsup"
-          ],
-          [
-            "Tiny CLI or script",
-            "esbuild"
-          ],
-          [
-            "Monorepo task runner",
-            "Turborepo or Nx"
-          ]
+          ["Application with HTML entry", "Vite or Webpack"],
+          ["Publishable npm library", "Rollup or tsup"],
+          ["Tiny CLI or script", "esbuild"],
+          ["Monorepo task runner", "Turborepo or Nx"]
         ]
       }
     },

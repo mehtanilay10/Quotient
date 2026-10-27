@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "BCNF is a stricter version of 3NF. It requires that every determinant is a candidate key. Overlapping candidate keys or non-trivial functional dependencies on non-superkeys cause violations." }
+      "data": {
+        "text": "BCNF is a stricter version of 3NF. It requires that every determinant is a candidate key. Overlapping candidate keys or non-trivial functional dependencies on non-superkeys cause violations."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,11 @@
       "type": "bullet-list",
       "data": {
         "title": "BCNF violations",
-        "items": ["Agent represents company, but one agent represents multiple companies", "Non-key column determines another non-key column", "Multiple candidate keys sharing attributes"]
+        "items": [
+          "Agent represents company, but one agent represents multiple companies",
+          "Non-key column determines another non-key column",
+          "Multiple candidate keys sharing attributes"
+        ]
       }
     },
     {
@@ -52,8 +58,16 @@
       "data": {
         "headers": ["Scenario", "Issue", "Resolution"],
         "rows": [
-          ["agent determines company_name", "Determinant is not a candidate key", "Decompose into companies"],
-          ["Multiple candidate keys overlap", "Non-superkey determinant", "Split into separate tables"],
+          [
+            "agent determines company_name",
+            "Determinant is not a candidate key",
+            "Decompose into companies"
+          ],
+          [
+            "Multiple candidate keys overlap",
+            "Non-superkey determinant",
+            "Split into separate tables"
+          ],
           ["Non-trivial FD on non-superkey", "Violates BCNF", "Decompose on the FD"]
         ]
       }
@@ -63,9 +77,18 @@
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "When does 3NF fail but BCNF succeeds?", "answer": "When a non-candidate key determines another attribute. 3NF allows this if the determinant is a candidate key." },
-          { "question": "Does BCNF always preserve dependencies?", "answer": "No. BCNF decomposition can lose some functional dependencies. Use 3NF if dependency preservation is critical." },
-          { "question": "Is BCNF worth the complexity?", "answer": "For most applications, 3NF is sufficient. Use BCNF when overlapping keys cause update anomalies." }
+          {
+            "question": "When does 3NF fail but BCNF succeeds?",
+            "answer": "When a non-candidate key determines another attribute. 3NF allows this if the determinant is a candidate key."
+          },
+          {
+            "question": "Does BCNF always preserve dependencies?",
+            "answer": "No. BCNF decomposition can lose some functional dependencies. Use 3NF if dependency preservation is critical."
+          },
+          {
+            "question": "Is BCNF worth the complexity?",
+            "answer": "For most applications, 3NF is sufficient. Use BCNF when overlapping keys cause update anomalies."
+          }
         ]
       }
     },
@@ -73,7 +96,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Ensure every determinant is a candidate key", "Decompose on non-candidate-key determinants", "Accept that BCNF may lose dependency preservation", "Prefer 3NF when dependency preservation matters more"],
+        "points": [
+          "Ensure every determinant is a candidate key",
+          "Decompose on non-candidate-key determinants",
+          "Accept that BCNF may lose dependency preservation",
+          "Prefer 3NF when dependency preservation matters more"
+        ],
         "takeaway": "BCNF removes subtle anomalies from overlapping candidate keys at the cost of potentially losing functional dependency preservation."
       }
     }

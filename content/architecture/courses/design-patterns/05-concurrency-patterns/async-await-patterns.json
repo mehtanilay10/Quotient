@@ -6,12 +6,7 @@
   "description": "Structure asynchronous code using Task-based patterns in C#.",
   "order": 4,
   "difficulty": "advanced",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture",
-    "concurrency"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture", "concurrency"],
   "blocks": [
     {
       "type": "paragraph",

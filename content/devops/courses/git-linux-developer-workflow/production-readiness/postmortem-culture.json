@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "postmortem",
-    "culture",
-    "linux",
-    "learning",
-    "incident"
-  ],
+  "tags": ["postmortem", "culture", "linux", "learning", "incident"],
   "blocks": [
     {
       "type": "paragraph",

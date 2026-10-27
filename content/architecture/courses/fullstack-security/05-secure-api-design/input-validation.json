@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "validation",
-    "injection",
-    "security",
-    "asp.net core"
-  ],
+  "tags": ["validation", "injection", "security", "asp.net core"],
   "blocks": [
     {
       "type": "paragraph",

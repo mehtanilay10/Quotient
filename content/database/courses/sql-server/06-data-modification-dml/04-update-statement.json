@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 33,
-  "tags": [
-    "update",
-    "dml",
-    "modify-data"
-  ],
+  "tags": ["update", "dml", "modify-data"],
   "blocks": [
     {
       "type": "heading",

@@ -9,12 +9,7 @@
   "estimatedHours": 1,
   "icon": "🧩",
   "tags": ["component-testing", "react"],
-  "lessonSlugs": [
-    "testing-forms",
-    "testing-routing",
-    "testing-context",
-    "testing-api-calls"
-  ],
+  "lessonSlugs": ["testing-forms", "testing-routing", "testing-context", "testing-api-calls"],
   "whatYouLearn": [
     "Test form components",
     "Test components with routing",

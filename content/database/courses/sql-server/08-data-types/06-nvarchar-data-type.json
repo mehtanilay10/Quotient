@@ -7,11 +7,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "nvarchar",
-    "unicode",
-    "varchar"
-  ],
+  "tags": ["nvarchar", "unicode", "varchar"],
   "blocks": [
     {
       "type": "heading",
@@ -67,32 +63,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "",
-          "VARCHAR",
-          "NVARCHAR"
-        ],
+        "headers": ["", "VARCHAR", "NVARCHAR"],
         "rows": [
           [
             "Character Data Type",
             "Variable-length, non-Unicode",
             "Variable-length, Unicode and non-Unicode"
           ],
-          [
-            "Maximum Length",
-            "Up to 8,000 characters",
-            "Up to 4,000 characters"
-          ],
-          [
-            "Character Size",
-            "1 byte per character",
-            "2 bytes per character"
-          ],
-          [
-            "Storage Size",
-            "Actual Length (bytes)",
-            "2 x Actual Length (bytes)"
-          ],
+          ["Maximum Length", "Up to 8,000 characters", "Up to 4,000 characters"],
+          ["Character Size", "1 byte per character", "2 bytes per character"],
+          ["Storage Size", "Actual Length (bytes)", "2 x Actual Length (bytes)"],
           [
             "Usage",
             "When data length varies and no Unicode needed",

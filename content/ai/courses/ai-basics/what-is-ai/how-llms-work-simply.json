@@ -7,18 +7,8 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "llms",
-    "tokens",
-    "neural-networks",
-    "how-ai-works"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model",
-    "token",
-    "transformer",
-    "temperature"
-  ],
+  "tags": ["llms", "tokens", "neural-networks", "how-ai-works"],
+  "relatedGlossaryTerms": ["large-language-model", "token", "transformer", "temperature"],
   "blocks": [
     {
       "type": "paragraph",
@@ -129,11 +119,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Temperature",
-          "Behaviour",
-          "Best for"
-        ],
+        "headers": ["Temperature", "Behaviour", "Best for"],
         "rows": [
           [
             "Low (0.1–0.3)",
@@ -222,35 +208,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pipeline stage",
-          "What it adds",
-          "Common misconception"
-        ],
+        "headers": ["Pipeline stage", "What it adds", "Common misconception"],
         "rows": [
-          [
-            "Pretraining",
-            "Broad language pattern learning",
-            "Model understands truth natively"
-          ],
-          [
-            "Instruction tuning",
-            "Task-following behavior",
-            "Model becomes perfectly reliable"
-          ],
-          [
-            "Safety alignment",
-            "Policy and risk constraints",
-            "Safety removes all unsafe outputs"
-          ]
+          ["Pretraining", "Broad language pattern learning", "Model understands truth natively"],
+          ["Instruction tuning", "Task-following behavior", "Model becomes perfectly reliable"],
+          ["Safety alignment", "Policy and risk constraints", "Safety removes all unsafe outputs"]
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "ai-vs-ml-vs-generative-ai",
-    "what-ai-can-and-cannot-do"
-  ],
+  "relatedLessons": ["ai-vs-ml-vs-generative-ai", "what-ai-can-and-cannot-do"],
   "furtherReading": [
     {
       "title": "Intro to Large Language Models",

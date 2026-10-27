@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "mvc",
-    "model-binding",
-    "parameters"
-  ],
+  "tags": ["aspnet-core", "mvc", "model-binding", "parameters"],
   "blocks": [
     {
       "type": "heading",
@@ -96,32 +91,15 @@
               "Prevents model state errors",
               "Supports all HTTP sources"
             ],
-            "cons": [
-              "Verbose on many parameters",
-              "Must match client format"
-            ],
-            "tags": [
-              "[FromBody]",
-              "[FromRoute]",
-              "[FromQuery]"
-            ]
+            "cons": ["Verbose on many parameters", "Must match client format"],
+            "tags": ["[FromBody]", "[FromRoute]", "[FromQuery]"]
           },
           {
             "title": "Custom Model Binder",
             "description": "Custom binding logic",
-            "pros": [
-              "Handles complex formats",
-              "Reusable",
-              "Keeps controller clean"
-            ],
-            "cons": [
-              "More code to maintain",
-              "Must handle errors gracefully"
-            ],
-            "tags": [
-              "IModelBinder",
-              "ModelBinderAttribute"
-            ]
+            "pros": ["Handles complex formats", "Reusable", "Keeps controller clean"],
+            "cons": ["More code to maintain", "Must handle errors gracefully"],
+            "tags": ["IModelBinder", "ModelBinderAttribute"]
           }
         ]
       }

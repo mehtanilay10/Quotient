@@ -8,14 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "monitoring",
-    "cloudwatch",
-    "x-ray",
-    "observability",
-    "architecture"
-  ],
+  "tags": ["aws", "monitoring", "cloudwatch", "x-ray", "observability", "architecture"],
   "blocks": [
     {
       "type": "paragraph",

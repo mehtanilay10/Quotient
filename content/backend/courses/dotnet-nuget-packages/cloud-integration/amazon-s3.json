@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is AWSSDK.S3?"}
+      "data": { "level": 2, "text": "What is AWSSDK.S3?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`AWSSDK.S3` is the official AWS SDK for S3 in .NET. It supports uploading, downloading, listing, and deleting objects, as well as generating pre-signed URLs and managing bucket policies."}
+      "data": {
+        "text": "`AWSSDK.S3` is the official AWS SDK for S3 in .NET. It supports uploading, downloading, listing, and deleting objects, as well as generating pre-signed URLs and managing bucket policies."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Basic Usage"}
+      "data": { "level": 2, "text": "Basic Usage" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Create an `AmazonS3Client` using credentials and a region, then call methods like `PutObjectAsync` and `GetObjectAsync`."}
+      "data": {
+        "text": "Create an `AmazonS3Client` using credentials and a region, then call methods like `PutObjectAsync` and `GetObjectAsync`."
+      }
     },
     {
       "type": "example",
@@ -48,11 +52,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Pre-Signed URLs"}
+      "data": { "level": 2, "text": "Pre-Signed URLs" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Generate temporary URLs for secure downloads without making your bucket public."}
+      "data": {
+        "text": "Generate temporary URLs for secure downloads without making your bucket public."
+      }
     },
     {
       "type": "example",

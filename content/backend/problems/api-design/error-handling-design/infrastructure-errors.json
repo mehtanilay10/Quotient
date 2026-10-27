@@ -28,11 +28,26 @@
       "data": {
         "headers": ["Error", "HTTP Status", "Retry?", "Root Cause"],
         "rows": [
-          ["Database connection lost", "503", "Yes, after backoff", "DB pool exhaustion, network partition"],
-          ["Downstream timeout", "504 Gateway Timeout", "Yes, with backoff", "Payment API, search service slow"],
+          [
+            "Database connection lost",
+            "503",
+            "Yes, after backoff",
+            "DB pool exhaustion, network partition"
+          ],
+          [
+            "Downstream timeout",
+            "504 Gateway Timeout",
+            "Yes, with backoff",
+            "Payment API, search service slow"
+          ],
           ["Downstream error", "502 Bad Gateway", "Yes", "Returned 500 or 503 from payment API"],
           ["Circuit breaker open", "503", "Yes, after reset", "Too many downstream failures"],
-          ["Rate limit from downstream", "429", "Yes, honor Retry-After", "Payment processor rate limit"],
+          [
+            "Rate limit from downstream",
+            "429",
+            "Yes, honor Retry-After",
+            "Payment processor rate limit"
+          ],
           ["Server out of memory", "503", "Yes", "GC pressure, memory leak"],
           ["Graceful shutdown", "503", "Yes, after delay", "Deploy, pod termination"]
         ]
@@ -150,10 +165,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "http-status-code-selection",
-    "error-response-format"
-  ],
+  "relatedLessons": ["http-status-code-selection", "error-response-format"],
   "furtherReading": [
     {
       "title": "Resilience Patterns in .NET",

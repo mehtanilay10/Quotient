@@ -7,11 +7,7 @@
   "order": 7,
   "difficulty": "beginner",
   "estimatedMinutes": 23,
-  "tags": [
-    "table-valued-function",
-    "inline-function",
-    "MSTVF"
-  ],
+  "tags": ["table-valued-function", "inline-function", "MSTVF"],
   "blocks": [
     {
       "type": "heading",

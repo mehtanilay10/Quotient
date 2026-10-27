@@ -97,13 +97,12 @@
       }
     }
   ],
-  "relatedLessons": [
-    "git-security",
-    "git-best-practices",
-    "hooks-and-automation"
-  ],
+  "relatedLessons": ["git-security", "git-best-practices", "hooks-and-automation"],
   "furtherReading": [
     { "title": "GitHub Enterprise documentation", "url": "https://docs.github.com/en/enterprise" },
-    { "title": "GitLab administration documentation", "url": "https://docs.gitlab.com/ee/administration/" }
+    {
+      "title": "GitLab administration documentation",
+      "url": "https://docs.gitlab.com/ee/administration/"
+    }
   ]
 }

@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 23,
-  "tags": [
-    "linq",
-    "standard query operators",
-    "reference",
-    "overview"
-  ],
+  "tags": ["linq", "standard query operators", "reference", "overview"],
   "blocks": [
     {
       "type": "paragraph",
@@ -30,67 +25,25 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Classification",
-          "Operators"
-        ],
+        "headers": ["Classification", "Operators"],
         "rows": [
-          [
-            "Filtering",
-            "Where, OfType"
-          ],
-          [
-            "Sorting",
-            "OrderBy, OrderByDescending, ThenBy, ThenByDescending, Reverse"
-          ],
-          [
-            "Grouping",
-            "GroupBy, ToLookup"
-          ],
-          [
-            "Join",
-            "GroupJoin, Join"
-          ],
-          [
-            "Projection",
-            "Select, SelectMany"
-          ],
-          [
-            "Aggregation",
-            "Aggregate, Average, Count, LongCount, Max, Min, Sum"
-          ],
-          [
-            "Quantifiers",
-            "All, Any, Contains"
-          ],
+          ["Filtering", "Where, OfType"],
+          ["Sorting", "OrderBy, OrderByDescending, ThenBy, ThenByDescending, Reverse"],
+          ["Grouping", "GroupBy, ToLookup"],
+          ["Join", "GroupJoin, Join"],
+          ["Projection", "Select, SelectMany"],
+          ["Aggregation", "Aggregate, Average, Count, LongCount, Max, Min, Sum"],
+          ["Quantifiers", "All, Any, Contains"],
           [
             "Elements",
             "ElementAt, ElementAtOrDefault, First, FirstOrDefault, Last, LastOrDefault, Single, SingleOrDefault"
           ],
-          [
-            "Set",
-            "Distinct, Except, Intersect, Union"
-          ],
-          [
-            "Partitioning",
-            "Skip, SkipWhile, Take, TakeWhile"
-          ],
-          [
-            "Concatenation",
-            "Concat"
-          ],
-          [
-            "Equality",
-            "SequenceEqual"
-          ],
-          [
-            "Generation",
-            "DefaultEmpty, Empty, Range, Repeat"
-          ],
-          [
-            "Conversion",
-            "AsEnumerable, AsQueryable, Cast, ToArray, ToDictionary, ToList"
-          ]
+          ["Set", "Distinct, Except, Intersect, Union"],
+          ["Partitioning", "Skip, SkipWhile, Take, TakeWhile"],
+          ["Concatenation", "Concat"],
+          ["Equality", "SequenceEqual"],
+          ["Generation", "DefaultEmpty, Empty, Range, Repeat"],
+          ["Conversion", "AsEnumerable, AsQueryable, Cast, ToArray, ToDictionary, ToList"]
         ]
       }
     },
@@ -110,35 +63,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Query Syntax",
-          "Method Syntax"
-        ],
+        "headers": ["Query Syntax", "Method Syntax"],
         "rows": [
-          [
-            "from...where...select",
-            "Where(), Select()"
-          ],
-          [
-            "orderby",
-            "OrderBy(), OrderByDescending()"
-          ],
-          [
-            "group by",
-            "GroupBy()"
-          ],
-          [
-            "join",
-            "Join()"
-          ],
-          [
-            "No direct support",
-            "All(), Any(), Contains()"
-          ],
-          [
-            "No direct support",
-            "Count(), Sum(), Average(), Max()"
-          ]
+          ["from...where...select", "Where(), Select()"],
+          ["orderby", "OrderBy(), OrderByDescending()"],
+          ["group by", "GroupBy()"],
+          ["join", "Join()"],
+          ["No direct support", "All(), Any(), Contains()"],
+          ["No direct support", "Count(), Sum(), Average(), Max()"]
         ]
       }
     },
@@ -181,10 +113,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "expression-trees",
-    "sequenceequal-operator",
-    "sample-linq-queries"
-  ],
+  "relatedLessons": ["expression-trees", "sequenceequal-operator", "sample-linq-queries"],
   "courseSlug": "linq"
 }

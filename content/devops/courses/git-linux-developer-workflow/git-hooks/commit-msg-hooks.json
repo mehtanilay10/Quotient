@@ -126,7 +126,11 @@
   ],
   "relatedLessons": ["pre-commit-hooks", "husky-lint-staged"],
   "furtherReading": [
-    { "title": "Conventional Commits", "url": "https://www.conventionalcommits.org/", "type": "article" },
+    {
+      "title": "Conventional Commits",
+      "url": "https://www.conventionalcommits.org/",
+      "type": "article"
+    },
     { "title": "commitlint", "url": "https://commitlint.js.org/", "type": "tool" }
   ]
 }

@@ -6,13 +6,6 @@
   "fullDefinition": "Llama (Large Language Model Meta AI) is a family of open-weights language models released by Meta AI. Llama 2 and Llama 3 are among the most widely used open models globally. Because the weights are publicly available, Llama powers many local AI setups (via Ollama, LM Studio), fine-tuning experiments, and derivative models. Llama models range from 1B to 70B+ parameters.",
   "category": "models-and-training",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "open-weights",
-    "local-model",
-    "large-language-model"
-  ],
-  "alsoKnownAs": [
-    "Llama 3",
-    "Meta Llama"
-  ]
+  "relatedTerms": ["open-weights", "local-model", "large-language-model"],
+  "alsoKnownAs": ["Llama 3", "Meta Llama"]
 }

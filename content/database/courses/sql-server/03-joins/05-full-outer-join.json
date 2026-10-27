@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "full-outer-join",
-    "joins",
-    "outer-join",
-    "null-values"
-  ],
+  "tags": ["full-outer-join", "joins", "outer-join", "null-values"],
   "blocks": [
     {
       "type": "heading",

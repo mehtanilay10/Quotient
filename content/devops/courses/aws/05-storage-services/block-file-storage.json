@@ -41,8 +41,18 @@
       "data": {
         "headers": ["Volume Type", "Description", "Use Case", "Max IOPS"],
         "rows": [
-          ["gp3", "General purpose, baseline performance", "Boot volumes, low-latency apps", "16,000"],
-          ["io2 Block Express", "Highest performance EBS", "SAP HANA, Oracle, large databases", "256,000"],
+          [
+            "gp3",
+            "General purpose, baseline performance",
+            "Boot volumes, low-latency apps",
+            "16,000"
+          ],
+          [
+            "io2 Block Express",
+            "Highest performance EBS",
+            "SAP HANA, Oracle, large databases",
+            "256,000"
+          ],
           ["st1", "Throughput-optimized HDD", "Big data, log processing", "500"],
           ["sc1", "Cold HDD", "Infrequently accessed data", "250"]
         ]

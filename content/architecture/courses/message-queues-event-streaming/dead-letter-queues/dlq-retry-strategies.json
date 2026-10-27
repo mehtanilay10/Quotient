@@ -8,14 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "dlq",
-    "retry",
-    "backoff",
-    "resilience",
-    "circuit-breaker",
-    "message-queue"
-  ],
+  "tags": ["dlq", "retry", "backoff", "resilience", "circuit-breaker", "message-queue"],
   "blocks": [
     {
       "type": "paragraph",

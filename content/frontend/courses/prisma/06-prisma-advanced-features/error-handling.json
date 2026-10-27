@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "error-handling",
-    "p2002",
-    "p2025",
-    "exception-handling"
-  ],
+  "tags": ["prisma", "error-handling", "p2002", "p2025", "exception-handling"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,11 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Error Class",
-          "Trigger Scenario",
-          "Common HTTP Mapping"
-        ],
+        "headers": ["Error Class", "Trigger Scenario", "Common HTTP Mapping"],
         "rows": [
           [
             "`PrismaClientKnownRequestError`",
@@ -76,11 +66,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Code",
-          "Name",
-          "Meaning & Handling"
-        ],
+        "headers": ["Code", "Name", "Meaning & Handling"],
         "rows": [
           [
             "`P2002`",
@@ -134,8 +120,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "transactions-and-interactive-transactions",
-    "query-logging-and-performance"
-  ]
+  "relatedLessons": ["transactions-and-interactive-transactions", "query-logging-and-performance"]
 }

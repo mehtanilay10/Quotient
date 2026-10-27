@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { BookOpen } from 'lucide-react';
-import { LessonNotesButton } from './LessonNotesButton';
-import { NotesModal } from './NotesModal';
-import { useLessonNotes } from '@/hooks/useLessonNotes';
+import { useState } from "react";
+import { BookOpen } from "lucide-react";
+import { LessonNotesButton } from "./LessonNotesButton";
+import { NotesModal } from "./NotesModal";
+import { useLessonNotes } from "@/hooks/useLessonNotes";
 
 interface LessonNotesSectionProps {
   courseSlug: string;
@@ -12,7 +12,11 @@ interface LessonNotesSectionProps {
   lessonSlug: string;
 }
 
-export function LessonNotesSection({ courseSlug, moduleSlug, lessonSlug }: LessonNotesSectionProps) {
+export function LessonNotesSection({
+  courseSlug,
+  moduleSlug,
+  lessonSlug,
+}: LessonNotesSectionProps) {
   const [isNotesOpen, setIsNotesOpen] = useState(false);
   const { mounted } = useLessonNotes();
 

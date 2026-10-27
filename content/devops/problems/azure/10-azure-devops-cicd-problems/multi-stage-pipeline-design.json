@@ -78,18 +78,13 @@
               "Approvals and gates per environment",
               "Simple rollback to a prior artifact"
             ],
-            "cons": [
-              "One file grows large",
-              "All environments share a trigger"
-            ],
+            "cons": ["One file grows large", "All environments share a trigger"],
             "tags": ["Recommended", "Microservices"]
           },
           {
             "title": "Separate pipeline per environment",
             "description": "Independent build and release per stage",
-            "pros": [
-              "Teams can own a stage end to end"
-            ],
+            "pros": ["Teams can own a stage end to end"],
             "cons": [
               "Artifacts can drift",
               "Duplicated configuration",
@@ -100,13 +95,8 @@
           {
             "title": "Classic release pipelines",
             "description": "Visual designer, GUI-defined stages",
-            "pros": [
-              "Approachable for non-developers"
-            ],
-            "cons": [
-              "Not stored as reviewable YAML",
-              "Poor diff and reuse story"
-            ],
+            "pros": ["Approachable for non-developers"],
+            "cons": ["Not stored as reviewable YAML", "Poor diff and reuse story"],
             "tags": ["Legacy"]
           }
         ]

@@ -7,10 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "oop",
-    "runtime-polymorphism"
-  ],
+  "tags": ["oop", "runtime-polymorphism"],
   "blocks": [
     {
       "type": "paragraph",
@@ -39,9 +36,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "compile-time-polymorphism",
-    "operator-overloading"
-  ],
+  "relatedLessons": ["compile-time-polymorphism", "operator-overloading"],
   "courseSlug": "oops-concepts"
 }

@@ -8,12 +8,7 @@
   "order": 10,
   "difficulty": "medium",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "linked-list",
-    "in-place",
-    "medium"
-  ],
+  "tags": ["csharp", "linked-list", "in-place", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -74,34 +69,16 @@
           {
             "title": "Two New Lists",
             "description": "Collect odds and evens into separate lists",
-            "pros": [
-              "Very clear separation",
-              "Easy to verify"
-            ],
-            "cons": [
-              "Allocates new nodes",
-              "O(n) extra memory"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Very clear separation", "Easy to verify"],
+            "cons": ["Allocates new nodes", "O(n) extra memory"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "In-Place Relink",
             "description": "Thread odd and even pointers through the original list",
-            "pros": [
-              "No new allocations",
-              "O(1) space"
-            ],
-            "cons": [
-              "More pointer moves"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["No new allocations", "O(1) space"],
+            "cons": ["More pointer moves"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

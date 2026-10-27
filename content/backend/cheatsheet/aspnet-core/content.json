@@ -8,14 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 1.5,
   "icon": "🌐",
-  "tags": [
-    "aspnet-core",
-    "mvc",
-    "web-api",
-    "dotnet",
-    "cheatsheet",
-    "quick-reference"
-  ],
+  "tags": ["aspnet-core", "mvc", "web-api", "dotnet", "cheatsheet", "quick-reference"],
   "lessonSlugs": ["cheatsheet"],
   "whatYouLearn": [
     "MVC and Web API patterns",

@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "capacity",
-    "case-study",
-    "twitter",
-    "youtube",
-    "scalability"
-  ],
+  "tags": ["capacity", "case-study", "twitter", "youtube", "scalability"],
   "blocks": [
     {
       "type": "paragraph",
@@ -45,39 +39,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Value"
-        ],
+        "headers": ["Metric", "Value"],
         "rows": [
-          [
-            "Monthly Active Users",
-            "450,000,000"
-          ],
-          [
-            "Tweets per day",
-            "~900,000,000"
-          ],
-          [
-            "Average tweet size",
-            "~50 bytes"
-          ],
-          [
-            "Timeline reads per day",
-            "~40,000,000,000"
-          ],
-          [
-            "Average timeline items",
-            "~300"
-          ],
-          [
-            "Peak QPS (writes)",
-            "~5,000"
-          ],
-          [
-            "Peak QPS (reads)",
-            "~300,000"
-          ]
+          ["Monthly Active Users", "450,000,000"],
+          ["Tweets per day", "~900,000,000"],
+          ["Average tweet size", "~50 bytes"],
+          ["Timeline reads per day", "~40,000,000,000"],
+          ["Average timeline items", "~300"],
+          ["Peak QPS (writes)", "~5,000"],
+          ["Peak QPS (reads)", "~300,000"]
         ]
       }
     },
@@ -118,35 +88,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Value"
-        ],
+        "headers": ["Metric", "Value"],
         "rows": [
-          [
-            "Monthly Active Users",
-            "2,000,000,000"
-          ],
-          [
-            "Hours watched per day",
-            "1,000,000,000"
-          ],
-          [
-            "Average bitrate (1080p)",
-            "~4 Mbps"
-          ],
-          [
-            "Peak concurrent viewers",
-            "~100,000,000"
-          ],
-          [
-            "Videos uploaded per day",
-            "~500,000"
-          ],
-          [
-            "Average video length",
-            "~11 minutes"
-          ]
+          ["Monthly Active Users", "2,000,000,000"],
+          ["Hours watched per day", "1,000,000,000"],
+          ["Average bitrate (1080p)", "~4 Mbps"],
+          ["Peak concurrent viewers", "~100,000,000"],
+          ["Videos uploaded per day", "~500,000"],
+          ["Average video length", "~11 minutes"]
         ]
       }
     },

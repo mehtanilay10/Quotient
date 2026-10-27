@@ -6,12 +6,6 @@
   "fullDefinition": "Inference is the computational process of passing input through a trained model to produce output. When you send a message to ChatGPT, the 'inference' is the computation happening on remote servers that generates the response. Inference costs (compute time and energy) are why AI tools charge for usage. Inference is distinct from training — training creates the model, inference uses it.",
   "category": "models-and-training",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "large-language-model",
-    "token"
-  ],
-  "alsoKnownAs": [
-    "Model Inference",
-    "Generation"
-  ]
+  "relatedTerms": ["large-language-model", "token"],
+  "alsoKnownAs": ["Model Inference", "Generation"]
 }

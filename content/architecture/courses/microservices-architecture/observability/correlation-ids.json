@@ -8,11 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "correlation-id",
-    "tracing",
-    "context"
-  ],
+  "tags": ["correlation-id", "tracing", "context"],
   "blocks": [
     {
       "type": "paragraph",
@@ -91,27 +87,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Standard",
-          "Header"
-        ],
+        "headers": ["Standard", "Header"],
         "rows": [
-          [
-            "W3C Trace Context",
-            "traceparent"
-          ],
-          [
-            "B3 (Zipkin)",
-            "X-B3-TraceId"
-          ],
-          [
-            "Custom",
-            "X-Correlation-Id"
-          ],
-          [
-            "AWS X-Ray",
-            "X-Amzn-Trace-Id"
-          ]
+          ["W3C Trace Context", "traceparent"],
+          ["B3 (Zipkin)", "X-B3-TraceId"],
+          ["Custom", "X-Correlation-Id"],
+          ["AWS X-Ray", "X-Amzn-Trace-Id"]
         ]
       }
     },

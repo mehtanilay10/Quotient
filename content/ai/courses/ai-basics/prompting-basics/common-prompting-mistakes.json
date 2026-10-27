@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "mistakes",
-    "debugging-prompts",
-    "improvement"
-  ],
+  "tags": ["mistakes", "debugging-prompts", "improvement"],
   "blocks": [
     {
       "type": "paragraph",
@@ -39,12 +35,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Mistake",
-          "Why it fails",
-          "Fix",
-          "Example"
-        ],
+        "headers": ["Mistake", "Why it fails", "Fix", "Example"],
         "rows": [
           [
             "Too vague",
@@ -103,11 +94,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Symptom",
-          "Likely cause",
-          "Fix to add"
-        ],
+        "headers": ["Symptom", "Likely cause", "Fix to add"],
         "rows": [
           [
             "Output is too long",
@@ -181,11 +168,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Failure symptom",
-          "Likely root cause",
-          "Fastest correction"
-        ],
+        "headers": ["Failure symptom", "Likely root cause", "Fastest correction"],
         "rows": [
           [
             "Output is generic",
@@ -222,16 +205,12 @@
           {
             "title": "Bad prompt",
             "description": "Vague, no context, no format. The AI has to guess what you want.",
-            "tags": [
-              "avoid"
-            ]
+            "tags": ["avoid"]
           },
           {
             "title": "Good prompt",
             "description": "Specific context, clear task, explicit format, and constraints. The AI can aim at a target.",
-            "tags": [
-              "recommended"
-            ]
+            "tags": ["recommended"]
           }
         ]
       }
@@ -262,10 +241,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "anatomy-of-a-good-prompt",
-    "prompt-patterns"
-  ],
+  "relatedLessons": ["anatomy-of-a-good-prompt", "prompt-patterns"],
   "furtherReading": [
     {
       "title": "Learn Prompting — Few-Shot",

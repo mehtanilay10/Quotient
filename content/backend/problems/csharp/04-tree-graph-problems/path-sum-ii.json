@@ -8,13 +8,7 @@
   "order": 9,
   "difficulty": "medium",
   "estimatedMinutes": 14,
-  "tags": [
-    "csharp",
-    "trees",
-    "dfs",
-    "backtracking",
-    "medium"
-  ],
+  "tags": ["csharp", "trees", "dfs", "backtracking", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -45,14 +39,8 @@
           {
             "title": "DFS + Backtrack",
             "description": "Track path, remove on backtrack",
-            "pros": [
-              "All paths returned"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(h) space",
-              "Recommended"
-            ]
+            "pros": ["All paths returned"],
+            "tags": ["O(n) time", "O(h) space", "Recommended"]
           }
         ]
       }

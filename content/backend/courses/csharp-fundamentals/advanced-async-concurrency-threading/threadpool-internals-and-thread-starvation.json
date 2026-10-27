@@ -120,7 +120,13 @@
     "deadlocks-starvation-and-livelocks"
   ],
   "furtherReading": [
-    { "title": "ThreadPool Class (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/api/system.threading.threadpool" },
-    { "title": "ThreadPool starvation and how to avoid it", "url": "https://devblogs.microsoft.com/dotnet/threadpool-starvation-and-how-to-avoid-it/" }
+    {
+      "title": "ThreadPool Class (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.threading.threadpool"
+    },
+    {
+      "title": "ThreadPool starvation and how to avoid it",
+      "url": "https://devblogs.microsoft.com/dotnet/threadpool-starvation-and-how-to-avoid-it/"
+    }
   ]
 }

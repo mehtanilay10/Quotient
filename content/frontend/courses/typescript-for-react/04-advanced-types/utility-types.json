@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 28,
-  "tags": [
-    "typescript",
-    "utility-types",
-    "types",
-    "transformations"
-  ],
+  "tags": ["typescript", "utility-types", "types", "transformations"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,37 +62,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Utility Type",
-          "Input",
-          "Output"
-        ],
+        "headers": ["Utility Type", "Input", "Output"],
         "rows": [
-          [
-            "Partial<T>",
-            "{ a: string; b: number }",
-            "{ a?: string; b?: number }"
-          ],
-          [
-            "Required<T>",
-            "{ a?: string }",
-            "{ a: string }"
-          ],
-          [
-            "Readonly<T>",
-            "{ a: string }",
-            "{ readonly a: string }"
-          ],
-          [
-            "Pick<T, K>",
-            "User, 'id' | 'name'",
-            "{ id: number; name: string }"
-          ],
-          [
-            "Omit<T, K>",
-            "User, 'password'",
-            "{ id: number; name: string; email: string }"
-          ]
+          ["Partial<T>", "{ a: string; b: number }", "{ a?: string; b?: number }"],
+          ["Required<T>", "{ a?: string }", "{ a: string }"],
+          ["Readonly<T>", "{ a: string }", "{ readonly a: string }"],
+          ["Pick<T, K>", "User, 'id' | 'name'", "{ id: number; name: string }"],
+          ["Omit<T, K>", "User, 'password'", "{ id: number; name: string; email: string }"]
         ]
       }
     },

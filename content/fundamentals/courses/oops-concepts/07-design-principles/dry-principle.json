@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "oop",
-    "dry",
-    "refactoring"
-  ],
+  "tags": ["oop", "dry", "refactoring"],
   "blocks": [
     {
       "type": "paragraph",
@@ -58,8 +54,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "solid-principles"
-  ],
+  "relatedLessons": ["solid-principles"],
   "courseSlug": "oops-concepts"
 }

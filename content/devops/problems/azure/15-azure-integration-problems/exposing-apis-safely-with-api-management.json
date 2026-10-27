@@ -96,22 +96,14 @@
           {
             "title": "Application Gateway with WAF",
             "description": "L7 load balancer and firewall",
-            "pros": [
-              "Strong WAF rules",
-              "SSL termination and path routing"
-            ],
-            "cons": [
-              "No API keys, versioning, or portal",
-              "No per-tenant quota model"
-            ],
+            "pros": ["Strong WAF rules", "SSL termination and path routing"],
+            "cons": ["No API keys, versioning, or portal", "No per-tenant quota model"],
             "tags": ["Internal APIs behind WAF"]
           },
           {
             "title": "Direct App Service URL",
             "description": "Partners call the app directly",
-            "pros": [
-              "Zero setup"
-            ],
+            "pros": ["Zero setup"],
             "cons": [
               "Credentials shared across consumers",
               "No throttling or audit trail",

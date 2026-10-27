@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "web-api",
-    "rest",
-    "design"
-  ],
+  "tags": ["aspnet-core", "web-api", "rest", "design"],
   "blocks": [
     {
       "type": "heading",
@@ -91,21 +86,9 @@
           {
             "title": "Resource Naming and HTTP Verbs",
             "description": "RESTful controller structure",
-            "pros": [
-              "Follows HTTP standards",
-              "Predictable URLs",
-              "Easy to document"
-            ],
-            "cons": [
-              "PUT vs PATCH can be confusing",
-              "Not all operations fit REST perfectly"
-            ],
-            "tags": [
-              "REST",
-              "HTTP verbs",
-              "CreatedAtAction",
-              "NoContent"
-            ]
+            "pros": ["Follows HTTP standards", "Predictable URLs", "Easy to document"],
+            "cons": ["PUT vs PATCH can be confusing", "Not all operations fit REST perfectly"],
+            "tags": ["REST", "HTTP verbs", "CreatedAtAction", "NoContent"]
           },
           {
             "title": "Proper Status Codes",
@@ -115,17 +98,8 @@
               "Standard and expected",
               "Works with HTTP clients"
             ],
-            "cons": [
-              "Must remember each code meaning",
-              "Some scenarios have multiple valid codes"
-            ],
-            "tags": [
-              "200",
-              "201",
-              "204",
-              "404",
-              "400"
-            ]
+            "cons": ["Must remember each code meaning", "Some scenarios have multiple valid codes"],
+            "tags": ["200", "201", "204", "404", "400"]
           }
         ]
       }

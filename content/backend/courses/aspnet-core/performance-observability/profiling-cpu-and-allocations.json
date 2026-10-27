@@ -82,37 +82,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool",
-          "Best For",
-          "Overhead",
-          "Environment"
-        ],
+        "headers": ["Tool", "Best For", "Overhead", "Environment"],
         "rows": [
-          [
-            "dotnet-trace",
-            "CPU hot paths, method-level samples",
-            "Low",
-            "Production-like"
-          ],
-          [
-            "dotnet-counters",
-            "Live GC, memory, thread pool metrics",
-            "Very low",
-            "Production"
-          ],
+          ["dotnet-trace", "CPU hot paths, method-level samples", "Low", "Production-like"],
+          ["dotnet-counters", "Live GC, memory, thread pool metrics", "Very low", "Production"],
           [
             "Visual Studio Diagnostic Tools",
             "Deep inspection, line-level timings",
             "High",
             "Local only"
           ],
-          [
-            "PerfView",
-            "ETW traces, allocation stacks",
-            "Low",
-            "Windows production-like"
-          ]
+          ["PerfView", "ETW traces, allocation stacks", "Low", "Windows production-like"]
         ]
       }
     },

@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "claude",
-    "tone",
-    "style",
-    "voice",
-    "brand"
-  ],
+  "tags": ["claude", "tone", "style", "voice", "brand"],
   "blocks": [
     {
       "type": "heading",
@@ -40,37 +34,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Dimension",
-          "Formal",
-          "Casual"
-        ],
+        "headers": ["Dimension", "Formal", "Casual"],
         "rows": [
-          [
-            "Greeting",
-            "Dear Sir/Madam",
-            "Hey there"
-          ],
-          [
-            "Sentence structure",
-            "Complete, complex sentences",
-            "Short, punchy sentences"
-          ],
-          [
-            "Vocabulary",
-            "Precise, technical terms",
-            "Everyday language"
-          ],
-          [
-            "Contractions",
-            "Do not use (cannot, will not)",
-            "Use freely (can't, won't)"
-          ],
-          [
-            "Humor",
-            "Rare, subtle",
-            "Frequent, playful"
-          ]
+          ["Greeting", "Dear Sir/Madam", "Hey there"],
+          ["Sentence structure", "Complete, complex sentences", "Short, punchy sentences"],
+          ["Vocabulary", "Precise, technical terms", "Everyday language"],
+          ["Contractions", "Do not use (cannot, will not)", "Use freely (can't, won't)"],
+          ["Humor", "Rare, subtle", "Frequent, playful"]
         ]
       }
     },
@@ -181,13 +151,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "writing-with-claude",
-    "editing-and-polishing"
-  ],
-  "relatedGlossaryTerms": [
-    "system-prompt",
-    "large-language-model"
-  ],
+  "relatedLessons": ["writing-with-claude", "editing-and-polishing"],
+  "relatedGlossaryTerms": ["system-prompt", "large-language-model"],
   "courseSlug": "claude"
 }

@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "useeffect",
-    "hooks",
-    "side-effects"
-  ],
+  "tags": ["react", "useeffect", "hooks", "side-effects"],
   "blocks": [
     {
       "type": "paragraph",
@@ -53,23 +48,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Dependency Array",
-          "When It Runs"
-        ],
+        "headers": ["Dependency Array", "When It Runs"],
         "rows": [
-          [
-            "No array",
-            "After every render"
-          ],
-          [
-            "[] (empty array)",
-            "Only once after the initial render"
-          ],
-          [
-            "[value1, value2]",
-            "When any dependency changes"
-          ]
+          ["No array", "After every render"],
+          ["[] (empty array)", "Only once after the initial render"],
+          ["[value1, value2]", "When any dependency changes"]
         ]
       }
     },

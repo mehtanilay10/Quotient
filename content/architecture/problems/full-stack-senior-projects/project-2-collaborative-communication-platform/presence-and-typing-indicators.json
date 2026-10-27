@@ -200,10 +200,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "websocket-connection-lifecycle",
-    "message-persistence-and-ordering"
-  ],
+  "relatedLessons": ["websocket-connection-lifecycle", "message-persistence-and-ordering"],
   "furtherReading": [
     {
       "title": "Redis Sorted Sets for Presence",

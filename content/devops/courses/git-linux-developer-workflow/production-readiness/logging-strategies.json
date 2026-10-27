@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "logging",
-    "linux",
-    "observability",
-    "git"
-  ],
+  "tags": ["logging", "linux", "observability", "git"],
   "blocks": [
     {
       "type": "paragraph",
@@ -97,37 +92,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Level",
-          "Use Case",
-          "Example"
-        ],
+        "headers": ["Level", "Use Case", "Example"],
         "rows": [
-          [
-            "DEBUG",
-            "Detailed diagnostics during development",
-            "Variable values, branch paths"
-          ],
-          [
-            "INFO",
-            "Normal operational milestones",
-            "Service started, request completed"
-          ],
-          [
-            "WARN",
-            "Recoverable problems worth noticing",
-            "High memory usage, slow query"
-          ],
-          [
-            "ERROR",
-            "Failures that affect a single request",
-            "Database timeout, 500 response"
-          ],
-          [
-            "FATAL",
-            "Process cannot continue",
-            "Out of memory, port already in use"
-          ]
+          ["DEBUG", "Detailed diagnostics during development", "Variable values, branch paths"],
+          ["INFO", "Normal operational milestones", "Service started, request completed"],
+          ["WARN", "Recoverable problems worth noticing", "High memory usage, slow query"],
+          ["ERROR", "Failures that affect a single request", "Database timeout, 500 response"],
+          ["FATAL", "Process cannot continue", "Out of memory, port already in use"]
         ]
       }
     },

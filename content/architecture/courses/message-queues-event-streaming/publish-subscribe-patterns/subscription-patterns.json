@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "subscriptions",
-    "durable",
-    "transient",
-    "reliability",
-    "messaging"
-  ],
+  "tags": ["subscriptions", "durable", "transient", "reliability", "messaging"],
   "blocks": [
     {
       "type": "paragraph",
@@ -120,37 +114,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Property",
-          "Durable",
-          "Transient"
-        ],
+        "headers": ["Property", "Durable", "Transient"],
         "rows": [
-          [
-            "Queue survives restart",
-            "Yes",
-            "No"
-          ],
-          [
-            "Messages survive restart",
-            "Yes",
-            "No"
-          ],
-          [
-            "Multiple consumers",
-            "Allowed",
-            "Not allowed (exclusive)"
-          ],
-          [
-            "Auto-deleted on disconnect",
-            "No",
-            "Yes"
-          ],
-          [
-            "Use case",
-            "Order processing, audit logs",
-            "RPC reply queues, ad-hoc listeners"
-          ]
+          ["Queue survives restart", "Yes", "No"],
+          ["Messages survive restart", "Yes", "No"],
+          ["Multiple consumers", "Allowed", "Not allowed (exclusive)"],
+          ["Auto-deleted on disconnect", "No", "Yes"],
+          ["Use case", "Order processing, audit logs", "RPC reply queues, ad-hoc listeners"]
         ]
       }
     },

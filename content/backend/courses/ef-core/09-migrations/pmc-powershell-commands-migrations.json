@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "ef-core",
-    "pmc",
-    "powershell",
-    "migrations"
-  ],
+  "tags": ["ef-core", "pmc", "powershell", "migrations"],
   "blocks": [
     {
       "type": "paragraph",
@@ -30,39 +25,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Command",
-          "Usage"
-        ],
+        "headers": ["Command", "Usage"],
         "rows": [
-          [
-            "Add-Migration <name>",
-            "Creates a new migration"
-          ],
-          [
-            "Remove-Migration",
-            "Removes the last migration"
-          ],
-          [
-            "Update-Database",
-            "Updates database to specified migration"
-          ],
-          [
-            "Script-Migration",
-            "Generates SQL script from migrations"
-          ],
-          [
-            "Scaffold-DbContext",
-            "Generates DbContext from existing database"
-          ],
-          [
-            "Get-DbContext",
-            "Gets information about DbContext"
-          ],
-          [
-            "Drop-Database",
-            "Drops the database"
-          ]
+          ["Add-Migration <name>", "Creates a new migration"],
+          ["Remove-Migration", "Removes the last migration"],
+          ["Update-Database", "Updates database to specified migration"],
+          ["Script-Migration", "Generates SQL script from migrations"],
+          ["Scaffold-DbContext", "Generates DbContext from existing database"],
+          ["Get-DbContext", "Gets information about DbContext"],
+          ["Drop-Database", "Drops the database"]
         ]
       }
     },
@@ -89,9 +60,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ef-core-migrations-using-cli",
-    "generate-sql-script-from-model"
-  ],
+  "relatedLessons": ["ef-core-migrations-using-cli", "generate-sql-script-from-model"],
   "courseSlug": "ef-core"
 }

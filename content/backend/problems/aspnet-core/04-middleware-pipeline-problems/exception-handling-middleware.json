@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "middleware",
-    "exception-handling",
-    "error-handling"
-  ],
+  "tags": ["aspnet-core", "middleware", "exception-handling", "error-handling"],
   "blocks": [
     {
       "type": "heading",
@@ -96,15 +91,8 @@
               "Captures exception details",
               "Logs automatically"
             ],
-            "cons": [
-              "Only catches unhandled exceptions",
-              "Response is HTML by default"
-            ],
-            "tags": [
-              "UseExceptionHandler",
-              "IExceptionHandlerPathFeature",
-              "Hsts"
-            ]
+            "cons": ["Only catches unhandled exceptions", "Response is HTML by default"],
+            "tags": ["UseExceptionHandler", "IExceptionHandlerPathFeature", "Hsts"]
           },
           {
             "title": "Custom Exception Types",
@@ -114,15 +102,8 @@
               "Clear separation of concerns",
               "Easier debugging"
             ],
-            "cons": [
-              "Must throw from controllers",
-              "More middleware code"
-            ],
-            "tags": [
-              "NotFoundException",
-              "custom middleware",
-              "WriteAsJsonAsync"
-            ]
+            "cons": ["Must throw from controllers", "More middleware code"],
+            "tags": ["NotFoundException", "custom middleware", "WriteAsJsonAsync"]
           }
         ]
       }

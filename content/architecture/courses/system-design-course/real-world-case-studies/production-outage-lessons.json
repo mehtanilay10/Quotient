@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "system-design",
-    "outages",
-    "reliability",
-    "monitoring",
-    "disaster-recovery"
-  ],
+  "tags": ["system-design", "outages", "reliability", "monitoring", "disaster-recovery"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,37 +67,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Company",
-          "Outage Type",
-          "Duration",
-          "Root Cause"
-        ],
+        "headers": ["Company", "Outage Type", "Duration", "Root Cause"],
         "rows": [
-          [
-            "AWS",
-            "Regional outage",
-            "6-8 hours",
-            "Capacity overload from retry storms"
-          ],
-          [
-            "Cloudflare",
-            "Edge network outage",
-            "2 hours",
-            "Misconfigured data center router"
-          ],
-          [
-            "GitHub",
-            "Data corruption",
-            "24+ hours",
-            "Failed database migration"
-          ],
-          [
-            "Facebook",
-            "BGP misconfiguration",
-            "6 hours",
-            "Withdrawn BGP routes"
-          ]
+          ["AWS", "Regional outage", "6-8 hours", "Capacity overload from retry storms"],
+          ["Cloudflare", "Edge network outage", "2 hours", "Misconfigured data center router"],
+          ["GitHub", "Data corruption", "24+ hours", "Failed database migration"],
+          ["Facebook", "BGP misconfiguration", "6 hours", "Withdrawn BGP routes"]
         ]
       }
     },

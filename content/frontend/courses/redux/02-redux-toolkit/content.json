@@ -9,12 +9,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedHours": 2.5,
-  "lessonSlugs": [
-    "configure-store",
-    "create-slice",
-    "create-async-thunk",
-    "extra-reducers"
-  ],
+  "lessonSlugs": ["configure-store", "create-slice", "create-async-thunk", "extra-reducers"],
   "tags": ["redux", "toolkit", "modern-redux"],
   "prerequisites": ["redux-fundamentals"],
   "whatYouLearn": [

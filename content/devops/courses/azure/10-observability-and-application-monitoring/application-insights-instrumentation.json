@@ -8,14 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "azure",
-    "azure",
-    "monitoring",
-    "observability",
-    "application-insights",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "monitoring", "observability", "application-insights", "developer"],
   "blocks": [
     {
       "type": "heading",

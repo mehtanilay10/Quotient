@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "mvc",
-    "routing"
-  ],
+  "tags": ["aspnet-core", "mvc", "routing"],
   "blocks": [
     {
       "type": "heading",
@@ -90,34 +86,16 @@
           {
             "title": "Conventional Routing in Program.cs",
             "description": "Standard pattern-based routing",
-            "pros": [
-              "Centralized route configuration",
-              "Easy to understand URL patterns"
-            ],
-            "cons": [
-              "Less flexible than attribute routing",
-              "Harder for complex URLs"
-            ],
-            "tags": [
-              "MapControllerRoute",
-              "URL pattern"
-            ]
+            "pros": ["Centralized route configuration", "Easy to understand URL patterns"],
+            "cons": ["Less flexible than attribute routing", "Harder for complex URLs"],
+            "tags": ["MapControllerRoute", "URL pattern"]
           },
           {
             "title": "Endpoint Routing",
             "description": "Supports areas and conventional routes",
-            "pros": [
-              "Supports areas",
-              "Order matters for route matching"
-            ],
-            "cons": [
-              "Route order is critical",
-              "Must be defined before app.Run()"
-            ],
-            "tags": [
-              "MapControllerRoute",
-              "areas"
-            ]
+            "pros": ["Supports areas", "Order matters for route matching"],
+            "cons": ["Route order is critical", "Must be defined before app.Run()"],
+            "tags": ["MapControllerRoute", "areas"]
           }
         ]
       }

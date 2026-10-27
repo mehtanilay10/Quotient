@@ -97,7 +97,10 @@
       }
     }
   ],
-  "relatedLessons": ["route-handlers-and-backend-for-frontend-patterns", "authentication-and-authorization-boundaries"],
+  "relatedLessons": [
+    "route-handlers-and-backend-for-frontend-patterns",
+    "authentication-and-authorization-boundaries"
+  ],
   "furtherReading": [
     {
       "title": "Server Actions",

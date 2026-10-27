@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "medium",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "trees",
-    "bfs",
-    "queue",
-    "medium"
-  ],
+  "tags": ["csharp", "trees", "bfs", "queue", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -52,17 +46,9 @@
           {
             "title": "BFS Queue",
             "description": "Process level by level",
-            "pros": [
-              "Natural for level order"
-            ],
-            "cons": [
-              "Queue overhead"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(w) space",
-              "Recommended"
-            ]
+            "pros": ["Natural for level order"],
+            "cons": ["Queue overhead"],
+            "tags": ["O(n) time", "O(w) space", "Recommended"]
           }
         ]
       }

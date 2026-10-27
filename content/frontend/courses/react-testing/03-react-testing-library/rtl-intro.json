@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "rtl",
-    "testing",
-    "react"
-  ],
+  "tags": ["rtl", "testing", "react"],
   "blocks": [
     {
       "type": "paragraph",
@@ -45,8 +41,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "queries"
-  ],
+  "relatedLessons": ["queries"],
   "courseSlug": "react-testing"
 }

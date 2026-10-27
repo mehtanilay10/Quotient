@@ -8,12 +8,7 @@
   "order": 11,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "architecture",
-    "documentation",
-    "decisions",
-    "adr"
-  ],
+  "tags": ["architecture", "documentation", "decisions", "adr"],
   "blocks": [
     {
       "type": "paragraph",
@@ -180,10 +175,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "making-technical-trade-offs-explicit",
-    "cost-as-an-architecture-constraint"
-  ],
+  "relatedLessons": ["making-technical-trade-offs-explicit", "cost-as-an-architecture-constraint"],
   "furtherReading": [
     {
       "title": "Documenting Architecture Decisions",

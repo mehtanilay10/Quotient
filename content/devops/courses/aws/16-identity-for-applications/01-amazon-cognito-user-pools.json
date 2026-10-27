@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "cognito",
-    "user-pools",
-    "authentication",
-    "identity"
-  ],
+  "tags": ["aws", "cognito", "user-pools", "authentication", "identity"],
   "blocks": [
     {
       "type": "paragraph",

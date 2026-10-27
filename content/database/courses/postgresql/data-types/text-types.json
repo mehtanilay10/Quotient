@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "text",
-    "varchar",
-    "char",
-    "performance",
-    "collations"
-  ],
+  "tags": ["text", "varchar", "char", "performance", "collations"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,12 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Length Limit",
-          "Trailing Spaces",
-          "Recommendation"
-        ],
+        "headers": ["Type", "Length Limit", "Trailing Spaces", "Recommendation"],
         "rows": [
           [
             "`TEXT`",
@@ -188,8 +177,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "numeric-types",
-    "jsonb-arrays"
-  ]
+  "relatedLessons": ["numeric-types", "jsonb-arrays"]
 }

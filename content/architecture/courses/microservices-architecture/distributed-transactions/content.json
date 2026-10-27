@@ -9,13 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 5,
   "icon": "🔄",
-  "tags": [
-    "transactions",
-    "saga",
-    "2pc",
-    "tcc",
-    "outbox"
-  ],
+  "tags": ["transactions", "saga", "2pc", "tcc", "outbox"],
   "lessonSlugs": [
     "distributed-transaction-challenges",
     "two-phase-commit-2pc",

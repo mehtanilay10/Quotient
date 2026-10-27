@@ -6,11 +6,7 @@
   "description": "The difference between data-holder entities and real domain objects, why anemic models push rules into services, and when a plain data model is perfectly fine.",
   "order": 18,
   "difficulty": "advanced",
-  "tags": [
-    "oop",
-    "ddd",
-    "advanced"
-  ],
+  "tags": ["oop", "ddd", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

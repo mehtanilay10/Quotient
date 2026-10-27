@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "gitlab-ci",
-    "ci-cd",
-    "devops"
-  ],
+  "tags": ["gitlab-ci", "ci-cd", "devops"],
   "blocks": [
     {
       "type": "heading",
@@ -124,27 +120,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Purpose",
-          "Scope"
-        ],
+        "headers": ["Feature", "Purpose", "Scope"],
         "rows": [
-          [
-            "cache",
-            "Speed up dependency installation",
-            "Across pipelines, per-branch"
-          ],
-          [
-            "artifacts",
-            "Pass build outputs between jobs",
-            "Per-pipeline, downloaded as archive"
-          ],
-          [
-            "reports",
-            "Generate merge request test reports",
-            "Shown in MR widget"
-          ]
+          ["cache", "Speed up dependency installation", "Across pipelines, per-branch"],
+          ["artifacts", "Pass build outputs between jobs", "Per-pipeline, downloaded as archive"],
+          ["reports", "Generate merge request test reports", "Shown in MR widget"]
         ]
       }
     },
@@ -202,26 +182,17 @@
           {
             "title": "GitHub Actions",
             "description": "Pipelines as YAML in GitHub. Strong marketplace of reusable actions.",
-            "tags": [
-              "GitHub-native",
-              "YAML"
-            ]
+            "tags": ["GitHub-native", "YAML"]
           },
           {
             "title": "GitLab CI",
             "description": "Built-in to GitLab. Simple .gitlab-ci.yml with environments and MRs.",
-            "tags": [
-              "All-in-one",
-              "MR integration"
-            ]
+            "tags": ["All-in-one", "MR integration"]
           },
           {
             "title": "Jenkins",
             "description": "Self-hosted, plugin-heavy. Declarative pipelines with Jenkinsfile.",
-            "tags": [
-              "Highly extensible",
-              "Mature ecosystem"
-            ]
+            "tags": ["Highly extensible", "Mature ecosystem"]
           }
         ]
       }

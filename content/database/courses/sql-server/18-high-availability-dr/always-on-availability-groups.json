@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "always-on",
-    "availability-groups",
-    "ag",
-    "failover",
-    "replica",
-    "high-availability"
-  ],
+  "tags": ["always-on", "availability-groups", "ag", "failover", "replica", "high-availability"],
   "blocks": [
     {
       "type": "heading",
@@ -92,34 +85,16 @@
           {
             "title": "Synchronous Commit",
             "description": "Waits for each secondary replica to harden the log before acknowledging the client.",
-            "pros": [
-              "Zero data loss on failover",
-              "Automatic failover possible with quorum"
-            ],
-            "cons": [
-              "Higher transaction latency",
-              "Can be slowed by slow network links"
-            ],
-            "tags": [
-              "zero-data-loss",
-              "auto-failover"
-            ]
+            "pros": ["Zero data loss on failover", "Automatic failover possible with quorum"],
+            "cons": ["Higher transaction latency", "Can be slowed by slow network links"],
+            "tags": ["zero-data-loss", "auto-failover"]
           },
           {
             "title": "Asynchronous Commit",
             "description": "Acknowledges the client immediately after the primary commits without waiting for secondaries.",
-            "pros": [
-              "Lower transaction latency",
-              "Better for geographically dispersed replicas"
-            ],
-            "cons": [
-              "Potential data loss on failover",
-              "Automatic failover not allowed"
-            ],
-            "tags": [
-              "low-latency",
-              "geo-distributed"
-            ]
+            "pros": ["Lower transaction latency", "Better for geographically dispersed replicas"],
+            "cons": ["Potential data loss on failover", "Automatic failover not allowed"],
+            "tags": ["low-latency", "geo-distributed"]
           }
         ]
       }

@@ -6,12 +6,7 @@
   "category": "analysis",
   "difficulty": "intermediate",
   "template": "I am trying to decide between:\n\n**Option A:** [DESCRIBE OPTION A]\n**Option B:** [DESCRIBE OPTION B]\n[Add Option C if applicable]\n\nContext:\n- My goal: [WHAT I AM TRYING TO ACHIEVE]\n- My constraints: [KEY LIMITATIONS — time, money, skills, etc.]\n- What matters most to me: [YOUR PRIORITIES IN ORDER]\n\nPlease give me:\n1. **Structured comparison** (table or list comparing each option on the criteria that matter to me)\n2. **Hidden trade-offs** (what I might not be fully accounting for)\n3. **Recommendation** (which option you suggest for my stated goals, with reasoning)\n4. **The question I should be asking instead** (if my framing of the decision seems off)",
-  "tags": [
-    "decision-making",
-    "analysis",
-    "tradeoffs",
-    "thinking"
-  ],
+  "tags": ["decision-making", "analysis", "tradeoffs", "thinking"],
   "tips": [
     "Add \"argue strongly for Option B even if you lean toward A\" to test assumptions",
     "Ask \"what additional information would most change this recommendation?\"",

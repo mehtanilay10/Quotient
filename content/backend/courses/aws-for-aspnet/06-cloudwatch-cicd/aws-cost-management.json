@@ -62,11 +62,7 @@
       "data": {
         "headers": ["Resource", "Optimization", "Estimated Savings"],
         "rows": [
-          [
-            "Elastic Beanstalk",
-            "Stop or scale down non-production environments",
-            "30-50%"
-          ],
+          ["Elastic Beanstalk", "Stop or scale down non-production environments", "30-50%"],
           ["RDS", "Use db.t3.micro for development, stop at night", "40-70%"],
           ["S3", "Move older files to S3 Standard-IA", "50-80%"],
           ["CloudWatch", "Set log retention policies and filter logs", "30-60%"]

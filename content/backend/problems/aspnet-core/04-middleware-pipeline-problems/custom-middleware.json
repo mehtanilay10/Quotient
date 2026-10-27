@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "middleware",
-    "custom-middleware"
-  ],
+  "tags": ["aspnet-core", "middleware", "custom-middleware"],
   "blocks": [
     {
       "type": "heading",
@@ -90,39 +86,16 @@
           {
             "title": "Inline Middleware",
             "description": "Lambda-based middleware",
-            "pros": [
-              "Quick to write",
-              "Inline configuration",
-              "No separate class needed"
-            ],
-            "cons": [
-              "Can clutter Program.cs",
-              "Hard to test in isolation",
-              "No DI"
-            ],
-            "tags": [
-              "app.Use()",
-              "RequestDelegate",
-              "inline"
-            ]
+            "pros": ["Quick to write", "Inline configuration", "No separate class needed"],
+            "cons": ["Can clutter Program.cs", "Hard to test in isolation", "No DI"],
+            "tags": ["app.Use()", "RequestDelegate", "inline"]
           },
           {
             "title": "Class-Based Middleware",
             "description": "Reusable class middleware",
-            "pros": [
-              "Supports DI",
-              "Reusable",
-              "Clean registration via extension"
-            ],
-            "cons": [
-              "More boilerplate",
-              "Separate file"
-            ],
-            "tags": [
-              "InvokeAsync",
-              "UseMiddleware",
-              "extension method"
-            ]
+            "pros": ["Supports DI", "Reusable", "Clean registration via extension"],
+            "cons": ["More boilerplate", "Separate file"],
+            "tags": ["InvokeAsync", "UseMiddleware", "extension method"]
           }
         ]
       }

@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "state-reducer",
-    "composition",
-    "enhancer",
-    "middleware",
-    "testing"
-  ],
+  "tags": ["state-reducer", "composition", "enhancer", "middleware", "testing"],
   "blocks": [
     {
       "type": "paragraph",
@@ -129,12 +123,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Wraps",
-          "Can Modify Action",
-          "Best For"
-        ],
+        "headers": ["Pattern", "Wraps", "Can Modify Action", "Best For"],
         "rows": [
           [
             "Enhancer",
@@ -197,14 +186,8 @@
               "No shared context object needed",
               "Easy to stack and reuse"
             ],
-            "cons": [
-              "Cannot cancel an action",
-              "Only sees state before/after"
-            ],
-            "tags": [
-              "simple",
-              "wrapping"
-            ]
+            "cons": ["Cannot cancel an action", "Only sees state before/after"],
+            "tags": ["simple", "wrapping"]
           },
           {
             "title": "Middleware",
@@ -214,14 +197,8 @@
               "Async-compatible patterns",
               "Rich context (getState, dispatch)"
             ],
-            "cons": [
-              "More boilerplate",
-              "Easier to introduce subtle bugs"
-            ],
-            "tags": [
-              "powerful",
-              "pipeline"
-            ]
+            "cons": ["More boilerplate", "Easier to introduce subtle bugs"],
+            "tags": ["powerful", "pipeline"]
           }
         ]
       }
@@ -345,10 +322,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "state-reducer-examples",
-    "reducer-hooks-patterns"
-  ],
+  "relatedLessons": ["state-reducer-examples", "reducer-hooks-patterns"],
   "furtherReading": [
     {
       "title": "React Docs: You Might Not Need a Reducer",
@@ -372,7 +346,5 @@
       "description": "Interactive workshop on reducer factories, enhancers, and the state reducer pattern."
     }
   ],
-  "prerequisites": [
-    "state-reducer-examples"
-  ]
+  "prerequisites": ["state-reducer-examples"]
 }

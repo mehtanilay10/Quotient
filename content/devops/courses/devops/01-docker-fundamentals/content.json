@@ -11,11 +11,7 @@
   "icon": "🐳",
   "prerequisites": [],
   "tags": ["docker", "containers", "devops"],
-  "lessonSlugs": [
-    "01-what-is-docker",
-    "02-docker-images-containers",
-    "03-dockerfile-basics"
-  ],
+  "lessonSlugs": ["01-what-is-docker", "02-docker-images-containers", "03-dockerfile-basics"],
   "whatYouLearn": [
     "Understand containers and the Docker architecture",
     "Run and manage containers with docker run",

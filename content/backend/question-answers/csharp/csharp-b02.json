@@ -6,10 +6,7 @@
   "description": "Learn about public, private, protected, internal, and more.",
   "order": 2,
   "difficulty": "beginner",
-  "tags": [
-    "c#",
-    "beginner"
-  ],
+  "tags": ["c#", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

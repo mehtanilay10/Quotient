@@ -8,15 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "slack",
-    "websockets",
-    "channel-fanout",
-    "threads",
-    "presence"
-  ],
+  "tags": ["hld", "system-design", "slack", "websockets", "channel-fanout", "threads", "presence"],
   "blocks": [
     {
       "type": "heading",
@@ -144,11 +136,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Dimension",
-          "WhatsApp Architecture",
-          "Slack Architecture"
-        ],
+        "headers": ["Dimension", "WhatsApp Architecture", "Slack Architecture"],
         "rows": [
           [
             "Primary Domain",
@@ -223,11 +211,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "whatsapp-chat-hld",
-    "chat-system-hld",
-    "notification-system"
-  ],
+  "relatedLessons": ["whatsapp-chat-hld", "chat-system-hld", "notification-system"],
   "furtherReading": [
     {
       "title": "Flannel: An Application-Level Edge Cache for Slack",

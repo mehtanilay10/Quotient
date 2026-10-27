@@ -8,12 +8,7 @@
   "order": 12,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "backend",
-    "messaging",
-    "distributed-systems",
-    "microservices"
-  ],
+  "tags": ["backend", "messaging", "distributed-systems", "microservices"],
   "blocks": [
     {
       "type": "paragraph",

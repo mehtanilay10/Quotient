@@ -7,11 +7,7 @@
   "order": 11,
   "difficulty": "beginner",
   "estimatedMinutes": 22,
-  "tags": [
-    "bit",
-    "boolean",
-    "data-type"
-  ],
+  "tags": ["bit", "boolean", "data-type"],
   "blocks": [
     {
       "type": "heading",

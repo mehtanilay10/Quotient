@@ -31,7 +31,12 @@
           ["Hot", "Frequently accessed data", "Highest", "Lowest"],
           ["Cool", "Infrequently accessed, short-term", "Lower than hot", "Higher than hot"],
           ["Cold", "Infrequently accessed, longer-term", "Lower than cool", "Higher than cool"],
-          ["Archive", "Rarely accessed, compliance, backups", "Lowest", "Highest (rehydration needed)"]
+          [
+            "Archive",
+            "Rarely accessed, compliance, backups",
+            "Lowest",
+            "Highest (rehydration needed)"
+          ]
         ]
       }
     },

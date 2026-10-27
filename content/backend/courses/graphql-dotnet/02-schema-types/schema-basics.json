@@ -7,10 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 33,
-  "tags": [
-    "graphql",
-    "schema"
-  ],
+  "tags": ["graphql", "schema"],
   "blocks": [
     {
       "type": "paragraph",
@@ -39,25 +36,14 @@
           {
             "title": "Schema-First",
             "description": "Write .graphql SDL files, then generate C# types.",
-            "pros": [
-              "Clear contract-first",
-              "Easy for frontend teams"
-            ],
-            "cons": [
-              "More files to maintain",
-              "SDL learning curve"
-            ]
+            "pros": ["Clear contract-first", "Easy for frontend teams"],
+            "cons": ["More files to maintain", "SDL learning curve"]
           },
           {
             "title": "Code-First",
             "description": "Write C# classes, Hot Chocolate generates the schema.",
-            "pros": [
-              "Single source of truth",
-              "Full C# power"
-            ],
-            "cons": [
-              "Requires C# knowledge"
-            ]
+            "pros": ["Single source of truth", "Full C# power"],
+            "cons": ["Requires C# knowledge"]
           }
         ]
       }
@@ -150,9 +136,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "type-definitions",
-    "input-types"
-  ],
+  "relatedLessons": ["type-definitions", "input-types"],
   "courseSlug": "graphql-dotnet"
 }

@@ -6,10 +6,7 @@
   "description": "Running long-lived background work in ASP.NET Core with cancellation, queues, and graceful shutdown.",
   "order": 16,
   "difficulty": "intermediate",
-  "tags": [
-    "aspnet-core",
-    "intermediate"
-  ],
+  "tags": ["aspnet-core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -123,11 +120,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "aspnet-b02",
-    "beginner-q16",
-    "exception-handling-problem-details"
-  ],
+  "relatedLessons": ["aspnet-b02", "beginner-q16", "exception-handling-problem-details"],
   "furtherReading": [
     {
       "title": "Background services in ASP.NET Core",

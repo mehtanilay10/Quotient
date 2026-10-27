@@ -6,10 +6,7 @@
   "description": "Understand ACID properties and transaction isolation.",
   "order": 10,
   "difficulty": "advanced",
-  "tags": [
-    "sql server",
-    "advanced"
-  ],
+  "tags": ["sql server", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

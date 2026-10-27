@@ -28,26 +28,10 @@
       "data": {
         "headers": ["Aspect", "RDS", "DynamoDB"],
         "rows": [
-          [
-            "Data model",
-            "Relational tables with SQL",
-            "NoSQL tables with JSON-like items"
-          ],
-          [
-            "Query flexibility",
-            "Complex joins and aggregations",
-            "Key-value and simple queries"
-          ],
-          [
-            "Scaling",
-            "Vertical scaling with some read replicas",
-            "Horizontal auto-scaling"
-          ],
-          [
-            "Transactions",
-            "ACID transactions across rows",
-            "ACID transactions within a partition"
-          ],
+          ["Data model", "Relational tables with SQL", "NoSQL tables with JSON-like items"],
+          ["Query flexibility", "Complex joins and aggregations", "Key-value and simple queries"],
+          ["Scaling", "Vertical scaling with some read replicas", "Horizontal auto-scaling"],
+          ["Transactions", "ACID transactions across rows", "ACID transactions within a partition"],
           ["Pricing", "Per-instance hourly", "Per-request and storage"]
         ]
       }

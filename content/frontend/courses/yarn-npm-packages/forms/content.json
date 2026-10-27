@@ -7,12 +7,6 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "📝",
-  "lessonSlugs": [
-    "react-hook-form",
-    "zod-validation",
-    "formik",
-    "yup",
-    "final-form"
-  ],
+  "lessonSlugs": ["react-hook-form", "zod-validation", "formik", "yup", "final-form"],
   "courseSlug": "yarn-npm-packages"
 }

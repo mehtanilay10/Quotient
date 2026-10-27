@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "host",
-    "lifetime",
-    "background",
-    "startup"
-  ],
+  "tags": ["host", "lifetime", "background", "startup"],
   "blocks": [
     {
       "type": "paragraph",
@@ -107,22 +102,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Signal",
-          "Typical Source",
-          "Effect"
-        ],
+        "headers": ["Signal", "Typical Source", "Effect"],
         "rows": [
           [
             "SIGTERM",
             "Linux systemd, Kubernetes",
             "Initiates graceful shutdown with configured timeout"
           ],
-          [
-            "Ctrl+C",
-            "Developer terminal",
-            "Same as SIGTERM"
-          ],
+          ["Ctrl+C", "Developer terminal", "Same as SIGTERM"],
           [
             "IIS Stop",
             "IIS application pool recycle",

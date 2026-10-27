@@ -6,13 +6,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "jest",
-    "testing",
-    "unit",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["jest", "testing", "unit", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

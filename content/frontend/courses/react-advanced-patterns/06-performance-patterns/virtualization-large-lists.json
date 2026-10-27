@@ -16,13 +16,8 @@
     "react-window",
     "react-virtuoso"
   ],
-  "prerequisites": [
-    "memoization-basics"
-  ],
-  "relatedLessons": [
-    "memoization-basics",
-    "render-optimization"
-  ],
+  "prerequisites": ["memoization-basics"],
+  "relatedLessons": ["memoization-basics", "render-optimization"],
   "furtherReading": [
     {
       "title": "react-window Documentation",
@@ -178,11 +173,7 @@
           {
             "title": "react-window",
             "description": "The original lightweight virtualization library from the React team.",
-            "pros": [
-              "Very small bundle size",
-              "Stable API",
-              "Excellent for fixed-height lists"
-            ],
+            "pros": ["Very small bundle size", "Stable API", "Excellent for fixed-height lists"],
             "cons": [
               "Manual variable-height setup",
               "Fewer built-in helpers",
@@ -192,16 +183,8 @@
           {
             "title": "react-virtuoso",
             "description": "A modern alternative focused on developer experience and dynamic content.",
-            "pros": [
-              "Auto variable-height",
-              "Grouped lists",
-              "Smooth scroll out of the box"
-            ],
-            "cons": [
-              "Larger bundle",
-              "Newer ecosystem",
-              "Fewer advanced examples"
-            ]
+            "pros": ["Auto variable-height", "Grouped lists", "Smooth scroll out of the box"],
+            "cons": ["Larger bundle", "Newer ecosystem", "Fewer advanced examples"]
           }
         ]
       }
@@ -209,35 +192,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Library",
-          "Bundle Size",
-          "Variable Height",
-          "Grouped Lists",
-          "Best For"
-        ],
+        "headers": ["Library", "Bundle Size", "Variable Height", "Grouped Lists", "Best For"],
         "rows": [
-          [
-            "react-window",
-            "~2 KB",
-            "Supported (manual)",
-            "No",
-            "Fixed-height large tables"
-          ],
-          [
-            "react-virtuoso",
-            "~12 KB",
-            "Automatic",
-            "Yes",
-            "Chat feeds and variable content"
-          ],
-          [
-            "react-virtualized",
-            "~26 KB",
-            "Supported",
-            "Yes",
-            "Legacy complex grids (deprecated)"
-          ]
+          ["react-window", "~2 KB", "Supported (manual)", "No", "Fixed-height large tables"],
+          ["react-virtuoso", "~12 KB", "Automatic", "Yes", "Chat feeds and variable content"],
+          ["react-virtualized", "~26 KB", "Supported", "Yes", "Legacy complex grids (deprecated)"]
         ]
       }
     },

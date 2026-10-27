@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "intermediate",
   "estimatedMinutes": 22,
-  "tags": [
-    "tokens",
-    "cost",
-    "microsoft-extensions-ai",
-    "csharp"
-  ],
+  "tags": ["tokens", "cost", "microsoft-extensions-ai", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -75,9 +70,7 @@
       "takeaway": "Use ITokenizer for pre-flight checks and ChatResponse.Usage for real cost tracking in production .NET AI backends."
     }
   ],
-  "relatedLessons": [
-    "caching-cost-and-token-management"
-  ],
+  "relatedLessons": ["caching-cost-and-token-management"],
   "technology": null,
   "furtherReading": [
     {

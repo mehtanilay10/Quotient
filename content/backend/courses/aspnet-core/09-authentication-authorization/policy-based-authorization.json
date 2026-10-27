@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 32,
-  "tags": [
-    "policies",
-    "claims",
-    "requirements"
-  ],
+  "tags": ["policies", "claims", "requirements"],
   "blocks": [
     {
       "type": "heading",

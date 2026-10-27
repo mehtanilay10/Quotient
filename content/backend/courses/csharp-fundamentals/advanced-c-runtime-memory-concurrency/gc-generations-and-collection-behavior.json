@@ -102,7 +102,11 @@
       }
     }
   ],
-  "relatedLessons": ["managed-heap-and-allocation-lifecycle", "large-object-heap-and-pinned-objects", "server-gc-vs-workstation-gc"],
+  "relatedLessons": [
+    "managed-heap-and-allocation-lifecycle",
+    "large-object-heap-and-pinned-objects",
+    "server-gc-vs-workstation-gc"
+  ],
   "furtherReading": [
     {
       "type": "article",

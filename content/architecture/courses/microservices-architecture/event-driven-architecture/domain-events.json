@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 17,
-  "tags": [
-    "domain-events",
-    "event-handlers",
-    "ddd"
-  ],
+  "tags": ["domain-events", "event-handlers", "ddd"],
   "blocks": [
     {
       "type": "paragraph",
@@ -86,22 +82,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Delivery",
-          "Use Case"
-        ],
+        "headers": ["Type", "Delivery", "Use Case"],
         "rows": [
-          [
-            "In-process",
-            "Immediate, same process",
-            "Side effects within service"
-          ],
-          [
-            "Cross-service",
-            "Via message broker",
-            "Integration between services"
-          ]
+          ["In-process", "Immediate, same process", "Side effects within service"],
+          ["Cross-service", "Via message broker", "Integration between services"]
         ]
       }
     },

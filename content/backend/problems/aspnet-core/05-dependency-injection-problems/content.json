@@ -9,13 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 7,
   "icon": "💉",
-  "tags": [
-    "aspnet-core",
-    "dependency-injection",
-    "ioc",
-    "lifetime",
-    "options-pattern"
-  ],
+  "tags": ["aspnet-core", "dependency-injection", "ioc", "lifetime", "options-pattern"],
   "lessonSlugs": [
     "service-lifetimes",
     "ioc-container-setup",

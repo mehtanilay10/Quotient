@@ -8,11 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "health-checks",
-    "load-balancing",
-    "algorithms"
-  ],
+  "tags": ["health-checks", "load-balancing", "algorithms"],
   "blocks": [
     {
       "type": "paragraph",
@@ -78,37 +74,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Algorithm",
-          "Description",
-          "Best For"
-        ],
+        "headers": ["Algorithm", "Description", "Best For"],
         "rows": [
-          [
-            "Round Robin",
-            "Rotate through instances",
-            "Uniform load"
-          ],
-          [
-            "Random",
-            "Pick random instance",
-            "Simple, stateless"
-          ],
+          ["Round Robin", "Rotate through instances", "Uniform load"],
+          ["Random", "Pick random instance", "Simple, stateless"],
           [
             "Least Connections",
             "Pick instance with fewest active connections",
             "Variable request durations"
           ],
-          [
-            "Weighted",
-            "Assign weights to instances",
-            "Heterogeneous hardware"
-          ],
-          [
-            "Consistent Hashing",
-            "Route by key to same instance",
-            "Caching, session affinity"
-          ]
+          ["Weighted", "Assign weights to instances", "Heterogeneous hardware"],
+          ["Consistent Hashing", "Route by key to same instance", "Caching, session affinity"]
         ]
       }
     },

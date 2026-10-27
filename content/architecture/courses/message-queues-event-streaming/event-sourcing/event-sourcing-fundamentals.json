@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "event-sourcing",
-    "event-store",
-    "cqrs",
-    "domain-driven-design"
-  ],
+  "tags": ["event-sourcing", "event-store", "cqrs", "domain-driven-design"],
   "blocks": [
     {
       "type": "paragraph",

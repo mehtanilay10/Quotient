@@ -60,7 +60,11 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": ["Priority queue for efficient scheduling", "Persistence for durability", "Idempotent jobs recommended"],
+        "points": [
+          "Priority queue for efficient scheduling",
+          "Persistence for durability",
+          "Idempotent jobs recommended"
+        ],
         "takeaway": "Separate scheduling, storage, and execution concerns."
       }
     }

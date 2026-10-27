@@ -8,12 +8,7 @@
   "order": 24,
   "difficulty": "hard",
   "estimatedMinutes": 20,
-  "tags": [
-    "csharp",
-    "arrays",
-    "two-pointers",
-    "hard"
-  ],
+  "tags": ["csharp", "arrays", "two-pointers", "hard"],
   "blocks": [
     {
       "type": "heading",
@@ -101,34 +96,16 @@
           {
             "title": "Prefix/Suffix Max",
             "description": "Precompute left and right max arrays",
-            "pros": [
-              "O(n) time",
-              "Easy to understand"
-            ],
-            "cons": [
-              "O(n) extra space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["O(n) time", "Easy to understand"],
+            "cons": ["O(n) extra space"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Two-Pointer",
             "description": "Move smaller side, track max heights",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
-            "cons": [
-              "Pointer logic"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
+            "cons": ["Pointer logic"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

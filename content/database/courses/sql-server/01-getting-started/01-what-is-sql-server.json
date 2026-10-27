@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "introduction",
-    "architecture",
-    "editions"
-  ],
+  "tags": ["introduction", "architecture", "editions"],
   "blocks": [
     {
       "type": "heading",
@@ -197,42 +193,27 @@
           {
             "title": "Developer Edition",
             "description": "Intended for database development and testing purposes. Free of charge.",
-            "tags": [
-              "free",
-              "development"
-            ]
+            "tags": ["free", "development"]
           },
           {
             "title": "Express Edition",
             "description": "Suitable for small databases with a storage capacity of up to 10 GB per database. Free of charge.",
-            "tags": [
-              "free",
-              "small-scale"
-            ]
+            "tags": ["free", "small-scale"]
           },
           {
             "title": "Enterprise Edition",
             "description": "Includes all SQL Server features. For larger and more critical applications.",
-            "tags": [
-              "paid",
-              "full-featured"
-            ]
+            "tags": ["paid", "full-featured"]
           },
           {
             "title": "Standard Edition",
             "description": "A subset of Enterprise Edition features with limitations on processor cores and memory.",
-            "tags": [
-              "paid",
-              "mid-range"
-            ]
+            "tags": ["paid", "mid-range"]
           },
           {
             "title": "Web Edition",
             "description": "A good option for web hosting companies due to low total cost of ownership.",
-            "tags": [
-              "paid",
-              "web-hosting"
-            ]
+            "tags": ["paid", "web-hosting"]
           }
         ]
       }

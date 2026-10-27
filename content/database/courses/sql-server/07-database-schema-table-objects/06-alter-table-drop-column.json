@@ -7,11 +7,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "alter-table",
-    "drop-column",
-    "ddl"
-  ],
+  "tags": ["alter-table", "drop-column", "ddl"],
   "blocks": [
     {
       "type": "heading",

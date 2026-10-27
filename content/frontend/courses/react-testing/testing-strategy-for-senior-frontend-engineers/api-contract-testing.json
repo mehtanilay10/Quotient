@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "testing",
-    "playwright",
-    "e2e",
-    "ci"
-  ],
+  "tags": ["testing", "playwright", "e2e", "ci"],
   "blocks": [
     {
       "type": "paragraph",
@@ -114,10 +109,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "testcontainers-and-realistic-backend-integration",
-    "flaky-test-diagnosis"
-  ],
+  "relatedLessons": ["testcontainers-and-realistic-backend-integration", "flaky-test-diagnosis"],
   "furtherReading": [
     {
       "type": "article",

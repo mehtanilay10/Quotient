@@ -1,21 +1,21 @@
-import type { NextConfig } from 'next';
-import withPWA from '@ducanh2912/next-pwa';
+import type { NextConfig } from "next";
+import withPWA from "@ducanh2912/next-pwa";
 
 const nextConfig: NextConfig = {
   // Legacy category URLs: .NET content moved from /dotnet → /backend and
   // Cloud content from /cloud → /devops. Keep old links working.
   async redirects() {
     return [
-      { source: '/dotnet/:path*', destination: '/backend/:path*', permanent: true },
-      { source: '/cloud/:path*', destination: '/devops/:path*', permanent: true },
+      { source: "/dotnet/:path*", destination: "/backend/:path*", permanent: true },
+      { source: "/cloud/:path*", destination: "/devops/:path*", permanent: true },
     ];
   },
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'www.sqlservertutorial.net',
-        pathname: '/wp-content/uploads/**',
+        protocol: "https",
+        hostname: "www.sqlservertutorial.net",
+        pathname: "/wp-content/uploads/**",
       },
     ],
   },
@@ -38,35 +38,35 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: '/:path*',
+        source: "/:path*",
         headers: [
           {
-            key: 'X-DNS-Prefetch-Control',
-            value: 'on'
+            key: "X-DNS-Prefetch-Control",
+            value: "on",
           },
           {
-            key: 'Strict-Transport-Security',
-            value: 'max-age=63072000; includeSubDomains; preload'
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
           },
           {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN'
+            key: "X-Frame-Options",
+            value: "SAMEORIGIN",
           },
           {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff'
+            key: "X-Content-Type-Options",
+            value: "nosniff",
           },
           {
-            key: 'Referrer-Policy',
-            value: 'origin-when-cross-origin'
+            key: "Referrer-Policy",
+            value: "origin-when-cross-origin",
           },
           {
-            key: 'Permissions-Policy',
-            value: 'camera=(), microphone=(), geolocation=()'
+            key: "Permissions-Policy",
+            value: "camera=(), microphone=(), geolocation=()",
           },
           {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block'
+            key: "X-XSS-Protection",
+            value: "1; mode=block",
           },
         ],
       },
@@ -75,10 +75,11 @@ const nextConfig: NextConfig = {
 };
 
 const pwaConfig = {
-  dest: 'public',
+  dest: "public",
   register: false,
   skipWaiting: true,
-  disable: process.env.NODE_ENV === 'development' && process.env.NEXT_PUBLIC_ENABLE_PWA_DEV !== 'true',
+  disable:
+    process.env.NODE_ENV === "development" && process.env.NEXT_PUBLIC_ENABLE_PWA_DEV !== "true",
   maximumFileSizeToCacheInBytes: 20 * 1024 * 1024,
 };
 

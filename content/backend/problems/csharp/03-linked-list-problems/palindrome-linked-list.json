@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "easy",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "linked-list",
-    "palindrome",
-    "easy"
-  ],
+  "tags": ["csharp", "linked-list", "palindrome", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -74,35 +69,16 @@
           {
             "title": "Array Copy",
             "description": "Dump values into a list and compare ends",
-            "pros": [
-              "Very simple logic",
-              "Random access comparison"
-            ],
-            "cons": [
-              "O(n) extra space",
-              "Allocates a new collection"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Very simple logic", "Random access comparison"],
+            "cons": ["O(n) extra space", "Allocates a new collection"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "In-Place Half Reverse",
             "description": "Find middle, reverse back half, compare",
-            "pros": [
-              "O(1) space",
-              "No extra allocations"
-            ],
-            "cons": [
-              "Slightly more code",
-              "Temporarily mutates the list"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) space", "No extra allocations"],
+            "cons": ["Slightly more code", "Temporarily mutates the list"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

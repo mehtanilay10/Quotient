@@ -37,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Repeatedly merge the accumulated result with the next list. Each merge re-walks the entire result, so a long first list is re-read k times: O(k² · n) in the worst case."}
+        "text": "Repeatedly merge the accumulated result with the next list. Each merge re-walks the entire result, so a long first list is re-read k times: O(k² · n) in the worst case."
+      }
     },
     {
       "type": "example",
@@ -55,7 +56,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "At any moment, the next output node must be the smallest of the k current heads. Put all heads in a min-heap, repeatedly pop the smallest, append it, and push its successor. Each of the n total nodes costs O(log k)." }
+        "text": "At any moment, the next output node must be the smallest of the k current heads. Put all heads in a min-heap, repeatedly pop the smallest, append it, and push its successor. Each of the n total nodes costs O(log k)."
+      }
     },
     {
       "type": "example",
@@ -89,7 +91,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Pair up the lists and merge each pair, halving the list count on every round. This avoids the heap entirely and achieves the same O(n log k) with less memory overhead." }
+        "text": "Pair up the lists and merge each pair, halving the list count on every round. This avoids the heap entirely and achieves the same O(n log k) with less memory overhead."
+      }
     },
     {
       "type": "example",

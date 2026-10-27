@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "routing",
-    "endpoints",
-    "mapping"
-  ],
+  "tags": ["web-api", "routing", "endpoints", "mapping"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,34 +82,16 @@
           {
             "title": "Convention Routing",
             "description": "Centralized pattern-based routing configured in Program.cs.",
-            "pros": [
-              "Simple to set up",
-              "Less code on controllers"
-            ],
-            "cons": [
-              "Less explicit control",
-              "Harder to express non-standard URLs"
-            ],
-            "tags": [
-              " MVC",
-              "pattern"
-            ]
+            "pros": ["Simple to set up", "Less code on controllers"],
+            "cons": ["Less explicit control", "Harder to express non-standard URLs"],
+            "tags": [" MVC", "pattern"]
           },
           {
             "title": "Attribute Routing",
             "description": "Routes declared directly on controllers and actions.",
-            "pros": [
-              "Explicit URL control",
-              "Clear intent per action"
-            ],
-            "cons": [
-              "More boilerplate",
-              "Requires editing controllers"
-            ],
-            "tags": [
-              "API",
-              "explicit"
-            ]
+            "pros": ["Explicit URL control", "Clear intent per action"],
+            "cons": ["More boilerplate", "Requires editing controllers"],
+            "tags": ["API", "explicit"]
           }
         ]
       }
@@ -205,9 +182,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "attribute-routing",
-    "route-constraints"
-  ],
+  "relatedLessons": ["attribute-routing", "route-constraints"],
   "courseSlug": "aspnet-core-web-api"
 }

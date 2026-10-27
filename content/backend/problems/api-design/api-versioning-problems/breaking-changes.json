@@ -28,14 +28,54 @@
       "data": {
         "headers": ["Change Type", "Breaking?", "Example", "Client Impact"],
         "rows": [
-          ["Add optional field", "No", "Add middleName to UserResponse", "None — clients ignore new field"],
-          ["Add required field", "Yes", "Add phoneNumber to POST /users", "Clients without phoneNumber get 422"],
-          ["Remove field", "Yes", "Remove legacyStatus from response", "Clients reading legacyStatus get null"],
-          ["Rename field", "Yes", "Rename fullName to displayName", "Clients reading fullName get 404 or null"],
-          ["Change field type", "Yes", "Change price from string to integer", "JSON parse fails or wrong precision"],
-          ["Change enum values", "Yes", "Remove status=active, use status=enabled", "Clients switch on old enum get 400"],
-          ["Change HTTP status", "Yes", "Return 201 instead of 200", "Clients asserting on 200 fail"],
-          ["Tighten validation", "Yes", "Require email format on previously free-form field", "Existing payloads get 422"]
+          [
+            "Add optional field",
+            "No",
+            "Add middleName to UserResponse",
+            "None — clients ignore new field"
+          ],
+          [
+            "Add required field",
+            "Yes",
+            "Add phoneNumber to POST /users",
+            "Clients without phoneNumber get 422"
+          ],
+          [
+            "Remove field",
+            "Yes",
+            "Remove legacyStatus from response",
+            "Clients reading legacyStatus get null"
+          ],
+          [
+            "Rename field",
+            "Yes",
+            "Rename fullName to displayName",
+            "Clients reading fullName get 404 or null"
+          ],
+          [
+            "Change field type",
+            "Yes",
+            "Change price from string to integer",
+            "JSON parse fails or wrong precision"
+          ],
+          [
+            "Change enum values",
+            "Yes",
+            "Remove status=active, use status=enabled",
+            "Clients switch on old enum get 400"
+          ],
+          [
+            "Change HTTP status",
+            "Yes",
+            "Return 201 instead of 200",
+            "Clients asserting on 200 fail"
+          ],
+          [
+            "Tighten validation",
+            "Yes",
+            "Require email format on previously free-form field",
+            "Existing payloads get 422"
+          ]
         ]
       }
     },
@@ -132,10 +172,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "deprecation-strategy",
-    "content-negotiation"
-  ],
+  "relatedLessons": ["deprecation-strategy", "content-negotiation"],
   "furtherReading": [
     {
       "title": "Pact Contract Testing",

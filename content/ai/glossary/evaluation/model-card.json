@@ -6,9 +6,5 @@
   "fullDefinition": "A model card is a standardized documentation page that AI providers publish for their models. It describes the model's intended use cases, training data, known limitations and biases, safety evaluations, and performance benchmarks. Reading a model card helps you understand what a model is and is not suitable for. Google, Hugging Face, and Anthropic all publish model cards for their models.",
   "category": "evaluation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "benchmark",
-    "evaluation",
-    "training-data"
-  ]
+  "relatedTerms": ["benchmark", "evaluation", "training-data"]
 }

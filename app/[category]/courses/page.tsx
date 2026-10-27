@@ -1,11 +1,11 @@
-import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { Clock, ArrowRight } from 'lucide-react';
-import { SectionHeader } from '@/components/sections/SectionHeader';
-import { getCoursesByCategory, getCategoryMeta, getNavigationCategories } from '@/lib/content';
-import { buildMetadata } from '@/lib/seo';
-import type { Course } from '@/types';
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Clock, ArrowRight } from "lucide-react";
+import { SectionHeader } from "@/components/sections/SectionHeader";
+import { getCoursesByCategory, getCategoryMeta, getNavigationCategories } from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
+import type { Course } from "@/types";
 
 interface Params {
   params: Promise<{ category: string }>;
@@ -13,7 +13,7 @@ interface Params {
 
 export async function generateStaticParams() {
   return getNavigationCategories()
-    .filter((cat) => cat.sections.some((s) => s.href.endsWith('/courses')))
+    .filter((cat) => cat.sections.some((s) => s.href.endsWith("/courses")))
     .map((cat) => ({ category: cat.key }));
 }
 
@@ -57,7 +57,9 @@ export default async function CategoryCoursesPage({ params }: Params) {
             href={`/${category}/courses/${course.slug}`}
             className="group flex flex-col gap-3 rounded-xl border border-border bg-canvas p-4 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5"
           >
-            <span className="text-3xl" aria-hidden="true">{course.icon}</span>
+            <span className="text-3xl" aria-hidden="true">
+              {course.icon}
+            </span>
             <h2 className="text-sm font-semibold text-fg-default group-hover:text-accent-fg transition-colors">
               {course.title}
             </h2>
@@ -69,7 +71,10 @@ export default async function CategoryCoursesPage({ params }: Params) {
                 <Clock className="h-3.5 w-3.5" aria-hidden="true" />
                 {courseHours(course)} read
               </span>
-              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+              <ArrowRight
+                className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
+                aria-hidden="true"
+              />
             </span>
           </Link>
         ))}

@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "authentication",
-    "auth",
-    "middleware"
-  ],
+  "tags": ["redux", "authentication", "auth", "middleware"],
   "blocks": [
     {
       "type": "paragraph",
@@ -70,32 +65,12 @@
       "type": "table",
       "data": {
         "title": "Auth state values",
-        "headers": [
-          "Status",
-          "Meaning",
-          "UI"
-        ],
+        "headers": ["Status", "Meaning", "UI"],
         "rows": [
-          [
-            "idle",
-            "No attempt made yet",
-            "Show login form"
-          ],
-          [
-            "loading",
-            "Request in flight",
-            "Disable submit, show spinner"
-          ],
-          [
-            "authenticated",
-            "Tokens and user present",
-            "Show app, render protected routes"
-          ],
-          [
-            "error",
-            "Login failed",
-            "Show error message, allow retry"
-          ]
+          ["idle", "No attempt made yet", "Show login form"],
+          ["loading", "Request in flight", "Disable submit, show spinner"],
+          ["authenticated", "Tokens and user present", "Show app, render protected routes"],
+          ["error", "Login failed", "Show error message, allow retry"]
         ]
       }
     },
@@ -119,22 +94,13 @@
               "Easy to revoke by clearing memory",
               "Stateless server validation"
             ],
-            "cons": [
-              "Refresh flow adds complexity",
-              "Need silent refresh on tab focus"
-            ]
+            "cons": ["Refresh flow adds complexity", "Need silent refresh on tab focus"]
           },
           {
             "title": "Server sessions",
             "description": "Server stores session in DB/Redis, sends Set-Cookie header.",
-            "pros": [
-              "Easy revocation",
-              "Server has full control"
-            ],
-            "cons": [
-              "CSRF protection required",
-              "Stateful — harder to scale horizontally"
-            ]
+            "pros": ["Easy revocation", "Server has full control"],
+            "cons": ["CSRF protection required", "Stateful — harder to scale horizontally"]
           }
         ]
       }

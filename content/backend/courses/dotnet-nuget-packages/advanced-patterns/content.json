@@ -9,12 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 3,
   "icon": "⚡",
-  "tags": [
-    "performance",
-    "source-generators",
-    "memory",
-    "async"
-  ],
+  "tags": ["performance", "source-generators", "memory", "async"],
   "lessonSlugs": [
     "system-threading-channels",
     "memorystream",

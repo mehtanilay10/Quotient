@@ -41,7 +41,11 @@
         "headers": ["Characteristic", "I/O-bound", "CPU-bound"],
         "rows": [
           ["Bottleneck", "External system latency", "CPU speed"],
-          ["Typical examples", "HTTP requests, DB queries, file I/O", "Encryption, calculations, parsing"],
+          [
+            "Typical examples",
+            "HTTP requests, DB queries, file I/O",
+            "Encryption, calculations, parsing"
+          ],
           ["Async pattern", "Use `async`/`await` with I/O APIs", "Wrap in `Task.Run`"],
           ["Thread usage", "Frees thread during wait", "Occupies thread while computing"]
         ]
@@ -89,7 +93,13 @@
     "valuetask-and-when-it-is-appropriate"
   ],
   "furtherReading": [
-    { "title": "Async I/O vs CPU-bound (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/async-scenarios" },
-    { "title": "Stephen Cleary — CPU-bound vs I/O-bound", "url": "https://blog.stephencleary.com/2013/11/there-is-no-thread.html" }
+    {
+      "title": "Async I/O vs CPU-bound (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/async-scenarios"
+    },
+    {
+      "title": "Stephen Cleary — CPU-bound vs I/O-bound",
+      "url": "https://blog.stephencleary.com/2013/11/there-is-no-thread.html"
+    }
   ]
 }

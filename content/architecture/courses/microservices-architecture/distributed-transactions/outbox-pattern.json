@@ -8,11 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "outbox",
-    "reliable-messaging",
-    "pattern"
-  ],
+  "tags": ["outbox", "reliable-messaging", "pattern"],
   "blocks": [
     {
       "type": "paragraph",

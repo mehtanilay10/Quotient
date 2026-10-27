@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "dependency-injection",
-    "lifetime"
-  ],
+  "tags": ["aspnet-core", "dependency-injection", "lifetime"],
   "blocks": [
     {
       "type": "heading",
@@ -90,39 +86,20 @@
           {
             "title": "Transient, Scoped, Singleton",
             "description": "Service lifetime comparison",
-            "pros": [
-              "Fine-grained control",
-              "Prevents memory leaks",
-              "Matches resource needs"
-            ],
+            "pros": ["Fine-grained control", "Prevents memory leaks", "Matches resource needs"],
             "cons": [
               "Wrong choice causes bugs",
               "Singleton is not thread-safe by default",
               "Scoped in background tasks is empty"
             ],
-            "tags": [
-              "AddTransient",
-              "AddScoped",
-              "AddSingleton"
-            ]
+            "tags": ["AddTransient", "AddScoped", "AddSingleton"]
           },
           {
             "title": "Lifetime Pitfalls",
             "description": "Avoiding lifetime bugs",
-            "pros": [
-              "Prevents memory leaks",
-              "Handles background tasks",
-              "Thread-safe patterns"
-            ],
-            "cons": [
-              "Requires understanding scopes",
-              "More verbose"
-            ],
-            "tags": [
-              "IServiceProvider",
-              "CreateScope",
-              "scoped-in-singleton"
-            ]
+            "pros": ["Prevents memory leaks", "Handles background tasks", "Thread-safe patterns"],
+            "cons": ["Requires understanding scopes", "More verbose"],
+            "tags": ["IServiceProvider", "CreateScope", "scoped-in-singleton"]
           }
         ]
       }

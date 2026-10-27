@@ -6,11 +6,7 @@
   "fullDefinition": "Retrieval-Augmented Generation is an architecture that combines the generative capabilities of large language models with external knowledge retrieval. When a user asks a question, the system first searches a knowledge base \u2014 which can include documents, databases, or the web \u2014 for relevant information. This retrieved context is then provided to the language model along with the original question, enabling it to generate accurate, grounded responses based on current or proprietary data. RAG dramatically reduces hallucinations, allows models to access information beyond their training cutoff, and enables enterprise use of AI with proprietary data. It has become one of the most widely adopted patterns for production AI systems.",
   "category": "agents-and-automation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "vector-database",
-    "embeddings",
-    "rag"
-  ],
+  "relatedTerms": ["vector-database", "embeddings", "rag"],
   "learnMoreSlug": "rag-explained",
   "examples": [
     "A customer support bot retrieving internal policy documents before answering questions",

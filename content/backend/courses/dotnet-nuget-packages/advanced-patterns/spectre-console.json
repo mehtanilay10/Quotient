@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is Spectre.Console?"}
+      "data": { "level": 2, "text": "What is Spectre.Console?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`Spectre.Console` is a .NET library for creating rich console applications with colors, tables, trees, prompts, spinners, and progress bars."}
+      "data": {
+        "text": "`Spectre.Console` is a .NET library for creating rich console applications with colors, tables, trees, prompts, spinners, and progress bars."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Styled Output"}
+      "data": { "level": 2, "text": "Styled Output" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Use `AnsiConsole` to write colored and styled text, create tables, and show status indicators."}
+      "data": {
+        "text": "Use `AnsiConsole` to write colored and styled text, create tables, and show status indicators."
+      }
     },
     {
       "type": "example",
@@ -48,11 +52,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Progress and Status"}
+      "data": { "level": 2, "text": "Progress and Status" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Spectre.Console provides progress bars and status spinners for long-running tasks."}
+      "data": {
+        "text": "Spectre.Console provides progress bars and status spinners for long-running tasks."
+      }
     },
     {
       "type": "example",

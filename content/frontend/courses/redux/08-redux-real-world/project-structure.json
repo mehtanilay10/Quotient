@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "architecture",
-    "organization",
-    "best-practices"
-  ],
+  "tags": ["redux", "architecture", "organization", "best-practices"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,10 +75,7 @@
           {
             "title": "Type folders",
             "description": "`/reducers/auth.ts`, `/actions/auth.ts` — files grouped by Redux role.",
-            "pros": [
-              "Matches Redux mental model",
-              "Easy to find every action"
-            ],
+            "pros": ["Matches Redux mental model", "Easy to find every action"],
             "cons": [
               "Touching one feature requires editing many folders",
               "Falls apart as features grow"
@@ -102,39 +94,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "File",
-          "Purpose"
-        ],
+        "headers": ["File", "Purpose"],
         "rows": [
-          [
-            "<feature>Slice.ts",
-            "createSlice with reducers and initial state"
-          ],
-          [
-            "<feature>API.ts",
-            "Network calls (fetch, RTK Query, axios)"
-          ],
-          [
-            "<feature>Selectors.ts",
-            "Memoized selectors with createSelector"
-          ],
-          [
-            "<feature>Thunks.ts",
-            "createAsyncThunk creators (or use RTK Query)"
-          ],
-          [
-            "<feature>Routes.tsx",
-            "Route components for this feature"
-          ],
-          [
-            "<feature>Components/",
-            "Smaller components used only here"
-          ],
-          [
-            "index.ts",
-            "Public API — re-export what other features need"
-          ]
+          ["<feature>Slice.ts", "createSlice with reducers and initial state"],
+          ["<feature>API.ts", "Network calls (fetch, RTK Query, axios)"],
+          ["<feature>Selectors.ts", "Memoized selectors with createSelector"],
+          ["<feature>Thunks.ts", "createAsyncThunk creators (or use RTK Query)"],
+          ["<feature>Routes.tsx", "Route components for this feature"],
+          ["<feature>Components/", "Smaller components used only here"],
+          ["index.ts", "Public API — re-export what other features need"]
         ]
       }
     },

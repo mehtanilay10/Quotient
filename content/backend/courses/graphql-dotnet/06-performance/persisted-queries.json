@@ -7,10 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "graphql",
-    "persisted-queries"
-  ],
+  "tags": ["graphql", "persisted-queries"],
   "blocks": [
     {
       "type": "paragraph",
@@ -124,9 +121,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "dataloader",
-    "caching"
-  ],
+  "relatedLessons": ["dataloader", "caching"],
   "courseSlug": "graphql-dotnet"
 }

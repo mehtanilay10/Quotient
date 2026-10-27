@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { Component, ReactNode } from 'react';
-import { ErrorBoundary } from '@/components/ui/ErrorBoundary';
+import { Component, ReactNode } from "react";
+import { ErrorBoundary } from "@/components/ui/ErrorBoundary";
 
 export function ErrorBoundaryWrapper({ children }: { children: ReactNode }) {
   return (

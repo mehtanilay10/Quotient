@@ -8,13 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "CI/CD",
-    "database",
-    "migrations",
-    "schema",
-    "data-safety"
-  ],
+  "tags": ["CI/CD", "database", "migrations", "schema", "data-safety"],
   "blocks": [
     {
       "type": "paragraph",

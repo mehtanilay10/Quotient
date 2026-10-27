@@ -5,10 +5,7 @@
   "title": "Change Tracking",
   "description": "Understand change tracking.",
   "order": 4,
-  "tags": [
-    "ef-core",
-    "change-tracking"
-  ],
+  "tags": ["ef-core", "change-tracking"],
   "blocks": [
     {
       "type": "paragraph",
@@ -20,11 +17,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "Understand change tracking",
-          "Apply best practices",
-          "Build practical skills"
-        ],
+        "points": ["Understand change tracking", "Apply best practices", "Build practical skills"],
         "takeaway": "Continue to the next lesson to deepen your understanding."
       }
     }

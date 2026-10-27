@@ -56,10 +56,30 @@
       "data": {
         "headers": ["Strategy", "Downtime", "Complexity", "Best For"],
         "rows": [
-          ["Lift and shift (backup/restore)", "High", "Low", "Small databases, planned maintenance windows"],
-          ["Online migration (DMS)", "Minimal", "Medium", "Production databases needing continuous uptime"],
-          ["Export/import (BACPAC, BULK)", "Medium", "Medium", "Infrequent migrations, large datasets"],
-          ["Change data capture (CDC)", "Very low", "High", "Zero-downtime migration with ongoing writes"]
+          [
+            "Lift and shift (backup/restore)",
+            "High",
+            "Low",
+            "Small databases, planned maintenance windows"
+          ],
+          [
+            "Online migration (DMS)",
+            "Minimal",
+            "Medium",
+            "Production databases needing continuous uptime"
+          ],
+          [
+            "Export/import (BACPAC, BULK)",
+            "Medium",
+            "Medium",
+            "Infrequent migrations, large datasets"
+          ],
+          [
+            "Change data capture (CDC)",
+            "Very low",
+            "High",
+            "Zero-downtime migration with ongoing writes"
+          ]
         ]
       }
     },

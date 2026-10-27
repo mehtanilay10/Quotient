@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "messaging",
-    "headers",
-    "correlation",
-    "formats"
-  ],
+  "tags": ["messaging", "headers", "correlation", "formats"],
   "blocks": [
     {
       "type": "paragraph",
@@ -74,31 +69,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Header",
-          "Purpose"
-        ],
+        "headers": ["Header", "Purpose"],
         "rows": [
-          [
-            "Correlation ID",
-            "Traces a request across services"
-          ],
-          [
-            "Message ID",
-            "Unique identifier for the message"
-          ],
-          [
-            "Timestamp",
-            "When the message was created"
-          ],
-          [
-            "Reply-To",
-            "Where to send the response"
-          ],
-          [
-            "Content-Type",
-            "Format of the message body"
-          ]
+          ["Correlation ID", "Traces a request across services"],
+          ["Message ID", "Unique identifier for the message"],
+          ["Timestamp", "When the message was created"],
+          ["Reply-To", "Where to send the response"],
+          ["Content-Type", "Format of the message body"]
         ]
       }
     },

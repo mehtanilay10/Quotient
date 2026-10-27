@@ -6,10 +6,7 @@
   "description": "Learn about useState, useEffect, and custom hooks.",
   "order": 2,
   "difficulty": "beginner",
-  "tags": [
-    "react",
-    "beginner"
-  ],
+  "tags": ["react", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "real-time-analytics",
-    "kafka-streams",
-    "dashboards",
-    "analytics",
-    "pipelines"
-  ],
+  "tags": ["real-time-analytics", "kafka-streams", "dashboards", "analytics", "pipelines"],
   "blocks": [
     {
       "type": "paragraph",
@@ -96,37 +90,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Component",
-          "Tool Options",
-          "Best For"
-        ],
+        "headers": ["Component", "Tool Options", "Best For"],
         "rows": [
-          [
-            "Ingestion",
-            "Kafka, Redpanda",
-            "High-throughput event collection"
-          ],
-          [
-            "Processing",
-            "Kafka Streams, Flink, ksqlDB",
-            "Stateless and stateful transformations"
-          ],
-          [
-            "Storage",
-            "ClickHouse, Druid, TimescaleDB",
-            "Low-latency analytical queries"
-          ],
+          ["Ingestion", "Kafka, Redpanda", "High-throughput event collection"],
+          ["Processing", "Kafka Streams, Flink, ksqlDB", "Stateless and stateful transformations"],
+          ["Storage", "ClickHouse, Druid, TimescaleDB", "Low-latency analytical queries"],
           [
             "Visualization",
             "Grafana, Superset, Metabase",
             "Live dashboards and ad-hoc exploration"
           ],
-          [
-            "Alerting",
-            "Alertmanager, Prometheus rules",
-            "Threshold and anomaly-based alerts"
-          ]
+          ["Alerting", "Alertmanager, Prometheus rules", "Threshold and anomaly-based alerts"]
         ]
       }
     },

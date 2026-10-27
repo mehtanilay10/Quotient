@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "testing-patterns",
-    "assertions",
-    "dotnet"
-  ],
+  "tags": ["testing-patterns", "assertions", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -27,52 +23,23 @@
           {
             "title": "xUnit Built-in",
             "description": "Standard assertions included with xUnit.",
-            "pros": [
-              "No extra dependencies",
-              "Well-known API"
-            ],
-            "cons": [
-              "Less expressive syntax",
-              "Limited custom assertions"
-            ],
-            "tags": [
-              "xunit",
-              "built-in"
-            ]
+            "pros": ["No extra dependencies", "Well-known API"],
+            "cons": ["Less expressive syntax", "Limited custom assertions"],
+            "tags": ["xunit", "built-in"]
           },
           {
             "title": "FluentAssertions",
             "description": "Fluent, BDD-style assertion library.",
-            "pros": [
-              "Highly readable",
-              "Rich assertion library",
-              "Great error messages"
-            ],
-            "cons": [
-              "Additional dependency",
-              "Slight learning curve"
-            ],
-            "tags": [
-              "fluent",
-              "bdd"
-            ]
+            "pros": ["Highly readable", "Rich assertion library", "Great error messages"],
+            "cons": ["Additional dependency", "Slight learning curve"],
+            "tags": ["fluent", "bdd"]
           },
           {
             "title": "Shouldly",
             "description": "Assertion library with natural language syntax.",
-            "pros": [
-              "Very readable",
-              "Excellent error messages",
-              "Simple API"
-            ],
-            "cons": [
-              "Additional dependency",
-              "Less mature than FluentAssertions"
-            ],
-            "tags": [
-              "shouldly",
-              "natural-language"
-            ]
+            "pros": ["Very readable", "Excellent error messages", "Simple API"],
+            "cons": ["Additional dependency", "Less mature than FluentAssertions"],
+            "tags": ["shouldly", "natural-language"]
           }
         ]
       }
@@ -90,9 +57,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "assertions"
-  ],
+  "relatedLessons": ["assertions"],
   "furtherReading": [],
   "courseSlug": "unit-testing-dotnet"
 }

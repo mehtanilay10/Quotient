@@ -9,12 +9,7 @@
   "estimatedHours": 0.5,
   "icon": "🔧",
   "tags": ["design-patterns", "structural", "csharp"],
-  "lessonSlugs": [
-    "adapter-pattern",
-    "decorator-pattern",
-    "facade-pattern",
-    "composite-pattern"
-  ],
+  "lessonSlugs": ["adapter-pattern", "decorator-pattern", "facade-pattern", "composite-pattern"],
   "whatYouLearn": [
     "Understand how to compose objects into larger structures",
     "Implement patterns that improve code flexibility",

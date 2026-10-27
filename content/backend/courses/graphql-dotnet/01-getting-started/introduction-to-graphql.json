@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "graphql",
-    "introduction",
-    "rest",
-    "dotnet"
-  ],
+  "tags": ["graphql", "introduction", "rest", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -41,28 +36,14 @@
           {
             "title": "REST",
             "description": "Multiple endpoints, fixed response shapes, over-fetching or under-fetching common.",
-            "pros": [
-              "Simple caching",
-              "Widely understood"
-            ],
-            "cons": [
-              "Over-fetching",
-              "Under-fetching",
-              "Multiple round trips"
-            ]
+            "pros": ["Simple caching", "Widely understood"],
+            "cons": ["Over-fetching", "Under-fetching", "Multiple round trips"]
           },
           {
             "title": "GraphQL",
             "description": "Single endpoint, client-driven queries, strong schema.",
-            "pros": [
-              "No over-fetching",
-              "Single request",
-              "Self-documenting schema"
-            ],
-            "cons": [
-              "Complex caching",
-              "Steeper learning curve"
-            ]
+            "pros": ["No over-fetching", "Single request", "Self-documenting schema"],
+            "cons": ["Complex caching", "Steeper learning curve"]
           }
         ]
       }
@@ -125,9 +106,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "installing-hotchocolate",
-    "creating-first-graphql-server"
-  ],
+  "relatedLessons": ["installing-hotchocolate", "creating-first-graphql-server"],
   "courseSlug": "graphql-dotnet"
 }

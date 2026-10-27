@@ -6,11 +6,7 @@
   "fullDefinition": "Multimodal AI refers to models that can process and generate multiple types of data \u2014 text, images, audio, and video \u2014 within a single system. Unlike earlier AI models that handled only one modality, multimodal models can relate concepts across different forms of data. For example, a multimodal model can analyze an image and describe it in text, generate an image from a text description, or transcribe and translate spoken audio. This cross-modal understanding enables more natural and versatile AI applications, from accessible tools for visually impaired users to rich creative platforms. Models like GPT-4o, Gemini, and Claude 3 Sonnet are leading examples of multimodal AI.",
   "category": "multimodal",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "text-to-image",
-    "speech-recognition",
-    "text-to-speech"
-  ],
+  "relatedTerms": ["text-to-image", "speech-recognition", "text-to-speech"],
   "learnMoreSlug": "images-and-ai",
   "examples": [
     "Describing the contents of a photo and answering questions about it",

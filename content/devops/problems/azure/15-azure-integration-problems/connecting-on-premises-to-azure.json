@@ -111,13 +111,8 @@
           {
             "title": "Point-to-site VPN",
             "description": "Per-device client tunnels",
-            "pros": [
-              "Perfect for individual developers"
-            ],
-            "cons": [
-              "Not for service-to-service traffic",
-              "Manual client management"
-            ],
+            "pros": ["Perfect for individual developers"],
+            "cons": ["Not for service-to-service traffic", "Manual client management"],
             "tags": ["Developer access"]
           }
         ]

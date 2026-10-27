@@ -9,12 +9,7 @@
   "estimatedHours": 0.5,
   "icon": "🔴🟢",
   "tags": ["tdd", "dotnet"],
-  "lessonSlugs": [
-    "tdd-intro",
-    "red-green-refactor",
-    "tdd-patterns",
-    "tdd-aspnet-core"
-  ],
+  "lessonSlugs": ["tdd-intro", "red-green-refactor", "tdd-patterns", "tdd-aspnet-core"],
   "whatYouLearn": [
     "Understand the TDD workflow",
     "Apply Red-Green-Refactor cycle",

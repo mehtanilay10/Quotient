@@ -6,13 +6,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "emotion",
-    "css-in-js",
-    "styling",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["emotion", "css-in-js", "styling", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -78,27 +72,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "API",
-          "Use it for"
-        ],
+        "headers": ["API", "Use it for"],
         "rows": [
-          [
-            "css prop",
-            "One-off styles inside a component"
-          ],
-          [
-            "styled",
-            "Reusable, prop-driven components"
-          ],
-          [
-            "Global / keyframes",
-            "Animations and global resets"
-          ],
-          [
-            "ThemeProvider",
-            "Tokens shared across the app"
-          ]
+          ["css prop", "One-off styles inside a component"],
+          ["styled", "Reusable, prop-driven components"],
+          ["Global / keyframes", "Animations and global resets"],
+          ["ThemeProvider", "Tokens shared across the app"]
         ]
       }
     },

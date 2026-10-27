@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "video-streaming",
-    "cdn",
-    "transcoding",
-    "adaptive-bitrate"
-  ],
+  "tags": ["hld", "system-design", "video-streaming", "cdn", "transcoding", "adaptive-bitrate"],
   "blocks": [
     {
       "type": "heading",
@@ -127,13 +120,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Codec",
-          "Quality",
-          "Bitrate",
-          "Browser Support",
-          "Notes"
-        ],
+        "headers": ["Codec", "Quality", "Bitrate", "Browser Support", "Notes"],
         "rows": [
           [
             "H.264 (AVC)",
@@ -200,10 +187,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "video-streaming-hld",
-    "instagram-feed"
-  ],
+  "relatedLessons": ["video-streaming-hld", "instagram-feed"],
   "furtherReading": [
     {
       "title": "YouTube Architecture",

@@ -1,4 +1,4 @@
-import { logger } from '@/lib/logger';
+import { logger } from "@/lib/logger";
 
 const DEFAULT_EXPIRY_MINUTES = 15;
 const MAX_EXPIRY_MINUTES = 60;
@@ -6,9 +6,9 @@ const MAX_EXPIRY_MINUTES = 60;
 /** Sender used when `EMAIL_FROM` is not configured. Resend's onboarding
  * address only delivers to the account owner, so production deployments must
  * set a verified sender. */
-export const DEFAULT_EMAIL_FROM = 'Quotient <onboarding@resend.dev>';
+export const DEFAULT_EMAIL_FROM = "Quotient <onboarding@resend.dev>";
 
-const RESEND_ENDPOINT = 'https://api.resend.com/emails';
+const RESEND_ENDPOINT = "https://api.resend.com/emails";
 
 function parseExpiryMinutes(value: string | undefined): number {
   const parsed = Number(value);
@@ -20,9 +20,7 @@ function parseExpiryMinutes(value: string | undefined): number {
  * Lifetime of a magic link, in minutes. Read from
  * `MAGIC_LINK_EXPIRY_MINUTES` so the email and the UI copy always agree.
  */
-export const MAGIC_LINK_EXPIRY_MINUTES = parseExpiryMinutes(
-  process.env.MAGIC_LINK_EXPIRY_MINUTES
-);
+export const MAGIC_LINK_EXPIRY_MINUTES = parseExpiryMinutes(process.env.MAGIC_LINK_EXPIRY_MINUTES);
 
 /** Same lifetime in seconds, which is what Auth.js expects for `maxAge`. */
 export const MAGIC_LINK_EXPIRY_SECONDS = MAGIC_LINK_EXPIRY_MINUTES * 60;
@@ -35,11 +33,11 @@ export type MagicLinkEmailContent = {
 
 function escapeHtml(value: string): string {
   return value
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }
 
 export function buildMagicLinkEmail({
@@ -50,17 +48,17 @@ export function buildMagicLinkEmail({
   expiresInMinutes?: number;
 }): MagicLinkEmailContent {
   const safeUrl = escapeHtml(url);
-  const subject = 'Sign in to Quotient';
+  const subject = "Sign in to Quotient";
 
   const text = [
-    'Sign in to Quotient',
-    '',
+    "Sign in to Quotient",
+    "",
     `Use the one-time link below to sign in. It expires in ${expiresInMinutes} minutes and can only be used once:`,
-    '',
+    "",
     url,
-    '',
+    "",
     "If you didn't request this email, you can safely ignore it.",
-  ].join('\n');
+  ].join("\n");
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -105,34 +103,26 @@ export function buildMagicLinkEmail({
  * Production must configure the key — otherwise this throws and Auth.js
  * reports the sign-in as failed.
  */
-export async function sendMagicLinkEmail({
-  to,
-  url,
-}: {
-  to: string;
-  url: string;
-}): Promise<void> {
+export async function sendMagicLinkEmail({ to, url }: { to: string; url: string }): Promise<void> {
   const { subject, html, text } = buildMagicLinkEmail({ url });
   const apiKey = process.env.RESEND_API_KEY?.trim();
 
   if (!apiKey) {
-    if (process.env.NODE_ENV === 'production') {
-      throw new Error(
-        'RESEND_API_KEY is not configured. Magic-link emails cannot be sent.'
-      );
+    if (process.env.NODE_ENV === "production") {
+      throw new Error("RESEND_API_KEY is not configured. Magic-link emails cannot be sent.");
     }
 
-    logger.info('auth', `Magic link for ${to} (dev fallback): ${url}`);
+    logger.info("auth", `Magic link for ${to} (dev fallback): ${url}`);
     return;
   }
 
   const from = process.env.EMAIL_FROM?.trim() || DEFAULT_EMAIL_FROM;
 
   const response = await fetch(RESEND_ENDPOINT, {
-    method: 'POST',
+    method: "POST",
     headers: {
       Authorization: `Bearer ${apiKey}`,
-      'Content-Type': 'application/json',
+      "Content-Type": "application/json",
     },
     body: JSON.stringify({
       from,
@@ -144,10 +134,10 @@ export async function sendMagicLinkEmail({
   });
 
   if (!response.ok) {
-    const detail = await response.text().catch(() => '');
+    const detail = await response.text().catch(() => "");
     throw new Error(
       `Resend could not send the magic link (${response.status})${
-        detail ? `: ${detail.slice(0, 300)}` : ''
+        detail ? `: ${detail.slice(0, 300)}` : ""
       }`
     );
   }

@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "jenkins",
-    "pipeline",
-    "jenkinsfile",
-    "devops"
-  ],
+  "tags": ["jenkins", "pipeline", "jenkinsfile", "devops"],
   "blocks": [
     {
       "type": "heading",
@@ -59,39 +54,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Section",
-          "Purpose"
-        ],
+        "headers": ["Section", "Purpose"],
         "rows": [
-          [
-            "pipeline { }",
-            "Root block; wraps the entire pipeline"
-          ],
-          [
-            "agent any",
-            "Specifies where to run stages (any available agent)"
-          ],
-          [
-            "environment { }",
-            "Defines environment variables available to all stages"
-          ],
-          [
-            "stages { }",
-            "Container for the sequence of build stages"
-          ],
-          [
-            "stage('Name') { }",
-            "A named phase of the pipeline with its own steps"
-          ],
-          [
-            "steps { }",
-            "The actual commands/scripts to execute"
-          ],
-          [
-            "post { }",
-            "Actions to run after pipeline completion (success, failure, always)"
-          ]
+          ["pipeline { }", "Root block; wraps the entire pipeline"],
+          ["agent any", "Specifies where to run stages (any available agent)"],
+          ["environment { }", "Defines environment variables available to all stages"],
+          ["stages { }", "Container for the sequence of build stages"],
+          ["stage('Name') { }", "A named phase of the pipeline with its own steps"],
+          ["steps { }", "The actual commands/scripts to execute"],
+          ["post { }", "Actions to run after pipeline completion (success, failure, always)"]
         ]
       }
     },

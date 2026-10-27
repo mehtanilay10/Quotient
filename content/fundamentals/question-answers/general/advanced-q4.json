@@ -7,10 +7,7 @@
   "order": 14,
   "difficulty": "advanced",
   "estimatedMinutes": 23,
-  "tags": [
-    "interview",
-    "advanced"
-  ],
+  "tags": ["interview", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

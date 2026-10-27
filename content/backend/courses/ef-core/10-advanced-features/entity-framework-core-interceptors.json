@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "ef-core",
-    "interceptors",
-    "dbcommandinterceptor",
-    "caching"
-  ],
+  "tags": ["ef-core", "interceptors", "dbcommandinterceptor", "caching"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "prisma",
-    "relations",
-    "many-to-many",
-    "junction-table",
-    "implicit"
-  ],
+  "tags": ["prisma", "relations", "many-to-many", "junction-table", "implicit"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,18 +31,11 @@
           {
             "title": "Implicit Many-to-Many",
             "description": "Prisma automatically creates and manages a hidden join table (`_PostToTag`) behind the scenes without defining a model in schema.prisma.",
-            "pros": [
-              "Zero schema boilerplate",
-              "Simple nested connect/disconnect syntax"
-            ],
+            "pros": ["Zero schema boilerplate", "Simple nested connect/disconnect syntax"],
             "cons": [
               "Cannot store additional metadata on the relationship (e.g. `assignedAt`, `role`)"
             ],
-            "tags": [
-              "Tags",
-              "Categories",
-              "Simple Links"
-            ]
+            "tags": ["Tags", "Categories", "Simple Links"]
           },
           {
             "title": "Explicit Many-to-Many",
@@ -57,14 +44,8 @@
               "Can store timestamps, status, permissions on the join record",
               "Full control over physical database indexes"
             ],
-            "cons": [
-              "Slightly more verbose queries"
-            ],
-            "tags": [
-              "Team Memberships",
-              "Enrollments",
-              "Enterprise"
-            ]
+            "cons": ["Slightly more verbose queries"],
+            "tags": ["Team Memberships", "Enrollments", "Enterprise"]
           }
         ]
       }
@@ -99,8 +80,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "one-to-many-relations",
-    "relation-queries-and-pagination"
-  ]
+  "relatedLessons": ["one-to-many-relations", "relation-queries-and-pagination"]
 }

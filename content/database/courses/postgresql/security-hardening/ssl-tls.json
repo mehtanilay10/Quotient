@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "ssl",
-    "tls",
-    "encryption-in-transit",
-    "certificates"
-  ],
+  "tags": ["ssl", "tls", "encryption-in-transit", "certificates"],
   "blocks": [
     {
       "type": "paragraph",
@@ -38,24 +33,14 @@
           "Description"
         ],
         "rows": [
-          [
-            "`disable`",
-            "No",
-            "No",
-            "Plain text unencrypted connection."
-          ],
+          ["`disable`", "No", "No", "Plain text unencrypted connection."],
           [
             "`require`",
             "Yes",
             "No",
             "Encrypts traffic, but does not verify server identity against CA certificate."
           ],
-          [
-            "`verify-ca`",
-            "Yes",
-            "Partial",
-            "Verifies server certificate against trusted Root CA."
-          ],
+          ["`verify-ca`", "Yes", "Partial", "Verifies server certificate against trusted Root CA."],
           [
             "`verify-full`",
             "Yes",
@@ -107,8 +92,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "encryption-at-rest",
-    "roles-privileges"
-  ]
+  "relatedLessons": ["encryption-at-rest", "roles-privileges"]
 }

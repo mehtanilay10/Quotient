@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "testing",
-    "react-query",
-    "mutations"
-  ],
+  "tags": ["testing", "react-query", "mutations"],
   "blocks": [
     {
       "type": "paragraph",

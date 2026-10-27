@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "fdw",
-    "postgres-fdw",
-    "federation",
-    "foreign-tables",
-    "sql-med"
-  ],
+  "tags": ["fdw", "postgres-fdw", "federation", "foreign-tables", "sql-med"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "extensions",
-    "partitioning"
-  ]
+  "relatedLessons": ["extensions", "partitioning"]
 }

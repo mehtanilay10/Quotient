@@ -8,17 +8,8 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "placeholderData",
-    "initialData",
-    "caching",
-    "ux",
-    "options"
-  ],
-  "prerequisites": [
-    "query-options-react-query"
-  ],
+  "tags": ["react-query", "placeholderData", "initialData", "caching", "ux", "options"],
+  "prerequisites": ["query-options-react-query"],
   "blocks": [
     {
       "type": "paragraph",
@@ -131,11 +122,7 @@
               "Stale if the data changes before the response arrives",
               "Can give a false sense of freshness"
             ],
-            "tags": [
-              "first-render",
-              "static",
-              "one-time"
-            ]
+            "tags": ["first-render", "static", "one-time"]
           },
           {
             "title": "placeholderData",
@@ -150,11 +137,7 @@
               "Requires careful type handling for pagination",
               "isPlaceholderData flag adds complexity"
             ],
-            "tags": [
-              "fallback",
-              "pagination",
-              "reusable"
-            ]
+            "tags": ["fallback", "pagination", "reusable"]
           }
         ]
       }

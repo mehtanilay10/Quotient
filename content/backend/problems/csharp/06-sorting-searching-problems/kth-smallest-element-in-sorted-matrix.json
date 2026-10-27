@@ -8,13 +8,7 @@
   "order": 14,
   "difficulty": "medium",
   "estimatedMinutes": 13,
-  "tags": [
-    "csharp",
-    "binary-search",
-    "matrix",
-    "heap",
-    "medium"
-  ],
+  "tags": ["csharp", "binary-search", "matrix", "heap", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -108,44 +102,21 @@
           {
             "title": "Binary Search on Value",
             "description": "Count <= mid, narrow value range",
-            "pros": [
-              "O(n log R) time",
-              "O(1) space",
-              "Fastest"
-            ],
-            "cons": [
-              "Uses the sorted-row/column property"
-            ],
-            "tags": [
-              "O(n log R) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n log R) time", "O(1) space", "Fastest"],
+            "cons": ["Uses the sorted-row/column property"],
+            "tags": ["O(n log R) time", "O(1) space", "Recommended"]
           },
           {
             "title": "Bounded Max-Heap",
             "description": "Keep only k smallest",
-            "pros": [
-              "Intuitive",
-              "Works with looser ordering"
-            ],
-            "cons": [
-              "O(n^2 log k) time",
-              "O(k) space"
-            ],
-            "tags": [
-              "O(n^2 log k) time",
-              "O(k) space"
-            ]
+            "pros": ["Intuitive", "Works with looser ordering"],
+            "cons": ["O(n^2 log k) time", "O(k) space"],
+            "tags": ["O(n^2 log k) time", "O(k) space"]
           }
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "search-2d-matrix",
-    "binary-search",
-    "majority-element"
-  ],
+  "relatedLessons": ["search-2d-matrix", "binary-search", "majority-element"],
   "furtherReading": []
 }

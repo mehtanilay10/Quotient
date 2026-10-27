@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "animation",
-    "fps",
-    "rAF",
-    "css-transitions",
-    "accessibility"
-  ],
+  "tags": ["animation", "fps", "rAF", "css-transitions", "accessibility"],
   "blocks": [
     {
       "type": "paragraph",
@@ -198,11 +192,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "painting-and-compositing",
-    "layout-thrashing",
-    "user-centric-metrics"
-  ],
+  "relatedLessons": ["painting-and-compositing", "layout-thrashing", "user-centric-metrics"],
   "furtherReading": [
     {
       "title": "High Performance Animations",

@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "intermediate",
   "estimatedMinutes": 26,
-  "tags": [
-    "llamaindex",
-    "rag",
-    "csharp",
-    "retrieval"
-  ],
+  "tags": ["llamaindex", "rag", "csharp", "retrieval"],
   "blocks": [
     {
       "type": "paragraph",
@@ -61,10 +56,7 @@
       "expectedOutcome": "You should have a working retrieval pipeline with clear separation between indexing, retrieval, and generation."
     }
   ],
-  "relatedLessons": [
-    "rag-with-semantic-kernel",
-    "rag-with-microsoft-extensions-ai"
-  ],
+  "relatedLessons": ["rag-with-semantic-kernel", "rag-with-microsoft-extensions-ai"],
   "technology": null,
   "furtherReading": [
     {

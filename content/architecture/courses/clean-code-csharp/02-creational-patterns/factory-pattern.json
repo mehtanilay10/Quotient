@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "factory",
-    "creational",
-    "csharp"
-  ],
+  "tags": ["factory", "creational", "csharp"],
   "blocks": [
     {
       "type": "paragraph",

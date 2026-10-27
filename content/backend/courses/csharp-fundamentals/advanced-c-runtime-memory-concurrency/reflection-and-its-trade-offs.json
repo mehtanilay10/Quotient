@@ -106,7 +106,11 @@
       }
     }
   ],
-  "relatedLessons": ["assembly-loading-and-metadata", "readytorun-and-native-aot", "spant-memoryt-and-ref-structs"],
+  "relatedLessons": [
+    "assembly-loading-and-metadata",
+    "readytorun-and-native-aot",
+    "spant-memoryt-and-ref-structs"
+  ],
   "furtherReading": [
     {
       "type": "article",

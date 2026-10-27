@@ -10,12 +10,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2.5,
   "tags": ["react", "context", "refs", "hooks", "intermediate"],
-  "lessonSlugs": [
-    "react-context",
-    "usecontext-hook",
-    "useref-hook",
-    "forwarding-refs"
-  ],
+  "lessonSlugs": ["react-context", "usecontext-hook", "useref-hook", "forwarding-refs"],
   "prerequisites": ["lifecycle-effects"],
   "whatYouLearn": [
     "Identify prop drilling and solve it with createContext",

@@ -8,12 +8,7 @@
   "order": 14,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "arrays",
-    "easy"
-  ],
+  "tags": ["csharp", "dynamic-programming", "arrays", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "Track Min",
             "description": "max(price - minSoFar)",
-            "pros": [
-              "O(n) single pass"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) single pass"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

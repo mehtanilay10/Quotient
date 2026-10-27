@@ -8,13 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 28,
-  "tags": [
-    "graph",
-    "node",
-    "edge",
-    "match",
-    "many-to-many"
-  ],
+  "tags": ["graph", "node", "edge", "match", "many-to-many"],
   "blocks": [
     {
       "type": "heading",
@@ -113,8 +107,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "how-the-query-optimizer-chooses-a-plan",
-    "execution-plans"
-  ]
+  "relatedLessons": ["how-the-query-optimizer-chooses-a-plan", "execution-plans"]
 }

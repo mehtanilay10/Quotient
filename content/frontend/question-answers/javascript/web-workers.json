@@ -6,12 +6,7 @@
   "description": "Off-main-thread computation: the message-passing model, structured cloning of payloads, SharedArrayBuffer, and when workers don't help.",
   "order": 17,
   "difficulty": "advanced",
-  "tags": [
-    "javascript",
-    "performance",
-    "web-platform",
-    "advanced"
-  ],
+  "tags": ["javascript", "performance", "web-platform", "advanced"],
   "blocks": [
     {
       "type": "paragraph",
@@ -127,11 +122,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "js-a01",
-    "js-i03",
-    "debounce-throttle"
-  ],
+  "relatedLessons": ["js-a01", "js-i03", "debounce-throttle"],
   "furtherReading": [
     {
       "title": "Using web workers — MDN",

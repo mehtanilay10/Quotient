@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "security",
-    "identitymodel",
-    "oauth",
-    "openidconnect"
-  ],
+  "tags": ["security", "identitymodel", "oauth", "openidconnect"],
   "blocks": [
     {
       "type": "heading",
@@ -122,9 +117,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "jwt",
-    "data-protection"
-  ],
+  "relatedLessons": ["jwt", "data-protection"],
   "courseSlug": "dotnet-nuget-packages"
 }

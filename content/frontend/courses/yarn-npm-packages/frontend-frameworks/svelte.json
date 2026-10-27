@@ -6,13 +6,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "svelte",
-    "frontend",
-    "frameworks",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["svelte", "frontend", "frameworks", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,31 +34,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Package",
-          "Purpose"
-        ],
+        "headers": ["Package", "Purpose"],
         "rows": [
-          [
-            "svelte",
-            "Compiler and component runtime"
-          ],
-          [
-            "@sveltejs/kit",
-            "Full-stack framework: routing, SSR, form actions"
-          ],
-          [
-            "@sveltejs/adapter-auto",
-            "Chooses a deployment adapter automatically"
-          ],
-          [
-            "vite",
-            "Dev server and bundler used by SvelteKit"
-          ],
-          [
-            "svelte-check",
-            "Type and accessibility checking for .svelte files"
-          ]
+          ["svelte", "Compiler and component runtime"],
+          ["@sveltejs/kit", "Full-stack framework: routing, SSR, form actions"],
+          ["@sveltejs/adapter-auto", "Chooses a deployment adapter automatically"],
+          ["vite", "Dev server and bundler used by SvelteKit"],
+          ["svelte-check", "Type and accessibility checking for .svelte files"]
         ]
       }
     },

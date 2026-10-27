@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "testing",
-    "visual",
-    "ui"
-  ],
+  "tags": ["testing", "visual", "ui"],
   "blocks": [
     {
       "type": "paragraph",

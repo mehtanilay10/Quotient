@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "relations",
-    "foreign-keys",
-    "referential-actions",
-    "database"
-  ],
+  "tags": ["prisma", "relations", "foreign-keys", "referential-actions", "database"],
   "blocks": [
     {
       "type": "paragraph",
@@ -54,11 +48,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Action",
-          "Behavior on Parent Deletion",
-          "Typical Use Case"
-        ],
+        "headers": ["Action", "Behavior on Parent Deletion", "Typical Use Case"],
         "rows": [
           [
             "`Cascade`",
@@ -95,8 +85,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "one-to-one-relations",
-    "one-to-many-relations"
-  ]
+  "relatedLessons": ["one-to-one-relations", "one-to-many-relations"]
 }

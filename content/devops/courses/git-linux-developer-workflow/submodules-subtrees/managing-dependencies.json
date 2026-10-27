@@ -182,6 +182,10 @@
   "relatedLessons": ["subtree-fundamentals", "submodule-workflows", "submodule-common-pitfalls"],
   "furtherReading": [
     { "title": "npm Documentation", "url": "https://docs.npmjs.com/", "type": "article" },
-    { "title": "Git Dependabot", "url": "https://docs.github.com/en/code-security/dependabot", "type": "article" }
+    {
+      "title": "Git Dependabot",
+      "url": "https://docs.github.com/en/code-security/dependabot",
+      "type": "article"
+    }
   ]
 }

@@ -8,10 +8,7 @@
   "difficulty": "advanced",
   "estimatedHours": 8.4,
   "icon": "🧱",
-  "tags": [
-    "interview",
-    "architecture"
-  ],
+  "tags": ["interview", "architecture"],
   "lessonSlugs": [
     "repository-pattern",
     "microservices-basics",

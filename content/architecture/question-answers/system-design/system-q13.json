@@ -7,11 +7,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "system-design",
-    "ecommerce"
-  ],
+  "tags": ["interview", "system-design", "ecommerce"],
   "blocks": [
     {
       "type": "paragraph",

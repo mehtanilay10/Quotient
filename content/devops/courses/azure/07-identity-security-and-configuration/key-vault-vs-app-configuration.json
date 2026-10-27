@@ -8,13 +8,7 @@
   "order": 15,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -43,14 +37,8 @@
               "Access policies and RBAC",
               "Audit logging"
             ],
-            "cons": [
-              "No native feature flags",
-              "Not optimized for dynamic app settings"
-            ],
-            "tags": [
-              "secrets",
-              "crypto"
-            ]
+            "cons": ["No native feature flags", "Not optimized for dynamic app settings"],
+            "tags": ["secrets", "crypto"]
           },
           {
             "title": "App Configuration",
@@ -61,13 +49,8 @@
               "Key Vault references",
               "Dynamic refresh"
             ],
-            "cons": [
-              "Not designed for high-security secrets storage"
-            ],
-            "tags": [
-              "settings",
-              "feature-flags"
-            ]
+            "cons": ["Not designed for high-security secrets storage"],
+            "tags": ["settings", "feature-flags"]
           }
         ]
       }
@@ -75,42 +58,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use Case",
-          "Key Vault",
-          "App Configuration"
-        ],
+        "headers": ["Use Case", "Key Vault", "App Configuration"],
         "rows": [
-          [
-            "Database password",
-            "Yes",
-            "Via Key Vault reference"
-          ],
-          [
-            "API key for third-party service",
-            "Yes",
-            "Via Key Vault reference"
-          ],
-          [
-            "Feature flag",
-            "No",
-            "Yes"
-          ],
-          [
-            "Environment-specific URL",
-            "Via label",
-            "Native label support"
-          ],
-          [
-            "TLS certificate",
-            "Yes",
-            "No"
-          ],
-          [
-            "Encryption key",
-            "Yes",
-            "No"
-          ]
+          ["Database password", "Yes", "Via Key Vault reference"],
+          ["API key for third-party service", "Yes", "Via Key Vault reference"],
+          ["Feature flag", "No", "Yes"],
+          ["Environment-specific URL", "Via label", "Native label support"],
+          ["TLS certificate", "Yes", "No"],
+          ["Encryption key", "Yes", "No"]
         ]
       }
     },
@@ -152,17 +107,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Concern",
-          "Key Vault",
-          "App Configuration"
-        ],
+        "headers": ["Concern", "Key Vault", "App Configuration"],
         "rows": [
-          [
-            "Primary threat model",
-            "Secret disclosure",
-            "Configuration drift and slow releases"
-          ],
+          ["Primary threat model", "Secret disclosure", "Configuration drift and slow releases"],
           [
             "Access audit",
             "Every secret, key, and certificate operation",
@@ -173,16 +120,8 @@
             "Versioned secrets and automatic certificate renewal",
             "New value, provider refresh"
           ],
-          [
-            "Cost driver",
-            "Operations and HSM tier",
-            "Storage and request volume"
-          ],
-          [
-            "Not a good fit for",
-            "Bulk non-secret settings",
-            "Long-lived secrets"
-          ]
+          ["Cost driver", "Operations and HSM tier", "Storage and request volume"],
+          ["Not a good fit for", "Bulk non-secret settings", "Long-lived secrets"]
         ]
       }
     },

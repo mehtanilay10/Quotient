@@ -8,13 +8,7 @@
   "order": 21,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "arrays",
-    "hashmap",
-    "prefix-sum",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "hashmap", "prefix-sum", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -100,32 +94,16 @@
           {
             "title": "Brute Force",
             "description": "Sum every subarray",
-            "pros": [
-              "Simple"
-            ],
-            "cons": [
-              "O(n\u00b2) time"
-            ],
-            "tags": [
-              "O(n\u00b2) time",
-              "O(1) space"
-            ]
+            "pros": ["Simple"],
+            "cons": ["O(n\u00b2) time"],
+            "tags": ["O(n\u00b2) time", "O(1) space"]
           },
           {
             "title": "Prefix HashMap",
             "description": "Count subarrays by past prefix sums",
-            "pros": [
-              "O(n) time",
-              "Recommended"
-            ],
-            "cons": [
-              "O(n) space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "Recommended"],
+            "cons": ["O(n) space"],
+            "tags": ["O(n) time", "O(n) space", "Recommended"]
           }
         ]
       }

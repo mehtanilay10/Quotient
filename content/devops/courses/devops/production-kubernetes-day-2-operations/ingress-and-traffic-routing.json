@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "kubernetes",
-    "ingress",
-    "traffic-routing",
-    "tls",
-    "nginx"
-  ],
+  "tags": ["kubernetes", "ingress", "traffic-routing", "tls", "nginx"],
   "blocks": [
     {
       "type": "heading",
@@ -130,27 +124,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Annotation",
-          "Purpose"
-        ],
+        "headers": ["Annotation", "Purpose"],
         "rows": [
           [
             "nginx.ingress.kubernetes.io/rewrite-target",
             "Rewrite the request URL path before forwarding to the backend"
           ],
-          [
-            "nginx.ingress.kubernetes.io/ssl-redirect",
-            "Redirect HTTP to HTTPS (default: true)"
-          ],
-          [
-            "nginx.ingress.kubernetes.io/proxy-body-size",
-            "Set maximum uploaded file size"
-          ],
-          [
-            "nginx.ingress.kubernetes.io/rate-limit",
-            "Rate-limit requests per client IP"
-          ]
+          ["nginx.ingress.kubernetes.io/ssl-redirect", "Redirect HTTP to HTTPS (default: true)"],
+          ["nginx.ingress.kubernetes.io/proxy-body-size", "Set maximum uploaded file size"],
+          ["nginx.ingress.kubernetes.io/rate-limit", "Rate-limit requests per client IP"]
         ]
       }
     },

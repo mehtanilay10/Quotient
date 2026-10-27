@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "prisma",
-    "pgbouncer",
-    "connection-pooling",
-    "postgresql",
-    "serverless"
-  ],
+  "tags": ["prisma", "pgbouncer", "connection-pooling", "postgresql", "serverless"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "connection-management-serverless",
-    "schema-prisma-structure"
-  ]
+  "relatedLessons": ["connection-management-serverless", "schema-prisma-structure"]
 }

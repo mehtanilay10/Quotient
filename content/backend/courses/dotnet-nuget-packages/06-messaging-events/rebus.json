@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 12,
-  "tags": [
-    "rebus",
-    "service-bus",
-    "messaging",
-    "events"
-  ],
+  "tags": ["rebus", "service-bus", "messaging", "events"],
   "blocks": [
     {
       "type": "heading",

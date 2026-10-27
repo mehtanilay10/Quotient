@@ -8,14 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "runbook",
-    "automation",
-    "linux",
-    "bash",
-    "incident",
-    "documentation"
-  ],
+  "tags": ["runbook", "automation", "linux", "bash", "incident", "documentation"],
   "blocks": [
     {
       "type": "paragraph",

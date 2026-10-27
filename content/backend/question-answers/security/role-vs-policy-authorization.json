@@ -6,10 +6,7 @@
   "description": "When roles are enough, when you need policies, and how to write a custom authorization handler.",
   "order": 3,
   "difficulty": "intermediate",
-  "tags": [
-    "security",
-    "intermediate"
-  ],
+  "tags": ["security", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -126,10 +123,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "authentication-vs-authorization",
-    "oauth-jwt"
-  ],
+  "relatedLessons": ["authentication-vs-authorization", "oauth-jwt"],
   "furtherReading": [
     {
       "title": "Policy-based authorization in ASP.NET Core",

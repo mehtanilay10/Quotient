@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { BookOpen, ChevronDown, ChevronUp } from 'lucide-react';
-import { ProgressTracker } from '@/components/course/ProgressTracker';
-import { LessonSidebar } from '@/components/layout/LessonSidebar';
-import { cn } from '@/lib/utils';
-import type { Module, LessonNavItem, ProgressCategory } from '@/types';
+import { useState } from "react";
+import { BookOpen, ChevronDown, ChevronUp } from "lucide-react";
+import { ProgressTracker } from "@/components/course/ProgressTracker";
+import { LessonSidebar } from "@/components/layout/LessonSidebar";
+import { cn } from "@/lib/utils";
+import type { Module, LessonNavItem, ProgressCategory } from "@/types";
 
 interface MobileProgressAndContentsProps {
   lessonSlug: string;
@@ -24,18 +24,18 @@ export function MobileProgressAndContents({
   lessonSlug,
   moduleSlug,
   courseSlug,
-  basePrefix = 'courses',
+  basePrefix = "courses",
   allModuleLessonSlugs,
   allCourseLessonSlugs,
   modules,
   lessonsByModule,
-  category = 'lessons',
+  category = "lessons",
   className,
 }: MobileProgressAndContentsProps) {
   const [contentsOpen, setContentsOpen] = useState(false);
 
   return (
-    <div className={cn('space-y-3', className)}>
+    <div className={cn("space-y-3", className)}>
       <div className="rounded-xl border border-border bg-canvas-subtle">
         <ProgressTracker
           lessonSlug={lessonSlug}

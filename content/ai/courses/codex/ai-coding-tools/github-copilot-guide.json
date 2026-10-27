@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "copilot",
-    "github",
-    "ide",
-    "vscode"
-  ],
+  "tags": ["copilot", "github", "ide", "vscode"],
   "blocks": [
     {
       "type": "heading",
@@ -162,13 +157,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "claude-for-code",
-    "setting-up-ai-coding-environment"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model",
-    "autocomplete"
-  ],
+  "relatedLessons": ["claude-for-code", "setting-up-ai-coding-environment"],
+  "relatedGlossaryTerms": ["large-language-model", "autocomplete"],
   "courseSlug": "codex"
 }

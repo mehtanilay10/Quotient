@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "select",
-    "projection",
-    "distinct",
-    "distinct-on",
-    "sql"
-  ],
+  "tags": ["select", "projection", "distinct", "distinct-on", "sql"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,8 +76,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "where-clause",
-    "order-by"
-  ]
+  "relatedLessons": ["where-clause", "order-by"]
 }

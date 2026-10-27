@@ -6,10 +6,7 @@
   "description": "Understand creational, structural, and behavioral patterns.",
   "order": 13,
   "difficulty": "advanced",
-  "tags": [
-    "oop",
-    "advanced"
-  ],
+  "tags": ["oop", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

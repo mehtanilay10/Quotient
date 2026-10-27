@@ -110,14 +110,25 @@
           {
             "title": "Resilience4j",
             "description": "Lightweight fault-tolerance library inspired by Hystrix for JVM ecosystems.",
-            "pros": ["Functional and reactive APIs", "Built-in metrics via Micrometer", "Small surface area"],
+            "pros": [
+              "Functional and reactive APIs",
+              "Built-in metrics via Micrometer",
+              "Small surface area"
+            ],
             "cons": ["Primarily Java/Kotlin", "Requires manual wiring in .NET if used interop"]
           },
           {
             "title": "YARP with health probes",
             "description": "Reverse proxy with built-in passive and active health checks.",
-            "pros": ["Removes unhealthy nodes automatically", "Integrated with ASP.NET Core", "Supports session affinity"],
-            "cons": ["Only solves proxy-level failures", "Does not replace application-level resilience"]
+            "pros": [
+              "Removes unhealthy nodes automatically",
+              "Integrated with ASP.NET Core",
+              "Supports session affinity"
+            ],
+            "cons": [
+              "Only solves proxy-level failures",
+              "Does not replace application-level resilience"
+            ]
           }
         ]
       }

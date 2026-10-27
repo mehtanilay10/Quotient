@@ -5,10 +5,7 @@
   "title": "What is Entity Framework Core",
   "description": "Learn what EF Core is and its benefits.",
   "order": 2,
-  "tags": [
-    "ef-core",
-    "getting-started-ef-core"
-  ],
+  "tags": ["ef-core", "getting-started-ef-core"],
   "blocks": [
     {
       "type": "paragraph",

@@ -147,6 +147,10 @@
   ],
   "relatedLessons": ["bisect-fundamentals", "automated-bisect"],
   "furtherReading": [
-    { "title": "Git Bisect with Automated Scripts", "url": "https://git-scm.com/docs/git-bisect#_bisect_run", "type": "article" }
+    {
+      "title": "Git Bisect with Automated Scripts",
+      "url": "https://git-scm.com/docs/git-bisect#_bisect_run",
+      "type": "article"
+    }
   ]
 }

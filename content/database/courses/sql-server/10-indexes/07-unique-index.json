@@ -7,11 +7,7 @@
   "order": 7,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "unique-index",
-    "uniqueness",
-    "constraint"
-  ],
+  "tags": ["unique-index", "uniqueness", "constraint"],
   "blocks": [
     {
       "type": "heading",

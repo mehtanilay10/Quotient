@@ -34,11 +34,31 @@
       "data": {
         "headers": ["Collection", "Best for", "Notes"],
         "rows": [
-          ["`ConcurrentDictionary<TKey, TValue>`", "Key-value lookups and updates", "Lock-free reads; fine-grained locking for writes"],
-          ["`ConcurrentQueue<T>`", "First-in-first-out producer-consumer", "Fully lock-free for most operations"],
-          ["`ConcurrentStack<T>`", "Last-in-first-out work items", "Fully lock-free for most operations"],
-          ["`ConcurrentBag<T>`", "Unordered work items", "Fast for adds/removes; iteration is a snapshot"],
-          ["`BlockingCollection<T>`", "Bounded producer-consumer with blocking", "Wraps any `IProducerConsumerCollection`"]
+          [
+            "`ConcurrentDictionary<TKey, TValue>`",
+            "Key-value lookups and updates",
+            "Lock-free reads; fine-grained locking for writes"
+          ],
+          [
+            "`ConcurrentQueue<T>`",
+            "First-in-first-out producer-consumer",
+            "Fully lock-free for most operations"
+          ],
+          [
+            "`ConcurrentStack<T>`",
+            "Last-in-first-out work items",
+            "Fully lock-free for most operations"
+          ],
+          [
+            "`ConcurrentBag<T>`",
+            "Unordered work items",
+            "Fast for adds/removes; iteration is a snapshot"
+          ],
+          [
+            "`BlockingCollection<T>`",
+            "Bounded producer-consumer with blocking",
+            "Wraps any `IProducerConsumerCollection`"
+          ]
         ]
       }
     },
@@ -94,7 +114,13 @@
     "channels-and-producer-consumer-pipelines"
   ],
   "furtherReading": [
-    { "title": "Concurrent Collections (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/standard/collections/thread-safe/" },
-    { "title": "BlockingCollection<T> Class (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.blockingcollection-1" }
+    {
+      "title": "Concurrent Collections (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/standard/collections/thread-safe/"
+    },
+    {
+      "title": "BlockingCollection<T> Class (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.blockingcollection-1"
+    }
   ]
 }

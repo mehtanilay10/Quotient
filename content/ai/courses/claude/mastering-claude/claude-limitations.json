@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "claude",
-    "limitations",
-    "hallucination",
-    "accuracy",
-    "honest-ai"
-  ],
+  "tags": ["claude", "limitations", "hallucination", "accuracy", "honest-ai"],
   "blocks": [
     {
       "type": "heading",
@@ -113,49 +107,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Limitation",
-          "Claude",
-          "ChatGPT",
-          "Gemini"
-        ],
+        "headers": ["Limitation", "Claude", "ChatGPT", "Gemini"],
         "rows": [
-          [
-            "Image generation",
-            "No",
-            "Yes (DALL-E)",
-            "Yes (Imagen)"
-          ],
-          [
-            "Web browsing",
-            "Limited",
-            "Yes (paid)",
-            "Yes (native)"
-          ],
-          [
-            "Code execution",
-            "No (Artifacts only)",
-            "Yes (Code Interpreter)",
-            "Limited"
-          ],
-          [
-            "Context window",
-            "200K",
-            "128K",
-            "1M (Pro)"
-          ],
-          [
-            "Memory across sessions",
-            "No",
-            "No",
-            "No"
-          ],
-          [
-            "Hallucination tendency",
-            "Low",
-            "Medium",
-            "Medium"
-          ]
+          ["Image generation", "No", "Yes (DALL-E)", "Yes (Imagen)"],
+          ["Web browsing", "Limited", "Yes (paid)", "Yes (native)"],
+          ["Code execution", "No (Artifacts only)", "Yes (Code Interpreter)", "Limited"],
+          ["Context window", "200K", "128K", "1M (Pro)"],
+          ["Memory across sessions", "No", "No", "No"],
+          ["Hallucination tendency", "Low", "Medium", "Medium"]
         ]
       }
     },
@@ -210,10 +169,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prompt-engineering-for-claude",
-    "building-your-claude-toolkit"
-  ],
+  "relatedLessons": ["prompt-engineering-for-claude", "building-your-claude-toolkit"],
   "relatedGlossaryTerms": [
     "hallucination",
     "context-window",

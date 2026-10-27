@@ -90,8 +90,16 @@
         "headers": ["Feature", "Protects Against", "How It Works"],
         "rows": [
           ["Versioning", "Overwrites and deletes", "Keeps previous blob versions automatically"],
-          ["Soft Delete", "Deletes and overwrites", "Retains deleted data for a configurable retention period"],
-          ["Immutability Policy", "Modifications and deletes", "Prevents changes for a fixed time or until a legal hold is released"]
+          [
+            "Soft Delete",
+            "Deletes and overwrites",
+            "Retains deleted data for a configurable retention period"
+          ],
+          [
+            "Immutability Policy",
+            "Modifications and deletes",
+            "Prevents changes for a fixed time or until a legal hold is released"
+          ]
         ]
       }
     },

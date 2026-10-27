@@ -111,9 +111,7 @@
           {
             "title": "Hand-rolled saga over queues + SQL status",
             "description": "Custom state machine in a table",
-            "pros": [
-              "No extra service"
-            ],
+            "pros": ["No extra service"],
             "cons": [
               "You rebuild replay, timeouts, and recovery",
               "Restarts strand in-flight work",

@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "deadlock",
-    "deadlock-graph",
-    "concurrency",
-    "sql-server",
-    "troubleshooting"
-  ],
+  "tags": ["deadlock", "deadlock-graph", "concurrency", "sql-server", "troubleshooting"],
   "blocks": [
     {
       "type": "paragraph",
@@ -177,10 +171,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "locks-and-blocking",
-    "transaction-isolation-levels"
-  ],
+  "relatedLessons": ["locks-and-blocking", "transaction-isolation-levels"],
   "furtherReading": [
     {
       "title": "Deadlocking (Microsoft Docs)",

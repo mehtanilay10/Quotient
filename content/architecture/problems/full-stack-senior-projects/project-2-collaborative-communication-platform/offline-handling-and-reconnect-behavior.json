@@ -215,10 +215,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "websocket-connection-lifecycle",
-    "message-persistence-and-ordering"
-  ],
+  "relatedLessons": ["websocket-connection-lifecycle", "message-persistence-and-ordering"],
   "furtherReading": [
     {
       "title": "Offline-First Architecture",

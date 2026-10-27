@@ -8,15 +8,7 @@
   "order": 13,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "azure",
-    "azure",
-    "monitoring",
-    "observability",
-    "containers",
-    "aks",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "monitoring", "observability", "containers", "aks", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -88,32 +80,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Data Source",
-          "Collects",
-          "Retention"
-        ],
+        "headers": ["Data Source", "Collects", "Retention"],
         "rows": [
-          [
-            "Container Insights",
-            "Container logs, inventory, metrics",
-            "30 days default"
-          ],
-          [
-            "Prometheus",
-            "Application and node metrics",
-            "18 months"
-          ],
-          [
-            "Grafana",
-            "Dashboards and visualizations",
-            "Persisted in Grafana workspace"
-          ],
-          [
-            "Kube-State Metrics",
-            "Kubernetes object metrics",
-            "30 days default"
-          ]
+          ["Container Insights", "Container logs, inventory, metrics", "30 days default"],
+          ["Prometheus", "Application and node metrics", "18 months"],
+          ["Grafana", "Dashboards and visualizations", "Persisted in Grafana workspace"],
+          ["Kube-State Metrics", "Kubernetes object metrics", "30 days default"]
         ]
       }
     },

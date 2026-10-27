@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 17,
-  "tags": [
-    "api-security",
-    "owasp",
-    "jwt"
-  ],
+  "tags": ["api-security", "owasp", "jwt"],
   "blocks": [
     {
       "type": "paragraph",
@@ -84,35 +80,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Control",
-          "Purpose"
-        ],
+        "headers": ["Control", "Purpose"],
         "rows": [
-          [
-            "Authentication",
-            "Verify identity"
-          ],
-          [
-            "Authorization",
-            "Verify permissions"
-          ],
-          [
-            "Input validation",
-            "Prevent injection"
-          ],
-          [
-            "Rate limiting",
-            "Prevent abuse"
-          ],
-          [
-            "HTTPS",
-            "Encrypt in transit"
-          ],
-          [
-            "CORS",
-            "Control browser access"
-          ]
+          ["Authentication", "Verify identity"],
+          ["Authorization", "Verify permissions"],
+          ["Input validation", "Prevent injection"],
+          ["Rate limiting", "Prevent abuse"],
+          ["HTTPS", "Encrypt in transit"],
+          ["CORS", "Control browser access"]
         ]
       }
     },

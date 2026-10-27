@@ -8,17 +8,8 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "infinite",
-    "scrolling",
-    "pagination",
-    "load-more",
-    "useInfiniteQuery"
-  ],
-  "prerequisites": [
-    "pagination"
-  ],
+  "tags": ["react-query", "infinite", "scrolling", "pagination", "load-more", "useInfiniteQuery"],
+  "prerequisites": ["pagination"],
   "blocks": [
     {
       "type": "paragraph",
@@ -57,10 +48,7 @@
               "Accumulating all pages requires manual merging",
               "Not ideal for infinite scroll"
             ],
-            "tags": [
-              "numbered-pages",
-              "simple"
-            ]
+            "tags": ["numbered-pages", "simple"]
           },
           {
             "title": "useInfiniteQuery",
@@ -75,11 +63,7 @@
               "All accumulated pages in memory at once",
               "Manual cleanup needed on unmount"
             ],
-            "tags": [
-              "infinite-scroll",
-              "load-more",
-              "accumulated"
-            ]
+            "tags": ["infinite-scroll", "load-more", "accumulated"]
           }
         ]
       }
@@ -132,52 +116,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Property",
-          "Type",
-          "Description"
-        ],
+        "headers": ["Property", "Type", "Description"],
         "rows": [
-          [
-            "data",
-            "{ pages, pageParams }",
-            "All fetched pages and their params"
-          ],
-          [
-            "data.pages",
-            "T[]",
-            "Array of all successfully fetched page results"
-          ],
-          [
-            "data.pageParams",
-            "P[]",
-            "Array of pageParams used for each page"
-          ],
-          [
-            "fetchNextPage",
-            "function",
-            "Triggers a fetch for the next page"
-          ],
-          [
-            "hasNextPage",
-            "boolean",
-            "True if getNextPageParam returned a value for the last page"
-          ],
-          [
-            "isFetchingNextPage",
-            "boolean",
-            "True while fetchNextPage is in progress"
-          ],
-          [
-            "isLoading",
-            "boolean",
-            "True on first render with no cache data"
-          ],
-          [
-            "isFetching",
-            "boolean",
-            "True during any fetch, including next-page fetches"
-          ]
+          ["data", "{ pages, pageParams }", "All fetched pages and their params"],
+          ["data.pages", "T[]", "Array of all successfully fetched page results"],
+          ["data.pageParams", "P[]", "Array of pageParams used for each page"],
+          ["fetchNextPage", "function", "Triggers a fetch for the next page"],
+          ["hasNextPage", "boolean", "True if getNextPageParam returned a value for the last page"],
+          ["isFetchingNextPage", "boolean", "True while fetchNextPage is in progress"],
+          ["isLoading", "boolean", "True on first render with no cache data"],
+          ["isFetching", "boolean", "True during any fetch, including next-page fetches"]
         ]
       }
     },

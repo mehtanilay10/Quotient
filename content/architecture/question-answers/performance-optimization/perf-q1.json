@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "performance",
-    "dotnet",
-    "profiling"
-  ],
+  "tags": ["interview", "performance", "dotnet", "profiling"],
   "blocks": [
     {
       "type": "paragraph",

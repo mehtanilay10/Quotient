@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "mvc",
-    "routing",
-    "attributes"
-  ],
+  "tags": ["aspnet-core", "mvc", "routing", "attributes"],
   "blocks": [
     {
       "type": "heading",
@@ -91,20 +86,9 @@
           {
             "title": "Route Attributes on Actions",
             "description": "Declarative routing per action",
-            "pros": [
-              "Fine-grained control",
-              "RESTful URLs by default",
-              "Easy to document"
-            ],
-            "cons": [
-              "Routes spread across actions",
-              "Can lead to duplication"
-            ],
-            "tags": [
-              "[Route]",
-              "[HttpGet]",
-              "[HttpPost]"
-            ]
+            "pros": ["Fine-grained control", "RESTful URLs by default", "Easy to document"],
+            "cons": ["Routes spread across actions", "Can lead to duplication"],
+            "tags": ["[Route]", "[HttpGet]", "[HttpPost]"]
           },
           {
             "title": "Route Constraints",
@@ -118,13 +102,7 @@
               "Requires learning constraint syntax",
               "Complex constraints can be hard to read"
             ],
-            "tags": [
-              "Route constraints",
-              "int",
-              "alpha",
-              "min",
-              "range"
-            ]
+            "tags": ["Route constraints", "int", "alpha", "min", "range"]
           }
         ]
       }

@@ -10,11 +10,7 @@
   "estimatedHours": 2,
   "icon": "📝",
   "tags": ["linq", "syntax", "lambda", "query-syntax", "method-syntax"],
-  "lessonSlugs": [
-    "linq-query-syntax",
-    "linq-method-syntax",
-    "anatomy-of-lambda-expression"
-  ],
+  "lessonSlugs": ["linq-query-syntax", "linq-method-syntax", "anatomy-of-lambda-expression"],
   "whatYouLearn": [
     "Understand the two ways to write LINQ queries",
     "Write queries using SQL-like query syntax",

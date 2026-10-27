@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "kubernetes",
-    "service-discovery",
-    "dns"
-  ],
+  "tags": ["kubernetes", "service-discovery", "dns"],
   "blocks": [
     {
       "type": "paragraph",
@@ -98,32 +94,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Exposure",
-          "Use Case"
-        ],
+        "headers": ["Type", "Exposure", "Use Case"],
         "rows": [
-          [
-            "ClusterIP",
-            "Internal IP",
-            "Internal service-to-service"
-          ],
-          [
-            "NodePort",
-            "Node IP + port",
-            "Testing, external access"
-          ],
-          [
-            "LoadBalancer",
-            "Cloud LB",
-            "External production access"
-          ],
-          [
-            "Headless",
-            "Pod IPs directly",
-            "Stateful services, custom discovery"
-          ]
+          ["ClusterIP", "Internal IP", "Internal service-to-service"],
+          ["NodePort", "Node IP + port", "Testing, external access"],
+          ["LoadBalancer", "Cloud LB", "External production access"],
+          ["Headless", "Pod IPs directly", "Stateful services, custom discovery"]
         ]
       }
     },

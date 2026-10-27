@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "prisma",
-    "nextjs",
-    "pages-router",
-    "api-routes",
-    "legacy"
-  ],
+  "tags": ["prisma", "nextjs", "pages-router", "api-routes", "legacy"],
   "blocks": [
     {
       "type": "paragraph",
@@ -43,8 +37,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-route-handlers",
-    "prisma-in-nextjs-app-router"
-  ]
+  "relatedLessons": ["prisma-route-handlers", "prisma-in-nextjs-app-router"]
 }

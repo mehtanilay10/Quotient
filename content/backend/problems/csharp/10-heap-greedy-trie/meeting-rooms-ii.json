@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Given an array of meeting time intervals `[start, end]`, return the minimum number of conference rooms required so that no two meetings overlap in the same room. A meeting ending at time `t` frees the room for a meeting starting at `t`."}
+        "text": "Given an array of meeting time intervals `[start, end]`, return the minimum number of conference rooms required so that no two meetings overlap in the same room. A meeting ending at time `t` frees the room for a meeting starting at `t`."
+      }
     },
     {
       "type": "heading",
@@ -36,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Count, for each meeting, how many others overlap it, and take the maximum. Such a pairwise comparison cannot count overlaps correctly without a sweep, and costs O(n²)."}
+        "text": "Count, for each meeting, how many others overlap it, and take the maximum. Such a pairwise comparison cannot count overlaps correctly without a sweep, and costs O(n²)."
+      }
     },
     {
       "type": "example",
@@ -54,7 +56,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Sort meetings by start time. Keep a min-heap of the end times of meetings currently in progress. For each new meeting, if the earliest-ending meeting has already finished, that room is reusable — pop it. Then push the new end time. The heap size after each step is the number of rooms in use, and its maximum is the answer." }
+        "text": "Sort meetings by start time. Keep a min-heap of the end times of meetings currently in progress. For each new meeting, if the earliest-ending meeting has already finished, that room is reusable — pop it. Then push the new end time. The heap size after each step is the number of rooms in use, and its maximum is the answer."
+      }
     },
     {
       "type": "example",
@@ -88,7 +91,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Sort all start times and all end times separately, then sweep with two pointers. Count active meetings by incrementing on a start and decrementing on an end, tracking the peak. This is O(n log n) with no heap at all." }
+        "text": "Sort all start times and all end times separately, then sweep with two pointers. Count active meetings by incrementing on a start and decrementing on an end, tracking the peak. This is O(n log n) with no heap at all."
+      }
     },
     {
       "type": "example",

@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "http",
-    "refit",
-    "rest"
-  ],
+  "tags": ["http", "refit", "rest"],
   "blocks": [
     {
       "type": "heading",

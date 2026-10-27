@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "ai-basics",
-    "ml",
-    "generative-ai",
-    "terminology"
-  ],
+  "tags": ["ai-basics", "ml", "generative-ai", "terminology"],
   "relatedGlossaryTerms": [
     "artificial-intelligence",
     "machine-learning",
@@ -132,11 +127,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Era",
-          "What was possible",
-          "Limitation"
-        ],
+        "headers": ["Era", "What was possible", "Limitation"],
         "rows": [
           [
             "1950s–1980s: Rule-based AI",
@@ -200,10 +191,7 @@
               "Requires engineers for every new case",
               "Cannot handle natural language"
             ],
-            "tags": [
-              "rules",
-              "deterministic"
-            ]
+            "tags": ["rules", "deterministic"]
           },
           {
             "title": "Machine Learning",
@@ -218,10 +206,7 @@
               "Often a black box — hard to explain decisions",
               "Narrow — trained for one task"
             ],
-            "tags": [
-              "data-driven",
-              "training"
-            ]
+            "tags": ["data-driven", "training"]
           },
           {
             "title": "Generative AI (LLMs)",
@@ -236,11 +221,7 @@
               "Expensive to train; slower to run",
               "Harder to verify and audit"
             ],
-            "tags": [
-              "creative",
-              "llm",
-              "modern"
-            ]
+            "tags": ["creative", "llm", "modern"]
           }
         ]
       }
@@ -324,35 +305,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Concept",
-          "Primary purpose",
-          "Typical output"
-        ],
+        "headers": ["Concept", "Primary purpose", "Typical output"],
         "rows": [
-          [
-            "AI",
-            "Perform intelligent tasks",
-            "Decisions, predictions, automation"
-          ],
-          [
-            "Machine learning",
-            "Learn patterns from data",
-            "Classifications and forecasts"
-          ],
-          [
-            "Generative AI",
-            "Create new content",
-            "Text, images, code, audio"
-          ]
+          ["AI", "Perform intelligent tasks", "Decisions, predictions, automation"],
+          ["Machine learning", "Learn patterns from data", "Classifications and forecasts"],
+          ["Generative AI", "Create new content", "Text, images, code, audio"]
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "how-llms-work-simply",
-    "what-ai-can-and-cannot-do"
-  ],
+  "relatedLessons": ["how-llms-work-simply", "what-ai-can-and-cannot-do"],
   "furtherReading": [
     {
       "title": "AI for Everyone",

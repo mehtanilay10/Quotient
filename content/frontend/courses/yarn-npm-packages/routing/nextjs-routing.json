@@ -6,13 +6,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "nextjs",
-    "routing",
-    "react",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["nextjs", "routing", "react", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

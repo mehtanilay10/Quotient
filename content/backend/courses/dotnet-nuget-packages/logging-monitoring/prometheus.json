@@ -8,11 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "monitoring",
-    "prometheus",
-    "metrics"
-  ],
+  "tags": ["monitoring", "prometheus", "metrics"],
   "blocks": [
     {
       "type": "heading",

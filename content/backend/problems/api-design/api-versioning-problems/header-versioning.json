@@ -106,7 +106,11 @@
             "title": "Header Versioning",
             "description": "Version via Accept or a custom API-Version header.",
             "pros": ["Single URL per resource", "Cleaner URL space", "Easier gateway routing"],
-            "cons": ["Less visible in logs", "Vary header required for caching", "Harder to test manually"]
+            "cons": [
+              "Less visible in logs",
+              "Vary header required for caching",
+              "Harder to test manually"
+            ]
           }
         ]
       }
@@ -153,10 +157,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "url-versioning",
-    "content-negotiation"
-  ],
+  "relatedLessons": ["url-versioning", "content-negotiation"],
   "furtherReading": [
     {
       "title": "OpenAPI Parameter: Header",

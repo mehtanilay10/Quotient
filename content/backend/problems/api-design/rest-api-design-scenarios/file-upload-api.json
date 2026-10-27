@@ -147,10 +147,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "e-commerce-api",
-    "search-api"
-  ],
+  "relatedLessons": ["e-commerce-api", "search-api"],
   "furtherReading": [
     {
       "title": "TUS Resumable Upload Protocol",

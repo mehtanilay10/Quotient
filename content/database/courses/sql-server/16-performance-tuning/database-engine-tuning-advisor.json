@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "dta",
-    "index-tuning",
-    "indexed-views",
-    "partitioning",
-    "recommendations"
-  ],
+  "tags": ["dta", "index-tuning", "indexed-views", "partitioning", "recommendations"],
   "blocks": [
     {
       "type": "heading",

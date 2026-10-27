@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 28,
-  "tags": [
-    "temporal-tables",
-    "system-versioning",
-    "history",
-    "audit",
-    "for-system-time"
-  ],
+  "tags": ["temporal-tables", "system-versioning", "history", "audit", "for-system-time"],
   "blocks": [
     {
       "type": "heading",
@@ -122,8 +116,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "change-data-capture",
-    "transaction-isolation-levels"
-  ]
+  "relatedLessons": ["change-data-capture", "transaction-isolation-levels"]
 }

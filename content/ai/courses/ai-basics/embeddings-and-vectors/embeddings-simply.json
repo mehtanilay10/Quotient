@@ -7,17 +7,8 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "embeddings",
-    "vectors",
-    "semantic-search",
-    "meaning"
-  ],
-  "relatedGlossaryTerms": [
-    "embedding",
-    "vector-database",
-    "rag"
-  ],
+  "tags": ["embeddings", "vectors", "semantic-search", "meaning"],
+  "relatedGlossaryTerms": ["embedding", "vector-database", "rag"],
   "blocks": [
     {
       "type": "paragraph",
@@ -132,12 +123,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Similarity method",
-          "What it measures",
-          "Score range",
-          "Common use"
-        ],
+        "headers": ["Similarity method", "What it measures", "Score range", "Common use"],
         "rows": [
           [
             "Cosine similarity",
@@ -216,12 +202,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Embedding model",
-          "Dimensions",
-          "Provider",
-          "Notes"
-        ],
+        "headers": ["Embedding model", "Dimensions", "Provider", "Notes"],
         "rows": [
           [
             "text-embedding-3-small",
@@ -235,24 +216,14 @@
             "OpenAI",
             "Higher accuracy; use when retrieval precision matters most"
           ],
-          [
-            "embed-english-v3.0",
-            "1024",
-            "Cohere",
-            "Strong performance on English retrieval tasks"
-          ],
+          ["embed-english-v3.0", "1024", "Cohere", "Strong performance on English retrieval tasks"],
           [
             "all-MiniLM-L6-v2",
             "384",
             "Sentence-Transformers (open-source)",
             "Fast and lightweight; runs locally; good for low-resource environments"
           ],
-          [
-            "voyage-3",
-            "1024",
-            "Voyage AI",
-            "Strong performance on code and technical documents"
-          ]
+          ["voyage-3", "1024", "Voyage AI", "Strong performance on code and technical documents"]
         ]
       }
     },
@@ -289,10 +260,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Product / feature",
-          "How embeddings are used"
-        ],
+        "headers": ["Product / feature", "How embeddings are used"],
         "rows": [
           [
             "Spotify 'Discover Weekly'",
@@ -353,32 +321,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Vector database tool",
-          "Type",
-          "Common use case"
-        ],
+        "headers": ["Vector database tool", "Type", "Common use case"],
         "rows": [
-          [
-            "Pinecone",
-            "Cloud, managed",
-            "Production RAG systems, search"
-          ],
-          [
-            "Weaviate",
-            "Open-source or cloud",
-            "Document search, semantic retrieval"
-          ],
-          [
-            "Qdrant",
-            "Open-source",
-            "High-performance similarity search"
-          ],
-          [
-            "Chroma",
-            "Open-source, local-friendly",
-            "Development and small-scale RAG"
-          ],
+          ["Pinecone", "Cloud, managed", "Production RAG systems, search"],
+          ["Weaviate", "Open-source or cloud", "Document search, semantic retrieval"],
+          ["Qdrant", "Open-source", "High-performance similarity search"],
+          ["Chroma", "Open-source, local-friendly", "Development and small-scale RAG"],
           [
             "pgvector (PostgreSQL extension)",
             "Embedded in your DB",
@@ -469,10 +417,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rag-explained",
-    "what-is-mcp"
-  ],
+  "relatedLessons": ["rag-explained", "what-is-mcp"],
   "furtherReading": [
     {
       "title": "The Illustrated Word2Vec",

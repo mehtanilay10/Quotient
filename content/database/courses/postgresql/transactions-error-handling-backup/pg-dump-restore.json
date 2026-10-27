@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "pg-dump",
-    "pg-restore",
-    "backup",
-    "disaster-recovery",
-    "dba"
-  ],
+  "tags": ["pg-dump", "pg-restore", "backup", "disaster-recovery", "dba"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,8 +74,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "point-in-time-recovery",
-    "transaction-fundamentals"
-  ]
+  "relatedLessons": ["point-in-time-recovery", "transaction-fundamentals"]
 }

@@ -7,10 +7,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 23,
-  "tags": [
-    "interview",
-    "intermediate"
-  ],
+  "tags": ["interview", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,11 +79,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "Not understanding change tracking",
-          "N+1 query problem",
-          "Not using migrations"
-        ]
+        "items": ["Not understanding change tracking", "N+1 query problem", "Not using migrations"]
       }
     },
     {

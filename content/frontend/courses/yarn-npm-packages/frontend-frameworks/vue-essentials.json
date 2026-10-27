@@ -6,13 +6,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "vue",
-    "frontend",
-    "frameworks",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["vue", "frontend", "frameworks", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -31,37 +25,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Package",
-          "Purpose",
-          "When to add it"
-        ],
+        "headers": ["Package", "Purpose", "When to add it"],
         "rows": [
-          [
-            "vue",
-            "Core framework (reactivity, components)",
-            "Always"
-          ],
-          [
-            "vue-router",
-            "Client-side routing",
-            "Multi-page apps"
-          ],
-          [
-            "pinia",
-            "Official state store (Vue 3)",
-            "Shared application state"
-          ],
-          [
-            "@vue/test-utils",
-            "Component testing helpers",
-            "Component tests"
-          ],
-          [
-            "vue-tsc",
-            "Type checking for .vue files",
-            "TypeScript projects"
-          ]
+          ["vue", "Core framework (reactivity, components)", "Always"],
+          ["vue-router", "Client-side routing", "Multi-page apps"],
+          ["pinia", "Official state store (Vue 3)", "Shared application state"],
+          ["@vue/test-utils", "Component testing helpers", "Component tests"],
+          ["vue-tsc", "Type checking for .vue files", "TypeScript projects"]
         ]
       }
     },

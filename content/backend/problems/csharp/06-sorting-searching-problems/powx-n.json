@@ -8,12 +8,7 @@
   "order": 11,
   "difficulty": "medium",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "math",
-    "divide-and-conquer",
-    "medium"
-  ],
+  "tags": ["csharp", "math", "divide-and-conquer", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "Fast Power",
             "description": "Binary exponentiation",
-            "pros": [
-              "O(log n)"
-            ],
-            "tags": [
-              "O(log n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(log n)"],
+            "tags": ["O(log n) time", "O(1) space", "Recommended"]
           }
         ]
       }

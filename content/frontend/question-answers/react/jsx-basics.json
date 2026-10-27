@@ -6,10 +6,7 @@
   "description": "Understand JSX syntax and its role in React development.",
   "order": 3,
   "difficulty": "beginner",
-  "tags": [
-    "React",
-    "beginner"
-  ],
+  "tags": ["React", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

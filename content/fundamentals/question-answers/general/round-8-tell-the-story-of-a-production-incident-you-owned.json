@@ -8,13 +8,7 @@
   "order": 23,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "incident-management",
-    "sre",
-    "production",
-    "communication",
-    "postmortem"
-  ],
+  "tags": ["incident-management", "sre", "production", "communication", "postmortem"],
   "technology": "General",
   "blocks": [
     {
@@ -132,38 +126,20 @@
           {
             "title": "SEV-1 Critical",
             "description": "Major customer impact or data loss. All hands on deck.",
-            "pros": [
-              "Clear prioritization",
-              "Mobilizes entire organization"
-            ],
-            "cons": [
-              "High stress",
-              "Potential for rushed fixes"
-            ]
+            "pros": ["Clear prioritization", "Mobilizes entire organization"],
+            "cons": ["High stress", "Potential for rushed fixes"]
           },
           {
             "title": "SEV-2 High",
             "description": "Degraded experience for a subset of users. Core functionality intact.",
-            "pros": [
-              "Focused response",
-              "Time for analysis before action"
-            ],
-            "cons": [
-              "Risk of escalation if ignored",
-              "Customer frustration"
-            ]
+            "pros": ["Focused response", "Time for analysis before action"],
+            "cons": ["Risk of escalation if ignored", "Customer frustration"]
           },
           {
             "title": "SEV-3 Medium",
             "description": "Minor impact, workaround available. Scheduled fix.",
-            "pros": [
-              "Low urgency",
-              "Space for root cause analysis"
-            ],
-            "cons": [
-              "Can accumulate technical debt",
-              "Easy to deprioritize"
-            ]
+            "pros": ["Low urgency", "Space for root cause analysis"],
+            "cons": ["Can accumulate technical debt", "Easy to deprioritize"]
           }
         ]
       }
@@ -225,9 +201,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "round-2-diagnose-a-slow-api-with-database-and-infrastructure-symptoms"
-  ],
+  "relatedLessons": ["round-2-diagnose-a-slow-api-with-database-and-infrastructure-symptoms"],
   "furtherReading": [
     {
       "title": "Site Reliability Engineering",

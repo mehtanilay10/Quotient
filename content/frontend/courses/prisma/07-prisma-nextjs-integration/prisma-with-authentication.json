@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "prisma",
-    "nextauth",
-    "authjs",
-    "authentication",
-    "oauth"
-  ],
+  "tags": ["prisma", "nextauth", "authjs", "authentication", "oauth"],
   "blocks": [
     {
       "type": "paragraph",
@@ -66,8 +60,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-security-best-practices",
-    "prisma-in-nextjs-app-router"
-  ]
+  "relatedLessons": ["prisma-security-best-practices", "prisma-in-nextjs-app-router"]
 }

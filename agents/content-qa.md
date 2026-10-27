@@ -142,11 +142,11 @@ when block IDs differ.
 
 ### Failures
 
-| Severity | File | Check | Detail | Fix |
-| --- | --- | --- | --- | --- |
-| Blocker | `content/.../lesson.json` | Invalid JSON | Unexpected token at line 42 | Remove trailing comma |
-| Major | `content/.../content.json` | Registration | `lessonSlugs` missing `foo` | Add `"foo"` in order |
-| Minor | `content/.../lesson.json` | Anchors | Two headings share `setup` | Rename one anchor |
+| Severity | File                       | Check        | Detail                      | Fix                   |
+| -------- | -------------------------- | ------------ | --------------------------- | --------------------- |
+| Blocker  | `content/.../lesson.json`  | Invalid JSON | Unexpected token at line 42 | Remove trailing comma |
+| Major    | `content/.../content.json` | Registration | `lessonSlugs` missing `foo` | Add `"foo"` in order  |
+| Minor    | `content/.../lesson.json`  | Anchors      | Two headings share `setup`  | Rename one anchor     |
 
 ### Warnings
 

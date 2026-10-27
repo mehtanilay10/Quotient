@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "performance",
-    "optimization",
-    "caching"
-  ],
+  "tags": ["performance", "optimization", "caching"],
   "blocks": [
     {
       "type": "paragraph",
@@ -199,9 +195,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "monitoring-and-alerting"
-  ],
+  "relatedLessons": ["monitoring-and-alerting"],
   "technology": null,
   "furtherReading": [
     {

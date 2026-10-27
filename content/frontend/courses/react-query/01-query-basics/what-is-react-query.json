@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "server-state",
-    "caching",
-    "introduction",
-    "tanstack-query"
-  ],
+  "tags": ["react-query", "server-state", "caching", "introduction", "tanstack-query"],
   "prerequisites": [],
   "blocks": [
     {
@@ -39,42 +33,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Server State",
-          "Client State"
-        ],
+        "headers": ["Aspect", "Server State", "Client State"],
         "rows": [
-          [
-            "Owner",
-            "Backend server",
-            "Your React app"
-          ],
-          [
-            "Persists between users",
-            "Yes",
-            "No"
-          ],
-          [
-            "Managed by",
-            "React Query / TanStack Query",
-            "useState, useReducer, Redux, Zustand"
-          ],
-          [
-            "Caching",
-            "Automatic, configurable",
-            "Manual or none"
-          ],
-          [
-            "Refetching",
-            "Background, configurable",
-            "Not automatic"
-          ],
-          [
-            "Examples",
-            "Users list, product catalog",
-            "Modal open/close, form input"
-          ]
+          ["Owner", "Backend server", "Your React app"],
+          ["Persists between users", "Yes", "No"],
+          ["Managed by", "React Query / TanStack Query", "useState, useReducer, Redux, Zustand"],
+          ["Caching", "Automatic, configurable", "Manual or none"],
+          ["Refetching", "Background, configurable", "Not automatic"],
+          ["Examples", "Users list, product catalog", "Modal open/close, form input"]
         ]
       }
     },

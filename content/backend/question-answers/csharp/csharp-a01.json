@@ -6,10 +6,7 @@
   "description": "Understand .NET runtime memory management.",
   "order": 34,
   "difficulty": "advanced",
-  "tags": [
-    "c#",
-    "advanced"
-  ],
+  "tags": ["c#", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

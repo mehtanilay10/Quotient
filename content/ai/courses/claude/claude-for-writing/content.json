@@ -7,17 +7,8 @@
   "difficulty": "beginner",
   "estimatedHours": 2.5,
   "icon": "✍️",
-  "tags": [
-    "claude",
-    "writing",
-    "editing",
-    "tone"
-  ],
-  "lessonSlugs": [
-    "writing-with-claude",
-    "editing-and-polishing",
-    "tone-and-style"
-  ],
+  "tags": ["claude", "writing", "editing", "tone"],
+  "lessonSlugs": ["writing-with-claude", "editing-and-polishing", "tone-and-style"],
   "whatYouLearn": [
     "How to structure prompts for drafting different types of content",
     "Iterative editing workflows that produce polished results",

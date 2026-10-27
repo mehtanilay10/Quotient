@@ -8,13 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "kubernetes",
-    "troubleshooting",
-    "day-2-operations",
-    "debugging",
-    "observability"
-  ],
+  "tags": ["kubernetes", "troubleshooting", "day-2-operations", "debugging", "observability"],
   "blocks": [
     {
       "type": "heading",
@@ -113,23 +107,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Command",
-          "Purpose"
-        ],
+        "headers": ["Command", "Purpose"],
         "rows": [
-          [
-            "kubectl get pods -o wide",
-            "List Pods with node placement and IP addresses"
-          ],
+          ["kubectl get pods -o wide", "List Pods with node placement and IP addresses"],
           [
             "kubectl describe pod <pod>",
             "Show detailed events, conditions, probe failures, and container state"
           ],
-          [
-            "kubectl logs <pod> --previous",
-            "View logs from a previously crashed container"
-          ],
+          ["kubectl logs <pod> --previous", "View logs from a previously crashed container"],
           [
             "kubectl logs <pod> -c <container>",
             "View logs from a specific container in a multi-container Pod"
@@ -138,14 +123,8 @@
             "kubectl get events --sort-by='.lastTimestamp'",
             "Show recent cluster events ordered by time"
           ],
-          [
-            "kubectl get nodes",
-            "List nodes with status, roles, age, and version"
-          ],
-          [
-            "kubectl top pods",
-            "Show real-time CPU and memory usage (requires Metrics Server)"
-          ],
+          ["kubectl get nodes", "List nodes with status, roles, age, and version"],
+          ["kubectl top pods", "Show real-time CPU and memory usage (requires Metrics Server)"],
           [
             "kubectl rollout status deployment/<name>",
             "Watch a Deployment rollout and report status"

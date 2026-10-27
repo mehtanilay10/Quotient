@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "range-types",
-    "tsrange",
-    "overlap",
-    "exclusion-constraints"
-  ],
+  "tags": ["range-types", "tsrange", "overlap", "exclusion-constraints"],
   "blocks": [
     {
       "type": "paragraph",
@@ -62,47 +57,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Operator",
-          "Meaning",
-          "Example"
-        ],
+        "headers": ["Operator", "Meaning", "Example"],
         "rows": [
-          [
-            "`&&`",
-            "Overlaps",
-            "`stay && daterange('2026-12-24', '2026-12-31')`"
-          ],
-          [
-            "`@>`",
-            "Contains element or range",
-            "`stay @> '2026-12-25'::date`"
-          ],
-          [
-            "`<@`",
-            "Is contained by",
-            "`stay <@ paid_period`"
-          ],
-          [
-            "`-|-`",
-            "Adjacent (touching, not overlapping)",
-            "`a -|- b`"
-          ],
-          [
-            "`-`",
-            "Difference",
-            "`a - b`"
-          ],
-          [
-            "`+`",
-            "Union (when contiguous/overlapping)",
-            "`a + b`"
-          ],
-          [
-            "`*`",
-            "Intersection",
-            "`a * b`"
-          ]
+          ["`&&`", "Overlaps", "`stay && daterange('2026-12-24', '2026-12-31')`"],
+          ["`@>`", "Contains element or range", "`stay @> '2026-12-25'::date`"],
+          ["`<@`", "Is contained by", "`stay <@ paid_period`"],
+          ["`-|-`", "Adjacent (touching, not overlapping)", "`a -|- b`"],
+          ["`-`", "Difference", "`a - b`"],
+          ["`+`", "Union (when contiguous/overlapping)", "`a + b`"],
+          ["`*`", "Intersection", "`a * b`"]
         ]
       }
     },
@@ -175,8 +138,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "date-time-types",
-    "exclusion-constraints"
-  ]
+  "relatedLessons": ["date-time-types", "exclusion-constraints"]
 }

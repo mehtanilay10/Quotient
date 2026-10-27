@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "merge",
-    "sql-standard",
-    "upsert",
-    "data-warehousing"
-  ],
+  "tags": ["merge", "sql-standard", "upsert", "data-warehousing"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "insert-on-conflict",
-    "delete"
-  ]
+  "relatedLessons": ["insert-on-conflict", "delete"]
 }

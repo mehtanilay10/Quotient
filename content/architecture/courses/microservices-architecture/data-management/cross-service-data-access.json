@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "data-access",
-    "api-composition",
-    "replication"
-  ],
+  "tags": ["data-access", "api-composition", "replication"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,32 +56,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Description",
-          "Consistency"
-        ],
+        "headers": ["Strategy", "Description", "Consistency"],
         "rows": [
-          [
-            "API Composition",
-            "Call multiple services and combine",
-            "Real-time"
-          ],
-          [
-            "Data Replication",
-            "Copy data to local store",
-            "Eventual"
-          ],
-          [
-            "CQRS View",
-            "Build read model from events",
-            "Eventual"
-          ],
-          [
-            "Shared DB (avoid)",
-            "Direct database access",
-            "Coupled"
-          ]
+          ["API Composition", "Call multiple services and combine", "Real-time"],
+          ["Data Replication", "Copy data to local store", "Eventual"],
+          ["CQRS View", "Build read model from events", "Eventual"],
+          ["Shared DB (avoid)", "Direct database access", "Coupled"]
         ]
       }
     },

@@ -8,11 +8,7 @@
   "order": 11,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "strings",
-    "medium"
-  ],
+  "tags": ["csharp", "strings", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -86,34 +82,16 @@
           {
             "title": "Split + Reverse",
             "description": "Use String.Split",
-            "pros": [
-              "Very short",
-              "Easy to read"
-            ],
-            "cons": [
-              "Allocates arrays",
-              "Less control"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Very short", "Easy to read"],
+            "cons": ["Allocates arrays", "Less control"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Manual Tokenize",
             "description": "Parse words manually",
-            "pros": [
-              "Fewer allocations",
-              "More control"
-            ],
-            "cons": [
-              "More code"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["Fewer allocations", "More control"],
+            "cons": ["More code"],
+            "tags": ["O(n) time", "O(n) space", "Recommended"]
           }
         ]
       }

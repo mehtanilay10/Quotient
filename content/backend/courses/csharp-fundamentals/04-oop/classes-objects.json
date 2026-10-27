@@ -7,14 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "oop",
-    "classes",
-    "objects",
-    "constructors",
-    "properties"
-  ],
+  "tags": ["csharp", "oop", "classes", "objects", "constructors", "properties"],
   "blocks": [
     {
       "type": "paragraph",

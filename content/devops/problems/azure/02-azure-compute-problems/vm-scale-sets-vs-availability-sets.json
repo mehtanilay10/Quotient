@@ -78,37 +78,21 @@
               "Fault domain distribution",
               "OS image consistency"
             ],
-            "cons": [
-              "All VMs must be identical"
-            ],
+            "cons": ["All VMs must be identical"],
             "tags": ["Recommended", "Stateless workloads"]
           },
           {
             "title": "Availability Sets",
             "description": "Legacy high availability grouping",
-            "pros": [
-              "Fault domain distribution",
-              "Update domain distribution"
-            ],
-            "cons": [
-              "No auto-scaling",
-              "Manual management",
-              "Legacy approach"
-            ],
+            "pros": ["Fault domain distribution", "Update domain distribution"],
+            "cons": ["No auto-scaling", "Manual management", "Legacy approach"],
             "tags": ["Legacy", "Not recommended"]
           },
           {
             "title": "Individual VMs",
             "description": "Standalone VMs without grouping",
-            "pros": [
-              "Full flexibility",
-              "Different sizes per VM"
-            ],
-            "cons": [
-              "No fault domain guarantees",
-              "Manual scaling",
-              "No load balancing"
-            ],
+            "pros": ["Full flexibility", "Different sizes per VM"],
+            "cons": ["No fault domain guarantees", "Manual scaling", "No load balancing"],
             "tags": ["Not recommended for production"]
           }
         ]

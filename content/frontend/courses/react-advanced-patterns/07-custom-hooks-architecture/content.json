@@ -9,13 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 2.5,
   "icon": "🪝",
-  "tags": [
-    "custom-hooks",
-    "hook-composition",
-    "state-management",
-    "reusability",
-    "testing-hooks"
-  ],
+  "tags": ["custom-hooks", "hook-composition", "state-management", "reusability", "testing-hooks"],
   "lessonSlugs": [
     "hook-composition-patterns",
     "state-sharing-between-hooks",

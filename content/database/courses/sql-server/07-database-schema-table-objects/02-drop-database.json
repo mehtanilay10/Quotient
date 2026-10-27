@@ -7,10 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 33,
-  "tags": [
-    "drop-database",
-    "database"
-  ],
+  "tags": ["drop-database", "database"],
   "blocks": [
     {
       "type": "heading",

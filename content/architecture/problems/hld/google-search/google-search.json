@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "search-engine",
-    "inverted-index",
-    "pagerank",
-    "scatter-gather"
-  ],
+  "tags": ["hld", "system-design", "search-engine", "inverted-index", "pagerank", "scatter-gather"],
   "blocks": [
     {
       "type": "heading",
@@ -143,12 +136,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Component",
-          "Technology / Structure",
-          "Storage Type",
-          "Purpose"
-        ],
+        "headers": ["Component", "Technology / Structure", "Storage Type", "Purpose"],
         "rows": [
           [
             "Lexicon / Term Dictionary",
@@ -232,11 +220,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "web-crawler",
-    "search-autocomplete",
-    "url-shortener"
-  ],
+  "relatedLessons": ["web-crawler", "search-autocomplete", "url-shortener"],
   "furtherReading": [
     {
       "title": "The Anatomy of a Large-Scale Hypertextual Web Search Engine (Brin & Page)",

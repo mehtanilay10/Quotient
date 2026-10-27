@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "typescript",
-    "type-assertion",
-    "as",
-    "satisfies"
-  ],
+  "tags": ["typescript", "type-assertion", "as", "satisfies"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,27 +110,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool",
-          "Best For",
-          "Risk"
-        ],
+        "headers": ["Tool", "Best For", "Risk"],
         "rows": [
-          [
-            "as",
-            "Trusted casts from unknown or DOM",
-            "Silently bypasses checks"
-          ],
-          [
-            "as const",
-            "Freezing literal values",
-            "Read-only values only"
-          ],
-          [
-            "satisfies",
-            "Checking a value against a shape",
-            "Errors on mismatch"
-          ]
+          ["as", "Trusted casts from unknown or DOM", "Silently bypasses checks"],
+          ["as const", "Freezing literal values", "Read-only values only"],
+          ["satisfies", "Checking a value against a shape", "Errors on mismatch"]
         ]
       }
     },

@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "derived-state",
-    "react",
-    "memoization",
-    "architecture"
-  ],
+  "tags": ["derived-state", "react", "memoization", "architecture"],
   "blocks": [
     {
       "type": "paragraph",

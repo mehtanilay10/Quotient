@@ -31,17 +31,17 @@ The palette is GitHub-inspired: warm neutral canvases, a blue accent, and
 semantic status colors. Light and dark mode use the same semantic token names,
 so components never branch on theme.
 
-| Role | Tokens | Typical use |
-| --- | --- | --- |
-| Canvas | `bg-canvas`, `bg-canvas-subtle`, `bg-canvas-inset`, `bg-canvas-overlay` | Page, cards, code wells, modals |
-| Text | `text-fg-default`, `text-fg-muted`, `text-fg-subtle`, `text-fg-onEmphasis` | Headings, body, metadata, inverse text |
-| Borders | `border-border`, `border-border-muted`, `border-border-subtle` | Dividers, cards, inputs |
-| Accent | `accent-fg`, `accent-emphasis`, `accent-muted`, `accent-subtle` | Links, active nav, primary actions |
-| Success | `success-*` | Beginner difficulty, completion, tips |
-| Attention | `attention-*` | Intermediate difficulty, warnings |
-| Danger | `danger-*` | Errors, destructive actions, advanced danger callouts |
-| Severe | `severe-*` | High-severity status where needed |
-| Done | `done-*` | Advanced difficulty, completed states |
+| Role      | Tokens                                                                     | Typical use                                           |
+| --------- | -------------------------------------------------------------------------- | ----------------------------------------------------- |
+| Canvas    | `bg-canvas`, `bg-canvas-subtle`, `bg-canvas-inset`, `bg-canvas-overlay`    | Page, cards, code wells, modals                       |
+| Text      | `text-fg-default`, `text-fg-muted`, `text-fg-subtle`, `text-fg-onEmphasis` | Headings, body, metadata, inverse text                |
+| Borders   | `border-border`, `border-border-muted`, `border-border-subtle`             | Dividers, cards, inputs                               |
+| Accent    | `accent-fg`, `accent-emphasis`, `accent-muted`, `accent-subtle`            | Links, active nav, primary actions                    |
+| Success   | `success-*`                                                                | Beginner difficulty, completion, tips                 |
+| Attention | `attention-*`                                                              | Intermediate difficulty, warnings                     |
+| Danger    | `danger-*`                                                                 | Errors, destructive actions, advanced danger callouts |
+| Severe    | `severe-*`                                                                 | High-severity status where needed                     |
+| Done      | `done-*`                                                                   | Advanced difficulty, completed states                 |
 
 Rules:
 
@@ -53,11 +53,11 @@ Rules:
 
 ### Difficulty color mapping
 
-| Difficulty | Classes |
-| --- | --- |
-| Beginner | `bg-success-muted text-success-fg border-success-muted` |
+| Difficulty   | Classes                                                       |
+| ------------ | ------------------------------------------------------------- |
+| Beginner     | `bg-success-muted text-success-fg border-success-muted`       |
 | Intermediate | `bg-attention-muted text-attention-fg border-attention-muted` |
-| Advanced | `bg-done-muted text-done-fg border-done-muted` |
+| Advanced     | `bg-done-muted text-done-fg border-done-muted`                |
 
 The shared `DifficultyBadge` uses this mapping. Do not introduce a second
 difficulty palette.
@@ -78,15 +78,15 @@ difficulty palette.
 
 Stored in `UserPreference` and mirrored to browser storage/cookies:
 
-| Preference | Supported values | Default |
-| --- | --- | --- |
-| Font size | `sm`, `md`, `lg`, `xl` | `md` (1rem) |
-| Code font size | `sm`, `md`, `lg` | theme default (`0.875rem`) |
-| Density | `comfortable`, `compact` | unset |
-| Reduced motion | boolean | `false` |
-| Auto-expand code | boolean | `true` |
-| Show completed | boolean | `true` |
-| Default landing | string or `null` | `null` |
+| Preference       | Supported values         | Default                    |
+| ---------------- | ------------------------ | -------------------------- |
+| Font size        | `sm`, `md`, `lg`, `xl`   | `md` (1rem)                |
+| Code font size   | `sm`, `md`, `lg`         | theme default (`0.875rem`) |
+| Density          | `comfortable`, `compact` | unset                      |
+| Reduced motion   | boolean                  | `false`                    |
+| Auto-expand code | boolean                  | `true`                     |
+| Show completed   | boolean                  | `true`                     |
+| Default landing  | string or `null`         | `null`                     |
 
 Appearance classes are applied to `<html>`:
 
@@ -127,13 +127,13 @@ not add content columns.
 
 ### Breakpoints
 
-| Width | Behavior |
-| --- | --- |
+| Width         | Behavior                                                                 |
+| ------------- | ------------------------------------------------------------------------ |
 | Base / mobile | Single column, mobile menu, compact cards, lesson controls above content |
-| `sm` (640px) | Wider padding, more multi-column card grids |
-| `md` (768px) | Two-column content cards where the content supports it |
-| `lg` (1024px) | Course sidebar and account sidebar appear; mobile lesson controls hide |
-| `xl` (1280px) | Full category navigation and the right-hand lesson TOC appear |
+| `sm` (640px)  | Wider padding, more multi-column card grids                              |
+| `md` (768px)  | Two-column content cards where the content supports it                   |
+| `lg` (1024px) | Course sidebar and account sidebar appear; mobile lesson controls hide   |
+| `xl` (1280px) | Full category navigation and the right-hand lesson TOC appear            |
 
 The primary reading column is capped around `800px` on lesson pages so line
 length stays comfortable. Do not stretch prose to the full viewport.
@@ -232,16 +232,16 @@ and let the content tree drive the nav.
 
 ## 7. Feedback and states
 
-| State | Pattern |
-| --- | --- |
-| Loading | Skeletons or route-level `loading.tsx`; avoid full-page spinners |
-| Empty | `EmptyState` with a clear explanation and next action |
-| Error | Friendly boundary with retry or a link back; never a raw stack trace |
-| Search empty | Explain what was searched and suggest broader terms |
-| Offline | `OfflineIndicator` banner; keep reading available |
-| Save failure | Inline error near the action; do not show a success toast |
-| Signed out | Inline `SignInPrompt`; do not redirect away from content |
-| Destructive action | Explicit confirmation naming exactly what will be deleted |
+| State              | Pattern                                                              |
+| ------------------ | -------------------------------------------------------------------- |
+| Loading            | Skeletons or route-level `loading.tsx`; avoid full-page spinners     |
+| Empty              | `EmptyState` with a clear explanation and next action                |
+| Error              | Friendly boundary with retry or a link back; never a raw stack trace |
+| Search empty       | Explain what was searched and suggest broader terms                  |
+| Offline            | `OfflineIndicator` banner; keep reading available                    |
+| Save failure       | Inline error near the action; do not show a success toast            |
+| Signed out         | Inline `SignInPrompt`; do not redirect away from content             |
+| Destructive action | Explicit confirmation naming exactly what will be deleted            |
 
 Toasts are not a substitute for persistent state. If an action changes saved
 data, the surrounding UI must reflect the new state after success.
@@ -298,22 +298,22 @@ lesson, writing notes, and saving offline should surface `SignInPrompt` inline.
 Global shortcuts are registered in `hooks/useKeyboardShortcuts.tsx`. The help
 dialog opens with `?` or from **Keyboard shortcuts** in the profile menu.
 
-| Keys | Action |
-| --- | --- |
-| `n` | Go to the next lesson |
-| `p` | Go to the previous lesson |
-| `/` | Open and focus search |
-| `?` | Toggle the keyboard shortcuts help |
-| `Escape` | Close a dialog, search, or category menu |
-| `c` | Mark the current lesson complete or incomplete |
-| `b` | Add or remove the current lesson bookmark |
-| `o` | Open lesson notes |
-| `s` | Save or remove the current lesson offline |
-| `t` | Toggle light and dark theme |
+| Keys            | Action                                               |
+| --------------- | ---------------------------------------------------- |
+| `n`             | Go to the next lesson                                |
+| `p`             | Go to the previous lesson                            |
+| `/`             | Open and focus search                                |
+| `?`             | Toggle the keyboard shortcuts help                   |
+| `Escape`        | Close a dialog, search, or category menu             |
+| `c`             | Mark the current lesson complete or incomplete       |
+| `b`             | Add or remove the current lesson bookmark            |
+| `o`             | Open lesson notes                                    |
+| `s`             | Save or remove the current lesson offline            |
+| `t`             | Toggle light and dark theme                          |
 | `+` / `-` / `0` | Zoom in, zoom out, or reset an open image or diagram |
-| `g` then `h` | Go home |
-| `g` then `b` | Go to bookmarks |
-| `g` then `p` | Go to progress |
+| `g` then `h`    | Go home                                              |
+| `g` then `b`    | Go to bookmarks                                      |
+| `g` then `p`    | Go to progress                                       |
 
 Single-key shortcuts are disabled while the user is typing in a field. Shortcuts
 that act on a lesson are only registered on lesson, problem, cheat-sheet, and

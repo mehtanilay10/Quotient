@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "prisma",
-    "prisma-studio",
-    "gui",
-    "debugging",
-    "database"
-  ],
+  "tags": ["prisma", "prisma-studio", "gui", "debugging", "database"],
   "blocks": [
     {
       "type": "paragraph",
@@ -99,8 +93,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-prisma",
-    "setting-up-prisma-client"
-  ]
+  "relatedLessons": ["what-is-prisma", "setting-up-prisma-client"]
 }

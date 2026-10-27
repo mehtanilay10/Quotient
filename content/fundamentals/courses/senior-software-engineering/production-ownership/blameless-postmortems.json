@@ -403,11 +403,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Target",
-          "Action If Missed"
-        ],
+        "headers": ["Metric", "Target", "Action If Missed"],
         "rows": [
           [
             "Time to publish",
@@ -419,11 +415,7 @@
             "Above 80 percent",
             "Review estimation and prioritization process"
           ],
-          [
-            "Repeat incident rate",
-            "Below 5 percent",
-            "Improve root cause analysis depth"
-          ]
+          ["Repeat incident rate", "Below 5 percent", "Improve root cause analysis depth"]
         ]
       }
     },

@@ -9,14 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 8,
   "icon": "🔧",
-  "tags": [
-    "aspnet-core",
-    "middleware",
-    "pipeline",
-    "cors",
-    "logging",
-    "exception-handling"
-  ],
+  "tags": ["aspnet-core", "middleware", "pipeline", "cors", "logging", "exception-handling"],
   "lessonSlugs": [
     "middleware-ordering",
     "exception-handling-middleware",

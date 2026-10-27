@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "jwt",
-    "react",
-    "integration",
-    "frontend"
-  ],
+  "tags": ["jwt", "react", "integration", "frontend"],
   "blocks": [
     {
       "type": "paragraph",

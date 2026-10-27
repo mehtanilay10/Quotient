@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "utilities",
-    "sharpcompress",
-    "compression",
-    "zip"
-  ],
+  "tags": ["utilities", "sharpcompress", "compression", "zip"],
   "blocks": [
     {
       "type": "heading",
@@ -122,8 +117,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sharpcompress"
-  ],
+  "relatedLessons": ["sharpcompress"],
   "courseSlug": "dotnet-nuget-packages"
 }

@@ -9,14 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 2.5,
   "icon": "🏗️",
-  "tags": [
-    "real-world",
-    "authentication",
-    "forms",
-    "polling",
-    "migration",
-    "best-practices"
-  ],
+  "tags": ["real-world", "authentication", "forms", "polling", "migration", "best-practices"],
   "lessonSlugs": [
     "auth-flows-token-refresh",
     "form-integration",

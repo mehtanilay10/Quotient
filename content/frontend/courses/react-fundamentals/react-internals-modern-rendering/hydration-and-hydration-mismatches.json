@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "react",
-    "ssr",
-    "hydration",
-    "rsc"
-  ],
+  "tags": ["react", "ssr", "hydration", "rsc"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,10 +110,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "suspense-and-asynchronous-ui",
-    "server-components-vs-client-components"
-  ],
+  "relatedLessons": ["suspense-and-asynchronous-ui", "server-components-vs-client-components"],
   "furtherReading": [
     {
       "title": "React Docs: Hydrate Root",

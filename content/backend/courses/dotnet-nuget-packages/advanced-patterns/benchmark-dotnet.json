@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "benchmark",
-    "performance",
-    "testing",
-    "microbenchmark"
-  ],
+  "tags": ["benchmark", "performance", "testing", "microbenchmark"],
   "blocks": [
     {
       "type": "heading",

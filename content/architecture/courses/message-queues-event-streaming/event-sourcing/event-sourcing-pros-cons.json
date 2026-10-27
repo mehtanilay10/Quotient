@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "event-sourcing",
-    "architecture",
-    "trade-offs",
-    "audit"
-  ],
+  "tags": ["event-sourcing", "architecture", "trade-offs", "audit"],
   "blocks": [
     {
       "type": "paragraph",
@@ -69,11 +64,7 @@
           {
             "title": "Event Sourcing",
             "description": "Stores every state change as an immutable event. Current state is derived by replay.",
-            "pros": [
-              "Full audit trail",
-              "Temporal queries",
-              "Replay for debugging"
-            ],
+            "pros": ["Full audit trail", "Temporal queries", "Replay for debugging"],
             "cons": [
               "Eventual consistency",
               "Schema evolution complexity",
@@ -83,11 +74,7 @@
           {
             "title": "Traditional CRUD",
             "description": "Stores only current state. Updates overwrite previous values.",
-            "pros": [
-              "Familiar mental model",
-              "Simple queries",
-              "Mature tooling"
-            ],
+            "pros": ["Familiar mental model", "Simple queries", "Mature tooling"],
             "cons": [
               "No built-in audit trail",
               "Hard to answer 'what happened'",
@@ -165,10 +152,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "event-sourcing-fundamentals",
-    "event-versioning"
-  ],
+  "relatedLessons": ["event-sourcing-fundamentals", "event-versioning"],
   "furtherReading": [
     {
       "title": "Event Sourcing - Martin Fowler",

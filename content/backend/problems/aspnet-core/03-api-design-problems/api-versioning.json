@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "web-api",
-    "versioning",
-    "rest"
-  ],
+  "tags": ["aspnet-core", "web-api", "versioning", "rest"],
   "blocks": [
     {
       "type": "heading",
@@ -91,38 +86,16 @@
           {
             "title": "URL Path Versioning",
             "description": "Version in URL path",
-            "pros": [
-              "Visible in URL",
-              "Easy to test",
-              "Clear which version is called"
-            ],
-            "cons": [
-              "URL pollution",
-              "More routes to maintain"
-            ],
-            "tags": [
-              "ApiVersion",
-              "MapToApiVersion",
-              "v{version}"
-            ]
+            "pros": ["Visible in URL", "Easy to test", "Clear which version is called"],
+            "cons": ["URL pollution", "More routes to maintain"],
+            "tags": ["ApiVersion", "MapToApiVersion", "v{version}"]
           },
           {
             "title": "Query String Versioning",
             "description": "Version in query string",
-            "pros": [
-              "Clean URLs",
-              "Backward compatible",
-              "Easy to deprecate"
-            ],
-            "cons": [
-              "Version not in URL",
-              "Must be sent on every request"
-            ],
-            "tags": [
-              "QueryStringApiVersionReader",
-              "api-version",
-              "deprecation"
-            ]
+            "pros": ["Clean URLs", "Backward compatible", "Easy to deprecate"],
+            "cons": ["Version not in URL", "Must be sent on every request"],
+            "tags": ["QueryStringApiVersionReader", "api-version", "deprecation"]
           }
         ]
       }

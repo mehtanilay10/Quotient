@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 28,
-  "tags": [
-    "react",
-    "typescript",
-    "custom-hooks",
-    "types"
-  ],
+  "tags": ["react", "typescript", "custom-hooks", "types"],
   "blocks": [
     {
       "type": "paragraph",

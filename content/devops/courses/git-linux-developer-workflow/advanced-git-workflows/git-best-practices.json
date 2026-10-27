@@ -109,13 +109,15 @@
       }
     }
   ],
-  "relatedLessons": [
-    "git-and-ci-cd",
-    "enterprise-git",
-    "hooks-and-automation"
-  ],
+  "relatedLessons": ["git-and-ci-cd", "enterprise-git", "hooks-and-automation"],
   "furtherReading": [
-    { "title": "Conventional Commits specification", "url": "https://www.conventionalcommits.org/" },
-    { "title": "Pro Git: branching workflows", "url": "https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows" }
+    {
+      "title": "Conventional Commits specification",
+      "url": "https://www.conventionalcommits.org/"
+    },
+    {
+      "title": "Pro Git: branching workflows",
+      "url": "https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows"
+    }
   ]
 }

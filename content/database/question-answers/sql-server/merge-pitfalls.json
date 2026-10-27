@@ -6,12 +6,7 @@
   "description": "Upserts in one statement: syntax shape, the concurrency race Microsoft documented, and safer upsert patterns for production.",
   "order": 18,
   "difficulty": "advanced",
-  "tags": [
-    "sql server",
-    "upsert",
-    "concurrency",
-    "advanced"
-  ],
+  "tags": ["sql server", "upsert", "concurrency", "advanced"],
   "blocks": [
     {
       "type": "paragraph",
@@ -126,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sql-a02",
-    "sql-i03",
-    "identity-vs-sequence"
-  ],
+  "relatedLessons": ["sql-a02", "sql-i03", "identity-vs-sequence"],
   "furtherReading": [
     {
       "title": "MERGE (Transact-SQL) — Microsoft Learn",

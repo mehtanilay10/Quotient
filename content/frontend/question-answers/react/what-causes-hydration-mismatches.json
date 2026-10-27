@@ -8,13 +8,7 @@
   "order": 9,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "React",
-    "SSR",
-    "Next.js",
-    "Hydration",
-    "Rendering"
-  ],
+  "tags": ["React", "SSR", "Next.js", "Hydration", "Rendering"],
   "blocks": [
     {
       "type": "paragraph",

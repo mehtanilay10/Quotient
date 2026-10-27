@@ -8,14 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "redis",
-    "cli",
-    "terminal",
-    "debugging",
-    "monitoring",
-    "devops"
-  ],
+  "tags": ["redis", "cli", "terminal", "debugging", "monitoring", "devops"],
   "blocks": [
     {
       "type": "paragraph",
@@ -136,10 +129,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "redis-setup",
-    "redis-memory-management"
-  ],
+  "relatedLessons": ["redis-setup", "redis-memory-management"],
   "furtherReading": [
     {
       "title": "Redis CLI Documentation",

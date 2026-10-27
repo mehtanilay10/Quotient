@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "program",
-    "console",
-    "hello-world",
-    "top-level-statements"
-  ],
+  "tags": ["csharp", "program", "console", "hello-world", "top-level-statements"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "docker",
-    "containers",
-    "devops"
-  ],
+  "tags": ["docker", "containers", "devops"],
   "blocks": [
     {
       "type": "paragraph",
@@ -206,10 +202,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "deployment-options",
-    "cloud-deployment"
-  ],
+  "relatedLessons": ["deployment-options", "cloud-deployment"],
   "technology": null,
   "furtherReading": [
     {

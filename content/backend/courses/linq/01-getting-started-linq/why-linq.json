@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "why linq",
-    "advantages",
-    "evolution",
-    "lambda"
-  ],
+  "tags": ["linq", "why linq", "advantages", "evolution", "lambda"],
   "blocks": [
     {
       "type": "paragraph",
@@ -134,51 +128,32 @@
           {
             "title": "Familiar Language",
             "description": "Developers don't have to learn a new query language for each type of data source or data format.",
-            "pros": [
-              "Same C# syntax",
-              "No context switching"
-            ]
+            "pros": ["Same C# syntax", "No context switching"]
           },
           {
             "title": "Less Coding",
             "description": "Reduces the amount of code compared with traditional approaches.",
-            "pros": [
-              "Fewer lines",
-              "Less boilerplate"
-            ]
+            "pros": ["Fewer lines", "Less boilerplate"]
           },
           {
             "title": "Readable Code",
             "description": "LINQ makes code more readable so other developers can easily understand and maintain it.",
-            "pros": [
-              "Self-documenting",
-              "Clear intent"
-            ]
+            "pros": ["Self-documenting", "Clear intent"]
           },
           {
             "title": "Compile-Time Safety",
             "description": "Provides type checking of objects at compile time.",
-            "pros": [
-              "Catch errors early",
-              "IntelliSense support"
-            ]
+            "pros": ["Catch errors early", "IntelliSense support"]
           },
           {
             "title": "Standardized Querying",
             "description": "The same LINQ syntax can be used to query multiple data sources.",
-            "pros": [
-              "Objects",
-              "Databases",
-              "XML"
-            ]
+            "pros": ["Objects", "Databases", "XML"]
           },
           {
             "title": "Data Shaping",
             "description": "You can retrieve data in different shapes and project only the fields you need.",
-            "pros": [
-              "Anonymous types",
-              "Custom projections"
-            ]
+            "pros": ["Anonymous types", "Custom projections"]
           }
         ]
       }
@@ -197,9 +172,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-linq",
-    "linq-api-in-net"
-  ],
+  "relatedLessons": ["what-is-linq", "linq-api-in-net"],
   "courseSlug": "linq"
 }

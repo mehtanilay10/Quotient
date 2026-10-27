@@ -6,12 +6,7 @@
   "description": "Reuse threads to improve performance and resource utilization.",
   "order": 3,
   "difficulty": "advanced",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture",
-    "concurrency"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture", "concurrency"],
   "blocks": [
     {
       "type": "paragraph",

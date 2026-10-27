@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "routing",
-    "endpoints",
-    "matchers",
-    "urls"
-  ],
+  "tags": ["routing", "endpoints", "matchers", "urls"],
   "blocks": [
     {
       "type": "paragraph",
@@ -120,10 +115,7 @@
           {
             "title": "Legacy IRouter",
             "description": "The older routing system used before ASP.NET Core 3.0.",
-            "pros": [
-              "Simpler for very basic scenarios",
-              "Well-documented in older tutorials"
-            ],
+            "pros": ["Simpler for very basic scenarios", "Well-documented in older tutorials"],
             "cons": [
               "Separate systems for MVC and Web API",
               "No built-in metadata or endpoint filters",

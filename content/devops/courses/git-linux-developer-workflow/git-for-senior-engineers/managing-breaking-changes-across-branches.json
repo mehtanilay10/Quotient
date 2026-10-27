@@ -77,27 +77,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Segment",
-          "Increment When",
-          "Example"
-        ],
+        "headers": ["Segment", "Increment When", "Example"],
         "rows": [
-          [
-            "MAJOR",
-            "Breaking changes",
-            "2.0.0"
-          ],
-          [
-            "MINOR",
-            "New features, backward compatible",
-            "2.1.0"
-          ],
-          [
-            "PATCH",
-            "Bug fixes, backward compatible",
-            "2.1.1"
-          ]
+          ["MAJOR", "Breaking changes", "2.0.0"],
+          ["MINOR", "New features, backward compatible", "2.1.0"],
+          ["PATCH", "Bug fixes, backward compatible", "2.1.1"]
         ]
       }
     },

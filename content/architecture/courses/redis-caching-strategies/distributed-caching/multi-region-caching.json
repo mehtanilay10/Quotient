@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "redis",
-    "multi-region",
-    "geo-replication",
-    "latency",
-    "consistency"
-  ],
+  "tags": ["redis", "multi-region", "geo-replication", "latency", "consistency"],
   "blocks": [
     {
       "type": "paragraph",
@@ -93,38 +87,20 @@
           {
             "title": "Strong Consistency",
             "description": "All reads see the latest write, regardless of region.",
-            "pros": [
-              "No stale reads",
-              "Simpler application logic"
-            ],
-            "cons": [
-              "High write latency for distant users",
-              "Requires synchronous replication"
-            ]
+            "pros": ["No stale reads", "Simpler application logic"],
+            "cons": ["High write latency for distant users", "Requires synchronous replication"]
           },
           {
             "title": "Eventual Consistency",
             "description": "Writes propagate asynchronously; reads may be temporarily stale.",
-            "pros": [
-              "Low write latency",
-              "Works well for caches"
-            ],
-            "cons": [
-              "Users may see outdated data",
-              "Requires staleness tolerance"
-            ]
+            "pros": ["Low write latency", "Works well for caches"],
+            "cons": ["Users may see outdated data", "Requires staleness tolerance"]
           },
           {
             "title": "Session Consistency",
             "description": "A user always reads their own writes; other users may see stale data.",
-            "pros": [
-              "Good UX for logged-in users",
-              "Balanced performance"
-            ],
-            "cons": [
-              "Requires sticky routing per user",
-              "More complex routing logic"
-            ]
+            "pros": ["Good UX for logged-in users", "Balanced performance"],
+            "cons": ["Requires sticky routing per user", "More complex routing logic"]
           }
         ]
       }

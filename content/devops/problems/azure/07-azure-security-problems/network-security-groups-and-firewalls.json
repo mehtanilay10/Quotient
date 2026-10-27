@@ -78,39 +78,21 @@
               "FQDN filtering",
               "Threat intelligence"
             ],
-            "cons": [
-              "Additional cost for Firewall",
-              "Route table management"
-            ],
+            "cons": ["Additional cost for Firewall", "Route table management"],
             "tags": ["Recommended", "Production"]
           },
           {
             "title": "NSG Only",
             "description": "Basic network security",
-            "pros": [
-              "No additional cost",
-              "Simple to configure",
-              "Distributed filtering"
-            ],
-            "cons": [
-              "No centralized logging",
-              "No FQDN filtering",
-              "Difficult to audit"
-            ],
+            "pros": ["No additional cost", "Simple to configure", "Distributed filtering"],
+            "cons": ["No centralized logging", "No FQDN filtering", "Difficult to audit"],
             "tags": ["Basic", "Dev/Test"]
           },
           {
             "title": "Network Virtual Appliance",
             "description": "Third-party firewall VM",
-            "pros": [
-              "Advanced features",
-              "Legacy compatibility"
-            ],
-            "cons": [
-              "Management overhead",
-              "Scaling complexity",
-              "High cost"
-            ],
+            "pros": ["Advanced features", "Legacy compatibility"],
+            "cons": ["Management overhead", "Scaling complexity", "High cost"],
             "tags": ["Specialized requirements"]
           }
         ]

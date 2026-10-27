@@ -8,10 +8,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "🔌",
-  "tags": [
-    "api",
-    "design"
-  ],
+  "tags": ["api", "design"],
   "lessonSlugs": [
     "restful-principles",
     "resource-naming",

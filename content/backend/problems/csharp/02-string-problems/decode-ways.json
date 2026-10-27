@@ -8,12 +8,7 @@
   "order": 19,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "strings",
-    "dp",
-    "medium"
-  ],
+  "tags": ["csharp", "strings", "dp", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -87,34 +82,16 @@
           {
             "title": "Recursion + Memo",
             "description": "Top-down DP",
-            "pros": [
-              "Matches problem intuition",
-              "Memo prevents recompute"
-            ],
-            "cons": [
-              "Recursion stack overhead",
-              "O(n) memo array"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Matches problem intuition", "Memo prevents recompute"],
+            "cons": ["Recursion stack overhead", "O(n) memo array"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Iterative DP",
             "description": "Two-variable bottom-up",
-            "pros": [
-              "O(1) extra space",
-              "No recursion"
-            ],
-            "cons": [
-              "Index math is subtle"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) extra space", "No recursion"],
+            "cons": ["Index math is subtle"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

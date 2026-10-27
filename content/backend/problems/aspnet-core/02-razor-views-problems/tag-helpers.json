@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "razor",
-    "tag-helpers"
-  ],
+  "tags": ["aspnet-core", "razor", "tag-helpers"],
   "blocks": [
     {
       "type": "heading",
@@ -90,21 +86,9 @@
           {
             "title": "Built-in Tag Helpers",
             "description": "Server-side HTML helpers",
-            "pros": [
-              "Cleaner HTML",
-              "URL generation is type-safe",
-              "Auto anti-forgery tokens"
-            ],
-            "cons": [
-              "Can be confusing for frontend devs",
-              "Requires @addTagHelper directive"
-            ],
-            "tags": [
-              "asp-controller",
-              "asp-action",
-              "asp-for",
-              "<form>"
-            ]
+            "pros": ["Cleaner HTML", "URL generation is type-safe", "Auto anti-forgery tokens"],
+            "cons": ["Can be confusing for frontend devs", "Requires @addTagHelper directive"],
+            "tags": ["asp-controller", "asp-action", "asp-for", "<form>"]
           },
           {
             "title": "Custom Tag Helper",
@@ -114,15 +98,8 @@
               "Encapsulates HTML generation",
               "IntelliSense support"
             ],
-            "cons": [
-              "More code than plain HTML",
-              "Must be registered"
-            ],
-            "tags": [
-              "TagHelper",
-              "HtmlTargetElement",
-              "Process()"
-            ]
+            "cons": ["More code than plain HTML", "Must be registered"],
+            "tags": ["TagHelper", "HtmlTargetElement", "Process()"]
           }
         ]
       }

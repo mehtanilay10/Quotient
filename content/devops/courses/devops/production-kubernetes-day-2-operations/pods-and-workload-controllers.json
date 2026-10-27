@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "kubernetes",
-    "pods",
-    "deployments",
-    "statefulsets",
-    "daemonsets"
-  ],
+  "tags": ["kubernetes", "pods", "deployments", "statefulsets", "daemonsets"],
   "blocks": [
     {
       "type": "heading",
@@ -157,49 +151,23 @@
           {
             "title": "Deployment",
             "description": "For stateless apps that can scale horizontally.",
-            "tags": [
-              "Stateless"
-            ],
-            "pros": [
-              "Rolling updates",
-              "Rollbacks",
-              "Scaling"
-            ],
-            "cons": [
-              "Pods are interchangeable",
-              "No stable network ID"
-            ]
+            "tags": ["Stateless"],
+            "pros": ["Rolling updates", "Rollbacks", "Scaling"],
+            "cons": ["Pods are interchangeable", "No stable network ID"]
           },
           {
             "title": "StatefulSet",
             "description": "For stateful apps needing stable identity and storage.",
-            "tags": [
-              "Stateful"
-            ],
-            "pros": [
-              "Stable network IDs",
-              "Persistent storage per replica",
-              "Ordered deployment"
-            ],
-            "cons": [
-              "More complex",
-              "Scaling down requires care"
-            ]
+            "tags": ["Stateful"],
+            "pros": ["Stable network IDs", "Persistent storage per replica", "Ordered deployment"],
+            "cons": ["More complex", "Scaling down requires care"]
           },
           {
             "title": "DaemonSet",
             "description": "For node-level tasks that must run on every node.",
-            "tags": [
-              "Node-level"
-            ],
-            "pros": [
-              "Auto-schedules on new nodes",
-              "Great for monitoring/logging"
-            ],
-            "cons": [
-              "Runs on every node by default",
-              "Not for application workloads"
-            ]
+            "tags": ["Node-level"],
+            "pros": ["Auto-schedules on new nodes", "Great for monitoring/logging"],
+            "cons": ["Runs on every node by default", "Not for application workloads"]
           }
         ]
       }

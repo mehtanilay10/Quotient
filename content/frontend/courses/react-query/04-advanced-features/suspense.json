@@ -8,15 +8,8 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "suspense",
-    "loading",
-    "boundaries"
-  ],
-  "prerequisites": [
-    "query-hooks"
-  ],
+  "tags": ["react-query", "suspense", "loading", "boundaries"],
+  "prerequisites": ["query-hooks"],
   "blocks": [
     {
       "type": "heading",
@@ -151,9 +144,7 @@
               "Easy to forget loading checks",
               "Mixed loading and data code in one place"
             ],
-            "tags": [
-              "isLoading"
-            ]
+            "tags": ["isLoading"]
           },
           {
             "title": "Suspense Mode",
@@ -168,9 +159,7 @@
               "Errors are thrown, not caught in-component",
               "Not supported in all React versions"
             ],
-            "tags": [
-              "suspense: true"
-            ]
+            "tags": ["suspense: true"]
           }
         ]
       }

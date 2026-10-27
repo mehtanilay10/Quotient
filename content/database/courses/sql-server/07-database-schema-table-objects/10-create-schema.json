@@ -7,10 +7,7 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "create-schema",
-    "schema"
-  ],
+  "tags": ["create-schema", "schema"],
   "blocks": [
     {
       "type": "heading",

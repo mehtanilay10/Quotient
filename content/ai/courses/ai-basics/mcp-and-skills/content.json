@@ -7,22 +7,11 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "🔌",
-  "tags": [
-    "mcp",
-    "skills",
-    "plugins",
-    "tool-calling",
-    "integration"
-  ],
-  "lessonSlugs": [
-    "what-is-mcp",
-    "ai-skills-explained"
-  ],
+  "tags": ["mcp", "skills", "plugins", "tool-calling", "integration"],
+  "lessonSlugs": ["what-is-mcp", "ai-skills-explained"],
   "isOptional": true,
   "skipLabel": "Skip unless you are deeply exploring AI tool integration",
-  "prerequisites": [
-    "tool-calling-basics"
-  ],
+  "prerequisites": ["tool-calling-basics"],
   "whatYouLearn": [
     "What the Model Context Protocol (MCP) is and why it was created",
     "How skills and plugins extend AI capabilities",

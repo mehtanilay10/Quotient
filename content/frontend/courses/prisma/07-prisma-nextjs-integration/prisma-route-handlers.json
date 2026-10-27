@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "nextjs",
-    "route-handlers",
-    "rest-api",
-    "json"
-  ],
+  "tags": ["prisma", "nextjs", "route-handlers", "rest-api", "json"],
   "blocks": [
     {
       "type": "paragraph",
@@ -50,8 +44,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-in-nextjs-app-router",
-    "prisma-with-server-actions"
-  ]
+  "relatedLessons": ["prisma-in-nextjs-app-router", "prisma-with-server-actions"]
 }

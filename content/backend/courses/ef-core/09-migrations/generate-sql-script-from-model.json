@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "ef-core",
-    "sql-script",
-    "deployment",
-    "migrations"
-  ],
+  "tags": ["ef-core", "sql-script", "deployment", "migrations"],
   "blocks": [
     {
       "type": "paragraph",
@@ -30,17 +25,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "PMC Command",
-          "CLI Command",
-          "Usage"
-        ],
+        "headers": ["PMC Command", "CLI Command", "Usage"],
         "rows": [
-          [
-            "Script-Migration",
-            "dotnet ef migrations script",
-            "Generate script for all migrations"
-          ],
+          ["Script-Migration", "dotnet ef migrations script", "Generate script for all migrations"],
           [
             "Script-Migration <from>",
             "dotnet ef migrations script <from>",
@@ -90,9 +77,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "pmc-powershell-commands-migrations",
-    "entity-framework-core-interceptors"
-  ],
+  "relatedLessons": ["pmc-powershell-commands-migrations", "entity-framework-core-interceptors"],
   "courseSlug": "ef-core"
 }

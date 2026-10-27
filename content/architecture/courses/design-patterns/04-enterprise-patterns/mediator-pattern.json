@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "design-patterns",
-    "mediator",
-    "csharp",
-    "decoupling"
-  ],
+  "tags": ["design-patterns", "mediator", "csharp", "decoupling"],
   "blocks": [
     {
       "type": "paragraph",

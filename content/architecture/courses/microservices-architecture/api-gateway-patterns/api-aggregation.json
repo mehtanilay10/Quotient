@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "aggregation",
-    "api-gateway",
-    "composition"
-  ],
+  "tags": ["aggregation", "api-gateway", "composition"],
   "blocks": [
     {
       "type": "paragraph",
@@ -78,27 +74,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Description",
-          "Latency"
-        ],
+        "headers": ["Pattern", "Description", "Latency"],
         "rows": [
-          [
-            "Sequential",
-            "Call services one after another",
-            "Sum of all"
-          ],
-          [
-            "Parallel",
-            "Call services concurrently",
-            "Max of all"
-          ],
-          [
-            "Partial",
-            "Return available data, fill in later",
-            "Lowest"
-          ]
+          ["Sequential", "Call services one after another", "Sum of all"],
+          ["Parallel", "Call services concurrently", "Max of all"],
+          ["Partial", "Return available data, fill in later", "Lowest"]
         ]
       }
     },

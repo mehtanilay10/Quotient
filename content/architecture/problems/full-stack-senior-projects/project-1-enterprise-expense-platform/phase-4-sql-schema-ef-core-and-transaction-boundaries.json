@@ -8,14 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "sql-server",
-    "ef-core",
-    "transactions",
-    "unit-of-work",
-    "soft-delete",
-    "indexing"
-  ],
+  "tags": ["sql-server", "ef-core", "transactions", "unit-of-work", "soft-delete", "indexing"],
   "blocks": [
     {
       "type": "paragraph",

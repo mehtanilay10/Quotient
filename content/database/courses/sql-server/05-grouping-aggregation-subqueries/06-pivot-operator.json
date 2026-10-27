@@ -7,9 +7,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "pivot-operator"
-  ],
+  "tags": ["pivot-operator"],
   "blocks": [
     {
       "type": "heading",

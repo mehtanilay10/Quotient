@@ -8,12 +8,7 @@
   "order": 18,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "arrays",
-    "binary-search",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "binary-search", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -99,33 +94,16 @@
           {
             "title": "Linear Scan",
             "description": "Find the smallest value",
-            "pros": [
-              "Simple"
-            ],
-            "cons": [
-              "O(n) time"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space"
-            ]
+            "pros": ["Simple"],
+            "cons": ["O(n) time"],
+            "tags": ["O(n) time", "O(1) space"]
           },
           {
             "title": "Binary Search",
             "description": "Narrow the search using sorted property",
-            "pros": [
-              "O(log n) time",
-              "O(1) space",
-              "Recommended"
-            ],
-            "cons": [
-              "Binary search intuition"
-            ],
-            "tags": [
-              "O(log n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(log n) time", "O(1) space", "Recommended"],
+            "cons": ["Binary search intuition"],
+            "tags": ["O(log n) time", "O(1) space", "Recommended"]
           }
         ]
       }

@@ -9,9 +9,5 @@
   "estimatedHours": 1,
   "icon": "🏗️",
   "tags": ["api", "design", "security", "architecture"],
-  "lessonSlugs": [
-    "api-design-principles",
-    "input-validation",
-    "output-encoding"
-  ]
+  "lessonSlugs": ["api-design-principles", "input-validation", "output-encoding"]
 }

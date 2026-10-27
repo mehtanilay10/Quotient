@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "testing",
-    "msw",
-    "api"
-  ],
+  "tags": ["testing", "msw", "api"],
   "blocks": [
     {
       "type": "paragraph",

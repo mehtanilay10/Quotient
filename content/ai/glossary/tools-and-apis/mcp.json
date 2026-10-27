@@ -6,20 +6,12 @@
   "fullDefinition": "Model Context Protocol is an open standard that defines how AI models discover, understand, and use external tools and data. It provides a universal interface layer so that tools built once can work with any MCP-compatible model. MCP handles tool discovery, parameter validation, authentication, and error handling, reducing the integration burden for both model providers and tool developers. The protocol is designed to be model-agnostic, enabling a single tool to work with Claude, GPT, and other models without modification. MCP represents an important step toward portable, interoperable AI tooling.",
   "category": "tools-and-apis",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "plugin",
-    "api",
-    "agent"
-  ],
+  "relatedTerms": ["plugin", "api", "agent"],
   "learnMoreSlug": "what-is-mcp",
   "examples": [
     "An MCP server that connects a model to a company's internal database",
     "A universal MCP file manager tool that works with any MCP client",
     "MCP enabling a model to read local files, search the web, and run code"
   ],
-  "alsoKnownAs": [
-    "Model Context Protocol",
-    "MCP Server",
-    "MCP Client"
-  ]
+  "alsoKnownAs": ["Model Context Protocol", "MCP Server", "MCP Client"]
 }

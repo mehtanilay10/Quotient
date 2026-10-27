@@ -9,20 +9,8 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "🌐",
-  "tags": [
-    "http",
-    "polly",
-    "refit",
-    "flurl"
-  ],
-  "lessonSlugs": [
-    "refit",
-    "flurl",
-    "restsharp",
-    "polly",
-    "polly-simmy",
-    "httpclientfactory"
-  ],
+  "tags": ["http", "polly", "refit", "flurl"],
+  "lessonSlugs": ["refit", "flurl", "restsharp", "polly", "polly-simmy", "httpclientfactory"],
   "whatYouLearn": [
     "Use Refit for type-safe REST API clients",
     "Build fluent HTTP requests with Flurl",

@@ -50,7 +50,11 @@
         "headers": ["Filter", "Includes", "Use case"],
         "rows": [
           ["blob:none", "No file contents", "Default partial clone; download files on demand"],
-          ["blob:limit=<size>", "Files under <size>", "Include small files, download large files on demand"],
+          [
+            "blob:limit=<size>",
+            "Files under <size>",
+            "Include small files, download large files on demand"
+          ],
           ["tree:0", "No trees", "Minimal clone for commit graph only"],
           ["combine:<base>+<delta>", "Combined filter", "Fine-grained control over object types"]
         ]
@@ -163,6 +167,10 @@
   ],
   "relatedLessons": ["performance-fundamentals", "shallow-clones", "sparse-checkout"],
   "furtherReading": [
-    { "title": "Git Partial Clone", "url": "https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---filterltspecgt", "type": "article" }
+    {
+      "title": "Git Partial Clone",
+      "url": "https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---filterltspecgt",
+      "type": "article"
+    }
   ]
 }

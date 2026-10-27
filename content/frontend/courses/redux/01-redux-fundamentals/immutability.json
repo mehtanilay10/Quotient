@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "immutability",
-    "state",
-    "updates"
-  ],
+  "tags": ["redux", "immutability", "state", "updates"],
   "blocks": [
     {
       "type": "paragraph",
@@ -64,17 +59,13 @@
             "title": "Mutating (Bad)",
             "description": "Directly modifying the existing state object. Breaks Redux's contract.",
             "code": "state.count += 1;\nstate.items.push(newItem);",
-            "tags": [
-              "anti-pattern"
-            ]
+            "tags": ["anti-pattern"]
           },
           {
             "title": "Immutable (Good)",
             "description": "Returning a new object with the updated values. Preserves the previous state.",
             "code": "return { ...state, count: state.count + 1 };\nreturn { ...state, items: [...state.items, newItem] };",
-            "tags": [
-              "best-practice"
-            ]
+            "tags": ["best-practice"]
           }
         ]
       }
@@ -120,37 +111,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Operation",
-          "Immutable Pattern",
-          "Notes"
-        ],
+        "headers": ["Operation", "Immutable Pattern", "Notes"],
         "rows": [
-          [
-            "Add field",
-            "{ ...state, newField: value }",
-            "Single level spread"
-          ],
-          [
-            "Update field",
-            "{ ...state, field: newValue }",
-            "Primitive or object"
-          ],
-          [
-            "Add to array",
-            "{ ...state, list: [...list, item] }",
-            "Creates a new array"
-          ],
-          [
-            "Remove from array",
-            "{ ...state, list: list.filter(fn) }",
-            "Returns a new array"
-          ],
-          [
-            "Update array item",
-            "{ ...state, list: list.map(fn) }",
-            "Spread inside the map"
-          ],
+          ["Add field", "{ ...state, newField: value }", "Single level spread"],
+          ["Update field", "{ ...state, field: newValue }", "Primitive or object"],
+          ["Add to array", "{ ...state, list: [...list, item] }", "Creates a new array"],
+          ["Remove from array", "{ ...state, list: list.filter(fn) }", "Returns a new array"],
+          ["Update array item", "{ ...state, list: list.map(fn) }", "Spread inside the map"],
           [
             "Update nested object",
             "{ ...state, a: { ...state.a, b: newB } }",

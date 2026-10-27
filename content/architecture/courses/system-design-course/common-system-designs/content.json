@@ -8,10 +8,7 @@
   "difficulty": "advanced",
   "estimatedHours": 5,
   "icon": "🏗️",
-  "tags": [
-    "system-design",
-    "design"
-  ],
+  "tags": ["system-design", "design"],
   "lessonSlugs": [
     "url-shortener-design",
     "chat-system-design",

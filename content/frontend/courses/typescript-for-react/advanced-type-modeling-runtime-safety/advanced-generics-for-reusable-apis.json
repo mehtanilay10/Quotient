@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "typescript",
-    "generics",
-    "react-hooks",
-    "type-safety"
-  ],
+  "tags": ["typescript", "generics", "react-hooks", "type-safety"],
   "blocks": [
     {
       "type": "paragraph",
@@ -109,10 +104,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "designing-type-safe-component-apis",
-    "type-predicates"
-  ],
+  "relatedLessons": ["designing-type-safe-component-apis", "type-predicates"],
   "furtherReading": [
     {
       "title": "TypeScript Handbook: Generics",

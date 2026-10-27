@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "evaluation",
-    "quality-check",
-    "verification",
-    "habits"
-  ],
+  "tags": ["evaluation", "quality-check", "verification", "habits"],
   "blocks": [
     {
       "type": "paragraph",
@@ -96,11 +91,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Specific fact type",
-          "Hallucination risk",
-          "How to verify"
-        ],
+        "headers": ["Specific fact type", "Hallucination risk", "How to verify"],
         "rows": [
           [
             "Statistics / percentages",
@@ -216,27 +207,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Stakes",
-          "Verification approach"
-        ],
+        "headers": ["Use case", "Stakes", "Verification approach"],
         "rows": [
-          [
-            "Brainstorming, creative ideas",
-            "Low",
-            "Use freely — no verification needed"
-          ],
-          [
-            "Internal first draft",
-            "Low-medium",
-            "Quick read through for obvious errors"
-          ],
-          [
-            "Email to important stakeholder",
-            "Medium",
-            "Read and edit carefully; check any claims"
-          ],
+          ["Brainstorming, creative ideas", "Low", "Use freely — no verification needed"],
+          ["Internal first draft", "Low-medium", "Quick read through for obvious errors"],
+          ["Email to important stakeholder", "Medium", "Read and edit carefully; check any claims"],
           [
             "Factual article or research note",
             "High",
@@ -268,10 +243,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "What you need to verify",
-          "Tool to use"
-        ],
+        "headers": ["What you need to verify", "Tool to use"],
         "rows": [
           [
             "Academic citations and papers",
@@ -289,14 +261,8 @@
             "Historical dates and events",
             "Wikipedia with source footnotes; Encyclopaedia Britannica"
           ],
-          [
-            "Current leadership, company info",
-            "Company official website, LinkedIn, Crunchbase"
-          ],
-          [
-            "Medical claims",
-            "PubMed (pubmed.ncbi.nlm.nih.gov), NHS or CDC official pages"
-          ],
+          ["Current leadership, company info", "Company official website, LinkedIn, Crunchbase"],
+          ["Medical claims", "PubMed (pubmed.ncbi.nlm.nih.gov), NHS or CDC official pages"],
           [
             "Legal statutes and case law",
             "Westlaw, LexisNexis, official government legislative databases"
@@ -443,10 +409,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ai-hallucination-deep-dive",
-    "critical-evaluation"
-  ],
+  "relatedLessons": ["ai-hallucination-deep-dive", "critical-evaluation"],
   "furtherReading": [
     {
       "title": "Evaluating and Debugging Generative AI",

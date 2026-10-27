@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "locks",
-    "blocking",
-    "concurrency",
-    "sql-server",
-    "troubleshooting"
-  ],
+  "tags": ["locks", "blocking", "concurrency", "sql-server", "troubleshooting"],
   "blocks": [
     {
       "type": "paragraph",
@@ -74,19 +68,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Lock Mode",
-          "Symbol",
-          "Used For",
-          "Compatibility"
-        ],
+        "headers": ["Lock Mode", "Symbol", "Used For", "Compatibility"],
         "rows": [
-          [
-            "Shared",
-            "S",
-            "Reading data (SELECT)",
-            "Compatible with other S locks"
-          ],
+          ["Shared", "S", "Reading data (SELECT)", "Compatible with other S locks"],
           [
             "Exclusive",
             "X",
@@ -216,10 +200,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "deadlocks-and-deadlock-graphs",
-    "transaction-isolation-levels"
-  ],
+  "relatedLessons": ["deadlocks-and-deadlock-graphs", "transaction-isolation-levels"],
   "furtherReading": [
     {
       "title": "Locking and Row Versioning (Microsoft Docs)",

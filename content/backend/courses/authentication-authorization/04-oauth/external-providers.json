@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "oauth",
-    "external",
-    "google",
-    "facebook",
-    "providers"
-  ],
+  "tags": ["oauth", "external", "google", "facebook", "providers"],
   "blocks": [
     {
       "type": "paragraph",

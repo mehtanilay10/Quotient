@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { ChevronDown, ChevronRight, CheckCircle2, Circle } from 'lucide-react';
-import { useState } from 'react';
-import { cn } from '@/lib/utils';
-import { useProgress } from '@/hooks/useProgress';
-import type { Module, LessonNavItem, ProgressCategory } from '@/types';
+import Link from "next/link";
+import { ChevronDown, ChevronRight, CheckCircle2, Circle } from "lucide-react";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+import { useProgress } from "@/hooks/useProgress";
+import type { Module, LessonNavItem, ProgressCategory } from "@/types";
 
 interface LessonSidebarProps {
   currentModuleSlug: string;
@@ -21,10 +21,10 @@ export function LessonSidebar({
   currentModuleSlug,
   currentLessonSlug,
   courseSlug,
-  basePrefix = 'courses',
+  basePrefix = "courses",
   modules,
   lessonsByModule,
-  category = 'lessons',
+  category = "lessons",
 }: LessonSidebarProps) {
   const { isCompleted } = useProgress();
 
@@ -66,10 +66,10 @@ export function LessonSidebar({
                 onClick={() => toggleModule(mod.slug)}
                 aria-expanded={isOpen}
                 className={cn(
-                  'flex w-full items-center justify-between rounded-md px-2 py-2 font-medium transition-colors',
+                  "flex w-full items-center justify-between rounded-md px-2 py-2 font-medium transition-colors",
                   mod.slug === currentModuleSlug
-                    ? 'bg-accent-subtle text-accent-fg'
-                    : 'text-fg-default hover:bg-canvas-subtle'
+                    ? "bg-accent-subtle text-accent-fg"
+                    : "text-fg-default hover:bg-canvas-subtle"
                 )}
               >
                 <span className="flex items-center gap-2 text-left">
@@ -99,12 +99,12 @@ export function LessonSidebar({
                       <li key={lesson.slug}>
                         <Link
                           href={lessonHref(mod.slug, lesson.slug)}
-                          aria-current={isCurrent ? 'page' : undefined}
+                          aria-current={isCurrent ? "page" : undefined}
                           className={cn(
-                            'flex items-start gap-2 rounded-md px-2 py-2 transition-colors',
+                            "flex items-start gap-2 rounded-md px-2 py-2 transition-colors",
                             isCurrent
-                              ? 'bg-accent-subtle text-accent-fg font-medium'
-                              : 'text-fg-muted hover:bg-canvas-subtle hover:text-fg-default'
+                              ? "bg-accent-subtle text-accent-fg font-medium"
+                              : "text-fg-muted hover:bg-canvas-subtle hover:text-fg-default"
                           )}
                         >
                           {done ? (

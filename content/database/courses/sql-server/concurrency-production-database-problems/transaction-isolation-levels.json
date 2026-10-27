@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "isolation-levels",
-    "concurrency",
-    "sql-server",
-    "transactions"
-  ],
+  "tags": ["isolation-levels", "concurrency", "sql-server", "transactions"],
   "blocks": [
     {
       "type": "paragraph",
@@ -209,10 +204,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "snapshot-isolation-and-row-versioning",
-    "locks-and-blocking"
-  ],
+  "relatedLessons": ["snapshot-isolation-and-row-versioning", "locks-and-blocking"],
   "furtherReading": [
     {
       "title": "Transaction Isolation Levels (Microsoft Docs)",

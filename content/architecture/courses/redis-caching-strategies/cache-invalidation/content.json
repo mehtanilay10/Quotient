@@ -9,11 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "🔄",
-  "tags": [
-    "redis",
-    "intermediate",
-    "caching"
-  ],
+  "tags": ["redis", "intermediate", "caching"],
   "lessonSlugs": [
     "ttl-expiration",
     "eviction-policies",
@@ -22,9 +18,7 @@
     "invalidation-propagation",
     "cache-warming"
   ],
-  "prerequisites": [
-    "caching-patterns"
-  ],
+  "prerequisites": ["caching-patterns"],
   "whatYouLearn": [
     "Set appropriate TTLs and expiration strategies",
     "Choose the right eviction policy",

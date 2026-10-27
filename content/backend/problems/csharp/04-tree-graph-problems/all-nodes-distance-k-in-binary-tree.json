@@ -8,13 +8,7 @@
   "order": 22,
   "difficulty": "medium",
   "estimatedMinutes": 16,
-  "tags": [
-    "csharp",
-    "trees",
-    "bfs",
-    "dfs",
-    "medium"
-  ],
+  "tags": ["csharp", "trees", "bfs", "dfs", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -52,14 +46,8 @@
           {
             "title": "Parent Map + BFS",
             "description": "Treat tree as graph, BFS from target",
-            "pros": [
-              "O(n) time"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time"],
+            "tags": ["O(n) time", "O(n) space", "Recommended"]
           }
         ]
       }

@@ -6,13 +6,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "esbuild",
-    "build",
-    "bundler",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["esbuild", "build", "bundler", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -70,32 +64,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool",
-          "Implementation",
-          "Strength"
-        ],
+        "headers": ["Tool", "Implementation", "Strength"],
         "rows": [
-          [
-            "esbuild",
-            "Go",
-            "Raw speed, simple config"
-          ],
-          [
-            "SWC",
-            "Rust",
-            "Fast transforms, used by Next.js"
-          ],
-          [
-            "Babel",
-            "JavaScript",
-            "Maximum plugin flexibility"
-          ],
-          [
-            "Webpack",
-            "JavaScript",
-            "Deep customisation, Module Federation"
-          ]
+          ["esbuild", "Go", "Raw speed, simple config"],
+          ["SWC", "Rust", "Fast transforms, used by Next.js"],
+          ["Babel", "JavaScript", "Maximum plugin flexibility"],
+          ["Webpack", "JavaScript", "Deep customisation, Module Federation"]
         ]
       }
     },

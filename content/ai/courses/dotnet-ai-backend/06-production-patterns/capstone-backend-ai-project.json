@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "capstone",
-    "project",
-    "rag",
-    "mcp",
-    "agents"
-  ],
+  "tags": ["capstone", "project", "rag", "mcp", "agents"],
   "blocks": [
     {
       "type": "paragraph",
@@ -58,8 +52,8 @@
       "variant": "tip",
       "title": "Start with the simplest version",
       "text": "A minimal end-to-end prototype with one document type, one tool, and one agent is better than an unfinished grand design."
-     },
-     {
+    },
+    {
       "type": "example",
       "title": "Capstone minimal endpoint",
       "content": "A simplified ASP.NET Core endpoint that ties ingestion, retrieval, and generation together.",
@@ -100,10 +94,7 @@
       "takeaway": "You now have the vocabulary, libraries, patterns, and production mindset to build AI-powered .NET backends."
     }
   ],
-  "relatedLessons": [
-    "evaluating-rag-and-agent-quality",
-    "deployment-and-scaling-patterns"
-  ],
+  "relatedLessons": ["evaluating-rag-and-agent-quality", "deployment-and-scaling-patterns"],
   "technology": null,
   "furtherReading": [
     {

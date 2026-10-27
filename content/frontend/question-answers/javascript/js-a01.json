@@ -6,10 +6,7 @@
   "description": "Understand JavaScript's prototype-based inheritance model.",
   "order": 10,
   "difficulty": "advanced",
-  "tags": [
-    "javascript",
-    "advanced"
-  ],
+  "tags": ["javascript", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

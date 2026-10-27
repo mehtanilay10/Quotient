@@ -52,12 +52,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "What it means",
-          "Best for",
-          "Example use"
-        ],
+        "headers": ["Type", "What it means", "Best for", "Example use"],
         "rows": [
           [
             "Zero-shot",
@@ -122,10 +117,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tip",
-          "Why it matters"
-        ],
+        "headers": ["Tip", "Why it matters"],
         "rows": [
           [
             "Include edge cases in your examples",
@@ -197,11 +189,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Template (copyable)",
-          "Notes"
-        ],
+        "headers": ["Use case", "Template (copyable)", "Notes"],
         "rows": [
           [
             "Classification",
@@ -276,22 +264,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "What to check",
-          "Why it matters"
-        ],
+        "headers": ["Metric", "What to check", "Why it matters"],
         "rows": [
           [
             "Format adherence",
             "Does the output match the exact structure shown in examples?",
             "Critical for downstream parsing and automation"
           ],
-          [
-            "Accuracy",
-            "Are labels or extracted values correct?",
-            "Measures task correctness"
-          ],
+          ["Accuracy", "Are labels or extracted values correct?", "Measures task correctness"],
           [
             "Robustness",
             "Does the prompt handle noisy or edge-case inputs?",
@@ -367,11 +347,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Template",
-          "Notes"
-        ],
+        "headers": ["Use case", "Template", "Notes"],
         "rows": [
           [
             "Classification",
@@ -429,11 +405,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "Type",
-          "Why read it"
-        ],
+        "headers": ["Resource", "Type", "Why read it"],
         "rows": [
           [
             "Learn Prompting — Few-Shot",
@@ -486,10 +458,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "chain-of-thought-prompting",
-    "building-your-first-workflow"
-  ],
+  "relatedLessons": ["chain-of-thought-prompting", "building-your-first-workflow"],
   "furtherReading": [
     {
       "title": "Learn Prompting — Few-Shot",

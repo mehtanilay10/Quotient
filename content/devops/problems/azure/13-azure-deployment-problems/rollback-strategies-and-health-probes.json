@@ -86,24 +86,14 @@
           {
             "title": "Slot swap back",
             "description": "Previous version still warm in staging",
-            "pros": [
-              "Seconds, no rebuild",
-              "Exact artifact restored",
-              "No dependency drift"
-            ],
-            "cons": [
-              "Needs double capacity",
-              "Only one version of history retained by default"
-            ],
+            "pros": ["Seconds, no rebuild", "Exact artifact restored", "No dependency drift"],
+            "cons": ["Needs double capacity", "Only one version of history retained by default"],
             "tags": ["Recommended"]
           },
           {
             "title": "Canary weight to zero",
             "description": "Return all traffic to stable origin",
-            "pros": [
-              "Instant",
-              "No slot management"
-            ],
+            "pros": ["Instant", "No slot management"],
             "cons": [
               "Requires Front Door or App Gateway tier",
               "Does not help if stable origin was replaced"
@@ -113,9 +103,7 @@
           {
             "title": "Rebuild and redeploy previous commit",
             "description": "Rebuild from source",
-            "pros": [
-              "Works without slots"
-            ],
+            "pros": ["Works without slots"],
             "cons": [
               "Minutes to tens of minutes",
               "Non-deterministic artifact",

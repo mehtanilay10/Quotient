@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "testing",
-    "jest",
-    "react-testing-library",
-    "custom-hooks",
-    "@testing-library/react"
-  ],
+  "tags": ["testing", "jest", "react-testing-library", "custom-hooks", "@testing-library/react"],
   "blocks": [
     {
       "type": "paragraph",
@@ -163,7 +157,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "reducer-hooks-patterns"
-  ]
+  "prerequisites": ["reducer-hooks-patterns"]
 }

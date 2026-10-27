@@ -8,12 +8,7 @@
   "order": 14,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "database",
-    "sql",
-    "nosql",
-    "csharp"
-  ],
+  "tags": ["database", "sql", "nosql", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -182,10 +177,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ef-core-vs-dapper-vs-raw-sql",
-    "making-technical-trade-offs-explicit"
-  ],
+  "relatedLessons": ["ef-core-vs-dapper-vs-raw-sql", "making-technical-trade-offs-explicit"],
   "furtherReading": [
     {
       "title": "NoSQL Distilled",

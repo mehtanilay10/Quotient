@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "authorization",
-    "identityserver",
-    "oauth",
-    "openid"
-  ],
+  "tags": ["authorization", "identityserver", "oauth", "openid"],
   "blocks": [
     {
       "type": "heading",

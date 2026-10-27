@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "methods",
-    "functions",
-    "parameters",
-    "return-types"
-  ],
+  "tags": ["csharp", "methods", "functions", "parameters", "return-types"],
   "blocks": [
     {
       "type": "paragraph",
@@ -235,43 +229,22 @@
               "Method can modify caller's variable",
               "Variable must be initialized before call"
             ],
-            "cons": [
-              "Can make code harder to follow"
-            ],
-            "tags": [
-              "reference",
-              "modifiable"
-            ]
+            "cons": ["Can make code harder to follow"],
+            "tags": ["reference", "modifiable"]
           },
           {
             "title": "out",
             "description": "Passes a variable by reference specifically for returning multiple values. The method MUST assign a value before returning. Variable does NOT need initialization.",
-            "pros": [
-              "Return multiple values from a method",
-              "No pre-initialization needed"
-            ],
-            "cons": [
-              "Method is forced to assign a value"
-            ],
-            "tags": [
-              "reference",
-              "multiple-return"
-            ]
+            "pros": ["Return multiple values from a method", "No pre-initialization needed"],
+            "cons": ["Method is forced to assign a value"],
+            "tags": ["reference", "multiple-return"]
           },
           {
             "title": "in",
             "description": "Passes a variable by reference for read-only access. The method can read but NOT modify the original variable. Useful for large structs to avoid copying.",
-            "pros": [
-              "Avoids copying large structs",
-              "Read-only — safer than ref"
-            ],
-            "cons": [
-              "Only works with variables (not literals)"
-            ],
-            "tags": [
-              "reference",
-              "read-only"
-            ]
+            "pros": ["Avoids copying large structs", "Read-only — safer than ref"],
+            "cons": ["Only works with variables (not literals)"],
+            "tags": ["reference", "read-only"]
           }
         ]
       }
@@ -417,14 +390,8 @@
               "Works well for versioning APIs",
               "No risk of breaking changes when adding new overloads"
             ],
-            "cons": [
-              "More code to write",
-              "Can lead to many similar method definitions"
-            ],
-            "tags": [
-              "overloading",
-              "api-design"
-            ]
+            "cons": ["More code to write", "Can lead to many similar method definitions"],
+            "tags": ["overloading", "api-design"]
           },
           {
             "title": "Optional Parameters",
@@ -438,10 +405,7 @@
               "Risk of breaking changes if default values change",
               "Can lead to confusion with many optional params"
             ],
-            "tags": [
-              "optional",
-              "defaults"
-            ]
+            "tags": ["optional", "defaults"]
           }
         ]
       }

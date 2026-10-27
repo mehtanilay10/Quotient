@@ -7,10 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 40,
-  "tags": [
-    "data-types",
-    "overview"
-  ],
+  "tags": ["data-types", "overview"],
   "blocks": [
     {
       "type": "heading",
@@ -48,67 +45,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Data Type",
-          "Lower Limit",
-          "Upper Limit",
-          "Memory"
-        ],
+        "headers": ["Data Type", "Lower Limit", "Upper Limit", "Memory"],
         "rows": [
-          [
-            "bigint",
-            "−2^63",
-            "2^63−1",
-            "8 bytes"
-          ],
-          [
-            "int",
-            "−2^31",
-            "2^31−1",
-            "4 bytes"
-          ],
-          [
-            "smallint",
-            "−2^15",
-            "2^15−1",
-            "2 bytes"
-          ],
-          [
-            "tinyint",
-            "0",
-            "255",
-            "1 byte"
-          ],
-          [
-            "bit",
-            "0",
-            "1",
-            "1 byte/8bit column"
-          ],
-          [
-            "decimal",
-            "−10^38+1",
-            "10^38−1",
-            "5 to 17 bytes"
-          ],
-          [
-            "numeric",
-            "−10^38+1",
-            "10^38−1",
-            "5 to 17 bytes"
-          ],
-          [
-            "money",
-            "−922,337,203,685,477.5808",
-            "+922,337,203,685,477.5807",
-            "8 bytes"
-          ],
-          [
-            "smallmoney",
-            "−214,478.3648",
-            "+214,478.3647",
-            "4 bytes"
-          ]
+          ["bigint", "−2^63", "2^63−1", "8 bytes"],
+          ["int", "−2^31", "2^31−1", "4 bytes"],
+          ["smallint", "−2^15", "2^15−1", "2 bytes"],
+          ["tinyint", "0", "255", "1 byte"],
+          ["bit", "0", "1", "1 byte/8bit column"],
+          ["decimal", "−10^38+1", "10^38−1", "5 to 17 bytes"],
+          ["numeric", "−10^38+1", "10^38−1", "5 to 17 bytes"],
+          ["money", "−922,337,203,685,477.5808", "+922,337,203,685,477.5807", "8 bytes"],
+          ["smallmoney", "−214,478.3648", "+214,478.3647", "4 bytes"]
         ]
       }
     },
@@ -122,13 +69,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Data Type",
-          "Lower Limit",
-          "Upper Limit",
-          "Memory",
-          "Precision"
-        ],
+        "headers": ["Data Type", "Lower Limit", "Upper Limit", "Memory", "Precision"],
         "rows": [
           [
             "float(n)",
@@ -137,13 +78,7 @@
             "4 or 8 bytes",
             "7 digits (n = 1–24) or 15 digits (n = 25–53)"
           ],
-          [
-            "real",
-            "−3.40E+38",
-            "3.40E+38",
-            "4 bytes",
-            "7 digits"
-          ]
+          ["real", "−3.40E+38", "3.40E+38", "4 bytes", "7 digits"]
         ]
       }
     },
@@ -157,56 +92,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Data Type",
-          "Storage Size",
-          "Accuracy",
-          "Lower Range",
-          "Upper Range"
-        ],
+        "headers": ["Data Type", "Storage Size", "Accuracy", "Lower Range", "Upper Range"],
         "rows": [
-          [
-            "datetime",
-            "8 bytes",
-            "Rounded to .000, .003, .007",
-            "1753-01-01",
-            "9999-12-31"
-          ],
-          [
-            "smalldatetime",
-            "4 bytes",
-            "1 minute",
-            "1900-01-01",
-            "2079-06-06"
-          ],
-          [
-            "date",
-            "3 bytes",
-            "1 day",
-            "0001-01-01",
-            "9999-12-31"
-          ],
-          [
-            "time",
-            "3–5 bytes",
-            "100 nanoseconds",
-            "00:00:00.0000000",
-            "23:59:59.9999999"
-          ],
-          [
-            "datetimeoffset",
-            "8–10 bytes",
-            "100 nanoseconds",
-            "0001-01-01",
-            "9999-12-31"
-          ],
-          [
-            "datetime2",
-            "6–8 bytes",
-            "100 nanoseconds",
-            "0001-01-01",
-            "9999-12-31"
-          ]
+          ["datetime", "8 bytes", "Rounded to .000, .003, .007", "1753-01-01", "9999-12-31"],
+          ["smalldatetime", "4 bytes", "1 minute", "1900-01-01", "2079-06-06"],
+          ["date", "3 bytes", "1 day", "0001-01-01", "9999-12-31"],
+          ["time", "3–5 bytes", "100 nanoseconds", "00:00:00.0000000", "23:59:59.9999999"],
+          ["datetimeoffset", "8–10 bytes", "100 nanoseconds", "0001-01-01", "9999-12-31"],
+          ["datetime2", "6–8 bytes", "100 nanoseconds", "0001-01-01", "9999-12-31"]
         ]
       }
     },
@@ -226,37 +119,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Data Type",
-          "Lower Limit",
-          "Upper Limit",
-          "Memory"
-        ],
+        "headers": ["Data Type", "Lower Limit", "Upper Limit", "Memory"],
         "rows": [
-          [
-            "char",
-            "0 chars",
-            "8000 chars",
-            "n bytes"
-          ],
-          [
-            "varchar",
-            "0 chars",
-            "8000 chars",
-            "n bytes + 2 bytes"
-          ],
-          [
-            "varchar(max)",
-            "0 chars",
-            "2^31 chars",
-            "n bytes + 2 bytes"
-          ],
-          [
-            "text",
-            "0 chars",
-            "2,147,483,647 chars",
-            "n bytes + 4 bytes"
-          ]
+          ["char", "0 chars", "8000 chars", "n bytes"],
+          ["varchar", "0 chars", "8000 chars", "n bytes + 2 bytes"],
+          ["varchar(max)", "0 chars", "2^31 chars", "n bytes + 2 bytes"],
+          ["text", "0 chars", "2,147,483,647 chars", "n bytes + 4 bytes"]
         ]
       }
     },
@@ -270,31 +138,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Data Type",
-          "Lower Limit",
-          "Upper Limit",
-          "Memory"
-        ],
+        "headers": ["Data Type", "Lower Limit", "Upper Limit", "Memory"],
         "rows": [
-          [
-            "nchar",
-            "0 chars",
-            "4000 chars",
-            "2 times n bytes"
-          ],
-          [
-            "nvarchar",
-            "0 chars",
-            "4000 chars",
-            "2 times n bytes + 2 bytes"
-          ],
-          [
-            "ntext",
-            "0 chars",
-            "1,073,741,823 chars",
-            "2 times the string length"
-          ]
+          ["nchar", "0 chars", "4000 chars", "2 times n bytes"],
+          ["nvarchar", "0 chars", "4000 chars", "2 times n bytes + 2 bytes"],
+          ["ntext", "0 chars", "1,073,741,823 chars", "2 times the string length"]
         ]
       }
     },
@@ -308,31 +156,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Data Type",
-          "Lower Limit",
-          "Upper Limit",
-          "Memory"
-        ],
+        "headers": ["Data Type", "Lower Limit", "Upper Limit", "Memory"],
         "rows": [
-          [
-            "binary",
-            "0 bytes",
-            "8000 bytes",
-            "n bytes"
-          ],
-          [
-            "varbinary",
-            "0 bytes",
-            "8000 bytes",
-            "Actual length + 2 bytes"
-          ],
-          [
-            "image",
-            "0 bytes",
-            "2,147,483,647 bytes",
-            ""
-          ]
+          ["binary", "0 bytes", "8000 bytes", "n bytes"],
+          ["varbinary", "0 bytes", "8000 bytes", "Actual length + 2 bytes"],
+          ["image", "0 bytes", "2,147,483,647 bytes", ""]
         ]
       }
     },

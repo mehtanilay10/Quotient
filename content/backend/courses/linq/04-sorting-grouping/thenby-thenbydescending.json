@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "linq",
-    "thenby",
-    "thenbydescending",
-    "sorting"
-  ],
+  "tags": ["linq", "thenby", "thenbydescending", "sorting"],
   "blocks": [
     {
       "type": "paragraph",
@@ -101,9 +96,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "orderby-orderbydescending",
-    "grouping-operator-groupby-tolookup"
-  ],
+  "relatedLessons": ["orderby-orderbydescending", "grouping-operator-groupby-tolookup"],
   "courseSlug": "linq"
 }

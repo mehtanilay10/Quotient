@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "triggers",
-    "audit",
-    "new-old",
-    "automation"
-  ],
+  "tags": ["triggers", "audit", "new-old", "automation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -31,12 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Declaration Syntax",
-          "Execution Frequency",
-          "Access to Data"
-        ],
+        "headers": ["Type", "Declaration Syntax", "Execution Frequency", "Access to Data"],
         "rows": [
           [
             "Row-Level",
@@ -95,8 +85,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "before-after-triggers",
-    "instead-of-triggers"
-  ]
+  "relatedLessons": ["before-after-triggers", "instead-of-triggers"]
 }

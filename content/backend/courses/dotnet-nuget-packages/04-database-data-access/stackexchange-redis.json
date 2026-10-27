@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "redis",
-    "stackexchange",
-    "client",
-    "cache"
-  ],
+  "tags": ["redis", "stackexchange", "client", "cache"],
   "blocks": [
     {
       "type": "heading",

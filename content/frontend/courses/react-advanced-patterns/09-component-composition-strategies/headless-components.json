@@ -8,14 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "headless",
-    "logic",
-    "state",
-    "separation-of-concerns",
-    "render-props",
-    "hooks"
-  ],
+  "tags": ["headless", "logic", "state", "separation-of-concerns", "render-props", "hooks"],
   "blocks": [
     {
       "type": "heading",
@@ -99,42 +92,12 @@
     },
     {
       "type": "table",
-      "headers": [
-        "Approach",
-        "Bundle Size",
-        "Flexibility",
-        "DX",
-        "Best For"
-      ],
+      "headers": ["Approach", "Bundle Size", "Flexibility", "DX", "Best For"],
       "rows": [
-        [
-          "Render Prop Component",
-          "Medium",
-          "High",
-          "High",
-          "Design systems, shared libraries"
-        ],
-        [
-          "Custom Hook",
-          "Smallest",
-          "Highest",
-          "Medium",
-          "App-level logic reuse"
-        ],
-        [
-          "Compound Component",
-          "Medium",
-          "High",
-          "High",
-          "Complex widgets with many sub-parts"
-        ],
-        [
-          "Full Styled Component",
-          "Largest",
-          "Low",
-          "Highest",
-          "Internal apps with fixed design"
-        ]
+        ["Render Prop Component", "Medium", "High", "High", "Design systems, shared libraries"],
+        ["Custom Hook", "Smallest", "Highest", "Medium", "App-level logic reuse"],
+        ["Compound Component", "Medium", "High", "High", "Complex widgets with many sub-parts"],
+        ["Full Styled Component", "Largest", "Low", "Highest", "Internal apps with fixed design"]
       ]
     },
     {
@@ -187,7 +150,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "state-reducer-basics"
-  ]
+  "prerequisites": ["state-reducer-basics"]
 }

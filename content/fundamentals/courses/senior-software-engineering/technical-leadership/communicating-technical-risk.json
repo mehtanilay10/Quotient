@@ -8,11 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "risk",
-    "communication",
-    "stakeholders"
-  ],
+  "tags": ["risk", "communication", "stakeholders"],
   "blocks": [
     {
       "type": "paragraph",
@@ -99,10 +95,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "estimation-and-uncertainty",
-    "writing-technical-proposals"
-  ],
+  "relatedLessons": ["estimation-and-uncertainty", "writing-technical-proposals"],
   "furtherReading": [
     {
       "type": "article",

@@ -6,13 +6,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "redux",
-    "state",
-    "react",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["redux", "state", "react", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -110,27 +104,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Concern",
-          "Tool"
-        ],
+        "headers": ["Concern", "Tool"],
         "rows": [
-          [
-            "Client state",
-            "createSlice + react-redux"
-          ],
-          [
-            "Server state",
-            "RTK Query"
-          ],
-          [
-            "Async side effects",
-            "createAsyncThunk or RTK Query"
-          ],
-          [
-            "Debugging",
-            "Redux DevTools time travel"
-          ]
+          ["Client state", "createSlice + react-redux"],
+          ["Server state", "RTK Query"],
+          ["Async side effects", "createAsyncThunk or RTK Query"],
+          ["Debugging", "Redux DevTools time travel"]
         ]
       }
     },

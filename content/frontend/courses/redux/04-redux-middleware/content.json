@@ -9,12 +9,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedHours": 2.5,
-  "lessonSlugs": [
-    "middleware-basics",
-    "redux-thunk",
-    "redux-saga",
-    "middleware-composition"
-  ],
+  "lessonSlugs": ["middleware-basics", "redux-thunk", "redux-saga", "middleware-composition"],
   "tags": ["redux", "middleware", "async", "side-effects"],
   "prerequisites": ["redux-fundamentals", "redux-toolkit"],
   "whatYouLearn": [

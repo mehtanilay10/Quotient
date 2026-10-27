@@ -8,13 +8,7 @@
   "order": 30,
   "difficulty": "advanced",
   "estimatedMinutes": 28,
-  "tags": [
-    "dependency-injection",
-    "lifetimes",
-    "singleton",
-    "scoped",
-    "transient"
-  ],
+  "tags": ["dependency-injection", "lifetimes", "singleton", "scoped", "transient"],
   "blocks": [
     {
       "type": "paragraph",
@@ -108,27 +102,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Lifetime",
-          "Created per",
-          "Typical use"
-        ],
+        "headers": ["Lifetime", "Created per", "Typical use"],
         "rows": [
-          [
-            "Transient",
-            "Injection",
-            "Lightweight, stateless services"
-          ],
-          [
-            "Scoped",
-            "HTTP request",
-            "Database contexts, repositories"
-          ],
-          [
-            "Singleton",
-            "Application lifetime",
-            "Caches, configuration, logging"
-          ]
+          ["Transient", "Injection", "Lightweight, stateless services"],
+          ["Scoped", "HTTP request", "Database contexts, repositories"],
+          ["Singleton", "Application lifetime", "Caches, configuration, logging"]
         ]
       }
     },

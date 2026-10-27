@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "setup",
-    "dotnet",
-    "environment",
-    "visual-studio"
-  ],
+  "tags": ["csharp", "setup", "dotnet", "environment", "visual-studio"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,11 +109,7 @@
               "Large download size (~10 GB)",
               "Paid Professional/Enterprise tiers"
             ],
-            "tags": [
-              "windows",
-              "ide",
-              "enterprise"
-            ]
+            "tags": ["windows", "ide", "enterprise"]
           },
           {
             "title": "Visual Studio Code",
@@ -130,15 +120,8 @@
               "Lightweight and fast",
               "Large extension ecosystem"
             ],
-            "cons": [
-              "Less built-in than full Visual Studio",
-              "Requires extension setup"
-            ],
-            "tags": [
-              "cross-platform",
-              "free",
-              "editor"
-            ]
+            "cons": ["Less built-in than full Visual Studio", "Requires extension setup"],
+            "tags": ["cross-platform", "free", "editor"]
           },
           {
             "title": "JetBrains Rider",
@@ -149,15 +132,8 @@
               "Built-in database tools",
               "Consistent experience across OS"
             ],
-            "cons": [
-              "Paid (with free trial and student licenses)",
-              "Steeper learning curve"
-            ],
-            "tags": [
-              "cross-platform",
-              "premium",
-              "ide"
-            ]
+            "cons": ["Paid (with free trial and student licenses)", "Steeper learning curve"],
+            "tags": ["cross-platform", "premium", "ide"]
           }
         ]
       }

@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "ef-core",
-    "configuration",
-    "data-annotations",
-    "fluent-api"
-  ],
+  "tags": ["ef-core", "configuration", "data-annotations", "fluent-api"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,35 +62,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Attribute",
-          "Purpose"
-        ],
+        "headers": ["Attribute", "Purpose"],
         "rows": [
-          [
-            "[Table]",
-            "Specifies the database table name"
-          ],
-          [
-            "[Key]",
-            "Marks property as primary key"
-          ],
-          [
-            "[Column]",
-            "Configures column name and type"
-          ],
-          [
-            "[MaxLength]",
-            "Sets maximum string length"
-          ],
-          [
-            "[NotMapped]",
-            "Excludes property from mapping"
-          ],
-          [
-            "[ForeignKey]",
-            "Specifies foreign key property"
-          ]
+          ["[Table]", "Specifies the database table name"],
+          ["[Key]", "Marks property as primary key"],
+          ["[Column]", "Configures column name and type"],
+          ["[MaxLength]", "Sets maximum string length"],
+          ["[NotMapped]", "Excludes property from mapping"],
+          ["[ForeignKey]", "Specifies foreign key property"]
         ]
       }
     },
@@ -134,9 +108,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "dbcontext-in-entity-framework-core",
-    "fluent-api-in-entity-framework-core"
-  ],
+  "relatedLessons": ["dbcontext-in-entity-framework-core", "fluent-api-in-entity-framework-core"],
   "courseSlug": "ef-core"
 }

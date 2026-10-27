@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "channels",
-    "async",
-    "concurrency",
-    "producer-consumer"
-  ],
+  "tags": ["channels", "async", "concurrency", "producer-consumer"],
   "blocks": [
     {
       "type": "heading",

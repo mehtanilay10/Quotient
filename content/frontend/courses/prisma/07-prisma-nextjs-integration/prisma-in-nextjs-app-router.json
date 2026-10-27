@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "nextjs",
-    "app-router",
-    "server-components",
-    "rsc"
-  ],
+  "tags": ["prisma", "nextjs", "app-router", "server-components", "rsc"],
   "blocks": [
     {
       "type": "paragraph",
@@ -58,8 +52,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-with-server-actions",
-    "prisma-route-handlers"
-  ]
+  "relatedLessons": ["prisma-with-server-actions", "prisma-route-handlers"]
 }

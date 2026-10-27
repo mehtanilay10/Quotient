@@ -9,12 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 4,
   "icon": "🛡️",
-  "tags": [
-    "resilience",
-    "circuit-breaker",
-    "retry",
-    "bulkhead"
-  ],
+  "tags": ["resilience", "circuit-breaker", "retry", "bulkhead"],
   "lessonSlugs": [
     "resilience-fundamentals",
     "circuit-breaker-pattern",

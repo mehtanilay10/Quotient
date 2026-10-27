@@ -9,12 +9,7 @@
   "estimatedHours": 1,
   "icon": "🧩",
   "tags": ["oop", "fundamentals", "programming"],
-  "lessonSlugs": [
-    "access-modifiers",
-    "classes-objects",
-    "constructors",
-    "what-is-oop"
-  ],
+  "lessonSlugs": ["access-modifiers", "classes-objects", "constructors", "what-is-oop"],
   "whatYouLearn": [
     "Understand what OOP is and its benefits",
     "Learn about classes and objects",

@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "timestamps",
-    "timestamptz",
-    "timezone",
-    "interval",
-    "date-arithmetic"
-  ],
+  "tags": ["timestamps", "timestamptz", "timezone", "interval", "date-arithmetic"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,12 +109,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Storage",
-          "Stores",
-          "Use for"
-        ],
+        "headers": ["Type", "Storage", "Stores", "Use for"],
         "rows": [
           [
             "`TIMESTAMPTZ`",
@@ -134,24 +123,14 @@
             "A wall-clock reading, no zone",
             "Imported wall-clock data, \"local time at the store\""
           ],
-          [
-            "`DATE`",
-            "4 bytes",
-            "A calendar date",
-            "Birthdays, accounting periods"
-          ],
+          ["`DATE`", "4 bytes", "A calendar date", "Birthdays, accounting periods"],
           [
             "`TIME` / `TIMETZ`",
             "8/12 bytes",
             "Time of day",
             "Opening hours (and even then, a zone is usually relevant)"
           ],
-          [
-            "`INTERVAL`",
-            "16 bytes",
-            "Months, days, microseconds",
-            "Durations and offsets"
-          ]
+          ["`INTERVAL`", "16 bytes", "Months, days, microseconds", "Durations and offsets"]
         ]
       }
     },
@@ -209,8 +188,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "numeric-types",
-    "range-types"
-  ]
+  "relatedLessons": ["numeric-types", "range-types"]
 }

@@ -8,14 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "cognito",
-    "jwt",
-    "authentication",
-    "oauth",
-    "saml"
-  ],
+  "tags": ["aws", "cognito", "jwt", "authentication", "oauth", "saml"],
   "blocks": [
     {
       "type": "paragraph",

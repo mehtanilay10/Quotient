@@ -8,12 +8,7 @@
   "order": 15,
   "difficulty": "medium",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "greedy",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "greedy", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,15 +46,8 @@
           {
             "title": "Greedy Sum",
             "description": "Buy/sell at every upward slope",
-            "pros": [
-              "O(n) time",
-              "O(1) space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "O(1) space"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

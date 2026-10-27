@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "capacity",
-    "memory",
-    "estimation",
-    "caching"
-  ],
+  "tags": ["capacity", "memory", "estimation", "caching"],
   "blocks": [
     {
       "type": "paragraph",
@@ -44,37 +39,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Component",
-          "Baseline Memory",
-          "Per-Request Memory"
-        ],
+        "headers": ["Component", "Baseline Memory", "Per-Request Memory"],
         "rows": [
-          [
-            "Node.js runtime",
-            "80 MB",
-            "-"
-          ],
-          [
-            "Application code",
-            "40 MB",
-            "-"
-          ],
-          [
-            "Database connection pool",
-            "20 MB",
-            "-"
-          ],
-          [
-            "Request processing",
-            "-",
-            "0.5 MB"
-          ],
-          [
-            "Response caching",
-            "50 MB",
-            "-"
-          ]
+          ["Node.js runtime", "80 MB", "-"],
+          ["Application code", "40 MB", "-"],
+          ["Database connection pool", "20 MB", "-"],
+          ["Request processing", "-", "0.5 MB"],
+          ["Response caching", "50 MB", "-"]
         ]
       }
     },
@@ -127,35 +98,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Cache Key",
-          "Avg Size",
-          "Count",
-          "Total Data",
-          "With 20% Overhead"
-        ],
+        "headers": ["Cache Key", "Avg Size", "Count", "Total Data", "With 20% Overhead"],
         "rows": [
-          [
-            "User session",
-            "500 bytes",
-            "1 million",
-            "~477 MB",
-            "~572 MB"
-          ],
-          [
-            "Product catalog",
-            "2 KB",
-            "500,000",
-            "~953 MB",
-            "~1.1 GB"
-          ],
-          [
-            "API response",
-            "5 KB",
-            "200,000",
-            "~953 MB",
-            "~1.1 GB"
-          ]
+          ["User session", "500 bytes", "1 million", "~477 MB", "~572 MB"],
+          ["Product catalog", "2 KB", "500,000", "~953 MB", "~1.1 GB"],
+          ["API response", "5 KB", "200,000", "~953 MB", "~1.1 GB"]
         ]
       }
     },

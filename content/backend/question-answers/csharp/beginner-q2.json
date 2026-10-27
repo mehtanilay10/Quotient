@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 23,
-  "tags": [
-    "programming",
-    "variables",
-    "constants"
-  ],
+  "tags": ["programming", "variables", "constants"],
   "blocks": [
     {
       "type": "paragraph",
@@ -116,10 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "beginner-q1",
-    "beginner-q3"
-  ],
+  "relatedLessons": ["beginner-q1", "beginner-q3"],
   "furtherReading": [],
   "courseSlug": "question-answers",
   "technology": "C#"

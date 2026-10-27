@@ -7,14 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "records",
-    "pattern-matching",
-    "immutable",
-    "switch-expression",
-    "equality"
-  ],
+  "tags": ["csharp", "records", "pattern-matching", "immutable", "switch-expression", "equality"],
   "blocks": [
     {
       "type": "paragraph",
@@ -255,10 +248,7 @@
               "Designed for data, not complex behavior",
               "Inheritance has more rules than classes"
             ],
-            "tags": [
-              "data",
-              "immutable"
-            ]
+            "tags": ["data", "immutable"]
           },
           {
             "title": "Class",
@@ -273,10 +263,7 @@
               "Boilerplate for equality, ToString, etc.",
               "Reference equality is the default (surprising for data types)"
             ],
-            "tags": [
-              "behavior",
-              "oop"
-            ]
+            "tags": ["behavior", "oop"]
           }
         ]
       }

@@ -46,12 +46,36 @@
     {
       "type": "table",
       "data": {
-        "headers": ["Workflow", "Release frequency", "Branch complexity", "CI/CD required", "Best for"],
+        "headers": [
+          "Workflow",
+          "Release frequency",
+          "Branch complexity",
+          "CI/CD required",
+          "Best for"
+        ],
         "rows": [
-          ["Git Flow", "Scheduled (weekly+)", "High (5+ branch types)", "Medium", "Enterprise, release trains"],
+          [
+            "Git Flow",
+            "Scheduled (weekly+)",
+            "High (5+ branch types)",
+            "Medium",
+            "Enterprise, release trains"
+          ],
           ["GitHub Flow", "Continuous", "Low (main + features)", "High", "Web apps, SaaS"],
-          ["GitLab Flow", "Continuous to staged", "Medium (environments)", "Medium", "GitLab teams, regulated"],
-          ["Trunk-based", "Continuous", "Low (main + short branches)", "Very high", "CD-first, feature flags"]
+          [
+            "GitLab Flow",
+            "Continuous to staged",
+            "Medium (environments)",
+            "Medium",
+            "GitLab teams, regulated"
+          ],
+          [
+            "Trunk-based",
+            "Continuous",
+            "Low (main + short branches)",
+            "Very high",
+            "CD-first, feature flags"
+          ]
         ]
       }
     },
@@ -178,6 +202,10 @@
   ],
   "relatedLessons": ["git-flow", "trunk-based-development", "branching-strategies"],
   "furtherReading": [
-    { "title": "Choosing a Git Workflow", "url": "https://www.atlassian.com/git/tutorials/comparing-workflows", "type": "article" }
+    {
+      "title": "Choosing a Git Workflow",
+      "url": "https://www.atlassian.com/git/tutorials/comparing-workflows",
+      "type": "article"
+    }
   ]
 }

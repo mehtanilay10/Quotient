@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "copy",
-    "bulk-load",
-    "csv",
-    "performance",
-    "etl"
-  ],
+  "tags": ["copy", "bulk-load", "csv", "performance", "etl"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,12 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Command",
-          "Execution Location",
-          "File Location",
-          "Privilege Required"
-        ],
+        "headers": ["Command", "Execution Location", "File Location", "Privilege Required"],
         "rows": [
           [
             "`COPY ... FROM 'file.csv'`",
@@ -99,8 +88,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "insert",
-    "merge"
-  ]
+  "relatedLessons": ["insert", "merge"]
 }

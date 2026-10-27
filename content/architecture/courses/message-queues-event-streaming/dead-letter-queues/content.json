@@ -9,14 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "💀",
-  "tags": [
-    "dlq",
-    "retry",
-    "error-handling",
-    "monitoring",
-    "rabbitmq",
-    "sqs"
-  ],
+  "tags": ["dlq", "retry", "error-handling", "monitoring", "rabbitmq", "sqs"],
   "lessonSlugs": [
     "dlq-concepts",
     "dlq-retry-strategies",

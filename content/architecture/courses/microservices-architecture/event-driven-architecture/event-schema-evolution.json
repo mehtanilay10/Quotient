@@ -8,11 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "schema-evolution",
-    "versioning",
-    "avro"
-  ],
+  "tags": ["schema-evolution", "versioning", "avro"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,27 +56,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Description",
-          "Safe Change"
-        ],
+        "headers": ["Type", "Description", "Safe Change"],
         "rows": [
-          [
-            "Backward",
-            "New reads old",
-            "Add optional fields"
-          ],
-          [
-            "Forward",
-            "Old reads new",
-            "Remove optional fields"
-          ],
-          [
-            "Full",
-            "Both directions",
-            "Add/remove optional fields"
-          ]
+          ["Backward", "New reads old", "Add optional fields"],
+          ["Forward", "Old reads new", "Remove optional fields"],
+          ["Full", "Both directions", "Add/remove optional fields"]
         ]
       }
     },

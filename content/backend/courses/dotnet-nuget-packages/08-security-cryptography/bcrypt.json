@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "security",
-    "bcrypt",
-    "hashing",
-    "passwords"
-  ],
+  "tags": ["security", "bcrypt", "hashing", "passwords"],
   "blocks": [
     {
       "type": "heading",
@@ -142,8 +137,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "bcrypt-net",
-    "password-validator"
-  ]
+  "relatedLessons": ["bcrypt-net", "password-validator"]
 }

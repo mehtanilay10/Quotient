@@ -49,11 +49,26 @@
       "data": {
         "headers": ["Driver", "Use case", "Isolation", "Notes"],
         "rows": [
-          ["bridge", "Default for standalone containers", "Low", "All containers on the same bridge can reach each other"],
-          ["host", "Maximum performance", "None", "Container shares the host network stack; no network isolation"],
+          [
+            "bridge",
+            "Default for standalone containers",
+            "Low",
+            "All containers on the same bridge can reach each other"
+          ],
+          [
+            "host",
+            "Maximum performance",
+            "None",
+            "Container shares the host network stack; no network isolation"
+          ],
           ["none", "Disconnected containers", "Full", "Container has no network interfaces"],
           ["overlay", "Swarm services", "High", "Encrypted traffic between swarm nodes with VXLAN"],
-          ["macvlan", "Physical network assignment", "High", "Container gets its own MAC and IP on the LAN"]
+          [
+            "macvlan",
+            "Physical network assignment",
+            "High",
+            "Container gets its own MAC and IP on the LAN"
+          ]
         ]
       }
     },

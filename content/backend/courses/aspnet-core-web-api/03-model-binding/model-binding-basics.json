@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "model-binding",
-    "binding",
-    "parameters"
-  ],
+  "tags": ["web-api", "model-binding", "binding", "parameters"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,37 +62,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Attribute",
-          "Source",
-          "Typical Use"
-        ],
+        "headers": ["Attribute", "Source", "Typical Use"],
         "rows": [
-          [
-            "[FromRoute]",
-            "URL route parameters",
-            "Identifying a resource by ID"
-          ],
-          [
-            "[FromQuery]",
-            "Query string parameters",
-            "Filtering, sorting, pagination"
-          ],
-          [
-            "[FromBody]",
-            "Request body (JSON)",
-            "Creating or updating resources"
-          ],
-          [
-            "[FromHeader]",
-            "HTTP headers",
-            "Correlation IDs, API keys"
-          ],
-          [
-            "[FromForm]",
-            "Form data",
-            "HTML form posts"
-          ]
+          ["[FromRoute]", "URL route parameters", "Identifying a resource by ID"],
+          ["[FromQuery]", "Query string parameters", "Filtering, sorting, pagination"],
+          ["[FromBody]", "Request body (JSON)", "Creating or updating resources"],
+          ["[FromHeader]", "HTTP headers", "Correlation IDs, API keys"],
+          ["[FromForm]", "Form data", "HTML form posts"]
         ]
       }
     },
@@ -136,13 +107,8 @@
               "No extra attribute needed",
               "Works with default values"
             ],
-            "cons": [
-              "Cannot bind complex logic",
-              "Limited to primitive values"
-            ],
-            "tags": [
-              "default"
-            ]
+            "cons": ["Cannot bind complex logic", "Limited to primitive values"],
+            "tags": ["default"]
           },
           {
             "title": "Complex Types",

@@ -8,15 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "ai",
-    "bedrock",
-    "llm",
-    "generative-ai",
-    "rag",
-    "prompt-engineering"
-  ],
+  "tags": ["aws", "ai", "bedrock", "llm", "generative-ai", "rag", "prompt-engineering"],
   "blocks": [
     {
       "type": "paragraph",

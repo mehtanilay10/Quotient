@@ -6,12 +6,7 @@
   "description": "From realistic workloads to saturation curves: choosing tools, finding the knee point, and turning results into limits, autoscaling rules, and SLOs.",
   "order": 8,
   "difficulty": "intermediate",
-  "tags": [
-    "interview",
-    "performance",
-    "capacity",
-    "devops"
-  ],
+  "tags": ["interview", "performance", "capacity", "devops"],
   "blocks": [
     {
       "type": "paragraph",
@@ -121,11 +116,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "perf-q4",
-    "perf-q1",
-    "perf-q6"
-  ],
+  "relatedLessons": ["perf-q4", "perf-q1", "perf-q6"],
   "furtherReading": [
     {
       "title": "k6 documentation — Scenarios & load testing types",

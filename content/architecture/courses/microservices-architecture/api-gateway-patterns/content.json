@@ -9,12 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 4,
   "icon": "🚪",
-  "tags": [
-    "gateway",
-    "bff",
-    "rate-limiting",
-    "routing"
-  ],
+  "tags": ["gateway", "bff", "rate-limiting", "routing"],
   "lessonSlugs": [
     "api-gateway-fundamentals",
     "backend-for-frontend-bff",

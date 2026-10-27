@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "react",
-    "typescript",
-    "generics",
-    "forms"
-  ],
+  "tags": ["react", "typescript", "generics", "forms"],
   "blocks": [
     {
       "type": "paragraph",

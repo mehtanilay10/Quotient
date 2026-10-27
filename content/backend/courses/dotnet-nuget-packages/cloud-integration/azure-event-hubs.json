@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is Azure.Messaging.EventHubs?"}
+      "data": { "level": 2, "text": "What is Azure.Messaging.EventHubs?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`Azure.Messaging.EventHubs` is the modern SDK for Azure Event Hubs. It is designed for high-throughput event streaming scenarios like IoT telemetry, log aggregation, and real-time analytics."}
+      "data": {
+        "text": "`Azure.Messaging.EventHubs` is the modern SDK for Azure Event Hubs. It is designed for high-throughput event streaming scenarios like IoT telemetry, log aggregation, and real-time analytics."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Send Events"}
+      "data": { "level": 2, "text": "Send Events" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Use `EventHubProducerClient` to create and send batches of events to an Event Hub."}
+      "data": {
+        "text": "Use `EventHubProducerClient` to create and send batches of events to an Event Hub."
+      }
     },
     {
       "type": "example",

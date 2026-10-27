@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 22,
-  "tags": [
-    "rag",
-    "architecture",
-    "pipeline",
-    "retrieval"
-  ],
+  "tags": ["rag", "architecture", "pipeline", "retrieval"],
   "blocks": [
     {
       "type": "paragraph",
@@ -104,10 +99,7 @@
       "expectedOutcome": "You should have a concrete pipeline diagram and a list of design choices to test later with code."
     }
   ],
-  "relatedLessons": [
-    "chunking-and-embedding-documents",
-    "retrieval-and-ranking"
-  ],
+  "relatedLessons": ["chunking-and-embedding-documents", "retrieval-and-ranking"],
   "technology": null,
   "furtherReading": [
     {

@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { Component, ReactNode } from 'react';
-import { classifyError } from '@/lib/errorHandler';
-import { logger } from '@/lib/logger';
+import { Component, ReactNode } from "react";
+import { classifyError } from "@/lib/errorHandler";
+import { logger } from "@/lib/logger";
 
 interface BookmarkErrorBoundaryProps {
   children: ReactNode;
@@ -17,22 +17,33 @@ function bookmarkActions(error: Error): string[] {
   const message = error.message.toLowerCase();
   const actions: string[] = [];
 
-  if (message.includes('network') || message.includes('fetch') || message.includes('timeout')) {
-    actions.push('Check your internet connection and try again.');
+  if (message.includes("network") || message.includes("fetch") || message.includes("timeout")) {
+    actions.push("Check your internet connection and try again.");
   }
-  if (message.includes('unauthorized') || message.includes('authentication') || message.includes('jwt')) {
-    actions.push('Try signing out and signing in again.');
+  if (
+    message.includes("unauthorized") ||
+    message.includes("authentication") ||
+    message.includes("jwt")
+  ) {
+    actions.push("Try signing out and signing in again.");
   }
-  if (message.includes('database') || message.includes('prisma') || message.includes('connection')) {
-    actions.push('This is likely temporary. Retry in a moment.');
+  if (
+    message.includes("database") ||
+    message.includes("prisma") ||
+    message.includes("connection")
+  ) {
+    actions.push("This is likely temporary. Retry in a moment.");
   }
   if (actions.length === 0) {
-    actions.push('Try refreshing the page or returning to bookmarks later.');
+    actions.push("Try refreshing the page or returning to bookmarks later.");
   }
   return actions;
 }
 
-export class BookmarkErrorBoundary extends Component<BookmarkErrorBoundaryProps, BookmarkErrorBoundaryState> {
+export class BookmarkErrorBoundary extends Component<
+  BookmarkErrorBoundaryProps,
+  BookmarkErrorBoundaryState
+> {
   constructor(props: BookmarkErrorBoundaryProps) {
     super(props);
     this.state = { hasError: false, error: null };
@@ -43,23 +54,28 @@ export class BookmarkErrorBoundary extends Component<BookmarkErrorBoundaryProps,
   }
 
   componentDidCatch(error: Error, errorInfo: { componentStack: string }) {
-    logger.error('BookmarkErrorBoundary', 'BookmarkErrorBoundary caught an error', error, errorInfo);
+    logger.error(
+      "BookmarkErrorBoundary",
+      "BookmarkErrorBoundary caught an error",
+      error,
+      errorInfo
+    );
   }
 
   render() {
     if (this.state.hasError) {
-      const appError = classifyError(this.state.error ?? new Error('Unknown error'));
-      const actions = bookmarkActions(this.state.error ?? new Error('Unknown error'));
+      const appError = classifyError(this.state.error ?? new Error("Unknown error"));
+      const actions = bookmarkActions(this.state.error ?? new Error("Unknown error"));
 
       return (
         <div className="flex min-h-[200px] items-center justify-center rounded-xl border border-border bg-canvas p-6">
           <div className="text-center">
             <h2 className="text-lg font-semibold text-fg-default">Bookmarks unavailable</h2>
-            <p className="mt-2 text-sm text-fg-muted">
-              {appError.message}
-            </p>
+            <p className="mt-2 text-sm text-fg-muted">{appError.message}</p>
             <div className="mt-3 text-left">
-              <p className="text-xs font-medium text-fg-subtle uppercase tracking-wider">Suggested actions</p>
+              <p className="text-xs font-medium text-fg-subtle uppercase tracking-wider">
+                Suggested actions
+              </p>
               <ul className="mt-1 list-disc space-y-1 pl-5 text-xs text-fg-muted">
                 {actions.map((action, index) => (
                   <li key={index}>{action}</li>
@@ -76,7 +92,7 @@ export class BookmarkErrorBoundary extends Component<BookmarkErrorBoundaryProps,
               <button
                 onClick={() => {
                   // eslint-disable-next-line @next/next/no-location-assign-relative-destination
-                  window.location.href = '/user/bookmarks';
+                  window.location.href = "/user/bookmarks";
                 }}
                 className="rounded-lg border border-border bg-canvas px-4 py-2 text-sm font-medium text-fg-default hover:bg-canvas-subtle"
               >
@@ -84,8 +100,8 @@ export class BookmarkErrorBoundary extends Component<BookmarkErrorBoundaryProps,
               </button>
               <button
                 onClick={() => {
-                  const subject = encodeURIComponent(this.state.error?.message || 'Bookmark error');
-                  window.open(`mailto:support@example.com?subject=${subject}`, '_blank');
+                  const subject = encodeURIComponent(this.state.error?.message || "Bookmark error");
+                  window.open(`mailto:support@example.com?subject=${subject}`, "_blank");
                 }}
                 className="rounded-lg border border-border bg-canvas px-4 py-2 text-sm font-medium text-fg-default hover:bg-canvas-subtle"
               >

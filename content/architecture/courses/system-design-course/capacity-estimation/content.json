@@ -8,10 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 2,
   "icon": "📊",
-  "tags": [
-    "capacity",
-    "estimation"
-  ],
+  "tags": ["capacity", "estimation"],
   "lessonSlugs": [
     "qps-estimation",
     "storage-estimation",

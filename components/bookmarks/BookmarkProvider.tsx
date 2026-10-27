@@ -1,23 +1,26 @@
-'use client';
+"use client";
 
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useSession } from 'next-auth/react';
-import type { BookmarkState, BookmarkItem } from '@/types';
-import { logger } from '@/lib/logger';
-import { syncBookmarksToServer, syncUserData } from '@/lib/userSync';
-import { retryWithBackoff } from '@/lib/retry';
-import { apiFetch } from '@/lib/apiFetch';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useSession } from "next-auth/react";
+import type { BookmarkState, BookmarkItem } from "@/types";
+import { logger } from "@/lib/logger";
+import { syncBookmarksToServer, syncUserData } from "@/lib/userSync";
+import { retryWithBackoff } from "@/lib/retry";
+import { apiFetch } from "@/lib/apiFetch";
 
 const DEFAULT_BOOKMARKS: BookmarkState = { items: [] };
 
 async function fetchBookmarksFromServer(): Promise<BookmarkState | null> {
   try {
-    return await retryWithBackoff(async () => {
-      const res = await apiFetch('/api/bookmarks');
-      if (!res.ok) throw new Error(`Failed to fetch bookmarks: ${res.status}`);
-      const data = await res.json();
-      return { items: data.items || [] };
-    }, { maxRetries: 3, initialDelay: 500, maxDelay: 2000, jitter: true });
+    return await retryWithBackoff(
+      async () => {
+        const res = await apiFetch("/api/bookmarks");
+        if (!res.ok) throw new Error(`Failed to fetch bookmarks: ${res.status}`);
+        const data = await res.json();
+        return { items: data.items || [] };
+      },
+      { maxRetries: 3, initialDelay: 500, maxDelay: 2000, jitter: true }
+    );
   } catch {
     return null;
   }
@@ -25,18 +28,21 @@ async function fetchBookmarksFromServer(): Promise<BookmarkState | null> {
 
 async function syncBookmarksToServerFn(bookmarks: BookmarkState): Promise<void> {
   try {
-    await retryWithBackoff(async () => {
-      const res = await apiFetch('/api/bookmarks', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ items: bookmarks.items }),
-      });
-      if (!res.ok) {
-        throw new Error(`Failed to sync bookmarks: ${res.status}`);
-      }
-    }, { maxRetries: 3, initialDelay: 500, maxDelay: 2000, jitter: true });
+    await retryWithBackoff(
+      async () => {
+        const res = await apiFetch("/api/bookmarks", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ items: bookmarks.items }),
+        });
+        if (!res.ok) {
+          throw new Error(`Failed to sync bookmarks: ${res.status}`);
+        }
+      },
+      { maxRetries: 3, initialDelay: 500, maxDelay: 2000, jitter: true }
+    );
   } catch (err) {
-    logger.warn('useBookmarks', 'Failed to sync to server', err);
+    logger.warn("useBookmarks", "Failed to sync to server", err);
   }
 }
 
@@ -44,11 +50,11 @@ interface BookmarkContextValue {
   bookmarks: BookmarkState;
   setBookmarks: (updater: BookmarkState | ((prev: BookmarkState) => BookmarkState)) => void;
   resetBookmarks: () => void;
-  addBookmark: (item: Omit<BookmarkItem, 'id' | 'addedAt'>) => void;
+  addBookmark: (item: Omit<BookmarkItem, "id" | "addedAt">) => void;
   removeBookmark: (id: string) => void;
-  toggleBookmark: (item: Omit<BookmarkItem, 'id' | 'addedAt'>) => void;
-  isBookmarked: (slug: string, type: BookmarkItem['type']) => boolean;
-  getBookmarksByType: (type: BookmarkItem['type']) => BookmarkItem[];
+  toggleBookmark: (item: Omit<BookmarkItem, "id" | "addedAt">) => void;
+  isBookmarked: (slug: string, type: BookmarkItem["type"]) => boolean;
+  getBookmarksByType: (type: BookmarkItem["type"]) => BookmarkItem[];
   stats: {
     total: number;
     lessons: number;
@@ -66,15 +72,15 @@ const BookmarkContext = React.createContext<BookmarkContextValue | null>(null);
 export function useBookmarks(): BookmarkContextValue {
   const context = React.useContext(BookmarkContext);
   if (!context) {
-    throw new Error('useBookmarks must be used within a BookmarkProvider');
+    throw new Error("useBookmarks must be used within a BookmarkProvider");
   }
   return context;
 }
 
 export function BookmarkProvider({ children }: { children: React.ReactNode }) {
   const { data: session, status } = useSession();
-  const isLoggedIn = status === 'authenticated';
-  const isLoggedOut = status === 'unauthenticated';
+  const isLoggedIn = status === "authenticated";
+  const isLoggedOut = status === "unauthenticated";
 
   const [serverBookmarks, setServerBookmarks] = useState<BookmarkState | null>(null);
   const [mounted, setMounted] = useState(false);
@@ -146,7 +152,7 @@ export function BookmarkProvider({ children }: { children: React.ReactNode }) {
       if (!isLoggedIn) return;
       setServerBookmarks((prev) => {
         const current = prev ?? DEFAULT_BOOKMARKS;
-        if (typeof updater === 'function') {
+        if (typeof updater === "function") {
           return (updater as (prev: BookmarkState) => BookmarkState)(current);
         }
         return updater;
@@ -156,7 +162,7 @@ export function BookmarkProvider({ children }: { children: React.ReactNode }) {
   );
 
   const addBookmark = useCallback(
-    (item: Omit<BookmarkItem, 'id' | 'addedAt'>) => {
+    (item: Omit<BookmarkItem, "id" | "addedAt">) => {
       if (!isLoggedIn) return;
       setActiveBookmarks((prev) => {
         const exists = prev.items.some((b) => b.slug === item.slug && b.type === item.type);
@@ -184,11 +190,15 @@ export function BookmarkProvider({ children }: { children: React.ReactNode }) {
   );
 
   const toggleBookmark = useCallback(
-    (item: Omit<BookmarkItem, 'id' | 'addedAt'>) => {
+    (item: Omit<BookmarkItem, "id" | "addedAt">) => {
       if (!isLoggedIn) return;
-      const exists = activeBookmarks.items.some((b) => b.slug === item.slug && b.type === item.type);
+      const exists = activeBookmarks.items.some(
+        (b) => b.slug === item.slug && b.type === item.type
+      );
       if (exists) {
-        const existing = activeBookmarks.items.find((b) => b.slug === item.slug && b.type === item.type);
+        const existing = activeBookmarks.items.find(
+          (b) => b.slug === item.slug && b.type === item.type
+        );
         if (existing) {
           removeBookmark(existing.id);
         }
@@ -200,14 +210,14 @@ export function BookmarkProvider({ children }: { children: React.ReactNode }) {
   );
 
   const isBookmarked = useCallback(
-    (slug: string, type: BookmarkItem['type']): boolean => {
+    (slug: string, type: BookmarkItem["type"]): boolean => {
       return activeBookmarks.items.some((b) => b.slug === slug && b.type === type);
     },
     [activeBookmarks]
   );
 
   const getBookmarksByType = useCallback(
-    (type: BookmarkItem['type']): BookmarkItem[] => {
+    (type: BookmarkItem["type"]): BookmarkItem[] => {
       return activeBookmarks.items.filter((b) => b.type === type);
     },
     [activeBookmarks]
@@ -216,10 +226,10 @@ export function BookmarkProvider({ children }: { children: React.ReactNode }) {
   const stats = useMemo(() => {
     return {
       total: activeBookmarks.items.length,
-      lessons: activeBookmarks.items.filter((b) => b.type === 'lesson').length,
-      problems: activeBookmarks.items.filter((b) => b.type === 'problem').length,
-      questions: activeBookmarks.items.filter((b) => b.type === 'questionAnswer').length,
-      cheatsheet: activeBookmarks.items.filter((b) => b.type === 'cheatsheet').length,
+      lessons: activeBookmarks.items.filter((b) => b.type === "lesson").length,
+      problems: activeBookmarks.items.filter((b) => b.type === "problem").length,
+      questions: activeBookmarks.items.filter((b) => b.type === "questionAnswer").length,
+      cheatsheet: activeBookmarks.items.filter((b) => b.type === "cheatsheet").length,
     };
   }, [activeBookmarks]);
 
@@ -231,17 +241,20 @@ export function BookmarkProvider({ children }: { children: React.ReactNode }) {
     // The POST endpoint is insert-only (it can never delete rows), so a reset
     // must go through the DELETE endpoint or the bookmarks would reappear on
     // the next fetch.
-    retryWithBackoff(async () => {
-      const res = await apiFetch('/api/bookmarks', {
-        method: 'DELETE',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ all: true }),
-      });
-      if (!res.ok) {
-        throw new Error(`Failed to reset bookmarks: ${res.status}`);
-      }
-    }, { maxRetries: 3, initialDelay: 500, maxDelay: 2000, jitter: true }).catch((err) => {
-      logger.warn('BookmarkProvider', 'Failed to reset bookmarks on server', err);
+    retryWithBackoff(
+      async () => {
+        const res = await apiFetch("/api/bookmarks", {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ all: true }),
+        });
+        if (!res.ok) {
+          throw new Error(`Failed to reset bookmarks: ${res.status}`);
+        }
+      },
+      { maxRetries: 3, initialDelay: 500, maxDelay: 2000, jitter: true }
+    ).catch((err) => {
+      logger.warn("BookmarkProvider", "Failed to reset bookmarks on server", err);
     });
   }, [isLoggedIn]);
 

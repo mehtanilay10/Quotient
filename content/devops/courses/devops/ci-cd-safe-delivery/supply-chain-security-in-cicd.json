@@ -8,13 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "CI/CD",
-    "security",
-    "supply-chain",
-    "dependencies",
-    "signing"
-  ],
+  "tags": ["CI/CD", "security", "supply-chain", "dependencies", "signing"],
   "blocks": [
     {
       "type": "paragraph",

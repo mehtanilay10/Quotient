@@ -61,11 +61,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Task",
-          "What to ask AI",
-          "Tools needed"
-        ],
+        "headers": ["Task", "What to ask AI", "Tools needed"],
         "rows": [
           [
             "Advanced Excel/Sheets formula",
@@ -117,12 +113,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool",
-          "Best for",
-          "Where it runs",
-          "Free?"
-        ],
+        "headers": ["Tool", "Best for", "Where it runs", "Free?"],
         "rows": [
           [
             "ChatGPT (GPT-6.1 Sol)",
@@ -266,11 +257,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Limitation",
-          "What can go wrong",
-          "How to verify / mitigate"
-        ],
+        "headers": ["Limitation", "What can go wrong", "How to verify / mitigate"],
         "rows": [
           [
             "Subtle logic bugs",
@@ -398,11 +385,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "chatgpt-guide",
-    "model-comparison",
-    "what-is-tool-calling"
-  ],
+  "relatedLessons": ["chatgpt-guide", "model-comparison", "what-is-tool-calling"],
   "furtherReading": [
     {
       "title": "GitHub Copilot Documentation",

@@ -6,11 +6,7 @@
   "description": "Duplicate removal vs raw concatenation, the sort-based cost of DISTINCT, EXCEPT/INTERSECT, and column-matching rules.",
   "order": 15,
   "difficulty": "beginner",
-  "tags": [
-    "sql server",
-    "queries",
-    "beginner"
-  ],
+  "tags": ["sql server", "queries", "beginner"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sql-b02",
-    "sql-a01",
-    "delete-truncate-drop"
-  ],
+  "relatedLessons": ["sql-b02", "sql-a01", "delete-truncate-drop"],
   "furtherReading": [
     {
       "title": "UNION (Transact-SQL) — Microsoft Learn",

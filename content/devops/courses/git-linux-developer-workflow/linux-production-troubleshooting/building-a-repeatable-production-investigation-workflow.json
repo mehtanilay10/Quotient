@@ -136,7 +136,10 @@
       }
     }
   ],
-  "relatedLessons": ["reading-application-and-system-logs", "dns-and-network-troubleshooting-from-linux"],
+  "relatedLessons": [
+    "reading-application-and-system-logs",
+    "dns-and-network-troubleshooting-from-linux"
+  ],
   "furtherReading": [
     {
       "type": "article",

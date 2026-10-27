@@ -8,13 +8,7 @@
   "order": 7,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "limit",
-    "offset",
-    "fetch",
-    "pagination",
-    "keyset"
-  ],
+  "tags": ["limit", "offset", "fetch", "pagination", "keyset"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +66,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "order-by",
-    "select-statement"
-  ]
+  "relatedLessons": ["order-by", "select-statement"]
 }

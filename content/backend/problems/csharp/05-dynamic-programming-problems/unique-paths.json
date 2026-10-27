@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "medium",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "grid",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "grid", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,15 +46,8 @@
           {
             "title": "Combinatorics",
             "description": "C(m+n-2, m-1)",
-            "pros": [
-              "O(min(m,n))",
-              "O(1) space"
-            ],
-            "tags": [
-              "O(min(m,n)) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(min(m,n))", "O(1) space"],
+            "tags": ["O(min(m,n)) time", "O(1) space", "Recommended"]
           }
         ]
       }

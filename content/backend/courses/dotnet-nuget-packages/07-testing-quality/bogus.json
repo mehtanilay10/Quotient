@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "testing",
-    "bogus",
-    "fakedata",
-    "generator"
-  ],
+  "tags": ["testing", "bogus", "fakedata", "generator"],
   "blocks": [
     {
       "type": "heading",
@@ -122,9 +117,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "autofixture",
-    "fluent-assertions"
-  ],
+  "relatedLessons": ["autofixture", "fluent-assertions"],
   "courseSlug": "dotnet-nuget-packages"
 }

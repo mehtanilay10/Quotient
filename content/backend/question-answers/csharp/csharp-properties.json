@@ -6,10 +6,7 @@
   "description": "Understand properties for encapsulating data in C#.",
   "order": 16,
   "difficulty": "beginner",
-  "tags": [
-    "C#",
-    "beginner"
-  ],
+  "tags": ["C#", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

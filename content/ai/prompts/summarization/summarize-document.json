@@ -6,12 +6,7 @@
   "category": "summarization",
   "difficulty": "beginner",
   "template": "Please summarize the following document. Format your summary as:\n\n**1. One-sentence bottom line** (what this document is about in plain language)\n\n**2. Key points** (3-5 bullet points of the most important information)\n\n**3. Actionable takeaways** (What should I do or think differently based on this? 2-3 items)\n\n**4. What I can skip** (Parts of the document that are less relevant for a general reader)\n\n---\n[PASTE DOCUMENT HERE]\n---",
-  "tags": [
-    "summarization",
-    "reading",
-    "productivity",
-    "documents"
-  ],
+  "tags": ["summarization", "reading", "productivity", "documents"],
   "tips": [
     "Add \"I am [YOUR ROLE]\" before the document for role-specific summaries",
     "Ask \"what questions should I ask the author of this document?\" for critical reading",

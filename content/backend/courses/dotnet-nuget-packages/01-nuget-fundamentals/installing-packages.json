@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "nuget",
-    "installation",
-    "cli",
-    "visual-studio"
-  ],
+  "tags": ["nuget", "installation", "cli", "visual-studio"],
   "blocks": [
     {
       "type": "heading",
@@ -106,9 +101,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-nuget",
-    "creating-packages"
-  ],
+  "relatedLessons": ["what-is-nuget", "creating-packages"],
   "furtherReading": []
 }

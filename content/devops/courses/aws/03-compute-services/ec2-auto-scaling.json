@@ -8,14 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "ec2",
-    "auto-scaling",
-    "scaling-policies",
-    "health-checks",
-    "placement-groups"
-  ],
+  "tags": ["aws", "ec2", "auto-scaling", "scaling-policies", "health-checks", "placement-groups"],
   "blocks": [
     {
       "type": "heading",

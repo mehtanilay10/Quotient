@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "dlq",
-    "dead-letter-queue",
-    "message-queue",
-    "reliability",
-    "rabbitmq",
-    "sqs"
-  ],
+  "tags": ["dlq", "dead-letter-queue", "message-queue", "reliability", "rabbitmq", "sqs"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,19 +53,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "RabbitMQ",
-          "AWS SQS",
-          "Azure Service Bus"
-        ],
+        "headers": ["Aspect", "RabbitMQ", "AWS SQS", "Azure Service Bus"],
         "rows": [
-          [
-            "DLQ mechanism",
-            "Dead-letter exchange (DLX)",
-            "Redrive policy",
-            "Dead-letter subqueue"
-          ],
+          ["DLQ mechanism", "Dead-letter exchange (DLX)", "Redrive policy", "Dead-letter subqueue"],
           [
             "Trigger conditions",
             "Reject/nack, TTL, max length",

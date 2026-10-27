@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "kafka",
-    "exactly-once",
-    "idempotence",
-    "transactions",
-    "semantics"
-  ],
+  "tags": ["kafka", "exactly-once", "idempotence", "transactions", "semantics"],
   "blocks": [
     {
       "type": "paragraph",

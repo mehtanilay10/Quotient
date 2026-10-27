@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "custom-hooks",
-    "state-sharing",
-    "refs",
-    "context",
-    "external-stores"
-  ],
+  "tags": ["custom-hooks", "state-sharing", "refs", "context", "external-stores"],
   "blocks": [
     {
       "type": "paragraph",
@@ -119,56 +113,23 @@
           {
             "title": "Refs",
             "description": "Mutable containers that persist across renders without causing re-renders.",
-            "pros": [
-              "No re-render overhead",
-              "Simple API",
-              "Works anywhere"
-            ],
-            "cons": [
-              "Not reactive by default",
-              "Easy to misuse",
-              "No devtools support"
-            ],
-            "tags": [
-              "lightweight",
-              "mutable"
-            ]
+            "pros": ["No re-render overhead", "Simple API", "Works anywhere"],
+            "cons": ["Not reactive by default", "Easy to misuse", "No devtools support"],
+            "tags": ["lightweight", "mutable"]
           },
           {
             "title": "Context",
             "description": "Dependency injection that propagates changes through the tree.",
-            "pros": [
-              "React-native",
-              "Great DX",
-              "Type-safe"
-            ],
-            "cons": [
-              "Can cause re-renders",
-              "Provider hell",
-              "Harder to test in isolation"
-            ],
-            "tags": [
-              "react",
-              "tree-based"
-            ]
+            "pros": ["React-native", "Great DX", "Type-safe"],
+            "cons": ["Can cause re-renders", "Provider hell", "Harder to test in isolation"],
+            "tags": ["react", "tree-based"]
           },
           {
             "title": "External Store",
             "description": "Subscribe to external data sources with useSyncExternalStore.",
-            "pros": [
-              "No re-render overhead",
-              "Concurrent-safe",
-              "Works outside React"
-            ],
-            "cons": [
-              "More boilerplate",
-              "Manual subscription cleanup",
-              "Less common pattern"
-            ],
-            "tags": [
-              "advanced",
-              "concurrent"
-            ]
+            "pros": ["No re-render overhead", "Concurrent-safe", "Works outside React"],
+            "cons": ["More boilerplate", "Manual subscription cleanup", "Less common pattern"],
+            "tags": ["advanced", "concurrent"]
           }
         ]
       }

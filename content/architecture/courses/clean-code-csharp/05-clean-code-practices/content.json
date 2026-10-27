@@ -9,12 +9,7 @@
   "estimatedHours": 1,
   "icon": "✨",
   "tags": ["clean-code", "refactoring", "csharp"],
-  "lessonSlugs": [
-    "code-organization",
-    "error-handling",
-    "functions-methods",
-    "meaningful-names"
-  ],
+  "lessonSlugs": ["code-organization", "error-handling", "functions-methods", "meaningful-names"],
   "whatYouLearn": [
     "Write self-documenting code",
     "Apply consistent naming conventions",

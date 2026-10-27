@@ -92,36 +92,21 @@
               "Application Map view",
               "Works across languages"
             ],
-            "cons": [
-              "Requires instrumentation",
-              "Sampling can hide rare calls"
-            ],
+            "cons": ["Requires instrumentation", "Sampling can hide rare calls"],
             "tags": ["Latency", "Recommended"]
           },
           {
             "title": "Azure Monitor Metrics",
             "description": "Numeric time series at 1-minute granularity",
-            "pros": [
-              "Cheap and fast",
-              "Great for CPU, memory, RPS"
-            ],
-            "cons": [
-              "No request-level detail",
-              "No payload context"
-            ],
+            "pros": ["Cheap and fast", "Great for CPU, memory, RPS"],
+            "cons": ["No request-level detail", "No payload context"],
             "tags": ["Infrastructure dashboards"]
           },
           {
             "title": "Raw application logs",
             "description": "Text emitted by your service",
-            "pros": [
-              "Zero extra cost",
-              "Full control of format"
-            ],
-            "cons": [
-              "No cross-service correlation",
-              "Cannot attribute time to a dependency"
-            ],
+            "pros": ["Zero extra cost", "Full control of format"],
+            "cons": ["No cross-service correlation", "Cannot attribute time to a dependency"],
             "tags": ["Error text only"]
           }
         ]

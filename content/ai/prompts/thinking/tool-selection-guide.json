@@ -6,12 +6,7 @@
   "category": "thinking",
   "difficulty": "beginner",
   "template": "I want to use AI to [DESCRIBE WHAT YOU WANT TO ACCOMPLISH].\n\nMy situation:\n- Technical comfort level: [BEGINNER / INTERMEDIATE / ADVANCED]\n- Budget: [FREE / WILLING TO PAY UP TO $X/month]\n- Platform: [WEB / MAC / WINDOWS / MOBILE]\n- Privacy concern: [LOW — happy to use cloud tools / HIGH — need local or private options]\n- Existing tools I already use: [LIST ANY RELEVANT TOOLS]\n\nPlease recommend:\n1. **Best fit tool** (with specific reason why it matches my situation)\n2. **How to get started** (the quickest path to a working setup)\n3. **Alternatives to consider** (1-2 options if the best fit does not work out)\n4. **What to watch out for** (limitations or gotchas for my use case)",
-  "tags": [
-    "tools",
-    "selection",
-    "recommendations",
-    "getting-started"
-  ],
+  "tags": ["tools", "selection", "recommendations", "getting-started"],
   "tips": [
     "Be specific about the task — \"AI for writing\" is too vague; \"AI to write weekly product updates\" is better",
     "Run this prompt on multiple AI tools and compare the recommendations",

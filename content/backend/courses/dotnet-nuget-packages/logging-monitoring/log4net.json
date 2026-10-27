@@ -8,10 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "logging",
-    "log4net"
-  ],
+  "tags": ["logging", "log4net"],
   "blocks": [
     {
       "type": "heading",

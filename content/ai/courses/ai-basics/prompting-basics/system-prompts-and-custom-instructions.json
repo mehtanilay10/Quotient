@@ -7,17 +7,8 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "system-prompt",
-    "custom-instructions",
-    "persistent-context",
-    "personalization"
-  ],
-  "relatedGlossaryTerms": [
-    "system-prompt",
-    "prompt",
-    "context-window"
-  ],
+  "tags": ["system-prompt", "custom-instructions", "persistent-context", "personalization"],
+  "relatedGlossaryTerms": ["system-prompt", "prompt", "context-window"],
   "blocks": [
     {
       "type": "paragraph",
@@ -104,11 +95,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Category",
-          "Example content",
-          "Why it helps"
-        ],
+        "headers": ["Category", "Example content", "Why it helps"],
         "rows": [
           [
             "Your role and context",
@@ -182,35 +169,20 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Instruction layer",
-          "Purpose",
-          "Governance practice"
-        ],
+        "headers": ["Instruction layer", "Purpose", "Governance practice"],
         "rows": [
-          [
-            "System layer",
-            "Global behavior and guardrails",
-            "Version and review quarterly"
-          ],
+          ["System layer", "Global behavior and guardrails", "Version and review quarterly"],
           [
             "Task template layer",
             "Workflow-specific execution rules",
             "Maintain owners per template"
           ],
-          [
-            "Session/user layer",
-            "Context for a single run",
-            "Keep concise and disposable"
-          ]
+          ["Session/user layer", "Context for a single run", "Keep concise and disposable"]
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "anatomy-of-a-good-prompt",
-    "prompt-patterns"
-  ],
+  "relatedLessons": ["anatomy-of-a-good-prompt", "prompt-patterns"],
   "furtherReading": [
     {
       "title": "System Messages — OpenAI Docs",

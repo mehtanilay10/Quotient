@@ -6,12 +6,7 @@
   "category": "productivity",
   "difficulty": "beginner",
   "template": "I have rough notes from [CONTEXT — e.g., \"a team meeting\", \"a conference talk\", \"a research session\"].\n\nPlease transform them into:\n\n**Summary** (2-3 sentences — the key takeaway)\n**Key Points** (bullet list of the most important facts, decisions, or ideas)\n**Action Items** (anything that requires follow-up, with [OWNER] and [DEADLINE] placeholders if not specified)\n**Open Questions** (anything that needs clarification or follow-up research)\n\n---\n[PASTE RAW NOTES HERE]\n---",
-  "tags": [
-    "notes",
-    "productivity",
-    "meetings",
-    "organization"
-  ],
+  "tags": ["notes", "productivity", "meetings", "organization"],
   "tips": [
     "Add \"I am [YOUR ROLE] and this was for [AUDIENCE]\" to get role-appropriate summaries",
     "Follow up: \"Turn the action items into a formatted task list\"",

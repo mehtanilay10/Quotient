@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "context",
-    "state",
-    "prop-drilling"
-  ],
+  "tags": ["react", "context", "state", "prop-drilling"],
   "blocks": [
     {
       "type": "paragraph",

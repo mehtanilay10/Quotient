@@ -5,10 +5,7 @@
   "title": "Advanced Features",
   "description": "Explore advanced features.",
   "order": 5,
-  "tags": [
-    "ef-core",
-    "advanced-features"
-  ],
+  "tags": ["ef-core", "advanced-features"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "testing",
-    "fluentassertions",
-    "assertions"
-  ],
+  "tags": ["testing", "fluentassertions", "assertions"],
   "blocks": [
     {
       "type": "heading",
@@ -121,9 +117,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "xunit",
-    "moq"
-  ],
+  "relatedLessons": ["xunit", "moq"],
   "courseSlug": "dotnet-nuget-packages"
 }

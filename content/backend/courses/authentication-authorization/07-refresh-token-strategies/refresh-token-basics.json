@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 33,
-  "tags": [
-    "refresh-tokens",
-    "access-tokens",
-    "jwt",
-    "security"
-  ],
+  "tags": ["refresh-tokens", "access-tokens", "jwt", "security"],
   "blocks": [
     {
       "type": "heading",
@@ -121,11 +116,7 @@
       "takeaway": "Refresh tokens are the backbone of seamless yet secure authentication. Understanding their role, risks, and proper implementation is essential for production applications."
     }
   ],
-  "relatedLessons": [
-    "jwt-overview"
-  ],
+  "relatedLessons": ["jwt-overview"],
   "furtherReading": [],
-  "prerequisites": [
-    "jwt-overview"
-  ]
+  "prerequisites": ["jwt-overview"]
 }

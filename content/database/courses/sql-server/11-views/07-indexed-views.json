@@ -7,12 +7,7 @@
   "order": 7,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "indexed-view",
-    "materialized-view",
-    "schembinding",
-    "performance"
-  ],
+  "tags": ["indexed-view", "materialized-view", "schembinding", "performance"],
   "blocks": [
     {
       "type": "heading",

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useCallback } from 'react';
-import { logger } from '@/lib/logger';
+import { useState, useEffect, useCallback } from "react";
+import { logger } from "@/lib/logger";
 
 /**
  * A typesafe localStorage hook with SSR safety.
@@ -25,7 +25,7 @@ export function useLocalStorage<T>(
         setStoredValue(JSON.parse(item) as T);
       }
     } catch (err) {
-      logger.warn('useLocalStorage', `Failed to read key "${key}"`, err);
+      logger.warn("useLocalStorage", `Failed to read key "${key}"`, err);
     }
   }, [key]);
 
@@ -33,12 +33,12 @@ export function useLocalStorage<T>(
     (value: T | ((prev: T) => T)) => {
       try {
         setStoredValue((prev) => {
-          const next = typeof value === 'function' ? (value as (p: T) => T)(prev) : value;
+          const next = typeof value === "function" ? (value as (p: T) => T)(prev) : value;
           window.localStorage.setItem(key, JSON.stringify(next));
           return next;
         });
       } catch (err) {
-        logger.warn('useLocalStorage', `Failed to write key "${key}"`, err);
+        logger.warn("useLocalStorage", `Failed to write key "${key}"`, err);
       }
     },
     [key]
@@ -49,7 +49,7 @@ export function useLocalStorage<T>(
       window.localStorage.removeItem(key);
       setStoredValue(initialValue);
     } catch (err) {
-      logger.warn('useLocalStorage', `Failed to remove key "${key}"`, err);
+      logger.warn("useLocalStorage", `Failed to remove key "${key}"`, err);
     }
   }, [key, initialValue]);
 

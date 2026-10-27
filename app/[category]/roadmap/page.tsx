@@ -1,12 +1,17 @@
-import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { ArrowRight, Clock, Flag } from 'lucide-react';
-import { SectionHeader } from '@/components/sections/SectionHeader';
-import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
-import { getCategoryMeta, getRoadmapByCategory, getRoadmaps, resolveRoadmapStep } from '@/lib/content';
-import { buildMetadata } from '@/lib/seo';
-import type { ResolvedRoadmapStep } from '@/types';
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight, Clock, Flag } from "lucide-react";
+import { SectionHeader } from "@/components/sections/SectionHeader";
+import { DifficultyBadge } from "@/components/ui/DifficultyBadge";
+import {
+  getCategoryMeta,
+  getRoadmapByCategory,
+  getRoadmaps,
+  resolveRoadmapStep,
+} from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
+import type { ResolvedRoadmapStep } from "@/types";
 
 interface Params {
   params: Promise<{ category: string }>;
@@ -45,18 +50,12 @@ function StepCard({ step, index }: { step: ResolvedRoadmapStep; index: number })
           <span className="text-sm font-semibold text-fg-default group-hover:text-accent-fg transition-colors">
             {step.title}
           </span>
-          {step.meta && (
-            <span className="shrink-0 text-xs text-fg-subtle">{step.meta}</span>
-          )}
+          {step.meta && <span className="shrink-0 text-xs text-fg-subtle">{step.meta}</span>}
         </span>
         {step.description && (
-          <span className="mt-1 block line-clamp-2 text-sm text-fg-muted">
-            {step.description}
-          </span>
+          <span className="mt-1 block line-clamp-2 text-sm text-fg-muted">{step.description}</span>
         )}
-        {step.note && (
-          <span className="mt-1 block text-xs text-fg-subtle italic">{step.note}</span>
-        )}
+        {step.note && <span className="mt-1 block text-xs text-fg-subtle italic">{step.note}</span>}
       </span>
       <ArrowRight
         className="mt-1 h-3.5 w-3.5 shrink-0 text-fg-subtle transition-transform group-hover:translate-x-0.5"
@@ -124,9 +123,7 @@ export default async function CategoryRoadmapPage({ params }: Params) {
                 </span>
                 <div className="min-w-0 flex-1 pt-1">
                   <div className="flex flex-wrap items-center gap-2">
-                    <h2 className="text-lg font-bold text-fg-default sm:text-xl">
-                      {stage.title}
-                    </h2>
+                    <h2 className="text-lg font-bold text-fg-default sm:text-xl">{stage.title}</h2>
                     <DifficultyBadge difficulty={stage.level} />
                     {stage.duration && (
                       <span className="flex items-center gap-1 text-xs text-fg-subtle">
@@ -141,7 +138,11 @@ export default async function CategoryRoadmapPage({ params }: Params) {
 
               <div className="mt-4 grid gap-3 pl-[3.25rem] sm:pl-[4.25rem]">
                 {steps.map((step, stepIndex) => (
-                  <StepCard key={`${step.kind}-${step.href}-${stepIndex}`} step={step} index={stepIndex + 1} />
+                  <StepCard
+                    key={`${step.kind}-${step.href}-${stepIndex}`}
+                    step={step}
+                    index={stepIndex + 1}
+                  />
                 ))}
               </div>
 
@@ -151,7 +152,10 @@ export default async function CategoryRoadmapPage({ params }: Params) {
                   className="mt-4 ml-[3.25rem] rounded-lg border border-border bg-accent-subtle/40 p-3 sm:ml-[4.25rem]"
                 >
                   <p className="flex items-start gap-2 text-sm text-fg-default">
-                    <Flag className="mt-0.5 h-3.5 w-3.5 shrink-0 text-accent-fg" aria-hidden="true" />
+                    <Flag
+                      className="mt-0.5 h-3.5 w-3.5 shrink-0 text-accent-fg"
+                      aria-hidden="true"
+                    />
                     <span>
                       <span className="font-semibold">Milestone: </span>
                       {stage.milestone}

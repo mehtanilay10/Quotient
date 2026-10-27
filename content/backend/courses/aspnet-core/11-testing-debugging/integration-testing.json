@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "integration",
-    "testserver",
-    "webapplicationfactory"
-  ],
+  "tags": ["integration", "testserver", "webapplicationfactory"],
   "blocks": [
     {
       "type": "paragraph",
@@ -197,10 +193,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "testing-fundamentals",
-    "unit-testing-controllers"
-  ],
+  "relatedLessons": ["testing-fundamentals", "unit-testing-controllers"],
   "technology": null,
   "furtherReading": [
     {

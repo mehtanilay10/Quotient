@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "razor",
-    "views",
-    "syntax"
-  ],
+  "tags": ["aspnet-core", "razor", "views", "syntax"],
   "blocks": [
     {
       "type": "heading",
@@ -96,34 +91,15 @@
               "IntelliSense in Visual Studio",
               "Auto-escapes HTML"
             ],
-            "cons": [
-              "Complex logic can clutter views",
-              "Hard to debug inline C#"
-            ],
-            "tags": [
-              "@model",
-              "@if",
-              "@foreach",
-              "@:"
-            ]
+            "cons": ["Complex logic can clutter views", "Hard to debug inline C#"],
+            "tags": ["@model", "@if", "@foreach", "@:"]
           },
           {
             "title": "Razor Partial Views",
             "description": "Reusable view fragments",
-            "pros": [
-              "Promotes DRY",
-              "Easy to maintain",
-              "Supports model binding"
-            ],
-            "cons": [
-              "Must pass model explicitly",
-              "Partial views don't have separate lifecycle"
-            ],
-            "tags": [
-              "<partial>",
-              "Html.PartialAsync",
-              "reusable"
-            ]
+            "pros": ["Promotes DRY", "Easy to maintain", "Supports model binding"],
+            "cons": ["Must pass model explicitly", "Partial views don't have separate lifecycle"],
+            "tags": ["<partial>", "Html.PartialAsync", "reusable"]
           }
         ]
       }

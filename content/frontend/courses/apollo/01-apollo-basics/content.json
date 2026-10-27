@@ -6,12 +6,7 @@
   "title": "Apollo Basics",
   "description": "Learn the fundamentals of Apollo Client and GraphQL.",
   "order": 1,
-  "lessonSlugs": [
-    "what-is-apollo",
-    "setup-client",
-    "first-query",
-    "graphql-basics"
-  ],
+  "lessonSlugs": ["what-is-apollo", "setup-client", "first-query", "graphql-basics"],
   "tags": [],
   "difficulty": "beginner",
   "estimatedHours": 1

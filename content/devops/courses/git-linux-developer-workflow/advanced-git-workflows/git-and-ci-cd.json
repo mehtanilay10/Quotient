@@ -96,11 +96,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "hooks-and-automation",
-    "git-best-practices",
-    "enterprise-git"
-  ],
+  "relatedLessons": ["hooks-and-automation", "git-best-practices", "enterprise-git"],
   "furtherReading": [
     { "title": "GitHub Actions documentation", "url": "https://docs.github.com/en/actions" },
     { "title": "GitLab CI/CD documentation", "url": "https://docs.gitlab.com/ee/ci/" }

@@ -8,11 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "leadership",
-    "influence",
-    "collaboration"
-  ],
+  "tags": ["leadership", "influence", "collaboration"],
   "blocks": [
     {
       "type": "paragraph",
@@ -100,10 +96,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "handling-technical-disagreement",
-    "working-with-product-and-qa"
-  ],
+  "relatedLessons": ["handling-technical-disagreement", "working-with-product-and-qa"],
   "furtherReading": [
     {
       "type": "article",

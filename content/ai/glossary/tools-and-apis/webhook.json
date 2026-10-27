@@ -6,11 +6,7 @@
   "fullDefinition": "A webhook is a reverse API call \u2014 instead of an application polling for updates, it receives an automated HTTP POST request when a specific event occurs. The sending application makes an HTTP request to a URL configured by the receiving application, delivering event data in real time. Webhooks are widely used in AI workflows for event-driven automation: an AI agent can subscribe to webhooks from tools like Slack, GitHub, or Stripe to take action immediately when something happens. They enable responsive, push-based integrations that are more efficient than periodic polling.",
   "category": "tools-and-apis",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "api",
-    "plugin",
-    "mcp"
-  ],
+  "relatedTerms": ["api", "plugin", "mcp"],
   "learnMoreSlug": "what-is-mcp",
   "examples": [
     "A GitHub webhook triggering an AI code review when a pull request is opened",

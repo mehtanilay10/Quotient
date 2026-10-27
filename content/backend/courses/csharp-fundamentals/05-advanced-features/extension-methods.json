@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "extension-methods",
-    "static",
-    "LINQ"
-  ],
+  "tags": ["csharp", "extension-methods", "static", "LINQ"],
   "blocks": [
     {
       "type": "paragraph",
@@ -240,53 +235,31 @@
           {
             "title": "Inheritance",
             "description": "Create a derived class to add or override behavior.",
-            "pros": [
-              "Strongly typed",
-              "Access to protected members"
-            ],
+            "pros": ["Strongly typed", "Access to protected members"],
             "cons": [
               "Requires inheritance support",
               "Single inheritance limit",
               "Cannot extend sealed classes"
             ],
-            "tags": [
-              "oop",
-              "inheritance"
-            ]
+            "tags": ["oop", "inheritance"]
           },
           {
             "title": "Composition",
             "description": "Wrap the original type and delegate calls to it.",
-            "pros": [
-              "Works with any type",
-              "Full control over behavior"
-            ],
-            "cons": [
-              "More boilerplate",
-              "Not transparent to callers"
-            ],
-            "tags": [
-              "wrapper",
-              "delegation"
-            ]
+            "pros": ["Works with any type", "Full control over behavior"],
+            "cons": ["More boilerplate", "Not transparent to callers"],
+            "tags": ["wrapper", "delegation"]
           },
           {
             "title": "Extension Methods",
             "description": "Add static methods that appear as instance methods.",
-            "pros": [
-              "No wrapper needed",
-              "Works on sealed types",
-              "Clean call syntax"
-            ],
+            "pros": ["No wrapper needed", "Works on sealed types", "Clean call syntax"],
             "cons": [
               "Cannot access private state",
               "Static-only behavior",
               "Namespace imports required"
             ],
-            "tags": [
-              "static",
-              "syntactic-sugar"
-            ]
+            "tags": ["static", "syntactic-sugar"]
           }
         ]
       }

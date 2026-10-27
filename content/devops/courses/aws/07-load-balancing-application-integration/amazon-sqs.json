@@ -38,7 +38,11 @@
           ["Ordering", "Best-effort ordering", "Strict first-in-first-out ordering"],
           ["Duplicates", "Occasional duplicates possible", "No duplicates guaranteed"],
           ["Pricing", "Cheaper", "Slightly more expensive"],
-          ["Use case", "High-throughput, order not critical", "Financial transactions, order matters"]
+          [
+            "Use case",
+            "High-throughput, order not critical",
+            "Financial transactions, order matters"
+          ]
         ]
       }
     },

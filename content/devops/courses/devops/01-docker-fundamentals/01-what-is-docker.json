@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "docker",
-    "containers",
-    "introduction"
-  ],
+  "tags": ["docker", "containers", "introduction"],
   "blocks": [
     {
       "type": "heading",
@@ -78,29 +74,18 @@
           {
             "title": "Containers",
             "description": "Share host OS kernel; start in seconds; use less memory and disk.",
-            "tags": [
-              "Lightweight",
-              "Fast startup",
-              "Shared kernel"
-            ],
+            "tags": ["Lightweight", "Fast startup", "Shared kernel"],
             "pros": [
               "Higher density — many containers per host",
               "Near-native performance",
               "Smaller image sizes"
             ],
-            "cons": [
-              "Linux/Windows kernel constraints",
-              "Less isolation than VMs"
-            ]
+            "cons": ["Linux/Windows kernel constraints", "Less isolation than VMs"]
           },
           {
             "title": "Virtual Machines",
             "description": "Each VM bundles a full guest OS, offering stronger isolation.",
-            "tags": [
-              "Full OS",
-              "Strong isolation",
-              "Slower startup"
-            ],
+            "tags": ["Full OS", "Strong isolation", "Slower startup"],
             "pros": [
               "Complete OS isolation",
               "Can run different guest OSes",
@@ -186,35 +171,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Command",
-          "Description"
-        ],
+        "headers": ["Command", "Description"],
         "rows": [
-          [
-            "docker run",
-            "Create and start a new container from an image"
-          ],
-          [
-            "docker ps",
-            "List running containers"
-          ],
-          [
-            "docker images",
-            "List local images"
-          ],
-          [
-            "docker build",
-            "Build an image from a Dockerfile"
-          ],
-          [
-            "docker exec",
-            "Run a command inside a running container"
-          ],
-          [
-            "docker compose up",
-            "Start all services defined in a compose file"
-          ]
+          ["docker run", "Create and start a new container from an image"],
+          ["docker ps", "List running containers"],
+          ["docker images", "List local images"],
+          ["docker build", "Build an image from a Dockerfile"],
+          ["docker exec", "Run a command inside a running container"],
+          ["docker compose up", "Start all services defined in a compose file"]
         ]
       }
     },

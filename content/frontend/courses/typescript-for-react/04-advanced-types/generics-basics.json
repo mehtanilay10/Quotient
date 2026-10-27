@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 33,
-  "tags": [
-    "typescript",
-    "generics",
-    "types",
-    "reusable"
-  ],
+  "tags": ["typescript", "generics", "types", "reusable"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,32 +82,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Syntax",
-          "Use Case"
-        ],
+        "headers": ["Pattern", "Syntax", "Use Case"],
         "rows": [
-          [
-            "Generic function",
-            "function fn<T>(arg: T)",
-            "Reusable functions"
-          ],
-          [
-            "Generic interface",
-            "interface Box<T>",
-            "Typed containers"
-          ],
-          [
-            "Generic class",
-            "class Stack<T>",
-            "Data structures"
-          ],
-          [
-            "Generic type alias",
-            "type Result<T> = { data: T }",
-            "Quick wrappers"
-          ]
+          ["Generic function", "function fn<T>(arg: T)", "Reusable functions"],
+          ["Generic interface", "interface Box<T>", "Typed containers"],
+          ["Generic class", "class Stack<T>", "Data structures"],
+          ["Generic type alias", "type Result<T> = { data: T }", "Quick wrappers"]
         ]
       }
     },

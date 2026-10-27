@@ -7,21 +7,11 @@
   "difficulty": "intermediate",
   "estimatedHours": 1.5,
   "icon": "🔧",
-  "tags": [
-    "tool-calling",
-    "skills",
-    "plugins",
-    "apis"
-  ],
-  "lessonSlugs": [
-    "what-is-tool-calling",
-    "agent-guardrails-and-approvals"
-  ],
+  "tags": ["tool-calling", "skills", "plugins", "apis"],
+  "lessonSlugs": ["what-is-tool-calling", "agent-guardrails-and-approvals"],
   "isOptional": true,
   "skipLabel": "Skip if you are not using agent-based tools yet",
-  "prerequisites": [
-    "agents-introduction"
-  ],
+  "prerequisites": ["agents-introduction"],
   "whatYouLearn": [
     "What tool calling means for AI systems",
     "How AI uses calculators, search engines, and APIs as tools",

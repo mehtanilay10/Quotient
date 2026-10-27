@@ -6,10 +6,7 @@
   "description": "Understand functions that operate on other functions.",
   "order": 9,
   "difficulty": "intermediate",
-  "tags": [
-    "javascript",
-    "intermediate"
-  ],
+  "tags": ["javascript", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

@@ -37,13 +37,21 @@
           {
             "title": "AWS CLI",
             "description": "A unified command-line tool for managing AWS services from scripts or your terminal.",
-            "pros": ["Scriptable and automatable", "Fast for repetitive tasks", "Works with shell scripts"],
+            "pros": [
+              "Scriptable and automatable",
+              "Fast for repetitive tasks",
+              "Works with shell scripts"
+            ],
             "cons": ["Requires command-line knowledge", "Manual typing can be error-prone"]
           },
           {
             "title": "AWS SDKs",
             "description": "Libraries for programming languages like Python, JavaScript, Java, and Go that let you build applications on AWS.",
-            "pros": ["Integrates with application code", "Supports every AWS service", "Idiomatic language APIs"],
+            "pros": [
+              "Integrates with application code",
+              "Supports every AWS service",
+              "Idiomatic language APIs"
+            ],
             "cons": ["Requires programming knowledge", "More setup required"]
           }
         ]

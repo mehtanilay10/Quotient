@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "resilience",
-    "fundamentals",
-    "failure-isolation"
-  ],
+  "tags": ["resilience", "fundamentals", "failure-isolation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -96,31 +92,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Purpose"
-        ],
+        "headers": ["Pattern", "Purpose"],
         "rows": [
-          [
-            "Circuit Breaker",
-            "Stop calling failing services"
-          ],
-          [
-            "Retry",
-            "Retry transient failures"
-          ],
-          [
-            "Bulkhead",
-            "Isolate resources"
-          ],
-          [
-            "Timeout",
-            "Limit wait time"
-          ],
-          [
-            "Fallback",
-            "Provide alternative response"
-          ]
+          ["Circuit Breaker", "Stop calling failing services"],
+          ["Retry", "Retry transient failures"],
+          ["Bulkhead", "Isolate resources"],
+          ["Timeout", "Limit wait time"],
+          ["Fallback", "Provide alternative response"]
         ]
       }
     },

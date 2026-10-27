@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 11,
-  "tags": [
-    "api",
-    "versioning",
-    "evolution",
-    "backward-compatibility"
-  ],
+  "tags": ["api", "versioning", "evolution", "backward-compatibility"],
   "blocks": [
     {
       "type": "paragraph",
@@ -85,38 +80,20 @@
           {
             "title": "URI Versioning",
             "description": "Version in the path.",
-            "pros": [
-              "Visible in logs and browsers",
-              "Easy to route and cache"
-            ],
-            "cons": [
-              "Breaks URI uniqueness",
-              "Multiple deployments per version"
-            ]
+            "pros": ["Visible in logs and browsers", "Easy to route and cache"],
+            "cons": ["Breaks URI uniqueness", "Multiple deployments per version"]
           },
           {
             "title": "Header Versioning",
             "description": "Version in a custom header.",
-            "pros": [
-              "Clean URIs",
-              "Strong REST semantics"
-            ],
-            "cons": [
-              "Harder to test manually",
-              "Less visible to clients"
-            ]
+            "pros": ["Clean URIs", "Strong REST semantics"],
+            "cons": ["Harder to test manually", "Less visible to clients"]
           },
           {
             "title": "Query Versioning",
             "description": "Version as a query parameter.",
-            "pros": [
-              "Easy to test",
-              "Simple to implement"
-            ],
-            "cons": [
-              "Caching complications",
-              "Easy to forget in requests"
-            ]
+            "pros": ["Easy to test", "Simple to implement"],
+            "cons": ["Caching complications", "Easy to forget in requests"]
           }
         ]
       }

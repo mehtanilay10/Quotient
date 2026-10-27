@@ -157,6 +157,10 @@
   ],
   "relatedLessons": ["performance-fundamentals", "partial-clones"],
   "furtherReading": [
-    { "title": "Git Shallow Clones", "url": "https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---depthltdepthgt", "type": "article" }
+    {
+      "title": "Git Shallow Clones",
+      "url": "https://git-scm.com/docs/git-clone#Documentation/git-clone.txt---depthltdepthgt",
+      "type": "article"
+    }
   ]
 }

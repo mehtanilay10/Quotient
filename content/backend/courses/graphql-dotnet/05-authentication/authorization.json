@@ -7,10 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 33,
-  "tags": [
-    "graphql",
-    "authorization"
-  ],
+  "tags": ["graphql", "authorization"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,9 +122,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "auth-basics",
-    "identity-integration"
-  ],
+  "relatedLessons": ["auth-basics", "identity-integration"],
   "courseSlug": "graphql-dotnet"
 }

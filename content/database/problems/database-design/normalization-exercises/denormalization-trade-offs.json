@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Denormalization intentionally introduces redundancy to improve read performance. It should be a conscious trade-off after normalization, not a replacement for it." }
+      "data": {
+        "text": "Denormalization intentionally introduces redundancy to improve read performance. It should be a conscious trade-off after normalization, not a replacement for it."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,12 @@
       "type": "bullet-list",
       "data": {
         "title": "Common patterns",
-        "items": ["Pre-aggregated totals in reports", "Cached JSON for API responses", "Duplicate dimensions for star schemas", "Redundant counts for dashboards"]
+        "items": [
+          "Pre-aggregated totals in reports",
+          "Cached JSON for API responses",
+          "Duplicate dimensions for star schemas",
+          "Redundant counts for dashboards"
+        ]
       }
     },
     {
@@ -44,7 +51,11 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "warning", "title": "Warning", "text": "Denormalization without refresh logic causes stale data. Always plan for synchronization before adding redundant columns." }
+      "data": {
+        "variant": "warning",
+        "title": "Warning",
+        "text": "Denormalization without refresh logic causes stale data. Always plan for synchronization before adding redundant columns."
+      }
     },
     {
       "type": "example",
@@ -60,9 +71,18 @@
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "Should I denormalize by default?", "answer": "No. Start normalized. Denormalize only when profiling shows joins are bottlenecks." },
-          { "question": "How do I keep denormalized data consistent?", "answer": "Use triggers, materialized views, or application-level refreshes on writes." },
-          { "question": "Is a star schema denormalized?", "answer": "Yes. Fact tables are wide and redundant, while dimension tables are normalized." }
+          {
+            "question": "Should I denormalize by default?",
+            "answer": "No. Start normalized. Denormalize only when profiling shows joins are bottlenecks."
+          },
+          {
+            "question": "How do I keep denormalized data consistent?",
+            "answer": "Use triggers, materialized views, or application-level refreshes on writes."
+          },
+          {
+            "question": "Is a star schema denormalized?",
+            "answer": "Yes. Fact tables are wide and redundant, while dimension tables are normalized."
+          }
         ]
       }
     },
@@ -70,7 +90,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Start with 3NF or BCNF", "Denormalize only for proven read bottlenecks", "Plan synchronization for all redundant data", "Use materialized views when refresh is acceptable"],
+        "points": [
+          "Start with 3NF or BCNF",
+          "Denormalize only for proven read bottlenecks",
+          "Plan synchronization for all redundant data",
+          "Use materialized views when refresh is acceptable"
+        ],
         "takeaway": "Denormalization is a performance lever, not a design shortcut. It trades write complexity for read speed."
       }
     }

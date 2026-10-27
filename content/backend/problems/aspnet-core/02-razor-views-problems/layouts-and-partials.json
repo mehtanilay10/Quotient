@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "razor",
-    "layouts",
-    "partials"
-  ],
+  "tags": ["aspnet-core", "razor", "layouts", "partials"],
   "blocks": [
     {
       "type": "heading",
@@ -96,33 +91,15 @@
               "Sections for page-specific scripts",
               "Easy to update globally"
             ],
-            "cons": [
-              "Nested layouts can be confusing",
-              "Section names must match exactly"
-            ],
-            "tags": [
-              "_Layout",
-              "RenderBody()",
-              "RenderSection()"
-            ]
+            "cons": ["Nested layouts can be confusing", "Section names must match exactly"],
+            "tags": ["_Layout", "RenderBody()", "RenderSection()"]
           },
           {
             "title": "View Start and View Import",
             "description": "Auto-apply layout and imports",
-            "pros": [
-              "No repetition",
-              "All views inherit layout",
-              "Common directives in one place"
-            ],
-            "cons": [
-              "Can hide important configuration",
-              "Applies to all views in folder"
-            ],
-            "tags": [
-              "_ViewStart",
-              "_ViewImports",
-              "@addTagHelper"
-            ]
+            "pros": ["No repetition", "All views inherit layout", "Common directives in one place"],
+            "cons": ["Can hide important configuration", "Applies to all views in folder"],
+            "tags": ["_ViewStart", "_ViewImports", "@addTagHelper"]
           }
         ]
       }

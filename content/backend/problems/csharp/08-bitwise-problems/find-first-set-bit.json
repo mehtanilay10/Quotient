@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "bitwise",
-    "easy"
-  ],
+  "tags": ["csharp", "bitwise", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -100,32 +96,16 @@
           {
             "title": "Right Shift",
             "description": "Shift and count",
-            "pros": [
-              "No math library needed"
-            ],
-            "cons": [
-              "O(log N) time"
-            ],
-            "tags": [
-              "O(log N) time",
-              "O(1) space"
-            ]
+            "pros": ["No math library needed"],
+            "cons": ["O(log N) time"],
+            "tags": ["O(log N) time", "O(1) space"]
           },
           {
             "title": "n & (n-1) Trick",
             "description": "Isolate rightmost bit",
-            "pros": [
-              "O(1) time",
-              "Recommended"
-            ],
-            "cons": [
-              "Requires Math.Log"
-            ],
-            "tags": [
-              "O(1) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) time", "Recommended"],
+            "cons": ["Requires Math.Log"],
+            "tags": ["O(1) time", "O(1) space", "Recommended"]
           }
         ]
       }

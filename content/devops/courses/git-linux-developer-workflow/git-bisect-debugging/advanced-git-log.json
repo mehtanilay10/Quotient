@@ -175,6 +175,10 @@
   ],
   "relatedLessons": ["git-blame-annotate", "bisect-fundamentals"],
   "furtherReading": [
-    { "title": "Git Log Documentation", "url": "https://git-scm.com/docs/git-log", "type": "article" }
+    {
+      "title": "Git Log Documentation",
+      "url": "https://git-scm.com/docs/git-log",
+      "type": "article"
+    }
   ]
 }

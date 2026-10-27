@@ -7,10 +7,7 @@
   "order": 32,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "interview",
-    "beginner"
-  ],
+  "tags": ["interview", "beginner"],
   "blocks": [
     {
       "type": "paragraph",
@@ -114,9 +111,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rapid-q6"
-  ],
+  "relatedLessons": ["rapid-q6"],
   "furtherReading": [
     {
       "title": "What is CI/CD?",

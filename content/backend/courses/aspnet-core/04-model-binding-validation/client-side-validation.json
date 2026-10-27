@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "client-side",
-    "javascript",
-    "ux"
-  ],
+  "tags": ["client-side", "javascript", "ux"],
   "blocks": [
     {
       "type": "heading",
@@ -196,10 +192,7 @@
       "takeaway": "Good validation is layered: data annotations enforce rules on the server, unobtrusive JavaScript adds instant feedback in the browser, and the user gets the best of both worlds."
     }
   ],
-  "relatedLessons": [
-    "validation-attributes",
-    "custom-validation"
-  ],
+  "relatedLessons": ["validation-attributes", "custom-validation"],
   "technology": null,
   "furtherReading": []
 }

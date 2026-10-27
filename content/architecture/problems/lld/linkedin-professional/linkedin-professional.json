@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 45,
-  "tags": [
-    "lld",
-    "object-oriented",
-    "design-patterns",
-    "linkedin_professional"
-  ],
+  "tags": ["lld", "object-oriented", "design-patterns", "linkedin_professional"],
   "blocks": [
     {
       "type": "heading",

@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 24,
-  "tags": [
-    "mcp",
-    "resources",
-    "prompts",
-    "tools"
-  ],
+  "tags": ["mcp", "resources", "prompts", "tools"],
   "blocks": [
     {
       "type": "paragraph",
@@ -102,10 +97,7 @@
       "takeaway": "Design your MCP surface from the user's goals, not from your existing database schema. The protocol is a translation layer between user intent and backend capability."
     }
   ],
-  "relatedLessons": [
-    "mcp-architecture-and-transports",
-    "registering-and-describing-tools"
-  ],
+  "relatedLessons": ["mcp-architecture-and-transports", "registering-and-describing-tools"],
   "technology": null,
   "furtherReading": [
     {

@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "stored-procedures",
-    "tutorial-overview",
-    "roadmap"
-  ],
+  "tags": ["stored-procedures", "tutorial-overview", "roadmap"],
   "blocks": [
     {
       "type": "heading",

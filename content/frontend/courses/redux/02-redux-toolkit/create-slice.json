@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "toolkit",
-    "slice",
-    "reducers"
-  ],
+  "tags": ["redux", "toolkit", "slice", "reducers"],
   "blocks": [
     {
       "type": "paragraph",
@@ -84,17 +79,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Reducer Type",
-          "Signature",
-          "Use Case"
-        ],
+        "headers": ["Reducer Type", "Signature", "Use Case"],
         "rows": [
-          [
-            "Standard",
-            "(state, action) => void",
-            "Synchronous state updates with payload"
-          ],
+          ["Standard", "(state, action) => void", "Synchronous state updates with payload"],
           [
             "Immer-enabled",
             "(state, action) => void",
@@ -164,10 +151,7 @@
           {
             "title": "Hand-Written Reducers",
             "description": "The classic Redux pattern using switch statements, manual action creators, and constant action types.",
-            "pros": [
-              "Explicit control over every action type",
-              "Familiar to Redux veterans"
-            ],
+            "pros": ["Explicit control over every action type", "Familiar to Redux veterans"],
             "cons": [
               "Extremely verbose",
               "Error-prone (typos in action types)",
@@ -184,10 +168,7 @@
               "Immer integration out of the box",
               "Colocate related logic in one place"
             ],
-            "cons": [
-              "Immer hides the immutability mechanics",
-              "May feel 'magical' at first"
-            ]
+            "cons": ["Immer hides the immutability mechanics", "May feel 'magical' at first"]
           }
         ]
       }

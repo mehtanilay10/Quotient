@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 22,
-  "tags": [
-    "agents",
-    "architecture",
-    "planners",
-    "patterns"
-  ],
+  "tags": ["agents", "architecture", "planners", "patterns"],
   "blocks": [
     {
       "type": "paragraph",
@@ -47,37 +42,20 @@
         {
           "title": "Reactive",
           "description": "Best for simple tasks with one tool call.",
-          "pros": [
-            "Fast and predictable",
-            "Easy to test"
-          ],
-          "cons": [
-            "Weak for multi-step tasks"
-          ]
+          "pros": ["Fast and predictable", "Easy to test"],
+          "cons": ["Weak for multi-step tasks"]
         },
         {
           "title": "Planner",
           "description": "Generates an ordered plan before acting.",
-          "pros": [
-            "Handles complex requests",
-            "Easier to inspect"
-          ],
-          "cons": [
-            "Plans can be brittle",
-            "More tokens"
-          ]
+          "pros": ["Handles complex requests", "Easier to inspect"],
+          "cons": ["Plans can be brittle", "More tokens"]
         },
         {
           "title": "Multi-agent",
           "description": "Multiple agents collaborate on a larger task.",
-          "pros": [
-            "Clear separation of concerns",
-            "Scalable to complex workflows"
-          ],
-          "cons": [
-            "Orchestration complexity",
-            "Harder debugging"
-          ]
+          "pros": ["Clear separation of concerns", "Scalable to complex workflows"],
+          "cons": ["Orchestration complexity", "Harder debugging"]
         }
       ]
     },
@@ -107,10 +85,7 @@
       "expectedOutcome": "You should be able to argue for one pattern over another with concrete backend constraints."
     }
   ],
-  "relatedLessons": [
-    "semantic-kernel-agents-and-planners",
-    "memory-and-context-management"
-  ],
+  "relatedLessons": ["semantic-kernel-agents-and-planners", "memory-and-context-management"],
   "technology": null,
   "furtherReading": [
     {

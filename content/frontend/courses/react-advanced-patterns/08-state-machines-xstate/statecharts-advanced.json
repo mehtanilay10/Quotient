@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "statecharts",
-    "hierarchical-states",
-    "parallel-states",
-    "history",
-    "compound-states"
-  ],
+  "tags": ["statecharts", "hierarchical-states", "parallel-states", "history", "compound-states"],
   "blocks": [
     {
       "type": "heading",
@@ -117,10 +111,7 @@
         {
           "title": "Flat FSM",
           "description": "All states exist at a single level. Transitions connect any state to any other state.",
-          "pros": [
-            "Simple to draw and reason about",
-            "Low overhead for trivial flows"
-          ],
+          "pros": ["Simple to draw and reason about", "Low overhead for trivial flows"],
           "cons": [
             "Exponential transition explosion",
             "Duplicate transitions across similar states",
@@ -158,7 +149,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "state-reducer-basics"
-  ]
+  "prerequisites": ["state-reducer-basics"]
 }

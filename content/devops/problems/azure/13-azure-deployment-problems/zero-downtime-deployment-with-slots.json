@@ -100,22 +100,14 @@
           {
             "title": "Weighted (canary) routing",
             "description": "Send a percentage of traffic to staging",
-            "pros": [
-              "Real-user validation before full cutover",
-              "Gradual exposure"
-            ],
-            "cons": [
-              "Both versions run against one database",
-              "Needs schema compatibility"
-            ],
+            "pros": ["Real-user validation before full cutover", "Gradual exposure"],
+            "cons": ["Both versions run against one database", "Needs schema compatibility"],
             "tags": ["High-risk releases"]
           },
           {
             "title": "In-place zip deploy",
             "description": "Overwrite files in the production slot",
-            "pros": [
-              "Simplest possible pipeline"
-            ],
+            "pros": ["Simplest possible pipeline"],
             "cons": [
               "Errors during restart",
               "Cold start visible to users",

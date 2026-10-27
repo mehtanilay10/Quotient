@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 32,
-  "tags": [
-    "identity",
-    "users",
-    "roles"
-  ],
+  "tags": ["identity", "users", "roles"],
   "blocks": [
     {
       "type": "heading",

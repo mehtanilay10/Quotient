@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "v8",
-    "jit",
-    "hidden-classes",
-    "inline-caching",
-    "optimization"
-  ],
+  "tags": ["v8", "jit", "hidden-classes", "inline-caching", "optimization"],
   "blocks": [
     {
       "type": "paragraph",
@@ -190,11 +184,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "cpu-profiling",
-    "layout-thrashing",
-    "memory-management"
-  ],
+  "relatedLessons": ["cpu-profiling", "layout-thrashing", "memory-management"],
   "furtherReading": [
     {
       "title": "V8 Optimization Guide",

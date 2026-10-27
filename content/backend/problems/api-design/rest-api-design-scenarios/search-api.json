@@ -63,10 +63,34 @@
       "data": {
         "headers": ["Technology", "Query Type", "Scale", "Latency", "Best For"],
         "rows": [
-          ["PostgreSQL ILIKE", "Simple prefix/fuzzy", "Low (<1M docs)", "100-500ms", "Internal tools, small catalogs"],
-          ["Elasticsearch", "Full-text, aggregations", "High (100M+ docs)", "10-100ms", "Product search, content discovery"],
-          ["Typesense", "Full-text, typo-tolerant", "Medium (10M docs)", "<50ms", "E-commerce, instant search"],
-          ["Meilisearch", "Full-text, typo-tolerant", "Medium (10M docs)", "<20ms", "Docs, internal search"]
+          [
+            "PostgreSQL ILIKE",
+            "Simple prefix/fuzzy",
+            "Low (<1M docs)",
+            "100-500ms",
+            "Internal tools, small catalogs"
+          ],
+          [
+            "Elasticsearch",
+            "Full-text, aggregations",
+            "High (100M+ docs)",
+            "10-100ms",
+            "Product search, content discovery"
+          ],
+          [
+            "Typesense",
+            "Full-text, typo-tolerant",
+            "Medium (10M docs)",
+            "<50ms",
+            "E-commerce, instant search"
+          ],
+          [
+            "Meilisearch",
+            "Full-text, typo-tolerant",
+            "Medium (10M docs)",
+            "<20ms",
+            "Docs, internal search"
+          ]
         ]
       }
     },
@@ -134,10 +158,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "e-commerce-api",
-    "social-media-api"
-  ],
+  "relatedLessons": ["e-commerce-api", "social-media-api"],
   "furtherReading": [
     {
       "title": "Elasticsearch: Relevance Tuning",

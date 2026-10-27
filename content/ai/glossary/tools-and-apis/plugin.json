@@ -6,11 +6,7 @@
   "fullDefinition": "Plugins are modular extensions that allow applications to gain new capabilities without changing their underlying codebase. In AI, plugins extend the functionality of chatbots and assistants by connecting them to external data sources, APIs, and tools. For example, ChatGPT plugins allow the model to access real-time web search, run code, interact with databases, and book travel. Plugins follow standardized interfaces so the host application knows how to invoke them, describe them to the model, and handle their responses. The plugin ecosystem has become a major way AI assistants extend beyond their built-in knowledge.",
   "category": "tools-and-apis",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "api",
-    "webhook",
-    "mcp"
-  ],
+  "relatedTerms": ["api", "webhook", "mcp"],
   "learnMoreSlug": "what-is-mcp",
   "examples": [
     "A ChatGPT plugin that searches real-time flight prices",

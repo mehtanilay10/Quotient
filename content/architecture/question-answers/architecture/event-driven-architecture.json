@@ -6,12 +6,7 @@
   "description": "Events vs commands, pub/sub decoupling, eventual consistency, ordering and replay, and the operational costs of async architectures.",
   "order": 14,
   "difficulty": "advanced",
-  "tags": [
-    "architecture",
-    "microservices",
-    "messaging",
-    "advanced"
-  ],
+  "tags": ["architecture", "microservices", "messaging", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

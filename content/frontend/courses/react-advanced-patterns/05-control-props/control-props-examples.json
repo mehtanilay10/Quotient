@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "react",
-    "control-props",
-    "examples",
-    "patterns"
-  ],
+  "tags": ["react", "control-props", "examples", "patterns"],
   "blocks": [
     {
       "type": "paragraph",

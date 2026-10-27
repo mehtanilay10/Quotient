@@ -63,23 +63,11 @@
       "data": {
         "headers": ["Resource", "Optimization", "Estimated Savings"],
         "rows": [
-          [
-            "App Service",
-            "Stop or scale down non-production slots during off-hours",
-            "30-50%"
-          ],
+          ["App Service", "Stop or scale down non-production slots during off-hours", "30-50%"],
           ["Azure SQL", "Use serverless or pause dev databases", "40-70%"],
-          [
-            "Blob Storage",
-            "Move older files to Cool or Archive tier",
-            "50-80%"
-          ],
+          ["Blob Storage", "Move older files to Cool or Archive tier", "50-80%"],
           ["Redis Cache", "Use Basic tier for non-critical caching", "20-40%"],
-          [
-            "Application Insights",
-            "Set daily caps and sample telemetry",
-            "30-60%"
-          ]
+          ["Application Insights", "Set daily caps and sample telemetry", "30-60%"]
         ]
       }
     },

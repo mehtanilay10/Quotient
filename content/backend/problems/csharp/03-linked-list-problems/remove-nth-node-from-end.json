@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "linked-list",
-    "two-pointers",
-    "medium"
-  ],
+  "tags": ["csharp", "linked-list", "two-pointers", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -74,34 +69,16 @@
           {
             "title": "Two-Pass Count",
             "description": "Count nodes, calculate index, remove",
-            "pros": [
-              "Straightforward",
-              "No dummy node needed"
-            ],
-            "cons": [
-              "Two full passes",
-              "More variable state"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space"
-            ]
+            "pros": ["Straightforward", "No dummy node needed"],
+            "cons": ["Two full passes", "More variable state"],
+            "tags": ["O(n) time", "O(1) space"]
           },
           {
             "title": "One-Pass Two-Pointer",
             "description": "Fast pointer creates a gap, slow follows",
-            "pros": [
-              "Single pass",
-              "Clean with dummy node"
-            ],
-            "cons": [
-              "Dummy node required"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["Single pass", "Clean with dummy node"],
+            "cons": ["Dummy node required"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

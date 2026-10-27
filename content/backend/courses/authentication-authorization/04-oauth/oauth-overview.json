@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "oauth",
-    "authentication",
-    "authorization",
-    "overview"
-  ],
+  "tags": ["oauth", "authentication", "authorization", "overview"],
   "blocks": [
     {
       "type": "paragraph",

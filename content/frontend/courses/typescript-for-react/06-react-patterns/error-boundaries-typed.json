@@ -7,12 +7,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "typescript",
-    "react",
-    "error-boundaries",
-    "error-handling"
-  ],
+  "tags": ["typescript", "react", "error-boundaries", "error-handling"],
   "blocks": [
     {
       "type": "paragraph",
@@ -133,12 +128,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Error Type",
-          "Common Cause",
-          "Recovery Strategy",
-          "User Message"
-        ],
+        "headers": ["Error Type", "Common Cause", "Recovery Strategy", "User Message"],
         "rows": [
           [
             "Network",
@@ -146,30 +136,10 @@
             "Retry with backoff",
             "Connection lost — tap to retry"
           ],
-          [
-            "Auth",
-            "Token expired or missing",
-            "Redirect to login",
-            "Please sign in to continue"
-          ],
-          [
-            "Not Found",
-            "Deleted resource",
-            "Go to home/list",
-            "This item is no longer available"
-          ],
-          [
-            "Validation",
-            "Server rejected input",
-            "Show field errors",
-            "Please check your input"
-          ],
-          [
-            "Unknown",
-            "Unexpected crash",
-            "Reload page, log error",
-            "Something unexpected happened"
-          ]
+          ["Auth", "Token expired or missing", "Redirect to login", "Please sign in to continue"],
+          ["Not Found", "Deleted resource", "Go to home/list", "This item is no longer available"],
+          ["Validation", "Server rejected input", "Show field errors", "Please check your input"],
+          ["Unknown", "Unexpected crash", "Reload page, log error", "Something unexpected happened"]
         ]
       }
     },

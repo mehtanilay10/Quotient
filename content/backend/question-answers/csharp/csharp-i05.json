@@ -6,10 +6,7 @@
   "description": "Learn type-safe generic programming in C#.",
   "order": 23,
   "difficulty": "intermediate",
-  "tags": [
-    "c#",
-    "intermediate"
-  ],
+  "tags": ["c#", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

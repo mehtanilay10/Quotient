@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "query-planner",
-    "cost-model",
-    "pg-statistic",
-    "ssd-tuning"
-  ],
+  "tags": ["query-planner", "cost-model", "pg-statistic", "ssd-tuning"],
   "blocks": [
     {
       "type": "paragraph",
@@ -85,8 +80,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "explain-analyze",
-    "configuration-tuning"
-  ]
+  "relatedLessons": ["explain-analyze", "configuration-tuning"]
 }

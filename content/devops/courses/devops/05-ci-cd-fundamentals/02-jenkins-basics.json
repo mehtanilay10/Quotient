@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "jenkins",
-    "ci-cd",
-    "java",
-    "devops"
-  ],
+  "tags": ["jenkins", "ci-cd", "java", "devops"],
   "blocks": [
     {
       "type": "heading",
@@ -111,32 +106,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Job Type",
-          "Best for",
-          "Configuration style"
-        ],
+        "headers": ["Job Type", "Best for", "Configuration style"],
         "rows": [
-          [
-            "Freestyle Project",
-            "Simple, linear build steps",
-            "Web UI form"
-          ],
-          [
-            "Pipeline",
-            "Complex workflows defined as code",
-            "Jenkinsfile (Groovy)"
-          ],
+          ["Freestyle Project", "Simple, linear build steps", "Web UI form"],
+          ["Pipeline", "Complex workflows defined as code", "Jenkinsfile (Groovy)"],
           [
             "Multibranch Pipeline",
             "Multiple branches with different build strategies",
             "Jenkinsfile per branch"
           ],
-          [
-            "Folder",
-            "Grouping related jobs and projects",
-            "Container for other items"
-          ]
+          ["Folder", "Grouping related jobs and projects", "Container for other items"]
         ]
       }
     },
@@ -157,49 +136,23 @@
           {
             "title": "Freestyle Project",
             "description": "Simple, linear build configured entirely through a web UI form.",
-            "tags": [
-              "Simple",
-              "Web UI"
-            ],
-            "pros": [
-              "Quick to set up",
-              "No coding required"
-            ],
-            "cons": [
-              "Hard to version-control",
-              "Limited flexibility"
-            ]
+            "tags": ["Simple", "Web UI"],
+            "pros": ["Quick to set up", "No coding required"],
+            "cons": ["Hard to version-control", "Limited flexibility"]
           },
           {
             "title": "Pipeline",
             "description": "Code-based pipeline defined in a Jenkinsfile using Groovy.",
-            "tags": [
-              "Code-as-config",
-              "Declarative"
-            ],
-            "pros": [
-              "Version-controlled",
-              "Reproducible builds"
-            ],
-            "cons": [
-              "Learning curve",
-              "Groovy syntax"
-            ]
+            "tags": ["Code-as-config", "Declarative"],
+            "pros": ["Version-controlled", "Reproducible builds"],
+            "cons": ["Learning curve", "Groovy syntax"]
           },
           {
             "title": "Multibranch Pipeline",
             "description": "Automatically discovers and builds pipelines for each Git branch.",
-            "tags": [
-              "Multi-branch",
-              "Auto-discovery"
-            ],
-            "pros": [
-              "Branch-per-feature builds",
-              "No manual setup"
-            ],
-            "cons": [
-              "Overhead for simple projects"
-            ]
+            "tags": ["Multi-branch", "Auto-discovery"],
+            "pros": ["Branch-per-feature builds", "No manual setup"],
+            "cons": ["Overhead for simple projects"]
           }
         ]
       }

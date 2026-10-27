@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Execution plans show how the database executes a query. Reading them reveals full table scans, missing indexes, expensive sorts, and join strategy choices." }
+      "data": {
+        "text": "Execution plans show how the database executes a query. Reading them reveals full table scans, missing indexes, expensive sorts, and join strategy choices."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,12 @@
       "type": "bullet-list",
       "data": {
         "title": "Watch for",
-        "items": ["Seq Scan on large tables", "Nested Loop with high row estimates", "Sort with large work_mem spills", "Hash Join with unexpected hash matches"]
+        "items": [
+          "Seq Scan on large tables",
+          "Nested Loop with high row estimates",
+          "Sort with large work_mem spills",
+          "Hash Join with unexpected hash matches"
+        ]
       }
     },
     {
@@ -53,16 +60,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "important", "title": "Important", "text": "Always run EXPLAIN ANALYZE, not just EXPLAIN. Actual timing and row counts reveal discrepancies between estimates and reality." }
+      "data": {
+        "variant": "important",
+        "title": "Important",
+        "text": "Always run EXPLAIN ANALYZE, not just EXPLAIN. Actual timing and row counts reveal discrepancies between estimates and reality."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "What is the most common red flag?", "answer": "Seq Scan on a table with millions of rows where an index could help." },
-          { "question": "Why does the plan change with parameters?", "answer": "The optimizer uses parameter sniffing or generic plans. Test with actual parameter values." },
-          { "question": "Should I always avoid Seq Scan?", "answer": "No. For small tables or returning most rows, Seq Scan can be faster than index lookups." }
+          {
+            "question": "What is the most common red flag?",
+            "answer": "Seq Scan on a table with millions of rows where an index could help."
+          },
+          {
+            "question": "Why does the plan change with parameters?",
+            "answer": "The optimizer uses parameter sniffing or generic plans. Test with actual parameter values."
+          },
+          {
+            "question": "Should I always avoid Seq Scan?",
+            "answer": "No. For small tables or returning most rows, Seq Scan can be faster than index lookups."
+          }
         ]
       }
     },
@@ -70,7 +90,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Start with EXPLAIN ANALYZE for timing", "Identify Seq Scans and high-cost nodes", "Check row estimate accuracy", "Verify index usage matches expectations"],
+        "points": [
+          "Start with EXPLAIN ANALYZE for timing",
+          "Identify Seq Scans and high-cost nodes",
+          "Check row estimate accuracy",
+          "Verify index usage matches expectations"
+        ],
         "takeaway": "Execution plans are the primary debugging tool for query performance. Learn the node types and cost indicators for your database."
       }
     }

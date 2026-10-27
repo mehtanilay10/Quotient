@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "setup",
-    "tools",
-    "sdk"
-  ],
+  "tags": ["setup", "tools", "sdk"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,11 +69,7 @@
             "Large installation size",
             "Free Community edition available"
           ],
-          "tags": [
-            "windows",
-            "ide",
-            "full-featured"
-          ]
+          "tags": ["windows", "ide", "full-featured"]
         },
         {
           "title": "Visual Studio Code",
@@ -91,11 +83,7 @@
             "Fewer built-in designers than Visual Studio",
             "Requires extension setup for full experience"
           ],
-          "tags": [
-            "cross-platform",
-            "lightweight",
-            "free"
-          ]
+          "tags": ["cross-platform", "lightweight", "free"]
         }
       ]
     },
@@ -223,10 +211,7 @@
       "takeaway": "A properly set up development environment is the foundation of productive ASP.NET Core development. Once the SDK and editor are installed and verified, you are ready to start building."
     }
   ],
-  "relatedLessons": [
-    "what-is-aspnet-core",
-    "creating-first-project"
-  ],
+  "relatedLessons": ["what-is-aspnet-core", "creating-first-project"],
   "technology": null,
   "furtherReading": [
     {

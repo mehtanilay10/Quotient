@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "redis",
-    "sentinel",
-    "high-availability",
-    "failover"
-  ],
+  "tags": ["redis", "sentinel", "high-availability", "failover"],
   "blocks": [
     {
       "type": "paragraph",

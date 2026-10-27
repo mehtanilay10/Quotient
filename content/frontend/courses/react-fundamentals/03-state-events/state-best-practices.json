@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "state",
-    "best-practices",
-    "patterns"
-  ],
+  "tags": ["react", "state", "best-practices", "patterns"],
   "blocks": [
     {
       "type": "paragraph",

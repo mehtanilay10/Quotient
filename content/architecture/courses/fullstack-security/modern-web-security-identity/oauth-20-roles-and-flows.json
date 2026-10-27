@@ -112,58 +112,37 @@
               "Supports refresh tokens",
               "Client secret protects the exchange"
             ],
-            "cons": [
-              "Requires a backend to exchange the code",
-              "More complex to implement"
-            ],
-            "tags": [
-              "recommended"
-            ]
+            "cons": ["Requires a backend to exchange the code", "More complex to implement"],
+            "tags": ["recommended"]
           },
           {
             "title": "Implicit",
             "description": "Deprecated flow that returned tokens directly in the URL fragment.",
-            "pros": [
-              "No backend required"
-            ],
+            "pros": ["No backend required"],
             "cons": [
               "Tokens exposed in URL history",
               "No refresh tokens",
               "Vulnerable to token leakage"
             ],
-            "tags": [
-              "avoid"
-            ]
+            "tags": ["avoid"]
           },
           {
             "title": "Resource Owner Password",
             "description": "The app collects the user's password and exchanges it for tokens. Only for first-party highly trusted apps.",
-            "pros": [
-              "Simple implementation"
-            ],
+            "pros": ["Simple implementation"],
             "cons": [
               "App handles user passwords",
               "Phishing risk if app is compromised",
               "Cannot enforce MFA at the authorization server"
             ],
-            "tags": [
-              "rarely"
-            ]
+            "tags": ["rarely"]
           },
           {
             "title": "Client Credentials",
             "description": "Machine-to-machine flow. The client authenticates with its own credentials and receives a token.",
-            "pros": [
-              "No user interaction needed",
-              "Simple for backend services"
-            ],
-            "cons": [
-              "Not for user impersonation",
-              "Client secret must be protected"
-            ],
-            "tags": [
-              "service-to-service"
-            ]
+            "pros": ["No user interaction needed", "Simple for backend services"],
+            "cons": ["Not for user impersonation", "Client secret must be protected"],
+            "tags": ["service-to-service"]
           }
         ]
       }

@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "prisma",
-    "best-practices",
-    "architecture",
-    "indexing",
-    "soft-delete"
-  ],
+  "tags": ["prisma", "best-practices", "architecture", "indexing", "soft-delete"],
   "blocks": [
     {
       "type": "paragraph",
@@ -79,8 +73,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "schema-prisma-structure",
-    "model-attributes-and-constraints"
-  ]
+  "relatedLessons": ["schema-prisma-structure", "model-attributes-and-constraints"]
 }

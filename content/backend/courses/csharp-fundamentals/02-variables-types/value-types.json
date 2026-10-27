@@ -7,15 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "value-types",
-    "structs",
-    "primitives",
-    "stack",
-    "integers",
-    "floating-point"
-  ],
+  "tags": ["csharp", "value-types", "structs", "primitives", "stack", "integers", "floating-point"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,37 +52,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Size",
-          "Range",
-          "Typical Use"
-        ],
+        "headers": ["Type", "Size", "Range", "Typical Use"],
         "rows": [
-          [
-            "byte",
-            "8 bits (1 byte)",
-            "0 to 255",
-            "Binary data, small counters"
-          ],
-          [
-            "sbyte",
-            "8 bits (1 byte)",
-            "-128 to 127",
-            "Signed small integers"
-          ],
-          [
-            "short",
-            "16 bits (2 bytes)",
-            "-32,768 to 32,767",
-            "Legacy COM interop, small ranges"
-          ],
-          [
-            "ushort",
-            "16 bits (2 bytes)",
-            "0 to 65,535",
-            "Unsigned small integers"
-          ],
+          ["byte", "8 bits (1 byte)", "0 to 255", "Binary data, small counters"],
+          ["sbyte", "8 bits (1 byte)", "-128 to 127", "Signed small integers"],
+          ["short", "16 bits (2 bytes)", "-32,768 to 32,767", "Legacy COM interop, small ranges"],
+          ["ushort", "16 bits (2 bytes)", "0 to 65,535", "Unsigned small integers"],
           [
             "int",
             "32 bits (4 bytes)",
@@ -109,12 +76,7 @@
             "-9.2×10¹⁸ to 9.2×10¹⁸",
             "Large numbers, file sizes, timestamps"
           ],
-          [
-            "ulong",
-            "64 bits (8 bytes)",
-            "0 to 1.8×10¹⁹",
-            "Unsigned large numbers"
-          ]
+          ["ulong", "64 bits (8 bytes)", "0 to 1.8×10¹⁹", "Unsigned large numbers"]
         ]
       }
     },
@@ -134,12 +96,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Size",
-          "Precision",
-          "Typical Use"
-        ],
+        "headers": ["Type", "Size", "Precision", "Typical Use"],
         "rows": [
           [
             "float",

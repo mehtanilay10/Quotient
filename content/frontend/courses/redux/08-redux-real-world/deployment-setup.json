@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "deployment",
-    "production",
-    "optimization"
-  ],
+  "tags": ["redux", "deployment", "production", "optimization"],
   "blocks": [
     {
       "type": "paragraph",
@@ -55,42 +50,14 @@
       "type": "table",
       "data": {
         "title": "Tune your build for production",
-        "headers": [
-          "Optimization",
-          "Tool",
-          "Impact"
-        ],
+        "headers": ["Optimization", "Tool", "Impact"],
         "rows": [
-          [
-            "Minify JS",
-            "Terser (Webpack/Vite)",
-            "40–60% smaller bundle"
-          ],
-          [
-            "Compress assets",
-            "gzip / Brotli",
-            "60–80% smaller transfer"
-          ],
-          [
-            "Tree-shake unused exports",
-            "ES modules + bundler",
-            "Removes dead code"
-          ],
-          [
-            "Code-split routes",
-            "React.lazy / Loadable",
-            "Faster initial load"
-          ],
-          [
-            "Cache with hashing",
-            "Webpack content-hash / Vite",
-            "Long browser cache"
-          ],
-          [
-            "Disable Redux DevTools",
-            "configureStore({ devTools: false })",
-            "Smaller, no overhead"
-          ],
+          ["Minify JS", "Terser (Webpack/Vite)", "40–60% smaller bundle"],
+          ["Compress assets", "gzip / Brotli", "60–80% smaller transfer"],
+          ["Tree-shake unused exports", "ES modules + bundler", "Removes dead code"],
+          ["Code-split routes", "React.lazy / Loadable", "Faster initial load"],
+          ["Cache with hashing", "Webpack content-hash / Vite", "Long browser cache"],
+          ["Disable Redux DevTools", "configureStore({ devTools: false })", "Smaller, no overhead"],
           [
             "Disable serializable check",
             "configureStore middleware option",

@@ -7,14 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "api",
-    "ienumerable",
-    "iqueryable",
-    "enumerable",
-    "queryable"
-  ],
+  "tags": ["linq", "api", "ienumerable", "iqueryable", "enumerable", "queryable"],
   "blocks": [
     {
       "type": "paragraph",
@@ -167,9 +160,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-linq",
-    "why-linq"
-  ],
+  "relatedLessons": ["what-is-linq", "why-linq"],
   "courseSlug": "linq"
 }

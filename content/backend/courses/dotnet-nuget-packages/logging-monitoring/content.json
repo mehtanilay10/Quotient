@@ -9,14 +9,7 @@
   "difficulty": "beginner",
   "estimatedHours": 3,
   "icon": "📊",
-  "tags": [
-    "logging",
-    "monitoring",
-    "serilog",
-    "nlog",
-    "structured-logging",
-    "observability"
-  ],
+  "tags": ["logging", "monitoring", "serilog", "nlog", "structured-logging", "observability"],
   "lessonSlugs": [
     "serilog",
     "nlog",

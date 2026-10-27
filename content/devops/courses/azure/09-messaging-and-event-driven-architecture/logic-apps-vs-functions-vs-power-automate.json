@@ -8,13 +8,7 @@
   "order": 18,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "logic-apps",
-    "functions",
-    "power-automate",
-    "integration",
-    "comparison"
-  ],
+  "tags": ["logic-apps", "functions", "power-automate", "integration", "comparison"],
   "blocks": [
     {
       "type": "heading",
@@ -32,12 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Logic Apps",
-          "Azure Functions",
-          "Power Automate"
-        ],
+        "headers": ["Aspect", "Logic Apps", "Azure Functions", "Power Automate"],
         "rows": [
           [
             "Primary builder",
@@ -147,8 +136,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "logic-apps-overview",
-    "azure-functions-overview"
-  ]
+  "relatedLessons": ["logic-apps-overview", "azure-functions-overview"]
 }

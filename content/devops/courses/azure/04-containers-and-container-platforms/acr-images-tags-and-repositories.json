@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "containers",
-    "docker",
-    "aks",
-    "developer"
-  ],
+  "tags": ["azure", "containers", "docker", "aks", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -80,10 +74,10 @@
     {
       "type": "mermaid",
       "data": {
-          "id": "mermaid-acr-structure",
-          "caption": "How images, repositories, and tags are organized in ACR",
-          "definition": "flowchart TD\n    R[(ACR Registry)] --> Rep1[Repository: frontend]\n    R --> Rep2[Repository: backend]\n    Rep1 --> T1[Tag: v1.0]\n    Rep1 --> T2[Tag: v2.0]\n    Rep1 --> T3[Tag: latest]\n    Rep2 --> T4[Tag: v1.0]\n    T1 --> M1[Manifest]\n    T2 --> M2[Manifest]\n    T3 --> M3[Manifest]"
-        }
+        "id": "mermaid-acr-structure",
+        "caption": "How images, repositories, and tags are organized in ACR",
+        "definition": "flowchart TD\n    R[(ACR Registry)] --> Rep1[Repository: frontend]\n    R --> Rep2[Repository: backend]\n    Rep1 --> T1[Tag: v1.0]\n    Rep1 --> T2[Tag: v2.0]\n    Rep1 --> T3[Tag: latest]\n    Rep2 --> T4[Tag: v1.0]\n    T1 --> M1[Manifest]\n    T2 --> M2[Manifest]\n    T3 --> M3[Manifest]"
+      }
     },
     {
       "type": "summary-box",

@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 23,
-  "tags": [
-    "solid",
-    "srp",
-    "csharp"
-  ],
+  "tags": ["solid", "srp", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -92,9 +88,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "open-closed"
-  ],
+  "relatedLessons": ["open-closed"],
   "furtherReading": [],
   "courseSlug": "clean-code-csharp"
 }

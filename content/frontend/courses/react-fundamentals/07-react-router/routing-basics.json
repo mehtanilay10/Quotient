@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "router",
-    "routing",
-    "spa"
-  ],
+  "tags": ["react", "router", "routing", "spa"],
   "blocks": [
     {
       "type": "paragraph",
@@ -139,27 +134,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Router",
-          "URL Style",
-          "Use Case"
-        ],
+        "headers": ["Router", "URL Style", "Use Case"],
         "rows": [
-          [
-            "BrowserRouter",
-            "Clean URLs: /about",
-            "Standard SPAs with server configuration"
-          ],
-          [
-            "HashRouter",
-            "Hash URLs: #/about",
-            "When you cannot configure the server"
-          ],
-          [
-            "MemoryRouter",
-            "In-memory history",
-            "Testing and non-browser environments"
-          ]
+          ["BrowserRouter", "Clean URLs: /about", "Standard SPAs with server configuration"],
+          ["HashRouter", "Hash URLs: #/about", "When you cannot configure the server"],
+          ["MemoryRouter", "In-memory history", "Testing and non-browser environments"]
         ]
       }
     },

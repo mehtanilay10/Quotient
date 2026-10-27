@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "cicd",
-    "devops",
-    "github-actions"
-  ],
+  "tags": ["interview", "cicd", "devops", "github-actions"],
   "blocks": [
     {
       "type": "paragraph",

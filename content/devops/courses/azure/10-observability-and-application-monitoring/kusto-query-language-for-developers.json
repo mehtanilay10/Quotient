@@ -8,14 +8,7 @@
   "order": 8,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "azure",
-    "azure",
-    "monitoring",
-    "observability",
-    "kql",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "monitoring", "observability", "kql", "developer"],
   "blocks": [
     {
       "type": "heading",

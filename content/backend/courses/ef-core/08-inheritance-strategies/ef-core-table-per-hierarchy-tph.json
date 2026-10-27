@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "ef-core",
-    "tph",
-    "inheritance",
-    "discriminator"
-  ],
+  "tags": ["ef-core", "tph", "inheritance", "discriminator"],
   "blocks": [
     {
       "type": "paragraph",
@@ -94,9 +89,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "inheritance-strategy-in-ef-core",
-    "ef-core-table-per-type-tpt"
-  ],
+  "relatedLessons": ["inheritance-strategy-in-ef-core", "ef-core-table-per-type-tpt"],
   "courseSlug": "ef-core"
 }

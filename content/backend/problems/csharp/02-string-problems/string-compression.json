@@ -8,11 +8,7 @@
   "order": 12,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "strings",
-    "easy"
-  ],
+  "tags": ["csharp", "strings", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -86,33 +82,16 @@
           {
             "title": "StringBuilder Default",
             "description": "Standard SB usage",
-            "pros": [
-              "Simple",
-              "Standard pattern"
-            ],
-            "cons": [
-              "May resize buffer"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Simple", "Standard pattern"],
+            "cons": ["May resize buffer"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Pre-sized StringBuilder",
             "description": "Set initial capacity",
-            "pros": [
-              "No buffer resize",
-              "Slightly faster"
-            ],
-            "cons": [
-              "Slightly more code"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["No buffer resize", "Slightly faster"],
+            "cons": ["Slightly more code"],
+            "tags": ["O(n) time", "O(n) space", "Recommended"]
           }
         ]
       }

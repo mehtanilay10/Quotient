@@ -80,43 +80,22 @@
           {
             "title": "Hot Tier",
             "description": "Frequently accessed data",
-            "pros": [
-              "Low retrieval cost",
-              "High availability",
-              "99.9% SLA"
-            ],
-            "cons": [
-              "Higher storage cost",
-              "No minimum storage duration"
-            ],
+            "pros": ["Low retrieval cost", "High availability", "99.9% SLA"],
+            "cons": ["Higher storage cost", "No minimum storage duration"],
             "tags": ["Active data", "Recommended"]
           },
           {
             "title": "Cool Tier",
             "description": "Infrequently accessed data (30+ days)",
-            "pros": [
-              "Lower storage cost",
-              "High availability",
-              "99.9% SLA"
-            ],
-            "cons": [
-              "Higher retrieval cost",
-              "30-day minimum"
-            ],
+            "pros": ["Lower storage cost", "High availability", "99.9% SLA"],
+            "cons": ["Higher retrieval cost", "30-day minimum"],
             "tags": ["Backups", "Archives"]
           },
           {
             "title": "Archive Tier",
             "description": "Rarely accessed data (180+ days)",
-            "pros": [
-              "Lowest storage cost",
-              "Compliance storage"
-            ],
-            "cons": [
-              "Rehydration time (hours)",
-              "180-day minimum",
-              "Lower availability"
-            ],
+            "pros": ["Lowest storage cost", "Compliance storage"],
+            "cons": ["Rehydration time (hours)", "180-day minimum", "Lower availability"],
             "tags": ["Compliance", "Long-term"]
           }
         ]

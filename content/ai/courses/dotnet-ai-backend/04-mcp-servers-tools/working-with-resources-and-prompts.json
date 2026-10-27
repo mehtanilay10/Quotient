@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 22,
-  "tags": [
-    "mcp",
-    "resources",
-    "prompts",
-    "csharp"
-  ],
+  "tags": ["mcp", "resources", "prompts", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -75,10 +70,7 @@
       "takeaway": "Resources and prompts make your backend easier to use correctly and harder to misuse."
     }
   ],
-  "relatedLessons": [
-    "registering-and-describing-tools",
-    "error-handling-and-validation"
-  ],
+  "relatedLessons": ["registering-and-describing-tools", "error-handling-and-validation"],
   "technology": null,
   "furtherReading": [
     {

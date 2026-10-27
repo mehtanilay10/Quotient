@@ -9,11 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "📋",
-  "tags": [
-    "redis",
-    "intermediate",
-    "caching"
-  ],
+  "tags": ["redis", "intermediate", "caching"],
   "lessonSlugs": [
     "cache-aside-pattern",
     "write-through-pattern",
@@ -21,9 +17,7 @@
     "read-through-pattern",
     "refresh-ahead-pattern"
   ],
-  "prerequisites": [
-    "redis-fundamentals"
-  ],
+  "prerequisites": ["redis-fundamentals"],
   "whatYouLearn": [
     "Implement Cache-Aside for read-heavy workloads",
     "Configure Write-Through for write consistency",

@@ -6,11 +6,7 @@
   "description": "Ensure a class has only one instance with global access.",
   "order": 1,
   "difficulty": "beginner",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -28,12 +24,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "Logging",
-          "Configuration",
-          "Thread pools",
-          "Database connections"
-        ]
+        "items": ["Logging", "Configuration", "Thread pools", "Database connections"]
       }
     },
     {

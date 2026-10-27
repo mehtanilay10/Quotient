@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "ef-core",
-    "change-tracking",
-    "debugview",
-    "explicit-tracking"
-  ],
+  "tags": ["ef-core", "change-tracking", "debugview", "explicit-tracking"],
   "blocks": [
     {
       "type": "paragraph",
@@ -53,11 +48,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "The entity is detached",
-          "DbContext is disposed",
-          "Change Tracker is cleared"
-        ]
+        "items": ["The entity is detached", "DbContext is disposed", "Change Tracker is cleared"]
       }
     },
     {
@@ -92,32 +83,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "State",
-          "Description"
-        ],
+        "headers": ["Method", "State", "Description"],
         "rows": [
-          [
-            "Add",
-            "Added",
-            "Insert new entity"
-          ],
-          [
-            "Attach",
-            "Unchanged",
-            "Start tracking existing entity"
-          ],
-          [
-            "Update",
-            "Modified",
-            "Mark entity as modified"
-          ],
-          [
-            "Remove",
-            "Deleted",
-            "Mark entity for deletion"
-          ]
+          ["Add", "Added", "Insert new entity"],
+          ["Attach", "Unchanged", "Start tracking existing entity"],
+          ["Update", "Modified", "Mark entity as modified"],
+          ["Remove", "Deleted", "Mark entity for deletion"]
         ]
       }
     },
@@ -180,9 +151,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "tracking-changes-of-entities",
-    "trackgraph-in-entity-framework-core"
-  ],
+  "relatedLessons": ["tracking-changes-of-entities", "trackgraph-in-entity-framework-core"],
   "courseSlug": "ef-core"
 }

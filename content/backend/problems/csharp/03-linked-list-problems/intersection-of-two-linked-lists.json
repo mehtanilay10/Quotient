@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "easy",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "linked-list",
-    "two-pointers",
-    "easy"
-  ],
+  "tags": ["csharp", "linked-list", "two-pointers", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -74,34 +69,16 @@
           {
             "title": "Brute Force",
             "description": "Compare every node of A against every node of B",
-            "pros": [
-              "Conceptually simple",
-              "No extra state"
-            ],
-            "cons": [
-              "Very slow on large lists",
-              "O(n*m) comparisons"
-            ],
-            "tags": [
-              "O(n*m) time",
-              "O(1) space"
-            ]
+            "pros": ["Conceptually simple", "No extra state"],
+            "cons": ["Very slow on large lists", "O(n*m) comparisons"],
+            "tags": ["O(n*m) time", "O(1) space"]
           },
           {
             "title": "Two-Pointer Switch",
             "description": "Each pointer walks both lists, switching at the end",
-            "pros": [
-              "O(n+m) time",
-              "No length pre-computation"
-            ],
-            "cons": [
-              "Switch logic can be tricky"
-            ],
-            "tags": [
-              "O(n+m) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n+m) time", "No length pre-computation"],
+            "cons": ["Switch logic can be tricky"],
+            "tags": ["O(n+m) time", "O(1) space", "Recommended"]
           }
         ]
       }

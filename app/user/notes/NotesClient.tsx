@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useEffect, useMemo, useState } from 'react';
-import Link from 'next/link';
-import { StickyNote, Clock, Search } from 'lucide-react';
-import { formatRelativeTime } from '@/lib/utils';
-import { logger } from '@/lib/logger';
-import { EmptyState } from '@/components/ui/EmptyState';
-import { StatCard } from '@/components/user/StatCard';
+import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
+import { StickyNote, Clock, Search } from "lucide-react";
+import { formatRelativeTime } from "@/lib/utils";
+import { logger } from "@/lib/logger";
+import { EmptyState } from "@/components/ui/EmptyState";
+import { StatCard } from "@/components/user/StatCard";
 
 interface LessonNote {
   courseSlug: string;
@@ -22,18 +22,18 @@ interface LessonNote {
 export function NotesClient() {
   const [notes, setNotes] = useState<LessonNote[]>([]);
   const [loading, setLoading] = useState(true);
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/user/notes');
+        const res = await fetch("/api/user/notes");
         if (res.ok) {
           const data = await res.json();
           setNotes(data.notes || []);
         }
       } catch (err) {
-        logger.error('NotesClient', 'Failed to fetch notes:', err);
+        logger.error("NotesClient", "Failed to fetch notes:", err);
       } finally {
         setLoading(false);
       }
@@ -46,8 +46,7 @@ export function NotesClient() {
     const q = query.trim().toLowerCase();
     if (!q) return notes;
     return notes.filter(
-      (note) =>
-        note.title.toLowerCase().includes(q) || note.content.toLowerCase().includes(q)
+      (note) => note.title.toLowerCase().includes(q) || note.content.toLowerCase().includes(q)
     );
   }, [notes, query]);
 
@@ -75,7 +74,10 @@ export function NotesClient() {
         title="No notes yet"
         description="Take notes while reading a lesson to capture key ideas and reminders."
         action={
-          <Link href="/" className="rounded-lg bg-accent-emphasis px-4 py-2 text-sm font-medium text-accent-fg">
+          <Link
+            href="/"
+            className="rounded-lg bg-accent-emphasis px-4 py-2 text-sm font-medium text-accent-fg"
+          >
             Start learning
           </Link>
         }
@@ -87,10 +89,15 @@ export function NotesClient() {
     <div className="space-y-6">
       <div className="grid gap-4 sm:grid-cols-3">
         <StatCard label="Total Notes" value={notes.length} icon={StickyNote} tone="accent" />
-        <StatCard label="Matching Search" value={query ? filtered.length : notes.length} icon={Search} tone="done" />
+        <StatCard
+          label="Matching Search"
+          value={query ? filtered.length : notes.length}
+          icon={Search}
+          tone="done"
+        />
         <StatCard
           label="Last Updated"
-          value={mostRecent ? formatRelativeTime(mostRecent.updatedAt) : '—'}
+          value={mostRecent ? formatRelativeTime(mostRecent.updatedAt) : "—"}
           icon={Clock}
           tone="success"
           hint={mostRecent?.title}
@@ -98,7 +105,10 @@ export function NotesClient() {
       </div>
 
       <div className="relative">
-        <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-fg-subtle" aria-hidden="true" />
+        <Search
+          className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-fg-subtle"
+          aria-hidden="true"
+        />
         <input
           type="search"
           value={query}
@@ -125,9 +135,13 @@ export function NotesClient() {
               <Link href={note.href} className="flex flex-col gap-1.5">
                 <div className="flex items-start justify-between gap-3">
                   <p className="text-sm font-semibold text-fg-default">{note.title}</p>
-                  <span className="shrink-0 text-xs text-fg-subtle">{formatRelativeTime(note.updatedAt)}</span>
+                  <span className="shrink-0 text-xs text-fg-subtle">
+                    {formatRelativeTime(note.updatedAt)}
+                  </span>
                 </div>
-                <p className="text-sm text-fg-muted line-clamp-3 whitespace-pre-line">{note.content}</p>
+                <p className="text-sm text-fg-muted line-clamp-3 whitespace-pre-line">
+                  {note.content}
+                </p>
               </Link>
             </li>
           ))}

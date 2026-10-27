@@ -8,12 +8,7 @@
   "order": 15,
   "difficulty": "medium",
   "estimatedMinutes": 16,
-  "tags": [
-    "csharp",
-    "graphs",
-    "topological-sort",
-    "medium"
-  ],
+  "tags": ["csharp", "graphs", "topological-sort", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,15 +46,8 @@
           {
             "title": "Kahn's BFS",
             "description": "Remove zero-indegree nodes",
-            "pros": [
-              "O(V+E)",
-              "Detects cycle"
-            ],
-            "tags": [
-              "O(V+E) time",
-              "O(V+E) space",
-              "Recommended"
-            ]
+            "pros": ["O(V+E)", "Detects cycle"],
+            "tags": ["O(V+E) time", "O(V+E) space", "Recommended"]
           }
         ]
       }

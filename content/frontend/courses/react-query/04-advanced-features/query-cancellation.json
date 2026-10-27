@@ -8,17 +8,8 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "cancellation",
-    "abort",
-    "cleanup",
-    "signal"
-  ],
-  "prerequisites": [
-    "query-hooks",
-    "suspense"
-  ],
+  "tags": ["react-query", "cancellation", "abort", "cleanup", "signal"],
+  "prerequisites": ["query-hooks", "suspense"],
   "blocks": [
     {
       "type": "heading",

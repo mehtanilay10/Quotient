@@ -61,11 +61,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Symptom",
-          "Likely cause",
-          "First diagnostic step"
-        ],
+        "headers": ["Symptom", "Likely cause", "First diagnostic step"],
         "rows": [
           [
             "Latency increases with traffic",

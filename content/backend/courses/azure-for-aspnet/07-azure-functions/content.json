@@ -10,11 +10,7 @@
   "estimatedHours": 3,
   "icon": "⚡",
   "tags": ["azure", "functions", "serverless", "csharp", "events"],
-  "lessonSlugs": [
-    "functions-intro",
-    "functions-csharp",
-    "functions-dependency-injection"
-  ],
+  "lessonSlugs": ["functions-intro", "functions-csharp", "functions-dependency-injection"],
   "prerequisites": ["azure-sql-intro", "deploy-aspnet-core-app-service"],
   "whatYouLearn": [
     "Understand the Functions hosting models and programming model for .NET",

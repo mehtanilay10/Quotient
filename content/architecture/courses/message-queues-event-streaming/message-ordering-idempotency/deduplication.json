@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "deduplication",
-    "duplicates",
-    "message-id",
-    "bloom-filter",
-    "idempotency"
-  ],
+  "tags": ["deduplication", "duplicates", "message-id", "bloom-filter", "idempotency"],
   "blocks": [
     {
       "type": "paragraph",
@@ -94,21 +88,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Structure",
-          "Lookup",
-          "Storage",
-          "False Positives",
-          "Best For"
-        ],
+        "headers": ["Structure", "Lookup", "Storage", "False Positives", "Best For"],
         "rows": [
-          [
-            "Hash Set (Redis)",
-            "O(1)",
-            "High",
-            "None",
-            "Exact deduplication with persistence"
-          ],
+          ["Hash Set (Redis)", "O(1)", "High", "None", "Exact deduplication with persistence"],
           [
             "Bloom Filter",
             "O(1)",
@@ -116,20 +98,8 @@
             "Configurable",
             "High throughput, approximate check"
           ],
-          [
-            "Cuckoo Filter",
-            "O(1)",
-            "Low",
-            "Configurable",
-            "Space-efficient with deletions"
-          ],
-          [
-            "Sorted Set (TTL)",
-            "O(log N)",
-            "Medium",
-            "None",
-            "Time-windowed deduplication"
-          ]
+          ["Cuckoo Filter", "O(1)", "Low", "Configurable", "Space-efficient with deletions"],
+          ["Sorted Set (TTL)", "O(log N)", "Medium", "None", "Time-windowed deduplication"]
         ]
       }
     },

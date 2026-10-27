@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "testing",
-    "pyramid",
-    "dotnet"
-  ],
+  "tags": ["testing", "pyramid", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -49,10 +45,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "why-unit-testing",
-    "arrange-act-assert"
-  ],
+  "relatedLessons": ["why-unit-testing", "arrange-act-assert"],
   "furtherReading": [],
   "courseSlug": "unit-testing-dotnet"
 }

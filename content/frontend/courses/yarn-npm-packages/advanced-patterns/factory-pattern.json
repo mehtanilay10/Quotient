@@ -6,13 +6,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 8,
-  "tags": [
-    "factory",
-    "patterns",
-    "creational",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["factory", "patterns", "creational", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -97,10 +91,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "Factory decouples creation from usage.",
-          "Great for plugin systems."
-        ]
+        "points": ["Factory decouples creation from usage.", "Great for plugin systems."]
       }
     }
   ],

@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "authorization",
-    "jwt",
-    "bearer"
-  ],
+  "tags": ["authorization", "jwt", "bearer"],
   "blocks": [
     {
       "type": "heading",

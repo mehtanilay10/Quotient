@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 23,
-  "tags": [
-    "drop-view",
-    "remove-view",
-    "cleanup"
-  ],
+  "tags": ["drop-view", "remove-view", "cleanup"],
   "blocks": [
     {
       "type": "heading",

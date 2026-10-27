@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "redis",
-    "anti-patterns",
-    "performance",
-    "troubleshooting",
-    "best-practices"
-  ],
+  "tags": ["redis", "anti-patterns", "performance", "troubleshooting", "best-practices"],
   "blocks": [
     {
       "type": "paragraph",
@@ -122,37 +116,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pitfall",
-          "Impact",
-          "Fix"
-        ],
+        "headers": ["Pitfall", "Impact", "Fix"],
         "rows": [
-          [
-            "KEYS pattern",
-            "Blocks all clients",
-            "Use SCAN"
-          ],
-          [
-            "HGETALL on large hash",
-            "O(N) latency spike",
-            "Use HRANDFIELD or HSCAN"
-          ],
-          [
-            "Blocking async calls",
-            "Thread-pool starvation",
-            "Use async/await"
-          ],
-          [
-            "New connection per request",
-            "Connection exhaustion",
-            "Share ConnectionMultiplexer"
-          ],
-          [
-            "No maxmemory eviction",
-            "OOM crash",
-            "Set maxmemory-policy allkeys-lru"
-          ]
+          ["KEYS pattern", "Blocks all clients", "Use SCAN"],
+          ["HGETALL on large hash", "O(N) latency spike", "Use HRANDFIELD or HSCAN"],
+          ["Blocking async calls", "Thread-pool starvation", "Use async/await"],
+          ["New connection per request", "Connection exhaustion", "Share ConnectionMultiplexer"],
+          ["No maxmemory eviction", "OOM crash", "Set maxmemory-policy allkeys-lru"]
         ]
       }
     },

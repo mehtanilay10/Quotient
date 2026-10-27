@@ -8,12 +8,7 @@
   "order": 18,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "cost",
-    "budgeting",
-    "architecture",
-    "csharp"
-  ],
+  "tags": ["cost", "budgeting", "architecture", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,38 +67,33 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Decision",
-          "Cheaper Option",
-          "More Expensive Option",
-          "Trade-Off"
-        ],
+        "headers": ["Decision", "Cheaper Option", "More Expensive Option", "Trade-Off"],
         "rows": [
- [
+          [
             "Database",
             "SQLite or SQL Server Express",
             "Azure SQL or managed PostgreSQL",
             "Lower licensing cost vs. higher operational overhead and scalability limits"
           ],
- [
+          [
             "Hosting",
             "Single VM or App Service",
             "Kubernetes with multiple replicas",
             "Lower infrastructure cost vs. limited scalability and manual failover"
           ],
- [
+          [
             "Monitoring",
             "Built-in Application Insights basic tier",
             "Full observability suite (logs, metrics, traces, dashboards)",
             "Lower tooling cost vs. slower incident response and blind spots"
           ],
- [
+          [
             "Authentication",
             "Custom auth implementation",
             "Auth0 or Azure AD B2C",
             "Lower SaaS cost vs. security risk and engineering maintenance"
           ],
- [
+          [
             "Testing",
             "Manual QA and production debugging",
             "Automated unit, integration, and load tests",
@@ -196,10 +186,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "making-technical-trade-offs-explicit",
-    "build-vs-buy-decisions"
-  ],
+  "relatedLessons": ["making-technical-trade-offs-explicit", "build-vs-buy-decisions"],
   "furtherReading": [
     {
       "title": "The Mythical Man-Month",

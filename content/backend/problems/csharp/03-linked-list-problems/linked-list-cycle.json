@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "linked-list",
-    "two-pointers",
-    "easy"
-  ],
+  "tags": ["csharp", "linked-list", "two-pointers", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -74,34 +69,16 @@
           {
             "title": "Hash Set",
             "description": "Track every visited node",
-            "pros": [
-              "Easy to understand",
-              "Works for any graph-like structure"
-            ],
-            "cons": [
-              "O(n) extra space",
-              "Hash overhead per node"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Easy to understand", "Works for any graph-like structure"],
+            "cons": ["O(n) extra space", "Hash overhead per node"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Floyd's Two-Pointer",
             "description": "Slow and fast pointers race around the list",
-            "pros": [
-              "O(1) space",
-              "No allocations"
-            ],
-            "cons": [
-              "Requires pointer logic"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) space", "No allocations"],
+            "cons": ["Requires pointer logic"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

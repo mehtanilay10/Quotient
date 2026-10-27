@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "exclusion-constraints",
-    "gist",
-    "tsrange",
-    "overlap-prevention"
-  ],
+  "tags": ["exclusion-constraints", "gist", "tsrange", "overlap-prevention"],
   "blocks": [
     {
       "type": "paragraph",
@@ -92,10 +87,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Problem",
-          "Constraint expression"
-        ],
+        "headers": ["Problem", "Constraint expression"],
         "rows": [
           [
             "No overlapping scheduled shifts per employee",
@@ -188,8 +180,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "range-types",
-    "unique-check"
-  ]
+  "relatedLessons": ["range-types", "unique-check"]
 }

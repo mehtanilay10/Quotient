@@ -7,9 +7,7 @@
   "order": 9,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "correlated-subquery"
-  ],
+  "tags": ["correlated-subquery"],
   "blocks": [
     {
       "type": "heading",

@@ -6,12 +6,7 @@
   "category": "research",
   "difficulty": "intermediate",
   "template": "Act as an experienced research assistant. I need to understand [TOPIC] for [PURPOSE — e.g., \"a presentation\", \"a business decision\", \"personal education\"].\n\nMy current knowledge level: [BEGINNER / INTERMEDIATE / has knowledge of X but not Y]\n\nPlease provide:\n1. **Overview** (what this topic is, why it matters, key terminology)\n2. **Key concepts** (5-7 sub-topics or concepts I need to understand — briefly explained)  \n3. **Common misconceptions** (2-3 widespread wrong beliefs about this topic)\n4. **Landscape** (major players, tools, frameworks, or schools of thought)\n5. **Where to dig deeper** (what to search or read for specific subtopics)\n6. **What I should not assume** (anything that changes depending on context or is often oversimplified)",
-  "tags": [
-    "research",
-    "learning",
-    "analysis",
-    "deep-dive"
-  ],
+  "tags": ["research", "learning", "analysis", "deep-dive"],
   "tips": [
     "Use Perplexity for factual/current topics; use this prompt for conceptual understanding",
     "Follow up: \"What are the most contested or unsettled questions in this field?\"",

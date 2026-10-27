@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 8,
-  "tags": [
-    "everyday-ai",
-    "practical",
-    "awareness"
-  ],
+  "tags": ["everyday-ai", "practical", "awareness"],
   "blocks": [
     {
       "type": "paragraph",
@@ -54,39 +50,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Category",
-          "Examples you know"
-        ],
+        "headers": ["Category", "Examples you know"],
         "rows": [
-          [
-            "Filtering & sorting",
-            "Email spam filters, social media feeds, search rankings"
-          ],
-          [
-            "Recommendations",
-            "Netflix, Spotify, YouTube, Amazon, TikTok For You page"
-          ],
-          [
-            "Language & translation",
-            "Google Translate, Live Caption, phone keyboard autocomplete"
-          ],
-          [
-            "Recognition",
-            "Face unlock, photo tagging, voice recognition (\"Hey Siri\")"
-          ],
-          [
-            "Fraud & safety",
-            "Bank fraud detection, credit card alerts, content moderation"
-          ],
-          [
-            "Navigation",
-            "Google Maps ETAs, traffic rerouting, \"you may also like\""
-          ],
-          [
-            "Productivity",
-            "Gmail Smart Compose, Grammarly, autocorrect"
-          ]
+          ["Filtering & sorting", "Email spam filters, social media feeds, search rankings"],
+          ["Recommendations", "Netflix, Spotify, YouTube, Amazon, TikTok For You page"],
+          ["Language & translation", "Google Translate, Live Caption, phone keyboard autocomplete"],
+          ["Recognition", "Face unlock, photo tagging, voice recognition (\"Hey Siri\")"],
+          ["Fraud & safety", "Bank fraud detection, credit card alerts, content moderation"],
+          ["Navigation", "Google Maps ETAs, traffic rerouting, \"you may also like\""],
+          ["Productivity", "Gmail Smart Compose, Grammarly, autocorrect"]
         ]
       }
     },
@@ -119,18 +91,12 @@
             "Letting the algorithm pick your next video",
             "Asking AI to summarize a video transcript"
           ],
-          [
-            "Having Gmail autocomplete a sentence",
-            "Having AI draft the entire email"
-          ],
+          ["Having Gmail autocomplete a sentence", "Having AI draft the entire email"],
           [
             "Spam filter quietly sorting your inbox",
             "Asking AI to categorize and prioritize your messages"
           ],
-          [
-            "Google Maps suggesting a route",
-            "Asking AI to help plan a complex trip itinerary"
-          ]
+          ["Google Maps suggesting a route", "Asking AI to help plan a complex trip itinerary"]
         ]
       }
     },
@@ -194,17 +160,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Maturity stage",
-          "Typical behavior",
-          "Next step"
-        ],
+        "headers": ["Maturity stage", "Typical behavior", "Next step"],
         "rows": [
-          [
-            "Awareness",
-            "Occasional ad-hoc questions",
-            "Identify one repeated weekly use case"
-          ],
+          ["Awareness", "Occasional ad-hoc questions", "Identify one repeated weekly use case"],
           [
             "Assisted execution",
             "AI helps with drafts and summaries",
@@ -219,10 +177,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ai-vs-ml-vs-generative-ai",
-    "chatbot-landscape"
-  ],
+  "relatedLessons": ["ai-vs-ml-vs-generative-ai", "chatbot-landscape"],
   "furtherReading": [
     {
       "title": "AI for Everyone",

@@ -6,10 +6,7 @@
   "description": "Change tracking internals, DetectChanges, when to disable tracking, and batched SQL under the hood.",
   "order": 3,
   "difficulty": "intermediate",
-  "tags": [
-    "ef-core",
-    "intermediate"
-  ],
+  "tags": ["ef-core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,10 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ef-core-include-vs-projection",
-    "optimistic-concurrency"
-  ],
+  "relatedLessons": ["ef-core-include-vs-projection", "optimistic-concurrency"],
   "furtherReading": [
     {
       "title": "Change tracking in EF Core",

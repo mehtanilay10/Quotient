@@ -6,20 +6,12 @@
   "fullDefinition": "An API is a well-defined interface that enables one software application to request services or data from another. APIs abstract away implementation details, allowing developers to build on existing services without understanding their internal workings. In AI, APIs are the primary way developers access models like GPT, Claude, and image generators. REST and GraphQL are common API architectures, while streaming APIs enable real-time responses. Understanding APIs is essential for anyone building AI applications or integrating AI into existing workflows.",
   "category": "tools-and-apis",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "sdk",
-    "webhook",
-    "plugin"
-  ],
+  "relatedTerms": ["sdk", "webhook", "plugin"],
   "learnMoreSlug": "choosing-the-right-tool",
   "examples": [
     "Calling OpenAI's API to send a prompt and receive a generated response",
     "A mobile app using a weather API to display forecasts",
     "A CRM integrating with an AI writing API to draft emails"
   ],
-  "alsoKnownAs": [
-    "Application Programming Interface",
-    "Web API",
-    "REST API"
-  ]
+  "alsoKnownAs": ["Application Programming Interface", "Web API", "REST API"]
 }

@@ -1,31 +1,28 @@
 {
-    "name": "Quotient - Open knowledge for everyone",
-    "short_name": "Quotient",
-    "description": "Structured courses, worked coding problems, cheat sheets, and practical questions — open, free, and built for software engineers at every stage. Learn the fundamentals at your own pace, grow the skills that move your career forward, and keep every lesson, note, and bookmark in one place — no coding experience required to start, and no account required to read.",
-    "id": "/",
-    "scope": "/",
-    "icons": [
-        {
-            "src": "/logo-dark.svg",
-            "sizes": "any",
-            "type": "image/svg+xml",
-            "purpose": "any"
-        },
-        {
-            "src": "/logo-dark.svg",
-            "sizes": "any",
-            "type": "image/svg+xml",
-            "purpose": "maskable"
-        }
-    ],
-    "start_url": "/",
-    "display": "standalone",
-    "orientation": "any",
-    "background_color": "#0f172a",
-    "theme_color": "#0f172a",
-    "prefer_related_applications": false,
-    "categories": [
-        "education",
-        "productivity"
-    ]
+  "name": "Quotient - Open knowledge for everyone",
+  "short_name": "Quotient",
+  "description": "Structured courses, worked coding problems, cheat sheets, and practical questions — open, free, and built for software engineers at every stage. Learn the fundamentals at your own pace, grow the skills that move your career forward, and keep every lesson, note, and bookmark in one place — no coding experience required to start, and no account required to read.",
+  "id": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/logo-dark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo-dark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "prefer_related_applications": false,
+  "categories": ["education", "productivity"]
 }

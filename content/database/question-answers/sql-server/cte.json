@@ -6,11 +6,7 @@
   "description": "Common table expressions: named temporary result sets, readability vs subqueries, recursive CTEs for hierarchies, and their performance caveats.",
   "order": 14,
   "difficulty": "intermediate",
-  "tags": [
-    "sql server",
-    "queries",
-    "intermediate"
-  ],
+  "tags": ["sql server", "queries", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sql-a01",
-    "window-functions",
-    "sql-b02"
-  ],
+  "relatedLessons": ["sql-a01", "window-functions", "sql-b02"],
   "furtherReading": [
     {
       "title": "WITH (Common Table Expression) — Microsoft Learn",

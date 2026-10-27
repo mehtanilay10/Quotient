@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "authorization",
-    "resource-based",
-    "entity-level",
-    "ownership",
-    "aspnet-core"
-  ],
+  "tags": ["authorization", "resource-based", "entity-level", "ownership", "aspnet-core"],
   "blocks": [
     {
       "type": "paragraph",
@@ -180,7 +174,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "auth-overview"
-  ]
+  "prerequisites": ["auth-overview"]
 }

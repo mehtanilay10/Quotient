@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 45,
-  "tags": [
-    "lld",
-    "object-oriented",
-    "design-patterns",
-    "amazon_ecommerce"
-  ],
+  "tags": ["lld", "object-oriented", "design-patterns", "amazon_ecommerce"],
   "blocks": [
     {
       "type": "heading",

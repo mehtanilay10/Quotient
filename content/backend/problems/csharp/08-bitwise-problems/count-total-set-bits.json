@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "bitwise",
-    "medium"
-  ],
+  "tags": ["csharp", "bitwise", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -100,32 +96,16 @@
           {
             "title": "Brute Force",
             "description": "Count bits per number",
-            "pros": [
-              "Simple to implement"
-            ],
-            "cons": [
-              "O(n log n) time"
-            ],
-            "tags": [
-              "O(n log n) time",
-              "O(1) space"
-            ]
+            "pros": ["Simple to implement"],
+            "cons": ["O(n log n) time"],
+            "tags": ["O(n log n) time", "O(1) space"]
           },
           {
             "title": "DP/Optimized",
             "description": "Reuse overlapping subproblems",
-            "pros": [
-              "O(log n) time",
-              "Recommended"
-            ],
-            "cons": [
-              "More complex"
-            ],
-            "tags": [
-              "O(log n) time",
-              "O(log n) space",
-              "Recommended"
-            ]
+            "pros": ["O(log n) time", "Recommended"],
+            "cons": ["More complex"],
+            "tags": ["O(log n) time", "O(log n) space", "Recommended"]
           }
         ]
       }

@@ -98,7 +98,10 @@
       }
     }
   ],
-  "relatedLessons": ["server-components-and-client-components", "ssr-ssg-isr-and-dynamic-rendering"],
+  "relatedLessons": [
+    "server-components-and-client-components",
+    "ssr-ssg-isr-and-dynamic-rendering"
+  ],
   "furtherReading": [
     {
       "title": "Streaming and Suspense",

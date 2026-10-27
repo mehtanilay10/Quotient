@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useCallback, useState, useEffect } from 'react';
-import { Bookmark, Download, Trash2, WifiOff } from 'lucide-react';
-import { useOfflineQueue } from '@/hooks/useOfflineQueue';
-import { registerShortcut, unregisterShortcut } from '@/hooks/useKeyboardShortcuts';
-import { SignInPrompt } from '@/components/auth/SignInPrompt';
+import { useCallback, useState, useEffect } from "react";
+import { Bookmark, Download, Trash2, WifiOff } from "lucide-react";
+import { useOfflineQueue } from "@/hooks/useOfflineQueue";
+import { registerShortcut, unregisterShortcut } from "@/hooks/useKeyboardShortcuts";
+import { SignInPrompt } from "@/components/auth/SignInPrompt";
 
 interface OfflineSaveButtonProps {
   courseSlug: string;
@@ -13,7 +13,12 @@ interface OfflineSaveButtonProps {
   title: string;
 }
 
-export function OfflineSaveButton({ courseSlug, moduleSlug, lessonSlug, title }: OfflineSaveButtonProps) {
+export function OfflineSaveButton({
+  courseSlug,
+  moduleSlug,
+  lessonSlug,
+  title,
+}: OfflineSaveButtonProps) {
   const { isQueued, addToQueue, removeFromQueue, isLoggedOut } = useOfflineQueue();
   const [showSignIn, setShowSignIn] = useState(false);
   const [isOnline, setIsOnline] = useState(true);
@@ -24,11 +29,11 @@ export function OfflineSaveButton({ courseSlug, moduleSlug, lessonSlug, title }:
     const handleOnline = () => setIsOnline(true);
     const handleOffline = () => setIsOnline(false);
     setIsOnline(navigator.onLine);
-    window.addEventListener('online', handleOnline);
-    window.addEventListener('offline', handleOffline);
+    window.addEventListener("online", handleOnline);
+    window.addEventListener("offline", handleOffline);
     return () => {
-      window.removeEventListener('online', handleOnline);
-      window.removeEventListener('offline', handleOffline);
+      window.removeEventListener("online", handleOnline);
+      window.removeEventListener("offline", handleOffline);
     };
   }, []);
 
@@ -45,8 +50,8 @@ export function OfflineSaveButton({ courseSlug, moduleSlug, lessonSlug, title }:
   }, [addToQueue, courseSlug, isLoggedOut, lessonSlug, moduleSlug, queued, removeFromQueue, title]);
 
   useEffect(() => {
-    registerShortcut('s', 'Save/remove current lesson offline', handleClick);
-    return () => unregisterShortcut('s');
+    registerShortcut("s", "Save/remove current lesson offline", handleClick);
+    return () => unregisterShortcut("s");
   }, [handleClick]);
 
   return (
@@ -55,12 +60,18 @@ export function OfflineSaveButton({ courseSlug, moduleSlug, lessonSlug, title }:
         onClick={handleClick}
         className={`no-print flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-xs font-medium transition-colors ${
           queued
-            ? 'border-accent-fg bg-accent-subtle text-accent-fg'
-            : 'border-border bg-canvas text-fg-muted hover:bg-canvas-subtle hover:text-fg-default'
+            ? "border-accent-fg bg-accent-subtle text-accent-fg"
+            : "border-border bg-canvas text-fg-muted hover:bg-canvas-subtle hover:text-fg-default"
         }`}
-        aria-label={queued ? 'Remove from offline queue' : 'Save for offline reading'}
+        aria-label={queued ? "Remove from offline queue" : "Save for offline reading"}
         aria-pressed={queued}
-        title={!isOnline ? 'You are currently offline' : queued ? 'Remove from offline queue' : 'Save for offline reading'}
+        title={
+          !isOnline
+            ? "You are currently offline"
+            : queued
+              ? "Remove from offline queue"
+              : "Save for offline reading"
+        }
       >
         {queued ? (
           <>

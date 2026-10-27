@@ -1,19 +1,19 @@
-'use client';
+"use client";
 
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { useSession } from 'next-auth/react';
-import { useTheme } from 'next-themes';
-import { logger } from '@/lib/logger';
-import { apiFetch } from '@/lib/apiFetch';
-import { THEME_STORAGE_KEY } from '@/lib/storageKeys';
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useSession } from "next-auth/react";
+import { useTheme } from "next-themes";
+import { logger } from "@/lib/logger";
+import { apiFetch } from "@/lib/apiFetch";
+import { THEME_STORAGE_KEY } from "@/lib/storageKeys";
 
 const STORAGE_KEY = THEME_STORAGE_KEY;
 
-type Theme = 'light' | 'dark' | 'system';
+type Theme = "light" | "dark" | "system";
 
 async function fetchThemeFromServer(): Promise<Theme | null> {
   try {
-    const res = await fetch('/api/user/theme');
+    const res = await fetch("/api/user/theme");
     if (!res.ok) return null;
     const data = await res.json();
     return data.theme ?? null;
@@ -24,21 +24,21 @@ async function fetchThemeFromServer(): Promise<Theme | null> {
 
 async function syncThemeToServer(theme: Theme): Promise<void> {
   try {
-    await apiFetch('/api/user/theme', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    await apiFetch("/api/user/theme", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ theme }),
     });
   } catch (err) {
-    logger.warn('useUserTheme', 'Failed to sync to server', err);
+    logger.warn("useUserTheme", "Failed to sync to server", err);
   }
 }
 
 export function useUserTheme() {
   const { data: session, status } = useSession();
   const { setTheme } = useTheme();
-  const isLoggedIn = status === 'authenticated';
-  const isLoggedOut = status === 'unauthenticated';
+  const isLoggedIn = status === "authenticated";
+  const isLoggedOut = status === "unauthenticated";
 
   const [serverTheme, setServerTheme] = useState<Theme | null>(null);
   const [mounted, setMounted] = useState(false);
@@ -92,7 +92,7 @@ export function useUserTheme() {
   );
 
   return {
-    theme: isLoggedIn ? (serverTheme ?? 'system') : 'system',
+    theme: isLoggedIn ? (serverTheme ?? "system") : "system",
     setTheme: updateTheme,
     mounted,
     isLoggedIn,

@@ -8,11 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 6.7,
   "icon": "⚡",
-  "tags": [
-    "interview",
-    "javascript",
-    "frontend"
-  ],
+  "tags": ["interview", "javascript", "frontend"],
   "lessonSlugs": [
     "beginner-q3",
     "js-b01",

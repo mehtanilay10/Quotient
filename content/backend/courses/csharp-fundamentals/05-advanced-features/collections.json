@@ -7,16 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "collections",
-    "list",
-    "dictionary",
-    "hashset",
-    "queue",
-    "stack",
-    "generic"
-  ],
+  "tags": ["csharp", "collections", "list", "dictionary", "hashset", "queue", "stack", "generic"],
   "blocks": [
     {
       "type": "paragraph",
@@ -174,13 +165,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Collection",
-          "Order",
-          "Duplicates",
-          "Lookup Speed",
-          "Best Use Case"
-        ],
+        "headers": ["Collection", "Order", "Duplicates", "Lookup Speed", "Best Use Case"],
         "rows": [
           [
             "List<T>",
@@ -196,27 +181,9 @@
             "O(1) by key",
             "Fast lookups by key"
           ],
-          [
-            "HashSet<T>",
-            "N/A (hash order)",
-            "No",
-            "O(1) Contains",
-            "Unique items, set operations"
-          ],
-          [
-            "Queue<T>",
-            "FIFO",
-            "Yes",
-            "O(1) Enqueue/Dequeue",
-            "Task processing, BFS"
-          ],
-          [
-            "Stack<T>",
-            "LIFO",
-            "Yes",
-            "O(1) Push/Pop",
-            "Undo systems, DFS"
-          ]
+          ["HashSet<T>", "N/A (hash order)", "No", "O(1) Contains", "Unique items, set operations"],
+          ["Queue<T>", "FIFO", "Yes", "O(1) Enqueue/Dequeue", "Task processing, BFS"],
+          ["Stack<T>", "LIFO", "Yes", "O(1) Push/Pop", "Undo systems, DFS"]
         ]
       }
     },

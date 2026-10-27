@@ -7,10 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "graphql",
-    "resolvers"
-  ],
+  "tags": ["graphql", "resolvers"],
   "blocks": [
     {
       "type": "paragraph",
@@ -56,32 +53,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Attribute",
-          "Source",
-          "Example"
-        ],
+        "headers": ["Attribute", "Source", "Example"],
         "rows": [
-          [
-            "[Service]",
-            "DI Container",
-            "IBookRepository repo"
-          ],
-          [
-            "[Parent]",
-            "Parent object",
-            "Book parent => parent.AuthorId"
-          ],
-          [
-            "[ScopedService]",
-            "Scoped service",
-            "IMessageBus bus"
-          ],
-          [
-            "[GlobalState]",
-            "Global state",
-            "IHttpContextAccessor"
-          ]
+          ["[Service]", "DI Container", "IBookRepository repo"],
+          ["[Parent]", "Parent object", "Book parent => parent.AuthorId"],
+          ["[ScopedService]", "Scoped service", "IMessageBus bus"],
+          ["[GlobalState]", "Global state", "IHttpContextAccessor"]
         ]
       }
     },
@@ -162,9 +139,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "query-basics",
-    "mutation-basics"
-  ],
+  "relatedLessons": ["query-basics", "mutation-basics"],
   "courseSlug": "graphql-dotnet"
 }

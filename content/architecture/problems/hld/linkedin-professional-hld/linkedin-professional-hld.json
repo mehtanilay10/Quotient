@@ -8,15 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "linkedin",
-    "graph-database",
-    "pymk",
-    "feed",
-    "analytics"
-  ],
+  "tags": ["hld", "system-design", "linkedin", "graph-database", "pymk", "feed", "analytics"],
   "blocks": [
     {
       "type": "heading",
@@ -233,10 +225,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "twitter-social-hld",
-    "search-autocomplete"
-  ],
+  "relatedLessons": ["twitter-social-hld", "search-autocomplete"],
   "furtherReading": [
     {
       "title": "The Architecture of LinkedIn’s Real-time Graph",

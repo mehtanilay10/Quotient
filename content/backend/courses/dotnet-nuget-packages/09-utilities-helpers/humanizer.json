@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "utilities",
-    "humanizer",
-    "strings",
-    "localization"
-  ],
+  "tags": ["utilities", "humanizer", "strings", "localization"],
   "blocks": [
     {
       "type": "heading",
@@ -151,8 +146,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "fluent-email",
-    "jsonpatch"
-  ]
+  "relatedLessons": ["fluent-email", "jsonpatch"]
 }

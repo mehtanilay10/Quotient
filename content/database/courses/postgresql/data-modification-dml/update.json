@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "update",
-    "update-from",
-    "dml",
-    "returning"
-  ],
+  "tags": ["update", "update-from", "dml", "returning"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,8 +82,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "insert",
-    "delete"
-  ]
+  "relatedLessons": ["insert", "delete"]
 }

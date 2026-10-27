@@ -8,13 +8,7 @@
   "order": 27,
   "difficulty": "advanced",
   "estimatedMinutes": 40,
-  "tags": [
-    "system-design",
-    "senior-engineer",
-    "architecture",
-    "scaling",
-    "cost"
-  ],
+  "tags": ["system-design", "senior-engineer", "architecture", "scaling", "cost"],
   "technology": "General",
   "blocks": [
     {
@@ -139,42 +133,20 @@
           {
             "title": "Strong consistency",
             "description": "All nodes see the same data at the same time.",
-            "pros": [
-              "Simple mental model",
-              "No stale reads",
-              "Easier to reason about"
-            ],
-            "cons": [
-              "Higher latency",
-              "Lower availability during partitions",
-              "More expensive"
-            ]
+            "pros": ["Simple mental model", "No stale reads", "Easier to reason about"],
+            "cons": ["Higher latency", "Lower availability during partitions", "More expensive"]
           },
           {
             "title": "Eventual consistency",
             "description": "Data propagates to all nodes eventually; temporary inconsistencies are allowed.",
-            "pros": [
-              "Low latency",
-              "High availability",
-              "Scales globally"
-            ],
-            "cons": [
-              "Stale reads possible",
-              "Complex conflict resolution",
-              "Harder to debug"
-            ]
+            "pros": ["Low latency", "High availability", "Scales globally"],
+            "cons": ["Stale reads possible", "Complex conflict resolution", "Harder to debug"]
           },
           {
             "title": "Causal consistency",
             "description": "Guarantees that causally related operations are seen in order.",
-            "pros": [
-              "Better user experience than eventual",
-              "Reasonable performance"
-            ],
-            "cons": [
-              "More complex to implement",
-              "Harder to reason about than strong consistency"
-            ]
+            "pros": ["Better user experience than eventual", "Reasonable performance"],
+            "cons": ["More complex to implement", "Harder to reason about than strong consistency"]
           }
         ]
       }

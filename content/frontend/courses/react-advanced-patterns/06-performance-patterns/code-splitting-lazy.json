@@ -8,21 +8,9 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "code-splitting",
-    "lazy",
-    "suspense",
-    "dynamic-import",
-    "bundle",
-    "performance"
-  ],
-  "prerequisites": [
-    "memoization-basics"
-  ],
-  "relatedLessons": [
-    "memoization-basics",
-    "render-optimization"
-  ],
+  "tags": ["code-splitting", "lazy", "suspense", "dynamic-import", "bundle", "performance"],
+  "prerequisites": ["memoization-basics"],
+  "relatedLessons": ["memoization-basics", "render-optimization"],
   "furtherReading": [
     {
       "title": "React Docs: Code Splitting",
@@ -220,15 +208,8 @@
           {
             "title": "Route-Based Splitting",
             "description": "Split bundles by page or route so users only load code for the current view.",
-            "pros": [
-              "Largest bundle savings",
-              "Natural user boundaries",
-              "Easy to reason about"
-            ],
-            "cons": [
-              "Does not help within-page performance",
-              "Requires routing setup"
-            ]
+            "pros": ["Largest bundle savings", "Natural user boundaries", "Easy to reason about"],
+            "cons": ["Does not help within-page performance", "Requires routing setup"]
           },
           {
             "title": "Component-Based Splitting",
@@ -238,10 +219,7 @@
               "Granular control",
               "Good for below-fold content"
             ],
-            "cons": [
-              "Smaller wins than route splitting",
-              "More Suspense boundaries needed"
-            ]
+            "cons": ["Smaller wins than route splitting", "More Suspense boundaries needed"]
           }
         ]
       }

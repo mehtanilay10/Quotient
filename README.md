@@ -33,19 +33,19 @@ a database connection.
 
 ## Documentation
 
-| File | Read it for |
-| --- | --- |
-| [AGENTS.md](./AGENTS.md) | Repository contract for AI coding agents |
-| [agents/architecture.md](./agents/architecture.md) | System design, routes, rendering, content pipeline, caching, deployment |
-| [agents/data-model.md](./agents/data-model.md) | Content schemas, block shapes, PostgreSQL tables, browser storage |
-| [agents/api.md](./agents/api.md) | Endpoint contracts, auth, CSRF, rate limits, payloads |
-| [agents/development.md](./agents/development.md) | Setup, commands, environment, content workflow, migrations, PWA, deployment |
-| [agents/coding-conventions.md](./agents/coding-conventions.md) | TypeScript, server/client boundaries, React, styling, security |
-| [agents/ui-ux.md](./agents/ui-ux.md) | Visual system, layout, accessibility, copy |
-| [agents/content-author.md](./agents/content-author.md) | Content author role |
-| [agents/frontend-engineer.md](./agents/frontend-engineer.md) | Frontend engineer role |
-| [agents/reviewer.md](./agents/reviewer.md) | Code reviewer role |
-| [agents/content-qa.md](./agents/content-qa.md) | Content QA role |
+| File                                                           | Read it for                                                                 |
+| -------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| [AGENTS.md](./AGENTS.md)                                       | Repository contract for AI coding agents                                    |
+| [agents/architecture.md](./agents/architecture.md)             | System design, routes, rendering, content pipeline, caching, deployment     |
+| [agents/data-model.md](./agents/data-model.md)                 | Content schemas, block shapes, PostgreSQL tables, browser storage           |
+| [agents/api.md](./agents/api.md)                               | Endpoint contracts, auth, CSRF, rate limits, payloads                       |
+| [agents/development.md](./agents/development.md)               | Setup, commands, environment, content workflow, migrations, PWA, deployment |
+| [agents/coding-conventions.md](./agents/coding-conventions.md) | TypeScript, server/client boundaries, React, styling, security              |
+| [agents/ui-ux.md](./agents/ui-ux.md)                           | Visual system, layout, accessibility, copy                                  |
+| [agents/content-author.md](./agents/content-author.md)         | Content author role                                                         |
+| [agents/frontend-engineer.md](./agents/frontend-engineer.md)   | Frontend engineer role                                                      |
+| [agents/reviewer.md](./agents/reviewer.md)                     | Code reviewer role                                                          |
+| [agents/content-qa.md](./agents/content-qa.md)                 | Content QA role                                                             |
 
 `AGENTS.md` is the repository-wide instruction file. If a role guide and
 `AGENTS.md` disagree, follow `AGENTS.md` and update the role guide.

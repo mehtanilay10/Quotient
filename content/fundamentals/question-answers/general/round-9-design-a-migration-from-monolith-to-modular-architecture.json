@@ -8,13 +8,7 @@
   "order": 25,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "migration",
-    "monolith",
-    "microservices",
-    "architecture",
-    "strangler-fig"
-  ],
+  "tags": ["migration", "monolith", "microservices", "architecture", "strangler-fig"],
   "technology": "General",
   "blocks": [
     {
@@ -33,12 +27,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "How it works",
-          "Best for",
-          "Risks"
-        ],
+        "headers": ["Strategy", "How it works", "Best for", "Risks"],
         "rows": [
           [
             "Domain-driven decomposition",
@@ -186,39 +175,20 @@
           {
             "title": "Feature flags",
             "description": "Toggle new code paths at runtime without redeploying.",
-            "pros": [
-              "Instant rollback",
-              "Canary releases",
-              "A/B testing"
-            ],
-            "cons": [
-              "Flag debt if not cleaned up",
-              "Complex branching logic"
-            ]
+            "pros": ["Instant rollback", "Canary releases", "A/B testing"],
+            "cons": ["Flag debt if not cleaned up", "Complex branching logic"]
           },
           {
             "title": "Parallel run",
             "description": "Run the old and new systems simultaneously and compare results.",
-            "pros": [
-              "High confidence before cutover",
-              "Catches data drift"
-            ],
-            "cons": [
-              "Double infrastructure cost",
-              "Requires reconciliation logic"
-            ]
+            "pros": ["High confidence before cutover", "Catches data drift"],
+            "cons": ["Double infrastructure cost", "Requires reconciliation logic"]
           },
           {
             "title": "Canary deployment",
             "description": "Roll out to a small percentage of traffic first.",
-            "pros": [
-              "Limits blast radius",
-              "Fast rollback"
-            ],
-            "cons": [
-              "Requires traffic splitting infrastructure",
-              "May miss edge cases"
-            ]
+            "pros": ["Limits blast radius", "Fast rollback"],
+            "cons": ["Requires traffic splitting infrastructure", "May miss edge cases"]
           }
         ]
       }

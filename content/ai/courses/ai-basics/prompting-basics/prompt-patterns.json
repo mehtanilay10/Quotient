@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "prompt-patterns",
-    "templates",
-    "role-play",
-    "step-by-step"
-  ],
+  "tags": ["prompt-patterns", "templates", "role-play", "step-by-step"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,11 +27,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Best for",
-          "Key phrase to use"
-        ],
+        "headers": ["Pattern", "Best for", "Key phrase to use"],
         "rows": [
           [
             "Role-play",
@@ -265,22 +256,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern type",
-          "Best for",
-          "Tradeoff"
-        ],
+        "headers": ["Pattern type", "Best for", "Tradeoff"],
         "rows": [
-          [
-            "Direct instruction",
-            "Fast answers and low-risk tasks",
-            "May skip nuance"
-          ],
-          [
-            "Structured template",
-            "Repeatable business workflows",
-            "Higher setup effort"
-          ],
+          ["Direct instruction", "Fast answers and low-risk tasks", "May skip nuance"],
+          ["Structured template", "Repeatable business workflows", "Higher setup effort"],
           [
             "Role + rubric prompt",
             "Quality-sensitive drafting and review",
@@ -290,10 +269,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "anatomy-of-a-good-prompt",
-    "common-prompting-mistakes"
-  ],
+  "relatedLessons": ["anatomy-of-a-good-prompt", "common-prompting-mistakes"],
   "furtherReading": [
     {
       "title": "Learn Prompting",

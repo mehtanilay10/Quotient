@@ -86,11 +86,7 @@
               "Custom models",
               "Prompt engineering"
             ],
-            "cons": [
-              "Higher cost per request",
-              "Rate limits",
-              "Requires prompt design"
-            ],
+            "cons": ["Higher cost per request", "Rate limits", "Requires prompt design"],
             "tags": ["Generative AI", "Chatbots", "Recommended"]
           },
           {
@@ -102,24 +98,14 @@
               "Lower cost",
               "Multiple modalities (text, vision, speech)"
             ],
-            "cons": [
-              "Limited customization",
-              "Fixed models"
-            ],
+            "cons": ["Limited customization", "Fixed models"],
             "tags": ["Sentiment", "OCR", "Speech"]
           },
           {
             "title": "Azure Machine Learning",
             "description": "Custom ML model training and deployment",
-            "pros": [
-              "Full ML pipeline",
-              "Custom models",
-              "AutoML support"
-            ],
-            "cons": [
-              "Requires data science team",
-              "Longer time to value"
-            ],
+            "pros": ["Full ML pipeline", "Custom models", "AutoML support"],
+            "cons": ["Requires data science team", "Longer time to value"],
             "tags": ["Custom models", "Data science"]
           }
         ]

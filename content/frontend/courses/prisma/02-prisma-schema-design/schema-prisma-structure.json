@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "schema",
-    "datasource",
-    "generator",
-    "models"
-  ],
+  "tags": ["prisma", "schema", "datasource", "generator", "models"],
   "blocks": [
     {
       "type": "paragraph",
@@ -65,12 +59,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Setting",
-          "Target",
-          "Example Value",
-          "Purpose"
-        ],
+        "headers": ["Setting", "Target", "Example Value", "Purpose"],
         "rows": [
           [
             "`url`",
@@ -99,8 +88,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "model-attributes-and-constraints",
-    "field-types-mapping"
-  ]
+  "relatedLessons": ["model-attributes-and-constraints", "field-types-mapping"]
 }

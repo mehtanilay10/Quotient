@@ -8,12 +8,7 @@
   "order": 21,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "strings",
-    "sliding-window",
-    "medium"
-  ],
+  "tags": ["csharp", "strings", "sliding-window", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -87,33 +82,16 @@
           {
             "title": "Brute Force",
             "description": "Check every substring",
-            "pros": [
-              "Simple"
-            ],
-            "cons": [
-              "O(n^2)",
-              "Repeated HashSet work"
-            ],
-            "tags": [
-              "O(n^2) time",
-              "O(1) space"
-            ]
+            "pros": ["Simple"],
+            "cons": ["O(n^2)", "Repeated HashSet work"],
+            "tags": ["O(n^2) time", "O(1) space"]
           },
           {
             "title": "Sliding Window",
             "description": "Dictionary + shrink",
-            "pros": [
-              "O(n)",
-              "Smooth shrink"
-            ],
-            "cons": [
-              "Dictionary overhead"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n)", "Smooth shrink"],
+            "cons": ["Dictionary overhead"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

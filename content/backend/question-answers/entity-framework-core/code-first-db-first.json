@@ -6,10 +6,7 @@
   "description": "Understand the different EF Core development approaches.",
   "order": 2,
   "difficulty": "intermediate",
-  "tags": [
-    "Entity Framework Core",
-    "intermediate"
-  ],
+  "tags": ["Entity Framework Core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

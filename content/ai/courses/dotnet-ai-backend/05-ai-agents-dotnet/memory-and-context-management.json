@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 24,
-  "tags": [
-    "memory",
-    "context",
-    "agents",
-    "history"
-  ],
+  "tags": ["memory", "context", "agents", "history"],
   "blocks": [
     {
       "type": "paragraph",
@@ -74,10 +69,7 @@
       "expectedOutcome": "You should maintain coherent behavior over many turns without exceeding the model's context window."
     }
   ],
-  "relatedLessons": [
-    "semantic-kernel-agents-and-planners",
-    "human-in-the-loop-and-approval-flows"
-  ],
+  "relatedLessons": ["semantic-kernel-agents-and-planners", "human-in-the-loop-and-approval-flows"],
   "technology": null,
   "furtherReading": [
     {

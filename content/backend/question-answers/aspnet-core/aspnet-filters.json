@@ -6,10 +6,7 @@
   "description": "Understand the filter pipeline in ASP.NET Core MVC.",
   "order": 10,
   "difficulty": "intermediate",
-  "tags": [
-    "ASP.NET Core",
-    "intermediate"
-  ],
+  "tags": ["ASP.NET Core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

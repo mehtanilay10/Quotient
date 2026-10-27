@@ -6,19 +6,12 @@
   "fullDefinition": "Hallucination occurs when an AI model generates text that sounds plausible but is factually wrong or completely invented. This happens because LLMs predict the next most probable token — they have no built-in fact-checking mechanism. Hallucinations can be subtle (slightly wrong dates) or dramatic (entirely fabricated citations).",
   "category": "core-concepts",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "large-language-model",
-    "context-window",
-    "rag"
-  ],
+  "relatedTerms": ["large-language-model", "context-window", "rag"],
   "learnMoreSlug": "how-llms-work-simply",
   "examples": [
     "Confidently citing a paper that doesn't exist",
     "Inventing biographical details about a real person",
     "Getting a historical date slightly wrong with no indication of uncertainty"
   ],
-  "alsoKnownAs": [
-    "Confabulation",
-    "AI Confabulation"
-  ]
+  "alsoKnownAs": ["Confabulation", "AI Confabulation"]
 }

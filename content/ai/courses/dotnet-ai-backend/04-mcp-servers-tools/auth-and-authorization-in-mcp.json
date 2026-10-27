@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 22,
-  "tags": [
-    "mcp",
-    "auth",
-    "authorization",
-    "security"
-  ],
+  "tags": ["mcp", "auth", "authorization", "security"],
   "blocks": [
     {
       "type": "paragraph",
@@ -77,10 +72,7 @@
       "takeaway": "If a tool can change data or expose private information, it must be protected by authentication and authorization."
     }
   ],
-  "relatedLessons": [
-    "error-handling-and-validation",
-    "hosting-and-deploying-mcp-servers"
-  ],
+  "relatedLessons": ["error-handling-and-validation", "hosting-and-deploying-mcp-servers"],
   "technology": null,
   "furtherReading": [
     {

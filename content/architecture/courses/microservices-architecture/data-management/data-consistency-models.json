@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 19,
-  "tags": [
-    "consistency",
-    "cap-theorem",
-    "models"
-  ],
+  "tags": ["consistency", "cap-theorem", "models"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,37 +56,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model",
-          "Guarantee",
-          "Latency",
-          "Use Case"
-        ],
+        "headers": ["Model", "Guarantee", "Latency", "Use Case"],
         "rows": [
-          [
-            "Strong",
-            "Always latest data",
-            "Higher",
-            "Banking, inventory"
-          ],
-          [
-            "Eventual",
-            "Data converges",
-            "Lower",
-            "Social feeds, caches"
-          ],
-          [
-            "Causal",
-            "Order of causally related ops",
-            "Medium",
-            "Messaging"
-          ],
-          [
-            "Read-your-writes",
-            "See own writes",
-            "Medium",
-            "User sessions"
-          ]
+          ["Strong", "Always latest data", "Higher", "Banking, inventory"],
+          ["Eventual", "Data converges", "Lower", "Social feeds, caches"],
+          ["Causal", "Order of causally related ops", "Medium", "Messaging"],
+          ["Read-your-writes", "See own writes", "Medium", "User sessions"]
         ]
       }
     },

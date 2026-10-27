@@ -1,4 +1,4 @@
-import { APPEARANCE_COOKIE_KEY, PREFERENCES_STORAGE_KEY } from '@/lib/storageKeys';
+import { APPEARANCE_COOKIE_KEY, PREFERENCES_STORAGE_KEY } from "@/lib/storageKeys";
 
 /**
  * The appearance-only subset of `UserPreferences`. This is mirrored into a
@@ -19,21 +19,21 @@ type AppearanceSource = Partial<{
   reducedMotion: unknown;
 }>;
 
-const FONT_SIZES = ['sm', 'md', 'lg', 'xl'] as const;
-const CODE_FONT_SIZES = ['sm', 'md', 'lg'] as const;
-const DENSITIES = ['comfortable', 'compact'] as const;
+const FONT_SIZES = ["sm", "md", "lg", "xl"] as const;
+const CODE_FONT_SIZES = ["sm", "md", "lg"] as const;
+const DENSITIES = ["comfortable", "compact"] as const;
 
 export const APPEARANCE_CLASSES = [
-  'font-size-sm',
-  'font-size-md',
-  'font-size-lg',
-  'font-size-xl',
-  'font-size-code-sm',
-  'font-size-code-md',
-  'font-size-code-lg',
-  'density-comfortable',
-  'density-compact',
-  'reduced-motion',
+  "font-size-sm",
+  "font-size-md",
+  "font-size-lg",
+  "font-size-xl",
+  "font-size-code-sm",
+  "font-size-code-md",
+  "font-size-code-lg",
+  "density-comfortable",
+  "density-compact",
+  "reduced-motion",
 ] as const;
 
 export const DEFAULT_APPEARANCE: AppearancePreferences = {
@@ -44,7 +44,7 @@ export const DEFAULT_APPEARANCE: AppearancePreferences = {
 };
 
 function pick(value: unknown, allowed: readonly string[]): string | null {
-  return typeof value === 'string' && allowed.includes(value) ? value : null;
+  return typeof value === "string" && allowed.includes(value) ? value : null;
 }
 
 /**
@@ -62,7 +62,7 @@ export function toAppearance(source: AppearanceSource | null | undefined): Appea
 
 export function getAppearanceClasses(source: AppearanceSource): string[] {
   const prefs = toAppearance(source);
-  const classes = [`font-size-${prefs.fontSize ?? 'md'}`];
+  const classes = [`font-size-${prefs.fontSize ?? "md"}`];
   if (prefs.codeFontSize) {
     classes.push(`font-size-code-${prefs.codeFontSize}`);
   }
@@ -70,23 +70,23 @@ export function getAppearanceClasses(source: AppearanceSource): string[] {
     classes.push(`density-${prefs.density}`);
   }
   if (prefs.reducedMotion) {
-    classes.push('reduced-motion');
+    classes.push("reduced-motion");
   }
   return classes;
 }
 
 export function applyAppearanceClasses(classes: readonly string[]): void {
-  if (typeof document === 'undefined') return;
+  if (typeof document === "undefined") return;
   const root = document.documentElement;
   APPEARANCE_CLASSES.forEach((cls) => root.classList.remove(cls));
   classes.forEach((cls) => root.classList.add(cls));
 }
 
 function readCookieRaw(): string | null {
-  if (typeof document === 'undefined') return null;
-  const parts = document.cookie.split('; ');
+  if (typeof document === "undefined") return null;
+  const parts = document.cookie.split("; ");
   for (const part of parts) {
-    const separator = part.indexOf('=');
+    const separator = part.indexOf("=");
     if (separator === -1) continue;
     if (part.slice(0, separator) === APPEARANCE_COOKIE_KEY) {
       return part.slice(separator + 1);
@@ -106,7 +106,7 @@ export function readAppearanceCookie(): AppearancePreferences | null {
 }
 
 export function readAppearanceFromStorage(): AppearancePreferences | null {
-  if (typeof window === 'undefined') return null;
+  if (typeof window === "undefined") return null;
   try {
     const raw = window.localStorage.getItem(PREFERENCES_STORAGE_KEY);
     if (!raw) return null;
@@ -126,9 +126,9 @@ export function getBootstrappedAppearance(): AppearancePreferences | null {
 }
 
 export function writeAppearanceCookie(source: AppearanceSource): void {
-  if (typeof document === 'undefined') return;
+  if (typeof document === "undefined") return;
   try {
-    const secure = window.location.protocol === 'https:' ? '; secure' : '';
+    const secure = window.location.protocol === "https:" ? "; secure" : "";
     const value = encodeURIComponent(JSON.stringify(toAppearance(source)));
     document.cookie = `${APPEARANCE_COOKIE_KEY}=${value}; path=/; max-age=31536000; samesite=lax${secure}`;
   } catch {

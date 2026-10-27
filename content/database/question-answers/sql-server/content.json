@@ -8,11 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 7.7,
   "icon": "🗄️",
-  "tags": [
-    "interview",
-    "sql",
-    "database"
-  ],
+  "tags": ["interview", "sql", "database"],
   "lessonSlugs": [
     "sql-b01",
     "sql-b02",

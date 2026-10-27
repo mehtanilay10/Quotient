@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useRef, useState } from 'react';
-import { Download, Loader2 } from 'lucide-react';
+import { useRef, useState } from "react";
+import { Download, Loader2 } from "lucide-react";
 
 export function PdfDownloadButton({
   targetId,
-  filename = 'lesson.pdf',
-  label = 'Download PDF',
+  filename = "lesson.pdf",
+  label = "Download PDF",
 }: {
   targetId: string;
   filename?: string;
@@ -20,34 +20,34 @@ export function PdfDownloadButton({
     setError(null);
     try {
       const [{ default: jsPDF }, { default: html2canvas }] = await Promise.all([
-        import('jspdf'),
-        import('html2canvas'),
+        import("jspdf"),
+        import("html2canvas"),
       ]);
 
       const element = document.getElementById(targetId);
       if (!element) {
-        throw new Error('Content not found for PDF export.');
+        throw new Error("Content not found for PDF export.");
       }
 
       const canvas = await html2canvas(element, {
         scale: 1.5,
         useCORS: true,
-        backgroundColor: '#ffffff',
+        backgroundColor: "#ffffff",
         logging: false,
         removeContainer: true,
       });
 
-      const imgData = canvas.toDataURL('image/png');
+      const imgData = canvas.toDataURL("image/png");
       const pdf = new jsPDF({
-        orientation: canvas.width > canvas.height ? 'landscape' : 'portrait',
-        unit: 'px',
+        orientation: canvas.width > canvas.height ? "landscape" : "portrait",
+        unit: "px",
         format: [canvas.width, canvas.height],
       });
 
-      pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+      pdf.addImage(imgData, "PNG", 0, 0, canvas.width, canvas.height);
       pdf.save(filename);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to generate PDF.');
+      setError(err instanceof Error ? err.message : "Failed to generate PDF.");
     } finally {
       setLoading(false);
     }

@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "THROW",
-    "raise-error",
-    "rethrow",
-    "exception"
-  ],
+  "tags": ["THROW", "raise-error", "rethrow", "exception"],
   "blocks": [
     {
       "type": "heading",
@@ -62,27 +57,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "RAISERROR",
-          "THROW"
-        ],
+        "headers": ["Feature", "RAISERROR", "THROW"],
         "rows": [
-          [
-            "Message definition",
-            "Must be in sys.messages",
-            "No requirement"
-          ],
-          [
-            "Message formatting",
-            "Supports printf-style (%s, %d)",
-            "No printf formatting"
-          ],
-          [
-            "Severity",
-            "User-specified",
-            "Always 16"
-          ]
+          ["Message definition", "Must be in sys.messages", "No requirement"],
+          ["Message formatting", "Supports printf-style (%s, %d)", "No printf formatting"],
+          ["Severity", "User-specified", "Always 16"]
         ]
       }
     },

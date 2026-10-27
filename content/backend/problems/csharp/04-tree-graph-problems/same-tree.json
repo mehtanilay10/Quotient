@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "easy",
   "estimatedMinutes": 8,
-  "tags": [
-    "csharp",
-    "trees",
-    "recursion",
-    "easy"
-  ],
+  "tags": ["csharp", "trees", "recursion", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -44,14 +39,8 @@
           {
             "title": "Recursive Equality",
             "description": "Compare node-by-node",
-            "pros": [
-              "Simple"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(h) space",
-              "Recommended"
-            ]
+            "pros": ["Simple"],
+            "tags": ["O(n) time", "O(h) space", "Recommended"]
           }
         ]
       }

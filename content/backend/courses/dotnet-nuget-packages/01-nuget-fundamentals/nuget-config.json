@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "nuget",
-    "nuget.config",
-    "feeds",
-    "configuration"
-  ],
+  "tags": ["nuget", "nuget.config", "feeds", "configuration"],
   "blocks": [
     {
       "type": "heading",
@@ -87,9 +82,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-nuget",
-    "creating-packages"
-  ],
+  "relatedLessons": ["what-is-nuget", "creating-packages"],
   "furtherReading": []
 }

@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "asp.net core",
-    "profiling",
-    "caching",
-    "redis",
-    "diagnostics"
-  ],
+  "tags": ["asp.net core", "profiling", "caching", "redis", "diagnostics"],
   "blocks": [
     {
       "type": "heading",
@@ -132,11 +126,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Symptom",
-          "Likely Cause",
-          "Fix"
-        ],
+        "headers": ["Symptom", "Likely Cause", "Fix"],
         "rows": [
           [
             "Hit ratio near 0%",

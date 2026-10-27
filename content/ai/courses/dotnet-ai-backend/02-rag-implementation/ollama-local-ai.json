@@ -8,12 +8,7 @@
   "order": 10,
   "difficulty": "intermediate",
   "estimatedMinutes": 22,
-  "tags": [
-    "ollama",
-    "local-ai",
-    "microsoft-extensions-ai",
-    "csharp"
-  ],
+  "tags": ["ollama", "local-ai", "microsoft-extensions-ai", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -75,10 +70,7 @@
       "takeaway": "Use Ollama with Microsoft.Extensions.AI.Ollama when you need local or offline AI inference in .NET."
     }
   ],
-  "relatedLessons": [
-    "rag-with-microsoft-extensions-ai",
-    "rag-with-semantic-kernel"
-  ],
+  "relatedLessons": ["rag-with-microsoft-extensions-ai", "rag-with-semantic-kernel"],
   "technology": null,
   "furtherReading": [
     {

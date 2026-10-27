@@ -6,13 +6,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 8,
-  "tags": [
-    "observer",
-    "patterns",
-    "events",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["observer", "patterns", "events", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -97,10 +91,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "Observer enables reactive architectures.",
-          "Built into RxJS and EventTarget."
-        ]
+        "points": ["Observer enables reactive architectures.", "Built into RxJS and EventTarget."]
       }
     }
   ],

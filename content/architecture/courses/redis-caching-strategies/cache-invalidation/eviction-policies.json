@@ -66,14 +66,46 @@
       "data": {
         "headers": ["Policy", "Description", "Best For"],
         "rows": [
-          ["noeviction", "Reject writes when memory is full; reads still work.", "Persistent stores where data loss is unacceptable."],
-          ["allkeys-lru", "Evict the least recently used key across all keyspaces.", "General-purpose caches with temporal locality."],
-          ["volatile-lru", "Evict the least recently used key among keys with an EXPIRE.", "Caches where some keys should never expire."],
-          ["allkeys-lfu", "Evict the least frequently used key across all keyspaces.", "Skewed access patterns where some keys are hot."],
-          ["volatile-lfu", "Evict the least frequently used key among keys with an EXPIRE.", "Mixed workloads with expiring and persistent data."],
-          ["allkeys-random", "Evict a random key across all keyspaces.", "Uniform access patterns where recency does not matter."],
-          ["volatile-random", "Evict a random key among keys with an EXPIRE.", "Simple fallback when LRU/LFU is too expensive."],
-          ["volatile-ttl", "Evict the key with the nearest expiration among keys with an EXPIRE.", "TTL-driven caches where sooner-to-expire keys can go first."]
+          [
+            "noeviction",
+            "Reject writes when memory is full; reads still work.",
+            "Persistent stores where data loss is unacceptable."
+          ],
+          [
+            "allkeys-lru",
+            "Evict the least recently used key across all keyspaces.",
+            "General-purpose caches with temporal locality."
+          ],
+          [
+            "volatile-lru",
+            "Evict the least recently used key among keys with an EXPIRE.",
+            "Caches where some keys should never expire."
+          ],
+          [
+            "allkeys-lfu",
+            "Evict the least frequently used key across all keyspaces.",
+            "Skewed access patterns where some keys are hot."
+          ],
+          [
+            "volatile-lfu",
+            "Evict the least frequently used key among keys with an EXPIRE.",
+            "Mixed workloads with expiring and persistent data."
+          ],
+          [
+            "allkeys-random",
+            "Evict a random key across all keyspaces.",
+            "Uniform access patterns where recency does not matter."
+          ],
+          [
+            "volatile-random",
+            "Evict a random key among keys with an EXPIRE.",
+            "Simple fallback when LRU/LFU is too expensive."
+          ],
+          [
+            "volatile-ttl",
+            "Evict the key with the nearest expiration among keys with an EXPIRE.",
+            "TTL-driven caches where sooner-to-expire keys can go first."
+          ]
         ]
       }
     },

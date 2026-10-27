@@ -10,12 +10,7 @@
   "estimatedHours": 3,
   "icon": "🗄️",
   "tags": ["aws", "rds", "dynamodb", "database", "csharp"],
-  "lessonSlugs": [
-    "rds-intro",
-    "rds-csharp",
-    "dynamodb-csharp",
-    "database-choosing"
-  ],
+  "lessonSlugs": ["rds-intro", "rds-csharp", "dynamodb-csharp", "database-choosing"],
   "prerequisites": ["s3-intro", "secrets-manager-intro"],
   "whatYouLearn": [
     "Provision RDS instances from C# and the AWS console",

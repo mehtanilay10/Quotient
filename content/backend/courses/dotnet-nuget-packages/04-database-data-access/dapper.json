@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "dapper",
-    "micro-orm",
-    "sql",
-    "performance"
-  ],
+  "tags": ["dapper", "micro-orm", "sql", "performance"],
   "blocks": [
     {
       "type": "heading",

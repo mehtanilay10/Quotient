@@ -7,11 +7,7 @@
   "order": 7,
   "difficulty": "beginner",
   "estimatedMinutes": 23,
-  "tags": [
-    "dynamic-SQL",
-    "sp_executesql",
-    "SQL-injection"
-  ],
+  "tags": ["dynamic-SQL", "sp_executesql", "SQL-injection"],
   "blocks": [
     {
       "type": "heading",

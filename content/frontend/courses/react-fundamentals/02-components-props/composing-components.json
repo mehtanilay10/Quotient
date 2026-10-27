@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "composition",
-    "components",
-    "ui"
-  ],
+  "tags": ["react", "composition", "components", "ui"],
   "blocks": [
     {
       "type": "paragraph",
@@ -101,17 +96,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Purpose",
-          "Example"
-        ],
+        "headers": ["Pattern", "Purpose", "Example"],
         "rows": [
-          [
-            "Containment",
-            "Pass arbitrary content into a wrapper",
-            "Dialog, Card, Layout"
-          ],
+          ["Containment", "Pass arbitrary content into a wrapper", "Dialog, Card, Layout"],
           [
             "Specialization",
             "Configure behavior or appearance via props",

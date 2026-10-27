@@ -8,74 +8,345 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": ["sql", "sql-server", "cte", "window-functions", "indexes", "transactions", "stored-procedures", "cheatsheet", "quick-reference"],
+  "tags": [
+    "sql",
+    "sql-server",
+    "cte",
+    "window-functions",
+    "indexes",
+    "transactions",
+    "stored-procedures",
+    "cheatsheet",
+    "quick-reference"
+  ],
   "blocks": [
     { "type": "heading", "data": { "level": 2, "text": "SQL Server Quick Reference" } },
-    { "type": "paragraph", "data": { "text": "SQL Server is a relational database management system by Microsoft. Use T-SQL for querying and managing data." } },
+    {
+      "type": "paragraph",
+      "data": {
+        "text": "SQL Server is a relational database management system by Microsoft. Use T-SQL for querying and managing data."
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "SELECT Fundamentals" } },
-    { "type": "example", "data": { "title": "SELECT Basics", "content": "Basic SELECT statements.", "language": "sql", "code": "-- Select all columns\nSELECT * FROM Customers;\n\n-- Select specific columns\nSELECT FirstName, LastName, Email FROM Customers;\n\n-- Distinct values\nSELECT DISTINCT Country FROM Customers;\n\n-- Top N rows\nSELECT TOP 10 * FROM Orders;\nSELECT TOP 10 PERCENT * FROM Orders;\n\n-- Aliases\nSELECT FirstName AS 'First Name', LastName + ', ' + FirstName AS 'Full Name'\nFROM Customers;\n\nSELECT COUNT(*) AS TotalCustomers FROM Customers;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "SELECT Basics",
+        "content": "Basic SELECT statements.",
+        "language": "sql",
+        "code": "-- Select all columns\nSELECT * FROM Customers;\n\n-- Select specific columns\nSELECT FirstName, LastName, Email FROM Customers;\n\n-- Distinct values\nSELECT DISTINCT Country FROM Customers;\n\n-- Top N rows\nSELECT TOP 10 * FROM Orders;\nSELECT TOP 10 PERCENT * FROM Orders;\n\n-- Aliases\nSELECT FirstName AS 'First Name', LastName + ', ' + FirstName AS 'Full Name'\nFROM Customers;\n\nSELECT COUNT(*) AS TotalCustomers FROM Customers;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Filtering" } },
-    { "type": "example", "data": { "title": "WHERE Clause", "content": "Filtering rows with WHERE.", "language": "sql", "code": "SELECT * FROM Products WHERE Price > 100;\nSELECT * FROM Products WHERE Category = 'Electronics';\nSELECT * FROM Products WHERE Price BETWEEN 50 AND 200;\nSELECT * FROM Products WHERE Category IN ('Electronics', 'Books');\nSELECT * FROM Customers WHERE Name LIKE 'J%';\nSELECT * FROM Orders WHERE ShippedDate IS NULL;\nSELECT * FROM Products WHERE Price > 100 AND Stock > 0;\nSELECT * FROM Products WHERE NOT Category = 'Electronics';" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "WHERE Clause",
+        "content": "Filtering rows with WHERE.",
+        "language": "sql",
+        "code": "SELECT * FROM Products WHERE Price > 100;\nSELECT * FROM Products WHERE Category = 'Electronics';\nSELECT * FROM Products WHERE Price BETWEEN 50 AND 200;\nSELECT * FROM Products WHERE Category IN ('Electronics', 'Books');\nSELECT * FROM Customers WHERE Name LIKE 'J%';\nSELECT * FROM Orders WHERE ShippedDate IS NULL;\nSELECT * FROM Products WHERE Price > 100 AND Stock > 0;\nSELECT * FROM Products WHERE NOT Category = 'Electronics';"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Sorting" } },
-    { "type": "example", "data": { "title": "ORDER BY", "content": "Sorting query results.", "language": "sql", "code": "-- Ascending (default)\nSELECT * FROM Products ORDER BY Price ASC;\n\n-- Descending\nSELECT * FROM Products ORDER BY Price DESC;\n\n-- Multiple columns\nSELECT * FROM Products ORDER BY Category ASC, Price DESC;\n\n-- With alias\nSELECT Name, Price * 1.1 AS NewPrice FROM Products ORDER BY NewPrice DESC;\n\n-- Offset/Fetch (pagination)\nSELECT * FROM Products ORDER BY Id\nOFFSET 10 ROWS FETCH NEXT 5 ROWS ONLY;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "ORDER BY",
+        "content": "Sorting query results.",
+        "language": "sql",
+        "code": "-- Ascending (default)\nSELECT * FROM Products ORDER BY Price ASC;\n\n-- Descending\nSELECT * FROM Products ORDER BY Price DESC;\n\n-- Multiple columns\nSELECT * FROM Products ORDER BY Category ASC, Price DESC;\n\n-- With alias\nSELECT Name, Price * 1.1 AS NewPrice FROM Products ORDER BY NewPrice DESC;\n\n-- Offset/Fetch (pagination)\nSELECT * FROM Products ORDER BY Id\nOFFSET 10 ROWS FETCH NEXT 5 ROWS ONLY;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "INNER JOIN" } },
-    { "type": "example", "data": { "title": "INNER JOIN", "content": "Join tables with matching rows.", "language": "sql", "code": "-- Basic inner join\nSELECT Orders.Id, Customers.Name\nFROM Orders\nINNER JOIN Customers ON Orders.CustomerId = Customers.Id;\n\n-- Joining 3+ tables\nSELECT Orders.Id, Customers.Name, Products.Name AS ProductName\nFROM Orders\nINNER JOIN Customers ON Orders.CustomerId = Customers.Id\nINNER JOIN OrderItems ON Orders.Id = OrderItems.OrderId\nINNER JOIN Products ON OrderItems.ProductId = Products.Id;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "INNER JOIN",
+        "content": "Join tables with matching rows.",
+        "language": "sql",
+        "code": "-- Basic inner join\nSELECT Orders.Id, Customers.Name\nFROM Orders\nINNER JOIN Customers ON Orders.CustomerId = Customers.Id;\n\n-- Joining 3+ tables\nSELECT Orders.Id, Customers.Name, Products.Name AS ProductName\nFROM Orders\nINNER JOIN Customers ON Orders.CustomerId = Customers.Id\nINNER JOIN OrderItems ON Orders.Id = OrderItems.OrderId\nINNER JOIN Products ON OrderItems.ProductId = Products.Id;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "LEFT JOIN" } },
-    { "type": "example", "data": { "title": "LEFT JOIN", "content": "Include all rows from left table.", "language": "sql", "code": "-- All customers with their orders\nSELECT Customers.Name, Orders.Id AS OrderId\nFROM Customers\nLEFT JOIN Orders ON Customers.Id = Orders.CustomerId;\n\n-- LEFT JOIN with NULL handling\nSELECT Customers.Name, ISNULL(COUNT(Orders.Id), 0) AS OrderCount\nFROM Customers\nLEFT JOIN Orders ON Customers.Id = Orders.CustomerId\nGROUP BY Customers.Name;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "LEFT JOIN",
+        "content": "Include all rows from left table.",
+        "language": "sql",
+        "code": "-- All customers with their orders\nSELECT Customers.Name, Orders.Id AS OrderId\nFROM Customers\nLEFT JOIN Orders ON Customers.Id = Orders.CustomerId;\n\n-- LEFT JOIN with NULL handling\nSELECT Customers.Name, ISNULL(COUNT(Orders.Id), 0) AS OrderCount\nFROM Customers\nLEFT JOIN Orders ON Customers.Id = Orders.CustomerId\nGROUP BY Customers.Name;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "RIGHT JOIN & FULL JOIN" } },
-    { "type": "example", "data": { "title": "RIGHT & FULL JOIN", "content": "Right and full outer joins.", "language": "sql", "code": "-- RIGHT JOIN - all rows from right table\nSELECT Customers.Name, Orders.Id\nFROM Orders\nRIGHT JOIN Customers ON Orders.CustomerId = Customers.Id;\n\n-- FULL OUTER JOIN - all rows from both\nSELECT Customers.Name, Orders.Id\nFROM Customers\nFULL OUTER JOIN Orders ON Customers.Id = Orders.CustomerId;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "RIGHT & FULL JOIN",
+        "content": "Right and full outer joins.",
+        "language": "sql",
+        "code": "-- RIGHT JOIN - all rows from right table\nSELECT Customers.Name, Orders.Id\nFROM Orders\nRIGHT JOIN Customers ON Orders.CustomerId = Customers.Id;\n\n-- FULL OUTER JOIN - all rows from both\nSELECT Customers.Name, Orders.Id\nFROM Customers\nFULL OUTER JOIN Orders ON Customers.Id = Orders.CustomerId;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "CROSS JOIN & SELF JOIN" } },
-    { "type": "example", "data": { "title": "CROSS & SELF JOIN", "content": "Cartesian product and self-referencing joins.", "language": "sql", "code": "-- CROSS JOIN (Cartesian product)\nSELECT Sizes.Name, Colors.Name\nFROM Sizes\nCROSS JOIN Colors;\n\n-- SELF JOIN (employee-manager)\nSELECT E.Name AS Employee, M.Name AS Manager\nFROM Employees E\nLEFT JOIN Employees M ON E.ManagerId = M.Id;\n\n-- CROSS APPLY\nSELECT C.Name, O.Total\nFROM Customers C\nCROSS APPLY (\n  SELECT SUM(Amount) AS Total FROM Orders WHERE CustomerId = C.Id\n) O;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "CROSS & SELF JOIN",
+        "content": "Cartesian product and self-referencing joins.",
+        "language": "sql",
+        "code": "-- CROSS JOIN (Cartesian product)\nSELECT Sizes.Name, Colors.Name\nFROM Sizes\nCROSS JOIN Colors;\n\n-- SELF JOIN (employee-manager)\nSELECT E.Name AS Employee, M.Name AS Manager\nFROM Employees E\nLEFT JOIN Employees M ON E.ManagerId = M.Id;\n\n-- CROSS APPLY\nSELECT C.Name, O.Total\nFROM Customers C\nCROSS APPLY (\n  SELECT SUM(Amount) AS Total FROM Orders WHERE CustomerId = C.Id\n) O;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Aggregate Functions" } },
-    { "type": "example", "data": { "title": "Aggregates", "content": "Common aggregate functions.", "language": "sql", "code": "SELECT\n  COUNT(*) AS TotalOrders,\n  COUNT(DISTINCT CustomerId) AS UniqueCustomers,\n  SUM(Amount) AS TotalRevenue,\n  AVG(Amount) AS AvgOrder,\n  MIN(Amount) AS MinOrder,\n  MAX(Amount) AS MaxOrder\nFROM Orders;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Aggregates",
+        "content": "Common aggregate functions.",
+        "language": "sql",
+        "code": "SELECT\n  COUNT(*) AS TotalOrders,\n  COUNT(DISTINCT CustomerId) AS UniqueCustomers,\n  SUM(Amount) AS TotalRevenue,\n  AVG(Amount) AS AvgOrder,\n  MIN(Amount) AS MinOrder,\n  MAX(Amount) AS MaxOrder\nFROM Orders;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "GROUP BY" } },
-    { "type": "example", "data": { "title": "GROUP BY & HAVING", "content": "Grouping data with GROUP BY.", "language": "sql", "code": "-- Group by single column\nSELECT CustomerId, COUNT(*) AS OrderCount\nFROM Orders\nGROUP BY CustomerId;\n\n-- HAVING (filter after grouping)\nSELECT CustomerId, SUM(Amount) AS Total\nFROM Orders\nGROUP BY CustomerId\nHAVING SUM(Amount) > 1000;\n\n-- ROLLUP\nSELECT Category, SUM(Amount) AS Total\nFROM Orders\nGROUP BY ROLLUP(Category);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "GROUP BY & HAVING",
+        "content": "Grouping data with GROUP BY.",
+        "language": "sql",
+        "code": "-- Group by single column\nSELECT CustomerId, COUNT(*) AS OrderCount\nFROM Orders\nGROUP BY CustomerId;\n\n-- HAVING (filter after grouping)\nSELECT CustomerId, SUM(Amount) AS Total\nFROM Orders\nGROUP BY CustomerId\nHAVING SUM(Amount) > 1000;\n\n-- ROLLUP\nSELECT Category, SUM(Amount) AS Total\nFROM Orders\nGROUP BY ROLLUP(Category);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Subqueries" } },
-    { "type": "example", "data": { "title": "Subquery Patterns", "content": "Using subqueries in different contexts.", "language": "sql", "code": "-- Scalar subquery\nSELECT Name, (SELECT MAX(Price) FROM Products) AS MaxPrice\nFROM Products;\n\n-- IN subquery\nSELECT Name FROM Customers\nWHERE Id IN (SELECT CustomerId FROM Orders WHERE Amount > 500);\n\n-- EXISTS subquery\nSELECT Name FROM Customers C\nWHERE EXISTS (SELECT 1 FROM Orders O WHERE O.CustomerId = C.Id);\n\n-- Correlated subquery\nSELECT Name, (SELECT COUNT(*) FROM Orders O WHERE O.CustomerId = C.Id)\nFROM Customers C;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Subquery Patterns",
+        "content": "Using subqueries in different contexts.",
+        "language": "sql",
+        "code": "-- Scalar subquery\nSELECT Name, (SELECT MAX(Price) FROM Products) AS MaxPrice\nFROM Products;\n\n-- IN subquery\nSELECT Name FROM Customers\nWHERE Id IN (SELECT CustomerId FROM Orders WHERE Amount > 500);\n\n-- EXISTS subquery\nSELECT Name FROM Customers C\nWHERE EXISTS (SELECT 1 FROM Orders O WHERE O.CustomerId = C.Id);\n\n-- Correlated subquery\nSELECT Name, (SELECT COUNT(*) FROM Orders O WHERE O.CustomerId = C.Id)\nFROM Customers C;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "CTE" } },
-    { "type": "example", "data": { "title": "Common Table Expressions", "content": "CTE for readable queries.", "language": "sql", "code": "-- Basic CTE\nWITH CustomerOrders AS (\n  SELECT CustomerId, COUNT(*) AS OrderCount, SUM(Amount) AS Total\n  FROM Orders\n  GROUP BY CustomerId\n)\nSELECT C.Name, CO.OrderCount, CO.Total\nFROM Customers C\nINNER JOIN CustomerOrders CO ON C.Id = CO.CustomerId;\n\n-- Recursive CTE (employee hierarchy)\nWITH OrgChart AS (\n  SELECT Id, Name, ManagerId, 1 AS Level\n  FROM Employees WHERE ManagerId IS NULL\n  UNION ALL\n  SELECT E.Id, E.Name, E.ManagerId, OC.Level + 1\n  FROM Employees E\n  INNER JOIN OrgChart OC ON E.ManagerId = OC.Id\n)\nSELECT * FROM OrgChart;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Common Table Expressions",
+        "content": "CTE for readable queries.",
+        "language": "sql",
+        "code": "-- Basic CTE\nWITH CustomerOrders AS (\n  SELECT CustomerId, COUNT(*) AS OrderCount, SUM(Amount) AS Total\n  FROM Orders\n  GROUP BY CustomerId\n)\nSELECT C.Name, CO.OrderCount, CO.Total\nFROM Customers C\nINNER JOIN CustomerOrders CO ON C.Id = CO.CustomerId;\n\n-- Recursive CTE (employee hierarchy)\nWITH OrgChart AS (\n  SELECT Id, Name, ManagerId, 1 AS Level\n  FROM Employees WHERE ManagerId IS NULL\n  UNION ALL\n  SELECT E.Id, E.Name, E.ManagerId, OC.Level + 1\n  FROM Employees E\n  INNER JOIN OrgChart OC ON E.ManagerId = OC.Id\n)\nSELECT * FROM OrgChart;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Window Functions" } },
-    { "type": "example", "data": { "title": "Window Functions", "content": "Analytical functions with OVER.", "language": "sql", "code": "-- ROW_NUMBER\nSELECT Name, Salary,\n  ROW_NUMBER() OVER (ORDER BY Salary DESC) AS RowNum\nFROM Employees;\n\n-- RANK vs DENSE_RANK\nSELECT Name, Salary,\n  RANK() OVER (ORDER BY Salary DESC) AS Rank,\n  DENSE_RANK() OVER (ORDER BY Salary DESC) AS DenseRank\nFROM Employees;\n\n-- Running total\nSELECT Date, Amount,\n  SUM(Amount) OVER (ORDER BY Date ROWS UNBOUNDED PRECEDING) AS RunningTotal\nFROM Sales;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Window Functions",
+        "content": "Analytical functions with OVER.",
+        "language": "sql",
+        "code": "-- ROW_NUMBER\nSELECT Name, Salary,\n  ROW_NUMBER() OVER (ORDER BY Salary DESC) AS RowNum\nFROM Employees;\n\n-- RANK vs DENSE_RANK\nSELECT Name, Salary,\n  RANK() OVER (ORDER BY Salary DESC) AS Rank,\n  DENSE_RANK() OVER (ORDER BY Salary DESC) AS DenseRank\nFROM Employees;\n\n-- Running total\nSELECT Date, Amount,\n  SUM(Amount) OVER (ORDER BY Date ROWS UNBOUNDED PRECEDING) AS RunningTotal\nFROM Sales;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "PIVOT & UNPIVOT" } },
-    { "type": "example", "data": { "title": "PIVOT", "content": "Transform rows to columns.", "language": "sql", "code": "-- PIVOT\nSELECT Year, [Jan], [Feb], [Mar]\nFROM (\n  SELECT Year, Month, Amount FROM Sales\n) AS Source\nPIVOT (\n  SUM(Amount) FOR Month IN ([Jan], [Feb], [Mar])\n) AS PivotTable;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "PIVOT",
+        "content": "Transform rows to columns.",
+        "language": "sql",
+        "code": "-- PIVOT\nSELECT Year, [Jan], [Feb], [Mar]\nFROM (\n  SELECT Year, Month, Amount FROM Sales\n) AS Source\nPIVOT (\n  SUM(Amount) FOR Month IN ([Jan], [Feb], [Mar])\n) AS PivotTable;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "String Functions" } },
-    { "type": "example", "data": { "title": "String Manipulation", "content": "T-SQL string functions.", "language": "sql", "code": "SELECT\n  CONCAT('Hello', ' ', 'World') AS Greeting,\n  CONCAT_WS(', ', 'A', 'B', 'C') AS CommaList,\n  UPPER('hello') AS Upper,\n  LOWER('HELLO') AS Lower,\n  LTRIM('  text') AS TrimmedLeft,\n  RTRIM('text  ') AS TrimmedRight,\n  LEN('hello') AS Length,\n  SUBSTRING('hello', 1, 3) AS Sub,\n  REPLACE('hello world', 'world', 'SQL') AS Replaced,\n  CHARINDEX('l', 'hello') AS Position,\n  FORMAT(GETDATE(), 'yyyy-MM-dd') AS Formatted;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "String Manipulation",
+        "content": "T-SQL string functions.",
+        "language": "sql",
+        "code": "SELECT\n  CONCAT('Hello', ' ', 'World') AS Greeting,\n  CONCAT_WS(', ', 'A', 'B', 'C') AS CommaList,\n  UPPER('hello') AS Upper,\n  LOWER('HELLO') AS Lower,\n  LTRIM('  text') AS TrimmedLeft,\n  RTRIM('text  ') AS TrimmedRight,\n  LEN('hello') AS Length,\n  SUBSTRING('hello', 1, 3) AS Sub,\n  REPLACE('hello world', 'world', 'SQL') AS Replaced,\n  CHARINDEX('l', 'hello') AS Position,\n  FORMAT(GETDATE(), 'yyyy-MM-dd') AS Formatted;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Date Functions" } },
-    { "type": "example", "data": { "title": "Date Operations", "content": "Working with dates in SQL Server.", "language": "sql", "code": "SELECT\n  GETDATE() AS Now,\n  DATEADD(day, 7, GETDATE()) AS NextWeek,\n  DATEDIFF(day, '2024-01-01', GETDATE()) AS DaysDiff,\n  DATENAME(month, GETDATE()) AS MonthName,\n  DATEPART(year, GETDATE()) AS Year,\n  EOMONTH(GETDATE()) AS EndOfMonth,\n  CONVERT(date, GETDATE()) AS DateOnly,\n  CAST(GETDATE() AS date) AS DateOnly2;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Date Operations",
+        "content": "Working with dates in SQL Server.",
+        "language": "sql",
+        "code": "SELECT\n  GETDATE() AS Now,\n  DATEADD(day, 7, GETDATE()) AS NextWeek,\n  DATEDIFF(day, '2024-01-01', GETDATE()) AS DaysDiff,\n  DATENAME(month, GETDATE()) AS MonthName,\n  DATEPART(year, GETDATE()) AS Year,\n  EOMONTH(GETDATE()) AS EndOfMonth,\n  CONVERT(date, GETDATE()) AS DateOnly,\n  CAST(GETDATE() AS date) AS DateOnly2;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Case Statements" } },
-    { "type": "example", "data": { "title": "CASE Expressions", "content": "Conditional logic in queries.", "language": "sql", "code": "-- Simple CASE\nSELECT Name,\n  CASE Status\n    WHEN 1 THEN 'Active'\n    WHEN 2 THEN 'Pending'\n    ELSE 'Inactive'\n  END AS StatusText\nFROM Users;\n\n-- Searched CASE\nSELECT Name,\n  CASE\n    WHEN Age < 18 THEN 'Minor'\n    WHEN Age < 65 THEN 'Adult'\n    ELSE 'Senior'\n  END AS AgeGroup\nFROM Users;\n\n-- COALESCE & ISNULL\nSELECT COALESCE(Phone, Email, 'N/A') AS Contact;\nSELECT ISNULL(Phone, 'N/A') AS Phone;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "CASE Expressions",
+        "content": "Conditional logic in queries.",
+        "language": "sql",
+        "code": "-- Simple CASE\nSELECT Name,\n  CASE Status\n    WHEN 1 THEN 'Active'\n    WHEN 2 THEN 'Pending'\n    ELSE 'Inactive'\n  END AS StatusText\nFROM Users;\n\n-- Searched CASE\nSELECT Name,\n  CASE\n    WHEN Age < 18 THEN 'Minor'\n    WHEN Age < 65 THEN 'Adult'\n    ELSE 'Senior'\n  END AS AgeGroup\nFROM Users;\n\n-- COALESCE & ISNULL\nSELECT COALESCE(Phone, Email, 'N/A') AS Contact;\nSELECT ISNULL(Phone, 'N/A') AS Phone;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Indexes" } },
-    { "type": "example", "data": { "title": "Creating Indexes", "content": "Index strategies.", "language": "sql", "code": "-- Clustered index (table data sorted)\nCREATE CLUSTERED INDEX IX_Orders_Date ON Orders(OrderDate);\n\n-- Non-clustered index\nCREATE NONCLUSTERED INDEX IX_Orders_Customer ON Orders(CustomerId);\n\n-- Unique index\nCREATE UNIQUE INDEX IX_Users_Email ON Users(Email);\n\n-- Composite index\nCREATE INDEX IX_Orders_CustDate ON Orders(CustomerId, OrderDate);\n\n-- Included columns (covering index)\nCREATE INDEX IX_Orders_Covering ON Orders(CustomerId)\nINCLUDE (Amount, OrderDate);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Creating Indexes",
+        "content": "Index strategies.",
+        "language": "sql",
+        "code": "-- Clustered index (table data sorted)\nCREATE CLUSTERED INDEX IX_Orders_Date ON Orders(OrderDate);\n\n-- Non-clustered index\nCREATE NONCLUSTERED INDEX IX_Orders_Customer ON Orders(CustomerId);\n\n-- Unique index\nCREATE UNIQUE INDEX IX_Users_Email ON Users(Email);\n\n-- Composite index\nCREATE INDEX IX_Orders_CustDate ON Orders(CustomerId, OrderDate);\n\n-- Included columns (covering index)\nCREATE INDEX IX_Orders_Covering ON Orders(CustomerId)\nINCLUDE (Amount, OrderDate);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Constraints" } },
-    { "type": "example", "data": { "title": "Table Constraints", "content": "Data integrity constraints.", "language": "sql", "code": "CREATE TABLE Orders (\n  Id INT PRIMARY KEY IDENTITY(1,1),\n  CustomerId INT NOT NULL,\n  Amount DECIMAL(10,2) CHECK (Amount > 0),\n  Status VARCHAR(20) DEFAULT 'Pending',\n  CreatedAt DATETIME DEFAULT GETDATE(),\n  CONSTRAINT FK_Orders_Customers FOREIGN KEY (CustomerId)\n    REFERENCES Customers(Id)\n    ON DELETE CASCADE\n);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Table Constraints",
+        "content": "Data integrity constraints.",
+        "language": "sql",
+        "code": "CREATE TABLE Orders (\n  Id INT PRIMARY KEY IDENTITY(1,1),\n  CustomerId INT NOT NULL,\n  Amount DECIMAL(10,2) CHECK (Amount > 0),\n  Status VARCHAR(20) DEFAULT 'Pending',\n  CreatedAt DATETIME DEFAULT GETDATE(),\n  CONSTRAINT FK_Orders_Customers FOREIGN KEY (CustomerId)\n    REFERENCES Customers(Id)\n    ON DELETE CASCADE\n);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Transactions" } },
-    { "type": "example", "data": { "title": "Transaction Control", "content": "Managing transactions.", "language": "sql", "code": "BEGIN TRANSACTION;\n\nBEGIN TRY\n  INSERT INTO Accounts (Name, Balance) VALUES ('Alice', 1000);\n  INSERT INTO Accounts (Name, Balance) VALUES ('Bob', 500);\n\n  UPDATE Accounts SET Balance = Balance - 100 WHERE Name = 'Alice';\n  UPDATE Accounts SET Balance = Balance + 100 WHERE Name = 'Bob';\n\n  COMMIT TRANSACTION;\nEND TRY\nBEGIN CATCH\n  IF @@TRANCOUNT > 0\n    ROLLBACK TRANSACTION;\n\n  SELECT\n    ERROR_NUMBER() AS ErrorNumber,\n    ERROR_MESSAGE() AS ErrorMessage;\nEND CATCH;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Transaction Control",
+        "content": "Managing transactions.",
+        "language": "sql",
+        "code": "BEGIN TRANSACTION;\n\nBEGIN TRY\n  INSERT INTO Accounts (Name, Balance) VALUES ('Alice', 1000);\n  INSERT INTO Accounts (Name, Balance) VALUES ('Bob', 500);\n\n  UPDATE Accounts SET Balance = Balance - 100 WHERE Name = 'Alice';\n  UPDATE Accounts SET Balance = Balance + 100 WHERE Name = 'Bob';\n\n  COMMIT TRANSACTION;\nEND TRY\nBEGIN CATCH\n  IF @@TRANCOUNT > 0\n    ROLLBACK TRANSACTION;\n\n  SELECT\n    ERROR_NUMBER() AS ErrorNumber,\n    ERROR_MESSAGE() AS ErrorMessage;\nEND CATCH;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Stored Procedures" } },
-    { "type": "example", "data": { "title": "Stored Procedure", "content": "Creating stored procedures.", "language": "sql", "code": "CREATE PROCEDURE GetCustomerOrders\n  @CustomerId INT,\n  @MinAmount DECIMAL(10,2) = 0\nAS\nBEGIN\n  SET NOCOUNT ON;\n\n  SELECT O.*, C.Name AS CustomerName\n  FROM Orders O\n  INNER JOIN Customers C ON O.CustomerId = C.Id\n  WHERE O.CustomerId = @CustomerId\n    AND O.Amount >= @MinAmount;\n\n  RETURN @@ROWCOUNT;\nEND;\n\n-- Execute\nEXEC GetCustomerOrders @CustomerId = 1, @MinAmount = 100;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Stored Procedure",
+        "content": "Creating stored procedures.",
+        "language": "sql",
+        "code": "CREATE PROCEDURE GetCustomerOrders\n  @CustomerId INT,\n  @MinAmount DECIMAL(10,2) = 0\nAS\nBEGIN\n  SET NOCOUNT ON;\n\n  SELECT O.*, C.Name AS CustomerName\n  FROM Orders O\n  INNER JOIN Customers C ON O.CustomerId = C.Id\n  WHERE O.CustomerId = @CustomerId\n    AND O.Amount >= @MinAmount;\n\n  RETURN @@ROWCOUNT;\nEND;\n\n-- Execute\nEXEC GetCustomerOrders @CustomerId = 1, @MinAmount = 100;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "User-Defined Functions" } },
-    { "type": "example", "data": { "title": "Scalar & Table-Valued Functions", "content": "Creating UDFs.", "language": "sql", "code": "-- Scalar function\nCREATE FUNCTION dbo.GetDiscount(@Price DECIMAL(10,2))\nRETURNS DECIMAL(10,2)\nAS\nBEGIN\n  RETURN CASE WHEN @Price > 100 THEN @Price * 0.9 ELSE @Price END;\nEND;\n\n-- Table-valued function\nCREATE FUNCTION dbo.GetActiveCustomers()\nRETURNS TABLE\nAS\nRETURN (\n  SELECT * FROM Customers WHERE IsActive = 1\n);\n\n-- Usage\nSELECT dbo.GetDiscount(150) AS DiscountedPrice;\nSELECT * FROM dbo.GetActiveCustomers();" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Scalar & Table-Valued Functions",
+        "content": "Creating UDFs.",
+        "language": "sql",
+        "code": "-- Scalar function\nCREATE FUNCTION dbo.GetDiscount(@Price DECIMAL(10,2))\nRETURNS DECIMAL(10,2)\nAS\nBEGIN\n  RETURN CASE WHEN @Price > 100 THEN @Price * 0.9 ELSE @Price END;\nEND;\n\n-- Table-valued function\nCREATE FUNCTION dbo.GetActiveCustomers()\nRETURNS TABLE\nAS\nRETURN (\n  SELECT * FROM Customers WHERE IsActive = 1\n);\n\n-- Usage\nSELECT dbo.GetDiscount(150) AS DiscountedPrice;\nSELECT * FROM dbo.GetActiveCustomers();"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Triggers" } },
-    { "type": "example", "data": { "title": "AFTER Trigger", "content": "Trigger for audit logging.", "language": "sql", "code": "CREATE TRIGGER trg_AuditOrders\nON Orders\nAFTER INSERT, UPDATE, DELETE\nAS\nBEGIN\n  SET NOCOUNT ON;\n\n  IF EXISTS (SELECT * FROM inserted)\n    INSERT INTO OrderAudit (OrderId, Action, ChangedAt)\n    SELECT Id, 'UPDATE', GETDATE() FROM inserted;\n\n  IF EXISTS (SELECT * FROM deleted)\n    INSERT INTO OrderAudit (OrderId, Action, ChangedAt)\n    SELECT Id, 'DELETE', GETDATE() FROM deleted;\nEND;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "AFTER Trigger",
+        "content": "Trigger for audit logging.",
+        "language": "sql",
+        "code": "CREATE TRIGGER trg_AuditOrders\nON Orders\nAFTER INSERT, UPDATE, DELETE\nAS\nBEGIN\n  SET NOCOUNT ON;\n\n  IF EXISTS (SELECT * FROM inserted)\n    INSERT INTO OrderAudit (OrderId, Action, ChangedAt)\n    SELECT Id, 'UPDATE', GETDATE() FROM inserted;\n\n  IF EXISTS (SELECT * FROM deleted)\n    INSERT INTO OrderAudit (OrderId, Action, ChangedAt)\n    SELECT Id, 'DELETE', GETDATE() FROM deleted;\nEND;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Temporary Tables" } },
-    { "type": "example", "data": { "title": "Temporary Tables", "content": "Using temporary tables.", "language": "sql", "code": "-- Local temp table (#)\nCREATE TABLE #TempOrders (\n  OrderId INT,\n  Total DECIMAL(10,2)\n);\n\nINSERT INTO #TempOrders\nSELECT Id, Amount FROM Orders WHERE Amount > 100;\n\nSELECT * FROM #TempOrders;\nDROP TABLE #TempOrders;\n\n-- Table variable\nDECLARE @Results TABLE (\n  Id INT,\n  Name VARCHAR(100)\n);\n\nINSERT INTO @Results SELECT Id, Name FROM Customers;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Temporary Tables",
+        "content": "Using temporary tables.",
+        "language": "sql",
+        "code": "-- Local temp table (#)\nCREATE TABLE #TempOrders (\n  OrderId INT,\n  Total DECIMAL(10,2)\n);\n\nINSERT INTO #TempOrders\nSELECT Id, Amount FROM Orders WHERE Amount > 100;\n\nSELECT * FROM #TempOrders;\nDROP TABLE #TempOrders;\n\n-- Table variable\nDECLARE @Results TABLE (\n  Id INT,\n  Name VARCHAR(100)\n);\n\nINSERT INTO @Results SELECT Id, Name FROM Customers;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "MERGE Statement" } },
-    { "type": "example", "data": { "title": "MERGE", "content": "Insert, update, or delete based on match.", "language": "sql", "code": "MERGE INTO TargetTable AS T\nUSING SourceTable AS S\nON T.Id = S.Id\nWHEN MATCHED THEN\n  UPDATE SET T.Name = S.Name, T.Amount = S.Amount\nWHEN NOT MATCHED BY TARGET THEN\n  INSERT (Id, Name, Amount) VALUES (S.Id, S.Name, S.Amount)\nWHEN NOT MATCHED BY SOURCE THEN\n  DELETE;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "MERGE",
+        "content": "Insert, update, or delete based on match.",
+        "language": "sql",
+        "code": "MERGE INTO TargetTable AS T\nUSING SourceTable AS S\nON T.Id = S.Id\nWHEN MATCHED THEN\n  UPDATE SET T.Name = S.Name, T.Amount = S.Amount\nWHEN NOT MATCHED BY TARGET THEN\n  INSERT (Id, Name, Amount) VALUES (S.Id, S.Name, S.Amount)\nWHEN NOT MATCHED BY SOURCE THEN\n  DELETE;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Views" } },
-    { "type": "example", "data": { "title": "CREATE VIEW", "content": "Creating and using views.", "language": "sql", "code": "CREATE VIEW vw_CustomerOrders AS\nSELECT C.Name, O.Id AS OrderId, O.Amount, O.OrderDate\nFROM Customers C\nINNER JOIN Orders O ON C.Id = O.CustomerId;\n\n-- Use the view\nSELECT * FROM vw_CustomerOrders WHERE Amount > 100;\n\n-- Indexed view (materialized)\nCREATE VIEW vw_OrderSummary WITH SCHEMABINDING AS\nSELECT CustomerId, COUNT_BIG(*) AS OrderCount, SUM(Amount) AS Total\nFROM dbo.Orders\nGROUP BY CustomerId;\n\nCREATE UNIQUE CLUSTERED INDEX IX_vw_OrderSummary ON vw_OrderSummary(CustomerId);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "CREATE VIEW",
+        "content": "Creating and using views.",
+        "language": "sql",
+        "code": "CREATE VIEW vw_CustomerOrders AS\nSELECT C.Name, O.Id AS OrderId, O.Amount, O.OrderDate\nFROM Customers C\nINNER JOIN Orders O ON C.Id = O.CustomerId;\n\n-- Use the view\nSELECT * FROM vw_CustomerOrders WHERE Amount > 100;\n\n-- Indexed view (materialized)\nCREATE VIEW vw_OrderSummary WITH SCHEMABINDING AS\nSELECT CustomerId, COUNT_BIG(*) AS OrderCount, SUM(Amount) AS Total\nFROM dbo.Orders\nGROUP BY CustomerId;\n\nCREATE UNIQUE CLUSTERED INDEX IX_vw_OrderSummary ON vw_OrderSummary(CustomerId);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Identity & Sequences" } },
-    { "type": "example", "data": { "title": "Auto-Increment & Sequences", "content": "Auto-generated values.", "language": "sql", "code": "-- IDENTITY column (auto-increment)\nCREATE TABLE Products (\n  Id INT IDENTITY(1,1) PRIMARY KEY,\n  Name NVARCHAR(100)\n);\n\n-- SET IDENTITY_INSERT for explicit insert\nSET IDENTITY_INSERT Products ON;\nINSERT INTO Products (Id, Name) VALUES (100, 'Special');\nSET IDENTITY_INSERT Products OFF;\n\n-- Sequence\nCREATE SEQUENCE OrderSeq START WITH 1000 INCREMENT BY 1;\nINSERT INTO Orders (Id, Amount) VALUES (NEXT VALUE FOR OrderSeq, 250);\nSELECT NEXT VALUE FOR OrderSeq AS NextId;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Auto-Increment & Sequences",
+        "content": "Auto-generated values.",
+        "language": "sql",
+        "code": "-- IDENTITY column (auto-increment)\nCREATE TABLE Products (\n  Id INT IDENTITY(1,1) PRIMARY KEY,\n  Name NVARCHAR(100)\n);\n\n-- SET IDENTITY_INSERT for explicit insert\nSET IDENTITY_INSERT Products ON;\nINSERT INTO Products (Id, Name) VALUES (100, 'Special');\nSET IDENTITY_INSERT Products OFF;\n\n-- Sequence\nCREATE SEQUENCE OrderSeq START WITH 1000 INCREMENT BY 1;\nINSERT INTO Orders (Id, Amount) VALUES (NEXT VALUE FOR OrderSeq, 250);\nSELECT NEXT VALUE FOR OrderSeq AS NextId;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "JSON Operations" } },
-    { "type": "example", "data": { "title": "JSON in SQL Server", "content": "Query and store JSON data.", "language": "sql", "code": "-- Store JSON as NVARCHAR\nDECLARE @json NVARCHAR(MAX) = '{\"Name\":\"John\",\"Age\":30}';\n\n-- Parse JSON\nSELECT JSON_VALUE(@json, '$.Name') AS Name, JSON_VALUE(@json, '$.Age') AS Age;\n\n-- JSON from table column\nSELECT Id, JSON_VALUE(Data, '$.Name') AS Name\nFROM Users;\n\n-- FOR JSON (export as JSON)\nSELECT Name, Email FROM Customers\nFOR JSON AUTO;\n\n-- OPENJSON (parse JSON array)\nSELECT * FROM OPENJSON('[{\"Id\":1,\"Name\":\"A\"},{\"Id\":2,\"Name\":\"B\"}]')\n  WITH (Id INT, Name NVARCHAR(50));" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "JSON in SQL Server",
+        "content": "Query and store JSON data.",
+        "language": "sql",
+        "code": "-- Store JSON as NVARCHAR\nDECLARE @json NVARCHAR(MAX) = '{\"Name\":\"John\",\"Age\":30}';\n\n-- Parse JSON\nSELECT JSON_VALUE(@json, '$.Name') AS Name, JSON_VALUE(@json, '$.Age') AS Age;\n\n-- JSON from table column\nSELECT Id, JSON_VALUE(Data, '$.Name') AS Name\nFROM Users;\n\n-- FOR JSON (export as JSON)\nSELECT Name, Email FROM Customers\nFOR JSON AUTO;\n\n-- OPENJSON (parse JSON array)\nSELECT * FROM OPENJSON('[{\"Id\":1,\"Name\":\"A\"},{\"Id\":2,\"Name\":\"B\"}]')\n  WITH (Id INT, Name NVARCHAR(50));"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Common Table Expressions (Advanced)" } },
-    { "type": "example", "data": { "title": "Multiple CTEs", "content": "Chaining multiple CTEs.", "language": "sql", "code": "WITH TopCustomers AS (\n  SELECT CustomerId, SUM(Amount) AS TotalSpent\n  FROM Orders GROUP BY CustomerId\n),\nHighValueOrders AS (\n  SELECT CustomerId, COUNT(*) AS HighValueCount\n  FROM Orders WHERE Amount > 500 GROUP BY CustomerId\n)\nSELECT C.Name, TC.TotalSpent, HV.HighValueCount\nFROM Customers C\nINNER JOIN TopCustomers TC ON C.Id = TC.CustomerId\nINNER JOIN HighValueOrders HV ON C.Id = HV.CustomerId\nWHERE TC.TotalSpent > 1000\nORDER BY TC.TotalSpent DESC;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Multiple CTEs",
+        "content": "Chaining multiple CTEs.",
+        "language": "sql",
+        "code": "WITH TopCustomers AS (\n  SELECT CustomerId, SUM(Amount) AS TotalSpent\n  FROM Orders GROUP BY CustomerId\n),\nHighValueOrders AS (\n  SELECT CustomerId, COUNT(*) AS HighValueCount\n  FROM Orders WHERE Amount > 500 GROUP BY CustomerId\n)\nSELECT C.Name, TC.TotalSpent, HV.HighValueCount\nFROM Customers C\nINNER JOIN TopCustomers TC ON C.Id = TC.CustomerId\nINNER JOIN HighValueOrders HV ON C.Id = HV.CustomerId\nWHERE TC.TotalSpent > 1000\nORDER BY TC.TotalSpent DESC;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "NULLIF & COALESCE" } },
-    { "type": "example", "data": { "title": "NULL Handling", "content": "NULLIF and COALESCE patterns.", "language": "sql", "code": "-- NULLIF: returns NULL if two values are equal\nSELECT NULLIF(5, 5);   -- NULL\nSELECT NULLIF(5, 3);   -- 5\n\n-- COALESCE: returns first non-NULL value\nSELECT COALESCE(NULL, NULL, 'default', 'other') AS Result; -- 'default'\n\n-- Practical: avoid division by zero\nSELECT Amount / NULLIF(Quantity, 0) AS UnitPrice\nFROM OrderItems;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "NULL Handling",
+        "content": "NULLIF and COALESCE patterns.",
+        "language": "sql",
+        "code": "-- NULLIF: returns NULL if two values are equal\nSELECT NULLIF(5, 5);   -- NULL\nSELECT NULLIF(5, 3);   -- 5\n\n-- COALESCE: returns first non-NULL value\nSELECT COALESCE(NULL, NULL, 'default', 'other') AS Result; -- 'default'\n\n-- Practical: avoid division by zero\nSELECT Amount / NULLIF(Quantity, 0) AS UnitPrice\nFROM OrderItems;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "ISNULL vs COALESCE" } },
-    { "type": "example", "data": { "title": "NULL Comparison", "content": "Differences between ISNULL and COALESCE.", "language": "sql", "code": "-- ISNULL: SQL Server specific, uses first value type\nSELECT ISNULL(NULL, 0) AS Result;       -- 0 (int)\nSELECT ISNULL(NULL, 'default') AS Result; -- 'default' (varchar)\n\n-- COALESCE: ANSI SQL standard, returns highest precedence type\nSELECT COALESCE(NULL, 0, 'default') AS Result; -- 0 (int)\n\n-- Performance: ISNULL is usually faster\n-- Use ISNULL for simple replacements, COALESCE for ANSI compliance" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "NULL Comparison",
+        "content": "Differences between ISNULL and COALESCE.",
+        "language": "sql",
+        "code": "-- ISNULL: SQL Server specific, uses first value type\nSELECT ISNULL(NULL, 0) AS Result;       -- 0 (int)\nSELECT ISNULL(NULL, 'default') AS Result; -- 'default' (varchar)\n\n-- COALESCE: ANSI SQL standard, returns highest precedence type\nSELECT COALESCE(NULL, 0, 'default') AS Result; -- 0 (int)\n\n-- Performance: ISNULL is usually faster\n-- Use ISNULL for simple replacements, COALESCE for ANSI compliance"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "CROSS APPLY & OUTER APPLY" } },
-    { "type": "example", "data": { "title": "APPLY Operator", "content": "APPLY for table-valued functions.", "language": "sql", "code": "-- CROSS APPLY (inner join with TVF)\nSELECT C.Name, T.Total\nFROM Customers C\nCROSS APPLY (\n  SELECT SUM(Amount) AS Total FROM Orders WHERE CustomerId = C.Id\n) T;\n\n-- OUTER APPLY (left join with TVF)\nSELECT C.Name, T.Total\nFROM Customers C\nOUTER APPLY (\n  SELECT SUM(Amount) AS Total FROM Orders WHERE CustomerId = C.Id\n) T;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "APPLY Operator",
+        "content": "APPLY for table-valued functions.",
+        "language": "sql",
+        "code": "-- CROSS APPLY (inner join with TVF)\nSELECT C.Name, T.Total\nFROM Customers C\nCROSS APPLY (\n  SELECT SUM(Amount) AS Total FROM Orders WHERE CustomerId = C.Id\n) T;\n\n-- OUTER APPLY (left join with TVF)\nSELECT C.Name, T.Total\nFROM Customers C\nOUTER APPLY (\n  SELECT SUM(Amount) AS Total FROM Orders WHERE CustomerId = C.Id\n) T;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "IF ELSE & WHILE" } },
-    { "type": "example", "data": { "title": "Control Flow in T-SQL", "content": "Conditional and loop logic.", "language": "sql", "code": "-- IF...ELSE\nDECLARE @Count INT = (SELECT COUNT(*) FROM Orders);\nIF @Count > 100\n  PRINT 'High volume'\nELSE IF @Count > 50\n  PRINT 'Medium volume'\nELSE\n  PRINT 'Low volume';\n\n-- WHILE loop\nDECLARE @i INT = 1;\nWHILE @i <= 5\nBEGIN\n  PRINT CONCAT('Iteration ', @i);\n  SET @i = @i + 1;\nEND;" } }
+    {
+      "type": "example",
+      "data": {
+        "title": "Control Flow in T-SQL",
+        "content": "Conditional and loop logic.",
+        "language": "sql",
+        "code": "-- IF...ELSE\nDECLARE @Count INT = (SELECT COUNT(*) FROM Orders);\nIF @Count > 100\n  PRINT 'High volume'\nELSE IF @Count > 50\n  PRINT 'Medium volume'\nELSE\n  PRINT 'Low volume';\n\n-- WHILE loop\nDECLARE @i INT = 1;\nWHILE @i <= 5\nBEGIN\n  PRINT CONCAT('Iteration ', @i);\n  SET @i = @i + 1;\nEND;"
+      }
+    }
   ],
   "relatedLessons": [],
   "furtherReading": []

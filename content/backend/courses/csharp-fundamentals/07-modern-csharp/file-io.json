@@ -7,13 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "file-io",
-    "streams",
-    "filesystem",
-    "async"
-  ],
+  "tags": ["csharp", "file-io", "streams", "filesystem", "async"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,43 +67,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "Purpose",
-          "Returns",
-          "Overwrites?"
-        ],
+        "headers": ["Method", "Purpose", "Returns", "Overwrites?"],
         "rows": [
-          [
-            "ReadAllText(path)",
-            "Read entire file as one string",
-            "string",
-            "No"
-          ],
-          [
-            "ReadAllLines(path)",
-            "Read all lines into a string array",
-            "string[]",
-            "No"
-          ],
-          [
-            "WriteAllText(path, text)",
-            "Write a string to a file",
-            "void",
-            "Yes"
-          ],
-          [
-            "AppendAllText(path, text)",
-            "Append a string to an existing file",
-            "void",
-            "No"
-          ],
-          [
-            "WriteAllLines(path, lines)",
-            "Write a string array to a file",
-            "void",
-            "Yes"
-          ]
+          ["ReadAllText(path)", "Read entire file as one string", "string", "No"],
+          ["ReadAllLines(path)", "Read all lines into a string array", "string[]", "No"],
+          ["WriteAllText(path, text)", "Write a string to a file", "void", "Yes"],
+          ["AppendAllText(path, text)", "Append a string to an existing file", "void", "No"],
+          ["WriteAllLines(path, lines)", "Write a string array to a file", "void", "Yes"]
         ]
       }
     },

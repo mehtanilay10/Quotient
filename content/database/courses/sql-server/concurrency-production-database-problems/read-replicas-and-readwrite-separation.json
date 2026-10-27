@@ -8,13 +8,7 @@
   "order": 9,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "read-replicas",
-    "readable-secondary",
-    "always-on",
-    "high-availability",
-    "sql-server"
-  ],
+  "tags": ["read-replicas", "readable-secondary", "always-on", "high-availability", "sql-server"],
   "blocks": [
     {
       "type": "paragraph",
@@ -175,10 +169,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "database-capacity-planning",
-    "connection-pooling-and-exhaustion"
-  ],
+  "relatedLessons": ["database-capacity-planning", "connection-pooling-and-exhaustion"],
   "furtherReading": [
     {
       "title": "Always On Availability Groups (Microsoft Docs)",

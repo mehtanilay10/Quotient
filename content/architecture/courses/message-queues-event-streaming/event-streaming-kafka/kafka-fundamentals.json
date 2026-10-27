@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "kafka",
-    "architecture",
-    "brokers",
-    "topics",
-    "partitions"
-  ],
+  "tags": ["kafka", "architecture", "brokers", "topics", "partitions"],
   "blocks": [
     {
       "type": "paragraph",

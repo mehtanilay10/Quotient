@@ -7,10 +7,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 23,
-  "tags": [
-    "interview",
-    "intermediate"
-  ],
+  "tags": ["interview", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -99,11 +96,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "What is JWT?",
-          "How to implement role-based auth?",
-          "What is OAuth 2.0?"
-        ]
+        "items": ["What is JWT?", "How to implement role-based auth?", "What is OAuth 2.0?"]
       }
     },
     {

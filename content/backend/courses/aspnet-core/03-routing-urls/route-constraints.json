@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "constraints",
-    "validation",
-    "routing"
-  ],
+  "tags": ["constraints", "validation", "routing"],
   "blocks": [
     {
       "type": "paragraph",
@@ -53,77 +49,21 @@
     },
     {
       "type": "table",
-      "headers": [
-        "Constraint",
-        "Matches",
-        "Example"
-      ],
+      "headers": ["Constraint", "Matches", "Example"],
       "rows": [
-        [
-          "int",
-          "32-bit signed integer",
-          "{id:int}"
-        ],
-        [
-          "bool",
-          "true or false",
-          "{active:bool}"
-        ],
-        [
-          "datetime",
-          "Valid DateTime value",
-          "{date:datetime}"
-        ],
-        [
-          "decimal",
-          "Decimal number",
-          "{price:decimal}"
-        ],
-        [
-          "double",
-          "64-bit floating-point number",
-          "{rating:double}"
-        ],
-        [
-          "float",
-          "32-bit floating-point number",
-          "{score:float}"
-        ],
-        [
-          "guid",
-          "Globally unique identifier",
-          "{id:guid}"
-        ],
-        [
-          "long",
-          "64-bit signed integer",
-          "{id:long}"
-        ],
-        [
-          "min(value)",
-          "Minimum numeric value",
-          "{id:min(1)}"
-        ],
-        [
-          "max(value)",
-          "Maximum numeric value",
-          "{id:max(1000)}"
-        ],
-        [
-          "range(min,max)",
-          "Numeric range",
-          "{id:range(1,100)}"
-        ],
-        [
-          "regex(pattern)",
-          "Regular expression match",
-          "{name:regex(^[a-z]+$)}"
-        ],
-        [
-          "required",
-          "Non-empty parameter",
-          "{name:required}"
-        ]
+        ["int", "32-bit signed integer", "{id:int}"],
+        ["bool", "true or false", "{active:bool}"],
+        ["datetime", "Valid DateTime value", "{date:datetime}"],
+        ["decimal", "Decimal number", "{price:decimal}"],
+        ["double", "64-bit floating-point number", "{rating:double}"],
+        ["float", "32-bit floating-point number", "{score:float}"],
+        ["guid", "Globally unique identifier", "{id:guid}"],
+        ["long", "64-bit signed integer", "{id:long}"],
+        ["min(value)", "Minimum numeric value", "{id:min(1)}"],
+        ["max(value)", "Maximum numeric value", "{id:max(1000)}"],
+        ["range(min,max)", "Numeric range", "{id:range(1,100)}"],
+        ["regex(pattern)", "Regular expression match", "{name:regex(^[a-z]+$)}"],
+        ["required", "Non-empty parameter", "{name:required}"]
       ]
     },
     {
@@ -283,10 +223,7 @@
       "takeaway": "Route constraints are a simple but powerful tool for making your URL structure predictable and your application more robust. They catch invalid requests early, before any action code runs, and prevent ambiguous route matches that cause confusing behavior."
     }
   ],
-  "relatedLessons": [
-    "attribute-routing",
-    "url-generation"
-  ],
+  "relatedLessons": ["attribute-routing", "url-generation"],
   "technology": null,
   "furtherReading": [
     {

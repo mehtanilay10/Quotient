@@ -6,12 +6,7 @@
   "description": "Learn what CORS is and why it matters for full-stack apps.",
   "order": 1,
   "difficulty": "beginner",
-  "tags": [
-    "fullstack",
-    "security",
-    "asp.net core",
-    "react"
-  ],
+  "tags": ["fullstack", "security", "asp.net core", "react"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,11 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "observability",
-    "tracing",
-    "opentelemetry"
-  ],
+  "tags": ["observability", "tracing", "opentelemetry"],
   "blocks": [
     {
       "type": "heading",

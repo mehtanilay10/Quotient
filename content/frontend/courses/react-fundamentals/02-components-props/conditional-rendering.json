@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "conditional",
-    "rendering",
-    "ternary",
-    "logical-and"
-  ],
+  "tags": ["react", "conditional", "rendering", "ternary", "logical-and"],
   "blocks": [
     {
       "type": "paragraph",

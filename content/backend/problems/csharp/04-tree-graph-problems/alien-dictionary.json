@@ -8,12 +8,7 @@
   "order": 21,
   "difficulty": "hard",
   "estimatedMinutes": 25,
-  "tags": [
-    "csharp",
-    "graphs",
-    "topological-sort",
-    "hard"
-  ],
+  "tags": ["csharp", "graphs", "topological-sort", "hard"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "Graph + Topo Sort",
             "description": "Build edges, Kahn's algorithm",
-            "pros": [
-              "Handles all cases"
-            ],
-            "tags": [
-              "O(N) time",
-              "O(N) space",
-              "Recommended"
-            ]
+            "pros": ["Handles all cases"],
+            "tags": ["O(N) time", "O(N) space", "Recommended"]
           }
         ]
       }

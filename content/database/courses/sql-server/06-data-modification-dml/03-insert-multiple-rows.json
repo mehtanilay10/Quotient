@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "insert",
-    "dml",
-    "multiple-rows"
-  ],
+  "tags": ["insert", "dml", "multiple-rows"],
   "blocks": [
     {
       "type": "heading",

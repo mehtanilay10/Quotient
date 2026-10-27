@@ -104,13 +104,21 @@
           {
             "title": "At-least-once with dedup",
             "description": "Broker may redeliver; consumer must handle duplicates.",
-            "pros": ["Simple broker configuration", "Widely supported", "Consumer has full control"],
+            "pros": [
+              "Simple broker configuration",
+              "Widely supported",
+              "Consumer has full control"
+            ],
             "cons": ["Consumer must implement dedup logic", "Requires durable dedup store"]
           },
           {
             "title": "Exactly-once (Kafka)",
             "description": "Broker and consumer cooperate to process each message once.",
-            "pros": ["No consumer dedup logic", "Stronger consistency guarantees", "Atomic offset commit with state"],
+            "pros": [
+              "No consumer dedup logic",
+              "Stronger consistency guarantees",
+              "Atomic offset commit with state"
+            ],
             "cons": ["Higher latency from two-phase commit", "Requires idempotent producer config"]
           },
           {

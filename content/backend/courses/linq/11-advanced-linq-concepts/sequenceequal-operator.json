@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 28,
-  "tags": [
-    "linq",
-    "sequenceequal",
-    "equality",
-    "comparison"
-  ],
+  "tags": ["linq", "sequenceequal", "equality", "comparison"],
   "blocks": [
     {
       "type": "paragraph",
@@ -95,9 +90,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "expression-trees",
-    "sample-linq-queries"
-  ],
+  "relatedLessons": ["expression-trees", "sample-linq-queries"],
   "courseSlug": "linq"
 }

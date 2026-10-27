@@ -1,20 +1,16 @@
-import NextAuth from 'next-auth';
-import { PrismaAdapter } from '@auth/prisma-adapter';
-import Google from 'next-auth/providers/google';
-import Resend from 'next-auth/providers/resend';
-import { prisma } from '@/lib/prisma';
-import {
-  DEFAULT_EMAIL_FROM,
-  MAGIC_LINK_EXPIRY_SECONDS,
-  sendMagicLinkEmail,
-} from '@/lib/magicLink';
+import NextAuth from "next-auth";
+import { PrismaAdapter } from "@auth/prisma-adapter";
+import Google from "next-auth/providers/google";
+import Resend from "next-auth/providers/resend";
+import { prisma } from "@/lib/prisma";
+import { DEFAULT_EMAIL_FROM, MAGIC_LINK_EXPIRY_SECONDS, sendMagicLinkEmail } from "@/lib/magicLink";
 
 const trustHost =
   Boolean(process.env.AUTH_TRUST_HOST) ||
   Boolean(process.env.AUTH_URL) ||
   Boolean(process.env.VERCEL) ||
   Boolean(process.env.CF_PAGES) ||
-  process.env.NODE_ENV !== 'production';
+  process.env.NODE_ENV !== "production";
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: PrismaAdapter(prisma),
@@ -25,9 +21,9 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       clientSecret: process.env.AUTH_GOOGLE_SECRET,
       authorization: {
         params: {
-          scope: 'openid profile email',
-          access_type: 'offline',
-          prompt: 'consent',
+          scope: "openid profile email",
+          access_type: "offline",
+          prompt: "consent",
         },
       },
     }),
@@ -36,8 +32,8 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
     // needed. Its `id` is overridden to "email" so the public API stays
     // `signIn("email")` and the callback lives at /api/auth/callback/email.
     Resend({
-      id: 'email',
-      name: 'Email',
+      id: "email",
+      name: "Email",
       from: process.env.EMAIL_FROM || DEFAULT_EMAIL_FROM,
       apiKey: process.env.RESEND_API_KEY,
       // Auth.js expects `maxAge` in seconds. Keep it in sync with the
@@ -48,11 +44,11 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       },
     }),
   ],
-  session: { strategy: 'jwt' },
+  session: { strategy: "jwt" },
   pages: {
-    signIn: '/login',
-    verifyRequest: '/login/verify-request',
-    error: '/login/error',
+    signIn: "/login",
+    verifyRequest: "/login/verify-request",
+    error: "/login/error",
   },
   callbacks: {
     async jwt({ token, user }) {

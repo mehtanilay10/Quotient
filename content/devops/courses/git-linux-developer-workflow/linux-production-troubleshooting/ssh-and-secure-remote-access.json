@@ -130,7 +130,10 @@
       }
     }
   ],
-  "relatedLessons": ["permissions-and-environment-variables", "dns-and-network-troubleshooting-from-linux"],
+  "relatedLessons": [
+    "permissions-and-environment-variables",
+    "dns-and-network-troubleshooting-from-linux"
+  ],
   "furtherReading": [
     {
       "type": "article",

@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "routing",
-    "canary",
-    "path-based"
-  ],
+  "tags": ["routing", "canary", "path-based"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,32 +56,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Description",
-          "Use Case"
-        ],
+        "headers": ["Strategy", "Description", "Use Case"],
         "rows": [
-          [
-            "Path-based",
-            "Route by URL path",
-            "/api/v1/catalog -> catalog service"
-          ],
-          [
-            "Header-based",
-            "Route by HTTP header",
-            "Version, tenant, or user routing"
-          ],
-          [
-            "Query-based",
-            "Route by query param",
-            "A/B testing"
-          ],
-          [
-            "Method-based",
-            "Route by HTTP method",
-            "Different handling for GET/POST"
-          ]
+          ["Path-based", "Route by URL path", "/api/v1/catalog -> catalog service"],
+          ["Header-based", "Route by HTTP header", "Version, tenant, or user routing"],
+          ["Query-based", "Route by query param", "A/B testing"],
+          ["Method-based", "Route by HTTP method", "Different handling for GET/POST"]
         ]
       }
     },

@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "lifetimes",
-    "scoped",
-    "singleton"
-  ],
+  "tags": ["lifetimes", "scoped", "singleton"],
   "blocks": [
     {
       "type": "heading",
@@ -182,10 +178,7 @@
       "takeaway": "Service lifetimes control object creation and sharing in ASP.NET Core. Choosing the right lifetime prevents bugs, memory leaks, and hard-to-reproduce race conditions."
     }
   ],
-  "relatedLessons": [
-    "di-basics",
-    "constructor-injection"
-  ],
+  "relatedLessons": ["di-basics", "constructor-injection"],
   "technology": null,
   "furtherReading": []
 }

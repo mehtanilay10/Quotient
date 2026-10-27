@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
 interface SkeletonProps {
   className?: string;
 }
 
 export function Skeleton({ className }: SkeletonProps) {
-  return <div className={cn('animate-pulse rounded-lg bg-canvas-inset', className)} />;
+  return <div className={cn("animate-pulse rounded-lg bg-canvas-inset", className)} />;
 }
 
 export function DashboardSkeleton() {

@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "pgvector",
-    "ai",
-    "embeddings",
-    "hnsw",
-    "rag",
-    "similarity-search"
-  ],
+  "tags": ["pgvector", "ai", "embeddings", "hnsw", "rag", "similarity-search"],
   "blocks": [
     {
       "type": "paragraph",
@@ -109,8 +102,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "jsonb-advanced",
-    "extensions"
-  ]
+  "relatedLessons": ["jsonb-advanced", "extensions"]
 }

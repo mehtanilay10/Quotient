@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "redux",
-    "useDispatch",
-    "hooks"
-  ],
+  "tags": ["react", "redux", "useDispatch", "hooks"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,32 +62,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Code",
-          "When to Use"
-        ],
+        "headers": ["Pattern", "Code", "When to Use"],
         "rows": [
-          [
-            "Inline dispatch",
-            "dispatch(increment())",
-            "Simple, one-time actions"
-          ],
-          [
-            "Callback dispatch",
-            "onClick={() => dispatch(action())}",
-            "Event handlers"
-          ],
-          [
-            "useCallback + dispatch",
-            "memoized callbacks",
-            "Performance optimization"
-          ],
-          [
-            "Typed dispatch",
-            "const dispatch: AppDispatch = useDispatch()",
-            "TypeScript projects"
-          ]
+          ["Inline dispatch", "dispatch(increment())", "Simple, one-time actions"],
+          ["Callback dispatch", "onClick={() => dispatch(action())}", "Event handlers"],
+          ["useCallback + dispatch", "memoized callbacks", "Performance optimization"],
+          ["Typed dispatch", "const dispatch: AppDispatch = useDispatch()", "TypeScript projects"]
         ]
       }
     },

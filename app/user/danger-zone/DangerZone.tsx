@@ -1,17 +1,33 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { AlertTriangle, Trash2 } from 'lucide-react';
-import { logger } from '@/lib/logger';
-import { apiFetch } from '@/lib/apiFetch';
+import { useState } from "react";
+import { AlertTriangle, Trash2 } from "lucide-react";
+import { logger } from "@/lib/logger";
+import { apiFetch } from "@/lib/apiFetch";
 
-type ResetTarget = 'progress' | 'bookmarks' | 'notes' | 'offline';
+type ResetTarget = "progress" | "bookmarks" | "notes" | "offline";
 
 const TARGETS: { id: ResetTarget; label: string; description: string }[] = [
-  { id: 'progress', label: 'Reset progress', description: 'Permanently removes every completed lesson, problem, and question answer.' },
-  { id: 'bookmarks', label: 'Clear bookmarks', description: 'Removes all saved lessons, problems, and question answers.' },
-  { id: 'notes', label: 'Delete notes', description: 'Removes every note you have written on a lesson.' },
-  { id: 'offline', label: 'Clear offline queue', description: 'Removes lessons queued for offline reading.' },
+  {
+    id: "progress",
+    label: "Reset progress",
+    description: "Permanently removes every completed lesson, problem, and question answer.",
+  },
+  {
+    id: "bookmarks",
+    label: "Clear bookmarks",
+    description: "Removes all saved lessons, problems, and question answers.",
+  },
+  {
+    id: "notes",
+    label: "Delete notes",
+    description: "Removes every note you have written on a lesson.",
+  },
+  {
+    id: "offline",
+    label: "Clear offline queue",
+    description: "Removes lessons queued for offline reading.",
+  },
 ];
 
 export function DangerZone() {
@@ -25,24 +41,27 @@ export function DangerZone() {
     setError(null);
     try {
       // apiFetch attaches the x-csrf-token header required by the API.
-      const res = await apiFetch('/api/user/account-reset', {
-        method: 'DELETE',
-        headers: { 'Content-Type': 'application/json' },
+      const res = await apiFetch("/api/user/account-reset", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ target }),
       });
-      if (!res.ok) throw new Error('Reset failed');
+      if (!res.ok) throw new Error("Reset failed");
       setDone(target);
       setConfirming(null);
     } catch (err) {
-      logger.error('DangerZone', 'Failed to reset data:', err);
-      setError('Something went wrong. Please try again.');
+      logger.error("DangerZone", "Failed to reset data:", err);
+      setError("Something went wrong. Please try again.");
     } finally {
       setBusy(null);
     }
   };
 
   return (
-    <section className="rounded-xl border border-danger-fg/40 bg-danger-subtle p-6" aria-labelledby="danger-zone-heading">
+    <section
+      className="rounded-xl border border-danger-fg/40 bg-danger-subtle p-6"
+      aria-labelledby="danger-zone-heading"
+    >
       <div className="flex items-start gap-3">
         <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-danger-fg" aria-hidden="true" />
         <div className="min-w-0 flex-1">
@@ -54,7 +73,9 @@ export function DangerZone() {
           </p>
 
           {error && (
-            <p className="mt-3 text-sm text-danger-fg" role="alert">{error}</p>
+            <p className="mt-3 text-sm text-danger-fg" role="alert">
+              {error}
+            </p>
           )}
 
           <ul className="mt-4 space-y-3">
@@ -92,7 +113,7 @@ export function DangerZone() {
                         disabled={isBusy}
                         className="rounded-lg bg-danger-emphasis px-3 py-1.5 text-sm font-medium text-white transition-opacity hover:opacity-90 disabled:opacity-50"
                       >
-                        {isBusy ? 'Working…' : 'Yes, delete'}
+                        {isBusy ? "Working…" : "Yes, delete"}
                       </button>
                     </div>
                   ) : (
@@ -105,7 +126,7 @@ export function DangerZone() {
                       className="flex shrink-0 items-center gap-1.5 rounded-lg border border-border bg-canvas px-3 py-1.5 text-sm font-medium text-fg-muted transition-colors hover:border-danger-fg hover:text-danger-fg"
                     >
                       <Trash2 className="h-4 w-4" aria-hidden="true" />
-                      {target.label.split(' ')[0]}
+                      {target.label.split(" ")[0]}
                     </button>
                   )}
                 </li>

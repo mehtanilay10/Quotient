@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "cte",
-    "with",
-    "recursive",
-    "hierarchies",
-    "subqueries"
-  ],
+  "tags": ["cte", "with", "recursive", "hierarchies", "subqueries"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +66,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "correlated-subqueries",
-    "window-functions"
-  ]
+  "relatedLessons": ["correlated-subqueries", "window-functions"]
 }

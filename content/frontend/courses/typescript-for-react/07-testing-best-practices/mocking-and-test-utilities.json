@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "typescript",
-    "testing",
-    "jest",
-    "mocking",
-    "test-utilities"
-  ],
+  "tags": ["typescript", "testing", "jest", "mocking", "test-utilities"],
   "blocks": [
     {
       "type": "paragraph",
@@ -93,41 +87,20 @@
           {
             "title": "jest.mock()",
             "description": "Automatically mocks an entire module. Best for external dependencies like API clients.",
-            "pros": [
-              "Quick to set up",
-              "Mocks entire module",
-              "Good for integration tests"
-            ],
-            "cons": [
-              "Less control",
-              "Can miss edge cases"
-            ]
+            "pros": ["Quick to set up", "Mocks entire module", "Good for integration tests"],
+            "cons": ["Less control", "Can miss edge cases"]
           },
           {
             "title": "jest.fn()",
             "description": "Creates a manually controlled mock function. Best for functions you need to assert on.",
-            "pros": [
-              "Full control",
-              "Easy to assert",
-              "Clear intent"
-            ],
-            "cons": [
-              "More verbose",
-              "Need manual setup"
-            ]
+            "pros": ["Full control", "Easy to assert", "Clear intent"],
+            "cons": ["More verbose", "Need manual setup"]
           },
           {
             "title": "MSW (Mock Service Worker)",
             "description": "Intercepts network requests at the service worker level. Best for API mocking.",
-            "pros": [
-              "Realistic",
-              "Works with any test",
-              "Declarative handlers"
-            ],
-            "cons": [
-              "Requires setup",
-              "Extra dependency"
-            ]
+            "pros": ["Realistic", "Works with any test", "Declarative handlers"],
+            "cons": ["Requires setup", "Extra dependency"]
           }
         ]
       }

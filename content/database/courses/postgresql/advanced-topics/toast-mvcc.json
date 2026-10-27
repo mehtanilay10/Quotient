@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "toast",
-    "mvcc-internals",
-    "8kb-pages",
-    "tuple-headers",
-    "xmin-xmax"
-  ],
+  "tags": ["toast", "mvcc-internals", "8kb-pages", "tuple-headers", "xmin-xmax"],
   "blocks": [
     {
       "type": "paragraph",
@@ -45,10 +39,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Header Field",
-          "Role in MVCC Snapshot Visibility"
-        ],
+        "headers": ["Header Field", "Role in MVCC Snapshot Visibility"],
         "rows": [
           [
             "`xmin`",
@@ -58,10 +49,7 @@
             "`xmax`",
             "The transaction ID that deleted or updated this tuple. Once committed, transactions starting afterward consider this row invisible."
           ],
-          [
-            "`ctid`",
-            "The physical location of the tuple on disk `(page_number, tuple_index)`."
-          ]
+          ["`ctid`", "The physical location of the tuple on disk `(page_number, tuple_index)`."]
         ]
       }
     },
@@ -107,8 +95,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "partitioning",
-    "vacuum-analyze"
-  ]
+  "relatedLessons": ["partitioning", "vacuum-analyze"]
 }

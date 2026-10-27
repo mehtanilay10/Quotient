@@ -28,11 +28,36 @@
       "data": {
         "headers": ["Level", "Read Latency", "Guarantee", "Use Case"],
         "rows": [
-          ["Strong", "Highest", "Linearizability — reads always return the latest committed write", "Banking, inventory, financial ledgers"],
-          ["Bounded Staleness", "High", "Reads are within a fixed number of versions or time behind writes", "Sync scenarios with global users"],
-          ["Session", "Moderate", "Within a client session, reads follow your own writes", "Web apps, user-facing workloads"],
-          ["Consistent Prefix", "Low", " Reads never see out-of-order fragments", "Social feeds, chat, IoT telemetry"],
-          ["Eventual", "Lowest", "Replicas converge eventually, no ordering guarantee", "Analytics, non-critical counters"]
+          [
+            "Strong",
+            "Highest",
+            "Linearizability — reads always return the latest committed write",
+            "Banking, inventory, financial ledgers"
+          ],
+          [
+            "Bounded Staleness",
+            "High",
+            "Reads are within a fixed number of versions or time behind writes",
+            "Sync scenarios with global users"
+          ],
+          [
+            "Session",
+            "Moderate",
+            "Within a client session, reads follow your own writes",
+            "Web apps, user-facing workloads"
+          ],
+          [
+            "Consistent Prefix",
+            "Low",
+            " Reads never see out-of-order fragments",
+            "Social feeds, chat, IoT telemetry"
+          ],
+          [
+            "Eventual",
+            "Lowest",
+            "Replicas converge eventually, no ordering guarantee",
+            "Analytics, non-critical counters"
+          ]
         ]
       }
     },

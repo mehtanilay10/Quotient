@@ -6,9 +6,5 @@
   "fullDefinition": "AI bias refers to systematic and unfair skewing in AI outputs, typically because the training data reflects historical biases or the model design makes biased trade-offs. Bias can manifest as stereotyped representations, differential treatment by demographic group, or skewed outputs on social and political topics. Recognizing and applying critical judgment to AI outputs is important, especially on sensitive topics.",
   "category": "safety-and-ethics",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "training-data",
-    "rlhf",
-    "safety"
-  ]
+  "relatedTerms": ["training-data", "rlhf", "safety"]
 }

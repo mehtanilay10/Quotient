@@ -8,11 +8,7 @@
   "order": 12,
   "difficulty": "medium",
   "estimatedMinutes": 14,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -50,14 +46,8 @@
           {
             "title": "Bottom-Up DP",
             "description": "dp[i] = min(dp[i-coin]+1)",
-            "pros": [
-              "Guaranteed optimal"
-            ],
-            "tags": [
-              "O(amount\u00b7n) time",
-              "O(amount) space",
-              "Recommended"
-            ]
+            "pros": ["Guaranteed optimal"],
+            "tags": ["O(amount\u00b7n) time", "O(amount) space", "Recommended"]
           }
         ]
       }

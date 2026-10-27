@@ -8,10 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 3,
   "icon": "📐",
-  "tags": [
-    "system-design",
-    "framework"
-  ],
+  "tags": ["system-design", "framework"],
   "lessonSlugs": [
     "7-step-framework",
     "approaching-design-questions",

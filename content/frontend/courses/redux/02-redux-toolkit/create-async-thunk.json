@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "toolkit",
-    "async",
-    "thunk"
-  ],
+  "tags": ["redux", "toolkit", "async", "thunk"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,12 +77,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Lifecycle Action",
-          "When Dispatched",
-          "Payload",
-          "Common Use"
-        ],
+        "headers": ["Lifecycle Action", "When Dispatched", "Payload", "Common Use"],
         "rows": [
           [
             "thunk.pending",

@@ -6,10 +6,7 @@
   "description": "Understand asynchronous programming with Promises.",
   "order": 4,
   "difficulty": "beginner",
-  "tags": [
-    "JavaScript",
-    "beginner"
-  ],
+  "tags": ["JavaScript", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

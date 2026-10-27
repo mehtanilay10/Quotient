@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "strings",
-    "two-pointers",
-    "easy"
-  ],
+  "tags": ["csharp", "strings", "two-pointers", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -87,34 +82,16 @@
           {
             "title": "Filter + Reverse",
             "description": "Clean then compare",
-            "pros": [
-              "Very readable",
-              "One-pass clean"
-            ],
-            "cons": [
-              "Allocates new string/array",
-              "O(n) extra space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Very readable", "One-pass clean"],
+            "cons": ["Allocates new string/array", "O(n) extra space"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Two-Pointer",
             "description": "Compare from both ends",
-            "pros": [
-              "O(1) extra space",
-              "Early exit on mismatch"
-            ],
-            "cons": [
-              "More index management"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) extra space", "Early exit on mismatch"],
+            "cons": ["More index management"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

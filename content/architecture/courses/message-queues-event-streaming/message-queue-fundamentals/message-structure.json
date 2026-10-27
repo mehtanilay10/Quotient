@@ -8,14 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "message-design",
-    "serialization",
-    "headers",
-    "json",
-    "protocol-buffers",
-    "avro"
-  ],
+  "tags": ["message-design", "serialization", "headers", "json", "protocol-buffers", "avro"],
   "blocks": [
     {
       "type": "paragraph",
@@ -105,23 +98,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Format",
-          "Readability",
-          "Size",
-          "Speed",
-          "Schema Enforcement",
-          "Best For"
-        ],
+        "headers": ["Format", "Readability", "Size", "Speed", "Schema Enforcement", "Best For"],
         "rows": [
-          [
-            "JSON",
-            "High",
-            "Large",
-            "Moderate",
-            "None",
-            "APIs, webhooks, debugging"
-          ],
+          ["JSON", "High", "Large", "Moderate", "None", "APIs, webhooks, debugging"],
           [
             "Protocol Buffers",
             "Low (binary)",
@@ -130,22 +109,8 @@
             "Yes (.proto)",
             "High-throughput, low-latency"
           ],
-          [
-            "Avro",
-            "Low (binary)",
-            "Small",
-            "Fast",
-            "Yes (.avsc)",
-            "Kafka, data streaming"
-          ],
-          [
-            "XML",
-            "Moderate",
-            "Largest",
-            "Slow",
-            "Optional (XSD)",
-            "Legacy systems, SOAP"
-          ]
+          ["Avro", "Low (binary)", "Small", "Fast", "Yes (.avsc)", "Kafka, data streaming"],
+          ["XML", "Moderate", "Largest", "Slow", "Optional (XSD)", "Legacy systems, SOAP"]
         ]
       }
     },
@@ -234,11 +199,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rabbitmq-fundamentals",
-    "sqs-basics",
-    "azure-service-basics"
-  ],
+  "relatedLessons": ["rabbitmq-fundamentals", "sqs-basics", "azure-service-basics"],
   "furtherReading": [
     {
       "title": "Protocol Buffers Developer Guide",

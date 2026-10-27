@@ -8,14 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "principals",
-    "logins",
-    "users",
-    "roles",
-    "schemas",
-    "securables"
-  ],
+  "tags": ["principals", "logins", "users", "roles", "schemas", "securables"],
   "blocks": [
     {
       "type": "heading",
@@ -177,7 +170,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "database-schema-table-objects"
-  ]
+  "prerequisites": ["database-schema-table-objects"]
 }

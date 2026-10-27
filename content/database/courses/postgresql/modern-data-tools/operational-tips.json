@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "dba",
-    "pg-stat-activity",
-    "kill-query",
-    "lock-contention",
-    "troubleshooting"
-  ],
+  "tags": ["dba", "pg-stat-activity", "kill-query", "lock-contention", "troubleshooting"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "monitoring",
-    "explain-analyze"
-  ]
+  "relatedLessons": ["monitoring", "explain-analyze"]
 }

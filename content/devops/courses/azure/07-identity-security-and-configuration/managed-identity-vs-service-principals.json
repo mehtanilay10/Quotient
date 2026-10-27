@@ -8,13 +8,7 @@
   "order": 7,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -42,14 +36,8 @@
               "Azure rotates automatically",
               "Simpler for most Azure-hosted apps"
             ],
-            "cons": [
-              "Only works inside Azure",
-              "Limited to Azure resource types"
-            ],
-            "tags": [
-              "no-secrets",
-              "azure-native"
-            ]
+            "cons": ["Only works inside Azure", "Limited to Azure resource types"],
+            "tags": ["no-secrets", "azure-native"]
           },
           {
             "title": "Service Principal",
@@ -63,10 +51,7 @@
               "You must protect the client secret or certificate",
               "Secrets expire and must be rotated"
             ],
-            "tags": [
-              "credentials",
-              "flexible"
-            ]
+            "tags": ["credentials", "flexible"]
           }
         ]
       }
@@ -74,32 +59,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Factor",
-          "Managed Identity",
-          "Service Principal"
-        ],
+        "headers": ["Factor", "Managed Identity", "Service Principal"],
         "rows": [
           [
             "Secret management",
             "None — Azure manages it",
             "You manage client secrets or certificates"
           ],
-          [
-            "Where it runs",
-            "Only inside Azure",
-            "Anywhere"
-          ],
-          [
-            "Typical use",
-            "Azure VMs, App Service, Functions",
-            "CI/CD pipelines, external apps"
-          ],
-          [
-            "Rotation",
-            "Automatic",
-            "Manual or automated by you"
-          ]
+          ["Where it runs", "Only inside Azure", "Anywhere"],
+          ["Typical use", "Azure VMs, App Service, Functions", "CI/CD pipelines, external apps"],
+          ["Rotation", "Automatic", "Manual or automated by you"]
         ]
       }
     },
@@ -149,36 +118,11 @@
           "Service principal + secret"
         ],
         "rows": [
-          [
-            "Runs inside Azure",
-            "Best fit",
-            "Works",
-            "Works"
-          ],
-          [
-            "Runs outside Azure",
-            "Not supported",
-            "Best fit",
-            "Works"
-          ],
-          [
-            "Credential rotation",
-            "Automatic",
-            "None to rotate",
-            "You rotate it"
-          ],
-          [
-            "Secret leakage risk",
-            "Very low",
-            "Very low",
-            "Present"
-          ],
-          [
-            "Setup effort",
-            "Low",
-            "Medium",
-            "Low"
-          ]
+          ["Runs inside Azure", "Best fit", "Works", "Works"],
+          ["Runs outside Azure", "Not supported", "Best fit", "Works"],
+          ["Credential rotation", "Automatic", "None to rotate", "You rotate it"],
+          ["Secret leakage risk", "Very low", "Very low", "Present"],
+          ["Setup effort", "Low", "Medium", "Low"]
         ]
       }
     },

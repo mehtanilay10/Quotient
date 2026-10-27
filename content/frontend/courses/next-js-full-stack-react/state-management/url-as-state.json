@@ -110,7 +110,11 @@
       }
     }
   ],
-  "relatedLessons": ["local-state-vs-server-state", "state-synchronization", "performance-and-re-renders"],
+  "relatedLessons": [
+    "local-state-vs-server-state",
+    "state-synchronization",
+    "performance-and-re-renders"
+  ],
   "furtherReading": [
     {
       "type": "article",

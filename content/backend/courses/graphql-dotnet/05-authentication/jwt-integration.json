@@ -7,10 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "graphql",
-    "jwt"
-  ],
+  "tags": ["graphql", "jwt"],
   "blocks": [
     {
       "type": "paragraph",
@@ -103,9 +100,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "auth-basics",
-    "identity-integration"
-  ],
+  "relatedLessons": ["auth-basics", "identity-integration"],
   "courseSlug": "graphql-dotnet"
 }

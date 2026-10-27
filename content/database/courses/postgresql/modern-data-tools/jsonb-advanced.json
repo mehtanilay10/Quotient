@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "jsonb",
-    "json-path",
-    "jsonb-set",
-    "sql-json"
-  ],
+  "tags": ["jsonb", "json-path", "jsonb-set", "sql-json"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "jsonb-arrays",
-    "gin-gist-indexes"
-  ]
+  "relatedLessons": ["jsonb-arrays", "gin-gist-indexes"]
 }

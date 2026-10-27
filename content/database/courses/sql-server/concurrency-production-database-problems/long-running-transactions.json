@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "long-running",
-    "transactions",
-    "log-growth",
-    "blocking",
-    "sql-server"
-  ],
+  "tags": ["long-running", "transactions", "log-growth", "blocking", "sql-server"],
   "blocks": [
     {
       "type": "paragraph",
@@ -150,10 +144,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "locks-and-blocking",
-    "deadlocks-and-deadlock-graphs"
-  ],
+  "relatedLessons": ["locks-and-blocking", "deadlocks-and-deadlock-graphs"],
   "furtherReading": [
     {
       "title": "Monitoring Long-Running Transactions (Microsoft Docs)",

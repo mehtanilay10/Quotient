@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "razor",
-    "views",
-    "partials",
-    "reusable"
-  ],
+  "tags": ["razor", "views", "partials", "reusable"],
   "blocks": [
     {
       "type": "heading",
@@ -133,10 +128,7 @@
             "Supports dependency injection",
             "Encapsulates business logic"
           ],
-          "cons": [
-            "More files and ceremony",
-            "Overkill for simple presentational snippets"
-          ]
+          "cons": ["More files and ceremony", "Overkill for simple presentational snippets"]
         }
       ]
     },
@@ -223,11 +215,7 @@
       "takeaway": "Partial views are the simplest and most effective way to eliminate duplicate markup. Used well, they keep your views short, focused, and easy to maintain."
     }
   ],
-  "relatedLessons": [
-    "layouts-and-partials",
-    "view-components",
-    "tag-helpers"
-  ],
+  "relatedLessons": ["layouts-and-partials", "view-components", "tag-helpers"],
   "technology": null,
   "furtherReading": []
 }

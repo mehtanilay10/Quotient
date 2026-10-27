@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "typescript",
-    "children",
-    "refs",
-    "reactnode"
-  ],
+  "tags": ["react", "typescript", "children", "refs", "reactnode"],
   "blocks": [
     {
       "type": "paragraph",
@@ -48,32 +42,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Accepts",
-          "Use When"
-        ],
+        "headers": ["Type", "Accepts", "Use When"],
         "rows": [
-          [
-            "ReactNode",
-            "Strings, numbers, elements, arrays, null",
-            "General wrapper components"
-          ],
-          [
-            "React.ReactElement",
-            "A single JSX element",
-            "Components that render one child"
-          ],
-          [
-            "JSX.Element",
-            "Compiled JSX output",
-            "Strict single-element wrappers"
-          ],
-          [
-            "React.ReactNode",
-            "Same as ReactNode",
-            "Alias, prefer ReactNode"
-          ]
+          ["ReactNode", "Strings, numbers, elements, arrays, null", "General wrapper components"],
+          ["React.ReactElement", "A single JSX element", "Components that render one child"],
+          ["JSX.Element", "Compiled JSX output", "Strict single-element wrappers"],
+          ["React.ReactNode", "Same as ReactNode", "Alias, prefer ReactNode"]
         ]
       }
     },

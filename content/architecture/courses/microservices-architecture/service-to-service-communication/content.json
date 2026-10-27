@@ -9,13 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 4,
   "icon": "📡",
-  "tags": [
-    "communication",
-    "rest",
-    "grpc",
-    "graphql",
-    "async"
-  ],
+  "tags": ["communication", "rest", "grpc", "graphql", "async"],
   "lessonSlugs": [
     "rest-vs-grpc-vs-graphql",
     "synchronous-vs-asynchronous-communication",

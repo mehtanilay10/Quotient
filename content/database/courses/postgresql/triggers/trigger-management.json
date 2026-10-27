@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "trigger-management",
-    "disable-trigger",
-    "bulk-load",
-    "dba"
-  ],
+  "tags": ["trigger-management", "disable-trigger", "bulk-load", "dba"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "before-after-triggers",
-    "copy-bulk-load"
-  ]
+  "relatedLessons": ["before-after-triggers", "copy-bulk-load"]
 }

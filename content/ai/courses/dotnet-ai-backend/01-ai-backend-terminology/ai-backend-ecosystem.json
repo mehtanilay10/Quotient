@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "overview",
-    "ecosystem",
-    "azure-openai",
-    "ollama"
-  ],
+  "tags": ["overview", "ecosystem", "azure-openai", "ollama"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,14 +55,8 @@
             "Good dependency injection integration",
             "Supports OpenAI, Azure OpenAI, and Ollama"
           ],
-          "cons": [
-            "Newer ecosystem",
-            "Fewer production examples than older libraries"
-          ],
-          "tags": [
-            "abstraction",
-            "official"
-          ]
+          "cons": ["Newer ecosystem", "Fewer production examples than older libraries"],
+          "tags": ["abstraction", "official"]
         },
         {
           "title": "Semantic Kernel",
@@ -77,14 +66,8 @@
             "Built-in planners, memory, and connectors",
             "Strong enterprise support"
           ],
-          "cons": [
-            "Steeper learning curve",
-            "Larger API surface"
-          ],
-          "tags": [
-            "agents",
-            "plugins"
-          ]
+          "cons": ["Steeper learning curve", "Larger API surface"],
+          "tags": ["agents", "plugins"]
         },
         {
           "title": "LLamaIndex.TS / .NET",
@@ -94,14 +77,8 @@
             "Clear RAG-focused design",
             "Strong TypeScript and Python communities"
           ],
-          "cons": [
-            ".NET client still evolving",
-            "Some examples favor Python"
-          ],
-          "tags": [
-            "rag",
-            "retrieval"
-          ]
+          "cons": [".NET client still evolving", "Some examples favor Python"],
+          "tags": ["rag", "retrieval"]
         },
         {
           "title": "Model Context Protocol SDK",
@@ -111,14 +88,8 @@
             "Interoperable across clients and servers",
             "Good for backend integration"
           ],
-          "cons": [
-            "Relatively new",
-            "Smaller .NET sample surface"
-          ],
-          "tags": [
-            "mcp",
-            "protocol"
-          ]
+          "cons": ["Relatively new", "Smaller .NET sample surface"],
+          "tags": ["mcp", "protocol"]
         }
       ]
     },
@@ -182,9 +153,7 @@
       "takeaway": "Think in layers: retrieval, generation, tools, and orchestration. Each layer has a purpose, and .NET has a library for it."
     }
   ],
-  "relatedLessons": [
-    "embeddings-and-vector-stores"
-  ],
+  "relatedLessons": ["embeddings-and-vector-stores"],
   "technology": null,
   "furtherReading": [
     {

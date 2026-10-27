@@ -9,14 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 4,
   "icon": "⚙️",
-  "tags": [
-    "kafka-streams",
-    "ksqldb",
-    "windowing",
-    "joins",
-    "real-time",
-    "analytics"
-  ],
+  "tags": ["kafka-streams", "ksqldb", "windowing", "joins", "real-time", "analytics"],
   "lessonSlugs": [
     "kafka-streams-basics",
     "ksqldb-basics",

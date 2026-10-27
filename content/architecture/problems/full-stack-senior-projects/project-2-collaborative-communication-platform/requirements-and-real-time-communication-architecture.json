@@ -100,20 +100,40 @@
           {
             "title": "WebSocket",
             "description": "Full-duplex TCP connection over HTTP upgrade.",
-            "pros": ["True bidirectional messaging", "Low per-message overhead", "Broad client support"],
-            "cons": ["Requires explicit reconnection logic", "NAT timeouts on mobile networks", "Load balancer sticky sessions or pub/sub needed"]
+            "pros": [
+              "True bidirectional messaging",
+              "Low per-message overhead",
+              "Broad client support"
+            ],
+            "cons": [
+              "Requires explicit reconnection logic",
+              "NAT timeouts on mobile networks",
+              "Load balancer sticky sessions or pub/sub needed"
+            ]
           },
           {
             "title": "Server-Sent Events",
             "description": "Unidirectional server-to-client stream over HTTP.",
-            "pros": ["Works with standard HTTP infrastructure", "Automatic reconnection in browsers", "Simple firewall traversal"],
+            "pros": [
+              "Works with standard HTTP infrastructure",
+              "Automatic reconnection in browsers",
+              "Simple firewall traversal"
+            ],
             "cons": ["Server-to-client only", "One connection per stream", "No binary framing"]
           },
           {
             "title": "Long-polling",
             "description": "Client issues request; server holds it open until data is available.",
-            "pros": ["Works in every browser", "No special server requirements", "Simple retry semantics"],
-            "cons": ["High request overhead", "Not truly real-time", "Server threads blocked waiting"]
+            "pros": [
+              "Works in every browser",
+              "No special server requirements",
+              "Simple retry semantics"
+            ],
+            "cons": [
+              "High request overhead",
+              "Not truly real-time",
+              "Server threads blocked waiting"
+            ]
           }
         ]
       }
@@ -178,10 +198,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "websocket-connection-lifecycle",
-    "scaling-real-time-connections"
-  ],
+  "relatedLessons": ["websocket-connection-lifecycle", "scaling-real-time-connections"],
   "furtherReading": [
     {
       "title": "WebSocket vs SSE vs Long-Polling",

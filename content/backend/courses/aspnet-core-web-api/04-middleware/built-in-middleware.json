@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "middleware",
-    "built-in",
-    "cors"
-  ],
+  "tags": ["web-api", "middleware", "built-in", "cors"],
   "blocks": [
     {
       "type": "paragraph",
@@ -94,42 +89,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Middleware",
-          "Purpose",
-          "Typical Position"
-        ],
+        "headers": ["Middleware", "Purpose", "Typical Position"],
         "rows": [
-          [
-            "UseHttpsRedirection",
-            "Redirect HTTP to HTTPS",
-            "Early in pipeline"
-          ],
-          [
-            "UseStaticFiles",
-            "Serve static files",
-            "Before routing"
-          ],
-          [
-            "UseCors",
-            "Enable cross-origin requests",
-            "Before endpoints"
-          ],
-          [
-            "UseAuthentication",
-            "Identify the user",
-            "Before authorization"
-          ],
-          [
-            "UseAuthorization",
-            "Enforce access rules",
-            "After authentication"
-          ],
-          [
-            "UseExceptionHandler",
-            "Catch unhandled errors",
-            "Early in pipeline"
-          ]
+          ["UseHttpsRedirection", "Redirect HTTP to HTTPS", "Early in pipeline"],
+          ["UseStaticFiles", "Serve static files", "Before routing"],
+          ["UseCors", "Enable cross-origin requests", "Before endpoints"],
+          ["UseAuthentication", "Identify the user", "Before authorization"],
+          ["UseAuthorization", "Enforce access rules", "After authentication"],
+          ["UseExceptionHandler", "Catch unhandled errors", "Early in pipeline"]
         ]
       }
     },
@@ -141,15 +108,8 @@
           {
             "title": "UseStaticFiles",
             "description": "Serves files directly from disk without hitting a controller.",
-            "pros": [
-              "Fast file delivery",
-              "No controller overhead",
-              "Supports caching headers"
-            ],
-            "cons": [
-              "No authorization by default",
-              "Exposes directory structure if misconfigured"
-            ]
+            "pros": ["Fast file delivery", "No controller overhead", "Supports caching headers"],
+            "cons": ["No authorization by default", "Exposes directory structure if misconfigured"]
           },
           {
             "title": "MapControllers / Endpoints",
@@ -159,10 +119,7 @@
               "Dynamic responses",
               "Business logic integration"
             ],
-            "cons": [
-              "More overhead",
-              "Requires explicit routes"
-            ]
+            "cons": ["More overhead", "Requires explicit routes"]
           }
         ]
       }

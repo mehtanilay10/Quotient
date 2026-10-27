@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "unique",
-    "check",
-    "constraints",
-    "data-integrity"
-  ],
+  "tags": ["unique", "check", "constraints", "data-integrity"],
   "blocks": [
     {
       "type": "paragraph",
@@ -168,8 +163,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "not-null",
-    "primary-key"
-  ]
+  "relatedLessons": ["not-null", "primary-key"]
 }

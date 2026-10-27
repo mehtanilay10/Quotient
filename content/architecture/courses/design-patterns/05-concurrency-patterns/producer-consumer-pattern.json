@@ -6,12 +6,7 @@
   "description": "Coordinate data production and consumption safely across threads.",
   "order": 1,
   "difficulty": "advanced",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture",
-    "concurrency"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture", "concurrency"],
   "blocks": [
     {
       "type": "paragraph",

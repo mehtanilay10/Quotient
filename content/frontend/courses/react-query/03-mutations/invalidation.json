@@ -8,16 +8,8 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "invalidation",
-    "refetch",
-    "cache",
-    "stale"
-  ],
-  "prerequisites": [
-    "use-mutation"
-  ],
+  "tags": ["react-query", "invalidation", "refetch", "cache", "stale"],
+  "prerequisites": ["use-mutation"],
   "blocks": [
     {
       "type": "heading",
@@ -71,11 +63,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "Code",
-          "Effect"
-        ],
+        "headers": ["Method", "Code", "Effect"],
         "rows": [
           [
             "Exact key",
@@ -178,30 +166,19 @@
               "Simple mental model",
               "Works automatically"
             ],
-            "cons": [
-              "Triggers extra network request",
-              "Brief loading flash on refetch"
-            ],
-            "tags": [
-              "recommended default"
-            ]
+            "cons": ["Triggers extra network request", "Brief loading flash on refetch"],
+            "tags": ["recommended default"]
           },
           {
             "title": "setQueryData",
             "description": "Directly patches the cache without a network request.",
-            "pros": [
-              "Zero network overhead",
-              "Instant UI update",
-              "Works offline"
-            ],
+            "pros": ["Zero network overhead", "Instant UI update", "Works offline"],
             "cons": [
               "Easy to get wrong if the patch logic is buggy",
               "Can diverge from server state",
               "Must manually keep in sync"
             ],
-            "tags": [
-              "use sparingly"
-            ]
+            "tags": ["use sparingly"]
           }
         ]
       }

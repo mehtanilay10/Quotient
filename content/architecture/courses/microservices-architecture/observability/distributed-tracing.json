@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "tracing",
-    "opentelemetry",
-    "jaeger"
-  ],
+  "tags": ["tracing", "opentelemetry", "jaeger"],
   "blocks": [
     {
       "type": "paragraph",

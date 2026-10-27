@@ -14,14 +14,6 @@
     "hallucination"
   ],
   "learnMoreSlug": "how-llms-work-simply",
-  "examples": [
-    "ChatGPT is powered by GPT-4",
-    "Claude by Anthropic",
-    "Gemini by Google"
-  ],
-  "alsoKnownAs": [
-    "LLM",
-    "Foundation Model",
-    "Language Model"
-  ]
+  "examples": ["ChatGPT is powered by GPT-4", "Claude by Anthropic", "Gemini by Google"],
+  "alsoKnownAs": ["LLM", "Foundation Model", "Language Model"]
 }

@@ -162,6 +162,10 @@
   ],
   "relatedLessons": ["git-flow", "trunk-based-development"],
   "furtherReading": [
-    { "title": "GitHub Flow Guide", "url": "https://docs.github.com/en/get-started/quickstart/github-flow", "type": "article" }
+    {
+      "title": "GitHub Flow Guide",
+      "url": "https://docs.github.com/en/get-started/quickstart/github-flow",
+      "type": "article"
+    }
   ]
 }

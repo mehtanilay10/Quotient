@@ -7,14 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "structure",
-    "namespace",
-    "class",
-    "method",
-    "organization"
-  ],
+  "tags": ["csharp", "structure", "namespace", "class", "method", "organization"],
   "blocks": [
     {
       "type": "paragraph",
@@ -149,32 +142,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Modifier",
-          "Description",
-          "Accessible From"
-        ],
+        "headers": ["Modifier", "Description", "Accessible From"],
         "rows": [
-          [
-            "public",
-            "No restrictions",
-            "Anywhere"
-          ],
-          [
-            "private",
-            "Only within the same class",
-            "Same class"
-          ],
-          [
-            "protected",
-            "Within the class and derived classes",
-            "Class + subclasses"
-          ],
-          [
-            "internal",
-            "Within the same assembly (project)",
-            "Same project/assembly"
-          ],
+          ["public", "No restrictions", "Anywhere"],
+          ["private", "Only within the same class", "Same class"],
+          ["protected", "Within the class and derived classes", "Class + subclasses"],
+          ["internal", "Within the same assembly (project)", "Same project/assembly"],
           [
             "protected internal",
             "Within the assembly OR derived classes",

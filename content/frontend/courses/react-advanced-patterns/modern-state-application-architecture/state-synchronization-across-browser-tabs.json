@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "browser-tabs",
-    "synchronization",
-    "broadcastchannel",
-    "react"
-  ],
+  "tags": ["browser-tabs", "synchronization", "broadcastchannel", "react"],
   "blocks": [
     {
       "type": "paragraph",
@@ -99,12 +94,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Mechanism",
-          "Browser support",
-          "Best for",
-          "Limitations"
-        ],
+        "headers": ["Mechanism", "Browser support", "Best for", "Limitations"],
         "rows": [
           [
             "BroadcastChannel",

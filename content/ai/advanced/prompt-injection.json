@@ -55,43 +55,18 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Attack Type",
-          "Vector",
-          "Goal",
-          "Difficulty to Prevent"
-        ],
+        "headers": ["Attack Type", "Vector", "Goal", "Difficulty to Prevent"],
         "rows": [
-          [
-            "Direct injection",
-            "User input field",
-            "Override system instructions",
-            "Medium"
-          ],
+          ["Direct injection", "User input field", "Override system instructions", "Medium"],
           [
             "Indirect injection",
             "Retrieved doc / web page",
             "Manipulate RAG-augmented output",
             "Hard"
           ],
-          [
-            "Jailbreak",
-            "Prompt engineering",
-            "Bypass safety guardrails",
-            "Very hard"
-          ],
-          [
-            "Goal hijacking",
-            "User instructions",
-            "Divert agent to attacker's goal",
-            "Hard"
-          ],
-          [
-            "Data exfiltration",
-            "Crafted input + output",
-            "Steal sensitive context",
-            "Very hard"
-          ]
+          ["Jailbreak", "Prompt engineering", "Bypass safety guardrails", "Very hard"],
+          ["Goal hijacking", "User instructions", "Divert agent to attacker's goal", "Hard"],
+          ["Data exfiltration", "Crafted input + output", "Steal sensitive context", "Very hard"]
         ]
       }
     },

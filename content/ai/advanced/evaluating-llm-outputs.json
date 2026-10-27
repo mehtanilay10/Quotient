@@ -68,16 +68,8 @@
           {
             "title": "Automated Heuristics",
             "description": "Programmatic checks: regex, length, keyword presence, format validation.",
-            "pros": [
-              "Free and instant",
-              "Covers all outputs",
-              "Great for regressions"
-            ],
-            "cons": [
-              "No nuance detection",
-              "Can't judge correctness",
-              "Easy to game"
-            ],
+            "pros": ["Free and instant", "Covers all outputs", "Great for regressions"],
+            "cons": ["No nuance detection", "Can't judge correctness", "Easy to game"],
             "tags": ["unit-tests", "fast"]
           },
           {
@@ -98,16 +90,8 @@
           {
             "title": "Human Evaluation",
             "description": "Domain experts rate outputs on structured rubrics. Gold standard.",
-            "pros": [
-              "Most accurate",
-              "Catches edge cases",
-              "Builds trust with stakeholders"
-            ],
-            "cons": [
-              "Slow and expensive",
-              "Hard to scale",
-              "Inter-rater reliability issues"
-            ],
+            "pros": ["Most accurate", "Catches edge cases", "Builds trust with stakeholders"],
+            "cons": ["Slow and expensive", "Hard to scale", "Inter-rater reliability issues"],
             "tags": ["gold-standard", "small-sample"]
           }
         ]
@@ -131,12 +115,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Benchmark",
-          "Tests",
-          "Format",
-          "Commonly Used For"
-        ],
+        "headers": ["Benchmark", "Tests", "Format", "Commonly Used For"],
         "rows": [
           [
             "MMLU",
@@ -144,24 +123,9 @@
             "Multiple choice",
             "General capability comparison"
           ],
-          [
-            "GSM8K",
-            "Grade-school math word problems",
-            "Open-ended",
-            "Reasoning and math ability"
-          ],
-          [
-            "HumanEval",
-            "Python coding problems",
-            "Function completion",
-            "Code generation quality"
-          ],
-          [
-            "BIG-Bench",
-            "204 diverse, challenging tasks",
-            "Varies",
-            "Emerging abilities research"
-          ],
+          ["GSM8K", "Grade-school math word problems", "Open-ended", "Reasoning and math ability"],
+          ["HumanEval", "Python coding problems", "Function completion", "Code generation quality"],
+          ["BIG-Bench", "204 diverse, challenging tasks", "Varies", "Emerging abilities research"],
           [
             "MT-Bench",
             "Multi-turn conversation quality",

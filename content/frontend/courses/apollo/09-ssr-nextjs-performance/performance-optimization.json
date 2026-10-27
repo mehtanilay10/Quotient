@@ -64,7 +64,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "ssg-hydration"
-  ]
+  "prerequisites": ["ssg-hydration"]
 }

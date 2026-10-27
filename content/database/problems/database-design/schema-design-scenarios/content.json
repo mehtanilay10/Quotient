@@ -10,5 +10,11 @@
   "estimatedHours": 4,
   "icon": "📐",
   "tags": ["database", "schema", "sql", "design"],
-  "lessonSlugs": ["e-commerce-schema", "social-media-schema", "booking-system-schema", "library-system-schema", "hospital-system-schema"]
+  "lessonSlugs": [
+    "e-commerce-schema",
+    "social-media-schema",
+    "booking-system-schema",
+    "library-system-schema",
+    "hospital-system-schema"
+  ]
 }

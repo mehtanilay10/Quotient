@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "null",
-    "coalesce",
-    "nullif",
-    "three-valued-logic",
-    "sql"
-  ],
+  "tags": ["null", "coalesce", "nullif", "three-valued-logic", "sql"],
   "blocks": [
     {
       "type": "paragraph",
@@ -54,11 +48,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Function",
-          "Behavior",
-          "Example Usage"
-        ],
+        "headers": ["Function", "Behavior", "Example Usage"],
         "rows": [
           [
             "`COALESCE(val1, val2, ...)`",
@@ -91,8 +81,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "where-clause",
-    "order-by"
-  ]
+  "relatedLessons": ["where-clause", "order-by"]
 }

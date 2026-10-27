@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "lifecycle",
-    "cleanup",
-    "error-handling",
-    "useEffect",
-    "unmount"
-  ],
+  "tags": ["lifecycle", "cleanup", "error-handling", "useEffect", "unmount"],
   "blocks": [
     {
       "type": "paragraph",
@@ -161,7 +155,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "subscriptions-basics"
-  ]
+  "prerequisites": ["subscriptions-basics"]
 }

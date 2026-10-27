@@ -75,19 +75,31 @@
           {
             "title": "Amazon SQS",
             "description": "Fully managed queue for cloud-native applications.",
-            "pros": ["Serverless, no brokers to manage", "Virtually unlimited scale", "Pay per request"],
+            "pros": [
+              "Serverless, no brokers to manage",
+              "Virtually unlimited scale",
+              "Pay per request"
+            ],
             "cons": ["Not JMS/AMQP compatible", "No message ordering in standard queues"]
           },
           {
             "title": "Amazon SNS",
             "description": "Fully managed pub/sub for cloud-native applications.",
-            "pros": ["Serverless", "Fanout to multiple endpoints", "Integrates with Lambda and SQS"],
+            "pros": [
+              "Serverless",
+              "Fanout to multiple endpoints",
+              "Integrates with Lambda and SQS"
+            ],
             "cons": ["Not JMS/AMQP compatible", "No persistent message storage by default"]
           },
           {
             "title": "Amazon MQ",
             "description": "Managed ActiveMQ or RabbitMQ for traditional middleware.",
-            "pros": ["JMS and AMQP compatible", "Message ordering guaranteed", "Easy migration from on-premises"],
+            "pros": [
+              "JMS and AMQP compatible",
+              "Message ordering guaranteed",
+              "Easy migration from on-premises"
+            ],
             "cons": ["Brokers require management", "Less scalable than SQS/SNS", "Higher cost"]
           }
         ]

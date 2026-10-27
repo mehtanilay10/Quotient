@@ -5,10 +5,7 @@
   "title": "DbContext Overview",
   "description": "Understand the DbContext class.",
   "order": 3,
-  "tags": [
-    "ef-core",
-    "dbcontext-configuration"
-  ],
+  "tags": ["ef-core", "dbcontext-configuration"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "requirements",
-    "communication",
-    "architecture",
-    "csharp"
-  ],
+  "tags": ["requirements", "communication", "architecture", "csharp"],
   "blocks": [
     {
       "type": "paragraph",

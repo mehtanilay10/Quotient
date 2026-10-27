@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "explain",
-    "explain-analyze",
-    "query-plan",
-    "performance",
-    "tuning"
-  ],
+  "tags": ["explain", "explain-analyze", "query-plan", "performance", "tuning"],
   "blocks": [
     {
       "type": "paragraph",
@@ -48,11 +42,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Plan Node",
-          "What It Does",
-          "When It Is Acceptable"
-        ],
+        "headers": ["Plan Node", "What It Does", "When It Is Acceptable"],
         "rows": [
           [
             "`Seq Scan`",
@@ -119,8 +109,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "query-planning",
-    "vacuum-analyze"
-  ]
+  "relatedLessons": ["query-planning", "vacuum-analyze"]
 }

@@ -138,10 +138,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rate-limiting-algorithms",
-    "distributed-rate-limiting"
-  ],
+  "relatedLessons": ["rate-limiting-algorithms", "distributed-rate-limiting"],
   "furtherReading": [
     {
       "title": "Redis Sorted Sets for Rate Limiting",

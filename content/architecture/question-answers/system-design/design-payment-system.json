@@ -8,12 +8,7 @@
   "order": 18,
   "difficulty": "advanced",
   "estimatedMinutes": 26,
-  "tags": [
-    "interview",
-    "system-design",
-    "payments",
-    "consistency"
-  ],
+  "tags": ["interview", "system-design", "payments", "consistency"],
   "technology": "System Design",
   "blocks": [
     {
@@ -105,11 +100,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Entity",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Entity", "Key Fields", "Description"],
         "rows": [
           [
             "PaymentIntent",
@@ -193,11 +184,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "design-ticket-booking",
-    "design-message-queue",
-    "design-notification-system"
-  ],
+  "relatedLessons": ["design-ticket-booking", "design-message-queue", "design-notification-system"],
   "furtherReading": [
     {
       "title": "Stripe idempotency documentation",

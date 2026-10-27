@@ -7,12 +7,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2.5,
   "icon": "🎯",
-  "tags": [
-    "claude",
-    "prompt-engineering",
-    "best-practices",
-    "toolkit"
-  ],
+  "tags": ["claude", "prompt-engineering", "best-practices", "toolkit"],
   "lessonSlugs": [
     "prompt-engineering-for-claude",
     "claude-limitations",

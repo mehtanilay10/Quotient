@@ -8,14 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "secure-storage",
-    "cookies",
-    "xss",
-    "csrf",
-    "mobile",
-    "keychain"
-  ],
+  "tags": ["secure-storage", "cookies", "xss", "csrf", "mobile", "keychain"],
   "blocks": [
     {
       "type": "heading",
@@ -95,15 +88,8 @@
             "Survives app reinstall (with care)",
             "Backed up to iCloud optionally"
           ],
-          "cons": [
-            "iOS only",
-            "Complex API",
-            "Backup behavior must be configured"
-          ],
-          "tags": [
-            "ios",
-            "keychain"
-          ]
+          "cons": ["iOS only", "Complex API", "Backup behavior must be configured"],
+          "tags": ["ios", "keychain"]
         },
         {
           "title": "Android Keystore",
@@ -113,33 +99,19 @@
             "Requires user authentication",
             "Keys never leave TEE"
           ],
-          "cons": [
-            "Android only",
-            "Device support varies",
-            "Complex migration path"
-          ],
-          "tags": [
-            "android",
-            "keystore"
-          ]
+          "cons": ["Android only", "Device support varies", "Complex migration path"],
+          "tags": ["android", "keystore"]
         },
         {
           "title": "React Native Keychain",
           "description": "Cross-platform library that wraps native keychain and keystore APIs.",
-          "pros": [
-            "Works on iOS and Android",
-            "Simple unified API",
-            "Supports biometry"
-          ],
+          "pros": ["Works on iOS and Android", "Simple unified API", "Supports biometry"],
           "cons": [
             "Native linking required",
             "Occasional platform bugs",
             "Less control over settings"
           ],
-          "tags": [
-            "react-native",
-            "cross-platform"
-          ]
+          "tags": ["react-native", "cross-platform"]
         }
       ]
     },
@@ -228,13 +200,7 @@
       "takeaway": "The security of your refresh tokens is only as strong as the storage mechanism. Choose the right storage for each platform and never compromise on encryption and access controls."
     }
   ],
-  "relatedLessons": [
-    "refresh-token-basics",
-    "token-revocation"
-  ],
+  "relatedLessons": ["refresh-token-basics", "token-revocation"],
   "furtherReading": [],
-  "prerequisites": [
-    "refresh-token-basics",
-    "token-revocation"
-  ]
+  "prerequisites": ["refresh-token-basics", "token-revocation"]
 }

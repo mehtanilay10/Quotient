@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "paint",
-    "compositing",
-    "layers",
-    "gpu",
-    "rendering-pipeline"
-  ],
+  "tags": ["paint", "compositing", "layers", "gpu", "rendering-pipeline"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,70 +76,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Property",
-          "Triggers Layout",
-          "Triggers Paint",
-          "Compositor Only",
-          "Verdict"
-        ],
+        "headers": ["Property", "Triggers Layout", "Triggers Paint", "Compositor Only", "Verdict"],
         "rows": [
-          [
-            "transform",
-            "No",
-            "No",
-            "Yes",
-            "Cheap"
-          ],
-          [
-            "opacity",
-            "No",
-            "No",
-            "Yes",
-            "Cheap"
-          ],
-          [
-            "width / height",
-            "Yes",
-            "Yes",
-            "No",
-            "Expensive"
-          ],
-          [
-            "top / left",
-            "Yes",
-            "Yes",
-            "No",
-            "Expensive"
-          ],
-          [
-            "margin / padding",
-            "Yes",
-            "Yes",
-            "No",
-            "Expensive"
-          ],
-          [
-            "background-color",
-            "No",
-            "Yes",
-            "No",
-            "Moderate"
-          ],
-          [
-            "box-shadow",
-            "No",
-            "Yes",
-            "No",
-            "Moderate"
-          ],
-          [
-            "filter",
-            "No",
-            "Yes",
-            "No",
-            "Expensive"
-          ]
+          ["transform", "No", "No", "Yes", "Cheap"],
+          ["opacity", "No", "No", "Yes", "Cheap"],
+          ["width / height", "Yes", "Yes", "No", "Expensive"],
+          ["top / left", "Yes", "Yes", "No", "Expensive"],
+          ["margin / padding", "Yes", "Yes", "No", "Expensive"],
+          ["background-color", "No", "Yes", "No", "Moderate"],
+          ["box-shadow", "No", "Yes", "No", "Moderate"],
+          ["filter", "No", "Yes", "No", "Expensive"]
         ]
       }
     },
@@ -237,11 +177,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "jank-free-animations",
-    "layout-thrashing",
-    "user-centric-metrics"
-  ],
+  "relatedLessons": ["jank-free-animations", "layout-thrashing", "user-centric-metrics"],
   "furtherReading": [
     {
       "title": "Rendering Performance",

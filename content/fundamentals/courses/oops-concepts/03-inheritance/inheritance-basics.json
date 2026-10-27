@@ -7,10 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "oop",
-    "inheritance"
-  ],
+  "tags": ["oop", "inheritance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -48,8 +45,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "method-overriding"
-  ],
+  "relatedLessons": ["method-overriding"],
   "courseSlug": "oops-concepts"
 }

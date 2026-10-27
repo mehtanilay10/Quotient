@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "normalization",
-    "state",
-    "structure",
-    "entities"
-  ],
+  "tags": ["redux", "normalization", "state", "structure", "entities"],
   "blocks": [
     {
       "type": "paragraph",
@@ -97,11 +91,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Rule",
-          "Description",
-          "Example"
-        ],
+        "headers": ["Rule", "Description", "Example"],
         "rows": [
           [
             "One table per entity type",

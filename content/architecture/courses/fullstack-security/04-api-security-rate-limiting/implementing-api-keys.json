@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "api-keys",
-    "security",
-    "asp.net core"
-  ],
+  "tags": ["api-keys", "security", "asp.net core"],
   "blocks": [
     {
       "type": "paragraph",

@@ -6,12 +6,7 @@
   "description": "Timeouts, caching, hedging, degradation, and decoupling: making an unreliable dependency a bounded part of your latency budget.",
   "order": 6,
   "difficulty": "intermediate",
-  "tags": [
-    "interview",
-    "performance",
-    "resilience",
-    "integrations"
-  ],
+  "tags": ["interview", "performance", "resilience", "integrations"],
   "blocks": [
     {
       "type": "paragraph",
@@ -122,10 +117,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "perf-q1",
-    "perf-q4"
-  ],
+  "relatedLessons": ["perf-q1", "perf-q4"],
   "furtherReading": [
     {
       "title": "Rate-limiting patterns and best practices — Microsoft",

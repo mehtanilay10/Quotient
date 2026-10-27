@@ -80,11 +80,7 @@
               "Handles complex queries well",
               "Better precision/recall balance"
             ],
-            "cons": [
-              "More complex pipeline",
-              "Higher latency",
-              "Requires more tuning"
-            ],
+            "cons": ["More complex pipeline", "Higher latency", "Requires more tuning"],
             "tags": ["production", "hybrid-search"]
           },
           {
@@ -123,12 +119,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "How It Works",
-          "Best For",
-          "Risk"
-        ],
+        "headers": ["Strategy", "How It Works", "Best For", "Risk"],
         "rows": [
           [
             "Fixed-size",

@@ -155,6 +155,10 @@
   ],
   "relatedLessons": ["pre-commit-hooks", "pre-push-hooks"],
   "furtherReading": [
-    { "title": "Git Hooks Documentation", "url": "https://git-scm.com/docs/githooks", "type": "article" }
+    {
+      "title": "Git Hooks Documentation",
+      "url": "https://git-scm.com/docs/githooks",
+      "type": "article"
+    }
   ]
 }

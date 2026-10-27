@@ -6,12 +6,6 @@
   "fullDefinition": "Speech-to-Text (STT) technology converts audio of human speech into text. Modern AI-based STT systems achieve very high accuracy even in noisy environments and with diverse accents. OpenAI's Whisper is a widely used open STT model. STT powers voice assistants, transcription services, meeting notes tools (Otter.ai, Fireflies.ai), and voice interfaces for AI chatbots.",
   "category": "multimodal",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "multimodal",
-    "tts"
-  ],
-  "alsoKnownAs": [
-    "Transcription",
-    "Automatic Speech Recognition (ASR)"
-  ]
+  "relatedTerms": ["multimodal", "tts"],
+  "alsoKnownAs": ["Transcription", "Automatic Speech Recognition (ASR)"]
 }

@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 28,
-  "tags": [
-    "semantic-kernel",
-    "process-framework",
-    "agents",
-    "csharp"
-  ],
+  "tags": ["semantic-kernel", "process-framework", "agents", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -77,10 +72,7 @@
       "takeaway": "Use ProcessBuilder for complex multi-step agent workflows in Semantic Kernel v1.25+."
     }
   ],
-  "relatedLessons": [
-    "semantic-kernel-agents-and-planners",
-    "tool-use-and-function-calling"
-  ],
+  "relatedLessons": ["semantic-kernel-agents-and-planners", "tool-use-and-function-calling"],
   "technology": null,
   "furtherReading": [
     {

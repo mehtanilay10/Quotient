@@ -8,14 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "api-design",
-    "union-props",
-    "variants",
-    "defaults",
-    "typescript",
-    "usability"
-  ],
+  "tags": ["api-design", "union-props", "variants", "defaults", "typescript", "usability"],
   "blocks": [
     {
       "type": "heading",
@@ -95,43 +88,18 @@
     },
     {
       "type": "table",
-      "headers": [
-        "Pattern",
-        "Example",
-        "Pros",
-        "Cons"
-      ],
+      "headers": ["Pattern", "Example", "Pros", "Cons"],
       "rows": [
-        [
-          "Boolean Flags",
-          "isPrimary, isDisabled",
-          "Simple to add",
-          "Combinatorial explosion"
-        ],
-        [
-          "Union Props",
-          "href in props",
-          "Type-safe branching",
-          "More type definitions"
-        ],
+        ["Boolean Flags", "isPrimary, isDisabled", "Simple to add", "Combinatorial explosion"],
+        ["Union Props", "href in props", "Type-safe branching", "More type definitions"],
         [
           "Variant Object",
           "variants={{ intent, size }}",
           "Extensible, grouped",
           "Slightly more verbose"
         ],
-        [
-          "Render Props",
-          "children={(api) => ...}",
-          "Maximum flexibility",
-          "Complex consumer code"
-        ],
-        [
-          "Compound Components",
-          "<Button.Icon />",
-          "Intuitive nesting",
-          "Requires context setup"
-        ]
+        ["Render Props", "children={(api) => ...}", "Maximum flexibility", "Complex consumer code"],
+        ["Compound Components", "<Button.Icon />", "Intuitive nesting", "Requires context setup"]
       ]
     },
     {
@@ -200,7 +168,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "compound-basics"
-  ]
+  "prerequisites": ["compound-basics"]
 }

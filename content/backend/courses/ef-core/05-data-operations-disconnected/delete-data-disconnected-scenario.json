@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "ef-core",
-    "delete",
-    "disconnected",
-    "remove"
-  ],
+  "tags": ["ef-core", "delete", "disconnected", "remove"],
   "blocks": [
     {
       "type": "paragraph",
@@ -30,22 +25,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "DbContext Methods",
-          "DbSet Methods",
-          "Description"
-        ],
+        "headers": ["DbContext Methods", "DbSet Methods", "Description"],
         "rows": [
-          [
-            "DbContext.Remove",
-            "DbSet.Remove",
-            "Sets Deleted state"
-          ],
-          [
-            "DbContext.RemoveRange",
-            "DbSet.RemoveRange",
-            "Sets Deleted for collection"
-          ]
+          ["DbContext.Remove", "DbSet.Remove", "Sets Deleted state"],
+          ["DbContext.RemoveRange", "DbSet.RemoveRange", "Sets Deleted for collection"]
         ]
       }
     },
@@ -125,9 +108,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "update-data-disconnected-scenario",
-    "working-with-disconnected-entity-graph"
-  ],
+  "relatedLessons": ["update-data-disconnected-scenario", "working-with-disconnected-entity-graph"],
   "courseSlug": "ef-core"
 }

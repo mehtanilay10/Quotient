@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "code-quality",
-    "collaboration",
-    "feedback"
-  ],
+  "tags": ["code-quality", "collaboration", "feedback"],
   "blocks": [
     {
       "type": "paragraph",
@@ -131,10 +127,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "writing-technical-proposals",
-    "handling-technical-disagreement"
-  ],
+  "relatedLessons": ["writing-technical-proposals", "handling-technical-disagreement"],
   "furtherReading": [
     {
       "type": "article",

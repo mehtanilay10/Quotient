@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "sqlclient",
-    "sql-server",
-    "ado-net",
-    "database"
-  ],
+  "tags": ["sqlclient", "sql-server", "ado-net", "database"],
   "blocks": [
     {
       "type": "heading",

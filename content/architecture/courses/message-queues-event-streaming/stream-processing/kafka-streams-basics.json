@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "kafka-streams",
-    "stream-processing",
-    "kafka",
-    "topology",
-    "state-stores"
-  ],
+  "tags": ["kafka-streams", "stream-processing", "kafka", "topology", "state-stores"],
   "blocks": [
     {
       "type": "paragraph",

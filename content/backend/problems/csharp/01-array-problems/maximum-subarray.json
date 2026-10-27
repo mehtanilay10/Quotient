@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "arrays",
-    "dynamic-programming",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "dynamic-programming", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -133,47 +128,23 @@
           {
             "title": "Brute Force",
             "description": "Enumerate every subarray",
-            "pros": [
-              "Always correct"
-            ],
-            "cons": [
-              "O(n³) time"
-            ],
-            "tags": [
-              "O(n³) time",
-              "O(1) space"
-            ]
+            "pros": ["Always correct"],
+            "cons": ["O(n³) time"],
+            "tags": ["O(n³) time", "O(1) space"]
           },
           {
             "title": "Kadane's Algorithm",
             "description": "Greedy running sum, restart when negative",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
             "cons": [],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           },
           {
             "title": "Divide and Conquer",
             "description": "Recursively split and merge",
-            "pros": [
-              "O(n log n) time",
-              "Demonstrates recursive thinking"
-            ],
-            "cons": [
-              "More complex to implement",
-              "O(log n) stack space"
-            ],
-            "tags": [
-              "O(n log n) time",
-              "O(log n) space"
-            ]
+            "pros": ["O(n log n) time", "Demonstrates recursive thinking"],
+            "cons": ["More complex to implement", "O(log n) stack space"],
+            "tags": ["O(n log n) time", "O(log n) space"]
           }
         ]
       }

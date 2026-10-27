@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "disaster-recovery",
-    "rto",
-    "rpo",
-    "runbook",
-    "dr-testing"
-  ],
+  "tags": ["disaster-recovery", "rto", "rpo", "runbook", "dr-testing"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,12 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Acronym",
-          "Meaning",
-          "Example Target"
-        ],
+        "headers": ["Metric", "Acronym", "Meaning", "Example Target"],
         "rows": [
           [
             "Recovery Time Objective",
@@ -120,8 +109,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "point-in-time-recovery",
-    "patroni-repmgr"
-  ]
+  "relatedLessons": ["point-in-time-recovery", "patroni-repmgr"]
 }

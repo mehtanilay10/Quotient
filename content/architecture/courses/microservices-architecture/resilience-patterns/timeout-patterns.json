@@ -8,10 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "timeout",
-    "configuration"
-  ],
+  "tags": ["timeout", "configuration"],
   "blocks": [
     {
       "type": "paragraph",
@@ -59,27 +56,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Description",
-          "Typical Value"
-        ],
+        "headers": ["Type", "Description", "Typical Value"],
         "rows": [
-          [
-            "Connection",
-            "Time to connect",
-            "1-5 seconds"
-          ],
-          [
-            "Read",
-            "Time to wait for response",
-            "5-30 seconds"
-          ],
-          [
-            "Total",
-            "Total operation time",
-            "10-60 seconds"
-          ]
+          ["Connection", "Time to connect", "1-5 seconds"],
+          ["Read", "Time to wait for response", "5-30 seconds"],
+          ["Total", "Total operation time", "10-60 seconds"]
         ]
       }
     },

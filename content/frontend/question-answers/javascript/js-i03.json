@@ -6,10 +6,7 @@
   "description": "Understand Promise states, chaining, and error handling.",
   "order": 7,
   "difficulty": "intermediate",
-  "tags": [
-    "javascript",
-    "intermediate"
-  ],
+  "tags": ["javascript", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

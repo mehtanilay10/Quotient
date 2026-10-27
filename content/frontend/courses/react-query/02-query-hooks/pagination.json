@@ -8,18 +8,8 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "pagination",
-    "pages",
-    "keepPreviousData",
-    "placeholderData",
-    "ux"
-  ],
-  "prerequisites": [
-    "query-options-react-query",
-    "initial-data-placeholder"
-  ],
+  "tags": ["react-query", "pagination", "pages", "keepPreviousData", "placeholderData", "ux"],
+  "prerequisites": ["query-options-react-query", "initial-data-placeholder"],
   "blocks": [
     {
       "type": "paragraph",

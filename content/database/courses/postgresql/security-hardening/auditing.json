@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "auditing",
-    "pgaudit",
-    "compliance",
-    "soc2",
-    "hipaa"
-  ],
+  "tags": ["auditing", "pgaudit", "compliance", "soc2", "hipaa"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "roles-privileges",
-    "row-level-security"
-  ]
+  "relatedLessons": ["roles-privileges", "row-level-security"]
 }

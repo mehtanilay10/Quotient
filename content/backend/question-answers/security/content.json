@@ -8,11 +8,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 4,
   "icon": "🔐",
-  "tags": [
-    "interview",
-    "security",
-    "backend"
-  ],
+  "tags": ["interview", "security", "backend"],
   "lessonSlugs": [
     "oauth-jwt",
     "authentication-vs-authorization",

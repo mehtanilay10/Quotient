@@ -7,11 +7,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "scalar-function",
-    "user-defined-function",
-    "return-value"
-  ],
+  "tags": ["scalar-function", "user-defined-function", "return-value"],
   "blocks": [
     {
       "type": "heading",

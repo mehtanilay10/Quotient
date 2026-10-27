@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "store",
-    "actions",
-    "reducers"
-  ],
+  "tags": ["redux", "store", "actions", "reducers"],
   "blocks": [
     {
       "type": "paragraph",
@@ -143,12 +138,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Concept",
-          "What It Is",
-          "What It Does",
-          "Key API"
-        ],
+        "headers": ["Concept", "What It Is", "What It Does", "Key API"],
         "rows": [
           [
             "Store",

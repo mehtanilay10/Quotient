@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "components",
-    "app",
-    "practice"
-  ],
+  "tags": ["react", "components", "app", "practice"],
   "blocks": [
     {
       "type": "paragraph",
@@ -152,11 +147,7 @@
       "data": {
         "title": "Fetch Data with useEffect",
         "description": "Fetch a list of users from JSONPlaceholder and display them.",
-        "steps": [
-          "Create a UserList component",
-          "Use useEffect to fetch data",
-          "Render the list"
-        ],
+        "steps": ["Create a UserList component", "Use useEffect to fetch data", "Render the list"],
         "expectedOutcome": "List of users rendered from API."
       }
     }

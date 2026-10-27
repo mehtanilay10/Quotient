@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 32,
-  "tags": [
-    "linq",
-    "queries",
-    "eager-loading"
-  ],
+  "tags": ["linq", "queries", "eager-loading"],
   "blocks": [
     {
       "type": "heading",

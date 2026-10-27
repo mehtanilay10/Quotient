@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useRef } from 'react';
-import { Copy, Check } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
-import type { PromptTemplate } from '@/types';
+import { useState, useEffect, useRef } from "react";
+import { Copy, Check } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { DifficultyBadge } from "@/components/ui/DifficultyBadge";
+import type { PromptTemplate } from "@/types";
 
 interface PromptCardProps {
   prompt: PromptTemplate;
@@ -26,21 +26,21 @@ export function PromptCard({ prompt, className }: PromptCardProps) {
   };
 
   const categoryColorMap: Record<string, string> = {
-    writing: 'bg-accent-subtle text-accent-fg',
-    thinking: 'bg-done-muted text-done-fg',
-    research: 'bg-attention-subtle text-attention-fg',
-    coding: 'bg-success-subtle text-success-fg',
-    creativity: 'bg-done-muted text-done-fg',
-    productivity: 'bg-accent-subtle text-accent-fg',
-    learning: 'bg-success-subtle text-success-fg',
-    analysis: 'bg-attention-subtle text-attention-fg',
-    summarization: 'bg-canvas-inset text-fg-muted',
+    writing: "bg-accent-subtle text-accent-fg",
+    thinking: "bg-done-muted text-done-fg",
+    research: "bg-attention-subtle text-attention-fg",
+    coding: "bg-success-subtle text-success-fg",
+    creativity: "bg-done-muted text-done-fg",
+    productivity: "bg-accent-subtle text-accent-fg",
+    learning: "bg-success-subtle text-success-fg",
+    analysis: "bg-attention-subtle text-attention-fg",
+    summarization: "bg-canvas-inset text-fg-muted",
   };
 
   return (
     <div
       className={cn(
-        'flex flex-col rounded-xl border border-border bg-canvas overflow-hidden dark:bg-canvas-subtle',
+        "flex flex-col rounded-xl border border-border bg-canvas overflow-hidden dark:bg-canvas-subtle",
         className
       )}
     >
@@ -50,8 +50,8 @@ export function PromptCard({ prompt, className }: PromptCardProps) {
           <div className="flex flex-wrap items-center gap-1.5">
             <span
               className={cn(
-                'rounded-full px-2 py-0.5 text-xs font-medium',
-                categoryColorMap[prompt.category] ?? 'bg-canvas-subtle text-fg-muted'
+                "rounded-full px-2 py-0.5 text-xs font-medium",
+                categoryColorMap[prompt.category] ?? "bg-canvas-subtle text-fg-muted"
               )}
             >
               {prompt.category}
@@ -112,7 +112,9 @@ export function PromptCard({ prompt, className }: PromptCardProps) {
         <div className="border-t border-border p-4 space-y-3">
           {prompt.tips && (
             <div>
-              <p className="mb-1.5 text-xs font-semibold text-fg-subtle uppercase tracking-wider">Tips</p>
+              <p className="mb-1.5 text-xs font-semibold text-fg-subtle uppercase tracking-wider">
+                Tips
+              </p>
               <ul className="space-y-1">
                 {prompt.tips.map((tip, i) => (
                   <li key={i} className="flex items-start gap-1.5 text-xs text-fg-muted">
@@ -129,7 +131,7 @@ export function PromptCard({ prompt, className }: PromptCardProps) {
               onClick={() => setShowExample((v) => !v)}
               className="text-xs text-accent-fg hover:underline"
             >
-              {showExample ? 'Hide example' : 'Show filled example'}
+              {showExample ? "Hide example" : "Show filled example"}
             </button>
           )}
           {prompt.example && showExample && (

@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "mvc",
-    "pattern",
-    "architecture"
-  ],
+  "tags": ["mvc", "pattern", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -235,9 +231,7 @@
       "takeaway": "MVC is the organizational backbone of ASP.NET Core. Understanding the three components and how they communicate is the key to building well-structured web applications that are easy to maintain and scale."
     }
   ],
-  "relatedLessons": [
-    "controllers-and-actions"
-  ],
+  "relatedLessons": ["controllers-and-actions"],
   "technology": null,
   "furtherReading": [
     {

@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "models",
-    "viewdata",
-    "viewbag",
-    "data-transfer"
-  ],
+  "tags": ["models", "viewdata", "viewbag", "data-transfer"],
   "blocks": [
     {
       "type": "paragraph",
@@ -127,18 +122,12 @@
             "Self-documenting — the view declares what data it needs",
             "Easiest to refactor safely"
           ],
-          "cons": [
-            "Requires a model class (extra file)",
-            "Less convenient for one-off values"
-          ]
+          "cons": ["Requires a model class (extra file)", "Less convenient for one-off values"]
         },
         {
           "title": "ViewData",
           "description": "A Dictionary<string, object> for passing data. Values are stored as objects and require casting.",
-          "pros": [
-            "No model class needed",
-            "Good for simple one-off values like titles"
-          ],
+          "pros": ["No model class needed", "Good for simple one-off values like titles"],
           "cons": [
             "No compile-time checking",
             "Requires casting when reading",
@@ -247,10 +236,7 @@
       "takeaway": "Passing data from controllers to views is fundamental to every ASP.NET Core application. Strongly typed models provide the best developer experience, while ViewBag and ViewData offer convenient shortcuts for simpler scenarios."
     }
   ],
-  "relatedLessons": [
-    "views-and-templates",
-    "handling-user-input"
-  ],
+  "relatedLessons": ["views-and-templates", "handling-user-input"],
   "technology": null,
   "furtherReading": [
     {

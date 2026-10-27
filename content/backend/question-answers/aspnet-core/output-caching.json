@@ -6,10 +6,7 @@
   "description": "Caching responses vs caching data, tags for invalidation, and cache policy pitfalls.",
   "order": 18,
   "difficulty": "intermediate",
-  "tags": [
-    "aspnet-core",
-    "intermediate"
-  ],
+  "tags": ["aspnet-core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,10 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "aspnet-b02",
-    "rate-limiting"
-  ],
+  "relatedLessons": ["aspnet-b02", "rate-limiting"],
   "furtherReading": [
     {
       "title": "Output caching in ASP.NET Core",

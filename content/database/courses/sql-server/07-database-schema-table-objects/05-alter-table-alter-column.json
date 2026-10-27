@@ -7,11 +7,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "alter-table",
-    "alter-column",
-    "ddl"
-  ],
+  "tags": ["alter-table", "alter-column", "ddl"],
   "blocks": [
     {
       "type": "heading",

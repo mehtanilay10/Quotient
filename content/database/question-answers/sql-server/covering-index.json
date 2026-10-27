@@ -6,12 +6,7 @@
   "description": "Key lookups and how to eliminate them: index key columns vs INCLUDEd columns, selectivity, and the cost balance of wider indexes.",
   "order": 16,
   "difficulty": "intermediate",
-  "tags": [
-    "sql server",
-    "indexes",
-    "performance",
-    "intermediate"
-  ],
+  "tags": ["sql server", "indexes", "performance", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -126,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sql-i01",
-    "sql-a01",
-    "window-functions"
-  ],
+  "relatedLessons": ["sql-i01", "sql-a01", "window-functions"],
   "furtherReading": [
     {
       "title": "CREATE INDEX (INCLUDE / filtered indexes) — Microsoft Learn",

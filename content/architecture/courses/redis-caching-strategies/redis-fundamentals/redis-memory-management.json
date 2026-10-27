@@ -8,14 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "redis",
-    "memory",
-    "eviction",
-    "maxmemory",
-    "optimization",
-    "monitoring"
-  ],
+  "tags": ["redis", "memory", "eviction", "maxmemory", "optimization", "monitoring"],
   "blocks": [
     {
       "type": "paragraph",
@@ -39,37 +32,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Policy",
-          "Behavior",
-          "Best For"
-        ],
+        "headers": ["Policy", "Behavior", "Best For"],
         "rows": [
-          [
-            "noeviction",
-            "Return errors on writes",
-            "Data stores where every write must succeed"
-          ],
-          [
-            "allkeys-lru",
-            "Evict least recently used keys",
-            "Pure caches with or without TTL"
-          ],
-          [
-            "volatile-lru",
-            "Evict LRU among keys with TTL",
-            "Caches where only some keys expire"
-          ],
-          [
-            "allkeys-random",
-            "Evict random keys",
-            "Rate limiter-like workloads"
-          ],
-          [
-            "volatile-ttl",
-            "Evict keys with shortest TTL",
-            "Job queues and temporary sessions"
-          ]
+          ["noeviction", "Return errors on writes", "Data stores where every write must succeed"],
+          ["allkeys-lru", "Evict least recently used keys", "Pure caches with or without TTL"],
+          ["volatile-lru", "Evict LRU among keys with TTL", "Caches where only some keys expire"],
+          ["allkeys-random", "Evict random keys", "Rate limiter-like workloads"],
+          ["volatile-ttl", "Evict keys with shortest TTL", "Job queues and temporary sessions"]
         ]
       }
     },
@@ -151,10 +120,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "redis-persistence",
-    "redis-setup"
-  ],
+  "relatedLessons": ["redis-persistence", "redis-setup"],
   "furtherReading": [
     {
       "title": "Redis Memory Optimization",

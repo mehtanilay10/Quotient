@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "views",
-    "razor",
-    "templates"
-  ],
+  "tags": ["views", "razor", "templates"],
   "blocks": [
     {
       "type": "paragraph",
@@ -238,10 +234,7 @@
       "takeaway": "Views are the user-facing layer of your application. Mastering Razor syntax, layouts, and partial views lets you build clean, maintainable user interfaces that are easy to update as your application grows."
     }
   ],
-  "relatedLessons": [
-    "controllers-and-actions",
-    "models-and-viewdata"
-  ],
+  "relatedLessons": ["controllers-and-actions", "models-and-viewdata"],
   "technology": null,
   "furtherReading": [
     {

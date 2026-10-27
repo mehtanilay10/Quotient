@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "code-coverage",
-    "metrics",
-    "dotnet"
-  ],
+  "tags": ["code-coverage", "metrics", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -59,9 +55,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "why-unit-testing"
-  ],
+  "relatedLessons": ["why-unit-testing"],
   "furtherReading": [],
   "courseSlug": "unit-testing-dotnet"
 }

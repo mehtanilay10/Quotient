@@ -8,14 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "security",
-    "waf",
-    "shield",
-    "ddos",
-    "firewall"
-  ],
+  "tags": ["aws", "security", "waf", "shield", "ddos", "firewall"],
   "blocks": [
     {
       "type": "paragraph",

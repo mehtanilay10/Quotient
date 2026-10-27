@@ -8,10 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "validation",
-    "fluentvalidation"
-  ],
+  "tags": ["validation", "fluentvalidation"],
   "blocks": [
     {
       "type": "heading",

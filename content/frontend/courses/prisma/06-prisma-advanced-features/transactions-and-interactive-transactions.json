@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "prisma",
-    "transactions",
-    "interactive-transactions",
-    "acid",
-    "concurrency"
-  ],
+  "tags": ["prisma", "transactions", "interactive-transactions", "acid", "concurrency"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,8 +81,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "middleware-and-extensions",
-    "error-handling"
-  ]
+  "relatedLessons": ["middleware-and-extensions", "error-handling"]
 }

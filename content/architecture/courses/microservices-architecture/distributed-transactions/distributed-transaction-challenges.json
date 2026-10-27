@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "distributed-transactions",
-    "acid",
-    "challenges"
-  ],
+  "tags": ["distributed-transactions", "acid", "challenges"],
   "blocks": [
     {
       "type": "paragraph",
@@ -91,32 +87,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Consistency",
-          "Complexity"
-        ],
+        "headers": ["Pattern", "Consistency", "Complexity"],
         "rows": [
-          [
-            "2PC",
-            "Strong",
-            "High"
-          ],
-          [
-            "Saga",
-            "Eventual",
-            "Medium"
-          ],
-          [
-            "TCC",
-            "Eventual",
-            "High"
-          ],
-          [
-            "Outbox",
-            "Eventual",
-            "Medium"
-          ]
+          ["2PC", "Strong", "High"],
+          ["Saga", "Eventual", "Medium"],
+          ["TCC", "Eventual", "High"],
+          ["Outbox", "Eventual", "Medium"]
         ]
       }
     },

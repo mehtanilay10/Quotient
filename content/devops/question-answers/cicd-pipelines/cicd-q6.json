@@ -7,12 +7,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "interview",
-    "cicd",
-    "devops",
-    "infrastructure"
-  ],
+  "tags": ["interview", "cicd", "devops", "infrastructure"],
   "blocks": [
     {
       "type": "paragraph",
@@ -119,10 +114,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "cicd-q1",
-    "cicd-q4"
-  ],
+  "relatedLessons": ["cicd-q1", "cicd-q4"],
   "furtherReading": [
     {
       "title": "What is infrastructure as code?",

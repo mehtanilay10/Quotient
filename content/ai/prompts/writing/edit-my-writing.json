@@ -6,12 +6,7 @@
   "category": "writing",
   "difficulty": "beginner",
   "template": "Act as a professional editor with expertise in [TYPE OF WRITING, e.g. \"business communication\" / \"blog posts\" / \"technical writing\"].\n\nPlease review this piece of writing:\n\n---\n[PASTE YOUR WRITING HERE]\n---\n\nProvide feedback on:\n1. **Clarity** — Is the message clear? What might confuse readers?\n2. **Structure** — Does it flow logically? How could it be reorganized?\n3. **Tone** — Is the tone right for [INTENDED AUDIENCE]?\n4. **Concision** — What could be cut without losing meaning?\n\nThen provide a revised version that applies your main suggestions.",
-  "tags": [
-    "editing",
-    "writing",
-    "feedback",
-    "professional"
-  ],
+  "tags": ["editing", "writing", "feedback", "professional"],
   "tips": [
     "Specify your intended audience for much more relevant feedback",
     "Ask for a \"track changes\" style explanation to understand what changed and why",

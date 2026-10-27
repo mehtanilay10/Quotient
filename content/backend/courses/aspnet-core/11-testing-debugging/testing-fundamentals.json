@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "testing",
-    "xunit",
-    "fundamentals"
-  ],
+  "tags": ["testing", "xunit", "fundamentals"],
   "blocks": [
     {
       "type": "paragraph",
@@ -198,9 +194,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "unit-testing-controllers"
-  ],
+  "relatedLessons": ["unit-testing-controllers"],
   "technology": null,
   "furtherReading": [
     {

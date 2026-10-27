@@ -6,12 +6,7 @@
   "description": "Transient-fault handling: retry policies with backoff and jitter, circuit breaker states, bulkheads, and why naive retries make outages worse.",
   "order": 16,
   "difficulty": "advanced",
-  "tags": [
-    "architecture",
-    "resilience",
-    "distributed-systems",
-    "advanced"
-  ],
+  "tags": ["architecture", "resilience", "distributed-systems", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

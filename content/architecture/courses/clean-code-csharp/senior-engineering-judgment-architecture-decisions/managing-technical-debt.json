@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "technical-debt",
-    "refactoring",
-    "maintenance",
-    "csharp"
-  ],
+  "tags": ["technical-debt", "refactoring", "maintenance", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -167,10 +162,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "legacy-modernization-strategies",
-    "incremental-migration-vs-rewrite"
-  ],
+  "relatedLessons": ["legacy-modernization-strategies", "incremental-migration-vs-rewrite"],
   "furtherReading": [
     {
       "title": "Technical Debt",

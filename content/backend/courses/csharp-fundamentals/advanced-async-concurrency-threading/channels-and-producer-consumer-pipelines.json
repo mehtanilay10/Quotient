@@ -85,7 +85,13 @@
     "deadlocks-starvation-and-livelocks"
   ],
   "furtherReading": [
-    { "title": "System.Threading.Channels (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/standard/threading/channels" },
-    { "title": "Stephen Toub — Dataflow vs Channels", "url": "https://devblogs.microsoft.com/dotnet/await-using-system-threading-channels/" }
+    {
+      "title": "System.Threading.Channels (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/standard/threading/channels"
+    },
+    {
+      "title": "Stephen Toub — Dataflow vs Channels",
+      "url": "https://devblogs.microsoft.com/dotnet/await-using-system-threading-channels/"
+    }
   ]
 }

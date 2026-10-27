@@ -8,12 +8,7 @@
   "order": 19,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "arrays",
-    "binary-search",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "binary-search", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -99,33 +94,16 @@
           {
             "title": "Linear Scan",
             "description": "Check every element",
-            "pros": [
-              "Simple"
-            ],
-            "cons": [
-              "O(n) time"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space"
-            ]
+            "pros": ["Simple"],
+            "cons": ["O(n) time"],
+            "tags": ["O(n) time", "O(1) space"]
           },
           {
             "title": "Modified Binary Search",
             "description": "Identify the sorted half, recurse there",
-            "pros": [
-              "O(log n) time",
-              "O(1) space",
-              "Recommended"
-            ],
-            "cons": [
-              "Rotation-aware logic"
-            ],
-            "tags": [
-              "O(log n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(log n) time", "O(1) space", "Recommended"],
+            "cons": ["Rotation-aware logic"],
+            "tags": ["O(log n) time", "O(1) space", "Recommended"]
           }
         ]
       }

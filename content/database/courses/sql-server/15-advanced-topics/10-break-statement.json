@@ -7,11 +7,7 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "BREAK",
-    "WHILE",
-    "loop-control"
-  ],
+  "tags": ["BREAK", "WHILE", "loop-control"],
   "blocks": [
     {
       "type": "heading",

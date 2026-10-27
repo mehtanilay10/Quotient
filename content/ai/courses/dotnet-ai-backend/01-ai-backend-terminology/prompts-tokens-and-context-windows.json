@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "prompts",
-    "tokens",
-    "context",
-    "llm"
-  ],
+  "tags": ["prompts", "tokens", "context", "llm"],
   "blocks": [
     {
       "type": "paragraph",
@@ -86,10 +81,7 @@
       "takeaway": "Backend AI is partly a token budgeting problem. Design retrieval and prompt composition around the model's context limits."
     }
   ],
-  "relatedLessons": [
-    "rag-concepts-and-benefits",
-    "prompt-composition-and-generation"
-  ],
+  "relatedLessons": ["rag-concepts-and-benefits", "prompt-composition-and-generation"],
   "technology": null,
   "furtherReading": [
     {

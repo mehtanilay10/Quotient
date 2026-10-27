@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "errors",
-    "exception",
-    "error-handling"
-  ],
+  "tags": ["errors", "exception", "error-handling"],
   "blocks": [
     {
       "type": "heading",

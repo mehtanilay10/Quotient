@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "catalogs",
-    "pg-class",
-    "information-schema",
-    "dba",
-    "introspection"
-  ],
+  "tags": ["catalogs", "pg-class", "information-schema", "dba", "introspection"],
   "blocks": [
     {
       "type": "paragraph",
@@ -47,42 +41,18 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Question",
-          "`pg_catalog` source",
-          "Portable alternative"
-        ],
+        "headers": ["Question", "`pg_catalog` source", "Portable alternative"],
         "rows": [
-          [
-            "What tables exist?",
-            "`pg_class` where `relkind = 'r'`",
-            "`information_schema.tables`"
-          ],
+          ["What tables exist?", "`pg_class` where `relkind = 'r'`", "`information_schema.tables`"],
           [
             "What columns and types?",
             "`pg_attribute` joined to `pg_type`",
             "`information_schema.columns`"
           ],
-          [
-            "What is the default value?",
-            "`pg_attrdef` → `pg_get_expr()`",
-            "`column_default`"
-          ],
-          [
-            "Which indexes exist?",
-            "`pg_index` + `pg_class`",
-            "Not standardised"
-          ],
-          [
-            "Who can do what?",
-            "`relacl`, `pg_roles`",
-            "`information_schema.table_privileges`"
-          ],
-          [
-            "Table activity and bloat",
-            "`pg_stat_user_tables`",
-            "Not available"
-          ]
+          ["What is the default value?", "`pg_attrdef` → `pg_get_expr()`", "`column_default`"],
+          ["Which indexes exist?", "`pg_index` + `pg_class`", "Not standardised"],
+          ["Who can do what?", "`relacl`, `pg_roles`", "`information_schema.table_privileges`"],
+          ["Table activity and bloat", "`pg_stat_user_tables`", "Not available"]
         ]
       }
     },
@@ -176,8 +146,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "create-table",
-    "psql-basics"
-  ]
+  "relatedLessons": ["create-table", "psql-basics"]
 }

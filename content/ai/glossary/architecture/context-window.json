@@ -6,11 +6,7 @@
   "fullDefinition": "The context window is the limit on how much information a language model can attend to at once, typically measured in tokens. It includes the system prompt, conversation history, retrieved documents, and any new input. When conversations or documents exceed the context window, the oldest content is typically truncated or the model loses access to it. Context window sizes have grown dramatically \u2014 from thousands to millions of tokens \u2014 enabling longer documents, bigger conversations, and more comprehensive retrieval. However, larger context windows increase computational cost and can make it harder for models to find relevant information in very long contexts.",
   "category": "architecture",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "context-window",
-    "transformer",
-    "rag"
-  ],
+  "relatedTerms": ["context-window", "transformer", "rag"],
   "learnMoreSlug": "context-window-deep-dive",
   "examples": [
     "A 128K token context window can process roughly 96,000 words",

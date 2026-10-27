@@ -6,11 +6,7 @@
   "description": "Construct complex objects step by step.",
   "order": 3,
   "difficulty": "beginner",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture"],
   "blocks": [
     {
       "type": "paragraph",

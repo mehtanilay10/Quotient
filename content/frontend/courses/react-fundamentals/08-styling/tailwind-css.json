@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "tailwind",
-    "css",
-    "utility"
-  ],
+  "tags": ["react", "tailwind", "css", "utility"],
   "blocks": [
     {
       "type": "paragraph",

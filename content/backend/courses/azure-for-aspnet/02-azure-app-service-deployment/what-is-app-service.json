@@ -36,16 +36,8 @@
         "rows": [
           ["Free / Shared", "Learning and prototyping", "No scaling"],
           ["Basic", "Small production workloads", "Scale out to 3 instances"],
-          [
-            "Standard",
-            "Production staging and autoscale",
-            "Scale out with autoscale rules"
-          ],
-          [
-            "Premium",
-            "High-scale or isolated workloads",
-            "More cores, memory, and scale"
-          ]
+          ["Standard", "Production staging and autoscale", "Scale out with autoscale rules"],
+          ["Premium", "High-scale or isolated workloads", "More cores, memory, and scale"]
         ]
       }
     },

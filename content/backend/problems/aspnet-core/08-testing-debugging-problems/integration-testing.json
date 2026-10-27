@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "aspnet-core",
-    "testing",
-    "integration-testing",
-    "webapplicationfactory"
-  ],
+  "tags": ["aspnet-core", "testing", "integration-testing", "webapplicationfactory"],
   "blocks": [
     {
       "type": "heading",
@@ -70,21 +65,9 @@
           {
             "title": "WebApplicationFactory Tests",
             "description": "Full pipeline integration tests",
-            "pros": [
-              "Tests real HTTP",
-              "Includes middleware",
-              "Catches routing issues"
-            ],
-            "cons": [
-              "Slower than unit tests",
-              "Database setup required",
-              "Can be flaky"
-            ],
-            "tags": [
-              "WebApplicationFactory",
-              "IClassFixture",
-              "in-memory database"
-            ]
+            "pros": ["Tests real HTTP", "Includes middleware", "Catches routing issues"],
+            "cons": ["Slower than unit tests", "Database setup required", "Can be flaky"],
+            "tags": ["WebApplicationFactory", "IClassFixture", "in-memory database"]
           }
         ]
       }

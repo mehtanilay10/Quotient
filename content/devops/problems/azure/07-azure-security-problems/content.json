@@ -9,22 +9,11 @@
   "difficulty": "advanced",
   "estimatedHours": 3,
   "icon": "🔒",
-  "tags": [
-    "azure",
-    "security",
-    "entra-id",
-    "rbac",
-    "key-vault",
-    "managed-identity"
-  ],
+  "tags": ["azure", "security", "entra-id", "rbac", "key-vault", "managed-identity"],
   "lessonSlugs": [
     "managed-identity-vs-service-principal",
     "key-vault-secrets-management",
     "network-security-groups-and-firewalls"
   ],
-  "whatYouLearn": [
-    "Identity and access management",
-    "Secrets management",
-    "Network security"
-  ]
+  "whatYouLearn": ["Identity and access management", "Secrets management", "Network security"]
 }

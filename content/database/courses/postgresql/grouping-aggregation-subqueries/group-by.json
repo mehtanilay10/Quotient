@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "group-by",
-    "aggregation",
-    "grouping-sets",
-    "rollup",
-    "cube"
-  ],
+  "tags": ["group-by", "aggregation", "grouping-sets", "rollup", "cube"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +66,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "aggregate-functions",
-    "having-clause"
-  ]
+  "relatedLessons": ["aggregate-functions", "having-clause"]
 }

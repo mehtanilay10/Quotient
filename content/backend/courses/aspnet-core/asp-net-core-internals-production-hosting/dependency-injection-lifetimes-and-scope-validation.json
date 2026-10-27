@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "dependency-injection",
-    "lifetimes",
-    "scoped",
-    "singleton",
-    "transient"
-  ],
+  "tags": ["dependency-injection", "lifetimes", "scoped", "singleton", "transient"],
   "blocks": [
     {
       "type": "paragraph",

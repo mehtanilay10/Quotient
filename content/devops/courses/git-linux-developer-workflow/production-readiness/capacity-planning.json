@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "capacity",
-    "linux",
-    "performance",
-    "scaling",
-    "forecasting"
-  ],
+  "tags": ["capacity", "linux", "performance", "scaling", "forecasting"],
   "blocks": [
     {
       "type": "paragraph",
@@ -44,32 +38,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "Linux Tool",
-          "Warning Threshold"
-        ],
+        "headers": ["Resource", "Linux Tool", "Warning Threshold"],
         "rows": [
-          [
-            "CPU",
-            "top, mpstat",
-            "Sustained 80% user + system"
-          ],
-          [
-            "Memory",
-            "free, vmstat",
-            "Available < 20% of total"
-          ],
-          [
-            "Disk I/O",
-            "iostat, iotop",
-            "await > 20ms consistently"
-          ],
-          [
-            "Network",
-            "iftop, ss",
-            "Saturated interface or dropped packets"
-          ]
+          ["CPU", "top, mpstat", "Sustained 80% user + system"],
+          ["Memory", "free, vmstat", "Available < 20% of total"],
+          ["Disk I/O", "iostat, iotop", "await > 20ms consistently"],
+          ["Network", "iftop, ss", "Saturated interface or dropped packets"]
         ]
       }
     },

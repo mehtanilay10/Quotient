@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "encoding",
-    "xss",
-    "security",
-    "react"
-  ],
+  "tags": ["encoding", "xss", "security", "react"],
   "blocks": [
     {
       "type": "paragraph",

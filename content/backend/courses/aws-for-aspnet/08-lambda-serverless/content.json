@@ -10,11 +10,7 @@
   "estimatedHours": 3,
   "icon": "⚡",
   "tags": ["aws", "lambda", "serverless", "api-gateway", "cognito", "csharp"],
-  "lessonSlugs": [
-    "lambda-csharp",
-    "api-gateway-csharp",
-    "cognito-csharp"
-  ],
+  "lessonSlugs": ["lambda-csharp", "api-gateway-csharp", "cognito-csharp"],
   "prerequisites": ["secrets-manager-csharp", "sqs-csharp"],
   "whatYouLearn": [
     "Create and invoke Lambda functions from C#",

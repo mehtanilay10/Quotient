@@ -10,5 +10,12 @@
   "estimatedHours": 3,
   "icon": "🔍",
   "tags": ["database", "index", "performance", "sql"],
-  "lessonSlugs": ["index-fundamentals", "btree-vs-hash-index", "composite-index-design", "covering-indexes", "index-selectivity", "index-maintenance-overhead"]
+  "lessonSlugs": [
+    "index-fundamentals",
+    "btree-vs-hash-index",
+    "composite-index-design",
+    "covering-indexes",
+    "index-selectivity",
+    "index-maintenance-overhead"
+  ]
 }

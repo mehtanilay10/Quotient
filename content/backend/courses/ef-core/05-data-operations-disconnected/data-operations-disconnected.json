@@ -5,10 +5,7 @@
   "title": "Disconnected Scenario",
   "description": "Learn CRUD in disconnected scenario.",
   "order": 5,
-  "tags": [
-    "ef-core",
-    "data-operations-disconnected"
-  ],
+  "tags": ["ef-core", "data-operations-disconnected"],
   "blocks": [
     {
       "type": "paragraph",

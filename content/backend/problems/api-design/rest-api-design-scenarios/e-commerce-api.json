@@ -168,10 +168,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "file-upload-api",
-    "search-api"
-  ],
+  "relatedLessons": ["file-upload-api", "search-api"],
   "furtherReading": [
     {
       "title": "REST API Design Best Practices",

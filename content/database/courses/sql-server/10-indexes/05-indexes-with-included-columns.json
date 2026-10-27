@@ -7,11 +7,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 26,
-  "tags": [
-    "included-columns",
-    "covering-index",
-    "key-lookup"
-  ],
+  "tags": ["included-columns", "covering-index", "key-lookup"],
   "blocks": [
     {
       "type": "heading",

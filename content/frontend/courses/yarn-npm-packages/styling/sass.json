@@ -6,13 +6,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "sass",
-    "css",
-    "styling",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["sass", "css", "styling", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -102,32 +96,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Sass",
-          "Plain CSS"
-        ],
+        "headers": ["Feature", "Sass", "Plain CSS"],
         "rows": [
-          [
-            "Variables",
-            "$name (compile time)",
-            "--name custom properties (runtime)"
-          ],
-          [
-            "Nesting",
-            "Native",
-            "Native since 2023"
-          ],
-          [
-            "Mixins",
-            "@mixin / @include",
-            "None (functions via custom props)"
-          ],
-          [
-            "Module system",
-            "@use / @forward",
-            "@import (no namespacing)"
-          ]
+          ["Variables", "$name (compile time)", "--name custom properties (runtime)"],
+          ["Nesting", "Native", "Native since 2023"],
+          ["Mixins", "@mixin / @include", "None (functions via custom props)"],
+          ["Module system", "@use / @forward", "@import (no namespacing)"]
         ]
       }
     },

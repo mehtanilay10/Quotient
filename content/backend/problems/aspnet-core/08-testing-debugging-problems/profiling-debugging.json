@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "debugging",
-    "profiling",
-    "diagnostics"
-  ],
+  "tags": ["aspnet-core", "debugging", "profiling", "diagnostics"],
   "blocks": [
     {
       "type": "heading",
@@ -70,21 +65,13 @@
           {
             "title": "Diagnostic Tools",
             "description": "Performance profiling tools",
-            "pros": [
-              "Built-in .NET tools",
-              "Production-safe",
-              "Multiple output formats"
-            ],
+            "pros": ["Built-in .NET tools", "Production-safe", "Multiple output formats"],
             "cons": [
               "CLI tools require knowledge",
               "Must attach to process",
               "Can impact performance"
             ],
-            "tags": [
-              "dotnet-counters",
-              "dotnet-trace",
-              "diagnostics"
-            ]
+            "tags": ["dotnet-counters", "dotnet-trace", "diagnostics"]
           }
         ]
       }

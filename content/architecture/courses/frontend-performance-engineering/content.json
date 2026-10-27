@@ -8,9 +8,5 @@
   "color": "accent",
   "order": 103,
   "category": "security",
-  "moduleSlugs": [
-    "browser-react-performance",
-    "build-optimization",
-    "runtime-performance"
-  ]
+  "moduleSlugs": ["browser-react-performance", "build-optimization", "runtime-performance"]
 }

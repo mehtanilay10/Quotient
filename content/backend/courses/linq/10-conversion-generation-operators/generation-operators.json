@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 28,
-  "tags": [
-    "linq",
-    "empty",
-    "range",
-    "repeat",
-    "generation"
-  ],
+  "tags": ["linq", "empty", "range", "repeat", "generation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -101,9 +95,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "conversion-operators",
-    "defaultifempty-operator"
-  ],
+  "relatedLessons": ["conversion-operators", "defaultifempty-operator"],
   "courseSlug": "linq"
 }

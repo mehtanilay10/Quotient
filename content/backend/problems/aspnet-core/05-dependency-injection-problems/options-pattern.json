@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "dependency-injection",
-    "options",
-    "configuration"
-  ],
+  "tags": ["aspnet-core", "dependency-injection", "options", "configuration"],
   "blocks": [
     {
       "type": "heading",
@@ -91,38 +86,16 @@
           {
             "title": "IOptions and IOptionsMonitor",
             "description": "Strongly-typed configuration",
-            "pros": [
-              "Type-safe",
-              "Validates on startup",
-              "IOptionsMonitor reloads on change"
-            ],
-            "cons": [
-              "More classes to maintain",
-              "Configuration keys must match"
-            ],
-            "tags": [
-              "IOptions",
-              "IOptionsMonitor",
-              "Configure<T>"
-            ]
+            "pros": ["Type-safe", "Validates on startup", "IOptionsMonitor reloads on change"],
+            "cons": ["More classes to maintain", "Configuration keys must match"],
+            "tags": ["IOptions", "IOptionsMonitor", "Configure<T>"]
           },
           {
             "title": "Named and Validated Options",
             "description": "Named and validated options",
-            "pros": [
-              "Multiple named configs",
-              "Built-in validation",
-              "Fails fast on startup"
-            ],
-            "cons": [
-              "More complex registration",
-              "Named options require string keys"
-            ],
-            "tags": [
-              "ValidateDataAnnotations",
-              "ValidateOnStart",
-              "named options"
-            ]
+            "pros": ["Multiple named configs", "Built-in validation", "Fails fast on startup"],
+            "cons": ["More complex registration", "Named options require string keys"],
+            "tags": ["ValidateDataAnnotations", "ValidateOnStart", "named options"]
           }
         ]
       }

@@ -85,35 +85,21 @@
               "Data residency compliance",
               "99.99% SLA with Availability Zones"
             ],
-            "cons": [
-              "Some services not available in all regions"
-            ],
+            "cons": ["Some services not available in all regions"],
             "tags": ["Recommended for latency", "GDPR compliant"]
           },
           {
             "title": "AWS Regions",
             "description": "Similar geographic distribution",
-            "pros": [
-              "Large global footprint",
-              " mature ecosystem"
-            ],
-            "cons": [
-              "Fewer regions than Azure",
-              "Higher inter-region data costs"
-            ],
+            "pros": ["Large global footprint", " mature ecosystem"],
+            "cons": ["Fewer regions than Azure", "Higher inter-region data costs"],
             "tags": ["Alternative"]
           },
           {
             "title": "GCP Regions",
             "description": "Google's global network",
-            "pros": [
-              "Excellent network performance",
-              "Strong in AI/ML"
-            ],
-            "cons": [
-              "Fewer enterprise services",
-              "Smaller ecosystem"
-            ],
+            "pros": ["Excellent network performance", "Strong in AI/ML"],
+            "cons": ["Fewer enterprise services", "Smaller ecosystem"],
             "tags": ["Alternative"]
           }
         ]

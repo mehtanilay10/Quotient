@@ -6,13 +6,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "tanstack-router",
-    "routing",
-    "react",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["tanstack-router", "routing", "react", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

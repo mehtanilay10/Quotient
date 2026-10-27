@@ -6,13 +6,6 @@
   "fullDefinition": "Deep learning is a subset of machine learning that uses neural networks with many layers ('deep' architectures) to learn complex representations from large amounts of data. It is the technology behind image recognition, speech-to-text, LLMs, and generative AI. Deep learning became practical in the 2010s with the availability of large datasets, powerful GPUs, and architectural innovations like transformers.",
   "category": "models-and-training",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "machine-learning",
-    "neural-network",
-    "large-language-model"
-  ],
-  "alsoKnownAs": [
-    "DL",
-    "Deep Neural Networks"
-  ]
+  "relatedTerms": ["machine-learning", "neural-network", "large-language-model"],
+  "alsoKnownAs": ["DL", "Deep Neural Networks"]
 }

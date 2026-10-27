@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "ef-core",
-    "relationships",
-    "one-to-one",
-    "conventions"
-  ],
+  "tags": ["ef-core", "relationships", "one-to-one", "conventions"],
   "blocks": [
     {
       "type": "paragraph",

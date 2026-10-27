@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is Azure.Messaging.ServiceBus?"}
+      "data": { "level": 2, "text": "What is Azure.Messaging.ServiceBus?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`Azure.Messaging.ServiceBus` is the modern SDK for Azure Service Bus. It supports queues, topics, subscriptions, sessions, and transactions."}
+      "data": {
+        "text": "`Azure.Messaging.ServiceBus` is the modern SDK for Azure Service Bus. It supports queues, topics, subscriptions, sessions, and transactions."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,11 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Send a Message"}
+      "data": { "level": 2, "text": "Send a Message" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Use `ServiceBusSender` to send messages to a queue or topic."}
+      "data": { "text": "Use `ServiceBusSender` to send messages to a queue or topic." }
     },
     {
       "type": "example",

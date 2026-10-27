@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "useeffect",
-    "cleanup",
-    "memory-leaks"
-  ],
+  "tags": ["react", "useeffect", "cleanup", "memory-leaks"],
   "blocks": [
     {
       "type": "paragraph",

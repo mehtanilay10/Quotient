@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "sample queries",
-    "examples",
-    "real-world"
-  ],
+  "tags": ["linq", "sample queries", "examples", "real-world"],
   "blocks": [
     {
       "type": "paragraph",
@@ -130,10 +125,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "expression-trees",
-    "sequenceequal-operator",
-    "standard-query-operators"
-  ],
+  "relatedLessons": ["expression-trees", "sequenceequal-operator", "standard-query-operators"],
   "courseSlug": "linq"
 }

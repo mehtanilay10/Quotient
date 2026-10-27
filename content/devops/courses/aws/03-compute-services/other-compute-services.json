@@ -70,7 +70,11 @@
           {
             "title": "Amazon EC2",
             "description": "Resizable virtual servers. Maximum flexibility and control.",
-            "pros": ["Full control over OS and settings", "Wide range of instance types", "Fine-grained networking control"],
+            "pros": [
+              "Full control over OS and settings",
+              "Wide range of instance types",
+              "Fine-grained networking control"
+            ],
             "cons": ["Requires management and configuration", "Steeper learning curve"]
           },
           {
@@ -82,7 +86,11 @@
           {
             "title": "AWS Batch",
             "description": "Run batch workloads at any scale. Best for data processing.",
-            "pros": ["Automatic resource provisioning", "Job queuing and scheduling", "Cost-effective for large jobs"],
+            "pros": [
+              "Automatic resource provisioning",
+              "Job queuing and scheduling",
+              "Cost-effective for large jobs"
+            ],
             "cons": ["Overkill for small jobs", "Requires batch-oriented architecture"]
           },
           {

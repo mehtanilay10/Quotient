@@ -9,13 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 11.5,
   "icon": "📈",
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "recursion",
-    "memoization",
-    "tabulation"
-  ],
+  "tags": ["csharp", "dynamic-programming", "recursion", "memoization", "tabulation"],
   "lessonSlugs": [
     "0-1-knapsack",
     "best-time-to-buy-and-sell-stock-ii",

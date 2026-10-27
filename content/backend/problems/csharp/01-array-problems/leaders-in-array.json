@@ -8,11 +8,7 @@
   "order": 30,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "arrays",
-    "easy"
-  ],
+  "tags": ["csharp", "arrays", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -100,31 +96,16 @@
           {
             "title": "Brute Force",
             "description": "Check each against all to its right",
-            "pros": [
-              "Straightforward"
-            ],
-            "cons": [
-              "O(n²) time"
-            ],
-            "tags": [
-              "O(n²) time",
-              "O(1) space"
-            ]
+            "pros": ["Straightforward"],
+            "cons": ["O(n²) time"],
+            "tags": ["O(n²) time", "O(1) space"]
           },
           {
             "title": "Scan from Right",
             "description": "Track max from right",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
             "cons": [],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

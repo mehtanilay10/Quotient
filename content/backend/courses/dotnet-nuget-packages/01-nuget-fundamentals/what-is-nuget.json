@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "nuget",
-    "introduction",
-    "packages"
-  ],
+  "tags": ["nuget", "introduction", "packages"],
   "blocks": [
     {
       "type": "heading",
@@ -114,9 +110,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "installing-packages",
-    "nuget-config"
-  ],
+  "relatedLessons": ["installing-packages", "nuget-config"],
   "furtherReading": []
 }

@@ -8,12 +8,7 @@
   "order": 13,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "devops",
-    "deployment",
-    "developer"
-  ],
+  "tags": ["azure", "devops", "deployment", "developer"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,27 +68,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "Action",
-          "Time to Recover"
-        ],
+        "headers": ["Scenario", "Action", "Time to Recover"],
         "rows": [
-          [
-            "Bad code deployed to staging",
-            "Fix code, redeploy to staging",
-            "5-15 minutes"
-          ],
-          [
-            "Bad swap to production",
-            "Swap staging back to production",
-            "< 1 minute"
-          ],
-          [
-            "Bad container image in ACR",
-            "Redeploy previous image tag",
-            "2-5 minutes"
-          ],
+          ["Bad code deployed to staging", "Fix code, redeploy to staging", "5-15 minutes"],
+          ["Bad swap to production", "Swap staging back to production", "< 1 minute"],
+          ["Bad container image in ACR", "Redeploy previous image tag", "2-5 minutes"],
           [
             "Database migration broke things",
             "Restore from backup + rollback code",

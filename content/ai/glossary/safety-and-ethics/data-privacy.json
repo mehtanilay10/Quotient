@@ -6,11 +6,7 @@
   "fullDefinition": "Data privacy in AI refers to the practices and principles governing how personal and sensitive data is collected, stored, processed, and protected when used for AI systems. This includes compliance with regulations like GDPR, CCPA, and HIPAA, as well as ethical obligations to obtain consent, minimize data collection, and give users control over their information. AI systems present unique privacy challenges because they can infer sensitive attributes from seemingly innocuous data, re-identify anonymized individuals, and create detailed behavioral profiles. Organizations building AI must implement data governance frameworks, encryption, access controls, and regular privacy audits to maintain user trust.",
   "category": "safety-and-ethics",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "safety",
-    "bias",
-    "guardrails"
-  ],
+  "relatedTerms": ["safety", "bias", "guardrails"],
   "learnMoreSlug": "protecting-your-data",
   "examples": [
     "Anonymizing health records before using them to train a medical AI model",

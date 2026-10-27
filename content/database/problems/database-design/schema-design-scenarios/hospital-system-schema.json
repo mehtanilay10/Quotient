@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Hospital schemas must track patients, staff, appointments, diagnoses, prescriptions, and billing. Data integrity and audit trails are critical for compliance and care coordination." }
+      "data": {
+        "text": "Hospital schemas must track patients, staff, appointments, diagnoses, prescriptions, and billing. Data integrity and audit trails are critical for compliance and care coordination."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,14 @@
       "type": "bullet-list",
       "data": {
         "title": "Essential tables",
-        "items": ["Patient: demographics and insurance", "Doctor: specialty and schedule", "Appointment: visit scheduling", "MedicalRecord: visit notes", "Prescription: medications", "Billing: charges and payments"]
+        "items": [
+          "Patient: demographics and insurance",
+          "Doctor: specialty and schedule",
+          "Appointment: visit scheduling",
+          "MedicalRecord: visit notes",
+          "Prescription: medications",
+          "Billing: charges and payments"
+        ]
       }
     },
     {
@@ -45,23 +54,41 @@
         "rows": [
           ["patients", "patient_id", "date_of_birth, gender", "Demographics"],
           ["doctors", "doctor_id", "specialty", "Staff data"],
-          ["appointments", "appointment_id", "patient_id, doctor_id, appointment_date", "Scheduling"],
+          [
+            "appointments",
+            "appointment_id",
+            "patient_id, doctor_id, appointment_date",
+            "Scheduling"
+          ],
           ["medical_records", "record_id", "patient_id, doctor_id", "Visit history"]
         ]
       }
     },
     {
       "type": "callout",
-      "data": { "variant": "warning", "title": "Warning", "text": "Medical records require strict access controls and audit logging. Plan encryption and row-level security from the start." }
+      "data": {
+        "variant": "warning",
+        "title": "Warning",
+        "text": "Medical records require strict access controls and audit logging. Plan encryption and row-level security from the start."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "How do I handle patient allergies across visits?", "answer": "Create a patient_allergies table for many-to-many allergy tracking with severity and reaction details." },
-          { "question": "Should appointments store time ranges?", "answer": "Yes. Use start_time and end_time DATETIME columns and add a unique constraint to prevent double-booking doctors." },
-          { "question": "How do I link prescriptions to diagnoses?", "answer": "Use a prescriptions table with diagnosis_id foreign key and medication details." }
+          {
+            "question": "How do I handle patient allergies across visits?",
+            "answer": "Create a patient_allergies table for many-to-many allergy tracking with severity and reaction details."
+          },
+          {
+            "question": "Should appointments store time ranges?",
+            "answer": "Yes. Use start_time and end_time DATETIME columns and add a unique constraint to prevent double-booking doctors."
+          },
+          {
+            "question": "How do I link prescriptions to diagnoses?",
+            "answer": "Use a prescriptions table with diagnosis_id foreign key and medication details."
+          }
         ]
       }
     },
@@ -69,7 +96,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Use patient_id and doctor_id as central keys", "Track appointment status for scheduling logic", "Link prescriptions to diagnoses explicitly", "Plan access control and audit from day one"],
+        "points": [
+          "Use patient_id and doctor_id as central keys",
+          "Track appointment status for scheduling logic",
+          "Link prescriptions to diagnoses explicitly",
+          "Plan access control and audit from day one"
+        ],
         "takeaway": "Hospital schemas prioritize data integrity, auditability, and compliance while supporting clinical workflows."
       }
     }

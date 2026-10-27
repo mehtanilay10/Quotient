@@ -6,14 +6,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "use-cases",
-    "broker-selection",
-    "rabbitmq",
-    "kafka",
-    "sqs",
-    "architecture"
-  ],
+  "tags": ["use-cases", "broker-selection", "rabbitmq", "kafka", "sqs", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -133,36 +126,19 @@
               "Built-in management UI",
               "Low latency for small payloads"
             ],
-            "cons": [
-              "Clustering is complex",
-              "Throughput plateaus at high scale"
-            ]
+            "cons": ["Clustering is complex", "Throughput plateaus at high scale"]
           },
           {
             "title": "Kafka",
             "description": "Best for event streaming, log aggregation, and analytics pipelines that need replay and high throughput.",
-            "pros": [
-              "Massive throughput",
-              "Configurable retention",
-              "Native stream processing"
-            ],
-            "cons": [
-              "High operational complexity",
-              "Overkill for simple queues"
-            ]
+            "pros": ["Massive throughput", "Configurable retention", "Native stream processing"],
+            "cons": ["High operational complexity", "Overkill for simple queues"]
           },
           {
             "title": "SQS",
             "description": "Best for background jobs and decoupling microservices on AWS with zero infrastructure to manage.",
-            "pros": [
-              "Fully managed",
-              "Scales automatically",
-              "Dead-letter queues built in"
-            ],
-            "cons": [
-              "No native fan-out",
-              "Limited message size (256 KB standard)"
-            ]
+            "pros": ["Fully managed", "Scales automatically", "Dead-letter queues built in"],
+            "cons": ["No native fan-out", "Limited message size (256 KB standard)"]
           }
         ]
       }

@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 23,
-  "tags": [
-    "linq",
-    "all",
-    "any",
-    "quantifiers"
-  ],
+  "tags": ["linq", "all", "any", "quantifiers"],
   "blocks": [
     {
       "type": "paragraph",
@@ -86,9 +81,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "contains-quantifier-operator",
-    "first-firstordefault"
-  ],
+  "relatedLessons": ["contains-quantifier-operator", "first-firstordefault"],
   "courseSlug": "linq"
 }

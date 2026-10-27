@@ -6,10 +6,7 @@
   "description": "Why cookie-based auth needs antiforgery tokens, how SameSite helps, and when bearer tokens change the story.",
   "order": 6,
   "difficulty": "intermediate",
-  "tags": [
-    "security",
-    "intermediate"
-  ],
+  "tags": ["security", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -122,11 +119,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prevent-xss",
-    "cors-configuration",
-    "oauth-jwt"
-  ],
+  "relatedLessons": ["prevent-xss", "cors-configuration", "oauth-jwt"],
   "furtherReading": [
     {
       "title": "Antiforgery in ASP.NET Core",

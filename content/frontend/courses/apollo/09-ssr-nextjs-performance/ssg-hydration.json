@@ -63,7 +63,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "ssr-with-apollo"
-  ]
+  "prerequisites": ["ssr-with-apollo"]
 }

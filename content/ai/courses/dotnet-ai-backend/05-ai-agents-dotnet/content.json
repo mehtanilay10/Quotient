@@ -17,11 +17,7 @@
     "aifunctionfactory-structured-tools"
   ],
   "difficulty": "advanced",
-  "tags": [
-    "agents",
-    "semantic-kernel",
-    "autogen"
-  ],
+  "tags": ["agents", "semantic-kernel", "autogen"],
   "icon": "🤖",
   "estimatedHours": 6.5,
   "whatYouLearn": [

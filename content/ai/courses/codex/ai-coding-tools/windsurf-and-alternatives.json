@@ -7,13 +7,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "windsurf",
-    "alternatives",
-    "replit",
-    "tabnine",
-    "tools"
-  ],
+  "tags": ["windsurf", "alternatives", "replit", "tabnine", "tools"],
   "blocks": [
     {
       "type": "heading",
@@ -106,54 +100,26 @@
           {
             "title": "Windsurf",
             "description": "Free AI IDE with agentic mode. Strong for developers on a budget who want IDE-integrated AI.",
-            "pros": [
-              "Free tier",
-              "VS Code-like",
-              "Agentic mode"
-            ],
-            "cons": [
-              "Newer, less mature",
-              "Smaller community"
-            ]
+            "pros": ["Free tier", "VS Code-like", "Agentic mode"],
+            "cons": ["Newer, less mature", "Smaller community"]
           },
           {
             "title": "Replit Agent",
             "description": "Cloud IDE with autonomous AI that builds entire apps from descriptions. Best for prototyping.",
-            "pros": [
-              "Fully autonomous",
-              "No setup needed",
-              "Instant deployment"
-            ],
-            "cons": [
-              "Less control over code",
-              "Opinionated structure"
-            ]
+            "pros": ["Fully autonomous", "No setup needed", "Instant deployment"],
+            "cons": ["Less control over code", "Opinionated structure"]
           },
           {
             "title": "Tabnine",
             "description": "Privacy-focused autocomplete with local model option. Good for enterprises.",
-            "pros": [
-              "Runs locally",
-              "Privacy-first",
-              "Enterprise features"
-            ],
-            "cons": [
-              "Less capable than Copilot",
-              "No chat features"
-            ]
+            "pros": ["Runs locally", "Privacy-first", "Enterprise features"],
+            "cons": ["Less capable than Copilot", "No chat features"]
           },
           {
             "title": "Amazon Q",
             "description": "AWS-integrated coding assistant. Best for developers building on AWS.",
-            "pros": [
-              "AWS integration",
-              "Free tier available",
-              "Security scanning"
-            ],
-            "cons": [
-              "AWS-only benefits",
-              "Smaller model"
-            ]
+            "pros": ["AWS integration", "Free tier available", "Security scanning"],
+            "cons": ["AWS-only benefits", "Smaller model"]
           }
         ]
       }
@@ -224,10 +190,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "github-copilot-guide",
-    "claude-for-code"
-  ],
+  "relatedLessons": ["github-copilot-guide", "claude-for-code"],
   "relatedGlossaryTerms": [],
   "courseSlug": "codex"
 }

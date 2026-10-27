@@ -90,13 +90,21 @@
           {
             "title": "ElastiCache",
             "description": "In-memory caching with Redis or Memcached for fast lookups.",
-            "pros": ["Sub-millisecond latency", "Easy to add to existing apps", "Redis supports complex data structures"],
+            "pros": [
+              "Sub-millisecond latency",
+              "Easy to add to existing apps",
+              "Redis supports complex data structures"
+            ],
             "cons": ["Data lost if node fails (no persistence by default)", "Memory is expensive"]
           },
           {
             "title": "Neptune",
             "description": "Graph database for connected data like social networks and recommendation engines.",
-            "pros": ["Fast graph queries (Gremlin, SPARQL)", "Highly available with replication", "Serverless option available"],
+            "pros": [
+              "Fast graph queries (Gremlin, SPARQL)",
+              "Highly available with replication",
+              "Serverless option available"
+            ],
             "cons": ["Niche use case", "Steeper learning curve than SQL/NoSQL"]
           },
           {
@@ -108,13 +116,21 @@
           {
             "title": "Keyspaces",
             "description": "Managed wide-column database compatible with Apache Cassandra.",
-            "pros": ["Serverless and scales automatically", "Cassandra-compatible CQL API", "High availability across AZs"],
+            "pros": [
+              "Serverless and scales automatically",
+              "Cassandra-compatible CQL API",
+              "High availability across AZs"
+            ],
             "cons": ["Not all Cassandra features supported", "Newer service with smaller community"]
           },
           {
             "title": "Timestream",
             "description": "Managed time series database for IoT and metrics data.",
-            "pros": ["Optimized for time-stamped data", "Automatic tiering to reduce cost", "Built-in time series functions"],
+            "pros": [
+              "Optimized for time-stamped data",
+              "Automatic tiering to reduce cost",
+              "Built-in time series functions"
+            ],
             "cons": ["Only for time series use cases", "Newer service with evolving APIs"]
           }
         ]

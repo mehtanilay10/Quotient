@@ -7,15 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "conversion",
-    "casting",
-    "parsing",
-    "TryParse",
-    "overflow",
-    "Convert"
-  ],
+  "tags": ["csharp", "conversion", "casting", "parsing", "TryParse", "overflow", "Convert"],
   "blocks": [
     {
       "type": "paragraph",
@@ -53,37 +45,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "From",
-          "To",
-          "Safe?",
-          "Example"
-        ],
+        "headers": ["From", "To", "Safe?", "Example"],
         "rows": [
-          [
-            "byte",
-            "short, int, long, float, double, decimal",
-            "Yes",
-            "byte b = 255; int i = b;"
-          ],
-          [
-            "short",
-            "int, long, float, double, decimal",
-            "Yes",
-            "short s = 32000; int i = s;"
-          ],
-          [
-            "int",
-            "long, float, double, decimal",
-            "Yes",
-            "int i = 100; long l = i;"
-          ],
-          [
-            "long",
-            "float, double, decimal",
-            "Yes",
-            "long l = 1000; double d = l;"
-          ],
+          ["byte", "short, int, long, float, double, decimal", "Yes", "byte b = 255; int i = b;"],
+          ["short", "int, long, float, double, decimal", "Yes", "short s = 32000; int i = s;"],
+          ["int", "long, float, double, decimal", "Yes", "int i = 100; long l = i;"],
+          ["long", "float, double, decimal", "Yes", "long l = 1000; double d = l;"],
           [
             "char",
             "ushort, int, uint, long, ulong, float, double, decimal",

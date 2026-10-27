@@ -50,52 +50,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "Focus",
-          "Typical use"
-        ],
+        "headers": ["Method", "Focus", "Typical use"],
         "rows": [
-          [
-            "RED",
-            "Request-focused metrics",
-            "APIs, microservices, request-driven systems"
-          ],
-          [
-            "Rate",
-            "Requests per second",
-            "Detect traffic spikes or drops"
-          ],
-          [
-            "Errors",
-            "Failed request rate",
-            "Find broken dependencies or bad deploys"
-          ],
-          [
-            "Duration",
-            "Latency distribution",
-            "Spot slow dependencies or resource contention"
-          ],
-          [
-            "USE",
-            "Resource-focused metrics",
-            "Infrastructure, databases, caches"
-          ],
-          [
-            "Utilization",
-            "Busy time vs total time",
-            "CPU, memory, disk, network"
-          ],
-          [
-            "Saturation",
-            "Queue depth or wait time",
-            "Thread pools, connection pools, disk I/O"
-          ],
-          [
-            "Errors",
-            "Internal error count",
-            "Corruption, timeouts, retries"
-          ]
+          ["RED", "Request-focused metrics", "APIs, microservices, request-driven systems"],
+          ["Rate", "Requests per second", "Detect traffic spikes or drops"],
+          ["Errors", "Failed request rate", "Find broken dependencies or bad deploys"],
+          ["Duration", "Latency distribution", "Spot slow dependencies or resource contention"],
+          ["USE", "Resource-focused metrics", "Infrastructure, databases, caches"],
+          ["Utilization", "Busy time vs total time", "CPU, memory, disk, network"],
+          ["Saturation", "Queue depth or wait time", "Thread pools, connection pools, disk I/O"],
+          ["Errors", "Internal error count", "Corruption, timeouts, retries"]
         ]
       }
     },

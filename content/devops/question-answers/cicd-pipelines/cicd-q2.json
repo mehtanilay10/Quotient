@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "cicd",
-    "deployment",
-    "devops"
-  ],
+  "tags": ["interview", "cicd", "deployment", "devops"],
   "blocks": [
     {
       "type": "paragraph",

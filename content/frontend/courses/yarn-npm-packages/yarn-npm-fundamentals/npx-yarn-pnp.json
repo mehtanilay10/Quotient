@@ -6,12 +6,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "npm",
-    "yarn",
-    "package-manager",
-    "fundamentals"
-  ],
+  "tags": ["npm", "yarn", "package-manager", "fundamentals"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "props",
-    "data",
-    "components"
-  ],
+  "tags": ["react", "props", "data", "components"],
   "blocks": [
     {
       "type": "paragraph",

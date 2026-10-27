@@ -7,20 +7,10 @@
   "difficulty": "intermediate",
   "estimatedHours": 2.5,
   "icon": "🧪",
-  "tags": [
-    "chain-of-thought",
-    "few-shot",
-    "role-play",
-    "prompt-engineering"
-  ],
-  "lessonSlugs": [
-    "chain-of-thought-prompting",
-    "few-shot-prompting"
-  ],
+  "tags": ["chain-of-thought", "few-shot", "role-play", "prompt-engineering"],
+  "lessonSlugs": ["chain-of-thought-prompting", "few-shot-prompting"],
   "isOptional": false,
-  "prerequisites": [
-    "prompting-basics"
-  ],
+  "prerequisites": ["prompting-basics"],
   "whatYouLearn": [
     "Chain-of-thought prompting and why it dramatically improves reasoning",
     "Few-shot examples: showing the AI what you want",

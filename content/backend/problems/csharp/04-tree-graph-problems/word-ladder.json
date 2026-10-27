@@ -8,12 +8,7 @@
   "order": 20,
   "difficulty": "hard",
   "estimatedMinutes": 18,
-  "tags": [
-    "csharp",
-    "graphs",
-    "bfs",
-    "hard"
-  ],
+  "tags": ["csharp", "graphs", "bfs", "hard"],
   "blocks": [
     {
       "type": "heading",
@@ -59,14 +54,8 @@
           {
             "title": "BFS",
             "description": "Level-by-level word mutation",
-            "pros": [
-              "Finds shortest path"
-            ],
-            "tags": [
-              "O(m²·n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["Finds shortest path"],
+            "tags": ["O(m²·n) time", "O(n) space", "Recommended"]
           }
         ]
       }

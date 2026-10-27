@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "controllers",
-    "api",
-    "routing"
-  ],
+  "tags": ["controllers", "api", "routing"],
   "blocks": [
     {
       "type": "paragraph",
@@ -193,10 +189,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "rest-principles",
-    "http-methods-and-status-codes"
-  ],
+  "relatedLessons": ["rest-principles", "http-methods-and-status-codes"],
   "technology": null,
   "furtherReading": [
     {

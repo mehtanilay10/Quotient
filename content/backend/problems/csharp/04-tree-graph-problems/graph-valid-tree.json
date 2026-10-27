@@ -8,12 +8,7 @@
   "order": 19,
   "difficulty": "medium",
   "estimatedMinutes": 14,
-  "tags": [
-    "csharp",
-    "graphs",
-    "union-find",
-    "medium"
-  ],
+  "tags": ["csharp", "graphs", "union-find", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "Union-Find",
             "description": "Check n-1 edges + no cycles",
-            "pros": [
-              "O(n+m) time"
-            ],
-            "tags": [
-              "O(n+m) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["O(n+m) time"],
+            "tags": ["O(n+m) time", "O(n) space", "Recommended"]
           }
         ]
       }

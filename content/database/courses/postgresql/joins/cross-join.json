@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "cross-join",
-    "cartesian-product",
-    "permutations",
-    "matrix"
-  ],
+  "tags": ["cross-join", "cartesian-product", "permutations", "matrix"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,8 +82,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "lateral-join",
-    "inner-join"
-  ]
+  "relatedLessons": ["lateral-join", "inner-join"]
 }

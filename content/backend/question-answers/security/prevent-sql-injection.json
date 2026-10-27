@@ -6,10 +6,7 @@
   "description": "Parameterized queries, ORM usage, dynamic identifier whitelisting, and least-privilege databases.",
   "order": 4,
   "difficulty": "intermediate",
-  "tags": [
-    "security",
-    "intermediate"
-  ],
+  "tags": ["security", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -121,10 +118,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prevent-xss",
-    "authentication-vs-authorization"
-  ],
+  "relatedLessons": ["prevent-xss", "authentication-vs-authorization"],
   "furtherReading": [
     {
       "title": "SQL injection prevention in ASP.NET Core",

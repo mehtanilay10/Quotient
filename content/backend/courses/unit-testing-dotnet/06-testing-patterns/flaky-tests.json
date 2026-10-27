@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "testing-patterns",
-    "flaky-tests",
-    "dotnet"
-  ],
+  "tags": ["testing-patterns", "flaky-tests", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -53,9 +49,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "test-fixtures"
-  ],
+  "relatedLessons": ["test-fixtures"],
   "furtherReading": [],
   "courseSlug": "unit-testing-dotnet"
 }

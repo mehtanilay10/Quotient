@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "logging",
-    "performance",
-    "metrics",
-    "debugging"
-  ],
+  "tags": ["prisma", "logging", "performance", "metrics", "debugging"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +66,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "middleware-and-extensions",
-    "error-handling"
-  ]
+  "relatedLessons": ["middleware-and-extensions", "error-handling"]
 }

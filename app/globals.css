@@ -7,61 +7,61 @@
 /* ────────── CSS custom properties (GitHub-inspired) ────────── */
 :root {
   /* Canvas (backgrounds) */
-  --color-canvas-default:     #fafaf9;
-  --color-canvas-subtle:      #f5f5f4;
-  --color-canvas-inset:       #ececea;
-  --color-canvas-overlay:     #fafaf9;
+  --color-canvas-default: #fafaf9;
+  --color-canvas-subtle: #f5f5f4;
+  --color-canvas-inset: #ececea;
+  --color-canvas-overlay: #fafaf9;
 
   /* Foreground (text) */
-  --color-fg-default:         #1c1917;
-  --color-fg-muted:           #57534e;
-  --color-fg-subtle:          #78716c;
-  --color-fg-on-emphasis:     #ffffff;
+  --color-fg-default: #1c1917;
+  --color-fg-muted: #57534e;
+  --color-fg-subtle: #78716c;
+  --color-fg-on-emphasis: #ffffff;
 
   /* Border */
-  --color-border-default:     #d6d3d1;
-  --color-border-muted:       #e7e5e4;
-  --color-border-subtle:      #f0efee;
+  --color-border-default: #d6d3d1;
+  --color-border-muted: #e7e5e4;
+  --color-border-subtle: #f0efee;
 
   /* Accent (blue) */
-  --color-accent-fg:          #0969da;
-  --color-accent-emphasis:    #0550ae;
-  --color-accent-muted:       #ddf4ff;
-  --color-accent-subtle:      #f0f6ff;
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0550ae;
+  --color-accent-muted: #ddf4ff;
+  --color-accent-subtle: #f0f6ff;
 
   /* Success (green) */
-  --color-success-fg:         #1a7f37;
-  --color-success-emphasis:   #2da44e;
-  --color-success-muted:      #d1f3d8;
-  --color-success-subtle:     #f0fff4;
+  --color-success-fg: #1a7f37;
+  --color-success-emphasis: #2da44e;
+  --color-success-muted: #d1f3d8;
+  --color-success-subtle: #f0fff4;
 
   /* Attention (yellow) */
-  --color-attention-fg:       #9a6700;
+  --color-attention-fg: #9a6700;
   --color-attention-emphasis: #bf8700;
-  --color-attention-muted:    #fff8c5;
-  --color-attention-subtle:   #fffdf0;
+  --color-attention-muted: #fff8c5;
+  --color-attention-subtle: #fffdf0;
 
   /* Danger (red) */
-  --color-danger-fg:          #cf222e;
-  --color-danger-emphasis:    #a40e26;
-  --color-danger-muted:       #ffd8d3;
-  --color-danger-subtle:      #fff0ee;
+  --color-danger-fg: #cf222e;
+  --color-danger-emphasis: #a40e26;
+  --color-danger-muted: #ffd8d3;
+  --color-danger-subtle: #fff0ee;
 
   /* Severe (orange) */
-  --color-severe-fg:          #bc4c00;
-  --color-severe-emphasis:    #d4460f;
-  --color-severe-muted:       #ffe1cc;
-  --color-severe-subtle:      #fff7f0;
+  --color-severe-fg: #bc4c00;
+  --color-severe-emphasis: #d4460f;
+  --color-severe-muted: #ffe1cc;
+  --color-severe-subtle: #fff7f0;
 
   /* Done (purple) */
-  --color-done-fg:            #8250df;
-  --color-done-emphasis:      #6639ba;
-  --color-done-muted:         #eddff8;
-  --color-done-subtle:        #f8f0ff;
+  --color-done-fg: #8250df;
+  --color-done-emphasis: #6639ba;
+  --color-done-muted: #eddff8;
+  --color-done-subtle: #f8f0ff;
 
-  --shadow-sm: 0 1px 3px rgba(31,35,40,0.12), 0 1px 2px rgba(31,35,40,0.06);
-  --shadow-md: 0 4px 6px rgba(31,35,40,0.10), 0 2px 4px rgba(31,35,40,0.06);
-  --shadow-lg: 0 10px 24px rgba(31,35,40,0.12), 0 2px 8px rgba(31,35,40,0.08);
+  --shadow-sm: 0 1px 3px rgba(31, 35, 40, 0.12), 0 1px 2px rgba(31, 35, 40, 0.06);
+  --shadow-md: 0 4px 6px rgba(31, 35, 40, 0.1), 0 2px 4px rgba(31, 35, 40, 0.06);
+  --shadow-lg: 0 10px 24px rgba(31, 35, 40, 0.12), 0 2px 8px rgba(31, 35, 40, 0.08);
 
   /* Personalization */
   --font-size-body: 1rem;
@@ -72,61 +72,61 @@
 
 .dark {
   /* Canvas (backgrounds) */
-  --color-canvas-default:     #0d1117;
-  --color-canvas-subtle:      #161b22;
-  --color-canvas-inset:       #21262d;
-  --color-canvas-overlay:     #1c2128;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-canvas-inset: #21262d;
+  --color-canvas-overlay: #1c2128;
 
   /* Foreground (text) */
-  --color-fg-default:         #e6edf3;
-  --color-fg-muted:           #8b949e;
-  --color-fg-subtle:          #6e7781;
-  --color-fg-on-emphasis:     #ffffff;
+  --color-fg-default: #e6edf3;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #6e7781;
+  --color-fg-on-emphasis: #ffffff;
 
   /* Border */
-  --color-border-default:     #30363d;
-  --color-border-muted:       #21262d;
-  --color-border-subtle:      #30363d;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-border-subtle: #30363d;
 
   /* Accent (blue) */
-  --color-accent-fg:          #58a6ff;
-  --color-accent-emphasis:    #1f6feb;
-  --color-accent-muted:       #0c2d6b;
-  --color-accent-subtle:      #051d4d;
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-accent-muted: #0c2d6b;
+  --color-accent-subtle: #051d4d;
 
   /* Success (green) */
-  --color-success-fg:         #3fb950;
-  --color-success-emphasis:   #2ea043;
-  --color-success-muted:      #0d3320;
-  --color-success-subtle:     #071d11;
+  --color-success-fg: #3fb950;
+  --color-success-emphasis: #2ea043;
+  --color-success-muted: #0d3320;
+  --color-success-subtle: #071d11;
 
   /* Attention (yellow) */
-  --color-attention-fg:       #d29922;
+  --color-attention-fg: #d29922;
   --color-attention-emphasis: #9e6a03;
-  --color-attention-muted:    #2b1d00;
-  --color-attention-subtle:   #1a1200;
+  --color-attention-muted: #2b1d00;
+  --color-attention-subtle: #1a1200;
 
   /* Danger (red) */
-  --color-danger-fg:          #f85149;
-  --color-danger-emphasis:    #da3633;
-  --color-danger-muted:       #2c1416;
-  --color-danger-subtle:      #1a0a0a;
+  --color-danger-fg: #f85149;
+  --color-danger-emphasis: #da3633;
+  --color-danger-muted: #2c1416;
+  --color-danger-subtle: #1a0a0a;
 
   /* Severe (orange) */
-  --color-severe-fg:          #db6d28;
-  --color-severe-emphasis:    #bd561d;
-  --color-severe-muted:       #2d1c0a;
-  --color-severe-subtle:      #1a0f00;
+  --color-severe-fg: #db6d28;
+  --color-severe-emphasis: #bd561d;
+  --color-severe-muted: #2d1c0a;
+  --color-severe-subtle: #1a0f00;
 
   /* Done (purple) */
-  --color-done-fg:            #bc8cff;
-  --color-done-emphasis:      #6e40c9;
-  --color-done-muted:         #1e1338;
-  --color-done-subtle:        #12091f;
+  --color-done-fg: #bc8cff;
+  --color-done-emphasis: #6e40c9;
+  --color-done-muted: #1e1338;
+  --color-done-subtle: #12091f;
 
-  --shadow-sm: 0 1px 3px rgba(1,4,9,0.4), 0 1px 2px rgba(1,4,9,0.3);
-  --shadow-md: 0 4px 6px rgba(1,4,9,0.4), 0 2px 4px rgba(1,4,9,0.3);
-  --shadow-lg: 0 10px 24px rgba(1,4,9,0.5), 0 2px 8px rgba(1,4,9,0.4);
+  --shadow-sm: 0 1px 3px rgba(1, 4, 9, 0.4), 0 1px 2px rgba(1, 4, 9, 0.3);
+  --shadow-md: 0 4px 6px rgba(1, 4, 9, 0.4), 0 2px 4px rgba(1, 4, 9, 0.3);
+  --shadow-lg: 0 10px 24px rgba(1, 4, 9, 0.5), 0 2px 8px rgba(1, 4, 9, 0.4);
 
   /* Personalization */
   --font-size-body: 1rem;
@@ -147,7 +147,14 @@ html {
 body {
   background-color: var(--color-canvas-default);
   color: var(--color-fg-default);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
   /* `html` already holds the preference via --font-size-body; using the
      variable again here would scale body text twice. */
   font-size: 1rem;
@@ -158,13 +165,25 @@ body {
 
 /* ────────── Animations ────────── */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
@@ -290,14 +309,28 @@ body {
 }
 
 /* ────────── Personalization utilities ────────── */
-.font-size-sm { --font-size-body: 0.875rem; }
-.font-size-md { --font-size-body: 1rem; }
-.font-size-lg { --font-size-body: 1.125rem; }
-.font-size-xl { --font-size-body: 1.25rem; }
+.font-size-sm {
+  --font-size-body: 0.875rem;
+}
+.font-size-md {
+  --font-size-body: 1rem;
+}
+.font-size-lg {
+  --font-size-body: 1.125rem;
+}
+.font-size-xl {
+  --font-size-body: 1.25rem;
+}
 
-.font-size-code-sm { --font-size-code: 0.75rem; }
-.font-size-code-md { --font-size-code: 0.875rem; }
-.font-size-code-lg { --font-size-code: 1rem; }
+.font-size-code-sm {
+  --font-size-code: 0.75rem;
+}
+.font-size-code-md {
+  --font-size-code: 0.875rem;
+}
+.font-size-code-lg {
+  --font-size-code: 1rem;
+}
 
 /* Code font size preference: highlighted Shiki blocks (inside and outside
    lessons) and inline lesson code all follow `--font-size-code`. */
@@ -306,10 +339,16 @@ body {
   font-size: var(--font-size-code);
 }
 
-.density-comfortable { --content-padding: 1.5rem; }
-.density-compact { --content-padding: 0.75rem; }
+.density-comfortable {
+  --content-padding: 1.5rem;
+}
+.density-compact {
+  --content-padding: 0.75rem;
+}
 
-.reduced-motion { --transition-duration: 0ms !important; }
+.reduced-motion {
+  --transition-duration: 0ms !important;
+}
 
 html {
   font-size: var(--font-size-body);
@@ -317,7 +356,10 @@ html {
 
 /* ────────── Transitions ────────── */
 .transition-theme {
-  transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease, border-color var(--transition-duration) ease;
+  transition:
+    background-color var(--transition-duration) ease,
+    color var(--transition-duration) ease,
+    border-color var(--transition-duration) ease;
 }
 
 /* ────────── Reduced motion ────────── */

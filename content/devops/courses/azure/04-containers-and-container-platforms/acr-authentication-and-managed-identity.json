@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "containers",
-    "docker",
-    "aks",
-    "developer"
-  ],
+  "tags": ["azure", "containers", "docker", "aks", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -44,24 +38,14 @@
           {
             "title": "Admin Account",
             "description": "A built-in admin user with a static username and password.",
-            "pros": [
-              "Simple to set up"
-            ],
-            "cons": [
-              "Static credentials",
-              "Not recommended for production"
-            ]
+            "pros": ["Simple to set up"],
+            "cons": ["Static credentials", "Not recommended for production"]
           },
           {
             "title": "Service Principal",
             "description": "An Azure AD application with permissions to pull/push images.",
-            "pros": [
-              "Granular permissions",
-              "Rotatable credentials"
-            ],
-            "cons": [
-              "Still requires managing a secret"
-            ]
+            "pros": ["Granular permissions", "Rotatable credentials"],
+            "cons": ["Still requires managing a secret"]
           },
           {
             "title": "Managed Identity",
@@ -71,9 +55,7 @@
               "Automatic token rotation",
               "Recommended for production"
             ],
-            "cons": [
-              "Only available for Azure-hosted workloads"
-            ]
+            "cons": ["Only available for Azure-hosted workloads"]
           }
         ]
       }

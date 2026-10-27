@@ -7,12 +7,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "cross-join",
-    "joins",
-    "cartesian-product",
-    "no-condition"
-  ],
+  "tags": ["cross-join", "joins", "cartesian-product", "no-condition"],
   "blocks": [
     {
       "type": "heading",

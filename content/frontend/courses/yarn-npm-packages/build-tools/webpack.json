@@ -6,13 +6,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "webpack",
-    "build",
-    "bundler",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["webpack", "build", "bundler", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

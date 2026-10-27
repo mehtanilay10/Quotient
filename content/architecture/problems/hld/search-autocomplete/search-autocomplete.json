@@ -227,11 +227,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "google-search",
-    "web-crawler",
-    "amazon-ecommerce-hld"
-  ],
+  "relatedLessons": ["google-search", "web-crawler", "amazon-ecommerce-hld"],
   "furtherReading": [
     {
       "title": "Designing an Autocomplete System — ByteByteGo",

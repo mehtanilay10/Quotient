@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 8,
-  "tags": [
-    "strategy",
-    "behavioral",
-    "csharp"
-  ],
+  "tags": ["strategy", "behavioral", "csharp"],
   "blocks": [
     {
       "type": "paragraph",

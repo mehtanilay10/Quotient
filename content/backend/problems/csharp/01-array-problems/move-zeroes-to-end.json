@@ -8,12 +8,7 @@
   "order": 29,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "arrays",
-    "two-pointers",
-    "easy"
-  ],
+  "tags": ["csharp", "arrays", "two-pointers", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -101,31 +96,16 @@
           {
             "title": "Extra Array",
             "description": "Collect non-zeros then fill",
-            "pros": [
-              "Easy to follow"
-            ],
-            "cons": [
-              "O(n) extra space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Easy to follow"],
+            "cons": ["O(n) extra space"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Two-Pointer In-Place",
             "description": "Swap non-zeros forward",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
             "cons": [],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

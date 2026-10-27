@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "fifo",
-    "rabbitmq",
-    "sqs",
-    "ordering",
-    "queue-policies"
-  ],
+  "tags": ["fifo", "rabbitmq", "sqs", "ordering", "queue-policies"],
   "blocks": [
     {
       "type": "paragraph",

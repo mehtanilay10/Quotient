@@ -7,11 +7,7 @@
   "order": 18,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "synonym",
-    "alias",
-    "ultimate-guide"
-  ],
+  "tags": ["synonym", "alias", "ultimate-guide"],
   "blocks": [
     {
       "type": "heading",

@@ -6,10 +6,7 @@
   "description": "Understand the Repository Pattern for data access abstraction.",
   "order": 1,
   "difficulty": "intermediate",
-  "tags": [
-    "architecture",
-    "intermediate"
-  ],
+  "tags": ["architecture", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

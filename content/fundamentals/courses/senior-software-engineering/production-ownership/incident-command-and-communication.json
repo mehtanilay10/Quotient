@@ -80,12 +80,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Role",
-          "Responsibility",
-          "Reports To",
-          "Primary Tool"
-        ],
+        "headers": ["Role", "Responsibility", "Reports To", "Primary Tool"],
         "rows": [
           [
             "Incident Commander",
@@ -498,11 +493,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Target",
-          "Why It Matters"
-        ],
+        "headers": ["Metric", "Target", "Why It Matters"],
         "rows": [
           [
             "Time to first status update",

@@ -7,9 +7,7 @@
   "order": 8,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "recursive-cte"
-  ],
+  "tags": ["recursive-cte"],
   "blocks": [
     {
       "type": "heading",
@@ -148,56 +146,11 @@
           "store_id"
         ],
         "rows": [
-          [
-            "1",
-            "John",
-            "Doe",
-            "john@store.com",
-            "123-456-7890",
-            "1",
-            "",
-            "1"
-          ],
-          [
-            "2",
-            "Jane",
-            "Smith",
-            "jane@store.com",
-            "234-567-8901",
-            "1",
-            "1",
-            "1"
-          ],
-          [
-            "3",
-            "Bob",
-            "Johnson",
-            "bob@store.com",
-            "345-678-9012",
-            "1",
-            "1",
-            "2"
-          ],
-          [
-            "4",
-            "Alice",
-            "Williams",
-            "alice@store.com",
-            "456-789-0123",
-            "0",
-            "2",
-            "2"
-          ],
-          [
-            "5",
-            "Charlie",
-            "Brown",
-            "charlie@store.com",
-            "567-890-1234",
-            "1",
-            "2",
-            "1"
-          ]
+          ["1", "John", "Doe", "john@store.com", "123-456-7890", "1", "", "1"],
+          ["2", "Jane", "Smith", "jane@store.com", "234-567-8901", "1", "1", "1"],
+          ["3", "Bob", "Johnson", "bob@store.com", "345-678-9012", "1", "1", "2"],
+          ["4", "Alice", "Williams", "alice@store.com", "456-789-0123", "0", "2", "2"],
+          ["5", "Charlie", "Brown", "charlie@store.com", "567-890-1234", "1", "2", "1"]
         ]
       }
     },

@@ -9,14 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 0.5,
   "icon": "🔧",
-  "tags": [
-    "ssis",
-    "polybase",
-    "etl",
-    "integration-services",
-    "big-data",
-    "external-tables"
-  ],
+  "tags": ["ssis", "polybase", "etl", "integration-services", "big-data", "external-tables"],
   "lessonSlugs": ["sql-server-integration-services"],
   "whatYouLearn": [
     "Design and deploy SSIS packages for ETL workflows",

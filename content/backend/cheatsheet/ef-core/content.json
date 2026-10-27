@@ -8,14 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 1.5,
   "icon": "🗄️",
-  "tags": [
-    "ef-core",
-    "entity-framework",
-    "dotnet",
-    "orm",
-    "cheatsheet",
-    "quick-reference"
-  ],
+  "tags": ["ef-core", "entity-framework", "dotnet", "orm", "cheatsheet", "quick-reference"],
   "lessonSlugs": ["cheatsheet"],
   "whatYouLearn": [
     "DbContext and model configuration",

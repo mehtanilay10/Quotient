@@ -8,11 +8,7 @@
   "order": 7,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "testing",
-    "autofixture",
-    "testdata"
-  ],
+  "tags": ["testing", "autofixture", "testdata"],
   "blocks": [
     {
       "type": "heading",
@@ -121,9 +117,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "xunit",
-    "bogus"
-  ],
+  "relatedLessons": ["xunit", "bogus"],
   "courseSlug": "dotnet-nuget-packages"
 }

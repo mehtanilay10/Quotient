@@ -7,12 +7,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "🛠️",
-  "tags": [
-    "debugging",
-    "testing",
-    "refactoring",
-    "practical"
-  ],
+  "tags": ["debugging", "testing", "refactoring", "practical"],
   "lessonSlugs": [
     "debugging-with-ai",
     "writing-tests-with-ai",

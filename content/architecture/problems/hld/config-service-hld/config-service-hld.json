@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 50,
-  "tags": [
-    "hld",
-    "system-design",
-    "configuration",
-    "dynamic-config",
-    "versioning"
-  ],
+  "tags": ["hld", "system-design", "configuration", "dynamic-config", "versioning"],
   "blocks": [
     {
       "type": "heading",

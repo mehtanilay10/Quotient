@@ -8,15 +8,8 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "prefetching",
-    "hover-prefetch",
-    "route-prefetch",
-    "ux"
-  ],
-  "prerequisites": [
-    "query-options"
-  ],
+  "tags": ["prefetching", "hover-prefetch", "route-prefetch", "ux"],
+  "prerequisites": ["query-options"],
   "blocks": [
     {
       "type": "paragraph",
@@ -84,14 +77,8 @@
               "Does not trigger re-renders",
               "Cache is populated for future use"
             ],
-            "cons": [
-              "Returns void, not data",
-              "Cannot observe loading state"
-            ],
-            "tags": [
-              "prefetch",
-              "cache-only"
-            ]
+            "cons": ["Returns void, not data", "Cannot observe loading state"],
+            "tags": ["prefetch", "cache-only"]
           },
           {
             "title": "fetchQuery",
@@ -101,14 +88,8 @@
               "Useful outside components",
               "Throws on error for try/catch"
             ],
-            "cons": [
-              "Still populates cache as a side effect",
-              "Requires async/await handling"
-            ],
-            "tags": [
-              "promise",
-              " imperative"
-            ]
+            "cons": ["Still populates cache as a side effect", "Requires async/await handling"],
+            "tags": ["promise", " imperative"]
           }
         ]
       }

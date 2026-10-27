@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "azure",
-    "containers",
-    "docker",
-    "aks",
-    "developer"
-  ],
+  "tags": ["azure", "containers", "docker", "aks", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -51,31 +45,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "SKU",
-          "Use Case",
-          "Storage",
-          "Geo-Replication"
-        ],
+        "headers": ["SKU", "Use Case", "Storage", "Geo-Replication"],
         "rows": [
-          [
-            "Basic",
-            "Learning and development",
-            "10 GB per repo",
-            "No"
-          ],
-          [
-            "Standard",
-            "Production workloads",
-            "100 GB per repo",
-            "Yes"
-          ],
-          [
-            "Premium",
-            "High-scale production",
-            "500 GB per repo",
-            "Yes + Zone Redundant"
-          ]
+          ["Basic", "Learning and development", "10 GB per repo", "No"],
+          ["Standard", "Production workloads", "100 GB per repo", "Yes"],
+          ["Premium", "High-scale production", "500 GB per repo", "Yes + Zone Redundant"]
         ]
       }
     },

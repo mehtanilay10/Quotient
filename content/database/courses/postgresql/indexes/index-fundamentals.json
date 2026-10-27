@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "indexes",
-    "performance",
-    "b-tree",
-    "write-overhead",
-    "dba"
-  ],
+  "tags": ["indexes", "performance", "b-tree", "write-overhead", "dba"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,12 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Index Type",
-          "Internal Structure",
-          "Optimal Operators",
-          "Best Use Case"
-        ],
+        "headers": ["Index Type", "Internal Structure", "Optimal Operators", "Best Use Case"],
         "rows": [
           [
             "`B-tree`",
@@ -114,8 +103,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "btree-indexes",
-    "gin-gist-indexes"
-  ]
+  "relatedLessons": ["btree-indexes", "gin-gist-indexes"]
 }

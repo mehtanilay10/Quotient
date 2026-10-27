@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "system-design",
-    "uber",
-    "ride-sharing",
-    "matching",
-    "real-time"
-  ],
+  "tags": ["system-design", "uber", "ride-sharing", "matching", "real-time"],
   "blocks": [
     {
       "type": "paragraph",
@@ -89,32 +83,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Component",
-          "Technology",
-          "Scale"
-        ],
+        "headers": ["Component", "Technology", "Scale"],
         "rows": [
-          [
-            "Geospatial Index",
-            "H3 + Redis",
-            "10M+ location updates/sec"
-          ],
-          [
-            "Message Bus",
-            "Kafka",
-            "1M+ events/sec per topic"
-          ],
-          [
-            "Driver State",
-            "PostgreSQL + Redis",
-            "5M+ concurrent drivers"
-          ],
-          [
-            "ETA Estimation",
-            "Mapbox / OSRM",
-            "50ms average response"
-          ]
+          ["Geospatial Index", "H3 + Redis", "10M+ location updates/sec"],
+          ["Message Bus", "Kafka", "1M+ events/sec per topic"],
+          ["Driver State", "PostgreSQL + Redis", "5M+ concurrent drivers"],
+          ["ETA Estimation", "Mapbox / OSRM", "50ms average response"]
         ]
       }
     },

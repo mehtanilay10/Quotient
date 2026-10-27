@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "background-service",
-    "hosted-service",
-    "worker",
-    "tasks"
-  ],
+  "tags": ["background-service", "hosted-service", "worker", "tasks"],
   "blocks": [
     {
       "type": "paragraph",

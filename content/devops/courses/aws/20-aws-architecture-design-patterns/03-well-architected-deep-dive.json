@@ -8,14 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "well-architected",
-    "framework",
-    "pillars",
-    "operational-excellence",
-    "security"
-  ],
+  "tags": ["aws", "well-architected", "framework", "pillars", "operational-excellence", "security"],
   "blocks": [
     {
       "type": "paragraph",

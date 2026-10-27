@@ -9,15 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2.5,
   "icon": "📴",
-  "tags": [
-    "offline",
-    "persistence",
-    "localStorage",
-    "indexedDB",
-    "service-worker",
-    "sync",
-    "pwa"
-  ],
+  "tags": ["offline", "persistence", "localStorage", "indexedDB", "service-worker", "sync", "pwa"],
   "lessonSlugs": [
     "persistence-basics",
     "indexeddb-persistence",

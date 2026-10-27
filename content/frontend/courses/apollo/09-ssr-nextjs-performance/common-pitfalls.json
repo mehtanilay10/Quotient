@@ -8,15 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 10,
-  "tags": [
-    "pitfalls",
-    "nextjs",
-    "hydration",
-    "ssr",
-    "ssg",
-    "apollo-client",
-    "best-practices"
-  ],
+  "tags": ["pitfalls", "nextjs", "hydration", "ssr", "ssg", "apollo-client", "best-practices"],
   "blocks": [
     {
       "type": "heading",
@@ -48,7 +40,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "performance-optimization"
-  ]
+  "prerequisites": ["performance-optimization"]
 }

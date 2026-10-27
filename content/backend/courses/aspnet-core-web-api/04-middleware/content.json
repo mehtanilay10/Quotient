@@ -6,11 +6,7 @@
   "title": "Middleware",
   "description": "Learn how to use and create middleware in ASP.NET Core.",
   "order": 4,
-  "lessonSlugs": [
-    "middleware-basics",
-    "built-in-middleware",
-    "custom-middleware"
-  ],
+  "lessonSlugs": ["middleware-basics", "built-in-middleware", "custom-middleware"],
   "tags": [],
   "difficulty": "beginner",
   "estimatedHours": 1.5

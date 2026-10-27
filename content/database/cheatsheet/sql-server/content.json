@@ -10,9 +10,5 @@
   "icon": "🗄️",
   "tags": ["sql", "sql-server", "cheatsheet", "quick-reference"],
   "lessonSlugs": ["cheatsheet"],
-  "whatYouLearn": [
-    "Common SQL patterns",
-    "Join types and usage",
-    "Built-in functions"
-  ]
+  "whatYouLearn": ["Common SQL patterns", "Join types and usage", "Built-in functions"]
 }

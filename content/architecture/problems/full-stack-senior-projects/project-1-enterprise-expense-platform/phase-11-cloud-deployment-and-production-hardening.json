@@ -168,13 +168,21 @@
           {
             "title": "Pulumi",
             "description": "Infrastructure as code using real programming languages such as C# or TypeScript.",
-            "pros": ["Familiar language for developers", "Strong testing support", "Great .NET integration"],
+            "pros": [
+              "Familiar language for developers",
+              "Strong testing support",
+              "Great .NET integration"
+            ],
             "cons": ["Smaller community than Terraform", "State management still required"]
           },
           {
             "title": "Azure Bicep",
             "description": "A domain-specific language for deploying Azure resources.",
-            "pros": ["Native Azure integration", "Simpler than ARM templates", "Built-in validation"],
+            "pros": [
+              "Native Azure integration",
+              "Simpler than ARM templates",
+              "Built-in validation"
+            ],
             "cons": ["Azure only", "Less portable"]
           }
         ]

@@ -8,16 +8,8 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "query-client",
-    "cache",
-    "configuration",
-    "imperative-methods"
-  ],
-  "prerequisites": [
-    "setup"
-  ],
+  "tags": ["react-query", "query-client", "cache", "configuration", "imperative-methods"],
+  "prerequisites": ["setup"],
   "blocks": [
     {
       "type": "paragraph",
@@ -63,11 +55,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "Purpose",
-          "Example Use Case"
-        ],
+        "headers": ["Method", "Purpose", "Example Use Case"],
         "rows": [
           [
             "getQueryData",
@@ -84,21 +72,9 @@
             "Mark queries as stale, trigger refetch",
             "After a mutation, refetch the affected list"
           ],
-          [
-            "refetchQueries",
-            "Force an immediate refetch",
-            "Manual refresh button"
-          ],
-          [
-            "cancelQueries",
-            "Cancel in-flight queries",
-            "Cleanup in useEffect"
-          ],
-          [
-            "removeQueries",
-            "Delete cache entries",
-            "Clear cache on user logout"
-          ],
+          ["refetchQueries", "Force an immediate refetch", "Manual refresh button"],
+          ["cancelQueries", "Cancel in-flight queries", "Cleanup in useEffect"],
+          ["removeQueries", "Delete cache entries", "Clear cache on user logout"],
           [
             "getQueriesData",
             "Find all cached data matching a filter",

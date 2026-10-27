@@ -10,7 +10,18 @@
   "estimatedHours": 6,
   "icon": "🔄",
   "tags": ["csharp", "recursion", "backtracking", "constraint-satisfaction"],
-  "lessonSlugs": ["count-digits-in-number", "digital-root", "power", "subsets", "combination-sum", "permutations", "generate-parentheses", "n-queens", "word-search", "sudoku-solver"],
+  "lessonSlugs": [
+    "count-digits-in-number",
+    "digital-root",
+    "power",
+    "subsets",
+    "combination-sum",
+    "permutations",
+    "generate-parentheses",
+    "n-queens",
+    "word-search",
+    "sudoku-solver"
+  ],
   "whatYouLearn": [
     "Base case identification",
     "Recursive decomposition",

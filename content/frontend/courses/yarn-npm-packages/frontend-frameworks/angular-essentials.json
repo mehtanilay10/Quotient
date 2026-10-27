@@ -6,13 +6,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "angular",
-    "frontend",
-    "frameworks",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["angular", "frontend", "frameworks", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,31 +34,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Package",
-          "Purpose"
-        ],
+        "headers": ["Package", "Purpose"],
         "rows": [
-          [
-            "@angular/core",
-            "Components, DI, signals, change detection"
-          ],
-          [
-            "@angular/common",
-            "Built-in directives, pipes, HttpClient support"
-          ],
-          [
-            "@angular/router",
-            "Route definitions, guards, lazy loading"
-          ],
-          [
-            "@angular/forms",
-            "Reactive and template-driven forms"
-          ],
-          [
-            "rxjs",
-            "Reactive streams used throughout the framework"
-          ]
+          ["@angular/core", "Components, DI, signals, change detection"],
+          ["@angular/common", "Built-in directives, pipes, HttpClient support"],
+          ["@angular/router", "Route definitions, guards, lazy loading"],
+          ["@angular/forms", "Reactive and template-driven forms"],
+          ["rxjs", "Reactive streams used throughout the framework"]
         ]
       }
     },

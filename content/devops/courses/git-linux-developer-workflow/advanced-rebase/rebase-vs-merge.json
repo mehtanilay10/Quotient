@@ -170,6 +170,10 @@
   ],
   "relatedLessons": ["rebase-to-branch", "rebase-conflicts"],
   "furtherReading": [
-    { "title": "Git Branching: Rebase vs Merge", "url": "https://git-scm.com/book/en/v2/Git-Branching-Rebasing", "type": "article" }
+    {
+      "title": "Git Branching: Rebase vs Merge",
+      "url": "https://git-scm.com/book/en/v2/Git-Branching-Rebasing",
+      "type": "article"
+    }
   ]
 }

@@ -6,11 +6,7 @@
   "description": "Organize code into concentric layers with dependency inversion.",
   "order": 3,
   "difficulty": "advanced",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture"],
   "blocks": [
     {
       "type": "paragraph",

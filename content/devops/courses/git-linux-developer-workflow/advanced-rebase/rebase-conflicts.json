@@ -158,6 +158,10 @@
   ],
   "relatedLessons": ["rebase-to-branch", "rebase-vs-merge"],
   "furtherReading": [
-    { "title": "Resolving Merge Conflicts", "url": "https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts", "type": "article" }
+    {
+      "title": "Resolving Merge Conflicts",
+      "url": "https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging#_basic_merge_conflicts",
+      "type": "article"
+    }
   ]
 }

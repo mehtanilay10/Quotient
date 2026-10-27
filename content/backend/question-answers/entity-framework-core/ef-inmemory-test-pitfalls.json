@@ -6,10 +6,7 @@
   "description": "Why green InMemory tests lie: no real SQL, no transactions, and what to use instead.",
   "order": 9,
   "difficulty": "intermediate",
-  "tags": [
-    "ef-core",
-    "intermediate"
-  ],
+  "tags": ["ef-core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,10 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "change-tracking-and-savechanges",
-    "migrations-in-production"
-  ],
+  "relatedLessons": ["change-tracking-and-savechanges", "migrations-in-production"],
   "furtherReading": [
     {
       "title": "Testing with EF Core (in-memory vs SQLite)",

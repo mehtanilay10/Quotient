@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "hard",
   "estimatedMinutes": 20,
-  "tags": [
-    "csharp",
-    "trees",
-    "bst",
-    "hard"
-  ],
+  "tags": ["csharp", "trees", "bst", "hard"],
   "blocks": [
     {
       "type": "heading",
@@ -51,15 +46,8 @@
           {
             "title": "Inorder + Swap Detect",
             "description": "Track first/second inversion",
-            "pros": [
-              "O(n) time",
-              "O(h) space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(h) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "O(h) space"],
+            "tags": ["O(n) time", "O(h) space", "Recommended"]
           }
         ]
       }

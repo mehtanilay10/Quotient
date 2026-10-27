@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "varchar",
-    "data-type",
-    "string"
-  ],
+  "tags": ["varchar", "data-type", "string"],
   "blocks": [
     {
       "type": "heading",

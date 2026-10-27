@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "dependencies",
-    "scanning",
-    "security",
-    "devops"
-  ],
+  "tags": ["dependencies", "scanning", "security", "devops"],
   "blocks": [
     {
       "type": "paragraph",

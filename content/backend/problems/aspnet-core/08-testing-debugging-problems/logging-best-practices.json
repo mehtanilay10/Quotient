@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "logging",
-    "monitoring"
-  ],
+  "tags": ["aspnet-core", "logging", "monitoring"],
   "blocks": [
     {
       "type": "heading",
@@ -69,20 +65,9 @@
           {
             "title": "Structured Logging",
             "description": "Structured logging patterns",
-            "pros": [
-              "Searchable in ELK/Splunk",
-              "Correlated requests",
-              "Structured data"
-            ],
-            "cons": [
-              "Must use message templates",
-              "Not all logs are structured"
-            ],
-            "tags": [
-              "ILogger",
-              "BeginScope",
-              "message templates"
-            ]
+            "pros": ["Searchable in ELK/Splunk", "Correlated requests", "Structured data"],
+            "cons": ["Must use message templates", "Not all logs are structured"],
+            "tags": ["ILogger", "BeginScope", "message templates"]
           }
         ]
       }

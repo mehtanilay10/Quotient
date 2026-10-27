@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is System.IO.Pipelines?"}
+      "data": { "level": 2, "text": "What is System.IO.Pipelines?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`System.IO.Pipelines` is a high-performance library for building I/O pipelines. It minimizes memory copies and allocations by reusing memory buffers across read and write operations."}
+      "data": {
+        "text": "`System.IO.Pipelines` is a high-performance library for building I/O pipelines. It minimizes memory copies and allocations by reusing memory buffers across read and write operations."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Reading from a Pipe"}
+      "data": { "level": 2, "text": "Reading from a Pipe" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "A `Pipe` has a `Writer` and a `Reader`. The reader advances through data while the writer fills the buffer."}
+      "data": {
+        "text": "A `Pipe` has a `Writer` and a `Reader`. The reader advances through data while the writer fills the buffer."
+      }
     },
     {
       "type": "example",
@@ -48,7 +52,7 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Why Pipelines?"}
+      "data": { "level": 2, "text": "Why Pipelines?" }
     },
     {
       "type": "bullet-list",

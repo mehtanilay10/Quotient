@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "errors",
-    "error-boundaries",
-    "fallback",
-    "class-components"
-  ],
+  "tags": ["react", "errors", "error-boundaries", "fallback", "class-components"],
   "blocks": [
     {
       "type": "paragraph",

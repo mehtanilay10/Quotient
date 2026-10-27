@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "stored-procedures",
-    "procedures-vs-functions",
-    "transactions",
-    "commit"
-  ],
+  "tags": ["stored-procedures", "procedures-vs-functions", "transactions", "commit"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,11 +32,7 @@
           "Stored Procedure (`CREATE PROCEDURE`)"
         ],
         "rows": [
-          [
-            "Invocation",
-            "`SELECT my_func()` or in `WHERE/FROM`",
-            "`CALL my_proc()`"
-          ],
+          ["Invocation", "`SELECT my_func()` or in `WHERE/FROM`", "`CALL my_proc()`"],
           [
             "Return Value",
             "Must return a value (or `void`)",
@@ -106,8 +97,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "plpgsql-functions",
-    "transaction-fundamentals"
-  ]
+  "relatedLessons": ["plpgsql-functions", "transaction-fundamentals"]
 }

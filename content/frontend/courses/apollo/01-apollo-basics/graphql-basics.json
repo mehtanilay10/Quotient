@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 23,
-  "tags": [
-    "graphql",
-    "basics",
-    "queries",
-    "schema"
-  ],
+  "tags": ["graphql", "basics", "queries", "schema"],
   "blocks": [
     {
       "type": "paragraph",

@@ -37,20 +37,41 @@
           {
             "title": "Bind mounts",
             "description": "Mounts a specific file or directory from the host filesystem into the container.",
-            "pros": ["Easy to edit from host", "Useful for development config and source code", "Visible to both host and container"],
-            "cons": ["Tightly couples container to host filesystem", "Host file permissions apply inside the container", "Risk of overwriting host files if container process runs as root"]
+            "pros": [
+              "Easy to edit from host",
+              "Useful for development config and source code",
+              "Visible to both host and container"
+            ],
+            "cons": [
+              "Tightly couples container to host filesystem",
+              "Host file permissions apply inside the container",
+              "Risk of overwriting host files if container process runs as root"
+            ]
           },
           {
             "title": "Named volumes",
             "description": "Docker-managed storage that lives in a dedicated area of the host filesystem.",
-            "pros": ["Managed by Docker", "Easy to back up and migrate", "Better performance on Docker Desktop for macOS and Windows", "Independent of host directory structure"],
+            "pros": [
+              "Managed by Docker",
+              "Easy to back up and migrate",
+              "Better performance on Docker Desktop for macOS and Windows",
+              "Independent of host directory structure"
+            ],
             "cons": ["Harder to inspect directly on the host", "Backup requires Docker CLI or API"]
           },
           {
             "title": "tmpfs mounts",
             "description": "Stores data in host memory only. Data never touches the host disk.",
-            "pros": ["Data is never written to disk", "High performance for temporary data", "Automatically removed when the container stops"],
-            "cons": ["Data is lost when the container stops", "Consumes host memory", "Not suitable for anything that must survive a restart"]
+            "pros": [
+              "Data is never written to disk",
+              "High performance for temporary data",
+              "Automatically removed when the container stops"
+            ],
+            "cons": [
+              "Data is lost when the container stops",
+              "Consumes host memory",
+              "Not suitable for anything that must survive a restart"
+            ]
           }
         ]
       }

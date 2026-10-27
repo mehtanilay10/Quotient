@@ -7,10 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "create-database",
-    "database"
-  ],
+  "tags": ["create-database", "database"],
   "blocks": [
     {
       "type": "heading",

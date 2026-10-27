@@ -9,12 +9,7 @@
   "estimatedHours": 2,
   "icon": "🧩",
   "tags": ["graphql", "schema", "types", "hotchocolate"],
-  "lessonSlugs": [
-    "schema-basics",
-    "type-definitions",
-    "input-types",
-    "scalars-custom-types"
-  ],
+  "lessonSlugs": ["schema-basics", "type-definitions", "input-types", "scalars-custom-types"],
   "longDescription": "The schema is the contract between your API and its clients. This module teaches you how to define types using Hot Chocolate\u0027s code-first approach, including object types, interfaces, unions, enums, input types, and custom scalars.",
   "prerequisites": ["01-getting-started"],
   "whatYouLearn": [

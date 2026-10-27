@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "errors",
-    "http"
-  ],
+  "tags": ["web-api", "errors", "http"],
   "blocks": [
     {
       "type": "paragraph",
@@ -56,42 +52,18 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Field",
-          "Type",
-          "Meaning"
-        ],
+        "headers": ["Field", "Type", "Meaning"],
         "rows": [
-          [
-            "type",
-            "URI",
-            "A URL identifying the error type. Defaults to about:blank."
-          ],
-          [
-            "title",
-            "string",
-            "A short, human-readable summary of the problem."
-          ],
-          [
-            "status",
-            "integer",
-            "The HTTP status code (e.g. 400, 404, 500)."
-          ],
-          [
-            "detail",
-            "string",
-            "A longer, human-readable explanation specific to this occurrence."
-          ],
+          ["type", "URI", "A URL identifying the error type. Defaults to about:blank."],
+          ["title", "string", "A short, human-readable summary of the problem."],
+          ["status", "integer", "The HTTP status code (e.g. 400, 404, 500)."],
+          ["detail", "string", "A longer, human-readable explanation specific to this occurrence."],
           [
             "instance",
             "URI",
             "A unique identifier for this specific occurrence (often the request path)."
           ],
-          [
-            "traceId",
-            "string",
-            "The distributed trace id, when activity tracing is enabled."
-          ]
+          ["traceId", "string", "The distributed trace id, when activity tracing is enabled."]
         ]
       }
     },
@@ -205,13 +177,8 @@
               "Automatically emitted for 400 responses",
               "Standards-compliant"
             ],
-            "cons": [
-              "Generic type URIs (about:blank)",
-              "No custom extension fields"
-            ],
-            "tags": [
-              "default"
-            ]
+            "cons": ["Generic type URIs (about:blank)", "No custom extension fields"],
+            "tags": ["default"]
           },
           {
             "title": "Customized ProblemDetails",
@@ -221,13 +188,8 @@
               "Includes correlation IDs and tenant info",
               "Consistent across client and server errors"
             ],
-            "cons": [
-              "Slightly more setup",
-              "Clients must know your type URIs"
-            ],
-            "tags": [
-              "recommended"
-            ]
+            "cons": ["Slightly more setup", "Clients must know your type URIs"],
+            "tags": ["recommended"]
           }
         ]
       }
@@ -299,8 +261,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "validation-basics"
-  ],
+  "relatedLessons": ["validation-basics"],
   "courseSlug": "aspnet-core-web-api"
 }

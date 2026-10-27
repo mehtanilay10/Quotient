@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "routing",
-    "urls",
-    "middleware"
-  ],
+  "tags": ["routing", "urls", "middleware"],
   "blocks": [
     {
       "type": "paragraph",
@@ -232,9 +228,7 @@
       "takeaway": "Routing is the URL-to-code mapping system that connects browser requests to your controller actions. Mastering routing basics gives you precise control over your application's URL structure and ensures users can reach every part of your app."
     }
   ],
-  "relatedLessons": [
-    "attribute-routing"
-  ],
+  "relatedLessons": ["attribute-routing"],
   "technology": null,
   "furtherReading": [
     {

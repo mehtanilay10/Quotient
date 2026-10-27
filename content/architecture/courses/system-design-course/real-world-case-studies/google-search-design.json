@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "system-design",
-    "google",
-    "search",
-    "indexing",
-    "distributed"
-  ],
+  "tags": ["system-design", "google", "search", "indexing", "distributed"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,32 +74,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Component",
-          "Technology",
-          "Scale"
-        ],
+        "headers": ["Component", "Technology", "Scale"],
         "rows": [
-          [
-            "Web Crawler",
-            "Googlebot (distributed)",
-            "60+ trillion pages indexed"
-          ],
-          [
-            "Inverted Index",
-            "MapReduce + Colossus",
-            "100+ PB of index data"
-          ],
-          [
-            "Query Router",
-            "Paxos-based cluster",
-            "99.99% availability target"
-          ],
-          [
-            "Ranking Engine",
-            "Caffeine + RankBrain",
-            "Under 200ms per query"
-          ]
+          ["Web Crawler", "Googlebot (distributed)", "60+ trillion pages indexed"],
+          ["Inverted Index", "MapReduce + Colossus", "100+ PB of index data"],
+          ["Query Router", "Paxos-based cluster", "99.99% availability target"],
+          ["Ranking Engine", "Caffeine + RankBrain", "Under 200ms per query"]
         ]
       }
     },

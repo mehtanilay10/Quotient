@@ -26,19 +26,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Layer",
-          "What it caches",
-          "Typical TTL",
-          "Best for"
-        ],
+        "headers": ["Layer", "What it caches", "Typical TTL", "Best for"],
         "rows": [
-          [
-            "CDN",
-            "Static assets, API responses",
-            "Hours to days",
-            "Public, cacheable content"
-          ],
+          ["CDN", "Static assets, API responses", "Hours to days", "Public, cacheable content"],
           [
             "Reverse proxy / gateway",
             "Whole responses, auth tokens",

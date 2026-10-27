@@ -6,11 +6,7 @@
   "fullDefinition": "A rubric turns a vague quality judgement such as \"is this answer good?\" into something repeatable. It lists the dimensions that matter — for example correctness, completeness, tone, and faithfulness to sources — and defines what each rating level looks like in concrete terms. A rubric is what makes evaluation comparable over time and between graders: two reviewers, or two model judges, applying the same rubric should reach similar conclusions. Vague rubrics produce noisy scores that cannot distinguish a real regression from random variation. Practical rubrics use a small number of levels (often 1-5 or pass/fail per criterion), describe behaviour rather than feelings, and get tested on a sample of outputs before being rolled out.",
   "category": "evaluation",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "llm-as-judge",
-    "human-evaluation",
-    "evaluation"
-  ],
+  "relatedTerms": ["llm-as-judge", "human-evaluation", "evaluation"],
   "examples": [
     "Correctness: 1 = factually wrong, 3 = mostly right, 5 = fully correct",
     "A pass/fail check for 'does the answer cite a source for every claim?'",

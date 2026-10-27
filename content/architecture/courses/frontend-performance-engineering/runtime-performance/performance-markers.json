@@ -8,13 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "performance-api",
-    "user-timing",
-    "marks",
-    "measures",
-    "instrumentation"
-  ],
+  "tags": ["performance-api", "user-timing", "marks", "measures", "instrumentation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -153,11 +147,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "user-centric-metrics",
-    "cpu-profiling",
-    "debugging-performance"
-  ],
+  "relatedLessons": ["user-centric-metrics", "cpu-profiling", "debugging-performance"],
   "furtherReading": [
     {
       "title": "User Timing API on MDN",

@@ -8,11 +8,7 @@
   "order": 22,
   "difficulty": "hard",
   "estimatedMinutes": 25,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "hard"
-  ],
+  "tags": ["csharp", "dynamic-programming", "hard"],
   "blocks": [
     {
       "type": "heading",
@@ -50,14 +46,8 @@
           {
             "title": "Interval DP",
             "description": "Last-bursted balloon DP",
-            "pros": [
-              "O(n\u00b3) optimal"
-            ],
-            "tags": [
-              "O(n\u00b3) time",
-              "O(n\u00b2) space",
-              "Recommended"
-            ]
+            "pros": ["O(n\u00b3) optimal"],
+            "tags": ["O(n\u00b3) time", "O(n\u00b2) space", "Recommended"]
           }
         ]
       }

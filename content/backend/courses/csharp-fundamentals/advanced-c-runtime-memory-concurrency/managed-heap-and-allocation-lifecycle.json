@@ -113,7 +113,11 @@
       }
     }
   ],
-  "relatedLessons": ["gc-generations-and-collection-behavior", "large-object-heap-and-pinned-objects", "boxing-and-hidden-allocations"],
+  "relatedLessons": [
+    "gc-generations-and-collection-behavior",
+    "large-object-heap-and-pinned-objects",
+    "boxing-and-hidden-allocations"
+  ],
   "furtherReading": [
     {
       "type": "article",

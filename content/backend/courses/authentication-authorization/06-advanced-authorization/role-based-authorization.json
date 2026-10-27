@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "authorization",
-    "roles",
-    "aspnet-core",
-    "identity"
-  ],
+  "tags": ["authorization", "roles", "aspnet-core", "identity"],
   "blocks": [
     {
       "type": "paragraph",
@@ -173,7 +168,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "auth-overview"
-  ]
+  "prerequisites": ["auth-overview"]
 }

@@ -8,19 +8,9 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 33,
-  "tags": [
-    "react",
-    "hoc",
-    "higher-order-components",
-    "patterns",
-    "beginner"
-  ],
-  "prerequisites": [
-    "render-props-basics"
-  ],
-  "relatedLessons": [
-    "hoc-examples"
-  ],
+  "tags": ["react", "hoc", "higher-order-components", "patterns", "beginner"],
+  "prerequisites": ["render-props-basics"],
+  "relatedLessons": ["hoc-examples"],
   "furtherReading": [
     {
       "title": "Higher-Order Components - React Documentation",
@@ -135,10 +125,7 @@
               "Static methods must be manually copied",
               "Props can be harder to trace in DevTools"
             ],
-            "tags": [
-              "reuse",
-              "wrapper"
-            ]
+            "tags": ["reuse", "wrapper"]
           },
           {
             "title": "Render Props",
@@ -153,10 +140,7 @@
               "Less natural for simple reuse",
               "Can be harder to read with many render props"
             ],
-            "tags": [
-              "explicit",
-              "function"
-            ]
+            "tags": ["explicit", "function"]
           }
         ]
       }

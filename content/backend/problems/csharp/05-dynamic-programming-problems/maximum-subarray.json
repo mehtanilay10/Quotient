@@ -8,12 +8,7 @@
   "order": 10,
   "difficulty": "medium",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "arrays",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "arrays", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,15 +46,8 @@
           {
             "title": "Kadane's",
             "description": "current = max(nums[i], current + nums[i])",
-            "pros": [
-              "O(n) single pass",
-              "O(1) space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) single pass", "O(1) space"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is Azure.Identity?"}
+      "data": { "level": 2, "text": "What is Azure.Identity?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`Azure.Identity` provides credential classes for authenticating Azure SDK clients. It supports `DefaultAzureCredential`, `ManagedIdentityCredential`, and developer-friendly credentials like `VisualStudioCredential`."}
+      "data": {
+        "text": "`Azure.Identity` provides credential classes for authenticating Azure SDK clients. It supports `DefaultAzureCredential`, `ManagedIdentityCredential`, and developer-friendly credentials like `VisualStudioCredential`."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "DefaultAzureCredential"}
+      "data": { "level": 2, "text": "DefaultAzureCredential" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`DefaultAzureCredential` tries multiple credential sources in order, making it easy to write code that works locally and in Azure."}
+      "data": {
+        "text": "`DefaultAzureCredential` tries multiple credential sources in order, making it easy to write code that works locally and in Azure."
+      }
     },
     {
       "type": "example",
@@ -48,7 +52,7 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Available Credentials"}
+      "data": { "level": 2, "text": "Available Credentials" }
     },
     {
       "type": "table",

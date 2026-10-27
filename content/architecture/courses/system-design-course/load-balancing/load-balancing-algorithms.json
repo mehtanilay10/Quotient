@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "load-balancing",
-    "algorithms",
-    "performance",
-    "traffic-distribution"
-  ],
+  "tags": ["load-balancing", "algorithms", "performance", "traffic-distribution"],
   "blocks": [
     {
       "type": "paragraph",
@@ -107,10 +102,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "l4-vs-l7-load-balancing",
-    "session-persistence"
-  ],
+  "relatedLessons": ["l4-vs-l7-load-balancing", "session-persistence"],
   "furtherReading": [
     {
       "title": "HAProxy Load Balancing Algorithms",

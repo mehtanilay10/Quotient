@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "configuration",
-    "options-pattern"
-  ],
+  "tags": ["web-api", "configuration", "options-pattern"],
   "blocks": [
     {
       "type": "paragraph",
@@ -38,19 +34,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Interface",
-          "Lifetime",
-          "Reloads on change?",
-          "Typical use"
-        ],
+        "headers": ["Interface", "Lifetime", "Reloads on change?", "Typical use"],
         "rows": [
-          [
-            "IOptions<T>",
-            "Singleton",
-            "No",
-            "Read-only settings that never change at runtime."
-          ],
+          ["IOptions<T>", "Singleton", "No", "Read-only settings that never change at runtime."],
           [
             "IOptionsSnapshot<T>",
             "Scoped",
@@ -160,44 +146,23 @@
           {
             "title": "IOptions<T>",
             "description": "Read once, used for the lifetime of the app.",
-            "pros": [
-              "Cheapest",
-              "Safe for singletons"
-            ],
-            "cons": [
-              "No live reload"
-            ],
-            "tags": [
-              "singleton"
-            ]
+            "pros": ["Cheapest", "Safe for singletons"],
+            "cons": ["No live reload"],
+            "tags": ["singleton"]
           },
           {
             "title": "IOptionsSnapshot<T>",
             "description": "Re-read per request from the latest configuration.",
-            "pros": [
-              "Always fresh",
-              "Scoped lifetime fits per-request services"
-            ],
-            "cons": [
-              "Cannot be injected into singletons"
-            ],
-            "tags": [
-              "scoped"
-            ]
+            "pros": ["Always fresh", "Scoped lifetime fits per-request services"],
+            "cons": ["Cannot be injected into singletons"],
+            "tags": ["scoped"]
           },
           {
             "title": "IOptionsMonitor<T>",
             "description": "Singleton wrapper that raises OnChange callbacks.",
-            "pros": [
-              "Live reload + long-lived consumers"
-            ],
-            "cons": [
-              "Slightly more code to manage the change token"
-            ],
-            "tags": [
-              "singleton",
-              "reactive"
-            ]
+            "pros": ["Live reload + long-lived consumers"],
+            "cons": ["Slightly more code to manage the change token"],
+            "tags": ["singleton", "reactive"]
           }
         ]
       }

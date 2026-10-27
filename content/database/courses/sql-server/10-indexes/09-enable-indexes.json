@@ -7,11 +7,7 @@
   "order": 9,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "enable-index",
-    "rebuild-index",
-    "alter-index"
-  ],
+  "tags": ["enable-index", "rebuild-index", "alter-index"],
   "blocks": [
     {
       "type": "heading",

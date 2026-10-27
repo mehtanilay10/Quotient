@@ -40,11 +40,7 @@
       "data": {
         "headers": ["Scenario", "Recommended AWS Service", "C# SDK Package"],
         "rows": [
-          [
-            "Host a web app",
-            "Elastic Beanstalk or ECS",
-            "AWSSDK.ElasticBeanstalk"
-          ],
+          ["Host a web app", "Elastic Beanstalk or ECS", "AWSSDK.ElasticBeanstalk"],
           ["Store uploaded files", "S3", "AWSSDK.S3"],
           ["Relational database", "RDS", "Amazon.RDS"],
           ["NoSQL database", "DynamoDB", "AWSSDK.DynamoDBv2"],

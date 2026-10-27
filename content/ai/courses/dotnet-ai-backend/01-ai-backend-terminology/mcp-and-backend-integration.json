@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "mcp",
-    "backend",
-    "protocol",
-    "integration"
-  ],
+  "tags": ["mcp", "backend", "protocol", "integration"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,10 +75,7 @@
       "takeaway": "Treat MCP as an AI-native interface layer on top of your existing backend, not a full replacement."
     }
   ],
-  "relatedLessons": [
-    "what-is-model-context-protocol",
-    "mcp-vs-rest-graphql-for-ai"
-  ],
+  "relatedLessons": ["what-is-model-context-protocol", "mcp-vs-rest-graphql-for-ai"],
   "technology": null,
   "furtherReading": [
     {

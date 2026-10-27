@@ -8,14 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "kubernetes",
-    "resources",
-    "cpu",
-    "memory",
-    "limits",
-    "requests"
-  ],
+  "tags": ["kubernetes", "resources", "cpu", "memory", "limits", "requests"],
   "blocks": [
     {
       "type": "heading",
@@ -116,11 +109,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "QoS Class",
-          "Criteria",
-          "Eviction Priority"
-        ],
+        "headers": ["QoS Class", "Criteria", "Eviction Priority"],
         "rows": [
           [
             "Guaranteed",
@@ -132,11 +121,7 @@
             "Requests set, limits higher than requests (or only requests set)",
             "Evicted before Guaranteed"
           ],
-          [
-            "BestEffort",
-            "No requests or limits set",
-            "First to be evicted"
-          ]
+          ["BestEffort", "No requests or limits set", "First to be evicted"]
         ]
       }
     },

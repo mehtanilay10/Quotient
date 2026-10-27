@@ -8,14 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "redis",
-    "caching",
-    "refresh-ahead",
-    "proactive",
-    "latency",
-    "intermediate"
-  ],
+  "tags": ["redis", "caching", "refresh-ahead", "proactive", "latency", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

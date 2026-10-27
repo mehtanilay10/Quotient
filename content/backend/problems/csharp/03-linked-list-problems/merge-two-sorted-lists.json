@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "linked-list",
-    "merge",
-    "easy"
-  ],
+  "tags": ["csharp", "linked-list", "merge", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -74,32 +69,16 @@
           {
             "title": "Iterative",
             "description": "Dummy + tail pointer",
-            "pros": [
-              "O(1) space",
-              "Clear"
-            ],
-            "cons": [
-              "More code"
-            ],
-            "tags": [
-              "O(n+m) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) space", "Clear"],
+            "cons": ["More code"],
+            "tags": ["O(n+m) time", "O(1) space", "Recommended"]
           },
           {
             "title": "Recursive",
             "description": "Pick smaller head, recurse",
-            "pros": [
-              "Concise"
-            ],
-            "cons": [
-              "O(n+m) stack"
-            ],
-            "tags": [
-              "O(n+m) time",
-              "O(n+m) space"
-            ]
+            "pros": ["Concise"],
+            "cons": ["O(n+m) stack"],
+            "tags": ["O(n+m) time", "O(n+m) space"]
           }
         ]
       }

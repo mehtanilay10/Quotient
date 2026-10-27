@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "output-parameter",
-    "stored-procedure",
-    "return-data"
-  ],
+  "tags": ["output-parameter", "stored-procedure", "return-data"],
   "blocks": [
     {
       "type": "heading",

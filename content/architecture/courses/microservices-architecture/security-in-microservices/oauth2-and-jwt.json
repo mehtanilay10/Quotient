@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "oauth2",
-    "jwt",
-    "authentication"
-  ],
+  "tags": ["oauth2", "jwt", "authentication"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,27 +56,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Flow",
-          "Use Case"
-        ],
+        "headers": ["Flow", "Use Case"],
         "rows": [
-          [
-            "Authorization Code",
-            "Web apps with user login"
-          ],
-          [
-            "Client Credentials",
-            "Service-to-service"
-          ],
-          [
-            "PKCE",
-            "Mobile and SPA apps"
-          ],
-          [
-            "Device Code",
-            "CLI and IoT devices"
-          ]
+          ["Authorization Code", "Web apps with user login"],
+          ["Client Credentials", "Service-to-service"],
+          ["PKCE", "Mobile and SPA apps"],
+          ["Device Code", "CLI and IoT devices"]
         ]
       }
     },

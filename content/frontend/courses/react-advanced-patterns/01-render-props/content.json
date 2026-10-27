@@ -10,11 +10,7 @@
   "estimatedHours": 1.5,
   "icon": "📤",
   "tags": ["render-props", "composition", "hooks", "patterns"],
-  "lessonSlugs": [
-    "render-props-basics",
-    "render-props-examples",
-    "render-props-vs-hooks"
-  ],
+  "lessonSlugs": ["render-props-basics", "render-props-examples", "render-props-vs-hooks"],
   "prerequisites": [],
   "whatYouLearn": [
     "Understand what render props are and how they enable component composition",

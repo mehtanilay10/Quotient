@@ -6,10 +6,7 @@
   "description": "Know where identity ends and permissions begin, and how ASP.NET Core enforces both.",
   "order": 2,
   "difficulty": "beginner",
-  "tags": [
-    "security",
-    "beginner"
-  ],
+  "tags": ["security", "beginner"],
   "blocks": [
     {
       "type": "paragraph",
@@ -134,10 +131,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "oauth-jwt",
-    "role-vs-policy-authorization"
-  ],
+  "relatedLessons": ["oauth-jwt", "role-vs-policy-authorization"],
   "furtherReading": [
     {
       "title": "Authentication vs. authorization",

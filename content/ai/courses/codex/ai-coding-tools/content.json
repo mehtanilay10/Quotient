@@ -7,13 +7,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 4,
   "icon": "🔧",
-  "tags": [
-    "copilot",
-    "cursor",
-    "chatgpt",
-    "claude",
-    "tools"
-  ],
+  "tags": ["copilot", "cursor", "chatgpt", "claude", "tools"],
   "lessonSlugs": [
     "github-copilot-guide",
     "cursor-ide-guide",

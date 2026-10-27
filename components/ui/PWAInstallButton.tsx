@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { Download, Info, Share2 } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { useEffect, useState } from "react";
+import { Download, Info, Share2 } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface BeforeInstallPromptEvent extends Event {
   prompt: () => Promise<void>;
-  userChoice: Promise<{ outcome: 'accepted' | 'dismissed'; platform: string }>;
+  userChoice: Promise<{ outcome: "accepted" | "dismissed"; platform: string }>;
 }
 
 interface PWAInstallButtonProps {
@@ -21,14 +21,14 @@ interface InstallEnvironment {
 }
 
 function isStandaloneMode(): boolean {
-  if (typeof window === 'undefined') return false;
+  if (typeof window === "undefined") return false;
 
   const iosStandalone =
-    typeof window.navigator !== 'undefined' &&
-    'standalone' in window.navigator &&
+    typeof window.navigator !== "undefined" &&
+    "standalone" in window.navigator &&
     Boolean((window.navigator as Navigator & { standalone?: boolean }).standalone);
 
-  return window.matchMedia('(display-mode: standalone)').matches || iosStandalone;
+  return window.matchMedia("(display-mode: standalone)").matches || iosStandalone;
 }
 
 export function PWAInstallButton({ className }: PWAInstallButtonProps) {
@@ -46,7 +46,7 @@ export function PWAInstallButton({ className }: PWAInstallButtonProps) {
     const userAgent = window.navigator.userAgent;
 
     setEnvironment({
-      hasServiceWorkerSupport: 'serviceWorker' in window.navigator,
+      hasServiceWorkerSupport: "serviceWorker" in window.navigator,
       isIos: /iphone|ipad|ipod/i.test(userAgent),
       isMobile: /android|iphone|ipad|ipod/i.test(userAgent),
       isSecureContext: window.isSecureContext,
@@ -65,19 +65,19 @@ export function PWAInstallButton({ className }: PWAInstallButtonProps) {
       setShowHelp(false);
     };
 
-    const media = window.matchMedia('(display-mode: standalone)');
+    const media = window.matchMedia("(display-mode: standalone)");
     const onDisplayModeChange = (e: MediaQueryListEvent) => {
       if (e.matches) setInstalled(true);
     };
 
-    window.addEventListener('beforeinstallprompt', onBeforeInstallPrompt);
-    window.addEventListener('appinstalled', onAppInstalled);
-    media.addEventListener('change', onDisplayModeChange);
+    window.addEventListener("beforeinstallprompt", onBeforeInstallPrompt);
+    window.addEventListener("appinstalled", onAppInstalled);
+    media.addEventListener("change", onDisplayModeChange);
 
     return () => {
-      window.removeEventListener('beforeinstallprompt', onBeforeInstallPrompt);
-      window.removeEventListener('appinstalled', onAppInstalled);
-      media.removeEventListener('change', onDisplayModeChange);
+      window.removeEventListener("beforeinstallprompt", onBeforeInstallPrompt);
+      window.removeEventListener("appinstalled", onAppInstalled);
+      media.removeEventListener("change", onDisplayModeChange);
     };
   }, []);
 
@@ -85,29 +85,34 @@ export function PWAInstallButton({ className }: PWAInstallButtonProps) {
 
   const canInstallWithPrompt = deferredPrompt !== null;
   const buttonIcon = canInstallWithPrompt ? Download : environment.isIos ? Share2 : Info;
-  const isBlockedByInsecureContext = !canInstallWithPrompt && !environment.isIos && !environment.isSecureContext;
-  const isBlockedByBrowserSupport = !canInstallWithPrompt && !environment.isIos && environment.isSecureContext && !environment.hasServiceWorkerSupport;
+  const isBlockedByInsecureContext =
+    !canInstallWithPrompt && !environment.isIos && !environment.isSecureContext;
+  const isBlockedByBrowserSupport =
+    !canInstallWithPrompt &&
+    !environment.isIos &&
+    environment.isSecureContext &&
+    !environment.hasServiceWorkerSupport;
 
   const helpText = environment.isIos
-    ? 'On iPhone or iPad, tap Share in Safari, then choose Add to Home Screen.'
+    ? "On iPhone or iPad, tap Share in Safari, then choose Add to Home Screen."
     : !environment.isSecureContext
-      ? 'Install is blocked because this page is not running in a secure context. Open the site on HTTPS. If you are testing from a phone on a local network URL over HTTP, the browser will not allow PWA install.'
+      ? "Install is blocked because this page is not running in a secure context. Open the site on HTTPS. If you are testing from a phone on a local network URL over HTTP, the browser will not allow PWA install."
       : !environment.hasServiceWorkerSupport
-        ? 'This browser does not support the service worker features required for PWA install. Try Chrome, Edge, or Safari.'
-        : 'If no install prompt appears yet, open the browser menu and look for Install app or Add to Home screen after the page fully loads.';
+        ? "This browser does not support the service worker features required for PWA install. Try Chrome, Edge, or Safari."
+        : "If no install prompt appears yet, open the browser menu and look for Install app or Add to Home screen after the page fully loads.";
 
   const buttonLabel = isBlockedByInsecureContext
-    ? 'Install Requires HTTPS'
+    ? "Install Requires HTTPS"
     : isBlockedByBrowserSupport
-      ? 'Install Not Supported'
-      : 'Install App';
+      ? "Install Not Supported"
+      : "Install App";
 
   const handleInstall = async () => {
     if (deferredPrompt) {
       await deferredPrompt.prompt();
       const choice = await deferredPrompt.userChoice;
 
-      if (choice.outcome !== 'accepted') {
+      if (choice.outcome !== "accepted") {
         setDeferredPrompt(null);
       }
       return;
@@ -119,7 +124,7 @@ export function PWAInstallButton({ className }: PWAInstallButtonProps) {
   const Icon = buttonIcon;
 
   return (
-    <div className={cn('w-full', className)}>
+    <div className={cn("w-full", className)}>
       <button
         type="button"
         onClick={handleInstall}
@@ -131,11 +136,17 @@ export function PWAInstallButton({ className }: PWAInstallButtonProps) {
         {buttonLabel}
       </button>
 
-      {!canInstallWithPrompt && (showHelp || isBlockedByInsecureContext || isBlockedByBrowserSupport) && (
-        <p id="mobile-install-help" className="mt-2 rounded-md border border-border bg-canvas px-3 py-2 text-xs text-fg-muted" role="status" aria-live="polite">
-          {helpText}
-        </p>
-      )}
+      {!canInstallWithPrompt &&
+        (showHelp || isBlockedByInsecureContext || isBlockedByBrowserSupport) && (
+          <p
+            id="mobile-install-help"
+            className="mt-2 rounded-md border border-border bg-canvas px-3 py-2 text-xs text-fg-muted"
+            role="status"
+            aria-live="polite"
+          >
+            {helpText}
+          </p>
+        )}
     </div>
   );
 }

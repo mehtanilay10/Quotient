@@ -152,37 +152,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "MCP Host",
-          "Status",
-          "Notes"
-        ],
+        "headers": ["MCP Host", "Status", "Notes"],
         "rows": [
           [
             "Claude Desktop",
             "First-class support",
             "Built-in MCP client; config via settings.json"
           ],
-          [
-            "Cursor",
-            "Supported",
-            "MCP servers integrate with Cursor's agent mode"
-          ],
-          [
-            "OpenAI Agents SDK",
-            "Growing support",
-            "Supporting MCP as a tool source"
-          ],
-          [
-            "Continue.dev",
-            "Supported",
-            "VSCode extension with MCP integration"
-          ],
-          [
-            "LangChain",
-            "Experimental",
-            "MCP adapters in langchain-experimental"
-          ]
+          ["Cursor", "Supported", "MCP servers integrate with Cursor's agent mode"],
+          ["OpenAI Agents SDK", "Growing support", "Supporting MCP as a tool source"],
+          ["Continue.dev", "Supported", "VSCode extension with MCP integration"],
+          ["LangChain", "Experimental", "MCP adapters in langchain-experimental"]
         ]
       }
     },

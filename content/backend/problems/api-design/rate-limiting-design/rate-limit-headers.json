@@ -155,10 +155,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rate-limiting-algorithms",
-    "distributed-rate-limiting"
-  ],
+  "relatedLessons": ["rate-limiting-algorithms", "distributed-rate-limiting"],
   "furtherReading": [
     {
       "title": "RFC 6585: Additional HTTP Status Codes",

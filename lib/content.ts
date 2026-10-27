@@ -4,13 +4,13 @@
  * These helpers provide cross-content lookups and navigation utilities.
  */
 
-import { modules, getModulesByCourse } from '@/content/modules';
-import { lessons, getLessonsByModule } from '@/content/lessons';
-import { courses } from '@/content/courses';
-import { roadmaps } from '@/content/roadmaps';
-import { glossaryTerms } from '@/content/ai/glossary';
-import { promptTemplates } from '@/content/ai/prompts';
-import { computeHeadingAnchors } from '@/lib/utils';
+import { modules, getModulesByCourse } from "@/content/modules";
+import { lessons, getLessonsByModule } from "@/content/lessons";
+import { courses } from "@/content/courses";
+import { roadmaps } from "@/content/roadmaps";
+import { glossaryTerms } from "@/content/ai/glossary";
+import { promptTemplates } from "@/content/ai/prompts";
+import { computeHeadingAnchors } from "@/lib/utils";
 import {
   getCourseCategory,
   isProblemCourseSlug,
@@ -18,7 +18,7 @@ import {
   getSearchResultHref,
   getQuestionTechCategory,
   getQuestionTechName,
-} from '@/lib/content-hrefs';
+} from "@/lib/content-hrefs";
 import type {
   Module,
   Lesson,
@@ -33,7 +33,7 @@ import type {
   Roadmap,
   RoadmapStep,
   ResolvedRoadmapStep,
-} from '@/types';
+} from "@/types";
 
 // ── Re-exports for convenience ────────────────────────────────────────────────
 export { modules, lessons, courses };
@@ -41,10 +41,17 @@ export { modules, lessons, courses };
 // Href builders live in `lib/content-hrefs.ts` (content-free, safe to import
 // from client components) and are re-exported here so server code only ever
 // needs a single import.
-export { getCourseCategory, isProblemCourseSlug, getContentItemHref, getSearchResultHref, getQuestionTechCategory, getQuestionTechName };
+export {
+  getCourseCategory,
+  isProblemCourseSlug,
+  getContentItemHref,
+  getSearchResultHref,
+  getQuestionTechCategory,
+  getQuestionTechName,
+};
 
 /** Difficulty levels in the order they are presented to learners. */
-const DIFFICULTY_ORDER: Difficulty[] = ['beginner', 'intermediate', 'advanced'];
+const DIFFICULTY_ORDER: Difficulty[] = ["beginner", "intermediate", "advanced"];
 
 // ── Shared caches for derived content lookups ────────────────────────────────
 // Content is bundled statically (JSON imports), so it never changes during the
@@ -74,7 +81,12 @@ const allCoursesCache = memoizeNoArg(() =>
     // `problems`, `cheatsheet`, and `question-answers` are pseudo-courses that
     // reuse the course model but have their own dedicated route trees.
     // Including them here would generate duplicate `/courses/...` pages.
-    .filter((c) => c.category !== 'problems' && c.category !== 'cheatsheet' && c.category !== 'question-answers')
+    .filter(
+      (c) =>
+        c.category !== "problems" &&
+        c.category !== "cheatsheet" &&
+        c.category !== "question-answers"
+    )
     .sort((a, b) => a.order - b.order)
 );
 
@@ -99,14 +111,14 @@ export function getCourseBySlug(slug: string): Course | undefined {
  */
 export function isRegularCourse(course: Course): boolean {
   return (
-    course.category !== 'problems' &&
-    course.category !== 'cheatsheet' &&
-    course.category !== 'question-answers'
+    course.category !== "problems" &&
+    course.category !== "cheatsheet" &&
+    course.category !== "question-answers"
   );
 }
 
 const problemCoursesCache = memoizeNoArg(() =>
-  courses.filter((c) => c.category === 'problems').sort((a, b) => a.order - b.order)
+  courses.filter((c) => c.category === "problems").sort((a, b) => a.order - b.order)
 );
 
 export function getProblemCourses(): Course[] {
@@ -125,23 +137,28 @@ export interface CategoryMeta {
 
 /** Display metadata for known categories. Unknown categories fall back to a generic label. */
 export const CATEGORY_META: Record<string, CategoryMeta> = {
-  backend: { label: 'Backend', icon: '⚙️' },
-  frontend: { label: 'Frontend', icon: '⚛️' },
-  database: { label: 'Database', icon: '🗄️' },
-  ai: { label: 'AI', icon: '🤖' },
-  devops: { label: 'DevOps', icon: '🚀' },
-  architecture: { label: 'Architecture', icon: '🏗️' },
-  fundamentals: { label: 'Fundamentals', icon: '🌱' },
+  backend: { label: "Backend", icon: "⚙️" },
+  frontend: { label: "Frontend", icon: "⚛️" },
+  database: { label: "Database", icon: "🗄️" },
+  ai: { label: "AI", icon: "🤖" },
+  devops: { label: "DevOps", icon: "🚀" },
+  architecture: { label: "Architecture", icon: "🏗️" },
+  fundamentals: { label: "Fundamentals", icon: "🌱" },
 };
 
 /** Preferred display order; any other categories found in content are appended alphabetically. */
-const CATEGORY_ORDER = ['backend', 'frontend', 'database', 'ai', 'devops', 'architecture'];
+const CATEGORY_ORDER = ["backend", "frontend", "database", "ai", "devops", "architecture"];
 
 /** Categories that exist in content but are intentionally omitted from the navigation bar. */
-const HIDDEN_CATEGORIES = new Set(['fundamentals']);
+const HIDDEN_CATEGORIES = new Set(["fundamentals"]);
 
 export function getCategoryMeta(category: string): CategoryMeta {
-  return CATEGORY_META[category] ?? { label: category.charAt(0).toUpperCase() + category.slice(1), icon: '📚' };
+  return (
+    CATEGORY_META[category] ?? {
+      label: category.charAt(0).toUpperCase() + category.slice(1),
+      icon: "📚",
+    }
+  );
 }
 
 const subjectCoursesCache = memoizeNoArg(() => getAllCourses().filter((c) => !c.isQuestionAnswer));
@@ -159,7 +176,7 @@ export function getProblemCoursesByCategory(category: string): Course[] {
 }
 
 const cheatsheetModulesCache = memoizeNoArg(() =>
-  modules.filter((m) => m.courseSlug === 'cheatsheet').sort((a, b) => a.order - b.order)
+  modules.filter((m) => m.courseSlug === "cheatsheet").sort((a, b) => a.order - b.order)
 );
 
 export function getCheatsheetModules(): Module[] {
@@ -168,7 +185,7 @@ export function getCheatsheetModules(): Module[] {
 
 /** Collision-safe lookup: cheatsheet technology slugs can collide with course module slugs. */
 export function getCheatsheetModuleBySlug(slug: string): Module | undefined {
-  return modules.find((m) => m.slug === slug && m.courseSlug === 'cheatsheet');
+  return modules.find((m) => m.slug === slug && m.courseSlug === "cheatsheet");
 }
 
 export function getCheatsheetModulesByCategory(category: string): Module[] {
@@ -199,22 +216,22 @@ export function getRoadmaps(): Roadmap[] {
  * Returns `null` when the referenced content no longer exists.
  */
 export function resolveRoadmapStep(step: RoadmapStep): ResolvedRoadmapStep | null {
-  if (step.kind === 'link') {
+  if (step.kind === "link") {
     return {
-      kind: 'link',
+      kind: "link",
       title: step.title ?? step.ref,
-      description: '',
+      description: "",
       href: step.ref,
-      icon: '🔗',
+      icon: "🔗",
       note: step.note,
     };
   }
 
-  if (step.kind === 'cheatsheet') {
-    const mod = modules.find((m) => m.slug === step.ref && m.courseSlug === 'cheatsheet');
+  if (step.kind === "cheatsheet") {
+    const mod = modules.find((m) => m.slug === step.ref && m.courseSlug === "cheatsheet");
     if (!mod) return null;
     return {
-      kind: 'cheatsheet',
+      kind: "cheatsheet",
       title: mod.title,
       description: mod.description,
       href: `/${getCourseCategory(mod.slug)}/cheatsheets/${mod.slug}`,
@@ -223,16 +240,16 @@ export function resolveRoadmapStep(step: RoadmapStep): ResolvedRoadmapStep | nul
     };
   }
 
-  if (step.kind === 'questionAnswer') {
+  if (step.kind === "questionAnswer") {
     const tech = getQuestionTechnologies().find((t) => t.slug === step.ref);
     if (!tech) return null;
     return {
-      kind: 'questionAnswer',
+      kind: "questionAnswer",
       title: tech.title,
       description: tech.description,
       href: `/${getQuestionTechCategory(tech.slug)}/question-answers/${tech.slug}`,
       icon: tech.icon,
-      meta: `${tech.questionCount} question${tech.questionCount === 1 ? '' : 's'}`,
+      meta: `${tech.questionCount} question${tech.questionCount === 1 ? "" : "s"}`,
       note: step.note,
     };
   }
@@ -248,7 +265,7 @@ export function resolveRoadmapStep(step: RoadmapStep): ResolvedRoadmapStep | nul
     description: course.description,
     href: getContentItemHref(step.ref),
     icon: course.icon,
-    meta: `${lessonCount} lesson${lessonCount === 1 ? '' : 's'}`,
+    meta: `${lessonCount} lesson${lessonCount === 1 ? "" : "s"}`,
     note: step.note,
   };
 }
@@ -294,20 +311,42 @@ function computeNavigationCategories(): NavCategory[] {
     const roadmap = roadmapMap.get(key);
     const sections: NavSection[] = [
       ...(roadmap
-        ? [{ label: 'Roadmap', href: `/${key}/roadmap`, count: roadmap.stages.length } as NavSection]
+        ? [
+            {
+              label: "Roadmap",
+              href: `/${key}/roadmap`,
+              count: roadmap.stages.length,
+            } as NavSection,
+          ]
         : []),
-      { label: 'Courses', href: `/${key}/courses`, count: courseList.filter((c) => getCourseCategory(c.slug) === key).length },
-      { label: 'Problems', href: `/${key}/problems`, count: problemList.filter((c) => getCourseCategory(c.slug) === key).length },
-      { label: 'Cheat Sheets', href: `/${key}/cheatsheets`, count: cheatsheetList.filter((m) => getCourseCategory(m.slug) === key).length },
-      { label: 'Question Answers', href: `/${key}/question-answers`, count: questionList.filter((t) => t.category === key).length },
+      {
+        label: "Courses",
+        href: `/${key}/courses`,
+        count: courseList.filter((c) => getCourseCategory(c.slug) === key).length,
+      },
+      {
+        label: "Problems",
+        href: `/${key}/problems`,
+        count: problemList.filter((c) => getCourseCategory(c.slug) === key).length,
+      },
+      {
+        label: "Cheat Sheets",
+        href: `/${key}/cheatsheets`,
+        count: cheatsheetList.filter((m) => getCourseCategory(m.slug) === key).length,
+      },
+      {
+        label: "Question Answers",
+        href: `/${key}/question-answers`,
+        count: questionList.filter((t) => t.category === key).length,
+      },
     ].filter((s) => s.count > 0);
 
     // Site-wide AI resources hang off the AI category so they show up in the
     // nav bar dropdown, the mobile accordion, and the footer category list.
-    if (key === 'ai') {
+    if (key === "ai") {
       sections.push(
-        { label: 'Glossary', href: '/ai/glossary', count: glossaryTerms.length },
-        { label: 'Prompt Templates', href: '/ai/prompts', count: promptTemplates.length }
+        { label: "Glossary", href: "/ai/glossary", count: glossaryTerms.length },
+        { label: "Prompt Templates", href: "/ai/prompts", count: promptTemplates.length }
       );
     }
 
@@ -389,7 +428,7 @@ export function getAllLessons(): Lesson[] {
 const lessonsForModuleCache = new Map<string, Lesson[]>();
 
 export function getLessonsForModule(moduleSlug: string, courseSlug?: string): Lesson[] {
-  const key = `${courseSlug ?? ''} ${moduleSlug}`;
+  const key = `${courseSlug ?? ""} ${moduleSlug}`;
   const cached = lessonsForModuleCache.get(key);
   if (cached) return cached;
   const result = getLessonsByModule(moduleSlug, courseSlug);
@@ -409,7 +448,11 @@ function lessonKey(courseSlug: string, moduleSlug: string, slug: string): string
   return `${courseSlug}|${moduleSlug}|${slug}`;
 }
 
-export function getLessonBySlug(slug: string, courseSlug?: string, moduleSlug?: string): Lesson | undefined {
+export function getLessonBySlug(
+  slug: string,
+  courseSlug?: string,
+  moduleSlug?: string
+): Lesson | undefined {
   if (courseSlug && moduleSlug) {
     const key = lessonKey(courseSlug, moduleSlug, slug);
     const cached = lessonByModuleAndSlugIndex.get(key);
@@ -429,7 +472,11 @@ export function getLessonBySlug(slug: string, courseSlug?: string, moduleSlug?: 
     const found =
       getLessonsForCourse(courseSlug).find((l) => l.slug === slug) ??
       lessons.find((l) => l.courseSlug === courseSlug && l.slug === slug);
-    if (found) lessonByModuleAndSlugIndex.set(lessonKey(found.courseSlug, found.moduleSlug, found.slug), found);
+    if (found)
+      lessonByModuleAndSlugIndex.set(
+        lessonKey(found.courseSlug, found.moduleSlug, found.slug),
+        found
+      );
     return found;
   }
 
@@ -503,7 +550,7 @@ export function extractTOC(blocks: ContentBlock[]): TocEntry[] {
   const headings: { index: number; block: { text?: string; anchor?: string } }[] = [];
   const levels: (2 | 3 | 4)[] = [];
   blocks.forEach((block, index) => {
-    if (block.type !== 'heading') return;
+    if (block.type !== "heading") return;
     const data = (block as { data?: { level: 2 | 3 | 4; text: string; anchor?: string } }).data;
     const level = data?.level ?? (block as { level?: 2 | 3 | 4 }).level;
     const text = data?.text ?? (block as { text?: string }).text;
@@ -577,8 +624,8 @@ function fuzzyTolerance(token: string): number {
 function containsWord(text: string, token: string): boolean {
   const idx = text.indexOf(token);
   if (idx === -1) return false;
-  const before = idx === 0 ? '' : text[idx - 1];
-  const after = idx + token.length >= text.length ? '' : text[idx + token.length];
+  const before = idx === 0 ? "" : text[idx - 1];
+  const after = idx + token.length >= text.length ? "" : text[idx + token.length];
   const isWordChar = (c: string) => /[a-z0-9]/.test(c);
   return !isWordChar(before) && !isWordChar(after);
 }
@@ -655,8 +702,8 @@ function buildSnippet(description: string, tokens: string[]): string | undefined
   const start = Math.max(0, matchIndex === -1 ? 0 : matchIndex - 40);
   const end = Math.min(description.length, start + 140);
   const snippet = description.slice(start, end).trim();
-  const prefix = start > 0 ? '…' : '';
-  const suffix = end < description.length ? '…' : '';
+  const prefix = start > 0 ? "…" : "";
+  const suffix = end < description.length ? "…" : "";
   // Guard against `matchLength` being unused when there is no match.
   void matchLength;
   return `${prefix}${snippet}${suffix}`;
@@ -670,23 +717,19 @@ export function searchAll(query: string): SearchResult[] {
 
   const scored: { result: SearchResult; score: number }[] = [];
 
-  const push = (
-    result: SearchResult,
-    titleScore: number,
-    descScore: number,
-    tagScore: number
-  ) => {
+  const push = (result: SearchResult, titleScore: number, descScore: number, tagScore: number) => {
     const score = titleScore + descScore + tagScore;
     if (score <= 0) return;
     // Title matches always outrank description/tag-only matches.
-    const matchField: SearchResult['matchField'] =
-      titleScore > 0 ? 'title' : tagScore > 0 ? 'tag' : 'description';
+    const matchField: SearchResult["matchField"] =
+      titleScore > 0 ? "title" : tagScore > 0 ? "tag" : "description";
     scored.push({
       result: {
         ...result,
         score,
         matchField,
-        snippet: matchField === 'description' ? buildSnippet(result.description, tokens) : undefined,
+        snippet:
+          matchField === "description" ? buildSnippet(result.description, tokens) : undefined,
       },
       score,
     });
@@ -697,10 +740,10 @@ export function searchAll(query: string): SearchResult[] {
   for (const lesson of lessons) {
     const title = scoreField(lesson.title, tokens, 3);
     const desc = scoreField(lesson.description, tokens, 1);
-    const tag = scoreField((lesson.tags ?? []).join(' '), tokens, 2);
+    const tag = scoreField((lesson.tags ?? []).join(" "), tokens, 2);
     push(
       {
-        type: 'lesson',
+        type: "lesson",
         slug: lesson.slug,
         title: lesson.title,
         description: lesson.description,
@@ -720,10 +763,10 @@ export function searchAll(query: string): SearchResult[] {
   for (const mod of modules) {
     const title = scoreField(mod.title, tokens, 3);
     const desc = scoreField(mod.description, tokens, 1);
-    const tag = scoreField((mod.tags ?? []).join(' '), tokens, 2);
+    const tag = scoreField((mod.tags ?? []).join(" "), tokens, 2);
     push(
       {
-        type: 'module',
+        type: "module",
         slug: mod.slug,
         title: mod.title,
         description: mod.description,
@@ -742,12 +785,12 @@ export function searchAll(query: string): SearchResult[] {
     // The cheatsheet and question-answers "courses" have no cross-category
     // landing page; their individual cheat sheets and question topics are
     // surfaced as module results instead.
-    if (course.slug === 'cheatsheet' || course.slug === 'question-answers') continue;
+    if (course.slug === "cheatsheet" || course.slug === "question-answers") continue;
     const title = scoreField(course.title, tokens, 3);
     const desc = scoreField(course.description, tokens, 1);
     push(
       {
-        type: 'course',
+        type: "course",
         slug: course.slug,
         title: course.title,
         description: course.description,
@@ -773,13 +816,16 @@ export function getCourseStats() {
   // than reporting overlapping totals.
   const courseLessons = getSubjectCourses().flatMap((c) => getLessonsForCourse(c.slug));
   const totalLessons = courseLessons.length;
-  const totalModules = getSubjectCourses().reduce((sum, c) => sum + getModulesForCourse(c.slug).length, 0);
+  const totalModules = getSubjectCourses().reduce(
+    (sum, c) => sum + getModulesForCourse(c.slug).length,
+    0
+  );
   const totalMinutes = courseLessons.reduce((sum, l) => sum + l.estimatedMinutes, 0);
   const totalProblems = getProblemCourses().reduce(
     (sum, c) => sum + getLessonsForCourse(c.slug).length,
     0
   );
-  const totalQuestions = lessons.filter((l) => l.courseSlug === 'question-answers').length;
+  const totalQuestions = lessons.filter((l) => l.courseSlug === "question-answers").length;
   const totalCheatsheets = getCheatsheetModules().length;
 
   return {
@@ -815,7 +861,7 @@ export interface QuestionTechnology {
 }
 
 const questionModulesCache = memoizeNoArg(() =>
-  modules.filter((m) => m.courseSlug === 'question-answers')
+  modules.filter((m) => m.courseSlug === "question-answers")
 );
 
 /** Sorts category keys by the canonical category order, then alphabetically. */
@@ -851,11 +897,11 @@ export function getQuestionTechnologies(category?: string): QuestionTechnology[]
       title: mod.title,
       description: mod.description,
       icon: mod.icon,
-      category: getQuestionTechCategory(mod.slug) ?? '',
+      category: getQuestionTechCategory(mod.slug) ?? "",
       difficulty: mod.difficulty,
       estimatedHours: mod.estimatedHours,
       order: mod.order,
-      questionCount: getLessonsForModule(mod.slug, 'question-answers').length,
+      questionCount: getLessonsForModule(mod.slug, "question-answers").length,
     }));
 
   if (category) {
@@ -869,7 +915,7 @@ export function getQuestionTechnologies(category?: string): QuestionTechnology[]
 /** Question answers for a technology, ordered by difficulty then position. */
 export function getQuestionAnswers(technology: string, category?: string): Lesson[] {
   return lessons
-    .filter((l) => l.courseSlug === 'question-answers' && l.moduleSlug === technology)
+    .filter((l) => l.courseSlug === "question-answers" && l.moduleSlug === technology)
     .filter((l) => !category || getQuestionTechCategory(l.moduleSlug) === category)
     .sort((a, b) => {
       return (a.order || 0) - (b.order || 0);

@@ -8,11 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "data-sync",
-    "cdc",
-    "replication"
-  ],
+  "tags": ["data-sync", "cdc", "replication"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,37 +56,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Latency",
-          "Complexity",
-          "Use Case"
-        ],
+        "headers": ["Strategy", "Latency", "Complexity", "Use Case"],
         "rows": [
-          [
-            "CDC",
-            "Near real-time",
-            "Medium",
-            "Replication, search index"
-          ],
-          [
-            "Event-driven",
-            "Real-time",
-            "Medium",
-            "Cross-service updates"
-          ],
-          [
-            "Batch",
-            "Minutes/hours",
-            "Low",
-            "Analytics, reporting"
-          ],
-          [
-            "Dual write",
-            "Real-time",
-            "High (risky)",
-            "Avoid if possible"
-          ]
+          ["CDC", "Near real-time", "Medium", "Replication, search index"],
+          ["Event-driven", "Real-time", "Medium", "Cross-service updates"],
+          ["Batch", "Minutes/hours", "Low", "Analytics, reporting"],
+          ["Dual write", "Real-time", "High (risky)", "Avoid if possible"]
         ]
       }
     },

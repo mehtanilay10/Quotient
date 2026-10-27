@@ -130,7 +130,10 @@
             "title": "PostgreSQL with sequences",
             "description": "Relational database with an auto-incrementing sequence per conversation.",
             "pros": ["ACID guarantees", "Rich query support", "Familiar tooling"],
-            "cons": ["Sequences do not distribute across shards", "Write throughput limited by disk"]
+            "cons": [
+              "Sequences do not distribute across shards",
+              "Write throughput limited by disk"
+            ]
           },
           {
             "title": "Cassandra / ScyllaDB",
@@ -142,7 +145,11 @@
             "title": "Event store (EventStoreDB)",
             "description": "Database designed specifically for event-sourced systems.",
             "pros": ["Built-in event ordering", "Built-in projections", "Optimized for append"],
-            "cons": ["Niche ecosystem", "Steeper learning curve", "Less flexible for ad-hoc queries"]
+            "cons": [
+              "Niche ecosystem",
+              "Steeper learning curve",
+              "Less flexible for ad-hoc queries"
+            ]
           }
         ]
       }

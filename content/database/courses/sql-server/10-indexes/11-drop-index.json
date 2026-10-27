@@ -7,11 +7,7 @@
   "order": 11,
   "difficulty": "beginner",
   "estimatedMinutes": 26,
-  "tags": [
-    "drop-index",
-    "remove-index",
-    "cleanup"
-  ],
+  "tags": ["drop-index", "remove-index", "cleanup"],
   "blocks": [
     {
       "type": "heading",

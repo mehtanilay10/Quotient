@@ -8,12 +8,7 @@
   "order": 9,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "docker",
-    "security",
-    "supply-chain",
-    "vulnerability-scanning"
-  ],
+  "tags": ["docker", "security", "supply-chain", "vulnerability-scanning"],
   "blocks": [
     {
       "type": "paragraph",

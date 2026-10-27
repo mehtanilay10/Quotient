@@ -58,12 +58,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Service",
-          "Typical RTO",
-          "Typical RPO",
-          "Configuration"
-        ],
+        "headers": ["Service", "Typical RTO", "Typical RPO", "Configuration"],
         "rows": [
           [
             "Azure SQL (active geo-replication)",
@@ -149,10 +144,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sli-slo-and-sla-in-azure-workloads",
-    "disaster-recovery-planning"
-  ],
+  "relatedLessons": ["sli-slo-and-sla-in-azure-workloads", "disaster-recovery-planning"],
   "furtherReading": [
     {
       "title": "Azure disaster recovery guides",

@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 33,
-  "tags": [
-    "linq",
-    "groupjoin",
-    "left outer join",
-    "joining"
-  ],
+  "tags": ["linq", "groupjoin", "left outer join", "joining"],
   "blocks": [
     {
       "type": "paragraph",
@@ -122,8 +117,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "join-operator"
-  ],
+  "relatedLessons": ["join-operator"],
   "courseSlug": "linq"
 }

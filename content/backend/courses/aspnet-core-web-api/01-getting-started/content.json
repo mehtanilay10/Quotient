@@ -6,12 +6,7 @@
   "title": "Getting Started",
   "description": "Learn the fundamentals of ASP.NET Core Web API.",
   "order": 1,
-  "lessonSlugs": [
-    "what-is-web-api",
-    "creating-project",
-    "project-structure",
-    "first-endpoint"
-  ],
+  "lessonSlugs": ["what-is-web-api", "creating-project", "project-structure", "first-endpoint"],
   "tags": [],
   "difficulty": "beginner",
   "estimatedHours": 2.5

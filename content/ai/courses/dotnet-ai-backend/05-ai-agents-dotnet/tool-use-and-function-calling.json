@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 26,
-  "tags": [
-    "tool-calling",
-    "functions",
-    "openai",
-    "semantic-kernel"
-  ],
+  "tags": ["tool-calling", "functions", "openai", "semantic-kernel"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,10 +77,7 @@
       "takeaway": "Invest in tool descriptions and validation first. The loop will be more reliable when tools are easy to use correctly."
     }
   ],
-  "relatedLessons": [
-    "semantic-kernel-agents-and-planners",
-    "human-in-the-loop-and-approval-flows"
-  ],
+  "relatedLessons": ["semantic-kernel-agents-and-planners", "human-in-the-loop-and-approval-flows"],
   "technology": null,
   "furtherReading": [
     {

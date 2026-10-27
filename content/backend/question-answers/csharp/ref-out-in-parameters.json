@@ -6,10 +6,7 @@
   "description": "Passing by reference safely: mutation, mandatory assignment, defensive copies, and modern ref-like alternatives.",
   "order": 43,
   "difficulty": "intermediate",
-  "tags": [
-    "C#",
-    "intermediate"
-  ],
+  "tags": ["C#", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

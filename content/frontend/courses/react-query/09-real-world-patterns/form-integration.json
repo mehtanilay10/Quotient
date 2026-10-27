@@ -8,15 +8,8 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "forms",
-    "react-hook-form",
-    "integration",
-    "validation"
-  ],
-  "prerequisites": [
-    "mutations"
-  ],
+  "tags": ["forms", "react-hook-form", "integration", "validation"],
+  "prerequisites": ["mutations"],
   "blocks": [
     {
       "type": "paragraph",

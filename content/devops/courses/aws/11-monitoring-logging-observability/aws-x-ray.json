@@ -8,14 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "monitoring",
-    "x-ray",
-    "tracing",
-    "distributed-systems",
-    "debugging"
-  ],
+  "tags": ["aws", "monitoring", "x-ray", "tracing", "distributed-systems", "debugging"],
   "blocks": [
     {
       "type": "paragraph",

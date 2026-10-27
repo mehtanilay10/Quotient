@@ -9,11 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "🟢",
-  "tags": [
-    "redis",
-    "intermediate",
-    "caching"
-  ],
+  "tags": ["redis", "intermediate", "caching"],
   "lessonSlugs": [
     "node-cache",
     "ioredis",
@@ -22,10 +18,7 @@
     "connection-pooling",
     "cache-middleware"
   ],
-  "prerequisites": [
-    "redis-fundamentals",
-    "caching-patterns"
-  ],
+  "prerequisites": ["redis-fundamentals", "caching-patterns"],
   "whatYouLearn": [
     "Use node-cache for in-process caching",
     "Connect to Redis with ioredis",

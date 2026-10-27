@@ -1,9 +1,9 @@
-import type { Metadata } from 'next';
-import { DangerZone } from './DangerZone';
+import type { Metadata } from "next";
+import { DangerZone } from "./DangerZone";
 
 export const metadata: Metadata = {
-  title: 'Danger Zone | Quotient',
-  description: 'Permanently delete your progress, bookmarks, notes, and offline queue.',
+  title: "Danger Zone | Quotient",
+  description: "Permanently delete your progress, bookmarks, notes, and offline queue.",
 };
 
 /**

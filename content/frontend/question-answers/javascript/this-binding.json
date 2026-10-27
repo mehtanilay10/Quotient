@@ -6,11 +6,7 @@
   "description": "The four binding rules — default, implicit, explicit, and new — plus arrow functions and why this behaves differently from other languages.",
   "order": 13,
   "difficulty": "intermediate",
-  "tags": [
-    "javascript",
-    "functions",
-    "intermediate"
-  ],
+  "tags": ["javascript", "functions", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -117,11 +113,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "js-i04",
-    "js-a02",
-    "js-i01"
-  ],
+  "relatedLessons": ["js-i04", "js-a02", "js-i01"],
   "furtherReading": [
     {
       "title": "this — MDN",

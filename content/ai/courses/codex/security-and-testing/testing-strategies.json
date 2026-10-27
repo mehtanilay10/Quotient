@@ -7,14 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "testing",
-    "strategy",
-    "unit-tests",
-    "integration",
-    "e2e",
-    "security"
-  ],
+  "tags": ["testing", "strategy", "unit-tests", "integration", "e2e", "security"],
   "blocks": [
     {
       "type": "heading",
@@ -200,10 +193,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ai-security-risks",
-    "writing-tests-with-ai"
-  ],
+  "relatedLessons": ["ai-security-risks", "writing-tests-with-ai"],
   "relatedGlossaryTerms": [],
   "courseSlug": "codex"
 }

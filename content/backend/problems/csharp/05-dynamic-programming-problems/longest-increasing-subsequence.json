@@ -8,12 +8,7 @@
   "order": 16,
   "difficulty": "medium",
   "estimatedMinutes": 16,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "binary-search",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "binary-search", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -74,32 +69,16 @@
           {
             "title": "DP O(n\u00b2)",
             "description": "dp[i] = longest ending at i",
-            "pros": [
-              "Simple",
-              "Can reconstruct LIS"
-            ],
-            "cons": [
-              "O(n\u00b2) time"
-            ],
-            "tags": [
-              "O(n\u00b2) time",
-              "O(n) space"
-            ]
+            "pros": ["Simple", "Can reconstruct LIS"],
+            "cons": ["O(n\u00b2) time"],
+            "tags": ["O(n\u00b2) time", "O(n) space"]
           },
           {
             "title": "Patience Sorting",
             "description": "tails list + binary search",
-            "pros": [
-              "O(n log n) time"
-            ],
-            "cons": [
-              "Reconstruction harder"
-            ],
-            "tags": [
-              "O(n log n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["O(n log n) time"],
+            "cons": ["Reconstruction harder"],
+            "tags": ["O(n log n) time", "O(n) space", "Recommended"]
           }
         ]
       }

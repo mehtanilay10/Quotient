@@ -92,11 +92,23 @@
         "headers": ["Scenario", "Best Choice", "Why"],
         "rows": [
           ["Corporate website or blog", "App Service", "Always-on, simple deployment, cheap"],
-          ["REST API with steady traffic", "App Service", "Predictable performance and easy scaling"],
-          ["Background job triggered by a queue", "Functions", "Runs only when needed, scales automatically"],
+          [
+            "REST API with steady traffic",
+            "App Service",
+            "Predictable performance and easy scaling"
+          ],
+          [
+            "Background job triggered by a queue",
+            "Functions",
+            "Runs only when needed, scales automatically"
+          ],
           ["Scheduled task or cron job", "Functions", "Timer trigger handles schedules natively"],
           ["Image processing on upload", "Functions", "Blob trigger reacts instantly to new files"],
-          ["Microservice already in Docker", "Container Apps", "Use your existing containers with managed scaling"],
+          [
+            "Microservice already in Docker",
+            "Container Apps",
+            "Use your existing containers with managed scaling"
+          ],
           ["API with many small services", "Container Apps", "Service mesh and ingress built in"],
           ["Prototype or hackathon project", "Functions", "Fastest to deploy, lowest initial cost"]
         ]

@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "security",
-    "roles",
-    "privileges",
-    "rbac",
-    "grant-revoke"
-  ],
+  "tags": ["security", "roles", "privileges", "rbac", "grant-revoke"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,8 +74,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "row-level-security",
-    "auditing"
-  ]
+  "relatedLessons": ["row-level-security", "auditing"]
 }

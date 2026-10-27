@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 8,
-  "tags": [
-    "observer",
-    "behavioral",
-    "csharp",
-    "events"
-  ],
+  "tags": ["observer", "behavioral", "csharp", "events"],
   "blocks": [
     {
       "type": "paragraph",

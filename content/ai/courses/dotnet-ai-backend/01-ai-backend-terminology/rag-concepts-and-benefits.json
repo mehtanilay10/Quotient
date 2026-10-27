@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "rag",
-    "concepts",
-    "private-data",
-    "fine-tuning"
-  ],
+  "tags": ["rag", "concepts", "private-data", "fine-tuning"],
   "blocks": [
     {
       "type": "paragraph",
@@ -36,24 +31,13 @@
             "No retraining required",
             "Easier to audit and update"
           ],
-          "cons": [
-            "Depends on retrieval quality",
-            "Adds latency",
-            "More moving parts"
-          ]
+          "cons": ["Depends on retrieval quality", "Adds latency", "More moving parts"]
         },
         {
           "title": "Fine-tuning",
           "description": "Train the model on domain-specific examples before serving it.",
-          "pros": [
-            "Deeply adapts model behavior",
-            "Can reduce prompt length"
-          ],
-          "cons": [
-            "Expensive to retrain",
-            "Hard to keep up with changing data",
-            "Less transparent"
-          ]
+          "pros": ["Deeply adapts model behavior", "Can reduce prompt length"],
+          "cons": ["Expensive to retrain", "Hard to keep up with changing data", "Less transparent"]
         }
       ]
     },
@@ -98,10 +82,7 @@
       "expectedOutcome": "You should have a rough RAG design for a real dataset, including candidate chunk size and where metadata filters would help."
     }
   ],
-  "relatedLessons": [
-    "rag-architecture-overview",
-    "chunking-and-embedding-documents"
-  ],
+  "relatedLessons": ["rag-architecture-overview", "chunking-and-embedding-documents"],
   "technology": null,
   "furtherReading": [
     {

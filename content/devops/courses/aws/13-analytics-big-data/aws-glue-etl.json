@@ -8,14 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "analytics",
-    "glue",
-    "etl",
-    "spark",
-    "data-catalog"
-  ],
+  "tags": ["aws", "analytics", "glue", "etl", "spark", "data-catalog"],
   "blocks": [
     {
       "type": "paragraph",

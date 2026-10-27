@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "database",
-    "query-cache",
-    "buffer-pool",
-    "performance",
-    "sql"
-  ],
+  "tags": ["database", "query-cache", "buffer-pool", "performance", "sql"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,19 +74,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Location",
-          "Best For",
-          "Consistency"
-        ],
+        "headers": ["Pattern", "Location", "Best For", "Consistency"],
         "rows": [
-          [
-            "Buffer pool",
-            "Inside database",
-            "Hot data pages",
-            "Strongly consistent"
-          ],
+          ["Buffer pool", "Inside database", "Hot data pages", "Strongly consistent"],
           [
             "Query cache",
             "Inside or outside DB",

@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "ef-core",
-    "execute-update",
-    "bulk-operations",
-    "performance"
-  ],
+  "tags": ["ef-core", "execute-update", "bulk-operations", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -96,9 +91,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "execute-delete-in-entity-framework-core",
-    "inheritance-strategy-in-ef-core"
-  ],
+  "relatedLessons": ["execute-delete-in-entity-framework-core", "inheritance-strategy-in-ef-core"],
   "courseSlug": "ef-core"
 }

@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 10,
-  "tags": [
-    "nextjs",
-    "app-router",
-    "pages-router",
-    "apollo-client",
-    "integration"
-  ],
+  "tags": ["nextjs", "app-router", "pages-router", "apollo-client", "integration"],
   "blocks": [
     {
       "type": "heading",
@@ -46,7 +40,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "what-is-apollo"
-  ]
+  "prerequisites": ["what-is-apollo"]
 }

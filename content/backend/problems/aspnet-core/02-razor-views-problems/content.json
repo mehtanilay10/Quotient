@@ -9,14 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 8,
   "icon": "📄",
-  "tags": [
-    "aspnet-core",
-    "razor",
-    "views",
-    "layout",
-    "tag-helpers",
-    "view-components"
-  ],
+  "tags": ["aspnet-core", "razor", "views", "layout", "tag-helpers", "view-components"],
   "lessonSlugs": [
     "razor-syntax-basics",
     "layouts-and-partials",

@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "backend",
-    "database",
-    "sql-server",
-    "concurrency"
-  ],
+  "tags": ["backend", "database", "sql-server", "concurrency"],
   "blocks": [
     {
       "type": "paragraph",

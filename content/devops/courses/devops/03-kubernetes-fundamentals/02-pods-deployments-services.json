@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "kubernetes",
-    "pods",
-    "deployments",
-    "services"
-  ],
+  "tags": ["kubernetes", "pods", "deployments", "services"],
   "blocks": [
     {
       "type": "heading",
@@ -112,13 +107,8 @@
           {
             "title": "Pod",
             "description": "The smallest deployable unit, running one or more containers.",
-            "tags": [
-              "Ephemeral"
-            ],
-            "pros": [
-              "Simple and lightweight",
-              "Direct container access"
-            ],
+            "tags": ["Ephemeral"],
+            "pros": ["Simple and lightweight", "Direct container access"],
             "cons": [
               "No self-healing",
               "No rolling updates",
@@ -128,18 +118,9 @@
           {
             "title": "Deployment",
             "description": "A higher-level controller that manages ReplicaSets and Pods.",
-            "tags": [
-              "Production-ready"
-            ],
-            "pros": [
-              "Self-healing",
-              "Rolling updates and rollbacks",
-              "Declarative desired state"
-            ],
-            "cons": [
-              "More YAML to manage",
-              "Additional abstraction layer"
-            ]
+            "tags": ["Production-ready"],
+            "pros": ["Self-healing", "Rolling updates and rollbacks", "Declarative desired state"],
+            "cons": ["More YAML to manage", "Additional abstraction layer"]
           }
         ]
       }
@@ -169,27 +150,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "How it's accessed",
-          "Typical use"
-        ],
+        "headers": ["Type", "How it's accessed", "Typical use"],
         "rows": [
-          [
-            "ClusterIP",
-            "Internal cluster IP only",
-            "Communication between app components"
-          ],
-          [
-            "NodePort",
-            "Static port on each node's IP",
-            "Quick testing without a load balancer"
-          ],
-          [
-            "LoadBalancer",
-            "External load balancer (cloud provider)",
-            "Production-facing services"
-          ],
+          ["ClusterIP", "Internal cluster IP only", "Communication between app components"],
+          ["NodePort", "Static port on each node's IP", "Quick testing without a load balancer"],
+          ["LoadBalancer", "External load balancer (cloud provider)", "Production-facing services"],
           [
             "ExternalName",
             "Maps to an external DNS name",

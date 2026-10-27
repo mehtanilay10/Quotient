@@ -6,17 +6,10 @@
   "fullDefinition": "Retrieval-Augmented Generation (RAG) is an architecture that combines a retrieval system (like a vector database search) with a generative AI model. When you ask a question, the system first retrieves relevant documents from a knowledge base, then feeds those documents to the LLM as context. This significantly reduces hallucinations and allows AI to answer questions about private or up-to-date information.",
   "category": "architecture",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "embedding",
-    "vector-database",
-    "large-language-model",
-    "context-window"
-  ],
+  "relatedTerms": ["embedding", "vector-database", "large-language-model", "context-window"],
   "examples": [
     "Asking your company AI bot a question — it searches internal docs first, then answers",
     "A customer support bot that retrieves product manuals before responding"
   ],
-  "alsoKnownAs": [
-    "Retrieval-Augmented Generation"
-  ]
+  "alsoKnownAs": ["Retrieval-Augmented Generation"]
 }

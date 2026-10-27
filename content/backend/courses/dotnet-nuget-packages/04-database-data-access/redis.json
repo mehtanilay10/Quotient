@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "redis",
-    "cache",
-    "session",
-    "in-memory"
-  ],
+  "tags": ["redis", "cache", "session", "in-memory"],
   "blocks": [
     {
       "type": "heading",

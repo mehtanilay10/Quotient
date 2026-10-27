@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "CASE",
-    "conditional",
-    "expression",
-    "if-else"
-  ],
+  "tags": ["CASE", "conditional", "expression", "if-else"],
   "blocks": [
     {
       "type": "heading",

@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "orderby",
-    "orderbydescending",
-    "sorting"
-  ],
+  "tags": ["linq", "orderby", "orderbydescending", "sorting"],
   "blocks": [
     {
       "type": "paragraph",
@@ -23,31 +18,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Sorting Operator",
-          "Description"
-        ],
+        "headers": ["Sorting Operator", "Description"],
         "rows": [
-          [
-            "OrderBy",
-            "Sorts elements in ascending or descending order"
-          ],
-          [
-            "OrderByDescending",
-            "Sorts elements in descending order (method syntax only)"
-          ],
-          [
-            "ThenBy",
-            "Secondary sorting in ascending order (method syntax only)"
-          ],
-          [
-            "ThenByDescending",
-            "Secondary sorting in descending order (method syntax only)"
-          ],
-          [
-            "Reverse",
-            "Reverses the order of elements (method syntax only)"
-          ]
+          ["OrderBy", "Sorts elements in ascending or descending order"],
+          ["OrderByDescending", "Sorts elements in descending order (method syntax only)"],
+          ["ThenBy", "Secondary sorting in ascending order (method syntax only)"],
+          ["ThenByDescending", "Secondary sorting in descending order (method syntax only)"],
+          ["Reverse", "Reverses the order of elements (method syntax only)"]
         ]
       }
     },
@@ -170,9 +147,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "thenby-thenbydescending",
-    "grouping-operator-groupby-tolookup"
-  ],
+  "relatedLessons": ["thenby-thenbydescending", "grouping-operator-groupby-tolookup"],
   "courseSlug": "linq"
 }

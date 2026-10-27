@@ -7,11 +7,7 @@
   "order": 17,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "synonym",
-    "alias",
-    "database-object"
-  ],
+  "tags": ["synonym", "alias", "database-object"],
   "blocks": [
     {
       "type": "heading",

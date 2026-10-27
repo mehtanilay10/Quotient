@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "idempotency",
-    "consumer-design",
-    "duplicate-messages",
-    "resilience"
-  ],
+  "tags": ["idempotency", "consumer-design", "duplicate-messages", "resilience"],
   "blocks": [
     {
       "type": "paragraph",

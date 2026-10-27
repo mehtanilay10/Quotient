@@ -9,11 +9,7 @@
   "estimatedHours": 0.5,
   "icon": "🔬",
   "tags": ["testing", "patterns", "advanced"],
-  "lessonSlugs": [
-    "mock-service-worker",
-    "render-optimization",
-    "visual-regression"
-  ],
+  "lessonSlugs": ["mock-service-worker", "render-optimization", "visual-regression"],
   "whatYouLearn": [
     "Mock API requests with MSW",
     "Optimize test rendering",

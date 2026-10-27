@@ -113,14 +113,19 @@
       }
     }
   ],
-  "relatedLessons": [
-    "large-repositories",
-    "git-best-practices",
-    "enterprise-git"
-  ],
+  "relatedLessons": ["large-repositories", "git-best-practices", "enterprise-git"],
   "furtherReading": [
-    { "title": "Git submodules (git-scm.com)", "url": "https://git-scm.com/book/en/v2/Git-Tools-Submodules" },
-    { "title": "Git subtree (git-scm.com)", "url": "https://git-scm.com/book/en/v2/Git-Tools-Subtree" },
-    { "title": "Partial clone and sparse checkout (git-scm.com)", "url": "https://git-scm.com/docs/git-sparse-checkout" }
+    {
+      "title": "Git submodules (git-scm.com)",
+      "url": "https://git-scm.com/book/en/v2/Git-Tools-Submodules"
+    },
+    {
+      "title": "Git subtree (git-scm.com)",
+      "url": "https://git-scm.com/book/en/v2/Git-Tools-Subtree"
+    },
+    {
+      "title": "Partial clone and sparse checkout (git-scm.com)",
+      "url": "https://git-scm.com/docs/git-sparse-checkout"
+    }
   ]
 }

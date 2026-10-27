@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "docker-compose",
-    "multi-container",
-    "yaml"
-  ],
+  "tags": ["docker-compose", "multi-container", "yaml"],
   "blocks": [
     {
       "type": "heading",
@@ -79,37 +75,20 @@
           {
             "title": "Docker Compose",
             "description": "Define multi-container apps declaratively in a YAML file and manage them as a single stack.",
-            "tags": [
-              "Declarative",
-              "Multi-service",
-              "YAML"
-            ],
+            "tags": ["Declarative", "Multi-service", "YAML"],
             "pros": [
               "Single file for entire stack",
               "Built-in service discovery and DNS",
               "Easy to version and share"
             ],
-            "cons": [
-              "Extra layer of abstraction",
-              "Learning curve for YAML schema"
-            ]
+            "cons": ["Extra layer of abstraction", "Learning curve for YAML schema"]
           },
           {
             "title": "docker run",
             "description": "Imperative CLI command to create and start a single container with inline flags.",
-            "tags": [
-              "Imperative",
-              "Single container",
-              "CLI"
-            ],
-            "pros": [
-              "Quick for one-off containers",
-              "No extra files needed"
-            ],
-            "cons": [
-              "Hard to manage many containers",
-              "Configuration not versioned"
-            ]
+            "tags": ["Imperative", "Single container", "CLI"],
+            "pros": ["Quick for one-off containers", "No extra files needed"],
+            "cons": ["Hard to manage many containers", "Configuration not versioned"]
           }
         ]
       }
@@ -124,43 +103,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Command",
-          "Description"
-        ],
+        "headers": ["Command", "Description"],
         "rows": [
-          [
-            "docker compose up",
-            "Start all services defined in the compose file"
-          ],
-          [
-            "docker compose up -d",
-            "Start services in detached mode (background)"
-          ],
-          [
-            "docker compose down",
-            "Stop and remove containers, networks, and volumes"
-          ],
-          [
-            "docker compose ps",
-            "List the status of all services in the stack"
-          ],
-          [
-            "docker compose logs",
-            "View logs for all or a specific service"
-          ],
-          [
-            "docker compose build",
-            "Build or rebuild service images"
-          ],
-          [
-            "docker compose restart",
-            "Restart all services"
-          ],
-          [
-            "docker compose exec",
-            "Run a command inside a running service container"
-          ]
+          ["docker compose up", "Start all services defined in the compose file"],
+          ["docker compose up -d", "Start services in detached mode (background)"],
+          ["docker compose down", "Stop and remove containers, networks, and volumes"],
+          ["docker compose ps", "List the status of all services in the stack"],
+          ["docker compose logs", "View logs for all or a specific service"],
+          ["docker compose build", "Build or rebuild service images"],
+          ["docker compose restart", "Restart all services"],
+          ["docker compose exec", "Run a command inside a running service container"]
         ]
       }
     },

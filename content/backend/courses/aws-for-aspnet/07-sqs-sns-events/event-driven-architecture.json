@@ -64,7 +64,12 @@
           {
             "title": "SQS",
             "description": "Managed message queue for point-to-point communication.",
-            "pros": ["At-least-once delivery", "Visibility timeout", "Dead-letter queues", "Long polling"],
+            "pros": [
+              "At-least-once delivery",
+              "Visibility timeout",
+              "Dead-letter queues",
+              "Long polling"
+            ],
             "cons": ["No native pub/sub", "One consumer per message"]
           },
           {

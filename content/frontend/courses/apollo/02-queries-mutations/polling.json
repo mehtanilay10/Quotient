@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "apollo",
-    "polling",
-    "real-time",
-    "updates"
-  ],
+  "tags": ["apollo", "polling", "real-time", "updates"],
   "blocks": [
     {
       "type": "paragraph",

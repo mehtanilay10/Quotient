@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "orm",
-    "introduction",
-    "database",
-    "typescript"
-  ],
+  "tags": ["prisma", "orm", "introduction", "database", "typescript"],
   "blocks": [
     {
       "type": "paragraph",
@@ -166,8 +160,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-vs-other-orms",
-    "installing-prisma-in-nextjs"
-  ]
+  "relatedLessons": ["prisma-vs-other-orms", "installing-prisma-in-nextjs"]
 }

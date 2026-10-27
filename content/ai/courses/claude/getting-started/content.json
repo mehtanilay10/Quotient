@@ -7,17 +7,8 @@
   "difficulty": "beginner",
   "estimatedHours": 1.5,
   "icon": "🚀",
-  "tags": [
-    "claude",
-    "setup",
-    "beginner",
-    "interface"
-  ],
-  "lessonSlugs": [
-    "setting-up-claude",
-    "claude-interface-tour",
-    "your-first-claude-conversation"
-  ],
+  "tags": ["claude", "setup", "beginner", "interface"],
+  "lessonSlugs": ["setting-up-claude", "claude-interface-tour", "your-first-claude-conversation"],
   "whatYouLearn": [
     "How to create a Claude account and choose a plan",
     "How to navigate the Claude web interface and mobile app",

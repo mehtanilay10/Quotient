@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "react-19",
-    "actions",
-    "use-hook",
-    "server-components"
-  ],
+  "tags": ["react", "react-19", "actions", "use-hook", "server-components"],
   "blocks": [
     {
       "type": "paragraph",

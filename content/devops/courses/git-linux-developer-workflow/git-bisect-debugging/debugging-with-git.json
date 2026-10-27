@@ -155,6 +155,10 @@
   ],
   "relatedLessons": ["bisect-fundamentals", "git-blame-annotate", "advanced-git-log"],
   "furtherReading": [
-    { "title": "Git Debugging Techniques", "url": "https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection", "type": "article" }
+    {
+      "title": "Git Debugging Techniques",
+      "url": "https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection",
+      "type": "article"
+    }
   ]
 }

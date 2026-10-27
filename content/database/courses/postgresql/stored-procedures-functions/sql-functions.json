@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "sql-functions",
-    "inlining",
-    "volatility",
-    "udf"
-  ],
+  "tags": ["sql-functions", "inlining", "volatility", "udf"],
   "blocks": [
     {
       "type": "paragraph",
@@ -31,11 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Volatility",
-          "Behavior",
-          "Example"
-        ],
+        "headers": ["Volatility", "Behavior", "Example"],
         "rows": [
           [
             "`IMMUTABLE`",
@@ -106,8 +97,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "plpgsql-basics",
-    "plpgsql-functions"
-  ]
+  "relatedLessons": ["plpgsql-basics", "plpgsql-functions"]
 }

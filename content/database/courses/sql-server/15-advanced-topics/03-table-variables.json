@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "table-variable",
-    "DECLARE",
-    "temp-table"
-  ],
+  "tags": ["table-variable", "DECLARE", "temp-table"],
   "blocks": [
     {
       "type": "heading",

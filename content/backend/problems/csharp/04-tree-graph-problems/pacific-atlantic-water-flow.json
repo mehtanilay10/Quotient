@@ -8,13 +8,7 @@
   "order": 16,
   "difficulty": "medium",
   "estimatedMinutes": 20,
-  "tags": [
-    "csharp",
-    "graphs",
-    "dfs",
-    "bfs",
-    "medium"
-  ],
+  "tags": ["csharp", "graphs", "dfs", "bfs", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -52,15 +46,8 @@
           {
             "title": "BFS from Oceans",
             "description": "Reverse flow from borders inward",
-            "pros": [
-              "O(m\u00b7n) time",
-              "No DFS stack"
-            ],
-            "tags": [
-              "O(m\u00b7n) time",
-              "O(m\u00b7n) space",
-              "Recommended"
-            ]
+            "pros": ["O(m\u00b7n) time", "No DFS stack"],
+            "tags": ["O(m\u00b7n) time", "O(m\u00b7n) space", "Recommended"]
           }
         ]
       }

@@ -8,10 +8,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "🗄️",
-  "tags": [
-    "database",
-    "design"
-  ],
+  "tags": ["database", "design"],
   "lessonSlugs": [
     "sql-vs-nosql",
     "relational-design",

@@ -8,13 +8,7 @@
   "order": 9,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "devtools",
-    "debugging",
-    "lighthouse",
-    "long-tasks",
-    "reproduction"
-  ],
+  "tags": ["devtools", "debugging", "lighthouse", "long-tasks", "reproduction"],
   "blocks": [
     {
       "type": "paragraph",
@@ -176,11 +170,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "cpu-profiling",
-    "layout-thrashing",
-    "continuous-monitoring"
-  ],
+  "relatedLessons": ["cpu-profiling", "layout-thrashing", "continuous-monitoring"],
   "furtherReading": [
     {
       "title": "Chrome DevTools Performance Panel",

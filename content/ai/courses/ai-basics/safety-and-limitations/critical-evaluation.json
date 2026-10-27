@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "evaluation",
-    "critical-thinking",
-    "verification",
-    "habits"
-  ],
+  "tags": ["evaluation", "critical-thinking", "verification", "habits"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,22 +35,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Task type",
-          "Trust level",
-          "Required action"
-        ],
+        "headers": ["Task type", "Trust level", "Required action"],
         "rows": [
-          [
-            "Brainstorming, creative ideas",
-            "✅ Use freely",
-            "No verification needed"
-          ],
-          [
-            "First draft of writing",
-            "✅ Use with review",
-            "Read and edit before sending"
-          ],
+          ["Brainstorming, creative ideas", "✅ Use freely", "No verification needed"],
+          ["First draft of writing", "✅ Use with review", "Read and edit before sending"],
           [
             "Factual summary of a topic",
             "⚠️ Verify key claims",
@@ -163,22 +146,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Review prompt intent",
-          "Example question",
-          "Expected benefit"
-        ],
+        "headers": ["Review prompt intent", "Example question", "Expected benefit"],
         "rows": [
           [
             "Uncertainty surfacing",
             "What are the weakest assumptions here?",
             "Reveals fragile conclusions"
           ],
-          [
-            "Alternative framing",
-            "What is a competing interpretation?",
-            "Reduces tunnel vision"
-          ],
+          ["Alternative framing", "What is a competing interpretation?", "Reduces tunnel vision"],
           [
             "Evidence validation",
             "Which claims need primary-source checks?",
@@ -195,32 +170,23 @@
           {
             "title": "Trust but verify",
             "description": "Default to trusting AI output, then spot-check critical claims. Fast but can miss subtle errors.",
-            "tags": [
-              "fast"
-            ]
+            "tags": ["fast"]
           },
           {
             "title": "Healthy skepticism",
             "description": "Assume output needs verification, especially for facts and numbers. Slightly slower but dramatically reduces error propagation.",
-            "tags": [
-              "safe"
-            ]
+            "tags": ["safe"]
           },
           {
             "title": "Red-team mindset",
             "description": "Actively look for flaws, inconsistencies, and unsupported claims. Slowest but most thorough for high-stakes decisions.",
-            "tags": [
-              "thorough"
-            ]
+            "tags": ["thorough"]
           }
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "evaluating-ai-output",
-    "protecting-your-data"
-  ],
+  "relatedLessons": ["evaluating-ai-output", "protecting-your-data"],
   "furtherReading": [
     {
       "title": "Learn Prompting — Reliability",

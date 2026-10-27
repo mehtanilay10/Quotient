@@ -112,7 +112,11 @@
       }
     }
   ],
-  "relatedLessons": ["large-object-heap-and-pinned-objects", "server-gc-vs-workstation-gc", "boxing-and-hidden-allocations"],
+  "relatedLessons": [
+    "large-object-heap-and-pinned-objects",
+    "server-gc-vs-workstation-gc",
+    "boxing-and-hidden-allocations"
+  ],
   "furtherReading": [
     {
       "type": "article",

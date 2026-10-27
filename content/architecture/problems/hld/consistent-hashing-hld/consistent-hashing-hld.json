@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 50,
-  "tags": [
-    "hld",
-    "system-design",
-    "consistent-hashing",
-    "sharding",
-    "hash-ring",
-    "virtual-nodes"
-  ],
+  "tags": ["hld", "system-design", "consistent-hashing", "sharding", "hash-ring", "virtual-nodes"],
   "blocks": [
     {
       "type": "heading",
@@ -142,11 +135,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Modulo Hashing (`key % N`)",
-          "Consistent Hashing (ring + vnodes)"
-        ],
+        "headers": ["Aspect", "Modulo Hashing (`key % N`)", "Consistent Hashing (ring + vnodes)"],
         "rows": [
           [
             "Key remapping on add/remove",
@@ -221,9 +210,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "consistent-hashing-hld"
-  ],
+  "relatedLessons": ["consistent-hashing-hld"],
   "furtherReading": [
     {
       "title": "Consistent Hashing and Random Trees — Karger et al.",

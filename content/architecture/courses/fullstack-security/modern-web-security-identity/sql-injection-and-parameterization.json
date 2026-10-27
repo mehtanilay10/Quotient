@@ -8,14 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "sql-injection",
-    "parameterization",
-    "orm",
-    "dapper",
-    "entity-framework",
-    "OWASP"
-  ],
+  "tags": ["sql-injection", "parameterization", "orm", "dapper", "entity-framework", "OWASP"],
   "blocks": [
     {
       "type": "paragraph",

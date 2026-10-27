@@ -8,14 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "redis",
-    "caching",
-    "write-through",
-    "consistency",
-    "write-pattern",
-    "intermediate"
-  ],
+  "tags": ["redis", "caching", "write-through", "consistency", "write-pattern", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,27 +108,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Write-Through",
-          "Cache-Aside"
-        ],
+        "headers": ["Aspect", "Write-Through", "Cache-Aside"],
         "rows": [
-          [
-            "Write latency",
-            "Higher (two stores)",
-            "Lower (one store)"
-          ],
-          [
-            "Read after write",
-            "Always hits cache",
-            "May miss until repopulated"
-          ],
-          [
-            "Consistency",
-            "Stronger",
-            "Eventual"
-          ]
+          ["Write latency", "Higher (two stores)", "Lower (one store)"],
+          ["Read after write", "Always hits cache", "May miss until repopulated"],
+          ["Consistency", "Stronger", "Eventual"]
         ]
       }
     },

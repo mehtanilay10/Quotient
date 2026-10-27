@@ -143,6 +143,10 @@
   ],
   "relatedLessons": ["interactive-rebase-basics", "squashing-commits"],
   "furtherReading": [
-    { "title": "Git Commit --fixup", "url": "https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---fixupltcommitgt", "type": "article" }
+    {
+      "title": "Git Commit --fixup",
+      "url": "https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---fixupltcommitgt",
+      "type": "article"
+    }
   ]
 }

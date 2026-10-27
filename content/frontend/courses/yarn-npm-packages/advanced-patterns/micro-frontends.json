@@ -6,13 +6,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 10,
-  "tags": [
-    "micro-frontends",
-    "architecture",
-    "scalability",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["micro-frontends", "architecture", "scalability", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

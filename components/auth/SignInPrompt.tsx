@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { signIn } from 'next-auth/react';
-import { Mail, X, LogIn } from 'lucide-react';
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { signIn } from "next-auth/react";
+import { Mail, X, LogIn } from "lucide-react";
 
 export function SignInPrompt({ onDismiss }: { onDismiss?: () => void }) {
   const [dismissed, setDismissed] = useState(false);
   const pathname = usePathname();
-  const loginHref = `/login?callbackUrl=${encodeURIComponent(pathname || '/')}`;
+  const loginHref = `/login?callbackUrl=${encodeURIComponent(pathname || "/")}`;
 
   if (dismissed) return null;
 
@@ -35,12 +35,12 @@ export function SignInPrompt({ onDismiss }: { onDismiss?: () => void }) {
           </button>
         </div>
         <p className="mt-2 text-sm text-fg-muted">
-          Sign in with Google, or get a one-time link by email, to sync your
-          bookmarks and progress across devices.
+          Sign in with Google, or get a one-time link by email, to sync your bookmarks and progress
+          across devices.
         </p>
         <div className="mt-4 flex gap-2">
           <button
-            onClick={() => signIn('google')}
+            onClick={() => signIn("google")}
             className="flex-1 rounded-lg border border-border bg-canvas px-4 py-2 text-sm font-medium text-fg-default hover:bg-canvas-subtle transition-colors"
           >
             Sign in with Google

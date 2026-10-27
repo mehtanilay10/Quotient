@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "react-query",
-    "tanstack-query",
-    "caching",
-    "architecture"
-  ],
+  "tags": ["react-query", "tanstack-query", "caching", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -147,10 +142,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "local-state-vs-server-state-vs-url-state",
-    "optimistic-updates-and-rollback"
-  ],
+  "relatedLessons": ["local-state-vs-server-state-vs-url-state", "optimistic-updates-and-rollback"],
   "furtherReading": [
     {
       "title": "TanStack Query documentation",

@@ -1,21 +1,26 @@
-import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { ArrowLeft, BookOpen, Clock } from 'lucide-react';
-import { SectionHeader } from '@/components/sections/SectionHeader';
-import { ReadingTimeBadge } from '@/components/ui/ReadingTimeBadge';
-import { getCategoryMeta, getQuestionCategories, getQuestionAnswersByDifficulty, getQuestionTechnologies } from '@/lib/content';
-import { buildMetadata } from '@/lib/seo';
-import { formatHours } from '@/lib/utils';
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowLeft, BookOpen, Clock } from "lucide-react";
+import { SectionHeader } from "@/components/sections/SectionHeader";
+import { ReadingTimeBadge } from "@/components/ui/ReadingTimeBadge";
+import {
+  getCategoryMeta,
+  getQuestionCategories,
+  getQuestionAnswersByDifficulty,
+  getQuestionTechnologies,
+} from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
+import { formatHours } from "@/lib/utils";
 
 interface Params {
   params: Promise<{ category: string; technology: string }>;
 }
 
 const DIFFICULTY_LABELS: Record<string, string> = {
-  beginner: 'Beginner',
-  intermediate: 'Intermediate',
-  advanced: 'Advanced',
+  beginner: "Beginner",
+  intermediate: "Intermediate",
+  advanced: "Advanced",
 };
 
 export async function generateStaticParams() {
@@ -92,7 +97,7 @@ export default async function QuestionTechnologyPage({ params }: Params) {
               {DIFFICULTY_LABELS[group.difficulty] ?? group.difficulty}
             </h2>
             <span className="text-xs text-fg-subtle">
-              {group.questions.length} question{group.questions.length !== 1 ? 's' : ''}
+              {group.questions.length} question{group.questions.length !== 1 ? "s" : ""}
             </span>
           </div>
           <div className="space-y-3">

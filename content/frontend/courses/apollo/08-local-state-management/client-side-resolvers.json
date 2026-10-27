@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "client-resolvers",
-    "resolvers",
-    "computed-data",
-    "cache"
-  ],
+  "tags": ["client-resolvers", "resolvers", "computed-data", "cache"],
   "blocks": [
     {
       "type": "heading",
@@ -61,7 +56,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "local-only-fields"
-  ]
+  "prerequisites": ["local-only-fields"]
 }

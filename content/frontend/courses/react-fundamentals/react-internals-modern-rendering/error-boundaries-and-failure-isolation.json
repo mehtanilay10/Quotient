@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "react",
-    "error-boundaries",
-    "resilience",
-    "error-handling"
-  ],
+  "tags": ["react", "error-boundaries", "resilience", "error-handling"],
   "blocks": [
     {
       "type": "paragraph",
@@ -134,10 +129,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "server-components-vs-client-components",
-    "suspense-and-asynchronous-ui"
-  ],
+  "relatedLessons": ["server-components-vs-client-components", "suspense-and-asynchronous-ui"],
   "furtherReading": [
     {
       "title": "React Docs: Error Boundaries",

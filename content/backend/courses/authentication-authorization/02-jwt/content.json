@@ -6,12 +6,7 @@
   "title": "JWT Authentication",
   "description": "Learn how to implement JWT authentication in ASP.NET Core and React.",
   "order": 2,
-  "lessonSlugs": [
-    "jwt-overview",
-    "creating-jwt",
-    "validating-jwt",
-    "react-integration"
-  ],
+  "lessonSlugs": ["jwt-overview", "creating-jwt", "validating-jwt", "react-integration"],
   "tags": [],
   "difficulty": "beginner",
   "estimatedHours": 1

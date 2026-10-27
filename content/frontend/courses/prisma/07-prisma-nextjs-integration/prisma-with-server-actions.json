@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "nextjs",
-    "server-actions",
-    "mutations",
-    "revalidatePath"
-  ],
+  "tags": ["prisma", "nextjs", "server-actions", "mutations", "revalidatePath"],
   "blocks": [
     {
       "type": "paragraph",
@@ -58,8 +52,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-in-nextjs-app-router",
-    "prisma-route-handlers"
-  ]
+  "relatedLessons": ["prisma-in-nextjs-app-router", "prisma-route-handlers"]
 }

@@ -10,14 +10,6 @@
   "estimatedHours": 2.5,
   "icon": "🔢",
   "tags": ["csharp", "bitwise", "optimization"],
-  "lessonSlugs": [
-    "find-first-set-bit",
-    "count-total-set-bits",
-    "max-consecutive-ones"
-  ],
-  "whatYouLearn": [
-    "Bitwise operators",
-    "Bit manipulation tricks",
-    "Binary representation"
-  ]
+  "lessonSlugs": ["find-first-set-bit", "count-total-set-bits", "max-consecutive-ones"],
+  "whatYouLearn": ["Bitwise operators", "Bit manipulation tricks", "Binary representation"]
 }

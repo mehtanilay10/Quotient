@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "cloud",
-    "azure",
-    "app-service"
-  ],
+  "tags": ["cloud", "azure", "app-service"],
   "blocks": [
     {
       "type": "paragraph",
@@ -197,10 +193,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "deployment-options",
-    "docker-containerization"
-  ],
+  "relatedLessons": ["deployment-options", "docker-containerization"],
   "technology": null,
   "furtherReading": [
     {

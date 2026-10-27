@@ -127,7 +127,10 @@
       }
     }
   ],
-  "relatedLessons": ["ps-top-ss-lsof-and-curl-for-diagnosis", "reading-application-and-system-logs"],
+  "relatedLessons": [
+    "ps-top-ss-lsof-and-curl-for-diagnosis",
+    "reading-application-and-system-logs"
+  ],
   "furtherReading": [
     {
       "type": "article",

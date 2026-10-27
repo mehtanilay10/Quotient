@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 23,
-  "tags": [
-    "apollo",
-    "errors",
-    "handling",
-    "network"
-  ],
+  "tags": ["apollo", "errors", "handling", "network"],
   "blocks": [
     {
       "type": "paragraph",
@@ -30,23 +25,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Error Type",
-          "Description"
-        ],
+        "headers": ["Error Type", "Description"],
         "rows": [
-          [
-            "NetworkError",
-            "Failed to connect to server"
-          ],
-          [
-            "GraphQLError",
-            "Error returned in GraphQL response"
-          ],
-          [
-            "ServerError",
-            "Server returned non-200 status"
-          ]
+          ["NetworkError", "Failed to connect to server"],
+          ["GraphQLError", "Error returned in GraphQL response"],
+          ["ServerError", "Server returned non-200 status"]
         ]
       }
     },

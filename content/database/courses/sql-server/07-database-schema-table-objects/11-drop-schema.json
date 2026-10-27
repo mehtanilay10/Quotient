@@ -7,10 +7,7 @@
   "order": 11,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "drop-schema",
-    "schema"
-  ],
+  "tags": ["drop-schema", "schema"],
   "blocks": [
     {
       "type": "heading",

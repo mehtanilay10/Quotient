@@ -10,12 +10,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2.5,
   "tags": ["react", "forms", "validation", "submission", "intermediate"],
-  "lessonSlugs": [
-    "form-validation",
-    "form-submission",
-    "multi-step-forms",
-    "file-uploads"
-  ],
+  "lessonSlugs": ["form-validation", "form-submission", "multi-step-forms", "file-uploads"],
   "prerequisites": ["state-events"],
   "whatYouLearn": [
     "Validate form inputs and display real-time error messages",

@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "ef-core",
-    "migrations",
-    "database"
-  ],
+  "tags": ["aspnet-core", "ef-core", "migrations", "database"],
   "blocks": [
     {
       "type": "heading",
@@ -91,39 +86,20 @@
           {
             "title": "Migration Workflow",
             "description": "Migration lifecycle",
-            "pros": [
-              "Source-controlled schema",
-              "Rollback support",
-              "Team collaboration"
-            ],
+            "pros": ["Source-controlled schema", "Rollback support", "Team collaboration"],
             "cons": [
               "Merge conflicts in migrations",
               "Must review generated SQL",
               "Production migrations risky"
             ],
-            "tags": [
-              "dotnet ef",
-              "MigrationBuilder",
-              "Up/Down"
-            ]
+            "tags": ["dotnet ef", "MigrationBuilder", "Up/Down"]
           },
           {
             "title": "Idempotent SQL Scripts",
             "description": "Production-safe SQL scripts",
-            "pros": [
-              "Safe to re-run",
-              "Works with DBA review",
-              "Handles existing DBs"
-            ],
-            "cons": [
-              "Must test generated SQL",
-              "Manual for complex migrations"
-            ],
-            "tags": [
-              "--idempotent",
-              "--script",
-              "deployment"
-            ]
+            "pros": ["Safe to re-run", "Works with DBA review", "Handles existing DBs"],
+            "cons": ["Must test generated SQL", "Manual for complex migrations"],
+            "tags": ["--idempotent", "--script", "deployment"]
           }
         ]
       }

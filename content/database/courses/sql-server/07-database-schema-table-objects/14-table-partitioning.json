@@ -7,11 +7,7 @@
   "order": 14,
   "difficulty": "advanced",
   "estimatedMinutes": 33,
-  "tags": [
-    "partitioning",
-    "table",
-    "performance"
-  ],
+  "tags": ["partitioning", "table", "performance"],
   "blocks": [
     {
       "type": "heading",

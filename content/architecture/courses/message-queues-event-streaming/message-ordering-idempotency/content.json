@@ -9,13 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "🔢",
-  "tags": [
-    "ordering",
-    "idempotency",
-    "fifo",
-    "deduplication",
-    "exactly-once"
-  ],
+  "tags": ["ordering", "idempotency", "fifo", "deduplication", "exactly-once"],
   "lessonSlugs": [
     "ordering-challenges",
     "fifo-queues",

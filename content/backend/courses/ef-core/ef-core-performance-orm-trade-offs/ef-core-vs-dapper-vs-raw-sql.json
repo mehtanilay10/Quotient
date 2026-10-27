@@ -165,7 +165,15 @@
   ],
   "relatedLessons": ["when-to-bypass-the-orm", "bulk-operations-and-large-data-changes"],
   "furtherReading": [
-    { "title": "EF Core performance best practices", "url": "https://learn.microsoft.com/en-us/ef/core/performance/", "type": "article" },
-    { "title": "Dapper documentation", "url": "https://github.com/DapperLib/Dapper", "type": "article" }
+    {
+      "title": "EF Core performance best practices",
+      "url": "https://learn.microsoft.com/en-us/ef/core/performance/",
+      "type": "article"
+    },
+    {
+      "title": "Dapper documentation",
+      "url": "https://github.com/DapperLib/Dapper",
+      "type": "article"
+    }
   ]
 }

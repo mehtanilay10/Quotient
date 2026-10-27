@@ -6,11 +6,7 @@
   "description": "Reference stability vs value caching: memoization tools, their real costs, and profiling before memoizing.",
   "order": 18,
   "difficulty": "intermediate",
-  "tags": [
-    "react",
-    "performance",
-    "intermediate"
-  ],
+  "tags": ["react", "performance", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

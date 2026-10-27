@@ -6,11 +6,7 @@
   "fullDefinition": "LLM-as-judge is a technique where a capable model reads an output (and usually a reference answer plus a rubric) and returns a score or verdict. It exists because automated metrics like exact match fail on open-ended text: two summaries can be equally correct with no words in common, and human review does not scale to thousands of runs. When done well the judge gets a precise rubric, a small number of clearly defined rating levels, the input and reference side by side, and instructions to justify its score before the verdict. It is known to carry biases — preferring longer answers, the first option in a comparison, or its own model family's style — so judges should be calibrated against a sample of human labels before being trusted.",
   "category": "evaluation",
   "difficulty": "advanced",
-  "relatedTerms": [
-    "evaluation",
-    "human-evaluation",
-    "golden-dataset"
-  ],
+  "relatedTerms": ["evaluation", "human-evaluation", "golden-dataset"],
   "examples": [
     "A rubric asking the judge to rate faithfulness to the source on a 1-5 scale",
     "Running a human-labelled sample to measure judge agreement before trusting it",

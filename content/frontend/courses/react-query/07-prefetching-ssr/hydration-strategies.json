@@ -8,16 +8,8 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "hydration",
-    "ssr",
-    "cache-sync",
-    "parallel-fetching",
-    "nextjs"
-  ],
-  "prerequisites": [
-    "query-options"
-  ],
+  "tags": ["hydration", "ssr", "cache-sync", "parallel-fetching", "nextjs"],
+  "prerequisites": ["query-options"],
   "blocks": [
     {
       "type": "paragraph",
@@ -121,12 +113,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Option",
-          "Default",
-          "Server-Side Recommendation",
-          "Effect"
-        ],
+        "headers": ["Option", "Default", "Server-Side Recommendation", "Effect"],
         "rows": [
           [
             "staleTime",
@@ -140,18 +127,8 @@
             "30 minutes",
             "Inactive data retained in cache before garbage collection"
           ],
-          [
-            "refetchOnMount",
-            "true",
-            "false",
-            "Avoid refetching if data was just hydrated"
-          ],
-          [
-            "refetchOnWindowFocus",
-            "true",
-            "true",
-            "Refetch when user returns to tab"
-          ]
+          ["refetchOnMount", "true", "false", "Avoid refetching if data was just hydrated"],
+          ["refetchOnWindowFocus", "true", "true", "Refetch when user returns to tab"]
         ]
       }
     },

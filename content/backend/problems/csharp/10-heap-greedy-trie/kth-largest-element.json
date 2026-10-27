@@ -56,7 +56,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Keep a min-heap containing at most `k` elements — the largest `k` seen so far. When a new value arrives and the heap is full, push it and then pop the smallest. The root is always the smallest of the top `k`, which is exactly the answer at the end."}
+        "text": "Keep a min-heap containing at most `k` elements — the largest `k` seen so far. When a new value arrives and the heap is full, push it and then pop the smallest. The root is always the smallest of the top `k`, which is exactly the answer at the end."
+      }
     },
     {
       "type": "example",
@@ -90,7 +91,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Partition around a pivot as in quicksort, but recurse into only the side that contains the target index. Average O(n), worst case O(n²) with bad pivot choices."}
+        "text": "Partition around a pivot as in quicksort, but recurse into only the side that contains the target index. Average O(n), worst case O(n²) with bad pivot choices."
+      }
     },
     {
       "type": "example",

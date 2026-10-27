@@ -8,13 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "query-regression",
-    "plan-regression",
-    "query-store",
-    "deployment",
-    "sql-server"
-  ],
+  "tags": ["query-regression", "plan-regression", "query-store", "deployment", "sql-server"],
   "blocks": [
     {
       "type": "paragraph",

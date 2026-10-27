@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "recursion",
-    "math",
-    "easy"
-  ],
+  "tags": ["csharp", "recursion", "math", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -101,31 +96,16 @@
           {
             "title": "Linear Recursion",
             "description": "Multiply p times",
-            "pros": [
-              "Simple"
-            ],
-            "cons": [
-              "O(p) time"
-            ],
-            "tags": [
-              "O(p) time",
-              "O(p) space"
-            ]
+            "pros": ["Simple"],
+            "cons": ["O(p) time"],
+            "tags": ["O(p) time", "O(p) space"]
           },
           {
             "title": "Binary Exponentiation",
             "description": "Exponentiation by squaring",
-            "pros": [
-              "O(log p) time",
-              "O(log p) space",
-              "Recommended"
-            ],
+            "pros": ["O(log p) time", "O(log p) space", "Recommended"],
             "cons": [],
-            "tags": [
-              "O(log p) time",
-              "O(log p) space",
-              "Recommended"
-            ]
+            "tags": ["O(log p) time", "O(log p) space", "Recommended"]
           }
         ]
       }

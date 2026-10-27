@@ -6,10 +6,6 @@
   "fullDefinition": "AI automation refers to using AI systems to perform tasks that would otherwise require continuous human effort. Unlike traditional rule-based automation, AI automation can handle unstructured inputs, make contextual judgments, and adapt to variation. Tools like Zapier, Make, and n8n enable individuals to build AI automations without coding. AI automation is transforming knowledge work by handling drafting, classification, summarization, and routing tasks.",
   "category": "agents-and-automation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "agent",
-    "workflow",
-    "tool-calling"
-  ],
+  "relatedTerms": ["agent", "workflow", "tool-calling"],
   "learnMoreSlug": "what-is-ai-automation"
 }

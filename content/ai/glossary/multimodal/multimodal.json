@@ -6,11 +6,7 @@
   "fullDefinition": "Multimodal AI refers to AI systems that work with more than one type of data (modality). Modern multimodal models like GPT-4o, Gemini, and Claude can process text, images, documents, and audio simultaneously — and in some cases generate images and audio as well. This enables use cases like 'analyze this photo', 'transcribe this audio', and 'generate an image from a description'.",
   "category": "multimodal",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "large-language-model",
-    "ocr",
-    "text-to-image"
-  ],
+  "relatedTerms": ["large-language-model", "ocr", "text-to-image"],
   "learnMoreSlug": "images-and-ai",
   "examples": [
     "GPT-4o analyzing a chart image and summarizing the data",

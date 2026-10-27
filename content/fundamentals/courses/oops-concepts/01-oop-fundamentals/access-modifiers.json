@@ -7,10 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "oop",
-    "access-modifiers"
-  ],
+  "tags": ["oop", "access-modifiers"],
   "blocks": [
     {
       "type": "paragraph",
@@ -51,8 +48,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "constructors"
-  ],
+  "relatedLessons": ["constructors"],
   "courseSlug": "oops-concepts"
 }

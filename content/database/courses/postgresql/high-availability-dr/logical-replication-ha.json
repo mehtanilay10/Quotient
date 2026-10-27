@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "logical-replication",
-    "publish-subscribe",
-    "cdc",
-    "debezium",
-    "upgrades"
-  ],
+  "tags": ["logical-replication", "publish-subscribe", "cdc", "debezium", "upgrades"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,8 +74,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "streaming-replication",
-    "failover-switchover"
-  ]
+  "relatedLessons": ["streaming-replication", "failover-switchover"]
 }

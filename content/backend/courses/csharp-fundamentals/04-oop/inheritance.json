@@ -130,11 +130,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Overloading",
-          "Overriding"
-        ],
+        "headers": ["Feature", "Overloading", "Overriding"],
         "rows": [
           [
             "Definition",
@@ -146,21 +142,9 @@
             "Same class, different parameter list",
             "Base method must be virtual/abstract/override"
           ],
-          [
-            "Keyword",
-            "No keyword needed",
-            "override in derived, virtual/abstract in base"
-          ],
-          [
-            "Resolution",
-            "Compile-time (static binding)",
-            "Runtime (dynamic dispatch)"
-          ],
-          [
-            "Example",
-            "void Print(); void Print(string s);",
-            "public override void Speak()"
-          ]
+          ["Keyword", "No keyword needed", "override in derived, virtual/abstract in base"],
+          ["Resolution", "Compile-time (static binding)", "Runtime (dynamic dispatch)"],
+          ["Example", "void Print(); void Print(string s);", "public override void Speak()"]
         ]
       }
     },

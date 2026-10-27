@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "instead-of-triggers",
-    "views",
-    "updatable-views",
-    "abstraction"
-  ],
+  "tags": ["instead-of-triggers", "views", "updatable-views", "abstraction"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "simple-views",
-    "trigger-basics"
-  ]
+  "relatedLessons": ["simple-views", "trigger-basics"]
 }

@@ -143,6 +143,10 @@
   ],
   "relatedLessons": ["interactive-rebase-basics", "fixup-autosquash"],
   "furtherReading": [
-    { "title": "Git Rebase --autosquash", "url": "https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---autosquash", "type": "article" }
+    {
+      "title": "Git Rebase --autosquash",
+      "url": "https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---autosquash",
+      "type": "article"
+    }
   ]
 }

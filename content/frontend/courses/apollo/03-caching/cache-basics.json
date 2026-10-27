@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "apollo",
-    "cache",
-    "normalization",
-    "basics"
-  ],
+  "tags": ["apollo", "cache", "normalization", "basics"],
   "blocks": [
     {
       "type": "paragraph",

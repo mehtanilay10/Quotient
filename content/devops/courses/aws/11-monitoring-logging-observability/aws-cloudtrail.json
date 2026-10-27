@@ -8,14 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "monitoring",
-    "cloudtrail",
-    "audit",
-    "logging",
-    "compliance"
-  ],
+  "tags": ["aws", "monitoring", "cloudtrail", "audit", "logging", "compliance"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,12 +8,7 @@
   "order": 23,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "strings",
-    "hashmap",
-    "easy"
-  ],
+  "tags": ["csharp", "strings", "hashmap", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -87,33 +82,16 @@
           {
             "title": "Two Dictionaries",
             "description": "Map char to word and back",
-            "pros": [
-              "Clear bidirectional check"
-            ],
-            "cons": [
-              "Stores strings",
-              "Slightly more memory"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Clear bidirectional check"],
+            "cons": ["Stores strings", "Slightly more memory"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Index Tracking",
             "description": "Store last-seen index",
-            "pros": [
-              "O(n) time",
-              "Minimal storage"
-            ],
-            "cons": [
-              "Less intuitive at first"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "Minimal storage"],
+            "cons": ["Less intuitive at first"],
+            "tags": ["O(n) time", "O(n) space", "Recommended"]
           }
         ]
       }

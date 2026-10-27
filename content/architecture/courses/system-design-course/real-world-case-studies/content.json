@@ -8,10 +8,7 @@
   "difficulty": "advanced",
   "estimatedHours": 4,
   "icon": "🌍",
-  "tags": [
-    "case-study",
-    "real-world"
-  ],
+  "tags": ["case-study", "real-world"],
   "lessonSlugs": [
     "twitter-timeline-design",
     "instagram-feed-design",

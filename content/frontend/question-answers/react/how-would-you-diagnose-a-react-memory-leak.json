@@ -8,13 +8,7 @@
   "order": 7,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "React",
-    "Performance",
-    "Memory",
-    "Debugging",
-    "Chrome DevTools"
-  ],
+  "tags": ["React", "Performance", "Memory", "Debugging", "Chrome DevTools"],
   "blocks": [
     {
       "type": "paragraph",

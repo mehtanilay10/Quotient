@@ -1,5 +1,5 @@
-import { ExternalLink, BookOpen, PlayCircle, GraduationCap, Wrench } from 'lucide-react';
-import type { FurtherReadingItem, FurtherReadingType } from '@/types';
+import { ExternalLink, BookOpen, PlayCircle, GraduationCap, Wrench } from "lucide-react";
+import type { FurtherReadingItem, FurtherReadingType } from "@/types";
 
 interface FurtherReadingProps {
   items: FurtherReadingItem[];
@@ -10,31 +10,31 @@ const TYPE_CONFIG: Record<
   { label: string; Icon: React.ElementType; className: string }
 > = {
   article: {
-    label: 'Article',
+    label: "Article",
     Icon: BookOpen,
-    className: 'text-accent-fg bg-accent-subtle border-accent-muted',
+    className: "text-accent-fg bg-accent-subtle border-accent-muted",
   },
   video: {
-    label: 'Video',
+    label: "Video",
     Icon: PlayCircle,
-    className: 'text-danger-fg bg-danger-subtle border-danger-muted',
+    className: "text-danger-fg bg-danger-subtle border-danger-muted",
   },
   course: {
-    label: 'Course',
+    label: "Course",
     Icon: GraduationCap,
-    className: 'text-success-fg bg-success-subtle border-success-muted',
+    className: "text-success-fg bg-success-subtle border-success-muted",
   },
   tool: {
-    label: 'Tool',
+    label: "Tool",
     Icon: Wrench,
-    className: 'text-attention-fg bg-attention-subtle border-attention-muted',
+    className: "text-attention-fg bg-attention-subtle border-attention-muted",
   },
 };
 
 const FALLBACK_CONFIG: { label: string; Icon: React.ElementType; className: string } = {
-  label: 'Resource',
+  label: "Resource",
   Icon: BookOpen,
-  className: 'text-fg-subtle bg-canvas-subtle border-border',
+  className: "text-fg-subtle bg-canvas-subtle border-border",
 };
 
 export function FurtherReading({ items }: FurtherReadingProps) {
@@ -81,9 +81,7 @@ export function FurtherReading({ items }: FurtherReadingProps) {
                     />
                   </div>
 
-                  {item.author && (
-                    <p className="mt-0.5 text-xs text-fg-subtle">{item.author}</p>
-                  )}
+                  {item.author && <p className="mt-0.5 text-xs text-fg-subtle">{item.author}</p>}
 
                   {item.description && (
                     <p className="mt-1.5 text-sm text-fg-muted leading-relaxed">

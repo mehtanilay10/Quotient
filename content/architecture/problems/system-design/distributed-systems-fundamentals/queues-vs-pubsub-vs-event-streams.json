@@ -125,43 +125,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Queues",
-          "Pub/Sub",
-          "Event Streams"
-        ],
+        "headers": ["Feature", "Queues", "Pub/Sub", "Event Streams"],
         "rows": [
-          [
-            "Message delivery",
-            "One consumer",
-            "All subscribers",
-            "All consumers (from offset)"
-          ],
-          [
-            "Ordering",
-            "FIFO per queue",
-            "Per topic",
-            "Guaranteed per partition"
-          ],
-          [
-            "Replayability",
-            "No (once consumed)",
-            "No",
-            "Yes (rewind capability)"
-          ],
-          [
-            "Use case",
-            "Task distribution",
-            "Event broadcasting",
-            "Event sourcing, analytics"
-          ],
-          [
-            "Examples",
-            "RabbitMQ, SQS",
-            "SNS, Kafka topics",
-            "Kafka, Kinesis, Pulsar"
-          ]
+          ["Message delivery", "One consumer", "All subscribers", "All consumers (from offset)"],
+          ["Ordering", "FIFO per queue", "Per topic", "Guaranteed per partition"],
+          ["Replayability", "No (once consumed)", "No", "Yes (rewind capability)"],
+          ["Use case", "Task distribution", "Event broadcasting", "Event sourcing, analytics"],
+          ["Examples", "RabbitMQ, SQS", "SNS, Kafka topics", "Kafka, Kinesis, Pulsar"]
         ]
       }
     },

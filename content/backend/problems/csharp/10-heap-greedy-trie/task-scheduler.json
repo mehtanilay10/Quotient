@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "You are given a list of CPU tasks as characters and a non-negative cooldown `n`. Identical tasks must be separated by at least `n` intervals. In each interval the CPU may run one task or stay idle. Return the minimum number of intervals needed to finish all tasks."}
+        "text": "You are given a list of CPU tasks as characters and a non-negative cooldown `n`. Identical tasks must be separated by at least `n` intervals. In each interval the CPU may run one task or stay idle. Return the minimum number of intervals needed to finish all tasks."
+      }
     },
     {
       "type": "heading",
@@ -36,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "The most frequent task is the bottleneck. If it appears `maxFreq` times, those occurrences need `maxFreq - 1` gaps between them, and each gap must be at least `n` slots wide. Filling those frames gives the schedule its shape; other tasks either fit inside the frames or extend the total beyond them." }
+        "text": "The most frequent task is the bottleneck. If it appears `maxFreq` times, those occurrences need `maxFreq - 1` gaps between them, and each gap must be at least `n` slots wide. Filling those frames gives the schedule its shape; other tasks either fit inside the frames or extend the total beyond them."
+      }
     },
     {
       "type": "example",
@@ -70,7 +72,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "If the formula feels like magic, simulate round by round: take up to `n + 1` distinct tasks with the highest remaining counts from a max-heap, decrement them, and re-add the survivors. The simulation takes O(total · log 26) and produces the same answer, which makes it a useful correctness check." }
+        "text": "If the formula feels like magic, simulate round by round: take up to `n + 1` distinct tasks with the highest remaining counts from a max-heap, decrement them, and re-add the survivors. The simulation takes O(total · log 26) and produces the same answer, which makes it a useful correctness check."
+      }
     },
     {
       "type": "example",

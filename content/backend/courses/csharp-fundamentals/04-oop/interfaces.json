@@ -5,14 +5,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "oop",
-    "interfaces",
-    "contracts",
-    "dependency-injection",
-    "polymorphism"
-  ],
+  "tags": ["csharp", "oop", "interfaces", "contracts", "dependency-injection", "polymorphism"],
   "title": "Interfaces",
   "description": "Master interface design in C#: contracts, multiple interface implementation, default interface methods, generics, and real-world patterns like dependency injection.",
   "blocks": [
@@ -157,9 +150,7 @@
           {
             "title": "Fat Interface (Bad)",
             "description": "One large IWorker interface forcing implementors to provide unused methods.",
-            "pros": [
-              "Single interface for all workers"
-            ],
+            "pros": ["Single interface for all workers"],
             "cons": [
               "Forces Robot to implement Eat()",
               "Forces Human to implement Recharge()",
@@ -176,9 +167,7 @@
               "Easy to extend",
               "Clearer intent"
             ],
-            "cons": [
-              "More interfaces to manage"
-            ]
+            "cons": ["More interfaces to manage"]
           }
         ]
       }

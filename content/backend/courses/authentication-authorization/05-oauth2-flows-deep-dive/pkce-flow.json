@@ -8,16 +8,8 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "oauth2",
-    "pkce",
-    "mobile",
-    "public-client",
-    "security"
-  ],
-  "prerequisites": [
-    "authorization-code-flow"
-  ],
+  "tags": ["oauth2", "pkce", "mobile", "public-client", "security"],
+  "prerequisites": ["authorization-code-flow"],
   "blocks": [
     {
       "type": "paragraph",
@@ -104,22 +96,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Challenge Method",
-          "Security",
-          "Recommended"
-        ],
+        "headers": ["Challenge Method", "Security", "Recommended"],
         "rows": [
           [
             "S256 (SHA-256)",
             "Verifier is hashed before sending; intercepted codes are useless.",
             "Yes"
           ],
-          [
-            "plain",
-            "Challenge equals the verifier; defeating the protection.",
-            "No — never use"
-          ]
+          ["plain", "Challenge equals the verifier; defeating the protection.", "No — never use"]
         ]
       }
     },
@@ -147,9 +131,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "authorization-code-flow"
-  ],
+  "relatedLessons": ["authorization-code-flow"],
   "furtherReading": [
     {
       "title": "RFC 7636 — Proof Key for Code Exchange by OAuth Public Clients",

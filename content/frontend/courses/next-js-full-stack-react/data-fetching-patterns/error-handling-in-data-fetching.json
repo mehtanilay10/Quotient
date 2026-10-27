@@ -111,7 +111,13 @@
   ],
   "relatedLessons": ["streaming-and-suspense", "loading-states", "server-components-data-fetching"],
   "furtherReading": [
-    { "title": "Next.js Error Handling Documentation", "url": "https://nextjs.org/docs/app/building-your-application/routing/error-handling" },
-    { "title": "Next.js Not-Found Handling", "url": "https://nextjs.org/docs/app/api-reference/functions/not-found" }
+    {
+      "title": "Next.js Error Handling Documentation",
+      "url": "https://nextjs.org/docs/app/building-your-application/routing/error-handling"
+    },
+    {
+      "title": "Next.js Not-Found Handling",
+      "url": "https://nextjs.org/docs/app/api-reference/functions/not-found"
+    }
   ]
 }

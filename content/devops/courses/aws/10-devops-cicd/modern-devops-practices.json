@@ -8,15 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "devops",
-    "github-actions",
-    "oidc",
-    "blue-green",
-    "canary",
-    "deployment"
-  ],
+  "tags": ["aws", "devops", "github-actions", "oidc", "blue-green", "canary", "deployment"],
   "blocks": [
     {
       "type": "paragraph",

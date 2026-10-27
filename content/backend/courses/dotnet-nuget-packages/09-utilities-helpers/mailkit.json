@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "email",
-    "mailkit",
-    "smtp",
-    "imap",
-    "pop3"
-  ],
+  "tags": ["email", "mailkit", "smtp", "imap", "pop3"],
   "blocks": [
     {
       "type": "heading",
@@ -123,9 +117,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "fluent-email",
-    "sendgrid"
-  ],
+  "relatedLessons": ["fluent-email", "sendgrid"],
   "courseSlug": "dotnet-nuget-packages"
 }

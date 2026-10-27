@@ -1,10 +1,10 @@
-import { Metadata } from 'next';
-import { BookmarksClient } from './BookmarksClient';
-import { BookmarkErrorBoundary } from '@/components/bookmarks/BookmarkErrorBoundary';
+import { Metadata } from "next";
+import { BookmarksClient } from "./BookmarksClient";
+import { BookmarkErrorBoundary } from "@/components/bookmarks/BookmarkErrorBoundary";
 
 export const metadata: Metadata = {
-  title: 'Bookmarks | Quotient',
-  description: 'View and manage your saved bookmarks.',
+  title: "Bookmarks | Quotient",
+  description: "View and manage your saved bookmarks.",
 };
 
 export default function BookmarksPage() {

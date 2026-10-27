@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "middleware",
-    "pipeline",
-    "delegates",
-    "request-processing"
-  ],
+  "tags": ["middleware", "pipeline", "delegates", "request-processing"],
   "blocks": [
     {
       "type": "paragraph",
@@ -109,32 +104,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Inline Lambda",
-          "Class-Based"
-        ],
+        "headers": ["Aspect", "Inline Lambda", "Class-Based"],
         "rows": [
-          [
-            "Reusability",
-            "Low: tied to one app builder",
-            "High: can be shared across projects"
-          ],
-          [
-            "Testability",
-            "Difficult to unit test",
-            "Easy: inject mocks via constructor"
-          ],
-          [
-            "Readability",
-            "Compact but can clutter Program.cs",
-            "Cleaner separation of concerns"
-          ],
-          [
-            "DI Support",
-            "Limited to captured variables",
-            "Full constructor injection"
-          ]
+          ["Reusability", "Low: tied to one app builder", "High: can be shared across projects"],
+          ["Testability", "Difficult to unit test", "Easy: inject mocks via constructor"],
+          ["Readability", "Compact but can clutter Program.cs", "Cleaner separation of concerns"],
+          ["DI Support", "Limited to captured variables", "Full constructor injection"]
         ]
       }
     },
@@ -187,10 +162,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "endpoint-routing-internals",
-    "request-cancellation-and-graceful-shutdown"
-  ],
+  "relatedLessons": ["endpoint-routing-internals", "request-cancellation-and-graceful-shutdown"],
   "furtherReading": [
     {
       "title": "ASP.NET Core Middleware",

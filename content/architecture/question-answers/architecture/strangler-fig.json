@@ -6,12 +6,7 @@
   "description": "The strangler-fig pattern: routing traffic around seams, branch-by-abstraction, CDC data extraction, and knowing when to stop splitting.",
   "order": 19,
   "difficulty": "advanced",
-  "tags": [
-    "architecture",
-    "microservices",
-    "migration",
-    "advanced"
-  ],
+  "tags": ["architecture", "microservices", "migration", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

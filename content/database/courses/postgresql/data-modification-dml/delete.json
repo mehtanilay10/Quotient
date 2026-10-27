@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "delete",
-    "truncate",
-    "table-locks",
-    "wal",
-    "vacuum"
-  ],
+  "tags": ["delete", "truncate", "table-locks", "wal", "vacuum"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,11 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Attribute",
-          "`DELETE`",
-          "`TRUNCATE`"
-        ],
+        "headers": ["Attribute", "`DELETE`", "`TRUNCATE`"],
         "rows": [
           [
             "Filtering (`WHERE`)",
@@ -116,8 +106,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "update",
-    "merge"
-  ]
+  "relatedLessons": ["update", "merge"]
 }

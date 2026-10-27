@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "ef-core",
-    "relationships",
-    "model-building"
-  ],
+  "tags": ["aspnet-core", "ef-core", "relationships", "model-building"],
   "blocks": [
     {
       "type": "heading",
@@ -75,16 +70,8 @@
               "Clear delete behavior",
               "Supports all relationship types"
             ],
-            "cons": [
-              "Verbose",
-              "Must maintain entity classes"
-            ],
-            "tags": [
-              "HasOne",
-              "WithMany",
-              "HasForeignKey",
-              "OnDelete"
-            ]
+            "cons": ["Verbose", "Must maintain entity classes"],
+            "tags": ["HasOne", "WithMany", "HasForeignKey", "OnDelete"]
           }
         ]
       }

@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "cache-resolvers",
-    "denormalization",
-    "references",
-    "apollo-client"
-  ],
+  "tags": ["cache-resolvers", "denormalization", "references", "apollo-client"],
   "blocks": [
     {
       "type": "heading",
@@ -74,7 +69,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "type-policies-field-policies"
-  ]
+  "prerequisites": ["type-policies-field-policies"]
 }

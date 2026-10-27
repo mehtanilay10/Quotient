@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "aspnet-core",
-    "authentication",
-    "identity",
-    "ef-core"
-  ],
+  "tags": ["aspnet-core", "authentication", "identity", "ef-core"],
   "blocks": [
     {
       "type": "heading",
@@ -75,16 +70,8 @@
               "Password hashing built-in",
               "Email confirmation, 2FA"
             ],
-            "cons": [
-              "Heavy setup",
-              "Tied to EF Core",
-              "Can be overkill for simple APIs"
-            ],
-            "tags": [
-              "AddIdentity",
-              "IdentityUser",
-              "IdentityRole"
-            ]
+            "cons": ["Heavy setup", "Tied to EF Core", "Can be overkill for simple APIs"],
+            "tags": ["AddIdentity", "IdentityUser", "IdentityRole"]
           }
         ]
       }

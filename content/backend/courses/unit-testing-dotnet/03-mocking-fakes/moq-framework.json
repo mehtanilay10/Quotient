@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "moq",
-    "mocking",
-    "dotnet"
-  ],
+  "tags": ["moq", "mocking", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,10 +36,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "mocking-basics",
-    "stubs-fakes"
-  ],
+  "relatedLessons": ["mocking-basics", "stubs-fakes"],
   "furtherReading": [],
   "courseSlug": "unit-testing-dotnet"
 }

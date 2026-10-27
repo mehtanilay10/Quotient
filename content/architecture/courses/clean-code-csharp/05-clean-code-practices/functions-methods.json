@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "clean-code",
-    "functions",
-    "csharp"
-  ],
+  "tags": ["clean-code", "functions", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -59,9 +55,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "meaningful-names"
-  ],
+  "relatedLessons": ["meaningful-names"],
   "furtherReading": [],
   "courseSlug": "clean-code-csharp"
 }

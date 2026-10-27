@@ -6,9 +6,5 @@
   "fullDefinition": "Semantic search uses embeddings to find content based on conceptual meaning rather than exact words. A semantic search for 'affordable car' will also return results about 'budget vehicle' and 'cheap automobile' because their meaning-vectors are close. This contrasts with traditional keyword search which would only return results containing the exact words. Semantic search is the foundation of modern AI-powered search tools.",
   "category": "architecture",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "embedding",
-    "vector-database",
-    "rag"
-  ]
+  "relatedTerms": ["embedding", "vector-database", "rag"]
 }

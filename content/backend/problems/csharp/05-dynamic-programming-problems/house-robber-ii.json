@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "medium",
   "estimatedMinutes": 14,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -50,15 +46,8 @@
           {
             "title": "Two Passes",
             "description": "Max of Rob[0..n-2] and Rob[1..n-1]",
-            "pros": [
-              "O(n) time",
-              "O(1) space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "O(1) space"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

@@ -6,11 +6,7 @@
   "description": "DOM refs, mutable boxes that survive renders, the latest-ref pattern, and why ref mutations don't re-render.",
   "order": 20,
   "difficulty": "intermediate",
-  "tags": [
-    "react",
-    "hooks",
-    "intermediate"
-  ],
+  "tags": ["react", "hooks", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -117,11 +113,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "react-b02",
-    "react-i02",
-    "custom-hooks"
-  ],
+  "relatedLessons": ["react-b02", "react-i02", "custom-hooks"],
   "furtherReading": [
     {
       "title": "useRef reference",

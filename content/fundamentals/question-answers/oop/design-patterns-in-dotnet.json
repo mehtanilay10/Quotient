@@ -6,11 +6,7 @@
   "description": "Recognizing Strategy, Observer, Iterator, Decorator, Factory, and Singleton inside the BCL and ASP.NET Core — patterns learned from the platform you already use.",
   "order": 20,
   "difficulty": "advanced",
-  "tags": [
-    "oop",
-    "design-patterns",
-    "advanced"
-  ],
+  "tags": ["oop", "design-patterns", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

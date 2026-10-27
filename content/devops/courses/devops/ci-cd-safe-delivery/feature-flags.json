@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "CI/CD",
-    "feature-flags",
-    "trunk-based-development",
-    "release"
-  ],
+  "tags": ["CI/CD", "feature-flags", "trunk-based-development", "release"],
   "blocks": [
     {
       "type": "paragraph",
@@ -112,27 +107,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Flag state",
-          "Meaning",
-          "Typical audience"
-        ],
+        "headers": ["Flag state", "Meaning", "Typical audience"],
         "rows": [
-          [
-            "Off",
-            "Feature is hidden for everyone.",
-            "All users"
-          ],
-          [
-            "On",
-            "Feature is visible to everyone.",
-            "All users"
-          ],
-          [
-            "Percentage",
-            "Feature is visible to a fraction of users.",
-            "Gradual rollout"
-          ],
+          ["Off", "Feature is hidden for everyone.", "All users"],
+          ["On", "Feature is visible to everyone.", "All users"],
+          ["Percentage", "Feature is visible to a fraction of users.", "Gradual rollout"],
           [
             "Allow list",
             "Feature is visible to specific users or tenants.",

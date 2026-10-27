@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "variables",
-    "declare",
-    "set",
-    "stored-procedure"
-  ],
+  "tags": ["variables", "declare", "set", "stored-procedure"],
   "blocks": [
     {
       "type": "heading",

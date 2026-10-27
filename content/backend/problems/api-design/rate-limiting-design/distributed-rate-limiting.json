@@ -61,11 +61,7 @@
           {
             "title": "Consistent Hashing",
             "description": "Hash the rate limit key to a specific gateway instance.",
-            "pros": [
-              "Even load distribution",
-              "Minimal reshuffling on scale",
-              "No shared store"
-            ],
+            "pros": ["Even load distribution", "Minimal reshuffling on scale", "No shared store"],
             "cons": [
               "Still breaks on instance removal",
               "Key migration is complex",
@@ -146,7 +142,12 @@
         "headers": ["Component", "Typical Latency", "P99 Latency", "Mitigation"],
         "rows": [
           ["Redis single-node", "0.5-1ms", "2ms", "Keep Redis co-located with gateway"],
-          ["Redis Cluster (cross-slot)", "1-2ms", "5ms", "Use hash tags to keep related keys on same shard"],
+          [
+            "Redis Cluster (cross-slot)",
+            "1-2ms",
+            "5ms",
+            "Use hash tags to keep related keys on same shard"
+          ],
           ["Redis Lua script", "0.3-0.5ms", "1ms", "Keep scripts simple; avoid loops"],
           ["gRPC RLS round-trip", "1-3ms", "10ms", "Cache results locally with short TTL"]
         ]
@@ -194,10 +195,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "token-bucket-implementation",
-    "rate-limit-headers"
-  ],
+  "relatedLessons": ["token-bucket-implementation", "rate-limit-headers"],
   "furtherReading": [
     {
       "title": "Envoy Rate Limit Service",

@@ -168,6 +168,10 @@
   ],
   "relatedLessons": ["security-fundamentals", "gpg-commit-signing"],
   "furtherReading": [
-    { "title": "Git Signature Verification", "url": "https://git-scm.com/docs/git-verify-commit", "type": "article" }
+    {
+      "title": "Git Signature Verification",
+      "url": "https://git-scm.com/docs/git-verify-commit",
+      "type": "article"
+    }
   ]
 }

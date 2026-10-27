@@ -7,10 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 8,
-  "tags": [
-    "oop",
-    "auto-properties"
-  ],
+  "tags": ["oop", "auto-properties"],
   "blocks": [
     {
       "type": "paragraph",
@@ -39,9 +36,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "properties",
-    "read-only-fields"
-  ],
+  "relatedLessons": ["properties", "read-only-fields"],
   "courseSlug": "oops-concepts"
 }

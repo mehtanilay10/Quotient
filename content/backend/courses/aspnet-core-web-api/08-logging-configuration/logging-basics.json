@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "logging",
-    "diagnostics"
-  ],
+  "tags": ["web-api", "logging", "diagnostics"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,42 +56,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Level",
-          "Value",
-          "When to use"
-        ],
+        "headers": ["Level", "Value", "When to use"],
         "rows": [
-          [
-            "Trace",
-            "0",
-            "Detailed diagnostic info — method entry/exit, variable values"
-          ],
-          [
-            "Debug",
-            "1",
-            "Debugging information during development"
-          ],
-          [
-            "Information",
-            "2",
-            "General informational messages — request handled, job completed"
-          ],
-          [
-            "Warning",
-            "3",
-            "Abnormal or unexpected events that don't stop execution"
-          ],
-          [
-            "Error",
-            "4",
-            "Errors and exceptions that affected an operation"
-          ],
-          [
-            "Critical",
-            "5",
-            "Critical failures that require immediate attention"
-          ]
+          ["Trace", "0", "Detailed diagnostic info — method entry/exit, variable values"],
+          ["Debug", "1", "Debugging information during development"],
+          ["Information", "2", "General informational messages — request handled, job completed"],
+          ["Warning", "3", "Abnormal or unexpected events that don't stop execution"],
+          ["Error", "4", "Errors and exceptions that affected an operation"],
+          ["Critical", "5", "Critical failures that require immediate attention"]
         ]
       }
     },
@@ -159,32 +127,16 @@
           {
             "title": "LogInformation(\"msg\")",
             "description": "Plain message — no structured data.",
-            "pros": [
-              "Simple to read"
-            ],
-            "cons": [
-              "Not queryable",
-              "Hard to correlate across services"
-            ],
-            "tags": [
-              "unstructured"
-            ]
+            "pros": ["Simple to read"],
+            "cons": ["Not queryable", "Hard to correlate across services"],
+            "tags": ["unstructured"]
           },
           {
             "title": "LogInformation(\"User {UserId} did {Action}\", id, action)",
             "description": "Structured message template with named placeholders.",
-            "pros": [
-              "Searchable in log sinks",
-              "Type-safe values",
-              "Aggregatable"
-            ],
-            "cons": [
-              "Slightly more verbose"
-            ],
-            "tags": [
-              "structured",
-              "recommended"
-            ]
+            "pros": ["Searchable in log sinks", "Type-safe values", "Aggregatable"],
+            "cons": ["Slightly more verbose"],
+            "tags": ["structured", "recommended"]
           }
         ]
       }

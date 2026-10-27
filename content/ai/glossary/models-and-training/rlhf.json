@@ -6,19 +6,12 @@
   "fullDefinition": "RLHF is a three-stage training process that aligns AI models with human preferences. First, a reward model is trained to predict which responses humans prefer. Then, the main model is optimized against this reward signal using reinforcement learning. Finally, the model is evaluated and iterated upon. RLHF was instrumental in making ChatGPT and other modern assistants helpful, harmless, and honest. However, it has limitations including reward hacking, distribution shift, and the challenge of capturing the full range of human values in a scalar reward signal.",
   "category": "models-and-training",
   "difficulty": "advanced",
-  "relatedTerms": [
-    "fine-tuning",
-    "instruction-tuning",
-    "large-language-model"
-  ],
+  "relatedTerms": ["fine-tuning", "instruction-tuning", "large-language-model"],
   "learnMoreSlug": "how-llms-work-simply",
   "examples": [
     "Humans rate two model responses, and a reward model learns to predict the preferred one",
     "A model that initially gives long answers is tuned to be more concise when humans prefer brevity",
     "RLHF reducing a model's tendency to produce toxic or unhelpful content"
   ],
-  "alsoKnownAs": [
-    "Reinforcement Learning from Human Preferences",
-    "RLHP"
-  ]
+  "alsoKnownAs": ["Reinforcement Learning from Human Preferences", "RLHP"]
 }

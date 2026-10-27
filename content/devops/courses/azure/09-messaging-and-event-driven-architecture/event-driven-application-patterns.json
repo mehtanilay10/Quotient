@@ -8,14 +8,7 @@
   "order": 16,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "azure",
-    "azure",
-    "messaging",
-    "events",
-    "patterns",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "messaging", "events", "patterns", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -99,37 +92,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Problem Solved",
-          "Azure Services"
-        ],
+        "headers": ["Pattern", "Problem Solved", "Azure Services"],
         "rows": [
-          [
-            "Outbox",
-            "Atomic data save + event publish",
-            "Service Bus + SQL Database"
-          ],
-          [
-            "Saga",
-            "Distributed transactions without 2PC",
-            "Service Bus + Functions"
-          ],
-          [
-            "Event Sourcing",
-            "Full audit trail, state rebuild",
-            "Event Hubs + Cosmos DB"
-          ],
-          [
-            "CQRS",
-            "Optimized read and write models",
-            "Event Grid + Cosmos DB"
-          ],
-          [
-            "Pub/Sub",
-            "Fan-out to multiple consumers",
-            "Service Bus Topics / Event Grid"
-          ]
+          ["Outbox", "Atomic data save + event publish", "Service Bus + SQL Database"],
+          ["Saga", "Distributed transactions without 2PC", "Service Bus + Functions"],
+          ["Event Sourcing", "Full audit trail, state rebuild", "Event Hubs + Cosmos DB"],
+          ["CQRS", "Optimized read and write models", "Event Grid + Cosmos DB"],
+          ["Pub/Sub", "Fan-out to multiple consumers", "Service Bus Topics / Event Grid"]
         ]
       }
     },

@@ -8,13 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "capacity-planning",
-    "growth",
-    "tempdb",
-    "sizing",
-    "sql-server"
-  ],
+  "tags": ["capacity-planning", "growth", "tempdb", "sizing", "sql-server"],
   "blocks": [
     {
       "type": "paragraph",

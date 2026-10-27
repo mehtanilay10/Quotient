@@ -8,12 +8,7 @@
   "order": 12,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "rest",
-    "graphql",
-    "api",
-    "csharp"
-  ],
+  "tags": ["rest", "graphql", "api", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -79,38 +74,30 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Criterion",
-          "Favors REST",
-          "Favors GraphQL"
-        ],
+        "headers": ["Criterion", "Favors REST", "Favors GraphQL"],
         "rows": [
- [
+          [
             "Client diversity",
             "Few known clients (web, mobile)",
             "Many diverse clients with different data needs"
           ],
- [
-            "Data relationships",
-            "Simple, flat resources",
-            "Deeply nested, interconnected data"
-          ],
- [
+          ["Data relationships", "Simple, flat resources", "Deeply nested, interconnected data"],
+          [
             "Caching requirements",
             "HTTP caching is important",
             "Fine-grained client caching is acceptable"
           ],
- [
+          [
             "Team experience",
             "Team knows HTTP and REST well",
             "Team has GraphQL experience or time to learn"
           ],
- [
+          [
             "API evolution",
             "Versioned endpoints are acceptable",
             "Schema evolution without versioning is preferred"
           ],
- [
+          [
             "Real-time needs",
             "Polling or webhooks are sufficient",
             "Subscriptions and live updates are required"
@@ -224,10 +211,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rest-vs-grpc-decision-framework",
-    "making-technical-trade-offs-explicit"
-  ],
+  "relatedLessons": ["rest-vs-grpc-decision-framework", "making-technical-trade-offs-explicit"],
   "furtherReading": [
     {
       "title": "Hot Chocolate Documentation",

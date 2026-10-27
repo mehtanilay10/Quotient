@@ -8,7 +8,17 @@
   "order": 11,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": ["ef-core", "entity-framework", "dotnet", "orm", "migrations", "relationships", "querying", "cheatsheet", "quick-reference"],
+  "tags": [
+    "ef-core",
+    "entity-framework",
+    "dotnet",
+    "orm",
+    "migrations",
+    "relationships",
+    "querying",
+    "cheatsheet",
+    "quick-reference"
+  ],
   "blocks": [
     {
       "type": "example",

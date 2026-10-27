@@ -8,13 +8,7 @@
   "order": 14,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "graphs",
-    "bfs",
-    "hashmap",
-    "medium"
-  ],
+  "tags": ["csharp", "graphs", "bfs", "hashmap", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -52,14 +46,8 @@
           {
             "title": "BFS + HashMap",
             "description": "Clone as we traverse",
-            "pros": [
-              "O(V+E) time"
-            ],
-            "tags": [
-              "O(V+E) time",
-              "O(V) space",
-              "Recommended"
-            ]
+            "pros": ["O(V+E) time"],
+            "tags": ["O(V+E) time", "O(V) space", "Recommended"]
           }
         ]
       }

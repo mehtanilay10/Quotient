@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "utilities",
-    "jsonpatch",
-    "json",
-    "api"
-  ],
+  "tags": ["utilities", "jsonpatch", "json", "api"],
   "blocks": [
     {
       "type": "heading",
@@ -122,9 +117,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "humanizer",
-    "fluent-email"
-  ],
+  "relatedLessons": ["humanizer", "fluent-email"],
   "courseSlug": "dotnet-nuget-packages"
 }

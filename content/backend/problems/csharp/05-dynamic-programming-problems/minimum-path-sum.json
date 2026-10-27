@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "medium",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "grid",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "grid", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "1D DP",
             "description": "dp[j] = min(dp[j], dp[j-1]) + grid[i][j]",
-            "pros": [
-              "O(n) space"
-            ],
-            "tags": [
-              "O(m\u00b7n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) space"],
+            "tags": ["O(m\u00b7n) time", "O(n) space", "Recommended"]
           }
         ]
       }

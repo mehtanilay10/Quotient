@@ -81,42 +81,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Use Case",
-          "Benefit"
-        ],
+        "headers": ["Feature", "Use Case", "Benefit"],
         "rows": [
-          [
-            "Parameter Store",
-            "Store config and secrets",
-            "Centralized, encrypted key-value store"
-          ],
-          [
-            "Session Manager",
-            "Access EC2 instances",
-            "No SSH keys or open ports needed"
-          ],
-          [
-            "Run Command",
-            "Run commands at scale",
-            "Remote management without SSH"
-          ],
-          [
-            "Patch Manager",
-            "Patch EC2 instances",
-            "Automated OS patching across fleet"
-          ],
-          [
-            "Automation",
-            "Deploy standardized changes",
-            "Reduced human error, faster deployments"
-          ],
-          [
-            "State Manager",
-            "Enforce instance configuration",
-            "Ensure compliance across fleet"
-          ]
+          ["Parameter Store", "Store config and secrets", "Centralized, encrypted key-value store"],
+          ["Session Manager", "Access EC2 instances", "No SSH keys or open ports needed"],
+          ["Run Command", "Run commands at scale", "Remote management without SSH"],
+          ["Patch Manager", "Patch EC2 instances", "Automated OS patching across fleet"],
+          ["Automation", "Deploy standardized changes", "Reduced human error, faster deployments"],
+          ["State Manager", "Enforce instance configuration", "Ensure compliance across fleet"]
         ]
       }
     },

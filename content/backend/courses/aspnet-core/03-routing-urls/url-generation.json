@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "url-generation",
-    "links",
-    "routing"
-  ],
+  "tags": ["url-generation", "links", "routing"],
   "blocks": [
     {
       "type": "paragraph",
@@ -232,10 +228,7 @@
       "takeaway": "Dynamic URL generation is a best practice that prevents a whole class of bugs when your routing configuration changes. Use Url.Action, Url.RouteUrl, or Html.ActionLink everywhere instead of hardcoding paths."
     }
   ],
-  "relatedLessons": [
-    "route-constraints",
-    "area-routing"
-  ],
+  "relatedLessons": ["route-constraints", "area-routing"],
   "technology": null,
   "furtherReading": [
     {

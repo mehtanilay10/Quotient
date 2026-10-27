@@ -8,14 +8,7 @@
   "order": 7,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "azure",
-    "monitoring",
-    "observability",
-    "log-analytics",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "monitoring", "observability", "log-analytics", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -84,37 +77,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Source",
-          "How to Connect",
-          "Data Types"
-        ],
+        "headers": ["Source", "How to Connect", "Data Types"],
         "rows": [
-          [
-            "Azure VMs",
-            "Log Analytics agent or AMA",
-            "Event logs, performance counters, Syslog"
-          ],
-          [
-            "App Service",
-            "Diagnostic settings",
-            "App logs, web server logs, metrics"
-          ],
-          [
-            "AKS",
-            "Container insights (AMA)",
-            "Container logs, Kube-state metrics"
-          ],
+          ["Azure VMs", "Log Analytics agent or AMA", "Event logs, performance counters, Syslog"],
+          ["App Service", "Diagnostic settings", "App logs, web server logs, metrics"],
+          ["AKS", "Container insights (AMA)", "Container logs, Kube-state metrics"],
           [
             "Azure Functions",
             "Application Insights linked to workspace",
             "Request, exception, custom logs"
           ],
-          [
-            "Custom Apps",
-            "Data Collector API",
-            "Any JSON log data"
-          ]
+          ["Custom Apps", "Data Collector API", "Any JSON log data"]
         ]
       }
     },

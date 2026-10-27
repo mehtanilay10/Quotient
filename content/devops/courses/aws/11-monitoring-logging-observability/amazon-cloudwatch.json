@@ -8,15 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "monitoring",
-    "cloudwatch",
-    "metrics",
-    "alarms",
-    "dashboards",
-    "logging"
-  ],
+  "tags": ["aws", "monitoring", "cloudwatch", "metrics", "alarms", "dashboards", "logging"],
   "blocks": [
     {
       "type": "paragraph",

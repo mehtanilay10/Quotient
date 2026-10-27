@@ -6,11 +6,7 @@
   "fullDefinition": "AI hallucination is the phenomenon where language models produce outputs that are factually incorrect, logically inconsistent, or completely fabricated while presenting them with apparent confidence. Hallucinations occur because models are trained to predict plausible continuations rather than verify truth, and they can fill gaps in knowledge with plausible-sounding but invented information. Types of hallucinations include fabricating citations, making up statistics, inventing historical events, and generating plausible-sounding but incorrect code. Reducing hallucinations requires techniques like RAG, grounding, verification steps, and clear communication about model limitations to users.",
   "category": "safety-and-ethics",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "hallucination",
-    "safety",
-    "grounding"
-  ],
+  "relatedTerms": ["hallucination", "safety", "grounding"],
   "learnMoreSlug": "ai-hallucination-deep-dive",
   "examples": [
     "A chatbot inventing a non-existent court case to support a legal argument",

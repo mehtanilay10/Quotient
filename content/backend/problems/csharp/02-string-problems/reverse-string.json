@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "strings",
-    "two-pointers",
-    "easy"
-  ],
+  "tags": ["csharp", "strings", "two-pointers", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -87,33 +82,16 @@
           {
             "title": "Built-in",
             "description": "Array.Reverse",
-            "pros": [
-              "Shortest",
-              "Optimized"
-            ],
-            "cons": [
-              "Doesn't demonstrate pattern"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space"
-            ]
+            "pros": ["Shortest", "Optimized"],
+            "cons": ["Doesn't demonstrate pattern"],
+            "tags": ["O(n) time", "O(1) space"]
           },
           {
             "title": "Two-Pointer",
             "description": "Manual left/right swap",
-            "pros": [
-              "Interview standard",
-              "O(1) space"
-            ],
-            "cons": [
-              "More code"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["Interview standard", "O(1) space"],
+            "cons": ["More code"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

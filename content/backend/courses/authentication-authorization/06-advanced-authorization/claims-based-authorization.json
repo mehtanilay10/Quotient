@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "authorization",
-    "claims",
-    "fine-grained",
-    "aspnet-core",
-    "jwt"
-  ],
+  "tags": ["authorization", "claims", "fine-grained", "aspnet-core", "jwt"],
   "blocks": [
     {
       "type": "paragraph",
@@ -43,30 +37,14 @@
           {
             "title": "Roles",
             "description": "Group users into categories for broad access control.",
-            "pros": [
-              "Simple to understand",
-              "Easy to manage",
-              "Built into Identity"
-            ],
-            "cons": [
-              "Coarse-grained",
-              "Limited flexibility",
-              "Role explosion at scale"
-            ]
+            "pros": ["Simple to understand", "Easy to manage", "Built into Identity"],
+            "cons": ["Coarse-grained", "Limited flexibility", "Role explosion at scale"]
           },
           {
             "title": "Claims",
             "description": "Attribute-based statements about users for fine-grained control.",
-            "pros": [
-              "Highly flexible",
-              "Expresses complex rules",
-              "Works well with JWT"
-            ],
-            "cons": [
-              "More complex",
-              "Requires careful design",
-              "Can become unwieldy"
-            ]
+            "pros": ["Highly flexible", "Expresses complex rules", "Works well with JWT"],
+            "cons": ["More complex", "Requires careful design", "Can become unwieldy"]
           }
         ]
       }
@@ -203,7 +181,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "auth-overview"
-  ]
+  "prerequisites": ["auth-overview"]
 }

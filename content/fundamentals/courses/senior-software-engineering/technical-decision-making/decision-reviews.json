@@ -170,11 +170,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "decision-documentation",
-    "writing-rfcs",
-    "long-term-impact"
-  ],
+  "relatedLessons": ["decision-documentation", "writing-rfcs", "long-term-impact"],
   "furtherReading": [
     {
       "type": "article",

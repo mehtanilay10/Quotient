@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "aggregates",
-    "create-aggregate",
-    "state-transition",
-    "udf"
-  ],
+  "tags": ["aggregates", "create-aggregate", "state-transition", "udf"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "aggregate-functions",
-    "plpgsql-functions"
-  ]
+  "relatedLessons": ["aggregate-functions", "plpgsql-functions"]
 }

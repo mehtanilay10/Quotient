@@ -6,11 +6,7 @@
   "fullDefinition": "Fine-tuning is the process of taking a pre-trained model and continuing to train it on a smaller, task-specific dataset. This adapts the model's weights to perform better at a specific task or to adopt a specific style or domain. Fine-tuning is more powerful than prompting but significantly more complex and expensive. It requires technical expertise, suitable training data, and computational resources. Most individuals and businesses use prompt engineering or RAG instead of fine-tuning, reserving fine-tuning for specialized use cases where consistent performance or style is critical.",
   "category": "models-and-training",
   "difficulty": "advanced",
-  "relatedTerms": [
-    "large-language-model",
-    "rag",
-    "prompt"
-  ],
+  "relatedTerms": ["large-language-model", "rag", "prompt"],
   "learnMoreSlug": "how-llms-work-simply",
   "examples": [
     "A legal firm fine-tunes a model on legal documents to improve its accuracy on legal tasks",

@@ -6,10 +6,6 @@
   "fullDefinition": "No-code AI refers to tools and platforms that allow non-developers to build, deploy, and use AI-powered applications through graphical interfaces rather than code. Examples include Zapier (automation), Bubble (app building), Notion AI (workspace AI), and Copilot Studio (Microsoft agents). The no-code movement has dramatically expanded who can build useful AI-powered systems.",
   "category": "tools-and-apis",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "automation",
-    "workflow",
-    "agent"
-  ],
+  "relatedTerms": ["automation", "workflow", "agent"],
   "learnMoreSlug": "no-code-automation-tools"
 }

@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "TRY-CATCH",
-    "error-handling",
-    "exception"
-  ],
+  "tags": ["TRY-CATCH", "error-handling", "exception"],
   "blocks": [
     {
       "type": "heading",

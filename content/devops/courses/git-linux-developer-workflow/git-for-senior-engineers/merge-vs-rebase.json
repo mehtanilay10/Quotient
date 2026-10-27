@@ -338,32 +338,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Best For",
-          "Notes"
-        ],
+        "headers": ["Strategy", "Best For", "Notes"],
         "rows": [
-          [
-            "ort",
-            "General purpose, modern default",
-            "Handles renames well"
-          ],
+          ["ort", "General purpose, modern default", "Handles renames well"],
           [
             "recursive",
             "Two-branch merges with rename detection",
             "Older default, still supported"
           ],
-          [
-            "resolve",
-            "Simple two-branch merges",
-            "Cannot handle criss-cross merges"
-          ],
-          [
-            "octopus",
-            "Merging three or more branches",
-            "Fails if conflicts exist"
-          ]
+          ["resolve", "Simple two-branch merges", "Cannot handle criss-cross merges"],
+          ["octopus", "Merging three or more branches", "Fails if conflicts exist"]
         ]
       }
     },
@@ -757,32 +741,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Result",
-          "Best For"
-        ],
+        "headers": ["Strategy", "Result", "Best For"],
         "rows": [
-          [
-            "Merge commit",
-            "Graph history with merge nodes",
-            "Preserving branch context"
-          ],
-          [
-            "Fast-forward",
-            "Linear history, no merge commit",
-            "Trunk-based development"
-          ],
-          [
-            "Squash",
-            "Single commit on main",
-            "Clean main history"
-          ],
-          [
-            "Rebase",
-            "Linear history, no merge commit",
-            "Feature branches before PR"
-          ]
+          ["Merge commit", "Graph history with merge nodes", "Preserving branch context"],
+          ["Fast-forward", "Linear history, no merge commit", "Trunk-based development"],
+          ["Squash", "Single commit on main", "Clean main history"],
+          ["Rebase", "Linear history, no merge commit", "Feature branches before PR"]
         ]
       }
     },

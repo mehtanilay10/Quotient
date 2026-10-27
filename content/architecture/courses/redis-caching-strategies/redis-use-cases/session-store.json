@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "redis",
-    "sessions",
-    "authentication",
-    "scalability"
-  ],
+  "tags": ["redis", "sessions", "authentication", "scalability"],
   "blocks": [
     {
       "type": "paragraph",

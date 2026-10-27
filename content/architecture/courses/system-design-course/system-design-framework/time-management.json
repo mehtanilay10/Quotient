@@ -8,11 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "system-design",
-    "interview-strategy",
-    "time-management"
-  ],
+  "tags": ["system-design", "interview-strategy", "time-management"],
   "blocks": [
     {
       "type": "heading",
@@ -52,32 +48,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Phase",
-          "Time",
-          "Goal"
-        ],
+        "headers": ["Phase", "Time", "Goal"],
         "rows": [
-          [
-            "Requirements and scale",
-            "5-10 min",
-            "Align with interviewer on problem scope"
-          ],
-          [
-            "High-level design",
-            "10-15 min",
-            "Present core components and data flow"
-          ],
+          ["Requirements and scale", "5-10 min", "Align with interviewer on problem scope"],
+          ["High-level design", "10-15 min", "Present core components and data flow"],
           [
             "Bottlenecks and trade-offs",
             "10-15 min",
             "Identify scaling challenges and alternatives"
           ],
-          [
-            "Deep dive",
-            "10-15 min",
-            "Detail the most interesting component"
-          ]
+          ["Deep dive", "10-15 min", "Detail the most interesting component"]
         ]
       }
     },

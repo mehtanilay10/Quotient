@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "select",
-    "selectmany",
-    "projection",
-    "anonymous types"
-  ],
+  "tags": ["linq", "select", "selectmany", "projection", "anonymous types"],
   "blocks": [
     {
       "type": "paragraph",
@@ -163,9 +157,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "filtering-operator-where",
-    "oftype-filtering-operator"
-  ],
+  "relatedLessons": ["filtering-operator-where", "oftype-filtering-operator"],
   "courseSlug": "linq"
 }

@@ -7,17 +7,8 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "tool-calling",
-    "skills",
-    "plugins",
-    "function-calling"
-  ],
-  "relatedGlossaryTerms": [
-    "tool-calling",
-    "plugin",
-    "agent"
-  ],
+  "tags": ["tool-calling", "skills", "plugins", "function-calling"],
+  "relatedGlossaryTerms": ["tool-calling", "plugin", "agent"],
   "blocks": [
     {
       "type": "paragraph",
@@ -58,12 +49,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool type",
-          "What it does",
-          "Example action",
-          "You can see this in..."
-        ],
+        "headers": ["Tool type", "What it does", "Example action", "You can see this in..."],
         "rows": [
           [
             "Web search",
@@ -116,11 +102,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Term",
-          "Platform",
-          "What it means in practice"
-        ],
+        "headers": ["Term", "Platform", "What it means in practice"],
         "rows": [
           [
             "Tool",
@@ -194,27 +176,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Reliability element",
-          "Failure if missing",
-          "Best practice"
-        ],
+        "headers": ["Reliability element", "Failure if missing", "Best practice"],
         "rows": [
           [
             "Schema precision",
             "Invalid or ambiguous arguments",
             "Use strict typed parameter schemas"
           ],
-          [
-            "Validation layer",
-            "Unsafe or malformed requests",
-            "Validate before execution"
-          ],
-          [
-            "Recovery strategy",
-            "Silent failure loops",
-            "Return structured errors and retry rules"
-          ]
+          ["Validation layer", "Unsafe or malformed requests", "Validate before execution"],
+          ["Recovery strategy", "Silent failure loops", "Return structured errors and retry rules"]
         ]
       }
     },
@@ -226,16 +196,12 @@
           {
             "title": "Without tool calling",
             "description": "The model can only generate text from its training data. It cannot access current prices, run code, or read your files.",
-            "tags": [
-              "limited"
-            ]
+            "tags": ["limited"]
           },
           {
             "title": "With tool calling",
             "description": "The model decides when to call external tools, gets real results, and uses them to give you an accurate, up-to-date answer.",
-            "tags": [
-              "recommended"
-            ]
+            "tags": ["recommended"]
           }
         ]
       }
@@ -250,10 +216,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-are-agents",
-    "what-is-mcp"
-  ],
+  "relatedLessons": ["what-are-agents", "what-is-mcp"],
   "furtherReading": [
     {
       "title": "Function Calling Guide",

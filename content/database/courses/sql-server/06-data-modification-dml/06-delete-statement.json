@@ -7,11 +7,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "delete",
-    "dml",
-    "remove-rows"
-  ],
+  "tags": ["delete", "dml", "remove-rows"],
   "blocks": [
     {
       "type": "heading",

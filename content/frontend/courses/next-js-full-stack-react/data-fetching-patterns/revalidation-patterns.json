@@ -101,8 +101,18 @@
         "headers": ["Strategy", "Best For", "Freshness", "Complexity"],
         "rows": [
           ["Time-based (revalidate)", "Blog posts, product catalogs", "Minutes to hours", "Low"],
-          ["On-demand (revalidatePath)", "User-specific dashboards", "Immediate after change", "Medium"],
-          ["Tag-based (revalidateTag)", "Shared data across many routes", "Immediate after change", "Medium"]
+          [
+            "On-demand (revalidatePath)",
+            "User-specific dashboards",
+            "Immediate after change",
+            "Medium"
+          ],
+          [
+            "Tag-based (revalidateTag)",
+            "Shared data across many routes",
+            "Immediate after change",
+            "Medium"
+          ]
         ]
       }
     },
@@ -128,9 +138,19 @@
       }
     }
   ],
-  "relatedLessons": ["caching-strategies", "error-handling-in-data-fetching", "streaming-and-suspense"],
+  "relatedLessons": [
+    "caching-strategies",
+    "error-handling-in-data-fetching",
+    "streaming-and-suspense"
+  ],
   "furtherReading": [
-    { "title": "Next.js Revalidation Documentation", "url": "https://nextjs.org/docs/app/building-your-application/data-fetching/revalidating" },
-    { "title": "Next.js Caching Documentation", "url": "https://nextjs.org/docs/app/building-your-application/caching" }
+    {
+      "title": "Next.js Revalidation Documentation",
+      "url": "https://nextjs.org/docs/app/building-your-application/data-fetching/revalidating"
+    },
+    {
+      "title": "Next.js Caching Documentation",
+      "url": "https://nextjs.org/docs/app/building-your-application/caching"
+    }
   ]
 }

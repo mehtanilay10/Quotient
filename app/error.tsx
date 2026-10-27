@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { AlertTriangle, ChevronDown, ChevronUp, Copy } from 'lucide-react';
-import { logger } from '@/lib/logger';
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { AlertTriangle, ChevronDown, ChevronUp, Copy } from "lucide-react";
+import { logger } from "@/lib/logger";
 
 export default function Error({
   error,
@@ -16,15 +16,15 @@ export default function Error({
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    logger.error('error', 'Application error', error);
+    logger.error("error", "Application error", error);
   }, [error]);
 
-  const errorMessage = error?.message || 'Unknown error';
-  const errorStack = error?.stack || 'No stack trace available';
+  const errorMessage = error?.message || "Unknown error";
+  const errorStack = error?.stack || "No stack trace available";
   const errorDigest = error?.digest;
 
   const handleCopy = async () => {
-    const details = `Error: ${errorMessage}\n\nStack Trace:\n${errorStack}\n\nDigest: ${errorDigest || 'N/A'}`;
+    const details = `Error: ${errorMessage}\n\nStack Trace:\n${errorStack}\n\nDigest: ${errorDigest || "N/A"}`;
     await navigator.clipboard.writeText(details);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -34,7 +34,8 @@ export default function Error({
     <div className="mx-auto flex min-h-[60vh] max-w-2xl flex-col items-center justify-center px-4 py-16 text-center">
       <h1 className="mb-2 text-2xl font-bold text-fg-default sm:text-3xl">Something went wrong</h1>
       <p className="mb-8 text-sm text-fg-muted sm:text-base">
-        We hit an unexpected error while loading this page. You can try again or go back to the home page.
+        We hit an unexpected error while loading this page. You can try again or go back to the home
+        page.
       </p>
 
       <div className="mb-6 w-full text-left">
@@ -55,20 +56,26 @@ export default function Error({
         {showDetails && (
           <div className="mt-3 space-y-3">
             <div className="rounded-md border border-border bg-canvas-subtle p-3">
-              <p className="text-xs font-semibold text-fg-muted uppercase tracking-wider mb-1">Error Message</p>
+              <p className="text-xs font-semibold text-fg-muted uppercase tracking-wider mb-1">
+                Error Message
+              </p>
               <p className="text-sm text-fg-default font-mono break-words">{errorMessage}</p>
             </div>
 
             {errorDigest && (
               <div className="rounded-md border border-border bg-canvas-subtle p-3">
-                <p className="text-xs font-semibold text-fg-muted uppercase tracking-wider mb-1">Error Digest</p>
+                <p className="text-xs font-semibold text-fg-muted uppercase tracking-wider mb-1">
+                  Error Digest
+                </p>
                 <p className="text-sm text-fg-default font-mono break-words">{errorDigest}</p>
               </div>
             )}
 
             <div className="rounded-md border border-border bg-canvas-subtle p-3">
               <div className="flex items-center justify-between mb-1">
-                <p className="text-xs font-semibold text-fg-muted uppercase tracking-wider">Stack Trace</p>
+                <p className="text-xs font-semibold text-fg-muted uppercase tracking-wider">
+                  Stack Trace
+                </p>
                 <button
                   type="button"
                   onClick={handleCopy}
@@ -76,7 +83,7 @@ export default function Error({
                   aria-label="Copy error details"
                 >
                   <Copy className="h-3 w-3" aria-hidden="true" />
-                  {copied ? 'Copied!' : 'Copy'}
+                  {copied ? "Copied!" : "Copy"}
                 </button>
               </div>
               <pre className="mt-2 overflow-x-auto rounded bg-canvas p-3 text-xs text-fg-default">

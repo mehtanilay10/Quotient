@@ -98,7 +98,10 @@
       }
     }
   ],
-  "relatedLessons": ["server-actions-and-mutation-boundaries", "route-handlers-and-backend-for-frontend-patterns"],
+  "relatedLessons": [
+    "server-actions-and-mutation-boundaries",
+    "route-handlers-and-backend-for-frontend-patterns"
+  ],
   "furtherReading": [
     {
       "title": "Authentication",

@@ -11,9 +11,5 @@
   "icon": "⏰",
   "tags": ["lld", "scheduler", "cron"],
   "lessonSlugs": ["task-scheduler-cron"],
-  "whatYouLearn": [
-    "Scheduling algorithms",
-    "Priority queues",
-    "Persistence and retries"
-  ]
+  "whatYouLearn": ["Scheduling algorithms", "Priority queues", "Persistence and retries"]
 }

@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "easy",
   "estimatedMinutes": 8,
-  "tags": [
-    "csharp",
-    "linked-list",
-    "in-place",
-    "easy"
-  ],
+  "tags": ["csharp", "linked-list", "in-place", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -74,34 +69,16 @@
           {
             "title": "Build New List",
             "description": "Copy unique values into a freshly allocated list",
-            "pros": [
-              "Does not mutate input",
-              "Easy to reason about"
-            ],
-            "cons": [
-              "Allocates new nodes",
-              "O(n) extra memory"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Does not mutate input", "Easy to reason about"],
+            "cons": ["Allocates new nodes", "O(n) extra memory"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "In-Place Relink",
             "description": "Skip duplicates by rewiring Next pointers",
-            "pros": [
-              "No new allocations",
-              "O(1) space"
-            ],
-            "cons": [
-              "Mutates the input list"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["No new allocations", "O(1) space"],
+            "cons": ["Mutates the input list"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

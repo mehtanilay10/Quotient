@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "There are `n` cars on a single-lane road, all heading to the same destination at `target`. Car `i` starts at `position[i]` with `speed[i]`. A faster car that catches a slower one cannot pass it and joins it as a fleet, travelling at the slower speed from then on. Return the number of fleets that arrive."}
+        "text": "There are `n` cars on a single-lane road, all heading to the same destination at `target`. Car `i` starts at `position[i]` with `speed[i]`. A faster car that catches a slower one cannot pass it and joins it as a fleet, travelling at the slower speed from then on. Return the number of fleets that arrive."
+      }
     },
     {
       "type": "heading",
@@ -36,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "A car's arrival time ignoring other cars is `(target - position) / speed`. Process the cars from closest-to-target backwards. A car forms a **new** fleet if it would arrive strictly *later* than the fleet ahead of it (it never catches up); otherwise it joins that fleet and inherits the fleet's arrival time."}
+        "text": "A car's arrival time ignoring other cars is `(target - position) / speed`. Process the cars from closest-to-target backwards. A car forms a **new** fleet if it would arrive strictly *later* than the fleet ahead of it (it never catches up); otherwise it joins that fleet and inherits the fleet's arrival time."
+      }
     },
     {
       "type": "example",
@@ -70,7 +72,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "The same algorithm can be expressed with a stack: push arrival times from the back, popping smaller-or-equal values, and the final stack size is the fleet count. This makes the monotonic-stack connection explicit."}
+        "text": "The same algorithm can be expressed with a stack: push arrival times from the back, popping smaller-or-equal values, and the final stack size is the fleet count. This makes the monotonic-stack connection explicit."
+      }
     },
     {
       "type": "example",

@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "from-query",
-    "query-string",
-    "binding"
-  ],
+  "tags": ["web-api", "from-query", "query-string", "binding"],
   "blocks": [
     {
       "type": "paragraph",
@@ -118,9 +113,7 @@
               "Method signature grows with each new option",
               "Harder to reuse across endpoints"
             ],
-            "tags": [
-              "simple"
-            ]
+            "tags": ["simple"]
           },
           {
             "title": "Query Model Class",

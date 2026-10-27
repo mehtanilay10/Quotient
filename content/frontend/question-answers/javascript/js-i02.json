@@ -6,10 +6,7 @@
   "description": "Understand variable declarations and scope in JavaScript.",
   "order": 6,
   "difficulty": "intermediate",
-  "tags": [
-    "javascript",
-    "intermediate"
-  ],
+  "tags": ["javascript", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

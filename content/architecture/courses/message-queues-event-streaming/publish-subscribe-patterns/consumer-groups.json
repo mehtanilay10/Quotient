@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "consumer-groups",
-    "kafka",
-    "load-balancing",
-    "horizontal-scaling",
-    "messaging"
-  ],
+  "tags": ["consumer-groups", "kafka", "load-balancing", "horizontal-scaling", "messaging"],
   "blocks": [
     {
       "type": "paragraph",
@@ -90,11 +84,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "Group ID",
-          "Message Delivery"
-        ],
+        "headers": ["Scenario", "Group ID", "Message Delivery"],
         "rows": [
           [
             "Single consumer processing all partitions",

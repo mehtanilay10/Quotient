@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "intro",
-    "overview",
-    "framework"
-  ],
+  "tags": ["intro", "overview", "framework"],
   "blocks": [
     {
       "type": "paragraph",
@@ -199,9 +195,7 @@
       "takeaway": "ASP.NET Core is a versatile, high-performance framework that removes the traditional Windows-only limitation of ASP.NET, opening modern web development to developers on any platform."
     }
   ],
-  "relatedLessons": [
-    "setting-up-environment"
-  ],
+  "relatedLessons": ["setting-up-environment"],
   "technology": null,
   "furtherReading": [
     {

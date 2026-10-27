@@ -59,10 +59,7 @@
               "Less flexible for complex branching logic",
               "Slower execution vs Make on equivalent tasks"
             ],
-            "tags": [
-              "beginner-friendly",
-              "freemium"
-            ]
+            "tags": ["beginner-friendly", "freemium"]
           },
           {
             "title": "Make (Integromat)",
@@ -78,10 +75,7 @@
               "Interface is more complex than Zapier",
               "Smaller template library"
             ],
-            "tags": [
-              "intermediate",
-              "freemium"
-            ]
+            "tags": ["intermediate", "freemium"]
           },
           {
             "title": "n8n",
@@ -97,11 +91,7 @@
               "Less beginner-friendly than Zapier",
               "Community support only on free tier"
             ],
-            "tags": [
-              "advanced",
-              "open-source",
-              "self-hostable"
-            ]
+            "tags": ["advanced", "open-source", "self-hostable"]
           }
         ]
       }
@@ -140,11 +130,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "AI step",
-          "What to prompt",
-          "Use in"
-        ],
+        "headers": ["AI step", "What to prompt", "Use in"],
         "rows": [
           [
             "Summarize",
@@ -215,11 +201,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Concern",
-          "What to check",
-          "Practical step"
-        ],
+        "headers": ["Concern", "What to check", "Practical step"],
         "rows": [
           [
             "Data retention",
@@ -262,11 +244,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Platform",
-          "Common pricing model",
-          "Scaling tip"
-        ],
+        "headers": ["Platform", "Common pricing model", "Scaling tip"],
         "rows": [
           [
             "Zapier",
@@ -304,11 +282,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Failure type",
-          "Recommended handling",
-          "Why"
-        ],
+        "headers": ["Failure type", "Recommended handling", "Why"],
         "rows": [
           [
             "Transient API error",
@@ -340,11 +314,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Template / snippet",
-          "Notes"
-        ],
+        "headers": ["Use case", "Template / snippet", "Notes"],
         "rows": [
           [
             "Email summarization",
@@ -405,11 +375,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Practice",
-          "Why it matters",
-          "How to implement"
-        ],
+        "headers": ["Practice", "Why it matters", "How to implement"],
         "rows": [
           [
             "Owner & SLA",
@@ -484,11 +450,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "Type",
-          "Why it helps"
-        ],
+        "headers": ["Resource", "Type", "Why it helps"],
         "rows": [
           [
             "Zapier University",
@@ -519,10 +481,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-ai-automation",
-    "what-are-agents"
-  ],
+  "relatedLessons": ["what-is-ai-automation", "what-are-agents"],
   "furtherReading": [
     {
       "title": "Zapier University",

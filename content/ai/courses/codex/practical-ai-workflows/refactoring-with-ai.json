@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "refactoring",
-    "legacy-code",
-    "code-quality",
-    "clean-code"
-  ],
+  "tags": ["refactoring", "legacy-code", "code-quality", "clean-code"],
   "blocks": [
     {
       "type": "heading",
@@ -181,10 +176,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "debugging-with-ai",
-    "code-review-with-ai"
-  ],
+  "relatedLessons": ["debugging-with-ai", "code-review-with-ai"],
   "relatedGlossaryTerms": [],
   "courseSlug": "codex"
 }

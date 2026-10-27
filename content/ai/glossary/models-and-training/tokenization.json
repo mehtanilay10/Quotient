@@ -6,11 +6,7 @@
   "fullDefinition": "Tokenization is the first step in how language models understand text. A tokenizer splits input text into tokens, which can be words, subwords, or even individual characters. Each token is mapped to a unique number in the model's vocabulary. The way text is tokenized affects how models handle language, including their ability to process rare words, different languages, and code. Different models use different tokenizers, and tokenization choices can explain quirks like why models sometimes struggle with spelling or why the same text costs different amounts across models.",
   "category": "models-and-training",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "token",
-    "large-language-model",
-    "transformer"
-  ],
+  "relatedTerms": ["token", "large-language-model", "transformer"],
   "learnMoreSlug": "tokens-explained",
   "examples": [
     "The sentence 'Hello world' being split into tokens ['Hello', ' world']",

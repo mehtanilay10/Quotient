@@ -32,12 +32,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Layer",
-          "Where it lives",
-          "What it caches",
-          "How to control"
-        ],
+        "headers": ["Layer", "Where it lives", "What it caches", "How to control"],
         "rows": [
           [
             "Data Cache",

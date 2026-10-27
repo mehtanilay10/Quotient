@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "typescript",
-    "enums",
-    "literal-types",
-    "unions"
-  ],
+  "tags": ["typescript", "enums", "literal-types", "unions"],
   "blocks": [
     {
       "type": "paragraph",
@@ -94,31 +89,15 @@
               "Works with switch statements",
               "Debugging shows the name"
             ],
-            "cons": [
-              "Adds runtime overhead",
-              "Can be accidentally extended"
-            ],
-            "tags": [
-              "runtime",
-              "named"
-            ]
+            "cons": ["Adds runtime overhead", "Can be accidentally extended"],
+            "tags": ["runtime", "named"]
           },
           {
             "title": "Literal Unions",
             "description": "A type made of exact string or number values. No runtime object is created.",
-            "pros": [
-              "Zero runtime overhead",
-              "Tiny bundle size",
-              "Flexible to combine"
-            ],
-            "cons": [
-              "No runtime value to inspect",
-              "Verbose in large sets"
-            ],
-            "tags": [
-              "compile-time",
-              "lightweight"
-            ]
+            "pros": ["Zero runtime overhead", "Tiny bundle size", "Flexible to combine"],
+            "cons": ["No runtime value to inspect", "Verbose in large sets"],
+            "tags": ["compile-time", "lightweight"]
           }
         ]
       }

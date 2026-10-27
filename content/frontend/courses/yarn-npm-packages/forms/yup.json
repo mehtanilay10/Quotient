@@ -6,13 +6,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "yup",
-    "validation",
-    "forms",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["yup", "validation", "forms", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -97,10 +91,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "Yup is chainable and expressive.",
-          "Use with Formik or standalone."
-        ]
+        "points": ["Yup is chainable and expressive.", "Use with Formik or standalone."]
       }
     }
   ],

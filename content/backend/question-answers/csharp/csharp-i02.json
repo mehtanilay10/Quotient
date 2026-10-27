@@ -6,10 +6,7 @@
   "description": "Master asynchronous programming patterns in .NET.",
   "order": 20,
   "difficulty": "intermediate",
-  "tags": [
-    "c#",
-    "intermediate"
-  ],
+  "tags": ["c#", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "singleton",
-    "creational",
-    "csharp"
-  ],
+  "tags": ["singleton", "creational", "csharp"],
   "blocks": [
     {
       "type": "paragraph",

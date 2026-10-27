@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "history",
-    "copilot",
-    "evolution",
-    "ai-coding"
-  ],
+  "tags": ["history", "copilot", "evolution", "ai-coding"],
   "blocks": [
     {
       "type": "heading",
@@ -156,10 +151,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-ai-coding",
-    "setting-up-ai-coding-environment"
-  ],
+  "relatedLessons": ["what-is-ai-coding", "setting-up-ai-coding-environment"],
   "relatedGlossaryTerms": [],
   "courseSlug": "codex"
 }

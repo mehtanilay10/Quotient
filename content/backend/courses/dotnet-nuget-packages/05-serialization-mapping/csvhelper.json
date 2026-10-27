@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "csv",
-    "csvhelper",
-    "file-io",
-    "serialization"
-  ],
+  "tags": ["csv", "csvhelper", "file-io", "serialization"],
   "blocks": [
     {
       "type": "heading",

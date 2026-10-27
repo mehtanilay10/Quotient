@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 28,
-  "tags": [
-    "ef-core",
-    "connection-string",
-    "configuration",
-    "appsettings"
-  ],
+  "tags": ["ef-core", "connection-string", "configuration", "appsettings"],
   "blocks": [
     {
       "type": "paragraph",
@@ -111,9 +106,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "logging-in-entity-framework-core",
-    "entity-framework-extensions-performance"
-  ],
+  "relatedLessons": ["logging-in-entity-framework-core", "entity-framework-extensions-performance"],
   "courseSlug": "ef-core"
 }

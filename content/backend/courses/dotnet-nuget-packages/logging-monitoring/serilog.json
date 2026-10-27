@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "logging",
-    "serilog",
-    "structured-logging"
-  ],
+  "tags": ["logging", "serilog", "structured-logging"],
   "blocks": [
     {
       "type": "heading",

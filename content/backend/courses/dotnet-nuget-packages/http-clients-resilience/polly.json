@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "http",
-    "polly",
-    "resilience"
-  ],
+  "tags": ["http", "polly", "resilience"],
   "blocks": [
     {
       "type": "heading",

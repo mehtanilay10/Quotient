@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "persistence",
-    "localStorage",
-    "cache",
-    "offline"
-  ],
+  "tags": ["persistence", "localStorage", "cache", "offline"],
   "blocks": [
     {
       "type": "heading",
@@ -52,13 +47,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Storage",
-          "API Type",
-          "Capacity",
-          "Browser Support",
-          "Use Case"
-        ],
+        "headers": ["Storage", "API Type", "Capacity", "Browser Support", "Use Case"],
         "rows": [
           [
             "localStorage",
@@ -74,13 +63,7 @@
             "Modern browsers",
             "Large datasets, PWAs"
           ],
-          [
-            "sessionStorage",
-            "Synchronous",
-            "5â€“10 MB",
-            "All browsers",
-            "Tab-scoped temp cache"
-          ]
+          ["sessionStorage", "Synchronous", "5â€“10 MB", "All browsers", "Tab-scoped temp cache"]
         ]
       }
     },
@@ -218,7 +201,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "cache-configuration"
-  ]
+  "prerequisites": ["cache-configuration"]
 }

@@ -6,14 +6,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "performance",
-    "throughput",
-    "latency",
-    "kafka",
-    "rabbitmq",
-    "sqs"
-  ],
+  "tags": ["performance", "throughput", "latency", "kafka", "rabbitmq", "sqs"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,12 +80,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "RabbitMQ",
-          "Kafka",
-          "SQS Standard"
-        ],
+        "headers": ["Metric", "RabbitMQ", "Kafka", "SQS Standard"],
         "rows": [
           [
             "Typical throughput",
@@ -100,24 +88,14 @@
             "100K–1M+ msg/sec/cluster",
             "Nearly unlimited"
           ],
-          [
-            "Typical latency",
-            "< 1ms to 5ms",
-            "1ms to 10ms",
-            "10ms to 200ms"
-          ],
+          ["Typical latency", "< 1ms to 5ms", "1ms to 10ms", "10ms to 200ms"],
           [
             "Batching model",
             "Per-message dispatch",
             "Producer batch + compression",
             "BatchSend API"
           ],
-          [
-            "Persistence",
-            "Configurable durability",
-            "Sequential disk append",
-            "S3-backed storage"
-          ]
+          ["Persistence", "Configurable durability", "Sequential disk append", "S3-backed storage"]
         ]
       }
     },

@@ -8,13 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "refresh-token",
-    "token-rotation",
-    "access-token",
-    "session-management",
-    "oauth"
-  ],
+  "tags": ["refresh-token", "token-rotation", "access-token", "session-management", "oauth"],
   "blocks": [
     {
       "type": "paragraph",

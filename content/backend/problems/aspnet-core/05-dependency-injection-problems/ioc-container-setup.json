@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "dependency-injection",
-    "ioc"
-  ],
+  "tags": ["aspnet-core", "dependency-injection", "ioc"],
   "blocks": [
     {
       "type": "heading",
@@ -69,21 +65,9 @@
           {
             "title": "Service Registration Patterns",
             "description": "Advanced IoC registration",
-            "pros": [
-              "Reduces boilerplate",
-              "Auto-discovers services",
-              "Flexible factories"
-            ],
-            "cons": [
-              "Assembly scanning can be slow",
-              "Harder to debug registration issues"
-            ],
-            "tags": [
-              "Scan",
-              "TryAdd",
-              "factory",
-              "IServiceProvider"
-            ]
+            "pros": ["Reduces boilerplate", "Auto-discovers services", "Flexible factories"],
+            "cons": ["Assembly scanning can be slow", "Harder to debug registration issues"],
+            "tags": ["Scan", "TryAdd", "factory", "IServiceProvider"]
           }
         ]
       }

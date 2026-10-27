@@ -12,8 +12,13 @@
  * importing these helpers from `@/lib/content`.
  */
 
-import { COURSE_URL_CATEGORY, PROBLEM_COURSE_SLUGS, QUESTION_TECH_CATEGORY, QUESTION_LESSON_TECH } from '@/content/categories';
-import type { SearchResult } from '@/types';
+import {
+  COURSE_URL_CATEGORY,
+  PROBLEM_COURSE_SLUGS,
+  QUESTION_TECH_CATEGORY,
+  QUESTION_LESSON_TECH,
+} from "@/content/categories";
+import type { SearchResult } from "@/types";
 
 // ── Course category / problem lookups ────────────────────────────────────────
 
@@ -21,75 +26,75 @@ import type { SearchResult } from '@/types';
 // generated `COURSE_URL_CATEGORY` above is the primary source of truth).
 const COURSE_CATEGORY_MAP: Record<string, string> = {
   // Fundamentals
-  'programming-computer-web-foundations': 'fundamentals',
-  'oops-concepts': 'fundamentals',
-  'senior-software-engineering': 'fundamentals',
+  "programming-computer-web-foundations": "fundamentals",
+  "oops-concepts": "fundamentals",
+  "senior-software-engineering": "fundamentals",
   // AI
-  'ai-basics': 'ai',
-  'dotnet-ai-backend': 'ai',
+  "ai-basics": "ai",
+  "dotnet-ai-backend": "ai",
   // Backend (.NET)
-  'csharp-fundamentals': 'backend',
-  'linq': 'backend',
-  'ef-core': 'backend',
-  'aspnet-core': 'backend',
-  'aspnet-core-web-api': 'backend',
-  'dotnet-nuget-packages': 'backend',
-  'unit-testing-dotnet': 'backend',
-  'authentication-authorization': 'backend',
-  'graphql-dotnet': 'backend',
-  'aws-for-aspnet': 'backend',
-  'azure-for-aspnet': 'backend',
+  "csharp-fundamentals": "backend",
+  linq: "backend",
+  "ef-core": "backend",
+  "aspnet-core": "backend",
+  "aspnet-core-web-api": "backend",
+  "dotnet-nuget-packages": "backend",
+  "unit-testing-dotnet": "backend",
+  "authentication-authorization": "backend",
+  "graphql-dotnet": "backend",
+  "aws-for-aspnet": "backend",
+  "azure-for-aspnet": "backend",
   // Frontend
-  'react-fundamentals': 'frontend',
-  'typescript-for-react': 'frontend',
-  'redux': 'frontend',
-  'react-query': 'frontend',
-  'react-testing': 'frontend',
-  'apollo': 'frontend',
-  'react-advanced-patterns': 'frontend',
-  'next-js-full-stack-react': 'frontend',
-  'prisma': 'frontend',
-  'yarn-npm-packages': 'frontend',
+  "react-fundamentals": "frontend",
+  "typescript-for-react": "frontend",
+  redux: "frontend",
+  "react-query": "frontend",
+  "react-testing": "frontend",
+  apollo: "frontend",
+  "react-advanced-patterns": "frontend",
+  "next-js-full-stack-react": "frontend",
+  prisma: "frontend",
+  "yarn-npm-packages": "frontend",
   // Database
-  'postgresql': 'database',
-  'sql-server': 'database',
+  postgresql: "database",
+  "sql-server": "database",
   // Cloud → DevOps
-  'aws': 'devops',
-  'azure': 'devops',
+  aws: "devops",
+  azure: "devops",
   // DevOps
-  'devops': 'devops',
-  'git-linux-developer-workflow': 'devops',
+  devops: "devops",
+  "git-linux-developer-workflow": "devops",
   // Architecture
-  'design-patterns': 'architecture',
-  'clean-code-csharp': 'architecture',
-  'redis-caching-strategies': 'architecture',
-  'fullstack-security': 'architecture',
-  'message-queues-event-streaming': 'architecture',
-  'microservices-architecture': 'architecture',
-  'system-design-course': 'architecture',
-  'frontend-performance-engineering': 'architecture',
+  "design-patterns": "architecture",
+  "clean-code-csharp": "architecture",
+  "redis-caching-strategies": "architecture",
+  "fullstack-security": "architecture",
+  "message-queues-event-streaming": "architecture",
+  "microservices-architecture": "architecture",
+  "system-design-course": "architecture",
+  "frontend-performance-engineering": "architecture",
   // Cheatsheets (module slugs)
-  'csharp': 'backend',
-  'javascript': 'frontend',
-  'react': 'frontend',
-  'react-router': 'frontend',
-  'typescript': 'frontend',
-  'graphql': 'backend',
-  'docker-compose': 'devops',
+  csharp: "backend",
+  javascript: "frontend",
+  react: "frontend",
+  "react-router": "frontend",
+  typescript: "frontend",
+  graphql: "backend",
+  "docker-compose": "devops",
   // Problems (course slugs)
-  'api-design': 'backend',
-  'asp': 'backend',
-  'database-design': 'database',
-  'sql': 'database',
-  'architecture-decisions': 'architecture',
-  'code-review': 'architecture',
-  'hld': 'architecture',
-  'lld': 'architecture',
-  'distributed-systems': 'architecture',
-  'full-stack-senior-projects': 'architecture',
-  'low-level-design': 'architecture',
-  'production-incidents': 'architecture',
-  'system-design': 'architecture',
+  "api-design": "backend",
+  asp: "backend",
+  "database-design": "database",
+  sql: "database",
+  "architecture-decisions": "architecture",
+  "code-review": "architecture",
+  hld: "architecture",
+  lld: "architecture",
+  "distributed-systems": "architecture",
+  "full-stack-senior-projects": "architecture",
+  "low-level-design": "architecture",
+  "production-incidents": "architecture",
+  "system-design": "architecture",
 };
 
 const problemCourseSlugs = new Set<string>(PROBLEM_COURSE_SLUGS);
@@ -98,7 +103,7 @@ export function getCourseCategory(slug: string): string {
   // Prefer the directory-derived category stamped by the content generator.
   const indexed = COURSE_URL_CATEGORY[slug];
   if (indexed) return indexed;
-  return COURSE_CATEGORY_MAP[slug] ?? 'courses';
+  return COURSE_CATEGORY_MAP[slug] ?? "courses";
 }
 
 export function isProblemCourseSlug(slug: string | undefined): boolean {
@@ -116,10 +121,10 @@ export function getContentItemHref(
   moduleSlug?: string | null,
   lessonSlug?: string | null
 ): string {
-  if (courseSlug === 'question-answers') {
+  if (courseSlug === "question-answers") {
     const tech = getQuestionTechnologySlug(moduleSlug, lessonSlug);
     const category = tech ? getQuestionTechCategory(tech) : undefined;
-    if (!tech || !category) return '/';
+    if (!tech || !category) return "/";
     return lessonSlug
       ? `/${category}/question-answers/${tech}/${lessonSlug}`
       : `/${category}/question-answers/${tech}`;
@@ -127,15 +132,15 @@ export function getContentItemHref(
 
   // Cheatsheets: one lesson per technology module; the category is derived
   // from the technology (module) slug, not a course.
-  if (courseSlug === 'cheatsheet') {
+  if (courseSlug === "cheatsheet") {
     if (moduleSlug) {
       return `/${getCourseCategory(moduleSlug)}/cheatsheets/${moduleSlug}`;
     }
-    return '/';
+    return "/";
   }
 
   const category = getCourseCategory(courseSlug);
-  const prefix = isProblemCourseSlug(courseSlug) ? 'problems' : 'courses';
+  const prefix = isProblemCourseSlug(courseSlug) ? "problems" : "courses";
 
   if (moduleSlug && lessonSlug) {
     return `/${category}/${prefix}/${courseSlug}/${moduleSlug}/${lessonSlug}`;
@@ -162,30 +167,30 @@ export function getContentItemHref(
  * casing may be omitted — they fall back to a generic slugify.
  */
 const TECH_SLUG_MAP: Record<string, string> = {
-  'c#': 'csharp',
-  'asp.net core': 'aspnet-core',
-  'oop': 'oop',
-  'javascript': 'javascript',
-  'general': 'general',
-  'system design': 'system-design',
-  'behavioral': 'behavioral',
-  'sql server': 'sql-server',
-  'full-stack scenarios': 'fullstack-scenarios',
-  'performance optimization': 'performance-optimization',
-  'ci/cd pipelines': 'cicd-pipelines',
-  'entity framework core': 'entity-framework-core',
-  'backend & database': 'backend-database',
-  'react': 'react',
-  'architecture': 'architecture',
-  'security': 'security',
+  "c#": "csharp",
+  "asp.net core": "aspnet-core",
+  oop: "oop",
+  javascript: "javascript",
+  general: "general",
+  "system design": "system-design",
+  behavioral: "behavioral",
+  "sql server": "sql-server",
+  "full-stack scenarios": "fullstack-scenarios",
+  "performance optimization": "performance-optimization",
+  "ci/cd pipelines": "cicd-pipelines",
+  "entity framework core": "entity-framework-core",
+  "backend & database": "backend-database",
+  react: "react",
+  architecture: "architecture",
+  security: "security",
 };
 
 /** URL-safe fallback for technologies without an explicit map entry. */
 function fallbackTechSlug(technology: string): string {
   return technology
     .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
 /** Converts a lesson `technology` value (e.g. "C#", "CI/CD Pipelines") to its URL slug. */
@@ -210,18 +215,20 @@ export function getQuestionTechName(slug: string): string {
   if (known) {
     // Restore conventional capitalisation for names stored lowercase.
     return known
-      .split(' ')
-      .map((word) => (word.length <= 3 ? word.toUpperCase() : word.charAt(0).toUpperCase() + word.slice(1)))
-      .join(' ')
-      .replace(/\bC#\b/i, 'C#')
-      .replace(/\bOop\b/i, 'OOP')
-      .replace(/\bSql\b/i, 'SQL')
-      .replace(/\bCi\/cd\b/i, 'CI/CD');
+      .split(" ")
+      .map((word) =>
+        word.length <= 3 ? word.toUpperCase() : word.charAt(0).toUpperCase() + word.slice(1)
+      )
+      .join(" ")
+      .replace(/\bC#\b/i, "C#")
+      .replace(/\bOop\b/i, "OOP")
+      .replace(/\bSql\b/i, "SQL")
+      .replace(/\bCi\/cd\b/i, "CI/CD");
   }
   return slug
-    .split('-')
+    .split("-")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
+    .join(" ");
 }
 
 /** The content category a question-answer technology lives in (e.g. "backend"). */
@@ -248,12 +255,12 @@ function getQuestionTechnologySlug(
 // ── Search result hrefs ──────────────────────────────────────────────────────
 
 export function getSearchResultHref(result: SearchResult): string {
-  if (result.type === 'lesson') {
-    const category = getCourseCategory(result.courseSlug ?? '');
+  if (result.type === "lesson") {
+    const category = getCourseCategory(result.courseSlug ?? "");
     if (isProblemCourseSlug(result.courseSlug)) {
       return `/${category}/problems/${result.courseSlug}/${result.moduleSlug}/${result.slug}`;
     }
-    if (result.courseSlug === 'question-answers') {
+    if (result.courseSlug === "question-answers") {
       const tech =
         getQuestionTechnologySlug(result.moduleSlug, result.slug) ??
         (result.technology ? getQuestionTechSlug(result.technology) : undefined);
@@ -261,12 +268,12 @@ export function getSearchResultHref(result: SearchResult): string {
       if (tech && techCategory) {
         return `/${techCategory}/question-answers/${tech}/${result.slug}`;
       }
-      return '/';
+      return "/";
     }
-    if (result.courseSlug === 'cheatsheet') {
+    if (result.courseSlug === "cheatsheet") {
       // Every cheat-sheet lesson has slug `cheatsheet`; the URL segment is the
       // module (technology) slug, not the lesson slug.
-      return result.moduleSlug ? `/${category}/cheatsheets/${result.moduleSlug}` : '/';
+      return result.moduleSlug ? `/${category}/cheatsheets/${result.moduleSlug}` : "/";
     }
     if (isProblemCourseSlug(result.courseSlug)) {
       return `/${category}/problems/${result.courseSlug}/${result.moduleSlug}/${result.slug}`;
@@ -274,14 +281,14 @@ export function getSearchResultHref(result: SearchResult): string {
     return `/${category}/courses/${result.courseSlug}/${result.moduleSlug}/${result.slug}`;
   }
 
-  if (result.type === 'module') {
-    const category = getCourseCategory(result.courseSlug ?? '');
-    if (result.courseSlug === 'cheatsheet') {
+  if (result.type === "module") {
+    const category = getCourseCategory(result.courseSlug ?? "");
+    if (result.courseSlug === "cheatsheet") {
       return `/${category}/cheatsheets/${result.slug}`;
     }
-    if (result.courseSlug === 'question-answers') {
+    if (result.courseSlug === "question-answers") {
       const techCategory = getQuestionTechCategory(result.slug);
-      return techCategory ? `/${techCategory}/question-answers/${result.slug}` : '/';
+      return techCategory ? `/${techCategory}/question-answers/${result.slug}` : "/";
     }
     if (isProblemCourseSlug(result.courseSlug)) {
       return `/${category}/problems/${result.courseSlug}/${result.slug}`;
@@ -289,11 +296,11 @@ export function getSearchResultHref(result: SearchResult): string {
     return `/${category}/courses/${result.courseSlug}/${result.slug}`;
   }
 
-  if (result.type === 'course') {
+  if (result.type === "course") {
     // The question-answers pseudo-course has no landing page of its own — its
     // questions are listed per category.
-    if (result.slug === 'question-answers') {
-      return '/';
+    if (result.slug === "question-answers") {
+      return "/";
     }
     const category = getCourseCategory(result.slug);
     if (isProblemCourseSlug(result.slug)) {
@@ -302,9 +309,9 @@ export function getSearchResultHref(result: SearchResult): string {
     return `/${category}/courses/${result.slug}`;
   }
 
-  if (result.type === 'cheatsheet') {
-    return '/';
+  if (result.type === "cheatsheet") {
+    return "/";
   }
 
-  return '/';
+  return "/";
 }

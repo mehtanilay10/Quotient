@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "medium",
   "estimatedMinutes": 18,
-  "tags": [
-    "csharp",
-    "arrays",
-    "prefix-sum",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "prefix-sum", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -107,34 +102,16 @@
           {
             "title": "Prefix + Suffix",
             "description": "Two helper arrays, then combine",
-            "pros": [
-              "Clear logic",
-              "O(n) time"
-            ],
-            "cons": [
-              "O(n) extra space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Clear logic", "O(n) time"],
+            "cons": ["O(n) extra space"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "In-Place Pass",
             "description": "Reuse output array, one extra variable",
-            "pros": [
-              "O(n) time",
-              "O(1) extra space",
-              "Recommended"
-            ],
-            "cons": [
-              "Slightly trickier"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "O(1) extra space", "Recommended"],
+            "cons": ["Slightly trickier"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

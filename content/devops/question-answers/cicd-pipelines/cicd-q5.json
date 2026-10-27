@@ -7,11 +7,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "interview",
-    "cicd",
-    "devops"
-  ],
+  "tags": ["interview", "cicd", "devops"],
   "blocks": [
     {
       "type": "paragraph",
@@ -117,10 +113,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "cicd-q1",
-    "cicd-q3"
-  ],
+  "relatedLessons": ["cicd-q1", "cicd-q3"],
   "furtherReading": [
     {
       "title": "Pipeline caching",

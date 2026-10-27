@@ -6,14 +6,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "operations",
-    "kafka",
-    "rabbitmq",
-    "sqs",
-    "monitoring",
-    "devops"
-  ],
+  "tags": ["operations", "kafka", "rabbitmq", "sqs", "monitoring", "devops"],
   "blocks": [
     {
       "type": "paragraph",
@@ -70,12 +63,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Area",
-          "RabbitMQ",
-          "Kafka",
-          "SQS"
-        ],
+        "headers": ["Area", "RabbitMQ", "Kafka", "SQS"],
         "rows": [
           [
             "Cluster setup",

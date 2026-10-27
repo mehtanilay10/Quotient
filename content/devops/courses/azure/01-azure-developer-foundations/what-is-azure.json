@@ -58,11 +58,35 @@
     {
       "type": "table",
       "data": {
-        "headers": ["Type", "Full Name", "What You Manage", "What Azure Manages", "Example Azure Services"],
+        "headers": [
+          "Type",
+          "Full Name",
+          "What You Manage",
+          "What Azure Manages",
+          "Example Azure Services"
+        ],
         "rows": [
-          ["IaaS", "Infrastructure as a Service", "OS, apps, data, runtime", "Servers, storage, networking, virtualization", "Virtual Machines, Azure Disk Storage"],
-          ["PaaS", "Platform as a Service", "Apps and data", "OS, runtime, servers, storage, networking", "Azure App Service, Azure SQL Database"],
-          ["SaaS", "Software as a Service", "Just your data", "Everything else", "Microsoft 365, Dynamics 365"]
+          [
+            "IaaS",
+            "Infrastructure as a Service",
+            "OS, apps, data, runtime",
+            "Servers, storage, networking, virtualization",
+            "Virtual Machines, Azure Disk Storage"
+          ],
+          [
+            "PaaS",
+            "Platform as a Service",
+            "Apps and data",
+            "OS, runtime, servers, storage, networking",
+            "Azure App Service, Azure SQL Database"
+          ],
+          [
+            "SaaS",
+            "Software as a Service",
+            "Just your data",
+            "Everything else",
+            "Microsoft 365, Dynamics 365"
+          ]
         ]
       }
     },

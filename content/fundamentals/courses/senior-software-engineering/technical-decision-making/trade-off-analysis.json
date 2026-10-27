@@ -189,11 +189,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "evaluating-technical-options",
-    "writing-rfcs",
-    "decision-documentation"
-  ],
+  "relatedLessons": ["evaluating-technical-options", "writing-rfcs", "decision-documentation"],
   "furtherReading": [
     {
       "type": "article",

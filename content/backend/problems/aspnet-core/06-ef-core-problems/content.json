@@ -9,14 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 9,
   "icon": "🗄️",
-  "tags": [
-    "aspnet-core",
-    "ef-core",
-    "entity-framework",
-    "migrations",
-    "querying",
-    "relationships"
-  ],
+  "tags": ["aspnet-core", "ef-core", "entity-framework", "migrations", "querying", "relationships"],
   "lessonSlugs": [
     "dbcontext-configuration",
     "relationships-configuration",

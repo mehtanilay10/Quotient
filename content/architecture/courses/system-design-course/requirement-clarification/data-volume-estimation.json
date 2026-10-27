@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "capacity-estimation",
-    "data-volume",
-    "storage",
-    "bandwidth"
-  ],
+  "tags": ["capacity-estimation", "data-volume", "storage", "bandwidth"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,37 +68,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Daily",
-          "Peak (RPS)",
-          "Storage Strategy"
-        ],
+        "headers": ["Metric", "Daily", "Peak (RPS)", "Storage Strategy"],
         "rows": [
-          [
-            "Photo uploads",
-            "20 million",
-            "~460",
-            "S3 with multipart upload"
-          ],
-          [
-            "Photo views",
-            "200 million",
-            "~4,600",
-            "CDN + cache"
-          ],
-          [
-            "New storage",
-            "40TB",
-            "N/A",
-            "S3 lifecycle to Glacier"
-          ],
-          [
-            "Metadata writes",
-            "20 million",
-            "~460",
-            "Distributed database"
-          ]
+          ["Photo uploads", "20 million", "~460", "S3 with multipart upload"],
+          ["Photo views", "200 million", "~4,600", "CDN + cache"],
+          ["New storage", "40TB", "N/A", "S3 lifecycle to Glacier"],
+          ["Metadata writes", "20 million", "~460", "Distributed database"]
         ]
       }
     },

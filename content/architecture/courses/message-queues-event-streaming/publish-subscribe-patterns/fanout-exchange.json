@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "rabbitmq",
-    "fanout-exchange",
-    "broadcast",
-    "pubsub",
-    "messaging"
-  ],
+  "tags": ["rabbitmq", "fanout-exchange", "broadcast", "pubsub", "messaging"],
   "blocks": [
     {
       "type": "paragraph",

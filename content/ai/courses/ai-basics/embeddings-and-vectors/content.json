@@ -7,20 +7,11 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "🔢",
-  "tags": [
-    "embeddings",
-    "vector-databases",
-    "semantic-search"
-  ],
-  "lessonSlugs": [
-    "embeddings-simply",
-    "vector-databases-in-practice"
-  ],
+  "tags": ["embeddings", "vector-databases", "semantic-search"],
+  "lessonSlugs": ["embeddings-simply", "vector-databases-in-practice"],
   "isOptional": true,
   "skipLabel": "Skip unless you are building or evaluating RAG systems",
-  "prerequisites": [
-    "rag-and-memory"
-  ],
+  "prerequisites": ["rag-and-memory"],
   "whatYouLearn": [
     "What embeddings are and why they are foundational to modern AI",
     "How vector databases store and search meaning",

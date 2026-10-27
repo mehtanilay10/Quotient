@@ -6,11 +6,7 @@
   "fullDefinition": "An AI agent is an autonomous software entity that combines perception of its environment, reasoning about what to do, and taking actions to accomplish specific objectives. Unlike traditional programs that follow fixed instructions, agents can adapt their behavior based on feedback and changing conditions. Modern AI agents typically use large language models for reasoning and can interact with tools, APIs, and external systems. They represent a shift from passive AI tools to active AI collaborators that can work toward goals with minimal human supervision.",
   "category": "core-concepts",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "agent",
-    "autonomous-agent",
-    "multi-agent-system"
-  ],
+  "relatedTerms": ["agent", "autonomous-agent", "multi-agent-system"],
   "learnMoreSlug": "what-are-agents",
   "examples": [
     "A customer service agent that resolves refunds by checking order history and processing payments",

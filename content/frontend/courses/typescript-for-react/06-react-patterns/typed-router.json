@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 28,
-  "tags": [
-    "typescript",
-    "react-router",
-    "routing",
-    "navigation"
-  ],
+  "tags": ["typescript", "react-router", "routing", "navigation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,27 +62,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Route",
-          "Params",
-          "Type"
-        ],
+        "headers": ["Route", "Params", "Type"],
         "rows": [
-          [
-            "/users/:userId",
-            "{ userId: string }",
-            "Dynamic"
-          ],
-          [
-            "/posts/:postId",
-            "{ postId: string }",
-            "Dynamic"
-          ],
-          [
-            "/settings",
-            "{}",
-            "Static"
-          ]
+          ["/users/:userId", "{ userId: string }", "Dynamic"],
+          ["/posts/:postId", "{ postId: string }", "Dynamic"],
+          ["/settings", "{}", "Static"]
         ]
       }
     },

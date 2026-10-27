@@ -147,6 +147,10 @@
   ],
   "relatedLessons": ["performance-fundamentals", "partial-clones", "sparse-checkout"],
   "furtherReading": [
-    { "title": "Git Sparse Checkout", "url": "https://git-scm.com/docs/git-sparse-checkout", "type": "article" }
+    {
+      "title": "Git Sparse Checkout",
+      "url": "https://git-scm.com/docs/git-sparse-checkout",
+      "type": "article"
+    }
   ]
 }

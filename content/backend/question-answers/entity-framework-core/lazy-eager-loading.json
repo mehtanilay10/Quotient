@@ -6,10 +6,7 @@
   "description": "Understand different data loading strategies in EF Core.",
   "order": 1,
   "difficulty": "intermediate",
-  "tags": [
-    "Entity Framework Core",
-    "intermediate"
-  ],
+  "tags": ["Entity Framework Core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

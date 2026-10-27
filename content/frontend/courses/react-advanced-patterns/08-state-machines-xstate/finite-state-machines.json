@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "fsm",
-    "state-machine",
-    "states",
-    "transitions",
-    "impossible-states"
-  ],
+  "tags": ["fsm", "state-machine", "states", "transitions", "impossible-states"],
   "blocks": [
     {
       "type": "heading",
@@ -100,31 +94,11 @@
     },
     {
       "type": "table",
-      "headers": [
-        "Approach",
-        "State Guarantees",
-        "Transition Logic",
-        "Complexity"
-      ],
+      "headers": ["Approach", "State Guarantees", "Transition Logic", "Complexity"],
       "rows": [
-        [
-          "Multiple booleans",
-          "None",
-          "Scattered",
-          "O(2^n) combinations"
-        ],
-        [
-          "Reducers",
-          "Invariant enforcement",
-          "Centralized",
-          "O(2^n) if nested"
-        ],
-        [
-          "Finite State Machine",
-          "Mutual exclusivity",
-          "Explicit transitions",
-          "O(1) per state"
-        ]
+        ["Multiple booleans", "None", "Scattered", "O(2^n) combinations"],
+        ["Reducers", "Invariant enforcement", "Centralized", "O(2^n) if nested"],
+        ["Finite State Machine", "Mutual exclusivity", "Explicit transitions", "O(1) per state"]
       ]
     },
     {
@@ -159,7 +133,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "state-reducer-basics"
-  ]
+  "prerequisites": ["state-reducer-basics"]
 }

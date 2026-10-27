@@ -80,7 +80,13 @@
     "channels-and-producer-consumer-pipelines"
   ],
   "furtherReading": [
-    { "title": "SemaphoreSlim Class (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim" },
-    { "title": "Bounded concurrency with SemaphoreSlim (Stephen Cleary)", "url": "https://blog.stephencleary.com/2012/11/async-overnight/part-5-bounded-concurrency.html" }
+    {
+      "title": "SemaphoreSlim Class (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.threading.semaphoreslim"
+    },
+    {
+      "title": "Bounded concurrency with SemaphoreSlim (Stephen Cleary)",
+      "url": "https://blog.stephencleary.com/2012/11/async-overnight/part-5-bounded-concurrency.html"
+    }
   ]
 }

@@ -7,13 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "claude",
-    "prompt-engineering",
-    "prompting",
-    "advanced",
-    "techniques"
-  ],
+  "tags": ["claude", "prompt-engineering", "prompting", "advanced", "techniques"],
   "blocks": [
     {
       "type": "heading",
@@ -188,10 +182,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "claude-limitations",
-    "building-your-claude-toolkit"
-  ],
+  "relatedLessons": ["claude-limitations", "building-your-claude-toolkit"],
   "relatedGlossaryTerms": [
     "prompt-injection",
     "system-prompt",

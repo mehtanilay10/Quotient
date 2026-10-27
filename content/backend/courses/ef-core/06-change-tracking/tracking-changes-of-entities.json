@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "ef-core",
-    "change-tracking",
-    "entitystate",
-    "changetracker"
-  ],
+  "tags": ["ef-core", "change-tracking", "entitystate", "changetracker"],
   "blocks": [
     {
       "type": "paragraph",
@@ -30,31 +25,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "State",
-          "Description"
-        ],
+        "headers": ["State", "Description"],
         "rows": [
-          [
-            "Added",
-            "Entity is tracked but not yet in database"
-          ],
-          [
-            "Modified",
-            "Entity has been modified since retrieval"
-          ],
-          [
-            "Deleted",
-            "Entity is marked for deletion"
-          ],
-          [
-            "Unchanged",
-            "Entity has not been modified"
-          ],
-          [
-            "Detached",
-            "Entity is not being tracked"
-          ]
+          ["Added", "Entity is tracked but not yet in database"],
+          ["Modified", "Entity has been modified since retrieval"],
+          ["Deleted", "Entity is marked for deletion"],
+          ["Unchanged", "Entity has not been modified"],
+          ["Detached", "Entity is not being tracked"]
         ]
       }
     },

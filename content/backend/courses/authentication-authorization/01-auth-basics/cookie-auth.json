@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "authentication",
-    "cookies",
-    "session",
-    "web"
-  ],
+  "tags": ["authentication", "cookies", "session", "web"],
   "blocks": [
     {
       "type": "paragraph",

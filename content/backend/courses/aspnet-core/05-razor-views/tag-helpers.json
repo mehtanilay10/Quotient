@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "tag-helpers",
-    "html",
-    "forms"
-  ],
+  "tags": ["tag-helpers", "html", "forms"],
   "blocks": [
     {
       "type": "heading",
@@ -194,10 +190,7 @@
       "takeaway": "Tag helpers are the bridge between clean HTML markup and the powerful server-side features of ASP.NET Core. They make views easier to write and easier to maintain."
     }
   ],
-  "relatedLessons": [
-    "razor-syntax",
-    "layouts-and-partials"
-  ],
+  "relatedLessons": ["razor-syntax", "layouts-and-partials"],
   "technology": null,
   "furtherReading": []
 }

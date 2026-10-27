@@ -6,13 +6,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "rabbitmq",
-    "kafka",
-    "sqs",
-    "broker-comparison",
-    "messaging"
-  ],
+  "tags": ["rabbitmq", "kafka", "sqs", "broker-comparison", "messaging"],
   "blocks": [
     {
       "type": "paragraph",
@@ -43,19 +37,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "RabbitMQ",
-          "Kafka",
-          "SQS (Standard)"
-        ],
+        "headers": ["Feature", "RabbitMQ", "Kafka", "SQS (Standard)"],
         "rows": [
-          [
-            "Messaging model",
-            "Queue-based, AMQP",
-            "Distributed log",
-            "Managed queue"
-          ],
+          ["Messaging model", "Queue-based, AMQP", "Distributed log", "Managed queue"],
           [
             "Delivery semantics",
             "At-most-once (ack required for at-least-once)",

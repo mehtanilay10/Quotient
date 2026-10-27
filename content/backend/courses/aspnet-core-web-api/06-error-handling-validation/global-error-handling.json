@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "errors",
-    "middleware"
-  ],
+  "tags": ["web-api", "errors", "middleware"],
   "blocks": [
     {
       "type": "paragraph",
@@ -143,10 +139,7 @@
           {
             "title": "Try/Catch in Each Action",
             "description": "Wrap every controller method in try/catch.",
-            "pros": [
-              "Fine-grained control per action",
-              "Easy to add contextual recovery logic"
-            ],
+            "pros": ["Fine-grained control per action", "Easy to add contextual recovery logic"],
             "cons": [
               "Repetitive boilerplate",
               "Inconsistent error shapes across the API",
@@ -165,9 +158,7 @@
               "Less context than per-action try/catch",
               "Must remember to register new handlers"
             ],
-            "tags": [
-              "recommended"
-            ]
+            "tags": ["recommended"]
           },
           {
             "title": "Chained IExceptionHandler",
@@ -177,13 +168,8 @@
               "Trivially testable in isolation",
               "Plays well with AddProblemDetails()"
             ],
-            "cons": [
-              "Requires .NET 8 or newer",
-              "Slightly more setup"
-            ],
-            "tags": [
-              "recommended"
-            ]
+            "cons": ["Requires .NET 8 or newer", "Slightly more setup"],
+            "tags": ["recommended"]
           }
         ]
       }
@@ -285,9 +271,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "validation-basics",
-    "problem-details"
-  ],
+  "relatedLessons": ["validation-basics", "problem-details"],
   "courseSlug": "aspnet-core-web-api"
 }

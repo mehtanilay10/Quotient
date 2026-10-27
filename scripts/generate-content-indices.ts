@@ -21,20 +21,20 @@
  * Run automatically before dev/build so new JSON files are picked up without manual edits.
  */
 
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import path from "path";
 
 const ROOT = path.resolve(process.cwd());
-const CONTENT_DIR = path.join(ROOT, 'content');
+const CONTENT_DIR = path.join(ROOT, "content");
 
-const COURSES_INDEX = path.join(CONTENT_DIR, 'courses.ts');
-const MODULES_INDEX = path.join(CONTENT_DIR, 'modules.ts');
-const LESSONS_INDEX = path.join(CONTENT_DIR, 'lessons.ts');
-const CATEGORIES_INDEX = path.join(CONTENT_DIR, 'categories.ts');
-const ROADMAPS_INDEX = path.join(CONTENT_DIR, 'roadmaps.ts');
+const COURSES_INDEX = path.join(CONTENT_DIR, "courses.ts");
+const MODULES_INDEX = path.join(CONTENT_DIR, "modules.ts");
+const LESSONS_INDEX = path.join(CONTENT_DIR, "lessons.ts");
+const CATEGORIES_INDEX = path.join(CONTENT_DIR, "categories.ts");
+const ROADMAPS_INDEX = path.join(CONTENT_DIR, "roadmaps.ts");
 
 /** Section directories that make a top-level directory a content category. */
-const SECTION_DIRS = ['courses', 'problems', 'cheatsheet', 'question-answers'] as const;
+const SECTION_DIRS = ["courses", "problems", "cheatsheet", "question-answers"] as const;
 
 interface CourseInfo {
   importPath: string;
@@ -61,7 +61,7 @@ interface LessonInfo {
 
 function toVariableName(slug: string, prefix: string): string {
   const cleaned = slug
-    .replace(/[^a-z0-9]+(.)?/g, (_, chr) => (chr ? chr.toUpperCase() : ''))
+    .replace(/[^a-z0-9]+(.)?/g, (_, chr) => (chr ? chr.toUpperCase() : ""))
     .replace(/^[0-9]/, (m) => `${prefix}${m}`);
   return `${prefix}${cleaned}`;
 }
@@ -76,12 +76,14 @@ function isDirectory(p: string): boolean {
 
 function listDirs(p: string): string[] {
   try {
-    return fs
-      .readdirSync(p)
-      .filter((entry) => isDirectory(path.join(p, entry)))
-      // Sort for deterministic output: `readdirSync` order is filesystem-
-      // dependent, which previously made the generated index files churn.
-      .sort();
+    return (
+      fs
+        .readdirSync(p)
+        .filter((entry) => isDirectory(path.join(p, entry)))
+        // Sort for deterministic output: `readdirSync` order is filesystem-
+        // dependent, which previously made the generated index files churn.
+        .sort()
+    );
   } catch {
     return [];
   }
@@ -96,7 +98,9 @@ function findCategories(): string[] {
   return fs
     .readdirSync(CONTENT_DIR)
     .filter((entry) => isDirectory(path.join(CONTENT_DIR, entry)))
-    .filter((entry) => SECTION_DIRS.some((section) => isDirectory(path.join(CONTENT_DIR, entry, section))))
+    .filter((entry) =>
+      SECTION_DIRS.some((section) => isDirectory(path.join(CONTENT_DIR, entry, section)))
+    )
     .sort();
 }
 
@@ -119,26 +123,30 @@ function scanCourses(): CourseInfo[] {
   const usedNames = new Set<string>();
 
   const addCourse = (slug: string, category: string, importPath: string) => {
-    const variableName = uniqueVariableName(`${toVariableName(slug, '')}Course`, 'course', usedNames);
+    const variableName = uniqueVariableName(
+      `${toVariableName(slug, "")}Course`,
+      "course",
+      usedNames
+    );
     courses.push({ importPath, variableName, slug, category });
   };
 
   for (const category of findCategories()) {
-    for (const section of ['courses', 'problems'] as const) {
+    for (const section of ["courses", "problems"] as const) {
       const sectionDir = path.join(CONTENT_DIR, category, section);
       for (const entry of listDirs(sectionDir)) {
-        if (!fs.existsSync(path.join(sectionDir, entry, 'content.json'))) continue;
+        if (!fs.existsSync(path.join(sectionDir, entry, "content.json"))) continue;
         addCourse(entry, category, `./${category}/${section}/${entry}/content.json`);
       }
     }
   }
 
   // Section-level pseudo-courses (not part of a single category).
-  if (fs.existsSync(path.join(CONTENT_DIR, 'cheatsheet.json'))) {
-    addCourse('cheatsheet', 'cheatsheet', './cheatsheet.json');
+  if (fs.existsSync(path.join(CONTENT_DIR, "cheatsheet.json"))) {
+    addCourse("cheatsheet", "cheatsheet", "./cheatsheet.json");
   }
-  if (fs.existsSync(path.join(CONTENT_DIR, 'question-answers.json'))) {
-    addCourse('question-answers', 'question-answers', './question-answers.json');
+  if (fs.existsSync(path.join(CONTENT_DIR, "question-answers.json"))) {
+    addCourse("question-answers", "question-answers", "./question-answers.json");
   }
 
   return courses.sort((a, b) => a.slug.localeCompare(b.slug));
@@ -153,17 +161,21 @@ function scanModules(): ModuleInfo[] {
       const fullPath = path.join(dir, entry);
       if (!isDirectory(fullPath)) continue;
 
-      const contentJsonPath = path.join(fullPath, 'content.json');
+      const contentJsonPath = path.join(fullPath, "content.json");
       if (fs.existsSync(contentJsonPath)) {
-        const relativePath = path.relative(CONTENT_DIR, fullPath).replace(/\\/g, '/');
+        const relativePath = path.relative(CONTENT_DIR, fullPath).replace(/\\/g, "/");
         const importPath = `./${relativePath}/content.json`;
         const slug = entry;
-        const variableName = uniqueVariableName(`${toVariableName(slug, '')}Module`, 'mod', usedNames);
+        const variableName = uniqueVariableName(
+          `${toVariableName(slug, "")}Module`,
+          "mod",
+          usedNames
+        );
 
-        let courseSlug = '';
+        let courseSlug = "";
         try {
-          const data = JSON.parse(fs.readFileSync(contentJsonPath, 'utf8'));
-          courseSlug = data.courseSlug || '';
+          const data = JSON.parse(fs.readFileSync(contentJsonPath, "utf8"));
+          courseSlug = data.courseSlug || "";
         } catch {
           // ignore malformed JSON — typecheck/tests will surface it
         }
@@ -194,18 +206,22 @@ function scanLessons(): LessonInfo[] {
       const fullPath = path.join(dir, entry);
       if (isDirectory(fullPath)) {
         walk(fullPath);
-      } else if (entry.endsWith('.json') && entry !== 'content.json') {
-        const relativePath = path.relative(CONTENT_DIR, fullPath).replace(/\\/g, '/');
+      } else if (entry.endsWith(".json") && entry !== "content.json") {
+        const relativePath = path.relative(CONTENT_DIR, fullPath).replace(/\\/g, "/");
         const importPath = `./${relativePath}`;
-        const slug = entry.replace('.json', '');
-        const variableName = uniqueVariableName(`${toVariableName(slug, '')}Lesson`, 'lesson', usedNames);
+        const slug = entry.replace(".json", "");
+        const variableName = uniqueVariableName(
+          `${toVariableName(slug, "")}Lesson`,
+          "lesson",
+          usedNames
+        );
 
-        let courseSlug = '';
-        let moduleSlug = '';
+        let courseSlug = "";
+        let moduleSlug = "";
         try {
-          const data = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
-          courseSlug = data.courseSlug || '';
-          moduleSlug = data.moduleSlug || '';
+          const data = JSON.parse(fs.readFileSync(fullPath, "utf8"));
+          courseSlug = data.courseSlug || "";
+          moduleSlug = data.moduleSlug || "";
         } catch {
           // ignore malformed JSON
         }
@@ -232,22 +248,22 @@ function generateCoursesIndex(courses: CourseInfo[]): string {
     chunks.push(courses.slice(i, i + CHUNK_SIZE));
   }
 
-  const imports = courses.map((c) => `import ${c.variableName} from "${c.importPath}";`).join('\n');
+  const imports = courses.map((c) => `import ${c.variableName} from "${c.importPath}";`).join("\n");
 
-  const buildParts = (kind: 'Courses') => {
+  const buildParts = (kind: "Courses") => {
     const partDecls = chunks
       .map((chunk, idx) => {
         const exports = chunk
           .map((c) => `\t{ ...${c.variableName}, urlCategory: "${c.category}" },`)
-          .join('\n');
+          .join("\n");
         return `const raw${kind}Part${idx + 1} = [\n${exports}\n];`;
       })
-      .join('\n\n');
-    const partRefs = chunks.map((_, idx) => `...raw${kind}Part${idx + 1}`).join(', ');
+      .join("\n\n");
+    const partRefs = chunks.map((_, idx) => `...raw${kind}Part${idx + 1}`).join(", ");
     return { partDecls, combineDecl: `const raw${kind}: any[] = [${partRefs}];` };
   };
 
-  const { partDecls, combineDecl } = buildParts('Courses');
+  const { partDecls, combineDecl } = buildParts("Courses");
 
   return `import type { Course } from "@/types";
 
@@ -272,17 +288,17 @@ function generateModulesIndex(modules: ModuleInfo[]): string {
     chunks.push(modules.slice(i, i + CHUNK_SIZE));
   }
 
-  const imports = modules.map((m) => `import ${m.variableName} from "${m.importPath}";`).join('\n');
+  const imports = modules.map((m) => `import ${m.variableName} from "${m.importPath}";`).join("\n");
 
   const partDecls = chunks
     .map((chunk, idx) => {
       const exports = chunk
         .map((m) => `\t{ ...${m.variableName}, urlCategory: "${m.category}" },`)
-        .join('\n');
+        .join("\n");
       return `const rawModulesPart${idx + 1} = [\n${exports}\n];`;
     })
-    .join('\n\n');
-  const partRefs = chunks.map((_, idx) => `...rawModulesPart${idx + 1}`).join(', ');
+    .join("\n\n");
+  const partRefs = chunks.map((_, idx) => `...rawModulesPart${idx + 1}`).join(", ");
   const combineDecl = `const rawModules: any[] = [${partRefs}];`;
 
   return `import type { Module } from "@/types";
@@ -336,48 +352,50 @@ function scanCategories(): CategoryInfo {
   // lookups key off the JSON slug, so always read it.
   const readCourseSlug = (contentJsonPath: string, fallback: string): string => {
     try {
-      const parsed = JSON.parse(fs.readFileSync(contentJsonPath, 'utf8')) as { slug?: unknown };
-      return typeof parsed.slug === 'string' && parsed.slug.length > 0 ? parsed.slug : fallback;
+      const parsed = JSON.parse(fs.readFileSync(contentJsonPath, "utf8")) as { slug?: unknown };
+      return typeof parsed.slug === "string" && parsed.slug.length > 0 ? parsed.slug : fallback;
     } catch {
       return fallback;
     }
   };
 
   for (const category of findCategories()) {
-    for (const section of ['courses', 'problems'] as const) {
+    for (const section of ["courses", "problems"] as const) {
       const sectionDir = path.join(CONTENT_DIR, category, section);
       for (const entry of listDirs(sectionDir)) {
-        const contentJsonPath = path.join(sectionDir, entry, 'content.json');
+        const contentJsonPath = path.join(sectionDir, entry, "content.json");
         if (!fs.existsSync(contentJsonPath)) continue;
         const slug = readCourseSlug(contentJsonPath, entry);
         // Courses win over cheatsheet technologies if slugs ever collide.
         categoryBySlug.set(slug, category);
-        if (section === 'problems') problemCourseSlugs.push(slug);
+        if (section === "problems") problemCourseSlugs.push(slug);
       }
     }
 
     // Cheatsheet "modules" are one technology directory each; their hrefs
     // resolve the category from the technology (module) slug.
-    const cheatsheetDir = path.join(CONTENT_DIR, category, 'cheatsheet');
+    const cheatsheetDir = path.join(CONTENT_DIR, category, "cheatsheet");
     for (const entry of listDirs(cheatsheetDir)) {
-      if (!fs.existsSync(path.join(cheatsheetDir, entry, 'content.json'))) continue;
+      if (!fs.existsSync(path.join(cheatsheetDir, entry, "content.json"))) continue;
       if (!categoryBySlug.has(entry)) categoryBySlug.set(entry, category);
     }
 
     // Question answers are one technology module per directory. The module
     // slug *is* the technology slug, so it resolves both the category and the
     // owning technology of every question inside it.
-    const questionDir = path.join(CONTENT_DIR, category, 'question-answers');
+    const questionDir = path.join(CONTENT_DIR, category, "question-answers");
     for (const entry of listDirs(questionDir)) {
-      const moduleJsonPath = path.join(questionDir, entry, 'content.json');
+      const moduleJsonPath = path.join(questionDir, entry, "content.json");
       if (!fs.existsSync(moduleJsonPath)) continue;
       const slug = readCourseSlug(moduleJsonPath, entry);
       questionTechCategory.set(slug, category);
       try {
-        const parsed = JSON.parse(fs.readFileSync(moduleJsonPath, 'utf8')) as { lessonSlugs?: unknown };
+        const parsed = JSON.parse(fs.readFileSync(moduleJsonPath, "utf8")) as {
+          lessonSlugs?: unknown;
+        };
         if (Array.isArray(parsed.lessonSlugs)) {
           for (const lessonSlug of parsed.lessonSlugs) {
-            if (typeof lessonSlug === 'string') questionLessonTech.set(lessonSlug, slug);
+            if (typeof lessonSlug === "string") questionLessonTech.set(lessonSlug, slug);
           }
         }
       } catch {
@@ -400,19 +418,21 @@ function generateCategoriesIndex({
   questionTechCategory,
   questionLessonTech,
 }: CategoryInfo): string {
-  const categoryEntries = Array.from(categoryBySlug.entries()).sort(([a], [b]) => a.localeCompare(b));
+  const categoryEntries = Array.from(categoryBySlug.entries()).sort(([a], [b]) =>
+    a.localeCompare(b)
+  );
   const categoryLines = categoryEntries
     .map(([slug, category]) => `\t${JSON.stringify(slug)}: ${JSON.stringify(category)},`)
-    .join('\n');
-  const problemLines = problemCourseSlugs.map((slug) => `\t${JSON.stringify(slug)},`).join('\n');
+    .join("\n");
+  const problemLines = problemCourseSlugs.map((slug) => `\t${JSON.stringify(slug)},`).join("\n");
   const questionTechLines = Array.from(questionTechCategory.entries())
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([slug, category]) => `\t${JSON.stringify(slug)}: ${JSON.stringify(category)},`)
-    .join('\n');
+    .join("\n");
   const questionLessonLines = Array.from(questionLessonTech.entries())
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([slug, tech]) => `\t${JSON.stringify(slug)}: ${JSON.stringify(tech)},`)
-    .join('\n');
+    .join("\n");
 
   return `/**
  * Auto-generated by \`yarn generate:content\` - do not edit by hand.
@@ -449,15 +469,15 @@ function generateLessonsIndex(lessons: LessonInfo[]): string {
     chunks.push(lessons.slice(i, i + CHUNK_SIZE));
   }
 
-  const imports = lessons.map((l) => `import ${l.variableName} from "${l.importPath}";`).join('\n');
+  const imports = lessons.map((l) => `import ${l.variableName} from "${l.importPath}";`).join("\n");
 
   const partDecls = chunks
     .map((chunk, idx) => {
-      const exports = chunk.map((l) => `\t${l.variableName},`).join('\n');
+      const exports = chunk.map((l) => `\t${l.variableName},`).join("\n");
       return `const rawLessonsPart${idx + 1} = [\n${exports}\n];`;
     })
-    .join('\n\n');
-  const partRefs = chunks.map((_, idx) => `...rawLessonsPart${idx + 1}`).join(', ');
+    .join("\n\n");
+  const partRefs = chunks.map((_, idx) => `...rawLessonsPart${idx + 1}`).join(", ");
   const combineDecl = `const rawLessons: any[] = [${partRefs}];`;
 
   return `import type { Lesson } from '@/types';
@@ -499,11 +519,15 @@ function scanRoadmaps(): RoadmapInfo[] {
   const usedNames = new Set<string>();
 
   for (const category of findCategories()) {
-    const roadmapPath = path.join(CONTENT_DIR, category, 'roadmaps', 'roadmap.json');
+    const roadmapPath = path.join(CONTENT_DIR, category, "roadmaps", "roadmap.json");
     if (!fs.existsSync(roadmapPath)) continue;
     roadmaps.push({
       importPath: `./${category}/roadmaps/roadmap.json`,
-      variableName: uniqueVariableName(`${toVariableName(category, '')}Roadmap`, 'roadmap', usedNames),
+      variableName: uniqueVariableName(
+        `${toVariableName(category, "")}Roadmap`,
+        "roadmap",
+        usedNames
+      ),
       category,
     });
   }
@@ -512,9 +536,13 @@ function scanRoadmaps(): RoadmapInfo[] {
 }
 
 function generateRoadmapsIndex(roadmaps: RoadmapInfo[]): string {
-  const imports = roadmaps.map((r) => `import ${r.variableName} from "${r.importPath}";`).join('\n');
+  const imports = roadmaps
+    .map((r) => `import ${r.variableName} from "${r.importPath}";`)
+    .join("\n");
 
-  const exports = roadmaps.map((r) => `\t{ ...${r.variableName}, category: "${r.category}", slug: "roadmap" },`).join('\n');
+  const exports = roadmaps
+    .map((r) => `\t{ ...${r.variableName}, category: "${r.category}", slug: "roadmap" },`)
+    .join("\n");
 
   return `import type { Roadmap } from "@/types";
 
@@ -536,7 +564,7 @@ export function getRoadmapByCategory(category: string): Roadmap | undefined {
  */
 function writeIfChanged(filePath: string, content: string): boolean {
   try {
-    if (fs.readFileSync(filePath, 'utf8') === content) {
+    if (fs.readFileSync(filePath, "utf8") === content) {
       return false;
     }
   } catch {
@@ -547,7 +575,7 @@ function writeIfChanged(filePath: string, content: string): boolean {
 }
 
 function main() {
-  console.log('Scanning content directories...');
+  console.log("Scanning content directories...");
 
   const courses = scanCourses();
   const modules = scanModules();
@@ -555,7 +583,9 @@ function main() {
   const categories = scanCategories();
   const roadmaps = scanRoadmaps();
 
-  console.log(`Found ${courses.length} courses, ${modules.length} modules, ${lessons.length} lessons, ${roadmaps.length} roadmaps`);
+  console.log(
+    `Found ${courses.length} courses, ${modules.length} modules, ${lessons.length} lessons, ${roadmaps.length} roadmaps`
+  );
 
   writeIfChanged(COURSES_INDEX, generateCoursesIndex(courses));
   writeIfChanged(MODULES_INDEX, generateModulesIndex(modules));
@@ -563,7 +593,9 @@ function main() {
   writeIfChanged(CATEGORIES_INDEX, generateCategoriesIndex(categories));
   writeIfChanged(ROADMAPS_INDEX, generateRoadmapsIndex(roadmaps));
 
-  console.log('Updated content/courses.ts, content/modules.ts, content/lessons.ts, content/categories.ts, content/roadmaps.ts');
+  console.log(
+    "Updated content/courses.ts, content/modules.ts, content/lessons.ts, content/categories.ts, content/roadmaps.ts"
+  );
 }
 
 main();

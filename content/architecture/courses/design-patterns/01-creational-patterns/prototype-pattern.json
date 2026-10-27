@@ -6,11 +6,7 @@
   "description": "Clone existing objects without depending on their classes.",
   "order": 4,
   "difficulty": "intermediate",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,11 +8,7 @@
   "order": 7,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "alerting",
-    "incident",
-    "sre"
-  ],
+  "tags": ["alerting", "incident", "sre"],
   "blocks": [
     {
       "type": "paragraph",
@@ -78,32 +74,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Signal",
-          "Example",
-          "Severity"
-        ],
+        "headers": ["Signal", "Example", "Severity"],
         "rows": [
-          [
-            "Error rate",
-            "Error rate > 1%",
-            "High"
-          ],
-          [
-            "Latency",
-            "p99 > 500ms",
-            "Medium"
-          ],
-          [
-            "Saturation",
-            "CPU > 90%",
-            "Medium"
-          ],
-          [
-            "Business",
-            "Orders dropping",
-            "High"
-          ]
+          ["Error rate", "Error rate > 1%", "High"],
+          ["Latency", "p99 > 500ms", "Medium"],
+          ["Saturation", "CPU > 90%", "Medium"],
+          ["Business", "Orders dropping", "High"]
         ]
       }
     },

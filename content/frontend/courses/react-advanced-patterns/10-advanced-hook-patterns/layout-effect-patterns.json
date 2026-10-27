@@ -8,14 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "useLayoutEffect",
-    "useEffect",
-    "dom",
-    "measurements",
-    "synchronous",
-    "isomorphic"
-  ],
+  "tags": ["useLayoutEffect", "useEffect", "dom", "measurements", "synchronous", "isomorphic"],
   "blocks": [
     {
       "type": "paragraph",
@@ -120,37 +113,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "Recommended Hook",
-          "Reason"
-        ],
+        "headers": ["Scenario", "Recommended Hook", "Reason"],
         "rows": [
-          [
-            "Data fetching",
-            "useEffect",
-            "Does not block rendering; network response is async"
-          ],
-          [
-            "DOM measurements",
-            "useLayoutEffect",
-            "Need layout before paint to avoid flicker"
-          ],
-          [
-            "Event listener cleanup",
-            "useEffect",
-            "Non-visual side effect; async is fine"
-          ],
-          [
-            "Synchronous style mutation",
-            "useLayoutEffect",
-            "Must apply before the browser paints"
-          ],
-          [
-            "Logging / analytics",
-            "useEffect",
-            "Should not block the user's view"
-          ]
+          ["Data fetching", "useEffect", "Does not block rendering; network response is async"],
+          ["DOM measurements", "useLayoutEffect", "Need layout before paint to avoid flicker"],
+          ["Event listener cleanup", "useEffect", "Non-visual side effect; async is fine"],
+          ["Synchronous style mutation", "useLayoutEffect", "Must apply before the browser paints"],
+          ["Logging / analytics", "useEffect", "Should not block the user's view"]
         ]
       }
     },
@@ -162,35 +131,16 @@
           {
             "title": "useEffect",
             "description": "Fires after paint. Good for side effects that do not affect visual output.",
-            "pros": [
-              "Does not block rendering",
-              "Works in SSR without warnings"
-            ],
-            "cons": [
-              "Cannot prevent visual flicker",
-              "DOM may be stale during execution"
-            ],
-            "tags": [
-              "async",
-              "painting"
-            ]
+            "pros": ["Does not block rendering", "Works in SSR without warnings"],
+            "cons": ["Cannot prevent visual flicker", "DOM may be stale during execution"],
+            "tags": ["async", "painting"]
           },
           {
             "title": "useLayoutEffect",
             "description": "Fires before paint. Good for reading layout and synchronously updating DOM.",
-            "pros": [
-              "Prevents flicker",
-              "DOM is fully committed",
-              "Can measure before paint"
-            ],
-            "cons": [
-              "Blocks browser paint",
-              "Forbidden in SSR by default"
-            ],
-            "tags": [
-              "sync",
-              "layout"
-            ]
+            "pros": ["Prevents flicker", "DOM is fully committed", "Can measure before paint"],
+            "cons": ["Blocks browser paint", "Forbidden in SSR by default"],
+            "tags": ["sync", "layout"]
           }
         ]
       }
@@ -254,9 +204,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "imperative-handle-patterns"
-  ],
+  "relatedLessons": ["imperative-handle-patterns"],
   "furtherReading": [
     {
       "title": "React Docs: useLayoutEffect",
@@ -280,7 +228,5 @@
       "description": "Practical advice on when synchronous effects are justified."
     }
   ],
-  "prerequisites": [
-    "reducer-hooks-patterns"
-  ]
+  "prerequisites": ["reducer-hooks-patterns"]
 }

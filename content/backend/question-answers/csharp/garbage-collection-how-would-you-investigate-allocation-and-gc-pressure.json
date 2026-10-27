@@ -8,13 +8,7 @@
   "order": 31,
   "difficulty": "advanced",
   "estimatedMinutes": 32,
-  "tags": [
-    "gc",
-    "memory",
-    "allocations",
-    "performance",
-    "dotnet"
-  ],
+  "tags": ["gc", "memory", "allocations", "performance", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",

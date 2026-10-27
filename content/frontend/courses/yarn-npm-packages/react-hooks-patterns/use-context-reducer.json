@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "useContext",
-    "useReducer",
-    "state-management",
-    "react"
-  ],
+  "tags": ["useContext", "useReducer", "state-management", "react"],
   "prerequisites": [],
   "relatedLessons": [],
   "furtherReading": [],

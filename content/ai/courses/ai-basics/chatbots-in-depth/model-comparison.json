@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "model-comparison",
-    "chatgpt",
-    "claude",
-    "gemini",
-    "decision"
-  ],
+  "tags": ["model-comparison", "chatgpt", "claude", "gemini", "decision"],
   "blocks": [
     {
       "type": "paragraph",
@@ -166,49 +160,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Criterion",
-          "ChatGPT",
-          "Claude",
-          "Gemini",
-          "Perplexity"
-        ],
+        "headers": ["Criterion", "ChatGPT", "Claude", "Gemini", "Perplexity"],
         "rows": [
-          [
-            "Context window",
-            "1.05M tokens",
-            "1M tokens",
-            "1M tokens",
-            "~32K / web retrieval"
-          ],
-          [
-            "Writing quality",
-            "Excellent",
-            "Excellent (more nuanced tone)",
-            "Good",
-            "Good"
-          ],
-          [
-            "Long document analysis",
-            "Good",
-            "Excellent",
-            "Excellent (1M context)",
-            "Limited"
-          ],
-          [
-            "Code generation",
-            "Excellent",
-            "Excellent",
-            "Good",
-            "Not primary use"
-          ],
-          [
-            "Image generation",
-            "Yes (paid)",
-            "No",
-            "Yes (paid)",
-            "No"
-          ],
+          ["Context window", "1.05M tokens", "1M tokens", "1M tokens", "~32K / web retrieval"],
+          ["Writing quality", "Excellent", "Excellent (more nuanced tone)", "Good", "Good"],
+          ["Long document analysis", "Good", "Excellent", "Excellent (1M context)", "Limited"],
+          ["Code generation", "Excellent", "Excellent", "Good", "Not primary use"],
+          ["Image generation", "Yes (paid)", "No", "Yes (paid)", "No"],
           [
             "Real-time web search",
             "Yes (with browse)",
@@ -216,27 +174,9 @@
             "Yes (native)",
             "Yes — core feature"
           ],
-          [
-            "Cited sources",
-            "Rarely",
-            "Rarely",
-            "Occasionally",
-            "Always"
-          ],
-          [
-            "Google Workspace integration",
-            "Via plugins",
-            "No",
-            "Native (Gemini sidebar)",
-            "No"
-          ],
-          [
-            "Free tier quality",
-            "Very good",
-            "Good",
-            "Good",
-            "Good"
-          ],
+          ["Cited sources", "Rarely", "Rarely", "Occasionally", "Always"],
+          ["Google Workspace integration", "Via plugins", "No", "Native (Gemini sidebar)", "No"],
+          ["Free tier quality", "Very good", "Good", "Good", "Good"],
           [
             "Best for",
             "General use + coding",
@@ -288,17 +228,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Task",
-          "Best choice",
-          "Why"
-        ],
+        "headers": ["Task", "Best choice", "Why"],
         "rows": [
-          [
-            "Research with citations",
-            "Perplexity",
-            "Retrieves and cites sources for every claim"
-          ],
+          ["Research with citations", "Perplexity", "Retrieves and cites sources for every claim"],
           [
             "Editing a long document",
             "Claude",
@@ -314,16 +246,8 @@
             "ChatGPT or Claude",
             "Both excellent; ChatGPT has code interpreter for running it"
           ],
-          [
-            "Gmail/Docs integrated tasks",
-            "Gemini",
-            "Sits inside Google products natively"
-          ],
-          [
-            "Quick general questions",
-            "ChatGPT (free)",
-            "Fast, reliable, no extra setup"
-          ],
+          ["Gmail/Docs integrated tasks", "Gemini", "Sits inside Google products natively"],
+          ["Quick general questions", "ChatGPT (free)", "Fast, reliable, no extra setup"],
           [
             "Analyzing a 100-page PDF",
             "Claude or Gemini",
@@ -362,11 +286,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model",
-          "Biggest strength",
-          "Biggest limitation"
-        ],
+        "headers": ["Model", "Biggest strength", "Biggest limitation"],
         "rows": [
           [
             "ChatGPT",
@@ -464,12 +384,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model",
-          "Free tier",
-          "Entry paid tier",
-          "Notes"
-        ],
+        "headers": ["Model", "Free tier", "Entry paid tier", "Notes"],
         "rows": [
           [
             "ChatGPT",
@@ -547,10 +462,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "chatbot-landscape",
-    "choosing-the-right-tool"
-  ],
+  "relatedLessons": ["chatbot-landscape", "choosing-the-right-tool"],
   "furtherReading": [
     {
       "title": "LMSYS Chatbot Arena Leaderboard",

@@ -8,12 +8,7 @@
   "order": 21,
   "difficulty": "intermediate",
   "estimatedMinutes": 22,
-  "tags": [
-    "interview",
-    "system-design",
-    "caching",
-    "ranking"
-  ],
+  "tags": ["interview", "system-design", "caching", "ranking"],
   "technology": "System Design",
   "blocks": [
     {
@@ -104,11 +99,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Entity",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Entity", "Key Fields", "Description"],
         "rows": [
           [
             "Leaderboard ZSET",

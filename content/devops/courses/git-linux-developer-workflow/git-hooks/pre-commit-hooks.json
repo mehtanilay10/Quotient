@@ -145,7 +145,11 @@
   ],
   "relatedLessons": ["hook-fundamentals", "commit-msg-hooks"],
   "furtherReading": [
-    { "title": "Husky Documentation", "url": "https://typicode.github.io/husky/", "type": "article" },
+    {
+      "title": "Husky Documentation",
+      "url": "https://typicode.github.io/husky/",
+      "type": "article"
+    },
     { "title": "lint-staged", "url": "https://github.com/okonet/lint-staged", "type": "tool" }
   ]
 }

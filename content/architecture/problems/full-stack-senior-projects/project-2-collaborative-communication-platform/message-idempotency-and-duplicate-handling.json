@@ -128,7 +128,10 @@
             "title": "Database unique constraint",
             "description": "Relies on the primary database to reject duplicate inserts.",
             "pros": ["Strong consistency", "No extra infrastructure", "Simple to reason about"],
-            "cons": ["Database round-trip", "Does not protect against duplicate side effects before insert"]
+            "cons": [
+              "Database round-trip",
+              "Does not protect against duplicate side effects before insert"
+            ]
           },
           {
             "title": "Redis SET with TTL",
@@ -140,7 +143,11 @@
             "title": "Event sourcing",
             "description": "Events are immutable and identified by unique event IDs.",
             "pros": ["Natural idempotency", "Complete audit trail", "Supports replay"],
-            "cons": ["Steeper learning curve", "Complex projections", "Requires event schema design"]
+            "cons": [
+              "Steeper learning curve",
+              "Complex projections",
+              "Requires event schema design"
+            ]
           }
         ]
       }
@@ -201,10 +208,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "message-persistence-and-ordering",
-    "offline-handling-and-reconnect-behavior"
-  ],
+  "relatedLessons": ["message-persistence-and-ordering", "offline-handling-and-reconnect-behavior"],
   "furtherReading": [
     {
       "title": "Idempotency in REST APIs",

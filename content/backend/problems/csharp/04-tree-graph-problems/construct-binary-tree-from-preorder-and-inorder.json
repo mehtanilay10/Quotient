@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "medium",
   "estimatedMinutes": 16,
-  "tags": [
-    "csharp",
-    "trees",
-    "recursion",
-    "hashmap",
-    "medium"
-  ],
+  "tags": ["csharp", "trees", "recursion", "hashmap", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -52,14 +46,8 @@
           {
             "title": "Recursive + HashMap",
             "description": "Split at root using index map",
-            "pros": [
-              "O(n) time"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time"],
+            "tags": ["O(n) time", "O(n) space", "Recommended"]
           }
         ]
       }

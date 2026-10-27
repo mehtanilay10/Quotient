@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "dependency-injection",
-    "services",
-    "ioc"
-  ],
+  "tags": ["web-api", "dependency-injection", "services", "ioc"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,26 +110,14 @@
           {
             "title": "Dependency Injection",
             "description": "Dependencies are passed in from outside.",
-            "pros": [
-              "Easy to test",
-              "Clear dependencies",
-              "Loose coupling"
-            ],
-            "cons": [
-              "Requires setup"
-            ]
+            "pros": ["Easy to test", "Clear dependencies", "Loose coupling"],
+            "cons": ["Requires setup"]
           },
           {
             "title": "Service Locator",
             "description": "Class actively requests its own dependencies.",
-            "pros": [
-              "Flexible at runtime"
-            ],
-            "cons": [
-              "Hidden dependencies",
-              "Harder to test",
-              "Tight coupling"
-            ]
+            "pros": ["Flexible at runtime"],
+            "cons": ["Hidden dependencies", "Harder to test", "Tight coupling"]
           }
         ]
       }

@@ -8,60 +8,277 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": ["apollo", "graphql", "react", "queries", "mutations", "cache", "pagination", "optimistic-ui", "local-state", "cheatsheet", "quick-reference"],
+  "tags": [
+    "apollo",
+    "graphql",
+    "react",
+    "queries",
+    "mutations",
+    "cache",
+    "pagination",
+    "optimistic-ui",
+    "local-state",
+    "cheatsheet",
+    "quick-reference"
+  ],
   "blocks": [
     { "type": "heading", "data": { "level": 2, "text": "Apollo Client Quick Reference" } },
-    { "type": "paragraph", "data": { "text": "Apollo Client is a comprehensive state management library for GraphQL. It handles fetching, caching, and updating application data." } },
+    {
+      "type": "paragraph",
+      "data": {
+        "text": "Apollo Client is a comprehensive state management library for GraphQL. It handles fetching, caching, and updating application data."
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Setup & Configuration" } },
-    { "type": "example", "data": { "title": "Apollo Client Setup", "content": "Install and configure Apollo Client.", "language": "jsx", "code": "// Install\nnpm install @apollo/client graphql\n\n// Create client\nimport { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';\n\nconst client = new ApolloClient({\n  link: new HttpLink({ uri: '/graphql' }),\n  cache: new InMemoryCache()\n});\n\n// Wrap app with provider\nimport { ApolloProvider } from '@apollo/client';\n\n<ApolloProvider client={client}>\n  <App />\n</ApolloProvider>" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Apollo Client Setup",
+        "content": "Install and configure Apollo Client.",
+        "language": "jsx",
+        "code": "// Install\nnpm install @apollo/client graphql\n\n// Create client\nimport { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';\n\nconst client = new ApolloClient({\n  link: new HttpLink({ uri: '/graphql' }),\n  cache: new InMemoryCache()\n});\n\n// Wrap app with provider\nimport { ApolloProvider } from '@apollo/client';\n\n<ApolloProvider client={client}>\n  <App />\n</ApolloProvider>"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Basic Query" } },
-    { "type": "example", "data": { "title": "useQuery Hook", "content": "Fetching data with useQuery.", "language": "jsx", "code": "import { useQuery, gql } from '@apollo/client';\n\nconst GET_USER = gql`\n  query GetUser($id: ID!) {\n    user(id: $id) {\n      id\n      name\n      email\n    }\n  }\n`;\n\nfunction UserProfile({ userId }) {\n  const { loading, error, data } = useQuery(GET_USER, {\n    variables: { id: userId }\n  });\n\n  if (loading) return <p>Loading...</p>;\n  if (error) return <p>Error: {error.message}</p>;\n\n  return <div>{data.user.name}</div>;\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "useQuery Hook",
+        "content": "Fetching data with useQuery.",
+        "language": "jsx",
+        "code": "import { useQuery, gql } from '@apollo/client';\n\nconst GET_USER = gql`\n  query GetUser($id: ID!) {\n    user(id: $id) {\n      id\n      name\n      email\n    }\n  }\n`;\n\nfunction UserProfile({ userId }) {\n  const { loading, error, data } = useQuery(GET_USER, {\n    variables: { id: userId }\n  });\n\n  if (loading) return <p>Loading...</p>;\n  if (error) return <p>Error: {error.message}</p>;\n\n  return <div>{data.user.name}</div>;\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Query Options" } },
-    { "type": "example", "data": { "title": "Fetch Policies", "content": "Controlling how queries fetch data.", "language": "jsx", "code": "const { data } = useQuery(GET_USER, {\n  variables: { id: 1 },\n\n  // cache-first: check cache first (default)\n  fetchPolicy: 'cache-first',\n\n  // cache-and-network: check cache, then network\n  fetchPolicy: 'cache-and-network',\n\n  // network-only: always fetch from server\n  fetchPolicy: 'network-only',\n\n  // no-cache: no caching\n  fetchPolicy: 'no-cache',\n\n  // Poll for updates every 5 seconds\n  pollInterval: 5000,\n\n  // Skip query conditionally\n  skip: !userId\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Fetch Policies",
+        "content": "Controlling how queries fetch data.",
+        "language": "jsx",
+        "code": "const { data } = useQuery(GET_USER, {\n  variables: { id: 1 },\n\n  // cache-first: check cache first (default)\n  fetchPolicy: 'cache-first',\n\n  // cache-and-network: check cache, then network\n  fetchPolicy: 'cache-and-network',\n\n  // network-only: always fetch from server\n  fetchPolicy: 'network-only',\n\n  // no-cache: no caching\n  fetchPolicy: 'no-cache',\n\n  // Poll for updates every 5 seconds\n  pollInterval: 5000,\n\n  // Skip query conditionally\n  skip: !userId\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Basic Mutation" } },
-    { "type": "example", "data": { "title": "useMutation Hook", "content": "Modifying data with mutations.", "language": "jsx", "code": "import { useMutation, gql } from '@apollo/client';\n\nconst CREATE_USER = gql`\n  mutation CreateUser($name: String!, $email: String!) {\n    createUser(name: $name, email: $email) {\n      id\n      name\n      email\n    }\n  }\n`;\n\nfunction CreateUserForm() {\n  const [createUser, { loading, error }] = useMutation(CREATE_USER, {\n    onCompleted: (data) => {\n      console.log('Created:', data.createUser);\n    },\n    onError: (error) => {\n      console.error('Error:', error);\n    }\n  });\n\n  const handleSubmit = (e) => {\n    e.preventDefault();\n    createUser({ variables: { name: 'Jane', email: 'jane@example.com' } });\n  };\n\n  return <form onSubmit={handleSubmit}>...</form>;\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "useMutation Hook",
+        "content": "Modifying data with mutations.",
+        "language": "jsx",
+        "code": "import { useMutation, gql } from '@apollo/client';\n\nconst CREATE_USER = gql`\n  mutation CreateUser($name: String!, $email: String!) {\n    createUser(name: $name, email: $email) {\n      id\n      name\n      email\n    }\n  }\n`;\n\nfunction CreateUserForm() {\n  const [createUser, { loading, error }] = useMutation(CREATE_USER, {\n    onCompleted: (data) => {\n      console.log('Created:', data.createUser);\n    },\n    onError: (error) => {\n      console.error('Error:', error);\n    }\n  });\n\n  const handleSubmit = (e) => {\n    e.preventDefault();\n    createUser({ variables: { name: 'Jane', email: 'jane@example.com' } });\n  };\n\n  return <form onSubmit={handleSubmit}>...</form>;\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Mutation with Cache Update" } },
-    { "type": "example", "data": { "title": "Cache Updates", "content": "Updating cache after mutation.", "language": "jsx", "code": "const [createPost] = useMutation(CREATE_POST, {\n  update(cache, { data: { createPost } }) {\n    // Modify existing cache\n    cache.modify({\n      fields: {\n        posts(existingPosts = []) {\n          const newPostRef = cache.writeFragment({\n            data: createPost,\n            fragment: gql`\n              fragment NewPost on Post {\n                id\n                title\n                content\n              }\n            `\n          });\n          return [...existingPosts, newPostRef];\n        }\n      }\n    });\n  },\n  refetchQueries: [{ query: GET_POSTS }]\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Cache Updates",
+        "content": "Updating cache after mutation.",
+        "language": "jsx",
+        "code": "const [createPost] = useMutation(CREATE_POST, {\n  update(cache, { data: { createPost } }) {\n    // Modify existing cache\n    cache.modify({\n      fields: {\n        posts(existingPosts = []) {\n          const newPostRef = cache.writeFragment({\n            data: createPost,\n            fragment: gql`\n              fragment NewPost on Post {\n                id\n                title\n                content\n              }\n            `\n          });\n          return [...existingPosts, newPostRef];\n        }\n      }\n    });\n  },\n  refetchQueries: [{ query: GET_POSTS }]\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Fragments" } },
-    { "type": "example", "data": { "title": "GraphQL Fragments", "content": "Reusing fragments in queries.", "language": "jsx", "code": "const USER_FIELDS = gql`\n  fragment UserFields on User {\n    id\n    name\n    email\n    avatar\n  }\n`;\n\nconst GET_USER = gql`\n  query GetUser($id: ID!) {\n    user(id: $id) {\n      ...UserFields\n    }\n  }\n  ${USER_FIELDS}\n`;\n\nconst GET_USERS = gql`\n  query GetUsers {\n    users {\n      ...UserFields\n    }\n  }\n  ${USER_FIELDS}\n`;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "GraphQL Fragments",
+        "content": "Reusing fragments in queries.",
+        "language": "jsx",
+        "code": "const USER_FIELDS = gql`\n  fragment UserFields on User {\n    id\n    name\n    email\n    avatar\n  }\n`;\n\nconst GET_USER = gql`\n  query GetUser($id: ID!) {\n    user(id: $id) {\n      ...UserFields\n    }\n  }\n  ${USER_FIELDS}\n`;\n\nconst GET_USERS = gql`\n  query GetUsers {\n    users {\n      ...UserFields\n    }\n  }\n  ${USER_FIELDS}\n`;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Caching & Normalization" } },
-    { "type": "example", "data": { "title": "InMemoryCache Config", "content": "Configuring Apollo Cache.", "language": "jsx", "code": "const cache = new InMemoryCache({\n  typePolicies: {\n    Query: {\n      fields: {\n        posts: {\n          keyArgs: false,\n          merge(existing = [], incoming) {\n            return [...existing, ...incoming];\n          }\n        }\n      }\n    },\n    User: {\n      keyFields: ['id'],\n      fields: {\n        posts: {\n          merge(existing = [], incoming) {\n            return [...existing, ...incoming];\n          }\n        }\n      }\n    }\n  }\n});\n\nconst client = new ApolloClient({\n  cache,\n  link: new HttpLink({ uri: '/graphql' })\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "InMemoryCache Config",
+        "content": "Configuring Apollo Cache.",
+        "language": "jsx",
+        "code": "const cache = new InMemoryCache({\n  typePolicies: {\n    Query: {\n      fields: {\n        posts: {\n          keyArgs: false,\n          merge(existing = [], incoming) {\n            return [...existing, ...incoming];\n          }\n        }\n      }\n    },\n    User: {\n      keyFields: ['id'],\n      fields: {\n        posts: {\n          merge(existing = [], incoming) {\n            return [...existing, ...incoming];\n          }\n        }\n      }\n    }\n  }\n});\n\nconst client = new ApolloClient({\n  cache,\n  link: new HttpLink({ uri: '/graphql' })\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Pagination (Offset)" } },
-    { "type": "example", "data": { "title": "Offset Pagination", "content": "Offset-based pagination with fetchMore.", "language": "jsx", "code": "const GET_POSTS = gql`\n  query GetPosts($offset: Int, $limit: Int) {\n    posts(offset: $offset, limit: $limit) {\n      id\n      title\n    }\n  }\n`;\n\nfunction PostList() {\n  const { data, fetchMore } = useQuery(GET_POSTS, {\n    variables: { offset: 0, limit: 10 }\n  });\n\n  const loadMore = () => {\n    fetchMore({\n      variables: {\n        offset: data.posts.length\n      }\n    });\n  };\n\n  return (\n    <>\n      {data.posts.map(post => <Post key={post.id} {...post} />)}\n      <button onClick={loadMore}>Load More</button>\n    </>\n  );\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Offset Pagination",
+        "content": "Offset-based pagination with fetchMore.",
+        "language": "jsx",
+        "code": "const GET_POSTS = gql`\n  query GetPosts($offset: Int, $limit: Int) {\n    posts(offset: $offset, limit: $limit) {\n      id\n      title\n    }\n  }\n`;\n\nfunction PostList() {\n  const { data, fetchMore } = useQuery(GET_POSTS, {\n    variables: { offset: 0, limit: 10 }\n  });\n\n  const loadMore = () => {\n    fetchMore({\n      variables: {\n        offset: data.posts.length\n      }\n    });\n  };\n\n  return (\n    <>\n      {data.posts.map(post => <Post key={post.id} {...post} />)}\n      <button onClick={loadMore}>Load More</button>\n    </>\n  );\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Local State" } },
-    { "type": "example", "data": { "title": "Reactive Variables", "content": "Managing local state with reactive variables.", "language": "jsx", "code": "import { makeVar, useReactiveVar } from '@apollo/client';\n\n// Create reactive variable\nexport const isLoggedInVar = makeVar(false);\nexport const cartItemsVar = makeVar([]);\n\n// Use in component\nfunction Cart() {\n  const cartItems = useReactiveVar(cartItemsVar);\n\n  const addItem = (item) => {\n    cartItemsVar([...cartItemsVar(), item]);\n  };\n\n  return <div>{cartItems.length} items</div>;\n}\n\n// Use in query\nconst GET_CART = gql`\n  query GetCart {\n    cartItems @client {\n      id\n      name\n    }\n  }\n`;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Reactive Variables",
+        "content": "Managing local state with reactive variables.",
+        "language": "jsx",
+        "code": "import { makeVar, useReactiveVar } from '@apollo/client';\n\n// Create reactive variable\nexport const isLoggedInVar = makeVar(false);\nexport const cartItemsVar = makeVar([]);\n\n// Use in component\nfunction Cart() {\n  const cartItems = useReactiveVar(cartItemsVar);\n\n  const addItem = (item) => {\n    cartItemsVar([...cartItemsVar(), item]);\n  };\n\n  return <div>{cartItems.length} items</div>;\n}\n\n// Use in query\nconst GET_CART = gql`\n  query GetCart {\n    cartItems @client {\n      id\n      name\n    }\n  }\n`;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Optimistic UI" } },
-    { "type": "example", "data": { "title": "Optimistic Response", "content": "Instant UI updates with optimistic responses.", "language": "jsx", "code": "const [likePost] = useMutation(LIKE_POST, {\n  optimisticResponse: {\n    likePost: {\n      id: post.id,\n      likes: post.likes + 1,\n      liked: true,\n      __typename: 'Post'\n    }\n  },\n  update(cache, { data: { likePost } }) {\n    cache.modify({\n      id: cache.identify({ __typename: 'Post', id: post.id }),\n      fields: {\n        likes(existing) { return likePost.likes; }\n      }\n    });\n  }\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Optimistic Response",
+        "content": "Instant UI updates with optimistic responses.",
+        "language": "jsx",
+        "code": "const [likePost] = useMutation(LIKE_POST, {\n  optimisticResponse: {\n    likePost: {\n      id: post.id,\n      likes: post.likes + 1,\n      liked: true,\n      __typename: 'Post'\n    }\n  },\n  update(cache, { data: { likePost } }) {\n    cache.modify({\n      id: cache.identify({ __typename: 'Post', id: post.id }),\n      fields: {\n        likes(existing) { return likePost.likes; }\n      }\n    });\n  }\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Subscriptions" } },
-    { "type": "example", "data": { "title": "WebSocket Subscriptions", "content": "Real-time updates with subscriptions.", "language": "jsx", "code": "import { split, HttpLink } from '@apollo/client';\nimport { WebSocketLink } from '@apollo/client/link/ws';\nimport { getMainDefinition } from '@apollo/client/utilities';\n\nconst wsLink = new WebSocketLink({\n  uri: 'ws://localhost:4000/graphql',\n  options: { reconnect: true }\n});\n\nconst httpLink = new HttpLink({ uri: '/graphql' });\n\nconst splitLink = split(\n  ({ query }) => {\n    const definition = getMainDefinition(query);\n    return definition.kind === 'OperationDefinition'\n      && definition.operation === 'subscription';\n  },\n  wsLink,\n  httpLink\n);\n\nconst client = new ApolloClient({\n  link: splitLink,\n  cache: new InMemoryCache()\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "WebSocket Subscriptions",
+        "content": "Real-time updates with subscriptions.",
+        "language": "jsx",
+        "code": "import { split, HttpLink } from '@apollo/client';\nimport { WebSocketLink } from '@apollo/client/link/ws';\nimport { getMainDefinition } from '@apollo/client/utilities';\n\nconst wsLink = new WebSocketLink({\n  uri: 'ws://localhost:4000/graphql',\n  options: { reconnect: true }\n});\n\nconst httpLink = new HttpLink({ uri: '/graphql' });\n\nconst splitLink = split(\n  ({ query }) => {\n    const definition = getMainDefinition(query);\n    return definition.kind === 'OperationDefinition'\n      && definition.operation === 'subscription';\n  },\n  wsLink,\n  httpLink\n);\n\nconst client = new ApolloClient({\n  link: splitLink,\n  cache: new InMemoryCache()\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Error Handling" } },
-    { "type": "example", "data": { "title": "Error Handling", "content": "Handling errors in Apollo Client.", "language": "jsx", "code": "const { loading, error, data } = useQuery(GET_USER, {\n  errorPolicy: 'all', // return data + errors\n  onError: (error) => {\n    console.log('GraphQL errors:', error.graphQLErrors);\n    console.log('Network error:', error.networkError);\n  }\n});\n\n// Error link for global handling\nimport { onError } from '@apollo/client/link/error';\n\nconst errorLink = onError(({ graphQLErrors, networkError, response }) => {\n  if (graphQLErrors) {\n    graphQLErrors.forEach(({ message, locations, path }) =>\n      console.log(`[GraphQL error]: ${message}`, { locations, path })\n    );\n  }\n  if (networkError) {\n    console.log(`[Network error]: ${networkError.message}`);\n  }\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Error Handling",
+        "content": "Handling errors in Apollo Client.",
+        "language": "jsx",
+        "code": "const { loading, error, data } = useQuery(GET_USER, {\n  errorPolicy: 'all', // return data + errors\n  onError: (error) => {\n    console.log('GraphQL errors:', error.graphQLErrors);\n    console.log('Network error:', error.networkError);\n  }\n});\n\n// Error link for global handling\nimport { onError } from '@apollo/client/link/error';\n\nconst errorLink = onError(({ graphQLErrors, networkError, response }) => {\n  if (graphQLErrors) {\n    graphQLErrors.forEach(({ message, locations, path }) =>\n      console.log(`[GraphQL error]: ${message}`, { locations, path })\n    );\n  }\n  if (networkError) {\n    console.log(`[Network error]: ${networkError.message}`);\n  }\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Authentication" } },
-    { "type": "example", "data": { "title": "Auth Headers", "content": "Adding auth tokens to requests.", "language": "jsx", "code": "import { setContext } from '@apollo/client/link/context';\n\nconst authLink = setContext((_, { headers }) => {\n  const token = localStorage.getItem('token');\n  return {\n    headers: {\n      ...headers,\n      authorization: token ? `Bearer ${token}` : ''\n    }\n  };\n});\n\nconst client = new ApolloClient({\n  link: authLink.concat(httpLink),\n  cache: new InMemoryCache()\n});\n\n// Logout - clear cache\nconst [logout] = useMutation(LOGOUT, {\n  onCompleted: () => {\n    client.clearStore();\n    localStorage.removeItem('token');\n  }\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Auth Headers",
+        "content": "Adding auth tokens to requests.",
+        "language": "jsx",
+        "code": "import { setContext } from '@apollo/client/link/context';\n\nconst authLink = setContext((_, { headers }) => {\n  const token = localStorage.getItem('token');\n  return {\n    headers: {\n      ...headers,\n      authorization: token ? `Bearer ${token}` : ''\n    }\n  };\n});\n\nconst client = new ApolloClient({\n  link: authLink.concat(httpLink),\n  cache: new InMemoryCache()\n});\n\n// Logout - clear cache\nconst [logout] = useMutation(LOGOUT, {\n  onCompleted: () => {\n    client.clearStore();\n    localStorage.removeItem('token');\n  }\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Batching" } },
-    { "type": "example", "data": { "title": "Batch HTTP Link", "content": "Batching multiple operations.", "language": "jsx", "code": "import { BatchHttpLink } from '@apollo/client/link/batch-http';\n\nconst batchLink = new BatchHttpLink({\n  uri: '/graphql',\n  batchMax: 5,        // max operations per batch\n  batchInterval: 10   // ms to wait before sending\n});\n\nconst client = new ApolloClient({\n  link: batchLink,\n  cache: new InMemoryCache()\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Batch HTTP Link",
+        "content": "Batching multiple operations.",
+        "language": "jsx",
+        "code": "import { BatchHttpLink } from '@apollo/client/link/batch-http';\n\nconst batchLink = new BatchHttpLink({\n  uri: '/graphql',\n  batchMax: 5,        // max operations per batch\n  batchInterval: 10   // ms to wait before sending\n});\n\nconst client = new ApolloClient({\n  link: batchLink,\n  cache: new InMemoryCache()\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "SSR / SSG" } },
-    { "type": "example", "data": { "title": "Server-Side Rendering", "content": "Apollo with Next.js SSR.", "language": "jsx", "code": "import { GetServerSideProps } from 'next';\nimport { initializeApollo } from '../lib/apollo-client';\n\nexport const getServerSideProps: GetServerSideProps = async (context) => {\n  const apolloClient = initializeApollo();\n\n  await apolloClient.query({\n    query: GET_POST,\n    variables: { id: context.params?.id }\n  });\n\n  return {\n    props: {\n      initialApolloState: apolloClient.cache.extract()\n    }\n  };\n};\n\n// Client-side restore\nconst apolloClient = initializeApollo(initialApolloState);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Server-Side Rendering",
+        "content": "Apollo with Next.js SSR.",
+        "language": "jsx",
+        "code": "import { GetServerSideProps } from 'next';\nimport { initializeApollo } from '../lib/apollo-client';\n\nexport const getServerSideProps: GetServerSideProps = async (context) => {\n  const apolloClient = initializeApollo();\n\n  await apolloClient.query({\n    query: GET_POST,\n    variables: { id: context.params?.id }\n  });\n\n  return {\n    props: {\n      initialApolloState: apolloClient.cache.extract()\n    }\n  };\n};\n\n// Client-side restore\nconst apolloClient = initializeApollo(initialApolloState);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Advanced Cache" } },
-    { "type": "example", "data": { "title": "Cache Eviction", "content": "Managing cache programmatically.", "language": "jsx", "code": "const client = useApolloClient();\n\n// Evict specific field\nclient.cache.evict({ fieldName: 'posts' });\n\n// Evict by ID\nclient.cache.evict({ id: 'User:1' });\n\n// Garbage collect\nclient.cache.gc();\n\n// Restore from snapshot\nclient.cache.restore(window.__APOLLO_STATE__);\n\n// Read from cache\nclient.cache.readQuery({ query: GET_POSTS });\n\n// Write to cache\nclient.cache.writeQuery({\n  query: GET_POSTS,\n  data: { posts: [...] }\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Cache Eviction",
+        "content": "Managing cache programmatically.",
+        "language": "jsx",
+        "code": "const client = useApolloClient();\n\n// Evict specific field\nclient.cache.evict({ fieldName: 'posts' });\n\n// Evict by ID\nclient.cache.evict({ id: 'User:1' });\n\n// Garbage collect\nclient.cache.gc();\n\n// Restore from snapshot\nclient.cache.restore(window.__APOLLO_STATE__);\n\n// Read from cache\nclient.cache.readQuery({ query: GET_POSTS });\n\n// Write to cache\nclient.cache.writeQuery({\n  query: GET_POSTS,\n  data: { posts: [...] }\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "DevTools" } },
-    { "type": "example", "data": { "title": "Apollo DevTools", "content": "Debugging with Apollo Client DevTools.", "language": "jsx", "code": "// Install browser extension\n// Chrome: Apollo Client DevTools\n// Firefox: Apollo Client DevTools\n\n// Features:\n// - Inspect cache state\n// - Watch active queries\n// - View mutation history\n// - Debug cache modifications\n\n// Enable in development\nconst client = new ApolloClient({\n  cache: new InMemoryCache({\n    addTypename: true\n  }),\n  defaultOptions: {\n    watchQuery: { errorPolicy: 'all' },\n    query: { errorPolicy: 'all' },\n    mutate: { errorPolicy: 'all' }\n  }\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Apollo DevTools",
+        "content": "Debugging with Apollo Client DevTools.",
+        "language": "jsx",
+        "code": "// Install browser extension\n// Chrome: Apollo Client DevTools\n// Firefox: Apollo Client DevTools\n\n// Features:\n// - Inspect cache state\n// - Watch active queries\n// - View mutation history\n// - Debug cache modifications\n\n// Enable in development\nconst client = new ApolloClient({\n  cache: new InMemoryCache({\n    addTypename: true\n  }),\n  defaultOptions: {\n    watchQuery: { errorPolicy: 'all' },\n    query: { errorPolicy: 'all' },\n    mutate: { errorPolicy: 'all' }\n  }\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "useLazyQuery" } },
-    { "type": "example", "data": { "title": "useLazyQuery", "content": "Execute query on demand.", "language": "jsx", "code": "function SearchComponent() {\n  const [search, { data, loading }] = useLazyQuery(SEARCH_USERS);\n\n  const handleSearch = (e) => {\n    e.preventDefault();\n    const query = e.target.query.value;\n    search({ variables: { query } });\n  };\n\n  return (\n    <form onSubmit={handleSearch}>\n      <input name=\"query\" placeholder=\"Search users...\" />\n      <button type=\"submit\">Search</button>\n      {loading && <p>Searching...</p>}\n      {data?.users?.map(user => <div key={user.id}>{user.name}</div>)}\n    </form>\n  );\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "useLazyQuery",
+        "content": "Execute query on demand.",
+        "language": "jsx",
+        "code": "function SearchComponent() {\n  const [search, { data, loading }] = useLazyQuery(SEARCH_USERS);\n\n  const handleSearch = (e) => {\n    e.preventDefault();\n    const query = e.target.query.value;\n    search({ variables: { query } });\n  };\n\n  return (\n    <form onSubmit={handleSearch}>\n      <input name=\"query\" placeholder=\"Search users...\" />\n      <button type=\"submit\">Search</button>\n      {loading && <p>Searching...</p>}\n      {data?.users?.map(user => <div key={user.id}>{user.name}</div>)}\n    </form>\n  );\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "useSubscription Hook" } },
-    { "type": "example", "data": { "title": "useSubscription", "content": "Subscribing to real-time events.", "language": "jsx", "code": "import { gql, useSubscription } from '@apollo/client';\n\nconst ON_POST_CREATED = gql`\n  subscription OnPostCreated {\n    postCreated {\n      id\n      title\n      author { name }\n    }\n  }\n`;\n\nfunction PostFeed() {\n  const { data, error } = useSubscription(ON_POST_CREATED);\n\n  useEffect(() => {\n    if (data?.postCreated) {\n      addPostToFeed(data.postCreated);\n    }\n  }, [data]);\n\n  if (error) return <p>Subscription error: {error.message}</p>;\n  return <PostFeed posts={posts} />;\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "useSubscription",
+        "content": "Subscribing to real-time events.",
+        "language": "jsx",
+        "code": "import { gql, useSubscription } from '@apollo/client';\n\nconst ON_POST_CREATED = gql`\n  subscription OnPostCreated {\n    postCreated {\n      id\n      title\n      author { name }\n    }\n  }\n`;\n\nfunction PostFeed() {\n  const { data, error } = useSubscription(ON_POST_CREATED);\n\n  useEffect(() => {\n    if (data?.postCreated) {\n      addPostToFeed(data.postCreated);\n    }\n  }, [data]);\n\n  if (error) return <p>Subscription error: {error.message}</p>;\n  return <PostFeed posts={posts} />;\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Pagination (Relay Cursor)" } },
-    { "type": "example", "data": { "title": "Cursor Pagination", "content": "Relay-style cursor-based pagination.", "language": "jsx", "code": "import { offsetToCursor, cursorToOffset } from 'graphql-relay-utils';\n\nfunction PostList() {\n  const { data, fetchMore } = useQuery(GET_POSTS, {\n    variables: { first: 10 }\n  });\n\n  const loadMore = () => {\n    fetchMore({\n      variables: {\n        after: data.posts.pageInfo.endCursor\n      }\n    });\n  };\n\n  return (\n    <>\n      {data.posts.edges.map(({ node, cursor }) => (\n        <Post key={node.id} post={node} />\n      ))}\n      {data.posts.pageInfo.hasNextPage && (\n        <button onClick={loadMore}>Load More</button>\n      )}\n    </>\n  );\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Cursor Pagination",
+        "content": "Relay-style cursor-based pagination.",
+        "language": "jsx",
+        "code": "import { offsetToCursor, cursorToOffset } from 'graphql-relay-utils';\n\nfunction PostList() {\n  const { data, fetchMore } = useQuery(GET_POSTS, {\n    variables: { first: 10 }\n  });\n\n  const loadMore = () => {\n    fetchMore({\n      variables: {\n        after: data.posts.pageInfo.endCursor\n      }\n    });\n  };\n\n  return (\n    <>\n      {data.posts.edges.map(({ node, cursor }) => (\n        <Post key={node.id} post={node} />\n      ))}\n      {data.posts.pageInfo.hasNextPage && (\n        <button onClick={loadMore}>Load More</button>\n      )}\n    </>\n  );\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "refetchQueries Pattern" } },
-    { "type": "example", "data": { "title": "Refetch After Mutation", "content": "Refetching queries to keep cache fresh.", "language": "jsx", "code": "const [createUser] = useMutation(CREATE_USER, {\n  refetchQueries: [\n    { query: GET_USERS },\n    { query: GET_USER_STATS }\n  ],\n  awaitRefetchQueries: true, // wait for refetches before onCompleted\n  onCompleted: (data) => {\n    console.log('User created:', data.createUser);\n  }\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Refetch After Mutation",
+        "content": "Refetching queries to keep cache fresh.",
+        "language": "jsx",
+        "code": "const [createUser] = useMutation(CREATE_USER, {\n  refetchQueries: [\n    { query: GET_USERS },\n    { query: GET_USER_STATS }\n  ],\n  awaitRefetchQueries: true, // wait for refetches before onCompleted\n  onCompleted: (data) => {\n    console.log('User created:', data.createUser);\n  }\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "TypeScript with Apollo" } },
-    { "type": "example", "data": { "title": "Typed Queries", "content": "Type-safe GraphQL with TypeScript.", "language": "jsx", "code": "import { gql, useQuery } from '@apollo/client';\n\ntype GetUserQuery = {\n  user: {\n    id: string;\n    name: string;\n    email: string;\n    posts: Array<{\n      id: string;\n      title: string;\n    }>;\n  };\n};\n\nfunction UserProfile({ userId }: { userId: string }) {\n  const { data, loading, error } = useQuery<GetUserQuery>(\n    gql`\n      query GetUser($id: ID!) {\n        user(id: $id) {\n          id\n          name\n          email\n          posts { id title }\n        }\n      }\n    `,\n    { variables: { id: userId } }\n  );\n\n  if (loading) return <p>Loading...</p>;\n  return <div>{data?.user.name}</div>;\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Typed Queries",
+        "content": "Type-safe GraphQL with TypeScript.",
+        "language": "jsx",
+        "code": "import { gql, useQuery } from '@apollo/client';\n\ntype GetUserQuery = {\n  user: {\n    id: string;\n    name: string;\n    email: string;\n    posts: Array<{\n      id: string;\n      title: string;\n    }>;\n  };\n};\n\nfunction UserProfile({ userId }: { userId: string }) {\n  const { data, loading, error } = useQuery<GetUserQuery>(\n    gql`\n      query GetUser($id: ID!) {\n        user(id: $id) {\n          id\n          name\n          email\n          posts { id title }\n        }\n      }\n    `,\n    { variables: { id: userId } }\n  );\n\n  if (loading) return <p>Loading...</p>;\n  return <div>{data?.user.name}</div>;\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Client-Side Resolvers" } },
-    { "type": "example", "data": { "title": "Local Resolvers", "content": "Resolvers for client-only fields.", "language": "jsx", "code": "const cache = new InMemoryCache({\n  typePolicies: {\n    Query: {\n      fields: {\n        cartTotal: {\n          read(_, { readField }) {\n            const items = readField('cartItems');\n            return items.reduce(\n              (total, item) => total + item.price * item.quantity,\n              0\n            );\n          }\n        }\n      }\n    }\n  }\n});\n\n// Query local-only field\nconst GET_CART = gql`\n  query GetCart {\n    cartItems @client {\n      id\n      name\n      price\n    }\n    cartTotal @client\n  }\n`;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Local Resolvers",
+        "content": "Resolvers for client-only fields.",
+        "language": "jsx",
+        "code": "const cache = new InMemoryCache({\n  typePolicies: {\n    Query: {\n      fields: {\n        cartTotal: {\n          read(_, { readField }) {\n            const items = readField('cartItems');\n            return items.reduce(\n              (total, item) => total + item.price * item.quantity,\n              0\n            );\n          }\n        }\n      }\n    }\n  }\n});\n\n// Query local-only field\nconst GET_CART = gql`\n  query GetCart {\n    cartItems @client {\n      id\n      name\n      price\n    }\n    cartTotal @client\n  }\n`;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Dynamic Queries" } },
-    { "type": "example", "data": { "title": "Dynamic Query Construction", "content": "Building queries dynamically.", "language": "jsx", "code": "function useDynamicQuery(fields: string[]) {\n  const query = gql`\n    query GetUser($id: ID!) {\n      user(id: $id) {\n        ${fields.join('\\n')}\n      }\n    }\n  `;\n  return useQuery(query, {\n    variables: { id: userId }\n  });\n}\n\n// Usage\nfunction UserCard() {\n  const { data } = useDynamicQuery(['id', 'name', 'email']);\n  return <div>{data.user.name}</div>;\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Dynamic Query Construction",
+        "content": "Building queries dynamically.",
+        "language": "jsx",
+        "code": "function useDynamicQuery(fields: string[]) {\n  const query = gql`\n    query GetUser($id: ID!) {\n      user(id: $id) {\n        ${fields.join('\\n')}\n      }\n    }\n  `;\n  return useQuery(query, {\n    variables: { id: userId }\n  });\n}\n\n// Usage\nfunction UserCard() {\n  const { data } = useDynamicQuery(['id', 'name', 'email']);\n  return <div>{data.user.name}</div>;\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Polling" } },
-    { "type": "example", "data": { "title": "Polling for Updates", "content": "Auto-refetch with pollInterval.", "language": "jsx", "code": "function PriceTicker({ productId }) {\n  const { data, error } = useQuery(GET_PRICE, {\n    variables: { productId },\n    pollInterval: 5000, // refetch every 5 seconds\n    notifyOnNetworkStatusChange: true\n  });\n\n  const [isPolling, setIsPolling] = useState(false);\n\n  useEffect(() => {\n    setIsPolling(true);\n    return () => setIsPolling(false);\n  }, []);\n\n  return (\n    <div>\n      <p>Price: ${data?.price ?? 'Loading...'}</p>\n      <p>Status: {isPolling ? 'Live' : 'Paused'}</p>\n    </div>\n  );\n}" } }
+    {
+      "type": "example",
+      "data": {
+        "title": "Polling for Updates",
+        "content": "Auto-refetch with pollInterval.",
+        "language": "jsx",
+        "code": "function PriceTicker({ productId }) {\n  const { data, error } = useQuery(GET_PRICE, {\n    variables: { productId },\n    pollInterval: 5000, // refetch every 5 seconds\n    notifyOnNetworkStatusChange: true\n  });\n\n  const [isPolling, setIsPolling] = useState(false);\n\n  useEffect(() => {\n    setIsPolling(true);\n    return () => setIsPolling(false);\n  }, []);\n\n  return (\n    <div>\n      <p>Price: ${data?.price ?? 'Loading...'}</p>\n      <p>Status: {isPolling ? 'Live' : 'Paused'}</p>\n    </div>\n  );\n}"
+      }
+    }
   ],
   "relatedLessons": [],
   "furtherReading": []

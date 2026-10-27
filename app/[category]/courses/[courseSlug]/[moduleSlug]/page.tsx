@@ -1,7 +1,7 @@
-import { notFound } from 'next/navigation';
-import Link from 'next/link';
-import { ArrowLeft, ArrowRight, Clock, BookOpen } from 'lucide-react';
-import type { Metadata } from 'next';
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { ArrowLeft, ArrowRight, Clock, BookOpen } from "lucide-react";
+import type { Metadata } from "next";
 import {
   getAllCourses,
   getCourseBySlug,
@@ -11,13 +11,13 @@ import {
   getCourseCategory,
   isRegularCourse,
   toLessonNavItem,
-} from '@/lib/content';
-import { buildModuleMetadata } from '@/lib/seo';
-import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
-import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
-import { LessonCard } from '@/components/course/LessonCard';
-import { formatHours, pluralize } from '@/lib/utils';
-import { CourseErrorBoundary } from '@/components/course/CourseErrorBoundary';
+} from "@/lib/content";
+import { buildModuleMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { DifficultyBadge } from "@/components/ui/DifficultyBadge";
+import { LessonCard } from "@/components/course/LessonCard";
+import { formatHours, pluralize } from "@/lib/utils";
+import { CourseErrorBoundary } from "@/components/course/CourseErrorBoundary";
 
 interface Params {
   params: Promise<{ category: string; courseSlug: string; moduleSlug: string }>;
@@ -58,7 +58,7 @@ export default async function CourseModuleDetailPage({ params }: Params) {
   const category = resolvedParams?.category;
   const courseSlug = resolvedParams?.courseSlug;
   const moduleSlug = resolvedParams?.moduleSlug;
-  
+
   if (!category || !courseSlug || !moduleSlug) {
     notFound();
   }
@@ -81,7 +81,7 @@ export default async function CourseModuleDetailPage({ params }: Params) {
       <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6">
         <Breadcrumbs
           items={[
-            { label: 'Courses', href: `/${category}/courses` },
+            { label: "Courses", href: `/${category}/courses` },
             { label: course.title, href: `/${category}/courses/${courseSlug}` },
             { label: mod.title },
           ]}
@@ -91,7 +91,9 @@ export default async function CourseModuleDetailPage({ params }: Params) {
         {/* Header */}
         <div className="mb-8">
           <div className="mb-3 flex items-center gap-3">
-            <span className="text-4xl" aria-hidden="true">{mod.icon}</span>
+            <span className="text-4xl" aria-hidden="true">
+              {mod.icon}
+            </span>
             <div>
               <div className="mt-1 flex flex-wrap gap-2">
                 <DifficultyBadge difficulty={mod.difficulty} size="md" />
@@ -110,7 +112,7 @@ export default async function CourseModuleDetailPage({ params }: Params) {
           <div className="flex flex-wrap items-center gap-4 text-sm text-fg-muted">
             <span className="flex items-center gap-1">
               <BookOpen className="h-4 w-4" aria-hidden="true" />
-              {pluralize(lessons.length, 'lesson')}
+              {pluralize(lessons.length, "lesson")}
             </span>
             <span className="flex items-center gap-1">
               <Clock className="h-4 w-4" aria-hidden="true" />
@@ -150,7 +152,7 @@ export default async function CourseModuleDetailPage({ params }: Params) {
         {/* Lessons */}
         <div className="mb-10">
           <h2 className="mb-4 text-xl font-bold text-fg-default">
-            {lessons.length > 0 ? `${lessons.length} Lessons` : 'Lessons'}
+            {lessons.length > 0 ? `${lessons.length} Lessons` : "Lessons"}
           </h2>
 
           {lessons.length > 0 ? (

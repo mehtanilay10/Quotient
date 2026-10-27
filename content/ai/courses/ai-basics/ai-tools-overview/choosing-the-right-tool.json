@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "tool-selection",
-    "decision-framework",
-    "practical",
-    "workflow",
-    "integration"
-  ],
+  "tags": ["tool-selection", "decision-framework", "practical", "workflow", "integration"],
   "blocks": [
     {
       "type": "paragraph",
@@ -95,12 +89,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Task",
-          "Best First Choice",
-          "Good Alternative",
-          "Why"
-        ],
+        "headers": ["Task", "Best First Choice", "Good Alternative", "Why"],
         "rows": [
           [
             "Research with citations",
@@ -126,12 +115,7 @@
             "Any",
             "Temperature/creativity is similar across tools"
           ],
-          [
-            "Gmail/Docs/Sheets help",
-            "Gemini",
-            "ChatGPT",
-            "Gemini is native to Google Workspace"
-          ],
+          ["Gmail/Docs/Sheets help", "Gemini", "ChatGPT", "Gemini is native to Google Workspace"],
           [
             "Code help or debugging",
             "ChatGPT or Claude",
@@ -260,11 +244,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Concern",
-          "What to check",
-          "Action"
-        ],
+        "headers": ["Concern", "What to check", "Action"],
         "rows": [
           [
             "Data residency",
@@ -322,11 +302,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "Type",
-          "Why it helps"
-        ],
+        "headers": ["Resource", "Type", "Why it helps"],
         "rows": [
           [
             "The AI Canon",
@@ -354,10 +330,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "chatbot-landscape",
-    "anatomy-of-a-good-prompt"
-  ],
+  "relatedLessons": ["chatbot-landscape", "anatomy-of-a-good-prompt"],
   "furtherReading": [
     {
       "title": "The AI Canon",

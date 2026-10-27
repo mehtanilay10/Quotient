@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "full-outer-join",
-    "reconciliation",
-    "audit",
-    "outer-join"
-  ],
+  "tags": ["full-outer-join", "reconciliation", "audit", "outer-join"],
   "blocks": [
     {
       "type": "paragraph",
@@ -79,8 +74,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "left-right-joins",
-    "cross-join"
-  ]
+  "relatedLessons": ["left-right-joins", "cross-join"]
 }

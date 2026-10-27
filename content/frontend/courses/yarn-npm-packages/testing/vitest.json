@@ -6,13 +6,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "vitest",
-    "testing",
-    "unit",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["vitest", "testing", "unit", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

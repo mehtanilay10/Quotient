@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "nuget",
-    "packing",
-    "publishing",
-    "libraries"
-  ],
+  "tags": ["nuget", "packing", "publishing", "libraries"],
   "blocks": [
     {
       "type": "heading",
@@ -89,9 +84,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "installing-packages",
-    "nuget-config"
-  ],
+  "relatedLessons": ["installing-packages", "nuget-config"],
   "furtherReading": []
 }

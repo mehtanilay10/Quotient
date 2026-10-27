@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "2pc",
-    "two-phase-commit",
-    "distributed-transactions"
-  ],
+  "tags": ["2pc", "two-phase-commit", "distributed-transactions"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,22 +63,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Phase",
-          "Action",
-          "State"
-        ],
+        "headers": ["Phase", "Action", "State"],
         "rows": [
-          [
-            "Prepare",
-            "Participants vote and lock",
-            "Resources locked"
-          ],
-          [
-            "Commit",
-            "All commit or all abort",
-            "Atomic outcome"
-          ]
+          ["Prepare", "Participants vote and lock", "Resources locked"],
+          ["Commit", "All commit or all abort", "Atomic outcome"]
         ]
       }
     },
@@ -96,11 +80,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "Atomic outcome (all or nothing)",
-          "Strong consistency",
-          "Well understood"
-        ]
+        "items": ["Atomic outcome (all or nothing)", "Strong consistency", "Well understood"]
       }
     },
     {

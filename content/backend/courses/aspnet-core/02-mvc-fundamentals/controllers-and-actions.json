@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "controllers",
-    "actions",
-    "routing"
-  ],
+  "tags": ["controllers", "actions", "routing"],
   "blocks": [
     {
       "type": "paragraph",
@@ -53,47 +49,15 @@
     },
     {
       "type": "table",
-      "headers": [
-        "Method",
-        "Returns",
-        "Use When"
-      ],
+      "headers": ["Method", "Returns", "Use When"],
       "rows": [
-        [
-          "View(model)",
-          "HTML page (200 OK)",
-          "You want to render an HTML view with a model"
-        ],
-        [
-          "Json(data)",
-          "JSON response (200 OK)",
-          "You want to return data as JSON (for APIs)"
-        ],
-        [
-          "RedirectToAction(...)",
-          "302 Redirect",
-          "You want to send the user to another action"
-        ],
-        [
-          "NotFound()",
-          "404 Not Found",
-          "The requested resource does not exist"
-        ],
-        [
-          "BadRequest()",
-          "400 Bad Request",
-          "The request is malformed or invalid"
-        ],
-        [
-          "Content(text)",
-          "Plain text response",
-          "Returning simple text content"
-        ],
-        [
-          "File(bytes, type)",
-          "File download",
-          "Returning a file (PDF, image, etc.)"
-        ]
+        ["View(model)", "HTML page (200 OK)", "You want to render an HTML view with a model"],
+        ["Json(data)", "JSON response (200 OK)", "You want to return data as JSON (for APIs)"],
+        ["RedirectToAction(...)", "302 Redirect", "You want to send the user to another action"],
+        ["NotFound()", "404 Not Found", "The requested resource does not exist"],
+        ["BadRequest()", "400 Bad Request", "The request is malformed or invalid"],
+        ["Content(text)", "Plain text response", "Returning simple text content"],
+        ["File(bytes, type)", "File download", "Returning a file (PDF, image, etc.)"]
       ]
     },
     {
@@ -257,10 +221,7 @@
       "takeaway": "Controllers and actions are the central mechanism for handling HTTP requests in ASP.NET Core. Mastering action methods, return types, and routing attributes gives you full control over how your application responds to every URL."
     }
   ],
-  "relatedLessons": [
-    "mvc-architecture",
-    "views-and-templates"
-  ],
+  "relatedLessons": ["mvc-architecture", "views-and-templates"],
   "technology": null,
   "furtherReading": [
     {

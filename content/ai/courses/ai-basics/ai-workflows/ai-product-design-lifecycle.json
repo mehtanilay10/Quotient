@@ -44,32 +44,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Stage",
-          "Key question",
-          "Deliverable"
-        ],
+        "headers": ["Stage", "Key question", "Deliverable"],
         "rows": [
-          [
-            "Define",
-            "What exact user pain are we solving?",
-            "Problem statement + success metric"
-          ],
-          [
-            "Design",
-            "What is the minimal useful workflow?",
-            "Prompt/tool flow diagram"
-          ],
-          [
-            "Validate",
-            "Does it meet quality thresholds?",
-            "Scorecard on benchmark tasks"
-          ],
-          [
-            "Deploy",
-            "What guardrails are needed?",
-            "Approval rules + fallback behavior"
-          ],
+          ["Define", "What exact user pain are we solving?", "Problem statement + success metric"],
+          ["Design", "What is the minimal useful workflow?", "Prompt/tool flow diagram"],
+          ["Validate", "Does it meet quality thresholds?", "Scorecard on benchmark tasks"],
+          ["Deploy", "What guardrails are needed?", "Approval rules + fallback behavior"],
           [
             "Improve",
             "What failed in production and why?",
@@ -109,11 +89,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Artifact",
-          "What to include",
-          "Why it matters"
-        ],
+        "headers": ["Artifact", "What to include", "Why it matters"],
         "rows": [
           [
             "Problem statement",
@@ -174,27 +150,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Validation type",
-          "How to test",
-          "Example threshold"
-        ],
+        "headers": ["Validation type", "How to test", "Example threshold"],
         "rows": [
           [
             "Functional accuracy",
             "Compare model outputs to ground truth on benchmark",
             "≥ 85% label accuracy"
           ],
-          [
-            "Format adherence",
-            "Schema validation and parsing tests",
-            "≥ 99% valid JSON outputs"
-          ],
-          [
-            "Safety checks",
-            "Run prompt-security and PII detection",
-            "0% PII leakage in test set"
-          ],
+          ["Format adherence", "Schema validation and parsing tests", "≥ 99% valid JSON outputs"],
+          ["Safety checks", "Run prompt-security and PII detection", "0% PII leakage in test set"],
           [
             "Latency",
             "Measure end-to-end response time under load",
@@ -221,11 +185,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Control",
-          "Purpose",
-          "Implementation example"
-        ],
+        "headers": ["Control", "Purpose", "Implementation example"],
         "rows": [
           [
             "Least privilege",
@@ -291,11 +251,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "What to monitor",
-          "Action on alert"
-        ],
+        "headers": ["Metric", "What to monitor", "Action on alert"],
         "rows": [
           [
             "Task success rate",
@@ -391,11 +347,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Template",
-          "Notes"
-        ],
+        "headers": ["Use case", "Template", "Notes"],
         "rows": [
           [
             "Triage classification",
@@ -427,11 +379,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Failure mode",
-          "Symptoms",
-          "Mitigation"
-        ],
+        "headers": ["Failure mode", "Symptoms", "Mitigation"],
         "rows": [
           [
             "Prompt ambiguity",
@@ -490,11 +438,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "Type",
-          "Why it helps"
-        ],
+        "headers": ["Resource", "Type", "Why it helps"],
         "rows": [
           [
             "Designing AI Products (O'Reilly)",

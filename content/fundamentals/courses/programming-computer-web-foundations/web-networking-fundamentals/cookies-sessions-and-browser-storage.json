@@ -197,7 +197,11 @@
       }
     }
   ],
-  "relatedLessons": ["http-methods-status-codes-and-headers", "cors-and-preflight-requests", "how-to-troubleshoot-a-failing-http-request"],
+  "relatedLessons": [
+    "http-methods-status-codes-and-headers",
+    "cors-and-preflight-requests",
+    "how-to-troubleshoot-a-failing-http-request"
+  ],
   "furtherReading": [
     {
       "type": "article",

@@ -8,13 +8,7 @@
   "order": 10,
   "difficulty": "medium",
   "estimatedMinutes": 16,
-  "tags": [
-    "csharp",
-    "trees",
-    "dfs",
-    "prefix-sum",
-    "medium"
-  ],
+  "tags": ["csharp", "trees", "dfs", "prefix-sum", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -60,17 +54,9 @@
           {
             "title": "Prefix Sum HashMap",
             "description": "Track cumulative sums along path",
-            "pros": [
-              "O(n) time"
-            ],
-            "cons": [
-              "O(h) space for map"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(h) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time"],
+            "cons": ["O(h) space for map"],
+            "tags": ["O(n) time", "O(h) space", "Recommended"]
           }
         ]
       }

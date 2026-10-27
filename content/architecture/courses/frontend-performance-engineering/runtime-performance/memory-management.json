@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "gc",
-    "memory-leaks",
-    "heap",
-    "weakref",
-    "profiling"
-  ],
+  "tags": ["gc", "memory-leaks", "heap", "weakref", "profiling"],
   "blocks": [
     {
       "type": "paragraph",
@@ -177,11 +171,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "cpu-profiling",
-    "js-engine-optimization",
-    "debugging-performance"
-  ],
+  "relatedLessons": ["cpu-profiling", "js-engine-optimization", "debugging-performance"],
   "furtherReading": [
     {
       "title": "Memory Management on MDN",

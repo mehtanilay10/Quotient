@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "utilities",
-    "figgle",
-    "ascii-art",
-    "text"
-  ],
+  "tags": ["utilities", "figgle", "ascii-art", "text"],
   "blocks": [
     {
       "type": "heading",
@@ -118,9 +113,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "humanizer",
-    "more-linq"
-  ],
+  "relatedLessons": ["humanizer", "more-linq"],
   "courseSlug": "dotnet-nuget-packages"
 }

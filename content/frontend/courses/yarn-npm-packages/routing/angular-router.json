@@ -6,13 +6,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "angular-router",
-    "routing",
-    "angular",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["angular-router", "routing", "angular", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

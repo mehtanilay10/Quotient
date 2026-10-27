@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "nuget",
-    "dotnet",
-    "security",
-    "packages"
-  ],
+  "tags": ["nuget", "dotnet", "security", "packages"],
   "blocks": [
     {
       "type": "paragraph",

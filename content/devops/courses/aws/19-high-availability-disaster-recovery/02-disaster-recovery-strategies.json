@@ -31,7 +31,12 @@
           ["Backup & Restore", "Hours to days", "Low", "Non-critical workloads"],
           ["Pilot Light", "Minutes to hours", "Medium", "Core infrastructure always on"],
           ["Warm Standby", "Minutes", "High", "Near-production environment ready"],
-          ["Multi-Site Active/Active", "Seconds to minutes", "Very high", "Mission-critical, zero downtime"]
+          [
+            "Multi-Site Active/Active",
+            "Seconds to minutes",
+            "Very high",
+            "Mission-critical, zero downtime"
+          ]
         ]
       }
     },

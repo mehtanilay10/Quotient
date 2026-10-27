@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "email",
-    "sendgrid",
-    "transactional",
-    "cloud"
-  ],
+  "tags": ["email", "sendgrid", "transactional", "cloud"],
   "blocks": [
     {
       "type": "heading",
@@ -122,9 +117,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "fluent-email",
-    "mailkit"
-  ],
+  "relatedLessons": ["fluent-email", "mailkit"],
   "courseSlug": "dotnet-nuget-packages"
 }

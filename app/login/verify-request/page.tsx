@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { Mail } from 'lucide-react';
-import { MAGIC_LINK_EXPIRY_MINUTES } from '@/lib/magicLink';
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Mail } from "lucide-react";
+import { MAGIC_LINK_EXPIRY_MINUTES } from "@/lib/magicLink";
 
 export const metadata: Metadata = {
-  title: 'Check your email',
-  description: 'Your one-time Quotient sign-in link is on its way.',
+  title: "Check your email",
+  description: "Your one-time Quotient sign-in link is on its way.",
   robots: { index: false, follow: false },
 };
 
@@ -28,21 +28,19 @@ export default async function VerifyRequestPage({
           We sent a one-time sign-in link
           {email ? (
             <>
-              {' '}
+              {" "}
               to <strong className="font-medium text-fg-default">{email}</strong>
             </>
           ) : (
-            ' to your inbox'
+            " to your inbox"
           )}
           .
         </p>
         <p className="mt-2 text-sm text-fg-muted">
-          The link expires in {MAGIC_LINK_EXPIRY_MINUTES} minutes and can only be
-          used once.
+          The link expires in {MAGIC_LINK_EXPIRY_MINUTES} minutes and can only be used once.
         </p>
         <p className="mt-4 text-xs text-fg-subtle">
-          It may take a minute to arrive. Check your spam folder if you do not
-          see it.
+          It may take a minute to arrive. Check your spam folder if you do not see it.
         </p>
 
         <Link

@@ -8,14 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "mfa",
-    "totp",
-    "sms",
-    "backup-codes",
-    "two-factor",
-    "security"
-  ],
+  "tags": ["mfa", "totp", "sms", "backup-codes", "two-factor", "security"],
   "blocks": [
     {
       "type": "paragraph",
@@ -118,37 +111,19 @@
               "No carrier dependency",
               "Phishing-resistant with WebAuthn"
             ],
-            "cons": [
-              "User must install app",
-              "Initial setup friction"
-            ]
+            "cons": ["User must install app", "Initial setup friction"]
           },
           {
             "title": "SMS",
             "description": "Text message with numeric code",
-            "pros": [
-              "No app required",
-              "Familiar to users"
-            ],
-            "cons": [
-              "SIM-swap vulnerable",
-              "Carrier reliability",
-              "Cost per message"
-            ]
+            "pros": ["No app required", "Familiar to users"],
+            "cons": ["SIM-swap vulnerable", "Carrier reliability", "Cost per message"]
           },
           {
             "title": "Hardware Key",
             "description": "YubiKey, Titan Security Key",
-            "pros": [
-              "Highest security",
-              "Phishing-resistant",
-              "No battery"
-            ],
-            "cons": [
-              "Physical distribution",
-              "Cost",
-              "Loss risk"
-            ]
+            "pros": ["Highest security", "Phishing-resistant", "No battery"],
+            "cons": ["Physical distribution", "Cost", "Loss risk"]
           }
         ]
       }

@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "capacity",
-    "growth",
-    "projections",
-    "planning"
-  ],
+  "tags": ["capacity", "growth", "projections", "planning"],
   "blocks": [
     {
       "type": "paragraph",
@@ -56,43 +51,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Year",
-          "Users (50% growth)",
-          "QPS (3x peak)",
-          "Servers Needed"
-        ],
+        "headers": ["Year", "Users (50% growth)", "QPS (3x peak)", "Servers Needed"],
         "rows": [
-          [
-            "1",
-            "1,000,000",
-            "8,681",
-            "5"
-          ],
-          [
-            "2",
-            "1,500,000",
-            "13,021",
-            "7"
-          ],
-          [
-            "3",
-            "2,250,000",
-            "19,531",
-            "10"
-          ],
-          [
-            "4",
-            "3,375,000",
-            "29,297",
-            "15"
-          ],
-          [
-            "5",
-            "5,062,500",
-            "43,945",
-            "22"
-          ]
+          ["1", "1,000,000", "8,681", "5"],
+          ["2", "1,500,000", "13,021", "7"],
+          ["3", "2,250,000", "19,531", "10"],
+          ["4", "3,375,000", "29,297", "15"],
+          ["5", "5,062,500", "43,945", "22"]
         ]
       }
     },

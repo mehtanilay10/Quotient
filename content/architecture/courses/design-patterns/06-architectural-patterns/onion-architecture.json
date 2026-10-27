@@ -6,11 +6,7 @@
   "description": "Structure systems with domain logic at the core and dependencies pointing inward.",
   "order": 4,
   "difficulty": "advanced",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "security",
-    "api-gateway",
-    "jwt",
-    "api-keys"
-  ],
+  "tags": ["security", "api-gateway", "jwt", "api-keys"],
   "blocks": [
     {
       "type": "paragraph",
@@ -124,31 +119,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Step",
-          "Action"
-        ],
+        "headers": ["Step", "Action"],
         "rows": [
-          [
-            "1",
-            "Extract token from Authorization header"
-          ],
-          [
-            "2",
-            "Verify signature using public key"
-          ],
-          [
-            "3",
-            "Check expiration and issuer"
-          ],
-          [
-            "4",
-            "Check scopes and claims"
-          ],
-          [
-            "5",
-            "Forward request with claims"
-          ]
+          ["1", "Extract token from Authorization header"],
+          ["2", "Verify signature using public key"],
+          ["3", "Check expiration and issuer"],
+          ["4", "Check scopes and claims"],
+          ["5", "Forward request with claims"]
         ]
       }
     },

@@ -6,13 +6,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "tailwind",
-    "css",
-    "styling",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["tailwind", "css", "styling", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -100,22 +94,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Version",
-          "Configuration",
-          "Install"
-        ],
+        "headers": ["Version", "Configuration", "Install"],
         "rows": [
-          [
-            "v4 (current)",
-            "CSS-first via @theme",
-            "tailwindcss + @tailwindcss/postcss"
-          ],
-          [
-            "v3",
-            "tailwind.config.js + content array",
-            "tailwindcss + postcss + autoprefixer"
-          ]
+          ["v4 (current)", "CSS-first via @theme", "tailwindcss + @tailwindcss/postcss"],
+          ["v3", "tailwind.config.js + content array", "tailwindcss + postcss + autoprefixer"]
         ]
       }
     },

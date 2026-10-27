@@ -6,13 +6,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "react-spring",
-    "animation",
-    "react",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["react-spring", "animation", "react", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -97,10 +91,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "React Spring uses physics-based curves.",
-          "Natural motion for interactive UIs."
-        ]
+        "points": ["React Spring uses physics-based curves.", "Natural motion for interactive UIs."]
       }
     }
   ],

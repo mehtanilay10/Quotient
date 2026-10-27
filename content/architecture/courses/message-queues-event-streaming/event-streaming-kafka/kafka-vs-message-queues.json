@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "kafka",
-    "rabbitmq",
-    "service-bus",
-    "comparison",
-    "architecture"
-  ],
+  "tags": ["kafka", "rabbitmq", "service-bus", "comparison", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -54,11 +48,7 @@
               "Overkill for simple task queues",
               "Requires careful partition planning"
             ],
-            "tags": [
-              "streaming",
-              "high-throughput",
-              "replay"
-            ]
+            "tags": ["streaming", "high-throughput", "replay"]
           },
           {
             "title": "RabbitMQ / Azure Service Bus",
@@ -74,11 +64,7 @@
               "Messages are typically deleted after delivery",
               "Replay requires complex workarounds"
             ],
-            "tags": [
-              "messaging",
-              "routing",
-              "task-queue"
-            ]
+            "tags": ["messaging", "routing", "task-queue"]
           }
         ]
       }

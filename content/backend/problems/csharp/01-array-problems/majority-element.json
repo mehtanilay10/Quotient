@@ -8,12 +8,7 @@
   "order": 23,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "arrays",
-    "voting",
-    "easy"
-  ],
+  "tags": ["csharp", "arrays", "voting", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -99,33 +94,16 @@
           {
             "title": "HashMap Count",
             "description": "Count frequencies with a dictionary",
-            "pros": [
-              "Intuitive"
-            ],
-            "cons": [
-              "O(n) extra space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Intuitive"],
+            "cons": ["O(n) extra space"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Boyer-Moore",
             "description": "Cancel out pairs, majority survives",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
-            "cons": [
-              "Non-obvious proof"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
+            "cons": ["Non-obvious proof"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

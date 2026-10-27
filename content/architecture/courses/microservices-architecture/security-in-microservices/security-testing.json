@@ -8,11 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 17,
-  "tags": [
-    "security-testing",
-    "pentest",
-    "sast"
-  ],
+  "tags": ["security-testing", "pentest", "sast"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,32 +56,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "When",
-          "What It Finds"
-        ],
+        "headers": ["Type", "When", "What It Finds"],
         "rows": [
-          [
-            "SAST",
-            "Development",
-            "Code vulnerabilities"
-          ],
-          [
-            "DAST",
-            "Testing/Staging",
-            "Runtime vulnerabilities"
-          ],
-          [
-            "SCA",
-            "Build",
-            "Dependency vulnerabilities"
-          ],
-          [
-            "Pentest",
-            "Pre-release",
-            "Exploitable vulnerabilities"
-          ]
+          ["SAST", "Development", "Code vulnerabilities"],
+          ["DAST", "Testing/Staging", "Runtime vulnerabilities"],
+          ["SCA", "Build", "Dependency vulnerabilities"],
+          ["Pentest", "Pre-release", "Exploitable vulnerabilities"]
         ]
       }
     },

@@ -80,11 +80,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Strength",
-          "Weakness"
-        ],
+        "headers": ["Strategy", "Strength", "Weakness"],
         "rows": [
           [
             "Quorum Writes",

@@ -11,11 +11,7 @@
   "icon": "☸️",
   "prerequisites": ["docker-advanced"],
   "tags": ["kubernetes", "kubectl", "orchestration", "devops"],
-  "lessonSlugs": [
-    "01-what-is-kubernetes",
-    "02-pods-deployments-services",
-    "03-kubectl-commands"
-  ],
+  "lessonSlugs": ["01-what-is-kubernetes", "02-pods-deployments-services", "03-kubectl-commands"],
   "whatYouLearn": [
     "Understand the Kubernetes architecture and key concepts",
     "Deploy applications using Deployments and Pods",

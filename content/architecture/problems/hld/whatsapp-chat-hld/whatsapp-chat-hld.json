@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "messaging",
-    "websockets",
-    "real-time"
-  ],
+  "tags": ["hld", "system-design", "messaging", "websockets", "real-time"],
   "blocks": [
     {
       "type": "heading",
@@ -143,12 +137,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Approach",
-          "Latency",
-          "Complexity",
-          "Best For"
-        ],
+        "headers": ["Approach", "Latency", "Complexity", "Best For"],
         "rows": [
           [
             "Push fan-out (1:N writes)",
@@ -156,24 +145,14 @@
             "High at scale",
             "Small groups (<100 members)"
           ],
-          [
-            "Pull on reconnect",
-            "Medium (reconnect lag)",
-            "Low",
-            "Offline users in large groups"
-          ],
+          ["Pull on reconnect", "Medium (reconnect lag)", "Low", "Offline users in large groups"],
           [
             "Hybrid (push online, pull offline)",
             "Low for online",
             "Medium",
             "WhatsApp/Slack approach"
           ],
-          [
-            "Message timeline per user",
-            "Low",
-            "High storage",
-            "Twitter/Instagram-style feeds"
-          ]
+          ["Message timeline per user", "Low", "High storage", "Twitter/Instagram-style feeds"]
         ]
       }
     },
@@ -215,11 +194,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "chat-system-hld",
-    "slack-messaging-hld",
-    "notification-system"
-  ],
+  "relatedLessons": ["chat-system-hld", "slack-messaging-hld", "notification-system"],
   "furtherReading": [
     {
       "title": "WhatsApp Architecture at Scale",

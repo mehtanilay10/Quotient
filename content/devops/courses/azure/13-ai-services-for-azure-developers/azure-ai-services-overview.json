@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "ai",
-    "openai",
-    "developer"
-  ],
+  "tags": ["azure", "ai", "openai", "developer"],
   "blocks": [
     {
       "type": "paragraph",
@@ -31,11 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Service",
-          "Category",
-          "Common Use"
-        ],
+        "headers": ["Service", "Category", "Common Use"],
         "rows": [
           [
             "Azure OpenAI Service",
@@ -47,36 +38,16 @@
             "Natural Language",
             "Text analysis, sentiment, entity recognition, translation"
           ],
-          [
-            "Azure AI Vision",
-            "Computer Vision",
-            "Image analysis, OCR, object detection"
-          ],
-          [
-            "Azure AI Speech",
-            "Speech",
-            "Speech-to-text, text-to-speech, translation, speaker ID"
-          ],
-          [
-            "Azure AI Search",
-            "Search",
-            "Full-text search, vector search, RAG over your data"
-          ],
+          ["Azure AI Vision", "Computer Vision", "Image analysis, OCR, object detection"],
+          ["Azure AI Speech", "Speech", "Speech-to-text, text-to-speech, translation, speaker ID"],
+          ["Azure AI Search", "Search", "Full-text search, vector search, RAG over your data"],
           [
             "Azure AI Document Intelligence",
             "Document Processing",
             "Extract text and structure from PDFs and forms"
           ],
-          [
-            "Azure AI Content Safety",
-            "Safety",
-            "Detect harmful content in text and images"
-          ],
-          [
-            "Azure AI Foundry",
-            "Platform",
-            "Build, deploy, and manage AI solutions"
-          ]
+          ["Azure AI Content Safety", "Safety", "Detect harmful content in text and images"],
+          ["Azure AI Foundry", "Platform", "Build, deploy, and manage AI solutions"]
         ]
       }
     },

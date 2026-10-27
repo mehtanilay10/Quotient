@@ -10,9 +10,5 @@
   "icon": "🐳",
   "tags": ["docker", "docker-compose", "cheatsheet", "quick-reference"],
   "lessonSlugs": ["cheatsheet"],
-  "whatYouLearn": [
-    "Service configuration",
-    "Networking and volumes",
-    "Common commands"
-  ]
+  "whatYouLearn": ["Service configuration", "Networking and volumes", "Common commands"]
 }

@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "cloud",
-    "fundamentals",
-    "iaas",
-    "paas",
-    "saas"
-  ],
+  "tags": ["aws", "cloud", "fundamentals", "iaas", "paas", "saas"],
   "blocks": [
     {
       "type": "heading",
@@ -54,12 +47,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model",
-          "What You Manage",
-          "What AWS Manages",
-          "Example"
-        ],
+        "headers": ["Model", "What You Manage", "What AWS Manages", "Example"],
         "rows": [
           [
             "IaaS",

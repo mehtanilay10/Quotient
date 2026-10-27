@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "devops",
-    "deployment",
-    "developer"
-  ],
+  "tags": ["azure", "devops", "deployment", "developer"],
   "blocks": [
     {
       "type": "paragraph",
@@ -36,37 +31,20 @@
           {
             "title": "Publish Profile",
             "description": "Download a publishsettings file from the Azure Portal and store it as a GitHub Secret.",
-            "pros": [
-              "Simple to set up",
-              "No Azure CLI needed"
-            ],
-            "cons": [
-              "Long-lived credential",
-              "Not suitable for automation at scale"
-            ]
+            "pros": ["Simple to set up", "No Azure CLI needed"],
+            "cons": ["Long-lived credential", "Not suitable for automation at scale"]
           },
           {
             "title": "Service Principal + Secret",
             "description": "Create an Azure service principal with az ad sp create-for-rbac and store the secret as a GitHub Secret.",
-            "pros": [
-              "Fine-grained RBAC",
-              "Works across all Azure services"
-            ],
-            "cons": [
-              "Secret can expire and needs rotation"
-            ]
+            "pros": ["Fine-grained RBAC", "Works across all Azure services"],
+            "cons": ["Secret can expire and needs rotation"]
           },
           {
             "title": "OpenID Connect (OIDC)",
             "description": "Use federated credentials to authenticate without secrets. GitHub exchanges a short-lived OIDC token for an Azure access token.",
-            "pros": [
-              "No long-lived secrets",
-              "More secure",
-              "Auto-rotating tokens"
-            ],
-            "cons": [
-              "Requires Azure AD configuration"
-            ]
+            "pros": ["No long-lived secrets", "More secure", "Auto-rotating tokens"],
+            "cons": ["Requires Azure AD configuration"]
           }
         ]
       }

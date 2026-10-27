@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "behavioral",
-    "conflict",
-    "collaboration",
-    "soft-skills"
-  ],
+  "tags": ["behavioral", "conflict", "collaboration", "soft-skills"],
   "technology": "Behavioral",
   "blocks": [
     {
@@ -134,10 +129,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "leadership-questions",
-    "communication-questions"
-  ],
+  "relatedLessons": ["leadership-questions", "communication-questions"],
   "furtherReading": [
     {
       "title": "Crucial Conversations: Tools for Talking When Stakes Are High",

@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "authorization",
-    "handlers",
-    "custom",
-    "business-rules",
-    "aspnet-core"
-  ],
+  "tags": ["authorization", "handlers", "custom", "business-rules", "aspnet-core"],
   "blocks": [
     {
       "type": "paragraph",
@@ -188,7 +182,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "auth-overview"
-  ]
+  "prerequisites": ["auth-overview"]
 }

@@ -87,11 +87,7 @@
               "Flexible schemas",
               "5 consistency levels"
             ],
-            "cons": [
-              "Higher cost",
-              "No SQL JOINs",
-              "Eventual consistency by default"
-            ],
+            "cons": ["Higher cost", "No SQL JOINs", "Eventual consistency by default"],
             "tags": ["Global apps", "NoSQL", "Recommended for catalog"]
           },
           {
@@ -103,25 +99,14 @@
               "Familiar tooling",
               "Lower cost"
             ],
-            "cons": [
-              "Fixed schema",
-              "Single region (active)",
-              "Not globally distributed"
-            ],
+            "cons": ["Fixed schema", "Single region (active)", "Not globally distributed"],
             "tags": ["Relational data", "Transactions"]
           },
           {
             "title": "Azure Database for PostgreSQL/MySQL",
             "description": "Managed open-source databases",
-            "pros": [
-              "Open-source compatible",
-              "JSON support",
-              "Lower cost than SQL"
-            ],
-            "cons": [
-              "No global distribution",
-              "Limited scale"
-            ],
+            "pros": ["Open-source compatible", "JSON support", "Lower cost than SQL"],
+            "cons": ["No global distribution", "Limited scale"],
             "tags": ["Open source", "LAMP stack"]
           }
         ]

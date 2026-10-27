@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "bulkhead",
-    "isolation",
-    "resources"
-  ],
+  "tags": ["bulkhead", "isolation", "resources"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,27 +69,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Description",
-          "Overhead"
-        ],
+        "headers": ["Strategy", "Description", "Overhead"],
         "rows": [
-          [
-            "Thread pool",
-            "Separate thread pool per dependency",
-            "Higher"
-          ],
-          [
-            "Semaphore",
-            "Limit concurrent calls per dependency",
-            "Lower"
-          ],
-          [
-            "Process",
-            "Separate process per service",
-            "Highest"
-          ]
+          ["Thread pool", "Separate thread pool per dependency", "Higher"],
+          ["Semaphore", "Limit concurrent calls per dependency", "Lower"],
+          ["Process", "Separate process per service", "Highest"]
         ]
       }
     },

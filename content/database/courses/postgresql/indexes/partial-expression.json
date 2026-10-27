@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "partial-index",
-    "expression-index",
-    "index-optimization",
-    "storage"
-  ],
+  "tags": ["partial-index", "expression-index", "index-optimization", "storage"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "btree-indexes",
-    "covering-indexes"
-  ]
+  "relatedLessons": ["btree-indexes", "covering-indexes"]
 }

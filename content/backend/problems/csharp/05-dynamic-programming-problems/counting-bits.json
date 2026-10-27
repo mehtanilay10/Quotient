@@ -8,12 +8,7 @@
   "order": 23,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "bit-manipulation",
-    "easy"
-  ],
+  "tags": ["csharp", "dynamic-programming", "bit-manipulation", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "DP Right Shift",
             "description": "result[i] = result[i/2] + i%2",
-            "pros": [
-              "O(n) time"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time"],
+            "tags": ["O(n) time", "O(n) space", "Recommended"]
           }
         ]
       }

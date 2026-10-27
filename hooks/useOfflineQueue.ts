@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useSession } from 'next-auth/react';
-import { logger } from '@/lib/logger';
-import { apiFetch } from '@/lib/apiFetch';
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useSession } from "next-auth/react";
+import { logger } from "@/lib/logger";
+import { apiFetch } from "@/lib/apiFetch";
 
 type OfflineQueueItem = {
   courseSlug: string;
@@ -15,7 +15,7 @@ type OfflineQueueItem = {
 
 async function fetchQueueFromServer(): Promise<OfflineQueueItem[] | null> {
   try {
-    const res = await fetch('/api/user/offline-queue');
+    const res = await fetch("/api/user/offline-queue");
     if (!res.ok) return null;
     const data = await res.json();
     return data.queue ?? [];
@@ -26,20 +26,20 @@ async function fetchQueueFromServer(): Promise<OfflineQueueItem[] | null> {
 
 async function syncQueueToServer(item: OfflineQueueItem): Promise<void> {
   try {
-    await apiFetch('/api/user/offline-queue', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+    await apiFetch("/api/user/offline-queue", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(item),
     });
   } catch (err) {
-    logger.warn('useOfflineQueue', 'Failed to sync to server', err);
+    logger.warn("useOfflineQueue", "Failed to sync to server", err);
   }
 }
 
 export function useOfflineQueue() {
   const { data: session, status } = useSession();
-  const isLoggedIn = status === 'authenticated';
-  const isLoggedOut = status === 'unauthenticated';
+  const isLoggedIn = status === "authenticated";
+  const isLoggedOut = status === "unauthenticated";
 
   const [serverQueue, setServerQueue] = useState<OfflineQueueItem[] | null>(null);
   const [mounted, setMounted] = useState(false);
@@ -71,11 +71,19 @@ export function useOfflineQueue() {
     }
   }, [isLoggedOut]);
 
-  const activeQueue = useMemo(() => (isLoggedIn && serverQueue ? serverQueue : []), [isLoggedIn, serverQueue]);
+  const activeQueue = useMemo(
+    () => (isLoggedIn && serverQueue ? serverQueue : []),
+    [isLoggedIn, serverQueue]
+  );
 
   const isQueued = useCallback(
     (courseSlug: string, moduleSlug: string, lessonSlug: string): boolean => {
-      return activeQueue.some((item) => item.courseSlug === courseSlug && item.moduleSlug === moduleSlug && item.lessonSlug === lessonSlug);
+      return activeQueue.some(
+        (item) =>
+          item.courseSlug === courseSlug &&
+          item.moduleSlug === moduleSlug &&
+          item.lessonSlug === lessonSlug
+      );
     },
     [activeQueue]
   );
@@ -93,7 +101,17 @@ export function useOfflineQueue() {
 
       setServerQueue((prev) => {
         const next = prev
-          ? [...prev.filter((q) => !(q.courseSlug === courseSlug && q.moduleSlug === moduleSlug && q.lessonSlug === lessonSlug)), item]
+          ? [
+              ...prev.filter(
+                (q) =>
+                  !(
+                    q.courseSlug === courseSlug &&
+                    q.moduleSlug === moduleSlug &&
+                    q.lessonSlug === lessonSlug
+                  )
+              ),
+              item,
+            ]
           : [item];
         return next;
       });
@@ -109,13 +127,20 @@ export function useOfflineQueue() {
       if (!isLoggedIn) return;
       setServerQueue((prev) => {
         const next = prev
-          ? prev.filter((q) => !(q.courseSlug === courseSlug && q.moduleSlug === moduleSlug && q.lessonSlug === lessonSlug))
+          ? prev.filter(
+              (q) =>
+                !(
+                  q.courseSlug === courseSlug &&
+                  q.moduleSlug === moduleSlug &&
+                  q.lessonSlug === lessonSlug
+                )
+            )
           : [];
         return next;
       });
-      apiFetch('/api/user/offline-queue', {
-        method: 'DELETE',
-        headers: { 'Content-Type': 'application/json' },
+      apiFetch("/api/user/offline-queue", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ courseSlug, moduleSlug, lessonSlug }),
       }).catch(() => undefined);
     },

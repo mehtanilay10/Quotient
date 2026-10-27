@@ -114,10 +114,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "clustered-vs-nonclustered-indexes",
-    "seek-vs-scan"
-  ],
+  "relatedLessons": ["clustered-vs-nonclustered-indexes", "seek-vs-scan"],
   "furtherReading": [
     {
       "title": "Microsoft Docs - Pages and Extents",

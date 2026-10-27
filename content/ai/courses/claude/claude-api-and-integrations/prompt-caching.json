@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 12,
-  "tags": [
-    "claude",
-    "api",
-    "prompt-caching",
-    "cost-optimization",
-    "performance"
-  ],
+  "tags": ["claude", "api", "prompt-caching", "cost-optimization", "performance"],
   "blocks": [
     {
       "type": "heading",
@@ -177,14 +171,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "claude-api-basics",
-    "claude-in-your-workflow"
-  ],
-  "relatedGlossaryTerms": [
-    "api",
-    "token",
-    "context-window"
-  ],
+  "relatedLessons": ["claude-api-basics", "claude-in-your-workflow"],
+  "relatedGlossaryTerms": ["api", "token", "context-window"],
   "courseSlug": "claude"
 }

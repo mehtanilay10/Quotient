@@ -31,10 +31,7 @@
           {
             "title": "URL versioning",
             "description": "Prefix the path with a version, such as /v1/users and /v2/users.",
-            "pros": [
-              "Simple to route and test",
-              "Clear in logs and documentation"
-            ],
+            "pros": ["Simple to route and test", "Clear in logs and documentation"],
             "cons": [
               "Multiple code paths to maintain",
               "Every new version is a breaking change by definition"
@@ -43,22 +40,13 @@
           {
             "title": "Header versioning",
             "description": "Send the version in a custom header or Accept header.",
-            "pros": [
-              "Clean URLs",
-              "Supports content negotiation"
-            ],
-            "cons": [
-              "Harder to test in a browser",
-              "Caching proxies must be configured carefully"
-            ]
+            "pros": ["Clean URLs", "Supports content negotiation"],
+            "cons": ["Harder to test in a browser", "Caching proxies must be configured carefully"]
           },
           {
             "title": "No explicit versioning",
             "description": "Add fields and deprecate old ones without versioned paths.",
-            "pros": [
-              "Smallest client impact",
-              "Easiest for mobile apps that auto-update"
-            ],
+            "pros": ["Smallest client impact", "Easiest for mobile apps that auto-update"],
             "cons": [
               "Harder to remove old fields safely",
               "Server logic accumulates conditional branches"

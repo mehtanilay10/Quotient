@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "prisma",
-    "zero-downtime",
-    "expand-contract",
-    "production",
-    "locks"
-  ],
+  "tags": ["prisma", "zero-downtime", "expand-contract", "production", "locks"],
   "blocks": [
     {
       "type": "paragraph",
@@ -77,8 +71,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "migrations-overview",
-    "prisma-migrate-deploy"
-  ]
+  "relatedLessons": ["migrations-overview", "prisma-migrate-deploy"]
 }

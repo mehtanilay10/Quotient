@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "testing",
-    "testcontainers",
-    "postgres",
-    "integration"
-  ],
+  "tags": ["testing", "testcontainers", "postgres", "integration"],
   "blocks": [
     {
       "type": "paragraph",
@@ -135,10 +130,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "component-testing-vs-integration-testing",
-    "playwright-based-e2e-testing"
-  ],
+  "relatedLessons": ["component-testing-vs-integration-testing", "playwright-based-e2e-testing"],
   "furtherReading": [
     {
       "type": "article",

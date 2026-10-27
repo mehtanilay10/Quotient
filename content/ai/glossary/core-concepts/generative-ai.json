@@ -6,19 +6,12 @@
   "fullDefinition": "Generative AI refers to AI systems trained to produce new content that didn't exist before, based on patterns learned from large datasets. It is a subset of machine learning that uses deep neural networks. The most well-known generative AI systems today are large language models (text), diffusion models (images), and video generation models.",
   "category": "core-concepts",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "large-language-model",
-    "machine-learning",
-    "artificial-intelligence"
-  ],
+  "relatedTerms": ["large-language-model", "machine-learning", "artificial-intelligence"],
   "learnMoreSlug": "ai-vs-ml-vs-generative-ai",
   "examples": [
     "ChatGPT generating a cover letter",
     "Midjourney creating an illustration from a text description",
     "GitHub Copilot writing code from a comment"
   ],
-  "alsoKnownAs": [
-    "GenAI",
-    "Generative Models"
-  ]
+  "alsoKnownAs": ["GenAI", "Generative Models"]
 }

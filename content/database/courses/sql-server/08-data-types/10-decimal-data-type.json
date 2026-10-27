@@ -7,11 +7,7 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 22,
-  "tags": [
-    "decimal",
-    "numeric",
-    "data-type"
-  ],
+  "tags": ["decimal", "numeric", "data-type"],
   "blocks": [
     {
       "type": "heading",
@@ -58,27 +54,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Precision",
-          "Storage Bytes"
-        ],
+        "headers": ["Precision", "Storage Bytes"],
         "rows": [
-          [
-            "1 – 9",
-            "5"
-          ],
-          [
-            "10-19",
-            "9"
-          ],
-          [
-            "20-28",
-            "13"
-          ],
-          [
-            "29-38",
-            "17"
-          ]
+          ["1 – 9", "5"],
+          ["10-19", "9"],
+          ["20-28", "13"],
+          ["29-38", "17"]
         ]
       }
     },

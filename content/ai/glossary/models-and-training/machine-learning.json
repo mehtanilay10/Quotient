@@ -6,17 +6,11 @@
   "fullDefinition": "Machine learning is a subset of AI where systems improve their performance on tasks by learning from data, without being explicitly programmed with the rules. The model finds patterns in training data and uses those patterns to make predictions or decisions on new data.",
   "category": "models-and-training",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "artificial-intelligence",
-    "large-language-model",
-    "neural-network"
-  ],
+  "relatedTerms": ["artificial-intelligence", "large-language-model", "neural-network"],
   "learnMoreSlug": "ai-vs-ml-vs-generative-ai",
   "examples": [
     "Image recognition that learns to identify cats from thousands of cat photos",
     "Fraud detection that learns patterns of fraudulent transactions"
   ],
-  "alsoKnownAs": [
-    "ML"
-  ]
+  "alsoKnownAs": ["ML"]
 }

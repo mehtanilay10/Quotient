@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 16,
-  "tags": [
-    "transactions",
-    "outbox-pattern",
-    "atomicity",
-    "consistency",
-    "distributed-systems"
-  ],
+  "tags": ["transactions", "outbox-pattern", "atomicity", "consistency", "distributed-systems"],
   "blocks": [
     {
       "type": "paragraph",

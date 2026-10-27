@@ -7,12 +7,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 23,
-  "tags": [
-    "linq",
-    "single",
-    "singleordefault",
-    "element operators"
-  ],
+  "tags": ["linq", "single", "singleordefault", "element operators"],
   "blocks": [
     {
       "type": "paragraph",
@@ -86,9 +81,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "first-firstordefault",
-    "last-lastordefault"
-  ],
+  "relatedLessons": ["first-firstordefault", "last-lastordefault"],
   "courseSlug": "linq"
 }

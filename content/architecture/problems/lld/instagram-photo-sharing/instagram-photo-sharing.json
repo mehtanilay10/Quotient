@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 45,
-  "tags": [
-    "lld",
-    "object-oriented",
-    "design-patterns",
-    "instagram_photo_sharing"
-  ],
+  "tags": ["lld", "object-oriented", "design-patterns", "instagram_photo_sharing"],
   "blocks": [
     {
       "type": "heading",

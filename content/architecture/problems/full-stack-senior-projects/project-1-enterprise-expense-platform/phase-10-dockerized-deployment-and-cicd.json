@@ -153,19 +153,31 @@
           {
             "title": "GitHub Actions",
             "description": "CI/CD built into GitHub with a large marketplace of actions.",
-            "pros": ["Native GitHub integration", "Large community", "Free minutes for public repos"],
+            "pros": [
+              "Native GitHub integration",
+              "Large community",
+              "Free minutes for public repos"
+            ],
             "cons": ["Cold starts can be slow", "Self-hosted runners require maintenance"]
           },
           {
             "title": "GitLab CI",
             "description": "Built-in CI/CD with every GitLab repository.",
-            "pros": ["Excellent Docker support", "Built-in container registry", "Powerful YAML configuration"],
+            "pros": [
+              "Excellent Docker support",
+              "Built-in container registry",
+              "Powerful YAML configuration"
+            ],
             "cons": ["Monolithic feel", "Smaller marketplace than GitHub"]
           },
           {
             "title": "Azure DevOps",
             "description": "Microsoft's CI/CD platform with deep Azure integration.",
-            "pros": ["Strong Windows and .NET support", "Built-in artifact management", "Hybrid deployment groups"],
+            "pros": [
+              "Strong Windows and .NET support",
+              "Built-in artifact management",
+              "Hybrid deployment groups"
+            ],
             "cons": ["UI is dated", "Less popular in open source"]
           },
           {

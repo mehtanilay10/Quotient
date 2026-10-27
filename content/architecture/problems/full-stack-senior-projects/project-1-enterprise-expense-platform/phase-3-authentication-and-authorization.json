@@ -8,15 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "nextauth",
-    "oauth",
-    "rbac",
-    "authorization",
-    "jwt",
-    "react-19",
-    "asp.net-core"
-  ],
+  "tags": ["nextauth", "oauth", "rbac", "authorization", "jwt", "react-19", "asp.net-core"],
   "blocks": [
     {
       "type": "paragraph",

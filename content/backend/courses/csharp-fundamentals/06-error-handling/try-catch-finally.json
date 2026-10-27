@@ -7,14 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "try",
-    "catch",
-    "finally",
-    "using-statement",
-    "exception-handling"
-  ],
+  "tags": ["csharp", "try", "catch", "finally", "using-statement", "exception-handling"],
   "blocks": [
     {
       "type": "paragraph",
@@ -216,27 +209,19 @@
               "You can find where the error originally occurred",
               "Recommended for rethrowing"
             ],
-            "cons": [
-              "Cannot add new information to the exception"
-            ],
-            "tags": [
-              "preferred"
-            ]
+            "cons": ["Cannot add new information to the exception"],
+            "tags": ["preferred"]
           },
           {
             "title": "throw ex;",
             "description": "Rethrows the exception but resets the stack trace to this location",
-            "pros": [
-              "Can assign a new exception object"
-            ],
+            "pros": ["Can assign a new exception object"],
             "cons": [
               "Original stack trace is lost",
               "Harder to debug — origin point becomes the rethrow line",
               "Generally not recommended"
             ],
-            "tags": [
-              "avoid"
-            ]
+            "tags": ["avoid"]
           }
         ]
       }

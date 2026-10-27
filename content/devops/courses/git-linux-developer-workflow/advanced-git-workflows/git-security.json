@@ -110,14 +110,16 @@
       }
     }
   ],
-  "relatedLessons": [
-    "hooks-and-automation",
-    "backup-and-recovery",
-    "enterprise-git"
-  ],
+  "relatedLessons": ["hooks-and-automation", "backup-and-recovery", "enterprise-git"],
   "furtherReading": [
-    { "title": "Git secret scanning (GitHub Docs)", "url": "https://docs.github.com/en/code-security/secret-scanning" },
+    {
+      "title": "Git secret scanning (GitHub Docs)",
+      "url": "https://docs.github.com/en/code-security/secret-scanning"
+    },
     { "title": "BFG Repo-Cleaner", "url": "https://rtyley.github.io/bfg-repo-cleaner/" },
-    { "title": "Git signing documentation (git-scm.com)", "url": "https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work" }
+    {
+      "title": "Git signing documentation (git-scm.com)",
+      "url": "https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work"
+    }
   ]
 }

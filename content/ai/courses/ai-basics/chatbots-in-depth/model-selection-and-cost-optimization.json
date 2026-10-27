@@ -7,13 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "model-selection",
-    "cost-optimization",
-    "latency",
-    "quality",
-    "routing"
-  ],
+  "tags": ["model-selection", "cost-optimization", "latency", "quality", "routing"],
   "blocks": [
     {
       "type": "paragraph",
@@ -124,22 +118,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Task type",
-          "Recommended model tier",
-          "Reason"
-        ],
+        "headers": ["Task type", "Recommended model tier", "Reason"],
         "rows": [
           [
             "Simple rewriting or summarization",
             "Small/fast model",
             "Lowest cost, enough quality for routine tasks"
           ],
-          [
-            "General analysis and drafting",
-            "Mid-tier model",
-            "Good quality/cost balance"
-          ],
+          ["General analysis and drafting", "Mid-tier model", "Good quality/cost balance"],
           [
             "Complex reasoning or high-stakes output",
             "Frontier model",
@@ -184,12 +170,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Risk level",
-          "Characteristics",
-          "Examples",
-          "Recommended model tier"
-        ],
+        "headers": ["Risk level", "Characteristics", "Examples", "Recommended model tier"],
         "rows": [
           [
             "Low",
@@ -260,11 +241,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Inefficiency",
-          "Example",
-          "Fix"
-        ],
+        "headers": ["Inefficiency", "Example", "Fix"],
         "rows": [
           [
             "Repeating context on every call",
@@ -364,11 +341,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Latency requirement",
-          "Implication"
-        ],
+        "headers": ["Use case", "Latency requirement", "Implication"],
         "rows": [
           [
             "Real-time chat interface",
@@ -460,13 +433,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Task",
-          "Risk",
-          "Default tier",
-          "Quality threshold",
-          "Escalation rule"
-        ],
+        "headers": ["Task", "Risk", "Default tier", "Quality threshold", "Escalation rule"],
         "rows": [
           [
             "Tag incoming support tickets",
@@ -560,11 +527,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "model-comparison",
-    "chatbot-landscape",
-    "ai-evaluation-metrics"
-  ],
+  "relatedLessons": ["model-comparison", "chatbot-landscape", "ai-evaluation-metrics"],
   "furtherReading": [
     {
       "title": "OpenAI Models",

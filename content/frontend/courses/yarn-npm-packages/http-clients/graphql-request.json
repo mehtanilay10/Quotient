@@ -6,13 +6,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "graphql",
-    "http",
-    "api",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["graphql", "http", "api", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -97,10 +91,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "graphql-request is minimal and fast.",
-          "No caching overhead."
-        ]
+        "points": ["graphql-request is minimal and fast.", "No caching overhead."]
       }
     }
   ],

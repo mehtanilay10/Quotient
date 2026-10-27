@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "web-api",
-    "content-negotiation",
-    "formatters"
-  ],
+  "tags": ["aspnet-core", "web-api", "content-negotiation", "formatters"],
   "blocks": [
     {
       "type": "heading",
@@ -91,38 +86,16 @@
           {
             "title": "Add XML Formatter",
             "description": "Multi-format API responses",
-            "pros": [
-              "Client chooses format",
-              "Standard HTTP behavior",
-              "Works with Accept header"
-            ],
-            "cons": [
-              "XML is verbose",
-              "Must maintain both formatters",
-              "Not commonly used today"
-            ],
-            "tags": [
-              "AddXmlDataContractSerializerFormatters",
-              "Accept header",
-              "formatters"
-            ]
+            "pros": ["Client chooses format", "Standard HTTP behavior", "Works with Accept header"],
+            "cons": ["XML is verbose", "Must maintain both formatters", "Not commonly used today"],
+            "tags": ["AddXmlDataContractSerializerFormatters", "Accept header", "formatters"]
           },
           {
             "title": "Custom Output Formatter",
             "description": "Custom response format",
-            "pros": [
-              "Any format possible",
-              "Reusable",
-              "Type-safe"
-            ],
-            "cons": [
-              "Must implement formatter interface",
-              "More code"
-            ],
-            "tags": [
-              "TextOutputFormatter",
-              "OutputFormatter"
-            ]
+            "pros": ["Any format possible", "Reusable", "Type-safe"],
+            "cons": ["Must implement formatter interface", "More code"],
+            "tags": ["TextOutputFormatter", "OutputFormatter"]
           }
         ]
       }

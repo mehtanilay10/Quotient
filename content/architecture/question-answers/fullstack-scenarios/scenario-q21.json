@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "interview",
-    "fullstack",
-    "debugging",
-    "concurrency"
-  ],
+  "tags": ["interview", "fullstack", "debugging", "concurrency"],
   "blocks": [
     {
       "type": "paragraph",

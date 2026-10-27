@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "system-design",
-    "video",
-    "cdn"
-  ],
+  "tags": ["interview", "system-design", "video", "cdn"],
   "blocks": [
     {
       "type": "paragraph",

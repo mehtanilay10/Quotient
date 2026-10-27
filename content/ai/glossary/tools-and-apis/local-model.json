@@ -6,10 +6,7 @@
   "fullDefinition": "A local model is an AI model that runs entirely on your own computer or local server, without sending any data to external cloud services. This provides complete data privacy and works offline. Tools like Ollama, LM Studio, and Jan.ai make running local models accessible to non-developers. Local models are typically open-weights models like Llama, Mistral, or Gemma.",
   "category": "tools-and-apis",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "open-weights",
-    "privacy"
-  ],
+  "relatedTerms": ["open-weights", "privacy"],
   "learnMoreSlug": "local-ai-options",
   "examples": [
     "Running Llama3 via Ollama on your MacBook",

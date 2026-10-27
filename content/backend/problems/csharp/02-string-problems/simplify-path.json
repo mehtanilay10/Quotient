@@ -8,12 +8,7 @@
   "order": 24,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "strings",
-    "stack",
-    "medium"
-  ],
+  "tags": ["csharp", "strings", "stack", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -87,33 +82,16 @@
           {
             "title": "String List",
             "description": "Use List as stack",
-            "pros": [
-              "Simple list ops"
-            ],
-            "cons": [
-              "Less semantic",
-              "RemoveAt is O(n)"
-            ],
-            "tags": [
-              "O(n^2) time",
-              "O(n) space"
-            ]
+            "pros": ["Simple list ops"],
+            "cons": ["Less semantic", "RemoveAt is O(n)"],
+            "tags": ["O(n^2) time", "O(n) space"]
           },
           {
             "title": "Stack",
             "description": "Push/pop semantics",
-            "pros": [
-              "Clear intent",
-              "O(1) pop"
-            ],
-            "cons": [
-              "Need Reverse at end"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["Clear intent", "O(1) pop"],
+            "cons": ["Need Reverse at end"],
+            "tags": ["O(n) time", "O(n) space", "Recommended"]
           }
         ]
       }

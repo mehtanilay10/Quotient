@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "oop",
-    "interfaces",
-    "default-methods"
-  ],
+  "tags": ["oop", "interfaces", "default-methods"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,9 +36,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "multiple-interfaces",
-    "explicit-interface-implementation"
-  ],
+  "relatedLessons": ["multiple-interfaces", "explicit-interface-implementation"],
   "courseSlug": "oops-concepts"
 }

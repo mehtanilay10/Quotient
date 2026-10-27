@@ -170,7 +170,10 @@
       }
     }
   ],
-  "relatedLessons": ["tcp-connection-and-tls-handshake", "how-to-troubleshoot-a-failing-http-request"],
+  "relatedLessons": [
+    "tcp-connection-and-tls-handshake",
+    "how-to-troubleshoot-a-failing-http-request"
+  ],
   "furtherReading": [
     {
       "type": "article",

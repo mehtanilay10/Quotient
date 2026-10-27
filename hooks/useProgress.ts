@@ -1,5 +1,5 @@
-'use client';
+"use client";
 
-import { useProgress } from '@/components/progress/ProgressProvider';
+import { useProgress } from "@/components/progress/ProgressProvider";
 
 export { useProgress };

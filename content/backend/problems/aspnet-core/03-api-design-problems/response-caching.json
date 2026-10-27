@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "web-api",
-    "caching",
-    "performance"
-  ],
+  "tags": ["aspnet-core", "web-api", "caching", "performance"],
   "blocks": [
     {
       "type": "heading",
@@ -91,21 +86,9 @@
           {
             "title": "Response Caching Middleware",
             "description": "Server-side response cache",
-            "pros": [
-              "Reduces DB calls",
-              "Configurable per endpoint",
-              "Vary by query keys"
-            ],
-            "cons": [
-              "Only works for GET/HEAD",
-              "Stale data risk",
-              "Memory usage"
-            ],
-            "tags": [
-              "ResponseCache",
-              "AddResponseCaching",
-              "Duration"
-            ]
+            "pros": ["Reduces DB calls", "Configurable per endpoint", "Vary by query keys"],
+            "cons": ["Only works for GET/HEAD", "Stale data risk", "Memory usage"],
+            "tags": ["ResponseCache", "AddResponseCaching", "Duration"]
           },
           {
             "title": "Cache Profiles",
@@ -115,14 +98,8 @@
               "Reusable across endpoints",
               "Consistent cache behavior"
             ],
-            "cons": [
-              "Requires upfront planning",
-              "Less flexible than inline"
-            ],
-            "tags": [
-              "CacheProfileName",
-              "ResponseCacheOptions"
-            ]
+            "cons": ["Requires upfront planning", "Less flexible than inline"],
+            "tags": ["CacheProfileName", "ResponseCacheOptions"]
           }
         ]
       }

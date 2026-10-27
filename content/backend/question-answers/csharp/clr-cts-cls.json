@@ -6,10 +6,7 @@
   "description": "Understand the core components of the .NET runtime.",
   "order": 14,
   "difficulty": "beginner",
-  "tags": [
-    ".NET",
-    "beginner"
-  ],
+  "tags": [".NET", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

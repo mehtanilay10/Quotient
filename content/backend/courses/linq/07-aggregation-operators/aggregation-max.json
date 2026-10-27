@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "linq",
-    "max",
-    "aggregation"
-  ],
+  "tags": ["linq", "max", "aggregation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -81,10 +77,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "aggregation-count",
-    "aggregation-sum",
-    "aggregation-average"
-  ],
+  "relatedLessons": ["aggregation-count", "aggregation-sum", "aggregation-average"],
   "courseSlug": "linq"
 }

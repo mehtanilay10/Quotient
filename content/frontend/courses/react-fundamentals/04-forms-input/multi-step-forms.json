@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "forms",
-    "multi-step",
-    "wizard"
-  ],
+  "tags": ["react", "forms", "multi-step", "wizard"],
   "blocks": [
     {
       "type": "paragraph",

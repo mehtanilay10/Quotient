@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "devtools",
-    "debugging",
-    "development"
-  ],
+  "tags": ["redux", "devtools", "debugging", "development"],
   "blocks": [
     {
       "type": "paragraph",
@@ -59,11 +54,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "What It Does",
-          "When to Use"
-        ],
+        "headers": ["Feature", "What It Does", "When to Use"],
         "rows": [
           [
             "Action log",
@@ -75,21 +66,9 @@
             "Highlights what changed in state after each action",
             "See the effect of an action"
           ],
-          [
-            "Time-travel",
-            "Jump to any previous state",
-            "Investigate a bug from its origin"
-          ],
-          [
-            "Replay",
-            "Re-dispatch a sequence of actions",
-            "Reproduce a reported bug"
-          ],
-          [
-            "Export/Import",
-            "Save and load full state snapshots",
-            "Share reproducible bug reports"
-          ],
+          ["Time-travel", "Jump to any previous state", "Investigate a bug from its origin"],
+          ["Replay", "Re-dispatch a sequence of actions", "Reproduce a reported bug"],
+          ["Export/Import", "Save and load full state snapshots", "Share reproducible bug reports"],
           [
             "Skip action",
             "Temporarily remove an action",
@@ -160,30 +139,16 @@
           {
             "title": "Development",
             "description": "DevTools is enabled and middleware checks are on for safety.",
-            "pros": [
-              "Full debugging",
-              "Strict checks catch mistakes"
-            ],
-            "cons": [
-              "Slight performance cost"
-            ],
-            "tags": [
-              "recommended"
-            ]
+            "pros": ["Full debugging", "Strict checks catch mistakes"],
+            "cons": ["Slight performance cost"],
+            "tags": ["recommended"]
           },
           {
             "title": "Production",
             "description": "DevTools is disabled and unnecessary middleware is stripped.",
-            "pros": [
-              "Better performance",
-              "Smaller bundle"
-            ],
-            "cons": [
-              "No debugging in prod"
-            ],
-            "tags": [
-              "best-practice"
-            ]
+            "pros": ["Better performance", "Smaller bundle"],
+            "cons": ["No debugging in prod"],
+            "tags": ["best-practice"]
           }
         ]
       }

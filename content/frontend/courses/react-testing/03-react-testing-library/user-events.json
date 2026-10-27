@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "rtl",
-    "user-events",
-    "react"
-  ],
+  "tags": ["rtl", "user-events", "react"],
   "blocks": [
     {
       "type": "paragraph",
@@ -44,18 +40,11 @@
       "data": {
         "title": "Mock an API Call",
         "description": "Write a test for a component that fetches data, mocking the API.",
-        "steps": [
-          "Mock fetch with jest.spyOn",
-          "Render loading state",
-          "Render data state"
-        ],
+        "steps": ["Mock fetch with jest.spyOn", "Render loading state", "Render data state"],
         "expectedOutcome": "Test covering loading and data states."
       }
     }
   ],
-  "relatedLessons": [
-    "queries",
-    "testing-hooks"
-  ],
+  "relatedLessons": ["queries", "testing-hooks"],
   "courseSlug": "react-testing"
 }

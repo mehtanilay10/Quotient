@@ -7,14 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "lambda",
-    "expression",
-    "func",
-    "action",
-    "delegate"
-  ],
+  "tags": ["linq", "lambda", "expression", "func", "action", "delegate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -326,9 +319,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "linq-query-syntax",
-    "linq-method-syntax"
-  ],
+  "relatedLessons": ["linq-query-syntax", "linq-method-syntax"],
   "courseSlug": "linq"
 }

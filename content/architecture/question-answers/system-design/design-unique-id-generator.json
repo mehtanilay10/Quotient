@@ -8,12 +8,7 @@
   "order": 13,
   "difficulty": "advanced",
   "estimatedMinutes": 28,
-  "tags": [
-    "interview",
-    "system-design",
-    "distributed",
-    "ids"
-  ],
+  "tags": ["interview", "system-design", "distributed", "ids"],
   "technology": "System Design",
   "blocks": [
     {
@@ -74,11 +69,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Entity",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Entity", "Key Fields", "Description"],
         "rows": [
           [
             "IdGeneratorConfig",
@@ -141,42 +132,20 @@
           {
             "title": "UUID v4",
             "description": "128-bit random identifiers. No coordination needed. Not sortable.",
-            "pros": [
-              "No coordination",
-              "Extremely low collision probability"
-            ],
-            "cons": [
-              "Not sortable",
-              "Larger storage footprint",
-              "Poor index performance"
-            ]
+            "pros": ["No coordination", "Extremely low collision probability"],
+            "cons": ["Not sortable", "Larger storage footprint", "Poor index performance"]
           },
           {
             "title": "Snowflake",
             "description": "64-bit sortable IDs with timestamp, worker ID, and sequence. Twitter-inspired.",
-            "pros": [
-              "Sortable by time",
-              "Compact",
-              "High throughput"
-            ],
-            "cons": [
-              "Requires worker ID allocation",
-              "Clock skew sensitive"
-            ]
+            "pros": ["Sortable by time", "Compact", "High throughput"],
+            "cons": ["Requires worker ID allocation", "Clock skew sensitive"]
           },
           {
             "title": "Database Sequence",
             "description": "Auto-incrementing integers from a centralized database.",
-            "pros": [
-              "Simple",
-              "Guaranteed unique",
-              "Sortable"
-            ],
-            "cons": [
-              "Single point of failure",
-              "Coordination overhead",
-              "Not distributed-friendly"
-            ]
+            "pros": ["Simple", "Guaranteed unique", "Sortable"],
+            "cons": ["Single point of failure", "Coordination overhead", "Not distributed-friendly"]
           }
         ]
       }

@@ -8,15 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "analytics",
-    "opensearch",
-    "quicksight",
-    "search",
-    "bi",
-    "visualization"
-  ],
+  "tags": ["aws", "analytics", "opensearch", "quicksight", "search", "bi", "visualization"],
   "blocks": [
     {
       "type": "paragraph",

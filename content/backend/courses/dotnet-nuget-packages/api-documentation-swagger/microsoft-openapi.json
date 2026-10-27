@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is Microsoft.OpenApi?"}
+      "data": { "level": 2, "text": "What is Microsoft.OpenApi?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`Microsoft.OpenApi` is a .NET library for reading, writing, and validating OpenAPI v3 documents. It powers tools like Swashbuckle and NSwag."}
+      "data": {
+        "text": "`Microsoft.OpenApi` is a .NET library for reading, writing, and validating OpenAPI v3 documents. It powers tools like Swashbuckle and NSwag."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Reading an OpenAPI Document"}
+      "data": { "level": 2, "text": "Reading an OpenAPI Document" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "You can load an OpenAPI document from a file or stream and inspect its structure."}
+      "data": {
+        "text": "You can load an OpenAPI document from a file or stream and inspect its structure."
+      }
     },
     {
       "type": "example",
@@ -48,11 +52,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Writing an OpenAPI Document"}
+      "data": { "level": 2, "text": "Writing an OpenAPI Document" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "You can also programmatically build an OpenAPI document and write it to YAML or JSON."}
+      "data": {
+        "text": "You can also programmatically build an OpenAPI document and write it to YAML or JSON."
+      }
     },
     {
       "type": "example",

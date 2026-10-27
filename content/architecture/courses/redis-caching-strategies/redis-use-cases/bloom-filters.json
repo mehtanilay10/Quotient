@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "redis",
-    "bloom-filters",
-    "probabilistic",
-    "cache-penetration",
-    "data-structures"
-  ],
+  "tags": ["redis", "bloom-filters", "probabilistic", "cache-penetration", "data-structures"],
   "blocks": [
     {
       "type": "paragraph",

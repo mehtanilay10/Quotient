@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "system-design",
-    "requirements",
-    "interview-strategy"
-  ],
+  "tags": ["system-design", "requirements", "interview-strategy"],
   "blocks": [
     {
       "type": "heading",
@@ -52,11 +48,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Category",
-          "Example Questions",
-          "Why It Matters"
-        ],
+        "headers": ["Category", "Example Questions", "Why It Matters"],
         "rows": [
           [
             "Users",

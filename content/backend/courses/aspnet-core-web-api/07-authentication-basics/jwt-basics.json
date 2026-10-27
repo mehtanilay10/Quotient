@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 33,
-  "tags": [
-    "web-api",
-    "jwt",
-    "tokens"
-  ],
+  "tags": ["web-api", "jwt", "tokens"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,27 +33,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Part",
-          "Encoded",
-          "Contains"
-        ],
+        "headers": ["Part", "Encoded", "Contains"],
         "rows": [
-          [
-            "Header",
-            "Base64Url",
-            "Algorithm and token type"
-          ],
-          [
-            "Payload",
-            "Base64Url",
-            "Claims: user data, expiration"
-          ],
-          [
-            "Signature",
-            "Base64Url",
-            "HMAC signature verifying authenticity"
-          ]
+          ["Header", "Base64Url", "Algorithm and token type"],
+          ["Payload", "Base64Url", "Claims: user data, expiration"],
+          ["Signature", "Base64Url", "HMAC signature verifying authenticity"]
         ]
       }
     },
@@ -162,8 +142,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "auth-overview"
-  ],
+  "relatedLessons": ["auth-overview"],
   "courseSlug": "aspnet-core-web-api"
 }

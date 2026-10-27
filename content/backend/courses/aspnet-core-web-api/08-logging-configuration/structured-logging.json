@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "logging",
-    "serilog"
-  ],
+  "tags": ["web-api", "logging", "serilog"],
   "blocks": [
     {
       "type": "paragraph",
@@ -43,35 +39,16 @@
           {
             "title": "Unstructured",
             "description": "User 42 logged in from 192.168.1.1",
-            "pros": [
-              "Easy to read for humans",
-              "Works with every log viewer"
-            ],
-            "cons": [
-              "Hard to query",
-              "Requires regex to extract fields",
-              "No schema"
-            ],
-            "tags": [
-              "plain-text"
-            ]
+            "pros": ["Easy to read for humans", "Works with every log viewer"],
+            "cons": ["Hard to query", "Requires regex to extract fields", "No schema"],
+            "tags": ["plain-text"]
           },
           {
             "title": "Structured",
             "description": "{\"Event\":\"Login\",\"UserId\":42,\"IpAddress\":\"192.168.1.1\"}",
-            "pros": [
-              "Queryable by any field",
-              "Aggregatable",
-              "Schema-aware"
-            ],
-            "cons": [
-              "Less human-readable on its own",
-              "Slightly more setup"
-            ],
-            "tags": [
-              "json",
-              "recommended"
-            ]
+            "pros": ["Queryable by any field", "Aggregatable", "Schema-aware"],
+            "cons": ["Less human-readable on its own", "Slightly more setup"],
+            "tags": ["json", "recommended"]
           }
         ]
       }
@@ -127,37 +104,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Template fragment",
-          "Captured property",
-          "Query example"
-        ],
+        "headers": ["Template fragment", "Captured property", "Query example"],
         "rows": [
-          [
-            "{UserId}",
-            "UserId = 42",
-            "UserId = 42"
-          ],
-          [
-            "{IpAddress}",
-            "IpAddress = \"192.168.1.1\"",
-            "IpAddress starts with \"192.168\""
-          ],
-          [
-            "{Elapsed:000} ms",
-            "Elapsed = 123 (ms)",
-            "Elapsed > 500"
-          ],
-          [
-            "{@Order}",
-            "Order = serialized object",
-            "Order.Total > 100"
-          ],
-          [
-            "{$Custom}",
-            "Custom = ToString() of value",
-            "Custom = \"VIP\""
-          ]
+          ["{UserId}", "UserId = 42", "UserId = 42"],
+          ["{IpAddress}", "IpAddress = \"192.168.1.1\"", "IpAddress starts with \"192.168\""],
+          ["{Elapsed:000} ms", "Elapsed = 123 (ms)", "Elapsed > 500"],
+          ["{@Order}", "Order = serialized object", "Order.Total > 100"],
+          ["{$Custom}", "Custom = ToString() of value", "Custom = \"VIP\""]
         ]
       }
     },
@@ -270,8 +223,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "logging-basics"
-  ],
+  "relatedLessons": ["logging-basics"],
   "courseSlug": "aspnet-core-web-api"
 }

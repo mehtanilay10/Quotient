@@ -10,12 +10,7 @@
   "estimatedHours": 3,
   "icon": "📊",
   "tags": ["aws", "monitoring", "cloudwatch", "cloudtrail", "x-ray", "logging"],
-  "lessonSlugs": [
-    "amazon-cloudwatch",
-    "aws-cloudtrail",
-    "aws-x-ray",
-    "observability-architecture"
-  ],
+  "lessonSlugs": ["amazon-cloudwatch", "aws-cloudtrail", "aws-x-ray", "observability-architecture"],
   "prerequisites": [],
   "whatYouLearn": [
     "Create CloudWatch metrics, alarms, and dashboards",

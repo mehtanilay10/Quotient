@@ -40,26 +40,14 @@
       "data": {
         "headers": ["Storage Class", "Description", "Use Case"],
         "rows": [
-          [
-            "S3 Standard",
-            "Frequently accessed data",
-            "Active user uploads and downloads"
-          ],
+          ["S3 Standard", "Frequently accessed data", "Active user uploads and downloads"],
           [
             "S3 Intelligent-Tiering",
             "Automatically moves objects",
             "Unknown or changing access patterns"
           ],
-          [
-            "S3 Standard-IA",
-            "Infrequently accessed data",
-            "Backups and older files"
-          ],
-          [
-            "S3 Glacier",
-            "Archive storage",
-            "Long-term retention and compliance"
-          ]
+          ["S3 Standard-IA", "Infrequently accessed data", "Backups and older files"],
+          ["S3 Glacier", "Archive storage", "Long-term retention and compliance"]
         ]
       }
     },

@@ -7,10 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 8,
-  "tags": [
-    "oop",
-    "encapsulation"
-  ],
+  "tags": ["oop", "encapsulation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,8 +37,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "properties"
-  ],
+  "relatedLessons": ["properties"],
   "courseSlug": "oops-concepts"
 }

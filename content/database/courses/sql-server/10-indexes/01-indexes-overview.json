@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 26,
-  "tags": [
-    "indexes",
-    "overview",
-    "clustered",
-    "non-clustered"
-  ],
+  "tags": ["indexes", "overview", "clustered", "non-clustered"],
   "blocks": [
     {
       "type": "heading",

@@ -39,17 +39,9 @@
       "data": {
         "headers": ["Source", "Logs", "Metrics"],
         "rows": [
-          [
-            "Elastic Beanstalk",
-            "Application and system logs",
-            "CPU, network, request count"
-          ],
+          ["Elastic Beanstalk", "Application and system logs", "CPU, network, request count"],
           ["ECS", "Container stdout/stderr", "CPU, memory, task count"],
-          [
-            "ASP.NET Core app",
-            "Custom application logs",
-            "Custom business metrics"
-          ]
+          ["ASP.NET Core app", "Custom application logs", "Custom business metrics"]
         ]
       }
     },

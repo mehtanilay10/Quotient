@@ -42,11 +42,7 @@
         "rows": [
           ["EC2 instances", "Run your ASP.NET Core app", "Yes"],
           ["Auto Scaling", "Add or remove instances based on load", "Yes"],
-          [
-            "Elastic Load Balancer",
-            "Distribute traffic across instances",
-            "Yes"
-          ],
+          ["Elastic Load Balancer", "Distribute traffic across instances", "Yes"],
           ["Security groups", "Network firewall rules", "Yes"],
           ["Application code", "Your ASP.NET Core binaries", "You upload"]
         ]

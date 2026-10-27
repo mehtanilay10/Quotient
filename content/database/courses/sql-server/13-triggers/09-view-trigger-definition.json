@@ -7,11 +7,7 @@
   "order": 9,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "trigger-definition",
-    "sys-sql_modules",
-    "sp_helptext"
-  ],
+  "tags": ["trigger-definition", "sys-sql_modules", "sp_helptext"],
   "blocks": [
     {
       "type": "heading",

@@ -155,6 +155,10 @@
   ],
   "relatedLessons": ["git-objects-blobs-trees-commits", "git-garbage-collection"],
   "furtherReading": [
-    { "title": "Git Refs Documentation", "url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Refs", "type": "article" }
+    {
+      "title": "Git Refs Documentation",
+      "url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Refs",
+      "type": "article"
+    }
   ]
 }

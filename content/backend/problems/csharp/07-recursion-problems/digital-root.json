@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "recursion",
-    "math",
-    "easy"
-  ],
+  "tags": ["csharp", "recursion", "math", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -123,46 +118,23 @@
           {
             "title": "Recursive",
             "description": "Sum digits then recurse",
-            "pros": [
-              "Clear logic"
-            ],
-            "cons": [
-              "O(log n) stack"
-            ],
-            "tags": [
-              "O(log n) time",
-              "O(log n) space"
-            ]
+            "pros": ["Clear logic"],
+            "cons": ["O(log n) stack"],
+            "tags": ["O(log n) time", "O(log n) space"]
           },
           {
             "title": "Iterative",
             "description": "Loop summing digits",
-            "pros": [
-              "O(log n) time",
-              "O(1) space"
-            ],
+            "pros": ["O(log n) time", "O(1) space"],
             "cons": [],
-            "tags": [
-              "O(log n) time",
-              "O(1) space"
-            ]
+            "tags": ["O(log n) time", "O(1) space"]
           },
           {
             "title": "Mathematical",
             "description": "Modulo 9 formula",
-            "pros": [
-              "O(1) time",
-              "O(1) space",
-              "Recommended"
-            ],
-            "cons": [
-              "Less obvious"
-            ],
-            "tags": [
-              "O(1) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) time", "O(1) space", "Recommended"],
+            "cons": ["Less obvious"],
+            "tags": ["O(1) time", "O(1) space", "Recommended"]
           }
         ]
       }

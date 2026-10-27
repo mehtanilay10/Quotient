@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 55,
-  "tags": [
-    "hld",
-    "system-design",
-    "leader-election",
-    "raft",
-    "split-brain",
-    "failover"
-  ],
+  "tags": ["hld", "system-design", "leader-election", "raft", "split-brain", "failover"],
   "blocks": [
     {
       "type": "heading",

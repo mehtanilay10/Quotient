@@ -8,14 +8,7 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "azure",
-    "azure",
-    "monitoring",
-    "observability",
-    "alerts",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "monitoring", "observability", "alerts", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -74,32 +67,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Alert Type",
-          "Granularity",
-          "Best For"
-        ],
+        "headers": ["Alert Type", "Granularity", "Best For"],
         "rows": [
-          [
-            "Metrics Alert",
-            "1 minute",
-            "CPU, memory, disk, network thresholds"
-          ],
-          [
-            "Log Alert",
-            "Query-based, 5+ min",
-            "Complex conditions across log data"
-          ],
-          [
-            "Activity Log Alert",
-            "Event-based",
-            "Azure resource events (delete, stop)"
-          ],
-          [
-            "Service Health Alert",
-            "Region-specific",
-            "Azure outages and planned maintenance"
-          ]
+          ["Metrics Alert", "1 minute", "CPU, memory, disk, network thresholds"],
+          ["Log Alert", "Query-based, 5+ min", "Complex conditions across log data"],
+          ["Activity Log Alert", "Event-based", "Azure resource events (delete, stop)"],
+          ["Service Health Alert", "Region-specific", "Azure outages and planned maintenance"]
         ]
       }
     },

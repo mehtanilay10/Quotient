@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "react",
-    "typescript",
-    "polymorphic",
-    "components"
-  ],
+  "tags": ["react", "typescript", "polymorphic", "components"],
   "blocks": [
     {
       "type": "paragraph",
@@ -83,27 +78,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Property",
-          "Type",
-          "Default"
-        ],
+        "headers": ["Property", "Type", "Default"],
         "rows": [
-          [
-            "as",
-            "ElementType",
-            "'div'"
-          ],
-          [
-            "children",
-            "ReactNode",
-            "Required"
-          ],
-          [
-            "...props",
-            "ComponentPropsWithoutRef<T>",
-            "Depends on as"
-          ]
+          ["as", "ElementType", "'div'"],
+          ["children", "ReactNode", "Required"],
+          ["...props", "ComponentPropsWithoutRef<T>", "Depends on as"]
         ]
       }
     },

@@ -101,27 +101,15 @@
           {
             "title": "Application Gateway weighted backends",
             "description": "Regional L7 split",
-            "pros": [
-              "Regional, cheaper than Front Door",
-              "Integrates with VNet-injected apps"
-            ],
-            "cons": [
-              "Regional only",
-              "Cookie-based affinity can skew the split"
-            ],
+            "pros": ["Regional, cheaper than Front Door", "Integrates with VNet-injected apps"],
+            "cons": ["Regional only", "Cookie-based affinity can skew the split"],
             "tags": ["Single-region"]
           },
           {
             "title": "Feature flags in code",
             "description": "One deployment, two code paths",
-            "pros": [
-              "Instant, per-user rollout",
-              "No infrastructure change"
-            ],
-            "cons": [
-              "Dead flags accumulate",
-              "Both paths ship in every release"
-            ],
+            "pros": ["Instant, per-user rollout", "No infrastructure change"],
+            "cons": ["Dead flags accumulate", "Both paths ship in every release"],
             "tags": ["User-targeted rollouts"]
           }
         ]

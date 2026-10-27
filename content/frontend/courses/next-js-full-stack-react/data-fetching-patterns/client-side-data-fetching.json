@@ -127,9 +127,16 @@
       }
     }
   ],
-  "relatedLessons": ["server-components-data-fetching", "streaming-and-suspense", "optimistic-updates"],
+  "relatedLessons": [
+    "server-components-data-fetching",
+    "streaming-and-suspense",
+    "optimistic-updates"
+  ],
   "furtherReading": [
-    { "title": "Next.js Client Components Documentation", "url": "https://nextjs.org/docs/app/building-your-application/rendering/client-components" },
+    {
+      "title": "Next.js Client Components Documentation",
+      "url": "https://nextjs.org/docs/app/building-your-application/rendering/client-components"
+    },
     { "title": "React use() Hook Documentation", "url": "https://react.dev/reference/react/use" }
   ]
 }

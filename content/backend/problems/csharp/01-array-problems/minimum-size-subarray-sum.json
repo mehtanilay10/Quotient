@@ -8,12 +8,7 @@
   "order": 13,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "arrays",
-    "sliding-window",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "sliding-window", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -99,34 +94,16 @@
           {
             "title": "Prefix + Binary Search",
             "description": "Precompute prefix sums, binary search ends",
-            "pros": [
-              "Good for static queries"
-            ],
-            "cons": [
-              "O(n log n) time",
-              "O(n) space"
-            ],
-            "tags": [
-              "O(n log n) time",
-              "O(n) space"
-            ]
+            "pros": ["Good for static queries"],
+            "cons": ["O(n log n) time", "O(n) space"],
+            "tags": ["O(n log n) time", "O(n) space"]
           },
           {
             "title": "Sliding Window",
             "description": "Expand right, shrink left",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
-            "cons": [
-              "Window state management"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
+            "cons": ["Window state management"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

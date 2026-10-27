@@ -9,11 +9,7 @@
   "estimatedHours": 0.5,
   "icon": "📊",
   "tags": ["code-coverage", "dotnet"],
-  "lessonSlugs": [
-    "coverage-metrics",
-    "coverlet-collector",
-    "coverage-reporting"
-  ],
+  "lessonSlugs": ["coverage-metrics", "coverlet-collector", "coverage-reporting"],
   "whatYouLearn": [
     "Understand code coverage metrics",
     "Configure Coverlet for coverage collection",

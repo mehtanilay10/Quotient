@@ -8,13 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 2.5,
   "icon": "🛠️",
-  "tags": [
-    "utilities",
-    "email",
-    "csv",
-    "helpers",
-    "humanizer"
-  ],
+  "tags": ["utilities", "email", "csv", "helpers", "humanizer"],
   "lessonSlugs": [
     "fluent-email",
     "mailkit",

@@ -9,13 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "📢",
-  "tags": [
-    "pubsub",
-    "exchanges",
-    "fanout",
-    "topic",
-    "consumer-groups"
-  ],
+  "tags": ["pubsub", "exchanges", "fanout", "topic", "consumer-groups"],
   "lessonSlugs": [
     "fanout-exchange",
     "direct-exchange",

@@ -80,19 +80,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tier",
-          "RTO",
-          "Examples",
-          "Architecture"
-        ],
+        "headers": ["Tier", "RTO", "Examples", "Architecture"],
         "rows": [
-          [
-            "Tier 1",
-            "Under 15 minutes",
-            "Payment, auth, core APIs",
-            "Active-active multi-region"
-          ],
+          ["Tier 1", "Under 15 minutes", "Payment, auth, core APIs", "Active-active multi-region"],
           [
             "Tier 2",
             "Under 4 hours",
@@ -171,21 +161,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "RTO",
-          "RPO",
-          "Architecture",
-          "Cost",
-          "Example"
-        ],
+        "headers": ["RTO", "RPO", "Architecture", "Cost", "Example"],
         "rows": [
-          [
-            "15 minutes",
-            "Zero",
-            "Active-active multi-region",
-            "Very high",
-            "Payment processing"
-          ],
+          ["15 minutes", "Zero", "Active-active multi-region", "Very high", "Payment processing"],
           [
             "4 hours",
             "15 minutes",
@@ -200,13 +178,7 @@
             "Medium",
             "Analytics platform"
           ],
-          [
-            "72 hours",
-            "24 hours",
-            "Daily backups, manual restore",
-            "Low",
-            "Internal reporting"
-          ]
+          ["72 hours", "24 hours", "Daily backups, manual restore", "Low", "Internal reporting"]
         ]
       }
     },
@@ -707,32 +679,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Target",
-          "Frequency"
-        ],
+        "headers": ["Metric", "Target", "Frequency"],
         "rows": [
-          [
-            "RTA",
-            "Below RTO target",
-            "Per DR test"
-          ],
-          [
-            "Data loss",
-            "Below RPO target",
-            "Per DR test"
-          ],
-          [
-            "Test frequency",
-            "Quarterly",
-            "Per system"
-          ],
-          [
-            "Budget consumption",
-            "Under 5 percent of infra budget",
-            "Monthly"
-          ]
+          ["RTA", "Below RTO target", "Per DR test"],
+          ["Data loss", "Below RPO target", "Per DR test"],
+          ["Test frequency", "Quarterly", "Per system"],
+          ["Budget consumption", "Under 5 percent of infra budget", "Monthly"]
         ]
       }
     },

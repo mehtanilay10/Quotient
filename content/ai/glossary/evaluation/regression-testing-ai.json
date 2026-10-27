@@ -6,11 +6,7 @@
   "fullDefinition": "Regression testing for AI systems is the practice of treating outputs as behaviour that must not silently change. Because prompts, model versions, retrieval settings, and tool definitions all affect results, a change that improves one case frequently breaks another. A regression suite pins a versioned set of inputs, captures the expected qualities, and reruns the whole set on every change, flagging outputs that dropped below a threshold. Unlike conventional unit tests the outputs are not deterministic, so the suite needs tolerance: score thresholds, semantic similarity, or rubric-based judging rather than exact string comparison. The suite is most valuable when every production bug becomes a permanent case, so the same failure can never ship twice.",
   "category": "evaluation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "eval-harness",
-    "golden-dataset",
-    "evaluation"
-  ],
+  "relatedTerms": ["eval-harness", "golden-dataset", "evaluation"],
   "examples": [
     "Re-running the golden set whenever the system prompt is edited",
     "Pinning a model version and testing before upgrading to the next",

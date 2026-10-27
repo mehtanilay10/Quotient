@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "ssis",
-    "etl",
-    "data-integration",
-    "data-flow",
-    "control-flow"
-  ],
+  "tags": ["ssis", "etl", "data-integration", "data-flow", "control-flow"],
   "blocks": [
     {
       "type": "heading",
@@ -228,8 +222,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "data-modification-dml",
-    "database-schema-table-objects"
-  ]
+  "prerequisites": ["data-modification-dml", "database-schema-table-objects"]
 }

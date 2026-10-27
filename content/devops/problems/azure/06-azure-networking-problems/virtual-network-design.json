@@ -80,43 +80,22 @@
           {
             "title": "NSG + Subnet Isolation",
             "description": "Standard network security",
-            "pros": [
-              "Simple to implement",
-              "Built-in Azure feature",
-              "No additional cost"
-            ],
-            "cons": [
-              "No application-layer inspection",
-              "Stateful rules only"
-            ],
+            "pros": ["Simple to implement", "Built-in Azure feature", "No additional cost"],
+            "cons": ["No application-layer inspection", "Stateful rules only"],
             "tags": ["Recommended baseline"]
           },
           {
             "title": "Azure Firewall",
             "description": "Managed firewall with FQDN filtering",
-            "pros": [
-              "Application-layer inspection",
-              "FQDN filtering",
-              "Threat intelligence"
-            ],
-            "cons": [
-              "Additional cost",
-              "More complex routing"
-            ],
+            "pros": ["Application-layer inspection", "FQDN filtering", "Threat intelligence"],
+            "cons": ["Additional cost", "More complex routing"],
             "tags": ["Advanced security"]
           },
           {
             "title": "Network Virtual Appliance",
             "description": "Third-party firewall VM",
-            "pros": [
-              "Full control",
-              "Advanced features",
-              "Legacy compatibility"
-            ],
-            "cons": [
-              "Management overhead",
-              "Scaling complexity"
-            ],
+            "pros": ["Full control", "Advanced features", "Legacy compatibility"],
+            "cons": ["Management overhead", "Scaling complexity"],
             "tags": ["Specialized requirements"]
           }
         ]

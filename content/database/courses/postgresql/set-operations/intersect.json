@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "intersect",
-    "intersect-all",
-    "set-operations",
-    "mathematical-sets"
-  ],
+  "tags": ["intersect", "intersect-all", "set-operations", "mathematical-sets"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "union",
-    "except"
-  ]
+  "relatedLessons": ["union", "except"]
 }

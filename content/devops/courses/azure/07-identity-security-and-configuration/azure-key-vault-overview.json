@@ -8,13 +8,7 @@
   "order": 11,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -49,27 +43,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Object",
-          "Use Case",
-          "Access Method"
-        ],
+        "headers": ["Object", "Use Case", "Access Method"],
         "rows": [
-          [
-            "Secret",
-            "Store a database password",
-            "Key Vault SDK or REST API"
-          ],
-          [
-            "Key",
-            "Encrypt data at rest",
-            "Azure SDK or Managed HSM"
-          ],
-          [
-            "Certificate",
-            "HTTPS for App Service",
-            "Key Vault certificate provider"
-          ]
+          ["Secret", "Store a database password", "Key Vault SDK or REST API"],
+          ["Key", "Encrypt data at rest", "Azure SDK or Managed HSM"],
+          ["Certificate", "HTTPS for App Service", "Key Vault certificate provider"]
         ]
       }
     },
@@ -123,11 +101,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tier",
-          "Key protection",
-          "Typical use"
-        ],
+        "headers": ["Tier", "Key protection", "Typical use"],
         "rows": [
           [
             "Standard",

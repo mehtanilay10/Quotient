@@ -1,10 +1,14 @@
-import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { ArrowRight, FileText } from 'lucide-react';
-import { SectionHeader } from '@/components/sections/SectionHeader';
-import { getCheatsheetModulesByCategory, getCategoryMeta, getNavigationCategories } from '@/lib/content';
-import { buildMetadata } from '@/lib/seo';
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight, FileText } from "lucide-react";
+import { SectionHeader } from "@/components/sections/SectionHeader";
+import {
+  getCheatsheetModulesByCategory,
+  getCategoryMeta,
+  getNavigationCategories,
+} from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
 
 interface Params {
   params: Promise<{ category: string }>;
@@ -12,7 +16,7 @@ interface Params {
 
 export async function generateStaticParams() {
   return getNavigationCategories()
-    .filter((cat) => cat.sections.some((s) => s.href.endsWith('/cheatsheets')))
+    .filter((cat) => cat.sections.some((s) => s.href.endsWith("/cheatsheets")))
     .map((cat) => ({ category: cat.key }));
 }
 
@@ -51,19 +55,22 @@ export default async function CategoryCheatsheetsPage({ params }: Params) {
             href={`/${category}/cheatsheets/${mod.slug}`}
             className="group flex flex-col gap-3 rounded-xl border border-border bg-canvas p-4 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5"
           >
-            <span className="text-3xl" aria-hidden="true">{mod.icon}</span>
+            <span className="text-3xl" aria-hidden="true">
+              {mod.icon}
+            </span>
             <h2 className="text-sm font-semibold text-fg-default group-hover:text-accent-fg transition-colors">
               {mod.title}
             </h2>
-            <p className="line-clamp-2 text-sm text-fg-muted flex-1">
-              {mod.description}
-            </p>
+            <p className="line-clamp-2 text-sm text-fg-muted flex-1">{mod.description}</p>
             <span className="flex items-center justify-between text-xs text-fg-subtle">
               <span className="flex items-center gap-1">
                 <FileText className="h-3.5 w-3.5" aria-hidden="true" />
                 {mod.lessonSlugs?.length ?? 1} sheet
               </span>
-              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+              <ArrowRight
+                className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
+                aria-hidden="true"
+              />
             </span>
           </Link>
         ))}

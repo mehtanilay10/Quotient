@@ -30,11 +30,7 @@
         "rows": [
           ["Instance profile", "EC2 instances", "Apps running directly on EC2"],
           ["Task role", "ECS tasks", "Containerized apps on ECS or Fargate"],
-          [
-            "Execution role",
-            "ECS tasks",
-            "Allows ECS to pull images and write logs"
-          ]
+          ["Execution role", "ECS tasks", "Allows ECS to pull images and write logs"]
         ]
       }
     },

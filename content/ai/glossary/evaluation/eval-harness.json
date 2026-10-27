@@ -6,11 +6,7 @@
   "fullDefinition": "An eval harness is the plumbing around an evaluation: the test cases, the code that invokes the model, the scoring logic, and the reporting. Its value is reproducibility. Without a harness, teams compare model versions by eyeballing a handful of outputs in a chat window, which is slow, subjective, and impossible to defend when a prompt change ships a regression. A good harness stores test cases as versioned data, runs them in batch, scores them automatically where possible, and records the model, prompt, and parameters for every run so results can be compared over time. The hard part is rarely the runner — it is choosing representative test cases and deciding how to score open-ended outputs.",
   "category": "evaluation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "evaluation",
-    "benchmark",
-    "human-evaluation"
-  ],
+  "relatedTerms": ["evaluation", "benchmark", "human-evaluation"],
   "examples": [
     "A folder of input/output pairs plus a script that reports pass rate per commit",
     "CI failing the build when the eval pass rate drops more than 2%",

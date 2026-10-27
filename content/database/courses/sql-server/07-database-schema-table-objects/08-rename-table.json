@@ -7,11 +7,7 @@
   "order": 8,
   "difficulty": "beginner",
   "estimatedMinutes": 33,
-  "tags": [
-    "rename-table",
-    "ddl",
-    "table"
-  ],
+  "tags": ["rename-table", "ddl", "table"],
   "blocks": [
     {
       "type": "heading",

@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "kafka",
-    "message-queue",
-    "partitions",
-    "replication"
-  ],
+  "tags": ["hld", "system-design", "kafka", "message-queue", "partitions", "replication"],
   "blocks": [
     {
       "type": "heading",

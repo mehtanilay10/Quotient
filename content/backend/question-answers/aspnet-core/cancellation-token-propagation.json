@@ -6,10 +6,7 @@
   "description": "Request-aborted tokens end to end: EF Core, HTTP calls, task orchestration, and graceful shutdown.",
   "order": 19,
   "difficulty": "advanced",
-  "tags": [
-    "aspnet-core",
-    "advanced"
-  ],
+  "tags": ["aspnet-core", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

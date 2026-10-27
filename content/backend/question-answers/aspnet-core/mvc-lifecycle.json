@@ -6,10 +6,7 @@
   "description": "Understand how an HTTP request flows through ASP.NET Core MVC.",
   "order": 9,
   "difficulty": "intermediate",
-  "tags": [
-    "ASP.NET Core",
-    "intermediate"
-  ],
+  "tags": ["ASP.NET Core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

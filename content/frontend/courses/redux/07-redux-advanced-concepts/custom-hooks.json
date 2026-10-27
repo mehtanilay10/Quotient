@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "hooks",
-    "reusable",
-    "react"
-  ],
+  "tags": ["redux", "hooks", "reusable", "react"],
   "blocks": [
     {
       "type": "paragraph",
@@ -108,17 +103,12 @@
               "Zero nesting — just call and destructure",
               "Tree-shakeable and easy to test"
             ],
-            "cons": [
-              "Must follow Rules of Hooks"
-            ]
+            "cons": ["Must follow Rules of Hooks"]
           },
           {
             "title": "Higher-Order Component",
             "description": "Wraps a component, passing store data as props.",
-            "pros": [
-              "Works in class components",
-              "Familiar pattern from older React"
-            ],
+            "pros": ["Works in class components", "Familiar pattern from older React"],
             "cons": [
               "Adds extra nesting (prop drilling through wrappers)",
               "Harder to compose multiple HOCs",
@@ -128,15 +118,8 @@
           {
             "title": "Render Props",
             "description": "Component accepts a function as a child and calls it with store data.",
-            "pros": [
-              "Very flexible — full control of render",
-              "Works without hooks"
-            ],
-            "cons": [
-              "Awkward JSX",
-              "Easy to overuse",
-              "Mostly replaced by hooks"
-            ]
+            "pros": ["Very flexible — full control of render", "Works without hooks"],
+            "cons": ["Awkward JSX", "Easy to overuse", "Mostly replaced by hooks"]
           }
         ]
       }

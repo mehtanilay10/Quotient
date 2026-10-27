@@ -6,20 +6,12 @@
   "fullDefinition": "Text-to-Speech (TTS) is AI technology that synthesizes natural-sounding speech from written text. Modern TTS systems use neural networks to produce voices that are nearly indistinguishable from human speech, with appropriate intonation, pacing, and emotional expression. Advances like WaveNet, VALL-E, and ElevenLabs have made it possible to clone voices, generate speech in multiple languages, and produce real-time narration. TTS is essential for accessibility \u2014 enabling visually impaired users to consume digital content \u2014 and is widely used in voice assistants, audiobook production, video narration, and customer service IVR systems.",
   "category": "multimodal",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "speech-recognition",
-    "multimodal-ai",
-    "voice"
-  ],
+  "relatedTerms": ["speech-recognition", "multimodal-ai", "voice"],
   "learnMoreSlug": "voice-and-video-ai",
   "examples": [
     "A screen reader reading website content for a visually impaired user",
     "A narrator converting an e-book into an audiobook",
     "An IVR system speaking bank account information over the phone"
   ],
-  "alsoKnownAs": [
-    "TTS",
-    "Speech Synthesis",
-    "Voice Generation"
-  ]
+  "alsoKnownAs": ["TTS", "Speech Synthesis", "Voice Generation"]
 }

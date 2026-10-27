@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "migration",
-    "axios",
-    "custom-hooks",
-    "refactoring",
-    "best-practices"
-  ],
+  "tags": ["migration", "axios", "custom-hooks", "refactoring", "best-practices"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,10 +31,7 @@
           {
             "title": "useState + useEffect",
             "description": "Manual data fetching with local state management.",
-            "pros": [
-              "Simple for small cases",
-              "No new dependencies"
-            ],
+            "pros": ["Simple for small cases", "No new dependencies"],
             "cons": [
               "No caching",
               "No deduplication",
@@ -51,10 +42,7 @@
           {
             "title": "Custom fetch hooks",
             "description": "Reusable hooks that wrap fetch or Axios.",
-            "pros": [
-              "Reusable logic",
-              "Centralized config"
-            ],
+            "pros": ["Reusable logic", "Centralized config"],
             "cons": [
               "Still manual caching",
               "Hard to share between components",
@@ -71,10 +59,7 @@
               "Devtools",
               "Type-safe"
             ],
-            "cons": [
-              "Learning curve",
-              "Additional dependency"
-            ]
+            "cons": ["Learning curve", "Additional dependency"]
           }
         ]
       }
@@ -233,7 +218,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "use-query"
-  ]
+  "prerequisites": ["use-query"]
 }

@@ -32,37 +32,21 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Dependency type",
-          "Impact if unavailable",
-          "Typical mitigation"
-        ],
+        "headers": ["Dependency type", "Impact if unavailable", "Typical mitigation"],
         "rows": [
           [
             "Synchronous API (direct call)",
             "Request fails or times out",
             "Circuit breaker, fallback, timeout"
           ],
-          [
-            "Database",
-            "Read/write path blocked",
-            "Replica failover, cached reads, queue writes"
-          ],
-          [
-            "Message broker",
-            "Async events stop flowing",
-            "Persistent queue, outbox, retry buffer"
-          ],
+          ["Database", "Read/write path blocked", "Replica failover, cached reads, queue writes"],
+          ["Message broker", "Async events stop flowing", "Persistent queue, outbox, retry buffer"],
           [
             "Third-party payment gateway",
             "Checkout blocked",
             "Graceful degradation, deferred payment"
           ],
-          [
-            "CDN / image service",
-            "Assets missing or slow",
-            "Origin fallback, placeholder images"
-          ]
+          ["CDN / image service", "Assets missing or slow", "Origin fallback, placeholder images"]
         ]
       }
     },

@@ -228,11 +228,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "whatsapp-chat-hld",
-    "slack-messaging-hld",
-    "notification-system"
-  ],
+  "relatedLessons": ["whatsapp-chat-hld", "slack-messaging-hld", "notification-system"],
   "furtherReading": [
     {
       "title": "Discord: How Discord Scaled to 15 Million Concurrent Users",

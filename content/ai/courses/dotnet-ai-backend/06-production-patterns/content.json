@@ -16,12 +16,7 @@
     "token-counting-and-usage"
   ],
   "difficulty": "advanced",
-  "tags": [
-    "production",
-    "observability",
-    "evaluation",
-    "deployment"
-  ],
+  "tags": ["production", "observability", "evaluation", "deployment"],
   "icon": "🚀",
   "estimatedHours": 5.5,
   "whatYouLearn": [

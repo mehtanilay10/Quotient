@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "saga",
-    "async",
-    "middleware"
-  ],
+  "tags": ["redux", "saga", "async", "middleware"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,57 +68,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Effect",
-          "Purpose",
-          "Example"
-        ],
+        "headers": ["Effect", "Purpose", "Example"],
         "rows": [
-          [
-            "call",
-            "Invoke a function",
-            "yield call(api.fetchUser, id)"
-          ],
-          [
-            "put",
-            "Dispatch an action",
-            "yield put({ type: 'FETCHED', payload })"
-          ],
-          [
-            "select",
-            "Read from state",
-            "yield select(state => state.users)"
-          ],
-          [
-            "take",
-            "Wait for an action",
-            "yield take('FETCH_USER')"
-          ],
-          [
-            "takeEvery",
-            "Run on every action",
-            "yield takeEvery('*', handler)"
-          ],
-          [
-            "takeLatest",
-            "Cancel previous",
-            "yield takeLatest('*', handler)"
-          ],
-          [
-            "fork",
-            "Start non-blocking",
-            "yield fork(task)"
-          ],
-          [
-            "cancel",
-            "Cancel a task",
-            "yield cancel(task)"
-          ],
-          [
-            "all",
-            "Run in parallel",
-            "yield all([call1, call2])"
-          ]
+          ["call", "Invoke a function", "yield call(api.fetchUser, id)"],
+          ["put", "Dispatch an action", "yield put({ type: 'FETCHED', payload })"],
+          ["select", "Read from state", "yield select(state => state.users)"],
+          ["take", "Wait for an action", "yield take('FETCH_USER')"],
+          ["takeEvery", "Run on every action", "yield takeEvery('*', handler)"],
+          ["takeLatest", "Cancel previous", "yield takeLatest('*', handler)"],
+          ["fork", "Start non-blocking", "yield fork(task)"],
+          ["cancel", "Cancel a task", "yield cancel(task)"],
+          ["all", "Run in parallel", "yield all([call1, call2])"]
         ]
       }
     },

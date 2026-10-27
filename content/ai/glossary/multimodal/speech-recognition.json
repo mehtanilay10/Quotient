@@ -6,21 +6,12 @@
   "fullDefinition": "Speech Recognition, also called Automatic Speech Recognition (ASR), is the technology that converts spoken language into written text. Modern ASR systems use deep learning models to transform audio waveforms into transcriptions with increasing accuracy across accents, languages, and noisy environments. These systems power voice assistants like Siri and Alexa, real-time captioning for videos, voice dictation in documents, and accessibility features for users who cannot type. The technology has improved dramatically with the advent of large-scale models like Whisper from OpenAI, which can transcribe speech in dozens of languages and handle challenging audio conditions.",
   "category": "multimodal",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "text-to-speech",
-    "multimodal-ai",
-    "whisper"
-  ],
+  "relatedTerms": ["text-to-speech", "multimodal-ai", "whisper"],
   "learnMoreSlug": "voice-and-video-ai",
   "examples": [
     "Real-time captions generated during a video conference call",
     "Voice dictation converting spoken meeting notes into a shared document",
     "A voice assistant transcribing a user's spoken query to search the web"
   ],
-  "alsoKnownAs": [
-    "ASR",
-    "Automatic Speech Recognition",
-    "Speech-to-Text",
-    "STT"
-  ]
+  "alsoKnownAs": ["ASR", "Automatic Speech Recognition", "Speech-to-Text", "STT"]
 }

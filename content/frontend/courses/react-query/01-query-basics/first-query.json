@@ -8,18 +8,8 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "useQuery",
-    "fetching",
-    "data",
-    "loading",
-    "error-handling"
-  ],
-  "prerequisites": [
-    "query-client",
-    "setup"
-  ],
+  "tags": ["react-query", "useQuery", "fetching", "data", "loading", "error-handling"],
+  "prerequisites": ["query-client", "setup"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,57 +57,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Property",
-          "Type",
-          "Description"
-        ],
+        "headers": ["Property", "Type", "Description"],
         "rows": [
-          [
-            "data",
-            "T | undefined",
-            "The resolved data, undefined until the query succeeds"
-          ],
-          [
-            "isLoading",
-            "boolean",
-            "True on the very first render with no cache data"
-          ],
-          [
-            "isPending",
-            "boolean",
-            "Alias for isLoading in v5 â€” same meaning"
-          ],
-          [
-            "isError",
-            "boolean",
-            "True when the query has errored"
-          ],
-          [
-            "error",
-            "Error | null",
-            "The error object if isError is true"
-          ],
-          [
-            "isFetching",
-            "boolean",
-            "True whenever a fetch is in progress (including refetches)"
-          ],
-          [
-            "isSuccess",
-            "boolean",
-            "True after the query succeeds at least once"
-          ],
-          [
-            "dataUpdatedAt",
-            "number",
-            "Timestamp (ms) when data was last updated"
-          ],
-          [
-            "isFetched",
-            "boolean",
-            "True after the query has been fetched at least once"
-          ]
+          ["data", "T | undefined", "The resolved data, undefined until the query succeeds"],
+          ["isLoading", "boolean", "True on the very first render with no cache data"],
+          ["isPending", "boolean", "Alias for isLoading in v5 â€” same meaning"],
+          ["isError", "boolean", "True when the query has errored"],
+          ["error", "Error | null", "The error object if isError is true"],
+          ["isFetching", "boolean", "True whenever a fetch is in progress (including refetches)"],
+          ["isSuccess", "boolean", "True after the query succeeds at least once"],
+          ["dataUpdatedAt", "number", "Timestamp (ms) when data was last updated"],
+          ["isFetched", "boolean", "True after the query has been fetched at least once"]
         ]
       }
     },

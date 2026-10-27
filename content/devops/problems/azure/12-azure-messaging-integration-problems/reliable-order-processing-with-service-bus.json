@@ -91,34 +91,21 @@
               "Queue never blocks on one bad message",
               "Failure payload retained for replay"
             ],
-            "cons": [
-              "Requires a stable natural key",
-              "DLQ needs monitoring and a replay path"
-            ],
+            "cons": ["Requires a stable natural key", "DLQ needs monitoring and a replay path"],
             "tags": ["Recommended", "Business critical"]
           },
           {
             "title": "Infinite retry with abandon",
             "description": "Keep retrying until it works",
-            "pros": [
-              "No lost messages"
-            ],
-            "cons": [
-              "One poison message blocks the queue",
-              "Side effects repeat every attempt"
-            ],
+            "pros": ["No lost messages"],
+            "cons": ["One poison message blocks the queue", "Side effects repeat every attempt"],
             "tags": ["Never for payment flows"]
           },
           {
             "title": "Complete-then-log-on-failure",
             "description": "Ack first, log the error",
-            "pros": [
-              "Queue never backs up"
-            ],
-            "cons": [
-              "Silent data loss",
-              "No retry for transient faults"
-            ],
+            "pros": ["Queue never backs up"],
+            "cons": ["Silent data loss", "No retry for transient faults"],
             "tags": ["Never"]
           }
         ]

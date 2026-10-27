@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "asp.net core",
-    "imemorycache",
-    "in-memory",
-    "caching"
-  ],
+  "tags": ["asp.net core", "imemorycache", "in-memory", "caching"],
   "blocks": [
     {
       "type": "heading",

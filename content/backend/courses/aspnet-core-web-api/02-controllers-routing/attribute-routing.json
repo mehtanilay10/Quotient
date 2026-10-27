@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 33,
-  "tags": [
-    "web-api",
-    "attribute-routing",
-    "routes",
-    "tokens"
-  ],
+  "tags": ["web-api", "attribute-routing", "routes", "tokens"],
   "blocks": [
     {
       "type": "paragraph",
@@ -45,32 +40,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Token",
-          "Replaced With",
-          "Example"
-        ],
+        "headers": ["Token", "Replaced With", "Example"],
         "rows": [
-          [
-            "[controller]",
-            "Controller name (no suffix)",
-            "api/[controller] -> api/users"
-          ],
-          [
-            "[action]",
-            "Action method name",
-            "[action] -> GetById"
-          ],
-          [
-            "{id}",
-            "Route parameter",
-            "users/{id} -> users/5"
-          ],
-          [
-            "{*slug}",
-            "Catch-all parameter",
-            "files/{*slug}"
-          ]
+          ["[controller]", "Controller name (no suffix)", "api/[controller] -> api/users"],
+          ["[action]", "Action method name", "[action] -> GetById"],
+          ["{id}", "Route parameter", "users/{id} -> users/5"],
+          ["{*slug}", "Catch-all parameter", "files/{*slug}"]
         ]
       }
     },
@@ -165,9 +140,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "routing-basics",
-    "route-constraints"
-  ],
+  "relatedLessons": ["routing-basics", "route-constraints"],
   "courseSlug": "aspnet-core-web-api"
 }

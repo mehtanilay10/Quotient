@@ -6,13 +6,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "playwright",
-    "testing",
-    "e2e",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["playwright", "testing", "e2e", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

@@ -96,13 +96,24 @@
           {
             "title": "Grafana Tempo + Loki",
             "description": "Open-source trace and log backend with M3 or Prometheus metrics.",
-            "pros": ["Open-source", "Unified query via LogQL and TraceQL", "Cost-effective at scale"],
-            "cons": ["Self-hosted operational overhead", "Correlation requires explicit configuration"]
+            "pros": [
+              "Open-source",
+              "Unified query via LogQL and TraceQL",
+              "Cost-effective at scale"
+            ],
+            "cons": [
+              "Self-hosted operational overhead",
+              "Correlation requires explicit configuration"
+            ]
           },
           {
             "title": "Datadog APM",
             "description": "Hosted observability platform with automatic instrumentation and correlation.",
-            "pros": ["Fast setup with auto-instrumentation", "Unified search across logs, metrics, traces", "Built-in service map"],
+            "pros": [
+              "Fast setup with auto-instrumentation",
+              "Unified search across logs, metrics, traces",
+              "Built-in service map"
+            ],
             "cons": ["Expensive at high volume", "Vendor lock-in"]
           },
           {

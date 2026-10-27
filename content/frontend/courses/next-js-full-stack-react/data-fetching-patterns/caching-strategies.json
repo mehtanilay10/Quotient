@@ -141,9 +141,19 @@
       }
     }
   ],
-  "relatedLessons": ["server-components-data-fetching", "revalidation-patterns", "streaming-and-suspense"],
+  "relatedLessons": [
+    "server-components-data-fetching",
+    "revalidation-patterns",
+    "streaming-and-suspense"
+  ],
   "furtherReading": [
-    { "title": "Next.js Caching Documentation", "url": "https://nextjs.org/docs/app/building-your-application/caching" },
-    { "title": "Next.js Fetch Caching Options", "url": "https://nextjs.org/docs/app/api-reference/functions/fetch" }
+    {
+      "title": "Next.js Caching Documentation",
+      "url": "https://nextjs.org/docs/app/building-your-application/caching"
+    },
+    {
+      "title": "Next.js Fetch Caching Options",
+      "url": "https://nextjs.org/docs/app/api-reference/functions/fetch"
+    }
   ]
 }

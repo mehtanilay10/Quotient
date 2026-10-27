@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { CheckCircle2, Circle, ArrowRight } from 'lucide-react';
-import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
-import { ReadingTimeBadge } from '@/components/ui/ReadingTimeBadge';
-import { usePreferencesContext } from '@/components/user/PreferencesProvider';
-import { useProgress } from '@/hooks/useProgress';
-import { cn } from '@/lib/utils';
-import type { LessonNavItem, ProgressCategory } from '@/types';
+import Link from "next/link";
+import { CheckCircle2, Circle, ArrowRight } from "lucide-react";
+import { DifficultyBadge } from "@/components/ui/DifficultyBadge";
+import { ReadingTimeBadge } from "@/components/ui/ReadingTimeBadge";
+import { usePreferencesContext } from "@/components/user/PreferencesProvider";
+import { useProgress } from "@/hooks/useProgress";
+import { cn } from "@/lib/utils";
+import type { LessonNavItem, ProgressCategory } from "@/types";
 
 interface LessonCardProps {
   lesson: LessonNavItem;
@@ -19,19 +19,19 @@ interface LessonCardProps {
   /** Which progress bucket to read when `isCompleted` is not supplied. */
   progressCategory?: ProgressCategory;
   className?: string;
-  variant?: 'default' | 'list';
+  variant?: "default" | "list";
 }
 
 export function LessonCard({
   lesson,
   moduleSlug,
   courseSlug,
-  basePrefix = 'courses',
+  basePrefix = "courses",
   isCompleted,
   isCurrent = false,
-  progressCategory = 'lessons',
+  progressCategory = "lessons",
   className,
-  variant = 'list',
+  variant = "list",
 }: LessonCardProps) {
   const { preferences, mounted } = usePreferencesContext();
   const { isCompleted: checkCompleted } = useProgress();
@@ -48,15 +48,15 @@ export function LessonCard({
   const lessonHref = courseSlug
     ? `/${basePrefix}/${courseSlug}/${moduleSlug}/${lesson.slug}`
     : `/${basePrefix}/${moduleSlug}/${lesson.slug}`;
-  if (variant === 'list') {
+  if (variant === "list") {
     return (
       <Link
         href={lessonHref}
         className={cn(
-          'group flex items-center gap-3 rounded-lg border border-border bg-canvas p-3',
-          'transition-all hover:border-accent-fg hover:shadow-sm dark:bg-canvas-subtle',
-          isCurrent && 'border-accent-fg bg-accent-subtle dark:bg-accent-subtle',
-          completed && 'opacity-80',
+          "group flex items-center gap-3 rounded-lg border border-border bg-canvas p-3",
+          "transition-all hover:border-accent-fg hover:shadow-sm dark:bg-canvas-subtle",
+          isCurrent && "border-accent-fg bg-accent-subtle dark:bg-accent-subtle",
+          completed && "opacity-80",
           className
         )}
       >
@@ -66,13 +66,21 @@ export function LessonCard({
           <Circle className="h-4 w-4 shrink-0 text-fg-subtle" aria-hidden="true" />
         )}
         <div className="flex-1 min-w-0">
-          <p className={cn('truncate text-sm font-medium', isCurrent ? 'text-accent-fg' : 'text-fg-default')}>
+          <p
+            className={cn(
+              "truncate text-sm font-medium",
+              isCurrent ? "text-accent-fg" : "text-fg-default"
+            )}
+          >
             {lesson.title}
           </p>
         </div>
         <div className="flex items-center gap-2 shrink-0">
           <ReadingTimeBadge minutes={lesson.estimatedMinutes} />
-          <ArrowRight className="h-3.5 w-3.5 text-fg-subtle group-hover:text-accent-fg transition-colors" aria-hidden="true" />
+          <ArrowRight
+            className="h-3.5 w-3.5 text-fg-subtle group-hover:text-accent-fg transition-colors"
+            aria-hidden="true"
+          />
         </div>
       </Link>
     );
@@ -82,9 +90,9 @@ export function LessonCard({
     <Link
       href={lessonHref}
       className={cn(
-        'group flex flex-col rounded-xl border border-border bg-canvas p-4',
-        'transition-all hover:border-accent-fg hover:shadow-md dark:bg-canvas-subtle',
-        completed && 'opacity-85',
+        "group flex flex-col rounded-xl border border-border bg-canvas p-4",
+        "transition-all hover:border-accent-fg hover:shadow-md dark:bg-canvas-subtle",
+        completed && "opacity-85",
         className
       )}
     >
@@ -107,7 +115,7 @@ export function LessonCard({
 
       {lesson.isOptional && (
         <span className="mt-2 text-xs text-fg-subtle italic">
-          Optional — {lesson.skipLabel ?? 'can skip if short on time'}
+          Optional — {lesson.skipLabel ?? "can skip if short on time"}
         </span>
       )}
     </Link>

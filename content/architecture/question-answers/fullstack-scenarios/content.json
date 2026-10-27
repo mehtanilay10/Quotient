@@ -8,11 +8,7 @@
   "difficulty": "advanced",
   "estimatedHours": 2.8,
   "icon": "🧩",
-  "tags": [
-    "interview",
-    "full-stack",
-    "scenarios"
-  ],
+  "tags": ["interview", "full-stack", "scenarios"],
   "lessonSlugs": [
     "scenario-q23",
     "scenario-q24",

@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "having",
-    "where",
-    "group-by",
-    "filtering",
-    "aggregates"
-  ],
+  "tags": ["having", "where", "group-by", "filtering", "aggregates"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,8 +76,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "group-by",
-    "aggregate-functions"
-  ]
+  "relatedLessons": ["group-by", "aggregate-functions"]
 }

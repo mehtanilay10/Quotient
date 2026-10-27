@@ -7,17 +7,8 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "privacy",
-    "data",
-    "security",
-    "enterprise",
-    "sensitive"
-  ],
-  "relatedGlossaryTerms": [
-    "training-data",
-    "prompt"
-  ],
+  "tags": ["privacy", "data", "security", "enterprise", "sensitive"],
+  "relatedGlossaryTerms": ["training-data", "prompt"],
   "blocks": [
     {
       "type": "paragraph",
@@ -54,11 +45,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool",
-          "Default data use",
-          "How to opt out / protect yourself"
-        ],
+        "headers": ["Tool", "Default data use", "How to opt out / protect yourself"],
         "rows": [
           [
             "ChatGPT Free",
@@ -124,42 +111,18 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Data type",
-          "Replace with",
-          "Example"
-        ],
+        "headers": ["Data type", "Replace with", "Example"],
         "rows": [
-          [
-            "Person names",
-            "[PERSON A], [PERSON B]",
-            "\"John Smith\" → [PERSON A]"
-          ],
-          [
-            "Company names",
-            "[COMPANY]",
-            "\"Acme Corp\" → [COMPANY]"
-          ],
-          [
-            "Specific dollar amounts",
-            "rounded or %",
-            "\"$847,329\" → \"approximately $850K\""
-          ],
-          [
-            "Account numbers",
-            "[ACCOUNT]",
-            "\"ACC-4872\" → [ACCOUNT]"
-          ],
+          ["Person names", "[PERSON A], [PERSON B]", "\"John Smith\" → [PERSON A]"],
+          ["Company names", "[COMPANY]", "\"Acme Corp\" → [COMPANY]"],
+          ["Specific dollar amounts", "rounded or %", "\"$847,329\" → \"approximately $850K\""],
+          ["Account numbers", "[ACCOUNT]", "\"ACC-4872\" → [ACCOUNT]"],
           [
             "Dates that reveal projects",
             "relative dates",
             "\"March 14, 2024\" → \"Q1 of this year\""
           ],
-          [
-            "Email addresses",
-            "[EMAIL]",
-            "\"user@company.com\" → [EMAIL]"
-          ]
+          ["Email addresses", "[EMAIL]", "\"user@company.com\" → [EMAIL]"]
         ]
       }
     },
@@ -192,11 +155,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Time window",
-          "Action",
-          "Goal"
-        ],
+        "headers": ["Time window", "Action", "Goal"],
         "rows": [
           [
             "First 15 minutes",
@@ -272,10 +231,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "critical-evaluation",
-    "local-ai-options"
-  ],
+  "relatedLessons": ["critical-evaluation", "local-ai-options"],
   "furtherReading": [
     {
       "title": "OpenAI Privacy Policy",

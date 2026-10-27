@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "redux",
-    "provider",
-    "store"
-  ],
+  "tags": ["react", "redux", "provider", "store"],
   "blocks": [
     {
       "type": "paragraph",
@@ -79,37 +74,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Prop",
-          "Type",
-          "Required",
-          "Description"
-        ],
+        "headers": ["Prop", "Type", "Required", "Description"],
         "rows": [
-          [
-            "store",
-            "ReduxStore",
-            "Yes",
-            "The Redux store to expose"
-          ],
-          [
-            "children",
-            "ReactNode",
-            "Yes",
-            "Child components that need store access"
-          ],
-          [
-            "context",
-            "ReactContext",
-            "No",
-            "Custom context for multiple stores"
-          ],
-          [
-            "serverState",
-            "object",
-            "No",
-            "Initial state for server-side rendering"
-          ]
+          ["store", "ReduxStore", "Yes", "The Redux store to expose"],
+          ["children", "ReactNode", "Yes", "Child components that need store access"],
+          ["context", "ReactContext", "No", "Custom context for multiple stores"],
+          ["serverState", "object", "No", "Initial state for server-side rendering"]
         ]
       }
     },

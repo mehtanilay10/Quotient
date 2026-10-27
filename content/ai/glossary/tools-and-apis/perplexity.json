@@ -6,11 +6,7 @@
   "fullDefinition": "Perplexity is an AI search tool that combines real-time web search with LLM-generated answers, citing sources for every claim. It dramatically reduces hallucination risk on factual questions compared to LLM-only tools. Perplexity has become a widely used research tool for both individuals and professionals who need verified, sourced information quickly.",
   "category": "tools-and-apis",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "rag",
-    "grounding",
-    "hallucination"
-  ],
+  "relatedTerms": ["rag", "grounding", "hallucination"],
   "examples": [
     "Asking \"What is the current inflation rate?\" — Perplexity retrieves and cites real data",
     "Deep Research mode: Perplexity autonomously researches a topic across many sources"

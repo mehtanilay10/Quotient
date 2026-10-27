@@ -7,17 +7,8 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "mcp",
-    "protocol",
-    "tool-calling",
-    "integration"
-  ],
-  "relatedGlossaryTerms": [
-    "mcp",
-    "tool-calling",
-    "agent"
-  ],
+  "tags": ["mcp", "protocol", "tool-calling", "integration"],
+  "relatedGlossaryTerms": ["mcp", "tool-calling", "agent"],
   "blocks": [
     {
       "type": "paragraph",
@@ -100,11 +91,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "MCP primitive",
-          "What it is",
-          "Example"
-        ],
+        "headers": ["MCP primitive", "What it is", "Example"],
         "rows": [
           [
             "Tool",
@@ -185,11 +172,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Category",
-          "Example MCP servers",
-          "What the AI can do"
-        ],
+        "headers": ["Category", "Example MCP servers", "What the AI can do"],
         "rows": [
           [
             "Development tools",
@@ -332,10 +315,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ai-skills-explained",
-    "what-are-agents"
-  ],
+  "relatedLessons": ["ai-skills-explained", "what-are-agents"],
   "furtherReading": [
     {
       "title": "Model Context Protocol — Official Docs",

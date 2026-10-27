@@ -8,13 +8,7 @@
   "order": 15,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "React",
-    "Server Components",
-    "Next.js",
-    "RSC",
-    "Architecture"
-  ],
+  "tags": ["React", "Server Components", "Next.js", "RSC", "Architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -121,11 +115,7 @@
               "Cannot handle user events",
               "Every request runs server code (cost, latency)"
             ],
-            "tags": [
-              "default",
-              "SSR",
-              "data fetching"
-            ]
+            "tags": ["default", "SSR", "data fetching"]
           },
           {
             "title": "Client Component",
@@ -140,11 +130,7 @@
               "Cannot directly access server resources",
               "Boundary pulls in all children into the client bundle"
             ],
-            "tags": [
-              "interactive",
-              "events",
-              "hooks"
-            ]
+            "tags": ["interactive", "events", "hooks"]
           }
         ]
       }

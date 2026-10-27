@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "useState",
-    "useEffect",
-    "hooks",
-    "react"
-  ],
+  "tags": ["useState", "useEffect", "hooks", "react"],
   "prerequisites": [],
   "relatedLessons": [],
   "furtherReading": [],

@@ -86,38 +86,21 @@
               "OAuth/API key auth",
               "Analytics and monitoring"
             ],
-            "cons": [
-              "APIM cost ($) for high traffic",
-              "Additional configuration"
-            ],
+            "cons": ["APIM cost ($) for high traffic", "Additional configuration"],
             "tags": ["Recommended", "Production"]
           },
           {
             "title": "Functions + Azure Front Door",
             "description": "Global serverless API with CDN",
-            "pros": [
-              "Global load balancing",
-              "WAF protection",
-              "Edge caching"
-            ],
-            "cons": [
-              "No API management features",
-              "HTTP-only routing"
-            ],
+            "pros": ["Global load balancing", "WAF protection", "Edge caching"],
+            "cons": ["No API management features", "HTTP-only routing"],
             "tags": ["Global apps", "Static + API"]
           },
           {
             "title": "App Service Web API",
             "description": "Traditional hosted API",
-            "pros": [
-              "Always warm",
-              "Full .NET hosting",
-              "Simple deployment"
-            ],
-            "cons": [
-              "Always-on cost",
-              "Manual scaling config"
-            ],
+            "pros": ["Always warm", "Full .NET hosting", "Simple deployment"],
+            "cons": ["Always-on cost", "Manual scaling config"],
             "tags": ["Traditional", "Predictable traffic"]
           }
         ]

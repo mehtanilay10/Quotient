@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "rls",
-    "row-level-security",
-    "multi-tenancy",
-    "policies"
-  ],
+  "tags": ["rls", "row-level-security", "multi-tenancy", "policies"],
   "blocks": [
     {
       "type": "paragraph",
@@ -79,8 +74,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "roles-privileges",
-    "auditing"
-  ]
+  "relatedLessons": ["roles-privileges", "auditing"]
 }

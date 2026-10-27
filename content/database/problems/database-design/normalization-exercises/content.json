@@ -10,5 +10,11 @@
   "estimatedHours": 3,
   "icon": "📊",
   "tags": ["database", "normalization", "sql", "design"],
-  "lessonSlugs": ["1nf-exercises", "2nf-exercises", "3nf-exercises", "bcnf-exercises", "denormalization-trade-offs"]
+  "lessonSlugs": [
+    "1nf-exercises",
+    "2nf-exercises",
+    "3nf-exercises",
+    "bcnf-exercises",
+    "denormalization-trade-offs"
+  ]
 }

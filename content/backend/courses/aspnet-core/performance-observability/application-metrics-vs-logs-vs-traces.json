@@ -26,31 +26,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pillar",
-          "Best For",
-          "Retention",
-          "Cost"
-        ],
+        "headers": ["Pillar", "Best For", "Retention", "Cost"],
         "rows": [
-          [
-            "Metrics",
-            "Trends, alerts, dashboards",
-            "Short-term (days-weeks)",
-            "Low"
-          ],
-          [
-            "Logs",
-            "Error details, audit trails",
-            "Medium-term (weeks-months)",
-            "Medium"
-          ],
-          [
-            "Traces",
-            "Request flows across services",
-            "Short-term (days)",
-            "High"
-          ]
+          ["Metrics", "Trends, alerts, dashboards", "Short-term (days-weeks)", "Low"],
+          ["Logs", "Error details, audit trails", "Medium-term (weeks-months)", "Medium"],
+          ["Traces", "Request flows across services", "Short-term (days)", "High"]
         ]
       }
     },

@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "connection-pooling",
-    "redis",
-    "performance",
-    "nodejs",
-    "scaling"
-  ],
+  "tags": ["connection-pooling", "redis", "performance", "nodejs", "scaling"],
   "blocks": [
     {
       "type": "paragraph",
@@ -81,16 +75,20 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "Pool Size",
-          "Notes"
-        ],
+        "headers": ["Scenario", "Pool Size", "Notes"],
         "rows": [
           ["Single process, 4 CPU cores", "4-8", "Match to concurrent async handlers"],
           ["10 app servers", "5-10 per server", "Total 50-100 connections to Redis"],
-          ["Serverless (Lambda)", "2-3 per function", "Warm containers share pools across invocations"],
-          ["Redis Cluster (6 nodes)", "10-20 per shard", "ioredis distributes across slots automatically"]
+          [
+            "Serverless (Lambda)",
+            "2-3 per function",
+            "Warm containers share pools across invocations"
+          ],
+          [
+            "Redis Cluster (6 nodes)",
+            "10-20 per shard",
+            "ioredis distributes across slots automatically"
+          ]
         ]
       }
     },

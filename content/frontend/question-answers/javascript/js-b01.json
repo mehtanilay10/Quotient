@@ -6,10 +6,7 @@
   "description": "Understand primitives and reference types.",
   "order": 2,
   "difficulty": "beginner",
-  "tags": [
-    "javascript",
-    "beginner"
-  ],
+  "tags": ["javascript", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

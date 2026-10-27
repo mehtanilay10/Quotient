@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "react-window",
-    "virtualization",
-    "large-lists",
-    "performance"
-  ],
+  "tags": ["react-window", "virtualization", "large-lists", "performance"],
   "prerequisites": [],
   "relatedLessons": [],
   "furtherReading": [],

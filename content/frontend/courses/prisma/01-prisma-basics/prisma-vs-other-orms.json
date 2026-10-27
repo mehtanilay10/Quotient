@@ -8,14 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "orm",
-    "comparison",
-    "typeorm",
-    "drizzle",
-    "sql"
-  ],
+  "tags": ["prisma", "orm", "comparison", "typeorm", "drizzle", "sql"],
   "blocks": [
     {
       "type": "paragraph",
@@ -33,13 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature / Tool",
-          "Prisma",
-          "Drizzle ORM",
-          "TypeORM",
-          "Raw SQL (`pg`)"
-        ],
+        "headers": ["Feature / Tool", "Prisma", "Drizzle ORM", "TypeORM", "Raw SQL (`pg`)"],
         "rows": [
           [
             "Primary Philosophy",
@@ -110,11 +97,7 @@
               "Engine binary adds to bundle size",
               "Complex analytical queries require raw SQL escape hatch"
             ],
-            "tags": [
-              "Next.js",
-              "Fullstack",
-              "Productivity"
-            ]
+            "tags": ["Next.js", "Fullstack", "Productivity"]
           },
           {
             "title": "Drizzle ORM (SQL-First & Minimalist)",
@@ -128,11 +111,7 @@
               "More manual relation configuration",
               "Younger ecosystem and fewer community plugins"
             ],
-            "tags": [
-              "Edge Runtimes",
-              "Performance",
-              "SQL Lovers"
-            ]
+            "tags": ["Edge Runtimes", "Performance", "SQL Lovers"]
           },
           {
             "title": "TypeORM (Traditional OOP)",
@@ -145,11 +124,7 @@
               "TypeScript types often drift from actual database schema",
               "Maintenance and bug backlog concerns"
             ],
-            "tags": [
-              "Enterprise",
-              "NestJS",
-              "OOP"
-            ]
+            "tags": ["Enterprise", "NestJS", "OOP"]
           }
         ]
       }
@@ -207,8 +182,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-prisma",
-    "installing-prisma-in-nextjs"
-  ]
+  "relatedLessons": ["what-is-prisma", "installing-prisma-in-nextjs"]
 }

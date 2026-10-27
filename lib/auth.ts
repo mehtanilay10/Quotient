@@ -1,5 +1,5 @@
-import { auth } from '@/auth';
-import { redirect } from 'next/navigation';
+import { auth } from "@/auth";
+import { redirect } from "next/navigation";
 
 export async function getCurrentUser() {
   const session = await auth();
@@ -12,7 +12,7 @@ export async function getCurrentUser() {
 export async function requireAuth() {
   const user = await getCurrentUser();
   if (!user) {
-    redirect('/login');
+    redirect("/login");
   }
   return user;
 }

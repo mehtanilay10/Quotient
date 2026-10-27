@@ -1,58 +1,52 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components/ui/ThemeProvider';
-import { PWARegistration } from '@/components/ui/PWARegistration';
-import { ContinuePrompt } from '@/components/ui/ContinuePrompt';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
-import { getNavigationCategories } from '@/lib/content';
-import { SkipLink } from '@/components/ui/SkipLink';
-import { OfflineIndicator } from '@/components/ui/OfflineIndicator';
-import { AuthProvider } from '@/components/auth/AuthProvider';
-import { PreferencesProvider } from '@/components/user/PreferencesProvider';
-import { ErrorBoundaryWrapper } from '@/components/app/ErrorBoundaryWrapper';
-import { ProgressProvider } from '@/components/progress/ProgressProvider';
-import { BookmarkProvider } from '@/components/bookmarks/BookmarkProvider';
-import { KeyboardShortcuts } from '@/hooks/useKeyboardShortcuts';
-import { getAppearanceBootstrapScript } from '@/lib/appearance';
-import './globals.css';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/components/ui/ThemeProvider";
+import { PWARegistration } from "@/components/ui/PWARegistration";
+import { ContinuePrompt } from "@/components/ui/ContinuePrompt";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { getNavigationCategories } from "@/lib/content";
+import { SkipLink } from "@/components/ui/SkipLink";
+import { OfflineIndicator } from "@/components/ui/OfflineIndicator";
+import { AuthProvider } from "@/components/auth/AuthProvider";
+import { PreferencesProvider } from "@/components/user/PreferencesProvider";
+import { ErrorBoundaryWrapper } from "@/components/app/ErrorBoundaryWrapper";
+import { ProgressProvider } from "@/components/progress/ProgressProvider";
+import { BookmarkProvider } from "@/components/bookmarks/BookmarkProvider";
+import { KeyboardShortcuts } from "@/hooks/useKeyboardShortcuts";
+import { getAppearanceBootstrapScript } from "@/lib/appearance";
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'], display: 'swap' });
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: {
-    default: 'Quotient — Learn Software Engineering',
-    template: '%s | Quotient',
+    default: "Quotient — Learn Software Engineering",
+    template: "%s | Quotient",
   },
   description:
-    'Structured courses, coding problems, cheat sheets, and question answers for software engineers — with runnable examples and worked solutions.',
-  keywords: ['software engineering', 'programming courses', 'coding problems', 'career'],
-  authors: [{ name: 'Quotient' }],
+    "Structured courses, coding problems, cheat sheets, and question answers for software engineers — with runnable examples and worked solutions.",
+  keywords: ["software engineering", "programming courses", "coding problems", "career"],
+  authors: [{ name: "Quotient" }],
   robots: { index: true, follow: true },
-  manifest: '/manifest.json',
+  manifest: "/manifest.json",
   icons: {
-    icon: [
-      { url: '/logo-light.svg', type: 'image/svg+xml' },
-    ],
-    apple: '/logo-light.svg',
+    icon: [{ url: "/logo-light.svg", type: "image/svg+xml" }],
+    apple: "/logo-light.svg",
   },
   appleWebApp: {
     capable: true,
-    statusBarStyle: 'black-translucent',
-    title: 'Quotient',
+    statusBarStyle: "black-translucent",
+    title: "Quotient",
   },
   openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    siteName: 'Quotient',
+    type: "website",
+    locale: "en_US",
+    siteName: "Quotient",
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   const categories = getNavigationCategories();
 
   return (
@@ -78,9 +72,7 @@ export default function RootLayout({
                   <Navbar categories={categories} />
                   <KeyboardShortcuts />
                   <main id="main-content" className="flex-1">
-                    <ErrorBoundaryWrapper>
-                      {children}
-                    </ErrorBoundaryWrapper>
+                    <ErrorBoundaryWrapper>{children}</ErrorBoundaryWrapper>
                   </main>
                   <Footer />
                   <OfflineIndicator />

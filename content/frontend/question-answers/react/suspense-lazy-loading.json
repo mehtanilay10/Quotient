@@ -6,11 +6,7 @@
   "description": "Declarative loading states for code splitting and data: fallbacks, boundaries, streaming SSR, and preloading to avoid pop-in.",
   "order": 23,
   "difficulty": "advanced",
-  "tags": [
-    "react",
-    "performance",
-    "advanced"
-  ],
+  "tags": ["react", "performance", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

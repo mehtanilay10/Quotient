@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "migrate-dev",
-    "cli",
-    "development-workflow"
-  ],
+  "tags": ["prisma", "migrate-dev", "cli", "development-workflow"],
   "blocks": [
     {
       "type": "paragraph",
@@ -79,8 +74,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "migrations-overview",
-    "prisma-migrate-deploy"
-  ]
+  "relatedLessons": ["migrations-overview", "prisma-migrate-deploy"]
 }

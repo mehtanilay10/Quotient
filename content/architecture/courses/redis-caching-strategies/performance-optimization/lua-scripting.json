@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "redis",
-    "lua",
-    "atomicity",
-    "scripting",
-    "performance"
-  ],
+  "tags": ["redis", "lua", "atomicity", "scripting", "performance"],
   "blocks": [
     {
       "type": "paragraph",

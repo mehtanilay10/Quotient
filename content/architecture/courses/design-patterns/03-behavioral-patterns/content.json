@@ -9,10 +9,5 @@
   "estimatedHours": 1,
   "icon": "🔄",
   "tags": ["design-patterns", "csharp", "architecture"],
-  "lessonSlugs": [
-    "command-pattern",
-    "iterator-pattern",
-    "observer-pattern",
-    "strategy-pattern"
-  ]
+  "lessonSlugs": ["command-pattern", "iterator-pattern", "observer-pattern", "strategy-pattern"]
 }

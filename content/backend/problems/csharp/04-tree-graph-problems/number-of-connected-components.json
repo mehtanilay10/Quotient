@@ -8,12 +8,7 @@
   "order": 18,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "graphs",
-    "union-find",
-    "medium"
-  ],
+  "tags": ["csharp", "graphs", "union-find", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "Union-Find (DSU)",
             "description": "Path compression + union by root",
-            "pros": [
-              "Near O(1) per op"
-            ],
-            "tags": [
-              "O(n+ m) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["Near O(1) per op"],
+            "tags": ["O(n+ m) time", "O(n) space", "Recommended"]
           }
         ]
       }

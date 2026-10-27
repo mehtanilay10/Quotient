@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "claude",
-    "introduction",
-    "anthropic",
-    "overview"
-  ],
+  "tags": ["claude", "introduction", "anthropic", "overview"],
   "blocks": [
     {
       "type": "heading",
@@ -172,23 +167,17 @@
           {
             "title": "Claude",
             "description": "Built by Anthropic. Strength: long-context reasoning, careful instruction-following, large context window (200k tokens). Best for: document analysis, long-form writing, nuanced reasoning.",
-            "tags": [
-              "anthropic"
-            ]
+            "tags": ["anthropic"]
           },
           {
             "title": "ChatGPT",
             "description": "Built by OpenAI. Strength: plugin ecosystem, browsing, code interpreter, wide adoption. Best for: research, web browsing, coding with built-in tools.",
-            "tags": [
-              "openai"
-            ]
+            "tags": ["openai"]
           },
           {
             "title": "Gemini",
             "description": "Built by Google. Strength: multimodal understanding, Google Workspace integration, large context. Best for: image analysis, Workspace users, research with Google Search.",
-            "tags": [
-              "google"
-            ]
+            "tags": ["google"]
           }
         ]
       }
@@ -196,12 +185,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model",
-          "Context window",
-          "Strengths",
-          "Best for"
-        ],
+        "headers": ["Model", "Context window", "Strengths", "Best for"],
         "rows": [
           [
             "Claude Sonnet",
@@ -238,15 +222,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "claude-vs-other-chatbots",
-    "claude-philosophy-and-safety"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model",
-    "token",
-    "context-window",
-    "api"
-  ],
+  "relatedLessons": ["claude-vs-other-chatbots", "claude-philosophy-and-safety"],
+  "relatedGlossaryTerms": ["large-language-model", "token", "context-window", "api"],
   "courseSlug": "claude"
 }

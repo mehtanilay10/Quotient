@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "ai-coding",
-    "introduction",
-    "copilot",
-    "overview"
-  ],
+  "tags": ["ai-coding", "introduction", "copilot", "overview"],
   "blocks": [
     {
       "type": "heading",
@@ -157,14 +152,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "history-of-ai-coding",
-    "setting-up-ai-coding-environment"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model",
-    "autocomplete",
-    "agent"
-  ],
+  "relatedLessons": ["history-of-ai-coding", "setting-up-ai-coding-environment"],
+  "relatedGlossaryTerms": ["large-language-model", "autocomplete", "agent"],
   "courseSlug": "codex"
 }

@@ -5,13 +5,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "oop",
-    "encapsulation",
-    "access-modifiers",
-    "properties"
-  ],
+  "tags": ["csharp", "oop", "encapsulation", "access-modifiers", "properties"],
   "title": "Encapsulation and Access Modifiers",
   "description": "Learn how to protect class internals using access modifiers, properties, and data-hiding techniques.",
   "blocks": [
@@ -85,11 +79,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Modifier",
-          "Accessible From",
-          "Common Use"
-        ],
+        "headers": ["Modifier", "Accessible From", "Common Use"],
         "rows": [
           [
             "public",
@@ -238,19 +228,14 @@
           {
             "title": "Public Field",
             "description": "A publicly accessible variable directly on the class.",
-            "pros": [
-              "Simple syntax",
-              "Minimal boilerplate"
-            ],
+            "pros": ["Simple syntax", "Minimal boilerplate"],
             "cons": [
               "No validation possible",
               "Cannot trigger events",
               "No versioning flexibility",
               "Breaks encapsulation"
             ],
-            "tags": [
-              "avoid"
-            ]
+            "tags": ["avoid"]
           },
           {
             "title": "Public Property",
@@ -261,12 +246,8 @@
               "Versioning flexibility",
               "Can change backing storage without breaking API"
             ],
-            "cons": [
-              "Slightly more verbose"
-            ],
-            "tags": [
-              "recommended"
-            ]
+            "cons": ["Slightly more verbose"],
+            "tags": ["recommended"]
           }
         ]
       }

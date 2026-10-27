@@ -9,14 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 10,
   "icon": "🔐",
-  "tags": [
-    "aspnet-core",
-    "authentication",
-    "authorization",
-    "jwt",
-    "identity",
-    "roles"
-  ],
+  "tags": ["aspnet-core", "authentication", "authorization", "jwt", "identity", "roles"],
   "lessonSlugs": [
     "jwt-authentication",
     "identity-server-setup",

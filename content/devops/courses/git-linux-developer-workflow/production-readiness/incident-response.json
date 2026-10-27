@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "incident",
-    "linux",
-    "on-call",
-    "runbook",
-    "communication"
-  ],
+  "tags": ["incident", "linux", "on-call", "runbook", "communication"],
   "blocks": [
     {
       "type": "paragraph",
@@ -104,27 +98,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Severity",
-          "Target Response",
-          "Escalation Time"
-        ],
+        "headers": ["Severity", "Target Response", "Escalation Time"],
         "rows": [
-          [
-            "SEV1",
-            "Page immediately",
-            "15 minutes"
-          ],
-          [
-            "SEV2",
-            "Page within 5 minutes",
-            "30 minutes"
-          ],
-          [
-            "SEV3",
-            "Notify on-call",
-            "2 hours"
-          ]
+          ["SEV1", "Page immediately", "15 minutes"],
+          ["SEV2", "Page within 5 minutes", "30 minutes"],
+          ["SEV3", "Notify on-call", "2 hours"]
         ]
       }
     },

@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "type-guards",
-    "type-predicates",
-    "narrowing"
-  ],
+  "tags": ["typescript", "type-guards", "type-predicates", "narrowing"],
   "blocks": [
     {
       "type": "paragraph",
@@ -109,10 +104,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "discriminated-unions",
-    "unknown-vs-any"
-  ],
+  "relatedLessons": ["discriminated-unions", "unknown-vs-any"],
   "furtherReading": [
     {
       "title": "TypeScript Handbook: User-Defined Type Guards",

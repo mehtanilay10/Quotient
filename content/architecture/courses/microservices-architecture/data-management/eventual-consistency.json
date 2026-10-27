@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 19,
-  "tags": [
-    "eventual-consistency",
-    "event-sourcing",
-    "cqrs"
-  ],
+  "tags": ["eventual-consistency", "event-sourcing", "cqrs"],
   "blocks": [
     {
       "type": "paragraph",

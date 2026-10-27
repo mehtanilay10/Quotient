@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 45,
-  "tags": [
-    "lld",
-    "object-oriented",
-    "design-patterns",
-    "google_drive_storage"
-  ],
+  "tags": ["lld", "object-oriented", "design-patterns", "google_drive_storage"],
   "blocks": [
     {
       "type": "heading",

@@ -8,12 +8,7 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "azure",
-    "serverless",
-    "functions",
-    "developer"
-  ],
+  "tags": ["azure", "serverless", "functions", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -49,10 +44,10 @@
     {
       "type": "mermaid",
       "data": {
-          "id": "mermaid-durable-overview",
-          "caption": "Durable Functions orchestration pattern",
-          "definition": "flowchart TD\n    C[Client] -->|Start Orchestration| O[Orchestrator Function]\n    O -->|Call| A1[Activity: Validate]\n    O -->|Call| A2[Activity: Process]\n    O -->|Call| A3[Activity: Notify]\n    A1 -->|Result| O\n    A2 -->|Result| O\n    A3 -->|Result| O\n    O -->|Final Result| C"
-        }
+        "id": "mermaid-durable-overview",
+        "caption": "Durable Functions orchestration pattern",
+        "definition": "flowchart TD\n    C[Client] -->|Start Orchestration| O[Orchestrator Function]\n    O -->|Call| A1[Activity: Validate]\n    O -->|Call| A2[Activity: Process]\n    O -->|Call| A3[Activity: Notify]\n    A1 -->|Result| O\n    A2 -->|Result| O\n    A3 -->|Result| O\n    O -->|Final Result| C"
+      }
     },
     {
       "type": "example",
@@ -80,32 +75,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Description",
-          "Use Case"
-        ],
+        "headers": ["Pattern", "Description", "Use Case"],
         "rows": [
-          [
-            "Function Chaining",
-            "Run steps in sequence",
-            "ETL pipelines"
-          ],
+          ["Function Chaining", "Run steps in sequence", "ETL pipelines"],
           [
             "Fan Out / Fan In",
             "Run tasks in parallel, aggregate results",
             "Parallel data processing"
           ],
-          [
-            "Async HTTP APIs",
-            "Poll for long-running operations",
-            "Approval workflows"
-          ],
-          [
-            "Monitor",
-            "Periodically check until a condition is met",
-            "Status polling"
-          ]
+          ["Async HTTP APIs", "Poll for long-running operations", "Approval workflows"],
+          ["Monitor", "Periodically check until a condition is met", "Status polling"]
         ]
       }
     },

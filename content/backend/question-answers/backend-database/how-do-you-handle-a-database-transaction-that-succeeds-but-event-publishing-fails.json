@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "backend",
-    "distributed-systems",
-    "outbox",
-    "reliability"
-  ],
+  "tags": ["backend", "distributed-systems", "outbox", "reliability"],
   "blocks": [
     {
       "type": "paragraph",
@@ -110,17 +105,12 @@
               "No special broker requirements",
               "Simple to reason about"
             ],
-            "cons": [
-              "Requires a relay process",
-              "Event delivery is eventually consistent"
-            ]
+            "cons": ["Requires a relay process", "Event delivery is eventually consistent"]
           },
           {
             "title": "Two-Phase Commit",
             "description": "A coordinator asks all participants to prepare, then commits or rolls back globally.",
-            "pros": [
-              "Atomic across heterogeneous systems"
-            ],
+            "pros": ["Atomic across heterogeneous systems"],
             "cons": [
               "Blocking protocol",
               "Rarely supported by modern brokers",
@@ -130,10 +120,7 @@
           {
             "title": "Eventual Consistency with Compensation",
             "description": "Accept temporary inconsistency and reconcile later with compensating transactions.",
-            "pros": [
-              "Scales well",
-              "No distributed locks"
-            ],
+            "pros": ["Scales well", "No distributed locks"],
             "cons": [
               "Requires careful reconciliation logic",
               "Not suitable for financial use cases without additional safeguards"

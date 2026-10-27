@@ -8,14 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "redis",
-    "setup",
-    "docker",
-    "configuration",
-    "installation",
-    "development"
-  ],
+  "tags": ["redis", "setup", "docker", "configuration", "installation", "development"],
   "blocks": [
     {
       "type": "paragraph",
@@ -161,10 +154,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "redis-cli-basics",
-    "redis-data-types"
-  ],
+  "relatedLessons": ["redis-cli-basics", "redis-data-types"],
   "furtherReading": [
     {
       "title": "Redis Quick Start",

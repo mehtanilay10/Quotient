@@ -8,11 +8,7 @@
   "order": 18,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "strings",
-    "medium"
-  ],
+  "tags": ["csharp", "strings", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -86,33 +82,16 @@
           {
             "title": "Repeated Addition",
             "description": "Add num1 for each digit",
-            "pros": [
-              "Simple concept"
-            ],
-            "cons": [
-              "O(n * m * maxDigit)",
-              "Very slow for large inputs"
-            ],
-            "tags": [
-              "O(n * m * maxDigit) time",
-              "O(max(n,m)) space"
-            ]
+            "pros": ["Simple concept"],
+            "cons": ["O(n * m * maxDigit)", "Very slow for large inputs"],
+            "tags": ["O(n * m * maxDigit) time", "O(max(n,m)) space"]
           },
           {
             "title": "Digit Array",
             "description": "Grade-school multiplication",
-            "pros": [
-              "O(n * m)",
-              "No repeated adds"
-            ],
-            "cons": [
-              "Carry handling is tricky"
-            ],
-            "tags": [
-              "O(n * m) time",
-              "O(n + m) space",
-              "Recommended"
-            ]
+            "pros": ["O(n * m)", "No repeated adds"],
+            "cons": ["Carry handling is tricky"],
+            "tags": ["O(n * m) time", "O(n + m) space", "Recommended"]
           }
         ]
       }

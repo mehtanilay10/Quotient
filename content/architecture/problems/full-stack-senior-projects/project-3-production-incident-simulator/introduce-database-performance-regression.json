@@ -105,7 +105,11 @@
           {
             "title": "Add an index",
             "description": "Create a B-tree index on filtered or sorted columns.",
-            "pros": ["Fast to implement", "Immediate impact for targeted queries", "Minimal code changes"],
+            "pros": [
+              "Fast to implement",
+              "Immediate impact for targeted queries",
+              "Minimal code changes"
+            ],
             "cons": ["Slows writes", "Can become unused and need maintenance", "Does not fix N+1"]
           },
           {
@@ -117,7 +121,11 @@
           {
             "title": "Introduce caching",
             "description": "Cache hot query results in Redis or memory.",
-            "pros": ["Eliminates repeated database hits", "Works for read-heavy workloads", "Fastest latency after warmup"],
+            "pros": [
+              "Eliminates repeated database hits",
+              "Works for read-heavy workloads",
+              "Fastest latency after warmup"
+            ],
             "cons": ["Cache invalidation complexity", "Stale data risk", "Added infrastructure"]
           }
         ]

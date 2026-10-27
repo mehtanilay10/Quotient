@@ -6,11 +6,7 @@
   "description": "Circular lock waits, deadlock graphs, victim selection, and the ordering, granularity, and design strategies that eliminate them.",
   "order": 11,
   "difficulty": "advanced",
-  "tags": [
-    "sql server",
-    "concurrency",
-    "advanced"
-  ],
+  "tags": ["sql server", "concurrency", "advanced"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sql-a02",
-    "sql-i03",
-    "sql-i01"
-  ],
+  "relatedLessons": ["sql-a02", "sql-i03", "sql-i01"],
   "furtherReading": [
     {
       "title": "Deadlocking (Microsoft Learn)",

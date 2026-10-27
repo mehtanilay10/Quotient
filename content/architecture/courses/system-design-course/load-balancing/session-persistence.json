@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "load-balancing",
-    "sessions",
-    "state-management",
-    "sticky-sessions"
-  ],
+  "tags": ["load-balancing", "sessions", "state-management", "sticky-sessions"],
   "blocks": [
     {
       "type": "paragraph",
@@ -119,10 +114,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "load-balancing-algorithms",
-    "global-load-balancing"
-  ],
+  "relatedLessons": ["load-balancing-algorithms", "global-load-balancing"],
   "furtherReading": [
     {
       "title": "AWS Elastic Load Balancer Session Attributes",

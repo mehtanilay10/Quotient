@@ -133,7 +133,15 @@
   ],
   "relatedLessons": ["projection-vs-include", "tracking-vs-asnotracking"],
   "furtherReading": [
-    { "title": "EF Core loading related data", "url": "https://learn.microsoft.com/en-us/ef/core/querying/related-data", "type": "article" },
-    { "title": "EF Core logging and diagnostics", "url": "https://learn.microsoft.com/en-us/ef/core/logging-events-diagnostics", "type": "article" }
+    {
+      "title": "EF Core loading related data",
+      "url": "https://learn.microsoft.com/en-us/ef/core/querying/related-data",
+      "type": "article"
+    },
+    {
+      "title": "EF Core logging and diagnostics",
+      "url": "https://learn.microsoft.com/en-us/ef/core/logging-events-diagnostics",
+      "type": "article"
+    }
   ]
 }

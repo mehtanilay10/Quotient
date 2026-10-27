@@ -8,13 +8,7 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "static-web-apps",
-    "spa",
-    "jamstack",
-    "github-actions",
-    "authentication"
-  ],
+  "tags": ["static-web-apps", "spa", "jamstack", "github-actions", "authentication"],
   "blocks": [
     {
       "type": "heading",
@@ -114,8 +108,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "app-service-vs-functions-vs-container-apps",
-    "azure-functions-overview"
-  ]
+  "relatedLessons": ["app-service-vs-functions-vs-container-apps", "azure-functions-overview"]
 }

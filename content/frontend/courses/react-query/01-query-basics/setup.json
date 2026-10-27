@@ -8,17 +8,8 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "setup",
-    "installation",
-    "configuration",
-    "query-client",
-    "provider"
-  ],
-  "prerequisites": [
-    "what-is-react-query"
-  ],
+  "tags": ["react-query", "setup", "installation", "configuration", "query-client", "provider"],
+  "prerequisites": ["what-is-react-query"],
   "blocks": [
     {
       "type": "paragraph",
@@ -148,47 +139,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Option",
-          "Default",
-          "Description"
-        ],
+        "headers": ["Option", "Default", "Description"],
         "rows": [
-          [
-            "staleTime",
-            "0",
-            "How long data is fresh before refetching"
-          ],
-          [
-            "gcTime",
-            "1000 * 60 * 5",
-            "How long unused data stays in cache"
-          ],
-          [
-            "retry",
-            "3",
-            "Number of times failed queries retry"
-          ],
-          [
-            "retryDelay",
-            "exponential",
-            "Delay between retry attempts"
-          ],
-          [
-            "refetchOnWindowFocus",
-            "true",
-            "Refetch when the tab regains focus"
-          ],
-          [
-            "refetchOnMount",
-            "true",
-            "Refetch when a component mounts"
-          ],
-          [
-            "refetchOnReconnect",
-            "true",
-            "Refetch when network reconnects"
-          ]
+          ["staleTime", "0", "How long data is fresh before refetching"],
+          ["gcTime", "1000 * 60 * 5", "How long unused data stays in cache"],
+          ["retry", "3", "Number of times failed queries retry"],
+          ["retryDelay", "exponential", "Delay between retry attempts"],
+          ["refetchOnWindowFocus", "true", "Refetch when the tab regains focus"],
+          ["refetchOnMount", "true", "Refetch when a component mounts"],
+          ["refetchOnReconnect", "true", "Refetch when network reconnects"]
         ]
       }
     },

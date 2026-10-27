@@ -6,10 +6,7 @@
   "description": "Liveness vs readiness probes, checking dependencies safely, and what orchestrators do with them.",
   "order": 17,
   "difficulty": "intermediate",
-  "tags": [
-    "aspnet-core",
-    "intermediate"
-  ],
+  "tags": ["aspnet-core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,10 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "hosted-services-background-tasks",
-    "aspnet-b02"
-  ],
+  "relatedLessons": ["hosted-services-background-tasks", "aspnet-b02"],
   "furtherReading": [
     {
       "title": "Health checks in ASP.NET Core",

@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "claude",
-    "safety",
-    "anthropic",
-    "constitutional-ai",
-    "ethics"
-  ],
+  "tags": ["claude", "safety", "anthropic", "constitutional-ai", "ethics"],
   "blocks": [
     {
       "type": "heading",
@@ -172,15 +166,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-claude",
-    "claude-vs-other-chatbots"
-  ],
-  "relatedGlossaryTerms": [
-    "prompt-injection",
-    "large-language-model",
-    "fine-tuning",
-    "safety"
-  ],
+  "relatedLessons": ["what-is-claude", "claude-vs-other-chatbots"],
+  "relatedGlossaryTerms": ["prompt-injection", "large-language-model", "fine-tuning", "safety"],
   "courseSlug": "claude"
 }

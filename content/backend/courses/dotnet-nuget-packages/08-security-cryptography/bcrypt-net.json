@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "security",
-    "bcrypt",
-    "hashing",
-    "passwords"
-  ],
+  "tags": ["security", "bcrypt", "hashing", "passwords"],
   "blocks": [
     {
       "type": "heading",
@@ -100,9 +95,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "bcrypt",
-    "identity-model"
-  ],
+  "relatedLessons": ["bcrypt", "identity-model"],
   "courseSlug": "dotnet-nuget-packages"
 }

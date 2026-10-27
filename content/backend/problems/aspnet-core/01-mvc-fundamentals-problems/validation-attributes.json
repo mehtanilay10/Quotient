@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "mvc",
-    "validation",
-    "data-annotations"
-  ],
+  "tags": ["aspnet-core", "mvc", "validation", "data-annotations"],
   "blocks": [
     {
       "type": "heading",
@@ -91,21 +86,9 @@
           {
             "title": "Built-in Validation Attributes",
             "description": "Data annotation validation",
-            "pros": [
-              "Declarative",
-              "Built-in error messages",
-              "Works with client-side validation"
-            ],
-            "cons": [
-              "Limited flexibility",
-              "Hard to validate cross-field rules"
-            ],
-            "tags": [
-              "[Required]",
-              "[StringLength]",
-              "[Range]",
-              "DataAnnotations"
-            ]
+            "pros": ["Declarative", "Built-in error messages", "Works with client-side validation"],
+            "cons": ["Limited flexibility", "Hard to validate cross-field rules"],
+            "tags": ["[Required]", "[StringLength]", "[Range]", "DataAnnotations"]
           },
           {
             "title": "Custom Validation Attribute",
@@ -115,15 +98,8 @@
               "Encapsulates validation logic",
               "Clear error messages"
             ],
-            "cons": [
-              "One attribute per rule",
-              "Hard to access other properties"
-            ],
-            "tags": [
-              "ValidationAttribute",
-              "ValidationResult",
-              "custom"
-            ]
+            "cons": ["One attribute per rule", "Hard to access other properties"],
+            "tags": ["ValidationAttribute", "ValidationResult", "custom"]
           }
         ]
       }

@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "di",
-    "ioc",
-    "architecture"
-  ],
+  "tags": ["di", "ioc", "architecture"],
   "blocks": [
     {
       "type": "heading",
@@ -92,7 +88,7 @@
     {
       "type": "heading",
       "level": 2,
-        "text": "Built-in DI in ASP.NET Core"
+      "text": "Built-in DI in ASP.NET Core"
     },
     {
       "type": "paragraph",
@@ -176,10 +172,7 @@
       "takeaway": "Dependency injection is not a framework feature you use occasionally; it is a mindset. Once you start designing classes that declare their needs, your entire architecture becomes cleaner and easier to work with."
     }
   ],
-  "relatedLessons": [
-    "service-lifetimes",
-    "constructor-injection"
-  ],
+  "relatedLessons": ["service-lifetimes", "constructor-injection"],
   "technology": null,
   "furtherReading": []
 }

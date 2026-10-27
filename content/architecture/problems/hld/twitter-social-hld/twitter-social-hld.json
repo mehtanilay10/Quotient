@@ -8,15 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "twitter",
-    "fan-out",
-    "timelines",
-    "caching",
-    "snowflake"
-  ],
+  "tags": ["hld", "system-design", "twitter", "fan-out", "timelines", "caching", "snowflake"],
   "blocks": [
     {
       "type": "heading",
@@ -145,22 +137,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric / Store",
-          "Value",
-          "Calculation / Technical Spec"
-        ],
+        "headers": ["Metric / Store", "Value", "Calculation / Technical Spec"],
         "rows": [
-          [
-            "Daily Tweet Volume",
-            "500 Million / day",
-            "500M / 86,400s ≈ 5,800 writes/sec average"
-          ],
-          [
-            "Peak Write Volume",
-            "150,000 / sec",
-            "Flash news events, sporting finals, New Year"
-          ],
+          ["Daily Tweet Volume", "500 Million / day", "500M / 86,400s ≈ 5,800 writes/sec average"],
+          ["Peak Write Volume", "150,000 / sec", "Flash news events, sporting finals, New Year"],
           [
             "Daily Tweet Text Storage",
             "~150 GB / day",
@@ -176,11 +156,7 @@
             "~2.8 TB in RAM",
             "350M active users × 800 TweetIDs × 8 bytes ≈ 2.24 TB + overhead"
           ],
-          [
-            "Read QPS",
-            "~600,000 / sec",
-            "350M users loading timelines multiple times daily"
-          ]
+          ["Read QPS", "~600,000 / sec", "350M users loading timelines multiple times daily"]
         ]
       }
     },
@@ -233,11 +209,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "instagram-feed",
-    "notification-system",
-    "chat-system-hld"
-  ],
+  "relatedLessons": ["instagram-feed", "notification-system", "chat-system-hld"],
   "furtherReading": [
     {
       "title": "Timelines at Scale — Twitter Engineering Blog",

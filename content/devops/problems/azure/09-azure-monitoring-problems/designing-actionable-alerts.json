@@ -80,41 +80,22 @@
           {
             "title": "Metric alert (dynamic threshold)",
             "description": "Statistical baseline per metric",
-            "pros": [
-              "Learns daily and weekly seasonality",
-              "Low noise",
-              "Fast evaluation"
-            ],
-            "cons": [
-              "Needs history before it settles",
-              "Limited to metrics"
-            ],
+            "pros": ["Learns daily and weekly seasonality", "Low noise", "Fast evaluation"],
+            "cons": ["Needs history before it settles", "Limited to metrics"],
             "tags": ["Recommended", "Symptom alerts"]
           },
           {
             "title": "Log-search alert",
             "description": "Kusto query evaluated on a schedule",
-            "pros": [
-              "Arbitrary logic and joins",
-              "Can alert on business metrics"
-            ],
-            "cons": [
-              "Minimum 1-minute cadence",
-              "Costs query time",
-              "Can be slow on large tables"
-            ],
+            "pros": ["Arbitrary logic and joins", "Can alert on business metrics"],
+            "cons": ["Minimum 1-minute cadence", "Costs query time", "Can be slow on large tables"],
             "tags": ["Business metrics"]
           },
           {
             "title": "Static metric threshold",
             "description": "Fixed number such as CPU > 90%",
-            "pros": [
-              "Simple to reason about"
-            ],
-            "cons": [
-              "Goes stale as traffic grows",
-              "High false-positive rate"
-            ],
+            "pros": ["Simple to reason about"],
+            "cons": ["Goes stale as traffic grows", "High false-positive rate"],
             "tags": ["Capacity only"]
           }
         ]

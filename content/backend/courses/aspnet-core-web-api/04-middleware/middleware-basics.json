@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "web-api",
-    "middleware",
-    "pipeline",
-    "request"
-  ],
+  "tags": ["web-api", "middleware", "pipeline", "request"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,42 +82,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Order",
-          "Middleware",
-          "Behavior"
-        ],
+        "headers": ["Order", "Middleware", "Behavior"],
         "rows": [
-          [
-            "1st",
-            "Exception Handler",
-            "Catches unhandled exceptions from later middleware"
-          ],
-          [
-            "2nd",
-            "HTTPS Redirection",
-            "Redirects HTTP requests to HTTPS"
-          ],
-          [
-            "3rd",
-            "Static Files",
-            "Returns files directly, short-circuiting if found"
-          ],
-          [
-            "4th",
-            "Routing",
-            "Matches request to an endpoint"
-          ],
-          [
-            "5th",
-            "Authorization",
-            "Checks user permissions"
-          ],
-          [
-            "6th",
-            "Endpoint",
-            "Executes the final handler"
-          ]
+          ["1st", "Exception Handler", "Catches unhandled exceptions from later middleware"],
+          ["2nd", "HTTPS Redirection", "Redirects HTTP requests to HTTPS"],
+          ["3rd", "Static Files", "Returns files directly, short-circuiting if found"],
+          ["4th", "Routing", "Matches request to an endpoint"],
+          ["5th", "Authorization", "Checks user permissions"],
+          ["6th", "Endpoint", "Executes the final handler"]
         ]
       }
     },

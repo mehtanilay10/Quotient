@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "How you arrange your Redis Cluster topology and choose your sharding strategy directly impacts latency, throughput, and operational complexity. The right topology balances data distribution, fault tolerance, and query patterns." }
+      "data": {
+        "text": "How you arrange your Redis Cluster topology and choose your sharding strategy directly impacts latency, throughput, and operational complexity. The right topology balances data distribution, fault tolerance, and query patterns."
+      }
     },
     {
       "type": "heading",
@@ -20,11 +22,17 @@
     },
     {
       "type": "paragraph",
-      "data": { "text": "Production Redis Cluster deployments typically use 3 or more master nodes, each with 1-2 replicas. The minimum viable production cluster is 3 masters with 1 replica each (6 total nodes). This ensures that losing any single node — master or replica — leaves the cluster fully operational." }
+      "data": {
+        "text": "Production Redis Cluster deployments typically use 3 or more master nodes, each with 1-2 replicas. The minimum viable production cluster is 3 masters with 1 replica each (6 total nodes). This ensures that losing any single node — master or replica — leaves the cluster fully operational."
+      }
     },
     {
       "type": "callout",
-      "data": { "variant": "warning", "title": "Minimum Production Topology", "text": "Never deploy a Redis Cluster with fewer than 6 nodes (3 masters + 3 replicas) in production. With fewer nodes, a single failure can make the cluster unreachable." }
+      "data": {
+        "variant": "warning",
+        "title": "Minimum Production Topology",
+        "text": "Never deploy a Redis Cluster with fewer than 6 nodes (3 masters + 3 replicas) in production. With fewer nodes, a single failure can make the cluster unreachable."
+      }
     },
     {
       "type": "mermaid",
@@ -40,7 +48,9 @@
     },
     {
       "type": "paragraph",
-      "data": { "text": "Redis Cluster uses key-based (hash-based) sharding by default. Range-based sharding (where contiguous keys are stored together) is sometimes used for range scans, but Redis Cluster does not support it natively. If your workload requires range queries, consider using a Redis Enterprise module like RedisJSON with indexing or a separate indexing layer." }
+      "data": {
+        "text": "Redis Cluster uses key-based (hash-based) sharding by default. Range-based sharding (where contiguous keys are stored together) is sometimes used for range scans, but Redis Cluster does not support it natively. If your workload requires range queries, consider using a Redis Enterprise module like RedisJSON with indexing or a separate indexing layer."
+      }
     },
     {
       "type": "comparison-cards",
@@ -57,13 +67,20 @@
             "title": "Hash Tag Sharding",
             "description": "Use {hash-tag} in key names to force related keys into the same slot.",
             "pros": ["Enables multi-key operations", "Groups related data"],
-            "cons": ["Can create hot spots if not designed carefully", "Requires naming convention discipline"]
+            "cons": [
+              "Can create hot spots if not designed carefully",
+              "Requires naming convention discipline"
+            ]
           },
           {
             "title": "Range-Based Sharding",
             "description": "Keys are grouped by value ranges into specific nodes.",
             "pros": ["Supports range scans", "Predictable data location"],
-            "cons": ["Risk of hot spots", "Uneven distribution", "Not natively supported in Redis Cluster"]
+            "cons": [
+              "Risk of hot spots",
+              "Uneven distribution",
+              "Not natively supported in Redis Cluster"
+            ]
           }
         ]
       }
@@ -74,7 +91,9 @@
     },
     {
       "type": "paragraph",
-      "data": { "text": "Redis Cluster allows hash tags using curly braces: {user:1001}:profile and {user:1001}:sessions are stored in the same slot because only the substring inside braces is hashed. This enables atomic multi-key operations like pipelines and transactions on related keys." }
+      "data": {
+        "text": "Redis Cluster allows hash tags using curly braces: {user:1001}:profile and {user:1001}:sessions are stored in the same slot because only the substring inside braces is hashed. This enables atomic multi-key operations like pipelines and transactions on related keys."
+      }
     },
     {
       "type": "example",
@@ -89,9 +108,18 @@
       "data": {
         "title": "Topology Design Checklist",
         "items": [
-          { "text": "Use at least 3 master nodes in production", "hint": "Fewer than 3 masters cannot tolerate any master failure" },
-          { "text": "Deploy at least 1 replica per master", "hint": "Zero replicas means any master failure causes data loss" },
-          { "text": "Plan for 30% headroom in memory per node", "hint": "Redis needs memory for replication, RDB snapshots, and overhead" },
+          {
+            "text": "Use at least 3 master nodes in production",
+            "hint": "Fewer than 3 masters cannot tolerate any master failure"
+          },
+          {
+            "text": "Deploy at least 1 replica per master",
+            "hint": "Zero replicas means any master failure causes data loss"
+          },
+          {
+            "text": "Plan for 30% headroom in memory per node",
+            "hint": "Redis needs memory for replication, RDB snapshots, and overhead"
+          },
           { "text": "Use hash tags for keys that need atomic multi-key operations" },
           { "text": "Avoid cross-slot multi-key commands like MSET across different hash tags" }
         ]
@@ -113,7 +141,15 @@
   ],
   "relatedLessons": [],
   "furtherReading": [
-    { "title": "Redis Cluster Topology Guide", "url": "https://redis.io/docs/latest/operate/rc/architecture/", "type": "article" },
-    { "title": "Designing Data-Intensive Applications (Chapter 5)", "url": "https://dataintensive.net/", "type": "course" }
+    {
+      "title": "Redis Cluster Topology Guide",
+      "url": "https://redis.io/docs/latest/operate/rc/architecture/",
+      "type": "article"
+    },
+    {
+      "title": "Designing Data-Intensive Applications (Chapter 5)",
+      "url": "https://dataintensive.net/",
+      "type": "course"
+    }
   ]
 }

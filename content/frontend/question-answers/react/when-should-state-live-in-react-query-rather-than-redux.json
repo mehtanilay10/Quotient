@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "React",
-    "React Query",
-    "Redux",
-    "State Management",
-    "TanStack Query"
-  ],
+  "tags": ["React", "React Query", "Redux", "State Management", "TanStack Query"],
   "blocks": [
     {
       "type": "paragraph",
@@ -118,11 +112,7 @@
               "Cache eviction requires tuning `gcTime` and `staleTime`",
               "Team unfamiliarity with query-key conventions can cause cache misses"
             ],
-            "tags": [
-              "server state",
-              "async",
-              "caching"
-            ]
+            "tags": ["server state", "async", "caching"]
           },
           {
             "title": "Redux Toolkit",
@@ -138,11 +128,7 @@
               "Developers often put fetched data here by habit",
               "Cache invalidation is manual—no built-in stale-while-revalidate"
             ],
-            "tags": [
-              "client state",
-              "offline",
-              "complex UI"
-            ]
+            "tags": ["client state", "offline", "complex UI"]
           },
           {
             "title": "Zustand / Jotai",
@@ -156,11 +142,7 @@
               "No built-in devtools as rich as Redux DevTools",
               "Less opinionated structure can lead to inconsistency"
             ],
-            "tags": [
-              "lightweight",
-              "client state",
-              "simple"
-            ]
+            "tags": ["lightweight", "client state", "simple"]
           }
         ]
       }

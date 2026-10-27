@@ -228,11 +228,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "uber-ride-sharing-hld",
-    "ride-sharing-hld",
-    "ecommerce-hld"
-  ],
+  "relatedLessons": ["uber-ride-sharing-hld", "ride-sharing-hld", "ecommerce-hld"],
   "furtherReading": [
     {
       "title": "DoorDash Engineering: Next-Gen Fulfillment Platform",

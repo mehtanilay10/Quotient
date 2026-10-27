@@ -77,36 +77,21 @@
               "Direct billing integration",
               "Budget alerts and forecasts"
             ],
-            "cons": [
-              "Limited to Azure resources"
-            ],
+            "cons": ["Limited to Azure resources"],
             "tags": ["Recommended", "Native"]
           },
           {
             "title": "Third-party Tools (CloudHealth, etc.)",
             "description": "Multi-cloud cost management",
-            "pros": [
-              "Multi-cloud support",
-              "Advanced analytics"
-            ],
-            "cons": [
-              "Additional cost",
-              "Complex setup"
-            ],
+            "pros": ["Multi-cloud support", "Advanced analytics"],
+            "cons": ["Additional cost", "Complex setup"],
             "tags": ["Multi-cloud"]
           },
           {
             "title": "Manual Tracking (Spreadsheets)",
             "description": "DIY cost tracking",
-            "pros": [
-              "No tooling cost",
-              "Fully customizable"
-            ],
-            "cons": [
-              "Error-prone",
-              "No real-time data",
-              "No automation"
-            ],
+            "pros": ["No tooling cost", "Fully customizable"],
+            "cons": ["Error-prone", "No real-time data", "No automation"],
             "tags": ["Not recommended"]
           }
         ]

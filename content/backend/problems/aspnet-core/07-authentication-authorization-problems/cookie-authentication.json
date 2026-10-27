@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "authentication",
-    "cookies"
-  ],
+  "tags": ["aspnet-core", "authentication", "cookies"],
   "blocks": [
     {
       "type": "heading",
@@ -69,21 +65,9 @@
           {
             "title": "Cookie Auth Setup",
             "description": "Cookie-based web auth",
-            "pros": [
-              "Simple for web apps",
-              "Built-in session management",
-              "Sliding expiration"
-            ],
-            "cons": [
-              "Not for APIs",
-              "CSRF risk",
-              "Stateful"
-            ],
-            "tags": [
-              "CookieAuthenticationDefaults",
-              "SignInAsync",
-              "ClaimsPrincipal"
-            ]
+            "pros": ["Simple for web apps", "Built-in session management", "Sliding expiration"],
+            "cons": ["Not for APIs", "CSRF risk", "Stateful"],
+            "tags": ["CookieAuthenticationDefaults", "SignInAsync", "ClaimsPrincipal"]
           }
         ]
       }

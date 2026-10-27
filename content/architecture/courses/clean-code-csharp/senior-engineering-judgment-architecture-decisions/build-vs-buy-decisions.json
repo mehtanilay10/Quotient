@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "build-vs-buy",
-    "architecture",
-    "strategy",
-    "csharp"
-  ],
+  "tags": ["build-vs-buy", "architecture", "strategy", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -201,10 +196,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "cost-as-an-architecture-constraint",
-    "making-technical-trade-offs-explicit"
-  ],
+  "relatedLessons": ["cost-as-an-architecture-constraint", "making-technical-trade-offs-explicit"],
   "furtherReading": [
     {
       "title": "The Build vs. Buy Decision",

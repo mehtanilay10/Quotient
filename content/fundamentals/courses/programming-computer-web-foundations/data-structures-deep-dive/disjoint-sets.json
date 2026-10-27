@@ -8,11 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "data-structures",
-    "union-find",
-    "disjoint-sets"
-  ],
+  "tags": ["data-structures", "union-find", "disjoint-sets"],
   "blocks": [
     {
       "type": "paragraph",
@@ -70,27 +66,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Problem",
-          "How union-find helps"
-        ],
+        "headers": ["Problem", "How union-find helps"],
         "rows": [
-          [
-            "Kruskal's MST",
-            "Detect cycles while adding edges in weight order"
-          ],
-          [
-            "Social networks",
-            "Find connected components quickly"
-          ],
-          [
-            "Image processing",
-            "Label connected regions in a bitmap"
-          ],
-          [
-            "Network connectivity",
-            "Answer 'are these servers connected?'"
-          ]
+          ["Kruskal's MST", "Detect cycles while adding edges in weight order"],
+          ["Social networks", "Find connected components quickly"],
+          ["Image processing", "Label connected regions in a bitmap"],
+          ["Network connectivity", "Answer 'are these servers connected?'"]
         ]
       }
     },
@@ -116,10 +97,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "choosing-the-right-structure",
-    "data-structure-problems"
-  ],
+  "relatedLessons": ["choosing-the-right-structure", "data-structure-problems"],
   "furtherReading": [
     {
       "title": "Union Find",

@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "kafka",
-    "consumer-groups",
-    "partitions",
-    "rebalancing",
-    "scaling"
-  ],
+  "tags": ["kafka", "consumer-groups", "partitions", "rebalancing", "scaling"],
   "blocks": [
     {
       "type": "paragraph",
@@ -88,11 +82,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Property",
-          "Default",
-          "Impact"
-        ],
+        "headers": ["Property", "Default", "Impact"],
         "rows": [
           [
             "partition.assignment.strategy",

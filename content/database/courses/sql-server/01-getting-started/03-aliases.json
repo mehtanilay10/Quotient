@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "aliases",
-    "query-formatting",
-    "readability"
-  ],
+  "tags": ["aliases", "query-formatting", "readability"],
   "blocks": [
     {
       "type": "heading",

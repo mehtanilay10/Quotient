@@ -6,11 +6,7 @@
   "fullDefinition": "Precision and recall are the two core metrics for any system that retrieves or classifies items. Precision answers \"of everything I returned, what fraction was actually correct?\" Recall answers \"of everything that should have been returned, what fraction did I find?\" The two trade off against each other: returning more items usually raises recall and lowers precision, and being more selective does the opposite. The F1 score is their harmonic mean, a single number that penalises extreme imbalance. In LLM evaluation they matter most for retrieval-augmented generation and search: a RAG system with low recall never sees the document it needs, while low precision floods the context window with irrelevant text that can derail the answer.",
   "category": "evaluation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "evaluation",
-    "benchmark",
-    "evaluation-harness"
-  ],
+  "relatedTerms": ["evaluation", "benchmark", "evaluation-harness"],
   "examples": [
     "A search returns 10 results, 6 relevant → precision = 0.6",
     "There were 12 relevant documents in total, 6 found → recall = 0.5",

@@ -9,14 +9,7 @@
   "order": 9,
   "difficulty": "intermediate",
   "estimatedHours": 1,
-  "tags": [
-    "react",
-    "performance",
-    "memo",
-    "useMemo",
-    "react-19",
-    "intermediate"
-  ],
+  "tags": ["react", "performance", "memo", "useMemo", "react-19", "intermediate"],
   "lessonSlugs": ["performance-optimization", "react-19-features"],
   "prerequisites": ["lifecycle-effects", "context-refs"],
   "whatYouLearn": [

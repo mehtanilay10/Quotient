@@ -78,10 +78,7 @@
               "Azure File Sync for hybrid",
               "AD authentication"
             ],
-            "cons": [
-              "Higher cost per GB",
-              "Limited to 100TB per share"
-            ],
+            "cons": ["Higher cost per GB", "Limited to 100TB per share"],
             "tags": ["Recommended for file shares", "Lift-and-shift"]
           },
           {
@@ -93,25 +90,14 @@
               "REST API access",
               "CDN integration"
             ],
-            "cons": [
-              "No SMB/NFS",
-              "Requires code changes",
-              "No random file writes"
-            ],
+            "cons": ["No SMB/NFS", "Requires code changes", "No random file writes"],
             "tags": ["Objects", "Big data", "Media"]
           },
           {
             "title": "Azure NetApp Files",
             "description": "Enterprise-grade file storage",
-            "pros": [
-              "High performance",
-              "Enterprise features",
-              "NFS/SMB support"
-            ],
-            "cons": [
-              "Premium pricing",
-              "Overkill for simple scenarios"
-            ],
+            "pros": ["High performance", "Enterprise features", "NFS/SMB support"],
+            "cons": ["Premium pricing", "Overkill for simple scenarios"],
             "tags": ["Enterprise", "High performance"]
           }
         ]

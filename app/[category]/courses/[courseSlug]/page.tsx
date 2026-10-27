@@ -1,19 +1,25 @@
-import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
-import { SectionHeader } from '@/components/sections/SectionHeader';
-import { ModuleCard } from '@/components/course/ModuleCard';
-import { getAllCourses, getCourseBySlug, getModulesForCourse, getCourseCategory, isRegularCourse } from '@/lib/content';
-import { buildMetadata } from '@/lib/seo';
-import { CourseErrorBoundary } from '@/components/course/CourseErrorBoundary';
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { SectionHeader } from "@/components/sections/SectionHeader";
+import { ModuleCard } from "@/components/course/ModuleCard";
+import {
+  getAllCourses,
+  getCourseBySlug,
+  getModulesForCourse,
+  getCourseCategory,
+  isRegularCourse,
+} from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
+import { CourseErrorBoundary } from "@/components/course/CourseErrorBoundary";
 
 interface Params {
   params: Promise<{ category: string; courseSlug: string }>;
 }
 
 export async function generateStaticParams() {
-  return getAllCourses().map((c) => ({ 
+  return getAllCourses().map((c) => ({
     courseSlug: c.slug,
-    category: getCourseCategory(c.slug)
+    category: getCourseCategory(c.slug),
   }));
 }
 
@@ -36,7 +42,7 @@ export default async function CourseDetailPage({ params }: Params) {
   const resolvedParams = await params;
   const category = resolvedParams?.category;
   const courseSlug = resolvedParams?.courseSlug;
-  
+
   if (!category || !courseSlug) {
     notFound();
   }

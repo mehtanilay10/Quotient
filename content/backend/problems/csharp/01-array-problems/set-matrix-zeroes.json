@@ -8,12 +8,7 @@
   "order": 15,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "arrays",
-    "matrix",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "matrix", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -99,32 +94,16 @@
           {
             "title": "Mark Arrays",
             "description": "Two auxiliary boolean arrays",
-            "pros": [
-              "Very clear"
-            ],
-            "cons": [
-              "O(m+n) extra space"
-            ],
-            "tags": [
-              "O(m\u00b7n) time",
-              "O(m+n) space"
-            ]
+            "pros": ["Very clear"],
+            "cons": ["O(m+n) extra space"],
+            "tags": ["O(m\u00b7n) time", "O(m+n) space"]
           },
           {
             "title": "In-Place Markers",
             "description": "Use first row/col as markers",
-            "pros": [
-              "O(1) extra space",
-              "Recommended"
-            ],
-            "cons": [
-              "Tricky bookkeeping"
-            ],
-            "tags": [
-              "O(m\u00b7n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) extra space", "Recommended"],
+            "cons": ["Tricky bookkeeping"],
+            "tags": ["O(m\u00b7n) time", "O(1) space", "Recommended"]
           }
         ]
       }

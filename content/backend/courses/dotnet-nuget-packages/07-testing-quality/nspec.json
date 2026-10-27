@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is NSpec?"}
+      "data": { "level": 2, "text": "What is NSpec?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`NSpec` is a BDD-style testing framework for .NET. It lets you write specifications using a `describe` / `it` syntax that reads like plain English."}
+      "data": {
+        "text": "`NSpec` is a BDD-style testing framework for .NET. It lets you write specifications using a `describe` / `it` syntax that reads like plain English."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Writing Specifications"}
+      "data": { "level": 2, "text": "Writing Specifications" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "NSpec tests are written in classes that inherit from `nspec`. Use `describe` for the subject and `it` for individual assertions."}
+      "data": {
+        "text": "NSpec tests are written in classes that inherit from `nspec`. Use `describe` for the subject and `it` for individual assertions."
+      }
     },
     {
       "type": "example",
@@ -48,11 +52,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Running Tests"}
+      "data": { "level": 2, "text": "Running Tests" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "NSpec integrates with test runners like NUnit. Run tests from the command line or your IDE."}
+      "data": {
+        "text": "NSpec integrates with test runners like NUnit. Run tests from the command line or your IDE."
+      }
     },
     {
       "type": "example",

@@ -6,10 +6,7 @@
   "description": "Understand how to control this binding in JavaScript.",
   "order": 8,
   "difficulty": "intermediate",
-  "tags": [
-    "javascript",
-    "intermediate"
-  ],
+  "tags": ["javascript", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

@@ -72,45 +72,22 @@
           {
             "title": "Managed Identity",
             "description": "Azure-managed identity for resources",
-            "pros": [
-              "No secrets to manage",
-              "Automatic rotation",
-              "Azure AD integration",
-              "Free"
-            ],
-            "cons": [
-              "Azure resources only",
-              "Requires Azure AD"
-            ],
+            "pros": ["No secrets to manage", "Automatic rotation", "Azure AD integration", "Free"],
+            "cons": ["Azure resources only", "Requires Azure AD"],
             "tags": ["Recommended", "Azure resources"]
           },
           {
             "title": "Service Principal",
             "description": "App registration with client secret/cert",
-            "pros": [
-              "Cross-platform support",
-              "Granular permissions",
-              "Multi-tenant support"
-            ],
-            "cons": [
-              "Secret management overhead",
-              "Rotation required",
-              "Security risk if leaked"
-            ],
+            "pros": ["Cross-platform support", "Granular permissions", "Multi-tenant support"],
+            "cons": ["Secret management overhead", "Rotation required", "Security risk if leaked"],
             "tags": ["External apps", "Non-Azure"]
           },
           {
             "title": "Connection Strings / Keys",
             "description": "Hardcoded credentials",
-            "pros": [
-              "Simple",
-              "No Azure AD needed"
-            ],
-            "cons": [
-              "Security risk",
-              "No rotation",
-              "Hardcoded in code"
-            ],
+            "pros": ["Simple", "No Azure AD needed"],
+            "cons": ["Security risk", "No rotation", "Hardcoded in code"],
             "tags": ["Not recommended"]
           }
         ]

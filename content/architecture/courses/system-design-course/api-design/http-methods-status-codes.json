@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "api",
-    "http",
-    "status-codes",
-    "methods"
-  ],
+  "tags": ["api", "http", "status-codes", "methods"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,43 +32,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "Usage",
-          "Idempotent",
-          "Safe"
-        ],
+        "headers": ["Method", "Usage", "Idempotent", "Safe"],
         "rows": [
-          [
-            "GET",
-            "Read a resource",
-            "Yes",
-            "Yes"
-          ],
-          [
-            "POST",
-            "Create a resource",
-            "No",
-            "No"
-          ],
-          [
-            "PUT",
-            "Replace a resource",
-            "Yes",
-            "No"
-          ],
-          [
-            "PATCH",
-            "Partially update",
-            "No",
-            "No"
-          ],
-          [
-            "DELETE",
-            "Remove a resource",
-            "Yes",
-            "No"
-          ]
+          ["GET", "Read a resource", "Yes", "Yes"],
+          ["POST", "Create a resource", "No", "No"],
+          ["PUT", "Replace a resource", "Yes", "No"],
+          ["PATCH", "Partially update", "No", "No"],
+          ["DELETE", "Remove a resource", "Yes", "No"]
         ]
       }
     },

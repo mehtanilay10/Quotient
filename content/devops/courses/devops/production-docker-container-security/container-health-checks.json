@@ -34,9 +34,24 @@
       "data": {
         "headers": ["Probe", "Asks", "Failure action", "Docker equivalent"],
         "rows": [
-          ["Startup", "Has the application finished initializing?", "Kills container after timeout", "Startup period in HEALTHCHECK"],
-          ["Liveness", "Is the application still alive and responsive?", "Restarts the container", "HEALTHCHECK retries and interval"],
-          ["Readiness", "Is the application ready to serve traffic?", "Removes from service endpoints", "No direct Docker equivalent"]
+          [
+            "Startup",
+            "Has the application finished initializing?",
+            "Kills container after timeout",
+            "Startup period in HEALTHCHECK"
+          ],
+          [
+            "Liveness",
+            "Is the application still alive and responsive?",
+            "Restarts the container",
+            "HEALTHCHECK retries and interval"
+          ],
+          [
+            "Readiness",
+            "Is the application ready to serve traffic?",
+            "Removes from service endpoints",
+            "No direct Docker equivalent"
+          ]
         ]
       }
     },

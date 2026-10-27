@@ -15,9 +15,5 @@
     "building-ai-powered-apps-on-azure",
     "azure-ml-vs-ai-services"
   ],
-  "whatYouLearn": [
-    "AI service selection",
-    "Prompt engineering patterns",
-    "ML deployment options"
-  ]
+  "whatYouLearn": ["AI service selection", "Prompt engineering patterns", "ML deployment options"]
 }

@@ -7,11 +7,7 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 22,
-  "tags": [
-    "rename-index",
-    "sp-rename",
-    "ssms"
-  ],
+  "tags": ["rename-index", "sp-rename", "ssms"],
   "blocks": [
     {
       "type": "heading",

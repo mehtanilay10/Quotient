@@ -7,12 +7,7 @@
   "order": 12,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "offset",
-    "fetch",
-    "pagination",
-    "paging"
-  ],
+  "tags": ["offset", "fetch", "pagination", "paging"],
   "blocks": [
     {
       "type": "heading",
@@ -191,46 +186,11 @@
           "model_year"
         ],
         "rows": [
-          [
-            "1",
-            "Trek Marlin 7",
-            "1",
-            "1",
-            "599.99",
-            "2023"
-          ],
-          [
-            "2",
-            "Electra Townie",
-            "1",
-            "2",
-            "449.99",
-            "2023"
-          ],
-          [
-            "3",
-            "Giant Escape 3",
-            "1",
-            "3",
-            "399.99",
-            "2022"
-          ],
-          [
-            "4",
-            "Northwoods Goose",
-            "2",
-            "4",
-            "1299.99",
-            "2023"
-          ],
-          [
-            "5",
-            "Sun Dolphin",
-            "2",
-            "5",
-            "279.99",
-            "2022"
-          ]
+          ["1", "Trek Marlin 7", "1", "1", "599.99", "2023"],
+          ["2", "Electra Townie", "1", "2", "449.99", "2023"],
+          ["3", "Giant Escape 3", "1", "3", "399.99", "2022"],
+          ["4", "Northwoods Goose", "2", "4", "1299.99", "2023"],
+          ["5", "Sun Dolphin", "2", "5", "279.99", "2022"]
         ]
       }
     }

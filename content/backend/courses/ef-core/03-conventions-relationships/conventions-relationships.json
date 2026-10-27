@@ -5,10 +5,7 @@
   "title": "EF Core Conventions",
   "description": "Learn about EF Core conventions.",
   "order": 4,
-  "tags": [
-    "ef-core",
-    "conventions-relationships"
-  ],
+  "tags": ["ef-core", "conventions-relationships"],
   "blocks": [
     {
       "type": "paragraph",

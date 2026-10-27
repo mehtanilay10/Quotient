@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "architecture",
-    "3-tier",
-    "serverless",
-    "microservices",
-    "event-driven"
-  ],
+  "tags": ["aws", "architecture", "3-tier", "serverless", "microservices", "event-driven"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "azure",
-    "serverless",
-    "functions",
-    "developer"
-  ],
+  "tags": ["azure", "serverless", "functions", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -84,26 +79,14 @@
           {
             "title": "In-Process",
             "description": "Code runs inside the Functions host.",
-            "pros": [
-              "Simpler setup",
-              "Better cold-start performance"
-            ],
-            "cons": [
-              "Tightly coupled to host",
-              "Limited dependency control"
-            ]
+            "pros": ["Simpler setup", "Better cold-start performance"],
+            "cons": ["Tightly coupled to host", "Limited dependency control"]
           },
           {
             "title": "Isolated Worker",
             "description": "Code runs in a separate process.",
-            "pros": [
-              "Full dependency control",
-              "Custom middleware support"
-            ],
-            "cons": [
-              "Slightly higher cold-start",
-              "More setup required"
-            ]
+            "pros": ["Full dependency control", "Custom middleware support"],
+            "cons": ["Slightly higher cold-start", "More setup required"]
           }
         ]
       }

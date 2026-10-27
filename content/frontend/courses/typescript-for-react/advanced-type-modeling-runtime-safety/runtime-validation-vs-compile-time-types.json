@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "runtime-validation",
-    "compile-time-types",
-    "react"
-  ],
+  "tags": ["typescript", "runtime-validation", "compile-time-types", "react"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,11 +68,7 @@
           {
             "title": "Compile-Time Types",
             "description": "Check shapes while you write code. Types are removed when JavaScript runs.",
-            "pros": [
-              "Zero runtime cost",
-              "Great autocomplete",
-              "Catch errors during development"
-            ],
+            "pros": ["Zero runtime cost", "Great autocomplete", "Catch errors during development"],
             "cons": [
               "Cannot validate external data",
               "Types are erased at runtime",
@@ -136,10 +127,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "schema-validation-for-api-boundaries",
-    "unknown-vs-any"
-  ],
+  "relatedLessons": ["schema-validation-for-api-boundaries", "unknown-vs-any"],
   "furtherReading": [
     {
       "title": "Zod Documentation",

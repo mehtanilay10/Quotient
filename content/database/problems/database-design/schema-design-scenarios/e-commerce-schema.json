@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "E-commerce platforms need schemas that handle products, categories, customers, carts, orders, payments, and shipments. A good design prevents anomalies and supports common queries without excessive joins." }
+      "data": {
+        "text": "E-commerce platforms need schemas that handle products, categories, customers, carts, orders, payments, and shipments. A good design prevents anomalies and supports common queries without excessive joins."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,15 @@
       "type": "bullet-list",
       "data": {
         "title": "Key entities",
-        "items": ["Product: SKU, name, price, stock", "Category: hierarchical product grouping", "Customer: profile and authentication", "Order: header with totals and status", "OrderItem: line items with quantities", "Payment: transaction records", "Shipment: tracking and status"]
+        "items": [
+          "Product: SKU, name, price, stock",
+          "Category: hierarchical product grouping",
+          "Customer: profile and authentication",
+          "Order: header with totals and status",
+          "OrderItem: line items with quantities",
+          "Payment: transaction records",
+          "Shipment: tracking and status"
+        ]
       }
     },
     {
@@ -53,16 +63,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "tip", "title": "Tip", "text": "Store unit_price in order_items, not products, so historical orders keep their original price even if product prices change later." }
+      "data": {
+        "variant": "tip",
+        "title": "Tip",
+        "text": "Store unit_price in order_items, not products, so historical orders keep their original price even if product prices change later."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "Should categories support unlimited nesting?", "answer": "Use an adjacency list with parent_category_id for most cases. For deep hierarchies, consider a closure table or nested set." },
-          { "question": "How do I prevent overselling?", "answer": "Use row-level locking or atomic UPDATE with CHECK constraints. Avoid storing denormalized stock counts outside inventory tables." },
-          { "question": "Do I need a separate addresses table?", "answer": "Yes. Customers and orders often need both billing and shipping addresses. Reusing addresses avoids duplication and supports historical accuracy." }
+          {
+            "question": "Should categories support unlimited nesting?",
+            "answer": "Use an adjacency list with parent_category_id for most cases. For deep hierarchies, consider a closure table or nested set."
+          },
+          {
+            "question": "How do I prevent overselling?",
+            "answer": "Use row-level locking or atomic UPDATE with CHECK constraints. Avoid storing denormalized stock counts outside inventory tables."
+          },
+          {
+            "question": "Do I need a separate addresses table?",
+            "answer": "Yes. Customers and orders often need both billing and shipping addresses. Reusing addresses avoids duplication and supports historical accuracy."
+          }
         ]
       }
     },
@@ -70,7 +93,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Use surrogate keys for simplicity", "Capture price at order time in order_items", "Separate addresses from customers and orders", "Support category hierarchy with parent_category_id"],
+        "points": [
+          "Use surrogate keys for simplicity",
+          "Capture price at order time in order_items",
+          "Separate addresses from customers and orders",
+          "Support category hierarchy with parent_category_id"
+        ],
         "takeaway": "A good e-commerce schema isolates mutable data and preserves historical accuracy for financial and operational queries."
       }
     }

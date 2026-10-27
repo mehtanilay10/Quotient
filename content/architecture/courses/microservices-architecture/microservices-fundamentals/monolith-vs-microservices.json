@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "microservices",
-    "monolith",
-    "architecture"
-  ],
+  "tags": ["microservices", "monolith", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,42 +69,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Monolith",
-          "Microservices"
-        ],
+        "headers": ["Aspect", "Monolith", "Microservices"],
         "rows": [
-          [
-            "Deployment",
-            "Single unit",
-            "Independent per service"
-          ],
-          [
-            "Scaling",
-            "Scale entire app",
-            "Scale individual services"
-          ],
-          [
-            "Tech Stack",
-            "One stack",
-            "Polyglot possible"
-          ],
-          [
-            "Team Structure",
-            "Shared codebase",
-            "Service ownership"
-          ],
-          [
-            "Data",
-            "Shared database",
-            "Database per service"
-          ],
-          [
-            "Failure Isolation",
-            "Whole app fails",
-            "Isolated failures"
-          ]
+          ["Deployment", "Single unit", "Independent per service"],
+          ["Scaling", "Scale entire app", "Scale individual services"],
+          ["Tech Stack", "One stack", "Polyglot possible"],
+          ["Team Structure", "Shared codebase", "Service ownership"],
+          ["Data", "Shared database", "Database per service"],
+          ["Failure Isolation", "Whole app fails", "Isolated failures"]
         ]
       }
     },
@@ -171,38 +139,16 @@
           {
             "title": "Monolith",
             "description": "Single deployable unit, simpler operations",
-            "pros": [
-              "Simple to develop initially",
-              "Easy to test end to end",
-              "Simple deployment"
-            ],
-            "cons": [
-              "Tight coupling",
-              "Scales as one unit",
-              "Hard to adopt new tech"
-            ],
-            "tags": [
-              "architecture",
-              "deployment"
-            ]
+            "pros": ["Simple to develop initially", "Easy to test end to end", "Simple deployment"],
+            "cons": ["Tight coupling", "Scales as one unit", "Hard to adopt new tech"],
+            "tags": ["architecture", "deployment"]
           },
           {
             "title": "Microservices",
             "description": "Independent services per business capability",
-            "pros": [
-              "Independent scaling",
-              "Team autonomy",
-              "Fault isolation"
-            ],
-            "cons": [
-              "Network complexity",
-              "Distributed data",
-              "Operational overhead"
-            ],
-            "tags": [
-              "architecture",
-              "distributed"
-            ]
+            "pros": ["Independent scaling", "Team autonomy", "Fault isolation"],
+            "cons": ["Network complexity", "Distributed data", "Operational overhead"],
+            "tags": ["architecture", "distributed"]
           }
         ]
       }

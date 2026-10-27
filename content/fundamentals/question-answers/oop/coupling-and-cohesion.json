@@ -6,11 +6,7 @@
   "description": "Defining low coupling and high cohesion with code examples, how they interact, and how to measure them in a real codebase.",
   "order": 15,
   "difficulty": "intermediate",
-  "tags": [
-    "oop",
-    "design",
-    "intermediate"
-  ],
+  "tags": ["oop", "design", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

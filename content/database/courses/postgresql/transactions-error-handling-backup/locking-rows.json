@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "locking",
-    "for-update",
-    "skip-locked",
-    "deadlocks",
-    "queues"
-  ],
+  "tags": ["locking", "for-update", "skip-locked", "deadlocks", "queues"],
   "blocks": [
     {
       "type": "paragraph",
@@ -86,8 +80,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "transaction-fundamentals",
-    "isolation-levels"
-  ]
+  "relatedLessons": ["transaction-fundamentals", "isolation-levels"]
 }

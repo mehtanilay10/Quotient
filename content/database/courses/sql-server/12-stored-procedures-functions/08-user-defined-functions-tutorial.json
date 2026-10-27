@@ -7,11 +7,7 @@
   "order": 8,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "user-defined-functions",
-    "udf",
-    "overview"
-  ],
+  "tags": ["user-defined-functions", "udf", "overview"],
   "blocks": [
     {
       "type": "heading",

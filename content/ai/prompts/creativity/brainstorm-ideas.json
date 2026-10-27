@@ -6,12 +6,7 @@
   "category": "creativity",
   "difficulty": "beginner",
   "template": "I need to brainstorm [TOPIC OR CHALLENGE].\n\nContext: [1-2 sentences of relevant background]\n\nPlease give me 15 diverse ideas. Include:\n- 5 conventional, safe ideas\n- 5 creative or unexpected approaches  \n- 5 \"what if\" or contrarian ideas that challenge assumptions\n\nDo not explain each idea yet — just give me the list. I will pick the best ones to develop.",
-  "tags": [
-    "brainstorming",
-    "creativity",
-    "ideation",
-    "ideas"
-  ],
+  "tags": ["brainstorming", "creativity", "ideation", "ideas"],
   "tips": [
     "Ask for more ideas in specific directions: \"give me 5 more in the style of [company/person]\"",
     "After picking your favorites, use a follow-up: \"develop idea #3 into a full plan\"",

@@ -138,6 +138,10 @@
   ],
   "relatedLessons": ["git-garbage-collection", "git-objects-blobs-trees-commits"],
   "furtherReading": [
-    { "title": "Git Pack Files Documentation", "url": "https://git-scm.com/docs/git-pack-objects", "type": "article" }
+    {
+      "title": "Git Pack Files Documentation",
+      "url": "https://git-scm.com/docs/git-pack-objects",
+      "type": "article"
+    }
   ]
 }

@@ -7,13 +7,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "claude",
-    "api",
-    "developers",
-    "integration",
-    "rest"
-  ],
+  "tags": ["claude", "api", "developers", "integration", "rest"],
   "blocks": [
     {
       "type": "heading",
@@ -110,31 +104,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model",
-          "Input Price (per MTok)",
-          "Output Price (per MTok)",
-          "Best For"
-        ],
+        "headers": ["Model", "Input Price (per MTok)", "Output Price (per MTok)", "Best For"],
         "rows": [
-          [
-            "Claude Haiku",
-            "$0.80",
-            "$4.00",
-            "Fast, high-volume, simple tasks"
-          ],
-          [
-            "Claude Sonnet",
-            "$3.00",
-            "$15.00",
-            "General-purpose, balanced cost/quality"
-          ],
-          [
-            "Claude Opus",
-            "$15.00",
-            "$75.00",
-            "Complex reasoning, nuanced analysis"
-          ]
+          ["Claude Haiku", "$0.80", "$4.00", "Fast, high-volume, simple tasks"],
+          ["Claude Sonnet", "$3.00", "$15.00", "General-purpose, balanced cost/quality"],
+          ["Claude Opus", "$15.00", "$75.00", "Complex reasoning, nuanced analysis"]
         ]
       }
     },
@@ -208,15 +182,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prompt-caching",
-    "claude-in-your-workflow"
-  ],
-  "relatedGlossaryTerms": [
-    "api",
-    "token",
-    "system-prompt",
-    "temperature"
-  ],
+  "relatedLessons": ["prompt-caching", "claude-in-your-workflow"],
+  "relatedGlossaryTerms": ["api", "token", "system-prompt", "temperature"],
   "courseSlug": "claude"
 }

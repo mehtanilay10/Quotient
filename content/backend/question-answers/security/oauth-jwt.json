@@ -6,10 +6,7 @@
   "description": "Understand modern authentication and authorization mechanisms.",
   "order": 1,
   "difficulty": "intermediate",
-  "tags": [
-    "security",
-    "intermediate"
-  ],
+  "tags": ["security", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

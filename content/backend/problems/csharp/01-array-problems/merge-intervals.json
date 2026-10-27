@@ -8,12 +8,7 @@
   "order": 11,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "arrays",
-    "sorting",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "sorting", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -99,31 +94,16 @@
           {
             "title": "Sort + New List",
             "description": "Build a fresh result list",
-            "pros": [
-              "Clear and safe"
-            ],
-            "cons": [
-              "O(n) extra space"
-            ],
-            "tags": [
-              "O(n log n) time",
-              "O(n) space"
-            ]
+            "pros": ["Clear and safe"],
+            "cons": ["O(n) extra space"],
+            "tags": ["O(n log n) time", "O(n) space"]
           },
           {
             "title": "In-Place",
             "description": "Write merged intervals back into the input",
-            "pros": [
-              "O(1) extra space"
-            ],
-            "cons": [
-              "Mutates input"
-            ],
-            "tags": [
-              "O(n log n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) extra space"],
+            "cons": ["Mutates input"],
+            "tags": ["O(n log n) time", "O(1) space", "Recommended"]
           }
         ]
       }

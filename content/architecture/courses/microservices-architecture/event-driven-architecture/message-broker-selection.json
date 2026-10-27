@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "message-broker",
-    "kafka",
-    "rabbitmq",
-    "sqs"
-  ],
+  "tags": ["message-broker", "kafka", "rabbitmq", "sqs"],
   "blocks": [
     {
       "type": "paragraph",
@@ -61,43 +56,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Kafka",
-          "RabbitMQ",
-          "SQS"
-        ],
+        "headers": ["Feature", "Kafka", "RabbitMQ", "SQS"],
         "rows": [
-          [
-            "Model",
-            "Event streaming",
-            "Message queue",
-            "Message queue"
-          ],
-          [
-            "Throughput",
-            "Very high",
-            "High",
-            "High"
-          ],
-          [
-            "Persistence",
-            "Long-term",
-            "Until consumed",
-            "Configurable"
-          ],
-          [
-            "Ordering",
-            "Per partition",
-            "Per queue",
-            "FIFO option"
-          ],
-          [
-            "Replay",
-            "Yes",
-            "No",
-            "No"
-          ]
+          ["Model", "Event streaming", "Message queue", "Message queue"],
+          ["Throughput", "Very high", "High", "High"],
+          ["Persistence", "Long-term", "Until consumed", "Configurable"],
+          ["Ordering", "Per partition", "Per queue", "FIFO option"],
+          ["Replay", "Yes", "No", "No"]
         ]
       }
     },

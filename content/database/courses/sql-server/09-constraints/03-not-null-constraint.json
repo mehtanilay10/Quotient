@@ -7,10 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "not-null",
-    "nullability"
-  ],
+  "tags": ["not-null", "nullability"],
   "blocks": [
     {
       "type": "heading",

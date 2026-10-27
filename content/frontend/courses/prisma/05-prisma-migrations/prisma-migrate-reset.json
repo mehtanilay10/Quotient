@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "prisma",
-    "migrate-reset",
-    "local-dev",
-    "seeding"
-  ],
+  "tags": ["prisma", "migrate-reset", "local-dev", "seeding"],
   "blocks": [
     {
       "type": "paragraph",
@@ -50,8 +45,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "seed-scripts",
-    "prisma-migrate-dev"
-  ]
+  "relatedLessons": ["seed-scripts", "prisma-migrate-dev"]
 }

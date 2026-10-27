@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 28,
-  "tags": [
-    "react",
-    "render-props",
-    "examples",
-    "composition"
-  ],
+  "tags": ["react", "render-props", "examples", "composition"],
   "blocks": [
     {
       "type": "paragraph",

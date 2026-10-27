@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "design-patterns",
-    "cqrs",
-    "csharp",
-    "architecture"
-  ],
+  "tags": ["design-patterns", "cqrs", "csharp", "architecture"],
   "blocks": [
     {
       "type": "paragraph",

@@ -6,12 +6,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "npm",
-    "yarn",
-    "package-manager",
-    "fundamentals"
-  ],
+  "tags": ["npm", "yarn", "package-manager", "fundamentals"],
   "blocks": [
     {
       "type": "paragraph",
@@ -30,22 +25,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Section",
-          "Installed in production?",
-          "Typical contents"
-        ],
+        "headers": ["Section", "Installed in production?", "Typical contents"],
         "rows": [
-          [
-            "dependencies",
-            "Yes",
-            "Runtime libraries such as react, express, zod"
-          ],
-          [
-            "devDependencies",
-            "No",
-            "Test runners, linters, bundlers, TypeScript"
-          ],
+          ["dependencies", "Yes", "Runtime libraries such as react, express, zod"],
+          ["devDependencies", "No", "Test runners, linters, bundlers, TypeScript"],
           [
             "peerDependencies",
             "Not installed automatically",

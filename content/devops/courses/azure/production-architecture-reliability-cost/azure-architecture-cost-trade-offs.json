@@ -62,32 +62,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Architecture choice",
-          "Cost impact",
-          "Reliability benefit"
-        ],
+        "headers": ["Architecture choice", "Cost impact", "Reliability benefit"],
         "rows": [
-          [
-            "Single-region App Service",
-            "Low",
-            "99.95% SLA"
-          ],
-          [
-            "Zone-redundant App Service",
-            "Moderate",
-            "Same SLA but survives zone failure"
-          ],
+          ["Single-region App Service", "Low", "99.95% SLA"],
+          ["Zone-redundant App Service", "Moderate", "Same SLA but survives zone failure"],
           [
             "Multi-region with Traffic Manager",
             "Higher",
             "Near-100% availability if one region fails"
           ],
-          [
-            "Active-active multi-region",
-            "Highest",
-            "Lowest RTO, but double the baseline cost"
-          ]
+          ["Active-active multi-region", "Highest", "Lowest RTO, but double the baseline cost"]
         ]
       }
     },

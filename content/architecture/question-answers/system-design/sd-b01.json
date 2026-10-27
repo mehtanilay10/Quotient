@@ -6,10 +6,7 @@
   "description": "System design for a scalable URL shortening service.",
   "order": 1,
   "difficulty": "beginner",
-  "tags": [
-    "system design",
-    "beginner"
-  ],
+  "tags": ["system design", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

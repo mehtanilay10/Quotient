@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 19,
-  "tags": [
-    "microservices",
-    "ddd",
-    "decomposition",
-    "strangler-fig"
-  ],
+  "tags": ["microservices", "ddd", "decomposition", "strangler-fig"],
   "blocks": [
     {
       "type": "paragraph",
@@ -92,32 +87,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Description",
-          "When to Use"
-        ],
+        "headers": ["Strategy", "Description", "When to Use"],
         "rows": [
-          [
-            "By Business Capability",
-            "Split by business function",
-            "Clear business domains"
-          ],
-          [
-            "By Subdomain",
-            "Split by DDD subdomains",
-            "Complex domains"
-          ],
-          [
-            "By Change Velocity",
-            "Split by how often parts change",
-            "Different change rates"
-          ],
-          [
-            "By Team",
-            "Split by team ownership",
-            "Large teams"
-          ]
+          ["By Business Capability", "Split by business function", "Clear business domains"],
+          ["By Subdomain", "Split by DDD subdomains", "Complex domains"],
+          ["By Change Velocity", "Split by how often parts change", "Different change rates"],
+          ["By Team", "Split by team ownership", "Large teams"]
         ]
       }
     },

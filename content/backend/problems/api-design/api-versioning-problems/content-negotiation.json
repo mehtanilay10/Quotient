@@ -134,10 +134,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "url-versioning",
-    "header-versioning"
-  ],
+  "relatedLessons": ["url-versioning", "header-versioning"],
   "furtherReading": [
     {
       "title": "RFC 6839: Additional Media Type Structured Syntax Suffixes",

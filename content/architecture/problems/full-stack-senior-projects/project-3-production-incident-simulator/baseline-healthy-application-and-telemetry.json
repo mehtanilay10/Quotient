@@ -129,19 +129,34 @@
           {
             "title": "Prometheus + Grafana",
             "description": "Open-source pull-based metrics with a powerful dashboarding ecosystem.",
-            "pros": ["Self-hosted, no per-series cost", "Huge community and pre-built dashboards", "Works well with Kubernetes"],
-            "cons": ["Cardinality limits require careful label design", "Long-term storage is expensive without Thanos"]
+            "pros": [
+              "Self-hosted, no per-series cost",
+              "Huge community and pre-built dashboards",
+              "Works well with Kubernetes"
+            ],
+            "cons": [
+              "Cardinality limits require careful label design",
+              "Long-term storage is expensive without Thanos"
+            ]
           },
           {
             "title": "Datadog",
             "description": "Hosted SaaS platform combining metrics, logs, traces, and synthetics.",
-            "pros": ["Fast time-to-value", "Built-in anomaly detection and correlation", "Unified search across signals"],
+            "pros": [
+              "Fast time-to-value",
+              "Built-in anomaly detection and correlation",
+              "Unified search across signals"
+            ],
             "cons": ["Cost grows with volume and retention", "Vendor lock-in for custom queries"]
           },
           {
             "title": "OpenTelemetry collector",
             "description": "Vendor-neutral pipeline that receives, processes, and exports telemetry data.",
-            "pros": ["Avoids vendor lock-in", "Single instrumentation layer for all backends", "Supports metrics, logs, and traces"],
+            "pros": [
+              "Avoids vendor lock-in",
+              "Single instrumentation layer for all backends",
+              "Supports metrics, logs, and traces"
+            ],
             "cons": ["Operational overhead to self-host", "Still maturing in the logs space"]
           }
         ]

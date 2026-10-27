@@ -4,9 +4,9 @@
 
 // ── Shared primitives ────────────────────────────────────────────────────────
 
-export type Difficulty = 'beginner' | 'intermediate' | 'advanced';
+export type Difficulty = "beginner" | "intermediate" | "advanced";
 
-export type CalloutVariant = 'info' | 'tip' | 'warning' | 'note' | 'important' | 'danger' | 'error';
+export type CalloutVariant = "info" | "tip" | "warning" | "note" | "important" | "danger" | "error";
 
 // ── Content block system ─────────────────────────────────────────────────────
 
@@ -55,97 +55,97 @@ export interface FAQItem {
 // Discriminated union of all block types for type-safe rendering
 export type ContentBlock =
   | {
-      type: 'paragraph';
+      type: "paragraph";
       id?: string;
       data: { text: string };
     }
   | {
-      type: 'heading';
+      type: "heading";
       id?: string;
       data: { level: 2 | 3 | 4; text: string; anchor?: string };
     }
   | {
-      type: 'bullet-list';
+      type: "bullet-list";
       id?: string;
       data: { items: string[]; title?: string };
     }
   | {
-      type: 'numbered-list';
+      type: "numbered-list";
       id?: string;
       data: { items: string[]; title?: string };
     }
   | {
-      type: 'callout';
+      type: "callout";
       id?: string;
       data: { variant: CalloutVariant; title?: string; text: string };
     }
   | {
-      type: 'quote';
+      type: "quote";
       id?: string;
       data: { text: string; attribution?: string };
     }
   | {
-      type: 'key-terms';
+      type: "key-terms";
       id?: string;
       data: { terms: KeyTermItem[] };
     }
   | {
-      type: 'table';
+      type: "table";
       id?: string;
       data: TableData;
     }
   | {
-      type: 'example';
+      type: "example";
       id?: string;
       data: { title?: string; content: string; code?: string; language?: string };
     }
   | {
-      type: 'code';
+      type: "code";
       id?: string;
       data: { language: string; caption?: string; code: string };
     }
   | {
-      type: 'solution';
+      type: "solution";
       id?: string;
       data: { title?: string; content: string; code: string; language?: string };
     }
   | {
-      type: 'exercise';
+      type: "exercise";
       id?: string;
       data: ExerciseData;
     }
   | {
-      type: 'checklist';
+      type: "checklist";
       id?: string;
       data: { title?: string; items: ChecklistItem[] };
     }
   | {
-      type: 'mermaid';
+      type: "mermaid";
       id?: string;
       data: MermaidDiagram;
     }
   | {
-      type: 'comparison-cards';
+      type: "comparison-cards";
       id?: string;
       data: { title?: string; cards: ComparisonCardItem[] };
     }
   | {
-      type: 'summary-box';
+      type: "summary-box";
       id?: string;
       data: { title?: string; points: string[]; takeaway?: string };
     }
   | {
-      type: 'faq-block';
+      type: "faq-block";
       id?: string;
       data: { title?: string; items: FAQItem[] };
     }
   | {
-      type: 'divider';
+      type: "divider";
       id?: string;
       data: Record<string, never>;
     }
   | {
-      type: 'image';
+      type: "image";
       id?: string;
       data: { src: string; alt: string; caption?: string };
     };
@@ -201,7 +201,7 @@ export interface Module {
 
 // ── Further Reading ──────────────────────────────────────────────────────────
 
-export type FurtherReadingType = 'article' | 'video' | 'course' | 'tool';
+export type FurtherReadingType = "article" | "video" | "course" | "tool";
 
 export interface FurtherReadingItem {
   title: string;
@@ -243,21 +243,21 @@ export interface Lesson {
  * `blocks` would embed the full content of *every* lesson of a course into
  * *every* page of that course at build time.
  */
-export type LessonNavItem = Omit<Lesson, 'blocks'>;
+export type LessonNavItem = Omit<Lesson, "blocks">;
 
 // ── Tool Comparison ──────────────────────────────────────────────────────────
 
 // ── Weekly / 90-Day Plan ─────────────────────────────────────────────────────
 
 export type PlanWeekFocus =
-  | 'foundations'
-  | 'tools'
-  | 'prompting'
-  | 'workflows'
-  | 'automation'
-  | 'agents'
-  | 'advanced'
-  | 'review';
+  | "foundations"
+  | "tools"
+  | "prompting"
+  | "workflows"
+  | "automation"
+  | "agents"
+  | "advanced"
+  | "review";
 
 export interface PlanWeek {
   id: string;
@@ -275,12 +275,7 @@ export interface PlanWeek {
 // ── FAQs ─────────────────────────────────────────────────────────────────────
 
 export type FAQCategory =
-  | 'getting-started'
-  | 'tools'
-  | 'learning-path'
-  | 'concepts'
-  | 'safety'
-  | 'career';
+  "getting-started" | "tools" | "learning-path" | "concepts" | "safety" | "career";
 
 export interface FAQ {
   id: string;
@@ -294,13 +289,13 @@ export interface FAQ {
 // ── Advanced Concepts ────────────────────────────────────────────────────────
 
 export type AdvancedConceptCategory =
-  | 'llm-internals'
-  | 'prompting-advanced'
-  | 'rag-and-memory'
-  | 'agents'
-  | 'evaluation'
-  | 'deployment'
-  | 'safety';
+  | "llm-internals"
+  | "prompting-advanced"
+  | "rag-and-memory"
+  | "agents"
+  | "evaluation"
+  | "deployment"
+  | "safety";
 
 export interface AdvancedConcept {
   id: string;
@@ -308,7 +303,7 @@ export interface AdvancedConcept {
   title: string;
   description: string;
   category: AdvancedConceptCategory;
-  difficulty: Exclude<Difficulty, 'beginner'>;
+  difficulty: Exclude<Difficulty, "beginner">;
   prerequisites?: string[]; // lesson slugs
   blocks: ContentBlock[];
   relatedConcepts?: string[];
@@ -358,7 +353,7 @@ export interface BookmarkState {
 
 export interface BookmarkItem {
   id: string;
-  type: 'lesson' | 'problem' | 'questionAnswer' | 'cheatsheet';
+  type: "lesson" | "problem" | "questionAnswer" | "cheatsheet";
   slug: string;
   title: string;
   courseSlug: string;
@@ -374,7 +369,7 @@ export interface BookmarkItem {
  * question-answer technologies. `link` is for special pages (e.g. the AI glossary)
  * and carries its own title and href.
  */
-export type RoadmapStepKind = 'course' | 'problems' | 'cheatsheet' | 'questionAnswer' | 'link';
+export type RoadmapStepKind = "course" | "problems" | "cheatsheet" | "questionAnswer" | "link";
 
 export interface RoadmapStep {
   kind: RoadmapStepKind;
@@ -434,10 +429,10 @@ export interface ResolvedRoadmapStep {
 // ── Search ───────────────────────────────────────────────────────────────────
 
 /** Where a query term matched, used to explain and rank results. */
-export type SearchMatchField = 'title' | 'description' | 'tag';
+export type SearchMatchField = "title" | "description" | "tag";
 
 export interface SearchResult {
-  type: 'lesson' | 'module' | 'course' | 'cheatsheet';
+  type: "lesson" | "module" | "course" | "cheatsheet";
   slug: string;
   title: string;
   description: string;
@@ -457,15 +452,15 @@ export interface SearchResult {
 // ── Glossary ─────────────────────────────────────────────────────────────────
 
 export type GlossaryCategory =
-  | 'core-concepts'
-  | 'models-and-training'
-  | 'prompting'
-  | 'tools-and-apis'
-  | 'agents-and-automation'
-  | 'safety-and-ethics'
-  | 'architecture'
-  | 'multimodal'
-  | 'evaluation';
+  | "core-concepts"
+  | "models-and-training"
+  | "prompting"
+  | "tools-and-apis"
+  | "agents-and-automation"
+  | "safety-and-ethics"
+  | "architecture"
+  | "multimodal"
+  | "evaluation";
 
 export interface GlossaryTerm {
   id: string;
@@ -485,15 +480,15 @@ export interface GlossaryTerm {
 // ── Prompt Templates ─────────────────────────────────────────────────────────
 
 export type PromptCategory =
-  | 'writing'
-  | 'thinking'
-  | 'research'
-  | 'coding'
-  | 'creativity'
-  | 'productivity'
-  | 'learning'
-  | 'analysis'
-  | 'summarization';
+  | "writing"
+  | "thinking"
+  | "research"
+  | "coding"
+  | "creativity"
+  | "productivity"
+  | "learning"
+  | "analysis"
+  | "summarization";
 
 export interface PromptTemplate {
   id: string;
@@ -512,20 +507,20 @@ export interface PromptTemplate {
 // ── Tool Comparison ──────────────────────────────────────────────────────────
 
 export type ToolCategory =
-  | 'chatbot'
-  | 'image-generation'
-  | 'coding'
-  | 'writing'
-  | 'automation'
-  | 'search'
-  | 'voice'
-  | 'video'
-  | 'productivity'
-  | 'local-ai';
+  | "chatbot"
+  | "image-generation"
+  | "coding"
+  | "writing"
+  | "automation"
+  | "search"
+  | "voice"
+  | "video"
+  | "productivity"
+  | "local-ai";
 
 export interface ToolFeature {
   name: string;
-  supported: boolean | 'partial' | 'unknown';
+  supported: boolean | "partial" | "unknown";
   note?: string;
 }
 
@@ -536,7 +531,7 @@ export interface ToolEntry {
   description: string;
   category: ToolCategory;
   url?: string;
-  pricing: 'free' | 'freemium' | 'paid' | 'open-source';
+  pricing: "free" | "freemium" | "paid" | "open-source";
   difficulty: Difficulty;
   bestFor: string[];
   limitations?: string[];

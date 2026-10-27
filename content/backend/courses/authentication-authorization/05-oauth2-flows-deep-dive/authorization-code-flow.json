@@ -8,15 +8,8 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "oauth2",
-    "authorization-code",
-    "web-applications",
-    "security"
-  ],
-  "prerequisites": [
-    "oauth-overview"
-  ],
+  "tags": ["oauth2", "authorization-code", "web-applications", "security"],
+  "prerequisites": ["oauth-overview"],
   "blocks": [
     {
       "type": "paragraph",
@@ -104,22 +97,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Field",
-          "Description",
-          "Always Present"
-        ],
+        "headers": ["Field", "Description", "Always Present"],
         "rows": [
           [
             "access_token",
             "Bearer token used to call APIs. Short-lived (typically 5-60 min).",
             "Yes"
           ],
-          [
-            "token_type",
-            "Usually 'Bearer'. Tells the client how to use the token.",
-            "Yes"
-          ],
+          ["token_type", "Usually 'Bearer'. Tells the client how to use the token.", "Yes"],
           [
             "expires_in",
             "Lifetime in seconds. Client should calculate expiration timestamp.",
@@ -130,11 +115,7 @@
             "Long-lived token to obtain new access tokens. Store securely server-side.",
             "Often"
           ],
-          [
-            "id_token",
-            "JWT containing user identity claims (OIDC only).",
-            "If OIDC scope"
-          ],
+          ["id_token", "JWT containing user identity claims (OIDC only).", "If OIDC scope"],
           [
             "scope",
             "Space-delimited list of granted scopes. May be narrower than requested.",
@@ -186,10 +167,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "pkce-flow",
-    "openid-connect"
-  ],
+  "relatedLessons": ["pkce-flow", "openid-connect"],
   "furtherReading": [
     {
       "title": "RFC 6749 Section 4.1 — Authorization Code Grant",

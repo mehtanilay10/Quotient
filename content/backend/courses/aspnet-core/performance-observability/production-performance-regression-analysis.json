@@ -54,37 +54,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Baseline Source",
-          "Alert Threshold",
-          "Action"
-        ],
+        "headers": ["Metric", "Baseline Source", "Alert Threshold", "Action"],
         "rows": [
-          [
-            "p95 latency",
-            "Last 7 days average",
-            "> 20% increase",
-            "Rollback or hotfix"
-          ],
-          [
-            "p99 latency",
-            "Last 7 days average",
-            "> 30% increase",
-            "Investigate immediately"
-          ],
-          [
-            "Throughput",
-            "Last 7 days average",
-            "> 10% decrease",
-            "Check for errors or timeouts"
-          ],
-          [
-            "Error rate",
-            "Normal traffic pattern",
-            "> 2% absolute",
-            "Page on-call engineer"
-          ]
+          ["p95 latency", "Last 7 days average", "> 20% increase", "Rollback or hotfix"],
+          ["p99 latency", "Last 7 days average", "> 30% increase", "Investigate immediately"],
+          ["Throughput", "Last 7 days average", "> 10% decrease", "Check for errors or timeouts"],
+          ["Error rate", "Normal traffic pattern", "> 2% absolute", "Page on-call engineer"]
         ]
       }
     },

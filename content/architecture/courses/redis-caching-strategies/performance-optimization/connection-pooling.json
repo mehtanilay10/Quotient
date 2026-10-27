@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "redis",
-    "connection-pool",
-    "concurrency",
-    "performance",
-    "networking"
-  ],
+  "tags": ["redis", "connection-pool", "concurrency", "performance", "networking"],
   "blocks": [
     {
       "type": "paragraph",
@@ -102,32 +96,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Healthy Range",
-          "Action if Breached"
-        ],
+        "headers": ["Metric", "Healthy Range", "Action if Breached"],
         "rows": [
-          [
-            "Pool utilization",
-            "< 80%",
-            "Increase max pool size or investigate slow commands"
-          ],
-          [
-            "Wait time for borrow",
-            "< 50ms",
-            "Reduce pool size or add more Redis instances"
-          ],
-          [
-            "Connection failures",
-            "0%",
-            "Check Redis availability and network"
-          ],
-          [
-            "Idle connection count",
-            "> min pool size",
-            "Lower keep-alive timeout"
-          ]
+          ["Pool utilization", "< 80%", "Increase max pool size or investigate slow commands"],
+          ["Wait time for borrow", "< 50ms", "Reduce pool size or add more Redis instances"],
+          ["Connection failures", "0%", "Check Redis availability and network"],
+          ["Idle connection count", "> min pool size", "Lower keep-alive timeout"]
         ]
       }
     },

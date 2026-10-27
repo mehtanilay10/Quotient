@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "trade-offs",
-    "architecture",
-    "decision-making",
-    "comparison"
-  ],
+  "tags": ["trade-offs", "architecture", "decision-making", "comparison"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,10 +75,7 @@
               "Schema changes require migrations",
               "Write throughput can bottleneck"
             ],
-            "tags": [
-              "consistency",
-              "structured"
-            ]
+            "tags": ["consistency", "structured"]
           },
           {
             "title": "NoSQL (MongoDB, DynamoDB)",
@@ -100,10 +92,7 @@
               "No standard query language",
               "Joins require application logic"
             ],
-            "tags": [
-              "scalability",
-              "flexible"
-            ]
+            "tags": ["scalability", "flexible"]
           }
         ]
       }

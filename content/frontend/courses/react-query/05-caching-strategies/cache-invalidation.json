@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "invalidation",
-    "queryClient",
-    "cache-sync",
-    "mutation"
-  ],
+  "tags": ["invalidation", "queryClient", "cache-sync", "mutation"],
   "blocks": [
     {
       "type": "heading",
@@ -51,32 +46,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "Network Request",
-          "Use Case"
-        ],
+        "headers": ["Method", "Network Request", "Use Case"],
         "rows": [
-          [
-            "invalidateQueries",
-            "Yes (refetch)",
-            "After mutations when server state changed"
-          ],
-          [
-            "setQueryData",
-            "No (manual update)",
-            "Optimistic updates or known new state"
-          ],
-          [
-            "setQueriesData",
-            "No (bulk update)",
-            "Update multiple matching queries at once"
-          ],
-          [
-            "removeQueries",
-            "No (delete)",
-            "Clear invalid or expired cached data"
-          ]
+          ["invalidateQueries", "Yes (refetch)", "After mutations when server state changed"],
+          ["setQueryData", "No (manual update)", "Optimistic updates or known new state"],
+          ["setQueriesData", "No (bulk update)", "Update multiple matching queries at once"],
+          ["removeQueries", "No (delete)", "Clear invalid or expired cached data"]
         ]
       }
     },
@@ -162,28 +137,14 @@
           {
             "title": "invalidateQueries",
             "description": "Marks matching queries as stale and triggers a background refetch.",
-            "pros": [
-              "Guarantees fresh data",
-              "Simple to use",
-              "Works with any query key"
-            ],
-            "cons": [
-              "Causes a network request",
-              "Brief loading state possible"
-            ]
+            "pros": ["Guarantees fresh data", "Simple to use", "Works with any query key"],
+            "cons": ["Causes a network request", "Brief loading state possible"]
           },
           {
             "title": "setQueryData",
             "description": "Manually updates the cache without any network request.",
-            "pros": [
-              "Instant UI update",
-              "No network overhead",
-              "Full control over new state"
-            ],
-            "cons": [
-              "Risk of stale data",
-              "Must manually keep in sync with server"
-            ]
+            "pros": ["Instant UI update", "No network overhead", "Full control over new state"],
+            "cons": ["Risk of stale data", "Must manually keep in sync with server"]
           }
         ]
       }
@@ -242,7 +203,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "use-mutation"
-  ]
+  "prerequisites": ["use-mutation"]
 }

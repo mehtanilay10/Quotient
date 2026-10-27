@@ -6,12 +6,7 @@
   "description": "Handle CORS in React applications.",
   "order": 3,
   "difficulty": "intermediate",
-  "tags": [
-    "fullstack",
-    "security",
-    "asp.net core",
-    "react"
-  ],
+  "tags": ["fullstack", "security", "asp.net core", "react"],
   "blocks": [
     {
       "type": "paragraph",

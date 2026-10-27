@@ -8,15 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "serverless",
-    "architecture",
-    "cloudfront",
-    "s3",
-    "dynamodb",
-    "lambda"
-  ],
+  "tags": ["aws", "serverless", "architecture", "cloudfront", "s3", "dynamodb", "lambda"],
   "blocks": [
     {
       "type": "paragraph",

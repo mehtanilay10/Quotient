@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Implement a trie with three operations: `Insert(word)` adds a word, `Search(word)` returns whether the exact word was inserted, and `StartsWith(prefix)` returns whether any inserted word begins with the given prefix."}
+        "text": "Implement a trie with three operations: `Insert(word)` adds a word, `Search(word)` returns whether the exact word was inserted, and `StartsWith(prefix)` returns whether any inserted word begins with the given prefix."
+      }
     },
     {
       "type": "heading",
@@ -36,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "A `HashSet<string>` answers `Search` in O(1) but cannot answer `StartsWith` without scanning every stored word. A trie represents shared prefixes structurally, so a prefix query costs O(prefix length) regardless of how many words are stored — the property autocomplete and spell-checkers depend on."}
+        "text": "A `HashSet<string>` answers `Search` in O(1) but cannot answer `StartsWith` without scanning every stored word. A trie represents shared prefixes structurally, so a prefix query costs O(prefix length) regardless of how many words are stored — the property autocomplete and spell-checkers depend on."
+      }
     },
     {
       "type": "heading",
@@ -45,7 +47,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Each node holds a dictionary from character to child node, plus a boolean flag marking whether a complete word ends here. The flag is what distinguishes the node for `\"app\"` in `\"apple\"` (not a word) from a genuine word boundary."}
+        "text": "Each node holds a dictionary from character to child node, plus a boolean flag marking whether a complete word ends here. The flag is what distinguishes the node for `\"app\"` in `\"apple\"` (not a word) from a genuine word boundary."
+      }
     },
     {
       "type": "example",
@@ -79,7 +82,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Once you have a trie, collecting every stored word with a given prefix is a DFS from the prefix node. Adding a `List<string>` or a count to each node turns the structure into a prefix index."}
+        "text": "Once you have a trie, collecting every stored word with a given prefix is a DFS from the prefix node. Adding a `List<string>` or a count to each node turns the structure into a prefix index."
+      }
     },
     {
       "type": "example",
@@ -113,7 +117,12 @@
           {
             "title": "Trie",
             "description": "Character-by-character tree",
-            "pros": ["Prefix queries in O(prefix length)", "Shares common prefixes", "Powers autocomplete", "Recommended"],
+            "pros": [
+              "Prefix queries in O(prefix length)",
+              "Shares common prefixes",
+              "Powers autocomplete",
+              "Recommended"
+            ],
             "cons": ["More memory per node", "Pointer chasing"],
             "tags": ["O(length) per operation", "O(total chars) space"]
           }

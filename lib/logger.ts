@@ -1,12 +1,12 @@
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === "production";
 
 export class Logger {
   private getTimestamp(): string {
     const now = new Date();
-    const hours = now.getHours().toString().padStart(2, '0');
-    const minutes = now.getMinutes().toString().padStart(2, '0');
-    const seconds = now.getSeconds().toString().padStart(2, '0');
-    const ms = now.getMilliseconds().toString().padStart(3, '0');
+    const hours = now.getHours().toString().padStart(2, "0");
+    const minutes = now.getMinutes().toString().padStart(2, "0");
+    const seconds = now.getSeconds().toString().padStart(2, "0");
+    const ms = now.getMilliseconds().toString().padStart(3, "0");
     return `${hours}:${minutes}:${seconds}.${ms}`;
   }
 

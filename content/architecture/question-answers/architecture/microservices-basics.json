@@ -6,10 +6,7 @@
   "description": "Understand the microservices architecture pattern.",
   "order": 2,
   "difficulty": "intermediate",
-  "tags": [
-    "architecture",
-    "intermediate"
-  ],
+  "tags": ["architecture", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

@@ -7,10 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "oop",
-    "abstraction"
-  ],
+  "tags": ["oop", "abstraction"],
   "blocks": [
     {
       "type": "paragraph",
@@ -22,11 +19,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "Focus on what, not how",
-          "Reduce complexity",
-          "Create clear boundaries"
-        ],
+        "points": ["Focus on what, not how", "Reduce complexity", "Create clear boundaries"],
         "takeaway": "Abstraction simplifies complex systems by exposing only what's necessary."
       }
     },
@@ -40,8 +33,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "abstract-classes"
-  ],
+  "relatedLessons": ["abstract-classes"],
   "courseSlug": "oops-concepts"
 }

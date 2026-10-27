@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "CI/CD",
-    "deployment",
-    "blue-green",
-    "zero-downtime"
-  ],
+  "tags": ["CI/CD", "deployment", "blue-green", "zero-downtime"],
   "blocks": [
     {
       "type": "paragraph",
@@ -118,23 +113,13 @@
               "Simple mental model",
               "Full environment test before traffic"
             ],
-            "cons": [
-              "Double infrastructure cost",
-              "Database coupling risk"
-            ]
+            "cons": ["Double infrastructure cost", "Database coupling risk"]
           },
           {
             "title": "Rolling update",
             "description": "Replace instances gradually while keeping service available.",
-            "pros": [
-              "No duplicate capacity",
-              "Lower cost",
-              "Gradual risk exposure"
-            ],
-            "cons": [
-              "Rollback takes time",
-              "Mixed versions during rollout"
-            ]
+            "pros": ["No duplicate capacity", "Lower cost", "Gradual risk exposure"],
+            "cons": ["Rollback takes time", "Mixed versions during rollout"]
           }
         ]
       }

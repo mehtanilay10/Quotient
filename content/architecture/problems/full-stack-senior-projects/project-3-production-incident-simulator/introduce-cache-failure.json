@@ -105,14 +105,21 @@
           {
             "title": "Cache-aside (lazy loading)",
             "description": "Application handles cache misses by loading from the database on demand.",
-            "pros": ["Resilient to cache failures", "Only caches requested data", "Simple to implement"],
+            "pros": [
+              "Resilient to cache failures",
+              "Only caches requested data",
+              "Simple to implement"
+            ],
             "cons": ["Cache misses are slower", "Stale data until TTL expires"]
           },
           {
             "title": "Write-through",
             "description": "Writes update both cache and database synchronously.",
             "pros": ["Strong consistency on reads", "Write penalty is predictable"],
-            "cons": ["Write latency includes cache write", "Cache pollution from rarely-read writes"]
+            "cons": [
+              "Write latency includes cache write",
+              "Cache pollution from rarely-read writes"
+            ]
           },
           {
             "title": "Write-behind (write-back)",

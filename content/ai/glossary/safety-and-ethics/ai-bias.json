@@ -6,11 +6,7 @@
   "fullDefinition": "AI bias occurs when machine learning systems produce systematically prejudiced results due to biased training data, flawed model design, or the way questions are framed. Bias can manifest in many forms including racial, gender, and socioeconomic discrimination, often reflecting historical inequalities present in the data. Even when developers take steps to remove explicit bias, subtle correlations in data can produce unfair outcomes. Addressing AI bias requires diverse training data, fairness-aware algorithms, ongoing monitoring, and inclusive development teams. As AI systems are used for hiring, lending, and criminal justice, mitigating bias has become both a technical and ethical imperative.",
   "category": "safety-and-ethics",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "bias",
-    "safety",
-    "hallucination"
-  ],
+  "relatedTerms": ["bias", "safety", "hallucination"],
   "learnMoreSlug": "ai-limitations",
   "examples": [
     "A hiring tool that downgrades resumes containing the word 'women's'",

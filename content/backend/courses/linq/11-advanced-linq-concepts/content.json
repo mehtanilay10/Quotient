@@ -9,13 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 2,
   "icon": "🧠",
-  "tags": [
-    "linq",
-    "advanced",
-    "expression-trees",
-    "sequenceequal",
-    "sample-queries"
-  ],
+  "tags": ["linq", "advanced", "expression-trees", "sequenceequal", "sample-queries"],
   "lessonSlugs": [
     "expression-trees",
     "sequenceequal-operator",

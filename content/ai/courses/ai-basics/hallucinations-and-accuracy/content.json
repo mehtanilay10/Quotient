@@ -7,20 +7,10 @@
   "difficulty": "beginner",
   "estimatedHours": 1.5,
   "icon": "🔍",
-  "tags": [
-    "hallucination",
-    "accuracy",
-    "verification",
-    "fact-checking"
-  ],
-  "lessonSlugs": [
-    "ai-hallucination-deep-dive",
-    "evaluating-ai-output"
-  ],
+  "tags": ["hallucination", "accuracy", "verification", "fact-checking"],
+  "lessonSlugs": ["ai-hallucination-deep-dive", "evaluating-ai-output"],
   "isOptional": false,
-  "prerequisites": [
-    "understanding-llms"
-  ],
+  "prerequisites": ["understanding-llms"],
   "whatYouLearn": [
     "Why hallucination is a fundamental property of LLMs, not a bug",
     "The different types and levels of hallucination",

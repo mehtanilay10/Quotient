@@ -6,13 +6,7 @@
   "fullDefinition": "Tool calling (also called function calling) is the technical mechanism that lets an LLM request execution of an external function during its response process. Instead of just generating text, the model can say 'call the web search tool with query X' and use the results in its response. This is the foundation of all AI agent capabilities.",
   "category": "agents-and-automation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "agent",
-    "mcp",
-    "plugin"
-  ],
+  "relatedTerms": ["agent", "mcp", "plugin"],
   "learnMoreSlug": "what-is-tool-calling",
-  "alsoKnownAs": [
-    "Function Calling"
-  ]
+  "alsoKnownAs": ["Function Calling"]
 }

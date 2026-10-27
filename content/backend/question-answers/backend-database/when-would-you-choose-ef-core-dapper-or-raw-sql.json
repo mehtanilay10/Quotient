@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "backend",
-    "csharp",
-    "orm",
-    "data-access"
-  ],
+  "tags": ["backend", "csharp", "orm", "data-access"],
   "blocks": [
     {
       "type": "paragraph",

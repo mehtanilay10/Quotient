@@ -8,12 +8,7 @@
   "order": 12,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "arrays",
-    "intervals",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "intervals", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -99,31 +94,16 @@
           {
             "title": "Rebuild",
             "description": "Construct a fresh result list",
-            "pros": [
-              "Does not mutate input"
-            ],
-            "cons": [
-              "O(n) extra space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Does not mutate input"],
+            "cons": ["O(n) extra space"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "In-Place",
             "description": "Merge into the existing list",
-            "pros": [
-              "O(1) extra space"
-            ],
-            "cons": [
-              "Mutates input"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) extra space"],
+            "cons": ["Mutates input"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

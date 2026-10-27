@@ -36,7 +36,12 @@
         "rows": [
           ["Performance", "Standard", "Lower latency", "Low latency"],
           ["Price", "Higher", "Lower", "Lower"],
-          ["Built-in features", "API keys, usage plans, WAF", "Basic auth, CORS", "Message routing"],
+          [
+            "Built-in features",
+            "API keys, usage plans, WAF",
+            "Basic auth, CORS",
+            "Message routing"
+          ],
           ["Use case", "Complex APIs", "Simple serverless APIs", "Real-time apps, chat"]
         ]
       }

@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "azure",
-    "application-insights",
-    "distributed-tracing",
-    "monitoring"
-  ],
+  "tags": ["azure", "application-insights", "distributed-tracing", "monitoring"],
   "blocks": [
     {
       "type": "paragraph",

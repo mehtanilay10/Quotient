@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "clustered-index",
-    "primary-key",
-    "b-tree"
-  ],
+  "tags": ["clustered-index", "primary-key", "b-tree"],
   "blocks": [
     {
       "type": "heading",

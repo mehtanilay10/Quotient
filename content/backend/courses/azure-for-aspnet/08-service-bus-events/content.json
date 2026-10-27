@@ -10,11 +10,7 @@
   "estimatedHours": 3,
   "icon": "📨",
   "tags": ["azure", "service-bus", "event-grid", "cosmos-db", "messaging", "nosql", "csharp"],
-  "lessonSlugs": [
-    "service-bus-csharp",
-    "event-grid-csharp",
-    "cosmos-db-csharp"
-  ],
+  "lessonSlugs": ["service-bus-csharp", "event-grid-csharp", "cosmos-db-csharp"],
   "prerequisites": ["azure-storage-intro", "azure-sql-intro"],
   "whatYouLearn": [
     "Send and receive messages with Azure Service Bus from C#",

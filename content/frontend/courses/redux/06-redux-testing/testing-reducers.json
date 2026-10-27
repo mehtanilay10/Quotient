@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "testing",
-    "reducers",
-    "unit-tests",
-    "jest"
-  ],
+  "tags": ["redux", "testing", "reducers", "unit-tests", "jest"],
   "blocks": [
     {
       "type": "paragraph",
@@ -111,47 +105,19 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Assertion",
-          "Use Case",
-          "Example"
-        ],
+        "headers": ["Assertion", "Use Case", "Example"],
         "rows": [
-          [
-            "toEqual",
-            "Deep equality for objects/arrays",
-            "toEqual({ value: 5 })"
-          ],
+          ["toEqual", "Deep equality for objects/arrays", "toEqual({ value: 5 })"],
           [
             "toStrictEqual",
             "Like toEqual but stricter (checks undefined)",
             "toStrictEqual({ value: 5 })"
           ],
-          [
-            "toMatchObject",
-            "Partial matching, object contains",
-            "toMatchObject({ id: '1' })"
-          ],
-          [
-            "toHaveLength",
-            "Array/string length",
-            "toHaveLength(3)"
-          ],
-          [
-            "toContain",
-            "Array/string includes item",
-            "toContain(todo)"
-          ],
-          [
-            "toBeTruthy/toBeFalsy",
-            "Boolean checks",
-            "toBeTruthy()"
-          ],
-          [
-            "toBe",
-            "Same reference (primitives)",
-            "toBe(5)"
-          ]
+          ["toMatchObject", "Partial matching, object contains", "toMatchObject({ id: '1' })"],
+          ["toHaveLength", "Array/string length", "toHaveLength(3)"],
+          ["toContain", "Array/string includes item", "toContain(todo)"],
+          ["toBeTruthy/toBeFalsy", "Boolean checks", "toBeTruthy()"],
+          ["toBe", "Same reference (primitives)", "toBe(5)"]
         ]
       }
     },

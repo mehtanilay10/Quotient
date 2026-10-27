@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "devtools",
-    "profiling",
-    "flame-chart",
-    "long-tasks",
-    "optimization"
-  ],
+  "tags": ["devtools", "profiling", "flame-chart", "long-tasks", "optimization"],
   "blocks": [
     {
       "type": "paragraph",
@@ -176,11 +170,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "js-engine-optimization",
-    "debugging-performance",
-    "performance-markers"
-  ],
+  "relatedLessons": ["js-engine-optimization", "debugging-performance", "performance-markers"],
   "furtherReading": [
     {
       "title": "Chrome DevTools Performance Panel",

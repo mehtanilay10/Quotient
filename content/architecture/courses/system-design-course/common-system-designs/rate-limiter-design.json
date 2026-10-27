@@ -8,7 +8,14 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": ["system-design", "rate-limiting", "api-gateway", "token-bucket", "algorithms", "throttling"],
+  "tags": [
+    "system-design",
+    "rate-limiting",
+    "api-gateway",
+    "token-bucket",
+    "algorithms",
+    "throttling"
+  ],
   "blocks": [
     {
       "type": "paragraph",
@@ -95,10 +102,30 @@
       "data": {
         "headers": ["Algorithm", "Pros", "Cons", "Best For"],
         "rows": [
-          ["Token Bucket", "Allows bursts, simple to implement", "Hard to coordinate in distributed systems", "Per-user API limits"],
-          ["Leaky Bucket", "Smooths traffic, prevents bursts", "Drops requests on overflow", "Video streaming, ingress queues"],
-          ["Fixed Window", "Cheap to compute, minimal state", "Burst at window boundaries", "Global API caps"],
-          ["Sliding Window Log", "Accurate, no boundary bursts", "High memory overhead", "Strict compliance, B2B APIs"]
+          [
+            "Token Bucket",
+            "Allows bursts, simple to implement",
+            "Hard to coordinate in distributed systems",
+            "Per-user API limits"
+          ],
+          [
+            "Leaky Bucket",
+            "Smooths traffic, prevents bursts",
+            "Drops requests on overflow",
+            "Video streaming, ingress queues"
+          ],
+          [
+            "Fixed Window",
+            "Cheap to compute, minimal state",
+            "Burst at window boundaries",
+            "Global API caps"
+          ],
+          [
+            "Sliding Window Log",
+            "Accurate, no boundary bursts",
+            "High memory overhead",
+            "Strict compliance, B2B APIs"
+          ]
         ]
       }
     },

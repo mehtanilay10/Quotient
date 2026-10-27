@@ -105,37 +105,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Rule",
-          "Recommended Setting",
-          "Why"
-        ],
+        "headers": ["Rule", "Recommended Setting", "Why"],
         "rows": [
           [
             "Require pull request reviews",
             "At least 1 approval",
             "Catches bugs and spreads knowledge"
           ],
-          [
-            "Dismiss stale reviews",
-            "Enabled",
-            "Ensures approval is based on current code"
-          ],
-          [
-            "Require status checks",
-            "CI passing",
-            "Blocks broken builds from merging"
-          ],
-          [
-            "Include administrators",
-            "Optional",
-            "Applies rules to everyone, including leads"
-          ],
-          [
-            "Allow force pushes",
-            "Disabled",
-            "Prevents history rewriting on shared branches"
-          ]
+          ["Dismiss stale reviews", "Enabled", "Ensures approval is based on current code"],
+          ["Require status checks", "CI passing", "Blocks broken builds from merging"],
+          ["Include administrators", "Optional", "Applies rules to everyone, including leads"],
+          ["Allow force pushes", "Disabled", "Prevents history rewriting on shared branches"]
         ]
       }
     },
@@ -684,27 +664,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Team Size",
-          "Recommended Approvals",
-          "Notes"
-        ],
+        "headers": ["Team Size", "Recommended Approvals", "Notes"],
         "rows": [
-          [
-            "Small (1-5)",
-            "1-2",
-            "Any teammate can approve"
-          ],
-          [
-            "Medium (6-20)",
-            "1-2 + domain expert",
-            "Require domain expert for complex areas"
-          ],
-          [
-            "Large (20+)",
-            "2 + tech lead",
-            "Escalate architecture decisions to leads"
-          ]
+          ["Small (1-5)", "1-2", "Any teammate can approve"],
+          ["Medium (6-20)", "1-2 + domain expert", "Require domain expert for complex areas"],
+          ["Large (20+)", "2 + tech lead", "Escalate architecture decisions to leads"]
         ]
       }
     },

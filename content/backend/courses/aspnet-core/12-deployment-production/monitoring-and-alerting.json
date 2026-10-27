@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "monitoring",
-    "health-checks",
-    "alerting"
-  ],
+  "tags": ["monitoring", "health-checks", "alerting"],
   "blocks": [
     {
       "type": "paragraph",
@@ -207,10 +203,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "logging-and-monitoring",
-    "performance-tuning"
-  ],
+  "relatedLessons": ["logging-and-monitoring", "performance-tuning"],
   "technology": null,
   "furtherReading": [
     {

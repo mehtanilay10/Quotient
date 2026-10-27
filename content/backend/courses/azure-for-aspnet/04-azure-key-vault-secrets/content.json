@@ -16,10 +16,7 @@
     "managed-identities",
     "azure-configuration"
   ],
-  "prerequisites": [
-    "what-is-azure-for-dotnet",
-    "deploy-aspnet-core-app-service"
-  ],
+  "prerequisites": ["what-is-azure-for-dotnet", "deploy-aspnet-core-app-service"],
   "whatYouLearn": [
     "Create and use Azure Key Vault secrets",
     "Read secrets from C# using the Azure SDK",

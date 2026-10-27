@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -50,32 +44,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Built-in Role",
-          "Permissions",
-          "Typical Use"
-        ],
+        "headers": ["Built-in Role", "Permissions", "Typical Use"],
         "rows": [
-          [
-            "Reader",
-            "View only",
-            "Auditing or monitoring"
-          ],
-          [
-            "Contributor",
-            "Manage resources",
-            "Developers deploying apps"
-          ],
-          [
-            "Owner",
-            "Full control + delegate access",
-            "Project leads or admins"
-          ],
-          [
-            "User Access Administrator",
-            "Manage access",
-            "Security teams"
-          ]
+          ["Reader", "View only", "Auditing or monitoring"],
+          ["Contributor", "Manage resources", "Developers deploying apps"],
+          ["Owner", "Full control + delegate access", "Project leads or admins"],
+          ["User Access Administrator", "Manage access", "Security teams"]
         ]
       }
     },
@@ -127,32 +101,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Operation",
-          "Plane",
-          "Role example"
-        ],
+        "headers": ["Operation", "Plane", "Role example"],
         "rows": [
-          [
-            "Create or delete a storage account",
-            "Control plane",
-            "Contributor"
-          ],
-          [
-            "Read a blob",
-            "Data plane",
-            "Storage Blob Data Reader"
-          ],
-          [
-            "Read a Key Vault secret",
-            "Data plane",
-            "Key Vault Secrets User"
-          ],
-          [
-            "Send a Service Bus message",
-            "Data plane",
-            "Azure Service Bus Data Sender"
-          ]
+          ["Create or delete a storage account", "Control plane", "Contributor"],
+          ["Read a blob", "Data plane", "Storage Blob Data Reader"],
+          ["Read a Key Vault secret", "Data plane", "Key Vault Secrets User"],
+          ["Send a Service Bus message", "Data plane", "Azure Service Bus Data Sender"]
         ]
       }
     },

@@ -8,20 +8,9 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "hoc",
-    "examples",
-    "patterns",
-    "intermediate"
-  ],
-  "prerequisites": [
-    "hoc-basics"
-  ],
-  "relatedLessons": [
-    "hoc-basics",
-    "hoc-composition"
-  ],
+  "tags": ["react", "hoc", "examples", "patterns", "intermediate"],
+  "prerequisites": ["hoc-basics"],
+  "relatedLessons": ["hoc-basics", "hoc-composition"],
   "furtherReading": [
     {
       "title": "Recompose: A React utility belt for function components and higher-order components",
@@ -134,37 +123,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "HOC Name",
-          "Purpose",
-          "Props Added",
-          "Best For"
-        ],
+        "headers": ["HOC Name", "Purpose", "Props Added", "Best For"],
         "rows": [
-          [
-            "withLoading",
-            "Show a loading state",
-            "isLoading",
-            "Data-fetching components"
-          ],
+          ["withLoading", "Show a loading state", "isLoading", "Data-fetching components"],
           [
             "withLogger",
             "Debug props and renders",
             "none (side effect)",
             "Development and debugging"
           ],
-          [
-            "withUserData",
-            "Fetch and inject user",
-            "user, error",
-            "Pages needing current user"
-          ],
-          [
-            "withAuth",
-            "Protect routes",
-            "none (redirects)",
-            "Private routes and pages"
-          ],
+          ["withUserData", "Fetch and inject user", "user, error", "Pages needing current user"],
+          ["withAuth", "Protect routes", "none (redirects)", "Private routes and pages"],
           [
             "withErrorBoundary",
             "Catch render errors",

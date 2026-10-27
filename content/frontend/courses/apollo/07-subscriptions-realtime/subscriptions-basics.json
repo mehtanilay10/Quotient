@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "subscriptions",
-    "graphql",
-    "real-time",
-    "websocket"
-  ],
+  "tags": ["subscriptions", "graphql", "real-time", "websocket"],
   "blocks": [
     {
       "type": "paragraph",
@@ -56,31 +51,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Operation",
-          "Direction",
-          "Connection",
-          "Use Case"
-        ],
+        "headers": ["Operation", "Direction", "Connection", "Use Case"],
         "rows": [
-          [
-            "Query",
-            "Client → Server → Client",
-            "HTTP (request/response)",
-            "Fetch data"
-          ],
-          [
-            "Mutation",
-            "Client → Server → Client",
-            "HTTP (request/response)",
-            "Modify data"
-          ],
-          [
-            "Subscription",
-            "Server → Client (push)",
-            "WebSocket / SSE",
-            "Real-time updates"
-          ]
+          ["Query", "Client → Server → Client", "HTTP (request/response)", "Fetch data"],
+          ["Mutation", "Client → Server → Client", "HTTP (request/response)", "Modify data"],
+          ["Subscription", "Server → Client (push)", "WebSocket / SSE", "Real-time updates"]
         ]
       }
     },
@@ -162,7 +137,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "what-is-apollo"
-  ]
+  "prerequisites": ["what-is-apollo"]
 }

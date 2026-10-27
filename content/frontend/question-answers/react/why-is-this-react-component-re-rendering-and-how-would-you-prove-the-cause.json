@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "React",
-    "Performance",
-    "Reconciliation",
-    "Memoization"
-  ],
+  "tags": ["React", "Performance", "Reconciliation", "Memoization"],
   "blocks": [
     {
       "type": "paragraph",

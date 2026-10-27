@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "vector-store",
-    "azure-ai-search",
-    "pgvector",
-    "qdrant"
-  ],
+  "tags": ["vector-store", "azure-ai-search", "pgvector", "qdrant"],
   "blocks": [
     {
       "type": "paragraph",
@@ -36,10 +31,7 @@
             "Scoped access and security",
             "Easy Azure integration"
           ],
-          "cons": [
-            "Cloud-only",
-            "Index management overhead"
-          ]
+          "cons": ["Cloud-only", "Index management overhead"]
         },
         {
           "title": "PostgreSQL + pgvector",
@@ -48,34 +40,19 @@
             "Single database for vectors and relational data",
             "Works locally and in managed Postgres"
           ],
-          "cons": [
-            "Manual index tuning",
-            "Hybrid search requires custom ranking"
-          ]
+          "cons": ["Manual index tuning", "Hybrid search requires custom ranking"]
         },
         {
           "title": "Qdrant",
           "description": "Open-source vector DB with a cloud option and REST and gRPC interfaces.",
-          "pros": [
-            "Rich payload filtering",
-            "Good documentation"
-          ],
-          "cons": [
-            "Extra infrastructure",
-            "Smaller .NET community"
-          ]
+          "pros": ["Rich payload filtering", "Good documentation"],
+          "cons": ["Extra infrastructure", "Smaller .NET community"]
         },
         {
           "title": "Redis Stack",
           "description": "Adds vector similarity search to Redis, useful for caching retrieved context.",
-          "pros": [
-            "Fast for hot data",
-            "Great as a cache layer"
-          ],
-          "cons": [
-            "Expensive for large permanent storage",
-            "Limited query complexity"
-          ]
+          "pros": ["Fast for hot data", "Great as a cache layer"],
+          "cons": ["Expensive for large permanent storage", "Limited query complexity"]
         }
       ]
     },
@@ -110,10 +87,7 @@
       "expectedOutcome": "You should see ranked results with similarity scores and the ability to filter by document metadata."
     }
   ],
-  "relatedLessons": [
-    "chunking-and-embedding-documents",
-    "retrieval-and-ranking"
-  ],
+  "relatedLessons": ["chunking-and-embedding-documents", "retrieval-and-ranking"],
   "technology": null,
   "furtherReading": [
     {

@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "kafka",
-    "producers",
-    "consumers",
-    "confluent",
-    "kafkajs"
-  ],
+  "tags": ["kafka", "producers", "consumers", "confluent", "kafkajs"],
   "blocks": [
     {
       "type": "paragraph",

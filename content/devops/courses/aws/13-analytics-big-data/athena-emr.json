@@ -8,15 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "analytics",
-    "athena",
-    "emr",
-    "spark",
-    "big-data",
-    "sql"
-  ],
+  "tags": ["aws", "analytics", "athena", "emr", "spark", "big-data", "sql"],
   "blocks": [
     {
       "type": "paragraph",
@@ -99,10 +91,7 @@
               "Standard SQL",
               "Great for ad-hoc analysis"
             ],
-            "cons": [
-              "Not suited for complex transformations",
-              "Limited to SQL logic"
-            ]
+            "cons": ["Not suited for complex transformations", "Limited to SQL logic"]
           },
           {
             "title": "EMR",
@@ -113,10 +102,7 @@
               "Custom frameworks",
               "Machine learning at scale"
             ],
-            "cons": [
-              "Requires cluster management",
-              "Higher cost for small workloads"
-            ]
+            "cons": ["Requires cluster management", "Higher cost for small workloads"]
           }
         ]
       }

@@ -29,7 +29,12 @@
         "headers": ["Strategy", "Description", "Effort", "Speed"],
         "rows": [
           ["Rehost", "Lift and shift — move as-is to the cloud", "Low", "Fastest"],
-          ["Replatform", "Lift and optimize — change platform (e.g., RDS instead of self-managed DB)", "Medium", "Fast"],
+          [
+            "Replatform",
+            "Lift and optimize — change platform (e.g., RDS instead of self-managed DB)",
+            "Medium",
+            "Fast"
+          ],
           ["Repurchase", "Switch to a cloud-native alternative (e.g., SaaS)", "Low", "Medium"],
           ["Refactor", "Rearchitect for cloud-native (e.g., serverless)", "High", "Slowest"],
           ["Retire", "Turn off applications you no longer need", "Very low", "Immediate"],

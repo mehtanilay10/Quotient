@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "PACELC",
-    "distributed systems",
-    "latency",
-    "consistency",
-    "availability"
-  ],
+  "tags": ["PACELC", "distributed systems", "latency", "consistency", "availability"],
   "blocks": [
     {
       "type": "heading",
@@ -85,26 +79,14 @@
           {
             "title": "Low Latency, Weaker Consistency",
             "description": "Serving from a local replica with eventual consistency.",
-            "pros": [
-              "Faster response times",
-              "Better user experience during network congestion"
-            ],
-            "cons": [
-              "Stale reads possible",
-              "Conflicts may require resolution"
-            ]
+            "pros": ["Faster response times", "Better user experience during network congestion"],
+            "cons": ["Stale reads possible", "Conflicts may require resolution"]
           },
           {
             "title": "Strong Consistency, Higher Latency",
             "description": "Synchronizing across replicas before acknowledging.",
-            "pros": [
-              "Always up-to-date data",
-              "Simpler application logic"
-            ],
-            "cons": [
-              "Slower writes under load",
-              "More sensitive to network delays"
-            ]
+            "pros": ["Always up-to-date data", "Simpler application logic"],
+            "cons": ["Slower writes under load", "More sensitive to network delays"]
           }
         ]
       }

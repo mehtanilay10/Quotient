@@ -7,13 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "ef-core",
-    "inheritance",
-    "tph",
-    "tpt",
-    "tpc"
-  ],
+  "tags": ["ef-core", "inheritance", "tph", "tpt", "tpc"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,31 +34,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Tables",
-          "Query Style",
-          "Characteristics"
-        ],
+        "headers": ["Strategy", "Tables", "Query Style", "Characteristics"],
         "rows": [
-          [
-            "TPH",
-            "Single table",
-            "Filtered SELECT",
-            "Simple queries, no JOIN"
-          ],
-          [
-            "TPT",
-            "Base + derived tables",
-            "JOIN",
-            "Normalized schema"
-          ],
-          [
-            "TPC",
-            "Concrete tables only",
-            "UNION ALL",
-            "No base table, duplicated columns"
-          ]
+          ["TPH", "Single table", "Filtered SELECT", "Simple queries, no JOIN"],
+          ["TPT", "Base + derived tables", "JOIN", "Normalized schema"],
+          ["TPC", "Concrete tables only", "UNION ALL", "No base table, duplicated columns"]
         ]
       }
     },
@@ -99,9 +73,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ef-core-table-per-hierarchy-tph",
-    "ef-core-table-per-type-tpt"
-  ],
+  "relatedLessons": ["ef-core-table-per-hierarchy-tph", "ef-core-table-per-type-tpt"],
   "courseSlug": "ef-core"
 }

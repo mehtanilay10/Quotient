@@ -1,14 +1,14 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://quotient.dev';
-const SITE_NAME = 'Quotient';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://quotient.dev";
+const SITE_NAME = "Quotient";
 const DEFAULT_DESCRIPTION =
-  'Structured courses, coding problems, cheat sheets, and question answers with runnable examples across C#, SQL, React, ASP.NET Core, system design, and more.';
+  "Structured courses, coding problems, cheat sheets, and question answers with runnable examples across C#, SQL, React, ASP.NET Core, system design, and more.";
 
 export function buildMetadata({
   title,
   description,
-  path = '',
+  path = "",
   image,
 }: {
   title: string;
@@ -30,10 +30,10 @@ export function buildMetadata({
       url,
       siteName: SITE_NAME,
       images: [{ url: ogImage, width: 1200, height: 630 }],
-      type: 'website',
+      type: "website",
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title: fullTitle,
       description: desc,
       images: [ogImage],

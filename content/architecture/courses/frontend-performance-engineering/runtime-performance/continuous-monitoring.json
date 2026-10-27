@@ -8,13 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "rum",
-    "synthetic",
-    "performance-budgets",
-    "alerting",
-    "ci"
-  ],
+  "tags": ["rum", "synthetic", "performance-budgets", "alerting", "ci"],
   "blocks": [
     {
       "type": "paragraph",
@@ -176,11 +170,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "user-centric-metrics",
-    "performance-markers",
-    "debugging-performance"
-  ],
+  "relatedLessons": ["user-centric-metrics", "performance-markers", "debugging-performance"],
   "furtherReading": [
     {
       "title": "Web Vitals on web.dev",

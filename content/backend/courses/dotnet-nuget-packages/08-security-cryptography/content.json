@@ -8,13 +8,7 @@
   "difficulty": "advanced",
   "estimatedHours": 2.5,
   "icon": "🔐",
-  "tags": [
-    "security",
-    "authentication",
-    "jwt",
-    "bcrypt",
-    "encryption"
-  ],
+  "tags": ["security", "authentication", "jwt", "bcrypt", "encryption"],
   "lessonSlugs": [
     "bcrypt",
     "bcrypt-net",

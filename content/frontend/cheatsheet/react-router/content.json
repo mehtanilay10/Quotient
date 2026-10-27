@@ -10,9 +10,5 @@
   "icon": "🧭",
   "tags": ["react-router", "react", "cheatsheet", "quick-reference"],
   "lessonSlugs": ["cheatsheet"],
-  "whatYouLearn": [
-    "Route configuration",
-    "Navigation methods",
-    "Dynamic routing"
-  ]
+  "whatYouLearn": ["Route configuration", "Navigation methods", "Dynamic routing"]
 }

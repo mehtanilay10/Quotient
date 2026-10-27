@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "connection-pooling",
-    "pgbouncer",
-    "max-connections",
-    "concurrency"
-  ],
+  "tags": ["connection-pooling", "pgbouncer", "max-connections", "concurrency"],
   "blocks": [
     {
       "type": "paragraph",
@@ -76,8 +71,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "architecture-overview",
-    "configuration-tuning"
-  ]
+  "relatedLessons": ["architecture-overview", "configuration-tuning"]
 }

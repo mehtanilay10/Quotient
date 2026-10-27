@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "code-splitting",
-    "dynamic-imports",
-    "performance"
-  ],
+  "tags": ["redux", "code-splitting", "dynamic-imports", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -116,32 +111,12 @@
       "type": "table",
       "data": {
         "title": "Bundle size before vs after splitting",
-        "headers": [
-          "Metric",
-          "Monolithic",
-          "Code-Split"
-        ],
+        "headers": ["Metric", "Monolithic", "Code-Split"],
         "rows": [
-          [
-            "Initial JS bundle",
-            "1.2 MB",
-            "320 KB"
-          ],
-          [
-            "Time to interactive (cold)",
-            "4.1 s",
-            "1.4 s"
-          ],
-          [
-            "Reducers in memory on load",
-            "All",
-            "Only home + auth"
-          ],
-          [
-            "Routes that load extra JS",
-            "None",
-            "Each route on demand"
-          ]
+          ["Initial JS bundle", "1.2 MB", "320 KB"],
+          ["Time to interactive (cold)", "4.1 s", "1.4 s"],
+          ["Reducers in memory on load", "All", "Only home + auth"],
+          ["Routes that load extra JS", "None", "Each route on demand"]
         ]
       }
     },

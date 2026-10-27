@@ -6,11 +6,7 @@
   "description": "Column-bound auto-increment vs a standalone number generator: sharing across tables, cycling, caching, and gap behavior.",
   "order": 17,
   "difficulty": "intermediate",
-  "tags": [
-    "sql server",
-    "schema-design",
-    "intermediate"
-  ],
+  "tags": ["sql server", "schema-design", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sql-b03",
-    "sql-i03",
-    "merge-pitfalls"
-  ],
+  "relatedLessons": ["sql-b03", "sql-i03", "merge-pitfalls"],
   "furtherReading": [
     {
       "title": "SEQUENCE (Transact-SQL) — Microsoft Learn",

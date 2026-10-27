@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "masstransit",
-    "messaging",
-    "rabbitmq",
-    "distributed"
-  ],
+  "tags": ["masstransit", "messaging", "rabbitmq", "distributed"],
   "blocks": [
     {
       "type": "heading",

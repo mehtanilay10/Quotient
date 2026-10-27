@@ -150,7 +150,15 @@
   ],
   "relatedLessons": ["ef-core-vs-dapper-vs-raw-sql", "when-to-bypass-the-orm"],
   "furtherReading": [
-    { "title": "EF Core bulk operations", "url": "https://learn.microsoft.com/en-us/ef/core/performance/bulk-operations", "type": "article" },
-    { "title": "EFCore.BulkExtensions", "url": "https://github.com/borisdj/EFCore.BulkExtensions", "type": "article" }
+    {
+      "title": "EF Core bulk operations",
+      "url": "https://learn.microsoft.com/en-us/ef/core/performance/bulk-operations",
+      "type": "article"
+    },
+    {
+      "title": "EFCore.BulkExtensions",
+      "url": "https://github.com/borisdj/EFCore.BulkExtensions",
+      "type": "article"
+    }
   ]
 }

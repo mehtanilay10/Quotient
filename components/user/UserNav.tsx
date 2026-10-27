@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   BarChart3,
   Bookmark,
@@ -11,8 +11,8 @@ import {
   AlertTriangle,
   CloudOff,
   type LucideIcon,
-} from 'lucide-react';
-import { cn } from '@/lib/utils';
+} from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface UserNavItem {
   href: string;
@@ -27,13 +27,13 @@ interface UserNavItem {
  * administration in the danger zone.
  */
 export const USER_NAV_ITEMS: UserNavItem[] = [
-  { href: '/user/profile', label: 'Profile', icon: User },
-  { href: '/user/personalization', label: 'Personalization', icon: Settings2 },
-  { href: '/user/progress', label: 'Progress', icon: BarChart3 },
-  { href: '/user/bookmarks', label: 'Bookmarks', icon: Bookmark },
-  { href: '/user/notes', label: 'Notes', icon: StickyNote },
-  { href: '/user/offline', label: 'Saved offline', icon: CloudOff },
-  { href: '/user/danger-zone', label: 'Danger Zone', icon: AlertTriangle },
+  { href: "/user/profile", label: "Profile", icon: User },
+  { href: "/user/personalization", label: "Personalization", icon: Settings2 },
+  { href: "/user/progress", label: "Progress", icon: BarChart3 },
+  { href: "/user/bookmarks", label: "Bookmarks", icon: Bookmark },
+  { href: "/user/notes", label: "Notes", icon: StickyNote },
+  { href: "/user/offline", label: "Saved offline", icon: CloudOff },
+  { href: "/user/danger-zone", label: "Danger Zone", icon: AlertTriangle },
 ];
 
 /**
@@ -56,12 +56,12 @@ export function UserNav() {
             <li key={item.href}>
               <Link
                 href={item.href}
-                aria-current={isActive ? 'page' : undefined}
+                aria-current={isActive ? "page" : undefined}
                 className={cn(
-                  'flex items-center gap-3 rounded-lg border border-transparent px-3 py-2.5 text-sm font-medium transition-colors',
+                  "flex items-center gap-3 rounded-lg border border-transparent px-3 py-2.5 text-sm font-medium transition-colors",
                   isActive
-                    ? 'border-accent-fg/30 bg-accent-fg/10 text-accent-fg'
-                    : 'text-fg-muted hover:bg-canvas-subtle hover:text-fg-default'
+                    ? "border-accent-fg/30 bg-accent-fg/10 text-accent-fg"
+                    : "text-fg-muted hover:bg-canvas-subtle hover:text-fg-default"
                 )}
               >
                 <Icon className="h-4 w-4 shrink-0" aria-hidden="true" />

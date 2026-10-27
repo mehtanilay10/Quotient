@@ -7,12 +7,6 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "✨",
-  "lessonSlugs": [
-    "framer-motion",
-    "react-spring",
-    "gsap",
-    "anime-js",
-    "popmotion"
-  ],
+  "lessonSlugs": ["framer-motion", "react-spring", "gsap", "anime-js", "popmotion"],
   "courseSlug": "yarn-npm-packages"
 }

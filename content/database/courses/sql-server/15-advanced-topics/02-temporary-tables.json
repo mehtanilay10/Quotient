@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 23,
-  "tags": [
-    "temporary-table",
-    "SELECT-INTO",
-    "CREATE-TABLE"
-  ],
+  "tags": ["temporary-table", "SELECT-INTO", "CREATE-TABLE"],
   "blocks": [
     {
       "type": "heading",

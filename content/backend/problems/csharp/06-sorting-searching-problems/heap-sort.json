@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Sort an array in ascending order using heap sort: build a max-heap in place, then repeatedly swap the maximum to the end of the unsorted region and restore the heap property. The time must be O(n log n) in the worst case, and it must use O(1) extra memory."}
+        "text": "Sort an array in ascending order using heap sort: build a max-heap in place, then repeatedly swap the maximum to the end of the unsorted region and restore the heap property. The time must be O(n log n) in the worst case, and it must use O(1) extra memory."
+      }
     },
     {
       "type": "heading",
@@ -36,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "A complete binary tree can be stored directly in an array with no pointers: for index `i`, the children are at `2i + 1` and `2i + 2`, and the parent is at `(i - 1) / 2`. That is what makes heap sort in-place. A max-heap has every parent at least as large as its children, so the root is the overall maximum."}
+        "text": "A complete binary tree can be stored directly in an array with no pointers: for index `i`, the children are at `2i + 1` and `2i + 2`, and the parent is at `(i - 1) / 2`. That is what makes heap sort in-place. A max-heap has every parent at least as large as its children, so the root is the overall maximum."
+      }
     },
     {
       "type": "heading",
@@ -45,7 +47,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "The core operation: if a node is smaller than one of its children, swap it with the larger child and continue. This 'sinks' a misplaced value to its correct level in O(log n)."}
+        "text": "The core operation: if a node is smaller than one of its children, swap it with the larger child and continue. This 'sinks' a misplaced value to its correct level in O(log n)."
+      }
     },
     {
       "type": "example",
@@ -63,7 +66,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Sift down from the last parent to the root to build a max-heap in O(n) — not O(n log n), because most nodes sit near the bottom and can only sink a little. Then repeatedly swap the root to the end and shrink the heap by one, sifting down each time."}
+        "text": "Sift down from the last parent to the root to build a max-heap in O(n) — not O(n log n), because most nodes sit near the bottom and can only sink a little. Then repeatedly swap the root to the end and shrink the heap by one, sifting down each time."
+      }
     },
     {
       "type": "example",

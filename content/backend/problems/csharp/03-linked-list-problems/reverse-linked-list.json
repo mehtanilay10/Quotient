@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "easy",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "linked-list",
-    "pointers",
-    "easy"
-  ],
+  "tags": ["csharp", "linked-list", "pointers", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -66,32 +61,16 @@
           {
             "title": "Iterative",
             "description": "Three-pointer in-place",
-            "pros": [
-              "O(1) space",
-              "No stack risk"
-            ],
-            "cons": [
-              "Pointer tracking"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) space", "No stack risk"],
+            "cons": ["Pointer tracking"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           },
           {
             "title": "Recursive",
             "description": "Unwind call stack to reverse",
-            "pros": [
-              "Elegant"
-            ],
-            "cons": [
-              "O(n) stack"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Elegant"],
+            "cons": ["O(n) stack"],
+            "tags": ["O(n) time", "O(n) space"]
           }
         ]
       }

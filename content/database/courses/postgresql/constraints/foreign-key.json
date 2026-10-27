@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "foreign-key",
-    "referential-integrity",
-    "cascade",
-    "locks",
-    "indexes"
-  ],
+  "tags": ["foreign-key", "referential-integrity", "cascade", "locks", "indexes"],
   "blocks": [
     {
       "type": "paragraph",
@@ -71,37 +65,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Action",
-          "Child rows when parent is deleted",
-          "Typical use"
-        ],
+        "headers": ["Action", "Child rows when parent is deleted", "Typical use"],
         "rows": [
           [
             "`NO ACTION`",
             "Error (check can be deferred to commit)",
             "Default; safest when in doubt"
           ],
-          [
-            "`RESTRICT`",
-            "Error immediately",
-            "Protect reference data such as currencies"
-          ],
-          [
-            "`CASCADE`",
-            "Deleted too",
-            "Owned children: `order_items`, comments"
-          ],
-          [
-            "`SET NULL`",
-            "Foreign key column set to `NULL`",
-            "Optional relation: `assigned_to`"
-          ],
-          [
-            "`SET DEFAULT`",
-            "Set to the column default",
-            "Rare; a sentinel \"unassigned\" row"
-          ]
+          ["`RESTRICT`", "Error immediately", "Protect reference data such as currencies"],
+          ["`CASCADE`", "Deleted too", "Owned children: `order_items`, comments"],
+          ["`SET NULL`", "Foreign key column set to `NULL`", "Optional relation: `assigned_to`"],
+          ["`SET DEFAULT`", "Set to the column default", "Rare; a sentinel \"unassigned\" row"]
         ]
       }
     },
@@ -186,8 +160,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "primary-key",
-    "unique-check"
-  ]
+  "relatedLessons": ["primary-key", "unique-check"]
 }

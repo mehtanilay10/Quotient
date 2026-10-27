@@ -7,11 +7,6 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "⚛️",
-  "lessonSlugs": [
-    "react-testing-library",
-    "vitest-react",
-    "cypress-component",
-    "testing-hooks"
-  ],
+  "lessonSlugs": ["react-testing-library", "vitest-react", "cypress-component", "testing-hooks"],
   "courseSlug": "yarn-npm-packages"
 }

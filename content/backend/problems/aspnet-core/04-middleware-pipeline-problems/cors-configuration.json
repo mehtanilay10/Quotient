@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "middleware",
-    "cors",
-    "security"
-  ],
+  "tags": ["aspnet-core", "middleware", "cors", "security"],
   "blocks": [
     {
       "type": "heading",
@@ -91,38 +86,19 @@
           {
             "title": "Named CORS Policy",
             "description": "Reusable CORS policy",
-            "pros": [
-              "Named policies",
-              "Fine-grained control",
-              "Applied per controller/action"
-            ],
-            "cons": [
-              "Policy order matters",
-              "Must allow credentials explicitly"
-            ],
-            "tags": [
-              "AddCors",
-              "WithOrigins",
-              "AllowCredentials"
-            ]
+            "pros": ["Named policies", "Fine-grained control", "Applied per controller/action"],
+            "cons": ["Policy order matters", "Must allow credentials explicitly"],
+            "tags": ["AddCors", "WithOrigins", "AllowCredentials"]
           },
           {
             "title": "CORS with Endpoint Routing",
             "description": "CORS per endpoint",
-            "pros": [
-              "Very granular control",
-              "No attribute clutter",
-              "Works with minimal APIs"
-            ],
+            "pros": ["Very granular control", "No attribute clutter", "Works with minimal APIs"],
             "cons": [
               "Requires UseCors() before UseAuthorization",
               "Multiple policies can be confusing"
             ],
-            "tags": [
-              "RequireCors",
-              "UseCors",
-              "AllowAnyOrigin"
-            ]
+            "tags": ["RequireCors", "UseCors", "AllowAnyOrigin"]
           }
         ]
       }

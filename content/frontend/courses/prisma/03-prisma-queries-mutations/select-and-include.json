@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "prisma",
-    "select",
-    "include",
-    "optimization",
-    "payload"
-  ],
+  "tags": ["prisma", "select", "include", "optimization", "payload"],
   "blocks": [
     {
       "type": "paragraph",
@@ -68,8 +62,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-client-queries",
-    "pagination-techniques"
-  ]
+  "relatedLessons": ["prisma-client-queries", "pagination-techniques"]
 }

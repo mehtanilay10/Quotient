@@ -8,13 +8,7 @@
   "order": 17,
   "difficulty": "beginner",
   "estimatedMinutes": 22,
-  "tags": [
-    "logic-apps",
-    "integration",
-    "workflow",
-    "connectors",
-    "low-code"
-  ],
+  "tags": ["logic-apps", "integration", "workflow", "connectors", "low-code"],
   "blocks": [
     {
       "type": "heading",
@@ -106,8 +100,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "azure-service-bus-overview",
-    "azure-functions-overview"
-  ]
+  "relatedLessons": ["azure-service-bus-overview", "azure-functions-overview"]
 }

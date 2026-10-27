@@ -8,13 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "compliance",
-    "auditing",
-    "linux",
-    "logs",
-    "security"
-  ],
+  "tags": ["compliance", "auditing", "linux", "logs", "security"],
   "blocks": [
     {
       "type": "paragraph",
@@ -105,32 +99,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Framework",
-          "Focus",
-          "Linux Relevance"
-        ],
+        "headers": ["Framework", "Focus", "Linux Relevance"],
         "rows": [
-          [
-            "SOC 2",
-            "Trust services and access controls",
-            "auditd logs, SSH controls, MFA"
-          ],
-          [
-            "PCI DSS",
-            "Cardholder data protection",
-            "Network segmentation, encrypted backups"
-          ],
-          [
-            "HIPAA",
-            "Healthcare data privacy",
-            "Access logs, encryption, audit trails"
-          ],
-          [
-            "GDPR",
-            "Personal data protection",
-            "Data minimization, right to audit"
-          ]
+          ["SOC 2", "Trust services and access controls", "auditd logs, SSH controls, MFA"],
+          ["PCI DSS", "Cardholder data protection", "Network segmentation, encrypted backups"],
+          ["HIPAA", "Healthcare data privacy", "Access logs, encryption, audit trails"],
+          ["GDPR", "Personal data protection", "Data minimization, right to audit"]
         ]
       }
     },

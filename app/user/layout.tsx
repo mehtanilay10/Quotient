@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
-import { redirect } from 'next/navigation';
-import { getCurrentUser } from '@/lib/auth';
-import { UserNav } from '@/components/user/UserNav';
+import type { Metadata } from "next";
+import { redirect } from "next/navigation";
+import { getCurrentUser } from "@/lib/auth";
+import { UserNav } from "@/components/user/UserNav";
 
 export const metadata: Metadata = {
-  title: 'Your Account | Quotient',
-  description: 'Track progress, bookmarks, notes, and preferences for your learning account.',
+  title: "Your Account | Quotient",
+  description: "Track progress, bookmarks, notes, and preferences for your learning account.",
   robots: { index: false, follow: false },
 };
 
@@ -16,14 +16,10 @@ export const metadata: Metadata = {
  * check and the vertical section navigation only need to be written once. The
  * sign-in page keeps its own standalone, centered presentation.
  */
-export default async function UserLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default async function UserLayout({ children }: { children: React.ReactNode }) {
   const user = await getCurrentUser();
   if (!user) {
-    redirect('/login');
+    redirect("/login");
   }
 
   return (

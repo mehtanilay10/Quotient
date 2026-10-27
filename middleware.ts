@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
 /**
  * Middleware for security policies and request handling.
@@ -13,7 +13,7 @@ export function middleware(request: NextRequest) {
   // allows for dynamic header values based on request context
 
   // Remove x-powered-by header to reduce information disclosure
-  response.headers.delete('x-powered-by');
+  response.headers.delete("x-powered-by");
 
   // Add nonce-based CSP for inline scripts if needed in the future
   // Currently using inline scripts with 'unsafe-inline' in next.config.ts
@@ -35,6 +35,6 @@ export const config = {
      * - favicon.ico (favicon file)
      * - public folder files
      */
-    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
   ],
 };

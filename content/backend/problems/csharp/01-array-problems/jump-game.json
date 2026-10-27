@@ -8,12 +8,7 @@
   "order": 10,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "arrays",
-    "greedy",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "greedy", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -107,30 +102,16 @@
           {
             "title": "Forward Greedy",
             "description": "Track farthest reachable index",
-            "pros": [
-              "O(n) time",
-              "O(1) space"
-            ],
+            "pros": ["O(n) time", "O(1) space"],
             "cons": [],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           },
           {
             "title": "Backward Greedy",
             "description": "Shrink the goal from the end",
-            "pros": [
-              "O(n) time",
-              "O(1) space"
-            ],
+            "pros": ["O(n) time", "O(1) space"],
             "cons": [],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

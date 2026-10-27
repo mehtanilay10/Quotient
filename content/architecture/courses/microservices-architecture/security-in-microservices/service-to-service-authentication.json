@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "mTLS",
-    "service-auth",
-    "zero-trust"
-  ],
+  "tags": ["mTLS", "service-auth", "zero-trust"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,32 +56,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "Description",
-          "Strength"
-        ],
+        "headers": ["Method", "Description", "Strength"],
         "rows": [
-          [
-            "mTLS",
-            "Certificate-based mutual auth",
-            "Strong"
-          ],
-          [
-            "JWT",
-            "Token-based auth",
-            "Medium"
-          ],
-          [
-            "API Key",
-            "Static key",
-            "Weak"
-          ],
-          [
-            "Network Policy",
-            "IP-based",
-            "Weak"
-          ]
+          ["mTLS", "Certificate-based mutual auth", "Strong"],
+          ["JWT", "Token-based auth", "Medium"],
+          ["API Key", "Static key", "Weak"],
+          ["Network Policy", "IP-based", "Weak"]
         ]
       }
     },

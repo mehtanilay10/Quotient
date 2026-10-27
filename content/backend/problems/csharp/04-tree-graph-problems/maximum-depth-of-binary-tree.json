@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "easy",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "trees",
-    "dfs",
-    "bfs",
-    "easy"
-  ],
+  "tags": ["csharp", "trees", "dfs", "bfs", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -67,31 +61,16 @@
           {
             "title": "Recursive DFS",
             "description": "1 + max(left, right)",
-            "pros": [
-              "Most concise"
-            ],
-            "cons": [
-              "O(h) call stack"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(h) space"
-            ]
+            "pros": ["Most concise"],
+            "cons": ["O(h) call stack"],
+            "tags": ["O(n) time", "O(h) space"]
           },
           {
             "title": "BFS",
             "description": "Count levels with queue",
-            "pros": [
-              "Intuitive depth counting"
-            ],
-            "cons": [
-              "Queue overhead"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(w) space",
-              "Recommended"
-            ]
+            "pros": ["Intuitive depth counting"],
+            "cons": ["Queue overhead"],
+            "tags": ["O(n) time", "O(w) space", "Recommended"]
           }
         ]
       }

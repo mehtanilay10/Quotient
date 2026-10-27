@@ -40,15 +40,15 @@ learner experience consistent.
 
 ### Naming
 
-| Kind | Convention | Example |
-| --- | --- | --- |
-| Components | PascalCase, named export | `LessonSidebar` |
-| Hooks | `use` prefix, camelCase file | `useUserPreferences.ts` |
-| Functions / variables | camelCase | `getLessonBySlug` |
-| Types / interfaces | PascalCase | `ContentBlock` |
-| Constants | UPPER_SNAKE_CASE | `MAX_QUERY_LENGTH` |
-| Content slugs | kebab-case | `what-is-csharp` |
-| CSS tokens | semantic kebab names | `text-accent-fg` |
+| Kind                  | Convention                   | Example                 |
+| --------------------- | ---------------------------- | ----------------------- |
+| Components            | PascalCase, named export     | `LessonSidebar`         |
+| Hooks                 | `use` prefix, camelCase file | `useUserPreferences.ts` |
+| Functions / variables | camelCase                    | `getLessonBySlug`       |
+| Types / interfaces    | PascalCase                   | `ContentBlock`          |
+| Constants             | UPPER_SNAKE_CASE             | `MAX_QUERY_LENGTH`      |
+| Content slugs         | kebab-case                   | `what-is-csharp`        |
+| CSS tokens            | semantic kebab names         | `text-accent-fg`        |
 
 Use `@/` imports for project modules. Use relative imports only for siblings in
 the same feature when that matches the local file.
@@ -99,7 +99,7 @@ This is the most important performance rule in the repository.
   return the canonical category alongside the slug segments.
 - Add `generateMetadata()` or `buildMetadata()` for public pages.
 - Use `next/link` for internal navigation. Use `<a target="_blank"
-  rel="noopener noreferrer">` for external links.
+rel="noopener noreferrer">` for external links.
 - Use the metadata helpers in `lib/seo.ts` instead of hand-building Open Graph
   objects.
 - Keep route-level loading and error files close to the route when they add
@@ -210,17 +210,17 @@ security decisions, or content quirks; preserve that context when editing.
 
 ## 9. Data fetching and state
 
-| Need | Use |
-| --- | --- |
-| Content for a server page | `lib/content.ts` |
-| Link/href in a client component | `lib/content-hrefs.ts` |
-| Session | `useSession()` / server `auth()` |
-| Progress | `useProgress()` |
-| Bookmarks | `useBookmarks()` |
-| Preferences | `usePreferencesContext()` in client components |
-| Theme | `useUserTheme()` or `next-themes` |
-| Mutating API request | `apiFetch` |
-| Retrying transient failures | `retryWithBackoff` |
+| Need                            | Use                                            |
+| ------------------------------- | ---------------------------------------------- |
+| Content for a server page       | `lib/content.ts`                               |
+| Link/href in a client component | `lib/content-hrefs.ts`                         |
+| Session                         | `useSession()` / server `auth()`               |
+| Progress                        | `useProgress()`                                |
+| Bookmarks                       | `useBookmarks()`                               |
+| Preferences                     | `usePreferencesContext()` in client components |
+| Theme                           | `useUserTheme()` or `next-themes`              |
+| Mutating API request            | `apiFetch`                                     |
+| Retrying transient failures     | `retryWithBackoff`                             |
 
 Do not bypass the progress/bookmark providers with direct API calls from random
 components. Do not call `useUserPreferences()` in a shared component; the

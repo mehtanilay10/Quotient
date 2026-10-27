@@ -7,10 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "graphql",
-    "performance"
-  ],
+  "tags": ["graphql", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -138,9 +135,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "caching",
-    "query-complexity"
-  ],
+  "relatedLessons": ["caching", "query-complexity"],
   "courseSlug": "graphql-dotnet"
 }

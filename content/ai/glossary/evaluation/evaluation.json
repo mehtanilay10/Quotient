@@ -6,14 +6,6 @@
   "fullDefinition": "Evaluation (commonly called 'evals' in AI) refers to the systematic assessment of AI model performance. This includes testing for factual accuracy, reasoning quality, safety policy compliance, task performance, and consistency. Evals can be automated (using metrics or another AI as a judge) or human-evaluated. They are critical for safely deploying AI in production applications.",
   "category": "evaluation",
   "difficulty": "advanced",
-  "relatedTerms": [
-    "guardrails",
-    "hallucination",
-    "benchmark"
-  ],
-  "alsoKnownAs": [
-    "Evals",
-    "Model Evaluation",
-    "AI Testing"
-  ]
+  "relatedTerms": ["guardrails", "hallucination", "benchmark"],
+  "alsoKnownAs": ["Evals", "Model Evaluation", "AI Testing"]
 }

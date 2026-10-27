@@ -8,13 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "open-redirect",
-    "url-validation",
-    "redirect",
-    "phishing",
-    "OWASP"
-  ],
+  "tags": ["open-redirect", "url-validation", "redirect", "phishing", "OWASP"],
   "blocks": [
     {
       "type": "paragraph",

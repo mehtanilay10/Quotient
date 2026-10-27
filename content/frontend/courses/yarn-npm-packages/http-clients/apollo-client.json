@@ -6,14 +6,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "apollo",
-    "graphql",
-    "http",
-    "api",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["apollo", "graphql", "http", "api", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

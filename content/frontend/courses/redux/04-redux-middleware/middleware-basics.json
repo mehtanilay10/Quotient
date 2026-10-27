@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "middleware",
-    "extension",
-    "side-effects"
-  ],
+  "tags": ["redux", "middleware", "extension", "side-effects"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,42 +68,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use Case",
-          "Example Middleware",
-          "Purpose"
-        ],
+        "headers": ["Use Case", "Example Middleware", "Purpose"],
         "rows": [
-          [
-            "Logging",
-            "redux-logger",
-            "Log all actions and state changes"
-          ],
-          [
-            "Async",
-            "redux-thunk, redux-saga",
-            "Handle async operations"
-          ],
-          [
-            "Crash Reporting",
-            "redux-error-overlay",
-            "Capture and report errors"
-          ],
-          [
-            "Routing",
-            "redux-first-history",
-            "Sync with URL/routing"
-          ],
-          [
-            "Persistence",
-            "redux-persist",
-            "Save state to localStorage"
-          ],
-          [
-            "Analytics",
-            "Custom middleware",
-            "Track user actions"
-          ]
+          ["Logging", "redux-logger", "Log all actions and state changes"],
+          ["Async", "redux-thunk, redux-saga", "Handle async operations"],
+          ["Crash Reporting", "redux-error-overlay", "Capture and report errors"],
+          ["Routing", "redux-first-history", "Sync with URL/routing"],
+          ["Persistence", "redux-persist", "Save state to localStorage"],
+          ["Analytics", "Custom middleware", "Track user actions"]
         ]
       }
     },

@@ -15,9 +15,5 @@
     "redis-caching-patterns",
     "database-migration-strategies"
   ],
-  "whatYouLearn": [
-    "SQL vs NoSQL trade-offs",
-    "Caching strategies",
-    "Migration approaches"
-  ]
+  "whatYouLearn": ["SQL vs NoSQL trade-offs", "Caching strategies", "Migration approaches"]
 }

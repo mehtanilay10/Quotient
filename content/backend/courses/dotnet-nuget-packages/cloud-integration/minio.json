@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is Minio?"}
+      "data": { "level": 2, "text": "What is Minio?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Minio is an open-source, S3-compatible object storage server. It is commonly used in development and CI pipelines to avoid hitting real cloud storage."}
+      "data": {
+        "text": "Minio is an open-source, S3-compatible object storage server. It is commonly used in development and CI pipelines to avoid hitting real cloud storage."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Using the Minio .NET SDK"}
+      "data": { "level": 2, "text": "Using the Minio .NET SDK" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "The `Minio` NuGet package provides an S3-compatible client that works with Minio, AWS S3, and other S3-compatible services."}
+      "data": {
+        "text": "The `Minio` NuGet package provides an S3-compatible client that works with Minio, AWS S3, and other S3-compatible services."
+      }
     },
     {
       "type": "example",

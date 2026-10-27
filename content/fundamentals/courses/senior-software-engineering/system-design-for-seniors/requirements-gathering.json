@@ -130,10 +130,26 @@
       "data": {
         "headers": ["Category", "Meaning", "Example"],
         "rows": [
-          ["Must have", "Critical for launch. Without it, the release fails.", "User authentication and secure session handling"],
-          ["Should have", "Important but not critical for the first release.", "Email notifications for order confirmations"],
-          ["Could have", "Desirable but can be deferred to a later release.", "Social media sharing buttons"],
-          ["Won't have", "Explicitly out of scope for this release.", "Mobile app support (planned for v2)"]
+          [
+            "Must have",
+            "Critical for launch. Without it, the release fails.",
+            "User authentication and secure session handling"
+          ],
+          [
+            "Should have",
+            "Important but not critical for the first release.",
+            "Email notifications for order confirmations"
+          ],
+          [
+            "Could have",
+            "Desirable but can be deferred to a later release.",
+            "Social media sharing buttons"
+          ],
+          [
+            "Won't have",
+            "Explicitly out of scope for this release.",
+            "Mobile app support (planned for v2)"
+          ]
         ]
       }
     },

@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -81,32 +75,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Property",
-          "ID token",
-          "Access token"
-        ],
+        "headers": ["Property", "ID token", "Access token"],
         "rows": [
-          [
-            "Purpose",
-            "Tell the client who the user is",
-            "Authorize calls to an API"
-          ],
-          [
-            "Audience (aud)",
-            "The client application ID",
-            "The API application ID or App ID URI"
-          ],
-          [
-            "Typical lifetime",
-            "Short (about 1 hour)",
-            "Short (about 1 hour, varies)"
-          ],
-          [
-            "Who validates it",
-            "The client after sign-in",
-            "The API on every request"
-          ]
+          ["Purpose", "Tell the client who the user is", "Authorize calls to an API"],
+          ["Audience (aud)", "The client application ID", "The API application ID or App ID URI"],
+          ["Typical lifetime", "Short (about 1 hour)", "Short (about 1 hour, varies)"],
+          ["Who validates it", "The client after sign-in", "The API on every request"]
         ]
       }
     },

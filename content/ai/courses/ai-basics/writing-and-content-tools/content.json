@@ -7,20 +7,10 @@
   "difficulty": "beginner",
   "estimatedHours": 2,
   "icon": "📝",
-  "tags": [
-    "writing",
-    "editing",
-    "content",
-    "style"
-  ],
-  "lessonSlugs": [
-    "ai-writing-assistant",
-    "editing-with-ai"
-  ],
+  "tags": ["writing", "editing", "content", "style"],
+  "lessonSlugs": ["ai-writing-assistant", "editing-with-ai"],
   "isOptional": false,
-  "prerequisites": [
-    "prompting-basics"
-  ],
+  "prerequisites": ["prompting-basics"],
   "whatYouLearn": [
     "How to use AI to accelerate your writing without sounding robotic",
     "Editing, rewriting, and tone adjustment with AI",

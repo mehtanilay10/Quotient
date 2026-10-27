@@ -9,13 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "🌍",
-  "tags": [
-    "aspnet-core",
-    "mvc",
-    "authentication",
-    "authorization",
-    "cors"
-  ],
+  "tags": ["aspnet-core", "mvc", "authentication", "authorization", "cors"],
   "lessonSlugs": [
     "microsoft-aspnetcore-mvc",
     "microsoft-aspnetcore-authentication",

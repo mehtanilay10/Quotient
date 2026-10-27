@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "typescript",
-    "react",
-    "context",
-    "state-management"
-  ],
+  "tags": ["typescript", "react", "context", "state-management"],
   "blocks": [
     {
       "type": "paragraph",

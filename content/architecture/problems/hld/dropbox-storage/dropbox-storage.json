@@ -8,15 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "dropbox",
-    "storage",
-    "chunking",
-    "delta-sync",
-    "deduplication"
-  ],
+  "tags": ["hld", "system-design", "dropbox", "storage", "chunking", "delta-sync", "deduplication"],
   "blocks": [
     {
       "type": "heading",
@@ -221,11 +213,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "google-search",
-    "youtube-streaming",
-    "dropbox-storage"
-  ],
+  "relatedLessons": ["google-search", "youtube-streaming", "dropbox-storage"],
   "furtherReading": [
     {
       "title": "Inside the Magic Pocket: Dropbox Storage Infrastructure",

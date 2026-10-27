@@ -147,10 +147,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rate-limiting-algorithms",
-    "distributed-rate-limiting"
-  ],
+  "relatedLessons": ["rate-limiting-algorithms", "distributed-rate-limiting"],
   "furtherReading": [
     {
       "title": "Redis Rate Limiting with Lua",

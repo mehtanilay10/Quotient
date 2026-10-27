@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "system-design",
-    "instagram",
-    "social-media",
-    "feed",
-    "recommendation"
-  ],
+  "tags": ["system-design", "instagram", "social-media", "feed", "recommendation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,37 +74,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Signal",
-          "Description",
-          "Weight"
-        ],
+        "headers": ["Signal", "Description", "Weight"],
         "rows": [
-          [
-            "Recency",
-            "How recently the post was created",
-            "High"
-          ],
-          [
-            "Engagement",
-            "Predicted likes, comments, shares",
-            "Highest"
-          ],
-          [
-            "Relationship",
-            "How often the user interacts with the poster",
-            "High"
-          ],
-          [
-            "Content Type",
-            "Video vs photo vs carousel",
-            "Medium"
-          ],
-          [
-            "Seen State",
-            "Whether the user already viewed the post",
-            "Exclusion"
-          ]
+          ["Recency", "How recently the post was created", "High"],
+          ["Engagement", "Predicted likes, comments, shares", "Highest"],
+          ["Relationship", "How often the user interacts with the poster", "High"],
+          ["Content Type", "Video vs photo vs carousel", "Medium"],
+          ["Seen State", "Whether the user already viewed the post", "Exclusion"]
         ]
       }
     },
@@ -141,15 +111,8 @@
           {
             "title": "Push Model",
             "description": "Pre-compute feeds at post time and store in cache",
-            "pros": [
-              "Fast read latency",
-              "Predictable performance",
-              "Simple API"
-            ],
-            "cons": [
-              "Expensive for users with many followers",
-              "Feed regeneration on unfollow"
-            ]
+            "pros": ["Fast read latency", "Predictable performance", "Simple API"],
+            "cons": ["Expensive for users with many followers", "Feed regeneration on unfollow"]
           },
           {
             "title": "Pull Model",
@@ -159,10 +122,7 @@
               "Always fresh data",
               "No pre-computation cost"
             ],
-            "cons": [
-              "High read latency",
-              "Expensive merges for heavy users"
-            ]
+            "cons": ["High read latency", "Expensive merges for heavy users"]
           }
         ]
       }

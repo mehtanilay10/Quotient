@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "ef-core",
-    "tpc",
-    "inheritance",
-    "concrete"
-  ],
+  "tags": ["ef-core", "tpc", "inheritance", "concrete"],
   "blocks": [
     {
       "type": "paragraph",
@@ -94,9 +89,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ef-core-table-per-type-tpt",
-    "migrations-in-entity-framework-core"
-  ],
+  "relatedLessons": ["ef-core-table-per-type-tpt", "migrations-in-entity-framework-core"],
   "courseSlug": "ef-core"
 }

@@ -6,11 +6,7 @@
   "description": "Entity vs value semantics, replacing primitive obsession with self-validating immutable types, and how immutability removes whole bug classes.",
   "order": 19,
   "difficulty": "intermediate",
-  "tags": [
-    "oop",
-    "ddd",
-    "intermediate"
-  ],
+  "tags": ["oop", "ddd", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

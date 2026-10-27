@@ -8,16 +8,8 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "prefetching",
-    "advanced-patterns",
-    "visibility-api",
-    "router",
-    "lifecycle"
-  ],
-  "prerequisites": [
-    "query-options"
-  ],
+  "tags": ["prefetching", "advanced-patterns", "visibility-api", "router", "lifecycle"],
+  "prerequisites": ["query-options"],
   "blocks": [
     {
       "type": "paragraph",

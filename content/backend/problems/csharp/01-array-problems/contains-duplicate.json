@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "arrays",
-    "hashset",
-    "easy"
-  ],
+  "tags": ["csharp", "arrays", "hashset", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -133,49 +128,23 @@
           {
             "title": "HashSet",
             "description": "Track seen values in a set",
-            "pros": [
-              "O(n) time",
-              "No sorting"
-            ],
-            "cons": [
-              "O(n) extra space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "No sorting"],
+            "cons": ["O(n) extra space"],
+            "tags": ["O(n) time", "O(n) space", "Recommended"]
           },
           {
             "title": "Sort + Scan",
             "description": "Sort array, then compare neighbors",
-            "pros": [
-              "O(1) extra space"
-            ],
-            "cons": [
-              "O(n log n) time",
-              "Mutates input"
-            ],
-            "tags": [
-              "O(n log n) time",
-              "O(1) space"
-            ]
+            "pros": ["O(1) extra space"],
+            "cons": ["O(n log n) time", "Mutates input"],
+            "tags": ["O(n log n) time", "O(1) space"]
           },
           {
             "title": "LINQ",
             "description": "Use Distinct() to find duplicates",
-            "pros": [
-              "Very concise",
-              "Expressive"
-            ],
-            "cons": [
-              "O(n) extra space",
-              "Allocates enumerators"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Very concise", "Expressive"],
+            "cons": ["O(n) extra space", "Allocates enumerators"],
+            "tags": ["O(n) time", "O(n) space"]
           }
         ]
       }

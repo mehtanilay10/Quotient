@@ -8,12 +8,7 @@
   "order": 15,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "interview",
-    "system-design",
-    "notifications",
-    "queue"
-  ],
+  "tags": ["interview", "system-design", "notifications", "queue"],
   "technology": "System Design",
   "blocks": [
     {
@@ -95,11 +90,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Table",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Table", "Key Fields", "Description"],
         "rows": [
           [
             "Notifications",
@@ -193,40 +184,20 @@
           {
             "title": "Push Notifications",
             "description": "Real-time delivery through FCM or APNs. Best for immediate alerts.",
-            "pros": [
-              "Instant delivery",
-              "High engagement"
-            ],
-            "cons": [
-              "Requires app install",
-              "Platform limitations"
-            ]
+            "pros": ["Instant delivery", "High engagement"],
+            "cons": ["Requires app install", "Platform limitations"]
           },
           {
             "title": "Email",
             "description": "Reliable delivery through SMTP providers. Best for non-urgent, rich content.",
-            "pros": [
-              "High deliverability",
-              "Rich formatting",
-              "No app required"
-            ],
-            "cons": [
-              "Slower delivery",
-              "Lower engagement"
-            ]
+            "pros": ["High deliverability", "Rich formatting", "No app required"],
+            "cons": ["Slower delivery", "Lower engagement"]
           },
           {
             "title": "SMS",
             "description": "Immediate delivery through SMS providers. Best for critical alerts.",
-            "pros": [
-              "Universal reach",
-              "Very high open rate"
-            ],
-            "cons": [
-              "Expensive",
-              "Character limits",
-              "Opt-out rates"
-            ]
+            "pros": ["Universal reach", "Very high open rate"],
+            "cons": ["Expensive", "Character limits", "Opt-out rates"]
           }
         ]
       }

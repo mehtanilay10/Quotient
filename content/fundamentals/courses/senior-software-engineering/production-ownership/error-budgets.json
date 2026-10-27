@@ -152,17 +152,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Budget Remaining",
-          "Gate Action",
-          "Override Requirement"
-        ],
+        "headers": ["Budget Remaining", "Gate Action", "Override Requirement"],
         "rows": [
-          [
-            "Above 10 percent",
-            "Standard deployment process",
-            "None"
-          ],
+          ["Above 10 percent", "Standard deployment process", "None"],
           [
             "10 percent to 0 percent",
             "Block non-critical launches, increase review",
@@ -173,11 +165,7 @@
             "Block all non-security pushes",
             "Director sign-off plus two on-call engineers"
           ],
-          [
-            "0 percent with user impact",
-            "Escalate to senior leadership",
-            "VP engineering sign-off"
-          ]
+          ["0 percent with user impact", "Escalate to senior leadership", "VP engineering sign-off"]
         ]
       }
     },
@@ -333,37 +321,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Service",
-          "User Impact",
-          "Budget Allocation",
-          "Rationale"
-        ],
+        "headers": ["Service", "User Impact", "Budget Allocation", "Rationale"],
         "rows": [
-          [
-            "Checkout",
-            "Critical",
-            "30 percent",
-            "Direct revenue impact"
-          ],
-          [
-            "Search",
-            "High",
-            "15 percent",
-            "Primary user journey"
-          ],
-          [
-            "Auth",
-            "Critical",
-            "25 percent",
-            "Blocks all authenticated traffic"
-          ],
-          [
-            "Admin",
-            "Low",
-            "2 percent",
-            "Internal tooling only"
-          ]
+          ["Checkout", "Critical", "30 percent", "Direct revenue impact"],
+          ["Search", "High", "15 percent", "Primary user journey"],
+          ["Auth", "Critical", "25 percent", "Blocks all authenticated traffic"],
+          ["Admin", "Low", "2 percent", "Internal tooling only"]
         ]
       }
     },
@@ -746,25 +709,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Frequency",
-          "Owner",
-          "Action Threshold"
-        ],
+        "headers": ["Metric", "Frequency", "Owner", "Action Threshold"],
         "rows": [
-          [
-            "Budget remaining",
-            "Daily",
-            "On-call SRE",
-            "Below 10 percent: alert team"
-          ],
-          [
-            "Burn rate",
-            "Hourly",
-            "On-call SRE",
-            "Above 3x: Slack alert"
-          ],
+          ["Budget remaining", "Daily", "On-call SRE", "Below 10 percent: alert team"],
+          ["Burn rate", "Hourly", "On-call SRE", "Above 3x: Slack alert"],
           [
             "Budget per incident",
             "Post-incident",

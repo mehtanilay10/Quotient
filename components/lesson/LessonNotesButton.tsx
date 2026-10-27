@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useCallback, useEffect, useState } from 'react';
-import { BookOpen } from 'lucide-react';
-import { useProgress } from '@/hooks/useProgress';
-import { useLessonNotes } from '@/hooks/useLessonNotes';
-import { registerShortcut, unregisterShortcut } from '@/hooks/useKeyboardShortcuts';
-import { SignInPrompt } from '@/components/auth/SignInPrompt';
-import { useNotesModal } from './NotesModalContext';
+import { useCallback, useEffect, useState } from "react";
+import { BookOpen } from "lucide-react";
+import { useProgress } from "@/hooks/useProgress";
+import { useLessonNotes } from "@/hooks/useLessonNotes";
+import { registerShortcut, unregisterShortcut } from "@/hooks/useKeyboardShortcuts";
+import { SignInPrompt } from "@/components/auth/SignInPrompt";
+import { useNotesModal } from "./NotesModalContext";
 
 interface LessonNotesButtonProps {
   courseSlug: string;
@@ -15,7 +15,12 @@ interface LessonNotesButtonProps {
   onOpen?: () => void;
 }
 
-export function LessonNotesButton({ courseSlug, moduleSlug, lessonSlug, onOpen }: LessonNotesButtonProps) {
+export function LessonNotesButton({
+  courseSlug,
+  moduleSlug,
+  lessonSlug,
+  onOpen,
+}: LessonNotesButtonProps) {
   const { isLoggedOut } = useProgress();
   const { getNote, mounted } = useLessonNotes();
   const [showSignIn, setShowSignIn] = useState(false);
@@ -37,8 +42,8 @@ export function LessonNotesButton({ courseSlug, moduleSlug, lessonSlug, onOpen }
   }, [isLoggedOut, onOpen, openNotes]);
 
   useEffect(() => {
-    registerShortcut('o', 'Open lesson notes', handleClick);
-    return () => unregisterShortcut('o');
+    registerShortcut("o", "Open lesson notes", handleClick);
+    return () => unregisterShortcut("o");
   }, [handleClick]);
 
   return (
@@ -48,8 +53,8 @@ export function LessonNotesButton({ courseSlug, moduleSlug, lessonSlug, onOpen }
         onClick={handleClick}
         className={`flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-xs font-medium transition-colors ${
           hasNotes
-            ? 'border-accent-fg bg-accent-subtle text-accent-fg'
-            : 'border-border bg-canvas text-fg-muted hover:bg-canvas-subtle hover:text-fg-default'
+            ? "border-accent-fg bg-accent-subtle text-accent-fg"
+            : "border-border bg-canvas text-fg-muted hover:bg-canvas-subtle hover:text-fg-default"
         }`}
         aria-label="Open notes"
         aria-pressed={hasNotes}

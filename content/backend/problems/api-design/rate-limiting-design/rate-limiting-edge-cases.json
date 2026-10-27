@@ -28,13 +28,37 @@
       "data": {
         "headers": ["Edge Case", "Problem", "Solution"],
         "rows": [
-          ["Clock skew", "Servers disagree on current time", "Use server-provided time or NTP sync"],
+          [
+            "Clock skew",
+            "Servers disagree on current time",
+            "Use server-provided time or NTP sync"
+          ],
           ["Key enumeration", "Attackers guess rate limit keys", "Use non-guessable keys (hashes)"],
-          ["Distributed bypass", "Attacker uses many IPs", "Authenticate users; rate limit by user, not IP"],
-          ["Burst amplification", "Large responses count as 1 request", "Weight by response size or endpoint cost"],
-          ["Rate limit reset", "Client hammers during reset", "Add jitter to reset times or smooth refill"],
-          ["Shared credentials", "Multiple users share an API key", "Rate limit per key; warn on key sharing"],
-          ["Graceful degradation", "Rate limiter itself fails", "Fail open or fail closed with clear policy"]
+          [
+            "Distributed bypass",
+            "Attacker uses many IPs",
+            "Authenticate users; rate limit by user, not IP"
+          ],
+          [
+            "Burst amplification",
+            "Large responses count as 1 request",
+            "Weight by response size or endpoint cost"
+          ],
+          [
+            "Rate limit reset",
+            "Client hammers during reset",
+            "Add jitter to reset times or smooth refill"
+          ],
+          [
+            "Shared credentials",
+            "Multiple users share an API key",
+            "Rate limit per key; warn on key sharing"
+          ],
+          [
+            "Graceful degradation",
+            "Rate limiter itself fails",
+            "Fail open or fail closed with clear policy"
+          ]
         ]
       }
     },
@@ -193,10 +217,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "token-bucket-implementation",
-    "sliding-window-implementation"
-  ],
+  "relatedLessons": ["token-bucket-implementation", "sliding-window-implementation"],
   "furtherReading": [
     {
       "title": "Cloudflare Rate Limiting Best Practices",

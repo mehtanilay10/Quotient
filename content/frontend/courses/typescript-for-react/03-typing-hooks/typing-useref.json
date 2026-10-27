@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "react",
-    "typescript",
-    "useref",
-    "hooks"
-  ],
+  "tags": ["react", "typescript", "useref", "hooks"],
   "blocks": [
     {
       "type": "paragraph",
@@ -56,32 +51,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use Case",
-          "Type Parameter",
-          "Initial Value"
-        ],
+        "headers": ["Use Case", "Type Parameter", "Initial Value"],
         "rows": [
-          [
-            "Input element",
-            "HTMLInputElement",
-            "null"
-          ],
-          [
-            "Button element",
-            "HTMLButtonElement",
-            "null"
-          ],
-          [
-            "Interval ID",
-            "number",
-            "null"
-          ],
-          [
-            "Generic object",
-            "CustomType",
-            "{} or null"
-          ]
+          ["Input element", "HTMLInputElement", "null"],
+          ["Button element", "HTMLButtonElement", "null"],
+          ["Interval ID", "number", "null"],
+          ["Generic object", "CustomType", "{} or null"]
         ]
       }
     },

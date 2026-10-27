@@ -7,17 +7,8 @@
   "difficulty": "advanced",
   "estimatedHours": 3,
   "icon": "🔌",
-  "tags": [
-    "claude",
-    "api",
-    "integrations",
-    "prompt-caching"
-  ],
-  "lessonSlugs": [
-    "claude-api-basics",
-    "prompt-caching",
-    "claude-in-your-workflow"
-  ],
+  "tags": ["claude", "api", "integrations", "prompt-caching"],
+  "lessonSlugs": ["claude-api-basics", "prompt-caching", "claude-in-your-workflow"],
   "whatYouLearn": [
     "How the Claude API works and how to make your first request",
     "What prompt caching is and how it reduces cost and latency",

@@ -7,12 +7,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "system-design",
-    "search",
-    "elasticsearch"
-  ],
+  "tags": ["interview", "system-design", "search", "elasticsearch"],
   "blocks": [
     {
       "type": "paragraph",

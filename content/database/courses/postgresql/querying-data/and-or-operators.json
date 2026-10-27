@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "boolean-logic",
-    "and",
-    "or",
-    "not",
-    "operator-precedence"
-  ],
+  "tags": ["boolean-logic", "and", "or", "not", "operator-precedence"],
   "blocks": [
     {
       "type": "paragraph",
@@ -63,8 +57,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "where-clause",
-    "between-in-like"
-  ]
+  "relatedLessons": ["where-clause", "between-in-like"]
 }

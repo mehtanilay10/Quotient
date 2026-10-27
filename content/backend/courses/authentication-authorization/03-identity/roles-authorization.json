@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "identity",
-    "roles",
-    "authorization",
-    "policies"
-  ],
+  "tags": ["identity", "roles", "authorization", "policies"],
   "blocks": [
     {
       "type": "paragraph",

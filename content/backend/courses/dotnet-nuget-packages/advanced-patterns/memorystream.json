@@ -12,27 +12,33 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is MemoryStream?"}
+      "data": { "level": 2, "text": "What is MemoryStream?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`MemoryStream` is a stream backed by a byte array in memory. It is part of `System.IO` and is useful for processing data without touching the filesystem."}
+      "data": {
+        "text": "`MemoryStream` is a stream backed by a byte array in memory. It is part of `System.IO` and is useful for processing data without touching the filesystem."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`MemoryStream` is included in the base class library. No extra package is needed."}
+      "data": {
+        "text": "`MemoryStream` is included in the base class library. No extra package is needed."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Basic Usage"}
+      "data": { "level": 2, "text": "Basic Usage" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Write bytes to a `MemoryStream`, then read them back or convert to an array."}
+      "data": {
+        "text": "Write bytes to a `MemoryStream`, then read them back or convert to an array."
+      }
     },
     {
       "type": "example",
@@ -44,11 +50,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Using with Streams"}
+      "data": { "level": 2, "text": "Using with Streams" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`MemoryStream` implements `Stream`, so you can pass it anywhere a stream is expected, such as JSON serialization or HTTP content."}
+      "data": {
+        "text": "`MemoryStream` implements `Stream`, so you can pass it anywhere a stream is expected, such as JSON serialization or HTTP content."
+      }
     },
     {
       "type": "example",

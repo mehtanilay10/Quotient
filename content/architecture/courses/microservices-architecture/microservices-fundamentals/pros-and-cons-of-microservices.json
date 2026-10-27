@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "microservices",
-    "scalability",
-    "complexity"
-  ],
+  "tags": ["microservices", "scalability", "complexity"],
   "blocks": [
     {
       "type": "paragraph",
@@ -98,32 +94,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Factor",
-          "Monolith",
-          "Microservices"
-        ],
+        "headers": ["Factor", "Monolith", "Microservices"],
         "rows": [
-          [
-            "Horizontal Scaling",
-            "Scale entire app",
-            "Scale per service"
-          ],
-          [
-            "Resource Efficiency",
-            "All-or-nothing",
-            "Fine-grained"
-          ],
-          [
-            "Cost at Scale",
-            "High",
-            "Optimized"
-          ],
-          [
-            "Peak Handling",
-            "Over-provision",
-            "Targeted scaling"
-          ]
+          ["Horizontal Scaling", "Scale entire app", "Scale per service"],
+          ["Resource Efficiency", "All-or-nothing", "Fine-grained"],
+          ["Cost at Scale", "High", "Optimized"],
+          ["Peak Handling", "Over-provision", "Targeted scaling"]
         ]
       }
     },

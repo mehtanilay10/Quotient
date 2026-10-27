@@ -111,12 +111,24 @@
           {
             "title": "Auto-Increment DB",
             "pros": ["Simple to implement", "Sequential IDs keep storage compact"],
-            "cons": ["Single point of failure", "Database bottleneck at scale", "Leaks total link count"]
+            "cons": [
+              "Single point of failure",
+              "Database bottleneck at scale",
+              "Leaks total link count"
+            ]
           },
           {
             "title": "Snowflake (Twitter)",
-            "pros": ["Distributed and decentralized", "Monotonically increasing IDs", "No coordination needed"],
-            "cons": ["64-bit IDs are longer", "Requires clock synchronization", "More complex to explain"]
+            "pros": [
+              "Distributed and decentralized",
+              "Monotonically increasing IDs",
+              "No coordination needed"
+            ],
+            "cons": [
+              "64-bit IDs are longer",
+              "Requires clock synchronization",
+              "More complex to explain"
+            ]
           }
         ]
       }

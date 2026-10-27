@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "easy",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "strings",
-    "hashmap",
-    "easy"
-  ],
+  "tags": ["csharp", "strings", "hashmap", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -74,33 +69,16 @@
           {
             "title": "Sorting",
             "description": "Sort both then compare",
-            "pros": [
-              "Simple"
-            ],
-            "cons": [
-              "O(n log n)"
-            ],
-            "tags": [
-              "O(n log n) time",
-              "O(n) space"
-            ]
+            "pros": ["Simple"],
+            "cons": ["O(n log n)"],
+            "tags": ["O(n log n) time", "O(n) space"]
           },
           {
             "title": "Fixed Array",
             "description": "int[26] frequency diff",
-            "pros": [
-              "O(n) time",
-              "No dictionary",
-              "Single loop"
-            ],
-            "cons": [
-              "Assumes lowercase a-z"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "No dictionary", "Single loop"],
+            "cons": ["Assumes lowercase a-z"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

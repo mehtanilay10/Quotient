@@ -6,10 +6,7 @@
   "description": "Type, property, relational, and declaration patterns, switch expressions, and pattern-based dispatch vs the visitor problem.",
   "order": 44,
   "difficulty": "intermediate",
-  "tags": [
-    "C#",
-    "intermediate"
-  ],
+  "tags": ["C#", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -124,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "records-vs-classes",
-    "beginner-q13",
-    "generics-csharp"
-  ],
+  "relatedLessons": ["records-vs-classes", "beginner-q13", "generics-csharp"],
   "furtherReading": [
     {
       "title": "Pattern matching (C# guide)",

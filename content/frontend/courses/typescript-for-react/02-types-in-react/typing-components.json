@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "react",
-    "typescript",
-    "components",
-    "types"
-  ],
+  "tags": ["react", "typescript", "components", "types"],
   "blocks": [
     {
       "type": "paragraph",
@@ -74,37 +69,20 @@
           {
             "title": "React.FC<Props>",
             "description": "Uses the built-in Functional Component type with generics.",
-            "pros": [
-              "Explicit return type",
-              "Includes children by default"
-            ],
-            "cons": [
-              "Verbose",
-              "children may be unexpected"
-            ]
+            "pros": ["Explicit return type", "Includes children by default"],
+            "cons": ["Verbose", "children may be unexpected"]
           },
           {
             "title": "Function(props: Props)",
             "description": "Types the component as a regular function with props parameter.",
-            "pros": [
-              "Simple",
-              "No implicit children",
-              "Clear intent"
-            ],
-            "cons": [
-              "Return type inferred"
-            ]
+            "pros": ["Simple", "No implicit children", "Clear intent"],
+            "cons": ["Return type inferred"]
           },
           {
             "title": "const Component = (props: Props)",
             "description": "Arrow function approach with typed props.",
-            "pros": [
-              "Consistent with other arrow functions",
-              "Works with hooks"
-            ],
-            "cons": [
-              "Can be harder to read with complex props"
-            ]
+            "pros": ["Consistent with other arrow functions", "Works with hooks"],
+            "cons": ["Can be harder to read with complex props"]
           }
         ]
       }

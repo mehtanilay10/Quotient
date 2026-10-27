@@ -7,12 +7,7 @@
   "order": 8,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "merge",
-    "dml",
-    "synchronize",
-    "upsert"
-  ],
+  "tags": ["merge", "dml", "synchronize", "upsert"],
   "blocks": [
     {
       "type": "heading",

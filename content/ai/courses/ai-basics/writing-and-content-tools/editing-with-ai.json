@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "editing",
-    "proofreading",
-    "clarity",
-    "writing",
-    "feedback"
-  ],
+  "tags": ["editing", "proofreading", "clarity", "writing", "feedback"],
   "blocks": [
     {
       "type": "paragraph",
@@ -33,12 +27,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Edit type",
-          "What it fixes",
-          "AI performance",
-          "Best prompt approach"
-        ],
+        "headers": ["Edit type", "What it fixes", "AI performance", "Best prompt approach"],
         "rows": [
           [
             "Line editing",
@@ -138,10 +127,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Instead of...",
-          "Say this instead"
-        ],
+        "headers": ["Instead of...", "Say this instead"],
         "rows": [
           [
             "\"Improve this\"",
@@ -210,11 +196,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Rubric dimension",
-          "Evaluation question",
-          "Pass indicator"
-        ],
+        "headers": ["Rubric dimension", "Evaluation question", "Pass indicator"],
         "rows": [
           [
             "Accuracy",
@@ -235,10 +217,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ai-writing-assistant",
-    "common-prompting-mistakes"
-  ],
+  "relatedLessons": ["ai-writing-assistant", "common-prompting-mistakes"],
   "furtherReading": [
     {
       "title": "Learn Prompting — Text Transformation",

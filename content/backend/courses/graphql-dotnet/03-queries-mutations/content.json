@@ -9,12 +9,7 @@
   "estimatedHours": 2.5,
   "icon": "🔄",
   "tags": ["graphql", "queries", "mutations", "subscriptions", "hotchocolate"],
-  "lessonSlugs": [
-    "mutation-basics",
-    "query-basics",
-    "resolvers",
-    "subscriptions"
-  ],
+  "lessonSlugs": ["mutation-basics", "query-basics", "resolvers", "subscriptions"],
   "longDescription": "Queries fetch data, mutations modify data, and subscriptions push real-time events. This module covers how to define each operation type in Hot Chocolate, write efficient resolvers, and use DataLoader to avoid N+1 queries.",
   "prerequisites": ["02-schema-types"],
   "whatYouLearn": [

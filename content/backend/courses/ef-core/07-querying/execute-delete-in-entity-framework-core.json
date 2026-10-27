@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "ef-core",
-    "execute-delete",
-    "bulk-operations",
-    "performance"
-  ],
+  "tags": ["ef-core", "execute-delete", "bulk-operations", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,9 +77,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "execute-raw-sql-queries",
-    "execute-update-in-entity-framework-core"
-  ],
+  "relatedLessons": ["execute-raw-sql-queries", "execute-update-in-entity-framework-core"],
   "courseSlug": "ef-core"
 }

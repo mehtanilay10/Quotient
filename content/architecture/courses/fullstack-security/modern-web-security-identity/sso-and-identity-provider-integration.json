@@ -8,15 +8,7 @@
   "order": 16,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "sso",
-    "identity-provider",
-    "saml",
-    "oidc",
-    "federation",
-    "azure-ad",
-    "okta"
-  ],
+  "tags": ["sso", "identity-provider", "saml", "oidc", "federation", "azure-ad", "okta"],
   "blocks": [
     {
       "type": "paragraph",
@@ -93,42 +85,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "SAML 2.0",
-          "OpenID Connect"
-        ],
+        "headers": ["Feature", "SAML 2.0", "OpenID Connect"],
         "rows": [
-          [
-            "Token format",
-            "XML assertions",
-            "JWT"
-          ],
-          [
-            "Transport",
-            "Browser form POST / redirect",
-            "REST APIs + redirects"
-          ],
-          [
-            "Mobile support",
-            "Difficult (browser-dependent)",
-            "Native (PKCE)"
-          ],
-          [
-            "SPA support",
-            "Poor",
-            "Excellent"
-          ],
-          [
-            "Enterprise adoption",
-            "Very high",
-            "Growing rapidly"
-          ],
-          [
-            "Logout standard",
-            "SAML logout profiles",
-            "OIDC end_session_endpoint"
-          ]
+          ["Token format", "XML assertions", "JWT"],
+          ["Transport", "Browser form POST / redirect", "REST APIs + redirects"],
+          ["Mobile support", "Difficult (browser-dependent)", "Native (PKCE)"],
+          ["SPA support", "Poor", "Excellent"],
+          ["Enterprise adoption", "Very high", "Growing rapidly"],
+          ["Logout standard", "SAML logout profiles", "OIDC end_session_endpoint"]
         ]
       }
     },

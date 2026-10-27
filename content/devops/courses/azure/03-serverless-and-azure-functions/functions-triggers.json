@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "serverless",
-    "functions",
-    "developer"
-  ],
+  "tags": ["azure", "serverless", "functions", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -44,42 +39,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Trigger",
-          "Event Source",
-          "Use Case"
-        ],
+        "headers": ["Trigger", "Event Source", "Use Case"],
         "rows": [
-          [
-            "HTTP Trigger",
-            "HTTP request (GET, POST, etc.)",
-            "REST APIs, webhooks"
-          ],
-          [
-            "Timer Trigger",
-            "Schedule (CRON expression)",
-            "Scheduled jobs, cleanup"
-          ],
-          [
-            "Blob Trigger",
-            "New or updated blob in storage",
-            "File processing"
-          ],
-          [
-            "Queue Trigger",
-            "New message in storage queue",
-            "Background processing"
-          ],
-          [
-            "Event Hub Trigger",
-            "Event Hub event",
-            "Telemetry ingestion"
-          ],
-          [
-            "Service Bus Trigger",
-            "Service Bus message",
-            "Enterprise messaging"
-          ]
+          ["HTTP Trigger", "HTTP request (GET, POST, etc.)", "REST APIs, webhooks"],
+          ["Timer Trigger", "Schedule (CRON expression)", "Scheduled jobs, cleanup"],
+          ["Blob Trigger", "New or updated blob in storage", "File processing"],
+          ["Queue Trigger", "New message in storage queue", "Background processing"],
+          ["Event Hub Trigger", "Event Hub event", "Telemetry ingestion"],
+          ["Service Bus Trigger", "Service Bus message", "Enterprise messaging"]
         ]
       }
     },

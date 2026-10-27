@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "health-checks",
-    "monitoring"
-  ],
+  "tags": ["aspnet-core", "health-checks", "monitoring"],
   "blocks": [
     {
       "type": "heading",
@@ -69,20 +65,9 @@
           {
             "title": "Health Check Setup",
             "description": "Application and dependency health",
-            "pros": [
-              "Kubernetes ready",
-              "Monitoring integration",
-              "Custom checks"
-            ],
-            "cons": [
-              "Must secure endpoint",
-              "Not for detailed diagnostics"
-            ],
-            "tags": [
-              "AddHealthChecks",
-              "AddUrlGroup",
-              "AddSqlServer"
-            ]
+            "pros": ["Kubernetes ready", "Monitoring integration", "Custom checks"],
+            "cons": ["Must secure endpoint", "Not for detailed diagnostics"],
+            "tags": ["AddHealthChecks", "AddUrlGroup", "AddSqlServer"]
           }
         ]
       }

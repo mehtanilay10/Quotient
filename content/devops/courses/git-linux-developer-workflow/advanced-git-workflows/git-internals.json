@@ -138,13 +138,15 @@
       }
     }
   ],
-  "relatedLessons": [
-    "backup-and-recovery",
-    "large-repositories",
-    "migration-strategies"
-  ],
+  "relatedLessons": ["backup-and-recovery", "large-repositories", "migration-strategies"],
   "furtherReading": [
-    { "title": "Git internals: plumbing and porcelain (git-scm.com)", "url": "https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain" },
-    { "title": "Git object model (git-scm.com)", "url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects" }
+    {
+      "title": "Git internals: plumbing and porcelain (git-scm.com)",
+      "url": "https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain"
+    },
+    {
+      "title": "Git object model (git-scm.com)",
+      "url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects"
+    }
   ]
 }

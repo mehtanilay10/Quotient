@@ -8,13 +8,7 @@
   "order": 38,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "span",
-    "memory",
-    "performance",
-    "allocations",
-    "ref-struct"
-  ],
+  "tags": ["span", "memory", "performance", "allocations", "ref-struct"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,11 +74,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Constraint",
-          "Reason",
-          "Workaround or alternative"
-        ],
+        "headers": ["Constraint", "Reason", "Workaround or alternative"],
         "rows": [
           [
             "Cannot be a class field",

@@ -6,11 +6,7 @@
   "fullDefinition": "Guardrails are the safety mechanisms built into AI systems to prevent harmful outputs — including content filters, topic restrictions, format validation, and safety classifiers. They operate at multiple levels: model training (RLHF), inference time (content filters), and application layer (custom rules). Guardrails reduce risk but can also over-refuse legitimate requests.",
   "category": "safety-and-ethics",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "rlhf",
-    "evaluation",
-    "safety"
-  ],
+  "relatedTerms": ["rlhf", "evaluation", "safety"],
   "examples": [
     "ChatGPT refusing to provide instructions for dangerous activities",
     "A customer service AI refusing to discuss competitors"

@@ -1,19 +1,19 @@
-import type { Metadata } from 'next';
-import { BarChart3, Bookmark, CheckCircle2 } from 'lucide-react';
-import { LoginForm } from '@/components/auth/LoginForm';
-import { MAGIC_LINK_EXPIRY_MINUTES } from '@/lib/magicLink';
+import type { Metadata } from "next";
+import { BarChart3, Bookmark, CheckCircle2 } from "lucide-react";
+import { LoginForm } from "@/components/auth/LoginForm";
+import { MAGIC_LINK_EXPIRY_MINUTES } from "@/lib/magicLink";
 
 export const metadata: Metadata = {
-  title: 'Sign in',
-  description: 'Sign in to sync your progress and bookmarks across devices.',
+  title: "Sign in",
+  description: "Sign in to sync your progress and bookmarks across devices.",
   robots: { index: false, follow: false },
 };
 
 function safeCallbackUrl(value: string | undefined): string {
-  if (!value) return '/';
+  if (!value) return "/";
   // Only allow same-origin relative paths. Auth.js also guards the redirect,
   // but keeping the value predictable avoids odd post-login destinations.
-  if (!value.startsWith('/') || value.startsWith('//')) return '/';
+  if (!value.startsWith("/") || value.startsWith("//")) return "/";
   return value;
 }
 
@@ -32,9 +32,7 @@ export default async function LoginPage({
             <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent-subtle">
               <BarChart3 className="h-6 w-6 text-accent-fg" aria-hidden="true" />
             </div>
-            <h1 className="text-2xl font-bold text-fg-default">
-              Welcome to Quotient
-            </h1>
+            <h1 className="text-2xl font-bold text-fg-default">Welcome to Quotient</h1>
             <p className="mt-2 text-sm text-fg-muted">
               Sign in to sync your progress and bookmarks across devices.
             </p>

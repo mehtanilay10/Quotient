@@ -6,10 +6,7 @@
   "description": "Understand security fundamentals in web applications.",
   "order": 7,
   "difficulty": "intermediate",
-  "tags": [
-    "general",
-    "intermediate"
-  ],
+  "tags": ["general", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

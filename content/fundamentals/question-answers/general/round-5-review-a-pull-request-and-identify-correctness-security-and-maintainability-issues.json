@@ -8,13 +8,7 @@
   "order": 17,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "code-review",
-    "security",
-    "maintainability",
-    "senior-engineer",
-    "pull-requests"
-  ],
+  "tags": ["code-review", "security", "maintainability", "senior-engineer", "pull-requests"],
   "technology": "General",
   "blocks": [
     {
@@ -143,38 +137,20 @@
           {
             "title": "Nitpicky style review",
             "description": "Focuses on formatting, naming, and minor style inconsistencies.",
-            "pros": [
-              "Fast to complete",
-              "Catches easy wins"
-            ],
-            "cons": [
-              "Can feel pedantic",
-              "Misses architectural risks"
-            ]
+            "pros": ["Fast to complete", "Catches easy wins"],
+            "cons": ["Can feel pedantic", "Misses architectural risks"]
           },
           {
             "title": "Risk-based review",
             "description": "Prioritizes correctness, security, and data-loss scenarios.",
-            "pros": [
-              "Catches high-impact bugs early",
-              "Aligns with stakeholder concerns"
-            ],
-            "cons": [
-              "Takes longer",
-              "Requires deep domain knowledge"
-            ]
+            "pros": ["Catches high-impact bugs early", "Aligns with stakeholder concerns"],
+            "cons": ["Takes longer", "Requires deep domain knowledge"]
           },
           {
             "title": "Pair review",
             "description": "Two engineers review the PR together in real time.",
-            "pros": [
-              "Knowledge sharing",
-              "Faster consensus on fixes"
-            ],
-            "cons": [
-              "Scheduling overhead",
-              "May miss issues due to groupthink"
-            ]
+            "pros": ["Knowledge sharing", "Faster consensus on fixes"],
+            "cons": ["Scheduling overhead", "May miss issues due to groupthink"]
           }
         ]
       }
@@ -251,9 +227,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "round-7-defend-an-architecture-decision-and-discuss-rejected-alternatives"
-  ],
+  "relatedLessons": ["round-7-defend-an-architecture-decision-and-discuss-rejected-alternatives"],
   "furtherReading": [
     {
       "title": "OWASP Top 10",

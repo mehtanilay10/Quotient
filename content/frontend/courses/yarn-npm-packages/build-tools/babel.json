@@ -6,13 +6,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "babel",
-    "build",
-    "compiler",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["babel", "build", "compiler", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,31 +31,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Package",
-          "Purpose"
-        ],
+        "headers": ["Package", "Purpose"],
         "rows": [
-          [
-            "@babel/core",
-            "Compiler API used by every integration"
-          ],
-          [
-            "@babel/cli",
-            "Run Babel from the terminal"
-          ],
-          [
-            "@babel/preset-env",
-            "Transform syntax based on browserslist targets"
-          ],
-          [
-            "@babel/preset-typescript",
-            "Strip TypeScript types (no type checking)"
-          ],
-          [
-            "@babel/preset-react",
-            "Transform JSX (automatic runtime by default)"
-          ]
+          ["@babel/core", "Compiler API used by every integration"],
+          ["@babel/cli", "Run Babel from the terminal"],
+          ["@babel/preset-env", "Transform syntax based on browserslist targets"],
+          ["@babel/preset-typescript", "Strip TypeScript types (no type checking)"],
+          ["@babel/preset-react", "Transform JSX (automatic runtime by default)"]
         ]
       }
     },

@@ -7,11 +7,7 @@
   "order": 9,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "drop-function",
-    "remove-function",
-    "cleanup"
-  ],
+  "tags": ["drop-function", "remove-function", "cleanup"],
   "blocks": [
     {
       "type": "heading",

@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 8,
-  "tags": [
-    "command",
-    "behavioral",
-    "csharp"
-  ],
+  "tags": ["command", "behavioral", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,9 +36,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "chain-of-responsibility"
-  ],
+  "relatedLessons": ["chain-of-responsibility"],
   "furtherReading": [],
   "courseSlug": "clean-code-csharp"
 }

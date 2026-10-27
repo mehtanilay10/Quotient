@@ -136,7 +136,15 @@
   ],
   "relatedLessons": ["linq-expression-trees-and-sql-translation"],
   "furtherReading": [
-    { "title": "EF Core client evaluation", "url": "https://learn.microsoft.com/en-us/ef/core/querying/client-eval", "type": "article" },
-    { "title": "EF Core logging and diagnostics", "url": "https://learn.microsoft.com/en-us/ef/core/logging-events-diagnostics", "type": "article" }
+    {
+      "title": "EF Core client evaluation",
+      "url": "https://learn.microsoft.com/en-us/ef/core/querying/client-eval",
+      "type": "article"
+    },
+    {
+      "title": "EF Core logging and diagnostics",
+      "url": "https://learn.microsoft.com/en-us/ef/core/logging-events-diagnostics",
+      "type": "article"
+    }
   ]
 }

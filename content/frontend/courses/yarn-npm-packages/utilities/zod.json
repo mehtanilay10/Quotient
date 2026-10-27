@@ -6,13 +6,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "zod",
-    "validation",
-    "typescript",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["zod", "validation", "typescript", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

@@ -6,16 +6,10 @@
   "fullDefinition": "Optical Character Recognition (OCR) is the technology that converts images of text into machine-readable text. Modern AI has dramatically improved OCR quality, making it possible to extract text from photos, scanned PDFs, handwritten notes, and screenshots with high accuracy. Tools like ChatGPT, Claude, and Gemini all have built-in OCR through their vision capabilities.",
   "category": "multimodal",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "multimodal",
-    "large-language-model"
-  ],
+  "relatedTerms": ["multimodal", "large-language-model"],
   "examples": [
     "Take a photo of a business card — AI extracts all the contact details",
     "Scan a physical document — AI converts it to editable text"
   ],
-  "alsoKnownAs": [
-    "Optical Text Recognition",
-    "Document AI"
-  ]
+  "alsoKnownAs": ["Optical Text Recognition", "Document AI"]
 }

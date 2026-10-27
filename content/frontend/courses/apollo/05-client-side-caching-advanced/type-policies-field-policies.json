@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "type-policies",
-    "field-policies",
-    "cache-behavior",
-    "key-fields",
-    "apollo-client"
-  ],
+  "tags": ["type-policies", "field-policies", "cache-behavior", "key-fields", "apollo-client"],
   "blocks": [
     {
       "type": "heading",
@@ -86,7 +80,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "cache-configuration"
-  ]
+  "prerequisites": ["cache-configuration"]
 }

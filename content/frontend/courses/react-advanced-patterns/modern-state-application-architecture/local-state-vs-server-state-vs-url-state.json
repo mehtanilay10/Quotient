@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "architecture",
-    "state-management",
-    "react"
-  ],
+  "tags": ["architecture", "state-management", "react"],
   "blocks": [
     {
       "type": "paragraph",
@@ -135,37 +131,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Dimension",
-          "Local state",
-          "Server state",
-          "URL state"
-        ],
+        "headers": ["Dimension", "Local state", "Server state", "URL state"],
         "rows": [
-          [
-            "Owner",
-            "One React component",
-            "Remote backend",
-            "Browser address bar"
-          ],
+          ["Owner", "One React component", "Remote backend", "Browser address bar"],
           [
             "Lifetime",
             "Until unmount",
             "Until invalidated",
             "Until URL changes or bookmark is deleted"
           ],
-          [
-            "Bookmarkable",
-            "No",
-            "No",
-            "Yes"
-          ],
-          [
-            "Shared across tabs",
-            "No",
-            "Depends on cache",
-            "Yes"
-          ],
+          ["Bookmarkable", "No", "No", "Yes"],
+          ["Shared across tabs", "No", "Depends on cache", "Yes"],
           [
             "Typical tool",
             "useState / useReducer",

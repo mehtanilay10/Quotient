@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "functions",
-    "types",
-    "parameters"
-  ],
+  "tags": ["typescript", "functions", "types", "parameters"],
   "blocks": [
     {
       "type": "paragraph",

@@ -7,10 +7,7 @@
   "order": 15,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "intermediate"
-  ],
+  "tags": ["interview", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -116,12 +113,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "scenario-q3",
-    "failure-stories",
-    "common-behavioral-traps",
-    "beh-b01"
-  ],
+  "relatedLessons": ["scenario-q3", "failure-stories", "common-behavioral-traps", "beh-b01"],
   "furtherReading": [
     {
       "title": "Blameless postmortems",

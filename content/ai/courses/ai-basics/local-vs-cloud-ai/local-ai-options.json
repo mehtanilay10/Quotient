@@ -7,17 +7,8 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "local-ai",
-    "ollama",
-    "privacy",
-    "open-weights",
-    "offline"
-  ],
-  "relatedGlossaryTerms": [
-    "local-model",
-    "open-weights"
-  ],
+  "tags": ["local-ai", "ollama", "privacy", "open-weights", "offline"],
+  "relatedGlossaryTerms": ["local-model", "open-weights"],
   "blocks": [
     {
       "type": "paragraph",
@@ -111,52 +102,20 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Local AI",
-          "Cloud AI"
-        ],
+        "headers": ["Aspect", "Local AI", "Cloud AI"],
         "rows": [
-          [
-            "Privacy",
-            "✅ Complete — stays on your device",
-            "⚠️ Depends on provider policy"
-          ],
+          ["Privacy", "✅ Complete — stays on your device", "⚠️ Depends on provider policy"],
           [
             "Capability",
             "⚠️ Good but behind frontier models",
             "✅ Access to GPT-6 Astra, Claude Fable 5.1, Gemini 4 Argon, etc."
           ],
-          [
-            "Speed",
-            "⚠️ Depends on your hardware",
-            "✅ Very fast on good internet"
-          ],
-          [
-            "Cost",
-            "✅ Free after hardware cost",
-            "⚠️ Subscription or pay-per-use"
-          ],
-          [
-            "Setup",
-            "⚠️ Requires some initial setup",
-            "✅ Instant in browser"
-          ],
-          [
-            "Offline use",
-            "✅ Works anywhere",
-            "❌ Requires internet"
-          ],
-          [
-            "Context window",
-            "⚠️ Smaller (often 32K-128K)",
-            "✅ Around 1M tokens"
-          ],
-          [
-            "Multimodal",
-            "⚠️ Limited options",
-            "✅ Full image, voice, file support"
-          ]
+          ["Speed", "⚠️ Depends on your hardware", "✅ Very fast on good internet"],
+          ["Cost", "✅ Free after hardware cost", "⚠️ Subscription or pay-per-use"],
+          ["Setup", "⚠️ Requires some initial setup", "✅ Instant in browser"],
+          ["Offline use", "✅ Works anywhere", "❌ Requires internet"],
+          ["Context window", "⚠️ Smaller (often 32K-128K)", "✅ Around 1M tokens"],
+          ["Multimodal", "⚠️ Limited options", "✅ Full image, voice, file support"]
         ]
       }
     },
@@ -192,10 +151,7 @@
               "Command-line interface only (no GUI built-in)",
               "Requires some comfort with a terminal"
             ],
-            "tags": [
-              "free",
-              "beginner-friendly"
-            ]
+            "tags": ["free", "beginner-friendly"]
           },
           {
             "title": "LM Studio",
@@ -205,32 +161,15 @@
               "Built-in model browser",
               "Easy model comparison"
             ],
-            "cons": [
-              "Less flexible than Ollama for programming use",
-              "Larger app footprint"
-            ],
-            "tags": [
-              "free",
-              "gui",
-              "beginner"
-            ]
+            "cons": ["Less flexible than Ollama for programming use", "Larger app footprint"],
+            "tags": ["free", "gui", "beginner"]
           },
           {
             "title": "Open WebUI",
             "description": "A self-hosted web dashboard that connects to Ollama. Looks and feels like ChatGPT but runs entirely on your machine. Great for households or small teams sharing a local AI.",
-            "pros": [
-              "ChatGPT-like interface",
-              "Multi-user support",
-              "Plugin system"
-            ],
-            "cons": [
-              "Requires Ollama running locally",
-              "More advanced setup"
-            ],
-            "tags": [
-              "free",
-              "self-hosted"
-            ]
+            "pros": ["ChatGPT-like interface", "Multi-user support", "Plugin system"],
+            "cons": ["Requires Ollama running locally", "More advanced setup"],
+            "tags": ["free", "self-hosted"]
           }
         ]
       }
@@ -300,12 +239,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model size",
-          "RAM required",
-          "Performance",
-          "Good for"
-        ],
+        "headers": ["Model size", "RAM required", "Performance", "Good for"],
         "rows": [
           [
             "1B–4B params (Gemma 4 4B, Qwen 3.5 4B)",
@@ -358,12 +292,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Format",
-          "Approx. size (8B model)",
-          "Quality",
-          "Best for"
-        ],
+        "headers": ["Format", "Approx. size (8B model)", "Quality", "Best for"],
         "rows": [
           [
             "Q4_K_M",
@@ -418,12 +347,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model family",
-          "Recommended size",
-          "Strengths",
-          "Best starting command"
-        ],
+        "headers": ["Model family", "Recommended size", "Strengths", "Best starting command"],
         "rows": [
           [
             "Gemma 4 (Google)",
@@ -558,10 +482,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "protecting-your-data",
-    "building-your-ai-stack"
-  ],
+  "relatedLessons": ["protecting-your-data", "building-your-ai-stack"],
   "furtherReading": [
     {
       "title": "Ollama — Run LLMs Locally",

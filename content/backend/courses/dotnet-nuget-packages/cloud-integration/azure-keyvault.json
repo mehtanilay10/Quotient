@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is Azure.Security.KeyVault.Secrets?"}
+      "data": { "level": 2, "text": "What is Azure.Security.KeyVault.Secrets?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "This package lets you read and write secrets from Azure Key Vault. It uses `Azure.Identity` for authentication and provides a simple API for managing application secrets."}
+      "data": {
+        "text": "This package lets you read and write secrets from Azure Key Vault. It uses `Azure.Identity` for authentication and provides a simple API for managing application secrets."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Basic Usage"}
+      "data": { "level": 2, "text": "Basic Usage" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Create a `SecretClient` using your vault URI and a credential from `Azure.Identity`."}
+      "data": {
+        "text": "Create a `SecretClient` using your vault URI and a credential from `Azure.Identity`."
+      }
     },
     {
       "type": "example",
@@ -48,7 +52,7 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Key Concepts"}
+      "data": { "level": 2, "text": "Key Concepts" }
     },
     {
       "type": "bullet-list",

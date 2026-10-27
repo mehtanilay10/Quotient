@@ -6,12 +6,7 @@
   "description": "Single values vs state machines: colocated updates, action-driven transitions, testability, and when a reducer is overkill.",
   "order": 24,
   "difficulty": "intermediate",
-  "tags": [
-    "react",
-    "hooks",
-    "state",
-    "intermediate"
-  ],
+  "tags": ["react", "hooks", "state", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

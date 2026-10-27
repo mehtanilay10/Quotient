@@ -6,10 +6,7 @@
   "description": "Understand the modern cross-platform ASP.NET Core.",
   "order": 2,
   "difficulty": "beginner",
-  "tags": [
-    "asp.net core",
-    "beginner"
-  ],
+  "tags": ["asp.net core", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

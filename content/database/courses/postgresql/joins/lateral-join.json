@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "lateral-join",
-    "correlated-join",
-    "subqueries",
-    "advanced-sql"
-  ],
+  "tags": ["lateral-join", "correlated-join", "subqueries", "advanced-sql"],
   "blocks": [
     {
       "type": "paragraph",
@@ -85,8 +80,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "cross-join",
-    "correlated-subqueries"
-  ]
+  "relatedLessons": ["cross-join", "correlated-subqueries"]
 }

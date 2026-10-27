@@ -110,11 +110,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "git-internals",
-    "backup-and-recovery",
-    "monorepo-strategies"
-  ],
+  "relatedLessons": ["git-internals", "backup-and-recovery", "monorepo-strategies"],
   "furtherReading": [
     { "title": "Git LFS documentation", "url": "https://git-lfs.com/" },
     { "title": "Git maintenance and gc (git-scm.com)", "url": "https://git-scm.com/docs/git-gc" }

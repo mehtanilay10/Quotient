@@ -5,10 +5,7 @@
   "title": "Performance Optimization",
   "description": "Optimize EF Core performance.",
   "order": 3,
-  "tags": [
-    "ef-core",
-    "performance-bulk-operations"
-  ],
+  "tags": ["ef-core", "performance-bulk-operations"],
   "blocks": [
     {
       "type": "paragraph",

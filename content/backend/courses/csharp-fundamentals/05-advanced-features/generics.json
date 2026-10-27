@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "generics",
-    "type-parameters",
-    "constraints",
-    "reusable"
-  ],
+  "tags": ["csharp", "generics", "type-parameters", "constraints", "reusable"],
   "blocks": [
     {
       "type": "paragraph",
@@ -133,11 +127,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Constraint",
-          "Meaning",
-          "What it Unlocks"
-        ],
+        "headers": ["Constraint", "Meaning", "What it Unlocks"],
         "rows": [
           [
             "where T : class",

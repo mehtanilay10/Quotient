@@ -129,12 +129,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model",
-          "Assumption",
-          "Best For",
-          "Example"
-        ],
+        "headers": ["Model", "Assumption", "Best For", "Example"],
         "rows": [
           [
             "Linear",
@@ -378,37 +373,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Cost",
-          "Flexibility",
-          "Best For"
-        ],
+        "headers": ["Strategy", "Cost", "Flexibility", "Best For"],
         "rows": [
-          [
-            "Reserved instances",
-            "Low",
-            "Low",
-            "Baseline capacity"
-          ],
-          [
-            "On-demand",
-            "High",
-            "High",
-            "Spikes and unpredictable load"
-          ],
-          [
-            "Spot instances",
-            "Very low",
-            "Medium",
-            "Batch and fault-tolerant workloads"
-          ],
-          [
-            "Auto-scaling",
-            "Medium",
-            "High",
-            "Variable load"
-          ]
+          ["Reserved instances", "Low", "Low", "Baseline capacity"],
+          ["On-demand", "High", "High", "Spikes and unpredictable load"],
+          ["Spot instances", "Very low", "Medium", "Batch and fault-tolerant workloads"],
+          ["Auto-scaling", "Medium", "High", "Variable load"]
         ]
       }
     },

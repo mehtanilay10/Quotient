@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "useRef",
-    "useCallback",
-    "dom",
-    "react"
-  ],
+  "tags": ["useRef", "useCallback", "dom", "react"],
   "prerequisites": [],
   "relatedLessons": [],
   "furtherReading": [],

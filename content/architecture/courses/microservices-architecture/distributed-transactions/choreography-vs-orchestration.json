@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "choreography",
-    "orchestration",
-    "saga"
-  ],
+  "tags": ["choreography", "orchestration", "saga"],
   "blocks": [
     {
       "type": "paragraph",
@@ -98,37 +94,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Choreography",
-          "Orchestration"
-        ],
+        "headers": ["Aspect", "Choreography", "Orchestration"],
         "rows": [
-          [
-            "Coordinator",
-            "None",
-            "Central orchestrator"
-          ],
-          [
-            "Coupling",
-            "Loose",
-            "Tighter"
-          ],
-          [
-            "Visibility",
-            "Hard to trace",
-            "Easy to trace"
-          ],
-          [
-            "Complexity",
-            "Distributed",
-            "Centralized"
-          ],
-          [
-            "Best For",
-            "Simple flows",
-            "Complex flows"
-          ]
+          ["Coordinator", "None", "Central orchestrator"],
+          ["Coupling", "Loose", "Tighter"],
+          ["Visibility", "Hard to trace", "Easy to trace"],
+          ["Complexity", "Distributed", "Centralized"],
+          ["Best For", "Simple flows", "Complex flows"]
         ]
       }
     },

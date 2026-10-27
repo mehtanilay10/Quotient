@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "jwt",
-    "token",
-    "structure",
-    "overview"
-  ],
+  "tags": ["jwt", "token", "structure", "overview"],
   "blocks": [
     {
       "type": "paragraph",

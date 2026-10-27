@@ -6,10 +6,7 @@
   "description": "DTO projections that fetch only what you need, cartesian explosion, and when full entities are actually right.",
   "order": 10,
   "difficulty": "intermediate",
-  "tags": [
-    "ef-core",
-    "intermediate"
-  ],
+  "tags": ["ef-core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,10 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "lazy-eager-loading",
-    "change-tracking-and-savechanges"
-  ],
+  "relatedLessons": ["lazy-eager-loading", "change-tracking-and-savechanges"],
   "furtherReading": [
     {
       "title": "Querying with related data (EF Core)",

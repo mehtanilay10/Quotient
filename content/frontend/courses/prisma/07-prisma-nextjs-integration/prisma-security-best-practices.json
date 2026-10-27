@@ -8,13 +8,7 @@
   "order": 8,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "security",
-    "authorization",
-    "sql-injection",
-    "tenant-isolation"
-  ],
+  "tags": ["prisma", "security", "authorization", "sql-injection", "tenant-isolation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -78,8 +72,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-with-authentication",
-    "prisma-performance-optimization"
-  ]
+  "relatedLessons": ["prisma-with-authentication", "prisma-performance-optimization"]
 }

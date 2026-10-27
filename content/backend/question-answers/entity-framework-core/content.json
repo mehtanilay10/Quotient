@@ -8,11 +8,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 4.5,
   "icon": "🗃️",
-  "tags": [
-    "interview",
-    "ef-core",
-    "database"
-  ],
+  "tags": ["interview", "ef-core", "database"],
   "lessonSlugs": [
     "lazy-eager-loading",
     "code-first-db-first",

@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "easy",
   "estimatedMinutes": 8,
-  "tags": [
-    "csharp",
-    "trees",
-    "dfs",
-    "easy"
-  ],
+  "tags": ["csharp", "trees", "dfs", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -44,14 +39,8 @@
           {
             "title": "DFS Subtract Target",
             "description": "targetSum - node.Val at each level",
-            "pros": [
-              "Simple"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(h) space",
-              "Recommended"
-            ]
+            "pros": ["Simple"],
+            "tags": ["O(n) time", "O(h) space", "Recommended"]
           }
         ]
       }

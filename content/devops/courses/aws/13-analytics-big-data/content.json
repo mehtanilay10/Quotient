@@ -10,12 +10,7 @@
   "estimatedHours": 3,
   "icon": "📈",
   "tags": ["aws", "analytics", "redshift", "glue", "athena", "emr", "big-data"],
-  "lessonSlugs": [
-    "amazon-redshift",
-    "aws-glue-etl",
-    "athena-emr",
-    "opensearch-quicksight"
-  ],
+  "lessonSlugs": ["amazon-redshift", "aws-glue-etl", "athena-emr", "opensearch-quicksight"],
   "prerequisites": [],
   "whatYouLearn": [
     "Design data warehouses with Redshift",

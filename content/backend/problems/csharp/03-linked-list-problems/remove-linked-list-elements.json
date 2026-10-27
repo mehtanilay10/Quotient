@@ -8,12 +8,7 @@
   "order": 11,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "linked-list",
-    "dummy-node",
-    "easy"
-  ],
+  "tags": ["csharp", "linked-list", "dummy-node", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -74,34 +69,16 @@
           {
             "title": "Rebuild List",
             "description": "Build a fresh list excluding target values",
-            "pros": [
-              "Very clear",
-              "No mutating original nodes"
-            ],
-            "cons": [
-              "Allocates new ListNode objects",
-              "O(n) extra memory"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Very clear", "No mutating original nodes"],
+            "cons": ["Allocates new ListNode objects", "O(n) extra memory"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Dummy Node + Relink",
             "description": "Skip matching nodes by rewiring Next pointers",
-            "pros": [
-              "No new allocations",
-              "Handles head removal cleanly"
-            ],
-            "cons": [
-              "Requires dummy node"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["No new allocations", "Handles head removal cleanly"],
+            "cons": ["Requires dummy node"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

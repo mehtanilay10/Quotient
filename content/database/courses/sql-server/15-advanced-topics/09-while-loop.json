@@ -7,11 +7,7 @@
   "order": 9,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "WHILE",
-    "loop",
-    "control-flow"
-  ],
+  "tags": ["WHILE", "loop", "control-flow"],
   "blocks": [
     {
       "type": "heading",

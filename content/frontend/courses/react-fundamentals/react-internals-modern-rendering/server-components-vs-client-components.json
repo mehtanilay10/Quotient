@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "rsc",
-    "server-components",
-    "client-components"
-  ],
+  "tags": ["react", "rsc", "server-components", "client-components"],
   "blocks": [
     {
       "type": "paragraph",
@@ -108,20 +103,12 @@
               "Automatic code splitting",
               "Streaming support"
             ],
-            "cons": [
-              "No interactivity",
-              "No browser APIs",
-              "No hooks like useState"
-            ]
+            "cons": ["No interactivity", "No browser APIs", "No hooks like useState"]
           },
           {
             "title": "Client Components",
             "description": "Opt-in components that run in the browser. Required for interactivity and browser APIs.",
-            "pros": [
-              "Full interactivity",
-              "Hooks and effects",
-              "Browser APIs available"
-            ],
+            "pros": ["Full interactivity", "Hooks and effects", "Browser APIs available"],
             "cons": [
               "Increases bundle size",
               "Cannot access server resources directly",

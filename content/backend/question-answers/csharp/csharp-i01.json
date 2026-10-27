@@ -6,10 +6,7 @@
   "description": "Understand deferred execution and query providers.",
   "order": 19,
   "difficulty": "intermediate",
-  "tags": [
-    "c#",
-    "intermediate"
-  ],
+  "tags": ["c#", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

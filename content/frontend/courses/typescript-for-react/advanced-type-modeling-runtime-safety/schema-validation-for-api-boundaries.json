@@ -8,12 +8,7 @@
   "order": 9,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "zod",
-    "schema-validation",
-    "api"
-  ],
+  "tags": ["typescript", "zod", "schema-validation", "api"],
   "blocks": [
     {
       "type": "paragraph",
@@ -111,10 +106,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "runtime-validation-vs-compile-time-types",
-    "avoiding-unsafe-type-assertions"
-  ],
+  "relatedLessons": ["runtime-validation-vs-compile-time-types", "avoiding-unsafe-type-assertions"],
   "furtherReading": [
     {
       "title": "Zod Documentation",

@@ -6,10 +6,7 @@
   "description": "Understand when to use classes versus structs in C#.",
   "order": 1,
   "difficulty": "beginner",
-  "tags": [
-    "c#",
-    "beginner"
-  ],
+  "tags": ["c#", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

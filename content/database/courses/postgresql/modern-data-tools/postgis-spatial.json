@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "postgis",
-    "geospatial",
-    "gis",
-    "st-distance",
-    "knn"
-  ],
+  "tags": ["postgis", "geospatial", "gis", "st-distance", "knn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "gin-gist-indexes",
-    "extensions"
-  ]
+  "relatedLessons": ["gin-gist-indexes", "extensions"]
 }

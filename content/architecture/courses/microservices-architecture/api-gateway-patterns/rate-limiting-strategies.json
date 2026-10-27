@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "rate-limiting",
-    "algorithms",
-    "throttling"
-  ],
+  "tags": ["rate-limiting", "algorithms", "throttling"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,37 +56,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Algorithm",
-          "Description",
-          "Pros",
-          "Cons"
-        ],
+        "headers": ["Algorithm", "Description", "Pros", "Cons"],
         "rows": [
-          [
-            "Fixed Window",
-            "Count per fixed time window",
-            "Simple",
-            "Bursts at window edges"
-          ],
-          [
-            "Sliding Window",
-            "Count per moving window",
-            "Accurate",
-            "More memory"
-          ],
-          [
-            "Token Bucket",
-            "Tokens refill at rate",
-            "Allows bursts",
-            "Complex"
-          ],
-          [
-            "Leaky Bucket",
-            "Constant outflow",
-            "Smooths traffic",
-            "No bursts"
-          ]
+          ["Fixed Window", "Count per fixed time window", "Simple", "Bursts at window edges"],
+          ["Sliding Window", "Count per moving window", "Accurate", "More memory"],
+          ["Token Bucket", "Tokens refill at rate", "Allows bursts", "Complex"],
+          ["Leaky Bucket", "Constant outflow", "Smooths traffic", "No bursts"]
         ]
       }
     },

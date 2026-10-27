@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "error-handling",
-    "network-errors",
-    "graphql-errors",
-    "apollo-client"
-  ],
+  "tags": ["error-handling", "network-errors", "graphql-errors", "apollo-client"],
   "blocks": [
     {
       "type": "heading",
@@ -72,7 +67,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "what-is-apollo"
-  ]
+  "prerequisites": ["what-is-apollo"]
 }

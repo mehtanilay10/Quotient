@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "sso",
-    "single-sign-on",
-    "saml",
-    "oidc",
-    "federation"
-  ],
+  "tags": ["sso", "single-sign-on", "saml", "oidc", "federation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -112,15 +106,8 @@
               "Strong enterprise support",
               "Detailed attribute exchange"
             ],
-            "cons": [
-              "Verbose XML payloads",
-              "Complex configuration",
-              "Harder to debug"
-            ],
-            "tags": [
-              "saml",
-              "enterprise"
-            ]
+            "cons": ["Verbose XML payloads", "Complex configuration", "Harder to debug"],
+            "tags": ["saml", "enterprise"]
           },
           {
             "title": "OpenID Connect (OIDC)",
@@ -130,32 +117,15 @@
               "Native mobile support",
               "Great developer experience"
             ],
-            "cons": [
-              "Newer than SAML",
-              "Fewer legacy enterprise integrations"
-            ],
-            "tags": [
-              "oidc",
-              "oauth",
-              "modern"
-            ]
+            "cons": ["Newer than SAML", "Fewer legacy enterprise integrations"],
+            "tags": ["oidc", "oauth", "modern"]
           },
           {
             "title": "LDAP / Kerberos",
             "description": "Legacy protocols still used in on-premises enterprise environments.",
-            "pros": [
-              "Works well in LAN environments",
-              "Integrated with Active Directory"
-            ],
-            "cons": [
-              "Not web-friendly",
-              "Poor cloud support",
-              "Limited modern app support"
-            ],
-            "tags": [
-              "legacy",
-              "enterprise"
-            ]
+            "pros": ["Works well in LAN environments", "Integrated with Active Directory"],
+            "cons": ["Not web-friendly", "Poor cloud support", "Limited modern app support"],
+            "tags": ["legacy", "enterprise"]
           }
         ]
       }
@@ -242,7 +212,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "oauth-overview"
-  ]
+  "prerequisites": ["oauth-overview"]
 }

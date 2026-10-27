@@ -7,13 +7,7 @@
   "difficulty": "beginner",
   "estimatedHours": 2,
   "icon": "💬",
-  "tags": [
-    "chatgpt",
-    "claude",
-    "gemini",
-    "perplexity",
-    "comparison"
-  ],
+  "tags": ["chatgpt", "claude", "gemini", "perplexity", "comparison"],
   "lessonSlugs": [
     "chatgpt-guide",
     "model-comparison",
@@ -21,9 +15,7 @@
     "model-selection-and-cost-optimization"
   ],
   "isOptional": false,
-  "prerequisites": [
-    "ai-tools-overview"
-  ],
+  "prerequisites": ["ai-tools-overview"],
   "whatYouLearn": [
     "ChatGPT features, strengths, and best-use scenarios",
     "Claude's advantages for long documents and careful reasoning",

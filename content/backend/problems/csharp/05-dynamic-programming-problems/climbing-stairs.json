@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "fibonacci",
-    "easy"
-  ],
+  "tags": ["csharp", "dynamic-programming", "fibonacci", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -110,42 +105,22 @@
           {
             "title": "Recursion",
             "description": "Pure recursion",
-            "pros": [
-              "Simplest"
-            ],
-            "cons": [
-              "O(2^n)"
-            ],
-            "tags": [
-              "O(2^n) time",
-              "O(n) space"
-            ]
+            "pros": ["Simplest"],
+            "cons": ["O(2^n)"],
+            "tags": ["O(2^n) time", "O(n) space"]
           },
           {
             "title": "Memoization",
             "description": "Top-down cache",
-            "pros": [
-              "O(n) time"
-            ],
-            "cons": [
-              "O(n) stack+memo"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["O(n) time"],
+            "cons": ["O(n) stack+memo"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Space Optimized",
             "description": "Two-variable sliding window",
-            "pros": [
-              "O(1) space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) space"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

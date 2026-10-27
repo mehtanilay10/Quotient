@@ -68,42 +68,42 @@ Authenticated handlers return a consistent shape:
 `details` is present only for Zod validation failures and contains the issue
 list. Common codes and statuses:
 
-| Code | Status | Meaning |
-| --- | --- | --- |
-| `AUTH_ERROR` | 401 | No session |
-| `VALIDATION_ERROR` | 400 | Invalid body, query, CSRF token, or unknown reset target |
-| `RATE_LIMITED` | 429 | Limit exceeded |
-| `DATABASE_ERROR` | 500 | Query or persistence failure |
-| `NETWORK_ERROR` | 503 | Defined for network failures; used by client-side error classification |
+| Code               | Status | Meaning                                                                |
+| ------------------ | ------ | ---------------------------------------------------------------------- |
+| `AUTH_ERROR`       | 401    | No session                                                             |
+| `VALIDATION_ERROR` | 400    | Invalid body, query, CSRF token, or unknown reset target               |
+| `RATE_LIMITED`     | 429    | Limit exceeded                                                         |
+| `DATABASE_ERROR`   | 500    | Query or persistence failure                                           |
+| `NETWORK_ERROR`    | 503    | Defined for network failures; used by client-side error classification |
 
 ---
 
 ## 2. Endpoint summary
 
-| Method | Path | Auth | Handler limit |
-| --- | --- | --- | --- |
-| `GET` / `POST` | `/api/auth/[...nextauth]` | Public | 5 magic links / 5 min per IP; 3 / 5 min per email |
-| `GET` | `/api/search?q=` | Public | 20 / min |
-| `GET` | `/api/progress` | Required | pre-auth only |
-| `POST` | `/api/progress` | Required + CSRF | 30 / min |
-| `DELETE` | `/api/progress` | Required + CSRF | 10 / min |
-| `GET` | `/api/bookmarks` | Required | pre-auth only |
-| `POST` | `/api/bookmarks` | Required + CSRF | 30 / min |
-| `DELETE` | `/api/bookmarks` | Required + CSRF | 10 / min |
-| `GET` | `/api/last-path` | Required | pre-auth only |
-| `POST` | `/api/last-path` | Required + CSRF | 30 / min |
-| `GET` | `/api/user/theme` | Required | pre-auth only |
-| `POST` | `/api/user/theme` | Required + CSRF | 10 / min |
-| `GET` | `/api/user/preferences` | Required | pre-auth only |
-| `POST` | `/api/user/preferences` | Required + CSRF | 30 / min |
-| `GET` | `/api/user/notes` | Required | pre-auth only |
-| `POST` | `/api/user/notes` | Required + CSRF | 30 / min |
-| `DELETE` | `/api/user/notes` | Required + CSRF | 10 / min |
-| `GET` | `/api/user/offline-queue` | Required | pre-auth only |
-| `POST` | `/api/user/offline-queue` | Required + CSRF | 20 / min |
-| `DELETE` | `/api/user/offline-queue` | Required + CSRF | 10 / min |
-| `GET` | `/api/user/account-summary` | Required | pre-auth only |
-| `DELETE` | `/api/user/account-reset` | Required + CSRF | 5 / min |
+| Method         | Path                        | Auth            | Handler limit                                     |
+| -------------- | --------------------------- | --------------- | ------------------------------------------------- |
+| `GET` / `POST` | `/api/auth/[...nextauth]`   | Public          | 5 magic links / 5 min per IP; 3 / 5 min per email |
+| `GET`          | `/api/search?q=`            | Public          | 20 / min                                          |
+| `GET`          | `/api/progress`             | Required        | pre-auth only                                     |
+| `POST`         | `/api/progress`             | Required + CSRF | 30 / min                                          |
+| `DELETE`       | `/api/progress`             | Required + CSRF | 10 / min                                          |
+| `GET`          | `/api/bookmarks`            | Required        | pre-auth only                                     |
+| `POST`         | `/api/bookmarks`            | Required + CSRF | 30 / min                                          |
+| `DELETE`       | `/api/bookmarks`            | Required + CSRF | 10 / min                                          |
+| `GET`          | `/api/last-path`            | Required        | pre-auth only                                     |
+| `POST`         | `/api/last-path`            | Required + CSRF | 30 / min                                          |
+| `GET`          | `/api/user/theme`           | Required        | pre-auth only                                     |
+| `POST`         | `/api/user/theme`           | Required + CSRF | 10 / min                                          |
+| `GET`          | `/api/user/preferences`     | Required        | pre-auth only                                     |
+| `POST`         | `/api/user/preferences`     | Required + CSRF | 30 / min                                          |
+| `GET`          | `/api/user/notes`           | Required        | pre-auth only                                     |
+| `POST`         | `/api/user/notes`           | Required + CSRF | 30 / min                                          |
+| `DELETE`       | `/api/user/notes`           | Required + CSRF | 10 / min                                          |
+| `GET`          | `/api/user/offline-queue`   | Required        | pre-auth only                                     |
+| `POST`         | `/api/user/offline-queue`   | Required + CSRF | 20 / min                                          |
+| `DELETE`       | `/api/user/offline-queue`   | Required + CSRF | 10 / min                                          |
+| `GET`          | `/api/user/account-summary` | Required        | pre-auth only                                     |
+| `DELETE`       | `/api/user/account-reset`   | Required + CSRF | 5 / min                                           |
 
 All limits are in addition to the 60-request/minute pre-auth throttle.
 
@@ -175,10 +175,10 @@ is better. `snippet` is a description excerpt around the strongest match.
 
 **Errors**
 
-| Status | Code | Cause |
-| --- | --- | --- |
-| `400` | `VALIDATION_ERROR` | Query exceeds 200 characters |
-| `429` | `RATE_LIMITED` | More than 20 requests in a minute |
+| Status | Code               | Cause                             |
+| ------ | ------------------ | --------------------------------- |
+| `400`  | `VALIDATION_ERROR` | Query exceeds 200 characters      |
+| `429`  | `RATE_LIMITED`     | More than 20 requests in a minute |
 
 Search is computed in process by `searchAll()`; it does not query PostgreSQL.
 
@@ -617,12 +617,12 @@ personalization preferences are preserved.
 
 Valid targets:
 
-| Target | Deletes | Cache cleared |
-| --- | --- | --- |
-| `progress` | All `user_progress` rows | `progress:<userId>` |
-| `bookmarks` | All `user_bookmarks` rows | `bookmarks:<userId>` |
-| `notes` | All `user_lesson_notes` rows | none |
-| `offline` | All `offline_reading_queue` rows | none |
+| Target      | Deletes                          | Cache cleared        |
+| ----------- | -------------------------------- | -------------------- |
+| `progress`  | All `user_progress` rows         | `progress:<userId>`  |
+| `bookmarks` | All `user_bookmarks` rows        | `bookmarks:<userId>` |
+| `notes`     | All `user_lesson_notes` rows     | none                 |
+| `offline`   | All `offline_reading_queue` rows | none                 |
 
 **Response:** `{ "ok": true }`
 

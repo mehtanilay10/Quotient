@@ -6,13 +6,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "final-form",
-    "forms",
-    "react",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["final-form", "forms", "react", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -85,10 +79,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "Final Form minimizes re-renders.",
-          "Framework-agnostic core."
-        ]
+        "points": ["Final Form minimizes re-renders.", "Framework-agnostic core."]
       }
     }
   ],

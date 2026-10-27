@@ -6,11 +6,7 @@
   "fullDefinition": "An autonomous agent is an AI system capable of operating with minimal human supervision to pursue goals across multiple steps. Unlike chatbots that respond to single messages, autonomous agents plan sequences of actions, use tools, recover from errors, and adapt their strategy based on results. They typically incorporate memory, planning modules, and tool-calling capabilities. While current autonomous agents still require human oversight for safety-critical decisions, they represent a significant step toward AI systems that can manage complex, multi-step workflows independently. Examples include coding agents that fix bugs end-to-end and research agents that compile reports.",
   "category": "agents-and-automation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "agent",
-    "ai-agent",
-    "multi-agent-system"
-  ],
+  "relatedTerms": ["agent", "ai-agent", "multi-agent-system"],
   "learnMoreSlug": "what-are-agents",
   "examples": [
     "An autonomous coding agent that fixes bugs, runs tests, and submits a PR",

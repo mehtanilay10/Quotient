@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "unknown",
-    "any",
-    "type-safety"
-  ],
+  "tags": ["typescript", "unknown", "any", "type-safety"],
   "blocks": [
     {
       "type": "paragraph",
@@ -91,10 +86,7 @@
               "Forces you to handle unexpected shapes",
               "Makes illegal states unrepresentable"
             ],
-            "cons": [
-              "Slightly more verbose",
-              "Requires runtime checks when the shape is unknown"
-            ]
+            "cons": ["Slightly more verbose", "Requires runtime checks when the shape is unknown"]
           }
         ]
       }
@@ -143,10 +135,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "type-predicates",
-    "runtime-validation-vs-compile-time-types"
-  ],
+  "relatedLessons": ["type-predicates", "runtime-validation-vs-compile-time-types"],
   "furtherReading": [
     {
       "title": "TypeScript Handbook: unknown",

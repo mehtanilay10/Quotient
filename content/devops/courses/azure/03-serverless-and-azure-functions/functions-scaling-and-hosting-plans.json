@@ -8,12 +8,7 @@
   "order": 9,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "serverless",
-    "functions",
-    "developer"
-  ],
+  "tags": ["azure", "serverless", "functions", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -63,23 +58,13 @@
               "Longer execution time",
               "Always-on instances"
             ],
-            "cons": [
-              "Higher minimum cost",
-              "Requires at least one pre-warmed instance"
-            ]
+            "cons": ["Higher minimum cost", "Requires at least one pre-warmed instance"]
           },
           {
             "title": "Dedicated (App Service)",
             "description": "Runs on an App Service plan with fixed capacity.",
-            "pros": [
-              "Predictable costs",
-              "Full App Service features",
-              "No cold starts"
-            ],
-            "cons": [
-              "No auto-scale to zero",
-              "Pay for reserved capacity 24/7"
-            ]
+            "pros": ["Predictable costs", "Full App Service features", "No cold starts"],
+            "cons": ["No auto-scale to zero", "Pay for reserved capacity 24/7"]
           }
         ]
       }

@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "load-balancing",
-    "geo-routing",
-    "global",
-    "multi-region",
-    "latency"
-  ],
+  "tags": ["load-balancing", "geo-routing", "global", "multi-region", "latency"],
   "blocks": [
     {
       "type": "paragraph",
@@ -111,10 +105,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "dns-load-balancing",
-    "health-checks"
-  ],
+  "relatedLessons": ["dns-load-balancing", "health-checks"],
   "furtherReading": [
     {
       "title": "Cloudflare Load Balancing",

@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "endpoint",
-    "controller",
-    "action"
-  ],
+  "tags": ["web-api", "endpoint", "controller", "action"],
   "blocks": [
     {
       "type": "paragraph",
@@ -118,31 +113,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Endpoint",
-          "HTTP",
-          "URL",
-          "Action",
-          "Success status",
-          "Error status"
-        ],
+        "headers": ["Endpoint", "HTTP", "URL", "Action", "Success status", "Error status"],
         "rows": [
-          [
-            "List users",
-            "GET",
-            "/api/users",
-            "GetAll()",
-            "200 OK",
-            "—"
-          ],
-          [
-            "Get one user",
-            "GET",
-            "/api/users/{id}",
-            "GetById(id)",
-            "200 OK",
-            "404 Not Found"
-          ],
+          ["List users", "GET", "/api/users", "GetAll()", "200 OK", "—"],
+          ["Get one user", "GET", "/api/users/{id}", "GetById(id)", "200 OK", "404 Not Found"],
           [
             "Create user",
             "POST",
@@ -151,14 +125,7 @@
             "201 Created",
             "400 Bad Request (auto)"
           ],
-          [
-            "Update user",
-            "PUT",
-            "/api/users/{id}",
-            "Update(id, user)",
-            "200 OK",
-            "404 Not Found"
-          ],
+          ["Update user", "PUT", "/api/users/{id}", "Update(id, user)", "200 OK", "404 Not Found"],
           [
             "Delete user",
             "DELETE",
@@ -227,10 +194,7 @@
           {
             "title": "Ok(data)",
             "description": "Returns `200 OK` with an optional body.",
-            "tags": [
-              "200",
-              "success"
-            ],
+            "tags": ["200", "success"],
             "pros": [
               "Standard for successful reads and updates",
               "Caller receives the resource back"
@@ -242,59 +206,35 @@
           {
             "title": "CreatedAtAction(...)",
             "description": "Returns `201 Created` with a `Location` header pointing at the new resource.",
-            "tags": [
-              "201",
-              "POST"
-            ],
+            "tags": ["201", "POST"],
             "pros": [
               "Signals that a new resource was created",
               "Gives clients a stable URL for the new resource"
             ],
-            "cons": [
-              "Requires you to know the action name and route parameter names"
-            ]
+            "cons": ["Requires you to know the action name and route parameter names"]
           },
           {
             "title": "NotFound()",
             "description": "Returns `404 Not Found` with no body.",
-            "tags": [
-              "404",
-              "missing"
-            ],
-            "pros": [
-              "Trivially indicates 'the resource you asked for is not there'"
-            ],
-            "cons": [
-              "Empty body — consider `Problem(...)` for a richer error message"
-            ]
+            "tags": ["404", "missing"],
+            "pros": ["Trivially indicates 'the resource you asked for is not there'"],
+            "cons": ["Empty body — consider `Problem(...)` for a richer error message"]
           },
           {
             "title": "NoContent()",
             "description": "Returns `204 No Content` with no body.",
-            "tags": [
-              "204",
-              "DELETE"
-            ],
-            "pros": [
-              "Idiomatic for successful DELETE when there is nothing meaningful to return"
-            ],
-            "cons": [
-              "Do not use if you need to confirm what was deleted — return `Ok` instead"
-            ]
+            "tags": ["204", "DELETE"],
+            "pros": ["Idiomatic for successful DELETE when there is nothing meaningful to return"],
+            "cons": ["Do not use if you need to confirm what was deleted — return `Ok` instead"]
           },
           {
             "title": "BadRequest() / ValidationProblem()",
             "description": "Returns `400 Bad Request` with optional error details.",
-            "tags": [
-              "400",
-              "validation"
-            ],
+            "tags": ["400", "validation"],
             "pros": [
               "With `[ApiController]`, model validation errors auto-return `ValidationProblem`"
             ],
-            "cons": [
-              "You rarely need to call it manually"
-            ]
+            "cons": ["You rarely need to call it manually"]
           }
         ]
       }

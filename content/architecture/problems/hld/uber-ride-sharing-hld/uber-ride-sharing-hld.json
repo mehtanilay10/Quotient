@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "geospatial",
-    "real-time",
-    "ride-sharing",
-    "matching"
-  ],
+  "tags": ["hld", "system-design", "geospatial", "real-time", "ride-sharing", "matching"],
   "blocks": [
     {
       "type": "heading",
@@ -164,11 +157,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ride-sharing-hld",
-    "food-delivery-hld",
-    "rate-limiter"
-  ],
+  "relatedLessons": ["ride-sharing-hld", "food-delivery-hld", "rate-limiter"],
   "furtherReading": [
     {
       "title": "Uber Engineering Blog — H3 Hexagonal Grid",

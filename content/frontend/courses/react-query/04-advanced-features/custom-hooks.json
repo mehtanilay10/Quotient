@@ -8,16 +8,8 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "custom-hooks",
-    "reusable",
-    "patterns",
-    "composition"
-  ],
-  "prerequisites": [
-    "query-hooks"
-  ],
+  "tags": ["react-query", "custom-hooks", "reusable", "patterns", "composition"],
+  "prerequisites": ["query-hooks"],
   "blocks": [
     {
       "type": "heading",
@@ -123,11 +115,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Approach",
-          "Example",
-          "Best For"
-        ],
+        "headers": ["Approach", "Example", "Best For"],
         "rows": [
           [
             "By domain",

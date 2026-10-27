@@ -93,9 +93,27 @@
       "data": {
         "headers": ["Strategy", "Mechanism", "Pros", "Cons", "Use Case"],
         "rows": [
-          ["Redis Lua script", "Atomic check-and-set", "Sub-millisecond, highly concurrent", "Ephemeral; needs DB backup", "High-volume events"],
-          ["SQL advisory lock", "pg_advisory_xact_lock", "Durable, transactional", "Slower, ties up DB connection", "Low-volume bookings"],
-          ["Pessimistic row lock", "SELECT FOR UPDATE", "Zero double-booking risk", "Connection exhaustion under load", "Flash sales with low concurrency"]
+          [
+            "Redis Lua script",
+            "Atomic check-and-set",
+            "Sub-millisecond, highly concurrent",
+            "Ephemeral; needs DB backup",
+            "High-volume events"
+          ],
+          [
+            "SQL advisory lock",
+            "pg_advisory_xact_lock",
+            "Durable, transactional",
+            "Slower, ties up DB connection",
+            "Low-volume bookings"
+          ],
+          [
+            "Pessimistic row lock",
+            "SELECT FOR UPDATE",
+            "Zero double-booking risk",
+            "Connection exhaustion under load",
+            "Flash sales with low concurrency"
+          ]
         ]
       }
     },
@@ -157,10 +175,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "e-commerce-api",
-    "file-upload-api"
-  ],
+  "relatedLessons": ["e-commerce-api", "file-upload-api"],
   "furtherReading": [
     {
       "title": "Designing a Hotel Booking API",

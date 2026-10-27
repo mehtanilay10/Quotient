@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "queries",
-    "crud",
-    "findUnique",
-    "findFirst",
-    "findMany"
-  ],
+  "tags": ["prisma", "queries", "crud", "findUnique", "findFirst", "findMany"],
   "blocks": [
     {
       "type": "paragraph",
@@ -33,12 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "Target Result",
-          "Where Constraint",
-          "Generated SQL Equivalent"
-        ],
+        "headers": ["Method", "Target Result", "Where Constraint", "Generated SQL Equivalent"],
         "rows": [
           [
             "`findUnique`",
@@ -133,8 +121,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "select-and-include",
-    "create-update-delete-ops"
-  ]
+  "relatedLessons": ["select-and-include", "create-update-delete-ops"]
 }

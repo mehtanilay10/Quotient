@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "well-architected",
-    "pillars",
-    "best-practices",
-    "reliability"
-  ],
+  "tags": ["aws", "well-architected", "pillars", "best-practices", "reliability"],
   "blocks": [
     {
       "type": "heading",
@@ -47,11 +41,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pillar",
-          "Focus Area",
-          "Key Question"
-        ],
+        "headers": ["Pillar", "Focus Area", "Key Question"],
         "rows": [
           [
             "Operational Excellence",

@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 22,
-  "tags": [
-    "mcp",
-    "deployment",
-    "aspnet-core",
-    "security"
-  ],
+  "tags": ["mcp", "deployment", "aspnet-core", "security"],
   "blocks": [
     {
       "type": "paragraph",
@@ -76,10 +71,7 @@
       "takeaway": "Deploy MCP servers with the same rigor as any public API. The protocol is new, but the infrastructure patterns are not."
     }
   ],
-  "relatedLessons": [
-    "auth-and-authorization-in-mcp",
-    "deployment-and-scaling-patterns"
-  ],
+  "relatedLessons": ["auth-and-authorization-in-mcp", "deployment-and-scaling-patterns"],
   "technology": null,
   "furtherReading": [
     {

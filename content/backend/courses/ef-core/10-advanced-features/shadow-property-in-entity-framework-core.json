@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "ef-core",
-    "shadow-properties",
-    "fluent-api",
-    "changtracker"
-  ],
+  "tags": ["ef-core", "shadow-properties", "fluent-api", "changtracker"],
   "blocks": [
     {
       "type": "paragraph",

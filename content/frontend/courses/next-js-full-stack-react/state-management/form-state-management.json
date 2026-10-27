@@ -101,7 +101,11 @@
       }
     }
   ],
-  "relatedLessons": ["local-state-vs-server-state", "react-query-for-server-state", "performance-and-re-renders"],
+  "relatedLessons": [
+    "local-state-vs-server-state",
+    "react-query-for-server-state",
+    "performance-and-re-renders"
+  ],
   "furtherReading": [
     {
       "type": "article",

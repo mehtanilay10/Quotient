@@ -10,12 +10,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2.5,
   "tags": ["react", "router", "routing", "navigation", "intermediate"],
-  "lessonSlugs": [
-    "routing-basics",
-    "nested-routes",
-    "route-params",
-    "navigation"
-  ],
+  "lessonSlugs": ["routing-basics", "nested-routes", "route-params", "navigation"],
   "prerequisites": ["components-props", "state-events"],
   "whatYouLearn": [
     "Install and configure react-router-dom for client-side navigation",

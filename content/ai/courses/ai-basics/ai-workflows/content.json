@@ -7,21 +7,14 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "🔄",
-  "tags": [
-    "workflows",
-    "templates",
-    "prompt-chaining",
-    "productivity"
-  ],
+  "tags": ["workflows", "templates", "prompt-chaining", "productivity"],
   "lessonSlugs": [
     "building-your-first-workflow",
     "prompt-debugging-workflow",
     "ai-product-design-lifecycle"
   ],
   "isOptional": false,
-  "prerequisites": [
-    "advanced-prompting"
-  ],
+  "prerequisites": ["advanced-prompting"],
   "whatYouLearn": [
     "What an AI workflow is and why it saves time",
     "How to chain prompts for multi-step tasks",

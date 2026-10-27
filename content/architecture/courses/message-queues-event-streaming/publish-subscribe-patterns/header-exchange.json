@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 11,
-  "tags": [
-    "rabbitmq",
-    "header-exchange",
-    "routing",
-    "metadata",
-    "messaging"
-  ],
+  "tags": ["rabbitmq", "header-exchange", "routing", "metadata", "messaging"],
   "blocks": [
     {
       "type": "paragraph",
@@ -102,10 +96,7 @@
           {
             "title": "Fanout",
             "description": "Routes to all bound queues. Routing key is ignored.",
-            "pros": [
-              "Simplest to set up",
-              "Guaranteed broadcast"
-            ],
+            "pros": ["Simplest to set up", "Guaranteed broadcast"],
             "cons": [
               "No filtering possible",
               "Wastes resources if not all consumers need the message"
@@ -114,22 +105,13 @@
           {
             "title": "Direct",
             "description": "Routes based on exact routing key match.",
-            "pros": [
-              "Precise routing",
-              "High performance"
-            ],
-            "cons": [
-              "Single-criterion only",
-              "Requires consistent key naming"
-            ]
+            "pros": ["Precise routing", "High performance"],
+            "cons": ["Single-criterion only", "Requires consistent key naming"]
           },
           {
             "title": "Topic",
             "description": "Routes based on pattern matching with wildcards.",
-            "pros": [
-              "Flexible multi-level patterns",
-              "Supports broad and narrow subscriptions"
-            ],
+            "pros": ["Flexible multi-level patterns", "Supports broad and narrow subscriptions"],
             "cons": [
               "Pattern design can become complex",
               "Overly broad patterns degrade performance"
@@ -138,10 +120,7 @@
           {
             "title": "Header",
             "description": "Routes based on message header attributes with AND/OR logic.",
-            "pros": [
-              "Multi-criteria routing",
-              "No routing key needed"
-            ],
+            "pros": ["Multi-criteria routing", "No routing key needed"],
             "cons": [
               "Slower than other exchange types",
               "Less commonly used — fewer community examples"

@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "easy",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "arrays",
-    "greedy",
-    "easy"
-  ],
+  "tags": ["csharp", "arrays", "greedy", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -133,47 +128,23 @@
           {
             "title": "Brute Force",
             "description": "Try every buy/sell pair",
-            "pros": [
-              "Simple to reason about"
-            ],
-            "cons": [
-              "O(n²) time"
-            ],
-            "tags": [
-              "O(n²) time",
-              "O(1) space"
-            ]
+            "pros": ["Simple to reason about"],
+            "cons": ["O(n²) time"],
+            "tags": ["O(n²) time", "O(1) space"]
           },
           {
             "title": "One Pass",
             "description": "Track min price, compute profit on the fly",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
             "cons": [],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           },
           {
             "title": "Peak-Valley",
             "description": "Buy at valleys, sell at peaks",
-            "pros": [
-              "O(n) time",
-              "Intuitive market analogy"
-            ],
-            "cons": [
-              "Slightly more complex to implement",
-              "Accumulates multiple transactions"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space"
-            ]
+            "pros": ["O(n) time", "Intuitive market analogy"],
+            "cons": ["Slightly more complex to implement", "Accumulates multiple transactions"],
+            "tags": ["O(n) time", "O(1) space"]
           }
         ]
       }

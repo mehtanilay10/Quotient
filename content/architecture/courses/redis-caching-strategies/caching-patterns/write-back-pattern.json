@@ -8,14 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "redis",
-    "caching",
-    "write-back",
-    "write-behind",
-    "asynchronous",
-    "intermediate"
-  ],
+  "tags": ["redis", "caching", "write-back", "write-behind", "asynchronous", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

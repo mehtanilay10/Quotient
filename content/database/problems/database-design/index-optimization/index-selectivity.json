@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Selectivity measures how unique values are in a column. High-selectivity indexes filter many rows per seek. Low-selectivity indexes like gender or boolean flags often do not help the optimizer." }
+      "data": {
+        "text": "Selectivity measures how unique values are in a column. High-selectivity indexes filter many rows per seek. Low-selectivity indexes like gender or boolean flags often do not help the optimizer."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,12 @@
       "type": "bullet-list",
       "data": {
         "title": "Formula",
-        "items": ["Selectivity = distinct_values / total_rows", "Close to 1: high selectivity, good for indexing", "Close to 0: low selectivity, poor for indexing", "Combine low-selectivity columns in composite indexes"]
+        "items": [
+          "Selectivity = distinct_values / total_rows",
+          "Close to 1: high selectivity, good for indexing",
+          "Close to 0: low selectivity, poor for indexing",
+          "Combine low-selectivity columns in composite indexes"
+        ]
       }
     },
     {
@@ -52,16 +59,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "warning", "title": "Warning", "text": "Low-selectivity indexes can still help if the query filters on a small percentage of rows. Always check the actual execution plan." }
+      "data": {
+        "variant": "warning",
+        "title": "Warning",
+        "text": "Low-selectivity indexes can still help if the query filters on a small percentage of rows. Always check the actual execution plan."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "What is the selectivity threshold for indexing?", "answer": "There is no fixed threshold. Test with EXPLAIN. Values above 0.1 are usually worth indexing alone." },
-          { "question": "Can low-selectivity columns be useful in composites?", "answer": "Yes. A composite on (status, created_at) can help if status is filtered and created_at is sorted." },
-          { "question": "Does the optimizer consider selectivity?", "answer": "Yes. Most optimizers use column statistics to choose between index scans and sequential scans." }
+          {
+            "question": "What is the selectivity threshold for indexing?",
+            "answer": "There is no fixed threshold. Test with EXPLAIN. Values above 0.1 are usually worth indexing alone."
+          },
+          {
+            "question": "Can low-selectivity columns be useful in composites?",
+            "answer": "Yes. A composite on (status, created_at) can help if status is filtered and created_at is sorted."
+          },
+          {
+            "question": "Does the optimizer consider selectivity?",
+            "answer": "Yes. Most optimizers use column statistics to choose between index scans and sequential scans."
+          }
         ]
       }
     },
@@ -69,7 +89,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Calculate selectivity as distinct_values / total_rows", "High-selectivity columns make good standalone indexes", "Low-selectivity columns need composite context", "Verify with actual execution plans"],
+        "points": [
+          "Calculate selectivity as distinct_values / total_rows",
+          "High-selectivity columns make good standalone indexes",
+          "Low-selectivity columns need composite context",
+          "Verify with actual execution plans"
+        ],
         "takeaway": "Selectivity guides index selection but does not replace execution plan verification."
       }
     }

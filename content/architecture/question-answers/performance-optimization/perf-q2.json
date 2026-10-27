@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "performance",
-    "sql",
-    "database"
-  ],
+  "tags": ["interview", "performance", "sql", "database"],
   "blocks": [
     {
       "type": "paragraph",

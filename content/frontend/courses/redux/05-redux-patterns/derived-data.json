@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "selectors",
-    "derived-data",
-    "memoization",
-    "reselect"
-  ],
+  "tags": ["redux", "selectors", "derived-data", "memoization", "reselect"],
   "blocks": [
     {
       "type": "paragraph",
@@ -147,37 +141,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "Selector Type",
-          "Memoization Benefit"
-        ],
+        "headers": ["Scenario", "Selector Type", "Memoization Benefit"],
         "rows": [
-          [
-            "Simple state access",
-            "Plain function",
-            "None needed"
-          ],
-          [
-            "Array/object creation",
-            "createSelector",
-            "Avoids new references"
-          ],
-          [
-            "Expensive computation",
-            "createSelector",
-            "Skips recalculation"
-          ],
-          [
-            "Filtered lists",
-            "createSelector",
-            "Only recomputes on filter change"
-          ],
-          [
-            "Aggregated values",
-            "createSelector",
-            "Caches sum/count/etc."
-          ]
+          ["Simple state access", "Plain function", "None needed"],
+          ["Array/object creation", "createSelector", "Avoids new references"],
+          ["Expensive computation", "createSelector", "Skips recalculation"],
+          ["Filtered lists", "createSelector", "Only recomputes on filter change"],
+          ["Aggregated values", "createSelector", "Caches sum/count/etc."]
         ]
       }
     },

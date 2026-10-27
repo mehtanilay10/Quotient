@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "model-binding",
-    "forms",
-    "data"
-  ],
+  "tags": ["model-binding", "forms", "data"],
   "blocks": [
     {
       "type": "heading",
@@ -171,9 +167,7 @@
       "takeaway": "Model binding is the bridge between the raw HTTP world and your strongly typed C# code. Mastering it makes your controllers cleaner and your forms easier to build."
     }
   ],
-  "relatedLessons": [
-    "binding-sources"
-  ],
+  "relatedLessons": ["binding-sources"],
   "technology": null,
   "furtherReading": []
 }

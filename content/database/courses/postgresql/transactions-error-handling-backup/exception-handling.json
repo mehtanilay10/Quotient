@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "exceptions",
-    "plpgsql",
-    "sqlstate",
-    "error-handling"
-  ],
+  "tags": ["exceptions", "plpgsql", "sqlstate", "error-handling"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "plpgsql-basics",
-    "transaction-fundamentals"
-  ]
+  "relatedLessons": ["plpgsql-basics", "transaction-fundamentals"]
 }

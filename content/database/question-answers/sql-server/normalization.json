@@ -6,10 +6,7 @@
   "description": "Understand how to organize database tables to reduce redundancy.",
   "order": 4,
   "difficulty": "beginner",
-  "tags": [
-    "SQL Server",
-    "beginner"
-  ],
+  "tags": ["SQL Server", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

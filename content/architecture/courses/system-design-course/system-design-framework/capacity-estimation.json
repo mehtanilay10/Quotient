@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "system-design",
-    "capacity",
-    "estimation",
-    "scaling"
-  ],
+  "tags": ["system-design", "capacity", "estimation", "scaling"],
   "blocks": [
     {
       "type": "heading",
@@ -57,27 +52,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Formula",
-          "Example"
-        ],
+        "headers": ["Metric", "Formula", "Example"],
         "rows": [
           [
             "QPS",
             "Daily active users x Requests per user per day / 86400",
             "10M users x 20 requests / 86400 = 2,314 QPS"
           ],
-          [
-            "Storage",
-            "Daily new data x Retention days",
-            "1 TB new per day x 365 days = 365 TB"
-          ],
-          [
-            "Bandwidth",
-            "QPS x Average request size",
-            "2,314 QPS x 100 KB = 231 MB/s"
-          ]
+          ["Storage", "Daily new data x Retention days", "1 TB new per day x 365 days = 365 TB"],
+          ["Bandwidth", "QPS x Average request size", "2,314 QPS x 100 KB = 231 MB/s"]
         ]
       }
     },

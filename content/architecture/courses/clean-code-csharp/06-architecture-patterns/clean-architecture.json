@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 13,
-  "tags": [
-    "clean-architecture",
-    "architecture",
-    "csharp"
-  ],
+  "tags": ["clean-architecture", "architecture", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -58,9 +54,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "cqrs-pattern"
-  ],
+  "relatedLessons": ["cqrs-pattern"],
   "furtherReading": [],
   "courseSlug": "clean-code-csharp"
 }

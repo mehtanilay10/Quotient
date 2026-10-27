@@ -35,7 +35,11 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": ["Thread safety is critical", "Use Strategy for algorithms", "Consider distributed case"],
+        "points": [
+          "Thread safety is critical",
+          "Use Strategy for algorithms",
+          "Consider distributed case"
+        ],
         "takeaway": "Keep logic pure and thread-safe."
       }
     }

@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 23,
-  "tags": [
-    "ef-core",
-    "raw-sql",
-    "fromsql",
-    "parameterized"
-  ],
+  "tags": ["ef-core", "raw-sql", "fromsql", "parameterized"],
   "blocks": [
     {
       "type": "paragraph",

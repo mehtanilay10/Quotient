@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "event-sourcing",
-    "snapshots",
-    "replay",
-    "performance"
-  ],
+  "tags": ["event-sourcing", "snapshots", "replay", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -143,10 +138,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "event-sourcing-fundamentals",
-    "event-store-design"
-  ],
+  "relatedLessons": ["event-sourcing-fundamentals", "event-store-design"],
   "furtherReading": [
     {
       "title": "Greg Young on Snapshots",

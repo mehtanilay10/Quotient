@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "security",
-    "jwt",
-    "authentication",
-    "aspnetcore"
-  ],
+  "tags": ["security", "jwt", "authentication", "aspnetcore"],
   "blocks": [
     {
       "type": "heading",
@@ -122,9 +117,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "data-protection",
-    "identity-model"
-  ],
+  "relatedLessons": ["data-protection", "identity-model"],
   "courseSlug": "dotnet-nuget-packages"
 }

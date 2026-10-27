@@ -8,13 +8,7 @@
   "order": 28,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "async",
-    "await",
-    "threading",
-    "thread-pool",
-    "scalability"
-  ],
+  "tags": ["async", "await", "threading", "thread-pool", "scalability"],
   "blocks": [
     {
       "type": "paragraph",

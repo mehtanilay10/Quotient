@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "docker-volumes",
-    "docker-networks",
-    "registries",
-    "devops"
-  ],
+  "tags": ["docker-volumes", "docker-networks", "registries", "devops"],
   "blocks": [
     {
       "type": "heading",
@@ -58,48 +53,27 @@
           {
             "title": "Named Volumes",
             "description": "Managed by Docker in a host directory. Best for databases and persistent data.",
-            "tags": [
-              "Persistent",
-              "Managed"
-            ],
+            "tags": ["Persistent", "Managed"],
             "pros": [
               "Easy to back up or migrate",
               "Works on all platforms",
               "Can be shared among containers"
             ],
-            "cons": [
-              "Slightly higher overhead than bind mounts"
-            ]
+            "cons": ["Slightly higher overhead than bind mounts"]
           },
           {
             "title": "Bind Mounts",
             "description": "Mounts a specific host directory into the container. Good for code syncing in development.",
-            "tags": [
-              "Host directory",
-              "Development"
-            ],
-            "pros": [
-              "Instant code live-reload",
-              "Full control over host path"
-            ],
-            "cons": [
-              "Host-specific paths break on other machines"
-            ]
+            "tags": ["Host directory", "Development"],
+            "pros": ["Instant code live-reload", "Full control over host path"],
+            "cons": ["Host-specific paths break on other machines"]
           },
           {
             "title": "tmpfs Mounts",
             "description": "Stores data in memory only, never written to disk. Ideal for secrets.",
-            "tags": [
-              "In-memory",
-              "Ephemeral"
-            ],
-            "pros": [
-              "Fastest option",
-              "Never persists to disk"
-            ],
-            "cons": [
-              "Lost when container stops"
-            ]
+            "tags": ["In-memory", "Ephemeral"],
+            "pros": ["Fastest option", "Never persists to disk"],
+            "cons": ["Lost when container stops"]
           }
         ]
       }
@@ -145,37 +119,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Driver",
-          "When to use it",
-          "Isolation"
-        ],
+        "headers": ["Driver", "When to use it", "Isolation"],
         "rows": [
-          [
-            "bridge",
-            "Default; containers on the same host connect here",
-            "Isolated per container"
-          ],
-          [
-            "host",
-            "Skip container networking; use the host directly",
-            "No isolation"
-          ],
-          [
-            "overlay",
-            "Multi-host networking (used with Swarm/Kubernetes)",
-            "Cluster-wide"
-          ],
-          [
-            "none",
-            "No networking at all",
-            "Fully isolated"
-          ],
-          [
-            "macvlan",
-            "Assign a MAC address from the host to the container",
-            "LAN-level access"
-          ]
+          ["bridge", "Default; containers on the same host connect here", "Isolated per container"],
+          ["host", "Skip container networking; use the host directly", "No isolation"],
+          ["overlay", "Multi-host networking (used with Swarm/Kubernetes)", "Cluster-wide"],
+          ["none", "No networking at all", "Fully isolated"],
+          ["macvlan", "Assign a MAC address from the host to the container", "LAN-level access"]
         ]
       }
     },

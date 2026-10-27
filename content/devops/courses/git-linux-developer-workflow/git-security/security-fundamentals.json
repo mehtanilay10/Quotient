@@ -150,6 +150,10 @@
   ],
   "relatedLessons": ["gpg-commit-signing", "verifying-signatures", "ssh-key-management"],
   "furtherReading": [
-    { "title": "Git Security Documentation", "url": "https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work", "type": "article" }
+    {
+      "title": "Git Security Documentation",
+      "url": "https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work",
+      "type": "article"
+    }
   ]
 }

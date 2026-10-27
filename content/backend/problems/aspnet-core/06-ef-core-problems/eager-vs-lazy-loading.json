@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "ef-core",
-    "loading",
-    "include"
-  ],
+  "tags": ["aspnet-core", "ef-core", "loading", "include"],
   "blocks": [
     {
       "type": "heading",
@@ -91,42 +86,20 @@
           {
             "title": "Eager Loading with Include",
             "description": "Loading related data strategies",
-            "pros": [
-              "Predictable queries",
-              "No N+1 problem",
-              "Supports filtering includes"
-            ],
+            "pros": ["Predictable queries", "No N+1 problem", "Supports filtering includes"],
             "cons": [
               "May load unnecessary data",
               "Cartesian explosion risk",
               "Split queries are slower"
             ],
-            "tags": [
-              "Include",
-              "ThenInclude",
-              "AsSplitQuery",
-              "Explicit Loading"
-            ]
+            "tags": ["Include", "ThenInclude", "AsSplitQuery", "Explicit Loading"]
           },
           {
             "title": "Projection to DTOs",
             "description": "DTO projection with Select",
-            "pros": [
-              "Most efficient",
-              "No over-fetching",
-              "No tracking overhead",
-              "Single query"
-            ],
-            "cons": [
-              "Must maintain DTO classes",
-              "Complex projections are verbose"
-            ],
-            "tags": [
-              "Select",
-              "ProjectTo",
-              "DTO",
-              "no-tracking"
-            ]
+            "pros": ["Most efficient", "No over-fetching", "No tracking overhead", "Single query"],
+            "cons": ["Must maintain DTO classes", "Complex projections are verbose"],
+            "tags": ["Select", "ProjectTo", "DTO", "no-tracking"]
           }
         ]
       }

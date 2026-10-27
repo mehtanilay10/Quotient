@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "execution-plans",
-    "query-plan",
-    "performance",
-    "indexing",
-    "bottlenecks"
-  ],
+  "tags": ["execution-plans", "query-plan", "performance", "indexing", "bottlenecks"],
   "blocks": [
     {
       "type": "heading",
@@ -77,17 +71,9 @@
     },
     {
       "type": "table",
-      "headers": [
-        "Operator",
-        "Description",
-        "Performance Impact"
-      ],
+      "headers": ["Operator", "Description", "Performance Impact"],
       "rows": [
-        [
-          "Clustered Index Scan",
-          "Reads all rows from a clustered index",
-          "High — full table read"
-        ],
+        ["Clustered Index Scan", "Reads all rows from a clustered index", "High — full table read"],
         [
           "Clustered Index Seek",
           "Directly locates rows via B-tree navigation",
@@ -113,21 +99,9 @@
           "Iterates outer rows against inner rows",
           "Low for small sets, high for large"
         ],
-        [
-          "Merge Join",
-          "Streams two sorted inputs together",
-          "Low — efficient for sorted data"
-        ],
-        [
-          "Sort",
-          "Explicitly sorts result rows",
-          "High — may spill to tempdb"
-        ],
-        [
-          "Filter",
-          "Applies a predicate to rows",
-          "Low — should happen early"
-        ]
+        ["Merge Join", "Streams two sorted inputs together", "Low — efficient for sorted data"],
+        ["Sort", "Explicitly sorts result rows", "High — may spill to tempdb"],
+        ["Filter", "Applies a predicate to rows", "Low — should happen early"]
       ]
     },
     {

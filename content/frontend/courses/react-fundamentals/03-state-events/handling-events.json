@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "events",
-    "handlers",
-    "interactions"
-  ],
+  "tags": ["react", "events", "handlers", "interactions"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,39 +32,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "HTML",
-          "React JSX"
-        ],
+        "headers": ["HTML", "React JSX"],
         "rows": [
-          [
-            "onclick",
-            "onClick"
-          ],
-          [
-            "onchange",
-            "onChange"
-          ],
-          [
-            "onsubmit",
-            "onSubmit"
-          ],
-          [
-            "onmouseover",
-            "onMouseOver"
-          ],
-          [
-            "onkeydown",
-            "onKeyDown"
-          ],
-          [
-            "onfocus",
-            "onFocus"
-          ],
-          [
-            "onblur",
-            "onBlur"
-          ]
+          ["onclick", "onClick"],
+          ["onchange", "onChange"],
+          ["onsubmit", "onSubmit"],
+          ["onmouseover", "onMouseOver"],
+          ["onkeydown", "onKeyDown"],
+          ["onfocus", "onFocus"],
+          ["onblur", "onBlur"]
         ]
       }
     },

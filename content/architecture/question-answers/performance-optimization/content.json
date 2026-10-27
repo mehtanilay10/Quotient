@@ -8,10 +8,7 @@
   "difficulty": "advanced",
   "estimatedHours": 2.2,
   "icon": "🚄",
-  "tags": [
-    "interview",
-    "performance"
-  ],
+  "tags": ["interview", "performance"],
   "lessonSlugs": [
     "perf-q1",
     "perf-q2",

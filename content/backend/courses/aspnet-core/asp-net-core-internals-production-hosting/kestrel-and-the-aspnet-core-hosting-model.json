@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "kestrel",
-    "hosting",
-    "servers",
-    "http"
-  ],
+  "tags": ["kestrel", "hosting", "servers", "http"],
   "blocks": [
     {
       "type": "paragraph",
@@ -151,9 +146,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "request-cancellation-and-graceful-shutdown"
-  ],
+  "relatedLessons": ["request-cancellation-and-graceful-shutdown"],
   "furtherReading": [
     {
       "title": "Kestrel Web Server in ASP.NET Core",

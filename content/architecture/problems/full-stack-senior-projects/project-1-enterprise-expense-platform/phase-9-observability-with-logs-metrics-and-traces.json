@@ -171,20 +171,40 @@
           {
             "title": "Self-hosted",
             "description": "Run Prometheus, Grafana, Jaeger, and Elasticsearch on your own infrastructure.",
-            "pros": ["Full control over data retention and costs", "No vendor lock-in", "Can customize extensively"],
+            "pros": [
+              "Full control over data retention and costs",
+              "No vendor lock-in",
+              "Can customize extensively"
+            ],
             "cons": ["Operational overhead", "Requires capacity planning", "Upgrades are manual"]
           },
           {
             "title": "Managed cloud",
             "description": "Use AWS CloudWatch, Azure Monitor, or GCP Cloud Operations.",
-            "pros": ["Fastest time to value", "Integrated with cloud infrastructure", "Auto-scales with usage"],
-            "cons": ["Cost grows with volume", "Less customization", "Vendor-specific query languages"]
+            "pros": [
+              "Fastest time to value",
+              "Integrated with cloud infrastructure",
+              "Auto-scales with usage"
+            ],
+            "cons": [
+              "Cost grows with volume",
+              "Less customization",
+              "Vendor-specific query languages"
+            ]
           },
           {
             "title": "SaaS vendors",
             "description": "Use Datadog, New Relic, or Honeycomb for end-to-end observability.",
-            "pros": ["Best-in-class UX and correlation", "Fast setup", "Strong support for distributed tracing"],
-            "cons": ["Expensive at scale", "Data leaves your environment", "Less control over sampling"]
+            "pros": [
+              "Best-in-class UX and correlation",
+              "Fast setup",
+              "Strong support for distributed tracing"
+            ],
+            "cons": [
+              "Expensive at scale",
+              "Data leaves your environment",
+              "Less control over sampling"
+            ]
           }
         ]
       }

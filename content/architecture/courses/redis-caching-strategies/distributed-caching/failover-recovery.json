@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "redis",
-    "failover",
-    "recovery",
-    "high-availability"
-  ],
+  "tags": ["redis", "failover", "recovery", "high-availability"],
   "blocks": [
     {
       "type": "paragraph",
@@ -114,12 +109,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Recovery Scenario",
-          "Automatic?",
-          "Typical Duration",
-          "Action Required"
-        ],
+        "headers": ["Recovery Scenario", "Automatic?", "Typical Duration", "Action Required"],
         "rows": [
           [
             "Master fails (Replica exists)",

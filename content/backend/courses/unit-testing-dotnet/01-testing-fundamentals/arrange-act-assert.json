@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 8,
-  "tags": [
-    "testing",
-    "aaa",
-    "dotnet"
-  ],
+  "tags": ["testing", "aaa", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,10 +36,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "testing-pyramid",
-    "test-naming-conventions"
-  ],
+  "relatedLessons": ["testing-pyramid", "test-naming-conventions"],
   "furtherReading": [],
   "courseSlug": "unit-testing-dotnet"
 }

@@ -6,10 +6,7 @@
   "description": "Identity vs GUID vs GUID-comb vs HiLo, value generation settings, and keyless entities.",
   "order": 7,
   "difficulty": "intermediate",
-  "tags": [
-    "ef-core",
-    "intermediate"
-  ],
+  "tags": ["ef-core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,10 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "code-first-db-first",
-    "ef-core-relationships-cascade"
-  ],
+  "relatedLessons": ["code-first-db-first", "ef-core-relationships-cascade"],
   "furtherReading": [
     {
       "title": "EF Core key value generation",

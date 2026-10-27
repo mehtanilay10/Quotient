@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "redis",
-    "benchmarking",
-    "latency",
-    "throughput",
-    "performance-testing"
-  ],
+  "tags": ["redis", "benchmarking", "latency", "throughput", "performance-testing"],
   "blocks": [
     {
       "type": "paragraph",

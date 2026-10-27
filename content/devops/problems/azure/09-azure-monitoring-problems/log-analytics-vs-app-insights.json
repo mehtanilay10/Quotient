@@ -86,19 +86,13 @@
               "One RBAC boundary",
               "Workbooks and alerts reuse tables"
             ],
-            "cons": [
-              "Ingestion cost is centralised",
-              "Requires governance on table schemas"
-            ],
+            "cons": ["Ingestion cost is centralised", "Requires governance on table schemas"],
             "tags": ["Recommended", "Central platform"]
           },
           {
             "title": "Separate workspaces per team",
             "description": "Isolated data ownership",
-            "pros": [
-              "Strong isolation",
-              "Independent retention"
-            ],
+            "pros": ["Strong isolation", "Independent retention"],
             "cons": [
               "Queries need cross-workspace `app()`",
               "Duplicated dashboards",
@@ -109,13 +103,8 @@
           {
             "title": "Classic Application Insights",
             "description": "Legacy non-workspace mode",
-            "pros": [
-              "Familiar portal experience"
-            ],
-            "cons": [
-              "Cannot join with platform logs",
-              "Deprecated for new resources"
-            ],
+            "pros": ["Familiar portal experience"],
+            "cons": ["Cannot join with platform logs", "Deprecated for new resources"],
             "tags": ["Legacy"]
           }
         ]

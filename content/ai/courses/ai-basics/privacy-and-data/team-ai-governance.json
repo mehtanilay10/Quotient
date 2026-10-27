@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "governance",
-    "privacy",
-    "enterprise",
-    "policy",
-    "compliance"
-  ],
+  "tags": ["governance", "privacy", "enterprise", "policy", "compliance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -56,27 +50,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "Policy decision",
-          "Why"
-        ],
+        "headers": ["Scenario", "Policy decision", "Why"],
         "rows": [
-          [
-            "Drafting public blog post",
-            "Allowed",
-            "Low risk; human editor still reviews"
-          ],
-          [
-            "Client contract drafting",
-            "Allowed with legal review",
-            "Legal and compliance impact"
-          ],
-          [
-            "Uploading customer PII to free chatbot",
-            "Disallowed",
-            "Data privacy risk"
-          ],
+          ["Drafting public blog post", "Allowed", "Low risk; human editor still reviews"],
+          ["Client contract drafting", "Allowed with legal review", "Legal and compliance impact"],
+          ["Uploading customer PII to free chatbot", "Disallowed", "Data privacy risk"],
           [
             "Internal policy summary",
             "Allowed in enterprise tier only",
@@ -110,37 +88,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Governance artifact",
-          "Owner",
-          "Update cadence"
-        ],
+        "headers": ["Governance artifact", "Owner", "Update cadence"],
         "rows": [
-          [
-            "Approved tools registry",
-            "Security + IT",
-            "Monthly"
-          ],
-          [
-            "Allowed/disallowed use-case matrix",
-            "Ops + Legal",
-            "Monthly or after incidents"
-          ],
-          [
-            "High-impact output review protocol",
-            "Team leads",
-            "Quarterly"
-          ],
-          [
-            "Incident response runbook",
-            "Security",
-            "After each incident and quarterly"
-          ],
-          [
-            "Training and onboarding brief",
-            "People ops + Team leads",
-            "Each onboarding cycle"
-          ]
+          ["Approved tools registry", "Security + IT", "Monthly"],
+          ["Allowed/disallowed use-case matrix", "Ops + Legal", "Monthly or after incidents"],
+          ["High-impact output review protocol", "Team leads", "Quarterly"],
+          ["Incident response runbook", "Security", "After each incident and quarterly"],
+          ["Training and onboarding brief", "People ops + Team leads", "Each onboarding cycle"]
         ]
       }
     },
@@ -156,11 +110,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Anti-pattern",
-          "What goes wrong",
-          "Better alternative"
-        ],
+        "headers": ["Anti-pattern", "What goes wrong", "Better alternative"],
         "rows": [
           [
             "One giant policy PDF",
@@ -215,16 +165,12 @@
           {
             "title": "Lightweight",
             "description": "Short policy, risk-tiered approvals, monthly refresh. Teams understand it and follow it because it is practical.",
-            "tags": [
-              "recommended"
-            ]
+            "tags": ["recommended"]
           },
           {
             "title": "Heavyweight",
             "description": "Long policy documents, central approval for everything, annual review. Teams ignore it and use shadow AI because it is too slow.",
-            "tags": [
-              "avoid"
-            ]
+            "tags": ["avoid"]
           }
         ]
       }
@@ -253,11 +199,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "protecting-your-data",
-    "ai-and-copyright",
-    "critical-evaluation"
-  ],
+  "relatedLessons": ["protecting-your-data", "ai-and-copyright", "critical-evaluation"],
   "furtherReading": [
     {
       "title": "NIST AI Risk Management Framework",

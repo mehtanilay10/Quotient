@@ -8,13 +8,7 @@
   "order": 13,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "azure",
-    "networking",
-    "vnet",
-    "api-management",
-    "developer"
-  ],
+  "tags": ["azure", "networking", "vnet", "api-management", "developer"],
   "blocks": [
     {
       "type": "heading",

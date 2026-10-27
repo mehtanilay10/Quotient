@@ -8,16 +8,8 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "windowing",
-    "virtualization",
-    "large-lists",
-    "performance",
-    "react-window"
-  ],
-  "prerequisites": [
-    "caching-strategies"
-  ],
+  "tags": ["windowing", "virtualization", "large-lists", "performance", "react-window"],
+  "prerequisites": ["caching-strategies"],
   "blocks": [
     {
       "type": "paragraph",
@@ -132,10 +124,7 @@
               "Requires manual row height for variable lists",
               "Less feature-rich than Virtuoso"
             ],
-            "tags": [
-              "lightweight",
-              "flexible"
-            ]
+            "tags": ["lightweight", "flexible"]
           },
           {
             "title": "react-virtuoso",
@@ -145,14 +134,8 @@
               "Follow-output for chat UIs",
               "Grouping support built-in"
             ],
-            "cons": [
-              "Larger bundle (~20KB)",
-              "More opinionated API"
-            ],
-            "tags": [
-              "auto-size",
-              "chat-friendly"
-            ]
+            "cons": ["Larger bundle (~20KB)", "More opinionated API"],
+            "tags": ["auto-size", "chat-friendly"]
           },
           {
             "title": "tanstack-virtual",
@@ -162,14 +145,8 @@
               "Headless - full control over rendering",
               "Growing ecosystem"
             ],
-            "cons": [
-              "Requires more setup",
-              "Smaller community than react-window"
-            ],
-            "tags": [
-              "headless",
-              "tanstack"
-            ]
+            "cons": ["Requires more setup", "Smaller community than react-window"],
+            "tags": ["headless", "tanstack"]
           }
         ]
       }

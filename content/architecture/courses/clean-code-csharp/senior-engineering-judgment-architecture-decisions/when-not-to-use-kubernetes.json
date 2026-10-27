@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "kubernetes",
-    "deployment",
-    "devops",
-    "csharp"
-  ],
+  "tags": ["kubernetes", "deployment", "devops", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -65,12 +60,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Platform",
-          "Best For",
-          "Operational Complexity",
-          "C# Integration"
-        ],
+        "headers": ["Platform", "Best For", "Operational Complexity", "C# Integration"],
         "rows": [
           [
             "Azure App Service",
@@ -174,10 +164,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "build-vs-buy-decisions",
-    "cost-as-an-architecture-constraint"
-  ],
+  "relatedLessons": ["build-vs-buy-decisions", "cost-as-an-architecture-constraint"],
   "furtherReading": [
     {
       "title": "Kubernetes Patterns",

@@ -203,7 +203,11 @@
       }
     }
   ],
-  "relatedLessons": ["http11-vs-http2-vs-http3", "http-request-and-response-lifecycle", "how-to-troubleshoot-a-failing-http-request"],
+  "relatedLessons": [
+    "http11-vs-http2-vs-http3",
+    "http-request-and-response-lifecycle",
+    "how-to-troubleshoot-a-failing-http-request"
+  ],
   "furtherReading": [
     {
       "type": "article",

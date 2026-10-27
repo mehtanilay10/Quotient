@@ -150,6 +150,10 @@
   ],
   "relatedLessons": ["automated-bisect", "bisect-with-scripts"],
   "furtherReading": [
-    { "title": "Git Bisect Documentation", "url": "https://git-scm.com/docs/git-bisect", "type": "article" }
+    {
+      "title": "Git Bisect Documentation",
+      "url": "https://git-scm.com/docs/git-bisect",
+      "type": "article"
+    }
   ]
 }

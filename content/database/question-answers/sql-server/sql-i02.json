@@ -6,10 +6,7 @@
   "description": "Understand stored procedures vs functions in SQL Server.",
   "order": 7,
   "difficulty": "intermediate",
-  "tags": [
-    "sql server",
-    "intermediate"
-  ],
+  "tags": ["sql server", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

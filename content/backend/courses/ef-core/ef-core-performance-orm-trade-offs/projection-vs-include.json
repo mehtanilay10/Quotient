@@ -147,9 +147,20 @@
       }
     }
   ],
-  "relatedLessons": ["linq-expression-trees-and-sql-translation", "cartesian-explosion-and-split-queries"],
+  "relatedLessons": [
+    "linq-expression-trees-and-sql-translation",
+    "cartesian-explosion-and-split-queries"
+  ],
   "furtherReading": [
-    { "title": "EF Core eager loading with Include", "url": "https://learn.microsoft.com/en-us/ef/core/querying/include", "type": "article" },
-    { "title": "EF Core projection queries", "url": "https://learn.microsoft.com/en-us/ef/core/querying/projection", "type": "article" }
+    {
+      "title": "EF Core eager loading with Include",
+      "url": "https://learn.microsoft.com/en-us/ef/core/querying/include",
+      "type": "article"
+    },
+    {
+      "title": "EF Core projection queries",
+      "url": "https://learn.microsoft.com/en-us/ef/core/querying/projection",
+      "type": "article"
+    }
   ]
 }

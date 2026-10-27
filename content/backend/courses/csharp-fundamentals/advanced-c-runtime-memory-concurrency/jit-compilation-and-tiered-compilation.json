@@ -126,7 +126,11 @@
       }
     }
   ],
-  "relatedLessons": ["clr-architecture-and-execution-model", "readytorun-and-native-aot", "managed-heap-and-allocation-lifecycle"],
+  "relatedLessons": [
+    "clr-architecture-and-execution-model",
+    "readytorun-and-native-aot",
+    "managed-heap-and-allocation-lifecycle"
+  ],
   "furtherReading": [
     {
       "type": "article",

@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "overview",
-    "basics",
-    "roadmap"
-  ],
+  "tags": ["overview", "basics", "roadmap"],
   "blocks": [
     {
       "type": "heading",
@@ -242,9 +238,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "PIVOT – convert rows to columns."
-        ]
+        "items": ["PIVOT – convert rows to columns."]
       }
     },
     {

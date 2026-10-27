@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "update",
-    "join",
-    "dml",
-    "cross-table"
-  ],
+  "tags": ["update", "join", "dml", "cross-table"],
   "blocks": [
     {
       "type": "heading",

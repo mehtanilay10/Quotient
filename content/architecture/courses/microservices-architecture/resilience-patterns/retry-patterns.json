@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "retry",
-    "backoff",
-    "jitter"
-  ],
+  "tags": ["retry", "backoff", "jitter"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,32 +56,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Description",
-          "Use Case"
-        ],
+        "headers": ["Strategy", "Description", "Use Case"],
         "rows": [
-          [
-            "Fixed interval",
-            "Same wait between retries",
-            "Simple cases"
-          ],
-          [
-            "Exponential backoff",
-            "Doubling wait time",
-            "Most cases"
-          ],
-          [
-            "Exponential + jitter",
-            "Backoff with randomness",
-            "High concurrency"
-          ],
-          [
-            "Linear backoff",
-            "Linear increase",
-            "Predictable load"
-          ]
+          ["Fixed interval", "Same wait between retries", "Simple cases"],
+          ["Exponential backoff", "Doubling wait time", "Most cases"],
+          ["Exponential + jitter", "Backoff with randomness", "High concurrency"],
+          ["Linear backoff", "Linear increase", "Predictable load"]
         ]
       }
     },

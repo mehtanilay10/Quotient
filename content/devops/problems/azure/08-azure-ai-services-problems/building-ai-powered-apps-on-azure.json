@@ -78,40 +78,21 @@
               "No fine-tuning needed",
               "Lower hallucination rate"
             ],
-            "cons": [
-              "Requires search infrastructure",
-              "Latency from 2 services"
-            ],
+            "cons": ["Requires search infrastructure", "Latency from 2 services"],
             "tags": ["Recommended", "Knowledge bases"]
           },
           {
             "title": "Fine-tuning",
             "description": "Train model on proprietary data",
-            "pros": [
-              "Model knows your data",
-              "Single API call",
-              "Lower latency"
-            ],
-            "cons": [
-              "Expensive to train",
-              "Data quickly becomes stale",
-              "Requires ML expertise"
-            ],
+            "pros": ["Model knows your data", "Single API call", "Lower latency"],
+            "cons": ["Expensive to train", "Data quickly becomes stale", "Requires ML expertise"],
             "tags": ["Static knowledge", "Specialized domains"]
           },
           {
             "title": "Prompt Engineering Only",
             "description": "Use base model with good prompts",
-            "pros": [
-              "Simplest approach",
-              "No infrastructure",
-              "Fast iteration"
-            ],
-            "cons": [
-              "Hallucinations",
-              "No source citations",
-              "Knowledge cutoff"
-            ],
+            "pros": ["Simplest approach", "No infrastructure", "Fast iteration"],
+            "cons": ["Hallucinations", "No source citations", "Knowledge cutoff"],
             "tags": ["Simple use cases"]
           }
         ]

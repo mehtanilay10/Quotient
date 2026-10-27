@@ -66,9 +66,21 @@
         "headers": ["Scenario", "Recommended Tool", "Why"],
         "rows": [
           ["Simple form or toggle state", "useState", "No need for a global store"],
-          ["Auth status and user data across app", "Context + React Query", "Auth is server state; cache it with a query library"],
-          ["Complex dashboard with many interacting widgets", "Redux Toolkit or Zustand", "Shared state with predictable updates"],
-          ["E-commerce cart with frequent updates", "Redux Toolkit or Zustand", "Cart logic benefits from centralized reducer"],
+          [
+            "Auth status and user data across app",
+            "Context + React Query",
+            "Auth is server state; cache it with a query library"
+          ],
+          [
+            "Complex dashboard with many interacting widgets",
+            "Redux Toolkit or Zustand",
+            "Shared state with predictable updates"
+          ],
+          [
+            "E-commerce cart with frequent updates",
+            "Redux Toolkit or Zustand",
+            "Cart logic benefits from centralized reducer"
+          ],
           ["Theme or locale switching", "Context", "Infrequent updates, deeply needed"]
         ]
       }

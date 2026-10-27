@@ -189,37 +189,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Window",
-          "Multiplier",
-          "Burn Rate",
-          "Purpose"
-        ],
+        "headers": ["Window", "Multiplier", "Burn Rate", "Purpose"],
         "rows": [
-          [
-            "1 hour",
-            "14.4",
-            "Extreme burn",
-            "Catch sudden outages or runaway releases"
-          ],
-          [
-            "6 hours",
-            "6.0",
-            "High burn",
-            "Alert on major incidents quickly"
-          ],
-          [
-            "24 hours",
-            "3.0",
-            "Elevated burn",
-            "Catch sustained elevated error rates"
-          ],
-          [
-            "7 days",
-            "1.0",
-            "Sustained burn",
-            "Confirm chronic degradation"
-          ]
+          ["1 hour", "14.4", "Extreme burn", "Catch sudden outages or runaway releases"],
+          ["6 hours", "6.0", "High burn", "Alert on major incidents quickly"],
+          ["24 hours", "3.0", "Elevated burn", "Catch sustained elevated error rates"],
+          ["7 days", "1.0", "Sustained burn", "Confirm chronic degradation"]
         ]
       }
     },
@@ -556,32 +531,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Service Type",
-          "Recommended Tail",
-          "Rationale"
-        ],
+        "headers": ["Service Type", "Recommended Tail", "Rationale"],
         "rows": [
-          [
-            "REST API",
-            "p99",
-            "Slowest 1 percent dominates user complaints"
-          ],
-          [
-            "GraphQL",
-            "p95",
-            "Resolver fan-out makes p99 too noisy"
-          ],
-          [
-            "Real-time / WebSocket",
-            "p50",
-            "Jitter sensitivity makes median more relevant"
-          ],
-          [
-            "Batch / async",
-            "p90",
-            "Users tolerate more variance for background work"
-          ]
+          ["REST API", "p99", "Slowest 1 percent dominates user complaints"],
+          ["GraphQL", "p95", "Resolver fan-out makes p99 too noisy"],
+          ["Real-time / WebSocket", "p50", "Jitter sensitivity makes median more relevant"],
+          ["Batch / async", "p90", "Users tolerate more variance for background work"]
         ]
       }
     },
@@ -696,12 +651,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "Warning SLI",
-          "Critical SLI",
-          "Typical SLO"
-        ],
+        "headers": ["Resource", "Warning SLI", "Critical SLI", "Typical SLO"],
         "rows": [
           [
             "CPU",
@@ -721,12 +671,7 @@
             "90 percent utilization",
             "99 percent under 70 percent"
           ],
-          [
-            "Queue depth",
-            "P99 under 500",
-            "P99 under 2000",
-            "95 percent under 200"
-          ]
+          ["Queue depth", "P99 under 500", "P99 under 2000", "95 percent under 200"]
         ]
       }
     },
@@ -884,27 +829,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Uptime Tier",
-          "Credit Percentage",
-          "Example Monthly Fee $1000"
-        ],
+        "headers": ["Uptime Tier", "Credit Percentage", "Example Monthly Fee $1000"],
         "rows": [
-          [
-            "99.0 percent to 99.9 percent",
-            "10 percent",
-            "$100"
-          ],
-          [
-            "98.0 percent to 99.0 percent",
-            "25 percent",
-            "$250"
-          ],
-          [
-            "Below 98.0 percent",
-            "50 percent",
-            "$500"
-          ]
+          ["99.0 percent to 99.9 percent", "10 percent", "$100"],
+          ["98.0 percent to 99.0 percent", "25 percent", "$250"],
+          ["Below 98.0 percent", "50 percent", "$500"]
         ]
       }
     },
@@ -1133,37 +1062,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Database Type",
-          "Latency SLI",
-          "SLO Target",
-          "Replication SLO"
-        ],
+        "headers": ["Database Type", "Latency SLI", "SLO Target", "Replication SLO"],
         "rows": [
-          [
-            "PostgreSQL OLTP",
-            "p99 query",
-            "100 ms",
-            "1 second"
-          ],
-          [
-            "Redis cache",
-            "p99 GET",
-            "5 ms",
-            "N/A"
-          ],
-          [
-            "Elasticsearch",
-            "p99 search",
-            "200 ms",
-            "5 seconds"
-          ],
-          [
-            "Kafka",
-            "p99 produce",
-            "50 ms",
-            "100 ms fetch lag"
-          ]
+          ["PostgreSQL OLTP", "p99 query", "100 ms", "1 second"],
+          ["Redis cache", "p99 GET", "5 ms", "N/A"],
+          ["Elasticsearch", "p99 search", "200 ms", "5 seconds"],
+          ["Kafka", "p99 produce", "50 ms", "100 ms fetch lag"]
         ]
       }
     },
@@ -1527,37 +1431,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Level",
-          "State",
-          "Key Capability"
-        ],
+        "headers": ["Level", "State", "Key Capability"],
         "rows": [
-          [
-            "1",
-            "Ad-hoc",
-            "No formal SLIs"
-          ],
-          [
-            "2",
-            "Defined",
-            "SLIs measured but no SLOs"
-          ],
-          [
-            "3",
-            "Managed",
-            "SLOs and dashboards exist"
-          ],
-          [
-            "4",
-            "Measured",
-            "Error budgets and change gates"
-          ],
-          [
-            "5",
-            "Optimized",
-            "Automated governance and prediction"
-          ]
+          ["1", "Ad-hoc", "No formal SLIs"],
+          ["2", "Defined", "SLIs measured but no SLOs"],
+          ["3", "Managed", "SLOs and dashboards exist"],
+          ["4", "Measured", "Error budgets and change gates"],
+          ["5", "Optimized", "Automated governance and prediction"]
         ]
       }
     },

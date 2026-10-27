@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "recursion",
-    "backtracking",
-    "medium"
-  ],
+  "tags": ["csharp", "recursion", "backtracking", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -107,41 +102,21 @@
           {
             "title": "Include/Exclude",
             "description": "Branch twice per element",
-            "pros": [
-              "Mirrors the math definition",
-              "Easy to reason about"
-            ],
-            "cons": [
-              "Slightly more verbose"
-            ],
-            "tags": [
-              "O(2^n) time",
-              "O(n) space"
-            ]
+            "pros": ["Mirrors the math definition", "Easy to reason about"],
+            "cons": ["Slightly more verbose"],
+            "tags": ["O(2^n) time", "O(n) space"]
           },
           {
             "title": "Backtracking Template",
             "description": "Choose/explore/un-choose loop",
-            "pros": [
-              "Generalizes to many problems",
-              "Recommended"
-            ],
-            "cons": [
-              "Slightly more abstract"
-            ],
-            "tags": [
-              "O(2^n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["Generalizes to many problems", "Recommended"],
+            "cons": ["Slightly more abstract"],
+            "tags": ["O(2^n) time", "O(n) space", "Recommended"]
           }
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "power",
-    "combination-sum"
-  ],
+  "relatedLessons": ["power", "combination-sum"],
   "furtherReading": []
 }

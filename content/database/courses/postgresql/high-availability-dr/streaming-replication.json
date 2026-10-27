@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "streaming-replication",
-    "ha",
-    "wal",
-    "standby",
-    "replication-slots"
-  ],
+  "tags": ["streaming-replication", "ha", "wal", "standby", "replication-slots"],
   "blocks": [
     {
       "type": "paragraph",
@@ -104,8 +98,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "logical-replication-ha",
-    "failover-switchover"
-  ]
+  "relatedLessons": ["logical-replication-ha", "failover-switchover"]
 }

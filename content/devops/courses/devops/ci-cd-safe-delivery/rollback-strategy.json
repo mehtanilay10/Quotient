@@ -8,12 +8,7 @@
   "order": 9,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "CI/CD",
-    "rollback",
-    "incident-response",
-    "reliability"
-  ],
+  "tags": ["CI/CD", "rollback", "incident-response", "reliability"],
   "blocks": [
     {
       "type": "paragraph",

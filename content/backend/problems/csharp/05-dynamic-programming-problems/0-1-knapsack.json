@@ -8,11 +8,7 @@
   "order": 17,
   "difficulty": "medium",
   "estimatedMinutes": 18,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -50,14 +46,8 @@
           {
             "title": "2D DP",
             "description": "Standard knapsack table",
-            "pros": [
-              "Can reconstruct items"
-            ],
-            "tags": [
-              "O(n\u00b7W) time",
-              "O(n\u00b7W) space",
-              "Recommended"
-            ]
+            "pros": ["Can reconstruct items"],
+            "tags": ["O(n\u00b7W) time", "O(n\u00b7W) space", "Recommended"]
           }
         ]
       }

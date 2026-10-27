@@ -7,11 +7,7 @@
   "order": 9,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "transaction-log",
-    "BACKUP-LOG",
-    "RESTORE-LOG"
-  ],
+  "tags": ["transaction-log", "BACKUP-LOG", "RESTORE-LOG"],
   "blocks": [
     {
       "type": "heading",

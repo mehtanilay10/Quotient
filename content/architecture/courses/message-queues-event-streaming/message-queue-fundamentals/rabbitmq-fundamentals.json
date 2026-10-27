@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "rabbitmq",
-    "messaging",
-    "amqp",
-    "broker",
-    "message-queue"
-  ],
+  "tags": ["rabbitmq", "messaging", "amqp", "broker", "message-queue"],
   "blocks": [
     {
       "type": "paragraph",
@@ -172,11 +166,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sqs-basics",
-    "message-structure",
-    "point-to-point-vs-pubsub"
-  ],
+  "relatedLessons": ["sqs-basics", "message-structure", "point-to-point-vs-pubsub"],
   "furtherReading": [
     {
       "title": "RabbitMQ Tutorials",

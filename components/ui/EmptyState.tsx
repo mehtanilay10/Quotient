@@ -1,5 +1,5 @@
-import { SearchX } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { SearchX } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 interface EmptyStateProps {
   icon?: React.ReactNode;
@@ -9,17 +9,11 @@ interface EmptyStateProps {
   className?: string;
 }
 
-export function EmptyState({
-  icon,
-  title,
-  description,
-  action,
-  className,
-}: EmptyStateProps) {
+export function EmptyState({ icon, title, description, action, className }: EmptyStateProps) {
   return (
     <div
       className={cn(
-        'flex flex-col items-center justify-center rounded-xl border border-dashed border-border p-12 text-center',
+        "flex flex-col items-center justify-center rounded-xl border border-dashed border-border p-12 text-center",
         className
       )}
     >
@@ -27,9 +21,7 @@ export function EmptyState({
         {icon ?? <SearchX className="h-10 w-10" aria-hidden="true" />}
       </div>
       <h3 className="mb-1 text-base font-semibold text-fg-default">{title}</h3>
-      {description && (
-        <p className="mb-4 max-w-sm text-sm text-fg-muted">{description}</p>
-      )}
+      {description && <p className="mb-4 max-w-sm text-sm text-fg-muted">{description}</p>}
       {action}
     </div>
   );

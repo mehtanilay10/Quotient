@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "performance",
-    "dotnet",
-    "scalability"
-  ],
+  "tags": ["interview", "performance", "dotnet", "scalability"],
   "blocks": [
     {
       "type": "paragraph",

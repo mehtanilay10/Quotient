@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "developer-tools",
-    "sdk",
-    "boto3",
-    "appconfig",
-    "configuration"
-  ],
+  "tags": ["aws", "developer-tools", "sdk", "boto3", "appconfig", "configuration"],
   "blocks": [
     {
       "type": "paragraph",
@@ -68,17 +61,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Service",
-          "Purpose",
-          "Best For"
-        ],
+        "headers": ["Service", "Purpose", "Best For"],
         "rows": [
-          [
-            "Parameter Store",
-            "Store config and secrets",
-            "Non-sensitive config, simple secrets"
-          ],
+          ["Parameter Store", "Store config and secrets", "Non-sensitive config, simple secrets"],
           [
             "Secrets Manager",
             "Store and rotate secrets",

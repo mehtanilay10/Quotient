@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "microsoft-extensions-ai",
-    "tools",
-    "aifunctionfactory",
-    "csharp"
-  ],
+  "tags": ["microsoft-extensions-ai", "tools", "aifunctionfactory", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -76,10 +71,7 @@
       "takeaway": "Use AIFunctionFactory for new .NET AI tools to reduce boilerplate and prevent schema drift."
     }
   ],
-  "relatedLessons": [
-    "tool-use-and-function-calling",
-    "registering-and-describing-tools"
-  ],
+  "relatedLessons": ["tool-use-and-function-calling", "registering-and-describing-tools"],
   "technology": null,
   "furtherReading": [
     {

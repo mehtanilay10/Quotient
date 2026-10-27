@@ -7,18 +7,8 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "prompting",
-    "prompt-design",
-    "context",
-    "role-prompting"
-  ],
-  "relatedGlossaryTerms": [
-    "prompt",
-    "system-prompt",
-    "context-window",
-    "temperature"
-  ],
+  "tags": ["prompting", "prompt-design", "context", "role-prompting"],
+  "relatedGlossaryTerms": ["prompt", "system-prompt", "context-window", "temperature"],
   "blocks": [
     {
       "type": "paragraph",
@@ -134,11 +124,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pass",
-          "Prompt",
-          "Problem with output"
-        ],
+        "headers": ["Pass", "Prompt", "Problem with output"],
         "rows": [
           [
             "1",
@@ -235,11 +221,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Diagnostic lens",
-          "Check question",
-          "Improvement move"
-        ],
+        "headers": ["Diagnostic lens", "Check question", "Improvement move"],
         "rows": [
           [
             "Intent clarity",
@@ -265,10 +247,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prompt-patterns",
-    "what-ai-can-and-cannot-do"
-  ],
+  "relatedLessons": ["prompt-patterns", "what-ai-can-and-cannot-do"],
   "furtherReading": [
     {
       "title": "Prompt Engineering Guide",

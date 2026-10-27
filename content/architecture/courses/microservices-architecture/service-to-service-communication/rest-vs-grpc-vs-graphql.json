@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "rest",
-    "grpc",
-    "graphql",
-    "protocols"
-  ],
+  "tags": ["rest", "grpc", "graphql", "protocols"],
   "blocks": [
     {
       "type": "paragraph",
@@ -61,49 +56,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "REST",
-          "gRPC",
-          "GraphQL"
-        ],
+        "headers": ["Feature", "REST", "gRPC", "GraphQL"],
         "rows": [
-          [
-            "Protocol",
-            "HTTP/1.1 or HTTP/2",
-            "HTTP/2",
-            "HTTP/1.1 or HTTP/2"
-          ],
-          [
-            "Data Format",
-            "JSON/XML",
-            "Protocol Buffers",
-            "JSON"
-          ],
-          [
-            "Performance",
-            "Good",
-            "Excellent",
-            "Good"
-          ],
-          [
-            "Code Generation",
-            "Optional",
-            "Built-in",
-            "Optional"
-          ],
-          [
-            "Streaming",
-            "Limited",
-            "Built-in",
-            "Subscriptions"
-          ],
-          [
-            "Browser Support",
-            "Native",
-            "Requires proxy",
-            "Native"
-          ]
+          ["Protocol", "HTTP/1.1 or HTTP/2", "HTTP/2", "HTTP/1.1 or HTTP/2"],
+          ["Data Format", "JSON/XML", "Protocol Buffers", "JSON"],
+          ["Performance", "Good", "Excellent", "Good"],
+          ["Code Generation", "Optional", "Built-in", "Optional"],
+          ["Streaming", "Limited", "Built-in", "Subscriptions"],
+          ["Browser Support", "Native", "Requires proxy", "Native"]
         ]
       }
     },
@@ -165,54 +125,23 @@
           {
             "title": "REST",
             "description": "Public APIs and simple CRUD",
-            "pros": [
-              "Simple",
-              "Browser-native",
-              "Widely supported"
-            ],
-            "cons": [
-              "Verbose",
-              "Over-fetching",
-              "No streaming"
-            ],
-            "tags": [
-              "api",
-              "rest"
-            ]
+            "pros": ["Simple", "Browser-native", "Widely supported"],
+            "cons": ["Verbose", "Over-fetching", "No streaming"],
+            "tags": ["api", "rest"]
           },
           {
             "title": "gRPC",
             "description": "Internal high-performance communication",
-            "pros": [
-              "Fast",
-              "Code generation",
-              "Streaming"
-            ],
-            "cons": [
-              "No browser support",
-              "Complex setup"
-            ],
-            "tags": [
-              "api",
-              "grpc"
-            ]
+            "pros": ["Fast", "Code generation", "Streaming"],
+            "cons": ["No browser support", "Complex setup"],
+            "tags": ["api", "grpc"]
           },
           {
             "title": "GraphQL",
             "description": "Flexible client data needs",
-            "pros": [
-              "No over-fetching",
-              "Single endpoint",
-              "Strong typing"
-            ],
-            "cons": [
-              "Complex queries",
-              "Caching harder"
-            ],
-            "tags": [
-              "api",
-              "graphql"
-            ]
+            "pros": ["No over-fetching", "Single endpoint", "Strong typing"],
+            "cons": ["Complex queries", "Caching harder"],
+            "tags": ["api", "graphql"]
           }
         ]
       }

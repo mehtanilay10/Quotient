@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "configuration",
-    "appsettings",
-    "environment-variables"
-  ],
+  "tags": ["configuration", "appsettings", "environment-variables"],
   "blocks": [
     {
       "type": "heading",

@@ -6,11 +6,7 @@
   "fullDefinition": "Zero-shot prompting is when you ask an AI model to perform a task without showing it any examples of that task first. The model relies entirely on its pre-existing knowledge and ability to generalize from its training data. For example, asking 'Translate this to French' without first showing translation examples. Modern large language models are surprisingly capable at zero-shot tasks due to their extensive pre-training. However, zero-shot performance is often less reliable than few-shot or fine-tuned approaches for specialized or complex tasks.",
   "category": "prompting",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "few-shot-prompting",
-    "prompt",
-    "chain-of-thought"
-  ],
+  "relatedTerms": ["few-shot-prompting", "prompt", "chain-of-thought"],
   "learnMoreSlug": "prompt-patterns",
   "examples": [
     "Asking 'Summarize this article' without any prior examples",

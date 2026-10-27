@@ -57,27 +57,46 @@
             "title": "Virtual Machines",
             "description": "Full control over a cloud-hosted server.",
             "pros": ["Complete OS control", "Any runtime or framework", "Predictable performance"],
-            "cons": ["You patch and update the OS", "More overhead to manage", "Higher operational cost"],
+            "cons": [
+              "You patch and update the OS",
+              "More overhead to manage",
+              "Higher operational cost"
+            ],
             "tags": ["control", "infrastructure"]
           },
           {
             "title": "App Service",
             "description": "Managed hosting for web apps and APIs.",
-            "pros": ["Easy deployment", "Built-in scaling", "No server management", "Supports .NET, Node, Python, Java, PHP"],
+            "pros": [
+              "Easy deployment",
+              "Built-in scaling",
+              "No server management",
+              "Supports .NET, Node, Python, Java, PHP"
+            ],
             "cons": ["Less control over the host", "Cold starts on lower tiers"],
             "tags": ["managed", "web", "api"]
           },
           {
             "title": "Azure Functions",
             "description": "Event-driven serverless compute.",
-            "pros": ["Pay-per-execution", "Auto-scales instantly", "No servers to manage", "Many triggers (HTTP, timer, queue)"],
+            "pros": [
+              "Pay-per-execution",
+              "Auto-scales instantly",
+              "No servers to manage",
+              "Many triggers (HTTP, timer, queue)"
+            ],
             "cons": ["Cold-start latency", "Execution time limits", "Stateless by default"],
             "tags": ["serverless", "event-driven"]
           },
           {
             "title": "Container Apps",
             "description": "Managed microservices on containers.",
-            "pros": ["Docker support", "Built-in scaling and ingress", "Kubernetes without the complexity", "Works with Dapr"],
+            "pros": [
+              "Docker support",
+              "Built-in scaling and ingress",
+              "Kubernetes without the complexity",
+              "Works with Dapr"
+            ],
             "cons": ["Requires container knowledge", "More setup than App Service"],
             "tags": ["containers", "microservices"]
           }

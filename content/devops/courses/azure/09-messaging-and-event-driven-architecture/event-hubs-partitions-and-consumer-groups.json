@@ -8,14 +8,7 @@
   "order": 12,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "azure",
-    "azure",
-    "messaging",
-    "events",
-    "event-hubs",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "messaging", "events", "event-hubs", "developer"],
   "blocks": [
     {
       "type": "heading",

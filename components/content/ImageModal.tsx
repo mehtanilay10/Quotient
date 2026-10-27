@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { X, ZoomIn, ZoomOut } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { useFocusTrap } from '@/hooks/useFocusTrap';
-import { useBodyScrollLock } from '@/hooks/useBodyScrollLock';
-import { registerShortcut, unregisterShortcut } from '@/hooks/useKeyboardShortcuts';
-import Image from 'next/image';
+import { useCallback, useEffect, useRef, useState } from "react";
+import { X, ZoomIn, ZoomOut } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
+import { useBodyScrollLock } from "@/hooks/useBodyScrollLock";
+import { registerShortcut, unregisterShortcut } from "@/hooks/useKeyboardShortcuts";
+import Image from "next/image";
 
 interface ImageModalProps {
   src: string;
@@ -28,10 +28,10 @@ export function ImageModal({ src, alt, caption, onClose }: ImageModalProps) {
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === "Escape") onClose();
     };
-    document.addEventListener('keydown', handleKey);
-    return () => document.removeEventListener('keydown', handleKey);
+    document.addEventListener("keydown", handleKey);
+    return () => document.removeEventListener("keydown", handleKey);
   }, [onClose]);
 
   useEffect(() => {
@@ -49,25 +49,25 @@ export function ImageModal({ src, alt, caption, onClose }: ImageModalProps) {
   const resetZoom = useCallback(() => setZoom(1), []);
 
   useEffect(() => {
-    registerShortcut('+', 'Zoom in', zoomIn);
-    registerShortcut('-', 'Zoom out', zoomOut);
-    registerShortcut('0', 'Reset zoom', resetZoom);
+    registerShortcut("+", "Zoom in", zoomIn);
+    registerShortcut("-", "Zoom out", zoomOut);
+    registerShortcut("0", "Reset zoom", resetZoom);
     return () => {
-      unregisterShortcut('+');
-      unregisterShortcut('-');
-      unregisterShortcut('0');
+      unregisterShortcut("+");
+      unregisterShortcut("-");
+      unregisterShortcut("0");
     };
   }, [resetZoom, zoomIn, zoomOut]);
 
   const btnBase =
-    'flex items-center justify-center rounded-md border border-border text-fg-muted transition-colors hover:bg-canvas-subtle hover:text-fg-default';
+    "flex items-center justify-center rounded-md border border-border text-fg-muted transition-colors hover:bg-canvas-subtle hover:text-fg-default";
 
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4"
       aria-modal="true"
       role="dialog"
-      aria-label={alt ?? 'Image preview'}
+      aria-label={alt ?? "Image preview"}
     >
       {/* Backdrop */}
       <div
@@ -84,16 +84,14 @@ export function ImageModal({ src, alt, caption, onClose }: ImageModalProps) {
       >
         {/* Header */}
         <div className="flex items-center gap-3 border-b border-border px-5 py-3 rounded-t-2xl bg-canvas dark:bg-canvas-subtle shrink-0">
-          {caption && (
-            <p className="flex-1 truncate text-sm text-fg-muted">{caption}</p>
-          )}
+          {caption && <p className="flex-1 truncate text-sm text-fg-muted">{caption}</p>}
 
           <div className="ml-auto flex items-center gap-1 shrink-0">
             <button
               type="button"
               onClick={zoomOut}
               disabled={zoom <= MIN_ZOOM}
-              className={cn(btnBase, 'h-8 w-8 disabled:opacity-40 disabled:cursor-not-allowed')}
+              className={cn(btnBase, "h-8 w-8 disabled:opacity-40 disabled:cursor-not-allowed")}
               aria-label="Zoom out"
             >
               <ZoomOut className="h-4 w-4" aria-hidden="true" />
@@ -102,7 +100,7 @@ export function ImageModal({ src, alt, caption, onClose }: ImageModalProps) {
             <button
               type="button"
               onClick={resetZoom}
-              className={cn(btnBase, 'h-8 min-w-[3.5rem] px-1 text-xs tabular-nums')}
+              className={cn(btnBase, "h-8 min-w-[3.5rem] px-1 text-xs tabular-nums")}
               aria-label="Reset zoom"
             >
               {Math.round(zoom * 100)}%
@@ -112,7 +110,7 @@ export function ImageModal({ src, alt, caption, onClose }: ImageModalProps) {
               type="button"
               onClick={zoomIn}
               disabled={zoom >= MAX_ZOOM}
-              className={cn(btnBase, 'h-8 w-8 disabled:opacity-40 disabled:cursor-not-allowed')}
+              className={cn(btnBase, "h-8 w-8 disabled:opacity-40 disabled:cursor-not-allowed")}
               aria-label="Zoom in"
             >
               <ZoomIn className="h-4 w-4" aria-hidden="true" />
@@ -123,7 +121,7 @@ export function ImageModal({ src, alt, caption, onClose }: ImageModalProps) {
             <button
               type="button"
               onClick={onClose}
-              className={cn(btnBase, 'h-8 w-8')}
+              className={cn(btnBase, "h-8 w-8")}
               aria-label="Close image preview"
             >
               <X className="h-4 w-4" aria-hidden="true" />
@@ -135,15 +133,14 @@ export function ImageModal({ src, alt, caption, onClose }: ImageModalProps) {
         <div className="flex-1 overflow-auto p-6 flex justify-center">
           <div
             className="relative origin-center"
-            style={{ transform: `scale(${zoom})`, transition: 'transform 0.15s ease', maxWidth: '100%', minHeight: '200px' }}
+            style={{
+              transform: `scale(${zoom})`,
+              transition: "transform 0.15s ease",
+              maxWidth: "100%",
+              minHeight: "200px",
+            }}
           >
-            <Image
-              src={src}
-              alt={alt}
-              fill
-              className="object-contain"
-              sizes="100vw"
-            />
+            <Image src={src} alt={alt} fill className="object-contain" sizes="100vw" />
           </div>
         </div>
 

@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "typescript",
-    "type-guards",
-    "narrowing",
-    "types"
-  ],
+  "tags": ["typescript", "type-guards", "narrowing", "types"],
   "blocks": [
     {
       "type": "paragraph",

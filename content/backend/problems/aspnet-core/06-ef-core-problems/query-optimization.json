@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "aspnet-core",
-    "ef-core",
-    "query",
-    "performance"
-  ],
+  "tags": ["aspnet-core", "ef-core", "query", "performance"],
   "blocks": [
     {
       "type": "heading",
@@ -91,39 +86,16 @@
           {
             "title": "No-Tracking Queries",
             "description": "Performance-optimized queries",
-            "pros": [
-              "Faster queries",
-              "Less memory",
-              "No tracking overhead"
-            ],
-            "cons": [
-              "Cannot update tracked entities",
-              "Compiled queries must be static"
-            ],
-            "tags": [
-              "AsNoTracking",
-              "EF.CompileAsyncQuery",
-              "identity resolution"
-            ]
+            "pros": ["Faster queries", "Less memory", "No tracking overhead"],
+            "cons": ["Cannot update tracked entities", "Compiled queries must be static"],
+            "tags": ["AsNoTracking", "EF.CompileAsyncQuery", "identity resolution"]
           },
           {
             "title": "Bulk Operations",
             "description": "Server-side bulk operations",
-            "pros": [
-              "No entity loading",
-              "Single round-trip",
-              "Memory efficient"
-            ],
-            "cons": [
-              "No entity events fired",
-              "Limited to simple operations",
-              "EF Core 7+ only"
-            ],
-            "tags": [
-              "ExecuteUpdate",
-              "ExecuteDelete",
-              "AddRange"
-            ]
+            "pros": ["No entity loading", "Single round-trip", "Memory efficient"],
+            "cons": ["No entity events fired", "Limited to simple operations", "EF Core 7+ only"],
+            "tags": ["ExecuteUpdate", "ExecuteDelete", "AddRange"]
           }
         ]
       }

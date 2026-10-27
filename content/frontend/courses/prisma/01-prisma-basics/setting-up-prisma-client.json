@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "prisma-client",
-    "singleton",
-    "nextjs",
-    "connection-pooling"
-  ],
+  "tags": ["prisma", "prisma-client", "singleton", "nextjs", "connection-pooling"],
   "blocks": [
     {
       "type": "paragraph",
@@ -101,8 +95,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "installing-prisma-in-nextjs",
-    "prisma-in-nextjs-app-router"
-  ]
+  "relatedLessons": ["installing-prisma-in-nextjs", "prisma-in-nextjs-app-router"]
 }

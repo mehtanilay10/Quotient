@@ -6,9 +6,5 @@
   "fullDefinition": "In AI systems, retrieval refers to the process of searching a corpus of documents or data to find the most relevant pieces for a given query. This is done before generation in RAG systems. Retrieval can be keyword-based (traditional search) or semantic (embedding-based). The quality of retrieval directly determines the quality of RAG-augmented responses — if the wrong documents are retrieved, the answer will be wrong.",
   "category": "architecture",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "rag",
-    "embedding",
-    "vector-database"
-  ]
+  "relatedTerms": ["rag", "embedding", "vector-database"]
 }

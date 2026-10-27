@@ -7,14 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "claude",
-    "artifacts",
-    "html",
-    "python",
-    "coding",
-    "visualization"
-  ],
+  "tags": ["claude", "artifacts", "html", "python", "coding", "visualization"],
   "blocks": [
     {
       "type": "heading",
@@ -159,12 +152,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "artifacts-intro",
-    "artifacts-workflows"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model"
-  ],
+  "relatedLessons": ["artifacts-intro", "artifacts-workflows"],
+  "relatedGlossaryTerms": ["large-language-model"],
   "courseSlug": "claude"
 }

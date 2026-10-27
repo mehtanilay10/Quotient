@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "react",
-    "css",
-    "modules",
-    "styling"
-  ],
+  "tags": ["react", "css", "modules", "styling"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,12 +8,7 @@
   "order": 9,
   "difficulty": "hard",
   "estimatedMinutes": 22,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "strings",
-    "hard"
-  ],
+  "tags": ["csharp", "dynamic-programming", "strings", "hard"],
   "blocks": [
     {
       "type": "heading",
@@ -51,15 +46,8 @@
           {
             "title": "Wagner-Fischer",
             "description": "Classic DP table",
-            "pros": [
-              "Optimal",
-              "Guaranteed"
-            ],
-            "tags": [
-              "O(m\u00b7n) time",
-              "O(min(m,n)) space",
-              "Recommended"
-            ]
+            "pros": ["Optimal", "Guaranteed"],
+            "tags": ["O(m\u00b7n) time", "O(min(m,n)) space", "Recommended"]
           }
         ]
       }

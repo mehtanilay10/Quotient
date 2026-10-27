@@ -8,7 +8,17 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": ["react-router", "routing", "navigation", "url-params", "nested-routes", "route-guards", "v6", "cheatsheet", "quick-reference"],
+  "tags": [
+    "react-router",
+    "routing",
+    "navigation",
+    "url-params",
+    "nested-routes",
+    "route-guards",
+    "v6",
+    "cheatsheet",
+    "quick-reference"
+  ],
   "blocks": [
     {
       "type": "example",

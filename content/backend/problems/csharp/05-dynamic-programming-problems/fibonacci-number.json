@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "recursion",
-    "easy"
-  ],
+  "tags": ["csharp", "dynamic-programming", "recursion", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -81,42 +76,22 @@
           {
             "title": "Recursive",
             "description": "Pure recursion",
-            "pros": [
-              "Simplest"
-            ],
-            "cons": [
-              "O(2^n)"
-            ],
-            "tags": [
-              "O(2^n) time",
-              "O(n) space"
-            ]
+            "pros": ["Simplest"],
+            "cons": ["O(2^n)"],
+            "tags": ["O(2^n) time", "O(n) space"]
           },
           {
             "title": "Tabulation",
             "description": "Bottom-up array",
-            "pros": [
-              "O(n) time"
-            ],
-            "cons": [
-              "O(n) array"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["O(n) time"],
+            "cons": ["O(n) array"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Optimized",
             "description": "Two variables",
-            "pros": [
-              "O(1) space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) space"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

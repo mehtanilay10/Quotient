@@ -156,6 +156,10 @@
   ],
   "relatedLessons": ["github-flow", "git-flow"],
   "furtherReading": [
-    { "title": "GitLab Flow Documentation", "url": "https://docs.gitlab.com/ee/topics/gitlab_flow.html", "type": "article" }
+    {
+      "title": "GitLab Flow Documentation",
+      "url": "https://docs.gitlab.com/ee/topics/gitlab_flow.html",
+      "type": "article"
+    }
   ]
 }

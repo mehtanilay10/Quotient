@@ -221,11 +221,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "google-search",
-    "search-autocomplete",
-    "url-shortener"
-  ],
+  "relatedLessons": ["google-search", "search-autocomplete", "url-shortener"],
   "furtherReading": [
     {
       "title": "Mercator: A Scalable, Extensible Web Crawler (Heydon & Najork)",

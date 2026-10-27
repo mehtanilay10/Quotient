@@ -117,7 +117,10 @@
       }
     }
   ],
-  "relatedLessons": ["route-handlers-and-backend-for-frontend-patterns", "deployment-architecture-for-nextjs"],
+  "relatedLessons": [
+    "route-handlers-and-backend-for-frontend-patterns",
+    "deployment-architecture-for-nextjs"
+  ],
   "furtherReading": [
     {
       "title": "Edge Runtime",

@@ -8,13 +8,7 @@
   "order": 35,
   "difficulty": "advanced",
   "estimatedMinutes": 24,
-  "tags": [
-    "task",
-    "thread-pool",
-    "scalability",
-    "aspnet-core",
-    "background-work"
-  ],
+  "tags": ["task", "thread-pool", "scalability", "aspnet-core", "background-work"],
   "blocks": [
     {
       "type": "paragraph",
@@ -90,9 +84,7 @@
           {
             "title": "Task.Run in controller",
             "description": "Offloads work to thread pool inside a request.",
-            "pros": [
-              "Quick way to keep a UI responsive"
-            ],
+            "pros": ["Quick way to keep a UI responsive"],
             "cons": [
               "Reduces request throughput",
               "Can starve the thread pool",
@@ -107,9 +99,7 @@
               "Supports graceful shutdown",
               "Easier to observe and log"
             ],
-            "cons": [
-              "Requires explicit hosting setup"
-            ]
+            "cons": ["Requires explicit hosting setup"]
           },
           {
             "title": "Message queue",
@@ -119,9 +109,7 @@
               "Retry and dead-letter support",
               "Decouples web tier from processing"
             ],
-            "cons": [
-              "More infrastructure"
-            ]
+            "cons": ["More infrastructure"]
           }
         ]
       }

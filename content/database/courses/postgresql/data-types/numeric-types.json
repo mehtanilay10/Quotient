@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "data-types",
-    "numeric",
-    "bigint",
-    "decimal",
-    "precision"
-  ],
+  "tags": ["data-types", "numeric", "bigint", "decimal", "precision"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,12 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type Name",
-          "Storage Size",
-          "Range",
-          "Recommended Use Case"
-        ],
+        "headers": ["Type Name", "Storage Size", "Range", "Recommended Use Case"],
         "rows": [
           [
             "`SMALLINT`",
@@ -132,11 +121,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Need",
-          "Use",
-          "Avoid"
-        ],
+        "headers": ["Need", "Use", "Avoid"],
         "rows": [
           [
             "Surrogate key on a growing table",
@@ -153,16 +138,8 @@
             "`DOUBLE PRECISION`",
             "`NUMERIC` (slow, unnecessary precision)"
           ],
-          [
-            "Boolean flags",
-            "`BOOLEAN`",
-            "`SMALLINT` / `CHAR(1)`"
-          ],
-          [
-            "Percentages with fixed scale",
-            "`NUMERIC(5, 4)`",
-            "Float"
-          ]
+          ["Boolean flags", "`BOOLEAN`", "`SMALLINT` / `CHAR(1)`"],
+          ["Percentages with fixed scale", "`NUMERIC(5, 4)`", "Float"]
         ]
       }
     },
@@ -222,8 +199,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "text-types",
-    "date-time-types"
-  ]
+  "relatedLessons": ["text-types", "date-time-types"]
 }

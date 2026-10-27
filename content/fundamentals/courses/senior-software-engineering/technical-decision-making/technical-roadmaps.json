@@ -195,11 +195,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "evaluating-technical-options",
-    "writing-rfcs",
-    "stakeholder-alignment"
-  ],
+  "relatedLessons": ["evaluating-technical-options", "writing-rfcs", "stakeholder-alignment"],
   "furtherReading": [
     {
       "type": "article",

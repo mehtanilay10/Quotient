@@ -8,12 +8,7 @@
   "order": 9,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "interview",
-    "system-design",
-    "chat",
-    "real-time"
-  ],
+  "tags": ["interview", "system-design", "chat", "real-time"],
   "technology": "System Design",
   "blocks": [
     {
@@ -95,37 +90,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Table",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Table", "Key Fields", "Description"],
         "rows": [
-          [
-            "Users",
-            "user_id, username, phone",
-            "User profiles and auth"
-          ],
-          [
-            "Conversations",
-            "conversation_id, type, participants",
-            "Chat metadata and membership"
-          ],
+          ["Users", "user_id, username, phone", "User profiles and auth"],
+          ["Conversations", "conversation_id, type, participants", "Chat metadata and membership"],
           [
             "Messages",
             "message_id, conversation_id, sender_id, content, timestamp, status",
             "Individual messages with read status"
           ],
-          [
-            "MessageReads",
-            "message_id, user_id, read_at",
-            "Per-user read receipts"
-          ],
-          [
-            "UserSessions",
-            "user_id, server_id, last_seen",
-            "Active WebSocket connections"
-          ]
+          ["MessageReads", "message_id, user_id, read_at", "Per-user read receipts"],
+          ["UserSessions", "user_id, server_id, last_seen", "Active WebSocket connections"]
         ]
       }
     },
@@ -173,26 +148,14 @@
           {
             "title": "WebSockets vs Long Polling",
             "description": "WebSockets provide lower latency but require persistent connections. Long polling is simpler but has higher overhead.",
-            "pros": [
-              "Lower latency",
-              "Full duplex"
-            ],
-            "cons": [
-              "Complex connection management",
-              "Firewall issues"
-            ]
+            "pros": ["Lower latency", "Full duplex"],
+            "cons": ["Complex connection management", "Firewall issues"]
           },
           {
             "title": "Push vs Pull for Notifications",
             "description": "Push notifications via APNs/FCM are real-time but depend on third-party services. Pull is more reliable but uses more battery.",
-            "pros": [
-              "Real-time delivery",
-              "Battery efficient"
-            ],
-            "cons": [
-              "Third-party dependency",
-              "Rate limits"
-            ]
+            "pros": ["Real-time delivery", "Battery efficient"],
+            "cons": ["Third-party dependency", "Rate limits"]
           }
         ]
       }

@@ -76,8 +76,16 @@
           },
           {
             "title": "Denormalization",
-            "pros": ["Fast reads with no JOINs", "Simpler queries", "Scales well for read-heavy loads"],
-            "cons": ["Update anomalies possible", "Larger storage footprint", "Cache invalidation complexity"]
+            "pros": [
+              "Fast reads with no JOINs",
+              "Simpler queries",
+              "Scales well for read-heavy loads"
+            ],
+            "cons": [
+              "Update anomalies possible",
+              "Larger storage footprint",
+              "Cache invalidation complexity"
+            ]
           }
         ]
       }

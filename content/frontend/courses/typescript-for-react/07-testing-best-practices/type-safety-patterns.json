@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "advanced-types",
-    "patterns",
-    "type-safety"
-  ],
+  "tags": ["typescript", "advanced-types", "patterns", "type-safety"],
   "blocks": [
     {
       "type": "paragraph",
@@ -83,32 +78,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Use Case",
-          "Benefit"
-        ],
+        "headers": ["Pattern", "Use Case", "Benefit"],
         "rows": [
-          [
-            "Branded Types",
-            "IDs and tokens",
-            "Prevents mixing different IDs"
-          ],
-          [
-            "Const Assertions",
-            "Constants",
-            "Creates literal unions"
-          ],
-          [
-            "Exhaustive Checks",
-            "State machines",
-            "Catches missing cases"
-          ],
-          [
-            "Template Literals",
-            "String patterns",
-            "Type-safe string building"
-          ]
+          ["Branded Types", "IDs and tokens", "Prevents mixing different IDs"],
+          ["Const Assertions", "Constants", "Creates literal unions"],
+          ["Exhaustive Checks", "State machines", "Catches missing cases"],
+          ["Template Literals", "String patterns", "Type-safe string building"]
         ]
       }
     },

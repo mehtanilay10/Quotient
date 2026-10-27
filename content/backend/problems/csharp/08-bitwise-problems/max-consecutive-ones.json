@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "bitwise",
-    "easy"
-  ],
+  "tags": ["csharp", "bitwise", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -100,31 +96,16 @@
           {
             "title": "Bit Scan",
             "description": "Check every bit",
-            "pros": [
-              "Simple",
-              "O(log N) worst case"
-            ],
-            "cons": [
-              "Visits all bits"
-            ],
-            "tags": [
-              "O(log N) time",
-              "O(1) space"
-            ]
+            "pros": ["Simple", "O(log N) worst case"],
+            "cons": ["Visits all bits"],
+            "tags": ["O(log N) time", "O(1) space"]
           },
           {
             "title": "Brian Kernighan",
             "description": "Skip zeros efficiently",
-            "pros": [
-              "O(k) where k = set bits",
-              "Recommended"
-            ],
+            "pros": ["O(k) where k = set bits", "Recommended"],
             "cons": [],
-            "tags": [
-              "O(k) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "tags": ["O(k) time", "O(1) space", "Recommended"]
           }
         ]
       }

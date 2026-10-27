@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "logging",
-    "structured",
-    "correlation"
-  ],
+  "tags": ["logging", "structured", "correlation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,32 +56,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Unstructured",
-          "Structured"
-        ],
+        "headers": ["Aspect", "Unstructured", "Structured"],
         "rows": [
-          [
-            "Format",
-            "Plain text",
-            "JSON"
-          ],
-          [
-            "Searchability",
-            "Hard",
-            "Easy"
-          ],
-          [
-            "Parsing",
-            "Regex",
-            "Native"
-          ],
-          [
-            "Context",
-            "Limited",
-            "Rich"
-          ]
+          ["Format", "Plain text", "JSON"],
+          ["Searchability", "Hard", "Easy"],
+          ["Parsing", "Regex", "Native"],
+          ["Context", "Limited", "Rich"]
         ]
       }
     },

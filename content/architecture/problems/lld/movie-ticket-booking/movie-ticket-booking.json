@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 45,
-  "tags": [
-    "lld",
-    "object-oriented",
-    "design-patterns",
-    "movie",
-    "booking",
-    "concurrency"
-  ],
+  "tags": ["lld", "object-oriented", "design-patterns", "movie", "booking", "concurrency"],
   "blocks": [
     {
       "type": "heading",

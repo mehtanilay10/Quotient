@@ -111,13 +111,12 @@
       }
     }
   ],
-  "relatedLessons": [
-    "git-internals",
-    "git-security",
-    "enterprise-git"
-  ],
+  "relatedLessons": ["git-internals", "git-security", "enterprise-git"],
   "furtherReading": [
-    { "title": "Git maintenance tools (git-scm.com)", "url": "https://git-scm.com/docs/git-maintenance" },
+    {
+      "title": "Git maintenance tools (git-scm.com)",
+      "url": "https://git-scm.com/docs/git-maintenance"
+    },
     { "title": "Git fsck documentation (git-scm.com)", "url": "https://git-scm.com/docs/git-fsck" }
   ]
 }

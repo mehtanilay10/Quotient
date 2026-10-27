@@ -6,13 +6,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 8,
-  "tags": [
-    "crypto",
-    "utilities",
-    "security",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["crypto", "utilities", "security", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

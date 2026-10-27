@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "claude",
-    "beginner",
-    "prompting",
-    "first-conversation"
-  ],
+  "tags": ["claude", "beginner", "prompting", "first-conversation"],
   "blocks": [
     {
       "type": "heading",
@@ -163,15 +158,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "setting-up-claude",
-    "claude-interface-tour"
-  ],
-  "relatedGlossaryTerms": [
-    "context-window",
-    "token",
-    "large-language-model",
-    "system-prompt"
-  ],
+  "relatedLessons": ["setting-up-claude", "claude-interface-tour"],
+  "relatedGlossaryTerms": ["context-window", "token", "large-language-model", "system-prompt"],
   "courseSlug": "claude"
 }

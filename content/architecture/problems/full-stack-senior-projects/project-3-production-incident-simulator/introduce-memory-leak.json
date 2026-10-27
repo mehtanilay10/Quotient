@@ -105,7 +105,11 @@
           {
             "title": "dotMemory",
             "description": "JetBrains memory profiler with a visual UI for retention graphs.",
-            "pros": ["Intuitive retention view", "Easy diff between snapshots", "Supports .NET Core and Framework"],
+            "pros": [
+              "Intuitive retention view",
+              "Easy diff between snapshots",
+              "Supports .NET Core and Framework"
+            ],
             "cons": ["Paid license", "Heavier CPU overhead during profiling"]
           },
           {
@@ -117,7 +121,11 @@
           {
             "title": "dotnet-gcdump",
             "description": "Lightweight cross-platform tool that collects GC dumps for analysis.",
-            "pros": ["No UI required, works on servers", "Fast collection", "Works with dotnet-trace"],
+            "pros": [
+              "No UI required, works on servers",
+              "Fast collection",
+              "Works with dotnet-trace"
+            ],
             "cons": ["Requires manual analysis or tooling", "Less visual than dedicated profilers"]
           }
         ]

@@ -6,10 +6,7 @@
   "description": "Navigations and foreign keys, one-to-many/many-to-many, cascade vs restrict, and delete-cycle traps.",
   "order": 8,
   "difficulty": "intermediate",
-  "tags": [
-    "ef-core",
-    "intermediate"
-  ],
+  "tags": ["ef-core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,11 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "lazy-eager-loading",
-    "global-query-filters",
-    "key-strategy"
-  ],
+  "relatedLessons": ["lazy-eager-loading", "global-query-filters", "key-strategy"],
   "furtherReading": [
     {
       "title": "Relationships in EF Core",

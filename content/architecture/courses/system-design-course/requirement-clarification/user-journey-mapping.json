@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "requirements",
-    "user-journey",
-    "ux",
-    "edge-cases"
-  ],
+  "tags": ["requirements", "user-journey", "ux", "edge-cases"],
   "blocks": [
     {
       "type": "paragraph",
@@ -85,32 +80,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Journey Step",
-          "Failure Mode",
-          "System Impact"
-        ],
+        "headers": ["Journey Step", "Failure Mode", "System Impact"],
         "rows": [
-          [
-            "Driver matching",
-            "No drivers available",
-            "Queue timeout, notification, retry policy"
-          ],
+          ["Driver matching", "No drivers available", "Queue timeout, notification, retry policy"],
           [
             "Payment processing",
             "Network drops mid-transaction",
             "Idempotency keys, reconciliation job"
           ],
-          [
-            "Navigation",
-            "GPS signal lost",
-            "Dead reckoning, server-side fallback"
-          ],
-          [
-            "Rating",
-            "User declines to rate",
-            "Optional step, no blocking dependency"
-          ]
+          ["Navigation", "GPS signal lost", "Dead reckoning, server-side fallback"],
+          ["Rating", "User declines to rate", "Optional step, no blocking dependency"]
         ]
       }
     },

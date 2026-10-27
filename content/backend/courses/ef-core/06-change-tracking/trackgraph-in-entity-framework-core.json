@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "ef-core",
-    "trackgraph",
-    "entity-graph",
-    "entitystate"
-  ],
+  "tags": ["ef-core", "trackgraph", "entity-graph", "entitystate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -66,9 +61,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "entity-framework-core-change-tracking",
-    "querying-in-entity-framework-core"
-  ],
+  "relatedLessons": ["entity-framework-core-change-tracking", "querying-in-entity-framework-core"],
   "courseSlug": "ef-core"
 }

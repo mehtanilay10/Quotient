@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "layouts",
-    "partials",
-    "reusability"
-  ],
+  "tags": ["layouts", "partials", "reusability"],
   "blocks": [
     {
       "type": "heading",
@@ -198,10 +194,7 @@
       "takeaway": "Layouts and partial views are the foundation of maintainable Razor applications. Using them from the start keeps your markup clean and your future refactors small."
     }
   ],
-  "relatedLessons": [
-    "razor-syntax",
-    "partial-views"
-  ],
+  "relatedLessons": ["razor-syntax", "partial-views"],
   "technology": null,
   "furtherReading": []
 }

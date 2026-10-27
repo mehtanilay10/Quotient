@@ -96,7 +96,13 @@
     "deadlocks-starvation-and-livelocks"
   ],
   "furtherReading": [
-    { "title": "Cancellation in managed threads (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/standard/threading/cancellation-in-managed-threads" },
-    { "title": "CancellationTokenSource.CreateLinkedTokenSource (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtokensource.createlinkedtokensource" }
+    {
+      "title": "Cancellation in managed threads (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/standard/threading/cancellation-in-managed-threads"
+    },
+    {
+      "title": "CancellationTokenSource.CreateLinkedTokenSource (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.threading.cancellationtokensource.createlinkedtokensource"
+    }
   ]
 }

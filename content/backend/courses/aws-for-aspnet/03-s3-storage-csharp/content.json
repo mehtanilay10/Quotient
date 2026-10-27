@@ -10,12 +10,7 @@
   "estimatedHours": 3,
   "icon": "🪣",
   "tags": ["aws", "s3", "storage", "csharp"],
-  "lessonSlugs": [
-    "s3-intro",
-    "s3-csharp",
-    "s3-presigned-urls",
-    "s3-lifecycle-cors"
-  ],
+  "lessonSlugs": ["s3-intro", "s3-csharp", "s3-presigned-urls", "s3-lifecycle-cors"],
   "prerequisites": ["what-is-aws-for-dotnet", "dotnet-aws-sdk"],
   "whatYouLearn": [
     "Create and configure S3 buckets",

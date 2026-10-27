@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 28,
-  "tags": [
-    "typescript",
-    "react-query",
-    "data-fetching",
-    "api"
-  ],
+  "tags": ["typescript", "react-query", "data-fetching", "api"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,27 +62,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Hook",
-          "Purpose",
-          "Return Type"
-        ],
+        "headers": ["Hook", "Purpose", "Return Type"],
         "rows": [
-          [
-            "useQuery",
-            "Fetch data",
-            "UseQueryResult<T, Error>"
-          ],
-          [
-            "useMutation",
-            "Modify data",
-            "UseMutationResult<T, Error, Variables>"
-          ],
-          [
-            "useQueryClient",
-            "Access cache",
-            "QueryClient"
-          ]
+          ["useQuery", "Fetch data", "UseQueryResult<T, Error>"],
+          ["useMutation", "Modify data", "UseMutationResult<T, Error, Variables>"],
+          ["useQueryClient", "Access cache", "QueryClient"]
         ]
       }
     },

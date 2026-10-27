@@ -7,12 +7,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "ef-core",
-    "fluent-api",
-    "one-to-one",
-    "relationships"
-  ],
+  "tags": ["ef-core", "fluent-api", "one-to-one", "relationships"],
   "blocks": [
     {
       "type": "paragraph",

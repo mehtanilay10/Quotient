@@ -28,9 +28,21 @@
       "data": {
         "headers": ["Model", "Description", "Best For"],
         "rows": [
-          ["Single Database", "One fully managed database with its own compute and storage", "New cloud apps, microservices"],
-          ["Elastic Pool", "Multiple databases sharing a pool of compute resources", "SaaS with many tenants of varying usage"],
-          ["Managed Instance", "Near 100% compatibility with on-premises SQL Server", "Lift-and-shift, complex migrations"]
+          [
+            "Single Database",
+            "One fully managed database with its own compute and storage",
+            "New cloud apps, microservices"
+          ],
+          [
+            "Elastic Pool",
+            "Multiple databases sharing a pool of compute resources",
+            "SaaS with many tenants of varying usage"
+          ],
+          [
+            "Managed Instance",
+            "Near 100% compatibility with on-premises SQL Server",
+            "Lift-and-shift, complex migrations"
+          ]
         ]
       }
     },

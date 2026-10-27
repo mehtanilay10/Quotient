@@ -7,11 +7,7 @@
   "difficulty": "beginner",
   "estimatedHours": 2.5,
   "icon": "✍️",
-  "tags": [
-    "prompting",
-    "prompt-engineering",
-    "communication"
-  ],
+  "tags": ["prompting", "prompt-engineering", "communication"],
   "lessonSlugs": [
     "anatomy-of-a-good-prompt",
     "prompt-patterns",
@@ -19,9 +15,7 @@
     "system-prompts-and-custom-instructions"
   ],
   "isOptional": false,
-  "prerequisites": [
-    "what-is-ai"
-  ],
+  "prerequisites": ["what-is-ai"],
   "whatYouLearn": [
     "The anatomy of an effective prompt (CRTF framework)",
     "Context, role, tone, and format instructions",

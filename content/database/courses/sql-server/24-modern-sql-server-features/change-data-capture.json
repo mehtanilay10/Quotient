@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "cdc",
-    "change-data-capture",
-    "etl",
-    "integration",
-    "lsn"
-  ],
+  "tags": ["cdc", "change-data-capture", "etl", "integration", "lsn"],
   "blocks": [
     {
       "type": "heading",
@@ -135,8 +129,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "temporal-tables",
-    "sql-server-integration-services"
-  ]
+  "relatedLessons": ["temporal-tables", "sql-server-integration-services"]
 }

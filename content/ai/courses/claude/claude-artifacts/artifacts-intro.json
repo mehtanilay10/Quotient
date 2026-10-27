@@ -7,13 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "claude",
-    "artifacts",
-    "interactive",
-    "code",
-    "visualization"
-  ],
+  "tags": ["claude", "artifacts", "interactive", "code", "visualization"],
   "blocks": [
     {
       "type": "heading",
@@ -56,11 +50,7 @@
               "Good for explanations and analysis",
               "Simple to iterate on"
             ],
-            "cons": [
-              "Not interactive",
-              "Cannot be executed or rendered",
-              "Limited to text"
-            ]
+            "cons": ["Not interactive", "Cannot be executed or rendered", "Limited to text"]
           },
           {
             "title": "Claude Artifact",
@@ -187,12 +177,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "building-with-artifacts",
-    "artifacts-workflows"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model"
-  ],
+  "relatedLessons": ["building-with-artifacts", "artifacts-workflows"],
+  "relatedGlossaryTerms": ["large-language-model"],
   "courseSlug": "claude"
 }

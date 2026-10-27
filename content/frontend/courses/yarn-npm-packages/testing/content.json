@@ -7,13 +7,6 @@
   "difficulty": "intermediate",
   "estimatedHours": 2.5,
   "icon": "🧪",
-  "lessonSlugs": [
-    "jest",
-    "vitest",
-    "cypress",
-    "playwright",
-    "testing-library",
-    "storybook"
-  ],
+  "lessonSlugs": ["jest", "vitest", "cypress", "playwright", "testing-library", "storybook"],
   "courseSlug": "yarn-npm-packages"
 }

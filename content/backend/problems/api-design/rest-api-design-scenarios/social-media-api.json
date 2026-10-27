@@ -55,9 +55,24 @@
       "data": {
         "headers": ["Strategy", "Pros", "Cons", "Best For"],
         "rows": [
-          ["Offset pagination", "Simple, supports arbitrary page numbers", "Breaks on concurrent inserts, slow on large offsets", "Admin dashboards, small lists"],
-          ["Cursor pagination", "Stable under concurrent inserts, fast deep pagination", "No random access, requires sort key", "Feeds, activity streams, timelines"],
-          ["Keyset pagination", "Fastest for sorted data, stable", "Requires unique sort column", "Sorted leaderboards, event logs"]
+          [
+            "Offset pagination",
+            "Simple, supports arbitrary page numbers",
+            "Breaks on concurrent inserts, slow on large offsets",
+            "Admin dashboards, small lists"
+          ],
+          [
+            "Cursor pagination",
+            "Stable under concurrent inserts, fast deep pagination",
+            "No random access, requires sort key",
+            "Feeds, activity streams, timelines"
+          ],
+          [
+            "Keyset pagination",
+            "Fastest for sorted data, stable",
+            "Requires unique sort column",
+            "Sorted leaderboards, event logs"
+          ]
         ]
       }
     },
@@ -148,10 +163,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "e-commerce-api",
-    "search-api"
-  ],
+  "relatedLessons": ["e-commerce-api", "search-api"],
   "furtherReading": [
     {
       "title": "Designing Feeds with Fan-out",

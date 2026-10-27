@@ -6,11 +6,7 @@
   "description": "Correlation ids, spans, and OpenTelemetry: stitching sync calls, async events, and logs into one end-to-end view of a request.",
   "order": 18,
   "difficulty": "advanced",
-  "tags": [
-    "architecture",
-    "observability",
-    "advanced"
-  ],
+  "tags": ["architecture", "observability", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

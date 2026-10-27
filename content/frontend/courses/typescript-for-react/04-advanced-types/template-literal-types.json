@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "typescript",
-    "template-literals",
-    "infer",
-    "advanced"
-  ],
+  "tags": ["typescript", "template-literals", "infer", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

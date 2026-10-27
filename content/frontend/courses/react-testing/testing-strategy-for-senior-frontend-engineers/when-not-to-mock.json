@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "testing",
-    "react",
-    "mocking",
-    "testing-library"
-  ],
+  "tags": ["testing", "react", "mocking", "testing-library"],
   "blocks": [
     {
       "type": "paragraph",

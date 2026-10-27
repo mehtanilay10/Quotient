@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "router",
-    "navigation",
-    "redirect"
-  ],
+  "tags": ["react", "router", "navigation", "redirect"],
   "blocks": [
     {
       "type": "paragraph",

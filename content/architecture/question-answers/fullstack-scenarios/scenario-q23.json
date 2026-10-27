@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "fullstack",
-    "validation"
-  ],
+  "tags": ["interview", "fullstack", "validation"],
   "blocks": [
     {
       "type": "paragraph",

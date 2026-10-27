@@ -8,13 +8,7 @@
   "order": 32,
   "difficulty": "advanced",
   "estimatedMinutes": 26,
-  "tags": [
-    "linq",
-    "performance",
-    "enumerable",
-    "iqueryable",
-    "optimization"
-  ],
+  "tags": ["linq", "performance", "enumerable", "iqueryable", "optimization"],
   "blocks": [
     {
       "type": "paragraph",

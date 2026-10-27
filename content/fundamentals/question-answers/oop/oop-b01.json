@@ -6,10 +6,7 @@
   "description": "Learn encapsulation, abstraction, inheritance, and polymorphism.",
   "order": 9,
   "difficulty": "beginner",
-  "tags": [
-    "oop",
-    "beginner"
-  ],
+  "tags": ["oop", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

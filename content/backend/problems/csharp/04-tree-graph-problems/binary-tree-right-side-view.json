@@ -8,13 +8,7 @@
   "order": 24,
   "difficulty": "medium",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "trees",
-    "bfs",
-    "dfs",
-    "medium"
-  ],
+  "tags": ["csharp", "trees", "bfs", "dfs", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -52,14 +46,8 @@
           {
             "title": "BFS Last Node",
             "description": "Capture last node at each level",
-            "pros": [
-              "Simple"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(w) space",
-              "Recommended"
-            ]
+            "pros": ["Simple"],
+            "tags": ["O(n) time", "O(w) space", "Recommended"]
           }
         ]
       }

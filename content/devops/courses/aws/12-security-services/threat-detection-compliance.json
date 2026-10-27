@@ -8,15 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "security",
-    "guardduty",
-    "inspector",
-    "macie",
-    "security-hub",
-    "compliance"
-  ],
+  "tags": ["aws", "security", "guardduty", "inspector", "macie", "security-hub", "compliance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -104,12 +96,7 @@
           {
             "title": "Macie",
             "description": "ML-powered sensitive data discovery in S3.",
-            "pros": [
-              "PII detection",
-              "S3-focused",
-              "Anomaly detection",
-              "Data risk scoring"
-            ]
+            "pros": ["PII detection", "S3-focused", "Anomaly detection", "Data risk scoring"]
           },
           {
             "title": "Security Hub",

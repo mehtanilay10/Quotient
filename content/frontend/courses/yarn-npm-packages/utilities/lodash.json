@@ -6,12 +6,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 8,
-  "tags": [
-    "lodash",
-    "utilities",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["lodash", "utilities", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "load-balancing",
-    "networking",
-    "L4",
-    "L7",
-    "OSI-model"
-  ],
+  "tags": ["load-balancing", "networking", "L4", "L7", "OSI-model"],
   "blocks": [
     {
       "type": "paragraph",
@@ -74,42 +68,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Layer 4",
-          "Layer 7"
-        ],
+        "headers": ["Aspect", "Layer 4", "Layer 7"],
         "rows": [
-          [
-            "OSI Layer",
-            "Transport",
-            "Application"
-          ],
-          [
-            "Routing Basis",
-            "IP + Port",
-            "URL, headers, cookies"
-          ],
-          [
-            "Performance",
-            "Very high",
-            "High"
-          ],
-          [
-            "TLS Termination",
-            "Usually no",
-            "Yes"
-          ],
-          [
-            "Path-Based Routing",
-            "No",
-            "Yes"
-          ],
-          [
-            "Typical Use",
-            "TCP/UDP fan-out",
-            "HTTP API routing"
-          ]
+          ["OSI Layer", "Transport", "Application"],
+          ["Routing Basis", "IP + Port", "URL, headers, cookies"],
+          ["Performance", "Very high", "High"],
+          ["TLS Termination", "Usually no", "Yes"],
+          ["Path-Based Routing", "No", "Yes"],
+          ["Typical Use", "TCP/UDP fan-out", "HTTP API routing"]
         ]
       }
     },
@@ -134,10 +100,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "load-balancing-algorithms",
-    "health-checks"
-  ],
+  "relatedLessons": ["load-balancing-algorithms", "health-checks"],
   "furtherReading": [
     {
       "title": "AWS Network Load Balancer vs Application Load Balancer",

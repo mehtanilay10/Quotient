@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "migration",
-    "migration-hub",
-    "mgn",
-    "dms",
-    "database"
-  ],
+  "tags": ["aws", "migration", "migration-hub", "mgn", "dms", "database"],
   "blocks": [
     {
       "type": "paragraph",

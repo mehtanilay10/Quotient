@@ -9,20 +9,8 @@
   "difficulty": "beginner",
   "estimatedHours": 4,
   "icon": "🔗",
-  "tags": [
-    "aws",
-    "networking",
-    "vpc",
-    "route53",
-    "cloudfront",
-    "load-balancer"
-  ],
-  "lessonSlugs": [
-    "amazon-vpc",
-    "vpc-connectivity",
-    "route53-dns",
-    "cloudfront-cdn"
-  ],
+  "tags": ["aws", "networking", "vpc", "route53", "cloudfront", "load-balancer"],
+  "lessonSlugs": ["amazon-vpc", "vpc-connectivity", "route53-dns", "cloudfront-cdn"],
   "prerequisites": [],
   "whatYouLearn": [
     "Design VPCs with public and private subnets",

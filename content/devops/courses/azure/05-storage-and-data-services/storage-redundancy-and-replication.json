@@ -32,7 +32,13 @@
           ["ZRS", "3 copies", "3 AZs in one region", "11 nines", "Production in one region"],
           ["GRS", "6 copies", "LRS + paired region", "16 nines", "Compliance, DR, critical data"],
           ["GZRS", "6 copies", "ZRS + paired region", "16 nines", "Mission-critical global apps"],
-          ["RA-GRS", "6 copies", "GRS + read access to secondary", "16 nines", "Read-heavy DR workloads"]
+          [
+            "RA-GRS",
+            "6 copies",
+            "GRS + read access to secondary",
+            "16 nines",
+            "Read-heavy DR workloads"
+          ]
         ]
       }
     },

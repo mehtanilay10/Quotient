@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "logical-decoding",
-    "wal2json",
-    "cdc",
-    "kafka",
-    "event-driven"
-  ],
+  "tags": ["logical-decoding", "wal2json", "cdc", "kafka", "event-driven"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "logical-replication-ha",
-    "streaming-replication"
-  ]
+  "relatedLessons": ["logical-replication-ha", "streaming-replication"]
 }

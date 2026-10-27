@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "notifications",
-    "dashboard",
-    "cache",
-    "optimistic-ui",
-    "performance"
-  ],
+  "tags": ["notifications", "dashboard", "cache", "optimistic-ui", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -190,7 +184,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "subscriptions-basics"
-  ]
+  "prerequisites": ["subscriptions-basics"]
 }

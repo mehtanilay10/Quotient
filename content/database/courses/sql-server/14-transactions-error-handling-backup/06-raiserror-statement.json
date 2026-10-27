@@ -7,11 +7,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "RAISERROR",
-    "error-message",
-    "custom-error"
-  ],
+  "tags": ["RAISERROR", "error-message", "custom-error"],
   "blocks": [
     {
       "type": "heading",
@@ -52,11 +48,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "0–10: Informational messages",
-          "11–18: Errors",
-          "19–25: Fatal errors"
-        ]
+        "items": ["0–10: Informational messages", "11–18: Errors", "19–25: Fatal errors"]
       }
     },
     {

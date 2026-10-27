@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "polly",
-    "hystrix",
-    "resilience4j",
-    "libraries"
-  ],
+  "tags": ["polly", "hystrix", "resilience4j", "libraries"],
   "blocks": [
     {
       "type": "paragraph",
@@ -110,32 +105,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Polly",
-          "Resilience4j"
-        ],
+        "headers": ["Feature", "Polly", "Resilience4j"],
         "rows": [
-          [
-            "Language",
-            ".NET",
-            "Java"
-          ],
-          [
-            "Patterns",
-            "Retry, CB, timeout, bulkhead",
-            "CB, retry, rate limiter, bulkhead"
-          ],
-          [
-            "Composition",
-            "Wrap policies",
-            "Decorate"
-          ],
-          [
-            "Monitoring",
-            "Metrics events",
-            "Micrometer"
-          ]
+          ["Language", ".NET", "Java"],
+          ["Patterns", "Retry, CB, timeout, bulkhead", "CB, retry, rate limiter, bulkhead"],
+          ["Composition", "Wrap policies", "Decorate"],
+          ["Monitoring", "Metrics events", "Micrometer"]
         ]
       }
     },

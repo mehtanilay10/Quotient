@@ -12,19 +12,23 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is OpenAPI Generator?"}
+      "data": { "level": 2, "text": "What is OpenAPI Generator?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`OpenAPI Generator` is a tool (available as a CLI, Maven plugin, and Docker image) that generates API clients, server stubs, and documentation from OpenAPI/Swagger definitions. It supports over 50 languages and frameworks."}
+      "data": {
+        "text": "`OpenAPI Generator` is a tool (available as a CLI, Maven plugin, and Docker image) that generates API clients, server stubs, and documentation from OpenAPI/Swagger definitions. It supports over 50 languages and frameworks."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "OpenAPI Generator is commonly used via Docker or npm. For .NET, the Docker image is the most convenient option."}
+      "data": {
+        "text": "OpenAPI Generator is commonly used via Docker or npm. For .NET, the Docker image is the most convenient option."
+      }
     },
     {
       "type": "example",
@@ -36,11 +40,11 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Sample OpenAPI Spec"}
+      "data": { "level": 2, "text": "Sample OpenAPI Spec" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "A minimal OpenAPI 3.0 YAML definition that describes a simple API."}
+      "data": { "text": "A minimal OpenAPI 3.0 YAML definition that describes a simple API." }
     },
     {
       "type": "example",

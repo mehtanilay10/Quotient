@@ -131,9 +131,16 @@
       }
     }
   ],
-  "relatedLessons": ["streaming-and-suspense", "error-handling-in-data-fetching", "optimistic-updates"],
+  "relatedLessons": [
+    "streaming-and-suspense",
+    "error-handling-in-data-fetching",
+    "optimistic-updates"
+  ],
   "furtherReading": [
-    { "title": "Next.js Loading UI Documentation", "url": "https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming" },
+    {
+      "title": "Next.js Loading UI Documentation",
+      "url": "https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming"
+    },
     { "title": "React Suspense Documentation", "url": "https://react.dev/reference/react/Suspense" }
   ]
 }

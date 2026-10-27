@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "ef-core",
-    "orm",
-    "database",
-    "entity-framework"
-  ],
+  "tags": ["ef-core", "orm", "database", "entity-framework"],
   "blocks": [
     {
       "type": "heading",

@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -44,32 +38,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scope Level",
-          "Granularity",
-          "Common Use"
-        ],
+        "headers": ["Scope Level", "Granularity", "Common Use"],
         "rows": [
-          [
-            "Management group",
-            "Broad",
-            "Enterprise-wide policies"
-          ],
-          [
-            "Subscription",
-            "Medium",
-            "Environments (dev, test, prod)"
-          ],
-          [
-            "Resource group",
-            "Narrow",
-            "Application deployments"
-          ],
-          [
-            "Resource",
-            "Very narrow",
-            "Specific service access"
-          ]
+          ["Management group", "Broad", "Enterprise-wide policies"],
+          ["Subscription", "Medium", "Environments (dev, test, prod)"],
+          ["Resource group", "Narrow", "Application deployments"],
+          ["Resource", "Very narrow", "Specific service access"]
         ]
       }
     },

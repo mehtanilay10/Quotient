@@ -8,12 +8,7 @@
   "order": 17,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "monolith",
-    "microservices",
-    "modularity",
-    "csharp"
-  ],
+  "tags": ["monolith", "microservices", "modularity", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -204,10 +199,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "when-not-to-use-microservices",
-    "cost-as-an-architecture-constraint"
-  ],
+  "relatedLessons": ["when-not-to-use-microservices", "cost-as-an-architecture-constraint"],
   "furtherReading": [
     {
       "title": "Monolith First",

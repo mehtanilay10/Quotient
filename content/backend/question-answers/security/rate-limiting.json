@@ -6,10 +6,7 @@
   "description": "Built-in RateLimiter middleware, window strategies, partitioning, and what to return to clients.",
   "order": 8,
   "difficulty": "intermediate",
-  "tags": [
-    "security",
-    "intermediate"
-  ],
+  "tags": ["security", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,11 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "cors-configuration",
-    "secrets-management",
-    "authentication-vs-authorization"
-  ],
+  "relatedLessons": ["cors-configuration", "secrets-management", "authentication-vs-authorization"],
   "furtherReading": [
     {
       "title": "Rate limiter middleware in ASP.NET Core",

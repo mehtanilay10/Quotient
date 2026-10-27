@@ -109,7 +109,10 @@
       }
     }
   ],
-  "relatedLessons": ["iasyncdisposable-and-async-resource-cleanup", "spant-memoryt-and-ref-structs"],
+  "relatedLessons": [
+    "iasyncdisposable-and-async-resource-cleanup",
+    "spant-memoryt-and-ref-structs"
+  ],
   "furtherReading": [
     {
       "type": "article",

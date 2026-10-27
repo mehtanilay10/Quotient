@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "migrations",
-    "shadow-database",
-    "schema-evolution",
-    "devops"
-  ],
+  "tags": ["prisma", "migrations", "shadow-database", "schema-evolution", "devops"],
   "blocks": [
     {
       "type": "paragraph",
@@ -66,17 +60,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Column",
-          "Type",
-          "Description"
-        ],
+        "headers": ["Column", "Type", "Description"],
         "rows": [
-          [
-            "`id`",
-            "`VARCHAR(36)`",
-            "Unique UUID identifying the migration record"
-          ],
+          ["`id`", "`VARCHAR(36)`", "Unique UUID identifying the migration record"],
           [
             "`checksum`",
             "`VARCHAR(64)`",
@@ -92,11 +78,7 @@
             "`VARCHAR(255)`",
             "Folder name of the migration (e.g. `20240101120000_init`)"
           ],
-          [
-            "`applied_steps_count`",
-            "`INTEGER`",
-            "Count of SQL statements executed"
-          ]
+          ["`applied_steps_count`", "`INTEGER`", "Count of SQL statements executed"]
         ]
       }
     },
@@ -120,8 +102,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-migrate-dev",
-    "prisma-migrate-deploy"
-  ]
+  "relatedLessons": ["prisma-migrate-dev", "prisma-migrate-deploy"]
 }

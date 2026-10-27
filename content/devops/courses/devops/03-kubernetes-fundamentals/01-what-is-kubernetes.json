@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "kubernetes",
-    "orchestration",
-    "introduction"
-  ],
+  "tags": ["kubernetes", "orchestration", "introduction"],
   "blocks": [
     {
       "type": "heading",
@@ -126,30 +122,22 @@
           {
             "title": "Self-healing",
             "description": "If a container crashes, Kubernetes restarts it. If a node dies, pods are rescheduled.",
-            "tags": [
-              "Automatic recovery"
-            ]
+            "tags": ["Automatic recovery"]
           },
           {
             "title": "Auto-scaling",
             "description": "Scale applications based on CPU usage or custom metrics.",
-            "tags": [
-              "Horizontal + vertical"
-            ]
+            "tags": ["Horizontal + vertical"]
           },
           {
             "title": "Load balancing",
             "description": "Distributes network traffic across pods for stability.",
-            "tags": [
-              "High availability"
-            ]
+            "tags": ["High availability"]
           },
           {
             "title": "Rolling updates",
             "description": "Deploy new versions with zero downtime using rolling updates and rollbacks.",
-            "tags": [
-              "Zero-downtime deploys"
-            ]
+            "tags": ["Zero-downtime deploys"]
           }
         ]
       }
@@ -164,39 +152,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "What it represents"
-        ],
+        "headers": ["Resource", "What it represents"],
         "rows": [
-          [
-            "Pod",
-            "One or more containers sharing storage and networking"
-          ],
-          [
-            "Deployment",
-            "Declares the desired state for a set of pods; manages rolling updates"
-          ],
-          [
-            "Service",
-            "A stable network endpoint that forwards traffic to pods"
-          ],
-          [
-            "ConfigMap",
-            "Non-secret configuration data"
-          ],
-          [
-            "Secret",
-            "Sensitive data (passwords, tokens)"
-          ],
-          [
-            "Ingress",
-            "Routes external HTTP/HTTPS traffic to services"
-          ],
-          [
-            "Namespace",
-            "Virtual cluster within a physical cluster"
-          ]
+          ["Pod", "One or more containers sharing storage and networking"],
+          ["Deployment", "Declares the desired state for a set of pods; manages rolling updates"],
+          ["Service", "A stable network endpoint that forwards traffic to pods"],
+          ["ConfigMap", "Non-secret configuration data"],
+          ["Secret", "Sensitive data (passwords, tokens)"],
+          ["Ingress", "Routes external HTTP/HTTPS traffic to services"],
+          ["Namespace", "Virtual cluster within a physical cluster"]
         ]
       }
     },

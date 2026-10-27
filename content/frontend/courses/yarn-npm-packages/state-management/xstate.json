@@ -6,13 +6,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "xstate",
-    "state",
-    "statechart",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["xstate", "state", "statechart", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -86,27 +80,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Situation",
-          "State machine?"
-        ],
+        "headers": ["Situation", "State machine?"],
         "rows": [
-          [
-            "A boolean toggle or modal",
-            "Not worth it — useState suffices"
-          ],
-          [
-            "Multi-step form with validation",
-            "Good fit"
-          ],
-          [
-            "Async request with retry and cancel",
-            "Good fit"
-          ],
-          [
-            "Global list of todos",
-            "Plain store is simpler"
-          ]
+          ["A boolean toggle or modal", "Not worth it — useState suffices"],
+          ["Multi-step form with validation", "Good fit"],
+          ["Async request with retry and cancel", "Good fit"],
+          ["Global list of todos", "Plain store is simpler"]
         ]
       }
     },

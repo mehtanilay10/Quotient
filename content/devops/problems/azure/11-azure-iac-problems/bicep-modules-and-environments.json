@@ -95,27 +95,15 @@
           {
             "title": "Monolithic template with conditions",
             "description": "One file, `if (isProd)` everywhere",
-            "pros": [
-              "Nothing to compose"
-            ],
-            "cons": [
-              "Unreadable and untestable",
-              "High blast radius",
-              "Reuse means copy-paste"
-            ],
+            "pros": ["Nothing to compose"],
+            "cons": ["Unreadable and untestable", "High blast radius", "Reuse means copy-paste"],
             "tags": ["Very small deployments"]
           },
           {
             "title": "Azure Verified Modules",
             "description": "Microsoft-maintained module library",
-            "pros": [
-              "Follows well-architected defaults",
-              "Regularly updated"
-            ],
-            "cons": [
-              "Large surface area",
-              "Version pinning discipline required"
-            ],
+            "pros": ["Follows well-architected defaults", "Regularly updated"],
+            "cons": ["Large surface area", "Version pinning discipline required"],
             "tags": ["Common resources at scale"]
           }
         ]

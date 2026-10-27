@@ -8,12 +8,7 @@
   "order": 16,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "async",
-    "performance",
-    "workflows",
-    "csharp"
-  ],
+  "tags": ["async", "performance", "workflows", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -189,10 +184,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ef-core-vs-dapper-vs-raw-sql",
-    "rest-vs-grpc-decision-framework"
-  ],
+  "relatedLessons": ["ef-core-vs-dapper-vs-raw-sql", "rest-vs-grpc-decision-framework"],
   "furtherReading": [
     {
       "title": "Async/Await in C#",

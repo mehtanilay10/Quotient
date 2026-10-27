@@ -46,52 +46,16 @@
     },
     {
       "type": "table",
-      "headers": [
-        "Characteristic",
-        "OLTP (Operational)",
-        "OLAP (Analytical)"
-      ],
+      "headers": ["Characteristic", "OLTP (Operational)", "OLAP (Analytical)"],
       "rows": [
-        [
-          "Primary Goal",
-          "Support daily transactions",
-          "Support decision making"
-        ],
-        [
-          "Data Source",
-          "Application databases",
-          "Integrated from multiple sources"
-        ],
-        [
-          "Normalization",
-          "Highly normalized (3NF/BCNF)",
-          "Denormalized (dimensional)"
-        ],
-        [
-          "Query Pattern",
-          "Fast, simple, row-by-row",
-          "Complex, aggregations, historical"
-        ],
-        [
-          "Data Volume",
-          "Current state",
-          "Historical, years of data"
-        ],
-        [
-          "Write vs Read",
-          "Write-heavy",
-          "Read-heavy (batch loads)"
-        ],
-        [
-          "Update Frequency",
-          "Continuous",
-          "Periodic (daily, weekly)"
-        ],
-        [
-          "Example",
-          "AdventureWorks sales orders",
-          "Data warehouse sales fact"
-        ]
+        ["Primary Goal", "Support daily transactions", "Support decision making"],
+        ["Data Source", "Application databases", "Integrated from multiple sources"],
+        ["Normalization", "Highly normalized (3NF/BCNF)", "Denormalized (dimensional)"],
+        ["Query Pattern", "Fast, simple, row-by-row", "Complex, aggregations, historical"],
+        ["Data Volume", "Current state", "Historical, years of data"],
+        ["Write vs Read", "Write-heavy", "Read-heavy (batch loads)"],
+        ["Update Frequency", "Continuous", "Periodic (daily, weekly)"],
+        ["Example", "AdventureWorks sales orders", "Data warehouse sales fact"]
       ]
     },
     {
@@ -140,12 +104,7 @@
     },
     {
       "type": "table",
-      "headers": [
-        "Type",
-        "Description",
-        "Example",
-        "Grain"
-      ],
+      "headers": ["Type", "Description", "Example", "Grain"],
       "rows": [
         [
           "Transaction",

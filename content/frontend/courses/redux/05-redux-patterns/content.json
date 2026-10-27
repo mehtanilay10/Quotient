@@ -9,12 +9,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedHours": 2.5,
-  "lessonSlugs": [
-    "normalizing-state",
-    "entity-adapter",
-    "rtk-query",
-    "derived-data"
-  ],
+  "lessonSlugs": ["normalizing-state", "entity-adapter", "rtk-query", "derived-data"],
   "tags": ["redux", "patterns", "scalability", "performance"],
   "prerequisites": ["redux-fundamentals", "redux-toolkit"],
   "whatYouLearn": [

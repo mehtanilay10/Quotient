@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "cdn",
-    "edge",
-    "latency",
-    "performance"
-  ],
+  "tags": ["cdn", "edge", "latency", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,11 +67,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Use Case",
-          "Trade-off"
-        ],
+        "headers": ["Strategy", "Use Case", "Trade-off"],
         "rows": [
           [
             "Static asset caching",

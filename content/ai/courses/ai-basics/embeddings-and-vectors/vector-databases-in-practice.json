@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "vector-database",
-    "rag",
-    "semantic-search",
-    "retrieval",
-    "embeddings"
-  ],
+  "tags": ["vector-database", "rag", "semantic-search", "retrieval", "embeddings"],
   "blocks": [
     {
       "type": "paragraph",
@@ -45,42 +39,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Traditional DB",
-          "Vector DB"
-        ],
+        "headers": ["Feature", "Traditional DB", "Vector DB"],
         "rows": [
-          [
-            "Query type",
-            "Exact / range match",
-            "Semantic similarity"
-          ],
-          [
-            "Data stored",
-            "Structured rows",
-            "Vectors + metadata + text"
-          ],
-          [
-            "Search speed at scale",
-            "Fast for indexed columns",
-            "Fast via ANN indexes (HNSW, IVF)"
-          ],
-          [
-            "Handles synonyms / paraphrases",
-            "No",
-            "Yes"
-          ],
-          [
-            "Filter support",
-            "Full SQL",
-            "Metadata pre/post-filters"
-          ],
-          [
-            "Example systems",
-            "PostgreSQL, MySQL",
-            "Pinecone, Weaviate, Qdrant, pgvector"
-          ]
+          ["Query type", "Exact / range match", "Semantic similarity"],
+          ["Data stored", "Structured rows", "Vectors + metadata + text"],
+          ["Search speed at scale", "Fast for indexed columns", "Fast via ANN indexes (HNSW, IVF)"],
+          ["Handles synonyms / paraphrases", "No", "Yes"],
+          ["Filter support", "Full SQL", "Metadata pre/post-filters"],
+          ["Example systems", "PostgreSQL, MySQL", "Pinecone, Weaviate, Qdrant, pgvector"]
         ]
       }
     },
@@ -139,37 +105,21 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Design choice",
-          "Common mistake",
-          "Recommended baseline"
-        ],
+        "headers": ["Design choice", "Common mistake", "Recommended baseline"],
         "rows": [
-          [
-            "Chunk size",
-            "Too large; loses precision",
-            "300-800 tokens, with overlap"
-          ],
+          ["Chunk size", "Too large; loses precision", "300-800 tokens, with overlap"],
           [
             "Metadata",
             "No filters for source type/date",
             "Store title, section, date, owner, sensitivity"
           ],
-          [
-            "Top-k retrieval",
-            "Using fixed k everywhere",
-            "Start with k=5 and tune by task"
-          ],
+          ["Top-k retrieval", "Using fixed k everywhere", "Start with k=5 and tune by task"],
           [
             "Re-ranking",
             "Skipping relevance refinement",
             "Use lightweight re-ranker for quality-critical tasks"
           ],
-          [
-            "Evaluation",
-            "No benchmark queries",
-            "Maintain query set with expected evidence chunks"
-          ]
+          ["Evaluation", "No benchmark queries", "Maintain query set with expected evidence chunks"]
         ]
       }
     },
@@ -246,27 +196,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "What it measures",
-          "Best for"
-        ],
+        "headers": ["Metric", "What it measures", "Best for"],
         "rows": [
           [
             "Cosine similarity",
             "Angle between vectors (direction)",
             "Text embeddings — most common choice"
           ],
-          [
-            "Dot product",
-            "Magnitude × alignment",
-            "Normalized vectors; fastest computation"
-          ],
-          [
-            "Euclidean (L2)",
-            "Straight-line distance",
-            "Image embeddings, dense retrieval models"
-          ]
+          ["Dot product", "Magnitude × alignment", "Normalized vectors; fastest computation"],
+          ["Euclidean (L2)", "Straight-line distance", "Image embeddings, dense retrieval models"]
         ]
       }
     },
@@ -311,11 +249,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "What it tells you",
-          "How to compute it"
-        ],
+        "headers": ["Metric", "What it tells you", "How to compute it"],
         "rows": [
           [
             "Recall@k",
@@ -372,37 +306,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Database",
-          "Hosting",
-          "Best for",
-          "Hybrid search"
-        ],
+        "headers": ["Database", "Hosting", "Best for", "Hybrid search"],
         "rows": [
-          [
-            "Pinecone",
-            "Managed cloud",
-            "Production at scale, minimal ops",
-            "Yes (sparse + dense)"
-          ],
-          [
-            "Weaviate",
-            "Self-hosted / managed",
-            "Rich filtering, multi-modal",
-            "Yes"
-          ],
-          [
-            "Qdrant",
-            "Self-hosted / managed",
-            "High-performance filtering, Rust-based",
-            "Yes"
-          ],
-          [
-            "Chroma",
-            "Local / self-hosted",
-            "Prototyping, local dev, LangChain",
-            "Limited"
-          ],
+          ["Pinecone", "Managed cloud", "Production at scale, minimal ops", "Yes (sparse + dense)"],
+          ["Weaviate", "Self-hosted / managed", "Rich filtering, multi-modal", "Yes"],
+          ["Qdrant", "Self-hosted / managed", "High-performance filtering, Rust-based", "Yes"],
+          ["Chroma", "Local / self-hosted", "Prototyping, local dev, LangChain", "Limited"],
           [
             "pgvector",
             "Self-hosted (Postgres)",
@@ -486,10 +395,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "embeddings-simply",
-    "rag-explained"
-  ],
+  "relatedLessons": ["embeddings-simply", "rag-explained"],
   "furtherReading": [
     {
       "title": "Building and Evaluating Advanced RAG",

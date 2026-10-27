@@ -7,17 +7,8 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "writing",
-    "drafting",
-    "brainstorming",
-    "content",
-    "voice"
-  ],
-  "relatedGlossaryTerms": [
-    "prompt",
-    "temperature"
-  ],
+  "tags": ["writing", "drafting", "brainstorming", "content", "voice"],
+  "relatedGlossaryTerms": ["prompt", "temperature"],
   "blocks": [
     {
       "type": "paragraph",
@@ -45,22 +36,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Writing stage",
-          "AI value",
-          "Best prompt approach"
-        ],
+        "headers": ["Writing stage", "AI value", "Best prompt approach"],
         "rows": [
-          [
-            "Beating blank page",
-            "Very high",
-            "\"Give me 10 angles on [topic] for [audience]\""
-          ],
-          [
-            "Outlining",
-            "High",
-            "\"Create a 5-section outline for a [type] article on [topic]\""
-          ],
+          ["Beating blank page", "Very high", "\"Give me 10 angles on [topic] for [audience]\""],
+          ["Outlining", "High", "\"Create a 5-section outline for a [type] article on [topic]\""],
           [
             "Expanding notes to prose",
             "Very high",
@@ -76,11 +55,7 @@
             "High",
             "\"Rewrite this more clearly, keeping all key points: [text]\""
           ],
-          [
-            "Final proofread",
-            "High",
-            "\"Check for grammar, awkward phrasing, and redundancy\""
-          ],
+          ["Final proofread", "High", "\"Check for grammar, awkward phrasing, and redundancy\""],
           [
             "Finding the right phrasing",
             "Medium",
@@ -107,10 +82,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Technique",
-          "How to do it"
-        ],
+        "headers": ["Technique", "How to do it"],
         "rows": [
           [
             "Show a sample of your writing",
@@ -225,11 +197,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Editing pass",
-          "AI role",
-          "Human role"
-        ],
+        "headers": ["Editing pass", "AI role", "Human role"],
         "rows": [
           [
             "Structure pass",
@@ -241,19 +209,12 @@
             "Rewrite dense sentences and reduce ambiguity",
             "Preserve meaning and evidence"
           ],
-          [
-            "Voice pass",
-            "Adapt tone to audience",
-            "Ensure authenticity and style consistency"
-          ]
+          ["Voice pass", "Adapt tone to audience", "Ensure authenticity and style consistency"]
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "editing-with-ai",
-    "prompt-patterns"
-  ],
+  "relatedLessons": ["editing-with-ai", "prompt-patterns"],
   "furtherReading": [
     {
       "title": "Intro to Claude",

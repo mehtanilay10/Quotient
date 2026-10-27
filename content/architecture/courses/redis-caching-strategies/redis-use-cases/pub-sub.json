@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "redis",
-    "pub-sub",
-    "messaging",
-    "events",
-    "notifications"
-  ],
+  "tags": ["redis", "pub-sub", "messaging", "events", "notifications"],
   "blocks": [
     {
       "type": "paragraph",

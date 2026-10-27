@@ -7,17 +7,8 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "tokens",
-    "context",
-    "cost",
-    "limits"
-  ],
-  "relatedGlossaryTerms": [
-    "token",
-    "context-window",
-    "large-language-model"
-  ],
+  "tags": ["tokens", "context", "cost", "limits"],
+  "relatedGlossaryTerms": ["token", "context-window", "large-language-model"],
   "blocks": [
     {
       "type": "paragraph",
@@ -51,35 +42,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Text",
-          "Approx. tokens"
-        ],
+        "headers": ["Text", "Approx. tokens"],
         "rows": [
-          [
-            "1,000 tokens",
-            "≈ 750 words"
-          ],
-          [
-            "1 page of text",
-            "≈ 500–700 tokens"
-          ],
-          [
-            "A short story (5,000 words)",
-            "≈ 6,500 tokens"
-          ],
-          [
-            "An average PDF (20 pages)",
-            "≈ 10,000–15,000 tokens"
-          ],
-          [
-            "A typical chat message",
-            "≈ 50–200 tokens"
-          ],
-          [
-            "A full book (80,000 words)",
-            "≈ 100,000+ tokens"
-          ]
+          ["1,000 tokens", "≈ 750 words"],
+          ["1 page of text", "≈ 500–700 tokens"],
+          ["A short story (5,000 words)", "≈ 6,500 tokens"],
+          ["An average PDF (20 pages)", "≈ 10,000–15,000 tokens"],
+          ["A typical chat message", "≈ 50–200 tokens"],
+          ["A full book (80,000 words)", "≈ 100,000+ tokens"]
         ]
       }
     },
@@ -101,22 +71,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Token type",
-          "Includes",
-          "Relative cost"
-        ],
+        "headers": ["Token type", "Includes", "Relative cost"],
         "rows": [
           [
             "Input tokens",
             "Your prompt + conversation history + uploaded files + system prompt",
             "Lower (e.g. $3/M)"
           ],
-          [
-            "Output tokens",
-            "The AI's response text",
-            "Higher (e.g. $15/M)"
-          ]
+          ["Output tokens", "The AI's response text", "Higher (e.g. $15/M)"]
         ]
       }
     },
@@ -160,37 +122,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model",
-          "Context window",
-          "Approx. words",
-          "What you can fit"
-        ],
+        "headers": ["Model", "Context window", "Approx. words", "What you can fit"],
         "rows": [
-          [
-            "GPT-6 family (OpenAI)",
-            "1,050,000 tokens",
-            "~787,000 words",
-            "~1,050 pages of text"
-          ],
-          [
-            "Claude 5.5 family (Anthropic)",
-            "1,000,000 tokens",
-            "~750,000 words",
-            "~1,000 pages"
-          ],
-          [
-            "Gemini 4 Argon (Google)",
-            "1,000,000 tokens",
-            "~750,000 words",
-            "~1,000 pages"
-          ],
-          [
-            "Smaller/local models",
-            "32,000–128,000 tokens",
-            "24,000–96,000 words",
-            "24–96 pages"
-          ]
+          ["GPT-6 family (OpenAI)", "1,050,000 tokens", "~787,000 words", "~1,050 pages of text"],
+          ["Claude 5.5 family (Anthropic)", "1,000,000 tokens", "~750,000 words", "~1,000 pages"],
+          ["Gemini 4 Argon (Google)", "1,000,000 tokens", "~750,000 words", "~1,000 pages"],
+          ["Smaller/local models", "32,000–128,000 tokens", "24,000–96,000 words", "24–96 pages"]
         ]
       }
     },
@@ -225,35 +162,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Optimization move",
-          "Token effect",
-          "Practical result"
-        ],
+        "headers": ["Optimization move", "Token effect", "Practical result"],
         "rows": [
-          [
-            "Compress repeated instructions",
-            "Lower prompt tokens",
-            "Lower cost per run"
-          ],
-          [
-            "Use structured sections",
-            "Improves model parsing",
-            "Higher consistency"
-          ],
-          [
-            "Trim irrelevant history",
-            "Avoids context bloat",
-            "Less truncation risk"
-          ]
+          ["Compress repeated instructions", "Lower prompt tokens", "Lower cost per run"],
+          ["Use structured sections", "Improves model parsing", "Higher consistency"],
+          ["Trim irrelevant history", "Avoids context bloat", "Less truncation risk"]
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "context-window-deep-dive",
-    "how-llms-work-simply"
-  ],
+  "relatedLessons": ["context-window-deep-dive", "how-llms-work-simply"],
   "furtherReading": [
     {
       "title": "OpenAI Tokenizer",

@@ -7,10 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "database-testing",
-    "dotnet"
-  ],
+  "tags": ["database-testing", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -39,10 +36,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "test-server",
-    "api-testing"
-  ],
+  "relatedLessons": ["test-server", "api-testing"],
   "furtherReading": [],
   "courseSlug": "unit-testing-dotnet"
 }

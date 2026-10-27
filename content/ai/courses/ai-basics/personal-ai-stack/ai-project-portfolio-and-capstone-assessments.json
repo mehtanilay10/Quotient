@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "capstone",
-    "portfolio",
-    "assessment",
-    "ai-maturity",
-    "projects"
-  ],
+  "tags": ["capstone", "portfolio", "assessment", "ai-maturity", "projects"],
   "blocks": [
     {
       "type": "paragraph",
@@ -62,11 +56,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Portfolio artifact",
-          "What to include",
-          "What it proves"
-        ],
+        "headers": ["Portfolio artifact", "What to include", "What it proves"],
         "rows": [
           [
             "Workflow case study",
@@ -131,11 +121,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Role",
-          "High-value workflow idea",
-          "Impact to measure"
-        ],
+        "headers": ["Role", "High-value workflow idea", "Impact to measure"],
         "rows": [
           [
             "Operations / PM",
@@ -282,11 +268,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Level",
-          "Description",
-          "Portfolio signal"
-        ],
+        "headers": ["Level", "Description", "Portfolio signal"],
         "rows": [
           [
             "Level 1 — Aware",
@@ -357,11 +339,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Mistake",
-          "Why it weakens the portfolio",
-          "What to do instead"
-        ],
+        "headers": ["Mistake", "Why it weakens the portfolio", "What to do instead"],
         "rows": [
           [
             "Including only perfect outputs",
@@ -449,11 +427,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "building-your-ai-stack",
-    "ai-roadmap-by-role",
-    "staying-current-in-ai"
-  ],
+  "relatedLessons": ["building-your-ai-stack", "ai-roadmap-by-role", "staying-current-in-ai"],
   "furtherReading": [
     {
       "title": "DeepLearning.AI Short Courses",

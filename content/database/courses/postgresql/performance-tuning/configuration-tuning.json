@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "postgresql-conf",
-    "shared-buffers",
-    "work-mem",
-    "tuning",
-    "dba"
-  ],
+  "tags": ["postgresql-conf", "shared-buffers", "work-mem", "tuning", "dba"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,11 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Parameter",
-          "Recommended Value",
-          "Description"
-        ],
+        "headers": ["Parameter", "Recommended Value", "Description"],
         "rows": [
           [
             "`shared_buffers`",
@@ -116,8 +106,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "query-planning",
-    "monitoring"
-  ]
+  "relatedLessons": ["query-planning", "monitoring"]
 }

@@ -8,13 +8,7 @@
   "order": 14,
   "difficulty": "intermediate",
   "estimatedMinutes": 24,
-  "tags": [
-    "data-factory",
-    "etl",
-    "pipeline",
-    "copy-activity",
-    "integration-runtime"
-  ],
+  "tags": ["data-factory", "etl", "pipeline", "copy-activity", "integration-runtime"],
   "blocks": [
     {
       "type": "heading",
@@ -107,8 +101,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "storage-private-endpoints",
-    "blob-storage-basics"
-  ]
+  "relatedLessons": ["storage-private-endpoints", "blob-storage-basics"]
 }

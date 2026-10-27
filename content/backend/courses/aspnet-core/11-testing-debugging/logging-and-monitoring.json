@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "logging",
-    "monitoring",
-    "diagnostics"
-  ],
+  "tags": ["logging", "monitoring", "diagnostics"],
   "blocks": [
     {
       "type": "paragraph",
@@ -217,10 +213,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "debugging-techniques",
-    "monitoring-and-alerting"
-  ],
+  "relatedLessons": ["debugging-techniques", "monitoring-and-alerting"],
   "technology": null,
   "furtherReading": [
     {

@@ -10,10 +10,7 @@
   "estimatedHours": 0.5,
   "icon": "💾",
   "tags": ["ef-core", "crud", "connected"],
-  "lessonSlugs": [
-    "entity-framework-core-saving-data-connected",
-    "data-operations-connected"
-  ],
+  "lessonSlugs": ["entity-framework-core-saving-data-connected", "data-operations-connected"],
   "whatYouLearn": [
     "Perform insert operations using DbSet.Add",
     "Update entities with automatic change tracking",

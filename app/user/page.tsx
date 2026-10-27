@@ -1,4 +1,4 @@
-import { redirect } from 'next/navigation';
+import { redirect } from "next/navigation";
 
 /**
  * `/user` is the account area root; the section pages live one level down
@@ -6,5 +6,5 @@ import { redirect } from 'next/navigation';
  * sidebar's first entry is always where they start.
  */
 export default function UserIndexPage() {
-  redirect('/user/profile');
+  redirect("/user/profile");
 }

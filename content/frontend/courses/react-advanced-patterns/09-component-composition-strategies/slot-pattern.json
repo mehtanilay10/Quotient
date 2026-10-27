@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "slots",
-    "composition",
-    "content-injection",
-    "flexible-ui",
-    "render-props"
-  ],
+  "tags": ["slots", "composition", "content-injection", "flexible-ui", "render-props"],
   "blocks": [
     {
       "type": "heading",
@@ -131,37 +125,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use Case",
-          "Slot Type",
-          "Benefit"
-        ],
+        "headers": ["Use Case", "Slot Type", "Benefit"],
         "rows": [
-          [
-            "Page layout with header/body/footer",
-            "Named props",
-            "Explicit API, easy to type"
-          ],
-          [
-            "Dashboard with dynamic regions",
-            "Composition object",
-            "Scales to many slots"
-          ],
-          [
-            "Data-driven list rendering",
-            "Render props",
-            "Slots access internal state"
-          ],
-          [
-            "Simple content wrapping",
-            "props.children",
-            "Idiomatic, no extra props"
-          ],
-          [
-            "Tabbed interfaces",
-            "Render props + state",
-            "Slots share active state"
-          ]
+          ["Page layout with header/body/footer", "Named props", "Explicit API, easy to type"],
+          ["Dashboard with dynamic regions", "Composition object", "Scales to many slots"],
+          ["Data-driven list rendering", "Render props", "Slots access internal state"],
+          ["Simple content wrapping", "props.children", "Idiomatic, no extra props"],
+          ["Tabbed interfaces", "Render props + state", "Slots share active state"]
         ]
       }
     },
@@ -203,67 +173,30 @@
           {
             "title": "props.children",
             "description": "Use a single default slot for the main content area.",
-            "pros": [
-              "Simple and idiomatic",
-              "No extra props needed"
-            ],
-            "cons": [
-              "Only one unnamed region",
-              "Cannot target specific areas"
-            ],
-            "tags": [
-              "default",
-              "simple"
-            ]
+            "pros": ["Simple and idiomatic", "No extra props needed"],
+            "cons": ["Only one unnamed region", "Cannot target specific areas"],
+            "tags": ["default", "simple"]
           },
           {
             "title": "Named Props",
             "description": "Declare each slot as a separate optional prop.",
-            "pros": [
-              "Explicit API",
-              "IDE autocomplete",
-              "Type-safe"
-            ],
-            "cons": [
-              "More props to document",
-              "Can feel verbose with many slots"
-            ],
-            "tags": [
-              "explicit",
-              "type-safe"
-            ]
+            "pros": ["Explicit API", "IDE autocomplete", "Type-safe"],
+            "cons": ["More props to document", "Can feel verbose with many slots"],
+            "tags": ["explicit", "type-safe"]
           },
           {
             "title": "Composition Object",
             "description": "Pass a single object mapping slot names to content.",
-            "pros": [
-              "Scales to many slots",
-              "Single prop to document"
-            ],
-            "cons": [
-              "Less IDE guidance",
-              "Slightly more nested JSX"
-            ],
-            "tags": [
-              "scalable",
-              "flexible"
-            ]
+            "pros": ["Scales to many slots", "Single prop to document"],
+            "cons": ["Less IDE guidance", "Slightly more nested JSX"],
+            "tags": ["scalable", "flexible"]
           },
           {
             "title": "Render Props",
             "description": "Pass functions as slots to receive parent data.",
-            "pros": [
-              "Slots get internal state",
-              "Maximum flexibility"
-            ],
-            "cons": [
-              "More complex API",
-              "Can overfit if data shape changes"
-            ],
-            "tags": [
-              "data-driven",
-              "flexible"
-            ]
+            "pros": ["Slots get internal state", "Maximum flexibility"],
+            "cons": ["More complex API", "Can overfit if data shape changes"],
+            "tags": ["data-driven", "flexible"]
           }
         ]
       }
@@ -298,9 +231,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "headless-components"
-  ],
+  "relatedLessons": ["headless-components"],
   "furtherReading": [
     {
       "title": "Thinking in React: Composition",
@@ -324,7 +255,5 @@
       "description": "Compares slot implementations between Vue and React, with practical code examples."
     }
   ],
-  "prerequisites": [
-    "render-props-basics"
-  ]
+  "prerequisites": ["render-props-basics"]
 }

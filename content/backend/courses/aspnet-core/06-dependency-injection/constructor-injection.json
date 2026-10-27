@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "constructor",
-    "injection",
-    "testing"
-  ],
+  "tags": ["constructor", "injection", "testing"],
   "blocks": [
     {
       "type": "heading",
@@ -181,10 +177,7 @@
       "takeaway": "Constructor injection is the foundation of testable, maintainable code. Once you get used to reading classes through their constructors, you will find hidden dependencies and design problems much faster."
     }
   ],
-  "relatedLessons": [
-    "di-basics",
-    "service-lifetimes"
-  ],
+  "relatedLessons": ["di-basics", "service-lifetimes"],
   "technology": null,
   "furtherReading": []
 }

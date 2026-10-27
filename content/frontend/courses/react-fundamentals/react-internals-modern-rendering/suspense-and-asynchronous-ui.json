@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "react",
-    "suspense",
-    "async",
-    "code-splitting"
-  ],
+  "tags": ["react", "suspense", "async", "code-splitting"],
   "blocks": [
     {
       "type": "paragraph",
@@ -128,10 +123,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "concurrent-rendering",
-    "hydration-and-hydration-mismatches"
-  ],
+  "relatedLessons": ["concurrent-rendering", "hydration-and-hydration-mismatches"],
   "furtherReading": [
     {
       "title": "React Docs: Suspense",

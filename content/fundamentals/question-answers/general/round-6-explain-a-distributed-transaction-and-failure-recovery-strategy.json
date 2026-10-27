@@ -8,13 +8,7 @@
   "order": 19,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "distributed-systems",
-    "transactions",
-    "saga",
-    "microservices",
-    "consistency"
-  ],
+  "tags": ["distributed-systems", "transactions", "saga", "microservices", "consistency"],
   "technology": "General",
   "blocks": [
     {
@@ -82,37 +76,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Consistency",
-          "Complexity",
-          "Typical use"
-        ],
+        "headers": ["Pattern", "Consistency", "Complexity", "Typical use"],
         "rows": [
-          [
-            "Two-phase commit",
-            "Strong",
-            "High",
-            "Legacy systems with a single operator"
-          ],
-          [
-            "Saga (choreography)",
-            "Eventual",
-            "Medium",
-            "Independent services with event streams"
-          ],
+          ["Two-phase commit", "Strong", "High", "Legacy systems with a single operator"],
+          ["Saga (choreography)", "Eventual", "Medium", "Independent services with event streams"],
           [
             "Saga (orchestration)",
             "Eventual",
             "Medium-high",
             "Complex workflows needing a central tracker"
           ],
-          [
-            "Idempotent retries",
-            "Eventual",
-            "Low",
-            "Transient failures with safe retry semantics"
-          ]
+          ["Idempotent retries", "Eventual", "Low", "Transient failures with safe retry semantics"]
         ]
       }
     },
@@ -192,10 +166,7 @@
               "Easier to enforce business rules",
               "Simpler compensation logic"
             ],
-            "cons": [
-              "Orchestrator can become a bottleneck",
-              "Tighter coupling to orchestrator API"
-            ]
+            "cons": ["Orchestrator can become a bottleneck", "Tighter coupling to orchestrator API"]
           },
           {
             "title": "Event sourcing",

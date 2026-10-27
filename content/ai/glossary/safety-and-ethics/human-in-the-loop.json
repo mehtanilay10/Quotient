@@ -6,9 +6,5 @@
   "fullDefinition": "Human-in-the-loop (HITL) refers to AI workflows that are designed to include human checkpoints at critical decision points rather than operating fully autonomously. This is a safety design principle: let AI handle high-volume, low-stakes steps autonomously, but require human approval before consequential actions. HITL reduces error risk and maintains accountability in AI-assisted processes.",
   "category": "safety-and-ethics",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "agent",
-    "guardrails",
-    "automation"
-  ]
+  "relatedTerms": ["agent", "guardrails", "automation"]
 }

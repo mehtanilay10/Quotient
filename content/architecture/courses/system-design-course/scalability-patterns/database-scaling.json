@@ -87,8 +87,18 @@
       "data": {
         "headers": ["Strategy", "Basis", "Pros", "Cons"],
         "rows": [
-          ["Horizontal Sharding", "Rows by shard key", "Distributes load", "Cross-shard joins expensive"],
-          ["Vertical Sharding", "Tables by function", "Isolates hot tables", "Does not reduce table size"],
+          [
+            "Horizontal Sharding",
+            "Rows by shard key",
+            "Distributes load",
+            "Cross-shard joins expensive"
+          ],
+          [
+            "Vertical Sharding",
+            "Tables by function",
+            "Isolates hot tables",
+            "Does not reduce table size"
+          ],
           ["Range Sharding", "Key ranges", "Easy range queries", "Uneven distribution risk"],
           ["Hash Sharding", "Hash of key", "Even distribution", "Range queries hard"]
         ]

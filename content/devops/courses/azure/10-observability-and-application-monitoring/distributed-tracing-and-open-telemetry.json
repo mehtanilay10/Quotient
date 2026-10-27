@@ -8,14 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "azure",
-    "azure",
-    "monitoring",
-    "observability",
-    "opentelemetry",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "monitoring", "observability", "opentelemetry", "developer"],
   "blocks": [
     {
       "type": "heading",

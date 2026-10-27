@@ -1,6 +1,14 @@
-import Link from 'next/link';
-import { ArrowRight, BookOpen, Clock, FileQuestion, ListChecks, MessagesSquare, Zap } from 'lucide-react';
-import { CustomCodeBlock } from '@/components/content/CustomCodeBlock';
+import Link from "next/link";
+import {
+  ArrowRight,
+  BookOpen,
+  Clock,
+  FileQuestion,
+  ListChecks,
+  MessagesSquare,
+  Zap,
+} from "lucide-react";
+import { CustomCodeBlock } from "@/components/content/CustomCodeBlock";
 
 interface HeroSectionProps {
   totalLessons: number;
@@ -16,7 +24,8 @@ interface HeroSectionProps {
 }
 
 /** A compact, honest sample of what a lesson looks like — used as hero artwork. */
-const SAMPLE_PROMPT = 'Two Sum · Given an array of integers, return indices of two numbers that add to a target.';
+const SAMPLE_PROMPT =
+  "Two Sum · Given an array of integers, return indices of two numbers that add to a target.";
 const SAMPLE_CODE = `// right-sized hints, not spoon-fed answers
 int[] TwoSum(int[] nums, int target) {
   var seen = new Dictionary<int, int>();
@@ -35,8 +44,8 @@ export function HeroSection({
   totalCheatsheets,
   totalHours,
   totalCourses,
-  startHref = '/',
-  questionsHref = '/backend/question-answers',
+  startHref = "/",
+  questionsHref = "/backend/question-answers",
 }: HeroSectionProps) {
   return (
     <section className="relative overflow-hidden border-b border-border bg-canvas">
@@ -46,11 +55,11 @@ export function HeroSection({
         aria-hidden="true"
         style={{
           backgroundImage:
-            'linear-gradient(var(--color-fg-default) 1px, transparent 1px), linear-gradient(90deg, var(--color-fg-default) 1px, transparent 1px)',
-          backgroundSize: '48px 48px',
-          maskImage: 'radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%)',
+            "linear-gradient(var(--color-fg-default) 1px, transparent 1px), linear-gradient(90deg, var(--color-fg-default) 1px, transparent 1px)",
+          backgroundSize: "48px 48px",
+          maskImage: "radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%)",
           WebkitMaskImage:
-            'radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%)',
+            "radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%)",
         }}
       />
       <div
@@ -62,11 +71,11 @@ export function HeroSection({
         {/* Left: message */}
         <div className="max-w-2xl">
           <h1 className="text-balance text-4xl font-bold leading-[1.05] tracking-tight text-fg-default sm:text-5xl lg:text-6xl">
-            The best developers aren&apos;t those who{' '}
-            <span className="text-fg-subtle line-through decoration-danger-fg/60">know</span>{' '}
+            The best developers aren&apos;t those who{" "}
+            <span className="text-fg-subtle line-through decoration-danger-fg/60">know</span>{" "}
             everything.
             <br />
-            They&apos;re the ones who{' '}
+            They&apos;re the ones who{" "}
             <span className="relative whitespace-nowrap text-accent-fg">
               never stop learning
               <svg
@@ -83,8 +92,8 @@ export function HeroSection({
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-fg-muted">
             Quotient is a structured learning workspace for software engineers &mdash; worked
-            solutions, practical questions, cheat sheets, and diagrams that explain the{' '}
-            <em>why</em>, not just the answer.
+            solutions, practical questions, cheat sheets, and diagrams that explain the <em>why</em>
+            , not just the answer.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -161,16 +170,17 @@ export function HeroSection({
 
         {/* Right: a real slice of the product, framed like an editor */}
         <div className="relative">
-          <div className="absolute -inset-3 rounded-2xl bg-gradient-to-tr from-accent-fg/10 via-transparent to-done-fg/10 blur-xl" aria-hidden="true" />
+          <div
+            className="absolute -inset-3 rounded-2xl bg-gradient-to-tr from-accent-fg/10 via-transparent to-done-fg/10 blur-xl"
+            aria-hidden="true"
+          />
           <div className="relative overflow-hidden rounded-xl border border-border bg-canvas-subtle shadow-xl">
             {/* Window chrome */}
             <div className="flex items-center gap-2 border-b border-border bg-canvas-inset px-4 py-2.5">
               <span className="h-3 w-3 rounded-full bg-danger-fg/70" aria-hidden="true" />
               <span className="h-3 w-3 rounded-full bg-attention-fg/70" aria-hidden="true" />
               <span className="h-3 w-3 rounded-full bg-success-fg/70" aria-hidden="true" />
-              <span className="ml-2 truncate text-xs font-medium text-fg-subtle">
-                two-sum.cs
-              </span>
+              <span className="ml-2 truncate text-xs font-medium text-fg-subtle">two-sum.cs</span>
             </div>
             {/* Question strip */}
             <div className="flex items-start gap-2 border-b border-border bg-attention-subtle/60 px-4 py-2.5 dark:bg-attention-subtle/30">

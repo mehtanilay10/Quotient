@@ -9,10 +9,5 @@
   "estimatedHours": 1,
   "icon": "🧱",
   "tags": ["design-patterns", "csharp", "architecture"],
-  "lessonSlugs": [
-    "adapter-pattern",
-    "decorator-pattern",
-    "facade-pattern",
-    "proxy-pattern"
-  ]
+  "lessonSlugs": ["adapter-pattern", "decorator-pattern", "facade-pattern", "proxy-pattern"]
 }

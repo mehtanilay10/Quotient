@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -50,15 +46,8 @@
           {
             "title": "DP Two-Variable",
             "description": "max(prev + curr, prevPrev)",
-            "pros": [
-              "O(1) space",
-              "O(n) time"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) space", "O(n) time"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

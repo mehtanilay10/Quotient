@@ -78,39 +78,21 @@
               "Event triggers",
               "No infrastructure management"
             ],
-            "cons": [
-              "Cold start latency",
-              "Execution time limits",
-              "Stateless only"
-            ],
+            "cons": ["Cold start latency", "Execution time limits", "Stateless only"],
             "tags": ["Recommended for event-driven"]
           },
           {
             "title": "Azure App Service",
             "description": "Always-on web hosting",
-            "pros": [
-              "No cold starts",
-              "Long-running processes",
-              "Full .NET runtime"
-            ],
-            "cons": [
-              "Always-on pricing",
-              "No event triggers"
-            ],
+            "pros": ["No cold starts", "Long-running processes", "Full .NET runtime"],
+            "cons": ["Always-on pricing", "No event triggers"],
             "tags": ["Web apps", "Long-running"]
           },
           {
             "title": "Azure Container Apps",
             "description": "Serverless containers",
-            "pros": [
-              "Container support",
-              "Serverless scaling",
-              "HTTP and event-driven"
-            ],
-            "cons": [
-              "Container overhead",
-              "Cold starts"
-            ],
+            "pros": ["Container support", "Serverless scaling", "HTTP and event-driven"],
+            "cons": ["Container overhead", "Cold starts"],
             "tags": ["Containers", "Modern"]
           }
         ]

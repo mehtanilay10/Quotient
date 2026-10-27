@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "fetch",
-    "api",
-    "http",
-    "react"
-  ],
+  "tags": ["fetch", "api", "http", "react"],
   "prerequisites": [],
   "relatedLessons": [],
   "furtherReading": [],

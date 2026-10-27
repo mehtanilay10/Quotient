@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "rabbitmq",
-    "direct-exchange",
-    "routing",
-    "routing-key",
-    "messaging"
-  ],
+  "tags": ["rabbitmq", "direct-exchange", "routing", "routing-key", "messaging"],
   "blocks": [
     {
       "type": "paragraph",
@@ -97,37 +91,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Direct Exchange",
-          "Fanout Exchange"
-        ],
+        "headers": ["Aspect", "Direct Exchange", "Fanout Exchange"],
         "rows": [
-          [
-            "Routing Key",
-            "Required for matching",
-            "Ignored entirely"
-          ],
-          [
-            "Message Delivery",
-            "Only to matching queues",
-            "To all bound queues"
-          ],
-          [
-            "Common Use Case",
-            "Log severity, task types",
-            "Event broadcasting, notifications"
-          ],
-          [
-            "Binding Complexity",
-            "Medium (key management)",
-            "Low (no keys to manage)"
-          ],
-          [
-            "Performance",
-            "High (narrow routing)",
-            "Slightly higher (fanout overhead)"
-          ]
+          ["Routing Key", "Required for matching", "Ignored entirely"],
+          ["Message Delivery", "Only to matching queues", "To all bound queues"],
+          ["Common Use Case", "Log severity, task types", "Event broadcasting, notifications"],
+          ["Binding Complexity", "Medium (key management)", "Low (no keys to manage)"],
+          ["Performance", "High (narrow routing)", "Slightly higher (fanout overhead)"]
         ]
       }
     },

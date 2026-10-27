@@ -6,10 +6,7 @@
   "description": "Understand JSON Web Tokens and how they work.",
   "order": 1,
   "difficulty": "intermediate",
-  "tags": [
-    "jwt",
-    "authentication"
-  ],
+  "tags": ["jwt", "authentication"],
   "blocks": [
     {
       "type": "paragraph",

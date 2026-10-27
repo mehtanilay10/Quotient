@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
-import { CheckCircle2 } from 'lucide-react';
-import { BookmarkButton } from '@/components/ui/BookmarkButton';
-import { useProgress } from '@/hooks/useProgress';
-import { registerShortcut, unregisterShortcut } from '@/hooks/useKeyboardShortcuts';
-import { PdfDownloadButton } from '@/components/ui/PdfDownloadButton';
-import { SignInPrompt } from '@/components/auth/SignInPrompt';
-import type { BookmarkItem, ProgressCategory } from '@/types';
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { CheckCircle2 } from "lucide-react";
+import { BookmarkButton } from "@/components/ui/BookmarkButton";
+import { useProgress } from "@/hooks/useProgress";
+import { registerShortcut, unregisterShortcut } from "@/hooks/useKeyboardShortcuts";
+import { PdfDownloadButton } from "@/components/ui/PdfDownloadButton";
+import { SignInPrompt } from "@/components/auth/SignInPrompt";
+import type { BookmarkItem, ProgressCategory } from "@/types";
 
 interface LessonActionsProps {
   lesson: {
@@ -28,12 +28,12 @@ export function LessonActions({
   lesson,
   courseSlug,
   moduleSlug,
-  category = 'lessons',
+  category = "lessons",
   children,
 }: LessonActionsProps) {
   const { toggleComplete, isCompleted, trackVisit, isLoggedOut } = useProgress();
   const [showSignIn, setShowSignIn] = useState(false);
-  const [lastAction, setLastAction] = useState<'complete' | 'incomplete' | null>(null);
+  const [lastAction, setLastAction] = useState<"complete" | "incomplete" | null>(null);
 
   useEffect(() => {
     trackVisit(lesson.slug, category);
@@ -47,23 +47,28 @@ export function LessonActions({
       return;
     }
     toggleComplete(lesson.slug, moduleSlug, category);
-    setLastAction(completed ? 'incomplete' : 'complete');
+    setLastAction(completed ? "incomplete" : "complete");
     setTimeout(() => setLastAction(null), 2000);
   }, [category, completed, isLoggedOut, lesson.slug, moduleSlug, toggleComplete]);
 
   useEffect(() => {
-    registerShortcut('c', 'Mark current lesson complete/incomplete', handleToggleComplete);
-    return () => unregisterShortcut('c');
+    registerShortcut("c", "Mark current lesson complete/incomplete", handleToggleComplete);
+    return () => unregisterShortcut("c");
   }, [handleToggleComplete]);
 
   const categoryLabel = useMemo(() => {
-    if (category === 'questionAnswers') return 'Question';
+    if (category === "questionAnswers") return "Question";
     return category.slice(0, -1);
   }, [category]);
 
-  const bookmarkItem = useMemo<Omit<BookmarkItem, 'id' | 'addedAt'>>(
+  const bookmarkItem = useMemo<Omit<BookmarkItem, "id" | "addedAt">>(
     () => ({
-      type: category === 'questionAnswers' ? 'questionAnswer' : category === 'problems' ? 'problem' : 'lesson',
+      type:
+        category === "questionAnswers"
+          ? "questionAnswer"
+          : category === "problems"
+            ? "problem"
+            : "lesson",
       slug: lesson.slug,
       title: lesson.title,
       courseSlug,
@@ -82,19 +87,28 @@ export function LessonActions({
         onClick={handleToggleComplete}
         className={`flex items-center gap-1.5 rounded-lg border px-3 py-2 text-xs font-medium transition-all ${
           completed
-            ? 'border-success-emphasis bg-success-subtle text-success-fg shadow-sm'
-            : 'border-border bg-canvas text-fg-muted hover:border-success-emphasis hover:text-success-fg'
+            ? "border-success-emphasis bg-success-subtle text-success-fg shadow-sm"
+            : "border-border bg-canvas text-fg-muted hover:border-success-emphasis hover:text-success-fg"
         }`}
         aria-pressed={completed}
       >
-        <CheckCircle2 className={`h-3.5 w-3.5 ${completed ? 'fill-current' : ''}`} aria-hidden="true" />
-        {completed ? 'Completed' : 'Mark Complete'}
+        <CheckCircle2
+          className={`h-3.5 w-3.5 ${completed ? "fill-current" : ""}`}
+          aria-hidden="true"
+        />
+        {completed ? "Completed" : "Mark Complete"}
       </button>
 
       <BookmarkButton item={bookmarkItem} enableShortcut />
 
       <PdfDownloadButton
-        targetId={category === 'questionAnswers' ? 'question-content' : category === 'problems' ? 'problem-content' : 'lesson-content'}
+        targetId={
+          category === "questionAnswers"
+            ? "question-content"
+            : category === "problems"
+              ? "problem-content"
+              : "lesson-content"
+        }
         filename={`${lesson.slug}.pdf`}
         label="Download PDF"
       />

@@ -8,11 +8,7 @@
   "order": 9,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "product",
-    "qa",
-    "collaboration"
-  ],
+  "tags": ["product", "qa", "collaboration"],
   "blocks": [
     {
       "type": "paragraph",
@@ -103,10 +99,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "influencing-without-authority",
-    "writing-technical-proposals"
-  ],
+  "relatedLessons": ["influencing-without-authority", "writing-technical-proposals"],
   "furtherReading": [
     {
       "type": "article",

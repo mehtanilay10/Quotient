@@ -7,12 +7,7 @@
   "order": 8,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "cross-apply",
-    "table-valued-function",
-    "correlated-subquery",
-    "inner-join"
-  ],
+  "tags": ["cross-apply", "table-valued-function", "correlated-subquery", "inner-join"],
   "blocks": [
     {
       "type": "heading",

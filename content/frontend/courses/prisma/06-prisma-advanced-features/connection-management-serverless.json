@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "prisma",
-    "serverless",
-    "vercel",
-    "aws-lambda",
-    "driver-adapters"
-  ],
+  "tags": ["prisma", "serverless", "vercel", "aws-lambda", "driver-adapters"],
   "blocks": [
     {
       "type": "paragraph",
@@ -41,14 +35,8 @@
               "Runs on Cloudflare Workers and Edge runtimes",
               "Avoids binary cold start overhead"
             ],
-            "cons": [
-              "Requires preview feature flag"
-            ],
-            "tags": [
-              "Edge",
-              "Serverless",
-              "Open Source"
-            ]
+            "cons": ["Requires preview feature flag"],
+            "tags": ["Edge", "Serverless", "Open Source"]
           },
           {
             "title": "Prisma Accelerate",
@@ -57,14 +45,8 @@
               "Global connection pooling across all cloud regions",
               "Automatic edge caching with `cacheStrategy: { ttl: 60 }`"
             ],
-            "cons": [
-              "Commercial hosted service"
-            ],
-            "tags": [
-              "Global Cache",
-              "Managed",
-              "Zero Config"
-            ]
+            "cons": ["Commercial hosted service"],
+            "tags": ["Global Cache", "Managed", "Zero Config"]
           },
           {
             "title": "External Pooler (Neon / Supabase / AWS RDS Proxy)",
@@ -73,14 +55,8 @@
               "Keeps architecture within your own cloud VPC",
               "Compatible with standard Prisma Client"
             ],
-            "cons": [
-              "Requires managing `directUrl` vs `url`"
-            ],
-            "tags": [
-              "VPC",
-              "PgBouncer",
-              "Standard"
-            ]
+            "cons": ["Requires managing `directUrl` vs `url`"],
+            "tags": ["VPC", "PgBouncer", "Standard"]
           }
         ]
       }
@@ -113,8 +89,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "connection-pooling-pgbouncer",
-    "setting-up-prisma-client"
-  ]
+  "relatedLessons": ["connection-pooling-pgbouncer", "setting-up-prisma-client"]
 }

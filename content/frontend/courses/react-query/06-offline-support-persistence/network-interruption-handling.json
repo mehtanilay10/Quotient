@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "network",
-    "retry",
-    "backoff",
-    "offline",
-    "error-handling"
-  ],
+  "tags": ["network", "retry", "backoff", "offline", "error-handling"],
   "blocks": [
     {
       "type": "heading",
@@ -53,31 +47,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Option",
-          "Type",
-          "Default",
-          "Purpose"
-        ],
+        "headers": ["Option", "Type", "Default", "Purpose"],
         "rows": [
-          [
-            "retry",
-            "number | function",
-            "3",
-            "Number of retry attempts"
-          ],
+          ["retry", "number | function", "3", "Number of retry attempts"],
           [
             "retryDelay",
             "number | function",
             "Exponential (1s, 2s, 4s)",
             "Delay in ms between retries"
           ],
-          [
-            "retryOnMount",
-            "boolean",
-            "true",
-            "Retry failed queries on component mount"
-          ]
+          ["retryOnMount", "boolean", "true", "Retry failed queries on component mount"]
         ]
       }
     },
@@ -204,7 +183,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "cache-configuration"
-  ]
+  "prerequisites": ["cache-configuration"]
 }

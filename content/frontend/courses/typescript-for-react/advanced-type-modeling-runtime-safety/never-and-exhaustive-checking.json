@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "never",
-    "exhaustive-checking",
-    "discriminated-unions"
-  ],
+  "tags": ["typescript", "never", "exhaustive-checking", "discriminated-unions"],
   "blocks": [
     {
       "type": "paragraph",
@@ -109,10 +104,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "discriminated-unions",
-    "type-predicates"
-  ],
+  "relatedLessons": ["discriminated-unions", "type-predicates"],
   "furtherReading": [
     {
       "title": "TypeScript Handbook: never",

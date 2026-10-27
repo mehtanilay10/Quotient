@@ -92,10 +92,7 @@
           {
             "title": "High Coupling",
             "description": "Services share databases, call deep internal methods, or require synchronous chains.",
-            "pros": [
-              "Faster to implement initially",
-              "Easier data sharing"
-            ],
+            "pros": ["Faster to implement initially", "Easier data sharing"],
             "cons": [
               "Changes cascade across services",
               "Deployments require coordination",
@@ -106,9 +103,7 @@
           {
             "title": "Low Cohesion",
             "description": "A service handles multiple unrelated responsibilities.",
-            "pros": [
-              "Fewer services to manage"
-            ],
+            "pros": ["Fewer services to manage"],
             "cons": [
               "Code becomes a confusing mix of concerns",
               "Teams step on each other's changes",

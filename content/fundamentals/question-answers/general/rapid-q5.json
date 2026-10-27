@@ -7,10 +7,7 @@
   "order": 30,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "interview",
-    "beginner"
-  ],
+  "tags": ["interview", "beginner"],
   "blocks": [
     {
       "type": "paragraph",
@@ -114,10 +111,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rapid-q1",
-    "beginner-q4"
-  ],
+  "relatedLessons": ["rapid-q1", "beginner-q4"],
   "furtherReading": [
     {
       "title": "Managed threading basics",

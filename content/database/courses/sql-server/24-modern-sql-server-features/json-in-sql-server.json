@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "json",
-    "openjson",
-    "json-value",
-    "for-json",
-    "computed-column"
-  ],
+  "tags": ["json", "openjson", "json-value", "for-json", "computed-column"],
   "blocks": [
     {
       "type": "heading",
@@ -116,37 +110,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Function",
-          "Purpose",
-          "Returns"
-        ],
+        "headers": ["Function", "Purpose", "Returns"],
         "rows": [
-          [
-            "ISJSON",
-            "Validates that a string contains JSON",
-            "1 or 0"
-          ],
-          [
-            "JSON_VALUE",
-            "Extracts a scalar value",
-            "nvarchar(4000)"
-          ],
-          [
-            "JSON_QUERY",
-            "Extracts an object or array",
-            "nvarchar(max)"
-          ],
-          [
-            "OPENJSON",
-            "Shreds JSON into a rowset",
-            "Rowset"
-          ],
-          [
-            "FOR JSON",
-            "Formats a query result as JSON",
-            "nvarchar(max)"
-          ]
+          ["ISJSON", "Validates that a string contains JSON", "1 or 0"],
+          ["JSON_VALUE", "Extracts a scalar value", "nvarchar(4000)"],
+          ["JSON_QUERY", "Extracts an object or array", "nvarchar(max)"],
+          ["OPENJSON", "Shreds JSON into a rowset", "Rowset"],
+          ["FOR JSON", "Formats a query result as JSON", "nvarchar(max)"]
         ]
       }
     },
@@ -180,8 +150,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "query-optimization",
-    "statistics-and-cardinality-estimation"
-  ]
+  "relatedLessons": ["query-optimization", "statistics-and-cardinality-estimation"]
 }

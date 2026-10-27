@@ -6,17 +6,10 @@
   "fullDefinition": "An open-weights model (often loosely called 'open-source') is one whose model parameters (weights) are publicly released. This allows anyone to download, run, fine-tune, and redistribute the model. Examples include Meta's Llama, Mistral, Gemma, and Phi. Open-weights models enable local AI, custom deployments, and experimentation without cloud dependency — but typically trail frontier closed models in capability.",
   "category": "models-and-training",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "local-model",
-    "fine-tuning",
-    "large-language-model"
-  ],
+  "relatedTerms": ["local-model", "fine-tuning", "large-language-model"],
   "examples": [
     "Meta Llama 3 — can be downloaded and run locally via Ollama",
     "Mistral 7B — small enough to run on a laptop"
   ],
-  "alsoKnownAs": [
-    "Open Source Model",
-    "Open Model"
-  ]
+  "alsoKnownAs": ["Open Source Model", "Open Model"]
 }

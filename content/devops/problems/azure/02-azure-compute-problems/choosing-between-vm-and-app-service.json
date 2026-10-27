@@ -79,39 +79,21 @@
               "Auto-scaling",
               "Integrated monitoring"
             ],
-            "cons": [
-              "Limited OS control",
-              "Cold start on consumption plan"
-            ],
+            "cons": ["Limited OS control", "Cold start on consumption plan"],
             "tags": ["Recommended for web apps", "PaaS"]
           },
           {
             "title": "Azure VM",
             "description": "Full control IaaS compute",
-            "pros": [
-              "Full OS control",
-              "Custom software",
-              "Legacy app support"
-            ],
-            "cons": [
-              "Manual patching",
-              "No built-in load balancing",
-              "Higher management overhead"
-            ],
+            "pros": ["Full OS control", "Custom software", "Legacy app support"],
+            "cons": ["Manual patching", "No built-in load balancing", "Higher management overhead"],
             "tags": ["Legacy apps", "Custom OS"]
           },
           {
             "title": "Azure Container Apps",
             "description": "Serverless containers",
-            "pros": [
-              "Container-based",
-              "Serverless scaling",
-              "KEDA integration"
-            ],
-            "cons": [
-              "Newer service",
-              "Container knowledge required"
-            ],
+            "pros": ["Container-based", "Serverless scaling", "KEDA integration"],
+            "cons": ["Newer service", "Container knowledge required"],
             "tags": ["Modern apps", "Containers"]
           }
         ]

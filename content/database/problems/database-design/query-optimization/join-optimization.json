@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Join optimization involves choosing the right algorithm, join order, and join type. Nested Loop, Hash Join, and Merge Join each excel under different data distributions and predicate conditions." }
+      "data": {
+        "text": "Join optimization involves choosing the right algorithm, join order, and join type. Nested Loop, Hash Join, and Merge Join each excel under different data distributions and predicate conditions."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,11 @@
       "type": "bullet-list",
       "data": {
         "title": "Common strategies",
-        "items": ["Nested Loop: outer row by outer row", "Hash Join: hash smaller table, probe larger", "Merge Join: both inputs sorted on join keys"]
+        "items": [
+          "Nested Loop: outer row by outer row",
+          "Hash Join: hash smaller table, probe larger",
+          "Merge Join: both inputs sorted on join keys"
+        ]
       }
     },
     {
@@ -51,16 +57,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "tip", "title": "Tip", "text": "Filter early with WHERE clauses to reduce intermediate result sets. The optimizer pushes down predicates but explicit filtering helps." }
+      "data": {
+        "variant": "tip",
+        "title": "Tip",
+        "text": "Filter early with WHERE clauses to reduce intermediate result sets. The optimizer pushes down predicates but explicit filtering helps."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "Does JOIN order matter?", "answer": "Modern optimizers reorder joins automatically, but statistics and hints can influence choices." },
-          { "question": "When does the optimizer choose a bad plan?", "answer": "With stale statistics, skewed data, or correlated predicates. Update statistics regularly." },
-          { "question": "Should I use subqueries instead of JOINs?", "answer": "Usually no. JOINs are more readable and often perform better. Use subqueries only when semantics require it." }
+          {
+            "question": "Does JOIN order matter?",
+            "answer": "Modern optimizers reorder joins automatically, but statistics and hints can influence choices."
+          },
+          {
+            "question": "When does the optimizer choose a bad plan?",
+            "answer": "With stale statistics, skewed data, or correlated predicates. Update statistics regularly."
+          },
+          {
+            "question": "Should I use subqueries instead of JOINs?",
+            "answer": "Usually no. JOINs are more readable and often perform better. Use subqueries only when semantics require it."
+          }
         ]
       }
     },
@@ -68,7 +87,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Filter before joining to reduce row counts", "Use statistics to guide index creation", "Choose join types based on input size and ordering", "Verify with EXPLAIN ANALYZE"],
+        "points": [
+          "Filter before joining to reduce row counts",
+          "Use statistics to guide index creation",
+          "Choose join types based on input size and ordering",
+          "Verify with EXPLAIN ANALYZE"
+        ],
         "takeaway": "Join performance depends on data size, predicate selectivity, and index availability. Let the optimizer see accurate statistics."
       }
     }

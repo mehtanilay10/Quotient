@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "patroni",
-    "repmgr",
-    "ha",
-    "etcd",
-    "haproxy"
-  ],
+  "tags": ["patroni", "repmgr", "ha", "etcd", "haproxy"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +66,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "failover-switchover",
-    "streaming-replication"
-  ]
+  "relatedLessons": ["failover-switchover", "streaming-replication"]
 }

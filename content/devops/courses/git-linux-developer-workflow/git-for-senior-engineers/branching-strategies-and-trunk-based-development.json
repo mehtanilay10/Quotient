@@ -183,37 +183,13 @@
       "type": "table",
       "data": {
         "title": "Feature Flag Types",
-        "headers": [
-          "Type",
-          "Use Case",
-          "Example"
-        ],
+        "headers": ["Type", "Use Case", "Example"],
         "rows": [
-          [
-            "Boolean",
-            "On/off for all users",
-            "NEW_CHECKOUT_FLOW=true"
-          ],
-          [
-            "Percentage (canary)",
-            "Gradual rollout to subset of users",
-            "rollout: 10% of users"
-          ],
-          [
-            "User-targeted",
-            "Enable for specific users or segments",
-            "betaUsers.includes(email)"
-          ],
-          [
-            "Permission-based",
-            "Based on user role or plan",
-            "user.plan === 'enterprise'"
-          ],
-          [
-            "Operational",
-            "Kill switches for performance or cost",
-            "ENABLE_HEAVY_REPORT=false"
-          ]
+          ["Boolean", "On/off for all users", "NEW_CHECKOUT_FLOW=true"],
+          ["Percentage (canary)", "Gradual rollout to subset of users", "rollout: 10% of users"],
+          ["User-targeted", "Enable for specific users or segments", "betaUsers.includes(email)"],
+          ["Permission-based", "Based on user role or plan", "user.plan === 'enterprise'"],
+          ["Operational", "Kill switches for performance or cost", "ENABLE_HEAVY_REPORT=false"]
         ]
       }
     },
@@ -407,49 +383,14 @@
       "type": "table",
       "data": {
         "title": "Git Flow Merge Rules",
-        "headers": [
-          "Source Branch",
-          "Target Branch",
-          "When",
-          "Merge Strategy"
-        ],
+        "headers": ["Source Branch", "Target Branch", "When", "Merge Strategy"],
         "rows": [
-          [
-            "feature/*",
-            "develop",
-            "Feature complete",
-            "Merge commit or rebase"
-          ],
-          [
-            "develop",
-            "main",
-            "Release ready",
-            "Merge commit (preserve history)"
-          ],
-          [
-            "hotfix/*",
-            "main",
-            "Urgent fix",
-            "Merge commit"
-          ],
-          [
-            "hotfix/*",
-            "develop",
-            "Keep develop current",
-            "Merge commit"
-          ],
-          [
-            "release/*",
-            "main",
-            "Release complete",
-            "Merge commit"
-          ],
-          [
-            "release/*",
-            "develop",
-            "Bug fixes back to develop",
-            "Merge commit"
-          ]
+          ["feature/*", "develop", "Feature complete", "Merge commit or rebase"],
+          ["develop", "main", "Release ready", "Merge commit (preserve history)"],
+          ["hotfix/*", "main", "Urgent fix", "Merge commit"],
+          ["hotfix/*", "develop", "Keep develop current", "Merge commit"],
+          ["release/*", "main", "Release complete", "Merge commit"],
+          ["release/*", "develop", "Bug fixes back to develop", "Merge commit"]
         ]
       }
     },
@@ -757,61 +698,16 @@
       "type": "table",
       "data": {
         "title": "Strategy Comparison Matrix",
-        "headers": [
-          "Dimension",
-          "Git Flow",
-          "GitHub Flow",
-          "Trunk-Based"
-        ],
+        "headers": ["Dimension", "Git Flow", "GitHub Flow", "Trunk-Based"],
         "rows": [
-          [
-            "Branch lifetime",
-            "Days to weeks",
-            "Hours to days",
-            "Hours (max 1 day)"
-          ],
-          [
-            "Main branch stability",
-            "Stable after release",
-            "Always stable",
-            "Always stable"
-          ],
-          [
-            "Merge frequency",
-            "Per release or feature",
-            "Per PR",
-            "Daily minimum"
-          ],
-          [
-            "Feature flags required",
-            "No",
-            "Optional",
-            "Yes"
-          ],
-          [
-            "CI requirement",
-            "Moderate",
-            "Strong",
-            "Very strong"
-          ],
-          [
-            "Team size fit",
-            "Any",
-            "Small to medium",
-            "Medium to large"
-          ],
-          [
-            "Release cadence",
-            "Scheduled",
-            "Continuous",
-            "Continuous"
-          ],
-          [
-            "Merge conflict risk",
-            "High",
-            "Medium",
-            "Low"
-          ]
+          ["Branch lifetime", "Days to weeks", "Hours to days", "Hours (max 1 day)"],
+          ["Main branch stability", "Stable after release", "Always stable", "Always stable"],
+          ["Merge frequency", "Per release or feature", "Per PR", "Daily minimum"],
+          ["Feature flags required", "No", "Optional", "Yes"],
+          ["CI requirement", "Moderate", "Strong", "Very strong"],
+          ["Team size fit", "Any", "Small to medium", "Medium to large"],
+          ["Release cadence", "Scheduled", "Continuous", "Continuous"],
+          ["Merge conflict risk", "High", "Medium", "Low"]
         ]
       }
     },
@@ -1015,12 +911,7 @@
       "type": "table",
       "data": {
         "title": "CI/CD Pipeline by Strategy",
-        "headers": [
-          "Stage",
-          "Git Flow",
-          "GitHub Flow",
-          "Trunk-Based"
-        ],
+        "headers": ["Stage", "Git Flow", "GitHub Flow", "Trunk-Based"],
         "rows": [
           [
             "On feature branch push",
@@ -1040,18 +931,8 @@
             "Deploy to production",
             "Deploy to production"
           ],
-          [
-            "On release branch",
-            "QA tests + performance suite",
-            "N/A",
-            "Release candidate tests"
-          ],
-          [
-            "On hotfix branch",
-            "Urgent tests + deploy",
-            "Same as main",
-            "Same as main"
-          ]
+          ["On release branch", "QA tests + performance suite", "N/A", "Release candidate tests"],
+          ["On hotfix branch", "Urgent tests + deploy", "Same as main", "Same as main"]
         ]
       }
     },
@@ -1186,37 +1067,12 @@
       "type": "table",
       "data": {
         "title": "DORA Metrics and Branching Strategy",
-        "headers": [
-          "Metric",
-          "Target (Elite)",
-          "Git Flow Impact",
-          "TBD Impact"
-        ],
+        "headers": ["Metric", "Target (Elite)", "Git Flow Impact", "TBD Impact"],
         "rows": [
-          [
-            "Deployment Frequency",
-            "On demand",
-            "Low (scheduled releases)",
-            "High (continuous)"
-          ],
-          [
-            "Lead Time",
-            "< 1 hour",
-            "Days to weeks",
-            "Hours"
-          ],
-          [
-            "Change Failure Rate",
-            "< 15%",
-            "Medium (late integration)",
-            "Low (early integration)"
-          ],
-          [
-            "MTTR",
-            "< 1 hour",
-            "Hours to days",
-            "Minutes to hours"
-          ]
+          ["Deployment Frequency", "On demand", "Low (scheduled releases)", "High (continuous)"],
+          ["Lead Time", "< 1 hour", "Days to weeks", "Hours"],
+          ["Change Failure Rate", "< 15%", "Medium (late integration)", "Low (early integration)"],
+          ["MTTR", "< 1 hour", "Hours to days", "Minutes to hours"]
         ]
       }
     },

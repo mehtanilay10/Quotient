@@ -8,12 +8,7 @@
   "order": 9,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "health-checks",
-    "kubernetes",
-    "readiness",
-    "liveness"
-  ],
+  "tags": ["health-checks", "kubernetes", "readiness", "liveness"],
   "blocks": [
     {
       "type": "paragraph",
@@ -106,27 +101,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Probe",
-          "Failure Action",
-          "Typical Check"
-        ],
+        "headers": ["Probe", "Failure Action", "Typical Check"],
         "rows": [
-          [
-            "Liveness",
-            "Restart container",
-            "Process is running, memory is not exhausted"
-          ],
-          [
-            "Readiness",
-            "Stop routing traffic",
-            "Database connection, downstream API reachable"
-          ],
-          [
-            "Startup",
-            "Block other probes until success",
-            "Migrations complete, cache initialized"
-          ]
+          ["Liveness", "Restart container", "Process is running, memory is not exhausted"],
+          ["Readiness", "Stop routing traffic", "Database connection, downstream API reachable"],
+          ["Startup", "Block other probes until success", "Migrations complete, cache initialized"]
         ]
       }
     },

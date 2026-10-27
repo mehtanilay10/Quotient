@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "connection-pooling",
-    "pooling",
-    "exhaustion",
-    "ado.net",
-    "sql-server"
-  ],
+  "tags": ["connection-pooling", "pooling", "exhaustion", "ado.net", "sql-server"],
   "blocks": [
     {
       "type": "paragraph",
@@ -178,10 +172,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "long-running-transactions",
-    "locks-and-blocking"
-  ],
+  "relatedLessons": ["long-running-transactions", "locks-and-blocking"],
   "furtherReading": [
     {
       "title": "Connection Pooling (ADO.NET) (Microsoft Docs)",

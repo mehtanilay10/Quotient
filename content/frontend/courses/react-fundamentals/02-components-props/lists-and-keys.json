@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "lists",
-    "keys",
-    "map",
-    "rendering"
-  ],
+  "tags": ["react", "lists", "keys", "map", "rendering"],
   "blocks": [
     {
       "type": "paragraph",
@@ -111,24 +105,18 @@
               "Correctly preserves component state",
               "Efficient reordering and filtering"
             ],
-            "tags": [
-              "recommended"
-            ]
+            "tags": ["recommended"]
           },
           {
             "title": "Array Index",
             "description": "Use the item's position in the array.",
-            "pros": [
-              "Works for static lists"
-            ],
+            "pros": ["Works for static lists"],
             "cons": [
               "Breaks with reordering or filtering",
               "Can leak state between items",
               "Poor performance for large dynamic lists"
             ],
-            "tags": [
-              "avoid-for-dynamic-lists"
-            ]
+            "tags": ["avoid-for-dynamic-lists"]
           }
         ]
       }

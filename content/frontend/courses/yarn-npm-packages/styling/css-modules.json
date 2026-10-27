@@ -6,13 +6,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "css-modules",
-    "css",
-    "styling",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["css-modules", "css", "styling", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -78,32 +72,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Approach",
-          "Runtime cost",
-          "Scoping"
-        ],
+        "headers": ["Approach", "Runtime cost", "Scoping"],
         "rows": [
-          [
-            "CSS Modules",
-            "None (build-time)",
-            "Automatic, hashed classes"
-          ],
-          [
-            "Plain CSS",
-            "None",
-            "Manual (BEM) or none"
-          ],
-          [
-            "CSS-in-JS",
-            "Runtime style injection",
-            "Automatic, prop-driven"
-          ],
-          [
-            "Tailwind",
-            "None (build-time)",
-            "Utilities, no class names"
-          ]
+          ["CSS Modules", "None (build-time)", "Automatic, hashed classes"],
+          ["Plain CSS", "None", "Manual (BEM) or none"],
+          ["CSS-in-JS", "Runtime style injection", "Automatic, prop-driven"],
+          ["Tailwind", "None (build-time)", "Utilities, no class names"]
         ]
       }
     },

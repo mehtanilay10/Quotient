@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "react",
-    "state-reducer",
-    "examples",
-    "patterns"
-  ],
+  "tags": ["react", "state-reducer", "examples", "patterns"],
   "blocks": [
     {
       "type": "paragraph",

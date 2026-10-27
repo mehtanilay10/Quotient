@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 22,
-  "tags": [
-    "cost",
-    "tokens",
-    "caching",
-    "budgeting"
-  ],
+  "tags": ["cost", "tokens", "caching", "budgeting"],
   "blocks": [
     {
       "type": "paragraph",
@@ -84,10 +79,7 @@
       "takeaway": "Design cost controls into the pipeline, not around it. Budgets and caches should be first-class components."
     }
   ],
-  "relatedLessons": [
-    "observability-and-telemetry",
-    "deployment-and-scaling-patterns"
-  ],
+  "relatedLessons": ["observability-and-telemetry", "deployment-and-scaling-patterns"],
   "technology": null,
   "furtherReading": [
     {

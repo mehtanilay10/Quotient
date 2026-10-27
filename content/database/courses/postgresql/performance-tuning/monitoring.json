@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "monitoring",
-    "pg-stat-statements",
-    "cache-hit-ratio",
-    "slow-queries"
-  ],
+  "tags": ["monitoring", "pg-stat-statements", "cache-hit-ratio", "slow-queries"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "explain-analyze",
-    "configuration-tuning"
-  ]
+  "relatedLessons": ["explain-analyze", "configuration-tuning"]
 }

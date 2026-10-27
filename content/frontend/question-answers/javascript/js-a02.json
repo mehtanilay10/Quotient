@@ -6,10 +6,7 @@
   "description": "Understand this binding and function syntax differences.",
   "order": 11,
   "difficulty": "advanced",
-  "tags": [
-    "javascript",
-    "advanced"
-  ],
+  "tags": ["javascript", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

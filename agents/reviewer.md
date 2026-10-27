@@ -69,12 +69,12 @@ implementation role.
 
 ## Severity
 
-| Severity | Meaning | Examples |
-| --- | --- | --- |
-| **Blocker** | Breaks build, runtime, data integrity, auth, or security | Invalid JSON, client import of `@/lib/content`, committed secret, hand-edited generated index |
-| **Major** | User-visible bug or violated invariant | Wrong prev/next order, missing registration, inaccessible control, auto-redirect for signed-out users |
-| **Minor** | Real but limited impact | Missing caption, stale reference, inconsistent ordering |
-| **Nit** | Style or preference | Wording, formatting, optional simplification |
+| Severity    | Meaning                                                  | Examples                                                                                              |
+| ----------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Blocker** | Breaks build, runtime, data integrity, auth, or security | Invalid JSON, client import of `@/lib/content`, committed secret, hand-edited generated index         |
+| **Major**   | User-visible bug or violated invariant                   | Wrong prev/next order, missing registration, inaccessible control, auto-redirect for signed-out users |
+| **Minor**   | Real but limited impact                                  | Missing caption, stale reference, inconsistent ordering                                               |
+| **Nit**     | Style or preference                                      | Wording, formatting, optional simplification                                                          |
 
 Do not inflate severity.
 

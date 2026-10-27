@@ -44,7 +44,11 @@
           ["Version", "Yes", "The language version. Use 2012-10-17 for new policies."],
           ["Statement", "Yes", "An array of individual permission statements."],
           ["Sid", "No", "An optional statement identifier for your own reference."],
-          ["Effect", "Yes", "Allow or Deny. Determines whether the statement grants or blocks access."],
+          [
+            "Effect",
+            "Yes",
+            "Allow or Deny. Determines whether the statement grants or blocks access."
+          ],
           ["Action", "Yes", "The API actions allowed or denied (e.g., s3:ListBucket)."],
           ["Resource", "Yes", "The ARN of the resource the action applies to."],
           ["Condition", "No", "Optional logic that restricts when the statement applies."]

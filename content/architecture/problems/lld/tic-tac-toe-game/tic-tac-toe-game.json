@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 45,
-  "tags": [
-    "lld",
-    "object-oriented",
-    "design-patterns",
-    "game",
-    "board"
-  ],
+  "tags": ["lld", "object-oriented", "design-patterns", "game", "board"],
   "blocks": [
     {
       "type": "heading",

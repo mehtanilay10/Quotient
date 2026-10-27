@@ -8,13 +8,7 @@
   "order": 21,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "architecture",
-    "decision-making",
-    "trade-offs",
-    "communication",
-    "adr"
-  ],
+  "tags": ["architecture", "decision-making", "trade-offs", "communication", "adr"],
   "technology": "General",
   "blocks": [
     {
@@ -119,40 +113,20 @@
           {
             "title": "Architecture Decision Records",
             "description": "Short markdown files stored alongside the codebase.",
-            "pros": [
-              "Lightweight",
-              "Version controlled",
-              "Easy to search"
-            ],
-            "cons": [
-              "Can become outdated if not enforced",
-              "Requires team discipline"
-            ]
+            "pros": ["Lightweight", "Version controlled", "Easy to search"],
+            "cons": ["Can become outdated if not enforced", "Requires team discipline"]
           },
           {
             "title": "Decision logs in wikis",
             "description": "Centralized documentation in Confluence, Notion, or similar.",
-            "pros": [
-              "Accessible to non-engineers",
-              "Rich formatting support"
-            ],
-            "cons": [
-              "Easy to forget",
-              "Can drift from code",
-              "Harder to enforce link to PR"
-            ]
+            "pros": ["Accessible to non-engineers", "Rich formatting support"],
+            "cons": ["Easy to forget", "Can drift from code", "Harder to enforce link to PR"]
           },
           {
             "title": "Code comments and README",
             "description": "Inline comments and architecture README files.",
-            "pros": [
-              "Immediate context",
-              "No extra tooling required"
-            ],
-            "cons": [
-              "Scattered across codebase",
-              "Hard to maintain at scale"
-            ]
+            "pros": ["Immediate context", "No extra tooling required"],
+            "cons": ["Scattered across codebase", "Hard to maintain at scale"]
           }
         ]
       }
@@ -202,9 +176,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "round-9-design-a-migration-from-monolith-to-modular-architecture"
-  ],
+  "relatedLessons": ["round-9-design-a-migration-from-monolith-to-modular-architecture"],
   "furtherReading": [
     {
       "title": "Architectural Decision Records",

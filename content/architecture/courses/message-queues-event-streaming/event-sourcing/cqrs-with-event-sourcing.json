@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "cqrs",
-    "event-sourcing",
-    "read-model",
-    "projection",
-    "write-model"
-  ],
+  "tags": ["cqrs", "event-sourcing", "read-model", "projection", "write-model"],
   "blocks": [
     {
       "type": "paragraph",
@@ -97,20 +91,12 @@
           {
             "title": "Write Model",
             "description": "Accepts commands, validates rules, and appends events.",
-            "tags": [
-              "Consistency",
-              "Validation",
-              "Event Store"
-            ]
+            "tags": ["Consistency", "Validation", "Event Store"]
           },
           {
             "title": "Read Model",
             "description": "Consumes events and serves optimized queries.",
-            "tags": [
-              "Performance",
-              "Denormalization",
-              "Eventual Consistency"
-            ]
+            "tags": ["Performance", "Denormalization", "Eventual Consistency"]
           }
         ]
       }
@@ -129,10 +115,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "event-sourcing-fundamentals",
-    "event-store-design"
-  ],
+  "relatedLessons": ["event-sourcing-fundamentals", "event-store-design"],
   "furtherReading": [
     {
       "title": "CQRS Pattern - Microsoft Azure Architecture Center",

@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "prisma",
-    "enums",
-    "native-types",
-    "typescript",
-    "postgresql"
-  ],
+  "tags": ["prisma", "enums", "native-types", "typescript", "postgresql"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,8 +74,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "field-types-mapping",
-    "schema-best-practices"
-  ]
+  "relatedLessons": ["field-types-mapping", "schema-best-practices"]
 }

@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "redis",
-    "pipelining",
-    "performance",
-    "networking"
-  ],
+  "tags": ["redis", "pipelining", "performance", "networking"],
   "blocks": [
     {
       "type": "paragraph",

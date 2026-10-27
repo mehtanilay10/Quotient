@@ -79,39 +79,21 @@
               "AutoML support",
               "Any framework support"
             ],
-            "cons": [
-              "Steeper learning curve",
-              "Requires ML expertise"
-            ],
+            "cons": ["Steeper learning curve", "Requires ML expertise"],
             "tags": ["Custom ML", "Manufacturing", "Recommended"]
           },
           {
             "title": "Cognitive Services Custom Vision",
             "description": "No-code image classification",
-            "pros": [
-              "No ML expertise needed",
-              "Quick setup",
-              "Pre-built templates"
-            ],
-            "cons": [
-              "Image only",
-              "Limited customization",
-              "No MLOps"
-            ],
+            "pros": ["No ML expertise needed", "Quick setup", "Pre-built templates"],
+            "cons": ["Image only", "Limited customization", "No MLOps"],
             "tags": ["Image classification", "Quick prototypes"]
           },
           {
             "title": "Azure OpenAI Fine-tuning",
             "description": "Fine-tune GPT models",
-            "pros": [
-              "LLM customization",
-              "High-quality text generation"
-            ],
-            "cons": [
-              "Text only",
-              "Expensive",
-              "No image support"
-            ],
+            "pros": ["LLM customization", "High-quality text generation"],
+            "cons": ["Text only", "Expensive", "No image support"],
             "tags": ["Text generation", "NLP"]
           }
         ]

@@ -4,13 +4,31 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, Search, LogOut, User, Settings2, Keyboard, Bookmark, StickyNote, BarChart3, AlertTriangle, CloudOff, ChevronDown } from "lucide-react";
+import {
+  Menu,
+  X,
+  Search,
+  LogOut,
+  User,
+  Settings2,
+  Keyboard,
+  Bookmark,
+  StickyNote,
+  BarChart3,
+  AlertTriangle,
+  CloudOff,
+  ChevronDown,
+} from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { PWAInstallButton } from "@/components/ui/PWAInstallButton";
 import { SearchSuggestions } from "@/components/ui/SearchSuggestions";
 import { SearchErrorBoundary } from "@/components/ui/SearchErrorBoundary";
 import { cn } from "@/lib/utils";
-import { openKeyboardShortcutsHelp, registerShortcut, unregisterShortcut } from "@/hooks/useKeyboardShortcuts";
+import {
+  openKeyboardShortcutsHelp,
+  registerShortcut,
+  unregisterShortcut,
+} from "@/hooks/useKeyboardShortcuts";
 import { useSession, signOut } from "next-auth/react";
 
 export interface NavbarSection {
@@ -46,7 +64,7 @@ export function Navbar({ categories }: NavbarProps) {
   const userMenuRef = useRef<HTMLDivElement>(null);
   const categoryMenuRef = useRef<HTMLDivElement>(null);
   const { data: session, status } = useSession();
-  const isLoggedIn = status === 'authenticated';
+  const isLoggedIn = status === "authenticated";
 
   const handleSearch = (q: string) => {
     router.push(`/search?q=${encodeURIComponent(q)}`);
@@ -68,7 +86,7 @@ export function Navbar({ categories }: NavbarProps) {
     const previousOverflow = document.body.style.overflow;
     const previousPaddingRight = document.body.style.paddingRight;
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
     if (scrollbarWidth > 0) {
       document.body.style.paddingRight = `${scrollbarWidth}px`;
     }
@@ -81,21 +99,21 @@ export function Navbar({ categories }: NavbarProps) {
   useEffect(() => {
     if (!searchMode) return;
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setSearchMode(false);
+      if (e.key === "Escape") setSearchMode(false);
     };
-    document.addEventListener('keydown', handleKey);
-    return () => document.removeEventListener('keydown', handleKey);
+    document.addEventListener("keydown", handleKey);
+    return () => document.removeEventListener("keydown", handleKey);
   }, [searchMode]);
 
   useEffect(() => {
-    registerShortcut('/', 'Focus search', () => {
+    registerShortcut("/", "Focus search", () => {
       if (!searchMode) setSearchMode(true);
       searchInputRef.current?.focus();
       searchInputRef.current?.select();
     });
     // Unregister on unmount / re-register so a stale handler (which could call
     // setState on an unmounted component) is never left in the global registry.
-    return () => unregisterShortcut('/');
+    return () => unregisterShortcut("/");
   }, [searchMode]);
 
   // Focus the search input whenever search mode turns on, so opening search via
@@ -129,7 +147,7 @@ export function Navbar({ categories }: NavbarProps) {
       }
     };
     const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setOpenCategory(null);
+      if (event.key === "Escape") setOpenCategory(null);
     };
     document.addEventListener("mousedown", handleClickOutside);
     document.addEventListener("keydown", handleEscape);
@@ -140,7 +158,7 @@ export function Navbar({ categories }: NavbarProps) {
   }, [openCategory]);
 
   const handleSignOut = async () => {
-    await signOut({ callbackUrl: '/' });
+    await signOut({ callbackUrl: "/" });
   };
 
   const isCategoryActive = (key: string) => pathname.startsWith(`/${key}/`);
@@ -157,7 +175,14 @@ export function Navbar({ categories }: NavbarProps) {
             aria-expanded={userMenuOpen}
           >
             {session.user.image ? (
-              <Image src={session.user.image} alt="" width={28} height={28} className="h-7 w-7 rounded-full object-cover" unoptimized />
+              <Image
+                src={session.user.image}
+                alt=""
+                width={28}
+                height={28}
+                className="h-7 w-7 rounded-full object-cover"
+                unoptimized
+              />
             ) : (
               <User className="h-5 w-5" aria-hidden="true" />
             )}
@@ -266,7 +291,10 @@ export function Navbar({ categories }: NavbarProps) {
       )}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2 font-semibold text-fg-default hover:text-accent-fg transition-colors">
+        <Link
+          href="/"
+          className="flex items-center gap-2 font-semibold text-fg-default hover:text-accent-fg transition-colors"
+        >
           <Logo className="w-8 h-8" />
           <span className="text-base">Quotient</span>
         </Link>
@@ -296,7 +324,11 @@ export function Navbar({ categories }: NavbarProps) {
             </button>
           </div>
         ) : (
-          <nav className="hidden items-center gap-0.5 xl:flex" aria-label="Main navigation" ref={categoryMenuRef}>
+          <nav
+            className="hidden items-center gap-0.5 xl:flex"
+            aria-label="Main navigation"
+            ref={categoryMenuRef}
+          >
             {/* Category dropdowns */}
             {categories.map((cat) => {
               const isOpen = openCategory === cat.key;
@@ -368,7 +400,11 @@ export function Navbar({ categories }: NavbarProps) {
             aria-expanded={mobileOpen}
             aria-controls="mobile-nav"
           >
-            {mobileOpen ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
+            {mobileOpen ? (
+              <X className="h-5 w-5" aria-hidden="true" />
+            ) : (
+              <Menu className="h-5 w-5" aria-hidden="true" />
+            )}
           </button>
         </div>
       </div>
@@ -395,20 +431,30 @@ export function Navbar({ categories }: NavbarProps) {
               {categories.map((cat) => {
                 const isExpanded = mobileCategoryOpen === cat.key;
                 return (
-                  <div key={cat.key} className="border border-border rounded-lg overflow-hidden bg-canvas">
+                  <div
+                    key={cat.key}
+                    className="border border-border rounded-lg overflow-hidden bg-canvas"
+                  >
                     <button
                       type="button"
                       onClick={() => setMobileCategoryOpen(isExpanded ? null : cat.key)}
                       className={cn(
                         "flex w-full items-center gap-2 px-3 py-2 font-semibold transition-colors",
-                        isCategoryActive(cat.key) ? "text-accent-fg" : "text-fg-default hover:bg-canvas-subtle"
+                        isCategoryActive(cat.key)
+                          ? "text-accent-fg"
+                          : "text-fg-default hover:bg-canvas-subtle"
                       )}
                       aria-expanded={isExpanded}
                     >
-                      <span className="text-lg" aria-hidden="true">{cat.icon}</span>
+                      <span className="text-lg" aria-hidden="true">
+                        {cat.icon}
+                      </span>
                       <span>{cat.label}</span>
                       <ChevronDown
-                        className={cn("h-4 w-4 ml-auto text-fg-muted transition-transform", isExpanded && "rotate-180")}
+                        className={cn(
+                          "h-4 w-4 ml-auto text-fg-muted transition-transform",
+                          isExpanded && "rotate-180"
+                        )}
                         aria-hidden="true"
                       />
                     </button>

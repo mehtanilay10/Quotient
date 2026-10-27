@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "domain-driven-design",
-    "architecture",
-    "requirements",
-    "expense-platform"
-  ],
+  "tags": ["domain-driven-design", "architecture", "requirements", "expense-platform"],
   "blocks": [
     {
       "type": "paragraph",

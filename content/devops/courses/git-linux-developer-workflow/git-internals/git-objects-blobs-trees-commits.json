@@ -156,7 +156,15 @@
   ],
   "relatedLessons": ["git-refs-and-head", "git-pack-files"],
   "furtherReading": [
-    { "title": "Git Internals: Plumbing and Porcelain", "url": "https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain", "type": "article" },
-    { "title": "Git Object Model", "url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects", "type": "article" }
+    {
+      "title": "Git Internals: Plumbing and Porcelain",
+      "url": "https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain",
+      "type": "article"
+    },
+    {
+      "title": "Git Object Model",
+      "url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects",
+      "type": "article"
+    }
   ]
 }

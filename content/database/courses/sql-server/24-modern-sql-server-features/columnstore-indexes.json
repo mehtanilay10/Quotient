@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "columnstore",
-    "analytics",
-    "batch-mode",
-    "compression",
-    "data-warehouse"
-  ],
+  "tags": ["columnstore", "analytics", "batch-mode", "compression", "data-warehouse"],
   "blocks": [
     {
       "type": "heading",
@@ -32,37 +26,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Rowstore (B-tree)",
-          "Columnstore"
-        ],
+        "headers": ["Aspect", "Rowstore (B-tree)", "Columnstore"],
         "rows": [
-          [
-            "Best for",
-            "OLTP, point lookups, small ranges",
-            "Analytics, large scans, aggregations"
-          ],
-          [
-            "Storage layout",
-            "Rows (or row groups)",
-            "Columns, compressed per segment"
-          ],
-          [
-            "Compression",
-            "Page compression at best",
-            "Often 5-10x smaller than rowstore"
-          ],
-          [
-            "Execution",
-            "Row mode",
-            "Batch mode for large scans"
-          ],
-          [
-            "Updates",
-            "In-place",
-            "Delta store, then tuple mover"
-          ]
+          ["Best for", "OLTP, point lookups, small ranges", "Analytics, large scans, aggregations"],
+          ["Storage layout", "Rows (or row groups)", "Columns, compressed per segment"],
+          ["Compression", "Page compression at best", "Often 5-10x smaller than rowstore"],
+          ["Execution", "Row mode", "Batch mode for large scans"],
+          ["Updates", "In-place", "Delta store, then tuple mover"]
         ]
       }
     },
@@ -164,8 +134,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "clustered-vs-nonclustered-indexes",
-    "star-snowflake-schema"
-  ]
+  "relatedLessons": ["clustered-vs-nonclustered-indexes", "star-snowflake-schema"]
 }

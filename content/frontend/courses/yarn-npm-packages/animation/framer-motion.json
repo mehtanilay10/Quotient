@@ -6,13 +6,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "framer-motion",
-    "animation",
-    "react",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["framer-motion", "animation", "react", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

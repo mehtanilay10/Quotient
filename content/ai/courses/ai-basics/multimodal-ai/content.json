@@ -7,21 +7,10 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "🎨",
-  "tags": [
-    "multimodal",
-    "images",
-    "voice",
-    "video",
-    "ocr"
-  ],
-  "lessonSlugs": [
-    "images-and-ai",
-    "voice-and-video-ai"
-  ],
+  "tags": ["multimodal", "images", "voice", "video", "ocr"],
+  "lessonSlugs": ["images-and-ai", "voice-and-video-ai"],
   "isOptional": false,
-  "prerequisites": [
-    "chatbots-in-depth"
-  ],
+  "prerequisites": ["chatbots-in-depth"],
   "whatYouLearn": [
     "What multimodal AI means and which tools support it",
     "Image generation, analysis, and editing with AI",

@@ -6,11 +6,7 @@
   "fullDefinition": "Human evaluation is the gold standard for assessing AI systems when automated metrics are insufficient. Human evaluators \u2014 often domain experts or representative users \u2014 judge outputs based on criteria like accuracy, helpfulness, coherence, safety, and alignment with instructions. Human evaluation is essential because automated metrics like benchmark scores can miss important qualities like tone, nuance, creativity, and user satisfaction. Common methods include side-by-side comparisons where evaluators choose the better of two model outputs, Likert scales for rating quality, and red-teaming exercises to probe safety failures. Despite being slower and more expensive than automated evaluation, human judgment remains irreplaceable for understanding real-world AI performance.",
   "category": "evaluation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "benchmark",
-    "evaluation",
-    "safety"
-  ],
+  "relatedTerms": ["benchmark", "evaluation", "safety"],
   "learnMoreSlug": "critical-evaluation",
   "examples": [
     "Evaluators rating chatbot responses on a 1-5 helpfulness scale",

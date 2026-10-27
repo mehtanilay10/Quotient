@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "bicep",
-    "iac",
-    "developer"
-  ],
+  "tags": ["azure", "bicep", "iac", "developer"],
   "blocks": [
     {
       "type": "paragraph",
@@ -36,15 +31,8 @@
           {
             "title": "ARM JSON",
             "description": "The native Azure deployment format.",
-            "pros": [
-              "No build step needed",
-              "Full ARM API coverage"
-            ],
-            "cons": [
-              "Very verbose",
-              "Hard to read and maintain",
-              "No intellisense or type safety"
-            ]
+            "pros": ["No build step needed", "Full ARM API coverage"],
+            "cons": ["Very verbose", "Hard to read and maintain", "No intellisense or type safety"]
           },
           {
             "title": "Bicep",
@@ -55,10 +43,7 @@
               "Type-safe with modules",
               "Same ARM capabilities"
             ],
-            "cons": [
-              "Requires build/compile step",
-              "Slight learning curve"
-            ]
+            "cons": ["Requires build/compile step", "Slight learning curve"]
           }
         ]
       }

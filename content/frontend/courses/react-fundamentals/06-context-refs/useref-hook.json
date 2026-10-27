@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "useref",
-    "refs",
-    "dom"
-  ],
+  "tags": ["react", "useref", "refs", "dom"],
   "blocks": [
     {
       "type": "paragraph",
@@ -75,23 +70,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "useRef",
-          "useState"
-        ],
+        "headers": ["useRef", "useState"],
         "rows": [
-          [
-            "Does not trigger re-render",
-            "Triggers re-render"
-          ],
-          [
-            "Same object across renders",
-            "New value each render"
-          ],
-          [
-            "For mutable values and DOM refs",
-            "For reactive state"
-          ]
+          ["Does not trigger re-render", "Triggers re-render"],
+          ["Same object across renders", "New value each render"],
+          ["For mutable values and DOM refs", "For reactive state"]
         ]
       }
     },

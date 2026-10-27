@@ -107,7 +107,12 @@
           {
             "title": "Dutch national flag",
             "description": "Three-way in-place partition",
-            "pros": ["True single pass", "In-place", "Generalises to k-way partition", "Recommended"],
+            "pros": [
+              "True single pass",
+              "In-place",
+              "Generalises to k-way partition",
+              "Recommended"
+            ],
             "cons": ["Pointer invariants need care"],
             "tags": ["O(n) time", "O(1) space", "one pass", "Recommended"]
           }

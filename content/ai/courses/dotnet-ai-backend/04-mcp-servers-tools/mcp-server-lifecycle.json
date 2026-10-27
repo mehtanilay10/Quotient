@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 22,
-  "tags": [
-    "mcp",
-    "server",
-    "csharp",
-    "lifecycle"
-  ],
+  "tags": ["mcp", "server", "csharp", "lifecycle"],
   "blocks": [
     {
       "type": "paragraph",
@@ -85,10 +80,7 @@
       "takeaway": "Choose the simplest transport that meets your deployment needs, then add HTTP only when you need remote access."
     }
   ],
-  "relatedLessons": [
-    "what-is-model-context-protocol",
-    "registering-and-describing-tools"
-  ],
+  "relatedLessons": ["what-is-model-context-protocol", "registering-and-describing-tools"],
   "technology": null,
   "furtherReading": [
     {

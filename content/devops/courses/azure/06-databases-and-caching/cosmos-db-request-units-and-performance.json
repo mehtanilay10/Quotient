@@ -51,8 +51,16 @@
         "headers": ["Model", "How It Works", "Best For"],
         "rows": [
           ["Provisioned", "Fixed RUs per container or database", "Steady, predictable workloads"],
-          ["Autoscale", "Scales between a minimum and maximum automatically", "Variable workloads with known peaks"],
-          ["Serverless", "No minimum; billed per RU consumed", "Infrequent or unpredictable traffic"]
+          [
+            "Autoscale",
+            "Scales between a minimum and maximum automatically",
+            "Variable workloads with known peaks"
+          ],
+          [
+            "Serverless",
+            "No minimum; billed per RU consumed",
+            "Infrequent or unpredictable traffic"
+          ]
         ]
       }
     },

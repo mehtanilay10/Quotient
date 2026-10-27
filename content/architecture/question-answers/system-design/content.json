@@ -8,11 +8,7 @@
   "difficulty": "advanced",
   "estimatedHours": 8.5,
   "icon": "🏗️",
-  "tags": [
-    "interview",
-    "system-design",
-    "architecture"
-  ],
+  "tags": ["interview", "system-design", "architecture"],
   "lessonSlugs": [
     "sd-b01",
     "system-q1",

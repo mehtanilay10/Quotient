@@ -8,13 +8,7 @@
   "order": 9,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "kubernetes",
-    "rbac",
-    "namespaces",
-    "security",
-    "access-control"
-  ],
+  "tags": ["kubernetes", "rbac", "namespaces", "security", "access-control"],
   "blocks": [
     {
       "type": "heading",
@@ -139,11 +133,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "RBAC Object",
-          "Scope"
-        ],
+        "headers": ["Scenario", "RBAC Object", "Scope"],
         "rows": [
           [
             "Developer can manage Deployments in their namespace",

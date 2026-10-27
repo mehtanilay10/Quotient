@@ -55,7 +55,11 @@
           ["Boolean flag", "Only two values, extreme skew", "Composite key with a unique suffix"],
           ["Timestamp", "All new items hit same partition", "Date-partitioned synthetic key"],
           ["Constant value", "All items in one partition", "Never use a constant key"],
-          ["Low-cardinality enum", "Skewed traffic to few values", "Add a discriminator or synthetic key"]
+          [
+            "Low-cardinality enum",
+            "Skewed traffic to few values",
+            "Add a discriminator or synthetic key"
+          ]
         ]
       }
     },

@@ -8,13 +8,7 @@
   "order": 15,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "performance",
-    "debugging",
-    "frontend",
-    "senior-engineer"
-  ],
+  "tags": ["react", "performance", "debugging", "frontend", "senior-engineer"],
   "technology": "General",
   "blocks": [
     {
@@ -157,22 +151,13 @@
               "Reduces child re-renders",
               "Stabilizes object references for useEffect dependencies"
             ],
-            "cons": [
-              "Adds memory overhead",
-              "Can mask underlying state design problems"
-            ]
+            "cons": ["Adds memory overhead", "Can mask underlying state design problems"]
           },
           {
             "title": "State colocation",
             "description": "Move state down to the component that actually uses it.",
-            "pros": [
-              "Reduces render scope automatically",
-              "No library or hook required"
-            ],
-            "cons": [
-              "Requires component refactoring",
-              "May increase prop drilling"
-            ]
+            "pros": ["Reduces render scope automatically", "No library or hook required"],
+            "cons": ["Requires component refactoring", "May increase prop drilling"]
           },
           {
             "title": "Virtualization",
@@ -181,10 +166,7 @@
               "Constant DOM size regardless of data length",
               "Dramatic scroll performance improvement"
             ],
-            "cons": [
-              "Complex dynamic row heights",
-              "Requires careful scroll anchoring"
-            ]
+            "cons": ["Complex dynamic row heights", "Requires careful scroll anchoring"]
           },
           {
             "title": "React Compiler (React 19)",
@@ -193,10 +175,7 @@
               "Zero manual useMemo/useCallback for most cases",
               "Catches optimization opportunities humans miss"
             ],
-            "cons": [
-              "Build complexity",
-              "Cannot optimize imperative code or side effects"
-            ]
+            "cons": ["Build complexity", "Cannot optimize imperative code or side effects"]
           }
         ]
       }

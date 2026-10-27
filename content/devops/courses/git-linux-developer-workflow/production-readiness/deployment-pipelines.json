@@ -8,14 +8,7 @@
   "order": 9,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "ci-cd",
-    "deployment",
-    "linux",
-    "git",
-    "pipeline",
-    "release"
-  ],
+  "tags": ["ci-cd", "deployment", "linux", "git", "pipeline", "release"],
   "blocks": [
     {
       "type": "paragraph",
@@ -77,37 +70,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "How It Works",
-          "Rollback Speed",
-          "Complexity"
-        ],
+        "headers": ["Strategy", "How It Works", "Rollback Speed", "Complexity"],
         "rows": [
-          [
-            "Rolling",
-            "Replace old instances gradually",
-            "Fast",
-            "Low"
-          ],
-          [
-            "Blue-Green",
-            "Run two environments, switch traffic",
-            "Instant",
-            "Medium"
-          ],
-          [
-            "Canary",
-            "Route 5% of traffic to new version",
-            "Fast",
-            "Medium"
-          ],
-          [
-            "Feature Flag",
-            "Hide new features behind config",
-            "Instant",
-            "High"
-          ]
+          ["Rolling", "Replace old instances gradually", "Fast", "Low"],
+          ["Blue-Green", "Run two environments, switch traffic", "Instant", "Medium"],
+          ["Canary", "Route 5% of traffic to new version", "Fast", "Medium"],
+          ["Feature Flag", "Hide new features behind config", "Instant", "High"]
         ]
       }
     },

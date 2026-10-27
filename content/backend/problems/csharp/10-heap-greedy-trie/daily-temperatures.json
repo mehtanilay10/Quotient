@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Given an array of daily temperatures, return an array `answer` where `answer[i]` is the number of days you must wait after day `i` for a warmer temperature. If no warmer day exists, `answer[i]` is `0`."}
+        "text": "Given an array of daily temperatures, return an array `answer` where `answer[i]` is the number of days you must wait after day `i` for a warmer temperature. If no warmer day exists, `answer[i]` is `0`."
+      }
     },
     {
       "type": "heading",
@@ -36,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "For each day, look ahead until a warmer temperature appears. O(n²) and repeats comparisons across overlapping ranges."}
+        "text": "For each day, look ahead until a warmer temperature appears. O(n²) and repeats comparisons across overlapping ranges."
+      }
     },
     {
       "type": "example",
@@ -54,7 +56,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Keep a stack of indices whose temperature has not yet found a warmer day. The stack is always in decreasing temperature order from bottom to top. For each new day, pop every index whose temperature is lower — the current day is their answer. Push the current day. Each index is pushed and popped at most once, so the scan is O(n)."}
+        "text": "Keep a stack of indices whose temperature has not yet found a warmer day. The stack is always in decreasing temperature order from bottom to top. For each new day, pop every index whose temperature is lower — the current day is their answer. Push the current day. Each index is pushed and popped at most once, so the scan is O(n)."
+      }
     },
     {
       "type": "example",

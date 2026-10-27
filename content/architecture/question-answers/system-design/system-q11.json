@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "system-design",
-    "real-time"
-  ],
+  "tags": ["interview", "system-design", "real-time"],
   "blocks": [
     {
       "type": "paragraph",

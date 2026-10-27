@@ -6,10 +6,7 @@
   "description": "Understand DI patterns and service lifetimes.",
   "order": 21,
   "difficulty": "intermediate",
-  "tags": [
-    "c#",
-    "intermediate"
-  ],
+  "tags": ["c#", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

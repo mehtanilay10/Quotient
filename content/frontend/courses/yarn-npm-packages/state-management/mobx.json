@@ -6,13 +6,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "mobx",
-    "state",
-    "react",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["mobx", "state", "react", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -78,32 +72,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Concept",
-          "MobX",
-          "Redux equivalent"
-        ],
+        "headers": ["Concept", "MobX", "Redux equivalent"],
         "rows": [
-          [
-            "State container",
-            "Class field",
-            "Store + slice"
-          ],
-          [
-            "Change",
-            "Direct mutation",
-            "dispatch(action)"
-          ],
-          [
-            "Derived value",
-            "computed getter",
-            "reselect selector"
-          ],
-          [
-            "Consumption",
-            "observer component",
-            "useSelector"
-          ]
+          ["State container", "Class field", "Store + slice"],
+          ["Change", "Direct mutation", "dispatch(action)"],
+          ["Derived value", "computed getter", "reselect selector"],
+          ["Consumption", "observer component", "useSelector"]
         ]
       }
     },

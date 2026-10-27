@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "You are given a 0-indexed array `nums` where `nums[i]` is the maximum jump length from index `i`. You start at index 0 and the array is guaranteed reachable. Return the minimum number of jumps to reach the last index."}
+        "text": "You are given a 0-indexed array `nums` where `nums[i]` is the maximum jump length from index `i`. You start at index 0 and the array is guaranteed reachable. Return the minimum number of jumps to reach the last index."
+      }
     },
     {
       "type": "heading",
@@ -36,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Think of it as BFS over positions, where each jump count is a layer. From every index reachable in `j` jumps, note how far you can get in `j + 1` jumps — the maximum of `i + nums[i]`. When your current position passes the end of the current layer, you have used one more jump. You never need a queue because the layers are contiguous ranges." }
+        "text": "Think of it as BFS over positions, where each jump count is a layer. From every index reachable in `j` jumps, note how far you can get in `j + 1` jumps — the maximum of `i + nums[i]`. When your current position passes the end of the current layer, you have used one more jump. You never need a queue because the layers are contiguous ranges."
+      }
     },
     {
       "type": "example",
@@ -70,7 +72,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "The DP formulation — `dp[i]` is the minimum jumps to reach `i` — is O(n²) and correct, but the greedy version is strictly better because the cost function is uniform. Recognise the BFS shape and drop the table." }
+        "text": "The DP formulation — `dp[i]` is the minimum jumps to reach `i` — is O(n²) and correct, but the greedy version is strictly better because the cost function is uniform. Recognise the BFS shape and drop the table."
+      }
     },
     {
       "type": "example",

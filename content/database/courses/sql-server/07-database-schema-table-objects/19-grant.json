@@ -7,11 +7,7 @@
   "order": 19,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "grant",
-    "permissions",
-    "security"
-  ],
+  "tags": ["grant", "permissions", "security"],
   "blocks": [
     {
       "type": "heading",

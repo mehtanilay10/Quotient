@@ -8,12 +8,7 @@
   "order": 16,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "strings",
-    "sliding-window",
-    "easy"
-  ],
+  "tags": ["csharp", "strings", "sliding-window", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -87,35 +82,16 @@
           {
             "title": "Naive Window",
             "description": "Check each position",
-            "pros": [
-              "Very simple",
-              "No preprocessing"
-            ],
-            "cons": [
-              "O(n * m)",
-              "Backtracks on mismatch"
-            ],
-            "tags": [
-              "O(n * m) time",
-              "O(1) space"
-            ]
+            "pros": ["Very simple", "No preprocessing"],
+            "cons": ["O(n * m)", "Backtracks on mismatch"],
+            "tags": ["O(n * m) time", "O(1) space"]
           },
           {
             "title": "KMP",
             "description": "Prefix-suffix table",
-            "pros": [
-              "O(n + m) time",
-              "No backtracking"
-            ],
-            "cons": [
-              "Complex to implement",
-              "Extra preprocessing"
-            ],
-            "tags": [
-              "O(n + m) time",
-              "O(m) space",
-              "Recommended"
-            ]
+            "pros": ["O(n + m) time", "No backtracking"],
+            "cons": ["Complex to implement", "Extra preprocessing"],
+            "tags": ["O(n + m) time", "O(m) space", "Recommended"]
           }
         ]
       }

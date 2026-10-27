@@ -8,15 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "redis",
-    "commands",
-    "keys",
-    "expiration",
-    "atomic",
-    "c#",
-    "nodejs"
-  ],
+  "tags": ["redis", "commands", "keys", "expiration", "atomic", "c#", "nodejs"],
   "blocks": [
     {
       "type": "paragraph",
@@ -34,67 +26,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Category",
-          "Command",
-          "Description",
-          "Time Complexity"
-        ],
+        "headers": ["Category", "Command", "Description", "Time Complexity"],
         "rows": [
-          [
-            "Strings",
-            "GET / SET",
-            "Read or write a value",
-            "O(1)"
-          ],
-          [
-            "Strings",
-            "INCR / INCRBY",
-            "Atomically increment a counter",
-            "O(1)"
-          ],
-          [
-            "Strings",
-            "EXPIRE / TTL",
-            "Set or check time-to-live",
-            "O(1)"
-          ],
-          [
-            "Keys",
-            "DEL / EXISTS",
-            "Remove or check existence",
-            "O(1)"
-          ],
-          [
-            "Keys",
-            "SCAN",
-            "Incrementally iterate keys",
-            "O(1) per call"
-          ],
-          [
-            "Hashes",
-            "HGETALL",
-            "Return all fields and values",
-            "O(N)"
-          ],
-          [
-            "Lists",
-            "LPUSH / RPOP",
-            "Push left, pop right for queues",
-            "O(1)"
-          ],
-          [
-            "Sets",
-            "SADD / SMEMBERS",
-            "Add or list members",
-            "O(N)"
-          ],
-          [
-            "Sorted Sets",
-            "ZADD / ZRANGE",
-            "Add scored members or range",
-            "O(log N)"
-          ]
+          ["Strings", "GET / SET", "Read or write a value", "O(1)"],
+          ["Strings", "INCR / INCRBY", "Atomically increment a counter", "O(1)"],
+          ["Strings", "EXPIRE / TTL", "Set or check time-to-live", "O(1)"],
+          ["Keys", "DEL / EXISTS", "Remove or check existence", "O(1)"],
+          ["Keys", "SCAN", "Incrementally iterate keys", "O(1) per call"],
+          ["Hashes", "HGETALL", "Return all fields and values", "O(N)"],
+          ["Lists", "LPUSH / RPOP", "Push left, pop right for queues", "O(1)"],
+          ["Sets", "SADD / SMEMBERS", "Add or list members", "O(N)"],
+          ["Sorted Sets", "ZADD / ZRANGE", "Add scored members or range", "O(log N)"]
         ]
       }
     },
@@ -191,10 +133,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "redis-data-types",
-    "redis-persistence"
-  ],
+  "relatedLessons": ["redis-data-types", "redis-persistence"],
   "furtherReading": [
     {
       "title": "Redis Command Reference",

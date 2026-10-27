@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "typescript",
-    "react-hook-form",
-    "forms",
-    "validation"
-  ],
+  "tags": ["typescript", "react-hook-form", "forms", "validation"],
   "blocks": [
     {
       "type": "paragraph",

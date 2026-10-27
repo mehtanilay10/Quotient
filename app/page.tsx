@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 import {
   ArrowRight,
   BookOpen,
@@ -15,18 +15,23 @@ import {
   GraduationCap,
   RefreshCw,
   TrendingUp,
-} from 'lucide-react';
-import { HeroSection } from '@/components/sections/HeroSection';
-import { SectionHeader } from '@/components/sections/SectionHeader';
-import { getCourseStats, getAllCourses, getCourseCategory, getQuestionCategories } from '@/lib/content';
-import { buildMetadata } from '@/lib/seo';
-import type { Course } from '@/types';
+} from "lucide-react";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { SectionHeader } from "@/components/sections/SectionHeader";
+import {
+  getCourseStats,
+  getAllCourses,
+  getCourseCategory,
+  getQuestionCategories,
+} from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
+import type { Course } from "@/types";
 
 export const metadata = buildMetadata({
-  title: 'Quotient | Structured Learning for Software Engineers',
+  title: "Quotient | Structured Learning for Software Engineers",
   description:
-    'A structured learning workspace for software engineers: courses, worked solutions, practical questions, cheat sheets, and AI tooling. Build durable fundamentals and learn the why, not just the answer.',
-  path: '/',
+    "A structured learning workspace for software engineers: courses, worked solutions, practical questions, cheat sheets, and AI tooling. Build durable fundamentals and learn the why, not just the answer.",
+  path: "/",
 });
 
 /** Icon per content category, so the "what's inside" band reads like a curriculum. */
@@ -52,31 +57,31 @@ export default function HomePage() {
   const pillars = [
     {
       icon: <Code2 className="h-5 w-5 text-accent-fg" aria-hidden="true" />,
-      tag: 'Worked solutions',
-      title: 'Problems with multiple approaches',
+      tag: "Worked solutions",
+      title: "Problems with multiple approaches",
       description:
-        'Every coding problem ships with a naive solution, an optimal one, complexity analysis, and the trade-offs that decide which one belongs in production.',
+        "Every coding problem ships with a naive solution, an optimal one, complexity analysis, and the trade-offs that decide which one belongs in production.",
     },
     {
       icon: <Terminal className="h-5 w-5 text-done-fg" aria-hidden="true" />,
-      tag: 'Realistic answers',
-      title: 'Question answers by technology and depth',
+      tag: "Realistic answers",
+      title: "Question answers by technology and depth",
       description:
-        'Conceptual, system design, and language-specific answers grouped by depth — so you always know what to study next.',
+        "Conceptual, system design, and language-specific answers grouped by depth — so you always know what to study next.",
     },
     {
       icon: <Bug className="h-5 w-5 text-danger-fg" aria-hidden="true" />,
-      tag: 'The why',
-      title: 'Diagrams and decision frameworks',
+      tag: "The why",
+      title: "Diagrams and decision frameworks",
       description:
-        'Sequence diagrams, trade-off tables, and comparisons that make architecture and algorithms click instead of memorise.',
+        "Sequence diagrams, trade-off tables, and comparisons that make architecture and algorithms click instead of memorise.",
     },
     {
       icon: <ShieldCheck className="h-5 w-5 text-success-fg" aria-hidden="true" />,
-      tag: 'Reference',
-      title: 'Cheat sheets you keep open',
+      tag: "Reference",
+      title: "Cheat sheets you keep open",
       description:
-        'Dense, correct, copy-ready snippets for C#, SQL, React, and more — the one tab you leave pinned while you work.',
+        "Dense, correct, copy-ready snippets for C#, SQL, React, and more — the one tab you leave pinned while you work.",
     },
   ];
 
@@ -85,31 +90,31 @@ export default function HomePage() {
   const careerPillars = [
     {
       icon: <GraduationCap className="h-5 w-5 text-accent-fg" aria-hidden="true" />,
-      tag: 'Fundamentals',
-      title: 'Foundations that compound',
+      tag: "Fundamentals",
+      title: "Foundations that compound",
       description:
-        'Ordered modules across fundamentals, backend, frontend, databases, DevOps, AI, and architecture - explained in plain language first, then deepened with trade-offs.',
+        "Ordered modules across fundamentals, backend, frontend, databases, DevOps, AI, and architecture - explained in plain language first, then deepened with trade-offs.",
     },
     {
       icon: <TrendingUp className="h-5 w-5 text-done-fg" aria-hidden="true" />,
-      tag: 'Growth',
-      title: 'From junior to senior',
+      tag: "Growth",
+      title: "From junior to senior",
       description:
-        'Every topic starts simple and adds complexity gradually, so you can revisit the same ideas at a deeper level as your responsibilities grow.',
+        "Every topic starts simple and adds complexity gradually, so you can revisit the same ideas at a deeper level as your responsibilities grow.",
     },
     {
       icon: <Code2 className="h-5 w-5 text-danger-fg" aria-hidden="true" />,
-      tag: 'Practice',
-      title: 'Learning by doing',
+      tag: "Practice",
+      title: "Learning by doing",
       description:
-        'Try each problem before reading on, then compare your approach against worked solutions, diagrams, and cheat sheets you will reuse at work.',
+        "Try each problem before reading on, then compare your approach against worked solutions, diagrams, and cheat sheets you will reuse at work.",
     },
     {
       icon: <RefreshCw className="h-5 w-5 text-success-fg" aria-hidden="true" />,
-      tag: 'Momentum',
-      title: 'Current skills, steady habits',
+      tag: "Momentum",
+      title: "Current skills, steady habits",
       description:
-        'AI tooling and modern stacks sit alongside the classics, while progress, bookmarks, and notes make a little learning every week easy to keep up.',
+        "AI tooling and modern stacks sit alongside the classics, while progress, bookmarks, and notes make a little learning every week easy to keep up.",
     },
   ];
 
@@ -122,9 +127,11 @@ export default function HomePage() {
         totalCheatsheets={stats.totalCheatsheets}
         totalHours={stats.totalHours}
         totalCourses={courses.length}
-        startHref={firstCourse ? `/${getCourseCategory(firstCourse.slug)}/courses/${firstCourse.slug}` : '/'}
+        startHref={
+          firstCourse ? `/${getCourseCategory(firstCourse.slug)}/courses/${firstCourse.slug}` : "/"
+        }
         questionsHref={
-          firstQuestionCategory ? `/${firstQuestionCategory}/question-answers` : '/search'
+          firstQuestionCategory ? `/${firstQuestionCategory}/question-answers` : "/search"
         }
       />
 
@@ -139,19 +146,19 @@ export default function HomePage() {
           <ol className="grid gap-4 sm:grid-cols-3">
             {[
               {
-                n: '01',
-                title: 'Pick a topic',
-                body: 'Start from a category like Backend or Database and follow a module end to end.',
+                n: "01",
+                title: "Pick a topic",
+                body: "Start from a category like Backend or Database and follow a module end to end.",
               },
               {
-                n: '02',
-                title: 'Work the problem',
-                body: 'Read the prompt, try it yourself, then compare against the worked approaches.',
+                n: "02",
+                title: "Work the problem",
+                body: "Read the prompt, try it yourself, then compare against the worked approaches.",
               },
               {
-                n: '03',
-                title: 'Track the gaps',
-                body: 'Bookmark, take notes, and mark lessons complete to see what still needs work.',
+                n: "03",
+                title: "Track the gaps",
+                body: "Bookmark, take notes, and mark lessons complete to see what still needs work.",
               },
             ].map((step) => (
               <li
@@ -244,7 +251,9 @@ export default function HomePage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {courses.slice(0, 6).map((course: Course) => {
               const category = getCourseCategory(course.slug);
-              const Icon = CATEGORY_ICONS[category] ?? <Layers className="h-4 w-4" aria-hidden="true" />;
+              const Icon = CATEGORY_ICONS[category] ?? (
+                <Layers className="h-4 w-4" aria-hidden="true" />
+              );
               return (
                 <Link
                   key={course.id}
@@ -283,8 +292,8 @@ export default function HomePage() {
               aria-hidden="true"
               style={{
                 backgroundImage:
-                  'radial-gradient(circle at 1px 1px, var(--color-fg-default) 1px, transparent 0)',
-                backgroundSize: '24px 24px',
+                  "radial-gradient(circle at 1px 1px, var(--color-fg-default) 1px, transparent 0)",
+                backgroundSize: "24px 24px",
               }}
             />
             <div className="relative">
@@ -292,13 +301,16 @@ export default function HomePage() {
                 Learn it deeply. Keep growing after.
               </h2>
               <p className="mx-auto mt-3 max-w-xl text-fg-muted">
-                Free, open, and no account required. Master the reasoning behind modern
-                software, AI tooling, and programming — then track your progress when you&apos;re
-                ready.
+                Free, open, and no account required. Master the reasoning behind modern software, AI
+                tooling, and programming — then track your progress when you&apos;re ready.
               </p>
               <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                 <Link
-                  href={firstCourse ? `/${getCourseCategory(firstCourse.slug)}/courses/${firstCourse.slug}` : '/'}
+                  href={
+                    firstCourse
+                      ? `/${getCourseCategory(firstCourse.slug)}/courses/${firstCourse.slug}`
+                      : "/"
+                  }
                   className="group inline-flex items-center gap-2 rounded-lg bg-accent-fg px-5 py-3 font-medium text-white transition-colors hover:bg-accent-emphasis"
                 >
                   Start learning

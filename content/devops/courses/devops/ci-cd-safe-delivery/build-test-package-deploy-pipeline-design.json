@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "CI/CD",
-    "pipelines",
-    "DevOps",
-    "automation"
-  ],
+  "tags": ["CI/CD", "pipelines", "DevOps", "automation"],
   "blocks": [
     {
       "type": "paragraph",

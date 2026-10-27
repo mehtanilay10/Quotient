@@ -160,6 +160,10 @@
   ],
   "relatedLessons": ["subtree-fundamentals", "managing-dependencies"],
   "furtherReading": [
-    { "title": "Submodules vs Subtrees", "url": "https://www.atlassian.com/git/tutorials/git-subtree", "type": "article" }
+    {
+      "title": "Submodules vs Subtrees",
+      "url": "https://www.atlassian.com/git/tutorials/git-subtree",
+      "type": "article"
+    }
   ]
 }

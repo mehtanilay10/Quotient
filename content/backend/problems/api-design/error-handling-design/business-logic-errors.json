@@ -30,11 +30,21 @@
         "rows": [
           ["Duplicate email", "409 Conflict", "DuplicateEmail", "Choose another email"],
           ["Order already shipped", "409 Conflict", "OrderShipped", "Cannot cancel shipped orders"],
-          ["Insufficient balance", "422 Unprocessable", "InsufficientFunds", "Add funds or reduce amount"],
+          [
+            "Insufficient balance",
+            "422 Unprocessable",
+            "InsufficientFunds",
+            "Add funds or reduce amount"
+          ],
           ["Resource locked by another user", "409 Conflict", "ResourceLocked", "Wait and retry"],
           ["Order not in cancellable state", "422", "InvalidStateTransition", "Check order status"],
           ["Promo code expired", "422", "PromoExpired", "Remove or replace code"],
-          ["Payment method declined", "402 Payment Required", "PaymentDeclined", "Use another payment method"],
+          [
+            "Payment method declined",
+            "402 Payment Required",
+            "PaymentDeclined",
+            "Use another payment method"
+          ],
           ["Schedule conflict", "409 Conflict", "ScheduleConflict", "Pick another time slot"]
         ]
       }
@@ -100,9 +110,21 @@
       "data": {
         "headers": ["Code", "Use When", "Example"],
         "rows": [
-          ["409 Conflict", "Resource state prevents the operation", "Seat already sold, duplicate email"],
-          ["422 Unprocessable", "Valid request but violates business rules", "Insufficient funds, wrong state"],
-          ["402 Payment Required", "Payment declined or missing", "Card declined, subscription expired"]
+          [
+            "409 Conflict",
+            "Resource state prevents the operation",
+            "Seat already sold, duplicate email"
+          ],
+          [
+            "422 Unprocessable",
+            "Valid request but violates business rules",
+            "Insufficient funds, wrong state"
+          ],
+          [
+            "402 Payment Required",
+            "Payment declined or missing",
+            "Card declined, subscription expired"
+          ]
         ]
       }
     },
@@ -148,10 +170,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "http-status-code-selection",
-    "validation-errors"
-  ],
+  "relatedLessons": ["http-status-code-selection", "validation-errors"],
   "furtherReading": [
     {
       "title": "RFC 7807: Problem Details",

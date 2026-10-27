@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "authorization",
-    "roles",
-    "rbac"
-  ],
+  "tags": ["aspnet-core", "authorization", "roles", "rbac"],
   "blocks": [
     {
       "type": "heading",
@@ -70,21 +65,9 @@
           {
             "title": "Role-Based Authorization",
             "description": "Role-based endpoint protection",
-            "pros": [
-              "Simple to implement",
-              "Built into Identity",
-              "Multiple roles supported"
-            ],
-            "cons": [
-              "Coarse-grained",
-              "Hard to evolve",
-              "Role proliferation"
-            ],
-            "tags": [
-              "[Authorize(Roles = \"...\")]",
-              "RequireRole",
-              "IdentityRole"
-            ]
+            "pros": ["Simple to implement", "Built into Identity", "Multiple roles supported"],
+            "cons": ["Coarse-grained", "Hard to evolve", "Role proliferation"],
+            "tags": ["[Authorize(Roles = \"...\")]", "RequireRole", "IdentityRole"]
           }
         ]
       }

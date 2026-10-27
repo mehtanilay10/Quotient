@@ -8,15 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "auth0",
-    "okta",
-    "identity",
-    "social-login",
-    "asp.net-core",
-    "rules",
-    "actions"
-  ],
+  "tags": ["auth0", "okta", "identity", "social-login", "asp.net-core", "rules", "actions"],
   "blocks": [
     {
       "type": "paragraph",
@@ -197,7 +189,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "sso-fundamentals"
-  ]
+  "prerequisites": ["sso-fundamentals"]
 }

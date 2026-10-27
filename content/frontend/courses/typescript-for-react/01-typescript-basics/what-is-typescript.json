@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "introduction",
-    "javascript",
-    "types"
-  ],
+  "tags": ["typescript", "introduction", "javascript", "types"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,27 +62,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "JavaScript",
-          "TypeScript"
-        ],
+        "headers": ["JavaScript", "TypeScript"],
         "rows": [
-          [
-            "Dynamic typing",
-            "Static typing"
-          ],
-          [
-            "Runtime errors",
-            "Compile-time errors"
-          ],
-          [
-            "No type annotations",
-            "Type annotations"
-          ],
-          [
-            "Less tooling support",
-            "Rich IDE features"
-          ]
+          ["Dynamic typing", "Static typing"],
+          ["Runtime errors", "Compile-time errors"],
+          ["No type annotations", "Type annotations"],
+          ["Less tooling support", "Rich IDE features"]
         ]
       }
     },

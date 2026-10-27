@@ -58,11 +58,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Service",
-          "Zone redundancy support",
-          "Notes"
-        ],
+        "headers": ["Service", "Zone redundancy support", "Notes"],
         "rows": [
           [
             "Azure App Service",
@@ -79,11 +75,7 @@
             "Yes",
             "Use multiple node pools with zone labels or topology spread constraints."
           ],
-          [
-            "Azure Storage",
-            "Yes",
-            "ZRS replicates across three zones in the same region."
-          ]
+          ["Azure Storage", "Yes", "ZRS replicates across three zones in the same region."]
         ]
       }
     },

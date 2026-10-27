@@ -9,12 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 5,
   "icon": "💾",
-  "tags": [
-    "database",
-    "consistency",
-    "saga",
-    "cqrs"
-  ],
+  "tags": ["database", "consistency", "saga", "cqrs"],
   "lessonSlugs": [
     "database-per-service-pattern",
     "shared-database-anti-pattern",

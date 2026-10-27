@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "express",
-    "middleware",
-    "redis",
-    "reusable",
-    "nodejs"
-  ],
+  "tags": ["express", "middleware", "redis", "reusable", "nodejs"],
   "blocks": [
     {
       "type": "paragraph",

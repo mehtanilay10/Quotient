@@ -68,22 +68,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Combination",
-          "Behavior During Partition",
-          "Examples"
-        ],
+        "headers": ["Combination", "Behavior During Partition", "Examples"],
         "rows": [
           [
             "CP",
             "Reject writes or reads to preserve consistency",
             "HBase, MongoDB with replica sets"
           ],
-          [
-            "AP",
-            "Accept writes and reads, risking stale data",
-            "Cassandra, DynamoDB, CouchDB"
-          ],
+          ["AP", "Accept writes and reads, risking stale data", "Cassandra, DynamoDB, CouchDB"],
           [
             "CA",
             "Impossible under partition; works only when no partition occurs",

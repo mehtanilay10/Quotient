@@ -6,9 +6,5 @@
   "fullDefinition": "Model routing is a technique where an orchestration layer automatically selects which AI model to use for a given request. Simple requests may be routed to smaller, cheaper, faster models. Complex reasoning tasks may be routed to frontier models. Cost-sensitive applications use routing to balance quality and cost. Products like OpenRouter and some enterprise AI gateways implement model routing.",
   "category": "architecture",
   "difficulty": "advanced",
-  "relatedTerms": [
-    "orchestration",
-    "inference",
-    "large-language-model"
-  ]
+  "relatedTerms": ["orchestration", "inference", "large-language-model"]
 }

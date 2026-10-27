@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "ordering",
-    "distributed-systems",
-    "message-queues",
-    "race-conditions"
-  ],
+  "tags": ["ordering", "distributed-systems", "message-queues", "race-conditions"],
   "blocks": [
     {
       "type": "paragraph",

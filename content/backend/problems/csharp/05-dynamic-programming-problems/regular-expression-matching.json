@@ -8,12 +8,7 @@
   "order": 21,
   "difficulty": "hard",
   "estimatedMinutes": 25,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "strings",
-    "hard"
-  ],
+  "tags": ["csharp", "dynamic-programming", "strings", "hard"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "DP 2D",
             "description": "Handle * with zero-or-more",
-            "pros": [
-              "Optimal"
-            ],
-            "tags": [
-              "O(m\u00b7n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["Optimal"],
+            "tags": ["O(m\u00b7n) time", "O(n) space", "Recommended"]
           }
         ]
       }

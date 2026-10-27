@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "rest",
-    "api",
-    "architecture"
-  ],
+  "tags": ["rest", "api", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -237,9 +233,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "api-controllers"
-  ],
+  "relatedLessons": ["api-controllers"],
   "technology": null,
   "furtherReading": [
     {

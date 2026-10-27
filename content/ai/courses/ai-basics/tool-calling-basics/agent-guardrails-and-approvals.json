@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "agents",
-    "guardrails",
-    "approval-flows",
-    "tool-calling",
-    "risk-management"
-  ],
+  "tags": ["agents", "guardrails", "approval-flows", "tool-calling", "risk-management"],
   "blocks": [
     {
       "type": "paragraph",
@@ -41,37 +35,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Action type",
-          "Risk level",
-          "Recommended control"
-        ],
+        "headers": ["Action type", "Risk level", "Recommended control"],
         "rows": [
-          [
-            "Fetch public data",
-            "Low",
-            "Allow auto-run + log"
-          ],
-          [
-            "Send draft email",
-            "Medium",
-            "Preview + one-click user approval"
-          ],
+          ["Fetch public data", "Low", "Allow auto-run + log"],
+          ["Send draft email", "Medium", "Preview + one-click user approval"],
           [
             "Delete records / publish externally",
             "High",
             "Mandatory human approval + 2-step confirm"
           ],
-          [
-            "Financial or policy decision",
-            "High",
-            "Human decision owner only"
-          ],
-          [
-            "Write to production systems",
-            "High",
-            "Role-based access + audit logs + rollback"
-          ]
+          ["Financial or policy decision", "High", "Human decision owner only"],
+          ["Write to production systems", "High", "Role-based access + audit logs + rollback"]
         ]
       }
     },
@@ -119,22 +93,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Action class",
-          "Approval policy",
-          "Rationale"
-        ],
+        "headers": ["Action class", "Approval policy", "Rationale"],
         "rows": [
-          [
-            "Read-only lookup",
-            "Auto-allow with audit log",
-            "Low operational risk"
-          ],
-          [
-            "External write action",
-            "Require human approval",
-            "Potential irreversible impact"
-          ],
+          ["Read-only lookup", "Auto-allow with audit log", "Low operational risk"],
+          ["External write action", "Require human approval", "Potential irreversible impact"],
           [
             "High-risk transaction",
             "Dual approval and policy check",
@@ -151,23 +113,17 @@
           {
             "title": "Permissive",
             "description": "Agent can use any tool freely. Fast but risky — a single mistake can cause data loss or compliance violations.",
-            "tags": [
-              "risky"
-            ]
+            "tags": ["risky"]
           },
           {
             "title": "Moderate",
             "description": "Agent needs approval for medium/high-risk actions. Good balance of speed and safety for most business use cases.",
-            "tags": [
-              "balanced"
-            ]
+            "tags": ["balanced"]
           },
           {
             "title": "Strict",
             "description": "Every tool call requires human approval. Safest but slowest. Best for financial, legal, or medical contexts.",
-            "tags": [
-              "safe"
-            ]
+            "tags": ["safe"]
           }
         ]
       }
@@ -212,11 +168,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-tool-calling",
-    "what-are-agents",
-    "how-agents-work"
-  ],
+  "relatedLessons": ["what-is-tool-calling", "what-are-agents", "how-agents-work"],
   "furtherReading": [
     {
       "title": "Function Calling Guide",

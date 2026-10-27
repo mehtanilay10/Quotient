@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "tcc",
-    "try-confirm-cancel",
-    "pattern"
-  ],
+  "tags": ["tcc", "try-confirm-cancel", "pattern"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,27 +56,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Phase",
-          "Action",
-          "Idempotent"
-        ],
+        "headers": ["Phase", "Action", "Idempotent"],
         "rows": [
-          [
-            "Try",
-            "Reserve resources, check constraints",
-            "Yes"
-          ],
-          [
-            "Confirm",
-            "Commit reserved resources",
-            "Yes"
-          ],
-          [
-            "Cancel",
-            "Release reserved resources",
-            "Yes"
-          ]
+          ["Try", "Reserve resources, check constraints", "Yes"],
+          ["Confirm", "Commit reserved resources", "Yes"],
+          ["Cancel", "Release reserved resources", "Yes"]
         ]
       }
     },
@@ -101,32 +81,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "TCC",
-          "Saga"
-        ],
+        "headers": ["Aspect", "TCC", "Saga"],
         "rows": [
-          [
-            "Isolation",
-            "Resource reservation",
-            "No isolation"
-          ],
-          [
-            "Consistency",
-            "Eventual",
-            "Eventual"
-          ],
-          [
-            "Complexity",
-            "High (3 methods per service)",
-            "Medium"
-          ],
-          [
-            "Use Case",
-            "Short transactions",
-            "Long-running"
-          ]
+          ["Isolation", "Resource reservation", "No isolation"],
+          ["Consistency", "Eventual", "Eventual"],
+          ["Complexity", "High (3 methods per service)", "Medium"],
+          ["Use Case", "Short transactions", "Long-running"]
         ]
       }
     },

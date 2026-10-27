@@ -31,11 +31,7 @@
           ["Host a web API or MVC app", "App Service", "Low"],
           ["Run containers", "Azure Container Apps", "Medium"],
           ["Store user uploads", "Blob Storage", "Low"],
-          [
-            "Process background jobs",
-            "Azure Functions or Queue Storage",
-            "Medium"
-          ],
+          ["Process background jobs", "Azure Functions or Queue Storage", "Medium"],
           ["Relational database", "Azure SQL Database", "Low"],
           ["NoSQL document database", "Azure Cosmos DB", "Medium"],
           ["Cache session data", "Azure Cache for Redis", "Low"],

@@ -6,11 +6,7 @@
   "description": "Make incompatible interfaces work together.",
   "order": 1,
   "difficulty": "intermediate",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture"],
   "blocks": [
     {
       "type": "paragraph",

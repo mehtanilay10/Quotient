@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 22,
-  "tags": [
-    "coherence",
-    "distributed-systems",
-    "consistency",
-    "replication",
-    "performance"
-  ],
+  "tags": ["coherence", "distributed-systems", "consistency", "replication", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -86,37 +80,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Consistency",
-          "Latency Impact",
-          "Scalability"
-        ],
+        "headers": ["Strategy", "Consistency", "Latency Impact", "Scalability"],
         "rows": [
-          [
-            "Write-invalidate",
-            "Eventual to strong",
-            "Low",
-            "High"
-          ],
-          [
-            "Write-update",
-            "Eventual to strong",
-            "Medium",
-            "Medium"
-          ],
-          [
-            "Leases",
-            "Bounded freshness",
-            "Low to medium",
-            "High"
-          ],
-          [
-            "Quorum",
-            "Strong",
-            "High",
-            "Low to medium"
-          ]
+          ["Write-invalidate", "Eventual to strong", "Low", "High"],
+          ["Write-update", "Eventual to strong", "Medium", "Medium"],
+          ["Leases", "Bounded freshness", "Low to medium", "High"],
+          ["Quorum", "Strong", "High", "Low to medium"]
         ]
       }
     },

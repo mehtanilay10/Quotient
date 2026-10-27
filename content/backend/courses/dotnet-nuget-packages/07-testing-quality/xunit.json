@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "testing",
-    "xunit",
-    "dotnet"
-  ],
+  "tags": ["testing", "xunit", "dotnet"],
   "blocks": [
     {
       "type": "heading",
@@ -150,8 +146,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "fluent-assertions",
-    "moq"
-  ]
+  "relatedLessons": ["fluent-assertions", "moq"]
 }

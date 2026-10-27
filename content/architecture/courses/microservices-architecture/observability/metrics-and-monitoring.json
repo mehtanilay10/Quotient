@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 17,
-  "tags": [
-    "metrics",
-    "prometheus",
-    "grafana"
-  ],
+  "tags": ["metrics", "prometheus", "grafana"],
   "blocks": [
     {
       "type": "paragraph",
@@ -64,32 +60,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Description",
-          "Example"
-        ],
+        "headers": ["Type", "Description", "Example"],
         "rows": [
-          [
-            "Counter",
-            "Monotonically increasing",
-            "Request count, error count"
-          ],
-          [
-            "Gauge",
-            "Value that can go up/down",
-            "Memory usage, queue depth"
-          ],
-          [
-            "Histogram",
-            "Distribution in buckets",
-            "Request latency"
-          ],
-          [
-            "Summary",
-            "Distribution with quantiles",
-            "Latency percentiles"
-          ]
+          ["Counter", "Monotonically increasing", "Request count, error count"],
+          ["Gauge", "Value that can go up/down", "Memory usage, queue depth"],
+          ["Histogram", "Distribution in buckets", "Request latency"],
+          ["Summary", "Distribution with quantiles", "Latency percentiles"]
         ]
       }
     },

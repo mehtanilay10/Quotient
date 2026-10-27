@@ -8,14 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "sqs",
-    "aws",
-    "cloud",
-    "message-queue",
-    "standard-queue",
-    "fifo"
-  ],
+  "tags": ["sqs", "aws", "cloud", "message-queue", "standard-queue", "fifo"],
   "blocks": [
     {
       "type": "paragraph",
@@ -76,42 +69,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Standard Queue",
-          "FIFO Queue"
-        ],
+        "headers": ["Feature", "Standard Queue", "FIFO Queue"],
         "rows": [
-          [
-            "Throughput",
-            "Nearly unlimited",
-            "300 messages/sec (3,000 with batching)"
-          ],
-          [
-            "Delivery guarantee",
-            "At-least-once",
-            "Exactly-once"
-          ],
-          [
-            "Ordering",
-            "Best-effort",
-            "Strict FIFO order"
-          ],
-          [
-            "Message deduplication",
-            "Not supported",
-            "Supported (5-minute dedup window)"
-          ],
-          [
-            "Pricing",
-            "Lower",
-            "Higher (0.40 per million vs 0.25)"
-          ],
-          [
-            "Naming",
-            "Any name",
-            "Must end in .fifo"
-          ]
+          ["Throughput", "Nearly unlimited", "300 messages/sec (3,000 with batching)"],
+          ["Delivery guarantee", "At-least-once", "Exactly-once"],
+          ["Ordering", "Best-effort", "Strict FIFO order"],
+          ["Message deduplication", "Not supported", "Supported (5-minute dedup window)"],
+          ["Pricing", "Lower", "Higher (0.40 per million vs 0.25)"],
+          ["Naming", "Any name", "Must end in .fifo"]
         ]
       }
     },
@@ -186,11 +151,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rabbitmq-fundamentals",
-    "message-structure",
-    "point-to-point-vs-pubsub"
-  ],
+  "relatedLessons": ["rabbitmq-fundamentals", "message-structure", "point-to-point-vs-pubsub"],
   "furtherReading": [
     {
       "title": "Amazon SQS Developer Guide",

@@ -8,12 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "backend",
-    "caching",
-    "redis",
-    "distributed-systems"
-  ],
+  "tags": ["backend", "caching", "redis", "distributed-systems"],
   "blocks": [
     {
       "type": "paragraph",

@@ -6,11 +6,7 @@
   "fullDefinition": "Instruction tuning is a supervised learning process that refines a pre-trained language model on datasets of instruction-response pairs. The goal is to make the model better at understanding and following human instructions in natural language. Models like ChatGPT and Claude undergo extensive instruction tuning after their initial pre-training to become useful assistants. This process typically involves thousands of carefully crafted examples covering diverse tasks, formats, and safety scenarios. Instruction tuning is what transforms a raw language predictor into a helpful, conversational AI.",
   "category": "models-and-training",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "fine-tuning",
-    "rlhf",
-    "large-language-model"
-  ],
+  "relatedTerms": ["fine-tuning", "rlhf", "large-language-model"],
   "learnMoreSlug": "how-llms-work-simply",
   "examples": [
     "A model trained to answer 'What is the capital of France?' with 'The capital of France is Paris.'",

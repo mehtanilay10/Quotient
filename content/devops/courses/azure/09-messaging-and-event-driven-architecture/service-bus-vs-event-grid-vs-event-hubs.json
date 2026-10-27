@@ -35,12 +35,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Service Bus",
-          "Event Grid",
-          "Event Hubs"
-        ],
+        "headers": ["Feature", "Service Bus", "Event Grid", "Event Hubs"],
         "rows": [
           [
             "Primary Use",
@@ -48,30 +43,15 @@
             "Event routing, reactive apps",
             "Big data streaming, telemetry"
           ],
-          [
-            "Throughput",
-            "Thousands/sec",
-            "Millions/day",
-            "Millions/sec"
-          ],
-          [
-            "Ordering",
-            "FIFO (queues), sessions",
-            "No guarantee",
-            "Per-partition ordering"
-          ],
+          ["Throughput", "Thousands/sec", "Millions/day", "Millions/sec"],
+          ["Ordering", "FIFO (queues), sessions", "No guarantee", "Per-partition ordering"],
           [
             "Delivery",
             "At least once (push) or pull",
             "At least once with retry",
             "At least once (pull)"
           ],
-          [
-            "Max Event Size",
-            "256 KB",
-            "1 MB",
-            "1 MB"
-          ],
+          ["Max Event Size", "256 KB", "1 MB", "1 MB"],
           [
             "Retention",
             "Configurable (days) + DLQ",
@@ -113,41 +93,20 @@
           {
             "title": "Service Bus",
             "description": "Reliable enterprise messaging with FIFO, sessions, and transactions.",
-            "pros": [
-              "Guaranteed ordering",
-              "Dead-letter queue",
-              "Transactional"
-            ],
-            "cons": [
-              "Lower throughput",
-              "More complex setup"
-            ]
+            "pros": ["Guaranteed ordering", "Dead-letter queue", "Transactional"],
+            "cons": ["Lower throughput", "More complex setup"]
           },
           {
             "title": "Event Grid",
             "description": "Fast event routing from Azure services to your handlers.",
-            "pros": [
-              "Very low latency",
-              "Built-in filters",
-              "Serverless-friendly"
-            ],
-            "cons": [
-              "No ordering",
-              "Limited payload size"
-            ]
+            "pros": ["Very low latency", "Built-in filters", "Serverless-friendly"],
+            "cons": ["No ordering", "Limited payload size"]
           },
           {
             "title": "Event Hubs",
             "description": "Scalable streaming platform for high-volume telemetry.",
-            "pros": [
-              "Millions of events/sec",
-              "Capture to storage",
-              "Partitioned"
-            ],
-            "cons": [
-              "Not for point-to-point",
-              "Higher learning curve"
-            ]
+            "pros": ["Millions of events/sec", "Capture to storage", "Partitioned"],
+            "cons": ["Not for point-to-point", "Higher learning curve"]
           }
         ]
       }

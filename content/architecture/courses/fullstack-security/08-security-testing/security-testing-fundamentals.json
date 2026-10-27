@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "testing",
-    "security",
-    "devops",
-    "automation"
-  ],
+  "tags": ["testing", "security", "devops", "automation"],
   "blocks": [
     {
       "type": "paragraph",

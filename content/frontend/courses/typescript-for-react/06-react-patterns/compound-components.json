@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "typescript",
-    "react",
-    "compound-components",
-    "patterns"
-  ],
+  "tags": ["typescript", "react", "compound-components", "patterns"],
   "blocks": [
     {
       "type": "paragraph",
@@ -128,49 +123,22 @@
               "State shared without prop drilling",
               "Highly flexible layout"
             ],
-            "cons": [
-              "More components to export",
-              "Context adds slight overhead"
-            ],
-            "tags": [
-              "declarative",
-              "flexible"
-            ]
+            "cons": ["More components to export", "Context adds slight overhead"],
+            "tags": ["declarative", "flexible"]
           },
           {
             "title": "Render Props",
             "description": "Child receives render function from parent",
-            "pros": [
-              "Full rendering control",
-              "Explicit data flow",
-              "Easy to type"
-            ],
-            "cons": [
-              "Callback nesting",
-              "Less natural API"
-            ],
-            "tags": [
-              "explicit",
-              "flexible"
-            ]
+            "pros": ["Full rendering control", "Explicit data flow", "Easy to type"],
+            "cons": ["Callback nesting", "Less natural API"],
+            "tags": ["explicit", "flexible"]
           },
           {
             "title": "Single Component with Config",
             "description": "All options passed as props to one component",
-            "pros": [
-              "Simple API surface",
-              "Easy to document",
-              "Fewer files"
-            ],
-            "cons": [
-              "Rigid structure",
-              "Hard to customize layout",
-              "Prop drilling inside"
-            ],
-            "tags": [
-              "simple",
-              "rigid"
-            ]
+            "pros": ["Simple API surface", "Easy to document", "Fewer files"],
+            "cons": ["Rigid structure", "Hard to customize layout", "Prop drilling inside"],
+            "tags": ["simple", "rigid"]
           }
         ]
       }

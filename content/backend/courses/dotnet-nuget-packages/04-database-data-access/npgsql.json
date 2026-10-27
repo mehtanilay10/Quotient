@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "npgsql",
-    "postgresql",
-    "postgres",
-    "database"
-  ],
+  "tags": ["npgsql", "postgresql", "postgres", "database"],
   "blocks": [
     {
       "type": "heading",

@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "bff",
-    "backend-for-frontend",
-    "pattern"
-  ],
+  "tags": ["bff", "backend-for-frontend", "pattern"],
   "blocks": [
     {
       "type": "paragraph",
@@ -78,32 +74,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Generic Gateway",
-          "BFF"
-        ],
+        "headers": ["Aspect", "Generic Gateway", "BFF"],
         "rows": [
-          [
-            "Clients",
-            "All clients",
-            "One client type"
-          ],
-          [
-            "Payload",
-            "One size",
-            "Optimized per client"
-          ],
-          [
-            "Logic",
-            "Generic",
-            "Client-specific"
-          ],
-          [
-            "Complexity",
-            "Low",
-            "Higher per client"
-          ]
+          ["Clients", "All clients", "One client type"],
+          ["Payload", "One size", "Optimized per client"],
+          ["Logic", "Generic", "Client-specific"],
+          ["Complexity", "Low", "Higher per client"]
         ]
       }
     },

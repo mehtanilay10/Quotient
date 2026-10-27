@@ -39,11 +39,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Model",
-          "Guarantee",
-          "Typical Use"
-        ],
+        "headers": ["Model", "Guarantee", "Typical Use"],
         "rows": [
           [
             "Strong Consistency",

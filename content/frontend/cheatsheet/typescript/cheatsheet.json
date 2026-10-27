@@ -8,7 +8,17 @@
   "order": 9,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": ["typescript", "generics", "interfaces", "advanced-types", "react", "decorators", "utility-types", "cheatsheet", "quick-reference"],
+  "tags": [
+    "typescript",
+    "generics",
+    "interfaces",
+    "advanced-types",
+    "react",
+    "decorators",
+    "utility-types",
+    "cheatsheet",
+    "quick-reference"
+  ],
   "blocks": [
     {
       "type": "heading",

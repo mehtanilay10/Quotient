@@ -52,7 +52,10 @@
       "data": {
         "headers": ["Parameter", "Purpose"],
         "rows": [
-          ["sp", "Permissions: r=read, w=write, c=create, d=delete, l=list, a=add, u=update, p=process"],
+          [
+            "sp",
+            "Permissions: r=read, w=write, c=create, d=delete, l=list, a=add, u=update, p=process"
+          ],
           ["sv", "Storage service version"],
           ["sr", "Resource: b=blob, c=container, s=service"],
           ["se", "Expiry time (ISO 8601)"],

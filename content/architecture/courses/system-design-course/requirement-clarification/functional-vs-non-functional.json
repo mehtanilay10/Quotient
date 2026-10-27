@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "requirements",
-    "functional",
-    "non-functional",
-    "scope"
-  ],
+  "tags": ["requirements", "functional", "non-functional", "scope"],
   "blocks": [
     {
       "type": "paragraph",
@@ -64,37 +59,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Attribute",
-          "Description",
-          "Example Question"
-        ],
+        "headers": ["Attribute", "Description", "Example Question"],
         "rows": [
-          [
-            "Availability",
-            "System uptime and reliability",
-            "What is the acceptable downtime?"
-          ],
-          [
-            "Latency",
-            "Response time expectations",
-            "Should the API respond in under 200ms?"
-          ],
-          [
-            "Scalability",
-            "Ability to handle growth",
-            "How many concurrent users are expected?"
-          ],
-          [
-            "Consistency",
-            "Data accuracy across systems",
-            "Is eventual consistency acceptable?"
-          ],
-          [
-            "Security",
-            "Protection of data and access",
-            "Does this require end-to-end encryption?"
-          ]
+          ["Availability", "System uptime and reliability", "What is the acceptable downtime?"],
+          ["Latency", "Response time expectations", "Should the API respond in under 200ms?"],
+          ["Scalability", "Ability to handle growth", "How many concurrent users are expected?"],
+          ["Consistency", "Data accuracy across systems", "Is eventual consistency acceptable?"],
+          ["Security", "Protection of data and access", "Does this require end-to-end encryption?"]
         ]
       }
     },

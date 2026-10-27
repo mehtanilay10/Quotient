@@ -7,11 +7,7 @@
   "order": 20,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "computed-columns",
-    "ddl",
-    "expression"
-  ],
+  "tags": ["computed-columns", "ddl", "expression"],
   "blocks": [
     {
       "type": "heading",

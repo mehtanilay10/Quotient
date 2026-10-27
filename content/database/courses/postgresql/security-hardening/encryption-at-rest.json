@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "encryption-at-rest",
-    "pgcrypto",
-    "kms",
-    "security",
-    "aes"
-  ],
+  "tags": ["encryption-at-rest", "pgcrypto", "kms", "security", "aes"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ssl-tls",
-    "auditing"
-  ]
+  "relatedLessons": ["ssl-tls", "auditing"]
 }

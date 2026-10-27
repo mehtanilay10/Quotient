@@ -8,13 +8,7 @@
   "order": 11,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "azure",
-    "networking",
-    "vnet",
-    "api-management",
-    "developer"
-  ],
+  "tags": ["azure", "networking", "vnet", "api-management", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -37,54 +31,23 @@
           {
             "title": "Load Balancer",
             "description": "Layer-4 TCP/UDP load balancer for VNet resources.",
-            "pros": [
-              "Very low latency",
-              "Supports any TCP/UDP port",
-              "High performance"
-            ],
-            "cons": [
-              "No HTTP awareness",
-              "No WAF",
-              "Regional only"
-            ],
-            "tags": [
-              "layer-4",
-              "regional"
-            ]
+            "pros": ["Very low latency", "Supports any TCP/UDP port", "High performance"],
+            "cons": ["No HTTP awareness", "No WAF", "Regional only"],
+            "tags": ["layer-4", "regional"]
           },
           {
             "title": "Application Gateway",
             "description": "Layer-7 HTTP load balancer with WAF for VNet resources.",
-            "pros": [
-              "Path-based routing",
-              "SSL offload",
-              "WAF included"
-            ],
-            "cons": [
-              "Regional only",
-              "Not global"
-            ],
-            "tags": [
-              "layer-7",
-              "regional"
-            ]
+            "pros": ["Path-based routing", "SSL offload", "WAF included"],
+            "cons": ["Regional only", "Not global"],
+            "tags": ["layer-7", "regional"]
           },
           {
             "title": "Front Door",
             "description": "Global layer-7 load balancer and CDN at the edge.",
-            "pros": [
-              "Global anycast",
-              "Instant failover",
-              "Edge caching"
-            ],
-            "cons": [
-              "Higher cost",
-              "Overkill for single-region apps"
-            ],
-            "tags": [
-              "global",
-              "edge"
-            ]
+            "pros": ["Global anycast", "Instant failover", "Edge caching"],
+            "cons": ["Higher cost", "Overkill for single-region apps"],
+            "tags": ["global", "edge"]
           }
         ]
       }
@@ -92,37 +55,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Factor",
-          "Load Balancer",
-          "Application Gateway",
-          "Front Door"
-        ],
+        "headers": ["Factor", "Load Balancer", "Application Gateway", "Front Door"],
         "rows": [
-          [
-            "OSI Layer",
-            "4 (TCP/UDP)",
-            "7 (HTTP/HTTPS)",
-            "7 (HTTP/HTTPS)"
-          ],
-          [
-            "Scope",
-            "VNet",
-            "VNet",
-            "Global"
-          ],
-          [
-            "WAF",
-            "No",
-            "Yes",
-            "Yes"
-          ],
-          [
-            "SSL Offload",
-            "No",
-            "Yes",
-            "Yes"
-          ],
+          ["OSI Layer", "4 (TCP/UDP)", "7 (HTTP/HTTPS)", "7 (HTTP/HTTPS)"],
+          ["Scope", "VNet", "VNet", "Global"],
+          ["WAF", "No", "Yes", "Yes"],
+          ["SSL Offload", "No", "Yes", "Yes"],
           [
             "Best for",
             "Databases, game servers",

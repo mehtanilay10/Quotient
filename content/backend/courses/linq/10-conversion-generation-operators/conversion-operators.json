@@ -7,15 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "conversion",
-    "asEnumerable",
-    "asQueryable",
-    "cast",
-    "toArray",
-    "toList"
-  ],
+  "tags": ["linq", "conversion", "asEnumerable", "asQueryable", "cast", "toArray", "toList"],
   "blocks": [
     {
       "type": "paragraph",
@@ -130,9 +122,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "generation-operators",
-    "defaultifempty-operator"
-  ],
+  "relatedLessons": ["generation-operators", "defaultifempty-operator"],
   "courseSlug": "linq"
 }

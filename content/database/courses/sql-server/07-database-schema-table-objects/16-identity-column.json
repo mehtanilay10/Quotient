@@ -7,11 +7,7 @@
   "order": 16,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "identity",
-    "column",
-    "auto-increment"
-  ],
+  "tags": ["identity", "column", "auto-increment"],
   "blocks": [
     {
       "type": "heading",

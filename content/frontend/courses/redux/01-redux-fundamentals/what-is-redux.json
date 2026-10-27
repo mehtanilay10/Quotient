@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "state",
-    "management",
-    "introduction"
-  ],
+  "tags": ["redux", "state", "management", "introduction"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,62 +120,30 @@
           {
             "title": "Redux",
             "description": "Centralized store, predictable updates, time-travel debugging, framework-agnostic.",
-            "pros": [
-              "Predictable",
-              "Powerful DevTools",
-              "Massive ecosystem"
-            ],
-            "cons": [
-              "Boilerplate (mitigated by Redux Toolkit)",
-              "Learning curve"
-            ],
-            "tags": [
-              "state-management"
-            ]
+            "pros": ["Predictable", "Powerful DevTools", "Massive ecosystem"],
+            "cons": ["Boilerplate (mitigated by Redux Toolkit)", "Learning curve"],
+            "tags": ["state-management"]
           },
           {
             "title": "React Context",
             "description": "Built into React, no extra library. Good for low-frequency updates like theme or locale.",
-            "pros": [
-              "No dependencies",
-              "Simple"
-            ],
-            "cons": [
-              "Performance issues with frequent updates",
-              "No DevTools"
-            ],
-            "tags": [
-              "built-in"
-            ]
+            "pros": ["No dependencies", "Simple"],
+            "cons": ["Performance issues with frequent updates", "No DevTools"],
+            "tags": ["built-in"]
           },
           {
             "title": "MobX",
             "description": "Reactive observables that automatically track dependencies. Less boilerplate than Redux.",
-            "pros": [
-              "Less boilerplate",
-              "Reactive"
-            ],
-            "cons": [
-              "Less predictable",
-              "Smaller ecosystem"
-            ],
-            "tags": [
-              "state-management"
-            ]
+            "pros": ["Less boilerplate", "Reactive"],
+            "cons": ["Less predictable", "Smaller ecosystem"],
+            "tags": ["state-management"]
           },
           {
             "title": "Zustand",
             "description": "Minimalist state management with a hooks-based API. Growing in popularity.",
-            "pros": [
-              "Tiny",
-              "Simple API"
-            ],
-            "cons": [
-              "Fewer patterns and conventions"
-            ],
-            "tags": [
-              "state-management"
-            ]
+            "pros": ["Tiny", "Simple API"],
+            "cons": ["Fewer patterns and conventions"],
+            "tags": ["state-management"]
           }
         ]
       }

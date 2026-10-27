@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "react",
-    "typescript",
-    "state",
-    "useState"
-  ],
+  "tags": ["react", "typescript", "state", "useState"],
   "blocks": [
     {
       "type": "paragraph",

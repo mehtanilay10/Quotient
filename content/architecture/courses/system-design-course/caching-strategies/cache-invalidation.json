@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "invalidation",
-    "consistency",
-    "ttl",
-    "stale-data",
-    "performance"
-  ],
+  "tags": ["invalidation", "consistency", "ttl", "stale-data", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,37 +67,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Staleness Bound",
-          "Write Overhead",
-          "Complexity"
-        ],
+        "headers": ["Strategy", "Staleness Bound", "Write Overhead", "Complexity"],
         "rows": [
-          [
-            "TTL expiration",
-            "Up to TTL duration",
-            "Low",
-            "Low"
-          ],
-          [
-            "Write-through invalidation",
-            "Near zero",
-            "Medium",
-            "Medium"
-          ],
-          [
-            "Event-driven invalidation",
-            "Near zero",
-            "Low at runtime",
-            "High"
-          ],
-          [
-            "Versioned cache keys",
-            "Until TTL expires",
-            "Low",
-            "Medium"
-          ]
+          ["TTL expiration", "Up to TTL duration", "Low", "Low"],
+          ["Write-through invalidation", "Near zero", "Medium", "Medium"],
+          ["Event-driven invalidation", "Near zero", "Low at runtime", "High"],
+          ["Versioned cache keys", "Until TTL expires", "Low", "Medium"]
         ]
       }
     },

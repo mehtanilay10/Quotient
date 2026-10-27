@@ -6,12 +6,7 @@
   "description": "How events propagate through the DOM tree, phase control with addEventListener options, and delegation for dynamic content and fewer listeners.",
   "order": 14,
   "difficulty": "intermediate",
-  "tags": [
-    "javascript",
-    "dom",
-    "performance",
-    "intermediate"
-  ],
+  "tags": ["javascript", "dom", "performance", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -126,10 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "js-i05",
-    "js-a01"
-  ],
+  "relatedLessons": ["js-i05", "js-a01"],
   "furtherReading": [
     {
       "title": "Event delegation — MDN Web Docs",

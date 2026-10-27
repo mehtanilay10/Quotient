@@ -108,12 +108,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Part",
-          "Location in for(...)",
-          "Runs",
-          "Purpose"
-        ],
+        "headers": ["Part", "Location in for(...)", "Runs", "Purpose"],
         "rows": [
           [
             "Initialization",
@@ -127,12 +122,7 @@
             "Before each iteration",
             "Decide whether to continue"
           ],
-          [
-            "Iterator",
-            "After second semicolon",
-            "After each iteration",
-            "Move toward termination"
-          ]
+          ["Iterator", "After second semicolon", "After each iteration", "Move toward termination"]
         ]
       }
     },
@@ -239,9 +229,7 @@
               "Less natural for unknown iteration counts",
               "Less readable for complex multi-variable loops"
             ],
-            "tags": [
-              "counted"
-            ]
+            "tags": ["counted"]
           },
           {
             "title": "foreach",
@@ -256,9 +244,7 @@
               "No access to index without extra code",
               "Cannot modify collection during iteration"
             ],
-            "tags": [
-              "collection"
-            ]
+            "tags": ["collection"]
           },
           {
             "title": "while",
@@ -272,9 +258,7 @@
               "Risk of infinite loops if condition never changes",
               "Counter must be managed manually"
             ],
-            "tags": [
-              "conditional"
-            ]
+            "tags": ["conditional"]
           },
           {
             "title": "do-while",
@@ -284,13 +268,8 @@
               "Perfect for menus and prompts",
               "Same flexibility as while"
             ],
-            "cons": [
-              "Less common — can confuse readers",
-              "Same infinite loop risk as while"
-            ],
-            "tags": [
-              "post-check"
-            ]
+            "cons": ["Less common — can confuse readers", "Same infinite loop risk as while"],
+            "tags": ["post-check"]
           }
         ]
       }
@@ -461,10 +440,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "conditionals",
-    "switch-statements"
-  ],
+  "relatedLessons": ["conditionals", "switch-statements"],
   "furtherReading": [],
   "courseSlug": "csharp-fundamentals"
 }

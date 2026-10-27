@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "azure",
-    "containers",
-    "docker",
-    "aks",
-    "developer"
-  ],
+  "tags": ["azure", "containers", "docker", "aks", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -86,10 +80,10 @@
     {
       "type": "mermaid",
       "data": {
-          "id": "mermaid-container-apps-arch",
-          "caption": "Container Apps architecture at a glance",
-          "definition": "flowchart TD\n    U[Users] -->|HTTPS| IN[Ingress]\n    IN --> CA1[Container App: Frontend]\n    IN --> CA2[Container App: API]\n    CA1 --> CA2\n    CA2 --> DB[(Cosmos DB)]\n    ENV[Container Apps Environment] --> CA1\n    ENV --> CA2"
-        }
+        "id": "mermaid-container-apps-arch",
+        "caption": "Container Apps architecture at a glance",
+        "definition": "flowchart TD\n    U[Users] -->|HTTPS| IN[Ingress]\n    IN --> CA1[Container App: Frontend]\n    IN --> CA2[Container App: API]\n    CA1 --> CA2\n    CA2 --> DB[(Cosmos DB)]\n    ENV[Container Apps Environment] --> CA1\n    ENV --> CA2"
+      }
     },
     {
       "type": "summary-box",

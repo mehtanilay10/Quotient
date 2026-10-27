@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "api",
-    "rest",
-    "architecture",
-    "design"
-  ],
+  "tags": ["api", "rest", "architecture", "design"],
   "blocks": [
     {
       "type": "paragraph",

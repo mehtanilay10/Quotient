@@ -8,13 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "index-maintenance",
-    "fragmentation",
-    "performance",
-    "sql-server",
-    "indexes"
-  ],
+  "tags": ["index-maintenance", "fragmentation", "performance", "sql-server", "indexes"],
   "blocks": [
     {
       "type": "paragraph",
@@ -176,13 +170,7 @@
             "Low — defragments in place",
             "Moderate fragmentation (5-30%), smaller indexes"
           ],
-          [
-            "No action",
-            "None",
-            "No impact",
-            "None",
-            "Low-use or read-only indexes"
-          ]
+          ["No action", "None", "No impact", "None", "Low-use or read-only indexes"]
         ]
       }
     },
@@ -259,10 +247,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "query-regression-after-deployment",
-    "read-replicas-and-readwrite-separation"
-  ],
+  "relatedLessons": ["query-regression-after-deployment", "read-replicas-and-readwrite-separation"],
   "furtherReading": [
     {
       "title": "Index Defragmentation (Microsoft Docs)",

@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "debugging",
-    "errors",
-    "logs"
-  ],
+  "tags": ["debugging", "errors", "logs"],
   "blocks": [
     {
       "type": "heading",
@@ -168,10 +164,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prompting-for-debugging",
-    "refactoring-with-ai"
-  ],
+  "relatedLessons": ["prompting-for-debugging", "refactoring-with-ai"],
   "relatedGlossaryTerms": [],
   "courseSlug": "codex"
 }

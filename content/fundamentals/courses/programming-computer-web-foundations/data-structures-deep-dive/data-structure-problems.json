@@ -161,7 +161,13 @@
       }
     }
   ],
-  "relatedLessons": ["arrays-and-linked-lists", "stacks-and-queues", "hash-tables", "trees-and-graphs", "heaps"],
+  "relatedLessons": [
+    "arrays-and-linked-lists",
+    "stacks-and-queues",
+    "hash-tables",
+    "trees-and-graphs",
+    "heaps"
+  ],
   "furtherReading": [
     {
       "title": "LeetCode Patterns",

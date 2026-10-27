@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "introduction",
-    "frontend",
-    "library"
-  ],
+  "tags": ["react", "introduction", "frontend", "library"],
   "blocks": [
     {
       "type": "paragraph",
@@ -50,49 +45,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "React",
-          "Angular",
-          "Vue"
-        ],
+        "headers": ["Feature", "React", "Angular", "Vue"],
         "rows": [
-          [
-            "Type",
-            "Library",
-            "Full Framework",
-            "Progressive Framework"
-          ],
-          [
-            "Language",
-            "JavaScript / JSX",
-            "TypeScript",
-            "JavaScript / Template"
-          ],
-          [
-            "Learning Curve",
-            "Moderate",
-            "Steep",
-            "Gentle"
-          ],
-          [
-            "Bundle Size",
-            "~42 KB",
-            "~143 KB",
-            "~33 KB"
-          ],
-          [
-            "DOM Strategy",
-            "Virtual DOM",
-            "Real DOM with Zones",
-            "Virtual DOM"
-          ],
-          [
-            "Company",
-            "Meta",
-            "Google",
-            "Community"
-          ]
+          ["Type", "Library", "Full Framework", "Progressive Framework"],
+          ["Language", "JavaScript / JSX", "TypeScript", "JavaScript / Template"],
+          ["Learning Curve", "Moderate", "Steep", "Gentle"],
+          ["Bundle Size", "~42 KB", "~143 KB", "~33 KB"],
+          ["DOM Strategy", "Virtual DOM", "Real DOM with Zones", "Virtual DOM"],
+          ["Company", "Meta", "Google", "Community"]
         ]
       }
     },
@@ -126,11 +86,7 @@
               "More decisions to make (router, state, styling)",
               "JSX has a learning curve for beginners"
             ],
-            "tags": [
-              "library",
-              "jsx",
-              "flexible"
-            ]
+            "tags": ["library", "jsx", "flexible"]
           },
           {
             "title": "Vue",
@@ -144,11 +100,7 @@
               "Smaller ecosystem than React",
               "Fewer enterprise positions compared to React"
             ],
-            "tags": [
-              "framework",
-              "templates",
-              "beginner-friendly"
-            ]
+            "tags": ["framework", "templates", "beginner-friendly"]
           }
         ]
       }

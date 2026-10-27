@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "zero-trust",
-    "security",
-    "architecture"
-  ],
+  "tags": ["zero-trust", "security", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -79,32 +75,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Traditional",
-          "Zero Trust"
-        ],
+        "headers": ["Aspect", "Traditional", "Zero Trust"],
         "rows": [
-          [
-            "Network",
-            "Trust internal network",
-            "No implicit trust"
-          ],
-          [
-            "Access",
-            "Once authenticated, broad access",
-            "Per-request verification"
-          ],
-          [
-            "Segmentation",
-            "Flat network",
-            "Micro-segmented"
-          ],
-          [
-            "Assumption",
-            "Inside is safe",
-            "Assume breach"
-          ]
+          ["Network", "Trust internal network", "No implicit trust"],
+          ["Access", "Once authenticated, broad access", "Per-request verification"],
+          ["Segmentation", "Flat network", "Micro-segmented"],
+          ["Assumption", "Inside is safe", "Assume breach"]
         ]
       }
     },

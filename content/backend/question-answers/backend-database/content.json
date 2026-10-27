@@ -8,11 +8,7 @@
   "difficulty": "advanced",
   "estimatedHours": 6.5,
   "icon": "⚙️",
-  "tags": [
-    "interview",
-    "backend",
-    "database"
-  ],
+  "tags": ["interview", "backend", "database"],
   "lessonSlugs": [
     "api-latency-increased-from-100ms-to-4-seconds-how-do-you-investigate",
     "a-production-query-suddenly-became-slow-after-a-deployment-what-do-you-check",

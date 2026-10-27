@@ -6,10 +6,7 @@
   "description": "RowVersion tokens, DbUpdateConcurrencyException handling, and optimistic vs pessimistic locking.",
   "order": 5,
   "difficulty": "advanced",
-  "tags": [
-    "ef-core",
-    "advanced"
-  ],
+  "tags": ["ef-core", "advanced"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,10 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "change-tracking-and-savechanges",
-    "migrations-in-production"
-  ],
+  "relatedLessons": ["change-tracking-and-savechanges", "migrations-in-production"],
   "furtherReading": [
     {
       "title": "EF Core optimistic concurrency",

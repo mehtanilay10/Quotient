@@ -7,17 +7,8 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "🛠️",
-  "tags": [
-    "claude",
-    "artifacts",
-    "coding",
-    "interactive"
-  ],
-  "lessonSlugs": [
-    "artifacts-intro",
-    "building-with-artifacts",
-    "artifacts-workflows"
-  ],
+  "tags": ["claude", "artifacts", "coding", "interactive"],
+  "lessonSlugs": ["artifacts-intro", "building-with-artifacts", "artifacts-workflows"],
   "whatYouLearn": [
     "What Artifacts are and how they differ from regular chat responses",
     "How to request and iterate on code artifacts in multiple languages",

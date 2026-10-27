@@ -6,13 +6,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "jotai",
-    "state",
-    "react",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["jotai", "state", "react", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -92,27 +86,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Situation",
-          "Choose"
-        ],
+        "headers": ["Situation", "Choose"],
         "rows": [
-          [
-            "One huge store with many unrelated fields",
-            "Redux or Zustand"
-          ],
-          [
-            "Many small independent values",
-            "Jotai"
-          ],
-          [
-            "State derived from other state",
-            "Derived atoms"
-          ],
-          [
-            "Server request-scoped state",
-            "Jotai Provider per request"
-          ]
+          ["One huge store with many unrelated fields", "Redux or Zustand"],
+          ["Many small independent values", "Jotai"],
+          ["State derived from other state", "Derived atoms"],
+          ["Server request-scoped state", "Jotai Provider per request"]
         ]
       }
     },

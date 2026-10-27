@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "mcp",
-    "protocol",
-    "overview"
-  ],
+  "tags": ["mcp", "protocol", "overview"],
   "blocks": [
     {
       "type": "paragraph",
@@ -90,10 +86,7 @@
       "takeaway": "MCP turns your backend into an AI-friendly service without abandoning the APIs and databases you already have."
     }
   ],
-  "relatedLessons": [
-    "mcp-architecture-and-transports",
-    "mcp-vs-rest-graphql-for-ai"
-  ],
+  "relatedLessons": ["mcp-architecture-and-transports", "mcp-vs-rest-graphql-for-ai"],
   "technology": null,
   "furtherReading": [
     {

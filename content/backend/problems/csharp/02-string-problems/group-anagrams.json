@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "strings",
-    "hashmap",
-    "medium"
-  ],
+  "tags": ["csharp", "strings", "hashmap", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -87,35 +82,16 @@
           {
             "title": "Sort Key",
             "description": "Group by sorted string",
-            "pros": [
-              "Very concise",
-              "Easy to understand"
-            ],
-            "cons": [
-              "O(n * k log k)",
-              "Sorts every word"
-            ],
-            "tags": [
-              "O(n * k log k) time",
-              "O(n * k) space"
-            ]
+            "pros": ["Very concise", "Easy to understand"],
+            "cons": ["O(n * k log k)", "Sorts every word"],
+            "tags": ["O(n * k log k) time", "O(n * k) space"]
           },
           {
             "title": "Frequency Key",
             "description": "Group by char counts",
-            "pros": [
-              "O(n * k) time",
-              "No sorting"
-            ],
-            "cons": [
-              "Assumes lowercase a-z",
-              "Slightly more code"
-            ],
-            "tags": [
-              "O(n * k) time",
-              "O(n * k) space",
-              "Recommended"
-            ]
+            "pros": ["O(n * k) time", "No sorting"],
+            "cons": ["Assumes lowercase a-z", "Slightly more code"],
+            "tags": ["O(n * k) time", "O(n * k) space", "Recommended"]
           }
         ]
       }

@@ -6,10 +6,7 @@
   "description": "Understand when to use abstract classes vs interfaces.",
   "order": 12,
   "difficulty": "intermediate",
-  "tags": [
-    "oop",
-    "intermediate"
-  ],
+  "tags": ["oop", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

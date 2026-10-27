@@ -6,11 +6,7 @@
   "fullDefinition": "The attention mechanism is a core component of modern neural networks that enables the model to dynamically focus on different parts of its input when producing each part of its output. Instead of encoding an entire input sequence into a single fixed-size vector, attention computes weighted combinations of input elements based on their relevance to the current task. The most common form, self-attention or scaled dot-product attention, computes compatibility scores between all pairs of positions in a sequence. Multi-head attention allows the model to attend to information from different representation subspaces simultaneously. Attention has proven transformative for translation, summarization, question answering, and virtually every NLP task.",
   "category": "architecture",
   "difficulty": "advanced",
-  "relatedTerms": [
-    "transformer-architecture",
-    "context-window",
-    "embedding"
-  ],
+  "relatedTerms": ["transformer-architecture", "context-window", "embedding"],
   "learnMoreSlug": "context-window-deep-dive",
   "examples": [
     "In translation, attending to the French word when generating the corresponding English word",

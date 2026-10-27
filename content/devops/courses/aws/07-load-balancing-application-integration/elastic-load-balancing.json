@@ -37,19 +37,33 @@
           {
             "title": "Application Load Balancer (ALB)",
             "description": "Best for HTTP and HTTPS traffic at the application layer (OSI Layer 7).",
-            "pros": ["Content-based routing (path, host, header)", "WebSocket support", "Hosted on HTTP/2", "Integrated with ECS, EKS, Lambda"],
+            "pros": [
+              "Content-based routing (path, host, header)",
+              "WebSocket support",
+              "Hosted on HTTP/2",
+              "Integrated with ECS, EKS, Lambda"
+            ],
             "cons": ["Not suitable for non-HTTP protocols", "Higher latency than NLB"]
           },
           {
             "title": "Network Load Balancer (NLB)",
             "description": "Best for extreme performance and static IP needs at the transport layer (OSI Layer 4).",
-            "pros": ["Millions of requests per second", "Ultra-low latency", "Preserves client source IP", "Supports TLS termination"],
+            "pros": [
+              "Millions of requests per second",
+              "Ultra-low latency",
+              "Preserves client source IP",
+              "Supports TLS termination"
+            ],
             "cons": ["No application-layer routing", "More complex to configure than ALB"]
           },
           {
             "title": "Gateway Load Balancer (GLB)",
             "description": "Best for deploying and scaling third-party virtual appliances (firewalls, IDS/IPS).",
-            "pros": ["Combines load balancing with transparent network gateways", "Preserves original source IP", "Routes traffic through appliances"],
+            "pros": [
+              "Combines load balancing with transparent network gateways",
+              "Preserves original source IP",
+              "Routes traffic through appliances"
+            ],
             "cons": ["Specialized use case", "Requires third-party appliance AMIs"]
           }
         ]

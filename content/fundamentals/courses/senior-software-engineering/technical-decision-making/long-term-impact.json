@@ -168,11 +168,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "trade-off-analysis",
-    "reversibility",
-    "decision-reviews"
-  ],
+  "relatedLessons": ["trade-off-analysis", "reversibility", "decision-reviews"],
   "furtherReading": [
     {
       "type": "article",

@@ -7,13 +7,13 @@ database migrations, PWA testing, and deployment.
 
 ## 1. Prerequisites
 
-| Requirement | Version / notes |
-| --- | --- |
-| Node.js | `>=20.9.0` (required by Next.js 16) |
-| Package manager | Yarn 1.22+ |
-| Database | PostgreSQL, normally Neon |
-| Resend account | Only needed to send magic links |
-| Google OAuth app | Only needed for Google sign-in |
+| Requirement      | Version / notes                     |
+| ---------------- | ----------------------------------- |
+| Node.js          | `>=20.9.0` (required by Next.js 16) |
+| Package manager  | Yarn 1.22+                          |
+| Database         | PostgreSQL, normally Neon           |
+| Resend account   | Only needed to send magic links     |
+| Google OAuth app | Only needed for Google sign-in      |
 
 No Python, Java, or .NET SDK is required to run the site. Lesson code samples
 are displayed, not executed.
@@ -59,20 +59,20 @@ Next.js starts.
 
 ## 3. Commands
 
-| Command | What it does |
-| --- | --- |
-| `yarn dev` | Regenerates content indexes, then starts Next.js with Webpack |
-| `yarn build` | Regenerates content indexes, then builds for production with Webpack |
-| `yarn start` | Serves the production build |
-| `yarn lint` | Runs ESLint over `.ts` and `.tsx` files |
-| `yarn typecheck` | Runs `tsc --noEmit`; the enforced type gate |
-| `yarn test:content` | Validates content structure and references |
+| Command                 | What it does                                                                                  |
+| ----------------------- | --------------------------------------------------------------------------------------------- |
+| `yarn dev`              | Regenerates content indexes, then starts Next.js with Webpack                                 |
+| `yarn build`            | Regenerates content indexes, then builds for production with Webpack                          |
+| `yarn start`            | Serves the production build                                                                   |
+| `yarn lint`             | Runs ESLint over `.ts` and `.tsx` files                                                       |
+| `yarn typecheck`        | Runs `tsc --noEmit`; the enforced type gate                                                   |
+| `yarn test:content`     | Validates content structure and references                                                    |
 | `yarn generate:content` | Rebuilds `content/courses.ts`, `modules.ts`, `lessons.ts`, `categories.ts`, and `roadmaps.ts` |
-| `yarn db:generate` | Generates Prisma Client from the schema |
-| `yarn db:push` | Pushes the schema without migration history |
-| `yarn db:migrate` | Creates and applies a development migration |
-| `yarn db:studio` | Opens Prisma Studio |
-| `yarn vercel-build` | Generates Prisma Client, deploys migrations, builds Next.js |
+| `yarn db:generate`      | Generates Prisma Client from the schema                                                       |
+| `yarn db:push`          | Pushes the schema without migration history                                                   |
+| `yarn db:migrate`       | Creates and applies a development migration                                                   |
+| `yarn db:studio`        | Opens Prisma Studio                                                                           |
+| `yarn vercel-build`     | Generates Prisma Client, deploys migrations, builds Next.js                                   |
 
 Use Yarn for project scripts. `yarn prisma <command>` is also available for
 Prisma CLI operations.
@@ -99,18 +99,18 @@ that affect routing, generated content, PWA output, or deployment.
 `.env.example` is the committed template. `.env` is ignored and must never be
 committed.
 
-| Variable | Required | Default | Purpose |
-| --- | --- | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | Recommended | `https://quotient.dev` | Canonical URL for metadata and sitemap |
-| `AUTH_SECRET` | Yes for auth | none | Auth.js JWT signing secret |
-| `AUTH_URL` | Production | none | Canonical app URL |
-| `AUTH_TRUST_HOST` | Behind a proxy | inferred | Trust the request host |
-| `AUTH_GOOGLE_ID` | Google sign-in | none | Google OAuth client ID |
-| `AUTH_GOOGLE_SECRET` | Google sign-in | none | Google OAuth client secret |
-| `RESEND_API_KEY` | Magic links | none | Resend API key |
-| `EMAIL_FROM` | Production magic links | `Quotient <onboarding@resend.dev>` | Verified Resend sender |
-| `MAGIC_LINK_EXPIRY_MINUTES` | No | `15` | Link lifetime, capped at 60 |
-| `DATABASE_URL` | Yes for accounts | none | PostgreSQL connection string |
+| Variable                    | Required               | Default                            | Purpose                                |
+| --------------------------- | ---------------------- | ---------------------------------- | -------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL`      | Recommended            | `https://quotient.dev`             | Canonical URL for metadata and sitemap |
+| `AUTH_SECRET`               | Yes for auth           | none                               | Auth.js JWT signing secret             |
+| `AUTH_URL`                  | Production             | none                               | Canonical app URL                      |
+| `AUTH_TRUST_HOST`           | Behind a proxy         | inferred                           | Trust the request host                 |
+| `AUTH_GOOGLE_ID`            | Google sign-in         | none                               | Google OAuth client ID                 |
+| `AUTH_GOOGLE_SECRET`        | Google sign-in         | none                               | Google OAuth client secret             |
+| `RESEND_API_KEY`            | Magic links            | none                               | Resend API key                         |
+| `EMAIL_FROM`                | Production magic links | `Quotient <onboarding@resend.dev>` | Verified Resend sender                 |
+| `MAGIC_LINK_EXPIRY_MINUTES` | No                     | `15`                               | Link lifetime, capped at 60            |
+| `DATABASE_URL`              | Yes for accounts       | none                               | PostgreSQL connection string           |
 
 Generate a secret with:
 
@@ -355,15 +355,15 @@ Legacy `/dotnet/*` and `/cloud/*` URLs permanently redirect to `/backend/*` and
 
 ## 11. Troubleshooting
 
-| Symptom | Check |
-| --- | --- |
-| New lesson or module is missing | Run `yarn generate:content`; verify slug registration arrays |
-| Content test passes but a page 404s | Category directory, `urlCategory`, and the slug parents |
-| Type errors in content JSON | Block `data` shape and required lesson/module fields |
-| Prisma client missing | `yarn db:generate` |
-| Auth fails locally | `AUTH_SECRET`, `AUTH_URL`, Google callback URL, `DATABASE_URL` |
-| Magic link not delivered | `RESEND_API_KEY`, verified `EMAIL_FROM`; check server logs in development |
-| Every API mutation returns 400 | Missing `quotient_csrf` cookie/header; use `apiFetch` |
-| Rate limits behave oddly | Limits are in-memory per instance and reset on restart |
-| PWA does not register | `NEXT_PUBLIC_ENABLE_PWA_DEV=true`, secure context, production build |
-| Build is slow | Expected: the content graph is large; `serverMinification` is disabled on purpose |
+| Symptom                             | Check                                                                             |
+| ----------------------------------- | --------------------------------------------------------------------------------- |
+| New lesson or module is missing     | Run `yarn generate:content`; verify slug registration arrays                      |
+| Content test passes but a page 404s | Category directory, `urlCategory`, and the slug parents                           |
+| Type errors in content JSON         | Block `data` shape and required lesson/module fields                              |
+| Prisma client missing               | `yarn db:generate`                                                                |
+| Auth fails locally                  | `AUTH_SECRET`, `AUTH_URL`, Google callback URL, `DATABASE_URL`                    |
+| Magic link not delivered            | `RESEND_API_KEY`, verified `EMAIL_FROM`; check server logs in development         |
+| Every API mutation returns 400      | Missing `quotient_csrf` cookie/header; use `apiFetch`                             |
+| Rate limits behave oddly            | Limits are in-memory per instance and reset on restart                            |
+| PWA does not register               | `NEXT_PUBLIC_ENABLE_PWA_DEV=true`, secure context, production build               |
+| Build is slow                       | Expected: the content graph is large; `serverMinification` is disabled on purpose |

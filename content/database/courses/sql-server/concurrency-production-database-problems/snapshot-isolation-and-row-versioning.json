@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "snapshot",
-    "row-versioning",
-    "tempdb",
-    "isolation",
-    "sql-server"
-  ],
+  "tags": ["snapshot", "row-versioning", "tempdb", "isolation", "sql-server"],
   "blocks": [
     {
       "type": "paragraph",
@@ -207,10 +201,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "transaction-isolation-levels",
-    "long-running-transactions"
-  ],
+  "relatedLessons": ["transaction-isolation-levels", "long-running-transactions"],
   "furtherReading": [
     {
       "title": "Row Versioning-Based Isolation Levels (Microsoft Docs)",

@@ -80,12 +80,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Severity",
-          "Description",
-          "Response Time",
-          "Escalation"
-        ],
+        "headers": ["Severity", "Description", "Response Time", "Escalation"],
         "rows": [
           [
             "SEV-1",
@@ -105,12 +100,7 @@
             "2 hours",
             "Team lead, on-call engineer"
           ],
-          [
-            "SEV-4",
-            "Internal issue, no user impact",
-            "Next business day",
-            "Team lead"
-          ]
+          ["SEV-4", "Internal issue, no user impact", "Next business day", "Team lead"]
         ]
       }
     },
@@ -680,32 +670,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Target",
-          "Industry Benchmark"
-        ],
+        "headers": ["Metric", "Target", "Industry Benchmark"],
         "rows": [
-          [
-            "MTTA",
-            "Under 10 minutes",
-            "5 to 15 minutes"
-          ],
-          [
-            "MTTM",
-            "Under 30 minutes",
-            "15 to 60 minutes"
-          ],
-          [
-            "MTTR",
-            "Under 2 hours",
-            "1 to 4 hours"
-          ],
-          [
-            "SLA Compliance",
-            "Above 95 percent",
-            "80 to 95 percent"
-          ]
+          ["MTTA", "Under 10 minutes", "5 to 15 minutes"],
+          ["MTTM", "Under 30 minutes", "15 to 60 minutes"],
+          ["MTTR", "Under 2 hours", "1 to 4 hours"],
+          ["SLA Compliance", "Above 95 percent", "80 to 95 percent"]
         ]
       }
     },

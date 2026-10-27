@@ -8,11 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 19,
-  "tags": [
-    "outbox",
-    "implementation",
-    "code"
-  ],
+  "tags": ["outbox", "implementation", "code"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,27 +76,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Description",
-          "Latency"
-        ],
+        "headers": ["Strategy", "Description", "Latency"],
         "rows": [
-          [
-            "Polling",
-            "Poll outbox table periodically",
-            "Seconds"
-          ],
-          [
-            "CDC",
-            "Use Change Data Capture",
-            "Near real-time"
-          ],
-          [
-            "Trigger",
-            "Database trigger signals",
-            "Real-time"
-          ]
+          ["Polling", "Poll outbox table periodically", "Seconds"],
+          ["CDC", "Use Change Data Capture", "Near real-time"],
+          ["Trigger", "Database trigger signals", "Real-time"]
         ]
       }
     },

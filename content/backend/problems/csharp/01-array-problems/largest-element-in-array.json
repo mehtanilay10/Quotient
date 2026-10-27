@@ -8,12 +8,7 @@
   "order": 25,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "arrays",
-    "searching",
-    "easy"
-  ],
+  "tags": ["csharp", "arrays", "searching", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -101,31 +96,16 @@
           {
             "title": "Brute Force",
             "description": "Compare every pair",
-            "pros": [
-              "No extra space"
-            ],
-            "cons": [
-              "O(n²) time"
-            ],
-            "tags": [
-              "O(n²) time",
-              "O(1) space"
-            ]
+            "pros": ["No extra space"],
+            "cons": ["O(n²) time"],
+            "tags": ["O(n²) time", "O(1) space"]
           },
           {
             "title": "Linear Scan",
             "description": "Track max in one pass",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
             "cons": [],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

@@ -9,15 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "📈",
-  "tags": [
-    "linq",
-    "aggregation",
-    "count",
-    "sum",
-    "average",
-    "max",
-    "aggregate"
-  ],
+  "tags": ["linq", "aggregation", "count", "sum", "average", "max", "aggregate"],
   "lessonSlugs": [
     "aggregation-count",
     "aggregation-sum",

@@ -7,13 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "enterprise-ai",
-    "rollout",
-    "governance",
-    "change-management",
-    "implementation"
-  ],
+  "tags": ["enterprise-ai", "rollout", "governance", "change-management", "implementation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -45,22 +39,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Role",
-          "Responsibility",
-          "Success metric"
-        ],
+        "headers": ["Role", "Responsibility", "Success metric"],
         "rows": [
           [
             "Executive sponsor",
             "Defines business goals and adoption mandate",
             "Pilot ROI and adoption rate"
           ],
-          [
-            "Ops / PM owner",
-            "Workflow design and rollout execution",
-            "Cycle time reduction"
-          ],
+          ["Ops / PM owner", "Workflow design and rollout execution", "Cycle time reduction"],
           [
             "Security / Legal",
             "Policy guardrails and compliance review",
@@ -94,11 +80,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Criterion",
-          "What to evaluate",
-          "Strong pilot signal"
-        ],
+        "headers": ["Criterion", "What to evaluate", "Strong pilot signal"],
         "rows": [
           [
             "Business value",
@@ -110,11 +92,7 @@
             "Classification and regulatory exposure",
             "Low-to-medium risk with clear controls"
           ],
-          [
-            "Operational repeatability",
-            "How often workflow occurs",
-            "Weekly or daily process"
-          ],
+          ["Operational repeatability", "How often workflow occurs", "Weekly or daily process"],
           [
             "Adoption readiness",
             "Team willingness and manager sponsorship",
@@ -140,32 +118,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric category",
-          "Example metric",
-          "Why it matters"
-        ],
+        "headers": ["Metric category", "Example metric", "Why it matters"],
         "rows": [
           [
             "Productivity",
             "Median cycle-time reduction",
             "Shows whether workflow is actually faster"
           ],
-          [
-            "Quality",
-            "Rework rate after human review",
-            "Catches polished but low-quality outputs"
-          ],
-          [
-            "Risk",
-            "Policy violations per 100 runs",
-            "Highlights unsafe scaling"
-          ],
-          [
-            "Adoption",
-            "Weekly active pilot users",
-            "Separates real adoption from pilot theater"
-          ],
+          ["Quality", "Rework rate after human review", "Catches polished but low-quality outputs"],
+          ["Risk", "Policy violations per 100 runs", "Highlights unsafe scaling"],
+          ["Adoption", "Weekly active pilot users", "Separates real adoption from pilot theater"],
           [
             "Economics",
             "Net value after software and review costs",
@@ -195,23 +157,17 @@
           {
             "title": "Pilot",
             "description": "2-3 workflows, clear ROI, low regulatory risk. Goal: prove value and learn what breaks.",
-            "tags": [
-              "phase-1"
-            ]
+            "tags": ["phase-1"]
           },
           {
             "title": "Stabilize",
             "description": "Document playbooks, train users, define quality metrics. Goal: make success repeatable.",
-            "tags": [
-              "phase-2"
-            ]
+            "tags": ["phase-2"]
           },
           {
             "title": "Scale",
             "description": "Expand to more teams, add advanced features, tighten governance. Goal: multiply proven value safely.",
-            "tags": [
-              "phase-3"
-            ]
+            "tags": ["phase-3"]
           }
         ]
       }
@@ -256,11 +212,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "team-ai-governance",
-    "protecting-your-data",
-    "ai-evaluation-metrics"
-  ],
+  "relatedLessons": ["team-ai-governance", "protecting-your-data", "ai-evaluation-metrics"],
   "furtherReading": [
     {
       "title": "NIST AI Risk Management Framework",

@@ -9,11 +9,7 @@
   "difficulty": "beginner",
   "estimatedHours": 2,
   "icon": "🗄️",
-  "tags": [
-    "redis",
-    "fundamentals",
-    "beginner"
-  ],
+  "tags": ["redis", "fundamentals", "beginner"],
   "lessonSlugs": [
     "redis-data-types",
     "redis-commands",

@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "aspnet-core",
-    "authorization",
-    "policies",
-    "requirements"
-  ],
+  "tags": ["aspnet-core", "authorization", "policies", "requirements"],
   "blocks": [
     {
       "type": "heading",
@@ -70,21 +65,9 @@
           {
             "title": "Custom Authorization Requirements",
             "description": "Custom policy with handler",
-            "pros": [
-              "Highly flexible",
-              "Reusable policies",
-              "Complex business rules"
-            ],
-            "cons": [
-              "More boilerplate",
-              "Must register handlers",
-              "Harder to test"
-            ],
-            "tags": [
-              "IAuthorizationRequirement",
-              "AuthorizationHandler",
-              "policy"
-            ]
+            "pros": ["Highly flexible", "Reusable policies", "Complex business rules"],
+            "cons": ["More boilerplate", "Must register handlers", "Harder to test"],
+            "tags": ["IAuthorizationRequirement", "AuthorizationHandler", "policy"]
           }
         ]
       }

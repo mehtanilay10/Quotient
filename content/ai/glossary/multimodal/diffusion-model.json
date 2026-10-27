@@ -6,12 +6,6 @@
   "fullDefinition": "Diffusion models are a class of generative AI models that learn to generate images by gradually adding and removing noise. They start with random noise and iteratively 'denoise' it guided by a text description or other input, producing realistic images. Stable Diffusion, DALL-E, and Midjourney are all based on diffusion models. Diffusion models are distinct from LLMs — they work with pixel distributions rather than text tokens.",
   "category": "multimodal",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "text-to-image",
-    "generative-ai"
-  ],
-  "alsoKnownAs": [
-    "Image Diffusion Model",
-    "Stable Diffusion"
-  ]
+  "relatedTerms": ["text-to-image", "generative-ai"],
+  "alsoKnownAs": ["Image Diffusion Model", "Stable Diffusion"]
 }

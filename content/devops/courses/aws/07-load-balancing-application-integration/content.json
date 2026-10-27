@@ -9,12 +9,7 @@
   "estimatedHours": 3,
   "icon": "⚖️",
   "tags": ["aws", "load-balancer", "sqs", "sns", "eventbridge", "integration"],
-  "lessonSlugs": [
-    "elastic-load-balancing",
-    "amazon-sqs",
-    "amazon-sns-eventbridge",
-    "amazon-mq"
-  ],
+  "lessonSlugs": ["elastic-load-balancing", "amazon-sqs", "amazon-sns-eventbridge", "amazon-mq"],
   "prerequisites": [],
   "whatYouLearn": [
     "Configure Application, Network, and Gateway Load Balancers",

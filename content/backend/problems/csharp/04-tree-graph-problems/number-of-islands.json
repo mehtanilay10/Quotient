@@ -8,13 +8,7 @@
   "order": 13,
   "difficulty": "medium",
   "estimatedMinutes": 14,
-  "tags": [
-    "csharp",
-    "graphs",
-    "bfs",
-    "dfs",
-    "medium"
-  ],
+  "tags": ["csharp", "graphs", "bfs", "dfs", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -52,15 +46,8 @@
           {
             "title": "DFS Sink Island",
             "description": "Flip '1' to '0' while exploring",
-            "pros": [
-              "O(m\u00b7n) time",
-              "In-place"
-            ],
-            "tags": [
-              "O(m\u00b7n) time",
-              "O(m\u00b7n) space",
-              "Recommended"
-            ]
+            "pros": ["O(m\u00b7n) time", "In-place"],
+            "tags": ["O(m\u00b7n) time", "O(m\u00b7n) space", "Recommended"]
           }
         ]
       }

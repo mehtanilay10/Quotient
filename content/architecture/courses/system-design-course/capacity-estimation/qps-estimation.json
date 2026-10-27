@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "capacity",
-    "qps",
-    "throughput",
-    "estimation"
-  ],
+  "tags": ["capacity", "qps", "throughput", "estimation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -44,35 +39,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Value"
-        ],
+        "headers": ["Metric", "Value"],
         "rows": [
-          [
-            "Daily Active Users (DAU)",
-            "10,000,000"
-          ],
-          [
-            "Average requests per user per day",
-            "50"
-          ],
-          [
-            "Total requests per day",
-            "500,000,000"
-          ],
-          [
-            "Average QPS",
-            "5,787"
-          ],
-          [
-            "Peak QPS (3x average)",
-            "17,361"
-          ],
-          [
-            "Spike QPS (5x average)",
-            "28,935"
-          ]
+          ["Daily Active Users (DAU)", "10,000,000"],
+          ["Average requests per user per day", "50"],
+          ["Total requests per day", "500,000,000"],
+          ["Average QPS", "5,787"],
+          ["Peak QPS (3x average)", "17,361"],
+          ["Spike QPS (5x average)", "28,935"]
         ]
       }
     },

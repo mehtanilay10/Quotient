@@ -6,11 +6,7 @@
   "fullDefinition": "Embeddings are dense vector representations that encode the meaning of data \u2014 words, sentences, images, or other modalities \u2014 as lists of numbers. In these vector spaces, similar items are located near each other, enabling machines to understand semantic relationships. For example, the embeddings for 'king' and 'queen' would be closer to each other than to 'apple'. Embeddings are created by training neural networks to map data into high-dimensional space while preserving meaning. They are fundamental to modern AI applications including search, recommendations, RAG, and semantic analysis.",
   "category": "models-and-training",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "vector-database",
-    "rag",
-    "semantic-search"
-  ],
+  "relatedTerms": ["vector-database", "rag", "semantic-search"],
   "learnMoreSlug": "embeddings-simply",
   "examples": [
     "Converting a customer support query into a vector to find similar past tickets",

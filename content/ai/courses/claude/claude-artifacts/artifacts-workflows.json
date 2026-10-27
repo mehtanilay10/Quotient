@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "claude",
-    "artifacts",
-    "workflows",
-    "prototyping",
-    "visualization"
-  ],
+  "tags": ["claude", "artifacts", "workflows", "prototyping", "visualization"],
   "blocks": [
     {
       "type": "heading",
@@ -173,10 +167,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "artifacts-intro",
-    "building-with-artifacts"
-  ],
+  "relatedLessons": ["artifacts-intro", "building-with-artifacts"],
   "relatedGlossaryTerms": [],
   "courseSlug": "claude"
 }

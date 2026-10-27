@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "middleware",
-    "composition",
-    "applyMiddleware"
-  ],
+  "tags": ["redux", "middleware", "composition", "applyMiddleware"],
   "blocks": [
     {
       "type": "paragraph",
@@ -137,16 +132,12 @@
           {
             "title": "configureStore (RTK)",
             "description": "Modern approach. Use getDefaultMiddleware().concat(...) to add your own.",
-            "tags": [
-              "recommended"
-            ]
+            "tags": ["recommended"]
           },
           {
             "title": "applyMiddleware (Classic)",
             "description": "Classic approach. Use createStore(reducer, applyMiddleware(a, b, c)).",
-            "tags": [
-              "legacy"
-            ]
+            "tags": ["legacy"]
           }
         ]
       }

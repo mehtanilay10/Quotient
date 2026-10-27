@@ -9,18 +9,8 @@
   "difficulty": "beginner",
   "estimatedHours": 1.5,
   "icon": "⚙️",
-  "tags": [
-    "state-reducer",
-    "useReducer",
-    "customization",
-    "patterns",
-    "composition"
-  ],
-  "lessonSlugs": [
-    "state-reducer-basics",
-    "state-reducer-examples",
-    "state-reducer-composition"
-  ],
+  "tags": ["state-reducer", "useReducer", "customization", "patterns", "composition"],
+  "lessonSlugs": ["state-reducer-basics", "state-reducer-examples", "state-reducer-composition"],
   "prerequisites": ["compound-with-context"],
   "whatYouLearn": [
     "Understand the state reducer pattern and how it enables customizable behavior",

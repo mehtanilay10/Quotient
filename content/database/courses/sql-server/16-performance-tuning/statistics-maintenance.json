@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "statistics",
-    "auto-update",
-    "cardinality",
-    "histogram",
-    "index-maintenance"
-  ],
+  "tags": ["statistics", "auto-update", "cardinality", "histogram", "index-maintenance"],
   "blocks": [
     {
       "type": "heading",
@@ -76,27 +70,11 @@
     },
     {
       "type": "table",
-      "headers": [
-        "Threshold",
-        "Table Type",
-        "Trigger"
-      ],
+      "headers": ["Threshold", "Table Type", "Trigger"],
       "rows": [
-        [
-          "Rows changed >= 500 + 20% of rows",
-          "Table with < 500 rows",
-          "Auto update statistics"
-        ],
-        [
-          "Rows changed >= 500 + (rows / 2)",
-          "Table with >= 500 rows",
-          "Auto update statistics"
-        ],
-        [
-          "Manual UPDATE STATISTICS",
-          "Any table",
-          "DBA-triggered full or sample scan"
-        ]
+        ["Rows changed >= 500 + 20% of rows", "Table with < 500 rows", "Auto update statistics"],
+        ["Rows changed >= 500 + (rows / 2)", "Table with >= 500 rows", "Auto update statistics"],
+        ["Manual UPDATE STATISTICS", "Any table", "DBA-triggered full or sample scan"]
       ]
     },
     {

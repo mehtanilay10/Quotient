@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "rest",
-    "http",
-    "introduction"
-  ],
+  "tags": ["web-api", "rest", "http", "introduction"],
   "blocks": [
     {
       "type": "paragraph",
@@ -108,49 +103,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "CRUD",
-          "Purpose",
-          "Idempotent",
-          "Example URL"
-        ],
+        "headers": ["Method", "CRUD", "Purpose", "Idempotent", "Example URL"],
         "rows": [
-          [
-            "GET",
-            "Read",
-            "Retrieve one or many resources.",
-            "Yes",
-            "/api/users"
-          ],
-          [
-            "POST",
-            "Create",
-            "Create a new resource from the request body.",
-            "No",
-            "/api/users"
-          ],
-          [
-            "PUT",
-            "Update",
-            "Replace a resource entirely.",
-            "Yes",
-            "/api/users/1"
-          ],
-          [
-            "PATCH",
-            "Update",
-            "Apply a partial update to a resource.",
-            "No",
-            "/api/users/1"
-          ],
-          [
-            "DELETE",
-            "Delete",
-            "Remove a resource.",
-            "Yes",
-            "/api/users/1"
-          ]
+          ["GET", "Read", "Retrieve one or many resources.", "Yes", "/api/users"],
+          ["POST", "Create", "Create a new resource from the request body.", "No", "/api/users"],
+          ["PUT", "Update", "Replace a resource entirely.", "Yes", "/api/users/1"],
+          ["PATCH", "Update", "Apply a partial update to a resource.", "No", "/api/users/1"],
+          ["DELETE", "Delete", "Remove a resource.", "Yes", "/api/users/1"]
         ]
       }
     },
@@ -184,18 +143,9 @@
           {
             "title": "2xx Success",
             "description": "The request was received, understood, and accepted.",
-            "tags": [
-              "200 OK",
-              "201 Created",
-              "204 No Content"
-            ],
-            "pros": [
-              "Clearly signal success",
-              "Allow clients to branch on outcome"
-            ],
-            "cons": [
-              "Must pick the exact code; `200` for everything is an anti-pattern"
-            ]
+            "tags": ["200 OK", "201 Created", "204 No Content"],
+            "pros": ["Clearly signal success", "Allow clients to branch on outcome"],
+            "cons": ["Must pick the exact code; `200` for everything is an anti-pattern"]
           },
           {
             "title": "4xx Client Errors",
@@ -210,24 +160,14 @@
               "Helpful for debugging client bugs",
               "Distinguish auth vs validation vs missing resource"
             ],
-            "cons": [
-              "Too many codes can confuse clients"
-            ]
+            "cons": ["Too many codes can confuse clients"]
           },
           {
             "title": "5xx Server Errors",
             "description": "The server failed to fulfill an apparently valid request.",
-            "tags": [
-              "500 Internal Server Error",
-              "502 Bad Gateway",
-              "503 Service Unavailable"
-            ],
-            "pros": [
-              "Signal 'retry later' to clients and proxies"
-            ],
-            "cons": [
-              "Never expose stack traces or sensitive internals in the response body"
-            ]
+            "tags": ["500 Internal Server Error", "502 Bad Gateway", "503 Service Unavailable"],
+            "pros": ["Signal 'retry later' to clients and proxies"],
+            "cons": ["Never expose stack traces or sensitive internals in the response body"]
           }
         ]
       }
@@ -257,22 +197,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "REST",
-          "RPC (e.g. SOAP, gRPC)"
-        ],
+        "headers": ["Aspect", "REST", "RPC (e.g. SOAP, gRPC)"],
         "rows": [
-          [
-            "URL style",
-            "Nouns: `/api/users/1`",
-            "Verbs: `/getUser?id=1`"
-          ],
-          [
-            "Data format",
-            "Usually JSON",
-            "Often XML or Protobuf"
-          ],
+          ["URL style", "Nouns: `/api/users/1`", "Verbs: `/getUser?id=1`"],
+          ["Data format", "Usually JSON", "Often XML or Protobuf"],
           [
             "Discoverability",
             "Self-describing via HTTP semantics",

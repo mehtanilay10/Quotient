@@ -8,12 +8,7 @@
   "order": 28,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "arrays",
-    "two-pointers",
-    "easy"
-  ],
+  "tags": ["csharp", "arrays", "two-pointers", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -101,31 +96,16 @@
           {
             "title": "Extra Set",
             "description": "HashSet deduplication",
-            "pros": [
-              "Simple logic"
-            ],
-            "cons": [
-              "O(n) extra space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Simple logic"],
+            "cons": ["O(n) extra space"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Two-Pointer",
             "description": "In-place overwrite",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
             "cons": [],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

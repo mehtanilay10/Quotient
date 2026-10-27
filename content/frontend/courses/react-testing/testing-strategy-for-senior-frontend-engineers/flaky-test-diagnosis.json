@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "testing",
-    "flaky",
-    "debugging",
-    "react"
-  ],
+  "tags": ["testing", "flaky", "debugging", "react"],
   "blocks": [
     {
       "type": "paragraph",
@@ -142,10 +137,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "playwright-based-e2e-testing",
-    "mutation-testing-and-test-quality"
-  ],
+  "relatedLessons": ["playwright-based-e2e-testing", "mutation-testing-and-test-quality"],
   "furtherReading": [
     {
       "type": "article",

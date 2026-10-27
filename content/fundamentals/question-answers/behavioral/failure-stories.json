@@ -8,12 +8,7 @@
   "order": 12,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "behavioral",
-    "failure",
-    "resilience",
-    "soft-skills"
-  ],
+  "tags": ["behavioral", "failure", "resilience", "soft-skills"],
   "technology": "Behavioral",
   "blocks": [
     {
@@ -133,10 +128,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "leadership-questions",
-    "common-behavioral-traps"
-  ],
+  "relatedLessons": ["leadership-questions", "common-behavioral-traps"],
   "furtherReading": [
     {
       "title": "The Art of Learning: An Inner Journey to Optimal Performance",

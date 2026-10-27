@@ -1354,52 +1354,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Hook",
-          "Purpose",
-          "Returns"
-        ],
+        "headers": ["Hook", "Purpose", "Returns"],
         "rows": [
-          [
-            "useState",
-            "Add state to functional components",
-            "[state, setState]"
-          ],
-          [
-            "useEffect",
-            "Side effects (data fetch, subscriptions)",
-            "void (cleanup optional)"
-          ],
-          [
-            "useContext",
-            "Access context values",
-            "Context value"
-          ],
-          [
-            "useReducer",
-            "Complex state management",
-            "[state, dispatch]"
-          ],
-          [
-            "useCallback",
-            "Memoize functions",
-            "Memoized callback"
-          ],
-          [
-            "useMemo",
-            "Memoize values/computations",
-            "Memoized value"
-          ],
-          [
-            "useRef",
-            "DOM access or mutable values",
-            "{ current: value }"
-          ],
-          [
-            "useLayoutEffect",
-            "Synchronous DOM mutations",
-            "void (cleanup optional)"
-          ]
+          ["useState", "Add state to functional components", "[state, setState]"],
+          ["useEffect", "Side effects (data fetch, subscriptions)", "void (cleanup optional)"],
+          ["useContext", "Access context values", "Context value"],
+          ["useReducer", "Complex state management", "[state, dispatch]"],
+          ["useCallback", "Memoize functions", "Memoized callback"],
+          ["useMemo", "Memoize values/computations", "Memoized value"],
+          ["useRef", "DOM access or mutable values", "{ current: value }"],
+          ["useLayoutEffect", "Synchronous DOM mutations", "void (cleanup optional)"]
         ]
       }
     },

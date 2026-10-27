@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "design-patterns",
-    "repository",
-    "csharp",
-    "data-access"
-  ],
+  "tags": ["design-patterns", "repository", "csharp", "data-access"],
   "blocks": [
     {
       "type": "paragraph",

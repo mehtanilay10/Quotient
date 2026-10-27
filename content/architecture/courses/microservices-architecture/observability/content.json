@@ -9,12 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 4,
   "icon": "📊",
-  "tags": [
-    "observability",
-    "tracing",
-    "logging",
-    "metrics"
-  ],
+  "tags": ["observability", "tracing", "logging", "metrics"],
   "lessonSlugs": [
     "observability-fundamentals",
     "structured-logging",

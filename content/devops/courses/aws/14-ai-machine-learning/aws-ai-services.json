@@ -35,42 +35,22 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Service",
-          "Category",
-          "What It Does"
-        ],
+        "headers": ["Service", "Category", "What It Does"],
         "rows": [
           [
             "Rekognition",
             "Image and video analysis",
             "Object detection, face analysis, content moderation"
           ],
-          [
-            "Textract",
-            "Document text extraction",
-            "Extract text and data from scanned documents"
-          ],
+          ["Textract", "Document text extraction", "Extract text and data from scanned documents"],
           [
             "Comprehend",
             "Natural language processing",
             "Sentiment analysis, entity recognition, topic modeling"
           ],
-          [
-            "Transcribe",
-            "Speech-to-text",
-            "Convert audio to text, supports real-time streaming"
-          ],
-          [
-            "Polly",
-            "Text-to-speech",
-            "Convert text to lifelike speech in multiple languages"
-          ],
-          [
-            "Translate",
-            "Language translation",
-            "Translate text between 75+ languages"
-          ]
+          ["Transcribe", "Speech-to-text", "Convert audio to text, supports real-time streaming"],
+          ["Polly", "Text-to-speech", "Convert text to lifelike speech in multiple languages"],
+          ["Translate", "Language translation", "Translate text between 75+ languages"]
         ]
       }
     },

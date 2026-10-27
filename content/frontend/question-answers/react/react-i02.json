@@ -6,10 +6,7 @@
   "description": "Understand when to use each effect hook.",
   "order": 12,
   "difficulty": "intermediate",
-  "tags": [
-    "react",
-    "intermediate"
-  ],
+  "tags": ["react", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

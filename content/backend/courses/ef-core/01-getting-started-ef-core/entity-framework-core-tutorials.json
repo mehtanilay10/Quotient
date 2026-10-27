@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "ef-core",
-    "introduction",
-    "version-history",
-    "development-approaches"
-  ],
+  "tags": ["ef-core", "introduction", "version-history", "development-approaches"],
   "blocks": [
     {
       "type": "paragraph",
@@ -42,57 +37,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "EF Core Version",
-          "Release Date",
-          "Target Framework"
-        ],
+        "headers": ["EF Core Version", "Release Date", "Target Framework"],
         "rows": [
-          [
-            "EF Core 10.0",
-            "Nov 11, 2025",
-            ".NET 10"
-          ],
-          [
-            "EF Core 9.0",
-            "Nov 12, 2024",
-            ".NET 8"
-          ],
-          [
-            "EF Core 8.0",
-            "Nov 14, 2023",
-            ".NET 8"
-          ],
-          [
-            "EF Core 7.0",
-            "Nov 8, 2022",
-            ".NET 6"
-          ],
-          [
-            "EF Core 6.0",
-            "Nov 8, 2021",
-            ".NET 6"
-          ],
-          [
-            "EF Core 5.0",
-            "Nov 10, 2020",
-            ".NET Standard 2.1"
-          ],
-          [
-            "EF Core 3.0",
-            "Sept 23, 2019",
-            ".NET Standard 2.1"
-          ],
-          [
-            "EF Core 2.0",
-            "August 14, 2017",
-            ".NET Standard 2.0"
-          ],
-          [
-            "EF Core 1.0",
-            "June 27, 2016",
-            ".NET Standard 2.1"
-          ]
+          ["EF Core 10.0", "Nov 11, 2025", ".NET 10"],
+          ["EF Core 9.0", "Nov 12, 2024", ".NET 8"],
+          ["EF Core 8.0", "Nov 14, 2023", ".NET 8"],
+          ["EF Core 7.0", "Nov 8, 2022", ".NET 6"],
+          ["EF Core 6.0", "Nov 8, 2021", ".NET 6"],
+          ["EF Core 5.0", "Nov 10, 2020", ".NET Standard 2.1"],
+          ["EF Core 3.0", "Sept 23, 2019", ".NET Standard 2.1"],
+          ["EF Core 2.0", "August 14, 2017", ".NET Standard 2.0"],
+          ["EF Core 1.0", "June 27, 2016", ".NET Standard 2.1"]
         ]
       }
     },
@@ -176,31 +131,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Database",
-          "NuGet Package"
-        ],
+        "headers": ["Database", "NuGet Package"],
         "rows": [
-          [
-            "SQL Server",
-            "Microsoft.EntityFrameworkCore.SqlServer"
-          ],
-          [
-            "MySQL",
-            "MySql.Data.EntityFrameworkCore"
-          ],
-          [
-            "PostgreSQL",
-            "Npgsql.EntityFrameworkCore.PostgreSQL"
-          ],
-          [
-            "SQLite",
-            "Microsoft.EntityFrameworkCore.SQLite"
-          ],
-          [
-            "In-Memory",
-            "Microsoft.EntityFrameworkCore.InMemory"
-          ]
+          ["SQL Server", "Microsoft.EntityFrameworkCore.SqlServer"],
+          ["MySQL", "MySql.Data.EntityFrameworkCore"],
+          ["PostgreSQL", "Npgsql.EntityFrameworkCore.PostgreSQL"],
+          ["SQLite", "Microsoft.EntityFrameworkCore.SQLite"],
+          ["In-Memory", "Microsoft.EntityFrameworkCore.InMemory"]
         ]
       }
     },
@@ -218,9 +155,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "install-entity-framework-core",
-    "working-with-dbcontext-in-ef-core"
-  ],
+  "relatedLessons": ["install-entity-framework-core", "working-with-dbcontext-in-ef-core"],
   "courseSlug": "ef-core"
 }

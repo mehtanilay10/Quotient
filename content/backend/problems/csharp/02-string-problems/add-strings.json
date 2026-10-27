@@ -8,11 +8,7 @@
   "order": 17,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "strings",
-    "easy"
-  ],
+  "tags": ["csharp", "strings", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -86,34 +82,16 @@
           {
             "title": "Reverse + Carry",
             "description": "Build backwards then reverse",
-            "pros": [
-              "Append is cheap",
-              "Clear logic"
-            ],
-            "cons": [
-              "Extra reverse pass",
-              "O(n) extra copy"
-            ],
-            "tags": [
-              "O(max(n,m)) time",
-              "O(max(n,m)) space"
-            ]
+            "pros": ["Append is cheap", "Clear logic"],
+            "cons": ["Extra reverse pass", "O(n) extra copy"],
+            "tags": ["O(max(n,m)) time", "O(max(n,m)) space"]
           },
           {
             "title": "Prepends",
             "description": "Insert at front",
-            "pros": [
-              "No reverse pass",
-              "Direct result"
-            ],
-            "cons": [
-              "Insert is O(n) per char"
-            ],
-            "tags": [
-              "O(max(n,m)) time",
-              "O(max(n,m)) space",
-              "Recommended"
-            ]
+            "pros": ["No reverse pass", "Direct result"],
+            "cons": ["Insert is O(n) per char"],
+            "tags": ["O(max(n,m)) time", "O(max(n,m)) space", "Recommended"]
           }
         ]
       }

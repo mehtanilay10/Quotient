@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import { logger } from '@/lib/logger';
+import { useEffect } from "react";
+import { logger } from "@/lib/logger";
 
 declare global {
   interface Window {
@@ -12,11 +12,11 @@ declare global {
 }
 
 const isPwaEnabled =
-  process.env.NODE_ENV === 'production' || process.env.NEXT_PUBLIC_ENABLE_PWA_DEV === 'true';
+  process.env.NODE_ENV === "production" || process.env.NEXT_PUBLIC_ENABLE_PWA_DEV === "true";
 
 export function PWARegistration() {
   useEffect(() => {
-    if (!isPwaEnabled || !('serviceWorker' in navigator)) {
+    if (!isPwaEnabled || !("serviceWorker" in navigator)) {
       return;
     }
 
@@ -30,13 +30,13 @@ export function PWARegistration() {
 
         void registration?.update().catch(() => undefined);
       } catch (error) {
-        if (process.env.NODE_ENV !== 'production') {
-          logger.error('PWARegistration', 'Service worker registration failed.', error);
+        if (process.env.NODE_ENV !== "production") {
+          logger.error("PWARegistration", "Service worker registration failed.", error);
         }
       }
     };
 
-    if (document.readyState === 'complete') {
+    if (document.readyState === "complete") {
       void registerServiceWorker();
       return;
     }
@@ -45,10 +45,10 @@ export function PWARegistration() {
       void registerServiceWorker();
     };
 
-    window.addEventListener('load', onLoad);
+    window.addEventListener("load", onLoad);
 
     return () => {
-      window.removeEventListener('load', onLoad);
+      window.removeEventListener("load", onLoad);
     };
   }, []);
 

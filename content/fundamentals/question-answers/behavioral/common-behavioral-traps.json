@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "behavioral",
-    "traps",
-    "interview",
-    "soft-skills"
-  ],
+  "tags": ["behavioral", "traps", "interview", "soft-skills"],
   "technology": "Behavioral",
   "blocks": [
     {
@@ -187,10 +182,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "star-method-fundamentals",
-    "failure-stories"
-  ],
+  "relatedLessons": ["star-method-fundamentals", "failure-stories"],
   "furtherReading": [
     {
       "title": "Cracking the Behavioral Interview: How to Prepare for and Succeed at Behavioral Interviews",

@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "claude",
-    "setup",
-    "account",
-    "plans"
-  ],
+  "tags": ["claude", "setup", "account", "plans"],
   "blocks": [
     {
       "type": "heading",
@@ -69,10 +64,7 @@
               "Longer conversations",
               "Usage limits increased significantly"
             ],
-            "cons": [
-              "Monthly subscription cost",
-              "May not be necessary for casual users"
-            ]
+            "cons": ["Monthly subscription cost", "May not be necessary for casual users"]
           }
         ]
       }
@@ -179,55 +171,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Claude Free",
-          "Claude Pro ($20/mo)",
-          "Claude API"
-        ],
+        "headers": ["Feature", "Claude Free", "Claude Pro ($20/mo)", "Claude API"],
         "rows": [
-          [
-            "Web access",
-            "Yes",
-            "Yes",
-            "No (API only)"
-          ],
-          [
-            "Message limit",
-            "Limited",
-            "5x higher",
-            "Pay per token"
-          ],
-          [
-            "Context window",
-            "200k tokens",
-            "200k tokens",
-            "Up to 200k tokens"
-          ],
-          [
-            "File uploads",
-            "Yes",
-            "Yes",
-            "Yes (via API)"
-          ],
-          [
-            "Artifacts",
-            "Yes",
-            "Yes",
-            "Yes"
-          ],
-          [
-            "Priority access",
-            "No",
-            "Yes",
-            "Pay-as-you-go"
-          ],
-          [
-            "Mobile apps",
-            "Yes",
-            "Yes",
-            "No"
-          ]
+          ["Web access", "Yes", "Yes", "No (API only)"],
+          ["Message limit", "Limited", "5x higher", "Pay per token"],
+          ["Context window", "200k tokens", "200k tokens", "Up to 200k tokens"],
+          ["File uploads", "Yes", "Yes", "Yes (via API)"],
+          ["Artifacts", "Yes", "Yes", "Yes"],
+          ["Priority access", "No", "Yes", "Pay-as-you-go"],
+          ["Mobile apps", "Yes", "Yes", "No"]
         ]
       }
     },
@@ -268,13 +220,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "claude-interface-tour",
-    "your-first-claude-conversation"
-  ],
-  "relatedGlossaryTerms": [
-    "system-prompt",
-    "large-language-model"
-  ],
+  "relatedLessons": ["claude-interface-tour", "your-first-claude-conversation"],
+  "relatedGlossaryTerms": ["system-prompt", "large-language-model"],
   "courseSlug": "claude"
 }

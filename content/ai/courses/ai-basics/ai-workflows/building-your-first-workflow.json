@@ -94,11 +94,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Design concern",
-          "Practical approach",
-          "Why it matters"
-        ],
+        "headers": ["Design concern", "Practical approach", "Why it matters"],
         "rows": [
           [
             "Ambiguous inputs",
@@ -157,27 +153,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Big single prompt",
-          "Chained prompts"
-        ],
+        "headers": ["Big single prompt", "Chained prompts"],
         "rows": [
-          [
-            "AI splits attention five ways",
-            "Each step is the full focus of one prompt"
-          ],
+          ["AI splits attention five ways", "Each step is the full focus of one prompt"],
           [
             "Errors in step 1 cascade through everything",
             "You can fix step 1 before moving to step 2"
           ],
-          [
-            "Hard to identify what went wrong",
-            "Easy to pinpoint and fix the weak step"
-          ],
-          [
-            "One chance to get it right",
-            "Iterative — improve each link in the chain"
-          ]
+          ["Hard to identify what went wrong", "Easy to pinpoint and fix the weak step"],
+          ["One chance to get it right", "Iterative — improve each link in the chain"]
         ]
       }
     },
@@ -222,27 +206,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Validation type",
-          "How to test",
-          "Example threshold"
-        ],
+        "headers": ["Validation type", "How to test", "Example threshold"],
         "rows": [
           [
             "Functional accuracy",
             "Compare model outputs to ground truth on benchmark",
             "≥ 85% label accuracy"
           ],
-          [
-            "Format adherence",
-            "Schema validation and parsing tests",
-            "≥ 99% valid JSON outputs"
-          ],
-          [
-            "Safety checks",
-            "Run prompt-security and PII detection",
-            "0% PII leakage in test set"
-          ],
+          ["Format adherence", "Schema validation and parsing tests", "≥ 99% valid JSON outputs"],
+          ["Safety checks", "Run prompt-security and PII detection", "0% PII leakage in test set"],
           [
             "Latency",
             "Measure end-to-end response time under load",
@@ -307,11 +279,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Risk",
-          "Mitigation",
-          "Implementation"
-        ],
+        "headers": ["Risk", "Mitigation", "Implementation"],
         "rows": [
           [
             "PII leakage",
@@ -349,11 +317,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "What to monitor",
-          "Action on alert"
-        ],
+        "headers": ["Metric", "What to monitor", "Action on alert"],
         "rows": [
           [
             "Task success rate",
@@ -413,11 +377,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Template",
-          "Notes"
-        ],
+        "headers": ["Use case", "Template", "Notes"],
         "rows": [
           [
             "Summary + action items",
@@ -508,11 +468,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Failure mode",
-          "Symptoms",
-          "Mitigation"
-        ],
+        "headers": ["Failure mode", "Symptoms", "Mitigation"],
         "rows": [
           [
             "Prompt ambiguity",
@@ -571,11 +527,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "Type",
-          "Why it helps"
-        ],
+        "headers": ["Resource", "Type", "Why it helps"],
         "rows": [
           [
             "Zapier Getting Started",
@@ -613,10 +565,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "few-shot-prompting",
-    "what-is-ai-automation"
-  ],
+  "relatedLessons": ["few-shot-prompting", "what-is-ai-automation"],
   "furtherReading": [
     {
       "title": "Zapier Getting Started",

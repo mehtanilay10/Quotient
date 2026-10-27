@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "custom",
-    "validation",
-    "attributes"
-  ],
+  "tags": ["custom", "validation", "attributes"],
   "blocks": [
     {
       "type": "heading",
@@ -180,10 +176,7 @@
       "takeaway": "Custom validation keeps your business rules inside the model layer where they are easy to find, test, and reuse across controllers and pages."
     }
   ],
-  "relatedLessons": [
-    "validation-attributes",
-    "client-side-validation"
-  ],
+  "relatedLessons": ["validation-attributes", "client-side-validation"],
   "technology": null,
   "furtherReading": []
 }

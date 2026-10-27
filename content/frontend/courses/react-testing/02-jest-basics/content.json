@@ -9,12 +9,7 @@
   "estimatedHours": 1,
   "icon": "🃏",
   "tags": ["jest", "testing", "react"],
-  "lessonSlugs": [
-    "getting-started-jest",
-    "matchers-assertions",
-    "async-testing",
-    "mocking-jest"
-  ],
+  "lessonSlugs": ["getting-started-jest", "matchers-assertions", "async-testing", "mocking-jest"],
   "whatYouLearn": [
     "Set up Jest for React testing",
     "Use matchers and assertions",

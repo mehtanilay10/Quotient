@@ -9,13 +9,7 @@
   "difficulty": "beginner",
   "estimatedHours": 4,
   "icon": "🛡️",
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "lessonSlugs": [
     "microsoft-entra-id-overview",
     "application-authentication-and-oauth",

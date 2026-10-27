@@ -9,11 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "💡",
-  "tags": [
-    "redis",
-    "intermediate",
-    "caching"
-  ],
+  "tags": ["redis", "intermediate", "caching"],
   "lessonSlugs": [
     "session-store",
     "rate-limiting",
@@ -22,10 +18,7 @@
     "geospatial-queries",
     "bloom-filters"
   ],
-  "prerequisites": [
-    "redis-fundamentals",
-    "caching-patterns"
-  ],
+  "prerequisites": ["redis-fundamentals", "caching-patterns"],
   "whatYouLearn": [
     "Store and manage user sessions in Redis",
     "Implement rate limiting with sliding windows",

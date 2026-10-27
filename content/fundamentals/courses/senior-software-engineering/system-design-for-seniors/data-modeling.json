@@ -117,10 +117,26 @@
       "data": {
         "headers": ["Property", "ACID (Relational)", "BASE (NoSQL)"],
         "rows": [
-          ["Consistency", "Strong consistency after every transaction", "Eventual consistency — data converges over time"],
-          ["Availability", "May sacrifice availability during partitions", "Always available, even during partitions"],
-          ["Partition tolerance", "Handles network splits with care", "Designed for partition tolerance"],
-          ["Use case", "Banking, e-commerce checkout, inventory", "Social feeds, content caching, analytics"]
+          [
+            "Consistency",
+            "Strong consistency after every transaction",
+            "Eventual consistency — data converges over time"
+          ],
+          [
+            "Availability",
+            "May sacrifice availability during partitions",
+            "Always available, even during partitions"
+          ],
+          [
+            "Partition tolerance",
+            "Handles network splits with care",
+            "Designed for partition tolerance"
+          ],
+          [
+            "Use case",
+            "Banking, e-commerce checkout, inventory",
+            "Social feeds, content caching, analytics"
+          ]
         ]
       }
     },

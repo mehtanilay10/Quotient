@@ -8,10 +8,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "💾",
-  "tags": [
-    "caching",
-    "performance"
-  ],
+  "tags": ["caching", "performance"],
   "lessonSlugs": [
     "cdn-caching",
     "application-level-caching",

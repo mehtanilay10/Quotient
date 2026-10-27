@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { signIn } from 'next-auth/react';
-import { ArrowLeft, Mail } from 'lucide-react';
-import { logger } from '@/lib/logger';
+import { useState } from "react";
+import { signIn } from "next-auth/react";
+import { ArrowLeft, Mail } from "lucide-react";
+import { logger } from "@/lib/logger";
 
 type LoginFormProps = {
   callbackUrl: string;
@@ -11,7 +11,7 @@ type LoginFormProps = {
 };
 
 export function LoginForm({ callbackUrl, expiryMinutes }: LoginFormProps) {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [isGoogleLoading, setIsGoogleLoading] = useState(false);
   const [isEmailLoading, setIsEmailLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
@@ -22,10 +22,10 @@ export function LoginForm({ callbackUrl, expiryMinutes }: LoginFormProps) {
     setError(null);
 
     try {
-      await signIn('google', { callbackUrl });
+      await signIn("google", { callbackUrl });
     } catch (err) {
-      logger.error('login', 'Google sign in error', err);
-      setError('We could not start Google sign-in. Please try again.');
+      logger.error("login", "Google sign in error", err);
+      setError("We could not start Google sign-in. Please try again.");
       setIsGoogleLoading(false);
     }
   };
@@ -40,16 +40,14 @@ export function LoginForm({ callbackUrl, expiryMinutes }: LoginFormProps) {
     setError(null);
 
     try {
-      const result = await signIn('email', {
+      const result = await signIn("email", {
         email: trimmedEmail,
         callbackUrl,
         redirect: false,
       });
 
       if (result?.status === 429) {
-        setError(
-          'Too many sign-in attempts. Please wait a few minutes and try again.'
-        );
+        setError("Too many sign-in attempts. Please wait a few minutes and try again.");
         return;
       }
 
@@ -57,19 +55,15 @@ export function LoginForm({ callbackUrl, expiryMinutes }: LoginFormProps) {
       // here means the send/config failed — not that the account is missing.
       // That keeps the response resistant to email enumeration.
       if (result?.error) {
-        logger.error('login', 'Magic link request failed', result.error);
-        setError(
-          'We could not send the sign-in link right now. Please try again in a moment.'
-        );
+        logger.error("login", "Magic link request failed", result.error);
+        setError("We could not send the sign-in link right now. Please try again in a moment.");
         return;
       }
 
       setEmailSent(true);
     } catch (err) {
-      logger.error('login', 'Magic link sign in error', err);
-      setError(
-        'We could not send the sign-in link. Check your connection and try again.'
-      );
+      logger.error("login", "Magic link sign in error", err);
+      setError("We could not send the sign-in link. Check your connection and try again.");
     } finally {
       setIsEmailLoading(false);
     }
@@ -77,36 +71,28 @@ export function LoginForm({ callbackUrl, expiryMinutes }: LoginFormProps) {
 
   const resetForm = () => {
     setEmailSent(false);
-    setEmail('');
+    setEmail("");
     setError(null);
   };
 
   if (emailSent) {
     return (
-      <div
-        className="mt-6 space-y-4 text-center"
-        role="status"
-        aria-live="polite"
-      >
+      <div className="mt-6 space-y-4 text-center" role="status" aria-live="polite">
         <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-accent-subtle">
           <Mail className="h-6 w-6 text-accent-fg" aria-hidden="true" />
         </div>
         <div>
-          <h2 className="text-lg font-semibold text-fg-default">
-            Check your email
-          </h2>
+          <h2 className="text-lg font-semibold text-fg-default">Check your email</h2>
           <p className="mt-2 text-sm text-fg-muted">
-            We sent a one-time sign-in link to{' '}
+            We sent a one-time sign-in link to{" "}
             <strong className="font-medium text-fg-default">{email.trim()}</strong>.
           </p>
           <p className="mt-1 text-sm text-fg-muted">
-            The link expires in {expiryMinutes} minutes and can only be used
-            once.
+            The link expires in {expiryMinutes} minutes and can only be used once.
           </p>
         </div>
         <p className="text-xs text-fg-subtle">
-          It may take a minute to arrive. Check your spam folder if you do not
-          see it.
+          It may take a minute to arrive. Check your spam folder if you do not see it.
         </p>
         <button
           type="button"
@@ -146,14 +132,12 @@ export function LoginForm({ callbackUrl, expiryMinutes }: LoginFormProps) {
             d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
           />
         </svg>
-        {isGoogleLoading ? 'Signing in...' : 'Continue with Google'}
+        {isGoogleLoading ? "Signing in..." : "Continue with Google"}
       </button>
 
       <div className="flex items-center gap-3" aria-hidden="true">
         <span className="h-px flex-1 bg-border" />
-        <span className="text-xs font-medium uppercase tracking-wide text-fg-subtle">
-          or
-        </span>
+        <span className="text-xs font-medium uppercase tracking-wide text-fg-subtle">or</span>
         <span className="h-px flex-1 bg-border" />
       </div>
 
@@ -185,7 +169,7 @@ export function LoginForm({ callbackUrl, expiryMinutes }: LoginFormProps) {
           disabled={isEmailLoading || isGoogleLoading || !email.trim()}
           className="w-full rounded-lg bg-accent-fg px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-emphasis disabled:cursor-not-allowed disabled:opacity-50"
         >
-          {isEmailLoading ? 'Sending link...' : 'Email me a sign-in link'}
+          {isEmailLoading ? "Sending link..." : "Email me a sign-in link"}
         </button>
       </form>
 

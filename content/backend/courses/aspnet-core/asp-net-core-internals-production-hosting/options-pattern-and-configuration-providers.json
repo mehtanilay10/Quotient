@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "options",
-    "configuration",
-    "settings",
-    "strongly-typed"
-  ],
+  "tags": ["options", "configuration", "settings", "strongly-typed"],
   "blocks": [
     {
       "type": "paragraph",
@@ -65,12 +60,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Interface",
-          "Lifetime",
-          "Reload Behavior",
-          "Use When"
-        ],
+        "headers": ["Interface", "Lifetime", "Reload Behavior", "Use When"],
         "rows": [
           [
             "IOptions<T>",

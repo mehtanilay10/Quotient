@@ -7,15 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "reference-types",
-    "classes",
-    "arrays",
-    "strings",
-    "heap",
-    "collections"
-  ],
+  "tags": ["csharp", "reference-types", "classes", "arrays", "strings", "heap", "collections"],
   "blocks": [
     {
       "type": "paragraph",
@@ -159,11 +151,7 @@
               "Cannot be null (without Nullable<T>)",
               "No inheritance or polymorphism"
             ],
-            "tags": [
-              "stack",
-              "copy",
-              "fast"
-            ]
+            "tags": ["stack", "copy", "fast"]
           },
           {
             "title": "Reference Types",
@@ -178,11 +166,7 @@
               "Garbage collector overhead",
               "Shared state can cause bugs if not managed carefully"
             ],
-            "tags": [
-              "heap",
-              "shared",
-              "gc"
-            ]
+            "tags": ["heap", "shared", "gc"]
           }
         ]
       }

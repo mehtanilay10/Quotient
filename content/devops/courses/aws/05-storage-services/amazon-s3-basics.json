@@ -8,7 +8,16 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": ["aws", "s3", "storage", "buckets", "objects", "versioning", "encryption", "bucket-policies"],
+  "tags": [
+    "aws",
+    "s3",
+    "storage",
+    "buckets",
+    "objects",
+    "versioning",
+    "encryption",
+    "bucket-policies"
+  ],
   "blocks": [
     {
       "type": "heading",
@@ -48,7 +57,12 @@
           ["S3 Standard-IA", "Infrequent access, long-lived data", "11 nines", "99.9%"],
           ["S3 One Zone-IA", "Infrequent access, reproducible data", "11 nines", "99.5%"],
           ["S3 Glacier Instant Retrieval", "Archive with millisecond access", "11 nines", "99.99%"],
-          ["S3 Glacier Flexible Retrieval", "Archive with minutes-to-hours retrieval", "11 nines", "99.99%"],
+          [
+            "S3 Glacier Flexible Retrieval",
+            "Archive with minutes-to-hours retrieval",
+            "11 nines",
+            "99.99%"
+          ],
           ["S3 Glacier Deep Archive", "Long-term archive, lowest cost", "11 nines", "99.99%"]
         ]
       }

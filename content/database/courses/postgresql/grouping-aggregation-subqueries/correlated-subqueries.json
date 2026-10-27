@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "subqueries",
-    "correlated-subqueries",
-    "exists",
-    "in"
-  ],
+  "tags": ["subqueries", "correlated-subqueries", "exists", "in"],
   "blocks": [
     {
       "type": "paragraph",
@@ -63,8 +58,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ctes",
-    "lateral-join"
-  ]
+  "relatedLessons": ["ctes", "lateral-join"]
 }

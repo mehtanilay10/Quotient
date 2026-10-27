@@ -7,17 +7,8 @@
   "difficulty": "intermediate",
   "estimatedHours": 5,
   "icon": "🤖",
-  "tags": [
-    "agents",
-    "workflows",
-    "refactoring",
-    "tdd"
-  ],
-  "lessonSlugs": [
-    "agentic-coding-intro",
-    "building-ai-agents",
-    "multi-file-workflows"
-  ],
+  "tags": ["agents", "workflows", "refactoring", "tdd"],
+  "lessonSlugs": ["agentic-coding-intro", "building-ai-agents", "multi-file-workflows"],
   "whatYouLearn": [
     "How agentic coding differs from simple code completion",
     "Multi-file refactoring with AI agents",

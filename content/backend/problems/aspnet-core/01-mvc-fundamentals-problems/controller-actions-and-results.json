@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "easy",
   "estimatedMinutes": 15,
-  "tags": [
-    "aspnet-core",
-    "mvc",
-    "controllers",
-    "action-results"
-  ],
+  "tags": ["aspnet-core", "mvc", "controllers", "action-results"],
   "blocks": [
     {
       "type": "heading",
@@ -96,34 +91,15 @@
               "Auto-formats responses",
               "Built-in status code helpers"
             ],
-            "cons": [
-              "Multiple return types can be confusing",
-              "Must handle NotFound manually"
-            ],
-            "tags": [
-              "ActionResult<T>",
-              "Ok()",
-              "NotFound()",
-              "CreatedAtAction"
-            ]
+            "cons": ["Multiple return types can be confusing", "Must handle NotFound manually"],
+            "tags": ["ActionResult<T>", "Ok()", "NotFound()", "CreatedAtAction"]
           },
           {
             "title": "Content Negotiation Results",
             "description": "Multiple response formats",
-            "pros": [
-              "Supports any format",
-              "File streaming",
-              "Flexible response types"
-            ],
-            "cons": [
-              "Manual format handling",
-              "Must set content type"
-            ],
-            "tags": [
-              "ContentResult",
-              "FileResult",
-              "Content Negotiation"
-            ]
+            "pros": ["Supports any format", "File streaming", "Flexible response types"],
+            "cons": ["Manual format handling", "Must set content type"],
+            "tags": ["ContentResult", "FileResult", "Content Negotiation"]
           }
         ]
       }

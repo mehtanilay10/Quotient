@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Sort an array of integers in ascending order using quick sort. It must sort in place, and you should be able to explain when it degrades to O(n²)."}
+        "text": "Sort an array of integers in ascending order using quick sort. It must sort in place, and you should be able to explain when it degrades to O(n²)."
+      }
     },
     {
       "type": "heading",
@@ -36,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Everything hinges on partitioning: choose a pivot value and rearrange the range so that all elements smaller than the pivot come first, then the pivot, then everything larger. Once the pivot is in its final position, recurse on the two sides."}
+        "text": "Everything hinges on partitioning: choose a pivot value and rearrange the range so that all elements smaller than the pivot come first, then the pivot, then everything larger. Once the pivot is in its final position, recurse on the two sides."
+      }
     },
     {
       "type": "example",
@@ -54,7 +56,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "The naive 'last element as pivot' choice is O(n²) on already-sorted input, which is a realistic input. Choosing a random pivot first makes that worst case astronomically unlikely while keeping the same code."}
+        "text": "The naive 'last element as pivot' choice is O(n²) on already-sorted input, which is a realistic input. Choosing a random pivot first makes that worst case astronomically unlikely while keeping the same code."
+      }
     },
     {
       "type": "example",
@@ -97,7 +100,12 @@
           {
             "title": "Quick sort",
             "description": "Partition and recurse",
-            "pros": ["In-place", "Excellent cache locality", "Fast constant factors", "Recommended"],
+            "pros": [
+              "In-place",
+              "Excellent cache locality",
+              "Fast constant factors",
+              "Recommended"
+            ],
             "cons": ["O(n²) worst case without randomisation", "Not stable"],
             "tags": ["O(n log n) average", "O(log n) stack", "unstable"]
           },

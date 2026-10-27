@@ -6,11 +6,6 @@
   "fullDefinition": "Natural Language Processing (NLP) is the AI subfield concerned with enabling computers to understand, interpret, and generate human language. It encompasses tasks like text classification, translation, summarization, question answering, and sentiment analysis. Modern LLMs have absorbed and dramatically advanced traditional NLP — many NLP tasks that required specialized models now work through prompting a general-purpose LLM.",
   "category": "core-concepts",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "large-language-model",
-    "machine-learning"
-  ],
-  "alsoKnownAs": [
-    "NLP"
-  ]
+  "relatedTerms": ["large-language-model", "machine-learning"],
+  "alsoKnownAs": ["NLP"]
 }

@@ -228,11 +228,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "airbnb-booking-hld",
-    "payment-gateway-hld",
-    "rate-limiter"
-  ],
+  "relatedLessons": ["airbnb-booking-hld", "payment-gateway-hld", "rate-limiter"],
   "furtherReading": [
     {
       "title": "How Ticketmaster Handles Flash Sales with Distributed Caching",

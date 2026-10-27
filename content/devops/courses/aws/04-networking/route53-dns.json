@@ -53,7 +53,11 @@
           ["AAAA", "Maps a domain to an IPv6 address", "example.com -> 2001:db8::1"],
           ["CNAME", "Maps a domain to another domain name", "www.example.com -> example.com"],
           ["MX", "Specifies mail servers for the domain", "example.com -> mail.example.com"],
-          ["TXT", "Stores arbitrary text for verification or policies", "SPF records, domain verification"],
+          [
+            "TXT",
+            "Stores arbitrary text for verification or policies",
+            "SPF records, domain verification"
+          ],
           ["NS", "Name servers for the hosted zone", "ns-123.awsdns-45.com"]
         ]
       }

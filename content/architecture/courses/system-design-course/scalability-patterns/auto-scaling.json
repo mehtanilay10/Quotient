@@ -101,10 +101,30 @@
       "data": {
         "headers": ["Policy", "Trigger", "Best For", "Risk"],
         "rows": [
-          ["Target Tracking", "Keep metric at target value (e.g., 60% CPU)", "Steady workloads", "Slow reaction to spikes"],
-          ["Step Scaling", "Scale by defined steps per threshold breach", "Variable traffic", "Can over-scale if steps are large"],
-          ["Simple Scaling", "Scale by fixed amount after a wait period", "Predictable growth", "High wait times during spikes"],
-          ["Scheduled Scaling", "Scale at fixed times (cron-like)", "Known peaks (sales, events)", "Ignores unexpected spikes"]
+          [
+            "Target Tracking",
+            "Keep metric at target value (e.g., 60% CPU)",
+            "Steady workloads",
+            "Slow reaction to spikes"
+          ],
+          [
+            "Step Scaling",
+            "Scale by defined steps per threshold breach",
+            "Variable traffic",
+            "Can over-scale if steps are large"
+          ],
+          [
+            "Simple Scaling",
+            "Scale by fixed amount after a wait period",
+            "Predictable growth",
+            "High wait times during spikes"
+          ],
+          [
+            "Scheduled Scaling",
+            "Scale at fixed times (cron-like)",
+            "Known peaks (sales, events)",
+            "Ignores unexpected spikes"
+          ]
         ]
       }
     },

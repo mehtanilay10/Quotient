@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "caching",
-    "cache-configuration",
-    "apollo-client",
-    "performance"
-  ],
+  "tags": ["caching", "cache-configuration", "apollo-client", "performance"],
   "blocks": [
     {
       "type": "heading",
@@ -88,7 +83,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "what-is-apollo"
-  ]
+  "prerequisites": ["what-is-apollo"]
 }

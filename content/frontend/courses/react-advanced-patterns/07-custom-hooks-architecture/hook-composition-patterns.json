@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 33,
-  "tags": [
-    "custom-hooks",
-    "composition",
-    "state",
-    "reusability"
-  ],
+  "tags": ["custom-hooks", "composition", "state", "reusability"],
   "blocks": [
     {
       "type": "paragraph",

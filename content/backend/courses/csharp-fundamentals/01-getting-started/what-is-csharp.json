@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "introduction",
-    "dotnet",
-    "language"
-  ],
+  "tags": ["csharp", "introduction", "dotnet", "language"],
   "blocks": [
     {
       "type": "paragraph",
@@ -36,47 +31,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Version",
-          "Year",
-          "Key Features Added"
-        ],
+        "headers": ["Version", "Year", "Key Features Added"],
         "rows": [
-          [
-            "C# 1.0",
-            "2002",
-            "Classes, interfaces, properties, delegates, events"
-          ],
-          [
-            "C# 2.0",
-            "2005",
-            "Generics, nullable types, iterators, partial classes"
-          ],
-          [
-            "C# 3.0",
-            "2007",
-            "LINQ, lambda expressions, extension methods, anonymous types"
-          ],
-          [
-            "C# 5.0",
-            "2012",
-            "Async/await, caller info attributes"
-          ],
-          [
-            "C# 7.0",
-            "2017",
-            "Pattern matching, tuples, local functions, ref returns"
-          ],
-          [
-            "C# 9.0",
-            "2020",
-            "Records, top-level statements, init-only setters"
-          ],
-          [
-            "C# 12",
-            "2023",
-            "Primary constructors, collection expressions, inline arrays"
-          ]
+          ["C# 1.0", "2002", "Classes, interfaces, properties, delegates, events"],
+          ["C# 2.0", "2005", "Generics, nullable types, iterators, partial classes"],
+          ["C# 3.0", "2007", "LINQ, lambda expressions, extension methods, anonymous types"],
+          ["C# 5.0", "2012", "Async/await, caller info attributes"],
+          ["C# 7.0", "2017", "Pattern matching, tuples, local functions, ref returns"],
+          ["C# 9.0", "2020", "Records, top-level statements, init-only setters"],
+          ["C# 12", "2023", "Primary constructors, collection expressions, inline arrays"]
         ]
       }
     },
@@ -190,13 +153,8 @@
               "Built-in dependency injection and security",
               "Excellent async/await support"
             ],
-            "cons": [
-              "Steeper learning curve than Node.js for beginners"
-            ],
-            "tags": [
-              "web",
-              "enterprise"
-            ]
+            "cons": ["Steeper learning curve than Node.js for beginners"],
+            "tags": ["web", "enterprise"]
           },
           {
             "title": "Game Development",
@@ -206,13 +164,8 @@
               "Cross-platform deployment",
               "Massive community and learning resources"
             ],
-            "cons": [
-              "Tied to Unity engine"
-            ],
-            "tags": [
-              "games",
-              "unity"
-            ]
+            "cons": ["Tied to Unity engine"],
+            "tags": ["games", "unity"]
           },
           {
             "title": "Cloud & Microservices",
@@ -222,13 +175,8 @@
               "Docker and Kubernetes friendly",
               "gRPC and SignalR built in"
             ],
-            "cons": [
-              "Cloud features are best on Azure"
-            ],
-            "tags": [
-              "cloud",
-              "microservices"
-            ]
+            "cons": ["Cloud features are best on Azure"],
+            "tags": ["cloud", "microservices"]
           }
         ]
       }

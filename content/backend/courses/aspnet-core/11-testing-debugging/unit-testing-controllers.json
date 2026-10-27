@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "unit-testing",
-    "controllers",
-    "moq"
-  ],
+  "tags": ["unit-testing", "controllers", "moq"],
   "blocks": [
     {
       "type": "paragraph",
@@ -201,10 +197,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "testing-fundamentals",
-    "integration-testing"
-  ],
+  "relatedLessons": ["testing-fundamentals", "integration-testing"],
   "technology": null,
   "furtherReading": [
     {

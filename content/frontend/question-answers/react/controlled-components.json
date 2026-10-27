@@ -6,10 +6,7 @@
   "description": "Understand different approaches to handling form inputs in React.",
   "order": 14,
   "difficulty": "intermediate",
-  "tags": [
-    "React",
-    "intermediate"
-  ],
+  "tags": ["React", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

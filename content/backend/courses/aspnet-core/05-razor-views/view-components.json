@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "view-components",
-    "reusability",
-    "rendering"
-  ],
+  "tags": ["view-components", "reusability", "rendering"],
   "blocks": [
     {
       "type": "heading",
@@ -187,10 +183,7 @@
       "takeaway": "View components give you the reusability of partial views with the power of controller-like logic. They are ideal for self-contained widgets that need their own data."
     }
   ],
-  "relatedLessons": [
-    "layouts-and-partials",
-    "tag-helpers"
-  ],
+  "relatedLessons": ["layouts-and-partials", "tag-helpers"],
   "technology": null,
   "furtherReading": []
 }

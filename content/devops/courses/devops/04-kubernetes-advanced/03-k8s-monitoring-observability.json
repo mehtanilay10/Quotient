@@ -7,14 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "kubernetes",
-    "monitoring",
-    "logging",
-    "observability",
-    "prometheus",
-    "devops"
-  ],
+  "tags": ["kubernetes", "monitoring", "logging", "observability", "prometheus", "devops"],
   "blocks": [
     {
       "type": "heading",
@@ -86,47 +79,23 @@
           {
             "title": "Liveness",
             "description": "Determines if the container needs to be restarted.",
-            "tags": [
-              "Restart signal",
-              "Crash recovery"
-            ],
-            "pros": [
-              "Auto-recovery from hangs",
-              "Self-healing"
-            ],
-            "cons": [
-              "Can cause restart storms if misconfigured"
-            ]
+            "tags": ["Restart signal", "Crash recovery"],
+            "pros": ["Auto-recovery from hangs", "Self-healing"],
+            "cons": ["Can cause restart storms if misconfigured"]
           },
           {
             "title": "Readiness",
             "description": "Determines if the container can accept traffic.",
-            "tags": [
-              "Traffic routing",
-              "No restart"
-            ],
-            "pros": [
-              "Graceful handling of slow starts",
-              "Zero-downtime deploys"
-            ],
-            "cons": [
-              "Pod won't get traffic if unhealthy"
-            ]
+            "tags": ["Traffic routing", "No restart"],
+            "pros": ["Graceful handling of slow starts", "Zero-downtime deploys"],
+            "cons": ["Pod won't get traffic if unhealthy"]
           },
           {
             "title": "Startup",
             "description": "Gives a container more time to start before liveness kicks in.",
-            "tags": [
-              "Slow startup",
-              "Configurable"
-            ],
-            "pros": [
-              "Prevents premature restarts",
-              "Works with liveness"
-            ],
-            "cons": [
-              "Only available in newer Kubernetes versions"
-            ]
+            "tags": ["Slow startup", "Configurable"],
+            "pros": ["Prevents premature restarts", "Works with liveness"],
+            "cons": ["Only available in newer Kubernetes versions"]
           }
         ]
       }
@@ -163,31 +132,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Command",
-          "Purpose"
-        ],
+        "headers": ["Command", "Purpose"],
         "rows": [
-          [
-            "kubectl top pods",
-            "Show CPU and memory usage per pod"
-          ],
-          [
-            "kubectl top nodes",
-            "Show CPU and memory usage per node"
-          ],
-          [
-            "kubectl describe pod <name>",
-            "See pod conditions, events, and resource usage"
-          ],
+          ["kubectl top pods", "Show CPU and memory usage per pod"],
+          ["kubectl top nodes", "Show CPU and memory usage per node"],
+          ["kubectl describe pod <name>", "See pod conditions, events, and resource usage"],
           [
             "kubectl get events --sort-by=.metadata.creationTimestamp",
             "View recent cluster events"
           ],
-          [
-            "kubectl get --raw /metrics",
-            "Access raw metrics endpoint directly"
-          ]
+          ["kubectl get --raw /metrics", "Access raw metrics endpoint directly"]
         ]
       }
     },

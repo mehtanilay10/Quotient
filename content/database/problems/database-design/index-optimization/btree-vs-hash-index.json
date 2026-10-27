@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "B-tree and hash indexes use fundamentally different data structures. B-tree supports range queries and sorting, while hash indexes offer fast equality lookups but limited range support." }
+      "data": {
+        "text": "B-tree and hash indexes use fundamentally different data structures. B-tree supports range queries and sorting, while hash indexes offer fast equality lookups but limited range support."
+      }
     },
     {
       "type": "heading",
@@ -22,14 +24,24 @@
       "type": "bullet-list",
       "data": {
         "title": "B-tree characteristics",
-        "items": ["Balanced tree for sorted access", "Supports equality, range, and prefix searches", "Used by default in most databases", "Pages linked for sequential access"]
+        "items": [
+          "Balanced tree for sorted access",
+          "Supports equality, range, and prefix searches",
+          "Used by default in most databases",
+          "Pages linked for sequential access"
+        ]
       }
     },
     {
       "type": "bullet-list",
       "data": {
         "title": "Hash characteristics",
-        "items": ["Hash buckets for direct access", "O(1) average equality lookup", "No inherent ordering", "Collisions handled by chaining or open addressing"]
+        "items": [
+          "Hash buckets for direct access",
+          "O(1) average equality lookup",
+          "No inherent ordering",
+          "Collisions handled by chaining or open addressing"
+        ]
       }
     },
     {
@@ -61,16 +73,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "tip", "title": "Tip", "text": "Use B-tree by default. Choose hash only when you have pure equality predicates and the database supports memory-resident hash indexes well." }
+      "data": {
+        "variant": "tip",
+        "title": "Tip",
+        "text": "Use B-tree by default. Choose hash only when you have pure equality predicates and the database supports memory-resident hash indexes well."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "Does PostgreSQL support hash indexes well?", "answer": "Historically no. Hash indexes were not WAL-logged until PG10. B-tree is still safer for most cases." },
-          { "question": "Can I use both index types on the same column?", "answer": "Yes, but it is rarely beneficial. Choose the structure that matches your query pattern." },
-          { "question": "What about INMEMORY hash indexes?", "answer": "In-memory engines like MySQL HeatWave can use adaptive hash indexes automatically." }
+          {
+            "question": "Does PostgreSQL support hash indexes well?",
+            "answer": "Historically no. Hash indexes were not WAL-logged until PG10. B-tree is still safer for most cases."
+          },
+          {
+            "question": "Can I use both index types on the same column?",
+            "answer": "Yes, but it is rarely beneficial. Choose the structure that matches your query pattern."
+          },
+          {
+            "question": "What about INMEMORY hash indexes?",
+            "answer": "In-memory engines like MySQL HeatWave can use adaptive hash indexes automatically."
+          }
         ]
       }
     },
@@ -78,7 +103,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["B-tree is the universal default for most queries", "Hash excels at pure equality lookups", "Hash cannot support ranges or sorting", "Profile queries before choosing index types"],
+        "points": [
+          "B-tree is the universal default for most queries",
+          "Hash excels at pure equality lookups",
+          "Hash cannot support ranges or sorting",
+          "Profile queries before choosing index types"
+        ],
         "takeaway": "B-tree covers almost all production needs. Hash is a niche optimization for exact-match, high-throughput key lookups."
       }
     }

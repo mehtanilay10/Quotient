@@ -7,12 +7,7 @@
   "order": 26,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "full-stack",
-    "debugging",
-    "scenarios"
-  ],
+  "tags": ["interview", "full-stack", "debugging", "scenarios"],
   "blocks": [
     {
       "type": "paragraph",
@@ -114,10 +109,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "scenario-q21",
-    "scenario-q24"
-  ],
+  "relatedLessons": ["scenario-q21", "scenario-q24"],
   "furtherReading": [
     {
       "title": "Debugging production — Google SRE book",

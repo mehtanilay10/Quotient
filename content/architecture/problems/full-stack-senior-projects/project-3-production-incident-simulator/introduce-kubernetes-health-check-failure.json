@@ -104,7 +104,11 @@
           {
             "title": "Rolling update",
             "description": "Gradually replaces old pods with new ones.",
-            "pros": ["No downtime if probes are correct", "Automatic rollback on failure", "Standard Kubernetes behavior"],
+            "pros": [
+              "No downtime if probes are correct",
+              "Automatic rollback on failure",
+              "Standard Kubernetes behavior"
+            ],
             "cons": ["Requires proper readiness probes", "Can cause resource spikes during rollout"]
           },
           {

@@ -8,12 +8,7 @@
   "order": 18,
   "difficulty": "medium",
   "estimatedMinutes": 16,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "strings",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "strings", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "1D DP",
             "description": "Rolling array over rows",
-            "pros": [
-              "O(min(m,n)) space"
-            ],
-            "tags": [
-              "O(m\u00b7n) time",
-              "O(min(m,n)) space",
-              "Recommended"
-            ]
+            "pros": ["O(min(m,n)) space"],
+            "tags": ["O(m\u00b7n) time", "O(min(m,n)) space", "Recommended"]
           }
         ]
       }

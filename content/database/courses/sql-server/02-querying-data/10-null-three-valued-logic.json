@@ -7,12 +7,7 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "null",
-    "three-valued-logic",
-    "is-null",
-    "unknown"
-  ],
+  "tags": ["null", "three-valued-logic", "is-null", "unknown"],
   "blocks": [
     {
       "type": "heading",
@@ -44,55 +39,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "customer_id",
-          "first_name",
-          "last_name",
-          "email",
-          "city",
-          "state"
-        ],
+        "headers": ["customer_id", "first_name", "last_name", "email", "city", "state"],
         "rows": [
-          [
-            "1",
-            "John",
-            "Smith",
-            "john@example.com",
-            "New York",
-            "NY"
-          ],
-          [
-            "2",
-            "Jane",
-            "Doe",
-            "jane@example.com",
-            "Los Angeles",
-            "CA"
-          ],
-          [
-            "3",
-            "Bob",
-            "Johnson",
-            "bob@example.com",
-            "Chicago",
-            "IL"
-          ],
-          [
-            "4",
-            "Alice",
-            "Williams",
-            "alice@example.com",
-            "Houston",
-            "TX"
-          ],
-          [
-            "5",
-            "Charlie",
-            "Brown",
-            "charlie@example.com",
-            "Phoenix",
-            "AZ"
-          ]
+          ["1", "John", "Smith", "john@example.com", "New York", "NY"],
+          ["2", "Jane", "Doe", "jane@example.com", "Los Angeles", "CA"],
+          ["3", "Bob", "Johnson", "bob@example.com", "Chicago", "IL"],
+          ["4", "Alice", "Williams", "alice@example.com", "Houston", "TX"],
+          ["5", "Charlie", "Brown", "charlie@example.com", "Phoenix", "AZ"]
         ]
       }
     },

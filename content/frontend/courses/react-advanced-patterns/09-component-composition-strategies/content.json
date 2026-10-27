@@ -9,14 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 3,
   "icon": "🏗",
-  "tags": [
-    "composition",
-    "slots",
-    "headless-ui",
-    "polymorphic",
-    "children",
-    "layout"
-  ],
+  "tags": ["composition", "slots", "headless-ui", "polymorphic", "children", "layout"],
   "lessonSlugs": [
     "slot-pattern",
     "headless-components",

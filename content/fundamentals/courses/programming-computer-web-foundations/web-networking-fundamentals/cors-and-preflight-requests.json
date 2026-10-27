@@ -94,7 +94,10 @@
           ["Access-Control-Allow-Origin", "Which origins may read the response"],
           ["Access-Control-Allow-Methods", "HTTP methods allowed in actual requests"],
           ["Access-Control-Allow-Headers", "Headers the browser may send"],
-          ["Access-Control-Allow-Credentials", "Whether cookies or Authorization headers are permitted"],
+          [
+            "Access-Control-Allow-Credentials",
+            "Whether cookies or Authorization headers are permitted"
+          ],
           ["Access-Control-Max-Age", "How long the preflight result can be cached"]
         ]
       }
@@ -169,7 +172,11 @@
       }
     }
   ],
-  "relatedLessons": ["http-methods-status-codes-and-headers", "http-request-and-response-lifecycle", "websockets-vs-server-sent-events"],
+  "relatedLessons": [
+    "http-methods-status-codes-and-headers",
+    "http-request-and-response-lifecycle",
+    "websockets-vs-server-sent-events"
+  ],
   "furtherReading": [
     {
       "type": "article",

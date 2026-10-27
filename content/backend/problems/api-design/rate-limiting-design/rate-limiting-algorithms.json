@@ -26,13 +26,49 @@
     {
       "type": "table",
       "data": {
-        "headers": ["Algorithm", "Memory Usage", "Burst Capability", "Boundary Accuracy", "Recommended Use"],
+        "headers": [
+          "Algorithm",
+          "Memory Usage",
+          "Burst Capability",
+          "Boundary Accuracy",
+          "Recommended Use"
+        ],
         "rows": [
-          ["Token Bucket", "O(1) (2 fields)", "Yes — up to bucket capacity", "High — refills continuously", "Industry standard for general REST APIs"],
-          ["Leaky Bucket", "O(1) (queue depth)", "No — strictly smooths output", "High — processes at fixed rate", "Network shaping, not API rate limiting"],
-          ["Fixed Window", "O(1) (counter + timestamp)", "Yes — entire window resets", "Low — boundary burst at window edges", "Simple APIs, internal services"],
-          ["Sliding Window (Log)", "O(N) (all timestamps)", "Yes — within window", "Very High — exact count", "Accurate but memory-heavy"],
-          ["Sliding Window (Approx)", "O(1) (weighted counters)", "Yes — within window", "High — smooths boundary burst", "Production APIs needing accuracy without log memory"]
+          [
+            "Token Bucket",
+            "O(1) (2 fields)",
+            "Yes — up to bucket capacity",
+            "High — refills continuously",
+            "Industry standard for general REST APIs"
+          ],
+          [
+            "Leaky Bucket",
+            "O(1) (queue depth)",
+            "No — strictly smooths output",
+            "High — processes at fixed rate",
+            "Network shaping, not API rate limiting"
+          ],
+          [
+            "Fixed Window",
+            "O(1) (counter + timestamp)",
+            "Yes — entire window resets",
+            "Low — boundary burst at window edges",
+            "Simple APIs, internal services"
+          ],
+          [
+            "Sliding Window (Log)",
+            "O(N) (all timestamps)",
+            "Yes — within window",
+            "Very High — exact count",
+            "Accurate but memory-heavy"
+          ],
+          [
+            "Sliding Window (Approx)",
+            "O(1) (weighted counters)",
+            "Yes — within window",
+            "High — smooths boundary burst",
+            "Production APIs needing accuracy without log memory"
+          ]
         ]
       }
     },
@@ -171,10 +207,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "token-bucket-implementation",
-    "sliding-window-implementation"
-  ],
+  "relatedLessons": ["token-bucket-implementation", "sliding-window-implementation"],
   "furtherReading": [
     {
       "title": "Stripe Rate Limiting Architecture",

@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 23,
-  "tags": [
-    "react",
-    "typescript",
-    "useeffect",
-    "hooks"
-  ],
+  "tags": ["react", "typescript", "useeffect", "hooks"],
   "blocks": [
     {
       "type": "paragraph",

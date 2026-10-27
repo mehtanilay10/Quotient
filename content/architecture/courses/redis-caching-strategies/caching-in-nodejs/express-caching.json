@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "express",
-    "redis",
-    "api",
-    "middleware",
-    "caching"
-  ],
+  "tags": ["express", "redis", "api", "middleware", "caching"],
   "blocks": [
     {
       "type": "paragraph",

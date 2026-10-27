@@ -6,8 +6,5 @@
   "fullDefinition": "Latency in AI refers to the delay between submitting a prompt and receiving the first token of the response. It is influenced by model size (larger models are slower), server load, network speed, and whether the model is streaming or not. Low latency matters for real-time applications and voice AI. High-latency models (like reasoning models that think before answering) trade speed for quality.",
   "category": "models-and-training",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "inference",
-    "large-language-model"
-  ]
+  "relatedTerms": ["inference", "large-language-model"]
 }

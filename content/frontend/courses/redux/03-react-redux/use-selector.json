@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "redux",
-    "useSelector",
-    "hooks"
-  ],
+  "tags": ["react", "redux", "useSelector", "hooks"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,32 +68,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Example",
-          "Best For"
-        ],
+        "headers": ["Pattern", "Example", "Best For"],
         "rows": [
-          [
-            "Inline Selector",
-            "(state) => state.users.items",
-            "Simple, one-off selections"
-          ],
-          [
-            "Memoized Selector",
-            "createSelector(...)",
-            "Computed values from multiple slices"
-          ],
-          [
-            "Parametric Selector",
-            "(id) => (state) => state.items[id]",
-            "Selecting items by ID"
-          ],
-          [
-            "Root Selector",
-            "(state) => state",
-            "When you need full state access"
-          ]
+          ["Inline Selector", "(state) => state.users.items", "Simple, one-off selections"],
+          ["Memoized Selector", "createSelector(...)", "Computed values from multiple slices"],
+          ["Parametric Selector", "(id) => (state) => state.items[id]", "Selecting items by ID"],
+          ["Root Selector", "(state) => state", "When you need full state access"]
         ]
       }
     },

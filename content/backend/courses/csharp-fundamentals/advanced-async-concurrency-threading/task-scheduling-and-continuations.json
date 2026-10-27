@@ -95,7 +95,13 @@
     "diagnosing-async-performance-problems"
   ],
   "furtherReading": [
-    { "title": "TaskScheduler Class (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler" },
-    { "title": "Chaining tasks by using continuations (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/standard-async/continuation-logic" }
+    {
+      "title": "TaskScheduler Class (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.taskscheduler"
+    },
+    {
+      "title": "Chaining tasks by using continuations (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/standard-async/continuation-logic"
+    }
   ]
 }

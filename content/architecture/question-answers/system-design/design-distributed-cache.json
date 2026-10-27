@@ -8,12 +8,7 @@
   "order": 14,
   "difficulty": "advanced",
   "estimatedMinutes": 28,
-  "tags": [
-    "interview",
-    "system-design",
-    "cache",
-    "distributed"
-  ],
+  "tags": ["interview", "system-design", "cache", "distributed"],
   "technology": "System Design",
   "blocks": [
     {
@@ -95,37 +90,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Entity",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Entity", "Key Fields", "Description"],
         "rows": [
-          [
-            "CacheNode",
-            "node_id, address, status, capacity, used",
-            "Individual cache server"
-          ],
-          [
-            "CacheKey",
-            "key_hash, node_id, value, ttl, created_at",
-            "Cached key-value pair"
-          ],
-          [
-            "Replica",
-            "replica_id, primary_node_id, node_id, lag_ms",
-            "Replica metadata"
-          ],
+          ["CacheNode", "node_id, address, status, capacity, used", "Individual cache server"],
+          ["CacheKey", "key_hash, node_id, value, ttl, created_at", "Cached key-value pair"],
+          ["Replica", "replica_id, primary_node_id, node_id, lag_ms", "Replica metadata"],
           [
             "EvictionPolicy",
             "policy_name, max_memory, ttl_default",
             "Node-level eviction configuration"
           ],
-          [
-            "GossipMember",
-            "member_id, address, heartbeat, incarnation",
-            "Cluster membership state"
-          ]
+          ["GossipMember", "member_id, address, heartbeat, incarnation", "Cluster membership state"]
         ]
       }
     },
@@ -186,38 +161,20 @@
           {
             "title": "Strong Consistency",
             "description": "All reads return the most recent write. Requires quorum writes.",
-            "pros": [
-              "Data always fresh",
-              "Simple mental model"
-            ],
-            "cons": [
-              "Higher latency",
-              "Lower availability during failures"
-            ]
+            "pros": ["Data always fresh", "Simple mental model"],
+            "cons": ["Higher latency", "Lower availability during failures"]
           },
           {
             "title": "Eventual Consistency",
             "description": "Replicas converge over time. Reads may return stale data.",
-            "pros": [
-              "Low latency",
-              "High availability"
-            ],
-            "cons": [
-              "Stale reads possible",
-              "Complex invalidation logic"
-            ]
+            "pros": ["Low latency", "High availability"],
+            "cons": ["Stale reads possible", "Complex invalidation logic"]
           },
           {
             "title": "Session Consistency",
             "description": "Within a session, reads see their own writes. Balances consistency and performance.",
-            "pros": [
-              "Good UX",
-              "Reasonable latency"
-            ],
-            "cons": [
-              "Session management overhead",
-              "Cross-session staleness"
-            ]
+            "pros": ["Good UX", "Reasonable latency"],
+            "cons": ["Session management overhead", "Cross-session staleness"]
           }
         ]
       }

@@ -6,10 +6,7 @@
   "description": "Understand the .NET garbage collector and generational optimization.",
   "order": 40,
   "difficulty": "advanced",
-  "tags": [
-    ".NET",
-    "advanced"
-  ],
+  "tags": [".NET", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

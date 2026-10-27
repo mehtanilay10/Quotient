@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "bicep",
-    "iac",
-    "developer"
-  ],
+  "tags": ["azure", "bicep", "iac", "developer"],
   "blocks": [
     {
       "type": "paragraph",
@@ -65,25 +60,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Mode",
-          "Creates",
-          "Updates",
-          "Deletes"
-        ],
+        "headers": ["Mode", "Creates", "Updates", "Deletes"],
         "rows": [
-          [
-            "Incremental (default)",
-            "Yes",
-            "Yes",
-            "No - ignores resources not in template"
-          ],
-          [
-            "Complete",
-            "Yes",
-            "Yes",
-            "Yes - deletes resources not in template"
-          ]
+          ["Incremental (default)", "Yes", "Yes", "No - ignores resources not in template"],
+          ["Complete", "Yes", "Yes", "Yes - deletes resources not in template"]
         ]
       }
     },

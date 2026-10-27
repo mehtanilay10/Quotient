@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "testing",
-    "react",
-    "components",
-    "testing-library"
-  ],
+  "tags": ["redux", "testing", "react", "components", "testing-library"],
   "blocks": [
     {
       "type": "paragraph",
@@ -150,42 +144,18 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Utility",
-          "Purpose",
-          "Example"
-        ],
+        "headers": ["Utility", "Purpose", "Example"],
         "rows": [
           [
             "renderWithProviders",
             "Render with Redux Provider",
             "renderWithProviders(<Component />)"
           ],
-          [
-            "createTestStore",
-            "Create isolated store",
-            "createTestStore({ users: {...} })"
-          ],
-          [
-            "screen",
-            "Query rendered elements",
-            "screen.getByText('Hello')"
-          ],
-          [
-            "userEvent",
-            "Simulate user interactions",
-            "userEvent.click(button)"
-          ],
-          [
-            "waitFor",
-            "Wait for async operations",
-            "await waitFor(() => expect...)"
-          ],
-          [
-            "cleanup",
-            "Reset after tests",
-            "Called automatically"
-          ]
+          ["createTestStore", "Create isolated store", "createTestStore({ users: {...} })"],
+          ["screen", "Query rendered elements", "screen.getByText('Hello')"],
+          ["userEvent", "Simulate user interactions", "userEvent.click(button)"],
+          ["waitFor", "Wait for async operations", "await waitFor(() => expect...)"],
+          ["cleanup", "Reset after tests", "Called automatically"]
         ]
       }
     },

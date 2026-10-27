@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 22,
-  "tags": [
-    "agents",
-    "approval",
-    "human-in-the-loop",
-    "safety"
-  ],
+  "tags": ["agents", "approval", "human-in-the-loop", "safety"],
   "blocks": [
     {
       "type": "paragraph",
@@ -76,10 +71,7 @@
       "takeaway": "Agents should be powerful but accountable. Approval flows are the control surface that makes AI features safe for production users."
     }
   ],
-  "relatedLessons": [
-    "tool-use-and-function-calling",
-    "content-safety-and-guardrails"
-  ],
+  "relatedLessons": ["tool-use-and-function-calling", "content-safety-and-guardrails"],
   "technology": null,
   "furtherReading": [
     {

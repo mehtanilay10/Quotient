@@ -8,14 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "kubernetes",
-    "probes",
-    "liveness",
-    "readiness",
-    "startup",
-    "health"
-  ],
+  "tags": ["kubernetes", "probes", "liveness", "readiness", "startup", "health"],
   "blocks": [
     {
       "type": "heading",
@@ -73,22 +66,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Probe",
-          "Purpose",
-          "Failure Action"
-        ],
+        "headers": ["Probe", "Purpose", "Failure Action"],
         "rows": [
-          [
-            "Liveness",
-            "Is the container alive?",
-            "Restart the container"
-          ],
-          [
-            "Readiness",
-            "Is the container ready for traffic?",
-            "Remove from Service endpoints"
-          ],
+          ["Liveness", "Is the container alive?", "Restart the container"],
+          ["Readiness", "Is the container ready for traffic?", "Remove from Service endpoints"],
           [
             "Startup",
             "Has the application finished starting?",

@@ -6,13 +6,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "react",
-    "frontend",
-    "frameworks",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["react", "frontend", "frameworks", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -31,32 +25,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Package",
-          "Purpose",
-          "Section"
-        ],
+        "headers": ["Package", "Purpose", "Section"],
         "rows": [
-          [
-            "react",
-            "Components, hooks, and the element model",
-            "dependencies"
-          ],
-          [
-            "react-dom",
-            "Renders React into the browser DOM (and server APIs)",
-            "dependencies"
-          ],
-          [
-            "@types/react",
-            "TypeScript types for React",
-            "devDependencies"
-          ],
-          [
-            "@types/react-dom",
-            "TypeScript types for the DOM renderer",
-            "devDependencies"
-          ]
+          ["react", "Components, hooks, and the element model", "dependencies"],
+          ["react-dom", "Renders React into the browser DOM (and server APIs)", "dependencies"],
+          ["@types/react", "TypeScript types for React", "devDependencies"],
+          ["@types/react-dom", "TypeScript types for the DOM renderer", "devDependencies"]
         ]
       }
     },

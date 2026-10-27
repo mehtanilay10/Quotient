@@ -7,10 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 23,
-  "tags": [
-    "interview",
-    "beginner"
-  ],
+  "tags": ["interview", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

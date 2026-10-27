@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "razor",
-    "view-components",
-    "reusable"
-  ],
+  "tags": ["aspnet-core", "razor", "view-components", "reusable"],
   "blocks": [
     {
       "type": "heading",
@@ -91,37 +86,16 @@
           {
             "title": "Creating a View Component",
             "description": "Reusable component with DI",
-            "pros": [
-              "Full DI support",
-              "Async support",
-              "Cached with OutputCache"
-            ],
-            "cons": [
-              "More boilerplate than partials",
-              "View path is strict"
-            ],
-            "tags": [
-              "ViewComponent",
-              "InvokeAsync",
-              "Component.InvokeAsync"
-            ]
+            "pros": ["Full DI support", "Async support", "Cached with OutputCache"],
+            "cons": ["More boilerplate than partials", "View path is strict"],
+            "tags": ["ViewComponent", "InvokeAsync", "Component.InvokeAsync"]
           },
           {
             "title": "View Component with Parameters",
             "description": "Parameterized view components",
-            "pros": [
-              "Type-safe parameters",
-              "Tag helper support",
-              "Default parameter values"
-            ],
-            "cons": [
-              "Parameters are positional in InvokeAsync",
-              "Tag helper needs registration"
-            ],
-            "tags": [
-              "ViewComponent parameters",
-              "tag helper"
-            ]
+            "pros": ["Type-safe parameters", "Tag helper support", "Default parameter values"],
+            "cons": ["Parameters are positional in InvokeAsync", "Tag helper needs registration"],
+            "tags": ["ViewComponent parameters", "tag helper"]
           }
         ]
       }

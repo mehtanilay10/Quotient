@@ -8,14 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "asp.net-core",
-    "react",
-    "vertical-slice",
-    "mediatr",
-    "api-design",
-    "vite"
-  ],
+  "tags": ["asp.net-core", "react", "vertical-slice", "mediatr", "api-design", "vite"],
   "blocks": [
     {
       "type": "paragraph",

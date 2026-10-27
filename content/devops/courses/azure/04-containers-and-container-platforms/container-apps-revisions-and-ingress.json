@@ -8,13 +8,7 @@
   "order": 7,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "containers",
-    "docker",
-    "aks",
-    "developer"
-  ],
+  "tags": ["azure", "containers", "docker", "aks", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -56,27 +50,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Ingress Type",
-          "Access",
-          "Use Case"
-        ],
+        "headers": ["Ingress Type", "Access", "Use Case"],
         "rows": [
-          [
-            "External",
-            "Internet-facing",
-            "Public APIs, web apps"
-          ],
-          [
-            "Internal",
-            "VNet only",
-            "Backend services, internal APIs"
-          ],
-          [
-            "None",
-            "No ingress",
-            "Background jobs, workers"
-          ]
+          ["External", "Internet-facing", "Public APIs, web apps"],
+          ["Internal", "VNet only", "Backend services, internal APIs"],
+          ["None", "No ingress", "Background jobs, workers"]
         ]
       }
     },

@@ -145,6 +145,10 @@
   ],
   "relatedLessons": ["git-objects-blobs-trees-commits", "git-directory-structure"],
   "furtherReading": [
-    { "title": "Git Index Documentation", "url": "https://git-scm.com/docs/git-read-tree", "type": "article" }
+    {
+      "title": "Git Index Documentation",
+      "url": "https://git-scm.com/docs/git-read-tree",
+      "type": "article"
+    }
   ]
 }

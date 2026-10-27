@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "razor",
-    "syntax",
-    "csharp"
-  ],
+  "tags": ["razor", "syntax", "csharp"],
   "blocks": [
     {
       "type": "heading",
@@ -177,10 +173,7 @@
       "takeaway": "Razor syntax is intentionally lightweight. Once you know where @ transitions to C#, you can write any logic you need inside a view while keeping the HTML readable."
     }
   ],
-  "relatedLessons": [
-    "layouts-and-partials",
-    "tag-helpers"
-  ],
+  "relatedLessons": ["layouts-and-partials", "tag-helpers"],
   "technology": null,
   "furtherReading": []
 }

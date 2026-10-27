@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "aspnet-core",
-    "authorization",
-    "policies",
-    "roles"
-  ],
+  "tags": ["aspnet-core", "authorization", "policies", "roles"],
   "blocks": [
     {
       "type": "heading",

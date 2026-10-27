@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "persistence",
-    "localStorage",
-    "indexedDB",
-    "offline",
-    "pwa"
-  ],
+  "tags": ["persistence", "localStorage", "indexedDB", "offline", "pwa"],
   "blocks": [
     {
       "type": "heading",
@@ -53,31 +47,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Storage",
-          "Sync/Async",
-          "Capacity",
-          "Best For"
-        ],
+        "headers": ["Storage", "Sync/Async", "Capacity", "Best For"],
         "rows": [
-          [
-            "localStorage",
-            "Synchronous",
-            "5â€“10 MB",
-            "Simple apps, small datasets"
-          ],
-          [
-            "IndexedDB",
-            "Asynchronous",
-            "Hundreds of MB+",
-            "Large datasets, PWAs"
-          ],
-          [
-            "sessionStorage",
-            "Synchronous",
-            "5â€“10 MB",
-            "Tab-scoped caching (cleared on close)"
-          ]
+          ["localStorage", "Synchronous", "5â€“10 MB", "Simple apps, small datasets"],
+          ["IndexedDB", "Asynchronous", "Hundreds of MB+", "Large datasets, PWAs"],
+          ["sessionStorage", "Synchronous", "5â€“10 MB", "Tab-scoped caching (cleared on close)"]
         ]
       }
     },
@@ -205,7 +179,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "stale-time-gc"
-  ]
+  "prerequisites": ["stale-time-gc"]
 }

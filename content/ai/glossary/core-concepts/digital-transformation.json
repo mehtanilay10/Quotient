@@ -6,11 +6,7 @@
   "fullDefinition": "Digital transformation is the process of using digital technologies to create new or modify existing business processes, culture, and customer experiences. It is not simply about adopting new software, but about reimagining how organizations work in an increasingly digital world. AI plays a central role in modern digital transformation by automating routine tasks, extracting insights from data, and enabling new products and services. Companies that successfully navigate digital transformation typically see improved efficiency, better customer experiences, and increased innovation capacity.",
   "category": "core-concepts",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "generative-ai",
-    "automation",
-    "rag"
-  ],
+  "relatedTerms": ["generative-ai", "automation", "rag"],
   "learnMoreSlug": "what-is-ai-automation",
   "examples": [
     "A retailer using AI to personalize product recommendations and optimize inventory",

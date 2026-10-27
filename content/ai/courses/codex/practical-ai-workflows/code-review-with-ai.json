@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "code-review",
-    "pull-requests",
-    "quality",
-    "standards"
-  ],
+  "tags": ["code-review", "pull-requests", "quality", "standards"],
   "blocks": [
     {
       "type": "heading",
@@ -188,10 +183,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "debugging-with-ai",
-    "refactoring-with-ai"
-  ],
+  "relatedLessons": ["debugging-with-ai", "refactoring-with-ai"],
   "relatedGlossaryTerms": [],
   "courseSlug": "codex"
 }

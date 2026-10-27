@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "kubernetes",
-    "kubectl",
-    "cli",
-    "debugging"
-  ],
+  "tags": ["kubernetes", "kubectl", "cli", "debugging"],
   "blocks": [
     {
       "type": "heading",
@@ -84,47 +79,23 @@
           {
             "title": "get",
             "description": "Lists resources in a compact table format.",
-            "tags": [
-              "Quick overview"
-            ],
-            "pros": [
-              "Fast, tabular output",
-              "Supports multiple resource types"
-            ],
-            "cons": [
-              "Limited detail",
-              "No events or conditions"
-            ]
+            "tags": ["Quick overview"],
+            "pros": ["Fast, tabular output", "Supports multiple resource types"],
+            "cons": ["Limited detail", "No events or conditions"]
           },
           {
             "title": "describe",
             "description": "Shows detailed information about a single resource, including events.",
-            "tags": [
-              "Deep inspection"
-            ],
-            "pros": [
-              "Full resource details",
-              "Shows events and conditions"
-            ],
-            "cons": [
-              "One resource at a time",
-              "Verbose output"
-            ]
+            "tags": ["Deep inspection"],
+            "pros": ["Full resource details", "Shows events and conditions"],
+            "cons": ["One resource at a time", "Verbose output"]
           },
           {
             "title": "logs",
             "description": "Streams stdout/stderr from a container in a Pod.",
-            "tags": [
-              "Debugging"
-            ],
-            "pros": [
-              "Real-time log streaming",
-              "Access to previous container logs"
-            ],
-            "cons": [
-              "Pod-specific only",
-              "No structured output"
-            ]
+            "tags": ["Debugging"],
+            "pros": ["Real-time log streaming", "Access to previous container logs"],
+            "cons": ["Pod-specific only", "No structured output"]
           }
         ]
       }
@@ -179,31 +150,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Command",
-          "Purpose"
-        ],
+        "headers": ["Command", "Purpose"],
         "rows": [
-          [
-            "kubectl logs <pod>",
-            "View pod logs; add `-f` to follow"
-          ],
-          [
-            "kubectl logs --previous <pod>",
-            "View logs of a crashed container"
-          ],
-          [
-            "kubectl exec -it <pod> -- /bin/sh",
-            "Open an interactive shell in a running pod"
-          ],
-          [
-            "kubectl describe <resource> <name>",
-            "See detailed resource status and events"
-          ],
-          [
-            "kubectl top pods",
-            "View resource usage (requires Metrics Server)"
-          ],
+          ["kubectl logs <pod>", "View pod logs; add `-f` to follow"],
+          ["kubectl logs --previous <pod>", "View logs of a crashed container"],
+          ["kubectl exec -it <pod> -- /bin/sh", "Open an interactive shell in a running pod"],
+          ["kubectl describe <resource> <name>", "See detailed resource status and events"],
+          ["kubectl top pods", "View resource usage (requires Metrics Server)"],
           [
             "kubectl get events --sort-by=.metadata.creationTimestamp",
             "See recent cluster events chronologically"

@@ -8,11 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "conflict",
-    "decision-making",
-    "collaboration"
-  ],
+  "tags": ["conflict", "decision-making", "collaboration"],
   "blocks": [
     {
       "type": "paragraph",
@@ -100,10 +96,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "architecture-reviews",
-    "influencing-without-authority"
-  ],
+  "relatedLessons": ["architecture-reviews", "influencing-without-authority"],
   "furtherReading": [
     {
       "type": "article",

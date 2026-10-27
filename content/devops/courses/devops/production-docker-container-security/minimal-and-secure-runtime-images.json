@@ -37,7 +37,11 @@
           {
             "title": "Full distro images",
             "description": "Complete operating system images such as `ubuntu:22.04` or `debian:12`.",
-            "pros": ["Familiar package manager", "Broad compatibility", "Easy to debug inside the container"],
+            "pros": [
+              "Familiar package manager",
+              "Broad compatibility",
+              "Easy to debug inside the container"
+            ],
             "cons": ["Large image size", "Large attack surface", "Longer pull and deploy times"]
           },
           {
@@ -50,19 +54,31 @@
             "title": "Alpine images",
             "description": "Tiny images based on Alpine Linux and musl libc, such as `node:20-alpine`.",
             "pros": ["Very small image size", "Minimal attack surface", "Fast pulls"],
-            "cons": ["musl libc differences", "Some native binaries may not work", "Smaller package repositories"]
+            "cons": [
+              "musl libc differences",
+              "Some native binaries may not work",
+              "Smaller package repositories"
+            ]
           },
           {
             "title": "Distroless images",
             "description": "Google's distroless images contain only the application and its runtime dependencies, no shell or package manager.",
             "pros": ["Minimal attack surface", "No shell to exploit", "Very small"],
-            "cons": ["Harder to debug", "Requires exact binary compatibility", "Fewer prebuilt variants"]
+            "cons": [
+              "Harder to debug",
+              "Requires exact binary compatibility",
+              "Fewer prebuilt variants"
+            ]
           },
           {
             "title": "Scratch images",
             "description": "The empty base image. Only truly static binaries can run on `scratch`.",
             "pros": ["Absolute minimum size", "No OS-level vulnerabilities"],
-            "cons": ["Only static binaries", "No shell, no debugging tools", "Very limited use cases"]
+            "cons": [
+              "Only static binaries",
+              "No shell, no debugging tools",
+              "Very limited use cases"
+            ]
           }
         ]
       }
@@ -138,7 +154,12 @@
           ["Shell available", "Yes (ash)", "Yes (bash)", "No"],
           ["Package manager", "apk", "apt", "None"],
           ["C standard library", "musl", "glibc", "glibc or static"],
-          ["Best for", "Small services, interpreted languages", "Broad compatibility, debugging", "Maximum security, statically linked binaries"]
+          [
+            "Best for",
+            "Small services, interpreted languages",
+            "Broad compatibility, debugging",
+            "Maximum security, statically linked binaries"
+          ]
         ]
       }
     },
@@ -213,7 +234,11 @@
       }
     }
   ],
-  "relatedLessons": ["image-layers-and-build-cache", "multi-stage-builds", "image-scanning-and-supply-chain-security"],
+  "relatedLessons": [
+    "image-layers-and-build-cache",
+    "multi-stage-builds",
+    "image-scanning-and-supply-chain-security"
+  ],
   "furtherReading": [
     {
       "title": "Docker Hub: Official images",

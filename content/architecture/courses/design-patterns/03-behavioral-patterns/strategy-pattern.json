@@ -6,11 +6,7 @@
   "description": "Encapsulate interchangeable algorithms.",
   "order": 2,
   "difficulty": "intermediate",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture"],
   "blocks": [
     {
       "type": "paragraph",

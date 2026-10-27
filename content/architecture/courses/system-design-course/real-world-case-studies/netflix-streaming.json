@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "system-design",
-    "netflix",
-    "streaming",
-    "video",
-    "microservices"
-  ],
+  "tags": ["system-design", "netflix", "streaming", "video", "microservices"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,37 +61,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resolution",
-          "Bitrate Range",
-          "Use Case"
-        ],
+        "headers": ["Resolution", "Bitrate Range", "Use Case"],
         "rows": [
-          [
-            "240p",
-            "300-400 kbps",
-            "Low-bandwidth mobile"
-          ],
-          [
-            "480p",
-            "600-800 kbps",
-            "Standard definition TV"
-          ],
-          [
-            "720p",
-            "1.5-2 Mbps",
-            "HD on laptop/tablet"
-          ],
-          [
-            "1080p",
-            "3-5 Mbps",
-            "Full HD desktop/TV"
-          ],
-          [
-            "4K HDR",
-            "15-25 Mbps",
-            "Premium 4K streaming"
-          ]
+          ["240p", "300-400 kbps", "Low-bandwidth mobile"],
+          ["480p", "600-800 kbps", "Standard definition TV"],
+          ["720p", "1.5-2 Mbps", "HD on laptop/tablet"],
+          ["1080p", "3-5 Mbps", "Full HD desktop/TV"],
+          ["4K HDR", "15-25 Mbps", "Premium 4K streaming"]
         ]
       }
     },

@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "microservices",
-    "monolith",
-    "architecture",
-    "csharp"
-  ],
+  "tags": ["microservices", "monolith", "architecture", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -152,10 +147,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "monolith-vs-modular-monolith-vs-microservices",
-    "managing-technical-debt"
-  ],
+  "relatedLessons": ["monolith-vs-modular-monolith-vs-microservices", "managing-technical-debt"],
   "furtherReading": [
     {
       "title": "Monolith First",

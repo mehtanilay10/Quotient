@@ -212,61 +212,16 @@
       "type": "table",
       "data": {
         "title": "Undo Decision Matrix",
-        "headers": [
-          "Scenario",
-          "Tool",
-          "Command",
-          "Safe on Shared Branch?"
-        ],
+        "headers": ["Scenario", "Tool", "Command", "Safe on Shared Branch?"],
         "rows": [
-          [
-            "Undo last commit, keep changes",
-            "reset --soft",
-            "git reset --soft HEAD~1",
-            "No"
-          ],
-          [
-            "Undo last commit, unstage changes",
-            "reset --mixed",
-            "git reset HEAD~1",
-            "No"
-          ],
-          [
-            "Undo last commit, discard everything",
-            "reset --hard",
-            "git reset --hard HEAD~1",
-            "No"
-          ],
-          [
-            "Undo a pushed commit",
-            "revert",
-            "git revert <commit-hash>",
-            "Yes"
-          ],
-          [
-            "Apply a fix from another branch",
-            "cherry-pick",
-            "git cherry-pick <hash>",
-            "Yes"
-          ],
-          [
-            "Undo the last 5 commits locally",
-            "reset",
-            "git reset --soft HEAD~5",
-            "No"
-          ],
-          [
-            "Undo a merge commit",
-            "revert -m",
-            "git revert -m 1 <merge-hash>",
-            "Yes"
-          ],
-          [
-            "Accidentally reset --hard",
-            "reflog",
-            "git reflog; git reset --hard <hash>",
-            "N/A"
-          ]
+          ["Undo last commit, keep changes", "reset --soft", "git reset --soft HEAD~1", "No"],
+          ["Undo last commit, unstage changes", "reset --mixed", "git reset HEAD~1", "No"],
+          ["Undo last commit, discard everything", "reset --hard", "git reset --hard HEAD~1", "No"],
+          ["Undo a pushed commit", "revert", "git revert <commit-hash>", "Yes"],
+          ["Apply a fix from another branch", "cherry-pick", "git cherry-pick <hash>", "Yes"],
+          ["Undo the last 5 commits locally", "reset", "git reset --soft HEAD~5", "No"],
+          ["Undo a merge commit", "revert -m", "git revert -m 1 <merge-hash>", "Yes"],
+          ["Accidentally reset --hard", "reflog", "git reflog; git reset --hard <hash>", "N/A"]
         ]
       }
     },

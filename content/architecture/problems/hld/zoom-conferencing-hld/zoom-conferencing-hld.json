@@ -222,11 +222,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "youtube-streaming",
-    "video-streaming-hld",
-    "whatsapp-chat-hld"
-  ],
+  "relatedLessons": ["youtube-streaming", "video-streaming-hld", "whatsapp-chat-hld"],
   "furtherReading": [
     {
       "title": "Zoom Architecture & Security Whitepaper",

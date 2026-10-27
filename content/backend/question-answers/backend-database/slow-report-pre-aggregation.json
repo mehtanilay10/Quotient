@@ -8,12 +8,7 @@
   "order": 13,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "backend",
-    "database",
-    "performance",
-    "reporting"
-  ],
+  "tags": ["backend", "database", "performance", "reporting"],
   "blocks": [
     {
       "type": "paragraph",

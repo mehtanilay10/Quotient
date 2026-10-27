@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "redis",
-    "geospatial",
-    "location",
-    "queries",
-    "mapping"
-  ],
+  "tags": ["redis", "geospatial", "location", "queries", "mapping"],
   "blocks": [
     {
       "type": "paragraph",
@@ -38,32 +32,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Command",
-          "Purpose",
-          "Complexity"
-        ],
+        "headers": ["Command", "Purpose", "Complexity"],
         "rows": [
-          [
-            "GEOADD",
-            "Add locations to a geospatial index",
-            "O(log N) per item"
-          ],
-          [
-            "GEODIST",
-            "Get distance between two points",
-            "O(log N)"
-          ],
-          [
-            "GEORADIUS",
-            "Find members within a radius",
-            "O(log N + M)"
-          ],
-          [
-            "GEOSEARCH",
-            "Modern replacement for GEORADIUS",
-            "O(log N + M)"
-          ]
+          ["GEOADD", "Add locations to a geospatial index", "O(log N) per item"],
+          ["GEODIST", "Get distance between two points", "O(log N)"],
+          ["GEORADIUS", "Find members within a radius", "O(log N + M)"],
+          ["GEOSEARCH", "Modern replacement for GEORADIUS", "O(log N + M)"]
         ]
       }
     },

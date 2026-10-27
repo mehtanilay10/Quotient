@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Indexes are data structures that speed up data retrieval at the cost of additional storage and slower writes. Choosing the right index strategy is critical for query performance." }
+      "data": {
+        "text": "Indexes are data structures that speed up data retrieval at the cost of additional storage and slower writes. Choosing the right index strategy is critical for query performance."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,12 @@
       "type": "bullet-list",
       "data": {
         "title": "Key concepts",
-        "items": ["B-tree structures for sorted access", "Leaf nodes store row pointers or full rows", "Index seek vs index scan", "Write amplification on INSERT, UPDATE, DELETE"]
+        "items": [
+          "B-tree structures for sorted access",
+          "Leaf nodes store row pointers or full rows",
+          "Index seek vs index scan",
+          "Write amplification on INSERT, UPDATE, DELETE"
+        ]
       }
     },
     {
@@ -52,16 +59,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "important", "title": "Important", "text": "Indexes help reads but slow writes. Add indexes based on actual slow queries, not guesses." }
+      "data": {
+        "variant": "important",
+        "title": "Important",
+        "text": "Indexes help reads but slow writes. Add indexes based on actual slow queries, not guesses."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "How many indexes is too many?", "answer": "More than 5-6 per table is often excessive. Each index adds write overhead and storage." },
-          { "question": "Should I index every column in WHERE clauses?", "answer": "No. Consider selectivity, query frequency, and write volume before adding indexes." },
-          { "question": "Do indexes always speed up SELECT?", "answer": "No. Low-selectivity indexes or queries returning most rows may still scan the table." }
+          {
+            "question": "How many indexes is too many?",
+            "answer": "More than 5-6 per table is often excessive. Each index adds write overhead and storage."
+          },
+          {
+            "question": "Should I index every column in WHERE clauses?",
+            "answer": "No. Consider selectivity, query frequency, and write volume before adding indexes."
+          },
+          {
+            "question": "Do indexes always speed up SELECT?",
+            "answer": "No. Low-selectivity indexes or queries returning most rows may still scan the table."
+          }
         ]
       }
     },
@@ -69,7 +89,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Indexes trade write speed for read speed", "Use B-tree indexes for equality and range queries", "Monitor slow queries before adding indexes", "Avoid over-indexing high-write tables"],
+        "points": [
+          "Indexes trade write speed for read speed",
+          "Use B-tree indexes for equality and range queries",
+          "Monitor slow queries before adding indexes",
+          "Avoid over-indexing high-write tables"
+        ],
         "takeaway": "Indexes are most effective when targeted at selective, frequent queries on read-heavy tables."
       }
     }

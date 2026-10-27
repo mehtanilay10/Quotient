@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "dbcontext",
-    "migrations",
-    "schema-evolution"
-  ],
+  "tags": ["dbcontext", "migrations", "schema-evolution"],
   "blocks": [
     {
       "type": "heading",

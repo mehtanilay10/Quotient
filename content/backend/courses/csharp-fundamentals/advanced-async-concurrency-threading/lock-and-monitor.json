@@ -89,7 +89,13 @@
     "deadlocks-starvation-and-livelocks"
   ],
   "furtherReading": [
-    { "title": "lock Statement (C# Reference)", "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/lock" },
-    { "title": "Monitor Class (Microsoft Docs)", "url": "https://learn.microsoft.com/en-us/dotnet/api/system.threading.monitor" }
+    {
+      "title": "lock Statement (C# Reference)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/lock"
+    },
+    {
+      "title": "Monitor Class (Microsoft Docs)",
+      "url": "https://learn.microsoft.com/en-us/dotnet/api/system.threading.monitor"
+    }
   ]
 }

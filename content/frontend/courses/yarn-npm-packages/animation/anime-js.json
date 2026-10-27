@@ -6,13 +6,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "anime-js",
-    "animation",
-    "javascript",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["anime-js", "animation", "javascript", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -97,10 +91,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "Anime.js is simple and lightweight.",
-          "Great for SVG animations."
-        ]
+        "points": ["Anime.js is simple and lightweight.", "Great for SVG animations."]
       }
     }
   ],

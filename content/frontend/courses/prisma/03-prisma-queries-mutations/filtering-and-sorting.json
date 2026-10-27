@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "filtering",
-    "sorting",
-    "operators",
-    "sql"
-  ],
+  "tags": ["prisma", "filtering", "sorting", "operators", "sql"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,25 +26,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Operator",
-          "Description",
-          "Example Syntax",
-          "SQL Equivalent"
-        ],
+        "headers": ["Operator", "Description", "Example Syntax", "SQL Equivalent"],
         "rows": [
-          [
-            "`equals`",
-            "Exact match",
-            "`{ age: { equals: 30 } }`",
-            "`age = 30`"
-          ],
-          [
-            "`not`",
-            "Negation",
-            "`{ status: { not: 'BANNED' } }`",
-            "`status != 'BANNED'`"
-          ],
+          ["`equals`", "Exact match", "`{ age: { equals: 30 } }`", "`age = 30`"],
+          ["`not`", "Negation", "`{ status: { not: 'BANNED' } }`", "`status != 'BANNED'`"],
           [
             "`in`",
             "Matches any in list",
@@ -126,8 +105,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-client-queries",
-    "pagination-techniques"
-  ]
+  "relatedLessons": ["prisma-client-queries", "pagination-techniques"]
 }

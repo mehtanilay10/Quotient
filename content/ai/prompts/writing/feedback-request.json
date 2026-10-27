@@ -6,12 +6,7 @@
   "category": "writing",
   "difficulty": "beginner",
   "template": "Please review the [TYPE OF WORK — e.g., \"email\", \"report\", \"presentation outline\", \"product description\"] below.\n\nContext about the purpose and audience:\n[1-2 SENTENCES DESCRIBING WHO THIS IS FOR AND WHAT IT NEEDS TO ACCOMPLISH]\n\nPlease give me:\n1. **What is working well** (2-3 specific strengths)\n2. **Top 3 improvements** (the highest-impact changes, most important first)\n3. **Quick fixes** (grammatical, clarity, or wording issues to fix immediately)\n4. **One stretch suggestion** (a bigger change that could significantly improve it)\n\n---\n[PASTE YOUR WORK HERE]\n---",
-  "tags": [
-    "feedback",
-    "writing",
-    "editing",
-    "improvement"
-  ],
+  "tags": ["feedback", "writing", "editing", "improvement"],
   "tips": [
     "Be specific about what you want critiqued: \"focus on clarity and structure, not style\"",
     "Add \"be blunt — I can handle honest feedback\" for more direct critiques",

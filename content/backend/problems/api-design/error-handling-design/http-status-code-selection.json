@@ -29,20 +29,75 @@
         "headers": ["Code", "Meaning", "When to Use", "Body Should Contain"],
         "rows": [
           ["200 OK", "Success", "GET, PUT, PATCH completed", "Resource representation"],
-          ["201 Created", "Resource created", "POST that creates a resource", "New resource + Location header"],
+          [
+            "201 Created",
+            "Resource created",
+            "POST that creates a resource",
+            "New resource + Location header"
+          ],
           ["204 No Content", "Success, no body", "DELETE, PUT with empty response", "Empty body"],
-          ["301 Moved Permanently", "Resource moved", "Endpoint relocated permanently", "Empty body or link"],
+          [
+            "301 Moved Permanently",
+            "Resource moved",
+            "Endpoint relocated permanently",
+            "Empty body or link"
+          ],
           ["302 Found", "Temporary redirect", "Login redirect, non-GET after POST", "Empty body"],
-          ["400 Bad Request", "Malformed request", "Invalid JSON, missing required fields", "Validation errors"],
-          ["401 Unauthorized", "Missing or invalid auth", "No token, expired token, bad signature", "Error details"],
-          ["403 Forbidden", "Insufficient permissions", "Authenticated but not allowed", "Error details"],
-          ["404 Not Found", "Resource does not exist", "Invalid ID, deleted resource", "Error details"],
-          ["409 Conflict", "State conflict", "Duplicate email, version mismatch", "Conflict details"],
-          ["422 Unprocessable", "Semantic errors", "Valid JSON but invalid business data", "Field-level errors"],
+          [
+            "400 Bad Request",
+            "Malformed request",
+            "Invalid JSON, missing required fields",
+            "Validation errors"
+          ],
+          [
+            "401 Unauthorized",
+            "Missing or invalid auth",
+            "No token, expired token, bad signature",
+            "Error details"
+          ],
+          [
+            "403 Forbidden",
+            "Insufficient permissions",
+            "Authenticated but not allowed",
+            "Error details"
+          ],
+          [
+            "404 Not Found",
+            "Resource does not exist",
+            "Invalid ID, deleted resource",
+            "Error details"
+          ],
+          [
+            "409 Conflict",
+            "State conflict",
+            "Duplicate email, version mismatch",
+            "Conflict details"
+          ],
+          [
+            "422 Unprocessable",
+            "Semantic errors",
+            "Valid JSON but invalid business data",
+            "Field-level errors"
+          ],
           ["429 Too Many Requests", "Rate limited", "Exceeded rate limit", "Retry-After header"],
-          ["500 Internal Error", "Server crashed", "Unhandled exception", "Generic error, no stack trace"],
-          ["502 Bad Gateway", "Upstream failed", "Downstream service unavailable", "Retry suggestion"],
-          ["503 Service Unavailable", "Overloaded", "Rate limit exceeded, maintenance", "Retry-After header"]
+          [
+            "500 Internal Error",
+            "Server crashed",
+            "Unhandled exception",
+            "Generic error, no stack trace"
+          ],
+          [
+            "502 Bad Gateway",
+            "Upstream failed",
+            "Downstream service unavailable",
+            "Retry suggestion"
+          ],
+          [
+            "503 Service Unavailable",
+            "Overloaded",
+            "Rate limit exceeded, maintenance",
+            "Retry-After header"
+          ]
         ]
       }
     },
@@ -139,10 +194,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "error-response-format",
-    "validation-errors"
-  ],
+  "relatedLessons": ["error-response-format", "validation-errors"],
   "furtherReading": [
     {
       "title": "RFC 7807: Problem Details for HTTP APIs",

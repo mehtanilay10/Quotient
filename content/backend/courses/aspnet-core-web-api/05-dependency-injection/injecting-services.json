@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "injection",
-    "constructor",
-    "controllers"
-  ],
+  "tags": ["web-api", "injection", "constructor", "controllers"],
   "blocks": [
     {
       "type": "paragraph",
@@ -46,27 +41,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "Scope",
-          "Best For"
-        ],
+        "headers": ["Method", "Scope", "Best For"],
         "rows": [
-          [
-            "Constructor",
-            "Controller lifetime",
-            "Most dependencies"
-          ],
-          [
-            "[FromServices]",
-            "Single action",
-            "Action-specific dependencies"
-          ],
-          [
-            "Request.Services",
-            "Single action",
-            "Dynamic or rare dependencies"
-          ]
+          ["Constructor", "Controller lifetime", "Most dependencies"],
+          ["[FromServices]", "Single action", "Action-specific dependencies"],
+          ["Request.Services", "Single action", "Dynamic or rare dependencies"]
         ]
       }
     },
@@ -188,26 +167,14 @@
           {
             "title": "Constructor Injection",
             "description": "Dependencies passed via constructor.",
-            "pros": [
-              "Testable",
-              "Clear contract",
-              "IDE friendly"
-            ],
-            "cons": [
-              "More parameters for many dependencies"
-            ]
+            "pros": ["Testable", "Clear contract", "IDE friendly"],
+            "cons": ["More parameters for many dependencies"]
           },
           {
             "title": "[FromServices]",
             "description": "Dependency injected directly into an action parameter.",
-            "pros": [
-              "Granular control",
-              "Good for rare dependencies"
-            ],
-            "cons": [
-              "Less discoverable",
-              "Can clutter action signature"
-            ]
+            "pros": ["Granular control", "Good for rare dependencies"],
+            "cons": ["Less discoverable", "Can clutter action signature"]
           }
         ]
       }

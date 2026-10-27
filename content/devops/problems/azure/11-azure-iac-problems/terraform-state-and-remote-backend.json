@@ -95,23 +95,14 @@
           {
             "title": "Terraform Cloud / HCP remote state",
             "description": "Managed backend with run history",
-            "pros": [
-              "No storage to operate",
-              "Run history and policy as code"
-            ],
-            "cons": [
-              "Third-party dependency",
-              "Per-resource pricing",
-              "State leaves your tenant"
-            ],
+            "pros": ["No storage to operate", "Run history and policy as code"],
+            "cons": ["Third-party dependency", "Per-resource pricing", "State leaves your tenant"],
             "tags": ["Multi-cloud teams"]
           },
           {
             "title": "Local state in the repo",
             "description": "Committed `.tfstate` file",
-            "pros": [
-              "No setup"
-            ],
+            "pros": ["No setup"],
             "cons": [
               "No locking",
               "Secrets in plain text in git",

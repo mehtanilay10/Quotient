@@ -8,11 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "fallback",
-    "degradation",
-    "graceful"
-  ],
+  "tags": ["fallback", "degradation", "graceful"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,32 +56,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Description",
-          "Use Case"
-        ],
+        "headers": ["Strategy", "Description", "Use Case"],
         "rows": [
-          [
-            "Cached response",
-            "Return cached data",
-            "Product catalog"
-          ],
-          [
-            "Default response",
-            "Static fallback",
-            "Recommendations"
-          ],
-          [
-            "Degraded mode",
-            "Reduced functionality",
-            "Search"
-          ],
-          [
-            "Queue for later",
-            "Process asynchronously",
-            "Orders"
-          ]
+          ["Cached response", "Return cached data", "Product catalog"],
+          ["Default response", "Static fallback", "Recommendations"],
+          ["Degraded mode", "Reduced functionality", "Search"],
+          ["Queue for later", "Process asynchronously", "Orders"]
         ]
       }
     },

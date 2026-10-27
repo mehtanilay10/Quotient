@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "git",
-    "hooks",
-    "automation",
-    "custom"
-  ],
+  "tags": ["git", "hooks", "automation", "custom"],
   "blocks": [
     {
       "type": "paragraph",
@@ -171,10 +166,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "pre-commit-hooks",
-    "husky-lint-staged"
-  ],
+  "relatedLessons": ["pre-commit-hooks", "husky-lint-staged"],
   "furtherReading": [
     {
       "title": "Awesome Git Hooks",

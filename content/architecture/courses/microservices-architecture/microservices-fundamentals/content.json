@@ -9,11 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "🏗️",
-  "tags": [
-    "microservices",
-    "architecture",
-    "monolith"
-  ],
+  "tags": ["microservices", "architecture", "monolith"],
   "lessonSlugs": [
     "monolith-vs-microservices",
     "pros-and-cons-of-microservices",

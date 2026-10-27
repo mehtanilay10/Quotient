@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "attributes",
-    "routing",
-    "urls"
-  ],
+  "tags": ["attributes", "routing", "urls"],
   "blocks": [
     {
       "type": "paragraph",
@@ -242,10 +238,7 @@
       "takeaway": "Attribute routing gives you precise, declarative control over your URL structure. For APIs it is the standard approach; for MVC applications it complements convention-based routing for custom URL patterns."
     }
   ],
-  "relatedLessons": [
-    "routing-basics",
-    "route-constraints"
-  ],
+  "relatedLessons": ["routing-basics", "route-constraints"],
   "technology": null,
   "furtherReading": [
     {

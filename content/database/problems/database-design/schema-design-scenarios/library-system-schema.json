@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Library systems track books, authors, copies, members, loans, and fines. The schema must support catalog browsing, availability checks, and loan history while enforcing business rules." }
+      "data": {
+        "text": "Library systems track books, authors, copies, members, loans, and fines. The schema must support catalog browsing, availability checks, and loan history while enforcing business rules."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,14 @@
       "type": "bullet-list",
       "data": {
         "title": "Essential tables",
-        "items": ["Book: title, ISBN, metadata", "Author: name and bio", "BookCopy: individual physical copies", "Member: patron records", "Loan: checkout and return dates", "Fine: overdue penalties"]
+        "items": [
+          "Book: title, ISBN, metadata",
+          "Author: name and bio",
+          "BookCopy: individual physical copies",
+          "Member: patron records",
+          "Loan: checkout and return dates",
+          "Fine: overdue penalties"
+        ]
       }
     },
     {
@@ -53,16 +62,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "tip", "title": "Tip", "text": "Use a book_authors junction table for many-to-many authorship. Avoid storing multiple author names in a single books column." }
+      "data": {
+        "variant": "tip",
+        "title": "Tip",
+        "text": "Use a book_authors junction table for many-to-many authorship. Avoid storing multiple author names in a single books column."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "How do I track book editions?", "answer": "Add an edition table or include edition_number and published_year in books. Use ISBN when available." },
-          { "question": "How do I calculate overdue fines?", "answer": "Use a generated fines table populated by a scheduled job, or calculate on the fly with CASE expressions." },
-          { "question": "Should copies be individual rows?", "answer": "Yes. One copy per physical item enables accurate availability tracking and loan history per unit." }
+          {
+            "question": "How do I track book editions?",
+            "answer": "Add an edition table or include edition_number and published_year in books. Use ISBN when available."
+          },
+          {
+            "question": "How do I calculate overdue fines?",
+            "answer": "Use a generated fines table populated by a scheduled job, or calculate on the fly with CASE expressions."
+          },
+          {
+            "question": "Should copies be individual rows?",
+            "answer": "Yes. One copy per physical item enables accurate availability tracking and loan history per unit."
+          }
         ]
       }
     },
@@ -70,7 +92,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Separate book metadata from physical copies", "Use a many-to-many table for authors", "Track loan dates and return status explicitly", "Store availability in book_copies for fast lookups"],
+        "points": [
+          "Separate book metadata from physical copies",
+          "Use a many-to-many table for authors",
+          "Track loan dates and return status explicitly",
+          "Store availability in book_copies for fast lookups"
+        ],
         "takeaway": "Library schemas need physical inventory granularity and accurate loan state tracking to support both browsing and circulation operations."
       }
     }

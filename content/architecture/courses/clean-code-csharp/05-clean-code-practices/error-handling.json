@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "clean-code",
-    "error-handling",
-    "csharp"
-  ],
+  "tags": ["clean-code", "error-handling", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -41,10 +37,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "functions-methods",
-    "code-organization"
-  ],
+  "relatedLessons": ["functions-methods", "code-organization"],
   "furtherReading": [],
   "courseSlug": "clean-code-csharp"
 }

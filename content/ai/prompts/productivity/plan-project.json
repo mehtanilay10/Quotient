@@ -6,12 +6,7 @@
   "category": "productivity",
   "difficulty": "intermediate",
   "template": "I need to plan a project:\n\n**Project goal:** [WHAT YOU WANT TO ACHIEVE]\n**Timeline:** [AVAILABLE TIME OR DEADLINE]\n**Resources:** [PEOPLE, BUDGET, TOOLS AVAILABLE]\n**My role:** [YOUR SPECIFIC ROLE IN THIS PROJECT]\n**Known constraints:** [LIMITATIONS OR NON-NEGOTIABLES]\n\nPlease create:\n1. **Project overview** (one paragraph framing the goal clearly)\n2. **Phases / milestones** (logical sequence of work stages with rough timelines)\n3. **Key tasks per phase** (3-5 tasks per phase)\n4. **Risks and mitigations** (3 things that could go wrong and how to prevent them)\n5. **First 3 actions** (what to do in the next 48 hours to start with momentum)",
-  "tags": [
-    "planning",
-    "project-management",
-    "productivity",
-    "strategy"
-  ],
+  "tags": ["planning", "project-management", "productivity", "strategy"],
   "tips": [
     "Add \"assume I have never done this before\" for beginner-friendly planning",
     "Follow up: \"Turn Phase 1 tasks into a week-by-week schedule\"",

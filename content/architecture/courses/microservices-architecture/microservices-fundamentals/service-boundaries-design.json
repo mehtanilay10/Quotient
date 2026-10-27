@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "microservices",
-    "boundaries",
-    "cohesion",
-    "coupling"
-  ],
+  "tags": ["microservices", "boundaries", "cohesion", "coupling"],
   "blocks": [
     {
       "type": "paragraph",
@@ -106,31 +101,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Principle",
-          "Description"
-        ],
+        "headers": ["Principle", "Description"],
         "rows": [
-          [
-            "Versioning",
-            "Version APIs to allow evolution"
-          ],
-          [
-            "Backward Compatibility",
-            "Never break existing consumers"
-          ],
-          [
-            "Documentation",
-            "Document APIs with OpenAPI/Swagger"
-          ],
-          [
-            "Error Handling",
-            "Use consistent error formats"
-          ],
-          [
-            "Pagination",
-            "Paginate large result sets"
-          ]
+          ["Versioning", "Version APIs to allow evolution"],
+          ["Backward Compatibility", "Never break existing consumers"],
+          ["Documentation", "Document APIs with OpenAPI/Swagger"],
+          ["Error Handling", "Use consistent error formats"],
+          ["Pagination", "Paginate large result sets"]
         ]
       }
     },

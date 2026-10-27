@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 45,
-  "tags": [
-    "lld",
-    "object-oriented",
-    "design-patterns",
-    "hotel",
-    "booking"
-  ],
+  "tags": ["lld", "object-oriented", "design-patterns", "hotel", "booking"],
   "blocks": [
     {
       "type": "heading",

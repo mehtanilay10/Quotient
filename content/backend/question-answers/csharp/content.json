@@ -8,11 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 19,
   "icon": "💻",
-  "tags": [
-    "interview",
-    "csharp",
-    "dotnet"
-  ],
+  "tags": ["interview", "csharp", "dotnet"],
   "lessonSlugs": [
     "csharp-b01",
     "csharp-b02",

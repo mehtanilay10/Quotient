@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "areas",
-    "organization",
-    "modules"
-  ],
+  "tags": ["areas", "organization", "modules"],
   "blocks": [
     {
       "type": "paragraph",
@@ -234,10 +230,7 @@
       "takeaway": "Areas provide a clean organizational structure for large ASP.NET Core applications. By separating features into isolated modules with their own controllers, views, and routes, areas keep your codebase manageable as it grows."
     }
   ],
-  "relatedLessons": [
-    "url-generation",
-    "routing-basics"
-  ],
+  "relatedLessons": ["url-generation", "routing-basics"],
   "technology": null,
   "furtherReading": [
     {

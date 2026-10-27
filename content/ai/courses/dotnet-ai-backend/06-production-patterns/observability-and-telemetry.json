@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 22,
-  "tags": [
-    "observability",
-    "tracing",
-    "metrics",
-    "logging"
-  ],
+  "tags": ["observability", "tracing", "metrics", "logging"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,10 +82,7 @@
       "takeaway": "If you cannot trace the full pipeline, you cannot debug failures or improve quality systematically."
     }
   ],
-  "relatedLessons": [
-    "evaluating-rag-and-agent-quality",
-    "deployment-and-scaling-patterns"
-  ],
+  "relatedLessons": ["evaluating-rag-and-agent-quality", "deployment-and-scaling-patterns"],
   "technology": null,
   "furtherReading": [
     {

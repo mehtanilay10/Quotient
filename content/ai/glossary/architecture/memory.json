@@ -6,11 +6,7 @@
   "fullDefinition": "AI memory refers to mechanisms that allow AI systems to retain information beyond a single conversation. Short-term memory is the context window. Long-term memory requires external storage — saving key facts to a database and retrieving them when relevant. ChatGPT's 'Memory' feature, Claude's Projects, and various AI frameworks implement long-term memory with different trade-offs.",
   "category": "architecture",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "context-window",
-    "rag",
-    "agent"
-  ],
+  "relatedTerms": ["context-window", "rag", "agent"],
   "examples": [
     "ChatGPT's memory feature stores facts about you across sessions",
     "Claude Projects persist your documents and context across multiple conversations"

@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "A covering index contains all columns required by a query, allowing the database to satisfy the query from the index alone without visiting the table. This is called an index-only scan." }
+      "data": {
+        "text": "A covering index contains all columns required by a query, allowing the database to satisfy the query from the index alone without visiting the table. This is called an index-only scan."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,12 @@
       "type": "bullet-list",
       "data": {
         "title": "Benefits",
-        "items": ["Eliminates table or heap lookups", "Reduces I/O for small result sets", "Improves cache locality", "Speeds up reporting queries"]
+        "items": [
+          "Eliminates table or heap lookups",
+          "Reduces I/O for small result sets",
+          "Improves cache locality",
+          "Speeds up reporting queries"
+        ]
       }
     },
     {
@@ -52,16 +59,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "tip", "title": "Tip", "text": "Use INCLUDE for non-key columns that appear only in SELECT lists. Keep filter and sort columns in the key for prefix support." }
+      "data": {
+        "variant": "tip",
+        "title": "Tip",
+        "text": "Use INCLUDE for non-key columns that appear only in SELECT lists. Keep filter and sort columns in the key for prefix support."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "Do all databases support INCLUDE?", "answer": "PostgreSQL and SQL Server support INCLUDE. MySQL uses secondary indexes differently; all columns are already stored." },
-          { "question": "Should I make every index covering?", "answer": "No. Covering indexes are wider and more expensive to maintain. Target only frequent, performance-critical queries." },
-          { "question": "What if the table is very wide?", "answer": "Covering indexes shine on wide tables where table lookups are expensive. On narrow tables, the benefit is smaller." }
+          {
+            "question": "Do all databases support INCLUDE?",
+            "answer": "PostgreSQL and SQL Server support INCLUDE. MySQL uses secondary indexes differently; all columns are already stored."
+          },
+          {
+            "question": "Should I make every index covering?",
+            "answer": "No. Covering indexes are wider and more expensive to maintain. Target only frequent, performance-critical queries."
+          },
+          {
+            "question": "What if the table is very wide?",
+            "answer": "Covering indexes shine on wide tables where table lookups are expensive. On narrow tables, the benefit is smaller."
+          }
         ]
       }
     },
@@ -69,7 +89,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Covering indexes eliminate table lookups", "Use INCLUDE for SELECT-only columns", "Target high-frequency reporting queries", "Balance width against maintenance cost"],
+        "points": [
+          "Covering indexes eliminate table lookups",
+          "Use INCLUDE for SELECT-only columns",
+          "Target high-frequency reporting queries",
+          "Balance width against maintenance cost"
+        ],
         "takeaway": "Covering indexes are a targeted performance optimization for known query patterns with predictable output columns."
       }
     }

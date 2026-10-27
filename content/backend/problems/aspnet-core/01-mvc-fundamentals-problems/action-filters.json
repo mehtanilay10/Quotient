@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "mvc",
-    "filters",
-    "action-filters"
-  ],
+  "tags": ["aspnet-core", "mvc", "filters", "action-filters"],
   "blocks": [
     {
       "type": "heading",
@@ -96,15 +91,8 @@
               "Can inject services",
               "Runs before/after action"
             ],
-            "cons": [
-              "Adds to request pipeline",
-              "Overuse hurts performance"
-            ],
-            "tags": [
-              "IActionFilter",
-              "ActionFilterAttribute",
-              "logging"
-            ]
+            "cons": ["Adds to request pipeline", "Overuse hurts performance"],
+            "tags": ["IActionFilter", "ActionFilterAttribute", "logging"]
           },
           {
             "title": "Global vs Scoped Filters",
@@ -114,15 +102,8 @@
               "ServiceFilter: supports DI",
               "TypeFilter: pass constructor args"
             ],
-            "cons": [
-              "Global filters affect all actions",
-              "TypeFilter creates new instances"
-            ],
-            "tags": [
-              "AddControllers",
-              "ServiceFilter",
-              "TypeFilter"
-            ]
+            "cons": ["Global filters affect all actions", "TypeFilter creates new instances"],
+            "tags": ["AddControllers", "ServiceFilter", "TypeFilter"]
           }
         ]
       }

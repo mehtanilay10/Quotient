@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "protobuf",
-    "grpc",
-    "serialization",
-    "binary"
-  ],
+  "tags": ["protobuf", "grpc", "serialization", "binary"],
   "blocks": [
     {
       "type": "heading",

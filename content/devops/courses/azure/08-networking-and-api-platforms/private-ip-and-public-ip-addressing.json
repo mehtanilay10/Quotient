@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 11,
-  "tags": [
-    "azure",
-    "networking",
-    "vnet",
-    "api-management",
-    "developer"
-  ],
+  "tags": ["azure", "networking", "vnet", "api-management", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -32,32 +26,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "IP Type",
-          "Scope",
-          "Typical Use"
-        ],
+        "headers": ["IP Type", "Scope", "Typical Use"],
         "rows": [
-          [
-            "Private",
-            "VNet only",
-            "VMs, internal APIs, databases"
-          ],
-          [
-            "Public",
-            "Internet",
-            "Web apps, load balancers, gateways"
-          ],
-          [
-            "Static private",
-            "VNet (reserved)",
-            "Databases, DNS"
-          ],
-          [
-            "Dynamic public",
-            "Internet (changes)",
-            "Test environments"
-          ]
+          ["Private", "VNet only", "VMs, internal APIs, databases"],
+          ["Public", "Internet", "Web apps, load balancers, gateways"],
+          ["Static private", "VNet (reserved)", "Databases, DNS"],
+          ["Dynamic public", "Internet (changes)", "Test environments"]
         ]
       }
     },

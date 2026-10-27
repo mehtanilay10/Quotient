@@ -222,11 +222,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "uber-ride-sharing-hld",
-    "food-delivery-hld",
-    "payment-gateway-hld"
-  ],
+  "relatedLessons": ["uber-ride-sharing-hld", "food-delivery-hld", "payment-gateway-hld"],
   "furtherReading": [
     {
       "title": "Matchmaker: How Lyft Matches Riders and Drivers",

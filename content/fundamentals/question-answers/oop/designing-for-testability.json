@@ -6,11 +6,7 @@
   "description": "Why untestable code is usually a design problem, the seams that make units testable, and how DI, immutability, and small interfaces map to fast reliable tests.",
   "order": 16,
   "difficulty": "intermediate",
-  "tags": [
-    "oop",
-    "testing",
-    "intermediate"
-  ],
+  "tags": ["oop", "testing", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

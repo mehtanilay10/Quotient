@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "ef-core",
-    "conventions",
-    "schema",
-    "mapping"
-  ],
+  "tags": ["ef-core", "conventions", "schema", "mapping"],
   "blocks": [
     {
       "type": "paragraph",
@@ -69,55 +64,19 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "C# Data Type",
-          "SQL Server Data Type"
-        ],
+        "headers": ["C# Data Type", "SQL Server Data Type"],
         "rows": [
-          [
-            "int",
-            "int"
-          ],
-          [
-            "string",
-            "nvarchar(Max)"
-          ],
-          [
-            "decimal",
-            "decimal(18,2)"
-          ],
-          [
-            "float",
-            "real"
-          ],
-          [
-            "byte[]",
-            "varbinary(Max)"
-          ],
-          [
-            "datetime",
-            "datetime"
-          ],
-          [
-            "bool",
-            "bit"
-          ],
-          [
-            "byte",
-            "tinyint"
-          ],
-          [
-            "short",
-            "smallint"
-          ],
-          [
-            "long",
-            "bigint"
-          ],
-          [
-            "double",
-            "float"
-          ]
+          ["int", "int"],
+          ["string", "nvarchar(Max)"],
+          ["decimal", "decimal(18,2)"],
+          ["float", "real"],
+          ["byte[]", "varbinary(Max)"],
+          ["datetime", "datetime"],
+          ["bool", "bit"],
+          ["byte", "tinyint"],
+          ["short", "smallint"],
+          ["long", "bigint"],
+          ["double", "float"]
         ]
       }
     },

@@ -96,7 +96,11 @@
           {
             "title": "Isolated worker (recommended)",
             "description": "Functions run in a separate process, communicating with the runtime over gRPC.",
-            "pros": ["Full .NET SDK control", "Independent dependency versions", "Better testing support"],
+            "pros": [
+              "Full .NET SDK control",
+              "Independent dependency versions",
+              "Better testing support"
+            ],
             "cons": ["Slightly more setup"]
           }
         ]

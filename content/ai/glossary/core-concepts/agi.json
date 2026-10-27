@@ -6,19 +6,12 @@
   "fullDefinition": "Artificial General Intelligence refers to a machine's ability to understand or learn any intellectual task that a human being can. Unlike narrow AI, which excels at specific tasks like image recognition or chess, AGI would possess flexible reasoning, common sense, and the ability to transfer learning between domains. Researchers debate when or if AGI will be achieved, with estimates ranging from decades to never. The pursuit of AGI raises profound questions about safety, control, and the future of human work.",
   "category": "core-concepts",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "artificial-intelligence",
-    "generative-ai",
-    "large-language-model"
-  ],
+  "relatedTerms": ["artificial-intelligence", "generative-ai", "large-language-model"],
   "learnMoreSlug": "ai-vs-ml-vs-generative-ai",
   "examples": [
     "A machine that can write a novel, design a building, and diagnose a disease equally well",
     "A robot that learns to cook by watching YouTube videos and adapting recipes on the fly",
     "An AI tutor that teaches math, history, and art with human-like intuition"
   ],
-  "alsoKnownAs": [
-    "Strong AI",
-    "Human-level AI"
-  ]
+  "alsoKnownAs": ["Strong AI", "Human-level AI"]
 }

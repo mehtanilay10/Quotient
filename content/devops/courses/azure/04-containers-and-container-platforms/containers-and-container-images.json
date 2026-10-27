@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "azure",
-    "containers",
-    "docker",
-    "aks",
-    "developer"
-  ],
+  "tags": ["azure", "containers", "docker", "aks", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -44,28 +38,14 @@
           {
             "title": "Virtual Machine",
             "description": "A full operating system running on a hypervisor.",
-            "pros": [
-              "Full OS isolation",
-              "Runs any software"
-            ],
-            "cons": [
-              "Large image size (GBs)",
-              "Slow startup",
-              "Heavy resource usage"
-            ]
+            "pros": ["Full OS isolation", "Runs any software"],
+            "cons": ["Large image size (GBs)", "Slow startup", "Heavy resource usage"]
           },
           {
             "title": "Container",
             "description": "An isolated process sharing the host OS kernel.",
-            "pros": [
-              "Small image size (MBs)",
-              "Fast startup",
-              "Efficient resource usage"
-            ],
-            "cons": [
-              "Shares host kernel",
-              "Limited OS-level isolation"
-            ]
+            "pros": ["Small image size (MBs)", "Fast startup", "Efficient resource usage"],
+            "cons": ["Shares host kernel", "Limited OS-level isolation"]
           }
         ]
       }

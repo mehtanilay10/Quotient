@@ -8,12 +8,7 @@
   "order": 17,
   "difficulty": "advanced",
   "estimatedMinutes": 26,
-  "tags": [
-    "interview",
-    "system-design",
-    "concurrency",
-    "payments"
-  ],
+  "tags": ["interview", "system-design", "concurrency", "payments"],
   "technology": "System Design",
   "blocks": [
     {
@@ -105,17 +100,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Entity",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Entity", "Key Fields", "Description"],
         "rows": [
-          [
-            "Showtime",
-            "showtime_id, movie_id, hall_id, starts_at, status",
-            "A specific screening"
-          ],
+          ["Showtime", "showtime_id, movie_id, hall_id, starts_at, status", "A specific screening"],
           [
             "SeatInventory",
             "showtime_id, seat_id, status, booking_id",
@@ -192,11 +179,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "design-payment-system",
-    "design-rate-limiter",
-    "design-distributed-cache"
-  ],
+  "relatedLessons": ["design-payment-system", "design-rate-limiter", "design-distributed-cache"],
   "furtherReading": [
     {
       "title": "How we built seat selection for high-demand events",

@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "caching",
-    "performance",
-    "architecture",
-    "csharp"
-  ],
+  "tags": ["caching", "performance", "architecture", "csharp"],
   "blocks": [
     {
       "type": "paragraph",

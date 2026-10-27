@@ -10,11 +10,7 @@
   "estimatedHours": 3,
   "icon": "📨",
   "tags": ["aws", "sqs", "sns", "events", "csharp", "messaging"],
-  "lessonSlugs": [
-    "sqs-csharp",
-    "sns-csharp",
-    "event-driven-architecture"
-  ],
+  "lessonSlugs": ["sqs-csharp", "sns-csharp", "event-driven-architecture"],
   "prerequisites": ["s3-csharp", "secrets-manager-csharp"],
   "whatYouLearn": [
     "Send and receive messages with Amazon SQS",

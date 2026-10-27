@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "thunk",
-    "async",
-    "middleware"
-  ],
+  "tags": ["redux", "thunk", "async", "middleware"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,32 +62,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Type",
-          "Pattern",
-          "Use Case"
-        ],
+        "headers": ["Type", "Pattern", "Use Case"],
         "rows": [
-          [
-            "Promise Thunk",
-            "dispatch(action()).then(...)",
-            "When you need to chain operations"
-          ],
-          [
-            "Async/Await Thunk",
-            "dispatch(async (...) => {...})",
-            "Cleaner syntax for async code"
-          ],
+          ["Promise Thunk", "dispatch(action()).then(...)", "When you need to chain operations"],
+          ["Async/Await Thunk", "dispatch(async (...) => {...})", "Cleaner syntax for async code"],
           [
             "Conditional Thunk",
             "if (getState().auth.token) dispatch(...)",
             "Access state before action"
           ],
-          [
-            "Batch Thunk",
-            "dispatch([action1, action2])",
-            "Dispatch multiple actions"
-          ]
+          ["Batch Thunk", "dispatch([action1, action2])", "Dispatch multiple actions"]
         ]
       }
     },

@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "trade-offs",
-    "architecture",
-    "decisions",
-    "csharp"
-  ],
+  "tags": ["trade-offs", "architecture", "decisions", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -58,12 +53,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Decision",
-          "What You Gain",
-          "What You Give Up",
-          "Typical Context"
-        ],
+        "headers": ["Decision", "What You Gain", "What You Give Up", "Typical Context"],
         "rows": [
           [
             "EF Core over raw SQL",
@@ -169,10 +159,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "architecture-decision-records",
-    "cost-as-an-architecture-constraint"
-  ],
+  "relatedLessons": ["architecture-decision-records", "cost-as-an-architecture-constraint"],
   "furtherReading": [
     {
       "title": "Software Architecture in Practice",

@@ -7,10 +7,7 @@
   "order": 8,
   "difficulty": "beginner",
   "estimatedMinutes": 22,
-  "tags": [
-    "date",
-    "data-type"
-  ],
+  "tags": ["date", "data-type"],
   "blocks": [
     {
       "type": "heading",

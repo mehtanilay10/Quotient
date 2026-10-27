@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "prompting",
-    "context",
-    "communication"
-  ],
+  "tags": ["prompting", "context", "communication"],
   "blocks": [
     {
       "type": "heading",
@@ -167,13 +163,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "advanced-prompting-patterns",
-    "prompting-for-debugging"
-  ],
-  "relatedGlossaryTerms": [
-    "prompt",
-    "large-language-model"
-  ],
+  "relatedLessons": ["advanced-prompting-patterns", "prompting-for-debugging"],
+  "relatedGlossaryTerms": ["prompt", "large-language-model"],
   "courseSlug": "codex"
 }

@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "views",
-    "ddl",
-    "schema-management"
-  ],
+  "tags": ["views", "ddl", "schema-management"],
   "blocks": [
     {
       "type": "paragraph",
@@ -71,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "simple-views",
-    "materialized-views"
-  ]
+  "relatedLessons": ["simple-views", "materialized-views"]
 }

@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "code-coverage",
-    "reporting",
-    "dotnet"
-  ],
+  "tags": ["code-coverage", "reporting", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -53,9 +49,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "coverlet-collector"
-  ],
+  "relatedLessons": ["coverlet-collector"],
   "furtherReading": [],
   "courseSlug": "unit-testing-dotnet"
 }

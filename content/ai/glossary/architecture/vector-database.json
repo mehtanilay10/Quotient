@@ -6,20 +6,12 @@
   "fullDefinition": "A vector database is a purpose-built system for storing and querying embeddings \u2014 dense numerical representations of data. Unlike traditional databases that match exact values, vector databases find items by semantic similarity using distance metrics like cosine similarity or Euclidean distance. They employ specialized indexing algorithms like HNSW and IVF to perform approximate nearest neighbor search at scale, enabling sub-second queries over millions or billions of vectors. Vector databases are the storage backbone of RAG systems, semantic search, recommendation engines, and anomaly detection. Popular options include Pinecone, Weaviate, Qdrant, and Chroma.",
   "category": "architecture",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "embedding",
-    "rag",
-    "semantic-search"
-  ],
+  "relatedTerms": ["embedding", "rag", "semantic-search"],
   "learnMoreSlug": "vector-databases-in-practice",
   "examples": [
     "Storing product embeddings to power a semantic product search",
     "Indexing document chunks for a RAG-powered customer support system",
     "Finding visually similar images using CLIP embeddings in a vector database"
   ],
-  "alsoKnownAs": [
-    "Vector Store",
-    "Embedding Database",
-    "ANN Index"
-  ]
+  "alsoKnownAs": ["Vector Store", "Embedding Database", "ANN Index"]
 }

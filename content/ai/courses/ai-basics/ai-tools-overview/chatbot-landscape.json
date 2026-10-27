@@ -7,15 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "chatgpt",
-    "claude",
-    "gemini",
-    "perplexity",
-    "tools",
-    "comparison",
-    "selection"
-  ],
+  "tags": ["chatgpt", "claude", "gemini", "perplexity", "tools", "comparison", "selection"],
   "relatedGlossaryTerms": [
     "large-language-model",
     "prompt",
@@ -66,11 +58,7 @@
               "Context can degrade in very long chats",
               "Best features behind $20/month paywall"
             ],
-            "tags": [
-              "openai",
-              "freemium",
-              "multimodal"
-            ]
+            "tags": ["openai", "freemium", "multimodal"]
           },
           {
             "title": "Claude (Anthropic)",
@@ -86,11 +74,7 @@
               "Fewer third-party integrations",
               "Can be overly cautious on edge-case requests"
             ],
-            "tags": [
-              "anthropic",
-              "freemium",
-              "long-context"
-            ]
+            "tags": ["anthropic", "freemium", "long-context"]
           },
           {
             "title": "Gemini (Google)",
@@ -106,11 +90,7 @@
               "Less consistent tone than Claude/ChatGPT",
               "Best features need Google AI Pro"
             ],
-            "tags": [
-              "google",
-              "freemium",
-              "workspace"
-            ]
+            "tags": ["google", "freemium", "workspace"]
           },
           {
             "title": "Perplexity",
@@ -126,11 +106,7 @@
               "Not designed for long-form writing",
               "Sources can still be wrong — verify important claims"
             ],
-            "tags": [
-              "search",
-              "freemium",
-              "research"
-            ]
+            "tags": ["search", "freemium", "research"]
           }
         ]
       }
@@ -147,52 +123,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Situation",
-          "Best choice",
-          "Why"
-        ],
+        "headers": ["Situation", "Best choice", "Why"],
         "rows": [
-          [
-            "Editing or writing a long document",
-            "Claude",
-            "1M context + careful tone matching"
-          ],
-          [
-            "Generating images",
-            "ChatGPT (paid)",
-            "Built-in image generation and editing"
-          ],
-          [
-            "Researching a factual topic",
-            "Perplexity",
-            "Shows citations for every claim"
-          ],
-          [
-            "Working in Gmail or Docs",
-            "Gemini",
-            "Deep native integration"
-          ],
-          [
-            "Analyzing uploaded images/charts",
-            "ChatGPT or Gemini",
-            "Both have strong vision"
-          ],
-          [
-            "Summarizing a very long PDF",
-            "Claude",
-            "Handles up to 1M tokens in one go"
-          ],
-          [
-            "First general-purpose chat",
-            "ChatGPT (GPT-6 Luna)",
-            "Best free tier feature set"
-          ],
-          [
-            "Code review and debugging",
-            "ChatGPT or Claude",
-            "Both excellent at code"
-          ]
+          ["Editing or writing a long document", "Claude", "1M context + careful tone matching"],
+          ["Generating images", "ChatGPT (paid)", "Built-in image generation and editing"],
+          ["Researching a factual topic", "Perplexity", "Shows citations for every claim"],
+          ["Working in Gmail or Docs", "Gemini", "Deep native integration"],
+          ["Analyzing uploaded images/charts", "ChatGPT or Gemini", "Both have strong vision"],
+          ["Summarizing a very long PDF", "Claude", "Handles up to 1M tokens in one go"],
+          ["First general-purpose chat", "ChatGPT (GPT-6 Luna)", "Best free tier feature set"],
+          ["Code review and debugging", "ChatGPT or Claude", "Both excellent at code"]
         ]
       }
     },
@@ -231,11 +171,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool",
-          "Prompting tip",
-          "Why it helps"
-        ],
+        "headers": ["Tool", "Prompting tip", "Why it helps"],
         "rows": [
           [
             "ChatGPT",
@@ -272,11 +208,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool",
-          "Free tier",
-          "Paid tier"
-        ],
+        "headers": ["Tool", "Free tier", "Paid tier"],
         "rows": [
           [
             "ChatGPT",
@@ -319,11 +251,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Concern",
-          "What to check",
-          "Practical step"
-        ],
+        "headers": ["Concern", "What to check", "Practical step"],
         "rows": [
           [
             "Data retention",
@@ -377,11 +305,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "What to measure",
-          "Why it matters"
-        ],
+        "headers": ["Metric", "What to measure", "Why it matters"],
         "rows": [
           [
             "Accuracy",
@@ -398,11 +322,7 @@
             "Response time under expected load",
             "Affects user experience and throughput"
           ],
-          [
-            "Cost",
-            "Per-call or per-token cost at scale",
-            "Impacts operational budget"
-          ],
+          ["Cost", "Per-call or per-token cost at scale", "Impacts operational budget"],
           [
             "Safety",
             "Rate of unsafe or disallowed outputs",
@@ -496,11 +416,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "Type",
-          "Why it helps"
-        ],
+        "headers": ["Resource", "Type", "Why it helps"],
         "rows": [
           [
             "Claude models overview",
@@ -538,10 +454,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "choosing-the-right-tool",
-    "ai-vs-ml-vs-generative-ai"
-  ],
+  "relatedLessons": ["choosing-the-right-tool", "ai-vs-ml-vs-generative-ai"],
   "furtherReading": [
     {
       "title": "Claude models overview",

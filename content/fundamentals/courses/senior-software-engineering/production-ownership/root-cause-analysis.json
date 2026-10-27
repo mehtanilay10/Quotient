@@ -192,37 +192,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Category",
-          "Example",
-          "Systemic Fix"
-        ],
+        "headers": ["Category", "Example", "Systemic Fix"],
         "rows": [
-          [
-            "Missing safeguards",
-            "No alert on certificate expiry",
-            "Add automated monitoring"
-          ],
-          [
-            "Process gaps",
-            "Outdated runbook",
-            "Mandatory runbook review before launch"
-          ],
+          ["Missing safeguards", "No alert on certificate expiry", "Add automated monitoring"],
+          ["Process gaps", "Outdated runbook", "Mandatory runbook review before launch"],
           [
             "Capacity issues",
             "Database connection pool exhaustion",
             "Load testing and capacity planning"
           ],
-          [
-            "Configuration errors",
-            "Wrong environment variable",
-            "Config validation in CI/CD"
-          ],
-          [
-            "Human error",
-            "Typo in deployment script",
-            "Automated testing and review"
-          ]
+          ["Configuration errors", "Wrong environment variable", "Config validation in CI/CD"],
+          ["Human error", "Typo in deployment script", "Automated testing and review"]
         ]
       }
     },
@@ -607,22 +587,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Target",
-          "Action If Missed"
-        ],
+        "headers": ["Metric", "Target", "Action If Missed"],
         "rows": [
           [
             "Time to root cause",
             "Under 4 hours for SEV-1",
             "Improve observability and investigation process"
           ],
-          [
-            "Systemic action items",
-            "Above 70 percent",
-            "Train team on deep root cause analysis"
-          ],
+          ["Systemic action items", "Above 70 percent", "Train team on deep root cause analysis"],
           [
             "Repeat incident rate",
             "Below 5 percent",

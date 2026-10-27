@@ -167,11 +167,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "trade-off-analysis",
-    "risk-assessment",
-    "long-term-impact"
-  ],
+  "relatedLessons": ["trade-off-analysis", "risk-assessment", "long-term-impact"],
   "furtherReading": [
     {
       "type": "article",

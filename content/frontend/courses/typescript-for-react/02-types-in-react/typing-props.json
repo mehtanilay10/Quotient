@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "typescript",
-    "props",
-    "types"
-  ],
+  "tags": ["react", "typescript", "props", "types"],
   "blocks": [
     {
       "type": "paragraph",
@@ -103,32 +98,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Prop Pattern",
-          "Use Case",
-          "Type"
-        ],
+        "headers": ["Prop Pattern", "Use Case", "Type"],
         "rows": [
-          [
-            "Basic props",
-            "Simple data passing",
-            "interface with primitive types"
-          ],
-          [
-            "Children",
-            "Nested content",
-            "ReactNode"
-          ],
-          [
-            "Render function",
-            "Custom rendering logic",
-            "(item: T) => ReactNode"
-          ],
-          [
-            "Event handler",
-            "User interaction",
-            "() => void or specific event type"
-          ]
+          ["Basic props", "Simple data passing", "interface with primitive types"],
+          ["Children", "Nested content", "ReactNode"],
+          ["Render function", "Custom rendering logic", "(item: T) => ReactNode"],
+          ["Event handler", "User interaction", "() => void or specific event type"]
         ]
       }
     },

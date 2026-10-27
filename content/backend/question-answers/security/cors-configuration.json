@@ -6,10 +6,7 @@
   "description": "Preflight requests, allowed origins vs credentials, middleware order, and what CORS does not protect against.",
   "order": 7,
   "difficulty": "intermediate",
-  "tags": [
-    "security",
-    "intermediate"
-  ],
+  "tags": ["security", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -114,11 +111,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "csrf-antiforgery",
-    "prevent-xss",
-    "rate-limiting"
-  ],
+  "relatedLessons": ["csrf-antiforgery", "prevent-xss", "rate-limiting"],
   "furtherReading": [
     {
       "title": "Cross-Origin Resource Sharing (CORS) in ASP.NET Core",

@@ -7,11 +7,7 @@
   "order": 7,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "full-backup",
-    "BACKUP-DATABASE",
-    "RESTORE-DATABASE"
-  ],
+  "tags": ["full-backup", "BACKUP-DATABASE", "RESTORE-DATABASE"],
   "blocks": [
     {
       "type": "heading",

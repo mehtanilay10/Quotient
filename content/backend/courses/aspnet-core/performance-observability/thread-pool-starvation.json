@@ -82,17 +82,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Impact on Thread Pool",
-          "Recommended"
-        ],
+        "headers": ["Pattern", "Impact on Thread Pool", "Recommended"],
         "rows": [
-          [
-            "`Task.Wait()` or `.Result`",
-            "Blocks thread for full I/O duration",
-            "Avoid"
-          ],
+          ["`Task.Wait()` or `.Result`", "Blocks thread for full I/O duration", "Avoid"],
           [
             "`ConfigureAwait(false)` in libraries",
             "Prevents deadlock in sync-over-async",
@@ -103,11 +95,7 @@
             "Moves work off request threads",
             "Recommended for CPU work"
           ],
-          [
-            "`ThreadPool.SetMinThreads`",
-            "Adds threads proactively",
-            "Use as last resort"
-          ]
+          ["`ThreadPool.SetMinThreads`", "Adds threads proactively", "Use as last resort"]
         ]
       }
     },

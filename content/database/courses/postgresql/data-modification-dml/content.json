@@ -10,14 +10,7 @@
   "estimatedHours": 5,
   "icon": "✏️",
   "tags": ["dml", "insert", "update", "delete"],
-  "lessonSlugs": [
-    "insert",
-    "insert-on-conflict",
-    "update",
-    "delete",
-    "merge",
-    "copy-bulk-load"
-  ],
+  "lessonSlugs": ["insert", "insert-on-conflict", "update", "delete", "merge", "copy-bulk-load"],
   "whatYouLearn": [
     "Insert rows with VALUES and multi-row inserts",
     "Use ON CONFLICT for upsert",

@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Given an `m × n` grid of characters and a word, return whether the word exists in the grid. The word must be built from adjacent cells — horizontally or vertically — and the same cell may not be used twice."}
+        "text": "Given an `m × n` grid of characters and a word, return whether the word exists in the grid. The word must be built from adjacent cells — horizontally or vertically — and the same cell may not be used twice."
+      }
     },
     {
       "type": "heading",
@@ -26,7 +27,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "**Input:** `board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]`, `word = \"ABCCED\"`\n\n**Output:** `true`\n\n**Paths:** `A → B → C → C → E → D` moving right, right, down, down, left."}
+        "text": "**Input:** `board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]`, `word = \"ABCCED\"`\n\n**Output:** `true`\n\n**Paths:** `A → B → C → C → E → D` moving right, right, down, down, left."
+      }
     },
     {
       "type": "heading",
@@ -35,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Try every cell as a possible starting point. From a cell, recurse into the four neighbours while the characters match. The 'no cell twice' rule is enforced by temporarily overwriting the visited cell with a sentinel, restoring it when the branch fails — that is the backtracking step and it avoids allocating a separate visited matrix."}
+        "text": "Try every cell as a possible starting point. From a cell, recurse into the four neighbours while the characters match. The 'no cell twice' rule is enforced by temporarily overwriting the visited cell with a sentinel, restoring it when the branch fails — that is the backtracking step and it avoids allocating a separate visited matrix."
+      }
     },
     {
       "type": "example",
@@ -69,7 +72,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Searching for a list of words one at a time repeats the same grid traversal. A trie of the target words lets all searches share a single walk of the grid — the subject of the 'Word Search II' variant. That is the reason the trie module is a prerequisite for this one."}
+        "text": "Searching for a list of words one at a time repeats the same grid traversal. A trie of the target words lets all searches share a single walk of the grid — the subject of the 'Word Search II' variant. That is the reason the trie module is a prerequisite for this one."
+      }
     },
     {
       "type": "example",
@@ -103,7 +107,11 @@
           {
             "title": "In-place sentinel",
             "description": "Overwrite the character, restore after",
-            "pros": ["No extra memory", "Undo is impossible to forget in the right place", "Recommended"],
+            "pros": [
+              "No extra memory",
+              "Undo is impossible to forget in the right place",
+              "Recommended"
+            ],
             "cons": ["Mutates the input during the search"],
             "tags": ["O(1) extra space", "Recommended"]
           }

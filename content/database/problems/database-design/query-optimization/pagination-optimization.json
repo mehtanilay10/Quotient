@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "OFFSET pagination becomes slow on large tables because the database must scan and discard rows. Keyset pagination uses a WHERE clause on the last-seen values for stable, fast paging." }
+      "data": {
+        "text": "OFFSET pagination becomes slow on large tables because the database must scan and discard rows. Keyset pagination uses a WHERE clause on the last-seen values for stable, fast paging."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,12 @@
       "type": "bullet-list",
       "data": {
         "title": "Comparison",
-        "items": ["OFFSET: simple but degrades with deep pages", "Keyset: stable timing regardless of page depth", "Cursor: opaque token for stateless APIs", "Seek method: same as keyset with an index"]
+        "items": [
+          "OFFSET: simple but degrades with deep pages",
+          "Keyset: stable timing regardless of page depth",
+          "Cursor: opaque token for stateless APIs",
+          "Seek method: same as keyset with an index"
+        ]
       }
     },
     {
@@ -52,16 +59,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "warning", "title": "Warning", "text": "Keyset pagination requires a unique, immutable sort column. Avoid mutable columns like popularity scores as sort keys." }
+      "data": {
+        "variant": "warning",
+        "title": "Warning",
+        "text": "Keyset pagination requires a unique, immutable sort column. Avoid mutable columns like popularity scores as sort keys."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "When is OFFSET acceptable?", "answer": "For shallow pages under 1000 rows on small tables. Do not use OFFSET for deep paging on large tables." },
-          { "question": "What if I need total count?", "answer": "Keyset pagination does not need total count. If needed, cache it or estimate with approximate counts." },
-          { "question": "How do I handle ties in sort keys?", "answer": "Use a unique tiebreaker column like an auto-incrementing ID as the second sort key." }
+          {
+            "question": "When is OFFSET acceptable?",
+            "answer": "For shallow pages under 1000 rows on small tables. Do not use OFFSET for deep paging on large tables."
+          },
+          {
+            "question": "What if I need total count?",
+            "answer": "Keyset pagination does not need total count. If needed, cache it or estimate with approximate counts."
+          },
+          {
+            "question": "How do I handle ties in sort keys?",
+            "answer": "Use a unique tiebreaker column like an auto-incrementing ID as the second sort key."
+          }
         ]
       }
     },
@@ -69,7 +89,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Avoid OFFSET on large tables", "Use keyset pagination with unique sort keys", "Include a tiebreaker for duplicate sort values", "Cache total counts when needed"],
+        "points": [
+          "Avoid OFFSET on large tables",
+          "Use keyset pagination with unique sort keys",
+          "Include a tiebreaker for duplicate sort values",
+          "Cache total counts when needed"
+        ],
         "takeaway": "Keyset pagination provides consistent performance and stable results for large result sets."
       }
     }

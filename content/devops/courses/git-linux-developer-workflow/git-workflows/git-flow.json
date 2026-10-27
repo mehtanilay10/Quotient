@@ -153,6 +153,10 @@
   ],
   "relatedLessons": ["github-flow", "trunk-based-development"],
   "furtherReading": [
-    { "title": "A Successful Git Branching Model", "url": "https://nvie.com/posts/a-successful-git-branching-model/", "type": "article" }
+    {
+      "title": "A Successful Git Branching Model",
+      "url": "https://nvie.com/posts/a-successful-git-branching-model/",
+      "type": "article"
+    }
   ]
 }

@@ -226,20 +226,8 @@
           "Best For"
         ],
         "rows": [
-          [
-            "Rollback",
-            "Minutes",
-            "Low",
-            "Loses new feature",
-            "Any deployment-induced incident"
-          ],
-          [
-            "Forward fix",
-            "Hours",
-            "Medium",
-            "Preserves feature",
-            "Feature has in-flight data"
-          ],
+          ["Rollback", "Minutes", "Low", "Loses new feature", "Any deployment-induced incident"],
+          ["Forward fix", "Hours", "Medium", "Preserves feature", "Feature has in-flight data"],
           [
             "Hotfix",
             "30 to 60 minutes",

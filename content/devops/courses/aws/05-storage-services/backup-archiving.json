@@ -63,9 +63,24 @@
         "headers": ["Storage Class", "Retrieval Time", "Cost (per GB/month)", "Use Case"],
         "rows": [
           ["S3 Standard", "Immediate", "~$0.023", "Frequently accessed data"],
-          ["S3 Glacier Instant Retrieval", "Milliseconds", "~$0.004", "Archive with instant access"],
-          ["S3 Glacier Flexible Retrieval", "Minutes to hours", "~$0.0036", "Archive with occasional access"],
-          ["S3 Glacier Deep Archive", "Hours to days", "~$0.00099", "Long-term archive, lowest cost"]
+          [
+            "S3 Glacier Instant Retrieval",
+            "Milliseconds",
+            "~$0.004",
+            "Archive with instant access"
+          ],
+          [
+            "S3 Glacier Flexible Retrieval",
+            "Minutes to hours",
+            "~$0.0036",
+            "Archive with occasional access"
+          ],
+          [
+            "S3 Glacier Deep Archive",
+            "Hours to days",
+            "~$0.00099",
+            "Long-term archive, lowest cost"
+          ]
         ]
       }
     },

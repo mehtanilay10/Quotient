@@ -6,13 +6,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "ofetch",
-    "http",
-    "api",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["ofetch", "http", "api", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -93,10 +87,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "ofetch improves on native fetch.",
-          "Composable and tree-shakable."
-        ]
+        "points": ["ofetch improves on native fetch.", "Composable and tree-shakable."]
       }
     }
   ],

@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "where",
-    "filtering",
-    "ilike",
-    "sargable",
-    "operators"
-  ],
+  "tags": ["where", "filtering", "ilike", "sargable", "operators"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,22 +26,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Operator",
-          "Description",
-          "Example"
-        ],
+        "headers": ["Operator", "Description", "Example"],
         "rows": [
-          [
-            "`=` / `<>` or `!=`",
-            "Equality / Inequality",
-            "`WHERE status = 'ACTIVE'`"
-          ],
-          [
-            "`<`, `<=`, `>`, `>=`",
-            "Comparison operators",
-            "`WHERE price >= 49.99`"
-          ],
+          ["`=` / `<>` or `!=`", "Equality / Inequality", "`WHERE status = 'ACTIVE'`"],
+          ["`<`, `<=`, `>`, `>=`", "Comparison operators", "`WHERE price >= 49.99`"],
           [
             "`LIKE`",
             "Case-sensitive pattern matching (`%` matches any sequence, `_` matches single char)",
@@ -105,8 +87,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "select-statement",
-    "and-or-operators"
-  ]
+  "relatedLessons": ["select-statement", "and-or-operators"]
 }

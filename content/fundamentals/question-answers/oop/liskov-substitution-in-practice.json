@@ -6,11 +6,7 @@
   "description": "Concrete LSP violations (Square/Rectangle, NotImplementedException subclasses, pre/postcondition breaks), why they cause runtime surprises, and how to fix them.",
   "order": 17,
   "difficulty": "intermediate",
-  "tags": [
-    "oop",
-    "solid",
-    "intermediate"
-  ],
+  "tags": ["oop", "solid", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

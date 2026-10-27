@@ -8,14 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "azure",
-    "service-bus",
-    "cloud",
-    "enterprise",
-    "messaging",
-    ".net"
-  ],
+  "tags": ["azure", "service-bus", "cloud", "enterprise", "messaging", ".net"],
   "blocks": [
     {
       "type": "paragraph",
@@ -39,42 +32,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Capability",
-          "Queue",
-          "Topic + Subscription"
-        ],
+        "headers": ["Capability", "Queue", "Topic + Subscription"],
         "rows": [
-          [
-            "Consumer model",
-            "Single consumer group",
-            "Multiple subscriptions"
-          ],
-          [
-            "Use case",
-            "Work item distribution",
-            "Event broadcasting"
-          ],
-          [
-            "Message filtering",
-            "No",
-            "Yes (SQL filter rules)"
-          ],
-          [
-            "Sessions",
-            "Yes (FIFO within session)",
-            "Yes"
-          ],
-          [
-            "Duplicate detection",
-            "Yes",
-            "Yes"
-          ],
-          [
-            "Transactions",
-            "Yes (receive + send)",
-            "Yes (send + dead-letter)"
-          ]
+          ["Consumer model", "Single consumer group", "Multiple subscriptions"],
+          ["Use case", "Work item distribution", "Event broadcasting"],
+          ["Message filtering", "No", "Yes (SQL filter rules)"],
+          ["Sessions", "Yes (FIFO within session)", "Yes"],
+          ["Duplicate detection", "Yes", "Yes"],
+          ["Transactions", "Yes (receive + send)", "Yes (send + dead-letter)"]
         ]
       }
     },
@@ -212,11 +177,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rabbitmq-fundamentals",
-    "sqs-basics",
-    "message-structure"
-  ],
+  "relatedLessons": ["rabbitmq-fundamentals", "sqs-basics", "message-structure"],
   "furtherReading": [
     {
       "title": "Azure Service Bus Documentation",

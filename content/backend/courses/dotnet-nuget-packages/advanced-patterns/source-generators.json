@@ -12,19 +12,23 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What are Source Generators?"}
+      "data": { "level": 2, "text": "What are Source Generators?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Roslyn Source Generators run during compilation and can add new C# files to your project. They are used by libraries like `System.Text.Json` source generation and `Microsoft.Extensions.Logging`."}
+      "data": {
+        "text": "Roslyn Source Generators run during compilation and can add new C# files to your project. They are used by libraries like `System.Text.Json` source generation and `Microsoft.Extensions.Logging`."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Source generators are typically distributed as analyzer packages. For development, you reference the generator package in your project."}
+      "data": {
+        "text": "Source generators are typically distributed as analyzer packages. For development, you reference the generator package in your project."
+      }
     },
     {
       "type": "example",
@@ -36,11 +40,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "How Source Generators Work"}
+      "data": { "level": 2, "text": "How Source Generators Work" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "A source generator implements `ISourceGenerator` or `IIncrementalGenerator`. The compiler calls it during build, and it can emit additional source files."}
+      "data": {
+        "text": "A source generator implements `ISourceGenerator` or `IIncrementalGenerator`. The compiler calls it during build, and it can emit additional source files."
+      }
     },
     {
       "type": "example",
@@ -52,7 +58,7 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Consuming the Generator"}
+      "data": { "level": 2, "text": "Consuming the Generator" }
     },
     {
       "type": "example",

@@ -8,12 +8,7 @@
   "order": 13,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "strings",
-    "palindrome",
-    "medium"
-  ],
+  "tags": ["csharp", "strings", "palindrome", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -87,34 +82,16 @@
           {
             "title": "Brute Force",
             "description": "Check all substrings",
-            "pros": [
-              "Conceptually simple"
-            ],
-            "cons": [
-              "O(n^3) time",
-              "Very slow"
-            ],
-            "tags": [
-              "O(n^3) time",
-              "O(1) space"
-            ]
+            "pros": ["Conceptually simple"],
+            "cons": ["O(n^3) time", "Very slow"],
+            "tags": ["O(n^3) time", "O(1) space"]
           },
           {
             "title": "Expand Around Center",
             "description": "Grow from centers",
-            "pros": [
-              "O(n^2) time",
-              "O(1) space",
-              "Handles odd/even"
-            ],
-            "cons": [
-              "Still quadratic worst case"
-            ],
-            "tags": [
-              "O(n^2) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n^2) time", "O(1) space", "Handles odd/even"],
+            "cons": ["Still quadratic worst case"],
+            "tags": ["O(n^2) time", "O(1) space", "Recommended"]
           }
         ]
       }

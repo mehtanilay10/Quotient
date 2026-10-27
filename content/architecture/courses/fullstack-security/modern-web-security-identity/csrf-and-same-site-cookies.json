@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "csrf",
-    "same-site-cookies",
-    "anti-forgery",
-    "cookies",
-    "OWASP"
-  ],
+  "tags": ["csrf", "same-site-cookies", "anti-forgery", "cookies", "OWASP"],
   "blocks": [
     {
       "type": "paragraph",
@@ -109,12 +103,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "SameSite value",
-          "Cross-site POST",
-          "Cross-site GET",
-          "When to use"
-        ],
+        "headers": ["SameSite value", "Cross-site POST", "Cross-site GET", "When to use"],
         "rows": [
           [
             "Strict",
@@ -128,12 +117,7 @@
             "Allowed (top-level only)",
             "Most applications; balances security and usability"
           ],
-          [
-            "None",
-            "Allowed",
-            "Allowed",
-            "True third-party embeds; requires Secure"
-          ]
+          ["None", "Allowed", "Allowed", "True third-party embeds; requires Secure"]
         ]
       }
     },

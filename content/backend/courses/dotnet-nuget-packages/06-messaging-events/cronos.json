@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 10,
-  "tags": [
-    "cronos",
-    "cron",
-    "scheduling",
-    "timezone"
-  ],
+  "tags": ["cronos", "cron", "scheduling", "timezone"],
   "blocks": [
     {
       "type": "heading",

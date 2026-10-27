@@ -91,19 +91,13 @@
               "Drift surfaced within a day",
               "Git stays authoritative"
             ],
-            "cons": [
-              "Needs a triage routine",
-              "Plan output can be noisy"
-            ],
+            "cons": ["Needs a triage routine", "Plan output can be noisy"],
             "tags": ["Recommended"]
           },
           {
             "title": "Deny portal writes via Azure Policy",
             "description": "Lock resources to the IaC pipeline",
-            "pros": [
-              "Drift becomes impossible",
-              "Strong compliance story"
-            ],
+            "pros": ["Drift becomes impossible", "Strong compliance story"],
             "cons": [
               "Blocks incident response",
               "Policy scope mistakes lock out the platform team"
@@ -113,13 +107,8 @@
           {
             "title": "Ignore drift, converge on deploy",
             "description": "Let each apply overwrite reality",
-            "pros": [
-              "Zero extra process"
-            ],
-            "cons": [
-              "Emergency fixes silently reverted",
-              "Nobody learns what changed or why"
-            ],
+            "pros": ["Zero extra process"],
+            "cons": ["Emergency fixes silently reverted", "Nobody learns what changed or why"],
             "tags": ["Never"]
           }
         ]

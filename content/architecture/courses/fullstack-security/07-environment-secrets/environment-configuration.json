@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "configuration",
-    "environment",
-    "asp.net core",
-    "react"
-  ],
+  "tags": ["configuration", "environment", "asp.net core", "react"],
   "blocks": [
     {
       "type": "paragraph",

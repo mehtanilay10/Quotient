@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "aggregates",
-    "count",
-    "sum",
-    "filter-clause",
-    "statistics"
-  ],
+  "tags": ["aggregates", "count", "sum", "filter-clause", "statistics"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,11 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Syntax",
-          "Behavior",
-          "NULL Handling"
-        ],
+        "headers": ["Syntax", "Behavior", "NULL Handling"],
         "rows": [
           [
             "`COUNT(*)`",
@@ -90,8 +80,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "group-by",
-    "having-clause"
-  ]
+  "relatedLessons": ["group-by", "having-clause"]
 }

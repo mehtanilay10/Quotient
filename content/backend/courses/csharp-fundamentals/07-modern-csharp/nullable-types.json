@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "nullable",
-    "null-checks",
-    "reference-types",
-    "nrt"
-  ],
+  "tags": ["csharp", "nullable", "null-checks", "reference-types", "nrt"],
   "blocks": [
     {
       "type": "paragraph",
@@ -104,37 +98,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Operator",
-          "Name",
-          "Description",
-          "Example"
-        ],
+        "headers": ["Operator", "Name", "Description", "Example"],
         "rows": [
-          [
-            "??",
-            "Null-coalescing",
-            "Return left if not null, else right",
-            "int x = age ?? 0;"
-          ],
-          [
-            "??=",
-            "Null-coalescing assignment",
-            "Assign right only if left is null",
-            "age ??= 18;"
-          ],
-          [
-            "?. ",
-            "Null-conditional",
-            "Access member only if not null",
-            "name?.Length"
-          ],
-          [
-            "?[]",
-            "Null-index",
-            "Index only if array is not null",
-            "items?[0]"
-          ]
+          ["??", "Null-coalescing", "Return left if not null, else right", "int x = age ?? 0;"],
+          ["??=", "Null-coalescing assignment", "Assign right only if left is null", "age ??= 18;"],
+          ["?. ", "Null-conditional", "Access member only if not null", "name?.Length"],
+          ["?[]", "Null-index", "Index only if array is not null", "items?[0]"]
         ]
       }
     },
@@ -241,18 +210,9 @@
           {
             "title": "NRT Disabled (Default in Older Projects)",
             "description": "All reference types are implicitly nullable. The compiler never warns about null assignments or dereferences.",
-            "pros": [
-              "No compilation warnings",
-              "Legacy code works without changes"
-            ],
-            "cons": [
-              "Null bugs reach production",
-              "No compile-time safety"
-            ],
-            "tags": [
-              "legacy",
-              "unsafe"
-            ]
+            "pros": ["No compilation warnings", "Legacy code works without changes"],
+            "cons": ["Null bugs reach production", "No compile-time safety"],
+            "tags": ["legacy", "unsafe"]
           },
           {
             "title": "NRT Enabled (Modern C#)",
@@ -262,14 +222,8 @@
               "Self-documenting code",
               "Better IntelliSense"
             ],
-            "cons": [
-              "Initial warnings in legacy code",
-              "Requires discipline"
-            ],
-            "tags": [
-              "modern",
-              "safe"
-            ]
+            "cons": ["Initial warnings in legacy code", "Requires discipline"],
+            "tags": ["modern", "safe"]
           }
         ]
       }

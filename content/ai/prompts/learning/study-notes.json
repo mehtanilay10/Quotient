@@ -6,12 +6,7 @@
   "category": "learning",
   "difficulty": "beginner",
   "template": "Convert the content below into study notes. Format as:\n\n**Core idea in one sentence:**\n(The single most important takeaway)\n\n**Key concepts:**\n- [Concept Name]: [1-sentence definition]\n- (repeat for 5-8 key concepts)\n\n**Important details:**\n- (bullet points of facts, statistics, examples, or nuances worth remembering)\n\n**How this connects to:**\n- [ADJACENT TOPIC 1]: [brief connection]\n- [ADJACENT TOPIC 2]: [brief connection]\n\n**Questions to test understanding:**\n1. [question]\n2. [question]\n3. [question]\n\n---\n[PASTE CONTENT HERE]\n---",
-  "tags": [
-    "learning",
-    "studying",
-    "notes",
-    "education"
-  ],
+  "tags": ["learning", "studying", "notes", "education"],
   "tips": [
     "Add \"I am studying for [EXAM OR GOAL]\" to focus on the most relevant content",
     "Use the generated questions for active recall practice",

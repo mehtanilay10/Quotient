@@ -80,10 +80,7 @@
           {
             "title": "Nested loops",
             "description": "Best for small outer inputs with indexed inner inputs.",
-            "pros": [
-              "Low memory overhead",
-              "Excellent for selective predicates"
-            ],
+            "pros": ["Low memory overhead", "Excellent for selective predicates"],
             "cons": [
               "Poor when outer input is large",
               "Many random I/Os if inner input lacks an index"
@@ -92,26 +89,14 @@
           {
             "title": "Hash join",
             "description": "Best for large, unsorted, or non-indexed inputs.",
-            "pros": [
-              "Scales well with large data sets",
-              "Does not require indexes"
-            ],
-            "cons": [
-              "High memory grant requirements",
-              "Spills to tempdb if memory is insufficient"
-            ]
+            "pros": ["Scales well with large data sets", "Does not require indexes"],
+            "cons": ["High memory grant requirements", "Spills to tempdb if memory is insufficient"]
           },
           {
             "title": "Merge join",
             "description": "Best when both inputs are already sorted on the join key.",
-            "pros": [
-              "Linear cost relative to input size",
-              "Predictable performance"
-            ],
-            "cons": [
-              "Requires sorted inputs",
-              "Less flexible than hash join"
-            ]
+            "pros": ["Linear cost relative to input size", "Predictable performance"],
+            "cons": ["Requires sorted inputs", "Less flexible than hash join"]
           }
         ]
       }

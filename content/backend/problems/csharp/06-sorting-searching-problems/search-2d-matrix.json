@@ -8,12 +8,7 @@
   "order": 13,
   "difficulty": "medium",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "binary-search",
-    "matrix",
-    "medium"
-  ],
+  "tags": ["csharp", "binary-search", "matrix", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -107,42 +102,21 @@
           {
             "title": "Flattened Binary Search",
             "description": "Map flat index to row/col",
-            "pros": [
-              "O(log mn) time",
-              "O(1) space",
-              "Fastest asymptotically"
-            ],
-            "cons": [
-              "Requires strict global ordering"
-            ],
-            "tags": [
-              "O(log mn) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(log mn) time", "O(1) space", "Fastest asymptotically"],
+            "cons": ["Requires strict global ordering"],
+            "tags": ["O(log mn) time", "O(1) space", "Recommended"]
           },
           {
             "title": "Staircase Search",
             "description": "Top-right corner walk",
-            "pros": [
-              "O(m + n) time",
-              "Works with looser guarantees"
-            ],
-            "cons": [
-              "Slower on large matrices"
-            ],
-            "tags": [
-              "O(m + n) time",
-              "O(1) space"
-            ]
+            "pros": ["O(m + n) time", "Works with looser guarantees"],
+            "cons": ["Slower on large matrices"],
+            "tags": ["O(m + n) time", "O(1) space"]
           }
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "binary-search",
-    "set-matrix-zeroes"
-  ],
+  "relatedLessons": ["binary-search", "set-matrix-zeroes"],
   "furtherReading": []
 }

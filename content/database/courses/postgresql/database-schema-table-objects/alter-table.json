@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "alter-table",
-    "schema-evolution",
-    "locks",
-    "ddl"
-  ],
+  "tags": ["alter-table", "schema-evolution", "locks", "ddl"],
   "blocks": [
     {
       "type": "paragraph",
@@ -53,12 +48,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Operation",
-          "Lock taken",
-          "Rewrites table?",
-          "Notes"
-        ],
+        "headers": ["Operation", "Lock taken", "Rewrites table?", "Notes"],
         "rows": [
           [
             "`ADD COLUMN ... DEFAULT <constant>`",
@@ -72,12 +62,7 @@
             "Yes",
             "e.g. `DEFAULT random()` requires a rewrite — add, then backfill."
           ],
-          [
-            "`DROP COLUMN`",
-            "ACCESS EXCLUSIVE",
-            "No",
-            "Metadata only; disk space reclaimed later."
-          ],
+          ["`DROP COLUMN`", "ACCESS EXCLUSIVE", "No", "Metadata only; disk space reclaimed later."],
           [
             "`ALTER COLUMN TYPE`",
             "ACCESS EXCLUSIVE",
@@ -216,8 +201,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "create-table",
-    "not-null"
-  ]
+  "relatedLessons": ["create-table", "not-null"]
 }

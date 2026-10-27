@@ -162,7 +162,15 @@
   ],
   "relatedLessons": ["projection-vs-include", "n1-query-diagnosis"],
   "furtherReading": [
-    { "title": "EF Core split queries", "url": "https://learn.microsoft.com/en-us/ef/core/querying/split-queries", "type": "article" },
-    { "title": "EF Core eager loading", "url": "https://learn.microsoft.com/en-us/ef/core/querying/include", "type": "article" }
+    {
+      "title": "EF Core split queries",
+      "url": "https://learn.microsoft.com/en-us/ef/core/querying/split-queries",
+      "type": "article"
+    },
+    {
+      "title": "EF Core eager loading",
+      "url": "https://learn.microsoft.com/en-us/ef/core/querying/include",
+      "type": "article"
+    }
   ]
 }

@@ -7,13 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "error-handling",
-    "exceptions",
-    "robust",
-    "defensive-programming"
-  ],
+  "tags": ["csharp", "error-handling", "exceptions", "robust", "defensive-programming"],
   "blocks": [
     {
       "type": "paragraph",
@@ -85,12 +79,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Error Source",
-          "Exception Type",
-          "Typical Cause",
-          "Can You Prevent It?"
-        ],
+        "headers": ["Error Source", "Exception Type", "Typical Cause", "Can You Prevent It?"],
         "rows": [
           [
             "Invalid numeric conversion",
@@ -200,21 +189,14 @@
           {
             "title": "Return Codes",
             "description": "Functions return a special value to indicate failure",
-            "pros": [
-              "Simple and explicit",
-              "No try/catch syntax needed",
-              "Works in any language"
-            ],
+            "pros": ["Simple and explicit", "No try/catch syntax needed", "Works in any language"],
             "cons": [
               "Easy to forget to check",
               "Cannot carry detailed error information",
               "Does not propagate automatically",
               "Pollutes function return type"
             ],
-            "tags": [
-              "legacy",
-              "c-style"
-            ]
+            "tags": ["legacy", "c-style"]
           },
           {
             "title": "Exceptions",
@@ -230,12 +212,7 @@
               "Overuse can harm readability",
               "Performance cost if thrown frequently"
             ],
-            "tags": [
-              "modern",
-              "csharp",
-              "java",
-              "python"
-            ]
+            "tags": ["modern", "csharp", "java", "python"]
           }
         ]
       }

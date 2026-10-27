@@ -7,9 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "having-clause"
-  ],
+  "tags": ["having-clause"],
   "blocks": [
     {
       "type": "heading",

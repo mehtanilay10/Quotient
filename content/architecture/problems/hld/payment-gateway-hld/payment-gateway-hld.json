@@ -228,11 +228,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "amazon-ecommerce-hld",
-    "ticket-booking-hld",
-    "rate-limiter"
-  ],
+  "relatedLessons": ["amazon-ecommerce-hld", "ticket-booking-hld", "rate-limiter"],
   "furtherReading": [
     {
       "title": "Designing Robust and Predictable APIs with Idempotency — Stripe",

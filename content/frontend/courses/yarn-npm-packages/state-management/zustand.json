@@ -6,13 +6,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "zustand",
-    "state",
-    "react",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["zustand", "state", "react", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -94,32 +88,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Library",
-          "Model",
-          "Provider needed"
-        ],
+        "headers": ["Library", "Model", "Provider needed"],
         "rows": [
-          [
-            "Redux Toolkit",
-            "Single store, reducers, actions",
-            "Yes"
-          ],
-          [
-            "Zustand",
-            "Store hook, mutable set",
-            "No"
-          ],
-          [
-            "Jotai",
-            "Independent atoms",
-            "Yes (optional)"
-          ],
-          [
-            "Context + useReducer",
-            "Tree-scoped reducer",
-            "Provider"
-          ]
+          ["Redux Toolkit", "Single store, reducers, actions", "Yes"],
+          ["Zustand", "Store hook, mutable set", "No"],
+          ["Jotai", "Independent atoms", "Yes (optional)"],
+          ["Context + useReducer", "Tree-scoped reducer", "Provider"]
         ]
       }
     },

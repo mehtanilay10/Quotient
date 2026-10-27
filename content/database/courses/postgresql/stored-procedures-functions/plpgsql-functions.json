@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "plpgsql",
-    "execute",
-    "dynamic-sql",
-    "records"
-  ],
+  "tags": ["plpgsql", "execute", "dynamic-sql", "records"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "plpgsql-basics",
-    "stored-procedures"
-  ]
+  "relatedLessons": ["plpgsql-basics", "stored-procedures"]
 }

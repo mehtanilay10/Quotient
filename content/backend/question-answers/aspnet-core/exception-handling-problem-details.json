@@ -6,10 +6,7 @@
   "description": "Exception handler middleware, IExceptionHandler, ProblemDetails (RFC 7807), and logging without leaking internals.",
   "order": 14,
   "difficulty": "intermediate",
-  "tags": [
-    "aspnet-core",
-    "intermediate"
-  ],
+  "tags": ["aspnet-core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,11 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "mvc-lifecycle",
-    "model-binding-validation",
-    "aspnet-b02"
-  ],
+  "relatedLessons": ["mvc-lifecycle", "model-binding-validation", "aspnet-b02"],
   "furtherReading": [
     {
       "title": "Exception handling in ASP.NET Core",

@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "aspnet-core",
-    "cors",
-    "cross-origin",
-    "api"
-  ],
+  "tags": ["aspnet-core", "cors", "cross-origin", "api"],
   "blocks": [
     {
       "type": "heading",

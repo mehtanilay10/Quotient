@@ -202,7 +202,11 @@
       }
     }
   ],
-  "relatedLessons": ["http-request-and-response-lifecycle", "cors-and-preflight-requests", "cookies-sessions-and-browser-storage"],
+  "relatedLessons": [
+    "http-request-and-response-lifecycle",
+    "cors-and-preflight-requests",
+    "cookies-sessions-and-browser-storage"
+  ],
   "furtherReading": [
     {
       "type": "article",

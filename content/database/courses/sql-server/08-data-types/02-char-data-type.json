@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "char",
-    "data-type",
-    "string"
-  ],
+  "tags": ["char", "data-type", "string"],
   "blocks": [
     {
       "type": "heading",

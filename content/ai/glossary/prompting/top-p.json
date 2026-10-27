@@ -6,11 +6,7 @@
   "fullDefinition": "Top-p, also called nucleus sampling, is an alternative to temperature for controlling output randomness. Instead of considering all possible tokens, top-p selects from only the smallest set of most probable tokens whose combined probability exceeds a threshold p. For example, with p=0.9, the model considers only the smallest group of likely tokens whose probabilities sum to 90%. This dynamic filtering prevents the model from wasting probability mass on extremely unlikely tokens while maintaining diversity. Top-p is often used together with temperature to fine-tune the quality and variety of model outputs.",
   "category": "prompting",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "temperature",
-    "prompt",
-    "inference"
-  ],
+  "relatedTerms": ["temperature", "prompt", "inference"],
   "learnMoreSlug": "anatomy-of-a-good-prompt",
   "examples": [
     "Using top-p=0.95 for a chatbot to allow natural variation without strange outputs",

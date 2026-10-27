@@ -8,10 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 5.4,
   "icon": "💬",
-  "tags": [
-    "interview",
-    "behavioral"
-  ],
+  "tags": ["interview", "behavioral"],
   "lessonSlugs": [
     "star-method-fundamentals",
     "team-conflict-questions",

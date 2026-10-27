@@ -6,17 +6,10 @@
   "fullDefinition": "Reasoning models (like OpenAI's o1 and o3, Google's Gemini Thinking) are LLMs trained to generate extended internal reasoning chains ('thinking') before producing a final answer. They take longer to respond but achieve significantly higher accuracy on complex math, logic, coding, and scientific problems. They are not better for all tasks — for creative writing or simple questions, faster standard models are preferred.",
   "category": "models-and-training",
   "difficulty": "advanced",
-  "relatedTerms": [
-    "large-language-model",
-    "chain-of-thought",
-    "inference"
-  ],
+  "relatedTerms": ["large-language-model", "chain-of-thought", "inference"],
   "examples": [
     "OpenAI o1 — solves competition math problems that GPT-4 cannot",
     "Google Gemini 2.0 Flash Thinking — visible reasoning trace before final answer"
   ],
-  "alsoKnownAs": [
-    "Thinking Model",
-    "o1-style model"
-  ]
+  "alsoKnownAs": ["Thinking Model", "o1-style model"]
 }

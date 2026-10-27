@@ -7,11 +7,7 @@
   "order": 12,
   "difficulty": "beginner",
   "estimatedMinutes": 24,
-  "tags": [
-    "datetimeoffset",
-    "timezone",
-    "data-type"
-  ],
+  "tags": ["datetimeoffset", "timezone", "data-type"],
   "blocks": [
     {
       "type": "heading",

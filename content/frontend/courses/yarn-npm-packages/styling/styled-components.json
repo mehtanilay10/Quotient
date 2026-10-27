@@ -6,13 +6,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "styled-components",
-    "css-in-js",
-    "styling",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["styled-components", "css-in-js", "styling", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -90,32 +84,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Library",
-          "Syntax",
-          "Runtime"
-        ],
+        "headers": ["Library", "Syntax", "Runtime"],
         "rows": [
-          [
-            "styled-components",
-            "Tagged templates, props",
-            "Yes (v6 improves performance)"
-          ],
-          [
-            "Emotion",
-            "Objects or templates, styled + css prop",
-            "Yes"
-          ],
-          [
-            "CSS Modules",
-            "Plain CSS",
-            "None"
-          ],
-          [
-            "Tailwind",
-            "Utility classes",
-            "None"
-          ]
+          ["styled-components", "Tagged templates, props", "Yes (v6 improves performance)"],
+          ["Emotion", "Objects or templates, styled + css prop", "Yes"],
+          ["CSS Modules", "Plain CSS", "None"],
+          ["Tailwind", "Utility classes", "None"]
         ]
       }
     },

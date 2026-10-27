@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import { Clock, BookOpen, ArrowRight } from 'lucide-react';
-import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
-import { cn, formatHours } from '@/lib/utils';
-import type { Module } from '@/types';
+import Link from "next/link";
+import { Clock, BookOpen, ArrowRight } from "lucide-react";
+import { DifficultyBadge } from "@/components/ui/DifficultyBadge";
+import { cn, formatHours } from "@/lib/utils";
+import type { Module } from "@/types";
 
 interface ModuleCardProps {
   module: Module;
@@ -11,33 +11,31 @@ interface ModuleCardProps {
   lessonCount?: number;
   completedCount?: number;
   className?: string;
-  variant?: 'default' | 'compact';
+  variant?: "default" | "compact";
 }
 
 export function ModuleCard({
   module,
   courseSlug,
-  basePrefix = 'courses',
+  basePrefix = "courses",
   lessonCount,
   completedCount,
   className,
-  variant = 'default',
+  variant = "default",
 }: ModuleCardProps) {
   const moduleHref = courseSlug
     ? `/${basePrefix}/${courseSlug}/${module.slug}`
     : `/${basePrefix}/${module.slug}`;
   const hasProgress = completedCount !== undefined && lessonCount && lessonCount > 0;
-  const progressPercent = hasProgress
-    ? Math.round((completedCount! / lessonCount!) * 100)
-    : 0;
+  const progressPercent = hasProgress ? Math.round((completedCount! / lessonCount!) * 100) : 0;
 
-  if (variant === 'compact') {
+  if (variant === "compact") {
     return (
       <Link
         href={moduleHref}
         className={cn(
-          'flex items-center gap-3 rounded-lg border border-border bg-canvas p-3',
-          'transition-all hover:border-accent-fg hover:shadow-sm dark:bg-canvas-subtle',
+          "flex items-center gap-3 rounded-lg border border-border bg-canvas p-3",
+          "transition-all hover:border-accent-fg hover:shadow-sm dark:bg-canvas-subtle",
           className
         )}
       >
@@ -60,9 +58,9 @@ export function ModuleCard({
     <Link
       href={moduleHref}
       className={cn(
-        'group flex flex-col rounded-xl border border-border bg-canvas p-5',
-        'transition-all hover:border-accent-fg hover:shadow-md dark:bg-canvas-subtle',
-        'animate-fade-in',
+        "group flex flex-col rounded-xl border border-border bg-canvas p-5",
+        "transition-all hover:border-accent-fg hover:shadow-md dark:bg-canvas-subtle",
+        "animate-fade-in",
         className
       )}
     >
@@ -83,7 +81,9 @@ export function ModuleCard({
       <h3 className="mb-1 font-semibold text-fg-default group-hover:text-accent-fg transition-colors">
         {module.title}
       </h3>
-      <p className="mb-4 flex-1 text-sm leading-relaxed text-fg-muted line-clamp-4">{module.description}</p>
+      <p className="mb-4 flex-1 text-sm leading-relaxed text-fg-muted line-clamp-4">
+        {module.description}
+      </p>
 
       <div className="mt-auto">
         {/* Tags */}
@@ -112,16 +112,16 @@ export function ModuleCard({
               {formatHours(module.estimatedHours)}
             </span>
           </div>
-          {module.skipLabel && (
-            <span className="text-fg-subtle italic">{module.skipLabel}</span>
-          )}
+          {module.skipLabel && <span className="text-fg-subtle italic">{module.skipLabel}</span>}
         </div>
 
         {/* Progress bar */}
         {hasProgress && (
           <div className="mt-3">
             <div className="flex justify-between text-xs text-fg-subtle mb-1">
-              <span>{completedCount}/{lessonCount} completed</span>
+              <span>
+                {completedCount}/{lessonCount} completed
+              </span>
               <span>{progressPercent}%</span>
             </div>
             <div className="h-1.5 w-full rounded-full bg-canvas-inset overflow-hidden">

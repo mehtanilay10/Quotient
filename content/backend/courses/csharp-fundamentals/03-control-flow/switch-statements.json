@@ -107,37 +107,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Element",
-          "Purpose",
-          "Required"
-        ],
+        "headers": ["Element", "Purpose", "Required"],
         "rows": [
-          [
-            "switch (expression)",
-            "Evaluates the expression once at the start",
-            "Yes"
-          ],
-          [
-            "case value:",
-            "Matches a specific constant value",
-            "At least one required"
-          ],
-          [
-            "default:",
-            "Fallback when no case matches",
-            "Optional but recommended"
-          ],
-          [
-            "break",
-            "Exits the switch; prevents fall-through",
-            "Required at end of each case"
-          ],
-          [
-            "goto case",
-            "Jumps to another specific case",
-            "Optional, explicit fall-through only"
-          ]
+          ["switch (expression)", "Evaluates the expression once at the start", "Yes"],
+          ["case value:", "Matches a specific constant value", "At least one required"],
+          ["default:", "Fallback when no case matches", "Optional but recommended"],
+          ["break", "Exits the switch; prevents fall-through", "Required at end of each case"],
+          ["goto case", "Jumps to another specific case", "Optional, explicit fall-through only"]
         ]
       }
     },
@@ -217,10 +193,7 @@
               "Does not return a value directly",
               "Case fall-through can be confusing"
             ],
-            "tags": [
-              "statement",
-              "all-versions"
-            ]
+            "tags": ["statement", "all-versions"]
           },
           {
             "title": "Switch Expression",
@@ -236,10 +209,7 @@
               "Each case must be a single expression",
               "Discard _ may be unfamiliar to beginners"
             ],
-            "tags": [
-              "expression",
-              "csharp-8-plus"
-            ]
+            "tags": ["expression", "csharp-8-plus"]
           }
         ]
       }
@@ -350,10 +320,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "conditionals",
-    "loops"
-  ],
+  "relatedLessons": ["conditionals", "loops"],
   "furtherReading": [],
   "courseSlug": "csharp-fundamentals"
 }

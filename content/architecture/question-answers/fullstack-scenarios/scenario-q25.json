@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "fullstack",
-    "microservices",
-    "migration"
-  ],
+  "tags": ["interview", "fullstack", "microservices", "migration"],
   "blocks": [
     {
       "type": "paragraph",

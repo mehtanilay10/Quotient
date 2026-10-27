@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "ksqldb",
-    "sql",
-    "kafka",
-    "stream-processing",
-    "real-time"
-  ],
+  "tags": ["ksqldb", "sql", "kafka", "stream-processing", "real-time"],
   "blocks": [
     {
       "type": "paragraph",
@@ -120,11 +114,7 @@
           {
             "title": "ksqlDB",
             "description": "A SQL-based streaming engine that runs as a standalone server.",
-            "pros": [
-              "Low-code: SQL interface",
-              "Fast prototyping",
-              "Built-in REST API"
-            ],
+            "pros": ["Low-code: SQL interface", "Fast prototyping", "Built-in REST API"],
             "cons": [
               "Less flexibility than Java API",
               "Complex logic can be verbose",

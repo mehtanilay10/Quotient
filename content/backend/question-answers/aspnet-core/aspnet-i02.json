@@ -6,10 +6,7 @@
   "description": "Understand EF Core and Code First vs Database First.",
   "order": 8,
   "difficulty": "intermediate",
-  "tags": [
-    "asp.net core",
-    "intermediate"
-  ],
+  "tags": ["asp.net core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

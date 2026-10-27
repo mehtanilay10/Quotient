@@ -6,20 +6,12 @@
   "fullDefinition": "Tool use, also known as function calling, is the capability of AI models to invoke external tools and APIs to perform actions, retrieve data, or extend their abilities. Rather than generating only text responses, a model with tool use can call functions, query databases, search the web, run code, or interact with software systems. The model decides when tools are needed, selects the appropriate tool, formats the inputs, and processes the outputs. Tool use transforms AI models from passive text generators into active problem solvers capable of completing real-world tasks. Modern models from OpenAI, Anthropic, and Google all support tool use as a first-class feature.",
   "category": "agents-and-automation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "agent",
-    "api",
-    "autonomous-agent"
-  ],
+  "relatedTerms": ["agent", "api", "autonomous-agent"],
   "learnMoreSlug": "what-is-tool-calling",
   "examples": [
     "A chatbot calling a weather API to answer 'What's the forecast for tomorrow?'",
     "An AI coding assistant running a linter and suggesting fixes",
     "A research agent searching a company's knowledge base for internal policies"
   ],
-  "alsoKnownAs": [
-    "Function Calling",
-    "Tool Calling",
-    "External Tool Use"
-  ]
+  "alsoKnownAs": ["Function Calling", "Tool Calling", "External Tool Use"]
 }

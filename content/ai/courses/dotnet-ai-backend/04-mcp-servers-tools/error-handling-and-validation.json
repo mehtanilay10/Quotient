@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "mcp",
-    "errors",
-    "validation",
-    "csharp"
-  ],
+  "tags": ["mcp", "errors", "validation", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -76,10 +71,7 @@
       "takeaway": "Treat error messages as part of your tool contract. The model reads them to decide what to do next."
     }
   ],
-  "relatedLessons": [
-    "registering-and-describing-tools",
-    "auth-and-authorization-in-mcp"
-  ],
+  "relatedLessons": ["registering-and-describing-tools", "auth-and-authorization-in-mcp"],
   "technology": null,
   "furtherReading": [
     {

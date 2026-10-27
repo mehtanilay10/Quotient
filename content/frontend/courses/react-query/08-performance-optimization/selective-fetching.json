@@ -8,14 +8,8 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "selective-fetching",
-    "performance",
-    "network-optimization"
-  ],
-  "prerequisites": [
-    "caching-strategies"
-  ],
+  "tags": ["selective-fetching", "performance", "network-optimization"],
+  "prerequisites": ["caching-strategies"],
   "blocks": [
     {
       "type": "paragraph",
@@ -132,48 +126,23 @@
           {
             "title": "Inline select",
             "description": "Define the select function directly in the useQuery options.",
-            "pros": [
-              "Simple and readable",
-              "No extra hooks needed"
-            ],
-            "cons": [
-              "Recreated on every render",
-              "Can break structural sharing"
-            ],
-            "tags": [
-              "simple"
-            ]
+            "pros": ["Simple and readable", "No extra hooks needed"],
+            "cons": ["Recreated on every render", "Can break structural sharing"],
+            "tags": ["simple"]
           },
           {
             "title": "Memoized select with useMemo",
             "description": "Wrap select in useMemo when it depends on props or state.",
-            "pros": [
-              "Stable reference across renders",
-              "Works with dynamic dependencies"
-            ],
-            "cons": [
-              "Requires useMemo import",
-              "Slightly more code"
-            ],
-            "tags": [
-              "dynamic",
-              "recommended"
-            ]
+            "pros": ["Stable reference across renders", "Works with dynamic dependencies"],
+            "cons": ["Requires useMemo import", "Slightly more code"],
+            "tags": ["dynamic", "recommended"]
           },
           {
             "title": "Factory function",
             "description": "Create a reusable select function that takes configuration.",
-            "pros": [
-              "Reusable across components",
-              "Encapsulates selection logic"
-            ],
-            "cons": [
-              "Additional abstraction layer",
-              "Harder to debug inline"
-            ],
-            "tags": [
-              "reusable"
-            ]
+            "pros": ["Reusable across components", "Encapsulates selection logic"],
+            "cons": ["Additional abstraction layer", "Harder to debug inline"],
+            "tags": ["reusable"]
           }
         ]
       }

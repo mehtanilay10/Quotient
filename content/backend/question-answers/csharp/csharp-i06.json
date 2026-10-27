@@ -6,10 +6,7 @@
   "description": "Learn try-catch-finally and custom exceptions.",
   "order": 24,
   "difficulty": "intermediate",
-  "tags": [
-    "c#",
-    "intermediate"
-  ],
+  "tags": ["c#", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

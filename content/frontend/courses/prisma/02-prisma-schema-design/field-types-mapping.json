@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "data-types",
-    "scalar-types",
-    "postgresql",
-    "native-types"
-  ],
+  "tags": ["prisma", "data-types", "scalar-types", "postgresql", "native-types"],
   "blocks": [
     {
       "type": "paragraph",
@@ -39,60 +33,20 @@
           "Native `@db` Attributes"
         ],
         "rows": [
-          [
-            "`String`",
-            "`string`",
-            "`text`",
-            "`@db.VarChar(255)`, `@db.Char(10)`, `@db.Uuid`"
-          ],
-          [
-            "`Boolean`",
-            "`boolean`",
-            "`boolean`",
-            "`@db.Boolean`"
-          ],
-          [
-            "`Int`",
-            "`number`",
-            "`integer` (4 bytes)",
-            "`@db.SmallInt` (2 bytes)"
-          ],
-          [
-            "`BigInt`",
-            "`bigint`",
-            "`bigint` (8 bytes)",
-            "`@db.BigInt`"
-          ],
-          [
-            "`Float`",
-            "`number`",
-            "`double precision`",
-            "`@db.Real`"
-          ],
+          ["`String`", "`string`", "`text`", "`@db.VarChar(255)`, `@db.Char(10)`, `@db.Uuid`"],
+          ["`Boolean`", "`boolean`", "`boolean`", "`@db.Boolean`"],
+          ["`Int`", "`number`", "`integer` (4 bytes)", "`@db.SmallInt` (2 bytes)"],
+          ["`BigInt`", "`bigint`", "`bigint` (8 bytes)", "`@db.BigInt`"],
+          ["`Float`", "`number`", "`double precision`", "`@db.Real`"],
           [
             "`Decimal`",
             "`Prisma.Decimal` (Decimal.js)",
             "`decimal(65, 30)`",
             "`@db.Decimal(12, 2)` (Precise currency)"
           ],
-          [
-            "`DateTime`",
-            "`Date`",
-            "`timestamp(3)`",
-            "`@db.Timestamptz`, `@db.Date`, `@db.Time`"
-          ],
-          [
-            "`Json`",
-            "`Prisma.JsonValue`",
-            "`jsonb`",
-            "`@db.JsonB`, `@db.Json`"
-          ],
-          [
-            "`Bytes`",
-            "`Buffer`",
-            "`bytea`",
-            "`@db.ByteA`"
-          ]
+          ["`DateTime`", "`Date`", "`timestamp(3)`", "`@db.Timestamptz`, `@db.Date`, `@db.Time`"],
+          ["`Json`", "`Prisma.JsonValue`", "`jsonb`", "`@db.JsonB`, `@db.Json`"],
+          ["`Bytes`", "`Buffer`", "`bytea`", "`@db.ByteA`"]
         ]
       }
     },
@@ -139,8 +93,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "enums-and-native-types",
-    "schema-best-practices"
-  ]
+  "relatedLessons": ["enums-and-native-types", "schema-best-practices"]
 }

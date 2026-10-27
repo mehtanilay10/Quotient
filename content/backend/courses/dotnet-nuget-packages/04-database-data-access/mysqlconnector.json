@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "mysql",
-    "mariadb",
-    "database",
-    "connector"
-  ],
+  "tags": ["mysql", "mariadb", "database", "connector"],
   "blocks": [
     {
       "type": "heading",

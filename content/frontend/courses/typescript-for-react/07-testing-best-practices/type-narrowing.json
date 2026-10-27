@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "type-guards",
-    "narrowing",
-    "discriminated-unions"
-  ],
+  "tags": ["typescript", "type-guards", "narrowing", "discriminated-unions"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,37 +62,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Narrowing Method",
-          "Best For",
-          "Example"
-        ],
+        "headers": ["Narrowing Method", "Best For", "Example"],
         "rows": [
-          [
-            "typeof",
-            "Primitives",
-            "typeof x === 'string'"
-          ],
-          [
-            "instanceof",
-            "Classes",
-            "x instanceof Error"
-          ],
-          [
-            "in operator",
-            "Properties",
-            "'length' in x"
-          ],
-          [
-            "Equality",
-            "Literals",
-            "x === 'success'"
-          ],
-          [
-            "Custom guard",
-            "Complex types",
-            "isUser(x)"
-          ]
+          ["typeof", "Primitives", "typeof x === 'string'"],
+          ["instanceof", "Classes", "x instanceof Error"],
+          ["in operator", "Properties", "'length' in x"],
+          ["Equality", "Literals", "x === 'success'"],
+          ["Custom guard", "Complex types", "isUser(x)"]
         ]
       }
     },

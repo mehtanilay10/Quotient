@@ -8,12 +8,7 @@
   "order": 9,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "linked-list",
-    "pointers",
-    "medium"
-  ],
+  "tags": ["csharp", "linked-list", "pointers", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -74,34 +69,16 @@
           {
             "title": "Swap Values",
             "description": "Exchange Val fields between paired nodes",
-            "pros": [
-              "Very simple code",
-              "No pointer gymnastics"
-            ],
-            "cons": [
-              "Only swaps data, not nodes",
-              "Fails if nodes have complex state"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space"
-            ]
+            "pros": ["Very simple code", "No pointer gymnastics"],
+            "cons": ["Only swaps data, not nodes", "Fails if nodes have complex state"],
+            "tags": ["O(n) time", "O(1) space"]
           },
           {
             "title": "Swap Pointers",
             "description": "Rewire Next pointers to exchange node order",
-            "pros": [
-              "Actually reorders nodes",
-              "Works with any payload"
-            ],
-            "cons": [
-              "More pointer bookkeeping"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["Actually reorders nodes", "Works with any payload"],
+            "cons": ["More pointer bookkeeping"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

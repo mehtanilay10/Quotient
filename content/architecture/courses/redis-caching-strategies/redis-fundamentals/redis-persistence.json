@@ -8,14 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "redis",
-    "persistence",
-    "rdb",
-    "aof",
-    "durability",
-    "backup"
-  ],
+  "tags": ["redis", "persistence", "rdb", "aof", "durability", "backup"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,37 +53,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Mode",
-          "Durability",
-          "Performance",
-          "Recovery"
-        ],
+        "headers": ["Mode", "Durability", "Performance", "Recovery"],
         "rows": [
-          [
-            "RDB only",
-            "Low-medium",
-            "High",
-            "Restore snapshot"
-          ],
-          [
-            "AOF every sec",
-            "Medium-high",
-            "Medium-high",
-            "Replay AOF"
-          ],
-          [
-            "AOF always",
-            "High",
-            "Lower",
-            "Replay AOF"
-          ],
-          [
-            "RDB + AOF",
-            "High",
-            "Medium",
-            "Restore snapshot then replay AOF"
-          ]
+          ["RDB only", "Low-medium", "High", "Restore snapshot"],
+          ["AOF every sec", "Medium-high", "Medium-high", "Replay AOF"],
+          ["AOF always", "High", "Lower", "Replay AOF"],
+          ["RDB + AOF", "High", "Medium", "Restore snapshot then replay AOF"]
         ]
       }
     },
@@ -147,10 +115,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "redis-commands",
-    "redis-memory-management"
-  ],
+  "relatedLessons": ["redis-commands", "redis-memory-management"],
   "furtherReading": [
     {
       "title": "Redis Persistence Explained",

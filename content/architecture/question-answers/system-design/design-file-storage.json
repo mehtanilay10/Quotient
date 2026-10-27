@@ -8,12 +8,7 @@
   "order": 11,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "interview",
-    "system-design",
-    "storage",
-    "cdn"
-  ],
+  "tags": ["interview", "system-design", "storage", "cdn"],
   "technology": "System Design",
   "blocks": [
     {
@@ -95,11 +90,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Table",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Table", "Key Fields", "Description"],
         "rows": [
           [
             "Files",
@@ -111,16 +102,8 @@
             "chunk_id, file_id, chunk_index, storage_node, checksum",
             "Physical chunk locations and integrity"
           ],
-          [
-            "Folders",
-            "folder_id, owner_id, parent_id, name",
-            "Hierarchical folder structure"
-          ],
-          [
-            "Permissions",
-            "resource_id, user_id, permission, granted_by",
-            "Access control list"
-          ],
+          ["Folders", "folder_id, owner_id, parent_id, name", "Hierarchical folder structure"],
+          ["Permissions", "resource_id, user_id, permission, granted_by", "Access control list"],
           [
             "FileVersions",
             "version_id, file_id, created_by, created_at",

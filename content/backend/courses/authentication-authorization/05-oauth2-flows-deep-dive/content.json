@@ -18,11 +18,7 @@
     "refresh-tokens",
     "flows"
   ],
-  "lessonSlugs": [
-    "authorization-code-flow",
-    "client-credentials-flow",
-    "pkce-flow"
-  ],
+  "lessonSlugs": ["authorization-code-flow", "client-credentials-flow", "pkce-flow"],
   "whatYouLearn": [
     "Implement Authorization Code flow with proper state and nonce handling",
     "Use PKCE for public clients and mobile applications",

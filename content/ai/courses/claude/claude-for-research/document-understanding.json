@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "claude",
-    "documents",
-    "pdf",
-    "analysis",
-    "extraction"
-  ],
+  "tags": ["claude", "documents", "pdf", "analysis", "extraction"],
   "blocks": [
     {
       "type": "heading",
@@ -184,13 +178,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "research-and-analysis"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model",
-    "context-window",
-    "token"
-  ],
+  "relatedLessons": ["research-and-analysis"],
+  "relatedGlossaryTerms": ["large-language-model", "context-window", "token"],
   "courseSlug": "claude"
 }

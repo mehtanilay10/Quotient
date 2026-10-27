@@ -8,15 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "ai",
-    "sagemaker",
-    "machine-learning",
-    "ml",
-    "training",
-    "deployment"
-  ],
+  "tags": ["aws", "ai", "sagemaker", "machine-learning", "ml", "training", "deployment"],
   "blocks": [
     {
       "type": "paragraph",

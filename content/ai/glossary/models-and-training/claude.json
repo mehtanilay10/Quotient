@@ -6,14 +6,6 @@
   "fullDefinition": "Claude is the family of large language models developed by Anthropic PBC. Named after Claude Shannon, the father of information theory. Claude models are known for nuanced writing, careful reasoning, and a very large context window (200K tokens for Claude 3.5). The Claude 3 family includes Haiku (fast/cheap), Sonnet (balanced), and Opus (most capable). Claude powers the claude.ai chatbot and is available via API.",
   "category": "models-and-training",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "large-language-model",
-    "anthropic",
-    "context-window"
-  ],
-  "alsoKnownAs": [
-    "Claude 3",
-    "Claude 3.5 Sonnet",
-    "Anthropic Claude"
-  ]
+  "relatedTerms": ["large-language-model", "anthropic", "context-window"],
+  "alsoKnownAs": ["Claude 3", "Claude 3.5 Sonnet", "Anthropic Claude"]
 }

@@ -8,11 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "authorization",
-    "policy",
-    "aspnet-core"
-  ],
+  "tags": ["authorization", "policy", "aspnet-core"],
   "blocks": [
     {
       "type": "heading",

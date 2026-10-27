@@ -6,11 +6,7 @@
   "title": "Error Handling and Validation",
   "description": "Learn to handle errors and validate input in ASP.NET Core Web API.",
   "order": 6,
-  "lessonSlugs": [
-    "validation-basics",
-    "problem-details",
-    "global-error-handling"
-  ],
+  "lessonSlugs": ["validation-basics", "problem-details", "global-error-handling"],
   "tags": [],
   "difficulty": "beginner",
   "estimatedHours": 2

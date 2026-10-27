@@ -8,15 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "azure-ad",
-    "microsoft",
-    "entra-id",
-    "oidc",
-    "asp.net-core",
-    "msal",
-    "enterprise"
-  ],
+  "tags": ["azure-ad", "microsoft", "entra-id", "oidc", "asp.net-core", "msal", "enterprise"],
   "blocks": [
     {
       "type": "paragraph",
@@ -184,7 +176,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "sso-fundamentals"
-  ]
+  "prerequisites": ["sso-fundamentals"]
 }

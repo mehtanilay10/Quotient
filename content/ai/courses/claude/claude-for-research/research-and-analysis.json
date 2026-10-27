@@ -7,13 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "claude",
-    "research",
-    "analysis",
-    "synthesis",
-    "reasoning"
-  ],
+  "tags": ["claude", "research", "analysis", "synthesis", "reasoning"],
   "blocks": [
     {
       "type": "heading",
@@ -159,15 +153,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "document-understanding",
-    "research-and-analysis"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model",
-    "context-window",
-    "hallucination",
-    "rag"
-  ],
+  "relatedLessons": ["document-understanding", "research-and-analysis"],
+  "relatedGlossaryTerms": ["large-language-model", "context-window", "hallucination", "rag"],
   "courseSlug": "claude"
 }

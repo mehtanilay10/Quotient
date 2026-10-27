@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "solid",
-    "dip",
-    "csharp",
-    "di"
-  ],
+  "tags": ["solid", "dip", "csharp", "di"],
   "blocks": [
     {
       "type": "paragraph",
@@ -69,10 +64,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "interface-segregation",
-    "single-responsibility"
-  ],
+  "relatedLessons": ["interface-segregation", "single-responsibility"],
   "furtherReading": [],
   "courseSlug": "clean-code-csharp"
 }

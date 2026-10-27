@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "behavioral",
-    "career-growth",
-    "goals",
-    "soft-skills"
-  ],
+  "tags": ["behavioral", "career-growth", "goals", "soft-skills"],
   "technology": "Behavioral",
   "blocks": [
     {
@@ -140,10 +135,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "failure-stories",
-    "common-behavioral-traps"
-  ],
+  "relatedLessons": ["failure-stories", "common-behavioral-traps"],
   "furtherReading": [
     {
       "title": "The First 90 Days: Proven Strategies for Getting Up to Speed Faster, Smarter, and Better",

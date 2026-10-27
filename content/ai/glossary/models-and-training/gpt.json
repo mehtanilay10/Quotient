@@ -6,14 +6,6 @@
   "fullDefinition": "GPT stands for Generative Pre-trained Transformer — a series of LLMs developed by OpenAI. GPT-1 through GPT-4 marked major capability milestones. GPT-4o ('o' for omni) is the current flagship, supporting text, vision, and audio. The 'o1' and 'o3' models are reasoning-focused variants. GPT models power ChatGPT and are also available to developers via OpenAI's API.",
   "category": "models-and-training",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "large-language-model",
-    "transformer",
-    "chatgpt"
-  ],
-  "alsoKnownAs": [
-    "GPT-4",
-    "GPT-4o",
-    "ChatGPT model"
-  ]
+  "relatedTerms": ["large-language-model", "transformer", "chatgpt"],
+  "alsoKnownAs": ["GPT-4", "GPT-4o", "ChatGPT model"]
 }

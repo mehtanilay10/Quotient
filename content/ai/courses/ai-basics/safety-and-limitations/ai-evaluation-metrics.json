@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "evaluation",
-    "metrics",
-    "quality",
-    "safety",
-    "hallucination"
-  ],
+  "tags": ["evaluation", "metrics", "quality", "safety", "hallucination"],
   "blocks": [
     {
       "type": "paragraph",
@@ -33,11 +27,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "Question it answers",
-          "Simple scoring method (1-5)"
-        ],
+        "headers": ["Metric", "Question it answers", "Simple scoring method (1-5)"],
         "rows": [
           [
             "Factual accuracy",
@@ -130,22 +120,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Risk tier",
-          "Core metric focus",
-          "Operational threshold style"
-        ],
+        "headers": ["Risk tier", "Core metric focus", "Operational threshold style"],
         "rows": [
-          [
-            "Low risk",
-            "User satisfaction and latency",
-            "Flexible threshold with trend monitoring"
-          ],
-          [
-            "Medium risk",
-            "Factuality and consistency",
-            "Minimum pass rate plus spot audits"
-          ],
+          ["Low risk", "User satisfaction and latency", "Flexible threshold with trend monitoring"],
+          ["Medium risk", "Factuality and consistency", "Minimum pass rate plus spot audits"],
           [
             "High risk",
             "Harm prevention and correctness",
@@ -170,37 +148,27 @@
           {
             "title": "Factual accuracy",
             "description": "Catches hallucinations, wrong dates, fake citations. Most important for any domain where wrong facts cause real harm.",
-            "tags": [
-              "critical"
-            ]
+            "tags": ["critical"]
           },
           {
             "title": "Task completion",
             "description": "Catches partial outputs, missed requirements, or format violations. Essential for workflows with strict acceptance criteria.",
-            "tags": [
-              "essential"
-            ]
+            "tags": ["essential"]
           },
           {
             "title": "Clarity",
             "description": "Catches jargon overload, poor structure, or confusing explanations. Critical for customer-facing or training content.",
-            "tags": [
-              "important"
-            ]
+            "tags": ["important"]
           },
           {
             "title": "Consistency",
             "description": "Catches quality drift between runs. Important when the same prompt is reused across a team or production pipeline.",
-            "tags": [
-              "stability"
-            ]
+            "tags": ["stability"]
           },
           {
             "title": "Safety/compliance",
             "description": "Catches policy violations, biased output, or leaked data. Non-negotiable for regulated industries.",
-            "tags": [
-              "required"
-            ]
+            "tags": ["required"]
           }
         ]
       }
@@ -247,11 +215,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "critical-evaluation",
-    "evaluating-ai-output",
-    "ai-hallucination-deep-dive"
-  ],
+  "relatedLessons": ["critical-evaluation", "evaluating-ai-output", "ai-hallucination-deep-dive"],
   "furtherReading": [
     {
       "title": "Evaluating and Debugging Generative AI",

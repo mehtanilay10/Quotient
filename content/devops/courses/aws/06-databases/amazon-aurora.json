@@ -73,7 +73,11 @@
         "headers": ["Feature", "Amazon RDS MySQL", "Amazon Aurora MySQL"],
         "rows": [
           ["Max storage", "64 TB", "128 TB (auto-scaling)"],
-          ["Replication", "1 primary, up to 15 read replicas", "1 writer, up to 15 Aurora Replicas"],
+          [
+            "Replication",
+            "1 primary, up to 15 read replicas",
+            "1 writer, up to 15 Aurora Replicas"
+          ],
           ["Failover time", "60-120 seconds", "Typically under 30 seconds"],
           ["Storage replication", "2 copies in 1 AZ", "6 copies across 3 AZs"],
           ["Serverless option", "No", "Yes (Aurora Serverless v1/v2)"],

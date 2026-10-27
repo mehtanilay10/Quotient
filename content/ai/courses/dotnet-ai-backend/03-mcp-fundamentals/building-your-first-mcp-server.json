@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 26,
-  "tags": [
-    "mcp",
-    "csharp",
-    "server",
-    "tutorial"
-  ],
+  "tags": ["mcp", "csharp", "server", "tutorial"],
   "blocks": [
     {
       "type": "paragraph",
@@ -70,10 +65,7 @@
       "expectedOutcome": "You should see your tool and resource from the client, and successfully invoke the tool with valid arguments."
     }
   ],
-  "relatedLessons": [
-    "mcp-architecture-and-transports",
-    "registering-and-describing-tools"
-  ],
+  "relatedLessons": ["mcp-architecture-and-transports", "registering-and-describing-tools"],
   "technology": null,
   "furtherReading": [
     {

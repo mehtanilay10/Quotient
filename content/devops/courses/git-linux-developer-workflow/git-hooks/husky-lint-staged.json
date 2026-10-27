@@ -150,7 +150,11 @@
   ],
   "relatedLessons": ["pre-commit-hooks", "custom-hook-examples"],
   "furtherReading": [
-    { "title": "Husky Documentation", "url": "https://typicode.github.io/husky/", "type": "article" },
+    {
+      "title": "Husky Documentation",
+      "url": "https://typicode.github.io/husky/",
+      "type": "article"
+    },
     { "title": "lint-staged", "url": "https://github.com/okonet/lint-staged", "type": "tool" }
   ]
 }

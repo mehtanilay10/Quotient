@@ -6,11 +6,7 @@
   "fullDefinition": "Temperature is a parameter (typically 0 to 2) that controls the randomness of an LLM's output. At low temperature (0-0.3), the model picks the highest-probability token at each step — producing consistent, predictable output. At high temperature (0.7-1.5), it samples more randomly from possibilities — producing more creative but potentially less accurate output. Temperature is why the 'same prompt' can produce different answers.",
   "category": "models-and-training",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "large-language-model",
-    "token",
-    "prompt"
-  ],
+  "relatedTerms": ["large-language-model", "token", "prompt"],
   "examples": [
     "Temperature 0: best for code, facts, structured extraction",
     "Temperature 0.7: best for creative writing, brainstorming"

@@ -6,10 +6,7 @@
   "description": "Understand value type to reference type conversions in .NET.",
   "order": 17,
   "difficulty": "beginner",
-  "tags": [
-    "C#",
-    "beginner"
-  ],
+  "tags": ["C#", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

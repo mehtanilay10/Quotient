@@ -6,10 +6,6 @@
   "fullDefinition": "An agentic workflow is a process where an AI agent is given a high-level goal and autonomously plans and executes a sequence of actions to achieve it — using tools, making decisions, and adjusting course based on results. Unlike a chatbot interaction (one turn) or a prompt workflow (human-directed steps), agentic workflows run largely autonomously. The human role shifts to goal-setting and review rather than step-by-step direction.",
   "category": "agents-and-automation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "agent",
-    "orchestration",
-    "tool-calling"
-  ],
+  "relatedTerms": ["agent", "orchestration", "tool-calling"],
   "learnMoreSlug": "how-agents-work"
 }

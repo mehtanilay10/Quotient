@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "stream-table-duality",
-    "kafka-streams",
-    "ksqldb",
-    "abstractions",
-    "state"
-  ],
+  "tags": ["stream-table-duality", "kafka-streams", "ksqldb", "abstractions", "state"],
   "blocks": [
     {
       "type": "paragraph",

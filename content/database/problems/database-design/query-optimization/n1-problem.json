@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "The N+1 problem occurs when an application executes one query to fetch parent rows and then N additional queries to fetch related child rows. This multiplies round trips and database load." }
+      "data": {
+        "text": "The N+1 problem occurs when an application executes one query to fetch parent rows and then N additional queries to fetch related child rows. This multiplies round trips and database load."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,12 @@
       "type": "bullet-list",
       "data": {
         "title": "Symptoms",
-        "items": ["Log shows N+1 identical queries", "Latency scales linearly with result set size", "ORM lazy-loading in a loop", "Dashboard slowness on populated lists"]
+        "items": [
+          "Log shows N+1 identical queries",
+          "Latency scales linearly with result set size",
+          "ORM lazy-loading in a loop",
+          "Dashboard slowness on populated lists"
+        ]
       }
     },
     {
@@ -61,16 +68,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "warning", "title": "Warning", "text": "ORMs with lazy loading are the most common source of N+1. Enable eager loading or query hints in your data access layer." }
+      "data": {
+        "variant": "warning",
+        "title": "Warning",
+        "text": "ORMs with lazy loading are the most common source of N+1. Enable eager loading or query hints in your data access layer."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "How do I detect N+1 in production?", "answer": "Enable query logging or APM tools that flag repeated similar queries in a single request." },
-          { "question": "Does COUNT always indicate N+1?", "answer": "No. COUNT alone is not enough. Look for repeated similar queries within the same request context." },
-          { "question": "Is IN better than JOIN?", "answer": "IN avoids Cartesian products but can be slower than JOIN on some databases. Test both." }
+          {
+            "question": "How do I detect N+1 in production?",
+            "answer": "Enable query logging or APM tools that flag repeated similar queries in a single request."
+          },
+          {
+            "question": "Does COUNT always indicate N+1?",
+            "answer": "No. COUNT alone is not enough. Look for repeated similar queries within the same request context."
+          },
+          {
+            "question": "Is IN better than JOIN?",
+            "answer": "IN avoids Cartesian products but can be slower than JOIN on some databases. Test both."
+          }
         ]
       }
     },
@@ -78,7 +98,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["N+1 multiplies queries by result set size", "Replace loops with JOINs or batch queries", "Enable ORM eager loading", "Monitor query counts per request"],
+        "points": [
+          "N+1 multiplies queries by result set size",
+          "Replace loops with JOINs or batch queries",
+          "Enable ORM eager loading",
+          "Monitor query counts per request"
+        ],
         "takeaway": "N+1 is the most common ORM performance bug. One JOIN or batch query replaces N individual lookups."
       }
     }

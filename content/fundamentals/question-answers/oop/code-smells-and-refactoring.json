@@ -6,11 +6,7 @@
   "description": "Recognizing the most common code smells — god classes, feature envy, duplicated rules, long parameter lists — and the safe refactor-as-you-go workflow that keeps tests green.",
   "order": 21,
   "difficulty": "intermediate",
-  "tags": [
-    "oop",
-    "refactoring",
-    "intermediate"
-  ],
+  "tags": ["oop", "refactoring", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

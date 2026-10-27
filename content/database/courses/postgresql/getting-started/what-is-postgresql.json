@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "postgresql",
-    "introduction",
-    "acid",
-    "mvcc",
-    "history"
-  ],
+  "tags": ["postgresql", "introduction", "acid", "mvcc", "history"],
   "blocks": [
     {
       "type": "paragraph",
@@ -114,12 +108,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Capability",
-          "PostgreSQL",
-          "MySQL / InnoDB",
-          "SQL Server"
-        ],
+        "headers": ["Capability", "PostgreSQL", "MySQL / InnoDB", "SQL Server"],
         "rows": [
           [
             "Concurrency model",
@@ -151,12 +140,7 @@
             "Limited",
             "Limited"
           ],
-          [
-            "Default isolation",
-            "Read Committed",
-            "Repeatable Read",
-            "Read Committed"
-          ]
+          ["Default isolation", "Read Committed", "Repeatable Read", "Read Committed"]
         ]
       }
     },
@@ -241,8 +225,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "architecture-overview",
-    "installation-setup"
-  ]
+  "relatedLessons": ["architecture-overview", "installation-setup"]
 }

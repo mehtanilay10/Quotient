@@ -10,9 +10,5 @@
   "icon": "📘",
   "tags": ["typescript", "cheatsheet", "quick-reference"],
   "lessonSlugs": ["cheatsheet"],
-  "whatYouLearn": [
-    "Type system basics",
-    "Interfaces and generics",
-    "React typing patterns"
-  ]
+  "whatYouLearn": ["Type system basics", "Interfaces and generics", "React typing patterns"]
 }

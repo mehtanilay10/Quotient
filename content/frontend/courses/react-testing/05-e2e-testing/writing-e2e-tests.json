@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "cypress",
-    "e2e",
-    "react"
-  ],
+  "tags": ["cypress", "e2e", "react"],
   "blocks": [
     {
       "type": "paragraph",
@@ -45,9 +41,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "cypress-intro",
-    "cypress-commands"
-  ],
+  "relatedLessons": ["cypress-intro", "cypress-commands"],
   "courseSlug": "react-testing"
 }

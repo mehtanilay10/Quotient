@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "redis",
-    "memory",
-    "optimization",
-    "encoding",
-    "data-structures"
-  ],
+  "tags": ["redis", "memory", "optimization", "encoding", "data-structures"],
   "blocks": [
     {
       "type": "paragraph",

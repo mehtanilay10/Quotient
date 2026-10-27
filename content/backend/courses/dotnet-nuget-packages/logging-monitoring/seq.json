@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "logging",
-    "seq",
-    "monitoring"
-  ],
+  "tags": ["logging", "seq", "monitoring"],
   "blocks": [
     {
       "type": "heading",

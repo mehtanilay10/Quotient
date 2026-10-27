@@ -12,15 +12,17 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What is Azure.Storage.Blobs?"}
+      "data": { "level": 2, "text": "What is Azure.Storage.Blobs?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "`Azure.Storage.Blobs` is the modern Azure SDK package for working with Blob Storage. It provides async-first, strongly typed clients for uploading, downloading, and managing blobs and containers."}
+      "data": {
+        "text": "`Azure.Storage.Blobs` is the modern Azure SDK package for working with Blob Storage. It provides async-first, strongly typed clients for uploading, downloading, and managing blobs and containers."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Installation"}
+      "data": { "level": 2, "text": "Installation" }
     },
     {
       "type": "example",
@@ -32,11 +34,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Basic Usage"}
+      "data": { "level": 2, "text": "Basic Usage" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Use `BlobServiceClient` to connect to your storage account, then use `BlobContainerClient` and `BlobClient` to work with containers and blobs."}
+      "data": {
+        "text": "Use `BlobServiceClient` to connect to your storage account, then use `BlobContainerClient` and `BlobClient` to work with containers and blobs."
+      }
     },
     {
       "type": "example",
@@ -48,11 +52,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "SAS Token Generation"}
+      "data": { "level": 2, "text": "SAS Token Generation" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "You can generate Shared Access Signature (SAS) tokens to grant time-limited access to blobs without exposing your account key."}
+      "data": {
+        "text": "You can generate Shared Access Signature (SAS) tokens to grant time-limited access to blobs without exposing your account key."
+      }
     },
     {
       "type": "example",

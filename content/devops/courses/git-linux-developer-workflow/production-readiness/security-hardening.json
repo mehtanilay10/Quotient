@@ -8,13 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "security",
-    "linux",
-    "ssh",
-    "firewall",
-    "hardening"
-  ],
+  "tags": ["security", "linux", "ssh", "firewall", "hardening"],
   "blocks": [
     {
       "type": "paragraph",

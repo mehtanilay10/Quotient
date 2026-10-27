@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "star-schema",
-    "snowflake",
-    "dimensional-modeling",
-    "fact-table",
-    "dimension-table"
-  ],
+  "tags": ["star-schema", "snowflake", "dimensional-modeling", "fact-table", "dimension-table"],
   "blocks": [
     {
       "type": "heading",
@@ -132,52 +126,16 @@
     },
     {
       "type": "table",
-      "headers": [
-        "Aspect",
-        "Star Schema",
-        "Snowflake Schema"
-      ],
+      "headers": ["Aspect", "Star Schema", "Snowflake Schema"],
       "rows": [
-        [
-          "Normalization",
-          "Denormalized dimensions",
-          "Normalized dimensions"
-        ],
-        [
-          "Join Count",
-          "Fewer joins",
-          "More joins"
-        ],
-        [
-          "Query Complexity",
-          "Simpler SQL",
-          "More complex SQL"
-        ],
-        [
-          "Storage",
-          "Higher (duplicate text)",
-          "Lower (no duplicates)"
-        ],
-        [
-          "Query Performance",
-          "Faster for most reports",
-          "Can be slower due to joins"
-        ],
-        [
-          "ETL Complexity",
-          "Simpler load process",
-          "More complex due to multiple tables"
-        ],
-        [
-          "Data Integrity",
-          "Redundant data risk",
-          "Stronger referential integrity"
-        ],
-        [
-          "Typical Use",
-          "Enterprise data marts, Power BI",
-          "Highly governed shared dimensions"
-        ]
+        ["Normalization", "Denormalized dimensions", "Normalized dimensions"],
+        ["Join Count", "Fewer joins", "More joins"],
+        ["Query Complexity", "Simpler SQL", "More complex SQL"],
+        ["Storage", "Higher (duplicate text)", "Lower (no duplicates)"],
+        ["Query Performance", "Faster for most reports", "Can be slower due to joins"],
+        ["ETL Complexity", "Simpler load process", "More complex due to multiple tables"],
+        ["Data Integrity", "Redundant data risk", "Stronger referential integrity"],
+        ["Typical Use", "Enterprise data marts, Power BI", "Highly governed shared dimensions"]
       ]
     },
     {

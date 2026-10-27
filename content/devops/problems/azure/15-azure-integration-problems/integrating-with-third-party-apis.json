@@ -94,22 +94,14 @@
           {
             "title": "Asynchronous queue decoupling",
             "description": "Publish a request, process later",
-            "pros": [
-              "Vendor outage is invisible to users",
-              "Natural retry and backpressure"
-            ],
-            "cons": [
-              "Only works when a delayed result is acceptable",
-              "Adds eventual consistency"
-            ],
+            "pros": ["Vendor outage is invisible to users", "Natural retry and backpressure"],
+            "cons": ["Only works when a delayed result is acceptable", "Adds eventual consistency"],
             "tags": ["Non-interactive flows"]
           },
           {
             "title": "Direct synchronous call",
             "description": "Call the vendor inline, no policy",
-            "pros": [
-              "Simplest code"
-            ],
+            "pros": ["Simplest code"],
             "cons": [
               "Vendor incident becomes your incident",
               "Thread pool exhaustion on hangs",

@@ -1,7 +1,7 @@
-import { notFound } from 'next/navigation';
-import Link from 'next/link';
-import { ArrowLeft, ArrowRight, Clock, BookOpen } from 'lucide-react';
-import type { Metadata } from 'next';
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { ArrowLeft, ArrowRight, Clock, BookOpen } from "lucide-react";
+import type { Metadata } from "next";
 import {
   getCourseBySlug,
   getModulesForCourse,
@@ -10,12 +10,12 @@ import {
   getProblemCourses,
   getCourseCategory,
   toLessonNavItem,
-} from '@/lib/content';
-import { buildModuleMetadata } from '@/lib/seo';
-import { Breadcrumbs } from '@/components/layout/Breadcrumbs';
-import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
-import { LessonCard } from '@/components/course/LessonCard';
-import { formatHours, pluralize } from '@/lib/utils';
+} from "@/lib/content";
+import { buildModuleMetadata } from "@/lib/seo";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { DifficultyBadge } from "@/components/ui/DifficultyBadge";
+import { LessonCard } from "@/components/course/LessonCard";
+import { formatHours, pluralize } from "@/lib/utils";
 
 interface Params {
   params: Promise<{ category: string; courseSlug: string; moduleSlug: string }>;
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const resolvedParams = await params;
   const { category, courseSlug, moduleSlug } = resolvedParams;
   const course = getCourseBySlug(courseSlug);
-  if (!course || course.category !== 'problems') return {};
+  if (!course || course.category !== "problems") return {};
   if (category !== getCourseCategory(courseSlug)) return {};
   // Scope the lookup to the course so a module slug belonging to another
   // course cannot produce metadata for a page that will 404.
@@ -56,14 +56,14 @@ export default async function ProblemsModuleDetailPage({ params }: Params) {
   const category = resolvedParams?.category;
   const courseSlug = resolvedParams?.courseSlug;
   const moduleSlug = resolvedParams?.moduleSlug;
-  
+
   if (!category || !courseSlug || !moduleSlug) {
     notFound();
   }
   const course = getCourseBySlug(courseSlug);
   const courseModules = getModulesForCourse(courseSlug);
   const mod = courseModules.find((m) => m.slug === moduleSlug);
-  if (!course || !mod || course.category !== 'problems') notFound();
+  if (!course || !mod || course.category !== "problems") notFound();
 
   // Validate category matches
   const expectedCategory = getCourseCategory(courseSlug);
@@ -78,7 +78,7 @@ export default async function ProblemsModuleDetailPage({ params }: Params) {
     <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6">
       <Breadcrumbs
         items={[
-          { label: 'Problems', href: `/${category}/problems` },
+          { label: "Problems", href: `/${category}/problems` },
           { label: course.title, href: `/${category}/problems/${courseSlug}` },
           { label: mod.title },
         ]}
@@ -88,7 +88,9 @@ export default async function ProblemsModuleDetailPage({ params }: Params) {
       {/* Header */}
       <div className="mb-8">
         <div className="mb-3 flex items-center gap-3">
-          <span className="text-4xl" aria-hidden="true">{mod.icon}</span>
+          <span className="text-4xl" aria-hidden="true">
+            {mod.icon}
+          </span>
           <div>
             <div className="mt-1 flex flex-wrap gap-2">
               <DifficultyBadge difficulty={mod.difficulty} size="md" />
@@ -107,7 +109,7 @@ export default async function ProblemsModuleDetailPage({ params }: Params) {
         <div className="flex flex-wrap items-center gap-4 text-sm text-fg-muted">
           <span className="flex items-center gap-1">
             <BookOpen className="h-4 w-4" aria-hidden="true" />
-            {pluralize(lessons.length, 'problem')}
+            {pluralize(lessons.length, "problem")}
           </span>
           <span className="flex items-center gap-1">
             <Clock className="h-4 w-4" aria-hidden="true" />
@@ -147,7 +149,7 @@ export default async function ProblemsModuleDetailPage({ params }: Params) {
       {/* Lessons */}
       <div className="mb-10">
         <h2 className="mb-4 text-xl font-bold text-fg-default">
-          {lessons.length > 0 ? `${lessons.length} Problems` : 'Problems'}
+          {lessons.length > 0 ? `${lessons.length} Problems` : "Problems"}
         </h2>
 
         {lessons.length > 0 ? (

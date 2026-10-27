@@ -27,7 +27,9 @@
     },
     {
       "type": "paragraph",
-      "data": { "text": "AWS runs in regions worldwide. Each region contains multiple availability zones for high availability." }
+      "data": {
+        "text": "AWS runs in regions worldwide. Each region contains multiple availability zones for high availability."
+      }
     },
     {
       "type": "bullet-list",
@@ -322,7 +324,9 @@
     },
     {
       "type": "paragraph",
-      "data": { "text": "AWS secures the cloud infrastructure. You secure your data, applications, and access controls." }
+      "data": {
+        "text": "AWS secures the cloud infrastructure. You secure your data, applications, and access controls."
+      }
     },
     {
       "type": "bullet-list",
@@ -335,7 +339,12 @@
       "type": "bullet-list",
       "data": {
         "title": "Your Responsibility",
-        "items": ["Data and encryption", "IAM and access management", "Operating system and applications", "Network configurations"]
+        "items": [
+          "Data and encryption",
+          "IAM and access management",
+          "Operating system and applications",
+          "Network configurations"
+        ]
       }
     },
     {

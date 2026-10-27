@@ -32,31 +32,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Target",
-          "Runtime",
-          "Cold start",
-          "Best for"
-        ],
+        "headers": ["Target", "Runtime", "Cold start", "Best for"],
         "rows": [
-          [
-            "Node.js Server",
-            "Node",
-            "Higher",
-            "Full API compatibility and complex backends"
-          ],
-          [
-            "Edge Runtime",
-            "V8 isolates",
-            "Lower",
-            "Low-latency responses and global traffic"
-          ],
-          [
-            "Static Export",
-            "CDN",
-            "Instant",
-            "Marketing pages, docs, and blogs"
-          ]
+          ["Node.js Server", "Node", "Higher", "Full API compatibility and complex backends"],
+          ["Edge Runtime", "V8 isolates", "Lower", "Low-latency responses and global traffic"],
+          ["Static Export", "CDN", "Instant", "Marketing pages, docs, and blogs"]
         ]
       }
     },
@@ -118,7 +98,10 @@
       }
     }
   ],
-  "relatedLessons": ["edge-runtime-vs-node-runtime", "route-handlers-and-backend-for-frontend-patterns"],
+  "relatedLessons": [
+    "edge-runtime-vs-node-runtime",
+    "route-handlers-and-backend-for-frontend-patterns"
+  ],
   "furtherReading": [
     {
       "title": "Deployment",

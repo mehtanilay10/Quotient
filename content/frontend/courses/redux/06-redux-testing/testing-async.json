@@ -8,14 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "testing",
-    "async",
-    "thunks",
-    "api",
-    "mocking"
-  ],
+  "tags": ["redux", "testing", "async", "thunks", "api", "mocking"],
   "blocks": [
     {
       "type": "paragraph",

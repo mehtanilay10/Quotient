@@ -6,10 +6,7 @@
   "description": "Idempotent scripts, expand-and-contract, zero-downtime ordering, and rollback strategy.",
   "order": 4,
   "difficulty": "advanced",
-  "tags": [
-    "ef-core",
-    "advanced"
-  ],
+  "tags": ["ef-core", "advanced"],
   "blocks": [
     {
       "type": "paragraph",
@@ -123,10 +120,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "code-first-db-first",
-    "optimistic-concurrency"
-  ],
+  "relatedLessons": ["code-first-db-first", "optimistic-concurrency"],
   "furtherReading": [
     {
       "title": "EF Core migrations in production",

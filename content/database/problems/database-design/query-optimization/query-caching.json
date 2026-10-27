@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Query caching avoids repeated computation by storing result sets or precomputed aggregates. Choosing the right cache layer and invalidation strategy is essential for data freshness." }
+      "data": {
+        "text": "Query caching avoids repeated computation by storing result sets or precomputed aggregates. Choosing the right cache layer and invalidation strategy is essential for data freshness."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,12 @@
       "type": "bullet-list",
       "data": {
         "title": "Options",
-        "items": ["Database buffer cache: automatic page cache", "Query result cache: application or ORM level", "Materialized views: database-managed snapshots", "External cache: Redis or Memcached"]
+        "items": [
+          "Database buffer cache: automatic page cache",
+          "Query result cache: application or ORM level",
+          "Materialized views: database-managed snapshots",
+          "External cache: Redis or Memcached"
+        ]
       }
     },
     {
@@ -52,16 +59,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "tip", "title": "Tip", "text": "Prefer time-based invalidation for slowly changing dimensions. For frequently updated data, use event-driven invalidation or short TTLs." }
+      "data": {
+        "variant": "tip",
+        "title": "Tip",
+        "text": "Prefer time-based invalidation for slowly changing dimensions. For frequently updated data, use event-driven invalidation or short TTLs."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "Is query caching always good?", "answer": "No. Caching adds complexity and risk of stale data. Cache only proven expensive queries." },
-          { "question": "When should I use materialized views?", "answer": "For expensive aggregations over large tables where near-real-time freshness is acceptable." },
-          { "question": "How do I invalidate caches safely?", "answer": "Use write-through or cache-aside patterns. Invalidate on data changes, not on a timer." }
+          {
+            "question": "Is query caching always good?",
+            "answer": "No. Caching adds complexity and risk of stale data. Cache only proven expensive queries."
+          },
+          {
+            "question": "When should I use materialized views?",
+            "answer": "For expensive aggregations over large tables where near-real-time freshness is acceptable."
+          },
+          {
+            "question": "How do I invalidate caches safely?",
+            "answer": "Use write-through or cache-aside patterns. Invalidate on data changes, not on a timer."
+          }
         ]
       }
     },
@@ -69,7 +89,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Cache expensive repeated queries", "Use materialized views for aggregations", "Plan invalidation before caching", "Prefer external caches for shared data"],
+        "points": [
+          "Cache expensive repeated queries",
+          "Use materialized views for aggregations",
+          "Plan invalidation before caching",
+          "Prefer external caches for shared data"
+        ],
         "takeaway": "Query caching trades freshness for speed. Match the cache strategy to the data volatility and query cost."
       }
     }

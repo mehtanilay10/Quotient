@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "prompting",
-    "debugging",
-    "errors",
-    "root-cause"
-  ],
+  "tags": ["prompting", "debugging", "errors", "root-cause"],
   "blocks": [
     {
       "type": "heading",
@@ -178,10 +173,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "basic-prompting-for-code",
-    "advanced-prompting-patterns"
-  ],
+  "relatedLessons": ["basic-prompting-for-code", "advanced-prompting-patterns"],
   "relatedGlossaryTerms": [],
   "courseSlug": "codex"
 }

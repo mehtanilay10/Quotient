@@ -12,19 +12,23 @@
   "blocks": [
     {
       "type": "heading",
-      "data": {"level": 2, "text": "What are Roslyn Analyzers?"}
+      "data": { "level": 2, "text": "What are Roslyn Analyzers?" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Roslyn Analyzers are NuGet packages that inspect your code during compilation and report diagnostics. They can warn, suggest, or even fix code issues automatically."}
+      "data": {
+        "text": "Roslyn Analyzers are NuGet packages that inspect your code during compilation and report diagnostics. They can warn, suggest, or even fix code issues automatically."
+      }
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Built-in Analyzers"}
+      "data": { "level": 2, "text": "Built-in Analyzers" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "The .NET SDK ships with analyzers in `Microsoft.CodeAnalysis.NetAnalyzers` and `Microsoft.CodeAnalysis.CSharp.NetAnalyzers`."}
+      "data": {
+        "text": "The .NET SDK ships with analyzers in `Microsoft.CodeAnalysis.NetAnalyzers` and `Microsoft.CodeAnalysis.CSharp.NetAnalyzers`."
+      }
     },
     {
       "type": "example",
@@ -36,11 +40,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Configuring Analyzers"}
+      "data": { "level": 2, "text": "Configuring Analyzers" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Analyzers can be configured in the `.editorconfig` file or `Directory.Build.props`."}
+      "data": {
+        "text": "Analyzers can be configured in the `.editorconfig` file or `Directory.Build.props`."
+      }
     },
     {
       "type": "example",
@@ -52,11 +58,13 @@
     },
     {
       "type": "heading",
-      "data": {"level": 2, "text": "Code Fix Providers"}
+      "data": { "level": 2, "text": "Code Fix Providers" }
     },
     {
       "type": "paragraph",
-      "data": {"text": "Some analyzers include code fix providers that automatically fix issues. You can trigger them with the lightbulb in Visual Studio or Rider."}
+      "data": {
+        "text": "Some analyzers include code fix providers that automatically fix issues. You can trigger them with the lightbulb in Visual Studio or Rider."
+      }
     },
     {
       "type": "example",

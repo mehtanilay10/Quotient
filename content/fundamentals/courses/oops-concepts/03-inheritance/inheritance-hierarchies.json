@@ -7,10 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "oop",
-    "hierarchies"
-  ],
+  "tags": ["oop", "hierarchies"],
   "blocks": [
     {
       "type": "paragraph",
@@ -48,8 +45,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sealed-classes"
-  ],
+  "relatedLessons": ["sealed-classes"],
   "courseSlug": "oops-concepts"
 }

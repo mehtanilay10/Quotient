@@ -8,12 +8,7 @@
   "order": 17,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "arrays",
-    "two-pointers",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "two-pointers", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -99,33 +94,16 @@
           {
             "title": "Counting Sort",
             "description": "Count, then overwrite",
-            "pros": [
-              "Very simple"
-            ],
-            "cons": [
-              "Two passes"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space"
-            ]
+            "pros": ["Very simple"],
+            "cons": ["Two passes"],
+            "tags": ["O(n) time", "O(1) space"]
           },
           {
             "title": "Dutch National Flag",
             "description": "Three-way partition in one pass",
-            "pros": [
-              "Single pass",
-              "O(1) space",
-              "Recommended"
-            ],
-            "cons": [
-              "Pointer logic"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["Single pass", "O(1) space", "Recommended"],
+            "cons": ["Pointer logic"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

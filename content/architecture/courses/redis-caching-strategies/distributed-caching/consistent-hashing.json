@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "redis",
-    "consistent-hashing",
-    "sharding",
-    "distributed-systems"
-  ],
+  "tags": ["redis", "consistent-hashing", "sharding", "distributed-systems"],
   "blocks": [
     {
       "type": "paragraph",
@@ -101,32 +96,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "Modular Hash Keys Moved",
-          "Consistent Hash Keys Moved"
-        ],
+        "headers": ["Scenario", "Modular Hash Keys Moved", "Consistent Hash Keys Moved"],
         "rows": [
-          [
-            "Add 1 node to 10",
-            "~90%",
-            "~10%"
-          ],
-          [
-            "Remove 1 node from 10",
-            "~90%",
-            "~10%"
-          ],
-          [
-            "Add 1 node to 100",
-            "~99%",
-            "~1%"
-          ],
-          [
-            "Node failure",
-            "100% (if single node)",
-            "Only keys on failed node"
-          ]
+          ["Add 1 node to 10", "~90%", "~10%"],
+          ["Remove 1 node from 10", "~90%", "~10%"],
+          ["Add 1 node to 100", "~99%", "~1%"],
+          ["Node failure", "100% (if single node)", "Only keys on failed node"]
         ]
       }
     },

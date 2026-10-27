@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "file-upload",
-    "drag-drop",
-    "upload",
-    "react"
-  ],
+  "tags": ["file-upload", "drag-drop", "upload", "react"],
   "prerequisites": [],
   "relatedLessons": [],
   "furtherReading": [],

@@ -8,15 +8,7 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "azure",
-    "azure",
-    "messaging",
-    "events",
-    "event-grid",
-    "azure-functions",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "messaging", "events", "event-grid", "azure-functions", "developer"],
   "blocks": [
     {
       "type": "heading",

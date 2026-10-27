@@ -8,11 +8,7 @@
   "order": 15,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "strings",
-    "medium"
-  ],
+  "tags": ["csharp", "strings", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -86,34 +82,16 @@
           {
             "title": "Recursive",
             "description": "Build from previous term",
-            "pros": [
-              "Clear recursion",
-              "Matches definition"
-            ],
-            "cons": [
-              "Stack overhead",
-              "May overflow for large n"
-            ],
-            "tags": [
-              "O(n * m) time",
-              "O(n) space"
-            ]
+            "pros": ["Clear recursion", "Matches definition"],
+            "cons": ["Stack overhead", "May overflow for large n"],
+            "tags": ["O(n * m) time", "O(n) space"]
           },
           {
             "title": "Iterative",
             "description": "Loop n times",
-            "pros": [
-              "No recursion",
-              "Predictable memory"
-            ],
-            "cons": [
-              "Slightly more code"
-            ],
-            "tags": [
-              "O(n * m) time",
-              "O(m) space",
-              "Recommended"
-            ]
+            "pros": ["No recursion", "Predictable memory"],
+            "cons": ["Slightly more code"],
+            "tags": ["O(n * m) time", "O(m) space", "Recommended"]
           }
         ]
       }

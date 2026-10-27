@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 8,
-  "tags": [
-    "testing",
-    "naming",
-    "dotnet"
-  ],
+  "tags": ["testing", "naming", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,9 +36,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "arrange-act-assert"
-  ],
+  "relatedLessons": ["arrange-act-assert"],
   "furtherReading": [],
   "courseSlug": "unit-testing-dotnet"
 }

@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "node-cache",
-    "in-memory",
-    "nodejs",
-    "caching"
-  ],
+  "tags": ["node-cache", "in-memory", "nodejs", "caching"],
   "blocks": [
     {
       "type": "paragraph",

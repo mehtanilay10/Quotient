@@ -1,9 +1,9 @@
 "use client";
 
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import { GitFork, MonitorPlay, User, ExternalLink } from 'lucide-react';
-import { Logo } from '@/components/ui/Logo';
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { GitFork, MonitorPlay, User, ExternalLink } from "lucide-react";
+import { Logo } from "@/components/ui/Logo";
 
 interface FooterLink {
   href: string;
@@ -18,21 +18,21 @@ interface FooterLink {
  */
 const EXTERNAL_LINKS: FooterLink[] = [
   {
-    href: 'https://github.com/mehtanilay10/quotient/',
-    label: 'GitHub',
-    hint: 'Source code',
+    href: "https://github.com/mehtanilay10/quotient/",
+    label: "GitHub",
+    hint: "Source code",
     icon: <GitFork className="h-4 w-4" aria-hidden="true" />,
   },
   {
-    href: 'https://mnilay.com/',
-    label: 'Author',
-    hint: 'Nilay Mehta',
+    href: "https://mnilay.com/",
+    label: "Author",
+    hint: "Nilay Mehta",
     icon: <User className="h-4 w-4" aria-hidden="true" />,
   },
   {
-    href: 'https://www.youtube.com/c/TutorialsTeam',
-    label: 'YouTube',
-    hint: 'Video tutorials',
+    href: "https://www.youtube.com/c/TutorialsTeam",
+    label: "YouTube",
+    hint: "Video tutorials",
     icon: <MonitorPlay className="h-4 w-4" aria-hidden="true" />,
   },
 ];
@@ -58,13 +58,13 @@ export function Footer() {
               <span className="text-base">Quotient</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-fg-muted">
-              Structured courses, worked coding problems, cheat sheets, and practical
-              questions — open, free, and built for software engineers at every stage.
+              Structured courses, worked coding problems, cheat sheets, and practical questions —
+              open, free, and built for software engineers at every stage.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-fg-muted">
               Learn the fundamentals at your own pace, grow the skills that move your career
-              forward, and keep every lesson, note, and bookmark in one place — no coding
-              experience required to start, and no account required to read.
+              forward, and keep every lesson, note, and bookmark in one place — no coding experience
+              required to start, and no account required to read.
             </p>
           </div>
 
@@ -81,7 +81,9 @@ export function Footer() {
                   >
                     <span aria-hidden="true">{link.icon}</span>
                     <span className="font-medium">{link.label}</span>
-                    <span className="text-xs text-fg-subtle group-hover:text-fg-muted">{link.hint}</span>
+                    <span className="text-xs text-fg-subtle group-hover:text-fg-muted">
+                      {link.hint}
+                    </span>
                     <ExternalLink className="h-3 w-3 text-fg-subtle" aria-hidden="true" />
                   </a>
                 </li>
@@ -91,7 +93,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-border pt-6 text-xs text-fg-subtle">
-          © {year ?? '2026'} Quotient. Open knowledge for everyone.
+          © {year ?? "2026"} Quotient. Open knowledge for everyone.
         </div>
       </div>
     </footer>

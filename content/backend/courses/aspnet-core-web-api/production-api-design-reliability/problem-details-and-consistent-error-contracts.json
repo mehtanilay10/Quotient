@@ -153,10 +153,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "api-versioning-and-compatibility",
-    "pagination-filtering-and-sorting-design"
-  ],
+  "relatedLessons": ["api-versioning-and-compatibility", "pagination-filtering-and-sorting-design"],
   "furtherReading": [
     {
       "title": "RFC 7807: Problem Details for HTTP APIs",

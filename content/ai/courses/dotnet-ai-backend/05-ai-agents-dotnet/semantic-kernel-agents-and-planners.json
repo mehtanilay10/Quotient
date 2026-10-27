@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 26,
-  "tags": [
-    "semantic-kernel",
-    "agents",
-    "planners",
-    "csharp"
-  ],
+  "tags": ["semantic-kernel", "agents", "planners", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,10 +55,7 @@
       "expectedOutcome": "You should see a readable plan, correct tool selection, and accurate final answers."
     }
   ],
-  "relatedLessons": [
-    "agent-architecture-patterns",
-    "tool-use-and-function-calling"
-  ],
+  "relatedLessons": ["agent-architecture-patterns", "tool-use-and-function-calling"],
   "technology": null,
   "furtherReading": [
     {

@@ -145,6 +145,10 @@
   ],
   "relatedLessons": ["pre-commit-hooks", "commit-msg-hooks"],
   "furtherReading": [
-    { "title": "Git Pre-Push Hook", "url": "https://git-scm.com/docs/githooks#_pre_push", "type": "article" }
+    {
+      "title": "Git Pre-Push Hook",
+      "url": "https://git-scm.com/docs/githooks#_pre_push",
+      "type": "article"
+    }
   ]
 }

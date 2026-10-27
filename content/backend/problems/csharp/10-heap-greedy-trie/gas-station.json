@@ -17,7 +17,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "There are `n` gas stations in a circle. Station `i` gives `gas[i]` fuel and costs `cost[i]` to reach station `i + 1`. Starting with an empty tank, return the index of the starting station that lets you complete the circuit, or `-1` if none exists. If a solution exists, it is unique."}
+        "text": "There are `n` gas stations in a circle. Station `i` gives `gas[i]` fuel and costs `cost[i]` to reach station `i + 1`. Starting with an empty tank, return the index of the starting station that lets you complete the circuit, or `-1` if none exists. If a solution exists, it is unique."
+      }
     },
     {
       "type": "heading",
@@ -36,7 +37,8 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Simulate the full circuit from each candidate start. O(n²), and it repeats almost identical work for adjacent starts."}
+        "text": "Simulate the full circuit from each candidate start. O(n²), and it repeats almost identical work for adjacent starts."
+      }
     },
     {
       "type": "example",

@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "asp.net core",
-    "cache-invalidation",
-    "tags",
-    "redis"
-  ],
+  "tags": ["asp.net core", "cache-invalidation", "tags", "redis"],
   "blocks": [
     {
       "type": "heading",

@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "order-by",
-    "sorting",
-    "nulls-last",
-    "collations"
-  ],
+  "tags": ["order-by", "sorting", "nulls-last", "collations"],
   "blocks": [
     {
       "type": "paragraph",
@@ -63,8 +58,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "select-statement",
-    "limit-offset-fetch"
-  ]
+  "relatedLessons": ["select-statement", "limit-offset-fetch"]
 }

@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "middleware",
-    "custom",
-    "logging"
-  ],
+  "tags": ["web-api", "middleware", "custom", "logging"],
   "blocks": [
     {
       "type": "paragraph",
@@ -81,37 +76,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Registration",
-          "DI Support",
-          "Use Case"
-        ],
+        "headers": ["Pattern", "Registration", "DI Support", "Use Case"],
         "rows": [
-          [
-            "Inline",
-            "app.Use(async (ctx, next) => { ... })",
-            "No",
-            "Quick inline logic"
-          ],
-          [
-            "Class-based",
-            "app.UseMiddleware<MyMiddleware>()",
-            "Yes",
-            "Reusable middleware"
-          ],
+          ["Inline", "app.Use(async (ctx, next) => { ... })", "No", "Quick inline logic"],
+          ["Class-based", "app.UseMiddleware<MyMiddleware>()", "Yes", "Reusable middleware"],
           [
             "Factory-based",
             "app.UseMiddleware<FactoryMiddleware>()",
             "Yes",
             "Per-request dependencies"
           ],
-          [
-            "Convention",
-            "app.UseRequestTiming()",
-            "Yes",
-            "Clean API surface"
-          ]
+          ["Convention", "app.UseRequestTiming()", "Yes", "Clean API surface"]
         ]
       }
     },
@@ -123,42 +98,20 @@
           {
             "title": "Inline Delegate",
             "description": "Anonymous middleware added directly in Program.cs.",
-            "pros": [
-              "Fast to write",
-              "No extra files",
-              "Good for simple logic"
-            ],
-            "cons": [
-              "Harder to test",
-              "Limited DI",
-              "Can clutter Program.cs"
-            ]
+            "pros": ["Fast to write", "No extra files", "Good for simple logic"],
+            "cons": ["Harder to test", "Limited DI", "Can clutter Program.cs"]
           },
           {
             "title": "Class-based Middleware",
             "description": "Separate class implementing InvokeAsync or Invoke.",
-            "pros": [
-              "Testable",
-              "Full DI support",
-              "Reusable across projects"
-            ],
-            "cons": [
-              "More boilerplate",
-              "Requires separate files"
-            ]
+            "pros": ["Testable", "Full DI support", "Reusable across projects"],
+            "cons": ["More boilerplate", "Requires separate files"]
           },
           {
             "title": "Factory-based Middleware",
             "description": "Middleware resolved from DI with per-request or scoped services.",
-            "pros": [
-              "Access to scoped services",
-              "Clean separation",
-              "Best for complex logic"
-            ],
-            "cons": [
-              "Most verbose",
-              "Requires IMiddleware interface"
-            ]
+            "pros": ["Access to scoped services", "Clean separation", "Best for complex logic"],
+            "cons": ["Most verbose", "Requires IMiddleware interface"]
           }
         ]
       }

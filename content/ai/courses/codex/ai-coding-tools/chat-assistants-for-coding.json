@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "chatgpt",
-    "claude",
-    "web",
-    "architecture"
-  ],
+  "tags": ["chatgpt", "claude", "web", "architecture"],
   "blocks": [
     {
       "type": "heading",
@@ -85,15 +80,8 @@
           {
             "title": "ChatGPT (OpenAI)",
             "description": "Broad ecosystem with Code Interpreter, Advanced Data Analysis, and a wide range of plugins. Strong for data tasks and rapid prototyping.",
-            "pros": [
-              "Code Interpreter for data tasks",
-              "Wide plugin ecosystem",
-              "Widely adopted"
-            ],
-            "cons": [
-              "Shorter free context",
-              "Code quality can be inconsistent across versions"
-            ]
+            "pros": ["Code Interpreter for data tasks", "Wide plugin ecosystem", "Widely adopted"],
+            "cons": ["Shorter free context", "Code quality can be inconsistent across versions"]
           }
         ]
       }
@@ -199,12 +187,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "github-copilot-guide",
-    "claude-for-code"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model"
-  ],
+  "relatedLessons": ["github-copilot-guide", "claude-for-code"],
+  "relatedGlossaryTerms": ["large-language-model"],
   "courseSlug": "codex"
 }

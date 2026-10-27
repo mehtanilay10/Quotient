@@ -7,11 +7,7 @@
   "order": 8,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "differential-backup",
-    "BACKUP-DATABASE",
-    "DIFFERENTIAL"
-  ],
+  "tags": ["differential-backup", "BACKUP-DATABASE", "DIFFERENTIAL"],
   "blocks": [
     {
       "type": "heading",

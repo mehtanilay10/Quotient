@@ -6,12 +6,7 @@
   "description": "Compare secure JWT storage strategies for React apps.",
   "order": 2,
   "difficulty": "intermediate",
-  "tags": [
-    "jwt",
-    "storage",
-    "security",
-    "react"
-  ],
+  "tags": ["jwt", "storage", "security", "react"],
   "blocks": [
     {
       "type": "paragraph",

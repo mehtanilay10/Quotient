@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "research",
-    "perplexity",
-    "sources",
-    "fact-checking"
-  ],
+  "tags": ["research", "perplexity", "sources", "fact-checking"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,10 +82,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Risky behaviour",
-          "Safe practice"
-        ],
+        "headers": ["Risky behaviour", "Safe practice"],
         "rows": [
           [
             "Using AI-generated citations without checking",
@@ -168,35 +160,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Evidence tier",
-          "Typical source",
-          "Appropriate use"
-        ],
+        "headers": ["Evidence tier", "Typical source", "Appropriate use"],
         "rows": [
-          [
-            "Tier 1",
-            "Model summary or uncited answer",
-            "Brainstorming only"
-          ],
-          [
-            "Tier 2",
-            "Cited web sources",
-            "Early framing and hypothesis building"
-          ],
-          [
-            "Tier 3",
-            "Primary documents and official datasets",
-            "Decision-grade conclusions"
-          ]
+          ["Tier 1", "Model summary or uncited answer", "Brainstorming only"],
+          ["Tier 2", "Cited web sources", "Early framing and hypothesis building"],
+          ["Tier 3", "Primary documents and official datasets", "Decision-grade conclusions"]
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "ai-hallucination-deep-dive",
-    "evaluating-ai-output"
-  ],
+  "relatedLessons": ["ai-hallucination-deep-dive", "evaluating-ai-output"],
   "furtherReading": [
     {
       "title": "Perplexity AI",

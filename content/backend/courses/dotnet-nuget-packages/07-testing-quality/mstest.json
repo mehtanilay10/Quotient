@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "testing",
-    "mstest",
-    "dotnet",
-    "visualstudio"
-  ],
+  "tags": ["testing", "mstest", "dotnet", "visualstudio"],
   "blocks": [
     {
       "type": "heading",
@@ -122,9 +117,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "xunit",
-    "nunit"
-  ],
+  "relatedLessons": ["xunit", "nunit"],
   "courseSlug": "dotnet-nuget-packages"
 }

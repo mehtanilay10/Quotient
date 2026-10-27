@@ -7,20 +7,11 @@
   "difficulty": "intermediate",
   "estimatedHours": 2.5,
   "icon": "🗄️",
-  "tags": [
-    "rag",
-    "retrieval",
-    "memory",
-    "knowledge-bases"
-  ],
-  "lessonSlugs": [
-    "rag-explained"
-  ],
+  "tags": ["rag", "retrieval", "memory", "knowledge-bases"],
+  "lessonSlugs": ["rag-explained"],
   "isOptional": true,
   "skipLabel": "Skip if you only use general-purpose chatbots",
-  "prerequisites": [
-    "prompting-basics"
-  ],
+  "prerequisites": ["prompting-basics"],
   "whatYouLearn": [
     "What RAG (Retrieval-Augmented Generation) is and why it matters",
     "How AI memory works conceptually",

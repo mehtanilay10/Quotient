@@ -138,6 +138,10 @@
   ],
   "relatedLessons": ["git-objects-blobs-trees-commits", "git-index-staging-area"],
   "furtherReading": [
-    { "title": "Git Repository Layout", "url": "https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain", "type": "article" }
+    {
+      "title": "Git Repository Layout",
+      "url": "https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain",
+      "type": "article"
+    }
   ]
 }

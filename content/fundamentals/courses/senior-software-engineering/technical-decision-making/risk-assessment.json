@@ -180,11 +180,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "evaluating-technical-options",
-    "trade-off-analysis",
-    "stakeholder-alignment"
-  ],
+  "relatedLessons": ["evaluating-technical-options", "trade-off-analysis", "stakeholder-alignment"],
   "furtherReading": [
     {
       "type": "article",

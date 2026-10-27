@@ -7,11 +7,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 26,
-  "tags": [
-    "filtered-index",
-    "non-clustered",
-    "predicate"
-  ],
+  "tags": ["filtered-index", "non-clustered", "predicate"],
   "blocks": [
     {
       "type": "heading",

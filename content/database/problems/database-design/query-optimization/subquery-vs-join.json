@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "Correlated subqueries run once per outer row, often causing N+1-like behavior at the SQL level. Rewriting them as JOINs or using window functions can dramatically improve performance." }
+      "data": {
+        "text": "Correlated subqueries run once per outer row, often causing N+1-like behavior at the SQL level. Rewriting them as JOINs or using window functions can dramatically improve performance."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,12 @@
       "type": "bullet-list",
       "data": {
         "title": "Subquery anti-patterns",
-        "items": ["Correlated subquery in SELECT list", "Subquery in WHERE with IN and EXISTS", "Nested subqueries with aggregates", "Subqueries that could be JOINs"]
+        "items": [
+          "Correlated subquery in SELECT list",
+          "Subquery in WHERE with IN and EXISTS",
+          "Nested subqueries with aggregates",
+          "Subqueries that could be JOINs"
+        ]
       }
     },
     {
@@ -61,16 +68,29 @@
     },
     {
       "type": "callout",
-      "data": { "variant": "tip", "title": "Tip", "text": "Window functions often replace both correlated subqueries and complex self-joins for ranking and running totals." }
+      "data": {
+        "variant": "tip",
+        "title": "Tip",
+        "text": "Window functions often replace both correlated subqueries and complex self-joins for ranking and running totals."
+      }
     },
     {
       "type": "faq-block",
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "Are subqueries always slow?", "answer": "No. Non-correlated subqueries can be materialized efficiently. Correlated subqueries are the main concern." },
-          { "question": "When should I use EXISTS?", "answer": "Use EXISTS when you only need to check existence and do not need columns from the subquery." },
-          { "question": "Can the optimizer rewrite subqueries?", "answer": "Some databases transform subqueries to joins automatically, but do not rely on it." }
+          {
+            "question": "Are subqueries always slow?",
+            "answer": "No. Non-correlated subqueries can be materialized efficiently. Correlated subqueries are the main concern."
+          },
+          {
+            "question": "When should I use EXISTS?",
+            "answer": "Use EXISTS when you only need to check existence and do not need columns from the subquery."
+          },
+          {
+            "question": "Can the optimizer rewrite subqueries?",
+            "answer": "Some databases transform subqueries to joins automatically, but do not rely on it."
+          }
         ]
       }
     },
@@ -78,7 +98,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Correlated subqueries execute per outer row", "Rewrite as JOINs or window functions", "Use EXISTS for boolean checks", "Verify with EXPLAIN ANALYZE"],
+        "points": [
+          "Correlated subqueries execute per outer row",
+          "Rewrite as JOINs or window functions",
+          "Use EXISTS for boolean checks",
+          "Verify with EXPLAIN ANALYZE"
+        ],
         "takeaway": "Subqueries are readable but often expensive. Prefer set-based JOINs and window functions for performance."
       }
     }

@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "triggers",
-    "overview",
-    "DML",
-    "DDL"
-  ],
+  "tags": ["triggers", "overview", "DML", "DDL"],
   "blocks": [
     {
       "type": "heading",

@@ -5,10 +5,7 @@
   "title": "Database Migrations",
   "description": "Understand migrations.",
   "order": 5,
-  "tags": [
-    "ef-core",
-    "migrations"
-  ],
+  "tags": ["ef-core", "migrations"],
   "blocks": [
     {
       "type": "paragraph",

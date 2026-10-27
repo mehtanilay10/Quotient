@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "CI/CD",
-    "canary",
-    "gradual-release",
-    "observability"
-  ],
+  "tags": ["CI/CD", "canary", "gradual-release", "observability"],
   "blocks": [
     {
       "type": "paragraph",

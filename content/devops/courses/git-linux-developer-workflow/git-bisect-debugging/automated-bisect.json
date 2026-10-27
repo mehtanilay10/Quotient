@@ -145,6 +145,10 @@
   ],
   "relatedLessons": ["bisect-fundamentals", "bisect-with-scripts"],
   "furtherReading": [
-    { "title": "Git Bisect Run", "url": "https://git-scm.com/docs/git-bisect#Documentation/git-bisect.txt-ltcommandgt", "type": "article" }
+    {
+      "title": "Git Bisect Run",
+      "url": "https://git-scm.com/docs/git-bisect#Documentation/git-bisect.txt-ltcommandgt",
+      "type": "article"
+    }
   ]
 }

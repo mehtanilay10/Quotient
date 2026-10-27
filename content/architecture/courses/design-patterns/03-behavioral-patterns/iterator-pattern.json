@@ -6,11 +6,7 @@
   "description": "Access elements of a collection sequentially.",
   "order": 4,
   "difficulty": "beginner",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture"],
   "blocks": [
     {
       "type": "paragraph",

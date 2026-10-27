@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "behavioral",
-    "communication",
-    "collaboration",
-    "soft-skills"
-  ],
+  "tags": ["behavioral", "communication", "collaboration", "soft-skills"],
   "technology": "Behavioral",
   "blocks": [
     {
@@ -127,10 +122,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "team-conflict-questions",
-    "time-management-questions"
-  ],
+  "relatedLessons": ["team-conflict-questions", "time-management-questions"],
   "furtherReading": [
     {
       "title": "Made to Stick: Why Some Ideas Survive and Others Die",

@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "medium",
   "estimatedMinutes": 11,
-  "tags": [
-    "csharp",
-    "recursion",
-    "backtracking",
-    "medium"
-  ],
+  "tags": ["csharp", "recursion", "backtracking", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -86,40 +81,21 @@
           {
             "title": "Backtracking + Constraints",
             "description": "Add ( if possible; add ) if it stays valid",
-            "pros": [
-              "No invalid strings generated",
-              "Clean and fast"
-            ],
-            "cons": [
-              "Requires tracking two counters"
-            ],
-            "tags": [
-              "O(4^n / sqrt n) time",
-              "O(n) space",
-              "Recommended"
-            ]
+            "pros": ["No invalid strings generated", "Clean and fast"],
+            "cons": ["Requires tracking two counters"],
+            "tags": ["O(4^n / sqrt n) time", "O(n) space", "Recommended"]
           },
           {
             "title": "Generate & Filter",
             "description": "Build all 2^2n strings, keep valid ones",
-            "pros": [
-              "Conceptually simple"
-            ],
-            "cons": [
-              "Wastes work on invalid strings"
-            ],
-            "tags": [
-              "O(2^2n * n) time"
-            ]
+            "pros": ["Conceptually simple"],
+            "cons": ["Wastes work on invalid strings"],
+            "tags": ["O(2^2n * n) time"]
           }
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "subsets",
-    "permutations",
-    "combination-sum"
-  ],
+  "relatedLessons": ["subsets", "permutations", "combination-sum"],
   "furtherReading": []
 }

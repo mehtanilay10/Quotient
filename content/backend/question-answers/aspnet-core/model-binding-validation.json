@@ -6,10 +6,7 @@
   "description": "Where request data becomes action parameters, how validation runs, and how to extend both.",
   "order": 13,
   "difficulty": "intermediate",
-  "tags": [
-    "aspnet-core",
-    "intermediate"
-  ],
+  "tags": ["aspnet-core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

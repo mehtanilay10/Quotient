@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "capacity",
-    "bandwidth",
-    "estimation",
-    "networking"
-  ],
+  "tags": ["capacity", "bandwidth", "estimation", "networking"],
   "blocks": [
     {
       "type": "paragraph",
@@ -44,32 +39,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Asset",
-          "Avg Size",
-          "Requests per Page"
-        ],
+        "headers": ["Asset", "Avg Size", "Requests per Page"],
         "rows": [
-          [
-            "HTML document",
-            "50 KB",
-            "1"
-          ],
-          [
-            "CSS / JS bundles",
-            "200 KB",
-            "1"
-          ],
-          [
-            "Images (compressed WebP)",
-            "500 KB",
-            "12"
-          ],
-          [
-            "API JSON responses",
-            "20 KB",
-            "15"
-          ]
+          ["HTML document", "50 KB", "1"],
+          ["CSS / JS bundles", "200 KB", "1"],
+          ["Images (compressed WebP)", "500 KB", "12"],
+          ["API JSON responses", "20 KB", "15"]
         ]
       }
     },

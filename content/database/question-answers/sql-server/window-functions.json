@@ -6,11 +6,7 @@
   "description": "ROW_NUMBER, RANK, DENSE_RANK, LAG/LEAD, and aggregates over partitions: what they do, how they differ from GROUP BY, and where they shine.",
   "order": 13,
   "difficulty": "intermediate",
-  "tags": [
-    "sql server",
-    "queries",
-    "intermediate"
-  ],
+  "tags": ["sql server", "queries", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sql-b02",
-    "sql-a01",
-    "sql-i01"
-  ],
+  "relatedLessons": ["sql-b02", "sql-a01", "sql-i01"],
   "furtherReading": [
     {
       "title": "Window functions and window aggregates — Microsoft Learn",

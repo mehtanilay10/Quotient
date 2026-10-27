@@ -6,10 +6,7 @@
   "description": "Understand SQL Server architecture and components.",
   "order": 1,
   "difficulty": "beginner",
-  "tags": [
-    "sql server",
-    "beginner"
-  ],
+  "tags": ["sql server", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,14 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "terraform",
-    "iac",
-    "hcl",
-    "state-management",
-    "modules"
-  ],
+  "tags": ["aws", "terraform", "iac", "hcl", "state-management", "modules"],
   "blocks": [
     {
       "type": "paragraph",

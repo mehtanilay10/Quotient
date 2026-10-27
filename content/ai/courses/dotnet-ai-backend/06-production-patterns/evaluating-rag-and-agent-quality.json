@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 24,
-  "tags": [
-    "evaluation",
-    "rag",
-    "agents",
-    "quality"
-  ],
+  "tags": ["evaluation", "rag", "agents", "quality"],
   "blocks": [
     {
       "type": "paragraph",
@@ -84,10 +79,7 @@
       "takeaway": "If you cannot measure it, you cannot improve it. Build evaluation pipelines early, even when they are simple."
     }
   ],
-  "relatedLessons": [
-    "observability-and-telemetry",
-    "rag-architecture-overview"
-  ],
+  "relatedLessons": ["observability-and-telemetry", "rag-architecture-overview"],
   "technology": null,
   "furtherReading": [
     {

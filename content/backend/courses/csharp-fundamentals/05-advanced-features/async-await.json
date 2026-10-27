@@ -174,18 +174,9 @@
           {
             "title": "Task<TResult>",
             "description": "Reference type. Always heap-allocated. The standard and recommended choice.",
-            "pros": [
-              "Simple and well-understood",
-              "Thread-safe",
-              "Can be awaited multiple times"
-            ],
-            "cons": [
-              "Heap allocation on every call"
-            ],
-            "tags": [
-              "standard",
-              "recommended"
-            ]
+            "pros": ["Simple and well-understood", "Thread-safe", "Can be awaited multiple times"],
+            "cons": ["Heap allocation on every call"],
+            "tags": ["standard", "recommended"]
           },
           {
             "title": "ValueTask<TResult>",
@@ -199,10 +190,7 @@
               "More complex to use correctly",
               "Not thread-safe for multiple awaits"
             ],
-            "tags": [
-              "performance",
-              "advanced"
-            ]
+            "tags": ["performance", "advanced"]
           }
         ]
       }

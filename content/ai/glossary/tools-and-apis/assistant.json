@@ -6,13 +6,6 @@
   "fullDefinition": "An AI assistant is a conversational AI system designed to help with a wide range of tasks — writing, research, analysis, coding, brainstorming — without specializing in any single domain. ChatGPT, Claude, and Gemini are all AI assistants. They differ from copilots (embedded in a specific tool) and agents (which take autonomous actions) in that they primarily respond to individual requests conversationally.",
   "category": "tools-and-apis",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "copilot",
-    "agent",
-    "large-language-model"
-  ],
-  "alsoKnownAs": [
-    "Chatbot",
-    "AI Chatbot"
-  ]
+  "relatedTerms": ["copilot", "agent", "large-language-model"],
+  "alsoKnownAs": ["Chatbot", "AI Chatbot"]
 }

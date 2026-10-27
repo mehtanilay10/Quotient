@@ -167,19 +167,39 @@
           {
             "title": "Vertical scaling",
             "description": "Upgrade a single server to a larger instance type.",
-            "pros": ["Simplest to implement", "No application changes required", "Strong consistency by default"],
-            "cons": ["Hard ceiling on capacity", "Single point of failure", "Expensive at high tiers"]
+            "pros": [
+              "Simplest to implement",
+              "No application changes required",
+              "Strong consistency by default"
+            ],
+            "cons": [
+              "Hard ceiling on capacity",
+              "Single point of failure",
+              "Expensive at high tiers"
+            ]
           },
           {
             "title": "Horizontal scaling",
             "description": "Add more instances behind a load balancer.",
-            "pros": ["Near-limitless scale", "Resilient to instance failure", "Pay for what you use"],
-            "cons": ["Requires stateless design", "Load balancer is a shared dependency", "Can hide inefficient code"]
+            "pros": [
+              "Near-limitless scale",
+              "Resilient to instance failure",
+              "Pay for what you use"
+            ],
+            "cons": [
+              "Requires stateless design",
+              "Load balancer is a shared dependency",
+              "Can hide inefficient code"
+            ]
           },
           {
             "title": "Database sharding",
             "description": "Partition data across multiple database instances.",
-            "pros": ["Massive write scale", "Tenant isolation", "Can use cheaper hardware per shard"],
+            "pros": [
+              "Massive write scale",
+              "Tenant isolation",
+              "Can use cheaper hardware per shard"
+            ],
             "cons": ["Extremely complex", "Cross-shard queries are hard", "Difficult to rebalance"]
           }
         ]

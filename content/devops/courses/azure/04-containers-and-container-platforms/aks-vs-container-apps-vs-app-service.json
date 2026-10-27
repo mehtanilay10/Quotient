@@ -8,13 +8,7 @@
   "order": 14,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "containers",
-    "docker",
-    "aks",
-    "developer"
-  ],
+  "tags": ["azure", "containers", "docker", "aks", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -51,26 +45,13 @@
           {
             "title": "Container Apps",
             "description": "Serverless container platform with Kubernetes underneath.",
-            "pros": [
-              "Serverless scaling",
-              "Dapr built-in",
-              "Scale to zero",
-              "Any container image"
-            ],
-            "cons": [
-              "Limited K8s control",
-              "Newer service",
-              "Fewer networking options"
-            ]
+            "pros": ["Serverless scaling", "Dapr built-in", "Scale to zero", "Any container image"],
+            "cons": ["Limited K8s control", "Newer service", "Fewer networking options"]
           },
           {
             "title": "AKS",
             "description": "Managed Kubernetes cluster with full API access.",
-            "pros": [
-              "Full Kubernetes control",
-              "Huge ecosystem",
-              "Any workload type"
-            ],
+            "pros": ["Full Kubernetes control", "Huge ecosystem", "Any workload type"],
             "cons": [
               "Steep learning curve",
               "Cluster always has a base cost",
@@ -90,42 +71,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Workload",
-          "Best Choice",
-          "Reason"
-        ],
+        "headers": ["Workload", "Best Choice", "Reason"],
         "rows": [
-          [
-            "ASP.NET Core web app",
-            "App Service",
-            "Best developer experience for web apps"
-          ],
-          [
-            "Node.js API",
-            "App Service or Container Apps",
-            "Simple APIs deploy quickly to either"
-          ],
-          [
-            "Microservices with Dapr",
-            "Container Apps",
-            "Dapr integration is built-in"
-          ],
-          [
-            "Complex Kubernetes workloads",
-            "AKS",
-            "Full Kubernetes API access needed"
-          ],
-          [
-            "Event-driven background jobs",
-            "Container Apps",
-            "KEDA scaling from any source"
-          ],
-          [
-            "Existing Helm charts",
-            "AKS",
-            "Direct Kubernetes compatibility"
-          ]
+          ["ASP.NET Core web app", "App Service", "Best developer experience for web apps"],
+          ["Node.js API", "App Service or Container Apps", "Simple APIs deploy quickly to either"],
+          ["Microservices with Dapr", "Container Apps", "Dapr integration is built-in"],
+          ["Complex Kubernetes workloads", "AKS", "Full Kubernetes API access needed"],
+          ["Event-driven background jobs", "Container Apps", "KEDA scaling from any source"],
+          ["Existing Helm charts", "AKS", "Direct Kubernetes compatibility"]
         ]
       }
     },
@@ -140,10 +93,10 @@
     {
       "type": "mermaid",
       "data": {
-          "id": "mermaid-platform-decision",
-          "caption": "Choosing the right Azure compute platform",
-          "definition": "flowchart TD\n    Q1{App Type?}\n    Q1 -->|Web App / API| Q2{Containerized?}\n    Q2 -->|No| AS[App Service]\n    Q2 -->|Yes| Q3{Need Full K8s?}\n    Q3 -->|No| CA[Container Apps]\n    Q3 -->|Yes| AKS[AKS]\n    Q1 -->|Background Job / Worker| Q4{Scale to Zero Needed?}\n    Q4 -->|Yes| CA\n    Q4 -->|No| AKS"
-        }
+        "id": "mermaid-platform-decision",
+        "caption": "Choosing the right Azure compute platform",
+        "definition": "flowchart TD\n    Q1{App Type?}\n    Q1 -->|Web App / API| Q2{Containerized?}\n    Q2 -->|No| AS[App Service]\n    Q2 -->|Yes| Q3{Need Full K8s?}\n    Q3 -->|No| CA[Container Apps]\n    Q3 -->|Yes| AKS[AKS]\n    Q1 -->|Background Job / Worker| Q4{Scale to Zero Needed?}\n    Q4 -->|Yes| CA\n    Q4 -->|No| AKS"
+      }
     },
     {
       "type": "heading",
@@ -155,25 +108,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Responsibility",
-          "App Service",
-          "Container Apps",
-          "AKS"
-        ],
+        "headers": ["Responsibility", "App Service", "Container Apps", "AKS"],
         "rows": [
-          [
-            "Patching the host OS",
-            "Microsoft",
-            "Microsoft",
-            "You (node images)"
-          ],
-          [
-            "Patching the orchestrator",
-            "Microsoft",
-            "Microsoft",
-            "You (cluster upgrades)"
-          ],
+          ["Patching the host OS", "Microsoft", "Microsoft", "You (node images)"],
+          ["Patching the orchestrator", "Microsoft", "Microsoft", "You (cluster upgrades)"],
           [
             "Choosing the runtime",
             "You (supported stacks)",

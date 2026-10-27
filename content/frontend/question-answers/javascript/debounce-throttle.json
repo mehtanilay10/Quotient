@@ -6,11 +6,7 @@
   "description": "Two rate-limiting strategies for high-frequency events: trailing vs leading edges, cancellation, and choosing correctly for search, resize, and scroll.",
   "order": 15,
   "difficulty": "intermediate",
-  "tags": [
-    "javascript",
-    "performance",
-    "intermediate"
-  ],
+  "tags": ["javascript", "performance", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -117,10 +113,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "async-await",
-    "js-i05"
-  ],
+  "relatedLessons": ["async-await", "js-i05"],
   "furtherReading": [
     {
       "title": "Debouncing and Throttling Explained",

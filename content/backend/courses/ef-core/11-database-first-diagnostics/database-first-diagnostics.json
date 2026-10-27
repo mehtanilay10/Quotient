@@ -5,10 +5,7 @@
   "title": "Database-First Approach",
   "description": "Learn database-first approach.",
   "order": 4,
-  "tags": [
-    "ef-core",
-    "database-first-diagnostics"
-  ],
+  "tags": ["ef-core", "database-first-diagnostics"],
   "blocks": [
     {
       "type": "paragraph",

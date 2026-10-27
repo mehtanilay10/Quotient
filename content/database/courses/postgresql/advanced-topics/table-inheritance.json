@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "table-inheritance",
-    "inherits",
-    "object-relational",
-    "polymorphism"
-  ],
+  "tags": ["table-inheritance", "inherits", "object-relational", "polymorphism"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,8 +75,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "partitioning",
-    "composite-types"
-  ]
+  "relatedLessons": ["partitioning", "composite-types"]
 }

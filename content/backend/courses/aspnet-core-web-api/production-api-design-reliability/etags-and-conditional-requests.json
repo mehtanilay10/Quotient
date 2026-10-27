@@ -118,10 +118,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "optimistic-concurrency-for-apis",
-    "pagination-filtering-and-sorting-design"
-  ],
+  "relatedLessons": ["optimistic-concurrency-for-apis", "pagination-filtering-and-sorting-design"],
   "furtherReading": [
     {
       "title": "RFC 7232: HTTP Conditional Requests",

@@ -6,10 +6,7 @@
   "description": "Short-lived access tokens, rotation with reuse detection, storage locations, and logout semantics.",
   "order": 10,
   "difficulty": "intermediate",
-  "tags": [
-    "security",
-    "intermediate"
-  ],
+  "tags": ["security", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,11 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "oauth-jwt",
-    "secrets-management",
-    "csrf-antiforgery"
-  ],
+  "relatedLessons": ["oauth-jwt", "secrets-management", "csrf-antiforgery"],
   "furtherReading": [
     {
       "title": "OAuth 2.0 Token Rotation (RFC 9700 / BCP)",

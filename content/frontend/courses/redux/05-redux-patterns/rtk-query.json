@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "rtk-query",
-    "caching",
-    "data-fetching",
-    "api"
-  ],
+  "tags": ["redux", "rtk-query", "caching", "data-fetching", "api"],
   "blocks": [
     {
       "type": "paragraph",
@@ -90,57 +84,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Property",
-          "Type",
-          "Description"
-        ],
+        "headers": ["Property", "Type", "Description"],
         "rows": [
-          [
-            "data",
-            "T | undefined",
-            "The returned data from the query"
-          ],
-          [
-            "error",
-            "Error | undefined",
-            "Error object if the request failed"
-          ],
-          [
-            "isLoading",
-            "boolean",
-            "True on first request (no cache)"
-          ],
-          [
-            "isFetching",
-            "boolean",
-            "True whenever a request is in flight"
-          ],
-          [
-            "isSuccess",
-            "boolean",
-            "True when data is successfully loaded"
-          ],
-          [
-            "isError",
-            "boolean",
-            "True when the request failed"
-          ],
-          [
-            "refetch",
-            "() => void",
-            "Function to manually trigger a refetch"
-          ],
-          [
-            "fulfilledTimeStamp",
-            "number",
-            "When the last request succeeded"
-          ],
-          [
-            "endpointName",
-            "string",
-            "Name of this endpoint"
-          ]
+          ["data", "T | undefined", "The returned data from the query"],
+          ["error", "Error | undefined", "Error object if the request failed"],
+          ["isLoading", "boolean", "True on first request (no cache)"],
+          ["isFetching", "boolean", "True whenever a request is in flight"],
+          ["isSuccess", "boolean", "True when data is successfully loaded"],
+          ["isError", "boolean", "True when the request failed"],
+          ["refetch", "() => void", "Function to manually trigger a refetch"],
+          ["fulfilledTimeStamp", "number", "When the last request succeeded"],
+          ["endpointName", "string", "Name of this endpoint"]
         ]
       }
     },

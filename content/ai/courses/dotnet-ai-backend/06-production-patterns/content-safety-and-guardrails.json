@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "safety",
-    "guardrails",
-    "content-filtering",
-    "azure-content-safety"
-  ],
+  "tags": ["safety", "guardrails", "content-filtering", "azure-content-safety"],
   "blocks": [
     {
       "type": "paragraph",
@@ -76,10 +71,7 @@
       "takeaway": "Build safety in from the start. Retrofit guardrails are brittle and often miss edge cases."
     }
   ],
-  "relatedLessons": [
-    "observability-and-telemetry",
-    "deployment-and-scaling-patterns"
-  ],
+  "relatedLessons": ["observability-and-telemetry", "deployment-and-scaling-patterns"],
   "technology": null,
   "furtherReading": [
     {

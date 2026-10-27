@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "refetching",
-    "background",
-    "window-focus",
-    "reconnect",
-    "interval"
-  ],
+  "tags": ["refetching", "background", "window-focus", "reconnect", "interval"],
   "blocks": [
     {
       "type": "heading",
@@ -68,12 +62,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Trigger",
-          "Default",
-          "Best For",
-          "Disable When"
-        ],
+        "headers": ["Trigger", "Default", "Best For", "Disable When"],
         "rows": [
           [
             "refetchOnWindowFocus",
@@ -81,24 +70,9 @@
             "Dashboards, notifications",
             "Form-heavy pages, wizards"
           ],
-          [
-            "refetchOnReconnect",
-            "true",
-            "All data types",
-            "Static content pages"
-          ],
-          [
-            "refetchOnMount",
-            "true",
-            "All data types",
-            "Rarely disable"
-          ],
-          [
-            "refetchInterval",
-            "false",
-            "Live data, stock prices",
-            "Static or rarely changing data"
-          ]
+          ["refetchOnReconnect", "true", "All data types", "Static content pages"],
+          ["refetchOnMount", "true", "All data types", "Rarely disable"],
+          ["refetchInterval", "false", "Live data, stock prices", "Static or rarely changing data"]
         ]
       }
     },
@@ -238,7 +212,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "cache-configuration"
-  ]
+  "prerequisites": ["cache-configuration"]
 }

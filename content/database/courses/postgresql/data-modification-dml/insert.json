@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "insert",
-    "returning",
-    "dml",
-    "multi-row-insert"
-  ],
+  "tags": ["insert", "returning", "dml", "multi-row-insert"],
   "blocks": [
     {
       "type": "paragraph",
@@ -71,8 +66,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "insert-on-conflict",
-    "update"
-  ]
+  "relatedLessons": ["insert-on-conflict", "update"]
 }

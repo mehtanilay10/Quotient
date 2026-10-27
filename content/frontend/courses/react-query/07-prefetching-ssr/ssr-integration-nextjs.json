@@ -8,17 +8,8 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "ssr",
-    "ssg",
-    "nextjs",
-    "server-components",
-    "dehydrate",
-    "hydrate"
-  ],
-  "prerequisites": [
-    "query-options"
-  ],
+  "tags": ["ssr", "ssg", "nextjs", "server-components", "dehydrate", "hydrate"],
+  "prerequisites": ["query-options"],
   "blocks": [
     {
       "type": "paragraph",

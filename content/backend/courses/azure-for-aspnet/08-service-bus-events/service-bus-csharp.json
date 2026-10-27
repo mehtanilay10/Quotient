@@ -28,9 +28,21 @@
       "data": {
         "headers": ["Pattern", "Use Case", "Consumers"],
         "rows": [
-          ["Queue", "One consumer per message, FIFO order", "Single receiver or competing consumers"],
-          ["Topic + Subscriptions", "Broadcast to multiple consumer groups", "Many independent subscribers"],
-          ["Sessions", "Ordered message groups per session ID", "Stateful conversations, order processing"]
+          [
+            "Queue",
+            "One consumer per message, FIFO order",
+            "Single receiver or competing consumers"
+          ],
+          [
+            "Topic + Subscriptions",
+            "Broadcast to multiple consumer groups",
+            "Many independent subscribers"
+          ],
+          [
+            "Sessions",
+            "Ordered message groups per session ID",
+            "Stateful conversations, order processing"
+          ]
         ]
       }
     },

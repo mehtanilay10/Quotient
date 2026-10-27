@@ -7,11 +7,7 @@
   "order": 9,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "select-into",
-    "dml",
-    "copy-table"
-  ],
+  "tags": ["select-into", "dml", "copy-table"],
   "blocks": [
     {
       "type": "heading",

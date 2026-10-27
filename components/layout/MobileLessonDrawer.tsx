@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { BookOpen, X } from 'lucide-react';
-import { LessonSidebar } from '@/components/layout/LessonSidebar';
-import type { Module, Lesson, ProgressCategory } from '@/types';
+import { useState } from "react";
+import { BookOpen, X } from "lucide-react";
+import { LessonSidebar } from "@/components/layout/LessonSidebar";
+import type { Module, Lesson, ProgressCategory } from "@/types";
 
 interface MobileLessonDrawerProps {
   currentModuleSlug: string;
@@ -20,7 +20,7 @@ export function MobileLessonDrawer({
   courseSlug,
   modules,
   lessonsByModule,
-  category = 'lessons',
+  category = "lessons",
 }: MobileLessonDrawerProps) {
   const [open, setOpen] = useState(false);
 
@@ -57,7 +57,7 @@ export function MobileLessonDrawer({
         aria-modal="true"
         aria-label="Course navigation"
         className={`fixed inset-y-0 left-0 z-50 w-72 max-w-[85vw] transform bg-canvas shadow-xl transition-transform duration-300 lg:hidden ${
-          open ? 'translate-x-0' : '-translate-x-full'
+          open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <div className="flex h-full flex-col">

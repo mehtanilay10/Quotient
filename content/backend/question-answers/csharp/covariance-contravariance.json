@@ -6,10 +6,7 @@
   "description": "in/out variance annotations, safe upcasts through generic interfaces, and why delegates flip the direction.",
   "order": 46,
   "difficulty": "advanced",
-  "tags": [
-    "C#",
-    "advanced"
-  ],
+  "tags": ["C#", "advanced"],
   "blocks": [
     {
       "type": "paragraph",
@@ -123,11 +120,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "generics-csharp",
-    "beginner-q13",
-    "records-vs-classes"
-  ],
+  "relatedLessons": ["generics-csharp", "beginner-q13", "records-vs-classes"],
   "furtherReading": [
     {
       "title": "Covariance and contravariance (C# docs)",

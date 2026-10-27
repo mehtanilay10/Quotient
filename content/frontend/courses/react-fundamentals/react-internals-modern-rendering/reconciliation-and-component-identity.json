@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "react",
-    "reconciliation",
-    "keys",
-    "rendering"
-  ],
+  "tags": ["react", "reconciliation", "keys", "rendering"],
   "blocks": [
     {
       "type": "paragraph",
@@ -83,24 +78,9 @@
           "Recommended?"
         ],
         "rows": [
-          [
-            "Database ID (todo.id)",
-            "Yes",
-            "Yes",
-            "Yes"
-          ],
-          [
-            "Array index",
-            "No",
-            "No",
-            "Rarely"
-          ],
-          [
-            "Math.random()",
-            "No",
-            "No",
-            "Never"
-          ]
+          ["Database ID (todo.id)", "Yes", "Yes", "Yes"],
+          ["Array index", "No", "No", "Rarely"],
+          ["Math.random()", "No", "No", "Never"]
         ]
       }
     },
@@ -144,10 +124,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "render-phase-vs-commit-phase",
-    "fiber-and-scheduling-concepts"
-  ],
+  "relatedLessons": ["render-phase-vs-commit-phase", "fiber-and-scheduling-concepts"],
   "furtherReading": [
     {
       "title": "React Docs: Reconciliation",

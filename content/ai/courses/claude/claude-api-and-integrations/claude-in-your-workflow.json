@@ -7,14 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 12,
-  "tags": [
-    "claude",
-    "integrations",
-    "notion",
-    "slack",
-    "automation",
-    "workflow"
-  ],
+  "tags": ["claude", "integrations", "notion", "slack", "automation", "workflow"],
   "blocks": [
     {
       "type": "heading",
@@ -181,15 +174,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "claude-api-basics",
-    "prompt-caching"
-  ],
-  "relatedGlossaryTerms": [
-    "api",
-    "system-prompt",
-    "rag",
-    "embedding"
-  ],
+  "relatedLessons": ["claude-api-basics", "prompt-caching"],
+  "relatedGlossaryTerms": ["api", "system-prompt", "rag", "embedding"],
   "courseSlug": "claude"
 }

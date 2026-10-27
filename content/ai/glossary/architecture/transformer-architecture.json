@@ -6,20 +6,12 @@
   "fullDefinition": "The Transformer architecture, introduced in the landmark 2017 paper 'Attention Is All You Need,' is a neural network design that relies entirely on attention mechanisms rather than recurrence or convolution. Transformers process sequences of tokens in parallel, computing relationships between all positions simultaneously. This parallelization enables training on massive datasets and has led to models with unprecedented capability. The architecture consists of an encoder (for understanding) and decoder (for generation), though many modern models use only the decoder. Transformers underpin virtually all state-of-the-art language models including GPT, Claude, Llama, and PaLM.",
   "category": "architecture",
   "difficulty": "advanced",
-  "relatedTerms": [
-    "transformer",
-    "attention-mechanism",
-    "context-window"
-  ],
+  "relatedTerms": ["transformer", "attention-mechanism", "context-window"],
   "learnMoreSlug": "context-window-deep-dive",
   "examples": [
     "The decoder-only Transformer used in GPT models for text generation",
     "The encoder-decoder Transformer used in T5 for translation and summarization",
     "Vision Transformers applying the architecture to image classification"
   ],
-  "alsoKnownAs": [
-    "Transformer",
-    "Self-Attention Model",
-    "Attention Architecture"
-  ]
+  "alsoKnownAs": ["Transformer", "Self-Attention Model", "Attention Architecture"]
 }

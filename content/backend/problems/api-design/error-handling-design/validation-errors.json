@@ -158,10 +158,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "http-status-code-selection",
-    "business-logic-errors"
-  ],
+  "relatedLessons": ["http-status-code-selection", "business-logic-errors"],
   "furtherReading": [
     {
       "title": "JSON Schema Validation",

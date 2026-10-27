@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "windowing",
-    "aggregation",
-    "kafka-streams",
-    "ksqldb",
-    "time"
-  ],
+  "tags": ["windowing", "aggregation", "kafka-streams", "ksqldb", "time"],
   "blocks": [
     {
       "type": "paragraph",
@@ -38,37 +32,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Window Type",
-          "Size",
-          "Overlap",
-          "Use Case"
-        ],
+        "headers": ["Window Type", "Size", "Overlap", "Use Case"],
         "rows": [
-          [
-            "Tumbling",
-            "Fixed (e.g. 1 min)",
-            "None",
-            "Per-minute counts, billing batches"
-          ],
+          ["Tumbling", "Fixed (e.g. 1 min)", "None", "Per-minute counts, billing batches"],
           [
             "Hopping",
             "Fixed (e.g. 5 min)",
             "Configurable step",
             "Rolling averages, sliding metrics"
           ],
-          [
-            "Session",
-            "Dynamic",
-            "None (gap-based)",
-            "User activity sessions"
-          ],
-          [
-            "Sliding",
-            "Fixed (e.g. 1 min)",
-            "Event-driven",
-            "Recent-event rankings"
-          ]
+          ["Session", "Dynamic", "None (gap-based)", "User activity sessions"],
+          ["Sliding", "Fixed (e.g. 1 min)", "Event-driven", "Recent-event rankings"]
         ]
       }
     },

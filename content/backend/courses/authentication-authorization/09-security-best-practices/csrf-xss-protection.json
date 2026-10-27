@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "csrf",
-    "xss",
-    "csp",
-    "security",
-    "attack-prevention"
-  ],
+  "tags": ["csrf", "xss", "csp", "security", "attack-prevention"],
   "blocks": [
     {
       "type": "paragraph",

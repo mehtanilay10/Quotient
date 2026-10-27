@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "security",
-    "fundamentals",
-    "distributed"
-  ],
+  "tags": ["security", "fundamentals", "distributed"],
   "blocks": [
     {
       "type": "paragraph",
@@ -92,31 +88,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Layer",
-          "Controls"
-        ],
+        "headers": ["Layer", "Controls"],
         "rows": [
-          [
-            "Network",
-            "Firewalls, TLS, network policies"
-          ],
-          [
-            "Service",
-            "Authentication, authorization"
-          ],
-          [
-            "Data",
-            "Encryption at rest and in transit"
-          ],
-          [
-            "Application",
-            "Input validation, rate limiting"
-          ],
-          [
-            "Audit",
-            "Logging, monitoring"
-          ]
+          ["Network", "Firewalls, TLS, network policies"],
+          ["Service", "Authentication, authorization"],
+          ["Data", "Encryption at rest and in transit"],
+          ["Application", "Input validation, rate limiting"],
+          ["Audit", "Logging, monitoring"]
         ]
       }
     },

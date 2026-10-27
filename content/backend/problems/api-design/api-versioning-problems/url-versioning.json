@@ -123,10 +123,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "header-versioning",
-    "deprecation-strategy"
-  ],
+  "relatedLessons": ["header-versioning", "deprecation-strategy"],
   "furtherReading": [
     {
       "title": "API Versioning Best Practices",

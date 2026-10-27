@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "DDL-trigger",
-    "schema-change",
-    "CREATE",
-    "ALTER",
-    "DROP"
-  ],
+  "tags": ["DDL-trigger", "schema-change", "CREATE", "ALTER", "DROP"],
   "blocks": [
     {
       "type": "heading",

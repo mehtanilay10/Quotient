@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 22,
-  "tags": [
-    "retrieval",
-    "ranking",
-    "hybrid-search",
-    "reranking"
-  ],
+  "tags": ["retrieval", "ranking", "hybrid-search", "reranking"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,10 +77,7 @@
       "takeaway": "Treat retrieval as a first-class feature. Measure precision and recall with real user queries, not synthetic benchmarks."
     }
   ],
-  "relatedLessons": [
-    "vector-stores-in-dotnet",
-    "prompt-composition-and-generation"
-  ],
+  "relatedLessons": ["vector-stores-in-dotnet", "prompt-composition-and-generation"],
   "technology": null,
   "furtherReading": [
     {

@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "binding",
-    "sources",
-    "attributes"
-  ],
+  "tags": ["binding", "sources", "attributes"],
   "blocks": [
     {
       "type": "heading",
@@ -199,10 +195,7 @@
       "takeaway": "Being explicit about binding sources makes your API behavior predictable, easier to document, and simpler to test."
     }
   ],
-  "relatedLessons": [
-    "model-binding-overview",
-    "validation-attributes"
-  ],
+  "relatedLessons": ["model-binding-overview", "validation-attributes"],
   "technology": null,
   "furtherReading": []
 }

@@ -9,12 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 3,
   "icon": "⚡",
-  "tags": [
-    "redis",
-    "advanced",
-    "distributed",
-    "performance"
-  ],
+  "tags": ["redis", "advanced", "distributed", "performance"],
   "lessonSlugs": [
     "redis-pipelining",
     "lua-scripting",
@@ -23,10 +18,7 @@
     "redis-benchmarking",
     "performance-pitfalls"
   ],
-  "prerequisites": [
-    "distributed-caching",
-    "redis-use-cases"
-  ],
+  "prerequisites": ["distributed-caching", "redis-use-cases"],
   "whatYouLearn": [
     "Use pipelining to reduce round trips",
     "Write Lua scripts for atomic operations",

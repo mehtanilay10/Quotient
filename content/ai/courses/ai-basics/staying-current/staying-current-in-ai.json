@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "learning-mindset",
-    "news",
-    "resources",
-    "habits"
-  ],
+  "tags": ["learning-mindset", "news", "resources", "habits"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,23 +27,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Signal (worth your time)",
-          "Noise (safe to skip)"
-        ],
+        "headers": ["Signal (worth your time)", "Noise (safe to skip)"],
         "rows": [
-          [
-            "New capabilities in tools you already use",
-            "Daily AI news aggregators with no filter"
-          ],
+          ["New capabilities in tools you already use", "Daily AI news aggregators with no filter"],
           [
             "New models from major labs (OpenAI, Anthropic, Google, Meta)",
             "Most Twitter/X AI hype threads"
           ],
-          [
-            "New tool categories that change workflows",
-            "Benchmarks and leaderboard posts"
-          ],
+          ["New tool categories that change workflows", "Benchmarks and leaderboard posts"],
           [
             "Privacy and policy changes in tools you trust with data",
             "\"AGI is 2 years away\" speculation"
@@ -135,27 +121,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Cadence",
-          "Activity",
-          "Outcome"
-        ],
+        "headers": ["Cadence", "Activity", "Outcome"],
         "rows": [
-          [
-            "Weekly",
-            "Review 2-3 high-signal updates",
-            "Maintain directional awareness"
-          ],
-          [
-            "Biweekly",
-            "Run one practical mini-experiment",
-            "Convert news into capability"
-          ],
-          [
-            "Monthly",
-            "Update templates and tool choices",
-            "Keep workflows relevant"
-          ]
+          ["Weekly", "Review 2-3 high-signal updates", "Maintain directional awareness"],
+          ["Biweekly", "Run one practical mini-experiment", "Convert news into capability"],
+          ["Monthly", "Update templates and tool choices", "Keep workflows relevant"]
         ]
       }
     },
@@ -175,30 +145,22 @@
           {
             "title": "Newsletters (The Rundown, TLDR AI)",
             "description": "Curated daily summaries. High signal, low time cost. Best for maintaining directional awareness.",
-            "tags": [
-              "curated"
-            ]
+            "tags": ["curated"]
           },
           {
             "title": "Official blogs (OpenAI, Anthropic, Google)",
             "description": "First-hand product updates and research. Authoritative but marketing-heavy. Best for tracking specific tools you use.",
-            "tags": [
-              "authoritative"
-            ]
+            "tags": ["authoritative"]
           },
           {
             "title": "YouTube explainers (AI Explained, Fireship)",
             "description": "Visual, accessible breakdowns of complex topics. Good for building intuition when a concept feels abstract.",
-            "tags": [
-              "visual"
-            ]
+            "tags": ["visual"]
           },
           {
             "title": "Twitter/X threads",
             "description": "Fast, opinionated, often wrong. Use only for detecting emerging topics, not for learning facts.",
-            "tags": [
-              "noise-heavy"
-            ]
+            "tags": ["noise-heavy"]
           }
         ]
       }
@@ -211,10 +173,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "building-your-ai-stack",
-    "choosing-the-right-tool"
-  ],
+  "relatedLessons": ["building-your-ai-stack", "choosing-the-right-tool"],
   "furtherReading": [
     {
       "title": "The Batch — DeepLearning.AI Newsletter",

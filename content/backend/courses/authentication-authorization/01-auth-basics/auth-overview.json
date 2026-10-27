@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "authentication",
-    "security",
-    "overview",
-    "basics"
-  ],
+  "tags": ["authentication", "security", "overview", "basics"],
   "blocks": [
     {
       "type": "paragraph",

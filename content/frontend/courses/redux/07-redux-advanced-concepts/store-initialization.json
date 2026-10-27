@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "persistence",
-    "hydration",
-    "setup"
-  ],
+  "tags": ["redux", "persistence", "hydration", "setup"],
   "blocks": [
     {
       "type": "paragraph",
@@ -76,12 +71,7 @@
       "type": "table",
       "data": {
         "title": "Storage options compared",
-        "headers": [
-          "Storage",
-          "Capacity",
-          "Persistence",
-          "Use Case"
-        ],
+        "headers": ["Storage", "Capacity", "Persistence", "Use Case"],
         "rows": [
           [
             "localStorage",
@@ -89,24 +79,14 @@
             "Until explicitly cleared",
             "User preferences, drafts, non-sensitive UI state"
           ],
-          [
-            "sessionStorage",
-            "~5 MB",
-            "Cleared on tab close",
-            "Wizard flows, temporary filters"
-          ],
+          ["sessionStorage", "~5 MB", "Cleared on tab close", "Wizard flows, temporary filters"],
           [
             "IndexedDB",
             "Hundreds of MB",
             "Until explicitly cleared",
             "Large offline caches, queued writes"
           ],
-          [
-            "Cookie",
-            "~4 KB",
-            "Configurable expiry",
-            "Auth tokens (with httpOnly flag)"
-          ],
+          ["Cookie", "~4 KB", "Configurable expiry", "Auth tokens (with httpOnly flag)"],
           [
             "Server API",
             "Unlimited",
@@ -124,10 +104,7 @@
           {
             "title": "localStorage",
             "description": "Simple key/value store that survives reloads and tab closures.",
-            "pros": [
-              "Synchronous API, easy to use",
-              "Widely supported"
-            ],
+            "pros": ["Synchronous API, easy to use", "Widely supported"],
             "cons": [
               "String-only, must JSON.parse",
               "Limited to ~5 MB",
@@ -137,26 +114,14 @@
           {
             "title": "sessionStorage",
             "description": "Same as localStorage but scoped to the current browser tab.",
-            "pros": [
-              "Automatically cleared on tab close",
-              "Good for short-lived flows"
-            ],
-            "cons": [
-              "Lost on tab close — bad for preferences",
-              "Same XSS exposure as localStorage"
-            ]
+            "pros": ["Automatically cleared on tab close", "Good for short-lived flows"],
+            "cons": ["Lost on tab close — bad for preferences", "Same XSS exposure as localStorage"]
           },
           {
             "title": "Cookies",
             "description": "Sent on every HTTP request. Marked httpOnly + secure when set by the server.",
-            "pros": [
-              "Server-readable",
-              "Can be flagged httpOnly to block JS access"
-            ],
-            "cons": [
-              "Tiny size (~4 KB)",
-              "CSRF risk if misused"
-            ]
+            "pros": ["Server-readable", "Can be flagged httpOnly to block JS access"],
+            "cons": ["Tiny size (~4 KB)", "CSRF risk if misused"]
           }
         ]
       }

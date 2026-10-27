@@ -7,10 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "oop",
-    "operator-overloading"
-  ],
+  "tags": ["oop", "operator-overloading"],
   "blocks": [
     {
       "type": "paragraph",
@@ -39,8 +36,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "runtime-polymorphism"
-  ],
+  "relatedLessons": ["runtime-polymorphism"],
   "courseSlug": "oops-concepts"
 }

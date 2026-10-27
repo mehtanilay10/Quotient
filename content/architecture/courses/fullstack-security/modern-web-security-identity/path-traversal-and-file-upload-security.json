@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "path-traversal",
-    "file-upload",
-    "directory-traversal",
-    "file-validation",
-    "OWASP"
-  ],
+  "tags": ["path-traversal", "file-upload", "directory-traversal", "file-validation", "OWASP"],
   "blocks": [
     {
       "type": "paragraph",

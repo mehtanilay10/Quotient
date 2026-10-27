@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 13,
-  "tags": [
-    "testing",
-    "performance",
-    "optimization"
-  ],
+  "tags": ["testing", "performance", "optimization"],
   "blocks": [
     {
       "type": "paragraph",
@@ -58,8 +54,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "mock-service-worker"
-  ],
+  "relatedLessons": ["mock-service-worker"],
   "courseSlug": "react-testing"
 }

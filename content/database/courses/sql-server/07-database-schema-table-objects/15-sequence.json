@@ -7,11 +7,7 @@
   "order": 15,
   "difficulty": "intermediate",
   "estimatedMinutes": 33,
-  "tags": [
-    "sequence",
-    "numeric",
-    "generator"
-  ],
+  "tags": ["sequence", "numeric", "generator"],
   "blocks": [
     {
       "type": "heading",
@@ -102,37 +98,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Identity",
-          "Sequence"
-        ],
+        "headers": ["Feature", "Identity", "Sequence"],
         "rows": [
-          [
-            "Allow specifying minimum/maximum values",
-            "No",
-            "Yes"
-          ],
-          [
-            "Allow resetting the increment value",
-            "No",
-            "Yes"
-          ],
-          [
-            "Allow caching increment value generation",
-            "No",
-            "Yes"
-          ],
-          [
-            "Allow specifying starting increment value",
-            "Yes",
-            "Yes"
-          ],
-          [
-            "Allow using in multiple tables",
-            "No",
-            "Yes"
-          ]
+          ["Allow specifying minimum/maximum values", "No", "Yes"],
+          ["Allow resetting the increment value", "No", "Yes"],
+          ["Allow caching increment value generation", "No", "Yes"],
+          ["Allow specifying starting increment value", "Yes", "Yes"],
+          ["Allow using in multiple tables", "No", "Yes"]
         ]
       }
     },

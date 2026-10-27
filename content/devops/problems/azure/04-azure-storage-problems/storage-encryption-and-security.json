@@ -78,37 +78,21 @@
               "Time-limited access",
               "Compliance ready"
             ],
-            "cons": [
-              "More configuration",
-              "Private DNS setup"
-            ],
+            "cons": ["More configuration", "Private DNS setup"],
             "tags": ["Recommended", "Production"]
           },
           {
             "title": "Firewall Rules Only",
             "description": "IP-based access control",
-            "pros": [
-              "Simple to configure",
-              "IP allowlisting"
-            ],
-            "cons": [
-              "IPs can change",
-              "Mobile clients need dynamic IPs"
-            ],
+            "pros": ["Simple to configure", "IP allowlisting"],
+            "cons": ["IPs can change", "Mobile clients need dynamic IPs"],
             "tags": ["Basic"]
           },
           {
             "title": "Shared Key Access",
             "description": "Account key for all operations",
-            "pros": [
-              "Simple",
-              "Full account access"
-            ],
-            "cons": [
-              "No granular control",
-              "Key rotation overhead",
-              "Security risk if leaked"
-            ],
+            "pros": ["Simple", "Full account access"],
+            "cons": ["No granular control", "Key rotation overhead", "Security risk if leaked"],
             "tags": ["Not recommended"]
           }
         ]

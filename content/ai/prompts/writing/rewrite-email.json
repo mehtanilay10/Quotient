@@ -6,12 +6,7 @@
   "category": "writing",
   "difficulty": "beginner",
   "template": "Please rewrite the email below with the following goals:\n- Tone: [TONE — e.g., \"professional and warm\", \"direct and brief\", \"empathetic but firm\"]\n- Length: [TARGET LENGTH — e.g., \"under 100 words\", \"same length but clearer\"]\n- Main improvement needed: [e.g., \"remove jargon\", \"make the ask clearer\", \"sound less passive-aggressive\"]\n\nKeep the core message and factual content intact.\n\n---\n[PASTE EMAIL HERE]\n---",
-  "tags": [
-    "email",
-    "writing",
-    "communication",
-    "productivity"
-  ],
+  "tags": ["email", "writing", "communication", "productivity"],
   "tips": [
     "Add \"The recipient is [their role and relationship to you]\" for more tailored rewrites",
     "Use tone descriptors like \"confident but not arrogant\" or \"apologetic but solution-focused\"",

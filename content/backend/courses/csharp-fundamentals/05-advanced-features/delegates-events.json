@@ -7,13 +7,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "csharp",
-    "delegates",
-    "events",
-    "callbacks",
-    "event-driven"
-  ],
+  "tags": ["csharp", "delegates", "events", "callbacks", "event-driven"],
   "blocks": [
     {
       "type": "paragraph",
@@ -123,27 +117,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Delegate",
-          "Signature",
-          "Use Case"
-        ],
+        "headers": ["Delegate", "Signature", "Use Case"],
         "rows": [
-          [
-            "Action<T>",
-            "void (T arg)",
-            "Methods that take parameters and return nothing"
-          ],
+          ["Action<T>", "void (T arg)", "Methods that take parameters and return nothing"],
           [
             "Func<T, TResult>",
             "TResult (T arg)",
             "Methods that take parameters and return a value"
           ],
-          [
-            "Predicate<T>",
-            "bool (T arg)",
-            "Methods that test a condition and return true/false"
-          ]
+          ["Predicate<T>", "bool (T arg)", "Methods that test a condition and return true/false"]
         ]
       }
     },
@@ -262,19 +244,9 @@
           {
             "title": "Delegate",
             "description": "A type-safe function pointer that can be invoked from anywhere.",
-            "pros": [
-              "Direct invocation",
-              "Can be passed as parameters",
-              "Supports multicast"
-            ],
-            "cons": [
-              "External code can invoke it",
-              "No publisher-subscriber semantics"
-            ],
-            "tags": [
-              "callback",
-              "function-pointer"
-            ]
+            "pros": ["Direct invocation", "Can be passed as parameters", "Supports multicast"],
+            "cons": ["External code can invoke it", "No publisher-subscriber semantics"],
+            "tags": ["callback", "function-pointer"]
           },
           {
             "title": "Event",
@@ -284,14 +256,8 @@
               "Publisher-subscriber pattern",
               "Standard .NET pattern"
             ],
-            "cons": [
-              "More boilerplate",
-              "Cannot be invoked outside the class"
-            ],
-            "tags": [
-              "notification",
-              "observer"
-            ]
+            "cons": ["More boilerplate", "Cannot be invoked outside the class"],
+            "tags": ["notification", "observer"]
           }
         ]
       }

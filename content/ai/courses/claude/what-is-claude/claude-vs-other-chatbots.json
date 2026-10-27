@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "claude",
-    "comparison",
-    "chatgpt",
-    "gemini",
-    "models"
-  ],
+  "tags": ["claude", "comparison", "chatgpt", "gemini", "models"],
   "blocks": [
     {
       "type": "heading",
@@ -120,47 +114,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Task",
-          "Best Choice",
-          "Why"
-        ],
+        "headers": ["Task", "Best Choice", "Why"],
         "rows": [
-          [
-            "Editing a long document",
-            "Claude",
-            "Best context retention and precise edits"
-          ],
-          [
-            "Analyzing a 100+ page PDF",
-            "Claude",
-            "200K context handles large files reliably"
-          ],
-          [
-            "Quick general questions",
-            "ChatGPT (free)",
-            "Fast, reliable, no setup needed"
-          ],
-          [
-            "Gmail/Docs tasks",
-            "Gemini",
-            "Native integration inside Google products"
-          ],
-          [
-            "Research with citations",
-            "Perplexity",
-            "Retrieves and cites live sources"
-          ],
-          [
-            "Code generation + execution",
-            "ChatGPT",
-            "Code Interpreter runs code directly"
-          ],
-          [
-            "Careful legal/policy writing",
-            "Claude",
-            "Most precise and cautious tone"
-          ]
+          ["Editing a long document", "Claude", "Best context retention and precise edits"],
+          ["Analyzing a 100+ page PDF", "Claude", "200K context handles large files reliably"],
+          ["Quick general questions", "ChatGPT (free)", "Fast, reliable, no setup needed"],
+          ["Gmail/Docs tasks", "Gemini", "Native integration inside Google products"],
+          ["Research with citations", "Perplexity", "Retrieves and cites live sources"],
+          ["Code generation + execution", "ChatGPT", "Code Interpreter runs code directly"],
+          ["Careful legal/policy writing", "Claude", "Most precise and cautious tone"]
         ]
       }
     },
@@ -244,15 +206,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-claude",
-    "claude-philosophy-and-safety"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model",
-    "context-window",
-    "token",
-    "prompt-injection"
-  ],
+  "relatedLessons": ["what-is-claude", "claude-philosophy-and-safety"],
+  "relatedGlossaryTerms": ["large-language-model", "context-window", "token", "prompt-injection"],
   "courseSlug": "claude"
 }

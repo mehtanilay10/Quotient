@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 33,
-  "tags": [
-    "react",
-    "inline",
-    "styles",
-    "css"
-  ],
+  "tags": ["react", "inline", "styles", "css"],
   "blocks": [
     {
       "type": "paragraph",
@@ -63,24 +58,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Good For",
-          "Not Ideal For"
-        ],
+        "headers": ["Good For", "Not Ideal For"],
         "rows": [
-          [
-            "Dynamic values (width, color)",
-            "Static styling"
-          ],
-          [
-            "Computed styles",
-            "Pseudo-classes (:hover)",
-            "Animations"
-          ],
-          [
-            "Quick prototypes",
-            "Large applications"
-          ]
+          ["Dynamic values (width, color)", "Static styling"],
+          ["Computed styles", "Pseudo-classes (:hover)", "Animations"],
+          ["Quick prototypes", "Large applications"]
         ]
       }
     },

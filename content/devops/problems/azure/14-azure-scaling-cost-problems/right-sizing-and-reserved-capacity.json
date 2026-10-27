@@ -105,22 +105,14 @@
               "Can be scoped to a resource group",
               "Exchangeable within limits"
             ],
-            "cons": [
-              "Locked to SKU and region",
-              "Useless if you re-architect"
-            ],
+            "cons": ["Locked to SKU and region", "Useless if you re-architect"],
             "tags": ["Stable, long-lived tiers"]
           },
           {
             "title": "Pay-as-you-go only",
             "description": "No commitment",
-            "pros": [
-              "Maximum flexibility",
-              "Ideal for spiky or new workloads"
-            ],
-            "cons": [
-              "Full price on predictable base load"
-            ],
+            "pros": ["Maximum flexibility", "Ideal for spiky or new workloads"],
+            "cons": ["Full price on predictable base load"],
             "tags": ["Burst capacity", "Uncertain workloads"]
           }
         ]

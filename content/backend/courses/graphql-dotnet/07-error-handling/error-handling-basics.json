@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "graphql",
-    "error-handling",
-    "dotnet"
-  ],
+  "tags": ["graphql", "error-handling", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -118,8 +114,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "custom-exceptions"
-  ],
+  "relatedLessons": ["custom-exceptions"],
   "courseSlug": "graphql-dotnet"
 }

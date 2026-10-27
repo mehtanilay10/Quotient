@@ -7,22 +7,10 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "🤖",
-  "tags": [
-    "automation",
-    "workflows",
-    "no-code",
-    "productivity",
-    "zapier"
-  ],
-  "lessonSlugs": [
-    "what-is-ai-automation",
-    "no-code-automation-tools",
-    "ai-for-data-analysis"
-  ],
+  "tags": ["automation", "workflows", "no-code", "productivity", "zapier"],
+  "lessonSlugs": ["what-is-ai-automation", "no-code-automation-tools", "ai-for-data-analysis"],
   "isOptional": false,
-  "prerequisites": [
-    "ai-workflows"
-  ],
+  "prerequisites": ["ai-workflows"],
   "whatYouLearn": [
     "What AI automation is and how it differs from traditional scripting",
     "No-code tools: Zapier, Make, and n8n explained simply",

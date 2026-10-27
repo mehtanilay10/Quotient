@@ -80,41 +80,22 @@
           {
             "title": "Management Groups + Resource Groups",
             "description": "Hierarchical organization with governance",
-            "pros": [
-              "Policy enforcement at scale",
-              "Role inheritance",
-              "Cost tracking by group"
-            ],
-            "cons": [
-              "Steeper learning curve",
-              "Requires planning"
-            ],
+            "pros": ["Policy enforcement at scale", "Role inheritance", "Cost tracking by group"],
+            "cons": ["Steeper learning curve", "Requires planning"],
             "tags": ["Recommended", "Enterprise"]
           },
           {
             "title": "Resource Groups Only",
             "description": "Flat organization per subscription",
-            "pros": [
-              "Simple to understand",
-              "Quick to set up"
-            ],
-            "cons": [
-              "No cross-subscription governance",
-              "Limited policy scope"
-            ],
+            "pros": ["Simple to understand", "Quick to set up"],
+            "cons": ["No cross-subscription governance", "Limited policy scope"],
             "tags": ["Small teams"]
           },
           {
             "title": "Tags Only",
             "description": "Metadata on resources without hierarchy",
-            "pros": [
-              "Flexible categorization",
-              "Works across scopes"
-            ],
-            "cons": [
-              "No lifecycle grouping",
-              "Manual enforcement"
-            ],
+            "pros": ["Flexible categorization", "Works across scopes"],
+            "cons": ["No lifecycle grouping", "Manual enforcement"],
             "tags": ["Supplementary"]
           }
         ]

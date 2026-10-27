@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "disaster-recovery",
-    "backup",
-    "linux",
-    "failover",
-    "restore"
-  ],
+  "tags": ["disaster-recovery", "backup", "linux", "failover", "restore"],
   "blocks": [
     {
       "type": "paragraph",
@@ -44,37 +38,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "RPO",
-          "RTO",
-          "Strategy"
-        ],
+        "headers": ["Scenario", "RPO", "RTO", "Strategy"],
         "rows": [
-          [
-            "E-commerce checkout",
-            "5 minutes",
-            "1 hour",
-            "Continuous replication + warm standby"
-          ],
-          [
-            "Internal wiki",
-            "24 hours",
-            "4 hours",
-            "Nightly snapshots + restore scripts"
-          ],
-          [
-            "Development environment",
-            "7 days",
-            "24 hours",
-            "Weekly backups to object storage"
-          ],
-          [
-            "Financial reporting",
-            "15 minutes",
-            "30 minutes",
-            "Transaction log shipping + DR site"
-          ]
+          ["E-commerce checkout", "5 minutes", "1 hour", "Continuous replication + warm standby"],
+          ["Internal wiki", "24 hours", "4 hours", "Nightly snapshots + restore scripts"],
+          ["Development environment", "7 days", "24 hours", "Weekly backups to object storage"],
+          ["Financial reporting", "15 minutes", "30 minutes", "Transaction log shipping + DR site"]
         ]
       }
     },

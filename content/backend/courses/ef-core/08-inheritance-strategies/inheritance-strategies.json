@@ -5,10 +5,7 @@
   "title": "Inheritance Strategies",
   "description": "Learn inheritance mapping.",
   "order": 5,
-  "tags": [
-    "ef-core",
-    "inheritance-strategies"
-  ],
+  "tags": ["ef-core", "inheritance-strategies"],
   "blocks": [
     {
       "type": "paragraph",

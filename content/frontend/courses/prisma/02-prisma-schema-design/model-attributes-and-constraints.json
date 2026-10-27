@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "attributes",
-    "constraints",
-    "primary-keys",
-    "indexes"
-  ],
+  "tags": ["prisma", "attributes", "constraints", "primary-keys", "indexes"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,31 +26,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Attribute",
-          "Scope",
-          "Purpose",
-          "SQL Equivalent"
-        ],
+        "headers": ["Attribute", "Scope", "Purpose", "SQL Equivalent"],
         "rows": [
-          [
-            "`@id`",
-            "Field",
-            "Defines the primary key of the model",
-            "`PRIMARY KEY`"
-          ],
+          ["`@id`", "Field", "Defines the primary key of the model", "`PRIMARY KEY`"],
           [
             "`@default(...)`",
             "Field",
             "Sets default value (autoincrement, now, uuid, cuid)",
             "`DEFAULT ...`"
           ],
-          [
-            "`@unique`",
-            "Field",
-            "Enforces unique values on the column",
-            "`UNIQUE`"
-          ],
+          ["`@unique`", "Field", "Enforces unique values on the column", "`UNIQUE`"],
           [
             "`@updatedAt`",
             "Field",
@@ -133,8 +112,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "schema-prisma-structure",
-    "field-types-mapping"
-  ]
+  "relatedLessons": ["schema-prisma-structure", "field-types-mapping"]
 }

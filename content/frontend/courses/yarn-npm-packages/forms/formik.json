@@ -6,13 +6,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "formik",
-    "forms",
-    "react",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["formik", "forms", "react", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

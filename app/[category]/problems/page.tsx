@@ -1,10 +1,14 @@
-import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { ArrowRight, Layers } from 'lucide-react';
-import { SectionHeader } from '@/components/sections/SectionHeader';
-import { getProblemCoursesByCategory, getCategoryMeta, getNavigationCategories } from '@/lib/content';
-import { buildMetadata } from '@/lib/seo';
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { ArrowRight, Layers } from "lucide-react";
+import { SectionHeader } from "@/components/sections/SectionHeader";
+import {
+  getProblemCoursesByCategory,
+  getCategoryMeta,
+  getNavigationCategories,
+} from "@/lib/content";
+import { buildMetadata } from "@/lib/seo";
 
 interface Params {
   params: Promise<{ category: string }>;
@@ -12,7 +16,7 @@ interface Params {
 
 export async function generateStaticParams() {
   return getNavigationCategories()
-    .filter((cat) => cat.sections.some((s) => s.href.endsWith('/problems')))
+    .filter((cat) => cat.sections.some((s) => s.href.endsWith("/problems")))
     .map((cat) => ({ category: cat.key }));
 }
 
@@ -51,7 +55,9 @@ export default async function CategoryProblemsPage({ params }: Params) {
             href={`/${category}/problems/${course.slug}`}
             className="group flex flex-col gap-3 rounded-xl border border-border bg-canvas p-4 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5"
           >
-            <span className="text-3xl" aria-hidden="true">{course.icon}</span>
+            <span className="text-3xl" aria-hidden="true">
+              {course.icon}
+            </span>
             <h2 className="text-sm font-semibold text-fg-default group-hover:text-accent-fg transition-colors">
               {course.title}
             </h2>
@@ -63,7 +69,10 @@ export default async function CategoryProblemsPage({ params }: Params) {
                 <Layers className="h-3.5 w-3.5" aria-hidden="true" />
                 {course.moduleSlugs.length} sets
               </span>
-              <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
+              <ArrowRight
+                className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
+                aria-hidden="true"
+              />
             </span>
           </Link>
         ))}

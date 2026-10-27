@@ -7,12 +7,7 @@
   "order": 28,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "interview",
-    "full-stack",
-    "real-time",
-    "scenarios"
-  ],
+  "tags": ["interview", "full-stack", "real-time", "scenarios"],
   "blocks": [
     {
       "type": "paragraph",
@@ -114,11 +109,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "scenario-q26",
-    "scenario-q22",
-    "scenario-q21"
-  ],
+  "relatedLessons": ["scenario-q26", "scenario-q22", "scenario-q21"],
   "furtherReading": [
     {
       "title": "Server-Sent Events — MDN",

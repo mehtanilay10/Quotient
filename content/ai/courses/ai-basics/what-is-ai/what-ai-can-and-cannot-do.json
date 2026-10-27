@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "ai-limitations",
-    "expectations",
-    "hallucination",
-    "practical"
-  ],
+  "tags": ["ai-limitations", "expectations", "hallucination", "practical"],
   "blocks": [
     {
       "type": "paragraph",
@@ -46,43 +41,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "AI is great at…",
-          "AI struggles with…"
-        ],
+        "headers": ["AI is great at…", "AI struggles with…"],
         "rows": [
-          [
-            "Drafting and editing text",
-            "Precise arithmetic and calculations"
-          ],
-          [
-            "Summarizing long documents",
-            "Verifying facts reliably"
-          ],
-          [
-            "Brainstorming ideas quickly",
-            "Knowing today's news (without search tools)"
-          ],
-          [
-            "Explaining complex concepts simply",
-            "Consistent long-context reasoning"
-          ],
-          [
-            "Writing and reviewing code",
-            "Truly original creative intuition"
-          ],
-          [
-            "Translating between languages",
-            "Real-world physical tasks"
-          ],
-          [
-            "Answering general knowledge questions",
-            "Knowing what it doesn't know"
-          ],
-          [
-            "Classifying and categorizing content",
-            "Making decisions with real consequences"
-          ]
+          ["Drafting and editing text", "Precise arithmetic and calculations"],
+          ["Summarizing long documents", "Verifying facts reliably"],
+          ["Brainstorming ideas quickly", "Knowing today's news (without search tools)"],
+          ["Explaining complex concepts simply", "Consistent long-context reasoning"],
+          ["Writing and reviewing code", "Truly original creative intuition"],
+          ["Translating between languages", "Real-world physical tasks"],
+          ["Answering general knowledge questions", "Knowing what it doesn't know"],
+          ["Classifying and categorizing content", "Making decisions with real consequences"]
         ]
       }
     },
@@ -186,35 +154,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Task type",
-          "Delegation level",
-          "Required human role"
-        ],
+        "headers": ["Task type", "Delegation level", "Required human role"],
         "rows": [
-          [
-            "Drafting and summarization",
-            "High delegation",
-            "Review for tone and factual fit"
-          ],
-          [
-            "Analysis and recommendations",
-            "Medium delegation",
-            "Validate assumptions and data"
-          ],
-          [
-            "Legal/medical/financial decisions",
-            "Low delegation",
-            "Human expert final authority"
-          ]
+          ["Drafting and summarization", "High delegation", "Review for tone and factual fit"],
+          ["Analysis and recommendations", "Medium delegation", "Validate assumptions and data"],
+          ["Legal/medical/financial decisions", "Low delegation", "Human expert final authority"]
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "how-llms-work-simply",
-    "anatomy-of-a-good-prompt"
-  ],
+  "relatedLessons": ["how-llms-work-simply", "anatomy-of-a-good-prompt"],
   "furtherReading": [
     {
       "title": "AI for Everyone — AI and Society",

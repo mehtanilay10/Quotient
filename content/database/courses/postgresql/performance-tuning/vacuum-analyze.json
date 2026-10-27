@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "vacuum",
-    "autovacuum",
-    "analyze",
-    "mvcc",
-    "wraparound"
-  ],
+  "tags": ["vacuum", "autovacuum", "analyze", "mvcc", "wraparound"],
   "blocks": [
     {
       "type": "paragraph",
@@ -86,8 +80,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "explain-analyze",
-    "configuration-tuning"
-  ]
+  "relatedLessons": ["explain-analyze", "configuration-tuning"]
 }

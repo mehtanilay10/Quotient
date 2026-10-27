@@ -9,13 +9,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedHours": 3,
-  "tags": [
-    "usequery",
-    "pagination",
-    "infinite-queries",
-    "dependent-queries",
-    "options"
-  ],
+  "tags": ["usequery", "pagination", "infinite-queries", "dependent-queries", "options"],
   "lessonSlugs": [
     "dependent-queries",
     "infinite-queries",

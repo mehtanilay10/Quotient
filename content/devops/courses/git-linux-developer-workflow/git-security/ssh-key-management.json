@@ -168,6 +168,10 @@
   ],
   "relatedLessons": ["security-fundamentals", "token-based-auth"],
   "furtherReading": [
-    { "title": "GitHub SSH Key Guide", "url": "https://docs.github.com/en/authentication/connecting-to-github-with-ssh", "type": "article" }
+    {
+      "title": "GitHub SSH Key Guide",
+      "url": "https://docs.github.com/en/authentication/connecting-to-github-with-ssh",
+      "type": "article"
+    }
   ]
 }

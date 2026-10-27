@@ -49,13 +49,25 @@
         "cards": [
           {
             "title": "UUID v4",
-            "pros": ["No coordination required", "Near-zero collision probability", "Standardized and portable"],
+            "pros": [
+              "No coordination required",
+              "Near-zero collision probability",
+              "Standardized and portable"
+            ],
             "cons": ["Not sortable by time", "128 bits is long", "Causes index fragmentation"]
           },
           {
             "title": "Snowflake",
-            "pros": ["64 bits, sortable by time", "Monotonically increasing", "No coordination needed after initialization"],
-            "cons": ["Requires clock synchronization", "More complex to explain", "Clock rollback can cause collisions"]
+            "pros": [
+              "64 bits, sortable by time",
+              "Monotonically increasing",
+              "No coordination needed after initialization"
+            ],
+            "cons": [
+              "Requires clock synchronization",
+              "More complex to explain",
+              "Clock rollback can cause collisions"
+            ]
           }
         ]
       }

@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "apollo",
-    "cache",
-    "update",
-    "mutation"
-  ],
+  "tags": ["apollo", "cache", "update", "mutation"],
   "blocks": [
     {
       "type": "paragraph",

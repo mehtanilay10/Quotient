@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 33,
-  "tags": [
-    "intersect",
-    "set-operations",
-    "common-rows",
-    "intersection"
-  ],
+  "tags": ["intersect", "set-operations", "common-rows", "intersection"],
   "blocks": [
     {
       "type": "heading",

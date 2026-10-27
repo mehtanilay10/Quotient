@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 28,
-  "tags": [
-    "security",
-    "auth",
-    "identity"
-  ],
+  "tags": ["security", "auth", "identity"],
   "blocks": [
     {
       "type": "heading",

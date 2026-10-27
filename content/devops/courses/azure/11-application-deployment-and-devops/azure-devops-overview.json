@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "devops",
-    "deployment",
-    "developer"
-  ],
+  "tags": ["azure", "devops", "deployment", "developer"],
   "blocks": [
     {
       "type": "paragraph",
@@ -31,37 +26,21 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Service",
-          "Purpose",
-          "Common Use"
-        ],
+        "headers": ["Service", "Purpose", "Common Use"],
         "rows": [
           [
             "Azure Boards",
             "Agile planning and work tracking",
             "Sprint planning, backlogs, Kanban boards"
           ],
-          [
-            "Azure Repos",
-            "Git and TFVC version control",
-            "Hosting private Git repositories"
-          ],
-          [
-            "Azure Pipelines",
-            "CI/CD for any platform",
-            "Building, testing, and deploying code"
-          ],
+          ["Azure Repos", "Git and TFVC version control", "Hosting private Git repositories"],
+          ["Azure Pipelines", "CI/CD for any platform", "Building, testing, and deploying code"],
           [
             "Azure Test Plans",
             "Manual and exploratory testing",
             "Test case management and bug tracking"
           ],
-          [
-            "Azure Artifacts",
-            "Package management",
-            "NuGet, npm, Maven, Python feeds"
-          ]
+          ["Azure Artifacts", "Package management", "NuGet, npm, Maven, Python feeds"]
         ]
       }
     },

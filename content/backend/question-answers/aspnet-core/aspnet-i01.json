@@ -6,10 +6,7 @@
   "description": "Understand configuration options patterns in ASP.NET Core.",
   "order": 7,
   "difficulty": "intermediate",
-  "tags": [
-    "asp.net core",
-    "intermediate"
-  ],
+  "tags": ["asp.net core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

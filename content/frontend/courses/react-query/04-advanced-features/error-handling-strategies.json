@@ -8,18 +8,8 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "error-handling",
-    "retry",
-    "error-boundary",
-    "isError"
-  ],
-  "prerequisites": [
-    "suspense",
-    "query-cancellation",
-    "custom-hooks-react-query"
-  ],
+  "tags": ["react-query", "error-handling", "retry", "error-boundary", "isError"],
+  "prerequisites": ["suspense", "query-cancellation", "custom-hooks-react-query"],
   "blocks": [
     {
       "type": "heading",
@@ -98,12 +88,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Configuration",
-          "Use Case",
-          "Trade-off"
-        ],
+        "headers": ["Strategy", "Configuration", "Use Case", "Trade-off"],
         "rows": [
           [
             "No retry",
@@ -111,12 +96,7 @@
             "POST mutations, optimistic updates",
             "Fastest failure, no server load"
           ],
-          [
-            "Fixed count",
-            "retry: 3",
-            "GET requests to stable APIs",
-            "Simple but can stampede"
-          ],
+          ["Fixed count", "retry: 3", "GET requests to stable APIs", "Simple but can stampede"],
           [
             "Exponential backoff",
             "retryDelay: (attempt) => Math.min(1000 * 2**attempt, 30000)",
@@ -295,58 +275,30 @@
           {
             "title": "No Retries",
             "description": "The fastest way to fail. Best for mutations and POST requests.",
-            "pros": [
-              "No wasted network calls",
-              "Immediate user feedback"
-            ],
-            "cons": [
-              "No resilience for transient failures"
-            ],
-            "tags": [
-              "retry: false"
-            ]
+            "pros": ["No wasted network calls", "Immediate user feedback"],
+            "cons": ["No resilience for transient failures"],
+            "tags": ["retry: false"]
           },
           {
             "title": "Fixed Retry Count",
             "description": "Retry a set number of times with equal delays.",
-            "pros": [
-              "Simple to configure",
-              "Predictable behavior"
-            ],
-            "cons": [
-              "Can overwhelm a struggling server"
-            ],
-            "tags": [
-              "retry: 3"
-            ]
+            "pros": ["Simple to configure", "Predictable behavior"],
+            "cons": ["Can overwhelm a struggling server"],
+            "tags": ["retry: 3"]
           },
           {
             "title": "Exponential Backoff",
             "description": "Delays grow with each attempt, giving the server time to recover.",
-            "pros": [
-              "Respects server capacity",
-              "Best for flaky third-party APIs"
-            ],
-            "cons": [
-              "More complex configuration"
-            ],
-            "tags": [
-              "retryDelay"
-            ]
+            "pros": ["Respects server capacity", "Best for flaky third-party APIs"],
+            "cons": ["More complex configuration"],
+            "tags": ["retryDelay"]
           },
           {
             "title": "Conditional Retry",
             "description": "Retry only for specific error types, such as network errors or 5xx responses.",
-            "pros": [
-              "Avoids retrying known failures",
-              "Balances resilience and efficiency"
-            ],
-            "cons": [
-              "Requires understanding of error codes"
-            ],
-            "tags": [
-              "retry: (fc, err) => ..."
-            ]
+            "pros": ["Avoids retrying known failures", "Balances resilience and efficiency"],
+            "cons": ["Requires understanding of error codes"],
+            "tags": ["retry: (fc, err) => ..."]
           }
         ]
       }

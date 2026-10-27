@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "oauth",
-    "security",
-    "best-practices",
-    "openid-connect"
-  ],
+  "tags": ["oauth", "security", "best-practices", "openid-connect"],
   "blocks": [
     {
       "type": "paragraph",
@@ -208,10 +203,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "oauth-overview",
-    "external-providers",
-    "openid-connect"
-  ],
+  "relatedLessons": ["oauth-overview", "external-providers", "openid-connect"],
   "courseSlug": "authentication-authorization"
 }

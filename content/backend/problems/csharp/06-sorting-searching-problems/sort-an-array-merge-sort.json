@@ -8,12 +8,7 @@
   "order": 15,
   "difficulty": "medium",
   "estimatedMinutes": 13,
-  "tags": [
-    "csharp",
-    "sorting",
-    "divide-and-conquer",
-    "medium"
-  ],
+  "tags": ["csharp", "sorting", "divide-and-conquer", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -86,43 +81,21 @@
           {
             "title": "Merge Sort",
             "description": "Divide, recursively sort, merge",
-            "pros": [
-              "O(n log n) always",
-              "Stable",
-              "Predictable worst case"
-            ],
-            "cons": [
-              "O(n) extra space for merging"
-            ],
-            "tags": [
-              "O(n log n) time",
-              "O(n) space",
-              "Stable"
-            ]
+            "pros": ["O(n log n) always", "Stable", "Predictable worst case"],
+            "cons": ["O(n) extra space for merging"],
+            "tags": ["O(n log n) time", "O(n) space", "Stable"]
           },
           {
             "title": "Quicksort",
             "description": "Partition around a pivot",
-            "pros": [
-              "O(n log n) average",
-              "In-place, cache-friendly"
-            ],
-            "cons": [
-              "O(n^2) worst case",
-              "Not stable"
-            ],
-            "tags": [
-              "O(n log n) avg",
-              "O(1) space"
-            ]
+            "pros": ["O(n log n) average", "In-place, cache-friendly"],
+            "cons": ["O(n^2) worst case", "Not stable"],
+            "tags": ["O(n log n) avg", "O(1) space"]
           }
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "binary-search",
-    "powx-n"
-  ],
+  "relatedLessons": ["binary-search", "powx-n"],
   "furtherReading": []
 }

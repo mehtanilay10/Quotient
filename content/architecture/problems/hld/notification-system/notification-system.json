@@ -144,13 +144,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Channel",
-          "Delivery Latency",
-          "Cost per Unit",
-          "Open Rate",
-          "Best Suited For"
-        ],
+        "headers": ["Channel", "Delivery Latency", "Cost per Unit", "Open Rate", "Best Suited For"],
         "rows": [
           [
             "Mobile Push (APNs / FCM)",
@@ -228,11 +222,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "chat-system-hld",
-    "rate-limiter",
-    "whatsapp-chat-hld"
-  ],
+  "relatedLessons": ["chat-system-hld", "rate-limiter", "whatsapp-chat-hld"],
   "furtherReading": [
     {
       "title": "Designing a Scalable Notification Platform — Uber Engineering",

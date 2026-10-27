@@ -9,12 +9,7 @@
   "estimatedHours": 0.5,
   "icon": "🔗",
   "tags": ["integration-testing", "dotnet"],
-  "lessonSlugs": [
-    "integration-testing-basics",
-    "test-server",
-    "database-testing",
-    "api-testing"
-  ],
+  "lessonSlugs": ["integration-testing-basics", "test-server", "database-testing", "api-testing"],
   "whatYouLearn": [
     "Understand integration testing concepts",
     "Use TestServer for API testing",

@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "react",
-    "control-props",
-    "patterns",
-    "controlled"
-  ],
+  "tags": ["react", "control-props", "patterns", "controlled"],
   "blocks": [
     {
       "type": "paragraph",
@@ -30,27 +25,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Controlled",
-          "Uncontrolled"
-        ],
+        "headers": ["Controlled", "Uncontrolled"],
         "rows": [
-          [
-            "Parent manages state",
-            "Component manages state"
-          ],
-          [
-            "Value passed as prop",
-            "Value tracked internally"
-          ],
-          [
-            "onChange callback",
-            "Works independently"
-          ],
-          [
-            "More flexible",
-            "Simpler to use"
-          ]
+          ["Parent manages state", "Component manages state"],
+          ["Value passed as prop", "Value tracked internally"],
+          ["onChange callback", "Works independently"],
+          ["More flexible", "Simpler to use"]
         ]
       }
     },

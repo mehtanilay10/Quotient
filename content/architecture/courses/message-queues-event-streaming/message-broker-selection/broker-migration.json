@@ -6,14 +6,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "migration",
-    "broker-selection",
-    "kafka",
-    "rabbitmq",
-    "sqs",
-    "devops"
-  ],
+  "tags": ["migration", "broker-selection", "kafka", "rabbitmq", "sqs", "devops"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,12 +8,7 @@
   "order": 9,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "arrays",
-    "in-place",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "in-place", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -99,33 +94,16 @@
           {
             "title": "Extra Array",
             "description": "Copy into new positions",
-            "pros": [
-              "Easy to understand"
-            ],
-            "cons": [
-              "O(n) extra space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Easy to understand"],
+            "cons": ["O(n) extra space"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Triple Reverse",
             "description": "Reverse all, then reverse each segment",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
-            "cons": [
-              "Needs careful index math"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
+            "cons": ["Needs careful index math"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

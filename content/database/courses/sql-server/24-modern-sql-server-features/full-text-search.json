@@ -8,13 +8,7 @@
   "order": 7,
   "difficulty": "intermediate",
   "estimatedMinutes": 26,
-  "tags": [
-    "full-text-search",
-    "contains",
-    "freetext",
-    "contains-table",
-    "word-breaker"
-  ],
+  "tags": ["full-text-search", "contains", "freetext", "contains-table", "word-breaker"],
   "blocks": [
     {
       "type": "heading",
@@ -85,11 +79,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Predicate",
-          "Behavior",
-          "Use when"
-        ],
+        "headers": ["Predicate", "Behavior", "Use when"],
         "rows": [
           [
             "LIKE '%term%'",
@@ -152,8 +142,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "seek-vs-scan",
-    "included-columns-and-covering-indexes"
-  ]
+  "relatedLessons": ["seek-vs-scan", "included-columns-and-covering-indexes"]
 }

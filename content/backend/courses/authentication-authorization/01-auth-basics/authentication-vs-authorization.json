@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 18,
-  "tags": [
-    "authentication",
-    "authorization",
-    "difference",
-    "concepts"
-  ],
+  "tags": ["authentication", "authorization", "difference", "concepts"],
   "blocks": [
     {
       "type": "paragraph",

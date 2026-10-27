@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "setup",
-    "copilot",
-    "cursor",
-    "vscode",
-    "configuration"
-  ],
+  "tags": ["setup", "copilot", "cursor", "vscode", "configuration"],
   "blocks": [
     {
       "type": "heading",
@@ -108,15 +102,8 @@
           {
             "title": "GitHub Copilot + VS Code",
             "description": "Best for most developers. Mature, reliable, widely adopted. Great autocomplete and improving chat features.",
-            "pros": [
-              "Most integrations",
-              "Enterprise-friendly",
-              "Low friction to start"
-            ],
-            "cons": [
-              "Chat features still maturing",
-              "Codebase awareness limited"
-            ]
+            "pros": ["Most integrations", "Enterprise-friendly", "Low friction to start"],
+            "cons": ["Chat features still maturing", "Codebase awareness limited"]
           },
           {
             "title": "Cursor IDE",
@@ -126,23 +113,13 @@
               "Composer for multi-file edits",
               "Built-in terminal AI"
             ],
-            "cons": [
-              "Newer, less battle-tested",
-              "Separate IDE to maintain"
-            ]
+            "cons": ["Newer, less battle-tested", "Separate IDE to maintain"]
           },
           {
             "title": "Web chat (ChatGPT / Claude)",
             "description": "Best as a complement to any IDE tool. Excellent for architecture, debugging, and learning.",
-            "pros": [
-              "Long context windows",
-              "Great reasoning",
-              "Always available"
-            ],
-            "cons": [
-              "Not IDE-integrated",
-              "Manual copy-paste workflow"
-            ]
+            "pros": ["Long context windows", "Great reasoning", "Always available"],
+            "cons": ["Not IDE-integrated", "Manual copy-paste workflow"]
           }
         ]
       }
@@ -212,10 +189,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-is-ai-coding",
-    "history-of-ai-coding"
-  ],
+  "relatedLessons": ["what-is-ai-coding", "history-of-ai-coding"],
   "relatedGlossaryTerms": [],
   "courseSlug": "codex"
 }

@@ -6,12 +6,7 @@
   "category": "analysis",
   "difficulty": "intermediate",
   "template": "Please review the following AI-generated response and help me evaluate its reliability.\n\nFor each major claim or piece of information, tell me:\n1. **Confidence level** (High / Medium / Low — based on how well-established this type of information is)\n2. **Verification method** (how I could confirm this — e.g., \"check official documentation\", \"search for recent statistics\")\n3. **Potential issues** (where this information might be outdated, overly simplified, or contested)\n4. **What you are most uncertain about** (the claims in this response that are most likely to be inaccurate)\n\n---\n[PASTE THE AI RESPONSE TO REVIEW HERE]\n---",
-  "tags": [
-    "verification",
-    "fact-checking",
-    "safety",
-    "critical-thinking"
-  ],
+  "tags": ["verification", "fact-checking", "safety", "critical-thinking"],
   "tips": [
     "Use this whenever AI gives you specific statistics, dates, names, or technical claims",
     "Always verify high-stakes decisions (medical, legal, financial) with authoritative sources",

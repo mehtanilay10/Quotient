@@ -6,12 +6,7 @@
   "description": "Allow concurrent reads or exclusive writes with fine-grained synchronization.",
   "order": 2,
   "difficulty": "advanced",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture",
-    "concurrency"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture", "concurrency"],
   "blocks": [
     {
       "type": "paragraph",

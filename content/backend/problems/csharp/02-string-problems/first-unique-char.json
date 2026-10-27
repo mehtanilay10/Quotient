@@ -8,12 +8,7 @@
   "order": 10,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "strings",
-    "hashmap",
-    "easy"
-  ],
+  "tags": ["csharp", "strings", "hashmap", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -87,33 +82,16 @@
           {
             "title": "Count Then Scan",
             "description": "Dictionary two-pass",
-            "pros": [
-              "Works for any charset"
-            ],
-            "cons": [
-              "More allocations",
-              "Hashing overhead"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Works for any charset"],
+            "cons": ["More allocations", "Hashing overhead"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Fixed Array",
             "description": "int[26] two-pass",
-            "pros": [
-              "O(1) extra space",
-              "Very fast"
-            ],
-            "cons": [
-              "Assumes lowercase a-z"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) extra space", "Very fast"],
+            "cons": ["Assumes lowercase a-z"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

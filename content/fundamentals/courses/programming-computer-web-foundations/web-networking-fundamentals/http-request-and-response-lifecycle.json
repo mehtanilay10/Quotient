@@ -173,7 +173,11 @@
       }
     }
   ],
-  "relatedLessons": ["dns-resolution-from-browser-to-server", "tcp-connection-and-tls-handshake", "http-methods-status-codes-and-headers"],
+  "relatedLessons": [
+    "dns-resolution-from-browser-to-server",
+    "tcp-connection-and-tls-handshake",
+    "http-methods-status-codes-and-headers"
+  ],
   "furtherReading": [
     {
       "type": "article",

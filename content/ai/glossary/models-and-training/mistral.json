@@ -6,9 +6,5 @@
   "fullDefinition": "Mistral AI is a French AI startup known for releasing efficient, high-quality open-weights language models. The Mistral 7B model gained attention for outperforming much larger models at its size. Mixtral (a mixture-of-experts variant) is popular for local deployment. Mistral models are widely used in the open-source AI ecosystem and via their commercial API (La Plateforme). Le Chat is their consumer-facing chatbot.",
   "category": "models-and-training",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "open-weights",
-    "local-model",
-    "large-language-model"
-  ]
+  "relatedTerms": ["open-weights", "local-model", "large-language-model"]
 }

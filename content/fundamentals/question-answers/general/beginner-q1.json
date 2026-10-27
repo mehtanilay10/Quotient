@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 23,
-  "tags": [
-    "programming",
-    "fundamentals",
-    "languages"
-  ],
+  "tags": ["programming", "fundamentals", "languages"],
   "blocks": [
     {
       "type": "paragraph",
@@ -123,10 +119,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "beginner-q2",
-    "beginner-q3"
-  ],
+  "relatedLessons": ["beginner-q2", "beginner-q3"],
   "furtherReading": [],
   "courseSlug": "question-answers",
   "technology": "General"

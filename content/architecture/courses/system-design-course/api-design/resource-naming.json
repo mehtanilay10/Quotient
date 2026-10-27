@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "api",
-    "naming",
-    "rest",
-    "urls"
-  ],
+  "tags": ["api", "naming", "rest", "urls"],
   "blocks": [
     {
       "type": "paragraph",

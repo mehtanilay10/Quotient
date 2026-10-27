@@ -102,27 +102,15 @@
           {
             "title": "Automatic shutdown schedules",
             "description": "Stop dev compute outside working hours",
-            "pros": [
-              "Large savings on non-prod",
-              "Applies automatically"
-            ],
-            "cons": [
-              "Unexpected 3 a.m. test failures",
-              "Needs an opt-out for on-call work"
-            ],
+            "pros": ["Large savings on non-prod", "Applies automatically"],
+            "cons": ["Unexpected 3 a.m. test failures", "Needs an opt-out for on-call work"],
             "tags": ["Dev and test"]
           },
           {
             "title": "Cost Management exports and dashboards",
             "description": "Reactive reporting to Power BI",
-            "pros": [
-              "Rich analysis and trending",
-              "Can join with business metrics"
-            ],
-            "cons": [
-              "Reports arrive after spend happens",
-              "Needs a team to maintain the model"
-            ],
+            "pros": ["Rich analysis and trending", "Can join with business metrics"],
+            "cons": ["Reports arrive after spend happens", "Needs a team to maintain the model"],
             "tags": ["Finance and leadership reporting"]
           }
         ]

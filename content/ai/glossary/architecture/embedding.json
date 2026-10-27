@@ -6,17 +6,10 @@
   "fullDefinition": "An embedding is a list of numbers (a vector) that represents the meaning of a piece of text. Similar texts will have similar (close together) vectors. Embeddings are used in search, recommendations, and RAG systems to find relevant content based on meaning rather than exact keyword matching.",
   "category": "architecture",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "rag",
-    "vector-database",
-    "semantic-search"
-  ],
+  "relatedTerms": ["rag", "vector-database", "semantic-search"],
   "examples": [
     "\"cat\" and \"kitten\" will have similar embeddings",
     "A question embedding is compared against document embeddings to find relevant passages"
   ],
-  "alsoKnownAs": [
-    "Vector Embedding",
-    "Text Embedding"
-  ]
+  "alsoKnownAs": ["Vector Embedding", "Text Embedding"]
 }

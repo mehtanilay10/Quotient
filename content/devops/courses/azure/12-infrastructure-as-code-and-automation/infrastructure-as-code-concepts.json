@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "bicep",
-    "iac",
-    "developer"
-  ],
+  "tags": ["azure", "bicep", "iac", "developer"],
   "blocks": [
     {
       "type": "paragraph",

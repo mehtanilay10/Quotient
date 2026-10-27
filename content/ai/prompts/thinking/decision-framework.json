@@ -6,12 +6,7 @@
   "category": "thinking",
   "difficulty": "beginner",
   "template": "I need to make a decision and want your help structuring my thinking.\n\n**Decision:** [DESCRIBE THE DECISION, e.g. \"Whether to accept a job offer at a startup vs. staying at my corporate job\"]\n\n**My priorities are:**\n1. [PRIORITY 1, e.g. \"Work-life balance\"]\n2. [PRIORITY 2, e.g. \"Long-term career growth\"]\n3. [PRIORITY 3, e.g. \"Compensation stability\"]\n\n**Key constraints:**\n- [CONSTRAINT, e.g. \"I have a mortgage\"]\n- [CONSTRAINT, e.g. \"I am risk-averse by nature\"]\n\nPlease:\n1. Analyze the pros and cons of each option specifically against my priorities\n2. Identify 2-3 key questions I should answer before deciding\n3. Suggest what additional information would most change your recommendation\n4. Give your honest recommendation with reasoning",
-  "tags": [
-    "decisions",
-    "analysis",
-    "thinking",
-    "reasoning"
-  ],
+  "tags": ["decisions", "analysis", "thinking", "reasoning"],
   "tips": [
     "Be honest about your real constraints and fears for better analysis",
     "Ask the AI to \"steelman\" (argue for) the option you're leaning against",

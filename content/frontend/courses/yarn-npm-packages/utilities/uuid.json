@@ -6,12 +6,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 6,
-  "tags": [
-    "uuid",
-    "utilities",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["uuid", "utilities", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -96,10 +91,7 @@
       "type": "summary-box",
       "data": {
         "title": "Key Takeaways",
-        "points": [
-          "UUID v4 is random and collision-resistant.",
-          "Use for database IDs and keys."
-        ]
+        "points": ["UUID v4 is random and collision-resistant.", "Use for database IDs and keys."]
       }
     }
   ],

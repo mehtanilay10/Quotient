@@ -7,12 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "react",
-    "xss",
-    "csrf",
-    "security"
-  ],
+  "tags": ["react", "xss", "csrf", "security"],
   "blocks": [
     {
       "type": "paragraph",

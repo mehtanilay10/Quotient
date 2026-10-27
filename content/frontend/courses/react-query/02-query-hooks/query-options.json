@@ -18,9 +18,7 @@
     "retry",
     "select"
   ],
-  "prerequisites": [
-    "query-basics"
-  ],
+  "prerequisites": ["query-basics"],
   "blocks": [
     {
       "type": "paragraph",
@@ -75,10 +73,7 @@
               "Set too high and data stays outdated silently",
               "Default is 0 â€” most beginners miss this option"
             ],
-            "tags": [
-              "freshness",
-              "refetching"
-            ]
+            "tags": ["freshness", "refetching"]
           },
           {
             "title": "gcTime",
@@ -91,10 +86,7 @@
               "Long gcTime increases memory usage",
               "Short gcTime causes unnecessary refetches on navigation"
             ],
-            "tags": [
-              "memory",
-              "cache-duration"
-            ]
+            "tags": ["memory", "cache-duration"]
           }
         ]
       }
@@ -115,37 +107,17 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Option",
-          "Default",
-          "Description"
-        ],
+        "headers": ["Option", "Default", "Description"],
         "rows": [
-          [
-            "refetchOnWindowFocus",
-            "true",
-            "Refetch when user switches back to the tab"
-          ],
-          [
-            "refetchOnMount",
-            "true",
-            "Refetch when a mounted component re-renders"
-          ],
-          [
-            "refetchOnReconnect",
-            "true",
-            "Refetch when the browser detects network reconnection"
-          ],
+          ["refetchOnWindowFocus", "true", "Refetch when user switches back to the tab"],
+          ["refetchOnMount", "true", "Refetch when a mounted component re-renders"],
+          ["refetchOnReconnect", "true", "Refetch when the browser detects network reconnection"],
           [
             "refetchInterval",
             "false",
             "Poll interval in ms. Set to a number for polling, false to disable"
           ],
-          [
-            "refetchIntervalInBackground",
-            "false",
-            "Keep polling when the tab is in the background"
-          ]
+          ["refetchIntervalInBackground", "false", "Keep polling when the tab is in the background"]
         ]
       }
     },
@@ -211,103 +183,23 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Option",
-          "Type",
-          "Default",
-          "Notes"
-        ],
+        "headers": ["Option", "Type", "Default", "Notes"],
         "rows": [
-          [
-            "queryKey",
-            "QueryKey",
-            "required",
-            "Unique array identifying the query"
-          ],
-          [
-            "queryFn",
-            "() => Promise<T>",
-            "required",
-            "Async function that fetches the data"
-          ],
-          [
-            "staleTime",
-            "number",
-            "0",
-            "Data freshness duration in ms"
-          ],
-          [
-            "gcTime",
-            "number",
-            "5 min",
-            "Cache retention after unmount in ms"
-          ],
-          [
-            "enabled",
-            "boolean",
-            "true",
-            "Whether the query runs automatically"
-          ],
-          [
-            "retry",
-            "number | boolean",
-            "3",
-            "Retry count or false to disable"
-          ],
-          [
-            "retryDelay",
-            "number | fn",
-            "exponential",
-            "Delay between retries in ms"
-          ],
-          [
-            "select",
-            "(data) => S",
-            "none",
-            "Transform data before it reaches the component"
-          ],
-          [
-            "placeholderData",
-            "T | fn",
-            "none",
-            "Fallback when cache is empty"
-          ],
-          [
-            "initialData",
-            "T | fn",
-            "none",
-            "Data for the very first render only"
-          ],
-          [
-            "refetchOnWindowFocus",
-            "boolean",
-            "true",
-            "Refetch on tab focus"
-          ],
-          [
-            "refetchOnMount",
-            "boolean",
-            "true",
-            "Refetch on component mount"
-          ],
-          [
-            "refetchOnReconnect",
-            "boolean",
-            "true",
-            "Refetch on network reconnection"
-          ],
-          [
-            "refetchInterval",
-            "number | false",
-            "false",
-            "Poll interval in ms"
-          ],
-          [
-            "suspense",
-            "boolean",
-            "false",
-            "Enable React Suspense integration"
-          ]
+          ["queryKey", "QueryKey", "required", "Unique array identifying the query"],
+          ["queryFn", "() => Promise<T>", "required", "Async function that fetches the data"],
+          ["staleTime", "number", "0", "Data freshness duration in ms"],
+          ["gcTime", "number", "5 min", "Cache retention after unmount in ms"],
+          ["enabled", "boolean", "true", "Whether the query runs automatically"],
+          ["retry", "number | boolean", "3", "Retry count or false to disable"],
+          ["retryDelay", "number | fn", "exponential", "Delay between retries in ms"],
+          ["select", "(data) => S", "none", "Transform data before it reaches the component"],
+          ["placeholderData", "T | fn", "none", "Fallback when cache is empty"],
+          ["initialData", "T | fn", "none", "Data for the very first render only"],
+          ["refetchOnWindowFocus", "boolean", "true", "Refetch on tab focus"],
+          ["refetchOnMount", "boolean", "true", "Refetch on component mount"],
+          ["refetchOnReconnect", "boolean", "true", "Refetch on network reconnection"],
+          ["refetchInterval", "number | false", "false", "Poll interval in ms"],
+          ["suspense", "boolean", "false", "Enable React Suspense integration"]
         ]
       }
     },

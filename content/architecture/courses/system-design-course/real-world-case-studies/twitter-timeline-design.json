@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "system-design",
-    "twitter",
-    "social-media",
-    "timeline",
-    "fan-out"
-  ],
+  "tags": ["system-design", "twitter", "social-media", "timeline", "fan-out"],
   "blocks": [
     {
       "type": "paragraph",
@@ -80,32 +74,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Component",
-          "Technology",
-          "Purpose"
-        ],
+        "headers": ["Component", "Technology", "Purpose"],
         "rows": [
           [
             "Tweet Store",
             "Cassandra / Manhattan",
             "Immutable tweet storage with high write throughput"
           ],
-          [
-            "Timeline Cache",
-            "Redis / Memcached",
-            "Pre-computed home timelines for fast reads"
-          ],
-          [
-            "Social Graph",
-            "FlockDB / Cassandra",
-            "Follow relationships and follower counts"
-          ],
-          [
-            "Search Index",
-            "Blender / Earlybird",
-            "Full-text search for tweets"
-          ]
+          ["Timeline Cache", "Redis / Memcached", "Pre-computed home timelines for fast reads"],
+          ["Social Graph", "FlockDB / Cassandra", "Follow relationships and follower counts"],
+          ["Search Index", "Blender / Earlybird", "Full-text search for tweets"]
         ]
       }
     },

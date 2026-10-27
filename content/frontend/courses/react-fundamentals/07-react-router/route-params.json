@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "router",
-    "params",
-    "dynamic"
-  ],
+  "tags": ["react", "router", "params", "dynamic"],
   "blocks": [
     {
       "type": "paragraph",

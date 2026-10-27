@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "query-store",
-    "plan-regression",
-    "forced-plan",
-    "performance-tracking",
-    "monitoring"
-  ],
+  "tags": ["query-store", "plan-regression", "forced-plan", "performance-tracking", "monitoring"],
   "blocks": [
     {
       "type": "heading",

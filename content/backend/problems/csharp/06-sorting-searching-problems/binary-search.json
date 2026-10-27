@@ -8,12 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "binary-search",
-    "divide-and-conquer",
-    "arrays"
-  ],
+  "tags": ["csharp", "binary-search", "divide-and-conquer", "arrays"],
   "blocks": [
     {
       "type": "heading",
@@ -157,50 +152,23 @@
           {
             "title": "Iterative",
             "description": "Standard while-loop binary search",
-            "pros": [
-              "O(1) space",
-              "No stack risk",
-              "Clear loop invariant"
-            ],
-            "cons": [
-              "Off-by-one pitfalls with mid"
-            ],
-            "tags": [
-              "O(log n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) space", "No stack risk", "Clear loop invariant"],
+            "cons": ["Off-by-one pitfalls with mid"],
+            "tags": ["O(log n) time", "O(1) space", "Recommended"]
           },
           {
             "title": "Recursive",
             "description": "Divide-and-conquer recursion",
-            "pros": [
-              "Elegant",
-              "Direct mapping to problem"
-            ],
-            "cons": [
-              "O(log n) stack space"
-            ],
-            "tags": [
-              "O(log n) time",
-              "O(log n) space"
-            ]
+            "pros": ["Elegant", "Direct mapping to problem"],
+            "cons": ["O(log n) stack space"],
+            "tags": ["O(log n) time", "O(log n) space"]
           },
           {
             "title": "Array.BinarySearch",
             "description": "Standard library method",
-            "pros": [
-              "Shortest code",
-              "Optimized",
-              "Reliable"
-            ],
-            "cons": [
-              "No customization"
-            ],
-            "tags": [
-              "O(log n) time",
-              "O(1) space"
-            ]
+            "pros": ["Shortest code", "Optimized", "Reliable"],
+            "cons": ["No customization"],
+            "tags": ["O(log n) time", "O(1) space"]
           }
         ]
       }

@@ -114,27 +114,14 @@
             "Degrades rapidly with large outer sets",
             "Multiple lookups per row can be expensive"
           ],
-          "tags": [
-            "small-datasets",
-            "indexed"
-          ]
+          "tags": ["small-datasets", "indexed"]
         },
         {
           "title": "Hash Match",
           "description": "Builds a hash table from the smaller input, then probes it with rows from the larger input. Best for large, unsorted inputs where indexes are absent or ineffective.",
-          "pros": [
-            "Scales well with large inputs",
-            "No index required",
-            "Parallelizable"
-          ],
-          "cons": [
-            "High memory consumption",
-            "May spill to tempdb if memory insufficient"
-          ],
-          "tags": [
-            "large-datasets",
-            "no-index"
-          ]
+          "pros": ["Scales well with large inputs", "No index required", "Parallelizable"],
+          "cons": ["High memory consumption", "May spill to tempdb if memory insufficient"],
+          "tags": ["large-datasets", "no-index"]
         },
         {
           "title": "Merge Join",

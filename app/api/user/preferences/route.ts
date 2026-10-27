@@ -1,24 +1,40 @@
-import { NextResponse } from 'next/server';
-import { createApiAuthHandler } from '@/lib/authMiddleware';
-import { ValidationError, DatabaseError } from '@/lib/errorHandler';
-import { logError } from '@/lib/errorHandler';
-import { rateLimit } from '@/lib/rateLimit';
-import type { UserPreference } from '@prisma/client';
+import { NextResponse } from "next/server";
+import { createApiAuthHandler } from "@/lib/authMiddleware";
+import { ValidationError, DatabaseError } from "@/lib/errorHandler";
+import { logError } from "@/lib/errorHandler";
+import { rateLimit } from "@/lib/rateLimit";
+import type { UserPreference } from "@prisma/client";
 
-type PreferencesPayload = Partial<Pick<UserPreference, 'fontSize' | 'density' | 'codeFontSize' | 'reducedMotion' | 'autoExpandCode' | 'showCompleted' | 'defaultLanding'>>;
+type PreferencesPayload = Partial<
+  Pick<
+    UserPreference,
+    | "fontSize"
+    | "density"
+    | "codeFontSize"
+    | "reducedMotion"
+    | "autoExpandCode"
+    | "showCompleted"
+    | "defaultLanding"
+  >
+>;
 
 function isValidPreference(key: string, value: unknown): boolean {
-  if (key === 'reducedMotion' || key === 'autoExpandCode' || key === 'showCompleted') {
-    return typeof value === 'boolean';
+  if (key === "reducedMotion" || key === "autoExpandCode" || key === "showCompleted") {
+    return typeof value === "boolean";
   }
-  if (key === 'fontSize' || key === 'density' || key === 'codeFontSize' || key === 'defaultLanding') {
-    return typeof value === 'string' || value === null;
+  if (
+    key === "fontSize" ||
+    key === "density" ||
+    key === "codeFontSize" ||
+    key === "defaultLanding"
+  ) {
+    return typeof value === "string" || value === null;
   }
   return false;
 }
 
 export const GET = createApiAuthHandler(async (databaseUser) => {
-  const { prisma } = await import('@/lib/prisma');
+  const { prisma } = await import("@/lib/prisma");
 
   const row = await prisma.userPreference.findUnique({
     where: { userId: databaseUser.id },
@@ -36,24 +52,40 @@ export const GET = createApiAuthHandler(async (databaseUser) => {
 });
 
 export const POST = createApiAuthHandler(async (databaseUser, request) => {
-  const { prisma } = await import('@/lib/prisma');
+  const { prisma } = await import("@/lib/prisma");
 
   const rateLimitResult = await rateLimit(request, { limit: 30, windowMs: 60_000 });
   if (!rateLimitResult.allowed) {
     return NextResponse.json(
-      { code: 'RATE_LIMITED', message: 'Too many requests. Please try again later.' },
-      { status: 429, headers: { 'Retry-After': String(Math.ceil((rateLimitResult.retryAfterMs ?? 1000) / 1000)) } }
+      { code: "RATE_LIMITED", message: "Too many requests. Please try again later." },
+      {
+        status: 429,
+        headers: {
+          "Retry-After": String(Math.ceil((rateLimitResult.retryAfterMs ?? 1000) / 1000)),
+        },
+      }
     );
   }
 
-  const body = await request.json().catch(() => null) as PreferencesPayload | null;
-  if (!body || typeof body !== 'object') {
-    const error = new ValidationError('Invalid payload');
-    logError('preferences:POST', error);
-    return NextResponse.json({ code: error.code, message: error.message }, { status: error.statusCode });
+  const body = (await request.json().catch(() => null)) as PreferencesPayload | null;
+  if (!body || typeof body !== "object") {
+    const error = new ValidationError("Invalid payload");
+    logError("preferences:POST", error);
+    return NextResponse.json(
+      { code: error.code, message: error.message },
+      { status: error.statusCode }
+    );
   }
 
-  const allowedKeys: (keyof PreferencesPayload)[] = ['fontSize', 'density', 'codeFontSize', 'reducedMotion', 'autoExpandCode', 'showCompleted', 'defaultLanding'];
+  const allowedKeys: (keyof PreferencesPayload)[] = [
+    "fontSize",
+    "density",
+    "codeFontSize",
+    "reducedMotion",
+    "autoExpandCode",
+    "showCompleted",
+    "defaultLanding",
+  ];
   const updates: Record<string, unknown> = {};
 
   for (const key of allowedKeys) {
@@ -64,9 +96,12 @@ export const POST = createApiAuthHandler(async (databaseUser, request) => {
   }
 
   if (Object.keys(updates).length === 0) {
-    const error = new ValidationError('No valid fields to update');
-    logError('preferences:POST', error);
-    return NextResponse.json({ code: error.code, message: error.message }, { status: error.statusCode });
+    const error = new ValidationError("No valid fields to update");
+    logError("preferences:POST", error);
+    return NextResponse.json(
+      { code: error.code, message: error.message },
+      { status: error.statusCode }
+    );
   }
 
   let data: UserPreference;
@@ -83,9 +118,12 @@ export const POST = createApiAuthHandler(async (databaseUser, request) => {
       },
     });
   } catch (error) {
-    const dbError = new DatabaseError('Failed to save preferences', error);
-    logError('preferences:POST', dbError);
-    return NextResponse.json({ code: dbError.code, message: dbError.message }, { status: dbError.statusCode });
+    const dbError = new DatabaseError("Failed to save preferences", error);
+    logError("preferences:POST", dbError);
+    return NextResponse.json(
+      { code: dbError.code, message: dbError.message },
+      { status: dbError.statusCode }
+    );
   }
 
   return NextResponse.json({

@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "roadmap",
-    "career",
-    "learning-plan",
-    "personal-strategy"
-  ],
+  "tags": ["roadmap", "career", "learning-plan", "personal-strategy"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,12 +27,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Role",
-          "Days 1-30",
-          "Days 31-60",
-          "Days 61-90"
-        ],
+        "headers": ["Role", "Days 1-30", "Days 31-60", "Days 61-90"],
         "rows": [
           [
             "Manager",
@@ -90,12 +80,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Role",
-          "Days 1-30",
-          "Days 31-60",
-          "Days 61-90"
-        ],
+        "headers": ["Role", "Days 1-30", "Days 31-60", "Days 61-90"],
         "rows": [
           [
             "Student / Early-career",
@@ -124,17 +109,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Selection criterion",
-          "What to ask",
-          "Good signal"
-        ],
+        "headers": ["Selection criterion", "What to ask", "Good signal"],
         "rows": [
-          [
-            "Frequency",
-            "Do I do this at least weekly?",
-            "Appears 4+ times per month"
-          ],
+          ["Frequency", "Do I do this at least weekly?", "Appears 4+ times per month"],
           [
             "Time cost",
             "How many minutes or hours does this consume?",
@@ -170,12 +147,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Role",
-          "Primary quality check",
-          "Common failure pattern",
-          "Simple safeguard"
-        ],
+        "headers": ["Role", "Primary quality check", "Common failure pattern", "Simple safeguard"],
         "rows": [
           [
             "Manager",
@@ -273,30 +245,22 @@
           {
             "title": "Manager",
             "description": "First value in 1-2 weeks: meeting summaries and decision memos. Low technical barrier, high visibility.",
-            "tags": [
-              "fast-start"
-            ]
+            "tags": ["fast-start"]
           },
           {
             "title": "Marketer",
             "description": "First value in 2-3 weeks: idea generation and content briefs. Requires tone and brand context setup.",
-            "tags": [
-              "medium-start"
-            ]
+            "tags": ["medium-start"]
           },
           {
             "title": "Analyst",
             "description": "First value in 3-4 weeks: data cleanup and KPI summaries. Needs clean data sources and formatting rules.",
-            "tags": [
-              "structured"
-            ]
+            "tags": ["structured"]
           },
           {
             "title": "Developer",
             "description": "First value in 1-2 weeks: code explanation and test generation. Leverages existing technical knowledge.",
-            "tags": [
-              "fast-start"
-            ]
+            "tags": ["fast-start"]
           }
         ]
       }
@@ -317,11 +281,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "building-your-ai-stack",
-    "staying-current-in-ai",
-    "choosing-the-right-tool"
-  ],
+  "relatedLessons": ["building-your-ai-stack", "staying-current-in-ai", "choosing-the-right-tool"],
   "furtherReading": [
     {
       "title": "AI for Everyone",

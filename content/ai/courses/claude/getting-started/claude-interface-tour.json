@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 8,
-  "tags": [
-    "claude",
-    "interface",
-    "ui",
-    "beginner"
-  ],
+  "tags": ["claude", "interface", "ui", "beginner"],
   "blocks": [
     {
       "type": "heading",
@@ -136,10 +131,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "setting-up-claude",
-    "your-first-claude-conversation"
-  ],
+  "relatedLessons": ["setting-up-claude", "your-first-claude-conversation"],
   "relatedGlossaryTerms": [],
   "courseSlug": "claude"
 }

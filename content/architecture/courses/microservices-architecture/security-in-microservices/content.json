@@ -9,12 +9,7 @@
   "difficulty": "advanced",
   "estimatedHours": 4,
   "icon": "🔒",
-  "tags": [
-    "security",
-    "oauth2",
-    "jwt",
-    "zero-trust"
-  ],
+  "tags": ["security", "oauth2", "jwt", "zero-trust"],
   "lessonSlugs": [
     "microservices-security-fundamentals",
     "oauth2-and-jwt",

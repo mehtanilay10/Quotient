@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "versioning",
-    "documentation",
-    "api-design"
-  ],
+  "tags": ["versioning", "documentation", "api-design"],
   "blocks": [
     {
       "type": "paragraph",
@@ -229,10 +225,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "swagger-and-openapi",
-    "rest-principles"
-  ],
+  "relatedLessons": ["swagger-and-openapi", "rest-principles"],
   "technology": null,
   "furtherReading": [
     {

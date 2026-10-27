@@ -6,10 +6,7 @@
   "description": "Deterministic cleanup with using, the dispose pattern, why finalizers are a last resort, and what GC.SuppressFinalize does.",
   "order": 42,
   "difficulty": "intermediate",
-  "tags": [
-    "C#",
-    "intermediate"
-  ],
+  "tags": ["C#", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -124,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "advanced-q1",
-    "gc-generations",
-    "csharp-b01"
-  ],
+  "relatedLessons": ["advanced-q1", "gc-generations", "csharp-b01"],
   "furtherReading": [
     {
       "title": "Dispose pattern",

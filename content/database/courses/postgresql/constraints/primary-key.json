@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "primary-key",
-    "identity",
-    "uuid",
-    "serial",
-    "architecture"
-  ],
+  "tags": ["primary-key", "identity", "uuid", "serial", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -140,11 +134,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Situation",
-          "Recommended key",
-          "Why"
-        ],
+        "headers": ["Situation", "Recommended key", "Why"],
         "rows": [
           [
             "Internal table, high insert rate",
@@ -156,11 +146,7 @@
             "`UUIDv7` (or a public id column plus an internal `BIGINT`)",
             "Unguessable without the fragmentation of v4"
           ],
-          [
-            "Distributed writes from many nodes",
-            "`UUIDv7`",
-            "No central sequence needed"
-          ],
+          ["Distributed writes from many nodes", "`UUIDv7`", "No central sequence needed"],
           [
             "Natural key (ISO country code, email)",
             "Prefer a surrogate `BIGINT`/UUID with a `UNIQUE` on the natural key",
@@ -229,8 +215,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "foreign-key",
-    "unique-check"
-  ]
+  "relatedLessons": ["foreign-key", "unique-check"]
 }

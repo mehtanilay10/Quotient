@@ -8,14 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "cognito",
-    "architecture",
-    "react",
-    "api-gateway",
-    "alb"
-  ],
+  "tags": ["aws", "cognito", "architecture", "react", "api-gateway", "alb"],
   "blocks": [
     {
       "type": "paragraph",

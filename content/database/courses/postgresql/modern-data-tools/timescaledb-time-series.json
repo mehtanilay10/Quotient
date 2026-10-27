@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "timescaledb",
-    "time-series",
-    "hypertables",
-    "iot",
-    "continuous-aggregates"
-  ],
+  "tags": ["timescaledb", "time-series", "hypertables", "iot", "continuous-aggregates"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,8 +67,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "partitioning",
-    "extensions"
-  ]
+  "relatedLessons": ["partitioning", "extensions"]
 }

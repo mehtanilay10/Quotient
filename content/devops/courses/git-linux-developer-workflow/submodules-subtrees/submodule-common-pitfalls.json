@@ -153,6 +153,10 @@
   ],
   "relatedLessons": ["submodule-fundamentals", "submodule-workflows"],
   "furtherReading": [
-    { "title": "Git Submodule Pitfalls", "url": "https://git-scm.com/docs/git-submodule#_common_issues", "type": "article" }
+    {
+      "title": "Git Submodule Pitfalls",
+      "url": "https://git-scm.com/docs/git-submodule#_common_issues",
+      "type": "article"
+    }
   ]
 }

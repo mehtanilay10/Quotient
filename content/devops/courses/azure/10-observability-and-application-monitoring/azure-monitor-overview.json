@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "azure",
-    "monitoring",
-    "observability",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "monitoring", "observability", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -76,42 +70,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Component",
-          "Purpose",
-          "Data Source"
-        ],
+        "headers": ["Component", "Purpose", "Data Source"],
         "rows": [
-          [
-            "Metrics Explorer",
-            "Visualize numeric metrics over time",
-            "Azure resource metrics"
-          ],
-          [
-            "Log Analytics",
-            "Query logs with KQL",
-            "Diagnostic logs, app logs"
-          ],
-          [
-            "Alerts",
-            "Notify when thresholds are breached",
-            "Metrics or log queries"
-          ],
-          [
-            "Auto-Scale",
-            "Scale resources automatically",
-            "Metrics rules"
-          ],
-          [
-            "Service Health",
-            "Track Azure outages and maintenance",
-            "Azure platform data"
-          ],
-          [
-            "Application Insights",
-            "App-level telemetry",
-            "Instrumented applications"
-          ]
+          ["Metrics Explorer", "Visualize numeric metrics over time", "Azure resource metrics"],
+          ["Log Analytics", "Query logs with KQL", "Diagnostic logs, app logs"],
+          ["Alerts", "Notify when thresholds are breached", "Metrics or log queries"],
+          ["Auto-Scale", "Scale resources automatically", "Metrics rules"],
+          ["Service Health", "Track Azure outages and maintenance", "Azure platform data"],
+          ["Application Insights", "App-level telemetry", "Instrumented applications"]
         ]
       }
     },

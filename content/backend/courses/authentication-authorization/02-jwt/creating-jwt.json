@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "jwt",
-    "creation",
-    "token",
-    "aspnet-core"
-  ],
+  "tags": ["jwt", "creation", "token", "aspnet-core"],
   "blocks": [
     {
       "type": "paragraph",

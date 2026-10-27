@@ -9,12 +9,7 @@
   "estimatedHours": 3,
   "icon": "🔄",
   "tags": ["aws", "devops", "cicd", "cloudformation", "cdk", "codepipeline"],
-  "lessonSlugs": [
-    "aws-code-tools",
-    "cloudformation-iac",
-    "aws-cdk",
-    "modern-devops-practices"
-  ],
+  "lessonSlugs": ["aws-code-tools", "cloudformation-iac", "aws-cdk", "modern-devops-practices"],
   "prerequisites": [],
   "whatYouLearn": [
     "Build CI/CD pipelines with CodePipeline",

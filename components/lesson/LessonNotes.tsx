@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { BookOpen, Save, Trash2 } from 'lucide-react';
-import { useLessonNotes } from '@/hooks/useLessonNotes';
-import { SignInPrompt } from '@/components/auth/SignInPrompt';
+import { useState, useEffect } from "react";
+import { BookOpen, Save, Trash2 } from "lucide-react";
+import { useLessonNotes } from "@/hooks/useLessonNotes";
+import { SignInPrompt } from "@/components/auth/SignInPrompt";
 
 interface LessonNotesProps {
   courseSlug: string;
@@ -13,7 +13,7 @@ interface LessonNotesProps {
 
 export function LessonNotes({ courseSlug, moduleSlug, lessonSlug }: LessonNotesProps) {
   const { getNote, saveNote, deleteNote, isLoggedOut } = useLessonNotes();
-  const [content, setContent] = useState('');
+  const [content, setContent] = useState("");
   const [showSignIn, setShowSignIn] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -38,7 +38,7 @@ export function LessonNotes({ courseSlug, moduleSlug, lessonSlug }: LessonNotesP
       setShowSignIn(true);
       return;
     }
-    setContent('');
+    setContent("");
     deleteNote(courseSlug, moduleSlug, lessonSlug);
   };
 
@@ -91,7 +91,7 @@ export function LessonNotes({ courseSlug, moduleSlug, lessonSlug }: LessonNotesP
           aria-label="Lesson notes"
         />
         <p className="mt-2 text-xs text-fg-subtle">
-          {isLoggedOut ? 'Sign in to save notes across devices.' : 'Notes are saved automatically.'}
+          {isLoggedOut ? "Sign in to save notes across devices." : "Notes are saved automatically."}
         </p>
       </div>
       {showSignIn && <SignInPrompt onDismiss={() => setShowSignIn(false)} />}

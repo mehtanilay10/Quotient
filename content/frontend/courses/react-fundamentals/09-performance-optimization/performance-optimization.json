@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "performance",
-    "memo",
-    "useMemo",
-    "useCallback"
-  ],
+  "tags": ["react", "performance", "memo", "useMemo", "useCallback"],
   "blocks": [
     {
       "type": "paragraph",

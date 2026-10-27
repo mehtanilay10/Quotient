@@ -6,19 +6,12 @@
   "fullDefinition": "An SDK is a comprehensive package that provides everything a developer needs to integrate with a service or build for a platform. It typically includes pre-written libraries, sample code, debugging tools, and detailed documentation. In the AI world, SDKs from providers like OpenAI, Anthropic, and Google Cloud abstract away raw API calls, providing idiomatic interfaces in languages like Python, JavaScript, and TypeScript. Good SDKs handle authentication, retries, and error handling automatically, letting developers focus on building features rather than managing HTTP connections.",
   "category": "tools-and-apis",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "api",
-    "webhook",
-    "plugin"
-  ],
+  "relatedTerms": ["api", "webhook", "plugin"],
   "learnMoreSlug": "choosing-the-right-tool",
   "examples": [
     "The OpenAI Python SDK for sending chat completion requests",
     "React Native SDK for integrating AI features into mobile apps",
     "A browser SDK that adds AI-powered search to websites"
   ],
-  "alsoKnownAs": [
-    "Software Development Kit",
-    "Dev Kit"
-  ]
+  "alsoKnownAs": ["Software Development Kit", "Dev Kit"]
 }

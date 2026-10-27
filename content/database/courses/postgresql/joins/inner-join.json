@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "inner-join",
-    "join-conditions",
-    "tables",
-    "performance"
-  ],
+  "tags": ["inner-join", "join-conditions", "tables", "performance"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,8 +82,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "visualization-joins",
-    "left-right-joins"
-  ]
+  "relatedLessons": ["visualization-joins", "left-right-joins"]
 }

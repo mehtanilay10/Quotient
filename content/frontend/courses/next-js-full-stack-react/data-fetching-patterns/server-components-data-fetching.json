@@ -144,7 +144,13 @@
   ],
   "relatedLessons": ["client-side-data-fetching", "parallel-data-loading", "caching-strategies"],
   "furtherReading": [
-    { "title": "Next.js Server Components Documentation", "url": "https://nextjs.org/docs/app/building-your-application/rendering/server-components" },
-    { "title": "React Server Components RFC", "url": "https://github.com/reactjs/rfcs/blob/main/text/0188-server-components.md" }
+    {
+      "title": "Next.js Server Components Documentation",
+      "url": "https://nextjs.org/docs/app/building-your-application/rendering/server-components"
+    },
+    {
+      "title": "React Server Components RFC",
+      "url": "https://github.com/reactjs/rfcs/blob/main/text/0188-server-components.md"
+    }
   ]
 }

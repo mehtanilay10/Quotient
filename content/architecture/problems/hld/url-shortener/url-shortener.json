@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "url-shortener",
-    "caching",
-    "base62"
-  ],
+  "tags": ["hld", "system-design", "url-shortener", "caching", "base62"],
   "blocks": [
     {
       "type": "heading",
@@ -141,85 +135,20 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Table",
-          "Column",
-          "Type",
-          "Notes"
-        ],
+        "headers": ["Table", "Column", "Type", "Notes"],
         "rows": [
-          [
-            "short_urls",
-            "code",
-            "CHAR(8) PK",
-            "Base62 short code or custom alias"
-          ],
-          [
-            "short_urls",
-            "long_url",
-            "TEXT NOT NULL",
-            "Original destination URL"
-          ],
-          [
-            "short_urls",
-            "user_id",
-            "UUID FK",
-            "Owner; NULL for anonymous"
-          ],
-          [
-            "short_urls",
-            "created_at",
-            "TIMESTAMPTZ",
-            "Creation timestamp"
-          ],
-          [
-            "short_urls",
-            "expires_at",
-            "TIMESTAMPTZ",
-            "NULL = permanent link"
-          ],
-          [
-            "short_urls",
-            "is_active",
-            "BOOLEAN",
-            "Soft-delete flag"
-          ],
-          [
-            "click_events",
-            "id",
-            "BIGINT PK",
-            "Auto-increment or Snowflake ID"
-          ],
-          [
-            "click_events",
-            "code",
-            "CHAR(8) FK",
-            "References short_urls.code"
-          ],
-          [
-            "click_events",
-            "clicked_at",
-            "TIMESTAMPTZ",
-            "Partitioned by month"
-          ],
-          [
-            "click_events",
-            "country",
-            "CHAR(2)",
-            "GeoIP resolved at edge"
-          ],
-          [
-            "click_events",
-            "user_agent",
-            "TEXT",
-            "Browser/device info"
-          ],
-          [
-            "click_events",
-            "referrer",
-            "TEXT",
-            "HTTP Referer header"
-          ]
+          ["short_urls", "code", "CHAR(8) PK", "Base62 short code or custom alias"],
+          ["short_urls", "long_url", "TEXT NOT NULL", "Original destination URL"],
+          ["short_urls", "user_id", "UUID FK", "Owner; NULL for anonymous"],
+          ["short_urls", "created_at", "TIMESTAMPTZ", "Creation timestamp"],
+          ["short_urls", "expires_at", "TIMESTAMPTZ", "NULL = permanent link"],
+          ["short_urls", "is_active", "BOOLEAN", "Soft-delete flag"],
+          ["click_events", "id", "BIGINT PK", "Auto-increment or Snowflake ID"],
+          ["click_events", "code", "CHAR(8) FK", "References short_urls.code"],
+          ["click_events", "clicked_at", "TIMESTAMPTZ", "Partitioned by month"],
+          ["click_events", "country", "CHAR(2)", "GeoIP resolved at edge"],
+          ["click_events", "user_agent", "TEXT", "Browser/device info"],
+          ["click_events", "referrer", "TEXT", "HTTP Referer header"]
         ]
       }
     },
@@ -362,10 +291,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rate-limiter",
-    "web-crawler"
-  ],
+  "relatedLessons": ["rate-limiter", "web-crawler"],
   "furtherReading": [
     {
       "title": "System Design Interview: URL Shortener",

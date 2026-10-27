@@ -8,13 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "ssrf",
-    "server-side-request",
-    "url-validation",
-    "internal-services",
-    "OWASP"
-  ],
+  "tags": ["ssrf", "server-side-request", "url-validation", "internal-services", "OWASP"],
   "blocks": [
     {
       "type": "paragraph",

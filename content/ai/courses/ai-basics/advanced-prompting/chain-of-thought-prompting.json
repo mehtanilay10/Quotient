@@ -68,11 +68,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Approach",
-          "How to prompt",
-          "When to use"
-        ],
+        "headers": ["Approach", "How to prompt", "When to use"],
         "rows": [
           [
             "Simple trigger",
@@ -144,11 +140,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Task type",
-          "CoT benefit",
-          "Why"
-        ],
+        "headers": ["Task type", "CoT benefit", "Why"],
         "rows": [
           [
             "Decisions with tradeoffs",
@@ -160,26 +152,10 @@
             "Very high",
             "Chains through steps prevents jumping to wrong first hypothesis"
           ],
-          [
-            "Strategic planning",
-            "High",
-            "Surfaces assumptions and risks systematically"
-          ],
-          [
-            "Math/calculation",
-            "Medium",
-            "Some help — but for real math use the code interpreter"
-          ],
-          [
-            "Simple factual questions",
-            "Low",
-            "Unnecessary overhead when the answer is direct"
-          ],
-          [
-            "Creative writing",
-            "Low",
-            "Less relevant — free generation is usually better here"
-          ]
+          ["Strategic planning", "High", "Surfaces assumptions and risks systematically"],
+          ["Math/calculation", "Medium", "Some help — but for real math use the code interpreter"],
+          ["Simple factual questions", "Low", "Unnecessary overhead when the answer is direct"],
+          ["Creative writing", "Low", "Less relevant — free generation is usually better here"]
         ]
       }
     },
@@ -220,11 +196,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Template",
-          "Prompt (copyable)",
-          "When to use"
-        ],
+        "headers": ["Template", "Prompt (copyable)", "When to use"],
         "rows": [
           [
             "Zero-shot CoT",
@@ -313,11 +285,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Level",
-          "Template",
-          "Notes"
-        ],
+        "headers": ["Level", "Template", "Notes"],
         "rows": [
           [
             "Beginner",
@@ -354,11 +322,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "What to check",
-          "Why it matters"
-        ],
+        "headers": ["Metric", "What to check", "Why it matters"],
         "rows": [
           [
             "Logical consistency",
@@ -456,11 +420,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Name",
-          "Prompt",
-          "Example use"
-        ],
+        "headers": ["Name", "Prompt", "Example use"],
         "rows": [
           [
             "Simple CoT",
@@ -525,11 +485,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "Type",
-          "Why read it"
-        ],
+        "headers": ["Resource", "Type", "Why read it"],
         "rows": [
           [
             "Chain-of-Thought Prompting Elicits Reasoning (Wei et al.)",
@@ -587,10 +543,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "few-shot-prompting",
-    "anatomy-of-a-good-prompt"
-  ],
+  "relatedLessons": ["few-shot-prompting", "anatomy-of-a-good-prompt"],
   "furtherReading": [
     {
       "title": "Chain-of-Thought Prompting Elicits Reasoning",

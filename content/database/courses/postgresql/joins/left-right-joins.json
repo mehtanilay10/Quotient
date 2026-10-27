@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "left-join",
-    "right-join",
-    "outer-join",
-    "anti-join"
-  ],
+  "tags": ["left-join", "right-join", "outer-join", "anti-join"],
   "blocks": [
     {
       "type": "paragraph",
@@ -63,8 +58,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "inner-join",
-    "full-outer-join"
-  ]
+  "relatedLessons": ["inner-join", "full-outer-join"]
 }

@@ -19,12 +19,7 @@
     "ollama-local-ai"
   ],
   "difficulty": "intermediate",
-  "tags": [
-    "rag",
-    "embeddings",
-    "vector-search",
-    "semantic-kernel"
-  ],
+  "tags": ["rag", "embeddings", "vector-search", "semantic-kernel"],
   "icon": "🤖",
   "estimatedHours": 6,
   "whatYouLearn": [

@@ -8,12 +8,7 @@
   "order": 22,
   "difficulty": "medium",
   "estimatedMinutes": 15,
-  "tags": [
-    "csharp",
-    "arrays",
-    "dynamic-programming",
-    "medium"
-  ],
+  "tags": ["csharp", "arrays", "dynamic-programming", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -99,33 +94,16 @@
           {
             "title": "Brute Force",
             "description": "Enumerate every subarray",
-            "pros": [
-              "Always correct"
-            ],
-            "cons": [
-              "O(n\u00b3) time"
-            ],
-            "tags": [
-              "O(n\u00b3) time",
-              "O(1) space"
-            ]
+            "pros": ["Always correct"],
+            "cons": ["O(n\u00b3) time"],
+            "tags": ["O(n\u00b3) time", "O(1) space"]
           },
           {
             "title": "Min/Max Tracking",
             "description": "Track both best and worst running products",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
-            "cons": [
-              "Negative-flip intuition"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
+            "cons": ["Negative-flip intuition"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

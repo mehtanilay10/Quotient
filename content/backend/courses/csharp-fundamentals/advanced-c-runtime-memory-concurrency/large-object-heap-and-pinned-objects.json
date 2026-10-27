@@ -98,7 +98,12 @@
       }
     }
   ],
-  "relatedLessons": ["managed-heap-and-allocation-lifecycle", "gc-generations-and-collection-behavior", "allocation-pressure-and-latency", "arraypoolt-and-memorypoolt"],
+  "relatedLessons": [
+    "managed-heap-and-allocation-lifecycle",
+    "gc-generations-and-collection-behavior",
+    "allocation-pressure-and-latency",
+    "arraypoolt-and-memorypoolt"
+  ],
   "furtherReading": [
     {
       "type": "article",

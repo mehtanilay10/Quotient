@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "graphql",
-    "hotchocolate",
-    "dotnet",
-    "query",
-    "mutation"
-  ],
+  "tags": ["graphql", "hotchocolate", "dotnet", "query", "mutation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -163,9 +157,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "introduction-to-graphql",
-    "installing-hotchocolate"
-  ],
+  "relatedLessons": ["introduction-to-graphql", "installing-hotchocolate"],
   "courseSlug": "graphql-dotnet"
 }

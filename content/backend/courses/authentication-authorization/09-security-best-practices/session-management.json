@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "session",
-    "cookies",
-    "session-fixation",
-    "expiration",
-    "security"
-  ],
+  "tags": ["session", "cookies", "session-fixation", "expiration", "security"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,28 +31,14 @@
           {
             "title": "Server-Side Session",
             "description": "Session ID stored in cookie, data stored server-side",
-            "pros": [
-              "Easy revocation",
-              "Small payload",
-              "Server controls data"
-            ],
-            "cons": [
-              "Scales with sticky sessions or shared store",
-              "CSRF risk"
-            ]
+            "pros": ["Easy revocation", "Small payload", "Server controls data"],
+            "cons": ["Scales with sticky sessions or shared store", "CSRF risk"]
           },
           {
             "title": "JWT",
             "description": "Self-contained token with claims",
-            "pros": [
-              "Stateless",
-              "Easy horizontal scaling"
-            ],
-            "cons": [
-              "Hard to revoke",
-              "Larger payload",
-              "Stored in localStorage (XSS risk)"
-            ]
+            "pros": ["Stateless", "Easy horizontal scaling"],
+            "cons": ["Hard to revoke", "Larger payload", "Stored in localStorage (XSS risk)"]
           }
         ]
       }

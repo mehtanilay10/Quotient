@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "personal-toolkit",
-    "tool-selection",
-    "workflow",
-    "productivity"
-  ],
+  "tags": ["personal-toolkit", "tool-selection", "workflow", "productivity"],
   "blocks": [
     {
       "type": "paragraph",
@@ -53,37 +48,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Role",
-          "Core tools",
-          "Use them for"
-        ],
+        "headers": ["Role", "Core tools", "Use them for"],
         "rows": [
-          [
-            "Knowledge worker",
-            "Claude + Perplexity",
-            "Writing/editing + research"
-          ],
-          [
-            "Product manager",
-            "ChatGPT + Notion AI",
-            "Strategy docs + workspace search"
-          ],
-          [
-            "Developer",
-            "Cursor/Copilot + Claude",
-            "Code + documentation"
-          ],
-          [
-            "Marketer",
-            "ChatGPT + Canva AI",
-            "Copy + visuals"
-          ],
-          [
-            "Student",
-            "Claude + Perplexity",
-            "Study notes + research"
-          ]
+          ["Knowledge worker", "Claude + Perplexity", "Writing/editing + research"],
+          ["Product manager", "ChatGPT + Notion AI", "Strategy docs + workspace search"],
+          ["Developer", "Cursor/Copilot + Claude", "Code + documentation"],
+          ["Marketer", "ChatGPT + Canva AI", "Copy + visuals"],
+          ["Student", "Claude + Perplexity", "Study notes + research"]
         ]
       }
     },
@@ -122,11 +93,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Evaluation dimension",
-          "Question to ask",
-          "Adopt signal"
-        ],
+        "headers": ["Evaluation dimension", "Question to ask", "Adopt signal"],
         "rows": [
           [
             "Workflow fit",
@@ -184,11 +151,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Phase",
-          "Focus",
-          "Success metric"
-        ],
+        "headers": ["Phase", "Focus", "Success metric"],
         "rows": [
           [
             "Days 1-30",
@@ -241,10 +204,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "staying-current-in-ai",
-    "choosing-the-right-tool"
-  ],
+  "relatedLessons": ["staying-current-in-ai", "choosing-the-right-tool"],
   "furtherReading": [
     {
       "title": "DeepLearning.AI Short Courses",

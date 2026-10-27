@@ -9,13 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "📬",
-  "tags": [
-    "messaging",
-    "rabbitmq",
-    "sqs",
-    "azure",
-    "fundamentals"
-  ],
+  "tags": ["messaging", "rabbitmq", "sqs", "azure", "fundamentals"],
   "lessonSlugs": [
     "rabbitmq-fundamentals",
     "sqs-basics",

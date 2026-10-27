@@ -1,5 +1,5 @@
-import { getClientIp, rateLimitByKey } from '@/lib/rateLimit';
-import { logError } from './errorHandler';
+import { getClientIp, rateLimitByKey } from "@/lib/rateLimit";
+import { logError } from "./errorHandler";
 
 const WINDOW_MS = 5 * 60 * 1000;
 const MAX_REQUESTS_PER_IP = 5;
@@ -22,17 +22,17 @@ export async function checkMagicLinkRateLimit(
   email: string
 ): Promise<{ allowed: boolean; retryAfterMs?: number; reason?: string }> {
   // Check global limit first (cheapest check)
-  const globalResult = await rateLimitByKey('magic-link:global', {
+  const globalResult = await rateLimitByKey("magic-link:global", {
     limit: MAX_REQUESTS_GLOBAL,
     windowMs: WINDOW_MS,
   });
 
   if (!globalResult.allowed) {
-    logError('magic-link-rate-limit', new Error('Global rate limit exceeded'), {
+    logError("magic-link-rate-limit", new Error("Global rate limit exceeded"), {
       ip: getClientIp(request),
       email: email.trim().toLowerCase(),
     });
-    return { ...globalResult, reason: 'global' };
+    return { ...globalResult, reason: "global" };
   }
 
   // Check per-IP limit
@@ -42,11 +42,11 @@ export async function checkMagicLinkRateLimit(
   });
 
   if (!ipResult.allowed) {
-    logError('magic-link-rate-limit', new Error('IP rate limit exceeded'), {
+    logError("magic-link-rate-limit", new Error("IP rate limit exceeded"), {
       ip: getClientIp(request),
       email: email.trim().toLowerCase(),
     });
-    return { ...ipResult, reason: 'ip' };
+    return { ...ipResult, reason: "ip" };
   }
 
   // Check per-email limit
@@ -59,11 +59,11 @@ export async function checkMagicLinkRateLimit(
   });
 
   if (!emailResult.allowed) {
-    logError('magic-link-rate-limit', new Error('Email rate limit exceeded'), {
+    logError("magic-link-rate-limit", new Error("Email rate limit exceeded"), {
       ip: getClientIp(request),
       email: normalizedEmail,
     });
-    return { ...emailResult, reason: 'email' };
+    return { ...emailResult, reason: "email" };
   }
 
   return { allowed: true };

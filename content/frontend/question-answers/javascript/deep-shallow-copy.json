@@ -6,11 +6,7 @@
   "description": "Reference semantics: spread, Object.assign, structuredClone, recursion pitfalls, and why copying matters for React state immutability.",
   "order": 16,
   "difficulty": "intermediate",
-  "tags": [
-    "javascript",
-    "immutability",
-    "intermediate"
-  ],
+  "tags": ["javascript", "immutability", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,10 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "js-b01",
-    "js-i05"
-  ],
+  "relatedLessons": ["js-b01", "js-i05"],
   "furtherReading": [
     {
       "title": "structuredClone() — MDN",

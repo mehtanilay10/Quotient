@@ -7,12 +7,7 @@
   "order": 7,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "ef-core",
-    "fluent-api",
-    "many-to-many",
-    "joining-entity"
-  ],
+  "tags": ["ef-core", "fluent-api", "many-to-many", "joining-entity"],
   "blocks": [
     {
       "type": "paragraph",

@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "api",
-    "contracts",
-    "rest",
-    "graphql",
-    "versioning"
-  ],
+  "tags": ["api", "contracts", "rest", "graphql", "versioning"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,12 +61,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Example",
-          "Pros",
-          "Cons"
-        ],
+        "headers": ["Strategy", "Example", "Pros", "Cons"],
         "rows": [
           [
             "URL Versioning",
@@ -80,12 +69,7 @@
             "Clear, easy to route",
             "Multiple endpoints to maintain"
           ],
-          [
-            "Header Versioning",
-            "X-API-Version: 2",
-            "Same URL, flexible",
-            "Less discoverable"
-          ],
+          ["Header Versioning", "X-API-Version: 2", "Same URL, flexible", "Less discoverable"],
           [
             "Media Type",
             "Accept: application/vnd.example.v2+json",

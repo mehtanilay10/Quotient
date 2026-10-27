@@ -9,13 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3.5,
   "icon": "🗄️",
-  "tags": [
-    "database",
-    "ef-core",
-    "dapper",
-    "orm",
-    "sql"
-  ],
+  "tags": ["database", "ef-core", "dapper", "orm", "sql"],
   "lessonSlugs": [
     "entity-framework-core",
     "dapper",

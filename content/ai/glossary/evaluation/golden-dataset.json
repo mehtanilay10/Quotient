@@ -6,11 +6,7 @@
   "fullDefinition": "A golden dataset (also called a golden set or reference set) is the ground truth you measure against. Unlike a broad benchmark, it is deliberately small and hand-checked, usually 50 to a few hundred cases, chosen to cover the situations that actually matter for your application: common queries, known-hard edge cases, and the failure you shipped last quarter. Because it is small, every case can be reviewed by a human and kept correct as the product changes. The trade-off is coverage — a golden set can be over-fitted, so it should grow over time and be supplemented with broader benchmarks. Its most valuable property is that it reflects **your** domain, not a generic academic task.",
   "category": "evaluation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "evaluation",
-    "eval-harness",
-    "human-evaluation"
-  ],
+  "relatedTerms": ["evaluation", "eval-harness", "human-evaluation"],
   "examples": [
     "100 real customer questions with the answer a support lead approved",
     "Every previously reported bug turned into a permanent test case",

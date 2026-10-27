@@ -8,12 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "backend",
-    "architecture",
-    "async",
-    "api-design"
-  ],
+  "tags": ["backend", "architecture", "async", "api-design"],
   "blocks": [
     {
       "type": "paragraph",

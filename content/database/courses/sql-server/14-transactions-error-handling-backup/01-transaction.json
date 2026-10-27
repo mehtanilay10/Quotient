@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "transaction",
-    "BEGIN-TRANSACTION",
-    "COMMIT",
-    "ROLLBACK"
-  ],
+  "tags": ["transaction", "BEGIN-TRANSACTION", "COMMIT", "ROLLBACK"],
   "blocks": [
     {
       "type": "heading",

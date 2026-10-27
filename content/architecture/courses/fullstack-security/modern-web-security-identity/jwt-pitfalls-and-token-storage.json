@@ -115,18 +115,13 @@
           {
             "title": "localStorage",
             "description": "Tokens stored in the browser's localStorage API. Accessible by any JavaScript on the page.",
-            "pros": [
-              "Simple to implement",
-              "No CSRF risk (not sent automatically)"
-            ],
+            "pros": ["Simple to implement", "No CSRF risk (not sent automatically)"],
             "cons": [
               "Completely exposed to XSS",
               "No automatic expiration",
               "Accessible by any third-party script"
             ],
-            "tags": [
-              "avoid"
-            ]
+            "tags": ["avoid"]
           },
           {
             "title": "httpOnly cookie",
@@ -136,28 +131,18 @@
               "Automatic expiration support",
               "Sent with SameSite=Lax by default"
             ],
-            "cons": [
-              "Vulnerable to CSRF without SameSite/anti-forgery",
-              "Requires HTTPS"
-            ],
-            "tags": [
-              "recommended"
-            ]
+            "cons": ["Vulnerable to CSRF without SameSite/anti-forgery", "Requires HTTPS"],
+            "tags": ["recommended"]
           },
           {
             "title": "In-memory variable",
             "description": "Token stored only in JavaScript memory and lost on page refresh.",
-            "pros": [
-              "Never persisted to disk",
-              "Survives XSS only while page is loaded"
-            ],
+            "pros": ["Never persisted to disk", "Survives XSS only while page is loaded"],
             "cons": [
               "Lost on refresh (requires re-login or refresh token)",
               "Still vulnerable to XSS while page is open"
             ],
-            "tags": [
-              "supplemental"
-            ]
+            "tags": ["supplemental"]
           }
         ]
       }

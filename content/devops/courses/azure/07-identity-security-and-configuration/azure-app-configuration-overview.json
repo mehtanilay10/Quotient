@@ -8,13 +8,7 @@
   "order": 13,
   "difficulty": "beginner",
   "estimatedMinutes": 11,
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -91,28 +85,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tier",
-          "Included storage",
-          "Requests",
-          "SLA",
-          "Use case"
-        ],
+        "headers": ["Tier", "Included storage", "Requests", "SLA", "Use case"],
         "rows": [
-          [
-            "Free",
-            "10 MB",
-            "1,000 per day",
-            "None",
-            "Learning and prototypes"
-          ],
-          [
-            "Standard",
-            "100 MB",
-            "Unlimited (throttled)",
-            "99.9%",
-            "Production workloads"
-          ],
+          ["Free", "10 MB", "1,000 per day", "None", "Learning and prototypes"],
+          ["Standard", "100 MB", "Unlimited (throttled)", "99.9%", "Production workloads"],
           [
             "Premium",
             "1 GB",

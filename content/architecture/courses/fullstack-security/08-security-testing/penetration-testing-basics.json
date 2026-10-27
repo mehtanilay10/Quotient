@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 20,
-  "tags": [
-    "penetration-testing",
-    "security",
-    "vulnerabilities",
-    "testing"
-  ],
+  "tags": ["penetration-testing", "security", "vulnerabilities", "testing"],
   "blocks": [
     {
       "type": "paragraph",

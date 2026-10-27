@@ -9,12 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "🔍",
-  "tags": [
-    "discovery",
-    "consul",
-    "eureka",
-    "kubernetes"
-  ],
+  "tags": ["discovery", "consul", "eureka", "kubernetes"],
   "lessonSlugs": [
     "service-discovery-fundamentals",
     "client-side-discovery",

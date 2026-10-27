@@ -8,12 +8,7 @@
   "order": 9,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "strings",
-    "hashmap",
-    "easy"
-  ],
+  "tags": ["csharp", "strings", "hashmap", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -87,34 +82,16 @@
           {
             "title": "Frequency Map",
             "description": "Dictionary counts",
-            "pros": [
-              "Works for any charset",
-              "Easy to read"
-            ],
-            "cons": [
-              "Boxing/hashing overhead",
-              "More allocations"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Works for any charset", "Easy to read"],
+            "cons": ["Boxing/hashing overhead", "More allocations"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Fixed Array",
             "description": "int[26] counts",
-            "pros": [
-              "O(1) extra space",
-              "No allocations"
-            ],
-            "cons": [
-              "Assumes lowercase a-z"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(1) extra space", "No allocations"],
+            "cons": ["Assumes lowercase a-z"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

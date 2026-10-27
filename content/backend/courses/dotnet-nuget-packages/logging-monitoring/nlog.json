@@ -8,10 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "logging",
-    "nlog"
-  ],
+  "tags": ["logging", "nlog"],
   "blocks": [
     {
       "type": "heading",

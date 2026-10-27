@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 33,
-  "tags": [
-    "ef-core",
-    "crud",
-    "connected",
-    "entitystate"
-  ],
+  "tags": ["ef-core", "crud", "connected", "entitystate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -117,9 +112,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "insert-data-disconnected-scenario",
-    "tracking-changes-of-entities"
-  ],
+  "relatedLessons": ["insert-data-disconnected-scenario", "tracking-changes-of-entities"],
   "courseSlug": "ef-core"
 }

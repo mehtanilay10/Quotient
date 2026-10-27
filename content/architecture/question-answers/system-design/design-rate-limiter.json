@@ -8,12 +8,7 @@
   "order": 12,
   "difficulty": "advanced",
   "estimatedMinutes": 28,
-  "tags": [
-    "interview",
-    "system-design",
-    "rate-limiting",
-    "distributed"
-  ],
+  "tags": ["interview", "system-design", "rate-limiting", "distributed"],
   "technology": "System Design",
   "blocks": [
     {
@@ -74,11 +69,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Entity",
-          "Key Fields",
-          "Description"
-        ],
+        "headers": ["Entity", "Key Fields", "Description"],
         "rows": [
           [
             "RateLimitRule",
@@ -95,11 +86,7 @@
             "endpoint, limit_per_min, burst_size, enabled",
             "Per-endpoint configuration"
           ],
-          [
-            "UserTier",
-            "user_id, tier, custom_limits",
-            "Custom limits per user tier"
-          ]
+          ["UserTier", "user_id, tier, custom_limits", "Custom limits per user tier"]
         ]
       }
     },
@@ -139,37 +126,20 @@
           {
             "title": "Token Bucket",
             "description": "Tokens accumulate at a fixed rate. Requests consume tokens. Allows bursts up to bucket capacity.",
-            "pros": [
-              "Handles bursts naturally",
-              "Simple implementation"
-            ],
-            "cons": [
-              "Distributed accuracy requires atomic operations"
-            ]
+            "pros": ["Handles bursts naturally", "Simple implementation"],
+            "cons": ["Distributed accuracy requires atomic operations"]
           },
           {
             "title": "Leaky Bucket",
             "description": "Requests queue and are processed at a fixed rate. Smooths traffic but adds latency.",
-            "pros": [
-              "Enforces constant rate",
-              "Predictable latency"
-            ],
-            "cons": [
-              "Rejects bursts",
-              "Requires queue management"
-            ]
+            "pros": ["Enforces constant rate", "Predictable latency"],
+            "cons": ["Rejects bursts", "Requires queue management"]
           },
           {
             "title": "Fixed Window",
             "description": "Counts requests in fixed time windows. Simple but vulnerable to boundary bursts.",
-            "pros": [
-              "Simple and memory-efficient",
-              "Easy to reason about"
-            ],
-            "cons": [
-              "Burst at window edges",
-              "Not burst-friendly"
-            ]
+            "pros": ["Simple and memory-efficient", "Easy to reason about"],
+            "cons": ["Burst at window edges", "Not burst-friendly"]
           }
         ]
       }

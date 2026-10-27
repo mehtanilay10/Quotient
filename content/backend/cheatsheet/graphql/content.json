@@ -10,9 +10,5 @@
   "icon": "◼️",
   "tags": ["graphql", "cheatsheet", "quick-reference"],
   "lessonSlugs": ["cheatsheet"],
-  "whatYouLearn": [
-    "Schema definition",
-    "Query and mutation syntax",
-    "Filtering and pagination"
-  ]
+  "whatYouLearn": ["Schema definition", "Query and mutation syntax", "Filtering and pagination"]
 }

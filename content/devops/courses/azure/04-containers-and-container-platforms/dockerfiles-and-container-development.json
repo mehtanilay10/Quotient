@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "containers",
-    "docker",
-    "aks",
-    "developer"
-  ],
+  "tags": ["azure", "containers", "docker", "aks", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -39,42 +33,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Instruction",
-          "Purpose",
-          "Example"
-        ],
+        "headers": ["Instruction", "Purpose", "Example"],
         "rows": [
-          [
-            "FROM",
-            "Specifies the base image",
-            "FROM mcr.microsoft.com/dotnet/sdk:8.0"
-          ],
-          [
-            "WORKDIR",
-            "Sets the working directory",
-            "WORKDIR /app"
-          ],
-          [
-            "COPY",
-            "Copies files into the image",
-            "COPY . ."
-          ],
-          [
-            "RUN",
-            "Executes a build command",
-            "RUN dotnet publish -c Release"
-          ],
-          [
-            "EXPOSE",
-            "Documents the port",
-            "EXPOSE 8080"
-          ],
-          [
-            "ENTRYPOINT",
-            "Sets the executable command",
-            "ENTRYPOINT [\"dotnet\", \"app.dll\"]"
-          ]
+          ["FROM", "Specifies the base image", "FROM mcr.microsoft.com/dotnet/sdk:8.0"],
+          ["WORKDIR", "Sets the working directory", "WORKDIR /app"],
+          ["COPY", "Copies files into the image", "COPY . ."],
+          ["RUN", "Executes a build command", "RUN dotnet publish -c Release"],
+          ["EXPOSE", "Documents the port", "EXPOSE 8080"],
+          ["ENTRYPOINT", "Sets the executable command", "ENTRYPOINT [\"dotnet\", \"app.dll\"]"]
         ]
       }
     },

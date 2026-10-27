@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "create-table",
-    "ddl",
-    "fillfactor",
-    "unlogged-tables"
-  ],
+  "tags": ["create-table", "ddl", "fillfactor", "unlogged-tables"],
   "blocks": [
     {
       "type": "paragraph",
@@ -75,17 +70,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "`SERIAL` / `BIGSERIAL`",
-          "`GENERATED ... AS IDENTITY`"
-        ],
+        "headers": ["Aspect", "`SERIAL` / `BIGSERIAL`", "`GENERATED ... AS IDENTITY`"],
         "rows": [
-          [
-            "Standard",
-            "PostgreSQL-specific",
-            "SQL standard"
-          ],
+          ["Standard", "PostgreSQL-specific", "SQL standard"],
           [
             "Ownership",
             "Creates a sequence; column does not own it cleanly",
@@ -101,11 +88,7 @@
             "Any insert can supply a value",
             "`GENERATED ALWAYS` rejects explicit values unless `OVERRIDING SYSTEM VALUE`"
           ],
-          [
-            "Recommendation",
-            "Legacy schemas",
-            "New schemas"
-          ]
+          ["Recommendation", "Legacy schemas", "New schemas"]
         ]
       }
     },
@@ -119,11 +102,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Parameter",
-          "Default",
-          "Effect"
-        ],
+        "headers": ["Parameter", "Default", "Effect"],
         "rows": [
           [
             "`fillfactor`",
@@ -140,11 +119,7 @@
             "2048 bytes",
             "Threshold at which a row is compressed/offloaded to the TOAST table."
           ],
-          [
-            "`parallel_workers`",
-            "auto",
-            "Per-table parallel scan worker override."
-          ]
+          ["`parallel_workers`", "auto", "Per-table parallel scan worker override."]
         ]
       }
     },
@@ -208,8 +183,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "alter-table",
-    "drop-table"
-  ]
+  "relatedLessons": ["alter-table", "drop-table"]
 }

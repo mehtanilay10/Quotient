@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
-import { X, Play } from 'lucide-react';
-import { useSession } from 'next-auth/react';
-import { apiFetch } from '@/lib/apiFetch';
-import { LAST_PATH_STORAGE_KEY, PROMPT_SHOWN_STORAGE_KEY } from '@/lib/storageKeys';
+import { useState, useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { X, Play } from "lucide-react";
+import { useSession } from "next-auth/react";
+import { apiFetch } from "@/lib/apiFetch";
+import { LAST_PATH_STORAGE_KEY, PROMPT_SHOWN_STORAGE_KEY } from "@/lib/storageKeys";
 
 const STORAGE_KEY = LAST_PATH_STORAGE_KEY;
 const PROMPT_SHOWN_KEY = PROMPT_SHOWN_STORAGE_KEY;
@@ -16,7 +16,7 @@ export function ContinuePrompt() {
   const { data: session, status } = useSession();
   const [lastPath, setLastPath] = useState<string | null>(null);
   const [showPrompt, setShowPrompt] = useState(false);
-  const isLoggedIn = status === 'authenticated';
+  const isLoggedIn = status === "authenticated";
 
   useEffect(() => {
     if (!pathname) return;
@@ -26,7 +26,7 @@ export function ContinuePrompt() {
 
       if (isLoggedIn) {
         try {
-          const res = await fetch('/api/last-path');
+          const res = await fetch("/api/last-path");
           if (res.ok) {
             const data = await res.json();
             stored = data.path;
@@ -38,21 +38,21 @@ export function ContinuePrompt() {
         stored = localStorage.getItem(STORAGE_KEY);
       }
 
-      if (stored && stored !== pathname && stored !== '/' && !pathname.startsWith(stored)) {
+      if (stored && stored !== pathname && stored !== "/" && !pathname.startsWith(stored)) {
         const promptShown = sessionStorage.getItem(PROMPT_SHOWN_KEY);
         if (!promptShown) {
           setLastPath(stored);
           setShowPrompt(true);
-          sessionStorage.setItem(PROMPT_SHOWN_KEY, 'true');
+          sessionStorage.setItem(PROMPT_SHOWN_KEY, "true");
         }
       }
 
-      if (pathname !== '/') {
+      if (pathname !== "/") {
         if (isLoggedIn) {
           try {
-            await apiFetch('/api/last-path', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
+            await apiFetch("/api/last-path", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ path: pathname }),
             });
           } catch {

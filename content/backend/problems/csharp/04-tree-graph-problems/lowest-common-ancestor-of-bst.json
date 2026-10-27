@@ -8,12 +8,7 @@
   "order": 23,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "trees",
-    "bst",
-    "easy"
-  ],
+  "tags": ["csharp", "trees", "bst", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -51,15 +46,8 @@
           {
             "title": "BST Property Iterative",
             "description": "Go left/right based on both values",
-            "pros": [
-              "O(h) time",
-              "O(1) space"
-            ],
-            "tags": [
-              "O(h) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(h) time", "O(1) space"],
+            "tags": ["O(h) time", "O(1) space", "Recommended"]
           }
         ]
       }

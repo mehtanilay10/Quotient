@@ -16,14 +16,7 @@
     "compound-components",
     "error-boundaries-typed"
   ],
-  "tags": [
-    "react",
-    "typescript",
-    "patterns",
-    "state-management",
-    "routing",
-    "error-handling"
-  ],
+  "tags": ["react", "typescript", "patterns", "state-management", "routing", "error-handling"],
   "difficulty": "intermediate",
   "prerequisites": ["generic-components", "typing-hooks"],
   "whatYouLearn": [

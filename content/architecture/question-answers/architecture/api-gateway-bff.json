@@ -6,12 +6,7 @@
   "description": "The single-entry-point pattern: routing, cross-cutting concerns, BFF variants, and the failure modes gateways concentrate.",
   "order": 17,
   "difficulty": "advanced",
-  "tags": [
-    "architecture",
-    "api",
-    "microservices",
-    "advanced"
-  ],
+  "tags": ["architecture", "api", "microservices", "advanced"],
   "blocks": [
     {
       "type": "paragraph",

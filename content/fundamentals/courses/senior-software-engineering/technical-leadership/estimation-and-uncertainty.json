@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "planning",
-    "estimation",
-    "risk"
-  ],
+  "tags": ["planning", "estimation", "risk"],
   "blocks": [
     {
       "type": "paragraph",
@@ -106,10 +102,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "breaking-down-large-technical-initiatives",
-    "writing-technical-proposals"
-  ],
+  "relatedLessons": ["breaking-down-large-technical-initiatives", "writing-technical-proposals"],
   "furtherReading": [
     {
       "type": "article",

@@ -6,11 +6,7 @@
   "description": "XACT_ABORT, transaction rollback semantics inside CATCH blocks, error functions, and rethrowing patterns for stored procedures.",
   "order": 20,
   "difficulty": "intermediate",
-  "tags": [
-    "sql server",
-    "error-handling",
-    "intermediate"
-  ],
+  "tags": ["sql server", "error-handling", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -125,11 +121,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sql-i03",
-    "sql-a02",
-    "deadlocks"
-  ],
+  "relatedLessons": ["sql-i03", "sql-a02", "deadlocks"],
   "furtherReading": [
     {
       "title": "TRY...CATCH (Transact-SQL) — Microsoft Learn",

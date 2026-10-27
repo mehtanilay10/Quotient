@@ -7,18 +7,8 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "rag",
-    "retrieval",
-    "knowledge-base",
-    "grounding"
-  ],
-  "relatedGlossaryTerms": [
-    "rag",
-    "embedding",
-    "vector-database",
-    "hallucination"
-  ],
+  "tags": ["rag", "retrieval", "knowledge-base", "grounding"],
+  "relatedGlossaryTerms": ["rag", "embedding", "vector-database", "hallucination"],
   "blocks": [
     {
       "type": "paragraph",
@@ -91,11 +81,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Component",
-          "What it does",
-          "Example tool"
-        ],
+        "headers": ["Component", "What it does", "Example tool"],
         "rows": [
           [
             "Document ingestion",
@@ -137,11 +123,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Failure mode",
-          "Why it happens",
-          "Fix"
-        ],
+        "headers": ["Failure mode", "Why it happens", "Fix"],
         "rows": [
           [
             "Retrieves wrong chunks",
@@ -178,31 +160,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "RAG",
-          "Fine-tuning"
-        ],
+        "headers": ["RAG", "Fine-tuning"],
         "rows": [
-          [
-            "Adds knowledge from new documents",
-            "Teaches the model new behaviors or styles"
-          ],
-          [
-            "Updatable without retraining",
-            "Requires expensive re-training to update"
-          ],
+          ["Adds knowledge from new documents", "Teaches the model new behaviors or styles"],
+          ["Updatable without retraining", "Requires expensive re-training to update"],
           [
             "Good when answer is in a document",
             "Good when you need a specific response style or persona"
           ],
-          [
-            "Cites sources directly",
-            "Cannot cite sources — knowledge is baked in"
-          ],
-          [
-            "Best for most enterprise use cases",
-            "Better for specialized models and products"
-          ]
+          ["Cites sources directly", "Cannot cite sources — knowledge is baked in"],
+          ["Best for most enterprise use cases", "Better for specialized models and products"]
         ]
       }
     },
@@ -266,35 +233,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "RAG component",
-          "Quality risk",
-          "Mitigation"
-        ],
+        "headers": ["RAG component", "Quality risk", "Mitigation"],
         "rows": [
-          [
-            "Chunking",
-            "Context fragmentation",
-            "Tune chunk size and overlap by document type"
-          ],
-          [
-            "Retrieval",
-            "Low relevance matches",
-            "Use hybrid search and metadata filters"
-          ],
-          [
-            "Generation",
-            "Unsupported claims",
-            "Require citations from retrieved context"
-          ]
+          ["Chunking", "Context fragmentation", "Tune chunk size and overlap by document type"],
+          ["Retrieval", "Low relevance matches", "Use hybrid search and metadata filters"],
+          ["Generation", "Unsupported claims", "Require citations from retrieved context"]
         ]
       }
     }
   ],
-  "relatedLessons": [
-    "embeddings-simply",
-    "protecting-your-data"
-  ],
+  "relatedLessons": ["embeddings-simply", "protecting-your-data"],
   "furtherReading": [
     {
       "title": "Retrieval-Augmented Generation Overview",

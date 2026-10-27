@@ -6,13 +6,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "react-hook-form",
-    "forms",
-    "react",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["react-hook-form", "forms", "react", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",

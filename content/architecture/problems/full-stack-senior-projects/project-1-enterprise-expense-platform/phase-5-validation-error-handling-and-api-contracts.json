@@ -127,27 +127,14 @@
           {
             "title": "URL versioning",
             "description": "Prefix routes with /v1/, /v2/.",
-            "pros": [
-              "Explicit",
-              "Easy to test in Swagger",
-              "Clear for consumers"
-            ],
-            "cons": [
-              "Pollutes route namespace",
-              "Harder to deprecate old versions"
-            ]
+            "pros": ["Explicit", "Easy to test in Swagger", "Clear for consumers"],
+            "cons": ["Pollutes route namespace", "Harder to deprecate old versions"]
           },
           {
             "title": "Media type versioning",
             "description": "Version in Accept/Content-Type header.",
-            "pros": [
-              "Clean URLs",
-              "Standard HTTP approach"
-            ],
-            "cons": [
-              "Harder to demo in browser",
-              "Requires header management in clients"
-            ]
+            "pros": ["Clean URLs", "Standard HTTP approach"],
+            "cons": ["Harder to demo in browser", "Requires header management in clients"]
           }
         ]
       }

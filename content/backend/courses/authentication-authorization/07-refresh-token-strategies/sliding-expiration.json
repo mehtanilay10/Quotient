@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "sliding-expiration",
-    "refresh-tokens",
-    "sessions",
-    "security",
-    "timeout"
-  ],
+  "tags": ["sliding-expiration", "refresh-tokens", "sessions", "security", "timeout"],
   "blocks": [
     {
       "type": "heading",
@@ -53,10 +47,7 @@
             "Poor user experience for long tasks",
             "Requires re-authentication"
           ],
-          "tags": [
-            "absolute",
-            "fixed"
-          ]
+          "tags": ["absolute", "fixed"]
         },
         {
           "title": "Sliding Expiration",
@@ -71,10 +62,7 @@
             "Requires a maximum absolute lifetime",
             "More complex to implement correctly"
           ],
-          "tags": [
-            "sliding",
-            "renewal"
-          ]
+          "tags": ["sliding", "renewal"]
         }
       ]
     },
@@ -161,12 +149,7 @@
       "takeaway": "Sliding expiration keeps active users authenticated while still ensuring inactive sessions eventually expire, striking the right balance between security and user experience."
     }
   ],
-  "relatedLessons": [
-    "refresh-token-basics",
-    "token-rotation"
-  ],
+  "relatedLessons": ["refresh-token-basics", "token-rotation"],
   "furtherReading": [],
-  "prerequisites": [
-    "refresh-token-basics"
-  ]
+  "prerequisites": ["refresh-token-basics"]
 }

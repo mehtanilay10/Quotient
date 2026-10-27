@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "except",
-    "set-operations",
-    "difference",
-    "subtract"
-  ],
+  "tags": ["except", "set-operations", "difference", "subtract"],
   "blocks": [
     {
       "type": "heading",

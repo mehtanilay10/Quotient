@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "custom-hooks",
-    "reusability",
-    "composition",
-    "react"
-  ],
+  "tags": ["custom-hooks", "reusability", "composition", "react"],
   "prerequisites": [],
   "relatedLessons": [],
   "furtherReading": [],

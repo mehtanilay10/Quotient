@@ -6,12 +6,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "npm",
-    "yarn",
-    "package-manager",
-    "fundamentals"
-  ],
+  "tags": ["npm", "yarn", "package-manager", "fundamentals"],
   "blocks": [
     {
       "type": "paragraph",
@@ -36,12 +31,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Manager",
-          "Lockfile",
-          "Install model",
-          "Best at"
-        ],
+        "headers": ["Manager", "Lockfile", "Install model", "Best at"],
         "rows": [
           [
             "npm",

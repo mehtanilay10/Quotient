@@ -8,14 +8,7 @@
   "order": 11,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "azure",
-    "monitoring",
-    "observability",
-    "application-insights",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "monitoring", "observability", "application-insights", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -38,53 +31,23 @@
           {
             "title": "Azure Monitor",
             "description": "The central platform collecting all telemetry from Azure resources and applications.",
-            "tags": [
-              "Platform",
-              "All data"
-            ],
-            "pros": [
-              "Unified view",
-              "Built-in alerts",
-              "Auto-scale"
-            ],
-            "cons": [
-              "Broad but shallow",
-              "Requires configuration"
-            ]
+            "tags": ["Platform", "All data"],
+            "pros": ["Unified view", "Built-in alerts", "Auto-scale"],
+            "cons": ["Broad but shallow", "Requires configuration"]
           },
           {
             "title": "Application Insights",
             "description": "APM for applications with auto-instrumentation, failure analysis, and usage tracking.",
-            "tags": [
-              "Application",
-              "Code-level"
-            ],
-            "pros": [
-              "Auto-collects telemetry",
-              "Live Metrics",
-              "Snapshot Debugger"
-            ],
-            "cons": [
-              "Only for apps",
-              "Cost at high volume"
-            ]
+            "tags": ["Application", "Code-level"],
+            "pros": ["Auto-collects telemetry", "Live Metrics", "Snapshot Debugger"],
+            "cons": ["Only for apps", "Cost at high volume"]
           },
           {
             "title": "Log Analytics",
             "description": "The log data store and KQL query engine for Azure Monitor Logs.",
-            "tags": [
-              "Data Platform",
-              "Logs"
-            ],
-            "pros": [
-              "Powerful KQL queries",
-              "Long retention",
-              "Custom tables"
-            ],
-            "cons": [
-              "Steep KQL learning curve",
-              "Retention costs"
-            ]
+            "tags": ["Data Platform", "Logs"],
+            "pros": ["Powerful KQL queries", "Long retention", "Custom tables"],
+            "cons": ["Steep KQL learning curve", "Retention costs"]
           }
         ]
       }
@@ -92,61 +55,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Capability",
-          "Azure Monitor",
-          "Application Insights",
-          "Log Analytics"
-        ],
+        "headers": ["Capability", "Azure Monitor", "Application Insights", "Log Analytics"],
         "rows": [
-          [
-            "Collects metrics from Azure resources",
-            "Yes",
-            "Limited",
-            "No"
-          ],
-          [
-            "Collects application telemetry",
-            "No",
-            "Yes",
-            "Via workspace"
-          ],
-          [
-            "KQL query engine",
-            "Yes",
-            "Via workspace",
-            "Yes"
-          ],
-          [
-            "Alerts",
-            "Yes",
-            "Yes",
-            "Yes"
-          ],
-          [
-            "Dashboards",
-            "Yes",
-            "Yes",
-            "Via workbooks"
-          ],
-          [
-            "Snapshot Debugger",
-            "No",
-            "Yes",
-            "No"
-          ],
-          [
-            "Live Metrics Stream",
-            "No",
-            "Yes",
-            "No"
-          ],
-          [
-            "Custom log ingestion",
-            "No",
-            "No",
-            "Yes"
-          ]
+          ["Collects metrics from Azure resources", "Yes", "Limited", "No"],
+          ["Collects application telemetry", "No", "Yes", "Via workspace"],
+          ["KQL query engine", "Yes", "Via workspace", "Yes"],
+          ["Alerts", "Yes", "Yes", "Yes"],
+          ["Dashboards", "Yes", "Yes", "Via workbooks"],
+          ["Snapshot Debugger", "No", "Yes", "No"],
+          ["Live Metrics Stream", "No", "Yes", "No"],
+          ["Custom log ingestion", "No", "No", "Yes"]
         ]
       }
     },

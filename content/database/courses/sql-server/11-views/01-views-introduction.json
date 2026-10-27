@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "views",
-    "introduction",
-    "virtual-table"
-  ],
+  "tags": ["views", "introduction", "virtual-table"],
   "blocks": [
     {
       "type": "heading",

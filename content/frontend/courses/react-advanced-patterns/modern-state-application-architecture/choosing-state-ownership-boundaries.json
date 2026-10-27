@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "state-ownership",
-    "react",
-    "architecture",
-    "components"
-  ],
+  "tags": ["state-ownership", "react", "architecture", "components"],
   "blocks": [
     {
       "type": "paragraph",

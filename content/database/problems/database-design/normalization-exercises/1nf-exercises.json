@@ -12,7 +12,9 @@
   "blocks": [
     {
       "type": "paragraph",
-      "data": { "text": "First Normal Form requires atomic values and no repeating groups. Violations appear as multiple values in one column or duplicate rows for the same entity." }
+      "data": {
+        "text": "First Normal Form requires atomic values and no repeating groups. Violations appear as multiple values in one column or duplicate rows for the same entity."
+      }
     },
     {
       "type": "heading",
@@ -22,7 +24,12 @@
       "type": "bullet-list",
       "data": {
         "title": "1NF red flags",
-        "items": ["Comma-separated phone numbers in one column", "Repeating course columns: course1, course2, course3", "Multiple values in a single VARCHAR cell", "Array columns in non-array-supporting databases"]
+        "items": [
+          "Comma-separated phone numbers in one column",
+          "Repeating course columns: course1, course2, course3",
+          "Multiple values in a single VARCHAR cell",
+          "Array columns in non-array-supporting databases"
+        ]
       }
     },
     {
@@ -64,9 +71,18 @@
       "data": {
         "title": "FAQ",
         "items": [
-          { "question": "Is a single VARCHAR always atomic?", "answer": "No. If it stores multiple conceptual values like a list of emails, it violates 1NF even if stored in one column." },
-          { "question": "Can JSON columns break 1NF?", "answer": "Yes, if the JSON represents multiple repeating entities. Use child tables instead." },
-          { "question": "What if my DB supports arrays?", "answer": "Even with array support, 1NF recommends atomic rows for simpler constraints and indexing." }
+          {
+            "question": "Is a single VARCHAR always atomic?",
+            "answer": "No. If it stores multiple conceptual values like a list of emails, it violates 1NF even if stored in one column."
+          },
+          {
+            "question": "Can JSON columns break 1NF?",
+            "answer": "Yes, if the JSON represents multiple repeating entities. Use child tables instead."
+          },
+          {
+            "question": "What if my DB supports arrays?",
+            "answer": "Even with array support, 1NF recommends atomic rows for simpler constraints and indexing."
+          }
         ]
       }
     },
@@ -74,7 +90,12 @@
       "type": "summary-box",
       "data": {
         "title": "Summary",
-        "points": ["Store exactly one value per column per row", "Move repeating groups to child tables", "Use junction tables for many-to-many atomicity", "Avoid CSV columns for related data"],
+        "points": [
+          "Store exactly one value per column per row",
+          "Move repeating groups to child tables",
+          "Use junction tables for many-to-many atomicity",
+          "Avoid CSV columns for related data"
+        ],
         "takeaway": "1NF is the foundation of relational design. Atomic values simplify constraints, indexing, and queries."
       }
     }

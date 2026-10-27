@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "polymorphic",
-    "as-pattern",
-    "forwardRef",
-    "component-prop",
-    "generic-components"
-  ],
+  "tags": ["polymorphic", "as-pattern", "forwardRef", "component-prop", "generic-components"],
   "blocks": [
     {
       "type": "heading",
@@ -166,7 +160,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "render-props-basics"
-  ]
+  "prerequisites": ["render-props-basics"]
 }

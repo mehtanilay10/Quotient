@@ -7,11 +7,7 @@
   "order": 11,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "database-snapshot",
-    "read-only",
-    "CREATE-DATABASE"
-  ],
+  "tags": ["database-snapshot", "read-only", "CREATE-DATABASE"],
   "blocks": [
     {
       "type": "heading",

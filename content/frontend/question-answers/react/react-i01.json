@@ -6,10 +6,7 @@
   "description": "Understand React's virtual DOM and diffing algorithm.",
   "order": 11,
   "difficulty": "intermediate",
-  "tags": [
-    "react",
-    "intermediate"
-  ],
+  "tags": ["react", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

@@ -165,11 +165,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "writing-rfcs",
-    "trade-off-analysis",
-    "decision-documentation"
-  ],
+  "relatedLessons": ["writing-rfcs", "trade-off-analysis", "decision-documentation"],
   "furtherReading": [
     {
       "type": "article",

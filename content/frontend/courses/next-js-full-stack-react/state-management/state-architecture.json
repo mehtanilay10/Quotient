@@ -90,11 +90,36 @@
       "data": {
         "headers": ["State", "Layer", "Tool", "Reason"],
         "rows": [
-          ["Search query", "URL state", "useSearchParams", "User should bookmark and share filtered view"],
-          ["User list data", "Server cache", "React Query", "Data from API; needs caching and background refetch"],
-          ["Dark mode preference", "Shared client state", "Context", "Used across the whole app; changes infrequently"],
-          ["Dropdown open/closed", "Local state", "useState", "Only relevant to one component tree"],
-          ["Edit user form", "Form state", "React Hook Form", "Complex validation and submission flow"]
+          [
+            "Search query",
+            "URL state",
+            "useSearchParams",
+            "User should bookmark and share filtered view"
+          ],
+          [
+            "User list data",
+            "Server cache",
+            "React Query",
+            "Data from API; needs caching and background refetch"
+          ],
+          [
+            "Dark mode preference",
+            "Shared client state",
+            "Context",
+            "Used across the whole app; changes infrequently"
+          ],
+          [
+            "Dropdown open/closed",
+            "Local state",
+            "useState",
+            "Only relevant to one component tree"
+          ],
+          [
+            "Edit user form",
+            "Form state",
+            "React Hook Form",
+            "Complex validation and submission flow"
+          ]
         ]
       }
     },
@@ -162,7 +187,17 @@
       }
     }
   ],
-  "relatedLessons": ["local-state-vs-server-state", "context-api-deep-dive", "when-to-use-redux", "react-query-for-server-state", "url-as-state", "state-synchronization", "performance-and-re-renders", "form-state-management", "testing-state"],
+  "relatedLessons": [
+    "local-state-vs-server-state",
+    "context-api-deep-dive",
+    "when-to-use-redux",
+    "react-query-for-server-state",
+    "url-as-state",
+    "state-synchronization",
+    "performance-and-re-renders",
+    "form-state-management",
+    "testing-state"
+  ],
   "furtherReading": [
     {
       "type": "article",

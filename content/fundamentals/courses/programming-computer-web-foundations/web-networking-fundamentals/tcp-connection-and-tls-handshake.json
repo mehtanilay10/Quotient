@@ -171,7 +171,11 @@
       }
     }
   ],
-  "relatedLessons": ["dns-resolution-from-browser-to-server", "http-request-and-response-lifecycle", "http11-vs-http2-vs-http3"],
+  "relatedLessons": [
+    "dns-resolution-from-browser-to-server",
+    "http-request-and-response-lifecycle",
+    "http11-vs-http2-vs-http3"
+  ],
   "furtherReading": [
     {
       "type": "article",

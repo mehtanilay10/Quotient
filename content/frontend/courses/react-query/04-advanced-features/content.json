@@ -9,19 +9,8 @@
   "difficulty": "advanced",
   "estimatedHours": 2.5,
   "icon": "🧩",
-  "tags": [
-    "suspense",
-    "cancellation",
-    "custom-hooks",
-    "error-handling",
-    "advanced"
-  ],
-  "lessonSlugs": [
-    "custom-hooks",
-    "error-handling-strategies",
-    "query-cancellation",
-    "suspense"
-  ],
+  "tags": ["suspense", "cancellation", "custom-hooks", "error-handling", "advanced"],
+  "lessonSlugs": ["custom-hooks", "error-handling-strategies", "query-cancellation", "suspense"],
   "prerequisites": ["mutations"],
   "whatYouLearn": [
     "Use React Suspense with React Query",

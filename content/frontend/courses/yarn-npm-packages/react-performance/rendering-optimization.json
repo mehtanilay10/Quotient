@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "re-renders",
-    "optimization",
-    "component-design",
-    "react"
-  ],
+  "tags": ["re-renders", "optimization", "component-design", "react"],
   "prerequisites": [],
   "relatedLessons": [],
   "furtherReading": [],

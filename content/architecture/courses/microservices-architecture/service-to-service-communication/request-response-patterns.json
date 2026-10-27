@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "request-response",
-    "patterns",
-    "one-way",
-    "fire-and-forget"
-  ],
+  "tags": ["request-response", "patterns", "one-way", "fire-and-forget"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,31 +110,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Blocking",
-          "Guarantee",
-          "Use Case"
-        ],
+        "headers": ["Pattern", "Blocking", "Guarantee", "Use Case"],
         "rows": [
-          [
-            "Request-Response",
-            "Yes",
-            "High",
-            "Queries, critical commands"
-          ],
-          [
-            "One-Way",
-            "No",
-            "Medium",
-            "Notifications"
-          ],
-          [
-            "Fire-and-Forget",
-            "No",
-            "Low",
-            "Logging, metrics"
-          ]
+          ["Request-Response", "Yes", "High", "Queries, critical commands"],
+          ["One-Way", "No", "Medium", "Notifications"],
+          ["Fire-and-Forget", "No", "Low", "Logging, metrics"]
         ]
       }
     },

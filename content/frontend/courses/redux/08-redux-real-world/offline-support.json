@@ -7,12 +7,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "persistence",
-    "offline",
-    "redux-persist"
-  ],
+  "tags": ["redux", "persistence", "offline", "redux-persist"],
   "blocks": [
     {
       "type": "paragraph",
@@ -157,37 +152,13 @@
       "type": "table",
       "data": {
         "title": "Storage engines for redux-persist",
-        "headers": [
-          "Engine",
-          "Backend",
-          "Best for"
-        ],
+        "headers": ["Engine", "Backend", "Best for"],
         "rows": [
-          [
-            "redux-persist/lib/storage",
-            "localStorage",
-            "Small persistent preferences"
-          ],
-          [
-            "redux-persist/lib/storage/session",
-            "sessionStorage",
-            "Tab-scoped data, wizards"
-          ],
-          [
-            "@react-native-async-storage/async-storage",
-            "Native AsyncStorage",
-            "React Native apps"
-          ],
-          [
-            "redux-persist-indexeddb-storage",
-            "IndexedDB",
-            "Large offline datasets"
-          ],
-          [
-            "redux-persist-fs-storage",
-            "File system (RN)",
-            "Mobile file-based caching"
-          ]
+          ["redux-persist/lib/storage", "localStorage", "Small persistent preferences"],
+          ["redux-persist/lib/storage/session", "sessionStorage", "Tab-scoped data, wizards"],
+          ["@react-native-async-storage/async-storage", "Native AsyncStorage", "React Native apps"],
+          ["redux-persist-indexeddb-storage", "IndexedDB", "Large offline datasets"],
+          ["redux-persist-fs-storage", "File system (RN)", "Mobile file-based caching"]
         ]
       }
     },

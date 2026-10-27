@@ -8,12 +8,7 @@
   "order": 19,
   "difficulty": "medium",
   "estimatedMinutes": 16,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "backtracking",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "backtracking", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,14 +46,8 @@
           {
             "title": "DP + Backtrack",
             "description": "Precompute palindromes, backtrack",
-            "pros": [
-              "Finds all partitions"
-            ],
-            "tags": [
-              "O(n\u00b72^n) time",
-              "O(n\u00b2) space",
-              "Recommended"
-            ]
+            "pros": ["Finds all partitions"],
+            "tags": ["O(n\u00b72^n) time", "O(n\u00b2) space", "Recommended"]
           }
         ]
       }

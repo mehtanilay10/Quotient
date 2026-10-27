@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "azure",
-    "networking",
-    "vnet",
-    "api-management",
-    "developer"
-  ],
+  "tags": ["azure", "networking", "vnet", "api-management", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -59,10 +53,10 @@
     {
       "type": "mermaid",
       "data": {
-          "id": "mermaid-vnet",
-          "caption": "A VNet containing a web subnet and a database subnet.",
-          "definition": "flowchart TD\n    VNet[\"VNet (10.0.0.0/16)\"] --> WebSubnet[\"web-subnet (10.0.1.0/24)\"]\n    VNet --> DbSubnet[\"db-subnet (10.0.2.0/24)\"]\n    WebSubnet --> WebApp[\"App Service / VM\"]\n    DbSubnet --> Sql[\"Azure SQL / VM\"]"
-        }
+        "id": "mermaid-vnet",
+        "caption": "A VNet containing a web subnet and a database subnet.",
+        "definition": "flowchart TD\n    VNet[\"VNet (10.0.0.0/16)\"] --> WebSubnet[\"web-subnet (10.0.1.0/24)\"]\n    VNet --> DbSubnet[\"db-subnet (10.0.2.0/24)\"]\n    WebSubnet --> WebApp[\"App Service / VM\"]\n    DbSubnet --> Sql[\"Azure SQL / VM\"]"
+      }
     },
     {
       "type": "summary-box",

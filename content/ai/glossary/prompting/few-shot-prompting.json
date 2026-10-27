@@ -6,11 +6,7 @@
   "fullDefinition": "Few-shot prompting is a technique where you include a small number of examples of the desired input-output pattern directly in your prompt. By showing the model what good output looks like, you significantly improve its ability to produce consistent, correctly formatted results. For example, instead of just saying 'Classify sentiment,' you might show two examples with their classifications. Few-shot prompting is one of the most powerful and accessible techniques for improving model performance without any model retraining. The optimal number of examples varies by task but typically ranges from one to five.",
   "category": "prompting",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "zero-shot-prompting",
-    "prompt",
-    "chain-of-thought"
-  ],
+  "relatedTerms": ["zero-shot-prompting", "prompt", "chain-of-thought"],
   "learnMoreSlug": "few-shot-prompting",
   "examples": [
     "Showing two classified reviews before asking for a third classification",

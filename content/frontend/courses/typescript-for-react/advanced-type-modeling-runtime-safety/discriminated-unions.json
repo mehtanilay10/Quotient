@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "discriminated-unions",
-    "union-types",
-    "react"
-  ],
+  "tags": ["typescript", "discriminated-unions", "union-types", "react"],
   "blocks": [
     {
       "type": "paragraph",
@@ -64,14 +59,8 @@
           {
             "title": "Without a Discriminant",
             "description": "TypeScript must check every property before it knows which fields exist. The code becomes harder to write and easier to misuse.",
-            "pros": [
-              "Works for ad-hoc unions"
-            ],
-            "cons": [
-              "No safe narrowing",
-              "Property access is fragile",
-              "Easy to forget checks"
-            ]
+            "pros": ["Works for ad-hoc unions"],
+            "cons": ["No safe narrowing", "Property access is fragile", "Easy to forget checks"]
           },
           {
             "title": "With a Discriminant",
@@ -81,9 +70,7 @@
               "Forces exhaustive handling",
               "Easy to read and maintain"
             ],
-            "cons": [
-              "Requires a consistent property across all variants"
-            ]
+            "cons": ["Requires a consistent property across all variants"]
           }
         ]
       }
@@ -132,10 +119,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "never-and-exhaustive-checking",
-    "type-predicates"
-  ],
+  "relatedLessons": ["never-and-exhaustive-checking", "type-predicates"],
   "furtherReading": [
     {
       "title": "TypeScript Handbook: Discriminated Unions",

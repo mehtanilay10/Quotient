@@ -6,11 +6,7 @@
   "fullDefinition": "AI literacy is the set of competencies that enable individuals to critically evaluate AI capabilities, use AI tools effectively, and understand their societal implications. It goes beyond knowing how to operate AI tools to understanding how models work, recognizing their limitations, and making informed decisions about when to trust or question AI output. As AI becomes embedded in everyday tools and workplace processes, AI literacy is increasingly viewed as a fundamental skill alongside reading, writing, and numeracy. Educational programs worldwide are now developing AI literacy curricula for students and professionals.",
   "category": "core-concepts",
   "difficulty": "beginner",
-  "relatedTerms": [
-    "artificial-intelligence",
-    "generative-ai",
-    "hallucination"
-  ],
+  "relatedTerms": ["artificial-intelligence", "generative-ai", "hallucination"],
   "learnMoreSlug": "ai-vs-ml-vs-generative-ai",
   "examples": [
     "Recognizing when an AI-generated image looks artificially perfect or distorted",

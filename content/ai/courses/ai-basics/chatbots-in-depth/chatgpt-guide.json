@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "chatgpt",
-    "openai",
-    "gpt-6",
-    "practical"
-  ],
+  "tags": ["chatgpt", "openai", "gpt-6", "practical"],
   "blocks": [
     {
       "type": "paragraph",
@@ -67,12 +62,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tier",
-          "Model",
-          "Best for",
-          "Worth it?"
-        ],
+        "headers": ["Tier", "Model", "Best for", "Worth it?"],
         "rows": [
           [
             "Free",
@@ -273,11 +263,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Habit",
-          "Weak example",
-          "Stronger example"
-        ],
+        "headers": ["Habit", "Weak example", "Stronger example"],
         "rows": [
           [
             "State your role and goal",
@@ -330,11 +316,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Problem",
-          "What's happening",
-          "Fix"
-        ],
+        "headers": ["Problem", "What's happening", "Fix"],
         "rows": [
           [
             "Response was cut off",
@@ -446,11 +428,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Task",
-          "Best tool",
-          "Why"
-        ],
+        "headers": ["Task", "Best tool", "Why"],
         "rows": [
           [
             "Write and edit a long essay",
@@ -462,11 +440,7 @@
             "Perplexity or ChatGPT with web browsing",
             "Cites live sources; reduces hallucination risk"
           ],
-          [
-            "Analyze a 300-page PDF",
-            "Claude",
-            "Larger context window handles very long documents"
-          ],
+          ["Analyze a 300-page PDF", "Claude", "Larger context window handles very long documents"],
           [
             "Summarize emails and draft replies",
             "Gemini in Gmail",
@@ -627,10 +601,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "model-comparison",
-    "chatbot-landscape"
-  ],
+  "relatedLessons": ["model-comparison", "chatbot-landscape"],
   "furtherReading": [
     {
       "title": "ChatGPT Prompt Engineering for Developers",

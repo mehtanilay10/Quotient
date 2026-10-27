@@ -8,19 +8,8 @@
   "difficulty": "intermediate",
   "estimatedHours": 1.6,
   "icon": "🚀",
-  "tags": [
-    "interview",
-    "devops",
-    "cicd"
-  ],
-  "lessonSlugs": [
-    "cicd-q1",
-    "cicd-q2",
-    "cicd-q3",
-    "cicd-q4",
-    "cicd-q5",
-    "cicd-q6"
-  ],
+  "tags": ["interview", "devops", "cicd"],
+  "lessonSlugs": ["cicd-q1", "cicd-q2", "cicd-q3", "cicd-q4", "cicd-q5", "cicd-q6"],
   "whatYouLearn": [
     "Answer CI/CD Pipelines interview questions with confidence",
     "Explain trade-offs instead of reciting definitions",

@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 55,
-  "tags": [
-    "hld",
-    "system-design",
-    "api-gateway",
-    "routing",
-    "service-discovery",
-    "envoy"
-  ],
+  "tags": ["hld", "system-design", "api-gateway", "routing", "service-discovery", "envoy"],
   "blocks": [
     {
       "type": "heading",
@@ -174,12 +167,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Concern",
-          "Implementation Location",
-          "Mechanism",
-          "Trade-off"
-        ],
+        "headers": ["Concern", "Implementation Location", "Mechanism", "Trade-off"],
         "rows": [
           [
             "TLS termination",
@@ -259,10 +247,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "rate-limiter",
-    "url-shortener"
-  ],
+  "relatedLessons": ["rate-limiter", "url-shortener"],
   "furtherReading": [
     {
       "title": "Envoy Proxy Documentation",

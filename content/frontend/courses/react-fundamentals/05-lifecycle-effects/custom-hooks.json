@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "hooks",
-    "custom-hooks",
-    "reusable"
-  ],
+  "tags": ["react", "hooks", "custom-hooks", "reusable"],
   "blocks": [
     {
       "type": "paragraph",

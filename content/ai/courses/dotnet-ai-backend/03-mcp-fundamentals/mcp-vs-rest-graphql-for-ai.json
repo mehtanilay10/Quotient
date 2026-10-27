@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "mcp",
-    "rest",
-    "graphql",
-    "comparison"
-  ],
+  "tags": ["mcp", "rest", "graphql", "comparison"],
   "blocks": [
     {
       "type": "paragraph",
@@ -31,11 +26,7 @@
         {
           "title": "REST",
           "description": "Resource-oriented HTTP endpoints with JSON payloads.",
-          "pros": [
-            "Widely understood",
-            "Excellent web and mobile support",
-            "Mature ecosystem"
-          ],
+          "pros": ["Widely understood", "Excellent web and mobile support", "Mature ecosystem"],
           "cons": [
             "No standard tool schema",
             "Clients must hardcode endpoints",
@@ -59,15 +50,8 @@
         {
           "title": "MCP",
           "description": "Protocol for AI clients to discover and use backend capabilities.",
-          "pros": [
-            "Built-in tool calling",
-            "Prompt templates",
-            "Standard client behavior"
-          ],
-          "cons": [
-            "Narrower ecosystem",
-            "Remote hosting requires more work"
-          ]
+          "pros": ["Built-in tool calling", "Prompt templates", "Standard client behavior"],
+          "cons": ["Narrower ecosystem", "Remote hosting requires more work"]
         }
       ]
     },
@@ -113,10 +97,7 @@
       "takeaway": "Do not replace existing APIs with MCP. Add MCP where AI clients need structured, discoverable interfaces."
     }
   ],
-  "relatedLessons": [
-    "mcp-and-backend-integration",
-    "building-your-first-mcp-server"
-  ],
+  "relatedLessons": ["mcp-and-backend-integration", "building-your-first-mcp-server"],
   "technology": null,
   "furtherReading": [
     {

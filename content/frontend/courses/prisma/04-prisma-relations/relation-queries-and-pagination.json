@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "prisma",
-    "relations",
-    "nested-pagination",
-    "filtering"
-  ],
+  "tags": ["prisma", "relations", "nested-pagination", "filtering"],
   "blocks": [
     {
       "type": "paragraph",
@@ -57,8 +52,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "one-to-many-relations",
-    "select-and-include"
-  ]
+  "relatedLessons": ["one-to-many-relations", "select-and-include"]
 }

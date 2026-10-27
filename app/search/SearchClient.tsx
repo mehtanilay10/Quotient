@@ -1,22 +1,22 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useMemo } from 'react';
-import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
-import { Clock, Trash2 } from 'lucide-react';
-import { SearchBar } from '@/components/ui/SearchBar';
-import { SectionHeader } from '@/components/sections/SectionHeader';
-import { getSearchResultHref } from '@/lib/content-hrefs';
-import { useDebouncedValue } from '@/hooks/useDebouncedValue';
-import { useRecentSearches } from '@/hooks/useRecentSearches';
-import { SearchErrorBoundary } from '@/components/ui/SearchErrorBoundary';
-import type { SearchResult } from '@/types';
+import { useState, useEffect, useMemo } from "react";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { Clock, Trash2 } from "lucide-react";
+import { SearchBar } from "@/components/ui/SearchBar";
+import { SectionHeader } from "@/components/sections/SectionHeader";
+import { getSearchResultHref } from "@/lib/content-hrefs";
+import { useDebouncedValue } from "@/hooks/useDebouncedValue";
+import { useRecentSearches } from "@/hooks/useRecentSearches";
+import { SearchErrorBoundary } from "@/components/ui/SearchErrorBoundary";
+import type { SearchResult } from "@/types";
 
 const TYPE_LABEL: Record<string, string> = {
-  lesson: 'Lesson',
-  module: 'Module',
-  course: 'Course',
-  cheatsheet: 'Cheatsheet',
+  lesson: "Lesson",
+  module: "Module",
+  course: "Course",
+  cheatsheet: "Cheatsheet",
 };
 
 /**
@@ -27,12 +27,14 @@ const TYPE_LABEL: Record<string, string> = {
 function highlightText(text: string, query: string): React.ReactNode {
   const tokens = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
   if (tokens.length === 0) return text;
-  const escaped = tokens.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
-  const regex = new RegExp(`(${escaped.join('|')})`, 'gi');
+  const escaped = tokens.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+  const regex = new RegExp(`(${escaped.join("|")})`, "gi");
   const parts = text.split(regex);
   return parts.map((part, i) =>
     regex.test(part) ? (
-      <mark key={i} className="rounded bg-accent-subtle px-0.5 text-fg-default">{part}</mark>
+      <mark key={i} className="rounded bg-accent-subtle px-0.5 text-fg-default">
+        {part}
+      </mark>
     ) : (
       part
     )
@@ -41,7 +43,7 @@ function highlightText(text: string, query: string): React.ReactNode {
 
 export function SearchClient() {
   const searchParams = useSearchParams();
-  const initialQuery = searchParams.get('q') ?? '';
+  const initialQuery = searchParams.get("q") ?? "";
   const [query, setQuery] = useState(initialQuery);
   const [results, setResults] = useState<SearchResult[]>([]);
   const [loading, setLoading] = useState(false);
@@ -100,7 +102,7 @@ export function SearchClient() {
     if (words.length === 1) {
       return `Try searching for a broader term or check the spelling of "${debouncedQuery.trim()}".`;
     }
-    return 'Try searching for fewer keywords or a broader term.';
+    return "Try searching for fewer keywords or a broader term.";
   }, [debouncedQuery, results.length]);
 
   return (
@@ -124,7 +126,9 @@ export function SearchClient() {
 
         {!query.trim() ? (
           <div className="space-y-4">
-            <p className="text-sm text-fg-muted">Type a keyword above to search across the entire course library.</p>
+            <p className="text-sm text-fg-muted">
+              Type a keyword above to search across the entire course library.
+            </p>
             {recent.length > 0 && (
               <div>
                 <div className="mb-2 flex items-center justify-between">
@@ -167,14 +171,12 @@ export function SearchClient() {
         ) : results.length === 0 ? (
           <div className="space-y-2">
             <p className="text-sm text-fg-muted">No results found.</p>
-            {suggestion && (
-              <p className="text-sm text-accent-fg">{suggestion}</p>
-            )}
+            {suggestion && <p className="text-sm text-accent-fg">{suggestion}</p>}
           </div>
         ) : (
           <div className="space-y-4">
             <div aria-live="polite" className="sr-only">
-              {results.length} search result{results.length === 1 ? '' : 's'} found
+              {results.length} search result{results.length === 1 ? "" : "s"} found
             </div>
             {results.map((result) => {
               const href = getSearchResultHref(result);
@@ -187,7 +189,9 @@ export function SearchClient() {
                 >
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
-                      <span className="text-xs font-medium text-accent-fg">{TYPE_LABEL[result.type] ?? result.type}</span>
+                      <span className="text-xs font-medium text-accent-fg">
+                        {TYPE_LABEL[result.type] ?? result.type}
+                      </span>
                       <p className="font-medium text-fg-default group-hover:text-accent-fg transition-colors">
                         {highlightText(result.title, debouncedQuery)}
                       </p>

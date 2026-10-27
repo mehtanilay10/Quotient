@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 12,
-  "tags": [
-    "rabbitmq",
-    "amqp",
-    "messaging",
-    "message-broker"
-  ],
+  "tags": ["rabbitmq", "amqp", "messaging", "message-broker"],
   "blocks": [
     {
       "type": "heading",

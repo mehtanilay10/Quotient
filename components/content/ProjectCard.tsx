@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { Clock, Wrench, Star } from 'lucide-react';
-import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
-import { cn, formatHours } from '@/lib/utils';
-import type { MiniProject } from '@/types';
+import { Clock, Wrench, Star } from "lucide-react";
+import { DifficultyBadge } from "@/components/ui/DifficultyBadge";
+import { cn, formatHours } from "@/lib/utils";
+import type { MiniProject } from "@/types";
 
 interface ProjectCardProps {
   project: MiniProject;
@@ -17,8 +17,8 @@ export function ProjectCard({ project, className, onClick }: ProjectCardProps) {
       type="button"
       onClick={onClick}
       className={cn(
-        'group flex w-full flex-col rounded-xl border border-border bg-canvas p-5 text-left transition-all',
-        'hover:border-accent-fg hover:shadow-md dark:bg-canvas-subtle',
+        "group flex w-full flex-col rounded-xl border border-border bg-canvas p-5 text-left transition-all",
+        "hover:border-accent-fg hover:shadow-md dark:bg-canvas-subtle",
         className
       )}
     >
@@ -55,13 +55,14 @@ export function ProjectCard({ project, className, onClick }: ProjectCardProps) {
       {/* Tools */}
       <div className="flex items-center gap-1.5 text-xs text-fg-subtle">
         <Wrench className="h-3 w-3" aria-hidden="true" />
-        {project.tools.join(', ')}
+        {project.tools.join(", ")}
       </div>
 
       {project.bonusChallenges && (
         <div className="mt-3 flex items-center gap-1 text-xs text-attention-fg">
           <Star className="h-3 w-3" aria-hidden="true" />
-          {project.bonusChallenges.length} bonus challenge{project.bonusChallenges.length !== 1 && 's'}
+          {project.bonusChallenges.length} bonus challenge
+          {project.bonusChallenges.length !== 1 && "s"}
         </div>
       )}
     </button>

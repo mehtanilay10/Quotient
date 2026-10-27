@@ -9,17 +9,8 @@
   "difficulty": "beginner",
   "estimatedHours": 2,
   "icon": "📦",
-  "tags": [
-    "nuget",
-    "package-management",
-    "dotnet-cli"
-  ],
-  "lessonSlugs": [
-    "what-is-nuget",
-    "installing-packages",
-    "creating-packages",
-    "nuget-config"
-  ],
+  "tags": ["nuget", "package-management", "dotnet-cli"],
+  "lessonSlugs": ["what-is-nuget", "installing-packages", "creating-packages", "nuget-config"],
   "whatYouLearn": [
     "Understand NuGet and its role in .NET development",
     "Install packages via CLI and IDE",

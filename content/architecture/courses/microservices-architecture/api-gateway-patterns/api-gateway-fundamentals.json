@@ -8,10 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 16,
-  "tags": [
-    "api-gateway",
-    "fundamentals"
-  ],
+  "tags": ["api-gateway", "fundamentals"],
   "blocks": [
     {
       "type": "paragraph",
@@ -79,37 +76,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Reverse Proxy",
-          "API Gateway"
-        ],
+        "headers": ["Aspect", "Reverse Proxy", "API Gateway"],
         "rows": [
-          [
-            "Routing",
-            "Path-based",
-            "Service-aware"
-          ],
-          [
-            "Auth",
-            "Limited",
-            "Built-in"
-          ],
-          [
-            "Aggregation",
-            "No",
-            "Yes"
-          ],
-          [
-            "Rate Limiting",
-            "Basic",
-            "Advanced"
-          ],
-          [
-            "Protocol",
-            "HTTP only",
-            "HTTP, gRPC, WebSocket"
-          ]
+          ["Routing", "Path-based", "Service-aware"],
+          ["Auth", "Limited", "Built-in"],
+          ["Aggregation", "No", "Yes"],
+          ["Rate Limiting", "Basic", "Advanced"],
+          ["Protocol", "HTTP only", "HTTP, gRPC, WebSocket"]
         ]
       }
     },

@@ -7,10 +7,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "graphql",
-    "scalars"
-  ],
+  "tags": ["graphql", "scalars"],
   "blocks": [
     {
       "type": "paragraph",
@@ -28,37 +25,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "GraphQL Scalar",
-          "C# Type",
-          "Description"
-        ],
+        "headers": ["GraphQL Scalar", "C# Type", "Description"],
         "rows": [
-          [
-            "Int",
-            "int",
-            "32-bit signed integer"
-          ],
-          [
-            "Float",
-            "float / decimal",
-            "Double-precision floating point"
-          ],
-          [
-            "String",
-            "string",
-            "UTF-8 character sequence"
-          ],
-          [
-            "Boolean",
-            "bool",
-            "true or false"
-          ],
-          [
-            "ID",
-            "int / string / Guid",
-            "Unique identifier, serialized as string"
-          ]
+          ["Int", "int", "32-bit signed integer"],
+          ["Float", "float / decimal", "Double-precision floating point"],
+          ["String", "string", "UTF-8 character sequence"],
+          ["Boolean", "bool", "true or false"],
+          ["ID", "int / string / Guid", "Unique identifier, serialized as string"]
         ]
       }
     },
@@ -147,9 +120,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "schema-basics",
-    "type-definitions"
-  ],
+  "relatedLessons": ["schema-basics", "type-definitions"],
   "courseSlug": "graphql-dotnet"
 }

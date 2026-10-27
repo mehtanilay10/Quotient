@@ -32,31 +32,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "When HTML is generated",
-          "Typical latency",
-          "Best for"
-        ],
+        "headers": ["Strategy", "When HTML is generated", "Typical latency", "Best for"],
         "rows": [
-          [
-            "SSG",
-            "At build time",
-            "Fastest",
-            "Blog posts, docs, marketing pages"
-          ],
+          ["SSG", "At build time", "Fastest", "Blog posts, docs, marketing pages"],
           [
             "ISR",
             "Build time, then on-demand or time-based",
             "Fast",
             "Content sites with occasional updates"
           ],
-          [
-            "SSR",
-            "Per request on the server",
-            "Higher",
-            "Personalized or highly dynamic pages"
-          ],
+          ["SSR", "Per request on the server", "Higher", "Personalized or highly dynamic pages"],
           [
             "Dynamic",
             "Per request, often with uncached data",

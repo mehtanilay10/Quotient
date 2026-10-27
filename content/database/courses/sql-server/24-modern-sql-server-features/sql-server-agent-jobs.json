@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 28,
-  "tags": [
-    "sql-server-agent",
-    "jobs",
-    "scheduling",
-    "msdb",
-    "automation"
-  ],
+  "tags": ["sql-server-agent", "jobs", "scheduling", "msdb", "automation"],
   "blocks": [
     {
       "type": "heading",
@@ -121,8 +115,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "backup-restore-strategies",
-    "sql-server-integration-services"
-  ]
+  "relatedLessons": ["backup-restore-strategies", "sql-server-integration-services"]
 }

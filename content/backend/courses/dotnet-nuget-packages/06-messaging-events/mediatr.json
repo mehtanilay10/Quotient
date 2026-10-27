@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 15,
-  "tags": [
-    "mediatr",
-    "cqrs",
-    "in-process",
-    "mediator"
-  ],
+  "tags": ["mediatr", "cqrs", "in-process", "mediator"],
   "blocks": [
     {
       "type": "heading",

@@ -9,15 +9,7 @@
   "difficulty": "beginner",
   "estimatedHours": 5.5,
   "icon": "🔢",
-  "tags": [
-    "data-types",
-    "char",
-    "varchar",
-    "int",
-    "decimal",
-    "datetime",
-    "bit"
-  ],
+  "tags": ["data-types", "char", "varchar", "int", "decimal", "datetime", "bit"],
   "lessonSlugs": [
     "01-data-types-overview",
     "02-char-data-type",

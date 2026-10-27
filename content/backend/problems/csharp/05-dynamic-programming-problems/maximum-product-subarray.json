@@ -8,12 +8,7 @@
   "order": 11,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "dynamic-programming",
-    "arrays",
-    "medium"
-  ],
+  "tags": ["csharp", "dynamic-programming", "arrays", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -51,15 +46,8 @@
           {
             "title": "Track Max+Min",
             "description": "Handle negative flips",
-            "pros": [
-              "O(n) time",
-              "O(1) space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "pros": ["O(n) time", "O(1) space"],
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

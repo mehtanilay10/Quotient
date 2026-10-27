@@ -155,6 +155,10 @@
   ],
   "relatedLessons": ["squashing-commits", "fixup-autosquash"],
   "furtherReading": [
-    { "title": "Git Interactive Rebase", "url": "https://git-scm.com/docs/git-rebase#_interactive_mode", "type": "article" }
+    {
+      "title": "Git Interactive Rebase",
+      "url": "https://git-scm.com/docs/git-rebase#_interactive_mode",
+      "type": "article"
+    }
   ]
 }

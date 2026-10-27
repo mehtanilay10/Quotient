@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "rate-limiting",
-    "asp.net core",
-    "security"
-  ],
+  "tags": ["rate-limiting", "asp.net core", "security"],
   "blocks": [
     {
       "type": "paragraph",

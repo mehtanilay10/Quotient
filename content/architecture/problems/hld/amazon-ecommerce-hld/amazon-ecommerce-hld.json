@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 60,
-  "tags": [
-    "hld",
-    "system-design",
-    "ecommerce",
-    "saga-pattern",
-    "distributed-inventory",
-    "caching"
-  ],
+  "tags": ["hld", "system-design", "ecommerce", "saga-pattern", "distributed-inventory", "caching"],
   "blocks": [
     {
       "type": "heading",
@@ -145,13 +138,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Mechanism",
-          "Pros",
-          "Cons",
-          "Recommended Use Case"
-        ],
+        "headers": ["Strategy", "Mechanism", "Pros", "Cons", "Recommended Use Case"],
         "rows": [
           [
             "Pessimistic Locking",
@@ -233,11 +220,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "payment-gateway-hld",
-    "rate-limiter",
-    "search-autocomplete"
-  ],
+  "relatedLessons": ["payment-gateway-hld", "rate-limiter", "search-autocomplete"],
   "furtherReading": [
     {
       "title": "Amazon DynamoDB Paper",

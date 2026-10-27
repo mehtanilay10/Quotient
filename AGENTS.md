@@ -11,18 +11,18 @@ not rely on memory of older Next.js versions.
 
 ## Documentation
 
-| Area | File |
-| --- | --- |
-| System design, routes, rendering, caching, deployment | [agents/architecture.md](./agents/architecture.md) |
-| Content schemas, block shapes, database tables, browser storage | [agents/data-model.md](./agents/data-model.md) |
-| API contracts, auth, CSRF, rate limits, payloads | [agents/api.md](./agents/api.md) |
-| Setup, commands, environment, content workflow, migrations, PWA, deployment | [agents/development.md](./agents/development.md) |
-| TypeScript, client/server boundaries, React, styling, security | [agents/coding-conventions.md](./agents/coding-conventions.md) |
-| Visual system, layout, accessibility, copy | [agents/ui-ux.md](./agents/ui-ux.md) |
-| Content author role | [agents/content-author.md](./agents/content-author.md) |
-| Frontend engineer role | [agents/frontend-engineer.md](./agents/frontend-engineer.md) |
-| Reviewer role | [agents/reviewer.md](./agents/reviewer.md) |
-| Content QA role | [agents/content-qa.md](./agents/content-qa.md) |
+| Area                                                                        | File                                                           |
+| --------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| System design, routes, rendering, caching, deployment                       | [agents/architecture.md](./agents/architecture.md)             |
+| Content schemas, block shapes, database tables, browser storage             | [agents/data-model.md](./agents/data-model.md)                 |
+| API contracts, auth, CSRF, rate limits, payloads                            | [agents/api.md](./agents/api.md)                               |
+| Setup, commands, environment, content workflow, migrations, PWA, deployment | [agents/development.md](./agents/development.md)               |
+| TypeScript, client/server boundaries, React, styling, security              | [agents/coding-conventions.md](./agents/coding-conventions.md) |
+| Visual system, layout, accessibility, copy                                  | [agents/ui-ux.md](./agents/ui-ux.md)                           |
+| Content author role                                                         | [agents/content-author.md](./agents/content-author.md)         |
+| Frontend engineer role                                                      | [agents/frontend-engineer.md](./agents/frontend-engineer.md)   |
+| Reviewer role                                                               | [agents/reviewer.md](./agents/reviewer.md)                     |
+| Content QA role                                                             | [agents/content-qa.md](./agents/content-qa.md)                 |
 
 If a role guide and this file disagree, follow this file and update the role
 guide. If a document and the code disagree, the code is the source of truth:
@@ -155,15 +155,18 @@ proof that types are correct.
 ## Tooling and Infrastructure
 
 ### Dependency Management
+
 - **Dependabot**: Configured in `.github/dependabot.yml` to automatically check for dependency updates weekly
 - Review Dependabot PRs before merging to ensure compatibility
 
 ### Code Formatting
+
 - **Prettier**: Configured in `.prettierrc` with project-specific settings
 - Run `yarn prettier --write .` to format files (add to package.json scripts if needed)
 - Generated content files are ignored via `.prettierignore`
 
 ### Security
+
 - **Rate Limiting**: Distributed rate limiting using Upstash Redis for serverless compatibility
   - Falls back to in-memory for local development
   - Three-tier rate limiting on magic link endpoint (global, per-IP, per-email)

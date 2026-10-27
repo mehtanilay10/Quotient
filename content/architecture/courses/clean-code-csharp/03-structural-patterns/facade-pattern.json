@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "facade",
-    "structural",
-    "csharp"
-  ],
+  "tags": ["facade", "structural", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,9 +36,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "composite-pattern"
-  ],
+  "relatedLessons": ["composite-pattern"],
   "furtherReading": [],
   "courseSlug": "clean-code-csharp"
 }

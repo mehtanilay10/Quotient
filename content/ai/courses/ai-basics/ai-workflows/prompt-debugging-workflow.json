@@ -50,11 +50,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Failure symptom",
-          "Likely cause",
-          "Best fix"
-        ],
+        "headers": ["Failure symptom", "Likely cause", "Best fix"],
         "rows": [
           [
             "Too generic",
@@ -66,11 +62,7 @@
             "No output schema",
             "Specify exact format: table, bullets, JSON, max length"
           ],
-          [
-            "Too verbose",
-            "No brevity constraint",
-            "Add word limits and section structure"
-          ],
+          ["Too verbose", "No brevity constraint", "Add word limits and section structure"],
           [
             "Hallucinated facts",
             "No evidence requirement",
@@ -102,11 +94,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Check",
-          "How to test",
-          "Indicator"
-        ],
+        "headers": ["Check", "How to test", "Indicator"],
         "rows": [
           [
             "Format",
@@ -118,11 +106,7 @@
             "Ask the model to cite sources or run a lookup",
             "Unsupported claims or invented citations"
           ],
-          [
-            "Stability",
-            "Run multiple seeds/temperatures",
-            "Divergent outputs across runs"
-          ],
+          ["Stability", "Run multiple seeds/temperatures", "Divergent outputs across runs"],
           [
             "Context sufficiency",
             "Remove parts of context and observe degradation",
@@ -192,27 +176,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "How to compute",
-          "Pass threshold"
-        ],
+        "headers": ["Metric", "How to compute", "Pass threshold"],
         "rows": [
-          [
-            "Format adherence",
-            "Percent of outputs that parse to expected schema",
-            "≥ 98%"
-          ],
+          ["Format adherence", "Percent of outputs that parse to expected schema", "≥ 98%"],
           [
             "Accuracy",
             "Automated comparison to ground truth labels",
             "Depends on task (e.g., ≥ 85%)"
           ],
-          [
-            "Human usefulness",
-            "Average rating from 3 reviewers (1–5)",
-            "≥ 4.0"
-          ],
+          ["Human usefulness", "Average rating from 3 reviewers (1–5)", "≥ 4.0"],
           [
             "Stability",
             "Fraction of identical outputs across 5 runs",
@@ -364,22 +336,10 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Practice",
-          "Tooling",
-          "Benefit"
-        ],
+        "headers": ["Practice", "Tooling", "Benefit"],
         "rows": [
-          [
-            "Central prompt repo",
-            "Git or internal prompt store",
-            "Versioning and audit trail"
-          ],
-          [
-            "Automated benchmarks",
-            "CI pipeline running test prompts",
-            "Detect regressions early"
-          ],
+          ["Central prompt repo", "Git or internal prompt store", "Versioning and audit trail"],
+          ["Automated benchmarks", "CI pipeline running test prompts", "Detect regressions early"],
           [
             "Failure logging",
             "Structured logs with inputs/outputs",
@@ -427,11 +387,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "Type",
-          "Why it helps"
-        ],
+        "headers": ["Resource", "Type", "Why it helps"],
         "rows": [
           [
             "Prompt Engineering Guide",

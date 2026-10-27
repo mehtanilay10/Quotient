@@ -42,7 +42,13 @@
         "headers": ["Architecture", "Replicas", "Uptime SLA", "Failover Time", "Use Case"],
         "rows": [
           ["Standard", "1 remote replica", "99.99%", "Minutes", "Dev/test, non-critical"],
-          ["Premium", "3 remote replicas + auto-failover groups", "99.995%", "Seconds", "Production, mission-critical"]
+          [
+            "Premium",
+            "3 remote replicas + auto-failover groups",
+            "99.995%",
+            "Seconds",
+            "Production, mission-critical"
+          ]
         ]
       }
     },

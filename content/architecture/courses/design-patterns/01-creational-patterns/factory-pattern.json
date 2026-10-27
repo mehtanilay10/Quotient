@@ -6,11 +6,7 @@
   "description": "Create objects without specifying exact classes.",
   "order": 2,
   "difficulty": "beginner",
-  "tags": [
-    "design-patterns",
-    "csharp",
-    "architecture"
-  ],
+  "tags": ["design-patterns", "csharp", "architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -28,11 +24,7 @@
     {
       "type": "bullet-list",
       "data": {
-        "items": [
-          "Simple Factory",
-          "Factory Method",
-          "Abstract Factory"
-        ]
+        "items": ["Simple Factory", "Factory Method", "Abstract Factory"]
       }
     },
     {

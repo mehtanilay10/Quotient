@@ -68,8 +68,16 @@
       "data": {
         "headers": ["Type", "Lifecycle", "Use Case"],
         "rows": [
-          ["System-assigned", "Tied to one resource, deleted with it", "Single app connecting to SQL"],
-          ["User-assigned", "Standalone, can be shared across resources", "Multiple apps sharing the same SQL access identity"]
+          [
+            "System-assigned",
+            "Tied to one resource, deleted with it",
+            "Single app connecting to SQL"
+          ],
+          [
+            "User-assigned",
+            "Standalone, can be shared across resources",
+            "Multiple apps sharing the same SQL access identity"
+          ]
         ]
       }
     },

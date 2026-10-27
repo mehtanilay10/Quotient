@@ -8,10 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 19,
-  "tags": [
-    "database-per-service",
-    "data-ownership"
-  ],
+  "tags": ["database-per-service", "data-ownership"],
   "blocks": [
     {
       "type": "paragraph",

@@ -6,10 +6,7 @@
   "description": "Value semantics for reference types: equality, immutability, with-expressions, and when records fit.",
   "order": 41,
   "difficulty": "intermediate",
-  "tags": [
-    "C#",
-    "intermediate"
-  ],
+  "tags": ["C#", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,11 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "csharp-b01",
-    "csharp-properties",
-    "generics-csharp"
-  ],
+  "relatedLessons": ["csharp-b01", "csharp-properties", "generics-csharp"],
   "furtherReading": [
     {
       "title": "Records (C# reference)",

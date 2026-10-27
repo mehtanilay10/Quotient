@@ -8,22 +8,9 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "profiling",
-    "devtools",
-    "re-renders",
-    "performance",
-    "optimization",
-    "memo"
-  ],
-  "prerequisites": [
-    "memoization-basics",
-    "code-splitting-lazy"
-  ],
-  "relatedLessons": [
-    "memoization-basics",
-    "virtualization-large-lists"
-  ],
+  "tags": ["profiling", "devtools", "re-renders", "performance", "optimization", "memo"],
+  "prerequisites": ["memoization-basics", "code-splitting-lazy"],
+  "relatedLessons": ["memoization-basics", "virtualization-large-lists"],
   "furtherReading": [
     {
       "title": "React DevTools Profiler",
@@ -232,50 +219,26 @@
           {
             "title": "React.memo",
             "description": "Prevents re-renders when props are shallowly equal.",
-            "pros": [
-              "Simple to apply",
-              "No hook overhead"
-            ],
-            "cons": [
-              "Shallow comparison only",
-              "Reference instability breaks it"
-            ]
+            "pros": ["Simple to apply", "No hook overhead"],
+            "cons": ["Shallow comparison only", "Reference instability breaks it"]
           },
           {
             "title": "useMemo / useCallback",
             "description": "Stabilizes values and function references between renders.",
-            "pros": [
-              "Fixes prop instability",
-              "Caches expensive work"
-            ],
-            "cons": [
-              "Memory overhead",
-              "Can be overused"
-            ]
+            "pros": ["Fixes prop instability", "Caches expensive work"],
+            "cons": ["Memory overhead", "Can be overused"]
           },
           {
             "title": "Component Splitting",
             "description": "Moves dynamic parts into isolated components.",
-            "pros": [
-              "No memoization needed",
-              "Clear boundaries"
-            ],
-            "cons": [
-              "More components to maintain",
-              "Potential prop drilling"
-            ]
+            "pros": ["No memoization needed", "Clear boundaries"],
+            "cons": ["More components to maintain", "Potential prop drilling"]
           },
           {
             "title": "Transitions",
             "description": "Marks updates as non-urgent for better responsiveness.",
-            "pros": [
-              "Improves input latency",
-              "Native React 18 feature"
-            ],
-            "cons": [
-              "Requires React 18+",
-              "Not for critical state"
-            ]
+            "pros": ["Improves input latency", "Native React 18 feature"],
+            "cons": ["Requires React 18+", "Not for critical state"]
           }
         ]
       }
@@ -283,43 +246,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Strategy",
-          "Impact",
-          "Complexity",
-          "When to Apply"
-        ],
+        "headers": ["Strategy", "Impact", "Complexity", "When to Apply"],
         "rows": [
-          [
-            "React.memo",
-            "Medium",
-            "Low",
-            "Props unchanged but child re-renders"
-          ],
-          [
-            "useMemo / useCallback",
-            "Medium",
-            "Medium",
-            "Expensive calculations or callback refs"
-          ],
-          [
-            "Component splitting",
-            "High",
-            "Medium",
-            "Dynamic state leaks across boundaries"
-          ],
-          [
-            "State colocation",
-            "High",
-            "Low",
-            "Lifted state affects many components"
-          ],
-          [
-            "startTransition",
-            "High",
-            "Medium",
-            "Heavy non-urgent UI updates"
-          ]
+          ["React.memo", "Medium", "Low", "Props unchanged but child re-renders"],
+          ["useMemo / useCallback", "Medium", "Medium", "Expensive calculations or callback refs"],
+          ["Component splitting", "High", "Medium", "Dynamic state leaks across boundaries"],
+          ["State colocation", "High", "Low", "Lifted state affects many components"],
+          ["startTransition", "High", "Medium", "Heavy non-urgent UI updates"]
         ]
       }
     },

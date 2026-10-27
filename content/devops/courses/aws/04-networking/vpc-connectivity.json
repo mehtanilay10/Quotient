@@ -8,7 +8,16 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": ["aws", "vpc", "vpc-peering", "transit-gateway", "privatelink", "vpn", "direct-connect", "bastion"],
+  "tags": [
+    "aws",
+    "vpc",
+    "vpc-peering",
+    "transit-gateway",
+    "privatelink",
+    "vpn",
+    "direct-connect",
+    "bastion"
+  ],
   "blocks": [
     {
       "type": "heading",
@@ -66,11 +75,31 @@
       "data": {
         "headers": ["Service", "Use Case", "Key Benefit"],
         "rows": [
-          ["VPC Peering", "Connect two VPCs directly", "Simple, low-latency connection between two VPCs"],
-          ["Transit Gateway", "Connect many VPCs and on-prem networks", "Central hub-and-spoke model for large networks"],
-          ["PrivateLink", "Access services privately across VPCs", "No public IPs or internet routing needed"],
-          ["Site-to-Site VPN", "Connect VPC to corporate data center", "Encrypted tunnel over the public internet"],
-          ["AWS Direct Connect", "Dedicated private network connection", "Consistent low latency and lower data costs"]
+          [
+            "VPC Peering",
+            "Connect two VPCs directly",
+            "Simple, low-latency connection between two VPCs"
+          ],
+          [
+            "Transit Gateway",
+            "Connect many VPCs and on-prem networks",
+            "Central hub-and-spoke model for large networks"
+          ],
+          [
+            "PrivateLink",
+            "Access services privately across VPCs",
+            "No public IPs or internet routing needed"
+          ],
+          [
+            "Site-to-Site VPN",
+            "Connect VPC to corporate data center",
+            "Encrypted tunnel over the public internet"
+          ],
+          [
+            "AWS Direct Connect",
+            "Dedicated private network connection",
+            "Consistent low latency and lower data costs"
+          ]
         ]
       }
     },

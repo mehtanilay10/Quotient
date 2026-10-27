@@ -6,14 +6,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 14,
-  "tags": [
-    "nextjs",
-    "react",
-    "frontend",
-    "frameworks",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["nextjs", "react", "frontend", "frameworks", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,37 +25,21 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Package",
-          "Purpose",
-          "Notes"
-        ],
+        "headers": ["Package", "Purpose", "Notes"],
         "rows": [
           [
             "next",
             "Framework, router, bundler, server",
             "Includes next/font, next/image, next/link, metadata"
           ],
-          [
-            "react / react-dom",
-            "Peer dependencies",
-            "Must match the versions Next.js expects"
-          ],
+          ["react / react-dom", "Peer dependencies", "Must match the versions Next.js expects"],
           [
             "next-auth",
             "Legacy authentication package",
             "Renamed to Auth.js: install `next-auth@beta` or `@auth/core`"
           ],
-          [
-            "@next/mdx",
-            "Optional MDX support",
-            "For Markdown-driven pages"
-          ],
-          [
-            "next-themes",
-            "Dark-mode theming helper",
-            "Community package, not official"
-          ]
+          ["@next/mdx", "Optional MDX support", "For Markdown-driven pages"],
+          ["next-themes", "Dark-mode theming helper", "Community package, not official"]
         ]
       }
     },

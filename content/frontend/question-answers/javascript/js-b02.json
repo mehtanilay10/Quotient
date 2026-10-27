@@ -6,10 +6,7 @@
   "description": "Understand single-threaded execution and async behavior.",
   "order": 3,
   "difficulty": "beginner",
-  "tags": [
-    "javascript",
-    "beginner"
-  ],
+  "tags": ["javascript", "beginner"],
   "blocks": [
     {
       "type": "paragraph",

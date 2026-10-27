@@ -7,13 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "claude",
-    "editing",
-    "polishing",
-    "grammar",
-    "rewriting"
-  ],
+  "tags": ["claude", "editing", "polishing", "grammar", "rewriting"],
   "blocks": [
     {
       "type": "heading",
@@ -85,11 +79,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Before",
-          "Edit Instruction",
-          "After"
-        ],
+        "headers": ["Before", "Edit Instruction", "After"],
         "rows": [
           [
             "'In order to facilitate the implementation of the new system...'",
@@ -189,12 +179,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "writing-with-claude",
-    "tone-and-style"
-  ],
-  "relatedGlossaryTerms": [
-    "large-language-model"
-  ],
+  "relatedLessons": ["writing-with-claude", "tone-and-style"],
+  "relatedGlossaryTerms": ["large-language-model"],
   "courseSlug": "claude"
 }

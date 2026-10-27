@@ -7,10 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "oop",
-    "fundamentals"
-  ],
+  "tags": ["oop", "fundamentals"],
   "blocks": [
     {
       "type": "paragraph",

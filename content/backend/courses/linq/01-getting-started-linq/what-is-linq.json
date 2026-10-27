@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "what is linq",
-    "language integrated query",
-    "introduction"
-  ],
+  "tags": ["linq", "what is linq", "language integrated query", "introduction"],
   "blocks": [
     {
       "type": "paragraph",
@@ -152,9 +147,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "why-linq",
-    "linq-api-in-net"
-  ],
+  "relatedLessons": ["why-linq", "linq-api-in-net"],
   "courseSlug": "linq"
 }

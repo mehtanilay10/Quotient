@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "agents",
-    "tool-calling",
-    "openai",
-    "functions"
-  ],
+  "tags": ["agents", "tool-calling", "openai", "functions"],
   "blocks": [
     {
       "type": "paragraph",
@@ -82,10 +77,7 @@
       "takeaway": "Start with one well-defined tool and one clear task. Multi-tool agents are powerful, but correctness starts with simple, observable tool behavior."
     }
   ],
-  "relatedLessons": [
-    "mcp-and-backend-integration",
-    "agent-architecture-patterns"
-  ],
+  "relatedLessons": ["mcp-and-backend-integration", "agent-architecture-patterns"],
   "technology": null,
   "furtherReading": [
     {

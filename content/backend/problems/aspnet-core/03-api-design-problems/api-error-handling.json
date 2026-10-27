@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "aspnet-core",
-    "web-api",
-    "error-handling",
-    "problemdetails"
-  ],
+  "tags": ["aspnet-core", "web-api", "error-handling", "problemdetails"],
   "blocks": [
     {
       "type": "heading",
@@ -91,20 +86,12 @@
           {
             "title": "ProblemDetails Middleware",
             "description": "RFC 7807 error format",
-            "pros": [
-              "Standard error format",
-              "Consistent across API",
-              "Built-in support"
-            ],
+            "pros": ["Standard error format", "Consistent across API", "Built-in support"],
             "cons": [
               "Requires exception handler middleware",
               "Doesn't cover all errors by default"
             ],
-            "tags": [
-              "ProblemDetails",
-              "UseExceptionHandler",
-              "Problem()"
-            ]
+            "tags": ["ProblemDetails", "UseExceptionHandler", "Problem()"]
           },
           {
             "title": "Global Exception Handler",
@@ -114,15 +101,8 @@
               "Consistent response format",
               "Can log and track"
             ],
-            "cons": [
-              "Must handle all exception types",
-              "Can swallow useful error info"
-            ],
-            "tags": [
-              "ExceptionHandler",
-              "middleware",
-              "global"
-            ]
+            "cons": ["Must handle all exception types", "Can swallow useful error info"],
+            "tags": ["ExceptionHandler", "middleware", "global"]
           }
         ]
       }

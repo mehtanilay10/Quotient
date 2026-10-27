@@ -8,12 +8,7 @@
   "order": 8,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "backend",
-    "resilience",
-    "retry",
-    "distributed-systems"
-  ],
+  "tags": ["backend", "resilience", "retry", "distributed-systems"],
   "blocks": [
     {
       "type": "paragraph",

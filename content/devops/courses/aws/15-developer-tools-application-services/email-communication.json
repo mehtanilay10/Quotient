@@ -8,15 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "ses",
-    "pinpoint",
-    "email",
-    "sms",
-    "notifications",
-    "communication"
-  ],
+  "tags": ["aws", "ses", "pinpoint", "email", "sms", "notifications", "communication"],
   "blocks": [
     {
       "type": "paragraph",

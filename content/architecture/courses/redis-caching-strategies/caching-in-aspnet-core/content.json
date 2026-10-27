@@ -9,11 +9,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 3,
   "icon": "🔷",
-  "tags": [
-    "redis",
-    "intermediate",
-    "caching"
-  ],
+  "tags": ["redis", "intermediate", "caching"],
   "lessonSlugs": [
     "imemorycache",
     "idistributedcache-redis",
@@ -22,10 +18,7 @@
     "output-caching",
     "caching-profiling"
   ],
-  "prerequisites": [
-    "caching-patterns",
-    "redis-use-cases"
-  ],
+  "prerequisites": ["caching-patterns", "redis-use-cases"],
   "whatYouLearn": [
     "Use IMemoryCache for in-memory caching",
     "Configure Redis with IDistributedCache",

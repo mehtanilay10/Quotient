@@ -8,14 +8,7 @@
   "order": 11,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "azure",
-    "messaging",
-    "events",
-    "event-hubs",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "messaging", "events", "event-hubs", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -78,53 +71,23 @@
           {
             "title": "Event Hubs",
             "description": "High-throughput event streaming for telemetry and analytics.",
-            "tags": [
-              "Millions of events/sec",
-              "Partitions"
-            ],
-            "pros": [
-              "Massive scale",
-              "Capture to storage",
-              "Replay support"
-            ],
-            "cons": [
-              "Not for individual commands",
-              "Eventually consistent"
-            ]
+            "tags": ["Millions of events/sec", "Partitions"],
+            "pros": ["Massive scale", "Capture to storage", "Replay support"],
+            "cons": ["Not for individual commands", "Eventually consistent"]
           },
           {
             "title": "Event Grid",
             "description": "Reliable event routing for reactive programming.",
-            "tags": [
-              "Low latency",
-              "Many subscribers"
-            ],
-            "pros": [
-              "Fast delivery",
-              "Built-in retry",
-              "Filters"
-            ],
-            "cons": [
-              "No ordering guarantee",
-              "No built-in replay"
-            ]
+            "tags": ["Low latency", "Many subscribers"],
+            "pros": ["Fast delivery", "Built-in retry", "Filters"],
+            "cons": ["No ordering guarantee", "No built-in replay"]
           },
           {
             "title": "Service Bus",
             "description": "Enterprise messaging with ordering and transactions.",
-            "tags": [
-              "Reliable",
-              "Ordered"
-            ],
-            "pros": [
-              "Guaranteed delivery",
-              "FIFO queues",
-              "Sessions"
-            ],
-            "cons": [
-              "Lower throughput",
-              "Higher cost at scale"
-            ]
+            "tags": ["Reliable", "Ordered"],
+            "pros": ["Guaranteed delivery", "FIFO queues", "Sessions"],
+            "cons": ["Lower throughput", "Higher cost at scale"]
           }
         ]
       }

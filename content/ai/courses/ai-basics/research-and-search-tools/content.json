@@ -7,19 +7,10 @@
   "difficulty": "beginner",
   "estimatedHours": 1.5,
   "icon": "🔎",
-  "tags": [
-    "research",
-    "perplexity",
-    "search",
-    "fact-checking"
-  ],
-  "lessonSlugs": [
-    "ai-for-research"
-  ],
+  "tags": ["research", "perplexity", "search", "fact-checking"],
+  "lessonSlugs": ["ai-for-research"],
   "isOptional": false,
-  "prerequisites": [
-    "ai-tools-overview"
-  ],
+  "prerequisites": ["ai-tools-overview"],
   "whatYouLearn": [
     "Why Perplexity is better than ChatGPT for factual research",
     "How to use AI synthesis alongside primary sources",

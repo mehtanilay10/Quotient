@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "monitoring",
-    "prometheus",
-    "grafana",
-    "linux",
-    "alerting"
-  ],
+  "tags": ["monitoring", "prometheus", "grafana", "linux", "alerting"],
   "blocks": [
     {
       "type": "paragraph",
@@ -76,32 +70,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Signal",
-          "What It Measures",
-          "Typical Alert Threshold"
-        ],
+        "headers": ["Signal", "What It Measures", "Typical Alert Threshold"],
         "rows": [
-          [
-            "Latency",
-            "Time to complete a request",
-            "p95 > 500ms for 5 minutes"
-          ],
-          [
-            "Traffic",
-            "Requests per second",
-            "> 200% of baseline"
-          ],
-          [
-            "Errors",
-            "Failed request rate",
-            "> 5% for 3 minutes"
-          ],
-          [
-            "Saturation",
-            "Resource utilization",
-            "CPU > 85% for 10 minutes"
-          ]
+          ["Latency", "Time to complete a request", "p95 > 500ms for 5 minutes"],
+          ["Traffic", "Requests per second", "> 200% of baseline"],
+          ["Errors", "Failed request rate", "> 5% for 3 minutes"],
+          ["Saturation", "Resource utilization", "CPU > 85% for 10 minutes"]
         ]
       }
     },

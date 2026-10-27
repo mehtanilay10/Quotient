@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "xss",
-    "output-encoding",
-    "sanitization",
-    "content-security-policy",
-    "OWASP"
-  ],
+  "tags": ["xss", "output-encoding", "sanitization", "content-security-policy", "OWASP"],
   "blocks": [
     {
       "type": "paragraph",

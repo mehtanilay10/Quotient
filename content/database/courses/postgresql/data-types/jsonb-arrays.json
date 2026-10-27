@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "jsonb",
-    "arrays",
-    "gin-index",
-    "nosql",
-    "operators"
-  ],
+  "tags": ["jsonb", "arrays", "gin-index", "nosql", "operators"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,12 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Operator",
-          "Return Type",
-          "Description",
-          "Example"
-        ],
+        "headers": ["Operator", "Return Type", "Description", "Example"],
         "rows": [
           [
             "`->`",
@@ -69,12 +58,7 @@
             "Contains: checks if left JSONB contains right JSONB (GIN Indexable!)",
             "`data @> '{\"role\": \"admin\"}'`"
           ],
-          [
-            "`?`",
-            "`boolean`",
-            "Checks if string exists as a top-level key",
-            "`data ? 'email'`"
-          ]
+          ["`?`", "`boolean`", "Checks if string exists as a top-level key", "`data ? 'email'`"]
         ]
       }
     },
@@ -97,47 +81,19 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "`JSON`",
-          "`JSONB`"
-        ],
+        "headers": ["Aspect", "`JSON`", "`JSONB`"],
         "rows": [
-          [
-            "Storage",
-            "Original text",
-            "Parsed binary tree"
-          ],
-          [
-            "Duplicated keys",
-            "Kept as written",
-            "Last value wins; duplicates dropped"
-          ],
-          [
-            "Key order",
-            "Preserved",
-            "Not preserved"
-          ],
-          [
-            "Whitespace",
-            "Preserved",
-            "Removed"
-          ],
+          ["Storage", "Original text", "Parsed binary tree"],
+          ["Duplicated keys", "Kept as written", "Last value wins; duplicates dropped"],
+          ["Key order", "Preserved", "Not preserved"],
+          ["Whitespace", "Preserved", "Removed"],
           [
             "Indexing",
             "Only expression indexes on extracted paths",
             "Full GIN index support, containment, key existence"
           ],
-          [
-            "Equality operator",
-            "No",
-            "Yes, `=` works"
-          ],
-          [
-            "Write cost",
-            "Cheaper (no parse)",
-            "Higher (parse and normalise)"
-          ]
+          ["Equality operator", "No", "Yes, `=` works"],
+          ["Write cost", "Cheaper (no parse)", "Higher (parse and normalise)"]
         ]
       }
     },
@@ -256,8 +212,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "composite-types",
-    "gin-gist-indexes"
-  ]
+  "relatedLessons": ["composite-types", "gin-gist-indexes"]
 }

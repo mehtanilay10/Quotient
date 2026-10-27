@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 25,
-  "tags": [
-    "upsert",
-    "on-conflict",
-    "concurrency",
-    "race-conditions"
-  ],
+  "tags": ["upsert", "on-conflict", "concurrency", "race-conditions"],
   "blocks": [
     {
       "type": "paragraph",
@@ -90,8 +85,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "insert",
-    "merge"
-  ]
+  "relatedLessons": ["insert", "merge"]
 }

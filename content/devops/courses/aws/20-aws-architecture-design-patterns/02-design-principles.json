@@ -34,7 +34,10 @@
           ["Security", "Apply least privilege, encrypt data, and use IAM roles"],
           ["Performance Efficiency", "Use caching, CDNs, and right-sized resources"],
           ["Cost Optimization", "Use pay-as-you-go pricing, auto scaling, and reserved instances"],
-          ["Operational Excellence", "Automate deployments, monitor with CloudWatch, and practice IaC"],
+          [
+            "Operational Excellence",
+            "Automate deployments, monitor with CloudWatch, and practice IaC"
+          ],
           ["Loose Coupling", "Use APIs, queues, and events to connect components"],
           ["Resilience", "Assume failures will happen and design for graceful degradation"]
         ]

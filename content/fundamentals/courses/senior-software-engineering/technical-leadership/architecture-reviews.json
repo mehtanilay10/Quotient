@@ -8,11 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "architecture",
-    "system-design",
-    "review"
-  ],
+  "tags": ["architecture", "system-design", "review"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,11 +83,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Anti-pattern",
-          "Why it hurts",
-          "Better approach"
-        ],
+        "headers": ["Anti-pattern", "Why it hurts", "Better approach"],
         "rows": [
           [
             "Gold-plating",
@@ -132,10 +124,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "effective-code-reviews",
-    "writing-technical-proposals"
-  ],
+  "relatedLessons": ["effective-code-reviews", "writing-technical-proposals"],
   "furtherReading": [
     {
       "type": "article",

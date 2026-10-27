@@ -8,13 +8,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "prisma",
-    "performance",
-    "optimization",
-    "waterfalls",
-    "react-cache"
-  ],
+  "tags": ["prisma", "performance", "optimization", "waterfalls", "react-cache"],
   "blocks": [
     {
       "type": "paragraph",
@@ -72,8 +66,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-in-nextjs-app-router",
-    "query-logging-and-performance"
-  ]
+  "relatedLessons": ["prisma-in-nextjs-app-router", "query-logging-and-performance"]
 }

@@ -1,6 +1,6 @@
-import { NextResponse } from 'next/server';
-import { createApiAuthHandler } from '@/lib/authMiddleware';
-import { DatabaseError, logError } from '@/lib/errorHandler';
+import { NextResponse } from "next/server";
+import { createApiAuthHandler } from "@/lib/authMiddleware";
+import { DatabaseError, logError } from "@/lib/errorHandler";
 
 /**
  * Aggregated account summary for the profile page: when the account was
@@ -9,7 +9,7 @@ import { DatabaseError, logError } from '@/lib/errorHandler';
  * bookmarks, and notes into the client just to show counts.
  */
 export const GET = createApiAuthHandler(async (databaseUser) => {
-  const { prisma } = await import('@/lib/prisma');
+  const { prisma } = await import("@/lib/prisma");
 
   try {
     const [user, progress, bookmarks, notes, offlineQueue] = await Promise.all([
@@ -29,8 +29,11 @@ export const GET = createApiAuthHandler(async (databaseUser) => {
       counts: { progress, bookmarks, notes, offlineQueue },
     });
   } catch (error) {
-    const dbError = new DatabaseError('Failed to load account summary', error);
-    logError('account-summary:GET', dbError);
-    return NextResponse.json({ code: dbError.code, message: dbError.message }, { status: dbError.statusCode });
+    const dbError = new DatabaseError("Failed to load account summary", error);
+    logError("account-summary:GET", dbError);
+    return NextResponse.json(
+      { code: dbError.code, message: dbError.message },
+      { status: dbError.statusCode }
+    );
   }
 });

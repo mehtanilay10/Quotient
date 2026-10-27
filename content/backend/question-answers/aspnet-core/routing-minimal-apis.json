@@ -6,10 +6,7 @@
   "description": "Endpoint routing, route constraints, parameter binding in minimal APIs, and when each style fits.",
   "order": 15,
   "difficulty": "intermediate",
-  "tags": [
-    "aspnet-core",
-    "intermediate"
-  ],
+  "tags": ["aspnet-core", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,11 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "model-binding-validation",
-    "mvc-lifecycle",
-    "aspnet-b02"
-  ],
+  "relatedLessons": ["model-binding-validation", "mvc-lifecycle", "aspnet-b02"],
   "furtherReading": [
     {
       "title": "Routing in ASP.NET Core",

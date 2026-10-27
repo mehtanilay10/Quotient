@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "token-revocation",
-    "logout",
-    "security",
-    "blacklist"
-  ],
+  "tags": ["token-revocation", "logout", "security", "blacklist"],
   "blocks": [
     {
       "type": "heading",
@@ -46,56 +41,35 @@
         {
           "title": "Database Blocklist",
           "description": "Store revoked token identifiers in a database or cache with their expiration time.",
-          "pros": [
-            "Immediate revocation",
-            "Works with stateless JWTs",
-            "Granular control"
-          ],
+          "pros": ["Immediate revocation", "Works with stateless JWTs", "Granular control"],
           "cons": [
             "Requires database lookup on every request",
             "Cache invalidation complexity",
             "Storage grows with revoked tokens"
           ],
-          "tags": [
-            "blocklist",
-            "database"
-          ]
+          "tags": ["blocklist", "database"]
         },
         {
           "title": "Token Versioning",
           "description": "Store a version number on the user. Include the version in the token. Incrementing the version invalidates all previous tokens.",
-          "pros": [
-            "Fast validation",
-            "No per-token storage",
-            "Bulk invalidation easy"
-          ],
+          "pros": ["Fast validation", "No per-token storage", "Bulk invalidation easy"],
           "cons": [
             "Invalidates all sessions at once",
             "Cannot revoke a single token",
             "Requires user record update"
           ],
-          "tags": [
-            "versioning",
-            "user"
-          ]
+          "tags": ["versioning", "user"]
         },
         {
           "title": "Short-lived JWTs",
           "description": "Use very short JWT lifetimes (seconds to minutes) and rely on the natural expiration instead of explicit revocation.",
-          "pros": [
-            "No revocation mechanism needed",
-            "Stateless and fast",
-            "Simple architecture"
-          ],
+          "pros": ["No revocation mechanism needed", "Stateless and fast", "Simple architecture"],
           "cons": [
             "Frequent refreshes required",
             "Cannot handle logout gracefully",
             "Poor fit for mobile apps"
           ],
-          "tags": [
-            "jwt",
-            "short-lived"
-          ]
+          "tags": ["jwt", "short-lived"]
         }
       ]
     },
@@ -175,13 +149,7 @@
       "takeaway": "Revocation is the safety valve of your authentication system. Without it, you cannot respond to security incidents, log users out, or enforce account changes in a timely manner."
     }
   ],
-  "relatedLessons": [
-    "refresh-token-basics",
-    "token-rotation"
-  ],
+  "relatedLessons": ["refresh-token-basics", "token-rotation"],
   "furtherReading": [],
-  "prerequisites": [
-    "refresh-token-basics",
-    "token-rotation"
-  ]
+  "prerequisites": ["refresh-token-basics", "token-rotation"]
 }

@@ -8,11 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "project-planning",
-    "execution",
-    "decomposition"
-  ],
+  "tags": ["project-planning", "execution", "decomposition"],
   "blocks": [
     {
       "type": "paragraph",
@@ -100,10 +96,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "estimation-and-uncertainty",
-    "writing-technical-proposals"
-  ],
+  "relatedLessons": ["estimation-and-uncertainty", "writing-technical-proposals"],
   "furtherReading": [
     {
       "type": "article",

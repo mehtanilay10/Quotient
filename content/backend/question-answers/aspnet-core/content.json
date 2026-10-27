@@ -8,11 +8,7 @@
   "difficulty": "beginner",
   "estimatedHours": 8,
   "icon": "🌐",
-  "tags": [
-    "interview",
-    "aspnet",
-    "backend"
-  ],
+  "tags": ["interview", "aspnet", "backend"],
   "lessonSlugs": [
     "beginner-q16",
     "aspnet-b01",

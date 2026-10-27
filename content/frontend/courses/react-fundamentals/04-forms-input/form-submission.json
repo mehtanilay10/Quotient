@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "forms",
-    "submission",
-    "api",
-    "async"
-  ],
+  "tags": ["react", "forms", "submission", "api", "async"],
   "blocks": [
     {
       "type": "paragraph",

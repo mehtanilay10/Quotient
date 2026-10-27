@@ -7,11 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "testing",
-    "tdd",
-    "unit-tests"
-  ],
+  "tags": ["testing", "tdd", "unit-tests"],
   "blocks": [
     {
       "type": "heading",
@@ -184,10 +180,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "refactoring-with-ai",
-    "testing-strategies"
-  ],
+  "relatedLessons": ["refactoring-with-ai", "testing-strategies"],
   "relatedGlossaryTerms": [],
   "courseSlug": "codex"
 }

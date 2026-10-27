@@ -7,10 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 10,
-  "tags": [
-    "oop",
-    "abstract-classes"
-  ],
+  "tags": ["oop", "abstract-classes"],
   "blocks": [
     {
       "type": "paragraph",
@@ -48,9 +45,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "abstraction-basics",
-    "abstract-vs-interface"
-  ],
+  "relatedLessons": ["abstraction-basics", "abstract-vs-interface"],
   "courseSlug": "oops-concepts"
 }

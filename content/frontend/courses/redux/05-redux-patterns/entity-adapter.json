@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "redux",
-    "entity",
-    "adapter",
-    "normalization",
-    "toolkit"
-  ],
+  "tags": ["redux", "entity", "adapter", "normalization", "toolkit"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,62 +54,18 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Method",
-          "Parameters",
-          "Description"
-        ],
+        "headers": ["Method", "Parameters", "Description"],
         "rows": [
-          [
-            "addOne",
-            "state, entity",
-            "Add a single entity to the state"
-          ],
-          [
-            "addMany",
-            "state, entities",
-            "Add multiple entities (array or object)"
-          ],
-          [
-            "setAll",
-            "state, entities",
-            "Replace all entities with new ones"
-          ],
-          [
-            "updateOne",
-            "state, changes",
-            "Update one entity with partial changes"
-          ],
-          [
-            "updateMany",
-            "state, changesArray",
-            "Update multiple entities at once"
-          ],
-          [
-            "removeOne",
-            "state, id",
-            "Remove a single entity by ID"
-          ],
-          [
-            "removeMany",
-            "state, ids",
-            "Remove multiple entities by ID array"
-          ],
-          [
-            "removeAll",
-            "state",
-            "Remove all entities"
-          ],
-          [
-            "upsertOne",
-            "state, entity",
-            "Insert or update an entity"
-          ],
-          [
-            "upsertMany",
-            "state, entities",
-            "Insert or update multiple entities"
-          ]
+          ["addOne", "state, entity", "Add a single entity to the state"],
+          ["addMany", "state, entities", "Add multiple entities (array or object)"],
+          ["setAll", "state, entities", "Replace all entities with new ones"],
+          ["updateOne", "state, changes", "Update one entity with partial changes"],
+          ["updateMany", "state, changesArray", "Update multiple entities at once"],
+          ["removeOne", "state, id", "Remove a single entity by ID"],
+          ["removeMany", "state, ids", "Remove multiple entities by ID array"],
+          ["removeAll", "state", "Remove all entities"],
+          ["upsertOne", "state, entity", "Insert or update an entity"],
+          ["upsertMany", "state, entities", "Insert or update multiple entities"]
         ]
       }
     },

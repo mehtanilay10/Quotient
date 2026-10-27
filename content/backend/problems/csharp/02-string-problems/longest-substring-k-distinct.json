@@ -8,12 +8,7 @@
   "order": 22,
   "difficulty": "medium",
   "estimatedMinutes": 12,
-  "tags": [
-    "csharp",
-    "strings",
-    "sliding-window",
-    "medium"
-  ],
+  "tags": ["csharp", "strings", "sliding-window", "medium"],
   "blocks": [
     {
       "type": "heading",
@@ -87,33 +82,16 @@
           {
             "title": "Brute Force",
             "description": "Re-scan from each index",
-            "pros": [
-              "Simple"
-            ],
-            "cons": [
-              "O(n^2)",
-              "Redundant scans"
-            ],
-            "tags": [
-              "O(n^2) time",
-              "O(1) space"
-            ]
+            "pros": ["Simple"],
+            "cons": ["O(n^2)", "Redundant scans"],
+            "tags": ["O(n^2) time", "O(1) space"]
           },
           {
             "title": "Sliding Window",
             "description": "Dictionary + shrink",
-            "pros": [
-              "O(n)",
-              "Generalizes to any k"
-            ],
-            "cons": [
-              "Dictionary allocations"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(k) space",
-              "Recommended"
-            ]
+            "pros": ["O(n)", "Generalizes to any k"],
+            "cons": ["Dictionary allocations"],
+            "tags": ["O(n) time", "O(k) space", "Recommended"]
           }
         ]
       }

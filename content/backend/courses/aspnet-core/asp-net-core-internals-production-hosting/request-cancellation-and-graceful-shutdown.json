@@ -8,12 +8,7 @@
   "order": 10,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "cancellation",
-    "shutdown",
-    "graceful",
-    "cancellationtoken"
-  ],
+  "tags": ["cancellation", "shutdown", "graceful", "cancellationtoken"],
   "blocks": [
     {
       "type": "paragraph",

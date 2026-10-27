@@ -7,10 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "graphql",
-    "mutations"
-  ],
+  "tags": ["graphql", "mutations"],
   "blocks": [
     {
       "type": "paragraph",
@@ -139,9 +136,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "query-basics",
-    "subscriptions"
-  ],
+  "relatedLessons": ["query-basics", "subscriptions"],
   "courseSlug": "graphql-dotnet"
 }

@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "built-in",
-    "routing",
-    "static-files",
-    "authentication"
-  ],
+  "tags": ["built-in", "routing", "static-files", "authentication"],
   "blocks": [
     {
       "type": "heading",

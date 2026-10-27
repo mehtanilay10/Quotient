@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "aws",
-    "ha",
-    "multi-az",
-    "auto-scaling",
-    "load-balancer",
-    "failover"
-  ],
+  "tags": ["aws", "ha", "multi-az", "auto-scaling", "load-balancer", "failover"],
   "blocks": [
     {
       "type": "paragraph",

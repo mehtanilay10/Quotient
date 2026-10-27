@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 23,
-  "tags": [
-    "create-trigger",
-    "DML-trigger",
-    "INSERTED",
-    "DELETED"
-  ],
+  "tags": ["create-trigger", "DML-trigger", "INSERTED", "DELETED"],
   "blocks": [
     {
       "type": "heading",
@@ -59,27 +54,11 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "DML event",
-          "INSERTED table holds",
-          "DELETED table holds"
-        ],
+        "headers": ["DML event", "INSERTED table holds", "DELETED table holds"],
         "rows": [
-          [
-            "INSERT",
-            "rows to be inserted",
-            "empty"
-          ],
-          [
-            "UPDATE",
-            "new rows modified by the update",
-            "existing rows modified by the update"
-          ],
-          [
-            "DELETE",
-            "empty",
-            "rows to be deleted"
-          ]
+          ["INSERT", "rows to be inserted", "empty"],
+          ["UPDATE", "new rows modified by the update", "existing rows modified by the update"],
+          ["DELETE", "empty", "rows to be deleted"]
         ]
       }
     },

@@ -6,11 +6,7 @@
   "fullDefinition": "A multi-agent system consists of two or more AI agents working together, each with potentially different capabilities, roles, and access to tools. Agents in such systems communicate, delegate subtasks, and combine their outputs to solve problems beyond the reach of a single agent. For example, a research team might have one agent that searches the web, another that reads documents, and a third that writes reports. Multi-agent architectures can improve reliability through redundancy, enable specialization through role division, and support complex workflows through sequential or parallel execution. However, they also introduce coordination challenges and higher costs.",
   "category": "agents-and-automation",
   "difficulty": "advanced",
-  "relatedTerms": [
-    "autonomous-agent",
-    "orchestration",
-    "tool-use"
-  ],
+  "relatedTerms": ["autonomous-agent", "orchestration", "tool-use"],
   "learnMoreSlug": "building-your-first-workflow",
   "examples": [
     "A team of agents where one plans, one executes, and one reviews code changes",

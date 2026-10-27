@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "apollo",
-    "local",
-    "state",
-    "reactive-variables"
-  ],
+  "tags": ["apollo", "local", "state", "reactive-variables"],
   "blocks": [
     {
       "type": "paragraph",

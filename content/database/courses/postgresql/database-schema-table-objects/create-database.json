@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "create-database",
-    "encoding",
-    "collation",
-    "templates",
-    "dba"
-  ],
+  "tags": ["create-database", "encoding", "collation", "templates", "dba"],
   "blocks": [
     {
       "type": "paragraph",
@@ -47,19 +41,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Level",
-          "Scope",
-          "Cross-query?",
-          "Created by"
-        ],
+        "headers": ["Level", "Scope", "Cross-query?", "Created by"],
         "rows": [
-          [
-            "Cluster",
-            "One server, one data directory, one port",
-            "—",
-            "`initdb`"
-          ],
+          ["Cluster", "One server, one data directory, one port", "—", "`initdb`"],
           [
             "Database",
             "Catalogs, schemas, extensions, roles usage",
@@ -107,15 +91,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Option",
-          "Why you care"
-        ],
+        "headers": ["Option", "Why you care"],
         "rows": [
-          [
-            "`ENCODING`",
-            "Always `UTF8`. Converting later requires a dump/restore."
-          ],
+          ["`ENCODING`", "Always `UTF8`. Converting later requires a dump/restore."],
           [
             "`LC_COLLATE` / `LC_CTYPE`",
             "Controls sort order and character classification (`ILIKE`, `UPPER`). Decided at creation, effectively immutable."
@@ -124,10 +102,7 @@
             "`LOCALE_PROVIDER = icu`",
             "PG 15+. More consistent, versioned collations across operating systems."
           ],
-          [
-            "`TEMPLATE`",
-            "`template0` needed for any locale/encoding change."
-          ],
+          ["`TEMPLATE`", "`template0` needed for any locale/encoding change."],
           [
             "`ALLOW_CONNECTIONS`",
             "Set `false` for a migration target you do not want clients hitting yet."
@@ -204,8 +179,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "create-schema",
-    "create-table"
-  ]
+  "relatedLessons": ["create-schema", "create-table"]
 }

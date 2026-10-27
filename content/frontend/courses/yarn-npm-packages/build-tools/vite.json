@@ -6,13 +6,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "vite",
-    "build",
-    "bundler",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["vite", "build", "bundler", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -100,32 +94,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Feature",
-          "Vite",
-          "Webpack"
-        ],
+        "headers": ["Feature", "Vite", "Webpack"],
         "rows": [
-          [
-            "Dev startup",
-            "Native ESM, instant",
-            "Bundles the graph first"
-          ],
-          [
-            "Config",
-            "Small, typed",
-            "Large, loader/plugin driven"
-          ],
-          [
-            "Production bundler",
-            "Rollup",
-            "Webpack"
-          ],
-          [
-            "HMR speed",
-            "Very fast",
-            "Slower on large apps"
-          ]
+          ["Dev startup", "Native ESM, instant", "Bundles the graph first"],
+          ["Config", "Small, typed", "Large, loader/plugin driven"],
+          ["Production bundler", "Rollup", "Webpack"],
+          ["HMR speed", "Very fast", "Slower on large apps"]
         ]
       }
     },

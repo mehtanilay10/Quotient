@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "groupby",
-    "tolookup",
-    "grouping",
-    "igrouping"
-  ],
+  "tags": ["linq", "groupby", "tolookup", "grouping", "igrouping"],
   "blocks": [
     {
       "type": "paragraph",
@@ -24,10 +18,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Grouping Operator",
-          "Description"
-        ],
+        "headers": ["Grouping Operator", "Description"],
         "rows": [
           [
             "GroupBy",
@@ -156,9 +147,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "orderby-orderbydescending",
-    "thenby-thenbydescending"
-  ],
+  "relatedLessons": ["orderby-orderbydescending", "thenby-thenbydescending"],
   "courseSlug": "linq"
 }

@@ -8,12 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "cache-redirects",
-    "query-optimization",
-    "duplicate-queries",
-    "apollo-client"
-  ],
+  "tags": ["cache-redirects", "query-optimization", "duplicate-queries", "apollo-client"],
   "blocks": [
     {
       "type": "heading",
@@ -80,7 +75,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "type-policies-field-policies"
-  ]
+  "prerequisites": ["type-policies-field-policies"]
 }

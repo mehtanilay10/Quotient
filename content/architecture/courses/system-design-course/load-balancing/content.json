@@ -8,10 +8,7 @@
   "difficulty": "intermediate",
   "estimatedHours": 2,
   "icon": "⚖️",
-  "tags": [
-    "load-balancing",
-    "scalability"
-  ],
+  "tags": ["load-balancing", "scalability"],
   "lessonSlugs": [
     "l4-vs-l7-load-balancing",
     "load-balancing-algorithms",

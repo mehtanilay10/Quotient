@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 33,
-  "tags": [
-    "linq",
-    "expression trees",
-    "Expression<T>",
-    "IQueryable"
-  ],
+  "tags": ["linq", "expression trees", "Expression<T>", "IQueryable"],
   "blocks": [
     {
       "type": "paragraph",
@@ -121,9 +116,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sequenceequal-operator",
-    "sample-linq-queries"
-  ],
+  "relatedLessons": ["sequenceequal-operator", "sample-linq-queries"],
   "courseSlug": "linq"
 }

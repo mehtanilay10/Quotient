@@ -8,14 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 55,
-  "tags": [
-    "hld",
-    "system-design",
-    "distributed-lock",
-    "lease",
-    "fencing-token",
-    "raft"
-  ],
+  "tags": ["hld", "system-design", "distributed-lock", "lease", "fencing-token", "raft"],
   "blocks": [
     {
       "type": "heading",
@@ -172,13 +165,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Store",
-          "Consistency Model",
-          "Fencing Support",
-          "Typical Use",
-          "Key Risk"
-        ],
+        "headers": ["Store", "Consistency Model", "Fencing Support", "Typical Use", "Key Risk"],
         "rows": [
           [
             "etcd / ZooKeeper (Raft or ZAB)",
@@ -256,9 +243,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "distributed-lock-hld"
-  ],
+  "relatedLessons": ["distributed-lock-hld"],
   "furtherReading": [
     {
       "title": "Martin Kleppmann — How to do distributed locking",

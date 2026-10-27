@@ -7,12 +7,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "take",
-    "takewhile",
-    "partitioning"
-  ],
+  "tags": ["linq", "take", "takewhile", "partitioning"],
   "blocks": [
     {
       "type": "paragraph",
@@ -130,8 +125,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "skip-skipwhile"
-  ],
+  "relatedLessons": ["skip-skipwhile"],
   "courseSlug": "linq"
 }

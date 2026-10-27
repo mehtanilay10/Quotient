@@ -102,13 +102,12 @@
       }
     }
   ],
-  "relatedLessons": [
-    "git-internals",
-    "git-best-practices",
-    "git-and-ci-cd"
-  ],
+  "relatedLessons": ["git-internals", "git-best-practices", "git-and-ci-cd"],
   "furtherReading": [
-    { "title": "Git hooks documentation (git-scm.com)", "url": "https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks" },
+    {
+      "title": "Git hooks documentation (git-scm.com)",
+      "url": "https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks"
+    },
     { "title": "Husky (npm package)", "url": "https://typicode.github.io/husky/" }
   ]
 }

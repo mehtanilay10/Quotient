@@ -8,13 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "prisma",
-    "migrate-deploy",
-    "production",
-    "ci-cd",
-    "deployment"
-  ],
+  "tags": ["prisma", "migrate-deploy", "production", "ci-cd", "deployment"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,17 +26,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Attribute",
-          "`prisma migrate dev`",
-          "`prisma migrate deploy`"
-        ],
+        "headers": ["Attribute", "`prisma migrate dev`", "`prisma migrate deploy`"],
         "rows": [
-          [
-            "Environment",
-            "Local Development Only",
-            "Staging, Production & CI/CD Pipelines"
-          ],
+          ["Environment", "Local Development Only", "Staging, Production & CI/CD Pipelines"],
           [
             "Interactive Prompts",
             "Yes (warns on data loss, asks for confirmation)",
@@ -94,8 +80,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-migrate-dev",
-    "migration-strategies"
-  ]
+  "relatedLessons": ["prisma-migrate-dev", "migration-strategies"]
 }

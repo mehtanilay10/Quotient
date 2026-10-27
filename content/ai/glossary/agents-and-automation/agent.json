@@ -6,12 +6,7 @@
   "fullDefinition": "An AI agent is an AI system that goes beyond text generation to take real actions: searching the web, executing code, reading files, calling APIs, and completing multi-step tasks with minimal human supervision. Agents operate in a loop: observe current state, plan next action, execute, observe results, and repeat.",
   "category": "agents-and-automation",
   "difficulty": "intermediate",
-  "relatedTerms": [
-    "tool-calling",
-    "mcp",
-    "orchestration",
-    "large-language-model"
-  ],
+  "relatedTerms": ["tool-calling", "mcp", "orchestration", "large-language-model"],
   "learnMoreSlug": "what-are-agents",
   "examples": [
     "Perplexity Deep Research — an agent that autonomously searches many sources",

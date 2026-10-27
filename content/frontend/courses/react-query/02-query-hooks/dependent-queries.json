@@ -8,17 +8,8 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react-query",
-    "dependent-queries",
-    "chaining",
-    "enabled",
-    "sequential",
-    "useQuery"
-  ],
-  "prerequisites": [
-    "query-options-react-query"
-  ],
+  "tags": ["react-query", "dependent-queries", "chaining", "enabled", "sequential", "useQuery"],
+  "prerequisites": ["query-options-react-query"],
   "blocks": [
     {
       "type": "paragraph",

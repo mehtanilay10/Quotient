@@ -8,11 +8,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "http",
-    "restsharp",
-    "rest"
-  ],
+  "tags": ["http", "restsharp", "rest"],
   "blocks": [
     {
       "type": "heading",

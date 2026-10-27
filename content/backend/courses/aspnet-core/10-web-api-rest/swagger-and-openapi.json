@@ -8,11 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 30,
-  "tags": [
-    "swagger",
-    "openapi",
-    "documentation"
-  ],
+  "tags": ["swagger", "openapi", "documentation"],
   "blocks": [
     {
       "type": "paragraph",
@@ -188,10 +184,7 @@
       ]
     }
   ],
-  "relatedLessons": [
-    "versioning-and-documentation",
-    "api-controllers"
-  ],
+  "relatedLessons": ["versioning-and-documentation", "api-controllers"],
   "technology": null,
   "furtherReading": [
     {

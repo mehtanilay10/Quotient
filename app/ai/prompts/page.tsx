@@ -1,27 +1,27 @@
-import type { Metadata } from 'next';
-import { SectionHeader } from '@/components/sections/SectionHeader';
-import { PromptCard } from '@/components/content/PromptCard';
-import { CalloutBox } from '@/components/ui/CalloutBox';
-import { promptTemplates } from '@/content/ai/prompts';
-import { buildMetadata } from '@/lib/seo';
+import type { Metadata } from "next";
+import { SectionHeader } from "@/components/sections/SectionHeader";
+import { PromptCard } from "@/components/content/PromptCard";
+import { CalloutBox } from "@/components/ui/CalloutBox";
+import { promptTemplates } from "@/content/ai/prompts";
+import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Prompt Library',
+  title: "Prompt Library",
   description:
-    'Ready-to-use AI prompt templates for coding, writing, research, learning, analysis, and more. Copy and customize for any AI tool.',
-  path: '/ai/prompts',
+    "Ready-to-use AI prompt templates for coding, writing, research, learning, analysis, and more. Copy and customize for any AI tool.",
+  path: "/ai/prompts",
 });
 
 const CATEGORIES = [
-  { key: 'learning', label: 'Learning' },
-  { key: 'writing', label: 'Writing' },
-  { key: 'thinking', label: 'Thinking & Decisions' },
-  { key: 'summarization', label: 'Summarization' },
-  { key: 'research', label: 'Research' },
-  { key: 'analysis', label: 'Analysis' },
-  { key: 'creativity', label: 'Creativity' },
-  { key: 'productivity', label: 'Productivity' },
-  { key: 'coding', label: 'Coding' },
+  { key: "learning", label: "Learning" },
+  { key: "writing", label: "Writing" },
+  { key: "thinking", label: "Thinking & Decisions" },
+  { key: "summarization", label: "Summarization" },
+  { key: "research", label: "Research" },
+  { key: "analysis", label: "Analysis" },
+  { key: "creativity", label: "Creativity" },
+  { key: "productivity", label: "Productivity" },
+  { key: "coding", label: "Coding" },
 ];
 
 export default function PromptsPage() {

@@ -92,11 +92,27 @@
       "data": {
         "headers": ["Timing column", "What it measures", "Common cause of slowness"],
         "rows": [
-          ["DNS Lookup", "Time to resolve the domain", "Slow DNS server or large propagation delay"],
-          ["Initial connection / TCP", "TCP handshake time", "Network latency or server unreachable"],
+          [
+            "DNS Lookup",
+            "Time to resolve the domain",
+            "Slow DNS server or large propagation delay"
+          ],
+          [
+            "Initial connection / TCP",
+            "TCP handshake time",
+            "Network latency or server unreachable"
+          ],
           ["SSL", "TLS handshake time", "Certificate chain issues or TLS version mismatch"],
-          ["Waiting (TTFB)", "Time until first byte", "Slow server, database queries, or external APIs"],
-          ["Content Download", "Time to receive the full body", "Large payload or slow client connection"]
+          [
+            "Waiting (TTFB)",
+            "Time until first byte",
+            "Slow server, database queries, or external APIs"
+          ],
+          [
+            "Content Download",
+            "Time to receive the full body",
+            "Large payload or slow client connection"
+          ]
         ]
       }
     },
@@ -203,7 +219,11 @@
       }
     }
   ],
-  "relatedLessons": ["dns-resolution-from-browser-to-server", "tcp-connection-and-tls-handshake", "http-request-and-response-lifecycle"],
+  "relatedLessons": [
+    "dns-resolution-from-browser-to-server",
+    "tcp-connection-and-tls-handshake",
+    "http-request-and-response-lifecycle"
+  ],
   "furtherReading": [
     {
       "type": "article",

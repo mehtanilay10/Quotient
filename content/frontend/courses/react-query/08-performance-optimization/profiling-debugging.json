@@ -8,16 +8,8 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "profiling",
-    "debugging",
-    "devtools",
-    "performance",
-    "network"
-  ],
-  "prerequisites": [
-    "caching-strategies"
-  ],
+  "tags": ["profiling", "debugging", "devtools", "performance", "network"],
+  "prerequisites": ["caching-strategies"],
   "blocks": [
     {
       "type": "paragraph",
@@ -71,11 +63,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "DevTools Panel",
-          "What It Shows",
-          "Common Use"
-        ],
+        "headers": ["DevTools Panel", "What It Shows", "Common Use"],
         "rows": [
           [
             "Queries",
@@ -87,11 +75,7 @@
             "Pending, success, and error states for mutations",
             "Debug optimistic update rollbacks"
           ],
-          [
-            "Cache",
-            "Full query cache tree with query keys",
-            "Verify cache invalidation behavior"
-          ],
+          ["Cache", "Full query cache tree with query keys", "Verify cache invalidation behavior"],
           [
             "Query Info",
             "Individual query details: observers, fetch times, state",

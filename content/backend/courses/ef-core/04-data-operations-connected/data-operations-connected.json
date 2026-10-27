@@ -5,10 +5,7 @@
   "title": "Connected Scenario",
   "description": "Learn CRUD in connected scenario.",
   "order": 2,
-  "tags": [
-    "ef-core",
-    "data-operations-connected"
-  ],
+  "tags": ["ef-core", "data-operations-connected"],
   "blocks": [
     {
       "type": "paragraph",

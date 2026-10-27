@@ -8,62 +8,318 @@
   "order": 8,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": ["javascript", "es6", "es2015", "async", "promises", "closures", "prototypes", "functional", "cheatsheet", "quick-reference"],
+  "tags": [
+    "javascript",
+    "es6",
+    "es2015",
+    "async",
+    "promises",
+    "closures",
+    "prototypes",
+    "functional",
+    "cheatsheet",
+    "quick-reference"
+  ],
   "blocks": [
     { "type": "heading", "data": { "level": 2, "text": "JavaScript Quick Reference" } },
-    { "type": "paragraph", "data": { "text": "Modern JavaScript (ES6+) provides powerful features for building interactive web applications." } },
+    {
+      "type": "paragraph",
+      "data": {
+        "text": "Modern JavaScript (ES6+) provides powerful features for building interactive web applications."
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Variables & Scoping" } },
-    { "type": "example", "data": { "title": "var vs let vs const", "content": "var is function-scoped, let and const are block-scoped.", "language": "javascript", "code": "var x = 1;  // function-scoped, hoisted\nlet y = 2;  // block-scoped, not hoisted\nconst z = 3; // block-scoped, cannot reassign\n\nif (true) {\n  var a = 'function';\n  let b = 'block';\n}\nconsole.log(a); // 'function'\n// console.log(b); // ReferenceError" } },
-    { "type": "example", "data": { "title": "Temporal Dead Zone", "content": "let and const are not accessible before declaration.", "language": "javascript", "code": "console.log(myLet); // ReferenceError: TDZ\nlet myLet = 'value';\n\nfunction test() {\n  console.log(myConst); // ReferenceError: TDZ\n  const myConst = 'value';\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "var vs let vs const",
+        "content": "var is function-scoped, let and const are block-scoped.",
+        "language": "javascript",
+        "code": "var x = 1;  // function-scoped, hoisted\nlet y = 2;  // block-scoped, not hoisted\nconst z = 3; // block-scoped, cannot reassign\n\nif (true) {\n  var a = 'function';\n  let b = 'block';\n}\nconsole.log(a); // 'function'\n// console.log(b); // ReferenceError"
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "title": "Temporal Dead Zone",
+        "content": "let and const are not accessible before declaration.",
+        "language": "javascript",
+        "code": "console.log(myLet); // ReferenceError: TDZ\nlet myLet = 'value';\n\nfunction test() {\n  console.log(myConst); // ReferenceError: TDZ\n  const myConst = 'value';\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Data Types" } },
-    { "type": "example", "data": { "title": "Primitive Types & typeof", "content": "JavaScript has 7 primitive types.", "language": "javascript", "code": "typeof 'hello'    // 'string'\ntypeof 42         // 'number'\ntypeof true       // 'boolean'\ntypeof undefined  // 'undefined'\ntypeof null       // 'object' (known bug)\ntypeof Symbol()   // 'symbol'\ntypeof 10n        // 'bigint'\n\ntypeof {}         // 'object'\ntypeof []         // 'object'\ntypeof function(){} // 'function'" } },
-    { "type": "example", "data": { "title": "Type Coercion", "content": "Implicit vs explicit conversion.", "language": "javascript", "code": "// Implicit coercion\n'5' + 3     // '53'\n'5' - 3     // 2\n'5' * '2'   // 10\n\n// Explicit conversion\nNumber('5')    // 5\nString(5)      // '5'\nBoolean(1)     // true\nparseInt('10') // 10\nparseFloat('3.14') // 3.14" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Primitive Types & typeof",
+        "content": "JavaScript has 7 primitive types.",
+        "language": "javascript",
+        "code": "typeof 'hello'    // 'string'\ntypeof 42         // 'number'\ntypeof true       // 'boolean'\ntypeof undefined  // 'undefined'\ntypeof null       // 'object' (known bug)\ntypeof Symbol()   // 'symbol'\ntypeof 10n        // 'bigint'\n\ntypeof {}         // 'object'\ntypeof []         // 'object'\ntypeof function(){} // 'function'"
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "title": "Type Coercion",
+        "content": "Implicit vs explicit conversion.",
+        "language": "javascript",
+        "code": "// Implicit coercion\n'5' + 3     // '53'\n'5' - 3     // 2\n'5' * '2'   // 10\n\n// Explicit conversion\nNumber('5')    // 5\nString(5)      // '5'\nBoolean(1)     // true\nparseInt('10') // 10\nparseFloat('3.14') // 3.14"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Operators" } },
-    { "type": "example", "data": { "title": "Logical & Nullish Coalescing", "content": "Logical operators and nullish coalescing.", "language": "javascript", "code": "// Logical AND returns first falsy value\ntrue && 'hello'  // 'hello'\nfalse && 'hello' // false\n\n// Logical OR returns first truthy value\n'fallback' || 'default' // 'fallback'\nnull || 'default'       // 'default'\n\n// Nullish coalescing (only null/undefined)\nnull ?? 'default'       // 'default'\n0 ?? 'default'          // 0\n'' ?? 'default'         // ''\nundefined ?? 'default'  // 'default'" } },
-    { "type": "example", "data": { "title": "Spread, Rest & Optional Chaining", "content": "Modern operator patterns.", "language": "javascript", "code": "// Spread operator\nconst arr1 = [1, 2];\nconst arr2 = [...arr1, 3, 4];\nconst obj1 = { a: 1 };\nconst obj2 = { ...obj1, b: 2 };\n\n// Rest parameters\nfunction sum(...args) {\n  return args.reduce((a, b) => a + b, 0);\n}\n\n// Optional chaining\nconst user = { name: 'John', address: { city: 'NYC' } };\nuser?.address?.city;    // 'NYC'\nuser?.phone?.number;   // undefined (no error)\n\n// Destructuring with rest\nconst [first, ...rest] = [1, 2, 3, 4];" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Logical & Nullish Coalescing",
+        "content": "Logical operators and nullish coalescing.",
+        "language": "javascript",
+        "code": "// Logical AND returns first falsy value\ntrue && 'hello'  // 'hello'\nfalse && 'hello' // false\n\n// Logical OR returns first truthy value\n'fallback' || 'default' // 'fallback'\nnull || 'default'       // 'default'\n\n// Nullish coalescing (only null/undefined)\nnull ?? 'default'       // 'default'\n0 ?? 'default'          // 0\n'' ?? 'default'         // ''\nundefined ?? 'default'  // 'default'"
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "title": "Spread, Rest & Optional Chaining",
+        "content": "Modern operator patterns.",
+        "language": "javascript",
+        "code": "// Spread operator\nconst arr1 = [1, 2];\nconst arr2 = [...arr1, 3, 4];\nconst obj1 = { a: 1 };\nconst obj2 = { ...obj1, b: 2 };\n\n// Rest parameters\nfunction sum(...args) {\n  return args.reduce((a, b) => a + b, 0);\n}\n\n// Optional chaining\nconst user = { name: 'John', address: { city: 'NYC' } };\nuser?.address?.city;    // 'NYC'\nuser?.phone?.number;   // undefined (no error)\n\n// Destructuring with rest\nconst [first, ...rest] = [1, 2, 3, 4];"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Control Flow" } },
-    { "type": "example", "data": { "title": "Loops & Conditionals", "content": "Control flow structures.", "language": "javascript", "code": "// if/else\nif (score >= 90) grade = 'A';\nelse if (score >= 80) grade = 'B';\nelse grade = 'C';\n\n// Ternary\nconst status = age >= 18 ? 'adult' : 'minor';\n\n// Switch\nswitch (day) {\n  case 'Monday': console.log('Start'); break;\n  case 'Friday': console.log('End'); break;\n  default: console.log('Midweek');\n}\n\n// for...of (iterable values)\nfor (const char of 'hello') console.log(char);\n\n// for...in (object keys)\nfor (const key in obj) console.log(key);\n\n// break/continue\nfor (let i = 0; i < 10; i++) {\n  if (i === 3) continue;\n  if (i === 7) break;\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Loops & Conditionals",
+        "content": "Control flow structures.",
+        "language": "javascript",
+        "code": "// if/else\nif (score >= 90) grade = 'A';\nelse if (score >= 80) grade = 'B';\nelse grade = 'C';\n\n// Ternary\nconst status = age >= 18 ? 'adult' : 'minor';\n\n// Switch\nswitch (day) {\n  case 'Monday': console.log('Start'); break;\n  case 'Friday': console.log('End'); break;\n  default: console.log('Midweek');\n}\n\n// for...of (iterable values)\nfor (const char of 'hello') console.log(char);\n\n// for...in (object keys)\nfor (const key in obj) console.log(key);\n\n// break/continue\nfor (let i = 0; i < 10; i++) {\n  if (i === 3) continue;\n  if (i === 7) break;\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Functions" } },
-    { "type": "example", "data": { "title": "Arrow Functions & Defaults", "content": "Modern function declarations.", "language": "javascript", "code": "// Arrow function\nconst add = (a, b) => a + b;\nconst greet = name => `Hello, ${name}!`;\nconst multi = (a, b) => { return a * b; };\n\n// Default parameters\nfunction greet(name = 'Guest', greeting = 'Hello') {\n  return `${greeting}, ${name}!`;\n}\n\n// IIFE\nconst result = (function() {\n  let count = 0;\n  return { inc: () => ++count, get: () => count };\n})();" } },
-    { "type": "example", "data": { "title": "Higher-Order Functions", "content": "Functions that take or return functions.", "language": "javascript", "code": "// Callback\nsetTimeout(() => console.log('delayed'), 1000);\n\n// Higher-order function\nfunction multiplier(factor) {\n  return number => number * factor;\n}\nconst double = multiplier(2);\ndouble(5); // 10" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Arrow Functions & Defaults",
+        "content": "Modern function declarations.",
+        "language": "javascript",
+        "code": "// Arrow function\nconst add = (a, b) => a + b;\nconst greet = name => `Hello, ${name}!`;\nconst multi = (a, b) => { return a * b; };\n\n// Default parameters\nfunction greet(name = 'Guest', greeting = 'Hello') {\n  return `${greeting}, ${name}!`;\n}\n\n// IIFE\nconst result = (function() {\n  let count = 0;\n  return { inc: () => ++count, get: () => count };\n})();"
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "title": "Higher-Order Functions",
+        "content": "Functions that take or return functions.",
+        "language": "javascript",
+        "code": "// Callback\nsetTimeout(() => console.log('delayed'), 1000);\n\n// Higher-order function\nfunction multiplier(factor) {\n  return number => number * factor;\n}\nconst double = multiplier(2);\ndouble(5); // 10"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Objects" } },
-    { "type": "example", "data": { "title": "Object Literal & Shorthand", "content": "Modern object patterns.", "language": "javascript", "code": "const name = 'John';\nconst age = 30;\n\n// Property shorthand\nconst user = { name, age };\n\n// Computed property names\nconst key = 'dynamic';\nconst obj = { [key]: 'value', [`prop${1}`]: 2 };\n\n// Method shorthand\nconst calc = {\n  add(a, b) { return a + b; },\n  sub(a, b) { return a - b; }\n};\n\n// Getters/Setters\nconst person = {\n  firstName: 'John',\n  lastName: 'Doe',\n  get fullName() { return `${this.firstName} ${this.lastName}`; },\n  set fullName(name) { [this.firstName, this.lastName] = name.split(' '); }\n};" } },
-    { "type": "example", "data": { "title": "Object Destructuring", "content": "Extract properties from objects.", "language": "javascript", "code": "const user = { name: 'John', age: 30, city: 'NYC' };\n\n// Basic destructuring\nconst { name, age } = user;\n\n// Rename\nconst { name: userName } = user;\n\n// Default values\nconst { country = 'USA' } = user;\n\n// Nested destructuring\nconst { address: { city } } = { address: { city: 'NYC' } };\n\n// Rest in destructuring\nconst { name, ...rest } = user;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Object Literal & Shorthand",
+        "content": "Modern object patterns.",
+        "language": "javascript",
+        "code": "const name = 'John';\nconst age = 30;\n\n// Property shorthand\nconst user = { name, age };\n\n// Computed property names\nconst key = 'dynamic';\nconst obj = { [key]: 'value', [`prop${1}`]: 2 };\n\n// Method shorthand\nconst calc = {\n  add(a, b) { return a + b; },\n  sub(a, b) { return a - b; }\n};\n\n// Getters/Setters\nconst person = {\n  firstName: 'John',\n  lastName: 'Doe',\n  get fullName() { return `${this.firstName} ${this.lastName}`; },\n  set fullName(name) { [this.firstName, this.lastName] = name.split(' '); }\n};"
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "title": "Object Destructuring",
+        "content": "Extract properties from objects.",
+        "language": "javascript",
+        "code": "const user = { name: 'John', age: 30, city: 'NYC' };\n\n// Basic destructuring\nconst { name, age } = user;\n\n// Rename\nconst { name: userName } = user;\n\n// Default values\nconst { country = 'USA' } = user;\n\n// Nested destructuring\nconst { address: { city } } = { address: { city: 'NYC' } };\n\n// Rest in destructuring\nconst { name, ...rest } = user;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Arrays" } },
-    { "type": "example", "data": { "title": "Array Methods", "content": "Essential array methods.", "language": "javascript", "code": "const nums = [1, 2, 3, 4, 5];\n\n// Transform\nnums.map(x => x * 2);           // [2, 4, 6, 8, 10]\nnums.filter(x => x > 2);        // [3, 4, 5]\nnums.reduce((a, b) => a + b);   // 15\n\n// Search\nnums.find(x => x > 3);          // 4\nnums.findIndex(x => x > 3);     // 3\nnums.includes(3);               // true\n\n// Test\nnums.some(x => x > 3);          // true\nnums.every(x => x > 0);         // true\n\n// Other\nnums.flat();                     // [1, 2, 3, 4, 5]\nnums.flatMap(x => [x, x * 2]);  // [1, 2, 2, 4, 3, 6, 4, 8, 5, 10]\nnums.at(-1);                     // 5" } },
-    { "type": "example", "data": { "title": "Array Destructuring", "content": "Extract values from arrays.", "language": "javascript", "code": "const colors = ['red', 'green', 'blue'];\n\n// Basic destructuring\nconst [first, second] = colors;\n\n// Skip elements\nconst [, , third] = colors;\n\n// Rest\nconst [head, ...tail] = colors;\n\n// Swap\n[first, second] = [second, first];" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Array Methods",
+        "content": "Essential array methods.",
+        "language": "javascript",
+        "code": "const nums = [1, 2, 3, 4, 5];\n\n// Transform\nnums.map(x => x * 2);           // [2, 4, 6, 8, 10]\nnums.filter(x => x > 2);        // [3, 4, 5]\nnums.reduce((a, b) => a + b);   // 15\n\n// Search\nnums.find(x => x > 3);          // 4\nnums.findIndex(x => x > 3);     // 3\nnums.includes(3);               // true\n\n// Test\nnums.some(x => x > 3);          // true\nnums.every(x => x > 0);         // true\n\n// Other\nnums.flat();                     // [1, 2, 3, 4, 5]\nnums.flatMap(x => [x, x * 2]);  // [1, 2, 2, 4, 3, 6, 4, 8, 5, 10]\nnums.at(-1);                     // 5"
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "title": "Array Destructuring",
+        "content": "Extract values from arrays.",
+        "language": "javascript",
+        "code": "const colors = ['red', 'green', 'blue'];\n\n// Basic destructuring\nconst [first, second] = colors;\n\n// Skip elements\nconst [, , third] = colors;\n\n// Rest\nconst [head, ...tail] = colors;\n\n// Swap\n[first, second] = [second, first];"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Strings" } },
-    { "type": "example", "data": { "title": "Template Literals & Methods", "content": "String manipulation.", "language": "javascript", "code": "// Template literals\nconst name = 'John';\nconst greeting = `Hello, ${name}!`;\n\n// String methods\n'hello'.includes('ell');        // true\n'hello'.startsWith('he');       // true\n'hello'.endsWith('lo');         // true\n'hi'.padStart(5, '!');          // '!!!hi'\n'hi'.padEnd(5, '!');            // 'hi!!!'\n'ha'.repeat(3);                 // 'hahaha'\n'a,b,c'.split(',');             // ['a', 'b', 'c']\n['a','b'].join('-');            // 'a-b'\n'hello'.replace('l', 'L');      // 'heLlo'\n'hello'.slice(1, 3);            // 'el'\n'hello'.indexOf('l');           // 2" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Template Literals & Methods",
+        "content": "String manipulation.",
+        "language": "javascript",
+        "code": "// Template literals\nconst name = 'John';\nconst greeting = `Hello, ${name}!`;\n\n// String methods\n'hello'.includes('ell');        // true\n'hello'.startsWith('he');       // true\n'hello'.endsWith('lo');         // true\n'hi'.padStart(5, '!');          // '!!!hi'\n'hi'.padEnd(5, '!');            // 'hi!!!'\n'ha'.repeat(3);                 // 'hahaha'\n'a,b,c'.split(',');             // ['a', 'b', 'c']\n['a','b'].join('-');            // 'a-b'\n'hello'.replace('l', 'L');      // 'heLlo'\n'hello'.slice(1, 3);            // 'el'\n'hello'.indexOf('l');           // 2"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Closures" } },
-    { "type": "example", "data": { "title": "Closure with Loop", "content": "Common closure pitfall with var.", "language": "javascript", "code": "// Problem: var is function-scoped\nfor (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 100); // prints 3, 3, 3\n}\n\n// Solution 1: let (block-scoped)\nfor (let i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 100); // prints 0, 1, 2\n}\n\n// Solution 2: IIFE\nfor (var i = 0; i < 3; i++) {\n  ((j) => setTimeout(() => console.log(j), 100))(i);\n}" } },
-    { "type": "example", "data": { "title": "Private Variables Pattern", "content": "Using closure for encapsulation.", "language": "javascript", "code": "function createCounter() {\n  let count = 0; // private\n  return {\n    increment: () => ++count,\n    decrement: () => --count,\n    getCount: () => count\n  };\n}\n\nconst counter = createCounter();\ncounter.increment(); // 1\ncounter.increment(); // 2\ncounter.getCount();  // 2\n// counter.count; // undefined (private)" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Closure with Loop",
+        "content": "Common closure pitfall with var.",
+        "language": "javascript",
+        "code": "// Problem: var is function-scoped\nfor (var i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 100); // prints 3, 3, 3\n}\n\n// Solution 1: let (block-scoped)\nfor (let i = 0; i < 3; i++) {\n  setTimeout(() => console.log(i), 100); // prints 0, 1, 2\n}\n\n// Solution 2: IIFE\nfor (var i = 0; i < 3; i++) {\n  ((j) => setTimeout(() => console.log(j), 100))(i);\n}"
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "title": "Private Variables Pattern",
+        "content": "Using closure for encapsulation.",
+        "language": "javascript",
+        "code": "function createCounter() {\n  let count = 0; // private\n  return {\n    increment: () => ++count,\n    decrement: () => --count,\n    getCount: () => count\n  };\n}\n\nconst counter = createCounter();\ncounter.increment(); // 1\ncounter.increment(); // 2\ncounter.getCount();  // 2\n// counter.count; // undefined (private)"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "this Keyword" } },
-    { "type": "example", "data": { "title": "this Binding Rules", "content": "How this is determined in different contexts.", "language": "javascript", "code": "// Global scope\nconsole.log(this); // window (browser) or global (node)\n\n// Method - this is the object\nconst obj = {\n  name: 'John',\n  greet() { console.log(this.name); }\n};\nobj.greet(); // 'John'\n\n// call/apply/bind\nfunction greet(greeting) {\n  console.log(`${greeting}, ${this.name}`);\n}\ngreet.call({ name: 'Jane' }, 'Hello');\n\ngreet.apply({ name: 'Jane' }, ['Hi']);\n\nconst bound = greet.bind({ name: 'Bob' });\nbound('Hey');\n\n// Arrow function - inherits this\nconst person = {\n  name: 'Alice',\n  greet: () => console.log(this.name)\n};\n// person.greet(); // undefined (inherits global)" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "this Binding Rules",
+        "content": "How this is determined in different contexts.",
+        "language": "javascript",
+        "code": "// Global scope\nconsole.log(this); // window (browser) or global (node)\n\n// Method - this is the object\nconst obj = {\n  name: 'John',\n  greet() { console.log(this.name); }\n};\nobj.greet(); // 'John'\n\n// call/apply/bind\nfunction greet(greeting) {\n  console.log(`${greeting}, ${this.name}`);\n}\ngreet.call({ name: 'Jane' }, 'Hello');\n\ngreet.apply({ name: 'Jane' }, ['Hi']);\n\nconst bound = greet.bind({ name: 'Bob' });\nbound('Hey');\n\n// Arrow function - inherits this\nconst person = {\n  name: 'Alice',\n  greet: () => console.log(this.name)\n};\n// person.greet(); // undefined (inherits global)"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Prototypes & Classes" } },
-    { "type": "example", "data": { "title": "Prototype Chain", "content": "Understanding prototype inheritance.", "language": "javascript", "code": "// Prototype chain\nfunction Animal(name) {\n  this.name = name;\n}\nAnimal.prototype.speak = function() {\n  console.log(`${this.name} makes a sound`);\n};\n\nfunction Dog(name) {\n  Animal.call(this, name);\n}\nDog.prototype = Object.create(Animal.prototype);\nDog.prototype.constructor = Dog;\nDog.prototype.bark = function() {\n  console.log(`${this.name} barks`);\n};\n\nconst dog = new Dog('Rex');\ndog.speak(); // 'Rex makes a sound'\ndog.bark();  // 'Rex barks'" } },
-    { "type": "example", "data": { "title": "Class Syntax", "content": "ES6 class syntax.", "language": "javascript", "code": "class Animal {\n  constructor(name) {\n    this.name = name;\n  }\n\n  speak() {\n    console.log(`${this.name} makes a sound`);\n  }\n\n  static create(name) {\n    return new Animal(name);\n  }\n}\n\nclass Dog extends Animal {\n  constructor(name, breed) {\n    super(name);\n    this.breed = breed;\n  }\n\n  speak() {\n    console.log(`${this.name} barks`);\n  }\n}\n\nconst dog = new Dog('Rex', 'Lab');\ndog.speak(); // 'Rex barks'" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Prototype Chain",
+        "content": "Understanding prototype inheritance.",
+        "language": "javascript",
+        "code": "// Prototype chain\nfunction Animal(name) {\n  this.name = name;\n}\nAnimal.prototype.speak = function() {\n  console.log(`${this.name} makes a sound`);\n};\n\nfunction Dog(name) {\n  Animal.call(this, name);\n}\nDog.prototype = Object.create(Animal.prototype);\nDog.prototype.constructor = Dog;\nDog.prototype.bark = function() {\n  console.log(`${this.name} barks`);\n};\n\nconst dog = new Dog('Rex');\ndog.speak(); // 'Rex makes a sound'\ndog.bark();  // 'Rex barks'"
+      }
+    },
+    {
+      "type": "example",
+      "data": {
+        "title": "Class Syntax",
+        "content": "ES6 class syntax.",
+        "language": "javascript",
+        "code": "class Animal {\n  constructor(name) {\n    this.name = name;\n  }\n\n  speak() {\n    console.log(`${this.name} makes a sound`);\n  }\n\n  static create(name) {\n    return new Animal(name);\n  }\n}\n\nclass Dog extends Animal {\n  constructor(name, breed) {\n    super(name);\n    this.breed = breed;\n  }\n\n  speak() {\n    console.log(`${this.name} barks`);\n  }\n}\n\nconst dog = new Dog('Rex', 'Lab');\ndog.speak(); // 'Rex barks'"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Promises" } },
-    { "type": "example", "data": { "title": "Promise Methods", "content": "Working with Promise combinators.", "language": "javascript", "code": "const p1 = Promise.resolve(1);\nconst p2 = Promise.resolve(2);\nconst p3 = Promise.reject('error');\n\n// all - all must resolve\nPromise.all([p1, p2]).then(console.log); // [1, 2]\n\n// allSettled - wait for all\nPromise.allSettled([p1, p2, p3]).then(console.log);\n// [{status:'fulfilled',value:1},...]\n\n// race - first to settle\nPromise.race([p1, p2]).then(console.log); // 1\n\n// any - first to resolve\nPromise.any([p1, p2]).then(console.log); // 1" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Promise Methods",
+        "content": "Working with Promise combinators.",
+        "language": "javascript",
+        "code": "const p1 = Promise.resolve(1);\nconst p2 = Promise.resolve(2);\nconst p3 = Promise.reject('error');\n\n// all - all must resolve\nPromise.all([p1, p2]).then(console.log); // [1, 2]\n\n// allSettled - wait for all\nPromise.allSettled([p1, p2, p3]).then(console.log);\n// [{status:'fulfilled',value:1},...]\n\n// race - first to settle\nPromise.race([p1, p2]).then(console.log); // 1\n\n// any - first to resolve\nPromise.any([p1, p2]).then(console.log); // 1"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Async/Await" } },
-    { "type": "example", "data": { "title": "Async Patterns", "content": "Async/await with error handling.", "language": "javascript", "code": "// Basic async function\nasync function fetchUser(id) {\n  const response = await fetch(`/api/users/${id}`);\n  const user = await response.json();\n  return user;\n}\n\n// Error handling\ntry {\n  const user = await fetchUser(1);\n} catch (error) {\n  console.error('Failed:', error);\n}\n\n// Parallel execution\nconst [users, posts] = await Promise.all([\n  fetch('/api/users').then(r => r.json()),\n  fetch('/api/posts').then(r => r.json())\n]);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Async Patterns",
+        "content": "Async/await with error handling.",
+        "language": "javascript",
+        "code": "// Basic async function\nasync function fetchUser(id) {\n  const response = await fetch(`/api/users/${id}`);\n  const user = await response.json();\n  return user;\n}\n\n// Error handling\ntry {\n  const user = await fetchUser(1);\n} catch (error) {\n  console.error('Failed:', error);\n}\n\n// Parallel execution\nconst [users, posts] = await Promise.all([\n  fetch('/api/users').then(r => r.json()),\n  fetch('/api/posts').then(r => r.json())\n]);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Modules" } },
-    { "type": "example", "data": { "title": "ES Module Syntax", "content": "Import and export statements.", "language": "javascript", "code": "// Export\n// utils.js\nexport const PI = 3.14;\nexport function add(a, b) { return a + b; }\nexport default class Calculator {}\n\n// Import\n// main.js\nimport Calculator, { PI, add } from './utils.js';\nimport * as utils from './utils.js';\n\n// Dynamic import\nconst module = await import('./utils.js');" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "ES Module Syntax",
+        "content": "Import and export statements.",
+        "language": "javascript",
+        "code": "// Export\n// utils.js\nexport const PI = 3.14;\nexport function add(a, b) { return a + b; }\nexport default class Calculator {}\n\n// Import\n// main.js\nimport Calculator, { PI, add } from './utils.js';\nimport * as utils from './utils.js';\n\n// Dynamic import\nconst module = await import('./utils.js');"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Error Handling" } },
-    { "type": "example", "data": { "title": "Custom Errors", "content": "Creating and throwing errors.", "language": "javascript", "code": "class ValidationError extends Error {\n  constructor(message) {\n    super(message);\n    this.name = 'ValidationError';\n  }\n}\n\nfunction validateAge(age) {\n  if (age < 0) throw new ValidationError('Age cannot be negative');\n  if (age < 18) throw new Error('Too young');\n}\n\ntry {\n  validateAge(-5);\n} catch (error) {\n  if (error instanceof ValidationError) {\n    console.error(error.message);\n  }\n  console.error(error.name, error.message);\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Custom Errors",
+        "content": "Creating and throwing errors.",
+        "language": "javascript",
+        "code": "class ValidationError extends Error {\n  constructor(message) {\n    super(message);\n    this.name = 'ValidationError';\n  }\n}\n\nfunction validateAge(age) {\n  if (age < 0) throw new ValidationError('Age cannot be negative');\n  if (age < 18) throw new Error('Too young');\n}\n\ntry {\n  validateAge(-5);\n} catch (error) {\n  if (error instanceof ValidationError) {\n    console.error(error.message);\n  }\n  console.error(error.name, error.message);\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Set & Map" } },
-    { "type": "example", "data": { "title": "Set & Map Operations", "content": "Working with Set and Map.", "language": "javascript", "code": "// Set - unique values\nconst set = new Set([1, 2, 3, 2]);\nset.add(4);\nset.has(2);    // true\nset.delete(3);\nset.size;      // 3\n\n// Map - key-value pairs\nconst map = new Map();\nmap.set('key', 'value');\nmap.get('key');  // 'value'\nmap.has('key');  // true\nmap.delete('key');\nmap.size;\n\n// Converting\nArray.from(new Set([1, 2, 2, 3])); // [1, 2, 3]" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Set & Map Operations",
+        "content": "Working with Set and Map.",
+        "language": "javascript",
+        "code": "// Set - unique values\nconst set = new Set([1, 2, 3, 2]);\nset.add(4);\nset.has(2);    // true\nset.delete(3);\nset.size;      // 3\n\n// Map - key-value pairs\nconst map = new Map();\nmap.set('key', 'value');\nmap.get('key');  // 'value'\nmap.has('key');  // true\nmap.delete('key');\nmap.size;\n\n// Converting\nArray.from(new Set([1, 2, 2, 3])); // [1, 2, 3]"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Functional Programming" } },
-    { "type": "example", "data": { "title": "Composition & Currying", "content": "Functional patterns.", "language": "javascript", "code": "// Pure function\ndouble = x => x * 2;\n\n// Composition\nconst compose = (f, g) => x => f(g(x));\nconst doubleThenInc = compose(x => x + 1, x => x * 2);\ndoubleThenInc(5); // 11\n\n// Currying\nconst multiply = a => b => a * b;\nconst double2 = multiply(2);\ndouble2(5); // 10" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Composition & Currying",
+        "content": "Functional patterns.",
+        "language": "javascript",
+        "code": "// Pure function\ndouble = x => x * 2;\n\n// Composition\nconst compose = (f, g) => x => f(g(x));\nconst doubleThenInc = compose(x => x + 1, x => x * 2);\ndoubleThenInc(5); // 11\n\n// Currying\nconst multiply = a => b => a * b;\nconst double2 = multiply(2);\ndouble2(5); // 10"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "DOM Manipulation" } },
-    { "type": "example", "data": { "title": "Querying & Events", "content": "DOM selection and event handling.", "language": "javascript", "code": "// Select elements\nconst el = document.getElementById('app');\nconst all = document.querySelectorAll('.item');\nconst first = document.querySelector('.item');\n\n// Create and append\nconst div = document.createElement('div');\ndiv.textContent = 'Hello';\ndiv.className = 'greeting';\nparent.appendChild(div);\n\n// Events\nbutton.addEventListener('click', (e) => {\n  console.log(e.target);\n});\n\n// Event delegation\nlist.addEventListener('click', (e) => {\n  if (e.target.matches('.item')) {\n    console.log('Item clicked:', e.target);\n  }\n});" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Querying & Events",
+        "content": "DOM selection and event handling.",
+        "language": "javascript",
+        "code": "// Select elements\nconst el = document.getElementById('app');\nconst all = document.querySelectorAll('.item');\nconst first = document.querySelector('.item');\n\n// Create and append\nconst div = document.createElement('div');\ndiv.textContent = 'Hello';\ndiv.className = 'greeting';\nparent.appendChild(div);\n\n// Events\nbutton.addEventListener('click', (e) => {\n  console.log(e.target);\n});\n\n// Event delegation\nlist.addEventListener('click', (e) => {\n  if (e.target.matches('.item')) {\n    console.log('Item clicked:', e.target);\n  }\n});"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Timers" } },
-    { "type": "example", "data": { "title": "setTimeout & setInterval", "content": "Timer patterns.", "language": "javascript", "code": "// setTimeout\nconst timeoutId = setTimeout(() => {\n  console.log('delayed');\n}, 1000);\nclearTimeout(timeoutId);\n\n// setInterval\nlet count = 0;\nconst intervalId = setInterval(() => {\n  count++;\n  if (count === 3) clearInterval(intervalId);\n}, 1000);\n\n// Recursive setTimeout (better for varying delays)\nfunction repeat(action, delay) {\n  action();\n  setTimeout(() => repeat(action, delay), delay);\n}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "setTimeout & setInterval",
+        "content": "Timer patterns.",
+        "language": "javascript",
+        "code": "// setTimeout\nconst timeoutId = setTimeout(() => {\n  console.log('delayed');\n}, 1000);\nclearTimeout(timeoutId);\n\n// setInterval\nlet count = 0;\nconst intervalId = setInterval(() => {\n  count++;\n  if (count === 3) clearInterval(intervalId);\n}, 1000);\n\n// Recursive setTimeout (better for varying delays)\nfunction repeat(action, delay) {\n  action();\n  setTimeout(() => repeat(action, delay), delay);\n}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "JSON" } },
-    { "type": "example", "data": { "title": "JSON Methods", "content": "Serialization and deserialization.", "language": "javascript", "code": "const obj = {\n  name: 'John',\n  age: 30,\n  date: new Date('2024-01-01')\n};\n\n// Stringify\nconst json = JSON.stringify(obj);\nconst pretty = JSON.stringify(obj, null, 2);\n\n// Parse\nconst parsed = JSON.parse(json);\n\n// Reviver\nconst parsed2 = JSON.parse(json, (key, value) => {\n  if (key === 'date') return new Date(value);\n  return value;\n});\n\n// Replacer\nJSON.stringify(obj, (key, value) => {\n  if (key === 'age') return undefined;\n  return value;\n}, 2);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "JSON Methods",
+        "content": "Serialization and deserialization.",
+        "language": "javascript",
+        "code": "const obj = {\n  name: 'John',\n  age: 30,\n  date: new Date('2024-01-01')\n};\n\n// Stringify\nconst json = JSON.stringify(obj);\nconst pretty = JSON.stringify(obj, null, 2);\n\n// Parse\nconst parsed = JSON.parse(json);\n\n// Reviver\nconst parsed2 = JSON.parse(json, (key, value) => {\n  if (key === 'date') return new Date(value);\n  return value;\n});\n\n// Replacer\nJSON.stringify(obj, (key, value) => {\n  if (key === 'age') return undefined;\n  return value;\n}, 2);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Regular Expressions" } },
-    { "type": "example", "data": { "title": "Regex Patterns", "content": "Regular expression usage.", "language": "javascript", "code": "// Regex literal\nconst regex = /[a-z]+/gi;\n\n// RegExp constructor\nconst emailRegex = new RegExp('[a-z]+@[a-z]+\\\\.com', 'i');\n\n// Test & exec\nregex.test('Hello'); // true\nregex.exec('Hello'); // ['Hello']\n\n// Common patterns\nconst email = /^[^\\\\s@]+@[^\\\\s@]+\\\\.\\\\w+$/;\nconst phone = /^\\\\d{3}-\\\\d{3}-\\\\d{4}$/;\n\n// Replace with regex\n'hello world'.replace(/l/g, 'L'); // 'heLLo worLd'" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Regex Patterns",
+        "content": "Regular expression usage.",
+        "language": "javascript",
+        "code": "// Regex literal\nconst regex = /[a-z]+/gi;\n\n// RegExp constructor\nconst emailRegex = new RegExp('[a-z]+@[a-z]+\\\\.com', 'i');\n\n// Test & exec\nregex.test('Hello'); // true\nregex.exec('Hello'); // ['Hello']\n\n// Common patterns\nconst email = /^[^\\\\s@]+@[^\\\\s@]+\\\\.\\\\w+$/;\nconst phone = /^\\\\d{3}-\\\\d{3}-\\\\d{4}$/;\n\n// Replace with regex\n'hello world'.replace(/l/g, 'L'); // 'heLLo worLd'"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Modules Patterns" } },
-    { "type": "example", "data": { "title": "Common Patterns", "content": "Revealing module and singleton patterns.", "language": "javascript", "code": "// Revealing Module Pattern\nconst Module = (function() {\n  let privateVar = 0;\n  function privateMethod() { return privateVar; }\n  return {\n    publicMethod: privateMethod\n  };\n})();\n\n// Singleton\nconst Singleton = (function() {\n  let instance;\n  function createInstance() {\n    return { name: 'Singleton' };\n  }\n  return {\n    getInstance: function() {\n      if (!instance) instance = createInstance();\n      return instance;\n    }\n  };\n})();" } }
+    {
+      "type": "example",
+      "data": {
+        "title": "Common Patterns",
+        "content": "Revealing module and singleton patterns.",
+        "language": "javascript",
+        "code": "// Revealing Module Pattern\nconst Module = (function() {\n  let privateVar = 0;\n  function privateMethod() { return privateVar; }\n  return {\n    publicMethod: privateMethod\n  };\n})();\n\n// Singleton\nconst Singleton = (function() {\n  let instance;\n  function createInstance() {\n    return { name: 'Singleton' };\n  }\n  return {\n    getInstance: function() {\n      if (!instance) instance = createInstance();\n      return instance;\n    }\n  };\n})();"
+      }
+    }
   ],
   "relatedLessons": [],
   "furtherReading": []

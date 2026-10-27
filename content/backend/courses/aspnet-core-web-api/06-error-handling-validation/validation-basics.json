@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "web-api",
-    "validation",
-    "input"
-  ],
+  "tags": ["web-api", "validation", "input"],
   "blocks": [
     {
       "type": "paragraph",
@@ -73,11 +69,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Attribute",
-          "Purpose",
-          "Example"
-        ],
+        "headers": ["Attribute", "Purpose", "Example"],
         "rows": [
           [
             "[Required]",
@@ -89,11 +81,7 @@
             "Caps the maximum length and optionally the minimum",
             "[StringLength(100, MinimumLength = 2)]"
           ],
-          [
-            "[Range]",
-            "Validates numeric ranges",
-            "[Range(18, 120)] public int Age { get; set; }"
-          ],
+          ["[Range]", "Validates numeric ranges", "[Range(18, 120)] public int Age { get; set; }"],
           [
             "[EmailAddress]",
             "Validates email format using a regex",
@@ -184,13 +172,8 @@
               "Discovered by Swagger",
               "Automatic with [ApiController]"
             ],
-            "cons": [
-              "Limited to single-property rules",
-              "Cannot easily express conditional logic"
-            ],
-            "tags": [
-              "recommended"
-            ]
+            "cons": ["Limited to single-property rules", "Cannot easily express conditional logic"],
+            "tags": ["recommended"]
           },
           {
             "title": "Custom ValidationAttribute",
@@ -200,22 +183,13 @@
               "Encapsulates complex logic",
               "Testable in isolation"
             ],
-            "cons": [
-              "Requires writing a class",
-              "More ceremony than attributes"
-            ]
+            "cons": ["Requires writing a class", "More ceremony than attributes"]
           },
           {
             "title": "IValidatableObject",
             "description": "Implement Validate on the model itself for cross-property rules.",
-            "pros": [
-              "Full access to all properties",
-              "Great for conditional business rules"
-            ],
-            "cons": [
-              "Tightly coupled to the model",
-              "Harder to unit test"
-            ]
+            "pros": ["Full access to all properties", "Great for conditional business rules"],
+            "cons": ["Tightly coupled to the model", "Harder to unit test"]
           }
         ]
       }

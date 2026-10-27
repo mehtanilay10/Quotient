@@ -9,14 +9,7 @@
   "difficulty": "beginner",
   "estimatedHours": 10,
   "icon": "🎯",
-  "tags": [
-    "aspnet-core",
-    "mvc",
-    "routing",
-    "controllers",
-    "filters",
-    "model-binding"
-  ],
+  "tags": ["aspnet-core", "mvc", "routing", "controllers", "filters", "model-binding"],
   "lessonSlugs": [
     "routing-basics",
     "attribute-routing",

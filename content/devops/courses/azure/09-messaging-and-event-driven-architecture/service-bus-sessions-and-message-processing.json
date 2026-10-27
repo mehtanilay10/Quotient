@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "azure",
-    "messaging",
-    "service-bus",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "messaging", "service-bus", "developer"],
   "blocks": [
     {
       "type": "heading",

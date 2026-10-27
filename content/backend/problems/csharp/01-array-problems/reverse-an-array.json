@@ -8,12 +8,7 @@
   "order": 27,
   "difficulty": "easy",
   "estimatedMinutes": 10,
-  "tags": [
-    "csharp",
-    "arrays",
-    "in-place",
-    "easy"
-  ],
+  "tags": ["csharp", "arrays", "in-place", "easy"],
   "blocks": [
     {
       "type": "heading",
@@ -101,31 +96,16 @@
           {
             "title": "Extra Array",
             "description": "Copy in reverse order",
-            "pros": [
-              "Easy to follow"
-            ],
-            "cons": [
-              "O(n) extra space"
-            ],
-            "tags": [
-              "O(n) time",
-              "O(n) space"
-            ]
+            "pros": ["Easy to follow"],
+            "cons": ["O(n) extra space"],
+            "tags": ["O(n) time", "O(n) space"]
           },
           {
             "title": "Two-Pointer In-Place",
             "description": "Swap from both ends",
-            "pros": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ],
+            "pros": ["O(n) time", "O(1) space", "Recommended"],
             "cons": [],
-            "tags": [
-              "O(n) time",
-              "O(1) space",
-              "Recommended"
-            ]
+            "tags": ["O(n) time", "O(1) space", "Recommended"]
           }
         ]
       }

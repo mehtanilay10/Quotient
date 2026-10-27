@@ -27,7 +27,9 @@
     },
     {
       "type": "paragraph",
-      "data": { "text": "Azure runs in regions worldwide. Each region contains availability zones for high availability." }
+      "data": {
+        "text": "Azure runs in regions worldwide. Each region contains availability zones for high availability."
+      }
     },
     {
       "type": "bullet-list",

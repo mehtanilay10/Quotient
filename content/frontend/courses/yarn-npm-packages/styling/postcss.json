@@ -6,14 +6,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "postcss",
-    "css",
-    "tooling",
-    "styling",
-    "npm",
-    "yarn"
-  ],
+  "tags": ["postcss", "css", "tooling", "styling", "npm", "yarn"],
   "blocks": [
     {
       "type": "paragraph",
@@ -99,31 +92,13 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Plugin",
-          "Job"
-        ],
+        "headers": ["Plugin", "Job"],
         "rows": [
-          [
-            "autoprefixer",
-            "Add vendor prefixes from browserslist"
-          ],
-          [
-            "postcss-preset-env",
-            "Polyfill future CSS syntax"
-          ],
-          [
-            "cssnano",
-            "Minify and optimise for production"
-          ],
-          [
-            "postcss-import",
-            "Inline @import statements at build time"
-          ],
-          [
-            "@tailwindcss/postcss",
-            "Generate Tailwind utilities (v4)"
-          ]
+          ["autoprefixer", "Add vendor prefixes from browserslist"],
+          ["postcss-preset-env", "Polyfill future CSS syntax"],
+          ["cssnano", "Minify and optimise for production"],
+          ["postcss-import", "Inline @import statements at build time"],
+          ["@tailwindcss/postcss", "Generate Tailwind utilities (v4)"]
         ]
       }
     },

@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "intermediate",
   "estimatedMinutes": 20,
-  "tags": [
-    "prisma",
-    "relations",
-    "one-to-one",
-    "unique-constraint"
-  ],
+  "tags": ["prisma", "relations", "one-to-one", "unique-constraint"],
   "blocks": [
     {
       "type": "paragraph",
@@ -58,8 +53,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "relations-overview",
-    "one-to-many-relations"
-  ]
+  "relatedLessons": ["relations-overview", "one-to-many-relations"]
 }

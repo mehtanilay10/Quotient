@@ -8,12 +8,7 @@
   "order": 6,
   "difficulty": "intermediate",
   "estimatedMinutes": 28,
-  "tags": [
-    "semantic-kernel",
-    "rag",
-    "csharp",
-    "memory"
-  ],
+  "tags": ["semantic-kernel", "rag", "csharp", "memory"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,10 +55,7 @@
       "expectedOutcome": "You should see retrieved chunks alongside generated answers, confirming the RAG pipeline is working end to end."
     }
   ],
-  "relatedLessons": [
-    "rag-architecture-overview",
-    "rag-with-microsoft-extensions-ai"
-  ],
+  "relatedLessons": ["rag-architecture-overview", "rag-with-microsoft-extensions-ai"],
   "technology": null,
   "furtherReading": [
     {

@@ -8,54 +8,245 @@
   "order": 12,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": ["linq", "csharp", "query-syntax", "method-syntax", "joins", "grouping", "aggregation", "cheatsheet", "quick-reference"],
+  "tags": [
+    "linq",
+    "csharp",
+    "query-syntax",
+    "method-syntax",
+    "joins",
+    "grouping",
+    "aggregation",
+    "cheatsheet",
+    "quick-reference"
+  ],
   "blocks": [
     { "type": "heading", "data": { "level": 2, "text": "LINQ Quick Reference" } },
-    { "type": "paragraph", "data": { "text": "Language Integrated Query (LINQ) provides a unified syntax for querying data from objects, databases, XML, and more." } },
+    {
+      "type": "paragraph",
+      "data": {
+        "text": "Language Integrated Query (LINQ) provides a unified syntax for querying data from objects, databases, XML, and more."
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "LINQ Overview" } },
-    { "type": "example", "data": { "title": "Method vs Query Syntax", "content": "Two syntaxes for the same operations.", "language": "csharp", "code": "int[] numbers = { 1, 2, 3, 4, 5 };\n\n// Method syntax\nvar evens = numbers.Where(n => n % 2 == 0).Select(n => n * 2);\n\n// Query syntax\nvar evens2 = from n in numbers\n             where n % 2 == 0\n             select n * 2;\n\n// Deferred execution\nvar query = numbers.Where(n => n > 2);\nnumbers[0] = 10; // modifies source\nvar result = query.ToList(); // re-evaluates with new data" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Method vs Query Syntax",
+        "content": "Two syntaxes for the same operations.",
+        "language": "csharp",
+        "code": "int[] numbers = { 1, 2, 3, 4, 5 };\n\n// Method syntax\nvar evens = numbers.Where(n => n % 2 == 0).Select(n => n * 2);\n\n// Query syntax\nvar evens2 = from n in numbers\n             where n % 2 == 0\n             select n * 2;\n\n// Deferred execution\nvar query = numbers.Where(n => n > 2);\nnumbers[0] = 10; // modifies source\nvar result = query.ToList(); // re-evaluates with new data"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Basic Query Syntax" } },
-    { "type": "example", "data": { "title": "Query Syntax", "content": "from/where/select pattern.", "language": "csharp", "code": "List<int> numbers = new() { 1, 2, 3, 4, 5 };\n\n// Basic query\nvar query = from n in numbers\n            where n > 2\n            select n;\n\n// Multiple from (cross join)\nvar query2 = from n in numbers\n             from m in numbers\n             select new { n, m };\n\n// let keyword\nvar query3 = from s in students\n             let initial = s.Name.Substring(0, 1)\n             select new { s.Name, initial };\n\n// orderby\nvar sorted = from s in students\n             orderby s.Age descending, s.Name ascending\n             select s;" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Query Syntax",
+        "content": "from/where/select pattern.",
+        "language": "csharp",
+        "code": "List<int> numbers = new() { 1, 2, 3, 4, 5 };\n\n// Basic query\nvar query = from n in numbers\n            where n > 2\n            select n;\n\n// Multiple from (cross join)\nvar query2 = from n in numbers\n             from m in numbers\n             select new { n, m };\n\n// let keyword\nvar query3 = from s in students\n             let initial = s.Name.Substring(0, 1)\n             select new { s.Name, initial };\n\n// orderby\nvar sorted = from s in students\n             orderby s.Age descending, s.Name ascending\n             select s;"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Basic Method Syntax" } },
-    { "type": "example", "data": { "title": "Method Syntax Basics", "content": "Common method syntax operators.", "language": "csharp", "code": "List<int> numbers = new() { 5, 3, 1, 4, 2 };\n\n// Where\nvar filtered = numbers.Where(n => n > 2);\n\n// Select\nvar doubled = numbers.Select(n => n * 2);\n\n// OrderBy / OrderByDescending\nvar asc = numbers.OrderBy(n => n);\nvar desc = numbers.OrderByDescending(n => n);\n\n// ThenBy / ThenByDescending\nvar multi = students\n  .OrderBy(s => s.Age)\n  .ThenBy(s => s.Name);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Method Syntax Basics",
+        "content": "Common method syntax operators.",
+        "language": "csharp",
+        "code": "List<int> numbers = new() { 5, 3, 1, 4, 2 };\n\n// Where\nvar filtered = numbers.Where(n => n > 2);\n\n// Select\nvar doubled = numbers.Select(n => n * 2);\n\n// OrderBy / OrderByDescending\nvar asc = numbers.OrderBy(n => n);\nvar desc = numbers.OrderByDescending(n => n);\n\n// ThenBy / ThenByDescending\nvar multi = students\n  .OrderBy(s => s.Age)\n  .ThenBy(s => s.Name);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Filtering" } },
-    { "type": "example", "data": { "title": "Where Operator", "content": "Filtering with Where.", "language": "csharp", "code": "List<string> names = new() { \"Alice\", \"Bob\", \"Charlie\" };\n\n// Simple condition\nvar startsWithB = names.Where(n => n.StartsWith(\"B\"));\n\n// Multiple conditions\nvar filtered = names.Where(n => n.Length > 3 && n.StartsWith(\"A\"));\n\n// OfType<T> - filter by type\nArrayList mixed = new() { 1, \"two\", 3, \"four\" };\nvar strings = mixed.OfType<string>();" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Where Operator",
+        "content": "Filtering with Where.",
+        "language": "csharp",
+        "code": "List<string> names = new() { \"Alice\", \"Bob\", \"Charlie\" };\n\n// Simple condition\nvar startsWithB = names.Where(n => n.StartsWith(\"B\"));\n\n// Multiple conditions\nvar filtered = names.Where(n => n.Length > 3 && n.StartsWith(\"A\"));\n\n// OfType<T> - filter by type\nArrayList mixed = new() { 1, \"two\", 3, \"four\" };\nvar strings = mixed.OfType<string>();"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Projection" } },
-    { "type": "example", "data": { "title": "Select & SelectMany", "content": "Projecting and flattening.", "language": "csharp", "code": "List<Student> students = GetStudents();\n\n// Select with anonymous type\nvar projections = students.Select(s => new\n{\n  s.Id,\n  FullName = s.FirstName + \" \" + s.LastName\n});\n\n// Select with named type\nvar dtos = students.Select(s => new StudentDto\n{\n  Id = s.Id,\n  FullName = s.FullName\n});\n\n// SelectMany (flatten)\nList<List<int>> nested = new() { new() { 1, 2 }, new() { 3, 4 } };\nvar flat = nested.SelectMany(inner => inner);\nvar flatWithIndex = nested.SelectMany(\n  (inner, idx) => inner.Select(x => new { idx, x })\n);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Select & SelectMany",
+        "content": "Projecting and flattening.",
+        "language": "csharp",
+        "code": "List<Student> students = GetStudents();\n\n// Select with anonymous type\nvar projections = students.Select(s => new\n{\n  s.Id,\n  FullName = s.FirstName + \" \" + s.LastName\n});\n\n// Select with named type\nvar dtos = students.Select(s => new StudentDto\n{\n  Id = s.Id,\n  FullName = s.FullName\n});\n\n// SelectMany (flatten)\nList<List<int>> nested = new() { new() { 1, 2 }, new() { 3, 4 } };\nvar flat = nested.SelectMany(inner => inner);\nvar flatWithIndex = nested.SelectMany(\n  (inner, idx) => inner.Select(x => new { idx, x })\n);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Sorting" } },
-    { "type": "example", "data": { "title": "Sorting Operators", "content": "Ordering query results.", "language": "csharp", "code": "List<Student> students = GetStudents();\n\n// OrderBy\nvar byAge = students.OrderBy(s => s.Age);\n\n// OrderByDescending\nvar byAgeDesc = students.OrderByDescending(s => s.Age);\n\n// ThenBy (secondary sort)\nvar multiSort = students\n  .OrderBy(s => s.Age)\n  .ThenBy(s => s.LastName);\n\n// Reverse\nvar reversed = students.Reverse();" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Sorting Operators",
+        "content": "Ordering query results.",
+        "language": "csharp",
+        "code": "List<Student> students = GetStudents();\n\n// OrderBy\nvar byAge = students.OrderBy(s => s.Age);\n\n// OrderByDescending\nvar byAgeDesc = students.OrderByDescending(s => s.Age);\n\n// ThenBy (secondary sort)\nvar multiSort = students\n  .OrderBy(s => s.Age)\n  .ThenBy(s => s.LastName);\n\n// Reverse\nvar reversed = students.Reverse();"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Joins" } },
-    { "type": "example", "data": { "title": "LINQ Joins", "content": "Inner, group, and outer joins.", "language": "csharp", "code": "var students = GetStudents();\nvar grades = GetGrades();\n\n// Inner join (method syntax)\nvar innerJoin = students.Join(\n  grades,\n  s => s.Id,\n  g => g.StudentId,\n  (s, g) => new { s.Name, g.Subject, g.Score }\n);\n\n// Group join\nvar groupJoin = students.GroupJoin(\n  grades,\n  s => s.Id,\n  g => g.StudentId,\n  (s, gs) => new { Student = s, Grades = gs }\n);\n\n// Left outer join\nvar leftJoin = students.GroupJoin(\n  grades,\n  s => s.Id,\n  g => g.StudentId,\n  (s, gs) => new { s, gs }\n).SelectMany(\n  x => x.gs.DefaultIfEmpty(),\n  (x, g) => new { x.s.Name, Subject = g?.Subject ?? \"N/A\" }\n);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "LINQ Joins",
+        "content": "Inner, group, and outer joins.",
+        "language": "csharp",
+        "code": "var students = GetStudents();\nvar grades = GetGrades();\n\n// Inner join (method syntax)\nvar innerJoin = students.Join(\n  grades,\n  s => s.Id,\n  g => g.StudentId,\n  (s, g) => new { s.Name, g.Subject, g.Score }\n);\n\n// Group join\nvar groupJoin = students.GroupJoin(\n  grades,\n  s => s.Id,\n  g => g.StudentId,\n  (s, gs) => new { Student = s, Grades = gs }\n);\n\n// Left outer join\nvar leftJoin = students.GroupJoin(\n  grades,\n  s => s.Id,\n  g => g.StudentId,\n  (s, gs) => new { s, gs }\n).SelectMany(\n  x => x.gs.DefaultIfEmpty(),\n  (x, g) => new { x.s.Name, Subject = g?.Subject ?? \"N/A\" }\n);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Grouping" } },
-    { "type": "example", "data": { "title": "GroupBy", "content": "Grouping data.", "language": "csharp", "code": "var students = GetStudents();\n\n// Basic group by\nvar byAge = students.GroupBy(s => s.Age);\n\n// GroupBy with aggregation\nvar byAgeCount = students\n  .GroupBy(s => s.Age)\n  .Select(g => new { Age = g.Key, Count = g.Count() });\n\n// GroupBy with result selector\nvar byAge2 = students.GroupBy(\n  s => s.Age,\n  s => s.Name,\n  (key, names) => new { Age = key, Names = names.ToList() }\n);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "GroupBy",
+        "content": "Grouping data.",
+        "language": "csharp",
+        "code": "var students = GetStudents();\n\n// Basic group by\nvar byAge = students.GroupBy(s => s.Age);\n\n// GroupBy with aggregation\nvar byAgeCount = students\n  .GroupBy(s => s.Age)\n  .Select(g => new { Age = g.Key, Count = g.Count() });\n\n// GroupBy with result selector\nvar byAge2 = students.GroupBy(\n  s => s.Age,\n  s => s.Name,\n  (key, names) => new { Age = key, Names = names.ToList() }\n);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Aggregation" } },
-    { "type": "example", "data": { "title": "Aggregate Functions", "content": "Aggregation operators.", "language": "csharp", "code": "List<int> numbers = new() { 1, 2, 3, 4, 5 };\n\nnumbers.Count();                    // 5\nnumbers.LongCount();                // 5L\nnumbers.Sum();                      // 15\nnumbers.Average();                  // 3\nnumbers.Min();                      // 1\nnumbers.Max();                      // 5\n\n// Custom aggregation\nnumbers.Aggregate((a, b) => a * b); // 120\n\n// Boolean tests\nnumbers.Any();                      // true\nnumbers.Any(n => n > 3);           // true\nnumbers.All(n => n > 0);           // true\nnumbers.Contains(3);               // true" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Aggregate Functions",
+        "content": "Aggregation operators.",
+        "language": "csharp",
+        "code": "List<int> numbers = new() { 1, 2, 3, 4, 5 };\n\nnumbers.Count();                    // 5\nnumbers.LongCount();                // 5L\nnumbers.Sum();                      // 15\nnumbers.Average();                  // 3\nnumbers.Min();                      // 1\nnumbers.Max();                      // 5\n\n// Custom aggregation\nnumbers.Aggregate((a, b) => a * b); // 120\n\n// Boolean tests\nnumbers.Any();                      // true\nnumbers.Any(n => n > 3);           // true\nnumbers.All(n => n > 0);           // true\nnumbers.Contains(3);               // true"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Set Operations" } },
-    { "type": "example", "data": { "title": "Set Operators", "content": "Set-based operations.", "language": "csharp", "code": "var set1 = new[] { 1, 2, 3, 4 };\nvar set2 = new[] { 3, 4, 5, 6 };\n\n// Distinct\nvar distinct = set1.Distinct();\n\n// Union (all unique)\nvar union = set1.Union(set2); // {1, 2, 3, 4, 5, 6}\n\n// Intersect (common)\nvar intersect = set1.Intersect(set2); // {3, 4}\n\n// Except (in first but not second)\nvar except = set1.Except(set2); // {1, 2}" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Set Operators",
+        "content": "Set-based operations.",
+        "language": "csharp",
+        "code": "var set1 = new[] { 1, 2, 3, 4 };\nvar set2 = new[] { 3, 4, 5, 6 };\n\n// Distinct\nvar distinct = set1.Distinct();\n\n// Union (all unique)\nvar union = set1.Union(set2); // {1, 2, 3, 4, 5, 6}\n\n// Intersect (common)\nvar intersect = set1.Intersect(set2); // {3, 4}\n\n// Except (in first but not second)\nvar except = set1.Except(set2); // {1, 2}"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Element Operators" } },
-    { "type": "example", "data": { "title": "Element Operators", "content": "Getting single elements.", "language": "csharp", "code": "List<int> numbers = new() { 1, 2, 3, 4, 5 };\n\nnumbers.First();                  // 1\nnumbers.First(n => n > 3);        // 4\nnumbers.FirstOrDefault();         // 1\nnumbers.FirstOrDefault(n => n > 10); // 0 (default)\n\nnumbers.Last();                   // 5\nnumbers.LastOrDefault();          // 5\n\nnumbers.Single(x => x == 3);      // 3 (exactly one)\nnumbers.SingleOrDefault(x => x == 3); // 3\n\nnumbers.ElementAt(2);             // 3\nnumbers.ElementAtOrDefault(10);   // 0" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Element Operators",
+        "content": "Getting single elements.",
+        "language": "csharp",
+        "code": "List<int> numbers = new() { 1, 2, 3, 4, 5 };\n\nnumbers.First();                  // 1\nnumbers.First(n => n > 3);        // 4\nnumbers.FirstOrDefault();         // 1\nnumbers.FirstOrDefault(n => n > 10); // 0 (default)\n\nnumbers.Last();                   // 5\nnumbers.LastOrDefault();          // 5\n\nnumbers.Single(x => x == 3);      // 3 (exactly one)\nnumbers.SingleOrDefault(x => x == 3); // 3\n\nnumbers.ElementAt(2);             // 3\nnumbers.ElementAtOrDefault(10);   // 0"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Partitioning" } },
-    { "type": "example", "data": { "title": "Skip & Take", "content": "Pagination with Skip and Take.", "language": "csharp", "code": "List<int> numbers = Enumerable.Range(1, 100).ToList();\n\n// Skip first N\nnumbers.Skip(10).ToList(); // [11, 12, ...]\n\n// Take first N\nnumbers.Take(5).ToList();  // [1, 2, 3, 4, 5]\n\n// Pagination (page 3, page size 10)\nint page = 3;\nint pageSize = 10;\nvar page3 = numbers\n  .Skip((page - 1) * pageSize)\n  .Take(pageSize)\n  .ToList();\n\n// SkipWhile / TakeWhile\nnumbers.SkipWhile(n => n < 5).Take(3).ToList();" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Skip & Take",
+        "content": "Pagination with Skip and Take.",
+        "language": "csharp",
+        "code": "List<int> numbers = Enumerable.Range(1, 100).ToList();\n\n// Skip first N\nnumbers.Skip(10).ToList(); // [11, 12, ...]\n\n// Take first N\nnumbers.Take(5).ToList();  // [1, 2, 3, 4, 5]\n\n// Pagination (page 3, page size 10)\nint page = 3;\nint pageSize = 10;\nvar page3 = numbers\n  .Skip((page - 1) * pageSize)\n  .Take(pageSize)\n  .ToList();\n\n// SkipWhile / TakeWhile\nnumbers.SkipWhile(n => n < 5).Take(3).ToList();"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Conversion" } },
-    { "type": "example", "data": { "title": "LINQ Conversions", "content": "Converting query results.", "language": "csharp", "code": "var query = Enumerable.Range(1, 5);\n\n// To collections\nList<int> list = query.ToList();\nint[] array = query.ToArray();\nDictionary<int, string> dict = students\n  .ToDictionary(s => s.Id, s => s.Name);\nILookup<char, string> lookup = students\n  .ToLookup(s => s.Name[0]);\n\n// Cast & OfType\nArrayList mixed = new() { 1, \"two\", 3 };\nvar ints = mixed.OfType<int>();\nvar objects = mixed.Cast<object>();\n\n// AsEnumerable / AsQueryable\nvar enumerable = dbSet.AsEnumerable();\nvar queryable = list.AsQueryable();" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "LINQ Conversions",
+        "content": "Converting query results.",
+        "language": "csharp",
+        "code": "var query = Enumerable.Range(1, 5);\n\n// To collections\nList<int> list = query.ToList();\nint[] array = query.ToArray();\nDictionary<int, string> dict = students\n  .ToDictionary(s => s.Id, s => s.Name);\nILookup<char, string> lookup = students\n  .ToLookup(s => s.Name[0]);\n\n// Cast & OfType\nArrayList mixed = new() { 1, \"two\", 3 };\nvar ints = mixed.OfType<int>();\nvar objects = mixed.Cast<object>();\n\n// AsEnumerable / AsQueryable\nvar enumerable = dbSet.AsEnumerable();\nvar queryable = list.AsQueryable();"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Generation" } },
-    { "type": "example", "data": { "title": "Generating Sequences", "content": "Creating sequences.", "language": "csharp", "code": "// Range\nEnumerable.Range(1, 10); // [1, 2, ..., 10]\n\n// Repeat\nEnumerable.Repeat(\"hello\", 3); // [\"hello\", \"hello\", \"hello\"]\n\n// Empty\nEnumerable.Empty<int>();\n\n// DefaultIfEmpty\nnew int[] {}.DefaultIfEmpty(); // [0]\nnew int[] { 1, 2 }.DefaultIfEmpty(99); // [1, 2]" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Generating Sequences",
+        "content": "Creating sequences.",
+        "language": "csharp",
+        "code": "// Range\nEnumerable.Range(1, 10); // [1, 2, ..., 10]\n\n// Repeat\nEnumerable.Repeat(\"hello\", 3); // [\"hello\", \"hello\", \"hello\"]\n\n// Empty\nEnumerable.Empty<int>();\n\n// DefaultIfEmpty\nnew int[] {}.DefaultIfEmpty(); // [0]\nnew int[] { 1, 2 }.DefaultIfEmpty(99); // [1, 2]"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Deferred Execution" } },
-    { "type": "example", "data": { "title": "Deferred Execution", "content": "Understanding query evaluation.", "language": "csharp", "code": "List<int> numbers = new() { 1, 2, 3 };\n\n// Query is not executed yet\nIEnumerable<int> query = numbers.Where(n => n > 1);\n\n// Modify source\nnumbers.Add(4);\nnumbers.Add(5);\n\n// Now execute\nvar result = query.ToList(); // [2, 3, 4, 5]\n\n// ToList forces immediate execution\nList<int> cached = query.ToList();" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Deferred Execution",
+        "content": "Understanding query evaluation.",
+        "language": "csharp",
+        "code": "List<int> numbers = new() { 1, 2, 3 };\n\n// Query is not executed yet\nIEnumerable<int> query = numbers.Where(n => n > 1);\n\n// Modify source\nnumbers.Add(4);\nnumbers.Add(5);\n\n// Now execute\nvar result = query.ToList(); // [2, 3, 4, 5]\n\n// ToList forces immediate execution\nList<int> cached = query.ToList();"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Custom Operators" } },
-    { "type": "example", "data": { "title": "Extension Methods", "content": "Writing custom LINQ operators.", "language": "csharp", "code": "public static class LinqExtensions\n{\n  public static IEnumerable<T> WhereNot<T>(\n    this IEnumerable<T> source,\n    Func<T, bool> predicate\n  ) {\n    return source.Where(item => !predicate(item));\n  }\n\n  public static IEnumerable<T> TakeLast<T>(\n    this IEnumerable<T> source, int count\n  ) {\n    return source.Skip(Math.Max(0, source.Count() - count));\n  }\n}\n\n// Usage\nvar result = numbers.WhereNot(n => n < 5);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Extension Methods",
+        "content": "Writing custom LINQ operators.",
+        "language": "csharp",
+        "code": "public static class LinqExtensions\n{\n  public static IEnumerable<T> WhereNot<T>(\n    this IEnumerable<T> source,\n    Func<T, bool> predicate\n  ) {\n    return source.Where(item => !predicate(item));\n  }\n\n  public static IEnumerable<T> TakeLast<T>(\n    this IEnumerable<T> source, int count\n  ) {\n    return source.Skip(Math.Max(0, source.Count() - count));\n  }\n}\n\n// Usage\nvar result = numbers.WhereNot(n => n < 5);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Quantifiers" } },
-    { "type": "example", "data": { "title": "Any, All, Contains", "content": "Checking conditions across sequences.", "language": "csharp", "code": "List<int> numbers = new() { 1, 2, 3, 4, 5 };\n\nnumbers.Any();                    // true (any elements)\nnumbers.Any(n => n > 3);         // true\nnumbers.Any(n => n > 10);        // false\n\nnumbers.All(n => n > 0);         // true\nnumbers.All(n => n > 2);         // false\n\nnumbers.Contains(3);             // true\nnumbers.Contains(10);            // false\n\n// SequenceEqual\nvar arr1 = new[] { 1, 2, 3 };\nvar arr2 = new[] { 1, 2, 3 };\narr1.SequenceEqual(arr2);        // true" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Any, All, Contains",
+        "content": "Checking conditions across sequences.",
+        "language": "csharp",
+        "code": "List<int> numbers = new() { 1, 2, 3, 4, 5 };\n\nnumbers.Any();                    // true (any elements)\nnumbers.Any(n => n > 3);         // true\nnumbers.Any(n => n > 10);        // false\n\nnumbers.All(n => n > 0);         // true\nnumbers.All(n => n > 2);         // false\n\nnumbers.Contains(3);             // true\nnumbers.Contains(10);            // false\n\n// SequenceEqual\nvar arr1 = new[] { 1, 2, 3 };\nvar arr2 = new[] { 1, 2, 3 };\narr1.SequenceEqual(arr2);        // true"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Zip Operator" } },
-    { "type": "example", "data": { "title": "Zip", "content": "Combine two sequences element by element.", "language": "csharp", "code": "var letters = new[] { \"a\", \"b\", \"c\" };\nvar numbers2 = new[] { 1, 2, 3 };\n\nvar combined = letters.Zip(numbers2, (l, n) => $\"{l}:{n}\");\n// [\"a:1\", \"b:2\", \"c:3\"]\n\n// Stops at shorter sequence\nvar result = letters.Zip(\n  Enumerable.Range(1, 10),\n  (l, n) => new { Letter = l, Number = n }\n);" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Zip",
+        "content": "Combine two sequences element by element.",
+        "language": "csharp",
+        "code": "var letters = new[] { \"a\", \"b\", \"c\" };\nvar numbers2 = new[] { 1, 2, 3 };\n\nvar combined = letters.Zip(numbers2, (l, n) => $\"{l}:{n}\");\n// [\"a:1\", \"b:2\", \"c:3\"]\n\n// Stops at shorter sequence\nvar result = letters.Zip(\n  Enumerable.Range(1, 10),\n  (l, n) => new { Letter = l, Number = n }\n);"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Aggregate with Seed" } },
-    { "type": "example", "data": { "title": "Custom Aggregation", "content": "Aggregate with seed value.", "language": "csharp", "code": "List<int> numbers = new() { 1, 2, 3, 4, 5 };\n\n// Sum with Aggregate\nint sum = numbers.Aggregate((a, b) => a + b); // 15\n\n// Sum with seed\nint sumWithSeed = numbers.Aggregate(100, (a, b) => a + b); // 115\n\n// Average of products\nnumbers.Aggregate(\n  1,\n  (acc, n) => acc * n\n); // 120 (1*2*3*4*5)" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Custom Aggregation",
+        "content": "Aggregate with seed value.",
+        "language": "csharp",
+        "code": "List<int> numbers = new() { 1, 2, 3, 4, 5 };\n\n// Sum with Aggregate\nint sum = numbers.Aggregate((a, b) => a + b); // 15\n\n// Sum with seed\nint sumWithSeed = numbers.Aggregate(100, (a, b) => a + b); // 115\n\n// Average of products\nnumbers.Aggregate(\n  1,\n  (acc, n) => acc * n\n); // 120 (1*2*3*4*5)"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "IEnumerable vs IQueryable" } },
-    { "type": "example", "data": { "title": "IEnumerable vs IQueryable", "content": "In-memory vs remote query execution.", "language": "csharp", "code": "// IEnumerable - in-memory, deferred execution\nIEnumerable<int> inMemory = numbers.Where(n => n > 2);\n\n// IQueryable - remote execution (e.g., Entity Framework)\nIQueryable<Product> fromDb = dbContext.Products\n  .Where(p => p.Price > 100); // translates to SQL\n\n// Key difference: IQueryable builds expression tree\n// that can be translated to remote query language (SQL)" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "IEnumerable vs IQueryable",
+        "content": "In-memory vs remote query execution.",
+        "language": "csharp",
+        "code": "// IEnumerable - in-memory, deferred execution\nIEnumerable<int> inMemory = numbers.Where(n => n > 2);\n\n// IQueryable - remote execution (e.g., Entity Framework)\nIQueryable<Product> fromDb = dbContext.Products\n  .Where(p => p.Price > 100); // translates to SQL\n\n// Key difference: IQueryable builds expression tree\n// that can be translated to remote query language (SQL)"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Expression Trees" } },
-    { "type": "example", "data": { "title": "Expression<Func<T>>", "content": "LINQ expression trees for dynamic queries.", "language": "csharp", "code": "using System.Linq.Expressions;\n\n// Expression tree\nExpression<Func<Product, bool>> expr = p => p.Price > 100;\n\n// Parts of expression\nvar param = expr.Parameters[0]; // p\nvar body = expr.Body;            // p.Price > 100\n\n// Compile to delegate\nFunc<Product, bool> compiled = expr.Compile();\nvar product = new Product { Price = 150 };\nbool result = compiled(product); // true" } },
+    {
+      "type": "example",
+      "data": {
+        "title": "Expression<Func<T>>",
+        "content": "LINQ expression trees for dynamic queries.",
+        "language": "csharp",
+        "code": "using System.Linq.Expressions;\n\n// Expression tree\nExpression<Func<Product, bool>> expr = p => p.Price > 100;\n\n// Parts of expression\nvar param = expr.Parameters[0]; // p\nvar body = expr.Body;            // p.Price > 100\n\n// Compile to delegate\nFunc<Product, bool> compiled = expr.Compile();\nvar product = new Product { Price = 150 };\nbool result = compiled(product); // true"
+      }
+    },
     { "type": "heading", "data": { "level": 2, "text": "Parallel LINQ (PLINQ)" } },
-    { "type": "example", "data": { "title": "PLINQ", "content": "Parallel query execution for CPU-bound operations.", "language": "csharp", "code": "List<int> numbers = Enumerable.Range(1, 1000000).ToList();\n\n// Parallel LINQ\nvar result = numbers\n  .AsParallel()\n  .Where(n => IsPrime(n))\n  .Select(n => n * n)\n  .ToList();\n\n// With degree of parallelism\nvar result2 = numbers\n  .AsParallel()\n  .WithDegreeOfParallelism(Environment.ProcessorCount)\n  .Where(n => n > 100)\n  .ToList();" } }
+    {
+      "type": "example",
+      "data": {
+        "title": "PLINQ",
+        "content": "Parallel query execution for CPU-bound operations.",
+        "language": "csharp",
+        "code": "List<int> numbers = Enumerable.Range(1, 1000000).ToList();\n\n// Parallel LINQ\nvar result = numbers\n  .AsParallel()\n  .Where(n => IsPrime(n))\n  .Select(n => n * n)\n  .ToList();\n\n// With degree of parallelism\nvar result2 = numbers\n  .AsParallel()\n  .WithDegreeOfParallelism(Environment.ProcessorCount)\n  .Where(n => n > 100)\n  .ToList();"
+      }
+    }
   ],
   "relatedLessons": [],
   "furtherReading": []

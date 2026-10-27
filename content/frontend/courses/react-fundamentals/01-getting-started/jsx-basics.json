@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "jsx",
-    "syntax",
-    "javascript"
-  ],
+  "tags": ["react", "jsx", "syntax", "javascript"],
   "blocks": [
     {
       "type": "paragraph",
@@ -81,47 +76,15 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "HTML",
-          "JSX",
-          "Reason"
-        ],
+        "headers": ["HTML", "JSX", "Reason"],
         "rows": [
-          [
-            "class",
-            "className",
-            "class is a reserved word in JavaScript"
-          ],
-          [
-            "for",
-            "htmlFor",
-            "for is a reserved word in JavaScript"
-          ],
-          [
-            "onclick",
-            "onClick",
-            "JSX uses camelCase for events"
-          ],
-          [
-            "onchange",
-            "onChange",
-            "JSX uses camelCase for events"
-          ],
-          [
-            "tabindex",
-            "tabIndex",
-            "JSX uses camelCase attributes"
-          ],
-          [
-            "<br>",
-            "<br />",
-            "All tags must be closed"
-          ],
-          [
-            "style=\"color:red\"",
-            "style={{color:'red'}}",
-            "Style is an object in JSX"
-          ]
+          ["class", "className", "class is a reserved word in JavaScript"],
+          ["for", "htmlFor", "for is a reserved word in JavaScript"],
+          ["onclick", "onClick", "JSX uses camelCase for events"],
+          ["onchange", "onChange", "JSX uses camelCase for events"],
+          ["tabindex", "tabIndex", "JSX uses camelCase attributes"],
+          ["<br>", "<br />", "All tags must be closed"],
+          ["style=\"color:red\"", "style={{color:'red'}}", "Style is an object in JSX"]
         ]
       }
     },

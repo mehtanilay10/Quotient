@@ -7,11 +7,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 33,
-  "tags": [
-    "web-api",
-    "authorization",
-    "roles"
-  ],
+  "tags": ["web-api", "authorization", "roles"],
   "blocks": [
     {
       "type": "paragraph",
@@ -37,22 +33,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Authorization Approach",
-          "When to Use",
-          "Example"
-        ],
+        "headers": ["Authorization Approach", "When to Use", "Example"],
         "rows": [
           [
             "Policies",
             "Centralized reusable rules",
             "options.AddPolicy(\"AdminOnly\", p => p.RequireRole(\"Admin\"))"
           ],
-          [
-            "Roles",
-            "Simple group-based checks",
-            "[Authorize(Role = \"Admin\")]"
-          ],
+          ["Roles", "Simple group-based checks", "[Authorize(Role = \"Admin\")]"],
           [
             "Custom Requirements",
             "Complex multi-condition rules",
@@ -101,26 +89,14 @@
           {
             "title": "Policy-Based",
             "description": "Centralized rules that can be reused across controllers",
-            "pros": [
-              "Maintainable",
-              "Testable",
-              "Reusable"
-            ],
-            "cons": [
-              "More setup required"
-            ]
+            "pros": ["Maintainable", "Testable", "Reusable"],
+            "cons": ["More setup required"]
           },
           {
             "title": "Role-Based",
             "description": "Simple checks against user role claims",
-            "pros": [
-              "Quick to implement",
-              "Easy to understand"
-            ],
-            "cons": [
-              "Hard to scale",
-              "Roles must be predefined"
-            ]
+            "pros": ["Quick to implement", "Easy to understand"],
+            "cons": ["Hard to scale", "Roles must be predefined"]
           }
         ]
       }
@@ -176,8 +152,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "jwt-basics"
-  ],
+  "relatedLessons": ["jwt-basics"],
   "courseSlug": "aspnet-core-web-api"
 }

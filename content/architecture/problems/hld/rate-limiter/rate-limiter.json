@@ -235,10 +235,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "url-shortener",
-    "payment-gateway-hld"
-  ],
+  "relatedLessons": ["url-shortener", "payment-gateway-hld"],
   "furtherReading": [
     {
       "title": "Scaling Your API with Rate Limiters — Stripe Engineering",

@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 22,
-  "tags": [
-    "embeddings",
-    "vectors",
-    "similarity",
-    "azure-ai-search",
-    "pgvector"
-  ],
+  "tags": ["embeddings", "vectors", "similarity", "azure-ai-search", "pgvector"],
   "blocks": [
     {
       "type": "paragraph",
@@ -62,14 +56,8 @@
         {
           "title": "Azure AI Search",
           "description": "Managed search service with vector, keyword, and hybrid search capabilities.",
-          "pros": [
-            "Hybrid search built in",
-            "Enterprise features like security and scaling"
-          ],
-          "cons": [
-            "Cloud-only",
-            "Extra Azure resource to manage"
-          ]
+          "pros": ["Hybrid search built in", "Enterprise features like security and scaling"],
+          "cons": ["Cloud-only", "Extra Azure resource to manage"]
         },
         {
           "title": "PostgreSQL with pgvector",
@@ -78,30 +66,18 @@
             "Single database for vectors and business data",
             "Open-source and self-hostable"
           ],
-          "cons": [
-            "Manual scaling and tuning",
-            "Hybrid search requires extra work"
-          ]
+          "cons": ["Manual scaling and tuning", "Hybrid search requires extra work"]
         },
         {
           "title": "Qdrant",
           "description": "Open-source vector database with filtering, payloads, and a managed cloud option.",
-          "pros": [
-            "Great filtering support",
-            "Useful payload metadata model"
-          ],
-          "cons": [
-            "Additional infrastructure",
-            ".NET client is usable but smaller community"
-          ]
+          "pros": ["Great filtering support", "Useful payload metadata model"],
+          "cons": ["Additional infrastructure", ".NET client is usable but smaller community"]
         },
         {
           "title": "Redis with vector search",
           "description": "Use Redis Stack vector similarity for caching plus retrieval.",
-          "pros": [
-            "Fast for hot data",
-            "Good for caching retrieved context"
-          ],
+          "pros": ["Fast for hot data", "Good for caching retrieved context"],
           "cons": [
             "Not ideal as the primary long-term store",
             "Memory cost grows with dataset size"
@@ -146,10 +122,7 @@
       "expectedOutcome": "You should see higher similarity for sentences with similar meaning, confirming the core idea behind vector search."
     }
   ],
-  "relatedLessons": [
-    "rag-concepts-and-benefits",
-    "chunking-and-embedding-documents"
-  ],
+  "relatedLessons": ["rag-concepts-and-benefits", "chunking-and-embedding-documents"],
   "technology": null,
   "furtherReading": [
     {

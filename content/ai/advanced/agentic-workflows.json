@@ -5,14 +5,8 @@
   "description": "How AI agents plan, use tools, manage memory, and chain actions. ReAct, CoT, and agent orchestration patterns.",
   "category": "agents",
   "difficulty": "advanced",
-  "prerequisites": [
-    "how-agents-work",
-    "what-is-tool-calling"
-  ],
-  "relatedConcepts": [
-    "mcp-explained",
-    "rag-architecture"
-  ],
+  "prerequisites": ["how-agents-work", "what-is-tool-calling"],
+  "relatedConcepts": ["mcp-explained", "rag-architecture"],
   "blocks": [
     {
       "type": "paragraph",
@@ -133,12 +127,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Memory Type",
-          "Scope",
-          "Storage",
-          "Example"
-        ],
+        "headers": ["Memory Type", "Scope", "Storage", "Example"],
         "rows": [
           [
             "Working Memory",

@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 14,
-  "tags": [
-    "limitations",
-    "safety",
-    "expectations",
-    "responsible-use"
-  ],
+  "tags": ["limitations", "safety", "expectations", "responsible-use"],
   "blocks": [
     {
       "type": "paragraph",
@@ -40,11 +35,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Limitation",
-          "What it means in practice",
-          "How to mitigate"
-        ],
+        "headers": ["Limitation", "What it means in practice", "How to mitigate"],
         "rows": [
           [
             "Training cutoff",
@@ -191,11 +182,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Limitation type",
-          "Real-world signal",
-          "Process safeguard"
-        ],
+        "headers": ["Limitation type", "Real-world signal", "Process safeguard"],
         "rows": [
           [
             "Reasoning gap",
@@ -216,10 +203,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "critical-evaluation",
-    "ai-hallucination-deep-dive"
-  ],
+  "relatedLessons": ["critical-evaluation", "ai-hallucination-deep-dive"],
   "furtherReading": [
     {
       "title": "Hallucination (Artificial Intelligence)",

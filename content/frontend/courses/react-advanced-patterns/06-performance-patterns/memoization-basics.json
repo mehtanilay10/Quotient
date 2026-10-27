@@ -8,18 +8,9 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "memo",
-    "useMemo",
-    "useCallback",
-    "performance",
-    "re-renders"
-  ],
+  "tags": ["memo", "useMemo", "useCallback", "performance", "re-renders"],
   "prerequisites": [],
-  "relatedLessons": [
-    "code-splitting-lazy",
-    "render-optimization"
-  ],
+  "relatedLessons": ["code-splitting-lazy", "render-optimization"],
   "furtherReading": [
     {
       "title": "React Docs: Optimizing Performance",
@@ -221,11 +212,7 @@
           {
             "title": "React.memo",
             "description": "Wraps a component to skip re-renders when props are shallowly equal.",
-            "pros": [
-              "Zero hook overhead",
-              "Simple to apply",
-              "Works at component boundary"
-            ],
+            "pros": ["Zero hook overhead", "Simple to apply", "Works at component boundary"],
             "cons": [
               "Shallow comparison only",
               "Breaks with new object/array refs",
@@ -240,11 +227,7 @@
               "Stabilizes derived data",
               "Works inside components"
             ],
-            "cons": [
-              "Memory overhead",
-              "Comparison cost for deps",
-              "Overuse can hurt performance"
-            ]
+            "cons": ["Memory overhead", "Comparison cost for deps", "Overuse can hurt performance"]
           },
           {
             "title": "useCallback",
@@ -254,11 +237,7 @@
               "Pairs with React.memo",
               "Prevents child re-renders"
             ],
-            "cons": [
-              "Does not cache return value",
-              "Easy to overuse",
-              "Adds mental complexity"
-            ]
+            "cons": ["Does not cache return value", "Easy to overuse", "Adds mental complexity"]
           }
         ]
       }
@@ -266,12 +245,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Hook / API",
-          "Memoizes",
-          "Best For",
-          "Caveat"
-        ],
+        "headers": ["Hook / API", "Memoizes", "Best For", "Caveat"],
         "rows": [
           [
             "React.memo",
@@ -279,12 +253,7 @@
             "Preventing child re-renders",
             "Only shallow prop comparison"
           ],
-          [
-            "useMemo",
-            "Computed value",
-            "Expensive derived data",
-            "Memory + comparison cost"
-          ],
+          ["useMemo", "Computed value", "Expensive derived data", "Memory + comparison cost"],
           [
             "useCallback",
             "Function reference",

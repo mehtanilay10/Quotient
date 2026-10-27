@@ -8,12 +8,7 @@
   "order": 15,
   "difficulty": "advanced",
   "estimatedMinutes": 30,
-  "tags": [
-    "ef-core",
-    "dapper",
-    "sql",
-    "csharp"
-  ],
+  "tags": ["ef-core", "dapper", "sql", "csharp"],
   "blocks": [
     {
       "type": "paragraph",
@@ -216,10 +211,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "sql-vs-nosql-decision-framework",
-    "synchronous-vs-asynchronous-workflows"
-  ],
+  "relatedLessons": ["sql-vs-nosql-decision-framework", "synchronous-vs-asynchronous-workflows"],
   "furtherReading": [
     {
       "title": "EF Core Performance Best Practices",

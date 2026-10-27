@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import dynamic from 'next/dynamic';
-import Image from 'next/image';
-import { useState } from 'react';
-import { CalloutBox } from '@/components/ui/CalloutBox';
-import { cn, computeHeadingAnchors } from '@/lib/utils';
-import type { ContentBlock } from '@/types';
-import { isContentBlock, isLesson, isModule } from '@/lib/typeGuards';
-import { ImageModal } from './ImageModal';
-import { CustomCodeBlock } from './CustomCodeBlock';
+import dynamic from "next/dynamic";
+import Image from "next/image";
+import { useState } from "react";
+import { CalloutBox } from "@/components/ui/CalloutBox";
+import { cn, computeHeadingAnchors } from "@/lib/utils";
+import type { ContentBlock } from "@/types";
+import { isContentBlock, isLesson, isModule } from "@/lib/typeGuards";
+import { ImageModal } from "./ImageModal";
+import { CustomCodeBlock } from "./CustomCodeBlock";
 
 const INLINE_MARKDOWN_REGEX = /(\*\*[^*]+\*\*|~~[^~]+~~|`[^`]+`|\[[^\]]+\]\([^)]+\))/g;
 
@@ -17,7 +17,11 @@ function isUnsafeUrl(url: string | undefined): boolean {
   const trimmed = url.trim();
   if (!trimmed) return true;
   const lower = trimmed.toLowerCase();
-  if (lower.startsWith('javascript:') || lower.startsWith('data:') || lower.startsWith('vbscript:')) {
+  if (
+    lower.startsWith("javascript:") ||
+    lower.startsWith("data:") ||
+    lower.startsWith("vbscript:")
+  ) {
     return true;
   }
   return false;
@@ -27,28 +31,36 @@ function renderInlineMarkdown(text: string | undefined | null): React.ReactNode[
   if (!text) return [];
   const tokens = text.split(INLINE_MARKDOWN_REGEX);
   return tokens.map((token, i) => {
-    if (token.startsWith('**') && token.endsWith('**')) {
-      return <strong key={i} className="font-semibold text-fg-default">{token.slice(2, -2)}</strong>;
+    if (token.startsWith("**") && token.endsWith("**")) {
+      return (
+        <strong key={i} className="font-semibold text-fg-default">
+          {token.slice(2, -2)}
+        </strong>
+      );
     }
-    if (token.startsWith('~~') && token.endsWith('~~')) {
-      return <del key={i} className="text-fg-muted line-through">{token.slice(2, -2)}</del>;
+    if (token.startsWith("~~") && token.endsWith("~~")) {
+      return (
+        <del key={i} className="text-fg-muted line-through">
+          {token.slice(2, -2)}
+        </del>
+      );
     }
-    if (token.startsWith('`') && token.endsWith('`') && token.length > 1) {
+    if (token.startsWith("`") && token.endsWith("`") && token.length > 1) {
       return <code key={i}>{token.slice(1, -1)}</code>;
     }
-    if (token.startsWith('[') && token.includes('](')) {
+    if (token.startsWith("[") && token.includes("](")) {
       const match = token.match(/\[([^\]]+)\]\(([^)]+)\)/);
       if (match) {
         const href = match[2];
         if (isUnsafeUrl(href)) {
           return <span key={i}>{match[1]}</span>;
         }
-        const isExternal = href.startsWith('http');
+        const isExternal = href.startsWith("http");
         return (
           <a
             key={i}
             href={href}
-            {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             className="text-accent-fg underline underline-offset-2 hover:text-accent-fg/80"
           >
             {match[1]}
@@ -61,23 +73,24 @@ function renderInlineMarkdown(text: string | undefined | null): React.ReactNode[
 }
 
 // Mermaid is loaded dynamically (client-side only)
-const MermaidRenderer = dynamic(
-  () => import('./MermaidRenderer').then((m) => m.MermaidRenderer),
-  { ssr: false, loading: () => <div className="h-32 animate-pulse rounded-lg bg-canvas-subtle" /> }
-);
+const MermaidRenderer = dynamic(() => import("./MermaidRenderer").then((m) => m.MermaidRenderer), {
+  ssr: false,
+  loading: () => <div className="h-32 animate-pulse rounded-lg bg-canvas-subtle" />,
+});
 
 interface ContentBlockRendererProps {
   blocks: ContentBlock[];
   className?: string;
 }
 
-function ImageBlock({ block }: { block: ContentBlock & { type: 'image' } }) {
+function ImageBlock({ block }: { block: ContentBlock & { type: "image" } }) {
   const [isOpen, setIsOpen] = useState(false);
   const [broken, setBroken] = useState(false);
-  const isRemote = block.data.src.startsWith('http://') || block.data.src.startsWith('https://');
-  const isDataUrl = block.data.src.startsWith('data:');
+  const isRemote = block.data.src.startsWith("http://") || block.data.src.startsWith("https://");
+  const isDataUrl = block.data.src.startsWith("data:");
   // Try to optimize local images; keep unoptimized for unknown remote hosts or when explicitly needed
-  const shouldOptimize = !isDataUrl && (!isRemote || block.data.src.includes('sqlservertutorial.net'));
+  const shouldOptimize =
+    !isDataUrl && (!isRemote || block.data.src.includes("sqlservertutorial.net"));
 
   return (
     <figure className="my-6 flex flex-col items-center">
@@ -88,7 +101,9 @@ function ImageBlock({ block }: { block: ContentBlock & { type: 'image' } }) {
         aria-label={`Click to enlarge ${block.data.alt}`}
       >
         {broken ? (
-          <div className="flex h-32 w-32 items-center justify-center rounded bg-canvas text-xs text-fg-muted">Image unavailable</div>
+          <div className="flex h-32 w-32 items-center justify-center rounded bg-canvas text-xs text-fg-muted">
+            Image unavailable
+          </div>
         ) : (
           <Image
             src={block.data.src}
@@ -128,16 +143,49 @@ function looksLikeCode(text: string): boolean {
   if (!text) return false;
   const trimmed = text.trim();
   if (!trimmed) return false;
-  const lines = trimmed.split('\n');
+  const lines = trimmed.split("\n");
   if (lines.length < 2) return false;
-  const codeIndicators = ['{', '}', '(', ')', ';', 'public', 'private', 'protected', 'class ', 'def ', 'function ', 'import ', 'from ', 'return ', 'const ', 'let ', 'var ', 'async ', 'await ', '=>', '/*', '//', '#', 'SELECT', 'FROM', 'WHERE', 'INSERT', 'UPDATE', 'DELETE'];
+  const codeIndicators = [
+    "{",
+    "}",
+    "(",
+    ")",
+    ";",
+    "public",
+    "private",
+    "protected",
+    "class ",
+    "def ",
+    "function ",
+    "import ",
+    "from ",
+    "return ",
+    "const ",
+    "let ",
+    "var ",
+    "async ",
+    "await ",
+    "=>",
+    "/*",
+    "//",
+    "#",
+    "SELECT",
+    "FROM",
+    "WHERE",
+    "INSERT",
+    "UPDATE",
+    "DELETE",
+  ];
   return codeIndicators.some((indicator) => trimmed.includes(indicator));
 }
 
-function renderExampleBlock(block: ContentBlock & { type: 'example' }, idx: number): React.ReactNode {
+function renderExampleBlock(
+  block: ContentBlock & { type: "example" },
+  idx: number
+): React.ReactNode {
   const { title, content, code, language } = block.data;
-  const effectiveCode = code ?? (content && looksLikeCode(content) ? content : '');
-  const effectiveContent = code && content ? content : (effectiveCode ? '' : content);
+  const effectiveCode = code ?? (content && looksLikeCode(content) ? content : "");
+  const effectiveContent = code && content ? content : effectiveCode ? "" : content;
 
   return (
     <div
@@ -145,9 +193,7 @@ function renderExampleBlock(block: ContentBlock & { type: 'example' }, idx: numb
       className="my-3 rounded-xl border border-border bg-canvas-subtle overflow-hidden"
     >
       <div className="border-b border-border bg-canvas-inset px-4 py-2">
-        <span className="text-xs font-semibold text-fg-muted">
-          📌 {title || 'Example'}
-        </span>
+        <span className="text-xs font-semibold text-fg-muted">📌 {title || "Example"}</span>
       </div>
       <div className="p-3">
         {effectiveContent && !effectiveCode && (
@@ -158,18 +204,19 @@ function renderExampleBlock(block: ContentBlock & { type: 'example' }, idx: numb
         {effectiveContent && effectiveCode && (
           <p className="mb-3 text-sm text-fg-default leading-relaxed">{effectiveContent}</p>
         )}
-        {effectiveCode && (
-          <CustomCodeBlock code={effectiveCode} language={language} />
-        )}
+        {effectiveCode && <CustomCodeBlock code={effectiveCode} language={language} />}
       </div>
     </div>
   );
 }
 
-function renderSolutionBlock(block: ContentBlock & { type: 'solution' }, idx: number): React.ReactNode {
+function renderSolutionBlock(
+  block: ContentBlock & { type: "solution" },
+  idx: number
+): React.ReactNode {
   const { title, content, code, language } = block.data;
-  const effectiveCode = code ?? (content && looksLikeCode(content) ? content : '');
-  const effectiveContent = code && content ? content : (effectiveCode ? '' : content);
+  const effectiveCode = code ?? (content && looksLikeCode(content) ? content : "");
+  const effectiveContent = code && content ? content : effectiveCode ? "" : content;
 
   return (
     <div
@@ -177,49 +224,49 @@ function renderSolutionBlock(block: ContentBlock & { type: 'solution' }, idx: nu
       className="my-3 rounded-xl border border-success-muted bg-success-subtle/50 overflow-hidden"
     >
       <div className="border-b border-success-muted bg-success-subtle px-4 py-2">
-        <span className="text-xs font-semibold text-success-fg">
-          ✅ {title ?? 'Solution'}
-        </span>
+        <span className="text-xs font-semibold text-success-fg">✅ {title ?? "Solution"}</span>
       </div>
       <div className="p-3">
         {effectiveContent && (
           <p className="mb-3 text-sm text-fg-default leading-relaxed">{effectiveContent}</p>
         )}
-        {effectiveCode && (
-          <CustomCodeBlock code={effectiveCode} language={language} />
-        )}
+        {effectiveCode && <CustomCodeBlock code={effectiveCode} language={language} />}
       </div>
     </div>
   );
 }
 
-function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<number, string>): React.ReactNode {
+function renderBlock(
+  block: ContentBlock,
+  idx: number,
+  headingAnchors?: Map<number, string>
+): React.ReactNode {
   switch (block.type) {
-    case 'paragraph':
+    case "paragraph":
       return (
         <p key={idx} className="mb-4 leading-relaxed text-fg-default">
           {renderInlineMarkdown(block.data.text)}
         </p>
       );
 
-    case 'heading': {
-      if (!isContentBlock(block) || block.type !== 'heading') {
+    case "heading": {
+      if (!isContentBlock(block) || block.type !== "heading") {
         return null;
       }
       const level = block.data.level;
       const text = block.data.text;
       const anchor = headingAnchors?.get(idx) ?? block.data.anchor;
       if (!level || !text) return null;
-      const Tag = `h${level}` as 'h2' | 'h3' | 'h4';
-      const sizeMap = { 2: 'text-xl', 3: 'text-lg', 4: 'text-base' };
+      const Tag = `h${level}` as "h2" | "h3" | "h4";
+      const sizeMap = { 2: "text-xl", 3: "text-lg", 4: "text-base" };
       return (
         <Tag
           key={idx}
           id={anchor}
           className={cn(
-            'mt-8 mb-3 scroll-mt-20 font-semibold text-fg-default',
+            "mt-8 mb-3 scroll-mt-20 font-semibold text-fg-default",
             sizeMap[level],
-            level === 2 && 'border-b border-border pb-2'
+            level === 2 && "border-b border-border pb-2"
           )}
         >
           {text}
@@ -227,7 +274,7 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
       );
     }
 
-    case 'bullet-list':
+    case "bullet-list":
       return (
         <div key={idx} className="mb-4">
           {block.data.title && (
@@ -243,7 +290,7 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
         </div>
       );
 
-    case 'numbered-list':
+    case "numbered-list":
       return (
         <div key={idx} className="mb-4">
           {block.data.title && (
@@ -259,7 +306,7 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
         </div>
       );
 
-    case 'callout':
+    case "callout":
       return (
         <CalloutBox
           key={idx}
@@ -270,20 +317,21 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
         />
       );
 
-    case 'quote':
+    case "quote":
       return (
-        <blockquote
-          key={idx}
-          className="my-4 border-l-4 border-accent-fg pl-4 py-1"
-        >
-          <p className="text-fg-default italic leading-relaxed">&ldquo;{renderInlineMarkdown(block.data.text)}&rdquo;</p>
+        <blockquote key={idx} className="my-4 border-l-4 border-accent-fg pl-4 py-1">
+          <p className="text-fg-default italic leading-relaxed">
+            &ldquo;{renderInlineMarkdown(block.data.text)}&rdquo;
+          </p>
           {block.data.attribution && (
-            <footer className="mt-1 text-xs text-fg-muted">— {renderInlineMarkdown(block.data.attribution)}</footer>
+            <footer className="mt-1 text-xs text-fg-muted">
+              — {renderInlineMarkdown(block.data.attribution)}
+            </footer>
           )}
         </blockquote>
       );
 
-    case 'key-terms':
+    case "key-terms":
       return (
         <div key={idx} className="my-4 rounded-xl border border-border bg-canvas-subtle p-4">
           <h4 className="mb-3 text-xs font-semibold uppercase tracking-wider text-fg-subtle">
@@ -293,14 +341,16 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
             {block.data.terms.map((term, i) => (
               <div key={i}>
                 <dt className="font-semibold text-fg-default text-sm">{term.term}</dt>
-                <dd className="mt-0.5 text-sm text-fg-muted leading-relaxed">{renderInlineMarkdown(term.definition)}</dd>
+                <dd className="mt-0.5 text-sm text-fg-muted leading-relaxed">
+                  {renderInlineMarkdown(term.definition)}
+                </dd>
               </div>
             ))}
           </dl>
         </div>
       );
 
-    case 'table':
+    case "table":
       return (
         <div key={idx} className="my-4 overflow-x-auto rounded-lg border border-border">
           <table className="min-w-full text-sm">
@@ -322,8 +372,8 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
                 <tr
                   key={ri}
                   className={cn(
-                    'transition-colors',
-                    ri % 2 === 0 ? 'bg-canvas' : 'bg-canvas-subtle'
+                    "transition-colors",
+                    ri % 2 === 0 ? "bg-canvas" : "bg-canvas-subtle"
                   )}
                 >
                   {row.map((cell, ci) => (
@@ -338,33 +388,35 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
         </div>
       );
 
-    case 'example':
-      return renderExampleBlock(block as ContentBlock & { type: 'example' }, idx);
+    case "example":
+      return renderExampleBlock(block as ContentBlock & { type: "example" }, idx);
 
-    case 'code':
+    case "code":
       return (
         <div key={idx} className="my-4">
-          {block.data.caption && (
-            <p className="mb-2 text-xs text-fg-muted">{block.data.caption}</p>
-          )}
+          {block.data.caption && <p className="mb-2 text-xs text-fg-muted">{block.data.caption}</p>}
           <CustomCodeBlock code={block.data.code} language={block.data.language} />
         </div>
       );
 
-    case 'solution':
-      return renderSolutionBlock(block as ContentBlock & { type: 'solution' }, idx);
+    case "solution":
+      return renderSolutionBlock(block as ContentBlock & { type: "solution" }, idx);
 
-    case 'exercise':
+    case "exercise":
       return (
         <div
           key={idx}
           className="my-4 rounded-xl border-2 border-accent-muted bg-accent-subtle p-5"
         >
           <div className="mb-2 flex items-center gap-2">
-            <span className="text-accent-fg text-lg" aria-hidden="true">✏️</span>
+            <span className="text-accent-fg text-lg" aria-hidden="true">
+              ✏️
+            </span>
             <h4 className="font-semibold text-accent-fg">{block.data.title}</h4>
           </div>
-          <p className="mb-3 text-sm text-fg-default">{renderInlineMarkdown(block.data.description)}</p>
+          <p className="mb-3 text-sm text-fg-default">
+            {renderInlineMarkdown(block.data.description)}
+          </p>
           {block.data.steps && (
             <ol className="list-decimal space-y-1 pl-5">
               {block.data.steps.map((step, i) => (
@@ -382,7 +434,7 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
         </div>
       );
 
-    case 'checklist':
+    case "checklist":
       return (
         <div key={idx} className="my-4 rounded-xl border border-border bg-canvas-subtle p-4">
           {block.data.title && (
@@ -400,7 +452,9 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
                 <div>
                   <span className="text-fg-default">{renderInlineMarkdown(item.text)}</span>
                   {item.hint && (
-                    <span className="ml-1 text-xs text-fg-muted">— {renderInlineMarkdown(item.hint)}</span>
+                    <span className="ml-1 text-xs text-fg-muted">
+                      — {renderInlineMarkdown(item.hint)}
+                    </span>
                   )}
                 </div>
               </li>
@@ -409,7 +463,7 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
         </div>
       );
 
-    case 'mermaid':
+    case "mermaid":
       return (
         <MermaidRenderer
           key={idx}
@@ -419,12 +473,12 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
         />
       );
 
-    case 'comparison-cards': {
+    case "comparison-cards": {
       const colorClasses = [
-        'border-accent-muted bg-accent-subtle',
-        'border-success-muted bg-success-subtle',
-        'border-attention-muted bg-attention-subtle',
-        'border-done-muted bg-done-muted',
+        "border-accent-muted bg-accent-subtle",
+        "border-success-muted bg-success-subtle",
+        "border-attention-muted bg-attention-subtle",
+        "border-done-muted bg-done-muted",
       ];
       return (
         <div key={idx} className="my-6">
@@ -435,13 +489,12 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
             {block.data.cards.map((card, i) => (
               <div
                 key={i}
-                className={cn(
-                  'rounded-xl border p-4',
-                  colorClasses[i % colorClasses.length]
-                )}
+                className={cn("rounded-xl border p-4", colorClasses[i % colorClasses.length])}
               >
                 <h5 className="mb-1 font-semibold text-fg-default">{card.title}</h5>
-                <p className="mb-3 text-xs text-fg-muted">{renderInlineMarkdown(card.description)}</p>
+                <p className="mb-3 text-xs text-fg-muted">
+                  {renderInlineMarkdown(card.description)}
+                </p>
                 {card.pros && (
                   <div className="mb-2">
                     <p className="text-xs font-semibold text-success-fg mb-1">Pros</p>
@@ -469,7 +522,10 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
                 {card.tags && (
                   <div className="mt-3 flex flex-wrap gap-1">
                     {card.tags.map((tag, ti) => (
-                      <span key={ti} className="rounded-full border border-border bg-canvas/60 px-1.5 py-0.5 text-xs text-fg-subtle">
+                      <span
+                        key={ti}
+                        className="rounded-full border border-border bg-canvas/60 px-1.5 py-0.5 text-xs text-fg-subtle"
+                      >
                         {tag}
                       </span>
                     ))}
@@ -482,15 +538,12 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
       );
     }
 
-    case 'summary-box':
+    case "summary-box":
       return (
-        <div
-          key={idx}
-          className="my-6 rounded-xl border-2 border-border bg-canvas-subtle p-5"
-        >
+        <div key={idx} className="my-6 rounded-xl border-2 border-border bg-canvas-subtle p-5">
           <h4 className="mb-3 flex items-center gap-2 font-semibold text-fg-default">
             <span aria-hidden="true">📋</span>
-            {block.data.title ?? 'Summary'}
+            {block.data.title ?? "Summary"}
           </h4>
           <ul className="space-y-2">
             {block.data.points.map((point, i) => (
@@ -508,7 +561,7 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
         </div>
       );
 
-    case 'faq-block':
+    case "faq-block":
       return (
         <div key={idx} className="my-6">
           {block.data.title && (
@@ -517,25 +570,29 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
           <div className="space-y-3">
             {block.data.items.map((item, i) => (
               <div key={i} className="rounded-lg border border-border bg-canvas-subtle p-4">
-                <p className="mb-2 font-medium text-fg-default text-sm">{renderInlineMarkdown(item.question)}</p>
-                <p className="text-sm text-fg-muted leading-relaxed">{renderInlineMarkdown(item.answer)}</p>
+                <p className="mb-2 font-medium text-fg-default text-sm">
+                  {renderInlineMarkdown(item.question)}
+                </p>
+                <p className="text-sm text-fg-muted leading-relaxed">
+                  {renderInlineMarkdown(item.answer)}
+                </p>
               </div>
             ))}
           </div>
         </div>
       );
 
-    case 'divider':
+    case "divider":
       return <hr key={idx} className="my-8 border-border" />;
 
-    case 'image':
+    case "image":
       return <ImageBlock key={idx} block={block} />;
 
     default:
       // Rendering an unsupported block type should never crash the whole
       // lesson page; skip it instead of throwing (a new block type can appear
       // in content before the renderer ships).
-      if (process.env.NODE_ENV !== 'production') {
+      if (process.env.NODE_ENV !== "production") {
         console.warn(
           `[ContentBlockRenderer] Unsupported content block type: ${(block as ContentBlock).type}`
         );
@@ -545,14 +602,16 @@ function renderBlock(block: ContentBlock, idx: number, headingAnchors?: Map<numb
 }
 
 function normalizeBlock(block: ContentBlock): ContentBlock {
-  if ('data' in block && block.data) {
+  if ("data" in block && block.data) {
     const legacyData = block.data as unknown as Record<string, unknown>;
-    if (
-      block.type === 'comparison-cards' &&
-      'items' in legacyData &&
-      !('cards' in legacyData)
-    ) {
-      const items = legacyData.items as Array<{ title: string; description: string; pros?: string[]; cons?: string[]; tags?: string[] }>;
+    if (block.type === "comparison-cards" && "items" in legacyData && !("cards" in legacyData)) {
+      const items = legacyData.items as Array<{
+        title: string;
+        description: string;
+        pros?: string[];
+        cons?: string[];
+        tags?: string[];
+      }>;
       return {
         ...block,
         data: {
@@ -561,11 +620,7 @@ function normalizeBlock(block: ContentBlock): ContentBlock {
         },
       };
     }
-    if (
-      block.type === 'summary-box' &&
-      'items' in legacyData &&
-      !('points' in legacyData)
-    ) {
+    if (block.type === "summary-box" && "items" in legacyData && !("points" in legacyData)) {
       const items = legacyData.items as Array<{ text: string }>;
       return {
         ...block,
@@ -576,11 +631,7 @@ function normalizeBlock(block: ContentBlock): ContentBlock {
         },
       };
     }
-    if (
-      block.type === 'summary-box' &&
-      'text' in legacyData &&
-      !('points' in legacyData)
-    ) {
+    if (block.type === "summary-box" && "text" in legacyData && !("points" in legacyData)) {
       const text = legacyData.text;
       return {
         ...block,
@@ -591,11 +642,7 @@ function normalizeBlock(block: ContentBlock): ContentBlock {
         },
       };
     }
-    if (
-      block.type === 'faq-block' &&
-      'faqs' in legacyData &&
-      !('items' in legacyData)
-    ) {
+    if (block.type === "faq-block" && "faqs" in legacyData && !("items" in legacyData)) {
       const faqs = legacyData.faqs as Array<{ question: string; answer: string }>;
       return {
         ...block,
@@ -612,62 +659,67 @@ function normalizeBlock(block: ContentBlock): ContentBlock {
   const common = { id: legacy.id as string | undefined };
 
   switch (block.type) {
-    case 'paragraph':
-      return { ...common, type: 'paragraph', data: { text: legacy.text as string } };
-    case 'heading':
+    case "paragraph":
+      return { ...common, type: "paragraph", data: { text: legacy.text as string } };
+    case "heading":
       return {
         ...common,
-        type: 'heading',
+        type: "heading",
         data: {
           level: legacy.level as 2 | 3 | 4,
           text: legacy.text as string,
           anchor: legacy.anchor as string | undefined,
         },
       };
-    case 'bullet-list':
+    case "bullet-list":
       return {
         ...common,
-        type: 'bullet-list',
+        type: "bullet-list",
         data: { items: legacy.items as string[], title: legacy.title as string | undefined },
       };
-    case 'numbered-list':
+    case "numbered-list":
       return {
         ...common,
-        type: 'numbered-list',
+        type: "numbered-list",
         data: { items: legacy.items as string[], title: legacy.title as string | undefined },
       };
-    case 'callout':
+    case "callout":
       return {
         ...common,
-        type: 'callout',
+        type: "callout",
         data: {
-          variant: legacy.variant as 'info' | 'tip' | 'warning' | 'note' | 'important',
+          variant: legacy.variant as "info" | "tip" | "warning" | "note" | "important",
           title: legacy.title as string | undefined,
           text: legacy.text as string,
         },
       };
-    case 'quote':
+    case "quote":
       return {
         ...common,
-        type: 'quote',
-        data: { text: legacy.text as string, attribution: legacy.attribution as string | undefined },
+        type: "quote",
+        data: {
+          text: legacy.text as string,
+          attribution: legacy.attribution as string | undefined,
+        },
       };
-    case 'key-terms':
+    case "key-terms":
       return {
         ...common,
-        type: 'key-terms',
-        data: { terms: legacy.terms as { term: string; definition: string; learnMoreSlug?: string }[] },
+        type: "key-terms",
+        data: {
+          terms: legacy.terms as { term: string; definition: string; learnMoreSlug?: string }[],
+        },
       };
-    case 'table':
+    case "table":
       return {
         ...common,
-        type: 'table',
+        type: "table",
         data: { headers: legacy.headers as string[], rows: legacy.rows as string[][] },
       };
-    case 'example':
+    case "example":
       return {
         ...common,
-        type: 'example',
+        type: "example",
         data: {
           title: legacy.title as string | undefined,
           content: legacy.content as string,
@@ -675,20 +727,20 @@ function normalizeBlock(block: ContentBlock): ContentBlock {
           language: legacy.language as string | undefined,
         },
       };
-    case 'code':
+    case "code":
       return {
         ...common,
-        type: 'code',
+        type: "code",
         data: {
           language: legacy.language as string,
           caption: legacy.caption as string | undefined,
           code: legacy.code as string,
         },
       };
-    case 'solution':
+    case "solution":
       return {
         ...common,
-        type: 'solution',
+        type: "solution",
         data: {
           title: legacy.title as string | undefined,
           content: legacy.content as string,
@@ -696,10 +748,10 @@ function normalizeBlock(block: ContentBlock): ContentBlock {
           language: legacy.language as string | undefined,
         },
       };
-    case 'exercise':
+    case "exercise":
       return {
         ...common,
-        type: 'exercise',
+        type: "exercise",
         data: {
           title: legacy.title as string,
           description: legacy.description as string,
@@ -707,58 +759,68 @@ function normalizeBlock(block: ContentBlock): ContentBlock {
           expectedOutcome: legacy.expectedOutcome as string | undefined,
         },
       };
-    case 'checklist':
+    case "checklist":
       return {
         ...common,
-        type: 'checklist',
+        type: "checklist",
         data: {
           title: legacy.title as string | undefined,
           items: legacy.items as { text: string; hint?: string }[],
         },
       };
-    case 'mermaid':
+    case "mermaid":
       return {
         ...common,
-        type: 'mermaid',
+        type: "mermaid",
         data: {
           id: legacy.id as string,
           caption: legacy.caption as string | undefined,
           definition: legacy.definition as string,
         },
       };
-    case 'comparison-cards':
+    case "comparison-cards":
       return {
         ...common,
-        type: 'comparison-cards',
+        type: "comparison-cards",
         data: {
           title: legacy.title as string | undefined,
-          cards: legacy.cards as { title: string; description: string; pros?: string[]; cons?: string[]; tags?: string[] }[],
+          cards: legacy.cards as {
+            title: string;
+            description: string;
+            pros?: string[];
+            cons?: string[];
+            tags?: string[];
+          }[],
         },
       };
-    case 'summary-box':
+    case "summary-box":
       return {
         ...common,
-        type: 'summary-box',
+        type: "summary-box",
         data: {
           title: legacy.title as string | undefined,
           points: legacy.points as string[],
           takeaway: legacy.takeaway as string | undefined,
         },
       };
-    case 'faq-block':
+    case "faq-block":
       return {
         ...common,
-        type: 'faq-block',
+        type: "faq-block",
         data: {
           title: legacy.title as string | undefined,
           items: legacy.items as { question: string; answer: string }[],
         },
       };
-    case 'image':
+    case "image":
       return {
         ...common,
-        type: 'image',
-        data: { src: legacy.src as string, alt: legacy.alt as string, caption: legacy.caption as string | undefined },
+        type: "image",
+        data: {
+          src: legacy.src as string,
+          alt: legacy.alt as string,
+          caption: legacy.caption as string | undefined,
+        },
       };
     default:
       return block;
@@ -773,7 +835,7 @@ export function ContentBlockRenderer({ blocks, className }: ContentBlockRenderer
   // `anchor`. Without this, TOC links point at ids that were never rendered.
   const headingAnchors = computeHeadingAnchors(
     normalizedBlocks.flatMap((block, index) => {
-      if (block.type !== 'heading') return [];
+      if (block.type !== "heading") return [];
       const data = (block as { data?: { text?: string; anchor?: string } }).data;
       const text = data?.text ?? (block as { text?: string }).text;
       return [{ index, block: { text, anchor: data?.anchor } }];
@@ -781,7 +843,7 @@ export function ContentBlockRenderer({ blocks, className }: ContentBlockRenderer
   );
 
   return (
-    <div className={cn('lesson-prose', className)}>
+    <div className={cn("lesson-prose", className)}>
       {normalizedBlocks.map((block, idx) => renderBlock(block, idx, headingAnchors))}
     </div>
   );

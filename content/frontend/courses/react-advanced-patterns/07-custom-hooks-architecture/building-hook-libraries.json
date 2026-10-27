@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "custom-hooks",
-    "library-design",
-    "documentation",
-    "testing",
-    "packaging"
-  ],
+  "tags": ["custom-hooks", "library-design", "documentation", "testing", "packaging"],
   "blocks": [
     {
       "type": "paragraph",

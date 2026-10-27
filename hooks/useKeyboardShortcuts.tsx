@@ -1,56 +1,56 @@
-'use client';
+"use client";
 
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { useTheme } from 'next-themes';
-import { X } from 'lucide-react';
-import { useFocusTrap } from '@/hooks/useFocusTrap';
-import { useBodyScrollLock } from '@/hooks/useBodyScrollLock';
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
+import { useTheme } from "next-themes";
+import { X } from "lucide-react";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
+import { useBodyScrollLock } from "@/hooks/useBodyScrollLock";
 
 type ShortcutHandler = () => void;
 
 const shortcuts: Record<string, { description: string; handler: ShortcutHandler }> = {};
 
-const OPEN_HELP_EVENT = 'quotient:open-keyboard-shortcuts';
+const OPEN_HELP_EVENT = "quotient:open-keyboard-shortcuts";
 const SEQUENCE_TIMEOUT_MS = 1200;
-const ZOOM_KEYS = new Set(['+', '-', '0']);
+const ZOOM_KEYS = new Set(["+", "-", "0"]);
 
 /** Every shortcut is listed in the help dialog, even when it is contextual. */
 const HELP_GROUPS: Array<{ title: string; entries: Array<[string, string]> }> = [
   {
-    title: 'Navigation',
+    title: "Navigation",
     entries: [
-      ['n', 'Go to the next lesson'],
-      ['p', 'Go to the previous lesson'],
-      ['g h', 'Go home'],
-      ['g b', 'Go to bookmarks'],
-      ['g p', 'Go to progress'],
+      ["n", "Go to the next lesson"],
+      ["p", "Go to the previous lesson"],
+      ["g h", "Go home"],
+      ["g b", "Go to bookmarks"],
+      ["g p", "Go to progress"],
     ],
   },
   {
-    title: 'Search and help',
+    title: "Search and help",
     entries: [
-      ['/', 'Open and focus search'],
-      ['?', 'Toggle this help dialog'],
-      ['Escape', 'Close a dialog, search, or category menu'],
+      ["/", "Open and focus search"],
+      ["?", "Toggle this help dialog"],
+      ["Escape", "Close a dialog, search, or category menu"],
     ],
   },
   {
-    title: 'Lesson actions',
+    title: "Lesson actions",
     entries: [
-      ['c', 'Mark the current lesson complete or incomplete'],
-      ['b', 'Add or remove the current lesson bookmark'],
-      ['o', 'Open lesson notes'],
-      ['s', 'Save or remove the current lesson offline'],
+      ["c", "Mark the current lesson complete or incomplete"],
+      ["b", "Add or remove the current lesson bookmark"],
+      ["o", "Open lesson notes"],
+      ["s", "Save or remove the current lesson offline"],
     ],
   },
   {
-    title: 'Display',
+    title: "Display",
     entries: [
-      ['t', 'Toggle light and dark theme'],
-      ['+', 'Zoom in an open image or diagram'],
-      ['-', 'Zoom out an open image or diagram'],
-      ['0', 'Reset image or diagram zoom'],
+      ["t", "Toggle light and dark theme"],
+      ["+", "Zoom in an open image or diagram"],
+      ["-", "Zoom out an open image or diagram"],
+      ["0", "Reset image or diagram zoom"],
     ],
   },
 ];
@@ -65,7 +65,7 @@ export function unregisterShortcut(key: string) {
 
 /** Opens the same help dialog from outside the shortcut dispatcher. */
 export function openKeyboardShortcutsHelp() {
-  if (typeof window === 'undefined') return;
+  if (typeof window === "undefined") return;
   window.dispatchEvent(new Event(OPEN_HELP_EVENT));
 }
 
@@ -74,9 +74,9 @@ function isTypingInField(target: EventTarget | null): boolean {
   const el = target as HTMLElement | null;
   if (!el) return false;
   return (
-    el.tagName === 'INPUT' ||
-    el.tagName === 'TEXTAREA' ||
-    el.tagName === 'SELECT' ||
+    el.tagName === "INPUT" ||
+    el.tagName === "TEXTAREA" ||
+    el.tagName === "SELECT" ||
     el.isContentEditable
   );
 }
@@ -120,32 +120,30 @@ export function KeyboardShortcuts() {
   // lesson pages with `data-lesson-nav`, so this works for course, problem, and
   // question-answer routes without those pages knowing about shortcuts.
   const goToLessonNav = useCallback(
-    (direction: 'prev' | 'next') => {
-      const link = document.querySelector<HTMLAnchorElement>(
-        `a[data-lesson-nav="${direction}"]`
-      );
-      if (link?.href) router.push(link.getAttribute('href') ?? link.href);
+    (direction: "prev" | "next") => {
+      const link = document.querySelector<HTMLAnchorElement>(`a[data-lesson-nav="${direction}"]`);
+      if (link?.href) router.push(link.getAttribute("href") ?? link.href);
     },
     [router]
   );
 
   useEffect(() => {
-    registerShortcut('n', 'Next lesson', () => goToLessonNav('next'));
-    registerShortcut('p', 'Previous lesson', () => goToLessonNav('prev'));
-    registerShortcut('t', 'Toggle light/dark theme', () =>
-      setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
+    registerShortcut("n", "Next lesson", () => goToLessonNav("next"));
+    registerShortcut("p", "Previous lesson", () => goToLessonNav("prev"));
+    registerShortcut("t", "Toggle light/dark theme", () =>
+      setTheme(resolvedTheme === "dark" ? "light" : "dark")
     );
-    registerShortcut('g h', 'Go home', () => router.push('/'));
-    registerShortcut('g b', 'Go to bookmarks', () => router.push('/user/bookmarks'));
-    registerShortcut('g p', 'Go to progress', () => router.push('/user/progress'));
+    registerShortcut("g h", "Go home", () => router.push("/"));
+    registerShortcut("g b", "Go to bookmarks", () => router.push("/user/bookmarks"));
+    registerShortcut("g p", "Go to progress", () => router.push("/user/progress"));
 
     return () => {
-      unregisterShortcut('n');
-      unregisterShortcut('p');
-      unregisterShortcut('t');
-      unregisterShortcut('g h');
-      unregisterShortcut('g b');
-      unregisterShortcut('g p');
+      unregisterShortcut("n");
+      unregisterShortcut("p");
+      unregisterShortcut("t");
+      unregisterShortcut("g h");
+      unregisterShortcut("g b");
+      unregisterShortcut("g p");
     };
   }, [goToLessonNav, resolvedTheme, router, setTheme]);
 
@@ -154,14 +152,14 @@ export function KeyboardShortcuts() {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       if (isTypingInField(document.activeElement)) return;
 
-      if (e.key === '?' || (e.key === '/' && e.shiftKey)) {
+      if (e.key === "?" || (e.key === "/" && e.shiftKey)) {
         e.preventDefault();
         clearSequence();
         setShowHelp((prev) => !prev);
         return;
       }
 
-      if (e.key === 'Escape') {
+      if (e.key === "Escape") {
         clearSequence();
         setShowHelp(false);
         return;
@@ -189,8 +187,8 @@ export function KeyboardShortcuts() {
         return;
       }
 
-      if (key === 'g' && Object.keys(shortcuts).some((entry) => entry.startsWith('g '))) {
-        sequenceRef.current = 'g';
+      if (key === "g" && Object.keys(shortcuts).some((entry) => entry.startsWith("g "))) {
+        sequenceRef.current = "g";
         sequenceTimerRef.current = window.setTimeout(() => {
           sequenceRef.current = null;
           sequenceTimerRef.current = null;
@@ -208,8 +206,8 @@ export function KeyboardShortcuts() {
   );
 
   useEffect(() => {
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
   }, [handleKeyDown]);
 
   return <KeyboardShortcutsHelp open={showHelp} onClose={() => setShowHelp(false)} />;
@@ -231,15 +229,13 @@ export function KeyboardShortcutsHelp({ open, onClose }: HelpProps) {
 
 function ShortcutsDialog({ onClose }: { onClose: () => void }) {
   const dialogRef = useRef<HTMLDivElement>(null);
-  const knownKeys = new Set(
-    HELP_GROUPS.flatMap((group) => group.entries.map(([keys]) => keys))
-  );
+  const knownKeys = new Set(HELP_GROUPS.flatMap((group) => group.entries.map(([keys]) => keys)));
   const extraEntries = Object.entries(shortcuts)
     .filter(([key]) => !knownKeys.has(key))
     .map(([key, { description }]) => [key, description] as [string, string]);
   const groups =
     extraEntries.length > 0
-      ? [...HELP_GROUPS, { title: 'Other', entries: extraEntries }]
+      ? [...HELP_GROUPS, { title: "Other", entries: extraEntries }]
       : HELP_GROUPS;
 
   useFocusTrap(dialogRef, true);
@@ -277,7 +273,7 @@ function ShortcutsDialog({ onClose }: { onClose: () => void }) {
                 <h4 className="mb-2 text-xs font-semibold uppercase tracking-wide text-fg-subtle">
                   {group.title}
                 </h4>
-                <div className="space-y-1.5">
+                <div className="grid grid-cols-1 gap-1.5 md:grid-cols-2">
                   {group.entries.map(([keys, description]) => (
                     <div
                       key={keys}
@@ -303,13 +299,13 @@ function ShortcutsDialog({ onClose }: { onClose: () => void }) {
 function ShortcutKeys({ keys }: { keys: string }) {
   return (
     <span className="flex shrink-0 items-center gap-1">
-      {keys.split(' ').map((key, index) => (
+      {keys.split(" ").map((key, index) => (
         <span key={`${key}-${index}`} className="flex items-center gap-1">
           {index > 0 && (
             <span className="text-[10px] font-medium uppercase text-fg-subtle">then</span>
           )}
           <kbd className="rounded border border-border bg-canvas px-2 py-0.5 text-xs font-mono text-fg-muted">
-            {key === 'Escape' ? 'Esc' : key.toUpperCase()}
+            {key === "Escape" ? "Esc" : key.toUpperCase()}
           </kbd>
         </span>
       ))}

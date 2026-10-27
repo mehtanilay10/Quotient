@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 35,
-  "tags": [
-    "react",
-    "typescript",
-    "context",
-    "redux",
-    "hooks"
-  ],
+  "tags": ["react", "typescript", "context", "redux", "hooks"],
   "blocks": [
     {
       "type": "paragraph",
@@ -101,30 +95,14 @@
           {
             "title": "React Context",
             "description": "Built-in state sharing for small to medium apps",
-            "pros": [
-              "No extra library",
-              "Simple API",
-              "Great for theme/auth"
-            ],
-            "cons": [
-              "Can cause re-renders",
-              "No devtools",
-              "Harder to debug at scale"
-            ]
+            "pros": ["No extra library", "Simple API", "Great for theme/auth"],
+            "cons": ["Can cause re-renders", "No devtools", "Harder to debug at scale"]
           },
           {
             "title": "Redux Toolkit",
             "description": "Predictable state container for complex apps",
-            "pros": [
-              "Devtools",
-              "Middleware support",
-              "Excellent TS inference"
-            ],
-            "cons": [
-              "More boilerplate",
-              "Learning curve",
-              "Overkill for simple state"
-            ]
+            "pros": ["Devtools", "Middleware support", "Excellent TS inference"],
+            "cons": ["More boilerplate", "Learning curve", "Overkill for simple state"]
           }
         ]
       }

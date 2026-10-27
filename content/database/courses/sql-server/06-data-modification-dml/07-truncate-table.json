@@ -7,11 +7,7 @@
   "order": 7,
   "difficulty": "beginner",
   "estimatedMinutes": 28,
-  "tags": [
-    "truncate",
-    "dml",
-    "delete-all-rows"
-  ],
+  "tags": ["truncate", "dml", "delete-all-rows"],
   "blocks": [
     {
       "type": "heading",

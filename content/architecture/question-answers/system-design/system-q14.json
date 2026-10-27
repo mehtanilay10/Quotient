@@ -7,11 +7,7 @@
   "order": 7,
   "difficulty": "advanced",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "system-design",
-    "rate-limiting"
-  ],
+  "tags": ["interview", "system-design", "rate-limiting"],
   "blocks": [
     {
       "type": "paragraph",

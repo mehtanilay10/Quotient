@@ -7,13 +7,7 @@
   "order": 3,
   "difficulty": "advanced",
   "estimatedMinutes": 33,
-  "tags": [
-    "ef-core",
-    "concurrency",
-    "optimistic",
-    "rowversion",
-    "concurrencytoken"
-  ],
+  "tags": ["ef-core", "concurrency", "optimistic", "rowversion", "concurrencytoken"],
   "blocks": [
     {
       "type": "paragraph",
@@ -117,9 +111,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "shadow-property-in-entity-framework-core",
-    "working-with-stored-procedures"
-  ],
+  "relatedLessons": ["shadow-property-in-entity-framework-core", "working-with-stored-procedures"],
   "courseSlug": "ef-core"
 }

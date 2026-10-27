@@ -8,14 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 35,
-  "tags": [
-    "azure",
-    "managed-instance",
-    "sql-server-compatibility",
-    "paas",
-    "hybrid-cloud",
-    "vnet"
-  ],
+  "tags": ["azure", "managed-instance", "sql-server-compatibility", "paas", "hybrid-cloud", "vnet"],
   "blocks": [
     {
       "type": "heading",
@@ -55,10 +48,7 @@
               "No SQL Agent or CLR",
               "Some compatibility limitations"
             ],
-            "tags": [
-              "paas",
-              "isolated"
-            ]
+            "tags": ["paas", "isolated"]
           },
           {
             "title": "Azure SQL Managed Instance",
@@ -73,10 +63,7 @@
               "Slower scaling than Azure SQL Database",
               "Requires VNet and subnet planning"
             ],
-            "tags": [
-              "paas",
-              "migration"
-            ]
+            "tags": ["paas", "migration"]
           },
           {
             "title": "SQL Server on Azure VM",
@@ -91,10 +78,7 @@
               "Higher operational overhead",
               "Manual high availability configuration"
             ],
-            "tags": [
-              "iaas",
-              "full-control"
-            ]
+            "tags": ["iaas", "full-control"]
           }
         ]
       }

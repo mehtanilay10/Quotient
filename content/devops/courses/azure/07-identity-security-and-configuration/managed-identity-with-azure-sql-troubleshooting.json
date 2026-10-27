@@ -8,13 +8,7 @@
   "order": 10,
   "difficulty": "beginner",
   "estimatedMinutes": 13,
-  "tags": [
-    "azure",
-    "identity",
-    "security",
-    "entra-id",
-    "developer"
-  ],
+  "tags": ["azure", "identity", "security", "entra-id", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -81,11 +75,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Symptom",
-          "Likely cause",
-          "Fix"
-        ],
+        "headers": ["Symptom", "Likely cause", "Fix"],
         "rows": [
           [
             "Login failed for user (18456)",

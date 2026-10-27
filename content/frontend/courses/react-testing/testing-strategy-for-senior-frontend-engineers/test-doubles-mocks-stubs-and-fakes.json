@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "testing",
-    "vitest",
-    "mocking",
-    "test-doubles"
-  ],
+  "tags": ["testing", "vitest", "mocking", "test-doubles"],
   "blocks": [
     {
       "type": "paragraph",
@@ -137,10 +132,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "component-testing-vs-integration-testing",
-    "when-not-to-mock"
-  ],
+  "relatedLessons": ["component-testing-vs-integration-testing", "when-not-to-mock"],
   "furtherReading": [
     {
       "type": "article",

@@ -79,40 +79,21 @@
               "WAF integration",
               "CDN capabilities"
             ],
-            "cons": [
-              "Higher cost",
-              "More complex routing rules"
-            ],
+            "cons": ["Higher cost", "More complex routing rules"],
             "tags": ["Recommended for global apps"]
           },
           {
             "title": "Azure Application Gateway",
             "description": "Regional layer 7 load balancer",
-            "pros": [
-              "Lower cost",
-              "WAF v2",
-              "URL-based routing",
-              "VNet integration"
-            ],
-            "cons": [
-              "Regional only",
-              "No global acceleration"
-            ],
+            "pros": ["Lower cost", "WAF v2", "URL-based routing", "VNet integration"],
+            "cons": ["Regional only", "No global acceleration"],
             "tags": ["Regional apps"]
           },
           {
             "title": "Azure Traffic Manager",
             "description": "DNS-based global traffic manager",
-            "pros": [
-              "DNS-level routing",
-              "Low cost",
-              "Any provider support"
-            ],
-            "cons": [
-              "DNS caching delays",
-              "No WAF",
-              "No SSL offloading"
-            ],
+            "pros": ["DNS-level routing", "Low cost", "Any provider support"],
+            "cons": ["DNS caching delays", "No WAF", "No SSL offloading"],
             "tags": ["DNS routing only", "Legacy"]
           }
         ]

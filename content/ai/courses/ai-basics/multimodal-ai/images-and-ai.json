@@ -7,13 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 12,
-  "tags": [
-    "images",
-    "multimodal",
-    "dall-e",
-    "midjourney",
-    "vision"
-  ],
+  "tags": ["images", "multimodal", "dall-e", "midjourney", "vision"],
   "blocks": [
     {
       "type": "paragraph",
@@ -94,14 +88,8 @@
               "Great at following complex text prompts",
               "Good for practical/commercial visuals"
             ],
-            "cons": [
-              "Artist quality below Midjourney",
-              "Requires ChatGPT Plus subscription"
-            ],
-            "tags": [
-              "paid",
-              "integrated"
-            ]
+            "cons": ["Artist quality below Midjourney", "Requires ChatGPT Plus subscription"],
+            "tags": ["paid", "integrated"]
           },
           {
             "title": "Midjourney",
@@ -116,10 +104,7 @@
               "Paid subscription required",
               "Less precise at specific details"
             ],
-            "tags": [
-              "paid",
-              "artistic"
-            ]
+            "tags": ["paid", "artistic"]
           },
           {
             "title": "Adobe Firefly",
@@ -129,14 +114,8 @@
               "Integrated with Photoshop and Illustrator",
               "Professional design focus"
             ],
-            "cons": [
-              "Requires Adobe subscription",
-              "Less community/tutorial resources"
-            ],
-            "tags": [
-              "paid",
-              "commercial-safe"
-            ]
+            "cons": ["Requires Adobe subscription", "Less community/tutorial resources"],
+            "tags": ["paid", "commercial-safe"]
           },
           {
             "title": "Flux / Stable Diffusion (open)",
@@ -146,14 +125,8 @@
               "Fully customizable",
               "Privacy-friendly (run locally)"
             ],
-            "cons": [
-              "More technical setup required",
-              "Quality varies by configuration"
-            ],
-            "tags": [
-              "free",
-              "open-source"
-            ]
+            "cons": ["More technical setup required", "Quality varies by configuration"],
+            "tags": ["free", "open-source"]
           }
         ]
       }
@@ -170,11 +143,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Best tool",
-          "Why"
-        ],
+        "headers": ["Use case", "Best tool", "Why"],
         "rows": [
           [
             "Quick illustrations for presentations or docs",
@@ -280,11 +249,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Limitation",
-          "What happens",
-          "Mitigation"
-        ],
+        "headers": ["Limitation", "What happens", "Mitigation"],
         "rows": [
           [
             "Counting errors",
@@ -332,11 +297,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Editing task",
-          "What it means",
-          "Tools that support it"
-        ],
+        "headers": ["Editing task", "What it means", "Tools that support it"],
         "rows": [
           [
             "Inpainting (object removal/replacement)",
@@ -384,17 +345,9 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Prompt element",
-          "What to include",
-          "Example"
-        ],
+        "headers": ["Prompt element", "What to include", "Example"],
         "rows": [
-          [
-            "Subject",
-            "What is in the image",
-            "\"A woman working at a standing desk\""
-          ],
+          ["Subject", "What is in the image", "\"A woman working at a standing desk\""],
           [
             "Style",
             "Art style or photography style",
@@ -405,21 +358,13 @@
             "Light quality and direction",
             "\"golden hour sunlight\", \"overcast diffused light\""
           ],
-          [
-            "Mood",
-            "Atmosphere and feeling",
-            "\"peaceful\", \"dramatic\", \"playful\""
-          ],
+          ["Mood", "Atmosphere and feeling", "\"peaceful\", \"dramatic\", \"playful\""],
           [
             "Composition",
             "Framing and perspective",
             "\"wide shot\", \"close-up\", \"overhead view\""
           ],
-          [
-            "Technical specs",
-            "Resolution or format hints",
-            "\"4K\", \"16:9 aspect ratio\""
-          ]
+          ["Technical specs", "Resolution or format hints", "\"4K\", \"16:9 aspect ratio\""]
         ]
       }
     },
@@ -489,10 +434,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "local-ai-options",
-    "model-comparison"
-  ],
+  "relatedLessons": ["local-ai-options", "model-comparison"],
   "furtherReading": [
     {
       "title": "DALL-E 3 Overview",

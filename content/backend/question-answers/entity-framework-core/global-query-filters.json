@@ -6,10 +6,7 @@
   "description": "HasQueryFilter for tenant/soft-delete rules, and the gotchas when includes and keys meet filters.",
   "order": 6,
   "difficulty": "advanced",
-  "tags": [
-    "ef-core",
-    "advanced"
-  ],
+  "tags": ["ef-core", "advanced"],
   "blocks": [
     {
       "type": "paragraph",
@@ -115,10 +112,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "change-tracking-and-savechanges",
-    "ef-core-relationships-cascade"
-  ],
+  "relatedLessons": ["change-tracking-and-savechanges", "ef-core-relationships-cascade"],
   "furtherReading": [
     {
       "title": "Global query filters — EF Core",

@@ -185,7 +185,11 @@
       }
     }
   ],
-  "relatedLessons": ["container-health-checks", "container-networking", "image-layers-and-build-cache"],
+  "relatedLessons": [
+    "container-health-checks",
+    "container-networking",
+    "image-layers-and-build-cache"
+  ],
   "furtherReading": [
     {
       "title": "Docker documentation: Runtime options",

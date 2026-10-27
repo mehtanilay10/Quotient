@@ -145,7 +145,11 @@
           {
             "title": "React Query / TanStack Query",
             "description": "Server state management with caching, background refetching, and optimistic updates.",
-            "pros": ["Handles caching automatically", "Built-in stale-while-revalidate", "Great devtools"],
+            "pros": [
+              "Handles caching automatically",
+              "Built-in stale-while-revalidate",
+              "Great devtools"
+            ],
             "cons": ["Learning curve", "Extra dependency"]
           },
           {

@@ -7,11 +7,7 @@
   "order": 8,
   "difficulty": "beginner",
   "estimatedMinutes": 24,
-  "tags": [
-    "disable-index",
-    "alter-index",
-    "maintenance"
-  ],
+  "tags": ["disable-index", "alter-index", "maintenance"],
   "blocks": [
     {
       "type": "heading",

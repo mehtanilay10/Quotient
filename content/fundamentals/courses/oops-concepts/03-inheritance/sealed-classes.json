@@ -7,10 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 8,
-  "tags": [
-    "oop",
-    "sealed"
-  ],
+  "tags": ["oop", "sealed"],
   "blocks": [
     {
       "type": "paragraph",
@@ -39,9 +36,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "method-overriding",
-    "inheritance-hierarchies"
-  ],
+  "relatedLessons": ["method-overriding", "inheritance-hierarchies"],
   "courseSlug": "oops-concepts"
 }

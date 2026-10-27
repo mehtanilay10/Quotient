@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useSession } from 'next-auth/react';
-import type { CourseProgress, LessonProgress, ProgressCategory, ProgressState } from '@/types';
-import { logger } from '@/lib/logger';
-import { syncProgressToServer, syncUserData } from '@/lib/userSync';
-import { retryWithBackoff } from '@/lib/retry';
-import { apiFetch } from '@/lib/apiFetch';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useSession } from "next-auth/react";
+import type { CourseProgress, LessonProgress, ProgressCategory, ProgressState } from "@/types";
+import { logger } from "@/lib/logger";
+import { syncProgressToServer, syncUserData } from "@/lib/userSync";
+import { retryWithBackoff } from "@/lib/retry";
+import { apiFetch } from "@/lib/apiFetch";
 
 const DEFAULT_PROGRESS: ProgressState = {
   lessons: { completedLessons: [], lastVisitedLesson: undefined, startedAt: undefined },
@@ -18,33 +18,42 @@ type Category = ProgressCategory;
 
 async function fetchProgressFromServer(): Promise<ProgressState | null> {
   try {
-    return await retryWithBackoff(async () => {
-      const res = await apiFetch('/api/progress');
-      if (!res.ok) throw new Error(`Failed to fetch progress: ${res.status}`);
-      const data = await res.json();
-      const progress: ProgressState = {
-        lessons: { completedLessons: [], lastVisitedLesson: undefined, startedAt: undefined },
-        problems: { completedLessons: [], lastVisitedLesson: undefined, startedAt: undefined },
-        questionAnswers: { completedLessons: [], lastVisitedLesson: undefined, startedAt: undefined },
-      };
-      if (data.progress) {
-        for (const [cat, items] of Object.entries(data.progress)) {
-          const category = cat as Category;
-          if (Array.isArray(items)) {
-            progress[category] = {
-              completedLessons: items.map((item: { lessonSlug: string; moduleSlug: string; completedAt: string }) => ({
-                lessonSlug: item.lessonSlug,
-                moduleSlug: item.moduleSlug,
-                completedAt: item.completedAt,
-              })),
-              lastVisitedLesson: undefined,
-              startedAt: items[0]?.completedAt,
-            };
+    return await retryWithBackoff(
+      async () => {
+        const res = await apiFetch("/api/progress");
+        if (!res.ok) throw new Error(`Failed to fetch progress: ${res.status}`);
+        const data = await res.json();
+        const progress: ProgressState = {
+          lessons: { completedLessons: [], lastVisitedLesson: undefined, startedAt: undefined },
+          problems: { completedLessons: [], lastVisitedLesson: undefined, startedAt: undefined },
+          questionAnswers: {
+            completedLessons: [],
+            lastVisitedLesson: undefined,
+            startedAt: undefined,
+          },
+        };
+        if (data.progress) {
+          for (const [cat, items] of Object.entries(data.progress)) {
+            const category = cat as Category;
+            if (Array.isArray(items)) {
+              progress[category] = {
+                completedLessons: items.map(
+                  (item: { lessonSlug: string; moduleSlug: string; completedAt: string }) => ({
+                    lessonSlug: item.lessonSlug,
+                    moduleSlug: item.moduleSlug,
+                    completedAt: item.completedAt,
+                  })
+                ),
+                lastVisitedLesson: undefined,
+                startedAt: items[0]?.completedAt,
+              };
+            }
           }
         }
-      }
-      return progress;
-    }, { maxRetries: 3, initialDelay: 500, maxDelay: 2000, jitter: true });
+        return progress;
+      },
+      { maxRetries: 3, initialDelay: 500, maxDelay: 2000, jitter: true }
+    );
   } catch {
     return null;
   }
@@ -82,19 +91,22 @@ async function syncProgressToServerFn(progress: ProgressState): Promise<void> {
         allEntries.push({ category, lessonSlug: entry.lessonSlug, moduleSlug: entry.moduleSlug });
       }
     }
-    await retryWithBackoff(async () => {
-      const res = await apiFetch('/api/progress', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ entries: allEntries }),
-      });
-      if (!res.ok) {
-        const text = await res.text();
-        throw new Error(`Failed to sync progress: ${res.status} ${text}`);
-      }
-    }, { maxRetries: 3, initialDelay: 500, maxDelay: 2000, jitter: true });
+    await retryWithBackoff(
+      async () => {
+        const res = await apiFetch("/api/progress", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ entries: allEntries }),
+        });
+        if (!res.ok) {
+          const text = await res.text();
+          throw new Error(`Failed to sync progress: ${res.status} ${text}`);
+        }
+      },
+      { maxRetries: 3, initialDelay: 500, maxDelay: 2000, jitter: true }
+    );
   } catch (err) {
-    logger.warn('useProgress', 'Failed to sync to server', err);
+    logger.warn("useProgress", "Failed to sync to server", err);
   }
 }
 
@@ -107,9 +119,15 @@ interface ProgressContextValue {
   markIncomplete: (lessonSlug: string, category?: Category) => void;
   toggleComplete: (lessonSlug: string, moduleSlug: string, category?: Category) => void;
   trackVisit: (lessonSlug: string, category?: Category) => void;
-  getModuleProgress: (moduleLessonSlugs: string[], category?: Category) => { completed: number; total: number; percent: number };
+  getModuleProgress: (
+    moduleLessonSlugs: string[],
+    category?: Category
+  ) => { completed: number; total: number; percent: number };
   getCategory: (category: Category) => CourseProgress;
-  setCategory: (category: Category, value: CourseProgress | ((prev: CourseProgress) => CourseProgress)) => void;
+  setCategory: (
+    category: Category,
+    value: CourseProgress | ((prev: CourseProgress) => CourseProgress)
+  ) => void;
   stats: {
     lessons: { totalCompleted: number; lastVisited?: string; startedAt?: string };
     problems: { totalCompleted: number; lastVisited?: string; startedAt?: string };
@@ -126,15 +144,15 @@ const ProgressContext = React.createContext<ProgressContextValue | null>(null);
 export function useProgress(): ProgressContextValue {
   const context = React.useContext(ProgressContext);
   if (!context) {
-    throw new Error('useProgress must be used within a ProgressProvider');
+    throw new Error("useProgress must be used within a ProgressProvider");
   }
   return context;
 }
 
 export function ProgressProvider({ children }: { children: React.ReactNode }) {
   const { data: session, status } = useSession();
-  const isLoggedIn = status === 'authenticated';
-  const isLoggedOut = status === 'unauthenticated';
+  const isLoggedIn = status === "authenticated";
+  const isLoggedOut = status === "unauthenticated";
 
   const [serverProgress, setServerProgress] = useState<ProgressState | null>(null);
   const [mounted, setMounted] = useState(false);
@@ -195,7 +213,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       if (!isLoggedIn) return;
       setServerProgress((prev) => {
         const current = prev ?? DEFAULT_PROGRESS;
-        if (typeof updater === 'function') {
+        if (typeof updater === "function") {
           return (updater as (prev: ProgressState) => ProgressState)(current);
         }
         return updater;
@@ -216,7 +234,10 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
       if (!isLoggedIn) return;
       setActiveProgress((prev) => {
         const current = prev[category] ?? DEFAULT_PROGRESS[category];
-        const next = typeof value === 'function' ? (value as (p: CourseProgress) => CourseProgress)(current) : value;
+        const next =
+          typeof value === "function"
+            ? (value as (p: CourseProgress) => CourseProgress)(current)
+            : value;
         return { ...prev, [category]: next };
       });
     },
@@ -224,7 +245,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   );
 
   const isCompleted = useCallback(
-    (lessonSlug: string, category: Category = 'lessons'): boolean => {
+    (lessonSlug: string, category: Category = "lessons"): boolean => {
       const cat = getCategory(category);
       return cat.completedLessons.some((l) => l.lessonSlug === lessonSlug);
     },
@@ -232,13 +253,17 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   );
 
   const markComplete = useCallback(
-    (lessonSlug: string, moduleSlug: string, category: Category = 'lessons') => {
+    (lessonSlug: string, moduleSlug: string, category: Category = "lessons") => {
       if (!isLoggedIn) return;
       setCategory(category, (prev) => {
         if (prev.completedLessons.some((l) => l.lessonSlug === lessonSlug)) {
           return prev;
         }
-        const entry: LessonProgress = { lessonSlug, moduleSlug, completedAt: new Date().toISOString() };
+        const entry: LessonProgress = {
+          lessonSlug,
+          moduleSlug,
+          completedAt: new Date().toISOString(),
+        };
         return {
           ...prev,
           completedLessons: [...prev.completedLessons, entry],
@@ -251,7 +276,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   );
 
   const markIncomplete = useCallback(
-    (lessonSlug: string, category: Category = 'lessons') => {
+    (lessonSlug: string, category: Category = "lessons") => {
       if (!isLoggedIn) return;
       setCategory(category, (prev) => ({
         ...prev,
@@ -262,7 +287,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   );
 
   const toggleComplete = useCallback(
-    (lessonSlug: string, moduleSlug: string, category: Category = 'lessons') => {
+    (lessonSlug: string, moduleSlug: string, category: Category = "lessons") => {
       if (isCompleted(lessonSlug, category)) {
         markIncomplete(lessonSlug, category);
       } else {
@@ -273,7 +298,7 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   );
 
   const trackVisit = useCallback(
-    (lessonSlug: string, category: Category = 'lessons') => {
+    (lessonSlug: string, category: Category = "lessons") => {
       if (!isLoggedIn) return;
       setCategory(category, (prev) => ({
         ...prev,
@@ -285,9 +310,11 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   );
 
   const getModuleProgress = useCallback(
-    (moduleLessonSlugs: string[], category: Category = 'lessons') => {
+    (moduleLessonSlugs: string[], category: Category = "lessons") => {
       const cat = getCategory(category);
-      const completed = moduleLessonSlugs.filter((slug) => cat.completedLessons.some((l) => l.lessonSlug === slug)).length;
+      const completed = moduleLessonSlugs.filter((slug) =>
+        cat.completedLessons.some((l) => l.lessonSlug === slug)
+      ).length;
       const total = moduleLessonSlugs.length;
       const percent = total === 0 ? 0 : Math.round((completed / total) * 100);
       return { completed, total, percent };
@@ -300,15 +327,28 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     const problems = activeProgress.problems ?? DEFAULT_PROGRESS.problems;
     const questionAnswers = activeProgress.questionAnswers ?? DEFAULT_PROGRESS.questionAnswers;
 
-    const lessonStats = { totalCompleted: lessons.completedLessons.length, lastVisited: lessons.lastVisitedLesson, startedAt: lessons.startedAt };
-    const problemStats = { totalCompleted: problems.completedLessons.length, lastVisited: problems.lastVisitedLesson, startedAt: problems.startedAt };
-    const questionStats = { totalCompleted: questionAnswers.completedLessons.length, lastVisited: questionAnswers.lastVisitedLesson, startedAt: questionAnswers.startedAt };
+    const lessonStats = {
+      totalCompleted: lessons.completedLessons.length,
+      lastVisited: lessons.lastVisitedLesson,
+      startedAt: lessons.startedAt,
+    };
+    const problemStats = {
+      totalCompleted: problems.completedLessons.length,
+      lastVisited: problems.lastVisitedLesson,
+      startedAt: problems.startedAt,
+    };
+    const questionStats = {
+      totalCompleted: questionAnswers.completedLessons.length,
+      lastVisited: questionAnswers.lastVisitedLesson,
+      startedAt: questionAnswers.startedAt,
+    };
 
     return {
       lessons: lessonStats,
       problems: problemStats,
       questionAnswers: questionStats,
-      totalCompleted: lessonStats.totalCompleted + problemStats.totalCompleted + questionStats.totalCompleted,
+      totalCompleted:
+        lessonStats.totalCompleted + problemStats.totalCompleted + questionStats.totalCompleted,
     };
   }, [activeProgress]);
 
@@ -318,13 +358,16 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
     // The POST endpoint is insert-only (it can never delete rows), so a reset
     // must go through the DELETE endpoint or the progress would reappear on
     // the next fetch.
-    retryWithBackoff(async () => {
-      const res = await apiFetch('/api/progress', { method: 'DELETE' });
-      if (!res.ok) {
-        throw new Error(`Failed to reset progress: ${res.status}`);
-      }
-    }, { maxRetries: 3, initialDelay: 500, maxDelay: 2000, jitter: true }).catch((err) => {
-      logger.warn('ProgressProvider', 'Failed to reset progress on server', err);
+    retryWithBackoff(
+      async () => {
+        const res = await apiFetch("/api/progress", { method: "DELETE" });
+        if (!res.ok) {
+          throw new Error(`Failed to reset progress: ${res.status}`);
+        }
+      },
+      { maxRetries: 3, initialDelay: 500, maxDelay: 2000, jitter: true }
+    ).catch((err) => {
+      logger.warn("ProgressProvider", "Failed to reset progress on server", err);
     });
   }, [isLoggedIn]);
 

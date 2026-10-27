@@ -135,7 +135,10 @@
             "title": "Stateless with pub/sub",
             "description": "Server instances are interchangeable; a message bus routes messages to the instance holding a given connection.",
             "pros": ["Linear horizontal scaling", "Simple failover", "No rebalancing needed"],
-            "cons": ["Message bus is a new dependency", "Slightly higher latency for cross-instance messages"]
+            "cons": [
+              "Message bus is a new dependency",
+              "Slightly higher latency for cross-instance messages"
+            ]
           }
         ]
       }
@@ -176,10 +179,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "websocket-connection-lifecycle",
-    "message-persistence-and-ordering"
-  ],
+  "relatedLessons": ["websocket-connection-lifecycle", "message-persistence-and-ordering"],
   "furtherReading": [
     {
       "title": "Scaling WebSocket with Socket.IO and Redis Adapter",

@@ -8,12 +8,7 @@
   "order": 5,
   "difficulty": "intermediate",
   "estimatedMinutes": 15,
-  "tags": [
-    "asp.net core",
-    "output-caching",
-    "middleware",
-    "caching-policy"
-  ],
+  "tags": ["asp.net core", "output-caching", "middleware", "caching-policy"],
   "blocks": [
     {
       "type": "heading",

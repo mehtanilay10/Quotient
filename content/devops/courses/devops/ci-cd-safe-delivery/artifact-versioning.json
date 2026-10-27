@@ -8,12 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 25,
-  "tags": [
-    "CI/CD",
-    "versioning",
-    "artifacts",
-    "traceability"
-  ],
+  "tags": ["CI/CD", "versioning", "artifacts", "traceability"],
   "blocks": [
     {
       "type": "paragraph",
@@ -87,12 +82,7 @@
             "Version + build number",
             "NuGet.org / Azure Artifacts"
           ],
-          [
-            "Docker image",
-            "Tag: 1.2.3-sha.a1b2c3d",
-            "Registry + tag",
-            "ACR / Docker Hub / ECR"
-          ],
+          ["Docker image", "Tag: 1.2.3-sha.a1b2c3d", "Registry + tag", "ACR / Docker Hub / ECR"],
           [
             "npm package",
             "version in package.json",

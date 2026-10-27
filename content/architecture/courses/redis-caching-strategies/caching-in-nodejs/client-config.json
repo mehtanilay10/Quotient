@@ -8,13 +8,7 @@
   "order": 4,
   "difficulty": "intermediate",
   "estimatedMinutes": 11,
-  "tags": [
-    "ioredis",
-    "configuration",
-    "production",
-    "connection",
-    "best-practices"
-  ],
+  "tags": ["ioredis", "configuration", "production", "connection", "best-practices"],
   "blocks": [
     {
       "type": "paragraph",
@@ -38,11 +32,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Option",
-          "Default",
-          "Production Recommendation"
-        ],
+        "headers": ["Option", "Default", "Production Recommendation"],
         "rows": [
           ["connectTimeout", "10000 ms", "5000 ms — fail fast and alert"],
           ["lazyConnect", "false", "true for serverless, false for long-running"],

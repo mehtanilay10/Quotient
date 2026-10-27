@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 35,
-  "tags": [
-    "linq",
-    "query syntax",
-    "query expression",
-    "sql-like"
-  ],
+  "tags": ["linq", "query syntax", "query expression", "sql-like"],
   "blocks": [
     {
       "type": "paragraph",
@@ -158,9 +153,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "linq-method-syntax",
-    "anatomy-of-lambda-expression"
-  ],
+  "relatedLessons": ["linq-method-syntax", "anatomy-of-lambda-expression"],
   "courseSlug": "linq"
 }

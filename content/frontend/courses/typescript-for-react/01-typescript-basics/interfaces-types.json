@@ -8,12 +8,7 @@
   "order": 3,
   "difficulty": "beginner",
   "estimatedMinutes": 30,
-  "tags": [
-    "typescript",
-    "interfaces",
-    "types",
-    "objects"
-  ],
+  "tags": ["typescript", "interfaces", "types", "objects"],
   "blocks": [
     {
       "type": "paragraph",
@@ -63,27 +58,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Interface",
-          "Type"
-        ],
+        "headers": ["Interface", "Type"],
         "rows": [
-          [
-            "Can be extended with extends",
-            "Uses intersection (&)"
-          ],
-          [
-            "Can be augmented (declaration merging)",
-            "Cannot be merged"
-          ],
-          [
-            "Better for object shapes",
-            "Better for unions, primitives"
-          ],
-          [
-            "Error messages show interface name",
-            "Error messages show type definition"
-          ]
+          ["Can be extended with extends", "Uses intersection (&)"],
+          ["Can be augmented (declaration merging)", "Cannot be merged"],
+          ["Better for object shapes", "Better for unions, primitives"],
+          ["Error messages show interface name", "Error messages show type definition"]
         ]
       }
     },

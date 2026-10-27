@@ -8,13 +8,7 @@
   "order": 6,
   "difficulty": "beginner",
   "estimatedMinutes": 20,
-  "tags": [
-    "prisma",
-    "seeding",
-    "typescript",
-    "testing",
-    "fixtures"
-  ],
+  "tags": ["prisma", "seeding", "typescript", "testing", "fixtures"],
   "blocks": [
     {
       "type": "paragraph",
@@ -66,8 +60,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "prisma-migrate-reset",
-    "prisma-migrate-dev"
-  ]
+  "relatedLessons": ["prisma-migrate-reset", "prisma-migrate-dev"]
 }

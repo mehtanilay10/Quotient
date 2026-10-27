@@ -9,12 +9,7 @@
   "difficulty": "beginner",
   "estimatedHours": 2,
   "icon": "📝",
-  "tags": [
-    "swagger",
-    "openapi",
-    "api",
-    "documentation"
-  ],
+  "tags": ["swagger", "openapi", "api", "documentation"],
   "lessonSlugs": [
     "swashbuckle",
     "openapi-generator",

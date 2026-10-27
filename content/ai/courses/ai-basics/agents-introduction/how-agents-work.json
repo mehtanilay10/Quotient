@@ -71,12 +71,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Memory type",
-          "What it stores",
-          "Duration",
-          "Enabled by"
-        ],
+        "headers": ["Memory type", "What it stores", "Duration", "Enabled by"],
         "rows": [
           [
             "Short-term (context)",
@@ -183,11 +178,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Tool category",
-          "What it does",
-          "Example use cases"
-        ],
+        "headers": ["Tool category", "What it does", "Example use cases"],
         "rows": [
           [
             "Search / Browsing",
@@ -240,11 +231,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Prompt element",
-          "What to include",
-          "Why it matters"
-        ],
+        "headers": ["Prompt element", "What to include", "Why it matters"],
         "rows": [
           [
             "Goal statement",
@@ -393,22 +380,14 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Scenario",
-          "Use agent?",
-          "Why"
-        ],
+        "headers": ["Scenario", "Use agent?", "Why"],
         "rows": [
           [
             "Multi-step workflows across tools",
             "Yes",
             "Agents reduce manual orchestration and save time"
           ],
-          [
-            "One-off factual question",
-            "No",
-            "A chatbot is faster and cheaper"
-          ],
+          ["One-off factual question", "No", "A chatbot is faster and cheaper"],
           [
             "Tasks requiring current web data",
             "Yes",
@@ -460,11 +439,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Use case",
-          "Template",
-          "Notes"
-        ],
+        "headers": ["Use case", "Template", "Notes"],
         "rows": [
           [
             "Research brief",
@@ -517,11 +492,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Failure mode",
-          "Symptoms",
-          "Mitigation"
-        ],
+        "headers": ["Failure mode", "Symptoms", "Mitigation"],
         "rows": [
           [
             "Tool misuse",
@@ -563,11 +534,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Metric",
-          "What to check",
-          "Why it matters"
-        ],
+        "headers": ["Metric", "What to check", "Why it matters"],
         "rows": [
           [
             "Task success rate",
@@ -684,11 +651,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Pattern",
-          "Template",
-          "When to use"
-        ],
+        "headers": ["Pattern", "Template", "When to use"],
         "rows": [
           [
             "Plan-then-act",
@@ -725,31 +688,16 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Item",
-          "Why it matters"
-        ],
+        "headers": ["Item", "Why it matters"],
         "rows": [
           [
             "Define success criteria and failure modes",
             "Ensures predictable stopping and recovery behavior"
           ],
-          [
-            "Limit tool permissions",
-            "Reduces blast radius of mistakes"
-          ],
-          [
-            "Implement verification for critical outputs",
-            "Prevents incorrect writes or decisions"
-          ],
-          [
-            "Enable audit logging",
-            "Supports debugging and compliance"
-          ],
-          [
-            "Run adversarial tests",
-            "Reveals brittle or unsafe behaviors before deployment"
-          ]
+          ["Limit tool permissions", "Reduces blast radius of mistakes"],
+          ["Implement verification for critical outputs", "Prevents incorrect writes or decisions"],
+          ["Enable audit logging", "Supports debugging and compliance"],
+          ["Run adversarial tests", "Reveals brittle or unsafe behaviors before deployment"]
         ]
       }
     },
@@ -771,11 +719,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Resource",
-          "Type",
-          "Why it helps"
-        ],
+        "headers": ["Resource", "Type", "Why it helps"],
         "rows": [
           [
             "LLM-Powered Autonomous Agents (Lilian Weng)",
@@ -838,10 +782,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "what-are-agents",
-    "what-is-tool-calling"
-  ],
+  "relatedLessons": ["what-are-agents", "what-is-tool-calling"],
   "furtherReading": [
     {
       "title": "LLM-Powered Autonomous Agents",

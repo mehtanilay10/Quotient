@@ -28,9 +28,21 @@
       "data": {
         "headers": ["Action", "What It Does", "When to Use"],
         "rows": [
-          ["Scale Up", "Increases CPU and memory per instance", "Your app needs more power on a single server"],
-          ["Scale Out", "Adds more instances behind a load balancer", "Your app needs to handle more concurrent requests"],
-          ["Autoscale", "Automatically scales out or in based on rules", "Traffic changes throughout the day or week"]
+          [
+            "Scale Up",
+            "Increases CPU and memory per instance",
+            "Your app needs more power on a single server"
+          ],
+          [
+            "Scale Out",
+            "Adds more instances behind a load balancer",
+            "Your app needs to handle more concurrent requests"
+          ],
+          [
+            "Autoscale",
+            "Automatically scales out or in based on rules",
+            "Traffic changes throughout the day or week"
+          ]
         ]
       }
     },

@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "beginner",
   "estimatedMinutes": 12,
-  "tags": [
-    "azure",
-    "azure",
-    "messaging",
-    "service-bus",
-    "developer"
-  ],
+  "tags": ["azure", "azure", "messaging", "service-bus", "developer"],
   "blocks": [
     {
       "type": "heading",
@@ -114,10 +108,7 @@
               "Filter messages per subscription",
               "Scales to many subscribers"
             ],
-            "cons": [
-              "More complex to configure",
-              "Messages are duplicated across subscriptions"
-            ]
+            "cons": ["More complex to configure", "Messages are duplicated across subscriptions"]
           }
         ]
       }

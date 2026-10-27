@@ -145,7 +145,15 @@
   ],
   "relatedLessons": ["linq-expression-trees-and-sql-translation", "projection-vs-include"],
   "furtherReading": [
-    { "title": "EF Core change tracking overview", "url": "https://learn.microsoft.com/en-us/ef/core/change-tracking/", "type": "article" },
-    { "title": "No-tracking queries", "url": "https://learn.microsoft.com/en-us/ef/core/querying/no-tracking", "type": "article" }
+    {
+      "title": "EF Core change tracking overview",
+      "url": "https://learn.microsoft.com/en-us/ef/core/change-tracking/",
+      "type": "article"
+    },
+    {
+      "title": "No-tracking queries",
+      "url": "https://learn.microsoft.com/en-us/ef/core/querying/no-tracking",
+      "type": "article"
+    }
   ]
 }

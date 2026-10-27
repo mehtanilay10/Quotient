@@ -8,11 +8,7 @@
   "order": 1,
   "difficulty": "advanced",
   "estimatedMinutes": 19,
-  "tags": [
-    "event-driven",
-    "architecture",
-    "fundamentals"
-  ],
+  "tags": ["event-driven", "architecture", "fundamentals"],
   "blocks": [
     {
       "type": "paragraph",
@@ -60,32 +56,12 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Aspect",
-          "Request-Driven",
-          "Event-Driven"
-        ],
+        "headers": ["Aspect", "Request-Driven", "Event-Driven"],
         "rows": [
-          [
-            "Communication",
-            "Direct request/response",
-            "Publish/subscribe"
-          ],
-          [
-            "Coupling",
-            "Tight (caller knows callee)",
-            "Loose (producer does not know consumers)"
-          ],
-          [
-            "Timing",
-            "Synchronous",
-            "Asynchronous"
-          ],
-          [
-            "Scalability",
-            "Limited",
-            "High"
-          ]
+          ["Communication", "Direct request/response", "Publish/subscribe"],
+          ["Coupling", "Tight (caller knows callee)", "Loose (producer does not know consumers)"],
+          ["Timing", "Synchronous", "Asynchronous"],
+          ["Scalability", "Limited", "High"]
         ]
       }
     },

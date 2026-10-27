@@ -1,23 +1,20 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import { AlertCircle } from 'lucide-react';
+import type { Metadata } from "next";
+import Link from "next/link";
+import { AlertCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: 'Sign-in problem',
-  description: 'Something went wrong while signing in.',
+  title: "Sign-in problem",
+  description: "Something went wrong while signing in.",
   robots: { index: false, follow: false },
 };
 
 const ERROR_MESSAGES: Record<string, string> = {
   Verification:
-    'That sign-in link has expired or has already been used. Request a new one to continue.',
-  EmailSignin:
-    'We could not send the sign-in email. Please try again in a moment.',
-  RateLimited:
-    'Too many sign-in attempts. Please wait a few minutes and try again.',
-  AccessDenied: 'This account is not allowed to sign in.',
-  Configuration:
-    'Sign-in is not configured correctly right now. Please try again later.',
+    "That sign-in link has expired or has already been used. Request a new one to continue.",
+  EmailSignin: "We could not send the sign-in email. Please try again in a moment.",
+  RateLimited: "Too many sign-in attempts. Please wait a few minutes and try again.",
+  AccessDenied: "This account is not allowed to sign in.",
+  Configuration: "Sign-in is not configured correctly right now. Please try again later.",
 };
 
 export default async function LoginErrorPage({
@@ -28,7 +25,7 @@ export default async function LoginErrorPage({
   const { error } = await searchParams;
   const message =
     (error && ERROR_MESSAGES[error]) ||
-    'Something went wrong while signing you in. Please try again.';
+    "Something went wrong while signing you in. Please try again.";
 
   return (
     <div className="flex min-h-[calc(100vh-4rem)] items-center justify-center p-4">
@@ -37,9 +34,7 @@ export default async function LoginErrorPage({
           <AlertCircle className="h-6 w-6 text-danger-fg" aria-hidden="true" />
         </div>
 
-        <h1 className="text-2xl font-bold text-fg-default">
-          Sign-in problem
-        </h1>
+        <h1 className="text-2xl font-bold text-fg-default">Sign-in problem</h1>
         <p className="mt-2 text-sm text-fg-muted">{message}</p>
 
         <Link

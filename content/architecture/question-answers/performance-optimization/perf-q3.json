@@ -7,12 +7,7 @@
   "order": 3,
   "difficulty": "intermediate",
   "estimatedMinutes": 18,
-  "tags": [
-    "interview",
-    "performance",
-    "react",
-    "frontend"
-  ],
+  "tags": ["interview", "performance", "react", "frontend"],
   "blocks": [
     {
       "type": "paragraph",

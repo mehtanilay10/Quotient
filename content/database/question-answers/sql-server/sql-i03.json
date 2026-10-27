@@ -6,10 +6,7 @@
   "description": "Understand Atomicity, Consistency, Isolation, and Durability.",
   "order": 8,
   "difficulty": "intermediate",
-  "tags": [
-    "sql server",
-    "intermediate"
-  ],
+  "tags": ["sql server", "intermediate"],
   "blocks": [
     {
       "type": "paragraph",

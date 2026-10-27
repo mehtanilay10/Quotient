@@ -8,13 +8,7 @@
   "order": 2,
   "difficulty": "advanced",
   "estimatedMinutes": 13,
-  "tags": [
-    "ssr",
-    "getServerSideProps",
-    "server-side-rendering",
-    "nextjs",
-    "apollo-client"
-  ],
+  "tags": ["ssr", "getServerSideProps", "server-side-rendering", "nextjs", "apollo-client"],
   "blocks": [
     {
       "type": "heading",
@@ -62,7 +56,5 @@
   ],
   "relatedLessons": [],
   "furtherReading": [],
-  "prerequisites": [
-    "nextjs-integration"
-  ]
+  "prerequisites": ["nextjs-integration"]
 }

@@ -8,13 +8,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 25,
-  "tags": [
-    "joins",
-    "venn-diagram",
-    "nested-loop",
-    "hash-join",
-    "merge-join"
-  ],
+  "tags": ["joins", "venn-diagram", "nested-loop", "hash-join", "merge-join"],
   "blocks": [
     {
       "type": "paragraph",
@@ -32,11 +26,7 @@
     {
       "type": "table",
       "data": {
-        "headers": [
-          "Algorithm",
-          "Mechanism",
-          "When Planner Uses It"
-        ],
+        "headers": ["Algorithm", "Mechanism", "When Planner Uses It"],
         "rows": [
           [
             "Nested Loop Join",
@@ -106,8 +96,5 @@
       }
     }
   ],
-  "relatedLessons": [
-    "inner-join",
-    "left-right-joins"
-  ]
+  "relatedLessons": ["inner-join", "left-right-joins"]
 }

@@ -34,11 +34,7 @@
       "data": {
         "headers": ["Redundancy", "Description", "Best For"],
         "rows": [
-          [
-            "LRS",
-            "Locally redundant within one datacenter",
-            "Development and non-critical data"
-          ],
+          ["LRS", "Locally redundant within one datacenter", "Development and non-critical data"],
           [
             "ZRS",
             "Zone redundant across datacenters in one region",

@@ -7,12 +7,7 @@
   "order": 1,
   "difficulty": "intermediate",
   "estimatedMinutes": 28,
-  "tags": [
-    "ef-core",
-    "migrations",
-    "workflow",
-    "snapshot"
-  ],
+  "tags": ["ef-core", "migrations", "workflow", "snapshot"],
   "blocks": [
     {
       "type": "paragraph",
@@ -119,9 +114,6 @@
       }
     }
   ],
-  "relatedLessons": [
-    "ef-core-migrations-using-cli",
-    "pmc-powershell-commands-migrations"
-  ],
+  "relatedLessons": ["ef-core-migrations-using-cli", "pmc-powershell-commands-migrations"],
   "courseSlug": "ef-core"
 }

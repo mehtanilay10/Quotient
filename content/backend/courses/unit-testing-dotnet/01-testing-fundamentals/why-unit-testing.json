@@ -7,11 +7,7 @@
   "order": 1,
   "difficulty": "beginner",
   "estimatedMinutes": 10,
-  "tags": [
-    "testing",
-    "fundamentals",
-    "dotnet"
-  ],
+  "tags": ["testing", "fundamentals", "dotnet"],
   "blocks": [
     {
       "type": "paragraph",
@@ -51,9 +47,7 @@
       }
     }
   ],
-  "relatedLessons": [
-    "testing-pyramid"
-  ],
+  "relatedLessons": ["testing-pyramid"],
   "furtherReading": [],
   "courseSlug": "unit-testing-dotnet"
 }
