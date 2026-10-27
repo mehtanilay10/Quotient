@@ -15,18 +15,17 @@ export const GET = createApiAuthHandler(async (databaseUser) => {
   const { prisma } = await import("@/lib/prisma");
 
   const cacheKey = `bookmarks:${databaseUser.id}`;
-  const cached =
-    await getCached<
-      Array<{
-        id: string;
-        type: string;
-        slug: string;
-        title: string;
-        courseSlug: string;
-        moduleSlug: string;
-        addedAt: string;
-      }>
-    >(cacheKey);
+  const cached = await getCached<
+    Array<{
+      id: string;
+      type: string;
+      slug: string;
+      title: string;
+      courseSlug: string;
+      moduleSlug: string;
+      addedAt: string;
+    }>
+  >(cacheKey);
   if (cached) {
     return NextResponse.json({ items: cached });
   }
