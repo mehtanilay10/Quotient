@@ -349,6 +349,9 @@ export interface ProgressState {
   questionAnswers: CourseProgress;
 }
 
+/** The progress buckets tracked independently for each content type. */
+export type ProgressCategory = keyof ProgressState;
+
 export interface BookmarkState {
   items: BookmarkItem[];
 }

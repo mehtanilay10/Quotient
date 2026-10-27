@@ -2,7 +2,7 @@
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useSession } from 'next-auth/react';
-import type { CourseProgress, LessonProgress, ProgressState } from '@/types';
+import type { CourseProgress, LessonProgress, ProgressCategory, ProgressState } from '@/types';
 import { logger } from '@/lib/logger';
 import { syncProgressToServer, syncUserData } from '@/lib/userSync';
 import { retryWithBackoff } from '@/lib/retry';
@@ -14,7 +14,7 @@ const DEFAULT_PROGRESS: ProgressState = {
   questionAnswers: { completedLessons: [], lastVisitedLesson: undefined, startedAt: undefined },
 };
 
-type Category = keyof ProgressState;
+type Category = ProgressCategory;
 
 async function fetchProgressFromServer(): Promise<ProgressState | null> {
   try {

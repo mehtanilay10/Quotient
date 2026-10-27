@@ -65,7 +65,7 @@
       "data": {
         "id": "mxn-problem",
         "caption": "MCP collapses M×N custom integrations into M+N standard implementations.",
-        "definition": "graph TD\n  subgraph Without MCP — M×N custom integrations\n    A1[Claude] --> T1a[GitHub]\n    A1 --> T2a[Notion]\n    A2[GPT-4] --> T1b[GitHub]\n    A2 --> T2b[Notion]\n    A3[Gemini] --> T1c[GitHub]\n    A3 --> T2c[Notion]\n  end\n  subgraph With MCP — M+N standard implementations\n    Claude2[Claude] --> MCP[MCP Protocol]\n    GPT[GPT-4] --> MCP\n    Gemini2[Gemini] --> MCP\n    MCP --> GitHub[GitHub MCP Server]\n    MCP --> Notion2[Notion MCP Server]\n  end\n\n  style MCP fill:#ddf4ff,stroke:#0969da,color:#0550ae\n  style GitHub fill:#d1f3d8,stroke:#1a7f37,color:#1a7f37\n  style Notion2 fill:#d1f3d8,stroke:#1a7f37,color:#1a7f37"
+        "definition": "graph TD\n  subgraph Without MCP — M×N custom integrations\n    A1[Claude] --> T1a[GitHub]\n    A1 --> T2a[Notion]\n    A2[GPT-6] --> T1b[GitHub]\n    A2 --> T2b[Notion]\n    A3[Gemini] --> T1c[GitHub]\n    A3 --> T2c[Notion]\n  end\n  subgraph With MCP — M+N standard implementations\n    Claude2[Claude] --> MCP[MCP Protocol]\n    GPT[GPT-6] --> MCP\n    Gemini2[Gemini] --> MCP\n    MCP --> GitHub[GitHub MCP Server]\n    MCP --> Notion2[Notion MCP Server]\n  end\n\n  style MCP fill:#ddf4ff,stroke:#0969da,color:#0550ae\n  style GitHub fill:#d1f3d8,stroke:#1a7f37,color:#1a7f37\n  style Notion2 fill:#d1f3d8,stroke:#1a7f37,color:#1a7f37"
       }
     },
     {

@@ -1,10 +1,11 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { X, ZoomIn, ZoomOut } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useFocusTrap } from '@/hooks/useFocusTrap';
 import { useBodyScrollLock } from '@/hooks/useBodyScrollLock';
+import { registerShortcut, unregisterShortcut } from '@/hooks/useKeyboardShortcuts';
 import Image from 'next/image';
 
 interface ImageModalProps {
@@ -37,11 +38,26 @@ export function ImageModal({ src, alt, caption, onClose }: ImageModalProps) {
     dialogRef.current?.focus();
   }, []);
 
-  const zoomOut = () =>
-    setZoom((z) => Math.max(MIN_ZOOM, +(z - ZOOM_STEP).toFixed(2)));
-  const zoomIn = () =>
-    setZoom((z) => Math.min(MAX_ZOOM, +(z + ZOOM_STEP).toFixed(2)));
-  const resetZoom = () => setZoom(1);
+  const zoomOut = useCallback(
+    () => setZoom((z) => Math.max(MIN_ZOOM, +(z - ZOOM_STEP).toFixed(2))),
+    []
+  );
+  const zoomIn = useCallback(
+    () => setZoom((z) => Math.min(MAX_ZOOM, +(z + ZOOM_STEP).toFixed(2))),
+    []
+  );
+  const resetZoom = useCallback(() => setZoom(1), []);
+
+  useEffect(() => {
+    registerShortcut('+', 'Zoom in', zoomIn);
+    registerShortcut('-', 'Zoom out', zoomOut);
+    registerShortcut('0', 'Reset zoom', resetZoom);
+    return () => {
+      unregisterShortcut('+');
+      unregisterShortcut('-');
+      unregisterShortcut('0');
+    };
+  }, [resetZoom, zoomIn, zoomOut]);
 
   const btnBase =
     'flex items-center justify-center rounded-md border border-border text-fg-muted transition-colors hover:bg-canvas-subtle hover:text-fg-default';

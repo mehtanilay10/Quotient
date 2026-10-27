@@ -1,9 +1,10 @@
 'use client';
 
-import { useContext, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { BookOpen } from 'lucide-react';
 import { useProgress } from '@/hooks/useProgress';
 import { useLessonNotes } from '@/hooks/useLessonNotes';
+import { registerShortcut, unregisterShortcut } from '@/hooks/useKeyboardShortcuts';
 import { SignInPrompt } from '@/components/auth/SignInPrompt';
 import { useNotesModal } from './NotesModalContext';
 
@@ -23,7 +24,7 @@ export function LessonNotesButton({ courseSlug, moduleSlug, lessonSlug, onOpen }
   const note = mounted ? getNote(courseSlug, moduleSlug, lessonSlug) : undefined;
   const hasNotes = !!note?.content?.trim();
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     if (isLoggedOut) {
       setShowSignIn(true);
       return;
@@ -33,7 +34,12 @@ export function LessonNotesButton({ courseSlug, moduleSlug, lessonSlug, onOpen }
     } else {
       openNotes();
     }
-  };
+  }, [isLoggedOut, onOpen, openNotes]);
+
+  useEffect(() => {
+    registerShortcut('o', 'Open lesson notes', handleClick);
+    return () => unregisterShortcut('o');
+  }, [handleClick]);
 
   return (
     <>

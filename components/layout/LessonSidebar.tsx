@@ -5,7 +5,7 @@ import { ChevronDown, ChevronRight, CheckCircle2, Circle } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { useProgress } from '@/hooks/useProgress';
-import type { Module, LessonNavItem } from '@/types';
+import type { Module, LessonNavItem, ProgressCategory } from '@/types';
 
 interface LessonSidebarProps {
   currentModuleSlug: string;
@@ -14,6 +14,7 @@ interface LessonSidebarProps {
   basePrefix?: string;
   modules: Module[];
   lessonsByModule: Record<string, LessonNavItem[]>;
+  category?: ProgressCategory;
 }
 
 export function LessonSidebar({
@@ -23,6 +24,7 @@ export function LessonSidebar({
   basePrefix = 'courses',
   modules,
   lessonsByModule,
+  category = 'lessons',
 }: LessonSidebarProps) {
   const { isCompleted } = useProgress();
 
@@ -55,7 +57,7 @@ export function LessonSidebar({
         {modules.map((mod) => {
           const isOpen = openModules.has(mod.slug);
           const lessons = lessonsByModule[mod.slug] ?? [];
-          const completedCount = lessons.filter((l) => isCompleted(l.slug)).length;
+          const completedCount = lessons.filter((l) => isCompleted(l.slug, category)).length;
 
           return (
             <li key={mod.slug}>
@@ -92,7 +94,7 @@ export function LessonSidebar({
                 <ul className="mt-1 ml-4 space-y-0.5 border-l border-border pl-3">
                   {lessons.map((lesson) => {
                     const isCurrent = lesson.slug === currentLessonSlug;
-                    const done = isCompleted(lesson.slug);
+                    const done = isCompleted(lesson.slug, category);
                     return (
                       <li key={lesson.slug}>
                         <Link

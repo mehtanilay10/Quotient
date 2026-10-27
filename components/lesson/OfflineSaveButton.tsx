@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useCallback, useState, useEffect } from 'react';
 import { Bookmark, Download, Trash2, WifiOff } from 'lucide-react';
 import { useOfflineQueue } from '@/hooks/useOfflineQueue';
+import { registerShortcut, unregisterShortcut } from '@/hooks/useKeyboardShortcuts';
 import { SignInPrompt } from '@/components/auth/SignInPrompt';
 
 interface OfflineSaveButtonProps {
@@ -31,7 +32,7 @@ export function OfflineSaveButton({ courseSlug, moduleSlug, lessonSlug, title }:
     };
   }, []);
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     if (isLoggedOut) {
       setShowSignIn(true);
       return;
@@ -41,7 +42,12 @@ export function OfflineSaveButton({ courseSlug, moduleSlug, lessonSlug, title }:
     } else {
       addToQueue(courseSlug, moduleSlug, lessonSlug, title);
     }
-  };
+  }, [addToQueue, courseSlug, isLoggedOut, lessonSlug, moduleSlug, queued, removeFromQueue, title]);
+
+  useEffect(() => {
+    registerShortcut('s', 'Save/remove current lesson offline', handleClick);
+    return () => unregisterShortcut('s');
+  }, [handleClick]);
 
   return (
     <>

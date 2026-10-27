@@ -1,63 +1,62 @@
 'use client';
 
-import React, { createContext, useContext, useEffect, useMemo } from 'react';
+import React, { createContext, useContext, useEffect, useLayoutEffect, useMemo } from 'react';
 import { useUserPreferences, type UserPreferences } from '@/hooks/useUserPreferences';
+import {
+  applyAppearanceClasses,
+  getAppearanceClasses,
+  writeAppearanceCookie,
+} from '@/lib/appearance';
 
 interface PreferencesContextValue {
   preferences: UserPreferences;
+  /** Updates one preference and persists it (server when logged in, localStorage otherwise). */
+  updatePreference: <K extends keyof UserPreferences>(key: K, value: UserPreferences[K]) => void;
   /** False until client-side preferences have loaded (avoids hydration flashes). */
   mounted: boolean;
 }
 
 const PreferencesContext = createContext<PreferencesContextValue | null>(null);
 
-const APPEARANCE_CLASSES = [
-  'font-size-sm', 'font-size-md', 'font-size-lg', 'font-size-xl',
-  'font-size-code-sm', 'font-size-code-md', 'font-size-code-lg',
-  'density-comfortable', 'density-compact',
-  'reduced-motion',
-];
+// A layout effect applies the classes before the browser paints, so if React
+// rewrites <html class> during hydration the pre-paint script result is
+// restored without a visible flash. Falls back to useEffect on the server.
+const useIsomorphicLayoutEffect =
+  typeof window !== 'undefined' ? useLayoutEffect : useEffect;
 
 /**
  * Applies appearance preferences (font size, code font size, density, reduced
  * motion) to `<html>` for the whole app and exposes the full preference set to
  * any component that needs it (e.g. code blocks reading `autoExpandCode`).
  *
- * Previously these classes were only applied while the Personalization page
- * was mounted, so preferences silently reset as soon as the user navigated
- * away. Applying them here makes them take effect everywhere.
+ * The root layout also injects a blocking script that applies the mirrored
+ * cookie before first paint. This provider starts from the same bootstrapped
+ * values, so the first effect does not reset the page to the default size
+ * while the database request is in flight.
  */
 export function PreferencesProvider({ children }: { children: React.ReactNode }) {
-  const { preferences, mounted } = useUserPreferences();
+  const { preferences, updatePreference, mounted } = useUserPreferences();
+  const { fontSize, codeFontSize, density, reducedMotion } = preferences;
 
-  const htmlClasses = useMemo(() => {
-    if (!mounted) return '';
-    const classes = [`font-size-${preferences.fontSize ?? 'md'}`];
-    if (preferences.codeFontSize) {
-      classes.push(`font-size-code-${preferences.codeFontSize}`);
-    }
-    if (preferences.density) {
-      classes.push(`density-${preferences.density}`);
-    }
-    if (preferences.reducedMotion) {
-      classes.push('reduced-motion');
-    }
-    return classes.join(' ');
-  }, [mounted, preferences.fontSize, preferences.codeFontSize, preferences.density, preferences.reducedMotion]);
+  const htmlClasses = useMemo(
+    () => getAppearanceClasses({ fontSize, codeFontSize, density, reducedMotion }),
+    [fontSize, codeFontSize, density, reducedMotion]
+  );
 
-  useEffect(() => {
-    const root = document.documentElement;
-    APPEARANCE_CLASSES.forEach((cls) => root.classList.remove(cls));
-    if (htmlClasses) {
-      htmlClasses.split(' ').forEach((cls) => {
-        if (cls) root.classList.add(cls);
-      });
-    }
+  useIsomorphicLayoutEffect(() => {
+    applyAppearanceClasses(htmlClasses);
   }, [htmlClasses]);
 
+  // Keep the cookie mirror in sync for the next page load. Rewriting it after
+  // logout also clears a stale signed-in appearance in favour of the local one.
+  useEffect(() => {
+    if (!mounted) return;
+    writeAppearanceCookie({ fontSize, codeFontSize, density, reducedMotion });
+  }, [mounted, fontSize, codeFontSize, density, reducedMotion]);
+
   const value = useMemo<PreferencesContextValue>(
-    () => ({ preferences, mounted }),
-    [preferences, mounted]
+    () => ({ preferences, updatePreference, mounted }),
+    [preferences, updatePreference, mounted]
   );
 
   return <PreferencesContext.Provider value={value}>{children}</PreferencesContext.Provider>;
@@ -81,6 +80,7 @@ export function usePreferencesContext(): PreferencesContextValue {
         showCompleted: true,
         defaultLanding: null,
       },
+      updatePreference: () => {},
       mounted: false,
     }
   );

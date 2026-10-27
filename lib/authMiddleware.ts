@@ -31,7 +31,7 @@ export function createApiAuthHandler(
     // Blanket throttle that runs before auth and CSRF validation so that
     // probing credentials or tokens never bypasses rate limiting. Uses its
     // own counter (`label`) so it does not consume the handler's quota.
-    const preAuthLimit = rateLimit(request, { limit: 60, windowMs: 60_000, label: 'api-auth' });
+    const preAuthLimit = await rateLimit(request, { limit: 60, windowMs: 60_000, label: 'api-auth' });
     if (!preAuthLimit.allowed) {
       return NextResponse.json(
         { code: 'RATE_LIMITED', message: 'Too many requests. Please try again later.' },

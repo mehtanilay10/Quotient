@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { BookOpen, X } from 'lucide-react';
 import { LessonSidebar } from '@/components/layout/LessonSidebar';
-import type { Module, Lesson } from '@/types';
+import type { Module, Lesson, ProgressCategory } from '@/types';
 
 interface MobileLessonDrawerProps {
   currentModuleSlug: string;
@@ -11,6 +11,7 @@ interface MobileLessonDrawerProps {
   courseSlug?: string;
   modules: Module[];
   lessonsByModule: Record<string, Lesson[]>;
+  category?: ProgressCategory;
 }
 
 export function MobileLessonDrawer({
@@ -19,6 +20,7 @@ export function MobileLessonDrawer({
   courseSlug,
   modules,
   lessonsByModule,
+  category = 'lessons',
 }: MobileLessonDrawerProps) {
   const [open, setOpen] = useState(false);
 
@@ -77,6 +79,7 @@ export function MobileLessonDrawer({
               courseSlug={courseSlug}
               modules={modules}
               lessonsByModule={lessonsByModule}
+              category={category}
             />
           </div>
         </div>

@@ -10,7 +10,7 @@
   "tags": [
     "chatgpt",
     "openai",
-    "gpt-4o",
+    "gpt-6",
     "practical"
   ],
   "blocks": [
@@ -23,7 +23,7 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Since its inception, ChatGPT has rapidly evolved. As of 2025 it is powered by OpenAI's new GPT-5 model, providing much faster, more accurate, and more flexible responses【8†L51-L58】. Recent updates have added features like long-term memory (allowing the model to recall facts across chats) and integrated web browsing, making it more personalized and up-to-date【12†L59-L67】【14†L41-L49】."
+        "text": "Since its inception, ChatGPT has rapidly evolved. As of late 2026 it is powered by OpenAI's GPT-6 family: GPT-6 Astra for the hardest reasoning and research tasks, GPT-6.1 Sol as the everyday default, and GPT-6 Luna for fast, lightweight responses. Recent updates have added long-term memory (allowing the model to recall facts across chats) and integrated web browsing, making it more personalized and up-to-date."
       }
     },
     {
@@ -46,7 +46,7 @@
       "data": {
         "id": "chatgpt-how-it-works",
         "caption": "How ChatGPT processes your message — from input to response",
-        "definition": "sequenceDiagram\n  participant U as You\n  participant C as ChatGPT Interface\n  participant M as GPT-5 Model\n  participant T as Tools (Web, Code, Files)\n  U->>C: Type a message\n  C->>M: Send message + conversation history\n  M-->>M: Decide if a tool is needed\n  alt Tool needed\n    M->>T: Call web search / run code / read file\n    T-->>M: Return tool result\n  end\n  M->>C: Generate response tokens\n  C->>U: Stream response to screen"
+        "definition": "sequenceDiagram\n  participant U as You\n  participant C as ChatGPT Interface\n  participant M as GPT-6 Model\n  participant T as Tools (Web, Code, Files)\n  U->>C: Type a message\n  C->>M: Send message + conversation history\n  M-->>M: Decide if a tool is needed\n  alt Tool needed\n    M->>T: Call web search / run code / read file\n    T-->>M: Return tool result\n  end\n  M->>C: Generate response tokens\n  C->>U: Stream response to screen"
       }
     },
     {
@@ -76,37 +76,37 @@
         "rows": [
           [
             "Free",
-            "GPT-5.3 (limited use)【11†L101-L104】",
+            "GPT-6 Luna (limited use)",
             "General chat, writing, simple analysis",
             "Yes — excellent starting point"
           ],
           [
-            "Go (free, ad-supported)",
-            "GPT-5.3 (expanded use)【11†L123-L131】",
+            "Go ($8/mo)",
+            "GPT-6 Luna (higher limits)",
             "General chat with more usage (ads may appear)",
-            "Yes — more access on the free tier"
+            "Yes — more access for light daily use"
           ],
           [
             "Plus ($20/mo)",
-            "GPT-5.3 Instant (and GPT-5.4)【11†L147-L154】",
+            "GPT-6.1 Sol, limited GPT-6 Astra",
             "Complex reasoning, coding, images, large files",
             "Yes if you use AI daily"
           ],
           [
-            "Pro ($35/mo)",
-            "GPT-5.4 Pro (extended reasoning)【11†L175-L179】",
+            "Pro ($100–$500/mo)",
+            "GPT-6 Astra (extended reasoning)",
             "Research, business tasks, heavy coding",
             "Yes for maximum performance"
           ],
           [
-            "Business ($20/user/mo)",
-            "All Plus features, unlimited GPT-5.4, admin tools【11†L212-L220】",
+            "Business (per seat)",
+            "Plus features, higher limits, admin tools",
             "Team and business use (data privacy and integrations)",
             "Yes for business use"
           ],
           [
             "Enterprise (custom)",
-            "All models (latest GPT-5.4), SOC 2, admin controls",
+            "All models (including GPT-6 Astra), SOC 2, admin controls",
             "Large organizations with compliance needs",
             "Yes for enterprise"
           ]
@@ -135,7 +135,7 @@
       "data": {
         "id": "chatgpt-features",
         "caption": "ChatGPT feature overview — most users only use a fraction of what's available",
-        "definition": "mindmap\n  root((ChatGPT))\n    Text & Chat\n      Writing & editing\n      Brainstorming\n      Q&A\n      Summaries\n    Files & Data\n      PDF analysis\n      CSV/spreadsheet analysis\n      Code interpreter\n      Image analysis\n    Media\n      DALL-E image generation\n      Voice mode\n      Canvas document editor\n    Customization\n      Custom GPTs\n      Memory\n      System instructions\n      Projects"
+        "definition": "mindmap\n  root((ChatGPT))\n    Text & Chat\n      Writing & editing\n      Brainstorming\n      Q&A\n      Summaries\n    Files & Data\n      PDF analysis\n      CSV/spreadsheet analysis\n      Code interpreter\n      Image analysis\n    Media\n      Image generation\n      Voice mode\n      Canvas document editor\n    Customization\n      Custom GPTs\n      Memory\n      System instructions\n      Projects"
       }
     },
     {
@@ -150,10 +150,10 @@
           "File upload — analyze PDFs, spreadsheets, images. Can read charts, extract data, and answer questions about documents.",
           "Code interpreter — runs real Python code in your chat. Use this for all math, data analysis, and chart generation.",
           "Projects — organize conversations, files, and a shared custom instruction set for ongoing work",
-          "Web browsing — allows ChatGPT to fetch and cite up-to-date information from the internet (Plus/Pro feature)【14†L41-L49】",
-          "Deep research mode — ChatGPT can aggregate information from multiple web sources to produce structured, cited answers【14†L47-L52】",
-          "GPT Store — browse and install custom GPTs (user-created AI assistants) for specialized tasks【14†L137-L141】",
-          "Language translation — GPT-5 supports 50+ languages, enabling ChatGPT to translate or converse in many languages【1†L60-L64】"
+          "Web browsing — allows ChatGPT to fetch and cite up-to-date information from the internet (paid plans)",
+          "Deep research mode — ChatGPT can aggregate information from multiple web sources to produce structured, cited answers",
+          "GPT Store — browse and install custom GPTs (user-created AI assistants) for specialized tasks",
+          "Language translation — the GPT-6 family supports 50+ languages, enabling ChatGPT to translate or converse in many languages"
         ]
       }
     },
@@ -236,7 +236,7 @@
       "data": {
         "id": "custom-gpt-anatomy",
         "caption": "Anatomy of a Custom GPT",
-        "definition": "graph TD\n    A[Custom GPT] --> B[System Instructions]\n    A --> C[Uploaded Knowledge Files]\n    A --> D[Enabled Tools]\n    A --> E[Conversation Starters]\n    B --> B1[Persona & tone]\n    B --> B2[Task focus]\n    B --> B3[Output format rules]\n    C --> C1[PDFs, docs, CSVs]\n    D --> D1[Web browsing]\n    D --> D2[Code interpreter]\n    D --> D3[DALL-E image gen]\n    E --> E1[Suggested opening prompts]"
+        "definition": "graph TD\n    A[Custom GPT] --> B[System Instructions]\n    A --> C[Uploaded Knowledge Files]\n    A --> D[Enabled Tools]\n    A --> E[Conversation Starters]\n    B --> B1[Persona & tone]\n    B --> B2[Task focus]\n    B --> B3[Output format rules]\n    C --> C1[PDFs, docs, CSVs]\n    D --> D1[Web browsing]\n    D --> D2[Code interpreter]\n    D --> D3[Image generation]\n    E --> E1[Suggested opening prompts]"
       }
     },
     {
@@ -252,7 +252,7 @@
       "data": {
         "variant": "note",
         "title": "Pro tip: Use voice and images",
-        "text": "ChatGPT's Voice Mode (mobile/desktop) lets you speak naturally with the AI and receive spoken responses【14†L84-L88】. You can also upload images (photos, screenshots, etc.) for ChatGPT to analyze and discuss【14†L54-L58】, or generate/edit images from text prompts."
+        "text": "ChatGPT's Voice Mode (mobile/desktop) lets you speak naturally with the AI and receive spoken responses. You can also upload images (photos, screenshots, etc.) for ChatGPT to analyze and discuss, or generate/edit images from text prompts."
       }
     },
     {
@@ -369,7 +369,7 @@
           [
             "Incorrect or fictional information",
             "ChatGPT sometimes produces plausible-sounding but wrong answers",
-            "Ask it to verify or cite sources, and cross-check facts externally【8†L74-L78】"
+            "Ask it to verify or cite sources, and cross-check facts externally"
           ],
           [
             "Refused or incomplete answer",
@@ -424,10 +424,10 @@
         "items": [
           "General writing, editing, and brainstorming across all domains",
           "Coding (Python, JavaScript, SQL, and most other languages)",
-          "Image generation via DALL-E integration (paid)",
+          "Image generation and editing (paid)",
           "Data analysis with code interpreter (paid)",
           "Building custom AI tools via GPTs",
-          "Multilingual translation — supports 50+ languages【1†L60-L64】"
+          "Multilingual translation — supports 50+ languages"
         ]
       }
     },
@@ -479,8 +479,8 @@
           ],
           [
             "Generate an image from a description",
-            "ChatGPT (DALL-E) or Midjourney",
-            "DALL-E is fastest; Midjourney produces more artistic results"
+            "ChatGPT or Midjourney",
+            "ChatGPT is fastest; Midjourney produces more artistic results"
           ],
           [
             "Keep data private and local",
@@ -572,7 +572,7 @@
       "data": {
         "title": "Hard limitations to keep in mind:",
         "items": [
-          "It cannot access the internet by default — only when web browsing is explicitly enabled (Plus/Pro).",
+          "It cannot access the internet by default — only when web browsing is explicitly enabled (paid plans).",
           "It cannot learn from your corrections permanently — feedback within a chat is not retained after the session ends (unless Memory saves a specific fact).",
           "It cannot take actions in external systems without integrations — it can write an email but not send it unless connected to a tool.",
           "It cannot guarantee accuracy for real-time or rapidly changing information — training cutoffs mean recent events may be unknown or wrong.",
@@ -621,8 +621,8 @@
           "Code interpreter (paid) is the right tool for all math and data tasks",
           "File analysis lets you \"talk to\" any PDF, spreadsheet, or image",
           "Put critical instructions at the start of your prompt for best results",
-          "Web browsing and plugins let ChatGPT fetch live information and cite sources【14†L41-L49】",
-          "ChatGPT Pro gives you GPT-5.4 and up to 5x more usage【11†L175-L183】"
+          "Web browsing and plugins let ChatGPT fetch live information and cite sources",
+          "ChatGPT Pro gives you GPT-6 Astra and substantially higher usage limits"
         ]
       }
     }
@@ -654,11 +654,11 @@
       "description": "Follow-up course on chaining multiple prompts to build multi-step AI workflows in ChatGPT."
     },
     {
-      "title": "Introducing GPT-5 (OpenAI)",
-      "url": "https://openai.com/index/introducing-gpt-5/",
+      "title": "OpenAI model documentation",
+      "url": "https://platform.openai.com/docs/models",
       "type": "article",
       "author": "OpenAI",
-      "description": "Announcement of GPT-5, the latest model powering ChatGPT with improved intelligence and reasoning capabilities."
+      "description": "Current GPT-6 model family: context windows, pricing, knowledge cutoffs, and which model powers each ChatGPT plan."
     },
     {
       "title": "Memory and new controls for ChatGPT",

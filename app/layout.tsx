@@ -5,7 +5,6 @@ import { PWARegistration } from '@/components/ui/PWARegistration';
 import { ContinuePrompt } from '@/components/ui/ContinuePrompt';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
-import { KeyboardShortcutsHelp } from '@/hooks/useKeyboardShortcuts';
 import { getNavigationCategories } from '@/lib/content';
 import { SkipLink } from '@/components/ui/SkipLink';
 import { OfflineIndicator } from '@/components/ui/OfflineIndicator';
@@ -15,6 +14,7 @@ import { ErrorBoundaryWrapper } from '@/components/app/ErrorBoundaryWrapper';
 import { ProgressProvider } from '@/components/progress/ProgressProvider';
 import { BookmarkProvider } from '@/components/bookmarks/BookmarkProvider';
 import { KeyboardShortcuts } from '@/hooks/useKeyboardShortcuts';
+import { getAppearanceBootstrapScript } from '@/lib/appearance';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
@@ -59,6 +59,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={inter.className}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Applies the saved font size/density before first paint so the page
+            does not render at the default size and then visibly zoom. */}
+        <script
+          id="appearance-bootstrap"
+          dangerouslySetInnerHTML={{ __html: getAppearanceBootstrapScript() }}
+        />
       </head>
       <body className="flex min-h-screen flex-col bg-canvas text-fg-default antialiased transition-theme">
         <SkipLink />

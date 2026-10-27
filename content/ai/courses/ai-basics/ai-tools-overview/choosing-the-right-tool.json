@@ -112,7 +112,7 @@
             "Edit or rewrite a long document",
             "Claude",
             "ChatGPT",
-            "Claude's 200K window handles full documents"
+            "Claude's 1M-token window handles full documents"
           ],
           [
             "Write a first draft",

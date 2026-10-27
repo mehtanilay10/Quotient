@@ -55,7 +55,7 @@ export const GET = createApiAuthHandler(async (databaseUser) => {
   const { prisma } = await import('@/lib/prisma');
 
   const cacheKey = `progress:${databaseUser.id}`;
-  const cached = getCached<Record<string, ProgressItem[]>>(cacheKey);
+  const cached = await getCached<Record<string, ProgressItem[]>>(cacheKey);
   if (cached) {
     return NextResponse.json({ progress: cached });
   }
@@ -90,14 +90,14 @@ export const GET = createApiAuthHandler(async (databaseUser) => {
     });
   }
 
-  setCache(cacheKey, progress, 30_000);
+  await setCache(cacheKey, progress, 30_000);
   return NextResponse.json({ progress });
 });
 
 export const POST = createApiAuthHandler(async (databaseUser, request) => {
   const { prisma } = await import('@/lib/prisma');
 
-  const rateLimitResult = rateLimit(request, { limit: 30, windowMs: 60_000 });
+  const rateLimitResult = await rateLimit(request, { limit: 30, windowMs: 60_000 });
   if (!rateLimitResult.allowed) {
     return NextResponse.json(
       { code: 'RATE_LIMITED', message: 'Too many requests. Please try again later.' },
@@ -155,7 +155,7 @@ export const POST = createApiAuthHandler(async (databaseUser, request) => {
       });
     }
     // Invalidate the cached GET so the new rows are visible immediately.
-    clearCache(progressCacheKey(databaseUser.id));
+    await clearCache(progressCacheKey(databaseUser.id));
   } catch (error) {
     const dbError = new DatabaseError('Failed to save progress', error);
     logError('progress:POST', dbError);
@@ -168,7 +168,7 @@ export const POST = createApiAuthHandler(async (databaseUser, request) => {
 export const DELETE = createApiAuthHandler(async (databaseUser, request) => {
   const { prisma } = await import('@/lib/prisma');
 
-  const rateLimitResult = rateLimit(request, { limit: 10, windowMs: 60_000 });
+  const rateLimitResult = await rateLimit(request, { limit: 10, windowMs: 60_000 });
   if (!rateLimitResult.allowed) {
     return NextResponse.json(
       { code: 'RATE_LIMITED', message: 'Too many requests. Please try again later.' },
@@ -179,7 +179,7 @@ export const DELETE = createApiAuthHandler(async (databaseUser, request) => {
   try {
     await prisma.userProgress.deleteMany({ where: { userId: databaseUser.id } });
     // Invalidate the cached GET so deleted rows do not reappear for 30s.
-    clearCache(progressCacheKey(databaseUser.id));
+    await clearCache(progressCacheKey(databaseUser.id));
   } catch (error) {
     const dbError = new DatabaseError('Failed to delete progress', error);
     logError('progress:DELETE', dbError);

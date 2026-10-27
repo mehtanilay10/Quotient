@@ -99,9 +99,13 @@ export default async function CourseLessonDetailPage({ params }: Params) {
   const moduleLessons = getLessonsForModule(moduleSlug, courseSlug);
   const toc = extractTOC(lesson.blocks);
 
-  // Adjacent lessons within the course
-  const courseLessons = getLessonsForCourse(courseSlug);
-  const currentIdx = courseLessons.findIndex((l) => l.slug === lessonSlug);
+  // Adjacent lessons follow the exact module → lesson order rendered in the
+  // sidebar, and the lookup includes the module because a lesson slug can
+  // repeat within a course.
+  const courseLessons = courseModules.flatMap((m) => getLessonsForModule(m.slug, courseSlug));
+  const currentIdx = courseLessons.findIndex(
+    (l) => l.slug === lessonSlug && l.moduleSlug === moduleSlug
+  );
   const prev = currentIdx > 0 ? courseLessons[currentIdx - 1] : null;
   const next = currentIdx < courseLessons.length - 1 ? courseLessons[currentIdx + 1] : null;
 
@@ -135,6 +139,7 @@ export default async function CourseLessonDetailPage({ params }: Params) {
               basePrefix={`${category}/courses`}
               modules={courseModules}
               lessonsByModule={lessonsByModule}
+              category="lessons"
             />
           </div>
         </aside>
@@ -242,6 +247,7 @@ export default async function CourseLessonDetailPage({ params }: Params) {
                     moduleSlug={rel.moduleSlug}
                     courseSlug={courseSlug}
                     basePrefix={`${category}/courses`}
+                    progressCategory="lessons"
                   />
                 ))}
               </div>

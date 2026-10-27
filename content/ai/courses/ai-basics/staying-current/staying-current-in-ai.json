@@ -207,7 +207,7 @@
       "type": "example",
       "data": {
         "title": "Concrete example: 15-minute weekly review",
-        "content": "Monday morning, 15 minutes:\n\n1. Open The Rundown AI newsletter. Scan for anything mentioning Claude, GPT-4o, or Perplexity.\n2. Found: 'Claude added Projects feature.'\n3. Ask: 'Does this change anything I do weekly?' Yes — I use Claude for document analysis and Projects would let me organize prompts by client.\n4. Bookmark the article for the weekend.\n5. Move on. No guilt about the 20 other links I did not open.\n\nThis system keeps me informed without turning me into a full-time AI news consumer."
+        "content": "Monday morning, 15 minutes:\n\n1. Open The Rundown AI newsletter. Scan for anything mentioning Claude, GPT-6, or Perplexity.\n2. Found: 'Claude added a new long-context workflow feature.'\n3. Ask: 'Does this change anything I do weekly?' Yes — I use Claude for document analysis, and the new workflow would let me organize prompts by client.\n4. Bookmark the article for the weekend.\n5. Move on. No guilt about the 20 other links I did not open.\n\nThis system keeps me informed without turning me into a full-time AI news consumer."
       }
     }
   ],

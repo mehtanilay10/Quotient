@@ -1,9 +1,10 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useSession } from 'next-auth/react';
 import { logger } from '@/lib/logger';
 import { apiFetch } from '@/lib/apiFetch';
+import { getBootstrappedAppearance, type AppearancePreferences } from '@/lib/appearance';
 import { PREFERENCES_STORAGE_KEY } from '@/lib/storageKeys';
 
 const STORAGE_KEY = PREFERENCES_STORAGE_KEY;
@@ -79,33 +80,53 @@ export function useUserPreferences() {
   const [serverPreferences, setServerPreferences] = useState<UserPreferences | null>(null);
   const [localPreferences, setLocalPreferences] = useState<UserPreferences | null>(null);
   const [mounted, setMounted] = useState(false);
+  // Read once during the client render (null on the server). This lets the
+  // provider keep the cookie-applied font size while the async copy loads.
+  const [bootstrappedAppearance] = useState<AppearancePreferences | null>(() =>
+    getBootstrappedAppearance()
+  );
   // Set when the value below was just fetched from the server, so the sync
   // effect does not echo it straight back (write amplification -> 429s).
   const skipNextSyncRef = useRef(false);
 
+  // Preferences are "ready" once the session has resolved and either the
+  // server copy (signed in) or the localStorage copy (signed out) has been
+  // read. Until then the provider applies the bootstrapped cookie values.
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    if (status === 'loading') return;
 
-  // Logged-out users keep their appearance preferences in localStorage, so
-  // read them back on mount instead of silently reverting to defaults.
-  useEffect(() => {
-    if (isLoggedIn) return;
-    setLocalPreferences(readLocalPreferences());
-  }, [isLoggedIn]);
-
-  useEffect(() => {
-    if (isLoggedIn && !serverPreferences) {
-      fetchPreferencesFromServer().then((data) => {
-        if (data) {
-          skipNextSyncRef.current = true;
-          setServerPreferences(data);
-        }
-      });
+    if (!isLoggedIn) {
+      // Drop any previous account's server copy so a later sign-in cannot
+      // briefly render someone else's appearance before the new fetch lands.
+      setServerPreferences(null);
+      setLocalPreferences(readLocalPreferences());
+      setMounted(true);
+      return;
     }
-  }, [isLoggedIn, serverPreferences]);
 
-  const preferences = isLoggedIn ? (serverPreferences ?? DEFAULT_PREFERENCES) : (localPreferences ?? DEFAULT_PREFERENCES);
+    let cancelled = false;
+    fetchPreferencesFromServer().then((data) => {
+      if (cancelled) return;
+      if (data) {
+        skipNextSyncRef.current = true;
+        setServerPreferences(data);
+      }
+      setMounted(true);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [status, isLoggedIn]);
+
+  const fallbackPreferences = useMemo<UserPreferences>(
+    () => ({ ...DEFAULT_PREFERENCES, ...(bootstrappedAppearance ?? {}) }),
+    [bootstrappedAppearance]
+  );
+
+  const preferences = isLoggedIn
+    ? (serverPreferences ?? fallbackPreferences)
+    : (localPreferences ?? fallbackPreferences);
 
   const updatePreference = useCallback(
     <K extends keyof UserPreferences>(key: K, value: UserPreferences[K]) => {

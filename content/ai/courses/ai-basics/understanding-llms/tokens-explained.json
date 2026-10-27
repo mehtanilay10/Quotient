@@ -145,7 +145,7 @@
       "type": "callout",
       "data": {
         "variant": "tip",
-        "text": "For practical free use: think of 1,000 tokens as roughly one page of text. Most free tiers give you 128,000+ tokens per conversation — enough for dozens of pages. For business API use, token costs become important to track."
+        "text": "For practical use: think of 1,000 tokens as roughly one page of text. Paid plans for the major chatbots now offer around 1M tokens per conversation — enough for hundreds of pages — while free tiers vary by provider. For business API use, token costs become important to track."
       }
     },
     {
@@ -168,28 +168,28 @@
         ],
         "rows": [
           [
-            "GPT-4o",
-            "128,000 tokens",
-            "~96,000 words",
-            "~100 pages of text"
+            "GPT-6 family (OpenAI)",
+            "1,050,000 tokens",
+            "~787,000 words",
+            "~1,050 pages of text"
           ],
           [
-            "Claude 3.5 Sonnet",
-            "200,000 tokens",
-            "~150,000 words",
-            "~170 pages"
-          ],
-          [
-            "Gemini 1.5 Pro",
+            "Claude 5.5 family (Anthropic)",
             "1,000,000 tokens",
             "~750,000 words",
-            "~800 pages"
+            "~1,000 pages"
+          ],
+          [
+            "Gemini 4 Argon (Google)",
+            "1,000,000 tokens",
+            "~750,000 words",
+            "~1,000 pages"
           ],
           [
             "Smaller/local models",
-            "4,000–32,000 tokens",
-            "3,000–24,000 words",
-            "3–24 pages"
+            "32,000–128,000 tokens",
+            "24,000–96,000 words",
+            "24–96 pages"
           ]
         ]
       }

@@ -74,8 +74,13 @@ interface ContentBlockRendererProps {
 function ImageBlock({ block }: { block: ContentBlock & { type: 'image' } }) {
   const [isOpen, setIsOpen] = useState(false);
   const [broken, setBroken] = useState(false);
+  const isRemote = block.data.src.startsWith('http://') || block.data.src.startsWith('https://');
+  const isDataUrl = block.data.src.startsWith('data:');
+  // Try to optimize local images; keep unoptimized for unknown remote hosts or when explicitly needed
+  const shouldOptimize = !isDataUrl && (!isRemote || block.data.src.includes('sqlservertutorial.net'));
+
   return (
-    <figure className="my-6 flex justify-center">
+    <figure className="my-6 flex flex-col items-center">
       <button
         type="button"
         onClick={() => setIsOpen(true)}
@@ -85,18 +90,20 @@ function ImageBlock({ block }: { block: ContentBlock & { type: 'image' } }) {
         {broken ? (
           <div className="flex h-32 w-32 items-center justify-center rounded bg-canvas text-xs text-fg-muted">Image unavailable</div>
         ) : (
-          // Content image `src` values point at arbitrary lesson assets, so
-          // optimisation is delegated to the source (`unoptimized`). We still
-          // get next/image's lazy loading and decoding hints without having to
-          // register every host in next.config.
           <Image
             src={block.data.src}
             alt={block.data.alt}
             width={1200}
             height={800}
-            unoptimized
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+            priority={false}
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3E%3Crect width='1200' height='800' fill='%23e5e7eb'/%3E%3C/svg%3E"
+            unoptimized={!shouldOptimize}
             onError={() => setBroken(true)}
-            className="max-h-[50vh] w-auto max-w-[150%] object-contain"
+            className="max-h-[50vh] w-auto max-w-full object-contain"
+            loading="lazy"
+            decoding="async"
           />
         )}
       </button>

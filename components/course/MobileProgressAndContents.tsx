@@ -5,7 +5,7 @@ import { BookOpen, ChevronDown, ChevronUp } from 'lucide-react';
 import { ProgressTracker } from '@/components/course/ProgressTracker';
 import { LessonSidebar } from '@/components/layout/LessonSidebar';
 import { cn } from '@/lib/utils';
-import type { Module, LessonNavItem } from '@/types';
+import type { Module, LessonNavItem, ProgressCategory } from '@/types';
 
 interface MobileProgressAndContentsProps {
   lessonSlug: string;
@@ -16,7 +16,7 @@ interface MobileProgressAndContentsProps {
   allCourseLessonSlugs?: string[];
   modules: Module[];
   lessonsByModule: Record<string, LessonNavItem[]>;
-  category?: 'lessons' | 'problems' | 'questionAnswers';
+  category?: ProgressCategory;
   className?: string;
 }
 
@@ -73,6 +73,7 @@ export function MobileProgressAndContents({
                 basePrefix={basePrefix}
                 modules={modules}
                 lessonsByModule={lessonsByModule}
+                category={category}
               />
             </div>
           )}

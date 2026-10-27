@@ -15,7 +15,7 @@ export const GET = createApiAuthHandler(async (databaseUser) => {
   const { prisma } = await import('@/lib/prisma');
 
   const cacheKey = `bookmarks:${databaseUser.id}`;
-  const cached = getCached<Array<{ id: string; type: string; slug: string; title: string; courseSlug: string; moduleSlug: string; addedAt: string }>>(cacheKey);
+  const cached = await getCached<Array<{ id: string; type: string; slug: string; title: string; courseSlug: string; moduleSlug: string; addedAt: string }>>(cacheKey);
   if (cached) {
     return NextResponse.json({ items: cached });
   }
@@ -44,14 +44,14 @@ export const GET = createApiAuthHandler(async (databaseUser) => {
     addedAt: row.addedAt.toISOString(),
   }));
 
-  setCache(cacheKey, items, 30_000);
+  await setCache(cacheKey, items, 30_000);
   return NextResponse.json({ items });
 });
 
 export const POST = createApiAuthHandler(async (databaseUser, request) => {
   const { prisma } = await import('@/lib/prisma');
 
-  const rateLimitResult = rateLimit(request, { limit: 30, windowMs: 60_000 });
+  const rateLimitResult = await rateLimit(request, { limit: 30, windowMs: 60_000 });
   if (!rateLimitResult.allowed) {
     return NextResponse.json(
       { code: 'RATE_LIMITED', message: 'Too many requests. Please try again later.' },
@@ -111,7 +111,7 @@ export const POST = createApiAuthHandler(async (databaseUser, request) => {
       });
     }
     // Invalidate the cached GET so the new rows are visible immediately.
-    clearCache(bookmarksCacheKey(databaseUser.id));
+    await clearCache(bookmarksCacheKey(databaseUser.id));
   } catch (error) {
     const dbError = new DatabaseError('Failed to save bookmarks', error);
     logError('bookmarks:POST', dbError);
@@ -124,7 +124,7 @@ export const POST = createApiAuthHandler(async (databaseUser, request) => {
 export const DELETE = createApiAuthHandler(async (databaseUser, request) => {
   const { prisma } = await import('@/lib/prisma');
 
-  const rateLimitResult = rateLimit(request, { limit: 10, windowMs: 60_000 });
+  const rateLimitResult = await rateLimit(request, { limit: 10, windowMs: 60_000 });
   if (!rateLimitResult.allowed) {
     return NextResponse.json(
       { code: 'RATE_LIMITED', message: 'Too many requests. Please try again later.' },
@@ -148,7 +148,7 @@ export const DELETE = createApiAuthHandler(async (databaseUser, request) => {
   if (rawBody && typeof rawBody === 'object' && (rawBody as Record<string, unknown>).all === true) {
     try {
       const result = await prisma.userBookmark.deleteMany({ where: { userId: databaseUser.id } });
-      clearCache(cacheKey);
+      await clearCache(cacheKey);
       return NextResponse.json({ ok: true, deleted: result.count });
     } catch (error) {
       const dbError = new DatabaseError('Failed to delete bookmarks', error);
@@ -174,7 +174,7 @@ export const DELETE = createApiAuthHandler(async (databaseUser, request) => {
         type,
       },
     });
-    clearCache(cacheKey);
+    await clearCache(cacheKey);
     // Report how many rows were removed so the client can tell a real delete
     // from a no-op (e.g. deleting a slug that no longer exists).
     return NextResponse.json({ ok: true, deleted: result.count });

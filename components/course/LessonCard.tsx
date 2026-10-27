@@ -5,8 +5,9 @@ import { CheckCircle2, Circle, ArrowRight } from 'lucide-react';
 import { DifficultyBadge } from '@/components/ui/DifficultyBadge';
 import { ReadingTimeBadge } from '@/components/ui/ReadingTimeBadge';
 import { usePreferencesContext } from '@/components/user/PreferencesProvider';
+import { useProgress } from '@/hooks/useProgress';
 import { cn } from '@/lib/utils';
-import type { LessonNavItem } from '@/types';
+import type { LessonNavItem, ProgressCategory } from '@/types';
 
 interface LessonCardProps {
   lesson: LessonNavItem;
@@ -15,6 +16,8 @@ interface LessonCardProps {
   basePrefix?: string;
   isCompleted?: boolean;
   isCurrent?: boolean;
+  /** Which progress bucket to read when `isCompleted` is not supplied. */
+  progressCategory?: ProgressCategory;
   className?: string;
   variant?: 'default' | 'list';
 }
@@ -24,16 +27,22 @@ export function LessonCard({
   moduleSlug,
   courseSlug,
   basePrefix = 'courses',
-  isCompleted = false,
+  isCompleted,
   isCurrent = false,
+  progressCategory = 'lessons',
   className,
   variant = 'list',
 }: LessonCardProps) {
   const { preferences, mounted } = usePreferencesContext();
+  const { isCompleted: checkCompleted } = useProgress();
+
+  // Module/related-lesson lists do not pass `isCompleted`, so resolve it from
+  // the shared progress store instead of always rendering an empty circle.
+  const completed = isCompleted ?? checkCompleted(lesson.slug, progressCategory);
 
   // "Show completed lessons" (Personalization) hides finished lessons from
   // lists. The currently open lesson is always shown so navigation stays sane.
-  const hideCompleted = mounted && !preferences.showCompleted && isCompleted && !isCurrent;
+  const hideCompleted = mounted && !preferences.showCompleted && completed && !isCurrent;
   if (hideCompleted) return null;
 
   const lessonHref = courseSlug
@@ -47,11 +56,11 @@ export function LessonCard({
           'group flex items-center gap-3 rounded-lg border border-border bg-canvas p-3',
           'transition-all hover:border-accent-fg hover:shadow-sm dark:bg-canvas-subtle',
           isCurrent && 'border-accent-fg bg-accent-subtle dark:bg-accent-subtle',
-          isCompleted && 'opacity-80',
+          completed && 'opacity-80',
           className
         )}
       >
-        {isCompleted ? (
+        {completed ? (
           <CheckCircle2 className="h-4 w-4 shrink-0 text-success-fg" aria-label="Completed" />
         ) : (
           <Circle className="h-4 w-4 shrink-0 text-fg-subtle" aria-hidden="true" />
@@ -75,13 +84,13 @@ export function LessonCard({
       className={cn(
         'group flex flex-col rounded-xl border border-border bg-canvas p-4',
         'transition-all hover:border-accent-fg hover:shadow-md dark:bg-canvas-subtle',
-        isCompleted && 'opacity-85',
+        completed && 'opacity-85',
         className
       )}
     >
       <div className="mb-2 flex items-start justify-between gap-2">
         <div className="flex items-center gap-2">
-          {isCompleted ? (
+          {completed ? (
             <CheckCircle2 className="h-4 w-4 text-success-fg shrink-0" aria-label="Completed" />
           ) : (
             <Circle className="h-4 w-4 text-fg-subtle shrink-0" aria-hidden="true" />

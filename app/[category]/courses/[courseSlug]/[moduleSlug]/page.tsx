@@ -162,6 +162,7 @@ export default async function CourseModuleDetailPage({ params }: Params) {
                   moduleSlug={moduleSlug}
                   courseSlug={courseSlug}
                   basePrefix={`${category}/courses`}
+                  progressCategory="lessons"
                   variant="list"
                 />
               ))}

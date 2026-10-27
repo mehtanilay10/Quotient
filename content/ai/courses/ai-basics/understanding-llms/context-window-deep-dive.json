@@ -44,7 +44,7 @@
       "data": {
         "id": "context-window-filling",
         "caption": "As a conversation grows, the oldest messages are pushed out of the context window when the limit is reached",
-        "definition": "graph TD\n  subgraph WINDOW [\"Context Window (e.g. 128K tokens)\"]\n    direction TB\n    SP[System Prompt\\n~500 tokens]\n    M1[Your message 1\\n~200 tokens]\n    R1[AI reply 1\\n~400 tokens]\n    M2[Your message 2\\n~300 tokens]\n    R2[AI reply 2\\n~600 tokens]\n    DOC[Uploaded document\\n~8,000 tokens]\n    DOTS[...more messages...]\n    MN[Your latest message\\n~200 tokens]\n  end\n\n  OVERFLOW[\"❌ Message 1 & 2 dropped\\nwhen window fills up\"]\n\n  SP --> M1 --> R1 --> M2 --> R2 --> DOC --> DOTS --> MN\n  M1 -.->|pushed out| OVERFLOW\n\n  style WINDOW fill:#ddf4ff,stroke:#0969da,color:#0550ae\n  style OVERFLOW fill:#ffebe9,stroke:#cf222e,color:#cf222e"
+        "definition": "graph TD\n  subgraph WINDOW [\"Context Window (e.g. 1M tokens)\"]\n    direction TB\n    SP[System Prompt\\n~500 tokens]\n    M1[Your message 1\\n~200 tokens]\n    R1[AI reply 1\\n~400 tokens]\n    M2[Your message 2\\n~300 tokens]\n    R2[AI reply 2\\n~600 tokens]\n    DOC[Uploaded document\\n~8,000 tokens]\n    DOTS[...more messages...]\n    MN[Your latest message\\n~200 tokens]\n  end\n\n  OVERFLOW[\"❌ Message 1 & 2 dropped\\nwhen window fills up\"]\n\n  SP --> M1 --> R1 --> M2 --> R2 --> DOC --> DOTS --> MN\n  M1 -.->|pushed out| OVERFLOW\n\n  style WINDOW fill:#ddf4ff,stroke:#0969da,color:#0550ae\n  style OVERFLOW fill:#ffebe9,stroke:#cf222e,color:#cf222e"
       }
     },
     {
@@ -66,28 +66,28 @@
         ],
         "rows": [
           [
-            "GPT-4o",
-            "128,000 tokens",
-            "~96,000 words",
-            "Handles ~80-100 pages comfortably"
+            "GPT-6 family (OpenAI)",
+            "1,050,000 tokens",
+            "~787,000 words",
+            "Handles ~1,000 pages comfortably"
           ],
           [
-            "Claude 3.5 Sonnet",
-            "200,000 tokens",
-            "~150,000 words",
+            "Claude 5.5 family (Anthropic)",
+            "1,000,000 tokens",
+            "~750,000 words",
             "Can hold an entire novel + your notes"
           ],
           [
-            "Gemini 1.5 Pro",
+            "Gemini 4 Argon (Google)",
             "1,000,000 tokens",
             "~750,000 words",
             "Entire codebases or document libraries"
           ],
           [
             "Smaller/local models",
-            "4,000–32,000 tokens",
-            "3,000–24,000 words",
-            "Best for short focused tasks only"
+            "32,000–128,000 tokens",
+            "24,000–96,000 words",
+            "Good for focused tasks and single documents"
           ]
         ]
       }
@@ -110,7 +110,7 @@
           "Paste long documents early in the conversation, not at the end",
           "If the AI seems to 'forget' earlier instructions, the context may be full — summarize and restart",
           "For very long projects, summarize progress into a single paragraph and paste it into a new chat",
-          "Use Claude (200K) or Gemini (1M) for tasks involving very long documents",
+          "Use Claude or Gemini (1M tokens) for tasks involving very long documents",
           "Keep system prompts concise — every token in the system prompt shrinks available space for your work"
         ]
       }
@@ -237,7 +237,7 @@
   "furtherReading": [
     {
       "title": "Claude Model Overview",
-      "url": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "url": "https://platform.claude.com/docs/en/models/overview",
       "type": "article",
       "author": "Anthropic",
       "description": "Current Claude model specs including context window sizes — useful reference when working with long documents."

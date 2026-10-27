@@ -20,7 +20,7 @@ function isResetTarget(value: unknown): value is ResetTarget {
 export const DELETE = createApiAuthHandler(async (databaseUser, request) => {
   const { prisma } = await import('@/lib/prisma');
 
-  const rateLimitResult = rateLimit(request, { limit: 5, windowMs: 60_000 });
+  const rateLimitResult = await rateLimit(request, { limit: 5, windowMs: 60_000 });
   if (!rateLimitResult.allowed) {
     return NextResponse.json(
       { code: 'RATE_LIMITED', message: 'Too many requests. Please try again later.' },
@@ -48,11 +48,11 @@ export const DELETE = createApiAuthHandler(async (databaseUser, request) => {
     switch (target) {
       case 'progress':
         await prisma.userProgress.deleteMany({ where: { userId: databaseUser.id } });
-        clearCache(`progress:${databaseUser.id}`);
+        await clearCache(`progress:${databaseUser.id}`);
         break;
       case 'bookmarks':
         await prisma.userBookmark.deleteMany({ where: { userId: databaseUser.id } });
-        clearCache(`bookmarks:${databaseUser.id}`);
+        await clearCache(`bookmarks:${databaseUser.id}`);
         break;
       case 'notes':
         await prisma.userLessonNote.deleteMany({ where: { userId: databaseUser.id } });

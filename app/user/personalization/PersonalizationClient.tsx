@@ -1,6 +1,6 @@
 'use client';
 
-import { useUserPreferences, type UserPreferences } from '@/hooks/useUserPreferences';
+import { usePreferencesContext } from '@/components/user/PreferencesProvider';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { cn } from '@/lib/utils';
 import { Settings2, Palette, BookOpen, Accessibility, ChevronDown } from 'lucide-react';
@@ -127,11 +127,9 @@ function Toggle({
 }
 
 export function PersonalizationClient({ landingPages }: PersonalizationClientProps) {
-  const { preferences, updatePreference, mounted } = useUserPreferences();
-
-  // Appearance classes (font size, density, reduced motion) are applied
-  // globally by PreferencesProvider in the root layout, so this page only
-  // needs to render the controls.
+  // Share the single preference store owned by PreferencesProvider so changes
+  // apply to `<html>` immediately instead of waiting for a reload.
+  const { preferences, updatePreference, mounted } = usePreferencesContext();
 
   if (!mounted) {
     return (

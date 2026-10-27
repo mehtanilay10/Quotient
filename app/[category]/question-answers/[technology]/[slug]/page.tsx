@@ -118,6 +118,7 @@ export default async function QuestionAnswerPage({ params }: Params) {
           {prev ? (
             <Link
               href={`/${category}/question-answers/${technology}/${prev.slug}`}
+              data-lesson-nav="prev"
               className="flex max-w-[45%] items-center gap-2 rounded-lg border border-border px-4 py-2.5 text-sm font-medium text-fg-muted transition-colors hover:border-accent-fg hover:text-accent-fg"
             >
               <ArrowLeft className="h-4 w-4 shrink-0" aria-hidden="true" />
@@ -129,6 +130,7 @@ export default async function QuestionAnswerPage({ params }: Params) {
           {next && (
             <Link
               href={`/${category}/question-answers/${technology}/${next.slug}`}
+              data-lesson-nav="next"
               className="flex max-w-[45%] items-center gap-2 rounded-lg border border-border px-4 py-2.5 text-sm font-medium text-fg-muted transition-colors hover:border-accent-fg hover:text-accent-fg"
             >
               <span className="line-clamp-1">{next.title}</span>

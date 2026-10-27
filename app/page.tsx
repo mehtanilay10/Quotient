@@ -185,7 +185,7 @@ export default function HomePage() {
                   {pillar.icon}
                 </span>
                 <div>
-                  <p className="text-[11px] font-semibold uppercase tracking-widest text-accent-fg">
+                  <p className="text-[0.6875rem] font-semibold uppercase tracking-widest text-accent-fg">
                     {pillar.tag}
                   </p>
                   <h3 className="mt-1 font-semibold text-fg-default">{pillar.title}</h3>
@@ -217,7 +217,7 @@ export default function HomePage() {
                   {pillar.icon}
                 </span>
                 <div>
-                  <p className="text-[11px] font-semibold uppercase tracking-widest text-accent-fg">
+                  <p className="text-[0.6875rem] font-semibold uppercase tracking-widest text-accent-fg">
                     {pillar.tag}
                   </p>
                   <h3 className="mt-1 font-semibold text-fg-default">{pillar.title}</h3>

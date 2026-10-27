@@ -33,7 +33,7 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "As of 2025, four AI products dominate everyday knowledge work: ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google), and Perplexity. Each is built on large language models — but they differ significantly in where they excel, how they handle long content, whether they retrieve live information, and how they integrate with other tools. Understanding these differences prevents the common mistake of force-fitting the wrong tool to a task."
+        "text": "As of late 2026, four AI products dominate everyday knowledge work: ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google), and Perplexity. Each is built on large language models — but they differ significantly in where they excel, how they handle long content, whether they retrieve live information, and how they integrate with other tools. Understanding these differences prevents the common mistake of force-fitting the wrong tool to a task."
       }
     },
     {
@@ -41,7 +41,7 @@
       "data": {
         "id": "model-landscape",
         "caption": "How the four major AI products relate to each other",
-        "definition": "graph TD\n  subgraph OpenAI\n    GPT5[GPT-5 Model]\n    CGPT[ChatGPT App]\n    API1[OpenAI API]\n    GPT5 --> CGPT\n    GPT5 --> API1\n  end\n  subgraph Anthropic\n    CL3[Claude Model]\n    CLAPP[Claude App]\n    API2[Anthropic API]\n    CL3 --> CLAPP\n    CL3 --> API2\n  end\n  subgraph Google\n    GEM[Gemini Model]\n    GEMAPP[Gemini App]\n    GWORK[Google Workspace]\n    GEM --> GEMAPP\n    GEM --> GWORK\n  end\n  subgraph Perplexity\n    PAPP[Perplexity App]\n    WEB[Live Web Index]\n    PAPP --> WEB\n  end"
+        "definition": "graph TD\n  subgraph OpenAI\n    GPT6[GPT-6 Model]\n    CGPT[ChatGPT App]\n    API1[OpenAI API]\n    GPT6 --> CGPT\n    GPT6 --> API1\n  end\n  subgraph Anthropic\n    CL3[Claude Model]\n    CLAPP[Claude App]\n    API2[Anthropic API]\n    CL3 --> CLAPP\n    CL3 --> API2\n  end\n  subgraph Google\n    GEM[Gemini Model]\n    GEMAPP[Gemini App]\n    GWORK[Google Workspace]\n    GEM --> GEMAPP\n    GEM --> GWORK\n  end\n  subgraph Perplexity\n    PAPP[Perplexity App]\n    WEB[Live Web Index]\n    PAPP --> WEB\n  end"
       }
     },
     {
@@ -64,7 +64,7 @@
       "data": {
         "id": "model-decision-flow",
         "caption": "Use this decision tree to pick the right AI model for any task",
-        "definition": "flowchart TD\n  START[What is your task?]\n  START --> Q1{Need real-time facts\\nor cited sources?}\n  Q1 -->|Yes| PERP[Perplexity\\nBest for research]\n  Q1 -->|No| Q2{Document very long\\nor needs careful writing?}\n  Q2 -->|Yes| CLAUDE[Claude\\n200K context, thoughtful]\n  Q2 -->|No| Q3{Working in Google\\nDocs/Gmail/Drive?}\n  Q3 -->|Yes| GEMINI[Gemini\\nNative Google Workspace]\n  Q3 -->|No| Q4{Need image generation\\nor code interpreter?}\n  Q4 -->|Yes| CGPT_PAID[ChatGPT Plus\\nDALL-E + Code Interpreter]\n  Q4 -->|No| CGPT[ChatGPT Free\\nExcellent for most tasks]\n\n  style PERP fill:#ddf4ff,stroke:#0969da,color:#0550ae\n  style CLAUDE fill:#d1f3d8,stroke:#1a7f37,color:#1a7f37\n  style GEMINI fill:#fff8c5,stroke:#9a6700,color:#9a6700\n  style CGPT fill:#ffe1cc,stroke:#bc4c00,color:#bc4c00\n  style CGPT_PAID fill:#eddff8,stroke:#8250df,color:#6639ba"
+        "definition": "flowchart TD\n  START[What is your task?]\n  START --> Q1{Need real-time facts\\nor cited sources?}\n  Q1 -->|Yes| PERP[Perplexity\\nBest for research]\n  Q1 -->|No| Q2{Document very long\\nor needs careful writing?}\n  Q2 -->|Yes| CLAUDE[Claude\\n1M context, thoughtful]\n  Q2 -->|No| Q3{Working in Google\\nDocs/Gmail/Drive?}\n  Q3 -->|Yes| GEMINI[Gemini\\nNative Google Workspace]\n  Q3 -->|No| Q4{Need image generation\\nor code interpreter?}\n  Q4 -->|Yes| CGPT_PAID[ChatGPT Plus\\nImage generation + Code Interpreter]\n  Q4 -->|No| CGPT[ChatGPT Free\\nExcellent for most tasks]\n\n  style PERP fill:#ddf4ff,stroke:#0969da,color:#0550ae\n  style CLAUDE fill:#d1f3d8,stroke:#1a7f37,color:#1a7f37\n  style GEMINI fill:#fff8c5,stroke:#9a6700,color:#9a6700\n  style CGPT fill:#ffe1cc,stroke:#bc4c00,color:#bc4c00\n  style CGPT_PAID fill:#eddff8,stroke:#8250df,color:#6639ba"
       }
     },
     {
@@ -109,7 +109,7 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Claude is built by Anthropic with an emphasis on helpfulness, safety, and avoiding harmful outputs. Its standout technical advantage is its 200,000-token context window — roughly 150,000 words — which allows it to hold an entire book, legal brief, or codebase in a single conversation. Claude tends to be more cautious and precise in its wording, making it well-suited to editing, legal or policy document review, and tasks where accuracy of nuance matters."
+        "text": "Claude is built by Anthropic with an emphasis on helpfulness, safety, and avoiding harmful outputs. The Claude 5.5 family — Fable 5.1, Opus 5.5, Sonnet 5.5, and Haiku 5.5 — offers a 1M-token context window, roughly 750,000 words, which allows it to hold an entire book, legal brief, or codebase in a single conversation. Claude tends to be more cautious and precise in its wording, making it well-suited to editing, legal or policy document review, and tasks where accuracy of nuance matters."
       }
     },
     {
@@ -130,13 +130,13 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Gemini is Google's AI, and its primary advantage is deep integration with Google Workspace — Gmail, Docs, Sheets, Slides, Drive, and Meet. If your work lives in these tools, Gemini can summarize email threads, draft replies, generate slide decks from a document, and analyze spreadsheets without any copy-pasting. Gemini Pro (paid) offers a 1 million token context window, the largest of any major consumer AI product."
+        "text": "Gemini is Google's AI, and its primary advantage is deep integration with Google Workspace — Gmail, Docs, Sheets, Slides, Drive, and Meet. If your work lives in these tools, Gemini can summarize email threads, draft replies, generate slide decks from a document, and analyze spreadsheets without any copy-pasting. Gemini 4 Argon (paid) offers a 1M-token context window, among the largest of any major consumer AI product, while Gemini 3.8 Flash provides a faster, cheaper option."
       }
     },
     {
       "type": "paragraph",
       "data": {
-        "text": "Outside of the Google ecosystem, Gemini is competitive but rarely the strongest choice. Its web search is native and always active, which is an advantage for currency of information. For users already paying for Google One or Workspace, the Pro tier is often included, making it the highest-value option for that user group."
+        "text": "Outside of the Google ecosystem, Gemini is competitive but rarely the strongest choice. Its web search is native and always active, which is an advantage for currency of information. For users already paying for Google AI Pro or a Workspace plan that includes Gemini, it is often the highest-value option."
       }
     },
     {
@@ -176,9 +176,9 @@
         "rows": [
           [
             "Context window",
-            "128K tokens",
-            "200K tokens",
-            "1M tokens (Pro)",
+            "1.05M tokens",
+            "1M tokens",
+            "1M tokens",
             "~32K / web retrieval"
           ],
           [
@@ -204,9 +204,9 @@
           ],
           [
             "Image generation",
-            "Yes (DALL-E, paid)",
+            "Yes (paid)",
             "No",
-            "Yes (Imagen, paid)",
+            "Yes (paid)",
             "No"
           ],
           [
@@ -267,13 +267,13 @@
       "data": {
         "id": "context-window-comparison",
         "caption": "Context window sizes compared — roughly how many pages each model can hold at once",
-        "definition": "xychart-beta\n  title \"Context Window Sizes (tokens)\"\n  x-axis [\"ChatGPT\", \"Claude\", \"Gemini Pro\", \"Perplexity\"]\n  y-axis \"Tokens (thousands)\" 0 --> 1100\n  bar [128, 200, 1000, 32]"
+        "definition": "xychart-beta\n  title \"Context Window Sizes (tokens)\"\n  x-axis [\"ChatGPT\", \"Claude\", \"Gemini\", \"Perplexity\"]\n  y-axis \"Tokens (thousands)\" 0 --> 1100\n  bar [1050, 1000, 1000, 32]"
       }
     },
     {
       "type": "paragraph",
       "data": {
-        "text": "A rough rule of thumb: 1,000 tokens ≈ 750 words ≈ about 1.5 pages. So ChatGPT's 128K context holds roughly 190 pages; Claude's 200K holds about 300 pages; Gemini Pro's 1M holds about 1,500 pages — the length of a long novel or an entire codebase. For most everyday tasks, all models have more than enough context. The difference matters when working with very large files."
+        "text": "A rough rule of thumb: 1,000 tokens ≈ 750 words ≈ about 1.5 pages. ChatGPT, Claude, and Gemini now hold around 1M tokens each — roughly 1,500 pages, the length of a long novel or an entire codebase. Perplexity relies on web retrieval instead of a large working context. For most everyday tasks, every model has more than enough context. The difference still matters when working with very large files, where the quality of retrieval and long-context reasoning matters more than the raw limit."
       }
     },
     {
@@ -326,8 +326,8 @@
           ],
           [
             "Analyzing a 100-page PDF",
-            "Claude",
-            "200K context handles large files more reliably"
+            "Claude or Gemini",
+            "Both handle large files reliably with 1M-token context"
           ],
           [
             "Creative brainstorming",
@@ -336,7 +336,7 @@
           ],
           [
             "Image generation",
-            "ChatGPT (DALL-E, paid) or Midjourney",
+            "ChatGPT (paid) or Midjourney",
             "Integrated vs. highest artistic quality"
           ]
         ]
@@ -375,12 +375,12 @@
           ],
           [
             "Claude",
-            "Largest usable context; most precise writing and instruction-following",
+            "1M-token context; most precise writing and instruction-following",
             "No image generation; limited live web access"
           ],
           [
             "Gemini",
-            "Native Google Workspace integration; 1M token context (Pro)",
+            "Native Google Workspace integration; 1M-token context",
             "Less compelling outside the Google ecosystem"
           ],
           [
@@ -388,26 +388,6 @@
             "Always cites live sources; best for verifiable factual research",
             "Not built for writing, coding, or creative tasks"
           ]
-        ]
-      }
-    },
-    {
-      "type": "heading",
-      "id": "when-to-switch",
-      "data": {
-        "level": 2,
-        "text": "When to switch models",
-        "anchor": "when-to-switch"
-      }
-    },
-    {
-      "type": "bullet-list",
-      "data": {
-        "items": [
-          "Switch to Claude when ChatGPT loses track in a long conversation or you need very careful writing",
-          "Switch to Perplexity any time you need a specific fact with a source you can verify",
-          "Switch to Gemini when working directly inside a Google tool",
-          "Use ChatGPT as the default — switch when you hit its specific limits"
         ]
       }
     },
@@ -493,21 +473,21 @@
         "rows": [
           [
             "ChatGPT",
-            "Yes — GPT-5.3 with limits",
+            "Yes — GPT-6 Luna with limits",
             "$20/mo (Plus)",
-            "Plus adds image gen, code interpreter, file uploads"
+            "Plus adds GPT-6.1 Sol, limited GPT-6 Astra, image generation, code interpreter, and file uploads"
           ],
           [
             "Claude",
-            "Yes — Claude 3 with limits",
-            "$20/mo (Pro)",
-            "Pro adds priority access and longer conversations"
+            "Yes — Claude Sonnet 5.5 with limits",
+            "$20/mo Pro ($17/mo annual)",
+            "Pro adds higher limits and access to Opus 5.5"
           ],
           [
             "Gemini",
-            "Yes — Gemini 1.5 Pro with limits",
-            "$20/mo (Google One AI Premium)",
-            "Often bundled with Google One storage subscription"
+            "Yes — Gemini 3.8 Flash with limits",
+            "$19.99/mo (Google AI Pro)",
+            "AI Pro unlocks Gemini 4 Argon and higher limits"
           ],
           [
             "Perplexity",
@@ -528,21 +508,21 @@
     },
     {
       "type": "heading",
-      "id": "when-to-switch",
+      "id": "switching-checklist",
       "data": {
         "level": 2,
-        "text": "When to switch models",
-        "anchor": "when-to-switch"
+        "text": "Switching checklist",
+        "anchor": "switching-checklist"
       }
     },
     {
       "type": "bullet-list",
       "data": {
         "items": [
-          "Switch to Claude when ChatGPT loses track in a long conversation or you need very careful writing",
-          "Switch to Perplexity any time you need a specific fact with a source you can verify",
-          "Switch to Gemini when working directly inside a Google tool",
-          "Use ChatGPT as the default — switch when you hit its specific limits"
+          "Long conversation losing track? Move the source material to Claude.",
+          "Need a verifiable fact? Check Perplexity and open the cited source.",
+          "Working inside Gmail, Docs, or Sheets? Stay in Gemini.",
+          "Need image generation or code execution? Use a paid ChatGPT plan."
         ]
       }
     },
@@ -580,25 +560,25 @@
       "description": "Live crowdsourced benchmark where users rate AI models side-by-side. The most trusted real-world model ranking available."
     },
     {
-      "title": "Claude Model Overview",
-      "url": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "title": "Claude models overview",
+      "url": "https://platform.claude.com/docs/en/models/overview",
       "type": "article",
       "author": "Anthropic",
-      "description": "Current Claude model specifications, context window sizes, and recommended use cases."
+      "description": "Current Claude 5.5 model specifications, context window sizes, pricing, and recommended use cases."
     },
     {
       "title": "OpenAI Models Documentation",
       "url": "https://platform.openai.com/docs/models",
       "type": "article",
       "author": "OpenAI",
-      "description": "Official documentation of current GPT models with capability comparisons and pricing details."
+      "description": "Official documentation of the current GPT-6 family with capability comparisons, context windows, and pricing details."
     },
     {
-      "title": "Google Gemini Overview",
-      "url": "https://deepmind.google/technologies/gemini/",
+      "title": "Gemini models overview",
+      "url": "https://ai.google.dev/gemini-api/docs/models",
       "type": "article",
-      "author": "Google DeepMind",
-      "description": "Official overview of the Gemini model family, capabilities, and context window specifications."
+      "author": "Google",
+      "description": "Official overview of the Gemini 4 Argon and Gemini 3.8 Flash models, capabilities, and context window specifications."
     },
     {
       "title": "Perplexity AI — How It Works",

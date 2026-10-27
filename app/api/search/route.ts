@@ -10,7 +10,7 @@ const RATE_LIMIT = { limit: 20, windowMs: 60_000 };
 
 export async function GET(request: Request) {
   // Search is public but expensive, so it is rate-limited per client IP.
-  const rateLimitResult = rateLimit(request, RATE_LIMIT);
+  const rateLimitResult = await rateLimit(request, RATE_LIMIT);
   if (!rateLimitResult.allowed) {
     return NextResponse.json(
       { code: 'RATE_LIMITED', message: 'Too many requests. Please try again later.' },

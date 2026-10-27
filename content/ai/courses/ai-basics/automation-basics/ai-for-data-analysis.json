@@ -46,7 +46,7 @@
       "data": {
         "id": "data-analysis-flow",
         "caption": "The AI data analysis workflow: upload your data, ask in plain English, get insight — then verify the output",
-        "definition": "flowchart TD\n  A[\"📊 Your data\\n(CSV, Excel, Sheets)\"] --> B[\"📤 Upload to AI\\n(ChatGPT, Claude,\\nGemini Advanced)\"]\n  B --> C[\"💬 Ask plain English\\n'What are the top 5\\ncustomers by revenue?'\"]\n  C --> D[\"🤖 AI runs analysis\\n(writes and executes code\\nbehind the scenes)\"]\n  D --> E[\"📈 Get output\\nTable or Chart or Summary\"]\n  E --> F[\"✅ You verify\\n(spot-check key numbers)\"]\n  F --> G[\"💡 Ask follow-up\\n'Now split by region.'\"]\n\n  style A fill:#ddf4ff,stroke:#0969da\n  style F fill:#d1f3d8,stroke:#1a7f37"
+        "definition": "flowchart TD\n  A[\"📊 Your data\\n(CSV, Excel, Sheets)\"] --> B[\"📤 Upload to AI\\n(ChatGPT, Claude,\\nGemini)\"]\n  B --> C[\"💬 Ask plain English\\n'What are the top 5\\ncustomers by revenue?'\"]\n  C --> D[\"🤖 AI runs analysis\\n(writes and executes code\\nbehind the scenes)\"]\n  D --> E[\"📈 Get output\\nTable or Chart or Summary\"]\n  E --> F[\"✅ You verify\\n(spot-check key numbers)\"]\n  F --> G[\"💡 Ask follow-up\\n'Now split by region.'\"]\n\n  style A fill:#ddf4ff,stroke:#0969da\n  style F fill:#d1f3d8,stroke:#1a7f37"
       }
     },
     {
@@ -160,15 +160,15 @@
             ]
           },
           {
-            "title": "Gemini Advanced (Google Sheets)",
-            "description": "If your data lives in Google Sheets, Gemini Advanced integrates natively in a sidebar. Ask questions about your sheet, get formula recommendations, create charts, and get summaries without leaving Sheets.",
+            "title": "Gemini in Google Sheets",
+            "description": "If your data lives in Google Sheets, Gemini integrates natively in a sidebar. Ask questions about your sheet, get formula recommendations, create charts, and get summaries without leaving Sheets.",
             "pros": [
               "Native Sheets integration — data stays in place",
               "No upload required",
               "Can write and insert formulas directly into cells"
             ],
             "cons": [
-              "Requires Google One AI Premium subscription",
+              "Requires a Google AI Pro or Workspace plan",
               "Less powerful for complex multi-step analysis"
             ],
             "tags": [
@@ -499,7 +499,7 @@
         "title": "AI data analysis essentials",
         "points": [
           "ChatGPT Plus Code Interpreter: upload CSV or Excel, ask in plain English, get real charts and tables",
-          "Gemini Advanced: best if your data lives in Google Sheets — native in-app integration",
+          "Gemini: best if your data lives in Google Sheets — native in-app integration",
           "Start every session with an exploration prompt: dimensions, column types, data quality, first observations",
           "Request output in two parts: written finding plus supporting table or chart",
           "Always spot-check key numbers before presenting — AI calculations can have errors",

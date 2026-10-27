@@ -5,6 +5,7 @@ import { CheckCircle2, RotateCcw } from 'lucide-react';
 import { cn, safePercent } from '@/lib/utils';
 import { useProgress } from '@/hooks/useProgress';
 import { SignInPrompt } from '@/components/auth/SignInPrompt';
+import type { ProgressCategory } from '@/types';
 
 interface ProgressTrackerProps {
   lessonSlug: string;
@@ -16,7 +17,7 @@ interface ProgressTrackerProps {
    * pull every lesson JSON into the browser bundle).
    */
   allCourseLessonSlugs?: string[];
-  category?: 'lessons' | 'problems' | 'questionAnswers';
+  category?: ProgressCategory;
   className?: string;
 }
 

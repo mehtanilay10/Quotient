@@ -159,6 +159,7 @@ export default async function ProblemsModuleDetailPage({ params }: Params) {
                 moduleSlug={moduleSlug}
                 courseSlug={courseSlug}
                 basePrefix={`${category}/problems`}
+                progressCategory="problems"
                 variant="list"
               />
             ))}

@@ -4,13 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, Search, LogOut, User, Settings2, Bookmark, StickyNote, BarChart3, AlertTriangle, CloudOff, ChevronDown } from "lucide-react";
+import { Menu, X, Search, LogOut, User, Settings2, Keyboard, Bookmark, StickyNote, BarChart3, AlertTriangle, CloudOff, ChevronDown } from "lucide-react";
 import { Logo } from "@/components/ui/Logo";
 import { PWAInstallButton } from "@/components/ui/PWAInstallButton";
 import { SearchSuggestions } from "@/components/ui/SearchSuggestions";
 import { SearchErrorBoundary } from "@/components/ui/SearchErrorBoundary";
 import { cn } from "@/lib/utils";
-import { registerShortcut, unregisterShortcut } from "@/hooks/useKeyboardShortcuts";
+import { openKeyboardShortcutsHelp, registerShortcut, unregisterShortcut } from "@/hooks/useKeyboardShortcuts";
 import { useSession, signOut } from "next-auth/react";
 
 export interface NavbarSection {
@@ -42,6 +42,7 @@ export function Navbar({ categories }: NavbarProps) {
   const [mobileCategoryOpen, setMobileCategoryOpen] = useState<string | null>(null);
   const [searchMode, setSearchMode] = useState(false);
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const userButtonRef = useRef<HTMLButtonElement>(null);
   const userMenuRef = useRef<HTMLDivElement>(null);
   const categoryMenuRef = useRef<HTMLDivElement>(null);
   const { data: session, status } = useSession();
@@ -149,6 +150,7 @@ export function Navbar({ categories }: NavbarProps) {
       {isLoggedIn && session?.user ? (
         <div className="relative" ref={userMenuRef}>
           <button
+            ref={userButtonRef}
             onClick={() => setUserMenuOpen((o) => !o)}
             className="flex items-center gap-2 rounded-md p-1.5 text-fg-muted transition-colors hover:bg-canvas-subtle hover:text-fg-default"
             aria-label="User menu"
@@ -183,6 +185,19 @@ export function Navbar({ categories }: NavbarProps) {
                 <Settings2 className="h-4 w-4" aria-hidden="true" />
                 Personalization
               </Link>
+              <button
+                type="button"
+                onClick={() => {
+                  setUserMenuOpen(false);
+                  userButtonRef.current?.focus();
+                  openKeyboardShortcutsHelp();
+                }}
+                className="flex w-full items-center gap-2 px-4 py-2 text-left text-sm text-fg-default hover:bg-canvas-subtle"
+                aria-haspopup="dialog"
+              >
+                <Keyboard className="h-4 w-4" aria-hidden="true" />
+                Keyboard shortcuts
+              </button>
               <div className="my-1 border-t border-border" />
               <Link
                 href="/user/progress"

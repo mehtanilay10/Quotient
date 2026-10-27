@@ -125,13 +125,13 @@
         ],
         "rows": [
           [
-            "ChatGPT (GPT-4o)",
+            "ChatGPT (GPT-6.1 Sol)",
             "General coding help, explanations, debugging",
             "Browser",
             "Yes with limits"
           ],
           [
-            "Claude (Sonnet)",
+            "Claude (Sonnet 5.5)",
             "Complex code, long files, architectural decisions",
             "Browser",
             "Yes with limits"

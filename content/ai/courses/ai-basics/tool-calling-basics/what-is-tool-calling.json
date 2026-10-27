@@ -245,7 +245,7 @@
       "data": {
         "title": "Concrete tool call flow",
         "content": "User asks: 'What is the weather in Paris?'\n1. Model decides it needs current weather data.\n2. Model generates a structured tool call: weather(city='Paris').\n3. The weather tool runs and returns: {temp: 18, condition: 'Cloudy'}.\n4. Model reads the result and answers: 'It is currently 18°C and cloudy in Paris.'\n\nWithout tool calling, the model would have to guess or say it cannot access real-time data.",
-        "code": "// Example API request using tool calling\n{\n  \"model\": \"claude-3-5-sonnet-20240620\",\n  \"messages\": [{\"role\": \"user\", \"content\": \"Weather in Paris?\"}],\n  \"tools\": [{\n    \"name\": \"get_weather\",\n    \"description\": \"Get current weather for a city\",\n    \"input_schema\": {\"type\": \"object\", \"properties\": {\"city\": {\"type\": \"string\"}}}\n  }]\n}",
+        "code": "// Example API request using tool calling\n{\n  \"model\": \"claude-sonnet-5-5\",\n  \"messages\": [{\"role\": \"user\", \"content\": \"Weather in Paris?\"}],\n  \"tools\": [{\n    \"name\": \"get_weather\",\n    \"description\": \"Get current weather for a city\",\n    \"input_schema\": {\"type\": \"object\", \"properties\": {\"city\": {\"type\": \"string\"}}}\n  }]\n}",
         "language": "json"
       }
     }

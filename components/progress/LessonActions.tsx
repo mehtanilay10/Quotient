@@ -1,11 +1,13 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { CheckCircle2 } from 'lucide-react';
 import { BookmarkButton } from '@/components/ui/BookmarkButton';
 import { useProgress } from '@/hooks/useProgress';
+import { registerShortcut, unregisterShortcut } from '@/hooks/useKeyboardShortcuts';
 import { PdfDownloadButton } from '@/components/ui/PdfDownloadButton';
 import { SignInPrompt } from '@/components/auth/SignInPrompt';
+import type { BookmarkItem, ProgressCategory } from '@/types';
 
 interface LessonActionsProps {
   lesson: {
@@ -18,7 +20,7 @@ interface LessonActionsProps {
   };
   courseSlug: string;
   moduleSlug: string;
-  category?: 'lessons' | 'problems' | 'questionAnswers';
+  category?: ProgressCategory;
   children?: React.ReactNode;
 }
 
@@ -39,7 +41,7 @@ export function LessonActions({
 
   const completed = isCompleted(lesson.slug, category);
 
-  const handleToggleComplete = () => {
+  const handleToggleComplete = useCallback(() => {
     if (isLoggedOut) {
       setShowSignIn(true);
       return;
@@ -47,12 +49,28 @@ export function LessonActions({
     toggleComplete(lesson.slug, moduleSlug, category);
     setLastAction(completed ? 'incomplete' : 'complete');
     setTimeout(() => setLastAction(null), 2000);
-  };
+  }, [category, completed, isLoggedOut, lesson.slug, moduleSlug, toggleComplete]);
+
+  useEffect(() => {
+    registerShortcut('c', 'Mark current lesson complete/incomplete', handleToggleComplete);
+    return () => unregisterShortcut('c');
+  }, [handleToggleComplete]);
 
   const categoryLabel = useMemo(() => {
     if (category === 'questionAnswers') return 'Question';
     return category.slice(0, -1);
   }, [category]);
+
+  const bookmarkItem = useMemo<Omit<BookmarkItem, 'id' | 'addedAt'>>(
+    () => ({
+      type: category === 'questionAnswers' ? 'questionAnswer' : category === 'problems' ? 'problem' : 'lesson',
+      slug: lesson.slug,
+      title: lesson.title,
+      courseSlug,
+      moduleSlug,
+    }),
+    [category, courseSlug, lesson.slug, lesson.title, moduleSlug]
+  );
 
   return (
     <div className="mb-4 flex flex-wrap items-center gap-2">
@@ -73,15 +91,7 @@ export function LessonActions({
         {completed ? 'Completed' : 'Mark Complete'}
       </button>
 
-      <BookmarkButton
-        item={{
-          type: category === 'questionAnswers' ? 'questionAnswer' : category === 'problems' ? 'problem' : 'lesson',
-          slug: lesson.slug,
-          title: lesson.title,
-          courseSlug,
-          moduleSlug,
-        }}
-      />
+      <BookmarkButton item={bookmarkItem} enableShortcut />
 
       <PdfDownloadButton
         targetId={category === 'questionAnswers' ? 'question-content' : category === 'problems' ? 'problem-content' : 'lesson-content'}

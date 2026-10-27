@@ -257,7 +257,7 @@
   "furtherReading": [
     {
       "title": "Intro to Claude",
-      "url": "https://docs.anthropic.com/en/docs/intro-to-claude",
+      "url": "https://platform.claude.com/docs/en/models/overview",
       "type": "article",
       "author": "Anthropic",
       "description": "Overview of Claude's strengths as a writing collaborator, with tips on tone, style, and long-document handling."

@@ -24,7 +24,7 @@ export const GET = createApiAuthHandler(async (databaseUser) => {
 export const POST = createApiAuthHandler(async (databaseUser, request) => {
   const { prisma } = await import('@/lib/prisma');
 
-  const rateLimitResult = rateLimit(request, { limit: 10, windowMs: 60_000 });
+  const rateLimitResult = await rateLimit(request, { limit: 10, windowMs: 60_000 });
   if (!rateLimitResult.allowed) {
     return NextResponse.json(
       { code: 'RATE_LIMITED', message: 'Too many requests. Please try again later.' },

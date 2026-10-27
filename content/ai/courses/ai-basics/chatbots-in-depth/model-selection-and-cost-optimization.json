@@ -33,7 +33,7 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "AI model pricing varies by orders of magnitude. A frontier model like GPT-5 or Claude Opus can cost 50–100x more per token than a small, fast model like GPT-4o mini or Claude Haiku. For individual users, this difference is often negligible. For teams running thousands of AI calls per day — in customer support pipelines, content workflows, or automated analysis — it translates directly to budget."
+        "text": "AI model pricing varies by orders of magnitude. A frontier model like GPT-6 Astra or Claude Fable 5.1 can cost around 100x more per token than a small, fast model like GPT-6 Luna or Claude Haiku 5.5. For individual users, this difference is often negligible. For teams running thousands of AI calls per day — in customer support pipelines, content workflows, or automated analysis — it translates directly to budget."
       }
     },
     {
@@ -47,7 +47,7 @@
       "data": {
         "id": "cost-quality-tradeoff",
         "caption": "The cost-quality tradeoff across model tiers — the goal is to match task complexity to model capability",
-        "definition": "graph TD\n  subgraph Small Models\n    S1[GPT-4o mini]\n    S2[Claude Haiku]\n    S3[Gemini Flash]\n  end\n  subgraph Mid-Tier Models\n    M1[GPT-4o]\n    M2[Claude Sonnet]\n    M3[Gemini Pro]\n  end\n  subgraph Frontier Models\n    F1[GPT-5]\n    F2[Claude Opus]\n    F3[Gemini Ultra]\n  end\n  Small Models -->|10-50x cheaper| Mid-Tier Models\n  Mid-Tier Models -->|5-20x cheaper| Frontier Models\n  Small Models -.->|Best for: classification, extraction, translation| T1[Simple tasks]\n  Mid-Tier Models -.->|Best for: drafting, analysis, coding| T2[Medium tasks]\n  Frontier Models -.->|Best for: complex reasoning, high-stakes output| T3[Complex tasks]"
+        "definition": "graph TD\n  subgraph Small Models\n    S1[GPT-6 Luna]\n    S2[Claude Haiku 5.5]\n    S3[Gemini 3.8 Flash]\n  end\n  subgraph Mid-Tier Models\n    M1[GPT-6.1 Sol]\n    M2[Claude Sonnet 5.5]\n    M3[Gemini 4 Argon]\n  end\n  subgraph Frontier Models\n    F1[GPT-6 Astra]\n    F2[Claude Fable 5.1]\n    F3[Gemini 4 Argon extended thinking]\n  end\n  Small Models -->|10-50x cheaper| Mid-Tier Models\n  Mid-Tier Models -->|5-20x cheaper| Frontier Models\n  Small Models -.->|Best for: classification, extraction, translation| T1[Simple tasks]\n  Mid-Tier Models -.->|Best for: drafting, analysis, coding| T2[Medium tasks]\n  Frontier Models -.->|Best for: complex reasoning, high-stakes output| T3[Complex tasks]"
       }
     },
     {
@@ -79,25 +79,25 @@
         "rows": [
           [
             "Small / fast",
-            "GPT-4o mini",
-            "Claude Haiku",
-            "Gemini Flash",
+            "GPT-6 Luna",
+            "Claude Haiku 5.5",
+            "Gemini 3.8 Flash",
             "1x (baseline)",
             "< 1 second"
           ],
           [
             "Mid-tier",
-            "GPT-4o",
-            "Claude Sonnet",
-            "Gemini Pro",
-            "10–30x",
+            "GPT-6.1 Sol",
+            "Claude Sonnet 5.5",
+            "Gemini 4 Argon",
+            "10–20x",
             "2–5 seconds"
           ],
           [
             "Frontier",
-            "GPT-5",
-            "Claude Opus",
-            "Gemini Ultra",
+            "GPT-6 Astra",
+            "Claude Fable 5.1",
+            "Gemini 4 Argon (extended thinking)",
             "50–100x",
             "5–20 seconds"
           ]
@@ -581,25 +581,25 @@
       "description": "Live, crowdsourced model quality comparisons."
     },
     {
-      "title": "Anthropic Claude Models Overview",
-      "url": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "title": "Anthropic Claude models overview",
+      "url": "https://platform.claude.com/docs/en/models/overview",
       "type": "article",
       "author": "Anthropic",
-      "description": "Current Claude model tiers, context windows, and pricing — useful for building a routing policy across the Haiku / Sonnet / Opus spectrum."
+      "description": "Current Claude 5.5 model tiers, context windows, and pricing — useful for building a routing policy across the Haiku / Sonnet / Opus / Fable spectrum."
     },
     {
-      "title": "Prompt Caching (Anthropic)",
-      "url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching",
+      "title": "Prompt caching (Anthropic)",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
       "type": "article",
       "author": "Anthropic",
       "description": "How to enable and configure prompt caching on the Claude API to reduce costs for repeated system prompts and large document prefixes."
     },
     {
-      "title": "OpenAI Prompt Caching",
+      "title": "OpenAI prompt caching",
       "url": "https://platform.openai.com/docs/guides/prompt-caching",
       "type": "article",
       "author": "OpenAI",
-      "description": "OpenAI's prompt caching documentation — how automatic caching works for GPT-4o and o-series models."
+      "description": "OpenAI's prompt caching documentation — how automatic caching works across the GPT-6 family."
     }
   ],
   "courseSlug": "ai-basics"

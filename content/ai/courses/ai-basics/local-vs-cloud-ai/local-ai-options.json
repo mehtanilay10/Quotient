@@ -28,7 +28,7 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Until recently, running AI on your own hardware meant a research lab, a powerful workstation, and a lot of patience. That changed fast. Open-weights model releases from Meta, Mistral, Google, and Microsoft — combined with tools like Ollama and LM Studio that handle all the complexity — mean that a capable AI assistant running entirely on your laptop is now a realistic option for non-developers. This lesson helps you decide whether it is the right option for you, and shows you exactly how to get started."
+        "text": "Until recently, running AI on your own hardware meant a research lab, a powerful workstation, and a lot of patience. That changed fast. Open-weights model releases from Meta, Google, Alibaba, DeepSeek, OpenAI, and NVIDIA — combined with tools like Ollama and LM Studio that handle all the complexity — mean that a capable AI assistant running entirely on your laptop is now a realistic option for non-developers. This lesson helps you decide whether it is the right option for you, and shows you exactly how to get started."
       }
     },
     {
@@ -57,7 +57,7 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "The local model is an open-weights model — one whose trained parameters have been publicly released by its developers. Meta's Llama series, Mistral AI's models, Google's Gemma, and Microsoft's Phi are the major families. These are not toy models: the best 8B and 13B open-weights models in 2025 are competitive with models that were state-of-the-art just two years ago. They handle writing, summarisation, coding, Q&A, and analysis well — though they still trail the latest frontier models on complex reasoning."
+        "text": "The local model is an open-weights model — one whose trained parameters have been publicly released by its developers. Meta's Llama 4, Google's Gemma 4, Alibaba's Qwen 3.x, DeepSeek V4.1, OpenAI's gpt-oss, and NVIDIA's Nemotron 3 are the major families. These are not toy models: the best small and mid-size open-weights models in 2026 handle writing, summarisation, coding, Q&A, and analysis well — though they still trail frontier cloud models such as GPT-6 Astra, Claude Fable 5.1, and Gemini 4 Argon on the hardest reasoning tasks."
       }
     },
     {
@@ -74,7 +74,7 @@
       "data": {
         "id": "local-ai-decision-tree",
         "caption": "Use this decision tree to decide whether local AI makes sense for your situation",
-        "definition": "flowchart TD\n  START[Are you considering local AI?]\n  START --> Q1{Is data privacy\\ncritical for your use case?}\n  Q1 -->|Yes| Q2{Are you comfortable\\nwith basic software setup?}\n  Q2 -->|Yes| Q3{Do you have a modern\\ncomputer with 16GB+ RAM?}\n  Q3 -->|Yes| LOCAL[Local AI is a great fit\\nTry Ollama + LM Studio]\n  Q3 -->|No| UPGRADE[Consider upgrading RAM\\nor use enterprise cloud tier]\n  Q2 -->|No| CLOUD_ENT[Use enterprise cloud tier\\ne.g. ChatGPT Team / Claude Team]\n  Q1 -->|No | Q4{Do you need to\\nwork offline?}\n  Q4 -->|Yes| LOCAL\n  Q4 -->|No| CLOUD[Cloud AI is fine\\nChatGPT / Claude / Gemini]\n\n  style LOCAL fill:#d1f3d8,stroke:#1a7f37,color:#1a7f37\n  style CLOUD fill:#ddf4ff,stroke:#0969da,color:#0550ae\n  style CLOUD_ENT fill:#ddf4ff,stroke:#0969da,color:#0550ae"
+        "definition": "flowchart TD\n  START[Are you considering local AI?]\n  START --> Q1{Is data privacy\\ncritical for your use case?}\n  Q1 -->|Yes| Q2{Are you comfortable\\nwith basic software setup?}\n  Q2 -->|Yes| Q3{Do you have a modern\\ncomputer with 16GB+ RAM?}\n  Q3 -->|Yes| LOCAL[Local AI is a great fit\\nTry Ollama + LM Studio]\n  Q3 -->|No| UPGRADE[Consider upgrading RAM\\nor use enterprise cloud tier]\n  Q2 -->|No| CLOUD_ENT[Use an enterprise cloud tier\\nChatGPT Business / Claude Team]\n  Q1 -->|No | Q4{Do you need to\\nwork offline?}\n  Q4 -->|Yes| LOCAL\n  Q4 -->|No| CLOUD[Cloud AI is fine\\nChatGPT / Claude / Gemini]\n\n  style LOCAL fill:#d1f3d8,stroke:#1a7f37,color:#1a7f37\n  style CLOUD fill:#ddf4ff,stroke:#0969da,color:#0550ae\n  style CLOUD_ENT fill:#ddf4ff,stroke:#0969da,color:#0550ae"
       }
     },
     {
@@ -125,7 +125,7 @@
           [
             "Capability",
             "⚠️ Good but behind frontier models",
-            "✅ Access to GPT-4o, Claude 3.5, etc."
+            "✅ Access to GPT-6 Astra, Claude Fable 5.1, Gemini 4 Argon, etc."
           ],
           [
             "Speed",
@@ -149,8 +149,8 @@
           ],
           [
             "Context window",
-            "⚠️ Smaller (4K-32K typically)",
-            "✅ 128K-1M tokens"
+            "⚠️ Smaller (often 32K-128K)",
+            "✅ Around 1M tokens"
           ],
           [
             "Multimodal",
@@ -163,7 +163,7 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "The capability gap deserves context. Local models are not as capable as frontier cloud models — but that gap only matters for tasks that require frontier capability. For writing assistance, summarisation, brainstorming, simple coding help, and answering questions from a provided document, a well-run 8B or 13B local model handles the task well. The gap shows up most clearly in complex multi-step reasoning, long-context tasks (processing an entire book at once), and sophisticated code generation across many files. Knowing which category your work falls into tells you how much the trade-off matters for you."
+        "text": "The capability gap deserves context. Local models are not as capable as frontier cloud models — but that gap only matters for tasks that require frontier capability. For writing assistance, summarisation, brainstorming, simple coding help, and answering questions from a provided document, a well-run 8B–12B local model handles the task well. The gap shows up most clearly in complex multi-step reasoning, long-context tasks (processing an entire book at once), and sophisticated code generation across many files. Knowing which category your work falls into tells you how much the trade-off matters for you."
       }
     },
     {
@@ -181,7 +181,7 @@
         "cards": [
           {
             "title": "Ollama",
-            "description": "The easiest way to run open models locally (Mac, Linux, Windows). Free. Download and run Llama 3, Mistral, Gemma, Phi, and dozens more with a single terminal command.",
+            "description": "The easiest way to run open models locally (Mac, Linux, Windows). Free. Download and run Gemma 4, Qwen 3.5, Llama 4, gpt-oss, DeepSeek V4.1, and dozens more with a single terminal command.",
             "pros": [
               "Easiest setup (one command)",
               "Works on all platforms",
@@ -254,7 +254,7 @@
       "type": "example",
       "data": {
         "title": "LM Studio first-run walkthrough",
-        "content": "1. Download LM Studio from lmstudio.ai and install it like any desktop application.\n\n2. Open LM Studio. On the left sidebar, click the Search (magnifying glass) icon to open the model browser.\n\n3. Search for 'Llama 3.1 8B'. You will see multiple results — look for the one labelled 'Meta-Llama-3.1-8B-Instruct' from a trusted publisher like 'bartowski' or 'lmstudio-community'.\n\n4. Click the download arrow next to the Q4_K_M variant. This is roughly 4.7GB — a good balance of quality and size for most machines.\n\n5. Once downloaded, click the Chat icon in the left sidebar. Select your downloaded model from the dropdown at the top of the screen.\n\n6. Start typing. The model runs entirely on your computer — no internet connection needed from this point.\n\nIf responses feel slow, try a smaller model: search for 'Phi-3 Mini' (3.8B, ~2.2GB) for faster performance on 8GB RAM machines."
+        "content": "1. Download LM Studio from lmstudio.ai and install it like any desktop application.\n\n2. Open LM Studio. On the left sidebar, click the Search (magnifying glass) icon to open the model browser.\n\n3. Search for 'Gemma 4' or 'Qwen 3.5'. You will see multiple results — look for a chat/instruct variant from a trusted publisher such as 'google', 'lmstudio-community', or 'bartowski'.\n\n4. Click the download arrow next to the Q4_K_M variant. A 12B model is roughly 7–8GB — a good balance of quality and size for most machines with 16GB RAM.\n\n5. Once downloaded, click the Chat icon in the left sidebar. Select your downloaded model from the dropdown at the top of the screen.\n\n6. Start typing. The model runs entirely on your computer — no internet connection needed from this point.\n\nIf responses feel slow, try a smaller model: search for 'Gemma 4 4B' or 'Qwen 3.5 4B' (roughly 2–3GB at Q4_K_M) for faster performance on 8GB RAM machines."
       }
     },
     {
@@ -277,7 +277,7 @@
       "data": {
         "language": "bash",
         "caption": "Install Ollama and run your first local model in three commands.",
-        "code": "# Install (Mac / Linux)\ncurl -fsSL https://ollama.com/install.sh | sh\n# Windows: download installer from ollama.com\n\n# Pull and run a model (downloads ~4.7GB on first run)\nollama run llama3.1:8b\n\n# Other useful commands\nollama list                  # see downloaded models\nollama pull mistral          # download Mistral 7B\nollama pull phi3:mini        # tiny model, fast on any hardware\nollama rm llama3.1:8b        # delete a model to free disk space"
+        "code": "# Install (Mac / Linux)\ncurl -fsSL https://ollama.com/install.sh | sh\n# Windows: download installer from ollama.com\n\n# Pull and run a model (downloads ~7-8GB on first run)\nollama run gemma4\n\n# Other useful commands\nollama list                  # see downloaded models\nollama pull qwen3.5          # download Qwen 3.5\nollama pull qwen3-coder      # code-focused model\nollama pull gpt-oss:20b      # OpenAI's open-weight reasoning model\nollama rm gemma4             # delete a model to free disk space"
       }
     },
     {
@@ -285,7 +285,7 @@
       "data": {
         "language": "python",
         "caption": "Use your local Ollama model from Python — no API key or internet connection required.",
-        "code": "from openai import OpenAI\n\nclient = OpenAI(\n    base_url=\"http://localhost:11434/v1\",\n    api_key=\"ollama\"  # value ignored, but required by the client\n)\n\nresponse = client.chat.completions.create(\n    model=\"llama3.1:8b\",\n    messages=[\n        {\"role\": \"system\", \"content\": \"You are a concise assistant.\"},\n        {\"role\": \"user\", \"content\": \"Explain quantization in two sentences.\"}\n    ]\n)\n\nprint(response.choices[0].message.content)"
+        "code": "from openai import OpenAI\n\nclient = OpenAI(\n    base_url=\"http://localhost:11434/v1\",\n    api_key=\"ollama\"  # value ignored, but required by the client\n)\n\nresponse = client.chat.completions.create(\n    model=\"gemma4\",\n    messages=[\n        {\"role\": \"system\", \"content\": \"You are a concise assistant.\"},\n        {\"role\": \"user\", \"content\": \"Explain quantization in two sentences.\"}\n    ]\n)\n\nprint(response.choices[0].message.content)"
       }
     },
     {
@@ -308,28 +308,28 @@
         ],
         "rows": [
           [
-            "1B–3B params (Phi-3 Mini, Gemma 2B)",
+            "1B–4B params (Gemma 4 4B, Qwen 3.5 4B)",
             "8GB RAM minimum",
             "Fast even on older hardware",
             "Quick answers, simple drafting"
           ],
           [
-            "7B params (Mistral 7B, Llama 3.1 8B)",
+            "8B–12B params (Qwen 3.5 8B, Gemma 4 12B)",
             "16GB RAM recommended",
             "Good speed on modern hardware",
             "General use — best quality/speed balance"
           ],
           [
-            "13B params",
+            "20B–32B params (gpt-oss 20B, Qwen 3.5 32B)",
             "32GB RAM recommended",
             "Slower on consumer hardware",
-            "More capable reasoning"
+            "More capable reasoning and coding"
           ],
           [
-            "70B params (Llama 3 70B)",
-            "64GB RAM or GPU with 40GB VRAM",
+            "Larger / mixture-of-experts (Llama 4 Scout, DeepSeek V4.1, Nemotron 3)",
+            "64GB RAM or a GPU with ample VRAM",
             "Slow on consumer hardware",
-            "Near-GPT-4 quality, high hardware cost"
+            "Near-frontier quality, high hardware cost"
           ]
         ]
       }
@@ -337,7 +337,7 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "A note on Apple Silicon: Macs with M-series chips (M1 through M4) have a meaningful advantage for local AI. Their unified memory architecture means the CPU and GPU share the same RAM pool, so a 32GB MacBook Pro can run a 13B model comfortably — something that would require a dedicated 40GB VRAM GPU on a Windows machine. If you are shopping for hardware with local AI in mind, Apple Silicon is currently the best consumer option per dollar for this use case. On Windows and Linux, a dedicated NVIDIA GPU with CUDA support dramatically accelerates inference over CPU-only operation."
+        "text": "A note on Apple Silicon: Macs with M-series chips (M1 through M5) have a meaningful advantage for local AI. Their unified memory architecture means the CPU and GPU share the same RAM pool, so a 32GB MacBook Pro can run a 20B–30B model comfortably — something that would require a dedicated GPU with similar VRAM on a Windows machine. If you are shopping for hardware with local AI in mind, Apple Silicon is currently the best consumer option per dollar for this use case. On Windows and Linux, a dedicated NVIDIA GPU with CUDA support dramatically accelerates inference over CPU-only operation."
       }
     },
     {
@@ -352,7 +352,7 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "When browsing LM Studio or Ollama's library, you will see the same model listed at multiple sizes with labels like Q4_K_M, Q5_K_M, or Q8_0. These are quantization levels — formats that compress a model's numerical weights to reduce file size and RAM usage. A full-precision Llama 3.1 8B model uses about 16GB of RAM. The Q4_K_M version of the same model uses roughly 4.7GB, with quality loss that is nearly imperceptible for most tasks."
+        "text": "When browsing LM Studio or Ollama's library, you will see the same model listed at multiple sizes with labels like Q4_K_M, Q5_K_M, or Q8_0. These are quantization levels — formats that compress a model's numerical weights to reduce file size and RAM usage. An 8B model at full precision uses about 16GB of RAM. The Q4_K_M version of the same model uses roughly 5GB, with quality loss that is nearly imperceptible for most tasks."
       }
     },
     {
@@ -412,7 +412,7 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "The model family you choose matters as much as the size. Different open-weights families are trained for different strengths — general conversation, coding, multilingual use, or efficient small-size performance. The table below covers the most widely used families available in Ollama as of 2025."
+        "text": "The model family you choose matters as much as the size. Different open-weights families are trained for different strengths — general conversation, coding, multilingual use, or efficient small-size performance. The table below covers the most widely used families available in Ollama as of late 2026."
       }
     },
     {
@@ -426,40 +426,46 @@
         ],
         "rows": [
           [
-            "Llama 3.1 (Meta)",
+            "Gemma 4 (Google)",
+            "12B",
+            "Best all-round small model; strong multilingual and structured tasks",
+            "ollama pull gemma4"
+          ],
+          [
+            "Qwen 3.5 (Alibaba)",
             "8B",
-            "Best all-round general model; 128K context window",
-            "ollama pull llama3.1:8b"
+            "Excellent multilingual reasoning and coding; efficient at small sizes",
+            "ollama pull qwen3.5"
           ],
           [
-            "Mistral (Mistral AI)",
-            "7B",
-            "Fast, efficient, strong instruction-following",
-            "ollama pull mistral"
+            "gpt-oss (OpenAI)",
+            "20B",
+            "Open-weight reasoning model with strong instruction-following",
+            "ollama pull gpt-oss:20b"
           ],
           [
-            "Phi-3 Mini (Microsoft)",
-            "3.8B",
-            "Exceptional quality for its tiny size; great on 8GB RAM",
-            "ollama pull phi3:mini"
+            "Llama 4 (Meta)",
+            "Scout",
+            "Long context and general chat; needs 32GB+ RAM",
+            "ollama pull llama4"
           ],
           [
-            "Gemma 2 (Google)",
-            "9B",
-            "Strong at structured tasks and coding",
-            "ollama pull gemma2"
+            "DeepSeek V4.1",
+            "Quantized",
+            "Strong coding and multi-step reasoning",
+            "ollama pull deepseek-v4.1"
           ],
           [
-            "Qwen 2.5 (Alibaba)",
-            "7B",
-            "Multilingual; strong coding; good for non-English use",
-            "ollama pull qwen2.5"
-          ],
-          [
-            "DeepSeek Coder V2",
-            "16B",
+            "Qwen3-Coder (Alibaba)",
+            "30B",
             "Specialized for code generation and debugging",
-            "ollama pull deepseek-coder-v2"
+            "ollama pull qwen3-coder"
+          ],
+          [
+            "Nemotron 3 (NVIDIA)",
+            "Nano",
+            "Efficient reasoning; good for agentic workflows",
+            "ollama pull nemotron3"
           ]
         ]
       }
@@ -467,7 +473,7 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "If you are unsure which to choose: start with Llama 3.1 8B. It is the most widely tested, has a large context window, and handles the broadest range of everyday tasks well. If your machine only has 8GB RAM and it feels slow, switch to Phi-3 Mini — it punches well above its weight for its size."
+        "text": "If you are unsure which to choose: start with Gemma 4 12B or Qwen 3.5 8B. Both are widely tested, handle the broadest range of everyday tasks well, and fit comfortably on a 16GB machine at Q4_K_M. If your machine only has 8GB RAM and it feels slow, switch to Gemma 4 4B or Qwen 3.5 4B — they punch well above their weight for their size."
       }
     },
     {
@@ -497,7 +503,7 @@
       "type": "example",
       "data": {
         "title": "Scenario: experimenting without a subscription",
-        "content": "A student wants to explore AI capabilities — testing prompts, building a simple chatbot script, comparing model outputs — without committing to a monthly subscription or sending their experiments to a cloud service. Ollama lets them download Mistral 7B once and run unlimited queries locally at zero ongoing cost. When they want to test a different model, they pull it in one command."
+        "content": "A student wants to explore AI capabilities — testing prompts, building a simple chatbot script, comparing model outputs — without committing to a monthly subscription or sending their experiments to a cloud service. Ollama lets them download Qwen 3.5 8B once and run unlimited queries locally at zero ongoing cost. When they want to test a different model, they pull it in one command."
       }
     },
     {
@@ -505,7 +511,7 @@
       "data": {
         "variant": "note",
         "title": "Best starting point for most people",
-        "text": "Download LM Studio → browse for \"Llama 3.1 8B\" or \"Mistral 7B\" → click download → start chatting. Takes about 10-15 minutes including download time. No terminal required."
+        "text": "Download LM Studio → browse for \"Gemma 4 12B\" or \"Qwen 3.5 8B\" → click download → start chatting. Takes about 10–15 minutes including download time. No terminal required."
       }
     },
     {
@@ -532,7 +538,7 @@
     {
       "type": "paragraph",
       "data": {
-        "text": "Context windows are smaller. Most local models support 4K to 32K tokens by default, compared to 128K to 1M tokens for frontier cloud models. This matters if you need to process long documents — a full research paper, a large codebase, or a lengthy transcript — in a single prompt. You can work around this with chunking strategies, but it adds complexity."
+        "text": "Context windows are smaller. Many local models now support 32K to 128K tokens, but frontier cloud models offer around 1M tokens. This matters if you need to process long documents — a full research paper, a large codebase, or a lengthy transcript — in a single prompt. You can work around this with chunking strategies, but it adds complexity."
       }
     },
     {
@@ -544,8 +550,8 @@
           "✅ Yes, if: you work offline frequently or need a consistent model version",
           "⚠️ Maybe, if: you want to experiment with AI without subscription costs",
           "❌ No, if: you need the best model quality and cloud privacy policies work for you",
-          "Start with: LM Studio + Llama 3.1 8B — 15-minute setup, no terminal required",
-          "On 8GB RAM: use Phi-3 Mini — small, fast, surprisingly capable",
+          "Start with: LM Studio + Gemma 4 12B or Qwen 3.5 8B — 15-minute setup, no terminal required",
+          "On 8GB RAM: use Gemma 4 4B or Qwen 3.5 4B — small, fast, surprisingly capable",
           "Quantization: Q4_K_M is the right default — low RAM usage, minimal quality loss",
           "Developers: Ollama's OpenAI-compatible API lets you drop local models into existing code"
         ]

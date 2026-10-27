@@ -1,11 +1,15 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { signIn } from 'next-auth/react';
-import { X, LogIn } from 'lucide-react';
+import { Mail, X, LogIn } from 'lucide-react';
 
 export function SignInPrompt({ onDismiss }: { onDismiss?: () => void }) {
   const [dismissed, setDismissed] = useState(false);
+  const pathname = usePathname();
+  const loginHref = `/login?callbackUrl=${encodeURIComponent(pathname || '/')}`;
 
   if (dismissed) return null;
 
@@ -31,7 +35,8 @@ export function SignInPrompt({ onDismiss }: { onDismiss?: () => void }) {
           </button>
         </div>
         <p className="mt-2 text-sm text-fg-muted">
-          Sign in with Google to sync your bookmarks and progress across devices.
+          Sign in with Google, or get a one-time link by email, to sync your
+          bookmarks and progress across devices.
         </p>
         <div className="mt-4 flex gap-2">
           <button
@@ -47,6 +52,13 @@ export function SignInPrompt({ onDismiss }: { onDismiss?: () => void }) {
             Dismiss
           </button>
         </div>
+        <Link
+          href={loginHref}
+          className="mt-2 flex w-full items-center justify-center gap-2 rounded-lg bg-accent-fg px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-accent-emphasis"
+        >
+          <Mail className="h-4 w-4" aria-hidden="true" />
+          Email me a sign-in link
+        </Link>
       </div>
     </div>
   );

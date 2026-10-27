@@ -44,7 +44,7 @@
       "data": {
         "id": "chatbot-landscape-map",
         "caption": "Quick orientation — the four major chatbots and their primary strengths",
-        "definition": "graph TD\n  subgraph CREATIVE [\"✍️ Creative & Writing\"]\n    CLAUDE[\"Claude (Anthropic)\\nLong docs, careful writing\\n200K context window\"]\n    CHATGPT[\"ChatGPT (OpenAI)\\nGeneral-purpose + images\\nLargest ecosystem\"]\n  end\n  subgraph RESEARCH [\"🔍 Research & Facts\"]\n    PERPLEXITY[\"Perplexity\\nCited web search\\nBest for factual Q&A\"]\n  end\n  subgraph WORKSPACE [\"🏢 Workspace Integration\"]\n    GEMINI[\"Gemini (Google)\\nDeep Google Workspace\\nDocs, Gmail, Drive\"]\n  end\n\n  style CREATIVE fill:#ddf4ff,stroke:#0969da\n  style RESEARCH fill:#d1f3d8,stroke:#1a7f37\n  style WORKSPACE fill:#fff8c5,stroke:#9a6700"
+        "definition": "graph TD\n  subgraph CREATIVE [\"✍️ Creative & Writing\"]\n    CLAUDE[\"Claude (Anthropic)\\nLong docs, careful writing\\n1M context window\"]\n    CHATGPT[\"ChatGPT (OpenAI)\\nGeneral-purpose + images\\nLargest ecosystem\"]\n  end\n  subgraph RESEARCH [\"🔍 Research & Facts\"]\n    PERPLEXITY[\"Perplexity\\nCited web search\\nBest for factual Q&A\"]\n  end\n  subgraph WORKSPACE [\"🏢 Workspace Integration\"]\n    GEMINI[\"Gemini (Google)\\nDeep Google Workspace\\nDocs, Gmail, Drive\"]\n  end\n\n  style CREATIVE fill:#ddf4ff,stroke:#0969da\n  style RESEARCH fill:#d1f3d8,stroke:#1a7f37\n  style WORKSPACE fill:#fff8c5,stroke:#9a6700"
       }
     },
     {
@@ -53,10 +53,10 @@
         "cards": [
           {
             "title": "ChatGPT (OpenAI)",
-            "description": "The most widely used AI chatbot in the world. Made by OpenAI. The flagship model is GPT-4o, which handles text, images, audio, and can interpret charts and screenshots. Has the richest plugin and API ecosystem.",
+            "description": "The most widely used AI chatbot in the world. Made by OpenAI. The GPT-6 family powers it: GPT-6 Astra for hard reasoning, GPT-6.1 Sol as the everyday default, and GPT-6 Luna for fast responses. It handles text, images, audio, and can interpret charts and screenshots. Has the richest plugin and API ecosystem.",
             "pros": [
-              "Free tier with GPT-4o access",
-              "Image input/output (DALL-E)",
+              "Free tier with GPT-6 Luna access",
+              "Image generation and image understanding",
               "Code interpreter / data analysis",
               "Largest third-party integration library",
               "Custom GPTs for specialized tasks"
@@ -74,9 +74,9 @@
           },
           {
             "title": "Claude (Anthropic)",
-            "description": "Built by Anthropic, a safety-focused AI company. Known for nuanced, careful reasoning and handling very long documents. The 200K token context window is its standout feature — you can paste an entire book.",
+            "description": "Built by Anthropic, a safety-focused AI company. The Claude 5.5 family (Fable 5.1, Opus 5.5, Sonnet 5.5, and Haiku 5.5) is known for nuanced, careful reasoning and handling very long documents. Its 1M-token context window means you can paste an entire book.",
             "pros": [
-              "200K token context (biggest free-tier window)",
+              "1M-token context (among the largest available)",
               "Exceptionally precise, careful writing",
               "Great at following complex multi-step instructions",
               "Strong constitutional safety design"
@@ -94,7 +94,7 @@
           },
           {
             "title": "Gemini (Google)",
-            "description": "Google's AI chatbot, deeply integrated into Google Workspace. If you live in Gmail, Docs, and Drive, Gemini blends into your environment in ways other chatbots cannot. Strong real-time web access and multimodal understanding.",
+            "description": "Google's AI chatbot, deeply integrated into Google Workspace. Gemini 4 Argon handles complex work with a 1M-token context, while Gemini 3.8 Flash is the fast, lower-cost option. If you live in Gmail, Docs, and Drive, Gemini blends into your environment in ways other chatbots cannot. Strong real-time web access and multimodal understanding.",
             "pros": [
               "Best-in-class Google Workspace integration",
               "Real-time web search with citations",
@@ -104,7 +104,7 @@
             "cons": [
               "Responses can be longer and less precise",
               "Less consistent tone than Claude/ChatGPT",
-              "Best features need Google One AI Premium"
+              "Best features need Google AI Pro"
             ],
             "tags": [
               "google",
@@ -156,12 +156,12 @@
           [
             "Editing or writing a long document",
             "Claude",
-            "200K context + careful tone matching"
+            "1M context + careful tone matching"
           ],
           [
             "Generating images",
             "ChatGPT (paid)",
-            "Built-in DALL-E 3 integration"
+            "Built-in image generation and editing"
           ],
           [
             "Researching a factual topic",
@@ -181,11 +181,11 @@
           [
             "Summarizing a very long PDF",
             "Claude",
-            "Handles 200K tokens in one go"
+            "Handles up to 1M tokens in one go"
           ],
           [
             "First general-purpose chat",
-            "ChatGPT (GPT-4o)",
+            "ChatGPT (GPT-6 Luna)",
             "Best free tier feature set"
           ],
           [
@@ -280,18 +280,18 @@
         "rows": [
           [
             "ChatGPT",
-            "GPT-4o with some limits, no image generation",
-            "$20/month — full GPT-4o, DALL-E, code interpreter"
+            "GPT-6 Luna with usage limits; image generation is limited",
+            "$20/month — GPT-6.1 Sol, limited GPT-6 Astra, image generation, code interpreter"
           ],
           [
             "Claude",
-            "Claude 3.5 Sonnet with daily limits",
-            "$20/month — higher limits, Claude 3 Opus access"
+            "Claude Sonnet 5.5 with daily limits",
+            "$20/month — higher limits and access to Opus 5.5"
           ],
           [
             "Gemini",
-            "Gemini 1.5 Pro with Google account",
-            "$20/month Google One AI Premium — Gemini Advanced"
+            "Gemini 3.8 Flash with a Google account",
+            "$19.99/month Google AI Pro — Gemini 4 Argon and higher limits"
           ],
           [
             "Perplexity",
@@ -503,14 +503,14 @@
         ],
         "rows": [
           [
-            "Intro to Claude",
+            "Claude models overview",
             "Article",
-            "Official introduction to Claude — what it can do, how it differs from other chatbots, and how to get started."
+            "Official overview of the Claude 5.5 family — context windows, pricing, and which model to use for each task."
           ],
           [
             "OpenAI Platform Overview",
             "Article",
-            "Comprehensive ChatGPT and GPT-4 documentation covering capabilities, model differences, and best practices."
+            "Comprehensive ChatGPT and GPT-6 documentation covering capabilities, model differences, and best practices."
           ],
           [
             "ChatGPT Prompt Engineering for Developers",
@@ -544,18 +544,18 @@
   ],
   "furtherReading": [
     {
-      "title": "Intro to Claude",
-      "url": "https://docs.anthropic.com/en/docs/intro-to-claude",
+      "title": "Claude models overview",
+      "url": "https://platform.claude.com/docs/en/models/overview",
       "type": "article",
       "author": "Anthropic",
-      "description": "Official introduction to Claude — what it can do, how it differs from other chatbots, and how to get started."
+      "description": "Official overview of the Claude 5.5 family — context windows, pricing, and which model to use for each task."
     },
     {
-      "title": "OpenAI Platform Overview",
-      "url": "https://platform.openai.com/docs/overview",
+      "title": "OpenAI model documentation",
+      "url": "https://platform.openai.com/docs/models",
       "type": "article",
       "author": "OpenAI",
-      "description": "Comprehensive ChatGPT and GPT-4 documentation covering capabilities, model differences, and best practices."
+      "description": "Comprehensive ChatGPT and GPT-6 documentation covering capabilities, model differences, and best practices."
     },
     {
       "title": "ChatGPT Prompt Engineering for Developers",
