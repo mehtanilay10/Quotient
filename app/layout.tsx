@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { PWARegistration } from "@/components/ui/PWARegistration";
 import { ContinuePrompt } from "@/components/ui/ContinuePrompt";
@@ -81,6 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </BookmarkProvider>
           </ProgressProvider>
         </AuthProvider>
+        <Analytics />
       </body>
     </html>
   );
