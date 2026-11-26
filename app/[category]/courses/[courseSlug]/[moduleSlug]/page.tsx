@@ -23,6 +23,8 @@ interface Params {
   params: Promise<{ category: string; courseSlug: string; moduleSlug: string }>;
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const courses = getAllCourses();
   return courses.flatMap((c) => {

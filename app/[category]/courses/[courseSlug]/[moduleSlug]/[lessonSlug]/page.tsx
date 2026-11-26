@@ -44,6 +44,8 @@ interface Params {
 // as static assets rather than as counted route entries. Do NOT re-enable
 // `cacheComponents` while prerendering all lessons here, or the route count
 // will exceed the limit again.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const courses = getAllCourses();
   return courses.flatMap((c) => {

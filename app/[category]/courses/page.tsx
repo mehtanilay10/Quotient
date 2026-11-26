@@ -11,6 +11,8 @@ interface Params {
   params: Promise<{ category: string }>;
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return getNavigationCategories()
     .filter((cat) => cat.sections.some((s) => s.href.endsWith("/courses")))

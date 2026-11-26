@@ -16,6 +16,8 @@ interface Params {
   params: Promise<{ category: string; courseSlug: string }>;
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return getProblemCourses().map((c) => ({
     courseSlug: c.slug,

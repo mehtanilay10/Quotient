@@ -23,6 +23,8 @@ const DIFFICULTY_LABELS: Record<string, string> = {
   advanced: "Advanced",
 };
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const params: { category: string; technology: string }[] = [];
   for (const category of getQuestionCategories()) {

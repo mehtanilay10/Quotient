@@ -17,6 +17,8 @@ interface Params {
   params: Promise<{ category: string }>;
 }
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return getRoadmaps().map((roadmap) => ({ category: roadmap.category }));
 }

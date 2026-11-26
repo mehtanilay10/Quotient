@@ -19,6 +19,8 @@ import { LessonNotesButton } from "@/components/lesson/LessonNotesButton";
 import { NotesModalProvider } from "@/components/lesson/NotesModalContext";
 import { OfflineSaveButton } from "@/components/lesson/OfflineSaveButton";
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   return getCheatsheetModules().map((mod) => ({
     technology: mod.slug,
